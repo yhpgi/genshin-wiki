@@ -1,0 +1,4606 @@
+{
+  "epId": 5654,
+  "name": "傷害計算公式",
+  "desc": "<p>傷害公式是計算所有影響傷害因素的綜合數值。這是一個複雜的運算過程，需要考慮諸多因素。</p>",
+  "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/10/142453215/48a42573a047430dc750c3170811b465_6632433031499596822.png",
+  "menuId": 14,
+  "menuName": "教學",
+  "version": 1737868601,
+  "components": {
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "傷害計算公式",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "傷害類型可以分為九種：七種元素傷害、一種物理傷害，以及一種無視防禦、抗性以及傷害倍率的真實傷害。\n<color=#ffffff>【傷害計算公式】</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>傷害 = [（基礎傷害 × 基礎傷害倍率）] + 額外基礎傷害加成 ] × 敵人防禦倍率 × 敵人抗性倍率 × 傷害加成倍率</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "基礎傷害",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "第一種需要考慮的元素是角色技能所使用的 <color=#ffffff>屬性</color> ，比如（生命值上限、攻擊力、防禦力、元素精通），以及根據角色等級而定的數值 <color=#ffffff>百分比</color> （通常數值會隨著等級提升）。\n以迪希雅的元素戰技作為例子："
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>等級1</color>\n<color=#ffffff>等級10</color>\n<color=#ffffff>淨焰昂藏傷害</color>\n<color=#ffffff73>112.90% 攻擊力</color>\n<color=#ffffff73>203.20% 攻擊力</color>\n<color=#ffffff>劍域熾焰傷害</color>\n<color=#ffffff73>132.80% 攻擊力</color>\n<color=#ffffff73>239% 攻擊力</color>\n<color=#ffffff>領域傷害</color>\n<color=#ffffff73>60.2% 攻擊力 + 1.03% 生命值</color>\n<color=#ffffff73>108.4% 攻擊力 + 1.86% 生命值</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "對於某些技能（例如迪希雅的領域傷害），會同時用到多個屬性。在這種情況下，基礎傷害將由這些屬性數值的總和計算得出。"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "基礎傷害加成與額外基礎傷害加成",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "在基礎傷害計算完成後，會有一些係數能直接影響最終傷害數值。\n<color=#ffffff>【基礎傷害加成】</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 15,
+        "name": "宵宮",
+        "desc": "「長野原煙花店」店長、「夏祭的女王」，將人們的願望寄託於煙花中的能工巧匠。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yoimiya_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「焰硝庭火舞」</color>\n在「庭火焰硝」持續時間內，提高普通攻擊造成的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 18,
+        "name": "旅行者（雷）",
+        "desc": "從世界之外漂流而來的旅行者，被神帶走血親，自此踏上尋找七神之路。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Traveler_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「撼世的神雷」</color>\n「雷轟電轉」每引發2次「威光落雷」，則大幅增強下一次「威光落雷」，造成原本200%的傷害，並為目前角色額外恢復1點元素能量。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 39,
+        "name": "行秋",
+        "desc": "經常能在書攤看到的少年人。手執長劍，胸中常懷俠義之心。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xingqiu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「孤舟斬蛟」</color>\n在「古華劍·裁雨留虹」效果持續期間，「古華劍·畫雨籠山」造成的傷害提升50%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2968,
+        "name": "流浪者",
+        "desc": "<p>身分成謎的流浪人士。衣著打扮像是修驗者，言行卻並不是修驗者應有的模樣。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/7998136/24d97a22be742fb732ea96f625d1faac_5450959615815575586.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「羽畫·風姿華歌」</color>\n在「優風傾姿」狀態下，進行普通攻擊與重擊時，造成的傷害與影響範圍提高。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4022,
+        "name": "萊歐斯利",
+        "desc": "<p>梅洛彼得堡的公爵，隱於漆黑海底的領主。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/10/16/133389800/31a0eb2dec5d69ca8dd7616572136b8b_4651795574833344139.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「冰牙突馳」</color>\n在「寒烈的懲裁」狀態下，生命值高於50%時，強化「普通攻擊·迅烈傾霜拳」的斥逐拳，使其造成的傷害提升。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4023,
+        "name": "那維萊特",
+        "desc": "<p>楓丹的最高審判官，因其無懈可擊的「秉公無私」而聞名。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/20/133389800/0513aa7f482dbb4778545d02f94956fe_4448918334482979837.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「古海孑遺的權柄」</color>\n至多疊加3層的「遺龍之榮」效果，使「重擊·衡平推裁」造成原本110%/125%/160%的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4376,
+        "name": "芙寧娜",
+        "desc": "<p>審判舞臺上的絕對焦點，直至謝幕的掌聲響起。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/07/133389800/263e5ea0784d182b393f67a7e24146a5_1412526942426865234.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「孤心沙龍」</color>\n在荒性的始基力屬性下，召喚三位「沙龍成員」。「沙龍成員」進行攻擊時，根據附近的隊伍中生命值高於50%的角色數量，提升此次攻擊的威力，並消耗這些角色的生命值：滿足條件的角色數量為1/2/3/4名或更多時，攻擊造成的傷害為原本的110%/120%/130%/140%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4576,
+        "name": "娜維婭",
+        "desc": "<p>刺玫會現任會長，一位可愛、盡責的好老闆。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/20/142229365/3fc7580c01a9e622692402889706c4db_9060602796687984077.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「典儀式晶火」</color>\n施放時，根據消耗的「裂晶彈片」數量，打出對應數量的「玫瑰晶彈」。11枚「玫瑰晶彈」全部命中時，將造成原本200%的傷害。\n此外，消耗的「裂晶彈片」超過3枚時，超過3枚的每枚「裂晶彈片」都將本次射擊造成的傷害額外提升15%。",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "剛才提及的倍率加成，後面的傷害計算還會加入一個額外的數值，這個數值是最終傷害的加成項。\n<color=#ffffff>【額外基礎傷害加成】</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "角色",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4,
+        "name": "雲堇",
+        "desc": "集劇作與演唱能力於一身的璃月戲曲名角。風格自成一派，雅致柔美，恰如其人。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yun Jin_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「破嶂見旌儀」</color>\n施放後，對敵人造成普通攻擊傷害時，基於雲堇自己目前的防禦力，提高造成的傷害。\n<color=#ffffff>固有天賦「莫從恆蹊」</color>\n「飛雲旗陣」提供的普通攻擊傷害提高，當隊伍中存在1/2/3/4種元素類型的角色時，數值上進一步追加雲堇防禦力的2.5%/5%/7.5%/11.5%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5,
+        "name": "五郎",
+        "desc": "海祇島軍的大將，深受部下信賴。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Gorou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「報恩之守」</color>\n基於防禦力，五郎的以下攻擊造成的傷害提高：\n· 「犬坂吠吠方圓陣」的技能傷害提高值：防禦力的156%；\n· 「獸牙逐突形勝戰法」的技能傷害與岩晶崩破傷害提高值：防禦力的15.6%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 16,
+        "name": "托馬",
+        "desc": "神里家的家政官，活躍在稻妻的「地頭蛇」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Thoma_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「烈火攻燔」</color>\n「真紅熾火之大鎧」的熾火崩破造成的傷害提高，提高值相當於托馬生命值上限的2.2%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 21,
+        "name": "早柚",
+        "desc": "隸屬於「終末番」的忍者。身形小巧，總像沒睡飽一樣。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sayu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「呼呼大睡時間」</color>\n早柚自己透過「嗚呼流·影貉繚亂」召喚的不倒貉貉的攻擊，受益於早柚的元素精通：使不倒貉貉的攻擊額外造成0.2%攻擊力的傷害。透過這種方式至多額外造成400%攻擊力的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 25,
+        "name": "珊瑚宮心海",
+        "desc": "海祇島的「現人神巫女」，統管海祇島各項事宜的少女。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sangonomiya Kokomi_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「海人化羽」</color>\n在「儀來羽衣」狀態下，增加珊瑚宮心海的普通攻擊、重擊以及元素戰技「化海月」造成的傷害，增加值基於珊瑚宮心海的生命值上限。\n<color=#ffffff>固有天賦「真珠御唄」</color>\n處於「海人化羽」的「儀來羽衣」狀態下時，珊瑚宮心海的普通攻擊與重擊基於生命值上限造成的傷害獲得額外提升，提升程度相當於珊瑚宮心海的治療加成的15%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 29,
+        "name": "申鶴",
+        "desc": "氣質出塵的仙家子弟。隱修在璃月群山之間，個性也如仙人般淡漠疏離。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Shenhe_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「仰靈威召將役咒」</color>\n施放時，為隊伍中附近的所有角色施加「冰翎」效果：普通攻擊、重擊、下落攻擊、元素戰技和元素爆發傷害對敵人造成冰元素傷害時，基於申鶴自己目前的攻擊力，提高造成的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 34,
+        "name": "胡桃",
+        "desc": "「往生堂」七十七代堂主，年紀輕輕就已主掌璃月的葬儀事務。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Hu Tao_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「最不安神晴又復雨」</color>\n「血梅香」造成的傷害提高，提高值相當於效果附加時胡桃生命值上限的10%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 36,
+        "name": "荒瀧一斗",
+        "desc": "活躍在稻妻城花見坂的「荒瀧派」初代目頭領。什麼，從沒聽說過荒瀧派？你是想找碴嗎？",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Arataki Itto_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「赤鬼之血」</color>\n「荒瀧逆袈裟」造成的傷害提高，傷害提高值基於荒瀧一斗防禦力的35%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 46,
+        "name": "鍾離",
+        "desc": "被「往生堂」請來的神祕客人，知識淵博，對各種事物都頗有見地。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Zhongli_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「炊金饌玉」</color>\n基於生命值上限，鍾離的以下攻擊造成的傷害提高：\n· 普通攻擊、重擊與下落攻擊傷害提高值：生命值上限的1.39%；\n· 「地心」的岩脊、共鳴傷害與長按傷害提高值：生命值上限的1.9%；\n· 「天星」傷害提高值：生命值上限的33%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 47,
+        "name": "阿貝多",
+        "desc": "西風騎士團首席煉金術士兼調查小隊隊長，被稱做「白堊之子」的天才。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Albedo_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「顯生之宙」</color>\n「創生法·擬造陽華」的剎那之花綻放時，會為阿貝多賦予生滅計數效果，持續30秒。\n· 施放「誕生式·大地之潮」時，清除所有生滅計數效果，並根據清除的層數提高「誕生式·大地之潮」的爆發傷害與生滅之花的傷害。每層生滅計數提高等同於阿貝多防禦力30%的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2256,
+        "name": "久岐忍",
+        "desc": "幹練可靠的「荒瀧派」的副手——特別註明：幹練可靠形容的不是「荒瀧派」而是副手。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kuki Shinobu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「安心之所」</color>\n基於久岐忍的元素精通，「越祓雷草之輪」獲得以下提升：\n· 治療量提升值：元素精通的75%；\n· 傷害提升值：元素精通的25%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2813,
+        "name": "賽諾",
+        "desc": "<p>教令院內負責監管學者們的「大風紀官」。工作時比剎訶伐羅學院製作的「大風機關」更有效率。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/26/7998136/e09e2bda5e022611fad0dea1bb6518bb_6963723648787937375.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「九弓的執命」</color>\n基於賽諾的元素精通，提高自身以下攻擊造成的傷害值：\n· 「啟途誓使」狀態下的普通攻擊：元素精通的150%；\n· 固有天賦「落羽的裁擇」的渡荒之雷：元素精通的250%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2859,
+        "name": "萊依拉",
+        "desc": "<p>專攻理論星相學的梨多梵諦學院學生。時常夢遊，長期睡眠不足，飽受睡眠問題困擾。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/12/7998136/48a495acadaf37f12d0a7f653d85bd83_9084142372306287188.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「勿擾沉眠」</color>\n「垂裳端凝之夜」發射的飛星造成的傷害提高，提高值相當於萊依拉生命值上限的1.5%。\n<color=#ffffff>命之座 第4層「星示昭明」</color>\n「垂裳端凝之夜」開始發射一輪飛星時，將為附近的隊伍中所有角色賦予「啟明」效果，使普通攻擊與重擊造成的傷害提升，提升值相當於萊依拉生命值上限的5%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2967,
+        "name": "琺露珊",
+        "desc": "<p>來自「一百年前」的學者，喜歡以前輩自居，對各類古老文字與古典機關都頗有研究。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/7998136/38c12ab46678a4008f83a0e46c900ef5_8414742091537624810.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「七窟遺智」</color>\n處於「摶風秘道」的「祈風之賜」效果下的角色的普通攻擊、重擊、下落攻擊、元素戰技或元素爆發對敵人造成風元素傷害時，會產生「烈風護持」效果：基於琺露珊基礎攻擊力的32%，提高造成的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2968,
+        "name": "流浪者",
+        "desc": "<p>身分成謎的流浪人士。衣著打扮像是修驗者，言行卻並不是修驗者應有的模樣。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/7998136/24d97a22be742fb732ea96f625d1faac_5450959615815575586.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「初番·茂風流羽行」</color>\n在「優風傾姿」狀態下，固有天賦「夢跡一風」發射的風矢能額外造成25%攻擊力的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3463,
+        "name": "迪希雅",
+        "desc": "<p>橫行須彌沙漠的傭兵組織「鍍金旅團」的成員，勇敢而又強大的戰士，在「鍍金旅團」內部聲名赫赫。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/27/7998136/65b22311e1e38ffa45a4928d4005ecee_2103463381294213152.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「皎潔之火鋩輝燦漫」</color>\n迪希雅的生命值提升20%；此外，基於生命值上限，迪希雅的以下攻擊造成的傷害提高：\n· 「熔鐵流獄」傷害提高值：生命值上限的3.6%；\n· 「炎嘯獅子咬」傷害提高值：生命值上限的6%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "白朮",
+        "desc": "<p>藥廬「不卜廬」的主人，隨身懸著名為「長生」的白蛇。精於藥石，深於城府。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/01/7998136/05599650d7f42e1c4adde373de6b297d_1949970766490129649.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「真邪合離」</color>\n「癒氣全形論」的靈氣脈造成的傷害提高，提高值相當於白朮生命值上限的8%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3963,
+        "name": "林尼",
+        "desc": "<p>伶牙俐齒，演技精湛的著名楓丹魔術師，以精妙的手法和言語牽動著觀眾的心。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/15/7998136/e343d4442cc3b8e243f0d528bb715f75_292413766649029849.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「驚險演出」</color>\n如果林尼透過發射「隱具魔術箭」消耗了生命值，該「隱具魔術箭」召喚的怪笑貓貓帽命中敵人時會為林尼恢復3點元素能量，並且基於攻擊力的80%提高造成的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3997,
+        "name": "旅行者（水）",
+        "desc": "<p>從世界之外漂流而來的旅行者，被神帶走血親，自此踏上尋找七神之路。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/7998136/04f769b0b1671b5ffbbafefd7286b4b2_1946573755897168794.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「澄明的淨水」</color>\n長按施放「水紋劍」時如果透過「充盈」消耗了生命值，則在施放結束時的噴發激流造成的傷害提高，提高值為旅行者在此次施放期間透過「充盈」消耗的生命值總和的45%。依此方式，至多使傷害提高5000點。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4774,
+        "name": "閒雲",
+        "desc": "<p>絕雲仙眾「三眼五顯仙人」之一，雅號「留雲借風真君」。擅使機關奇術，心向紅塵煙火，正以「閒雲」之名行走人間。</p><p></p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/01/31/142229365/2c2be27f8876e9435ab8c8b933b8408c_3781127452510690073.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「細想應是洞中仙」</color>\n「暮集竹星」的竹星擁有仙力助推時，附近的目前場上角色的下落攻擊墜地衝擊造成的傷害提升，提升值相當於閒雲的攻擊力200%。依此方式，至多使該傷害提升9000。\n<color=#ffffff>命之座 第2層「鶴唳遠人間」</color>\n「暮集竹星」的竹星擁有仙力助推時，附近的目前場上角色的下落攻擊墜地衝擊造成的傷害提升，提升值相當於閒雲的攻擊力400%。依此方式，至多使該傷害提升18000。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4946,
+        "name": "千織",
+        "desc": "<p>「千織屋」的老闆。 楓丹著名服裝設計師。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/13/327628065/5470f90694af13476e49be7b8346e2b1_2338566514473305356.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「萬理一空」</color>\n觸發固有天賦「量體裁衣」的後續效果後，千織自己的普通攻擊造成的傷害提升，提升值相當於千織自己的防禦力的235%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5149,
+        "name": "阿蕾奇諾",
+        "desc": "愚人眾執行官第四席，「僕人」。沉靜冷酷的外交官，「壁爐之家」所有孩子們畏懼又依賴的「父親」。",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/23/142229365/672e65470bfd14b664596c2a7f7eaaf8_1361943250913204321.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>普通攻擊·斬首之邀</color>\n「紅死之宴」狀態下，阿蕾奇諾的普通攻擊命中敵人時，將提升本次攻擊造成的傷害，提升值相當於阿蕾奇諾的攻擊力乘以目前生命之契百分比的一定比例。\n<color=#ffffff>命之座 第6層「自此以後，我們將共饗新生。」</color>\n「厄月將升」造成的傷害提高，提升值相當於阿蕾奇諾的攻擊力乘以目前生命之契百分比的700%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5598,
+        "name": "賽索斯",
+        "desc": "<p>緘默之殿的繼承者。背負著秘密，自沙中而來。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/06/142453215/cdb7abfcb86138e5b618946a5466d442_1443291969112851528.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「秘儀·暝光貫影」</color>\n施展秘儀，進入「寂想瞑影」狀態，在此期間，賽索斯的普通攻擊將轉為發射能穿透敵人的「暝弦矢」：對路徑上的敵人造成雷元素傷害，並基於賽索斯的元素精通，提升其造成的傷害。\n<color=#ffffff>固有天賦「砂王的賜禮」</color>\n賽索斯獲得「熱砂炫影」效果，使「貫影箭」造成的傷害提升，提升值相當於賽索斯元素精通的700%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5597,
+        "name": "希格雯",
+        "desc": "<p>梅洛彼得堡的美露莘護士長，平等地關愛著海底監牢中的每一名罪人。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/25/157749474/2d607aa4d729030ea04f79919257e311_4478856742722800409.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「應有適當的休憩」</color>\n施放 <color=#ffd780>彈跳水療法</color> 時，希格雯將為自己施加持續18秒的「半強制靜養」效果：持續期間，希格雯獲得8% <color=#80c0ff>水元素傷害加成</color> 與10層靜養計數，除希格雯外附近隊伍中處於後臺的角色的元素戰技造成傷害時，將消耗1層靜養計數，提升此次元素戰技造成的傷害值：希格雯的生命值上限超過30000的部分，每1000點生命值上限將提升80點傷害，依此方式，至多使本次元素戰技造成的傷害提升2800點。\n<color=#ffffff>命之座 第1層「最快樂的精靈，可否懂得焦慮」</color>\n固有天賦「應有適當的休憩」的效果獲得提升：激癒水球彈跳時，將為希格雯賦予1層靜養計數，並使靜養計數產生的傷害值提升改為：希格雯的生命值上限超過30000的部分，每1000點生命值上限將提升100點，依此方式，至多提升3500點傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5714,
+        "name": "艾梅莉埃",
+        "desc": "楓丹香水設計師，將秘密藏於瓶中之人。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「茉潔香跡」</color>\n施放「擷萃調香」或「香氛演繹」時，艾梅莉埃將獲得「香跡留駐」，持續5秒。持續期間，艾梅莉埃的普通攻擊與重擊將轉為無法被附魔覆蓋的草元素傷害，並提升造成的傷害，提升值相當於艾梅莉埃攻擊力的300%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6319,
+        "name": "瑪拉妮",
+        "desc": "納塔遠近聞名的嚮導，水上用品商店的經營者，精通各類水上運動的逐浪客。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/f4c75caad42923eb91ee760aa2eb473a_7439123622315070718.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「納塔最好的嚮導」</color>\n隊伍中的附近的角色觸發「夜魂迸發」後，瑪拉妮將獲得一層持續20秒、至多疊加3層的逐浪心得。施放 <color=#ffd780>爆瀑飛彈</color> 時，瑪拉妮將清除所有逐浪心得，並基於清除的層數，基於生命值上限的15%/30%/45%提高本次爆瀑飛彈造成的傷害。\n<color=#ffffff>命之座 第1層「悠閒的「梅茲特利」...」</color>\n進入夜魂加持狀態後的第一次巨浪鯊鯊撕咬及其所觸發的鯊鯊飛彈造成的傷害提升，提升值相當於瑪拉妮生命值上限的66%。此次傷害提升遵循 <color=#ffd780>踏鯊破浪</color> 的傷害衰減規則。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6318,
+        "name": "卡齊娜",
+        "desc": "納茨卡延的年輕戰士，受賜古名「烏沙博蒂」。善良執著的少女，在挫折中不斷成長。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/26925adb1092d29c8afdf46d92fad8bd_343637410022641529.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「堅岩之重」</color>\n<color=#ffd780>沖天轉轉</color> 造成的傷害提升，提升值相當於卡齊娜的防禦力的20%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6317,
+        "name": "基尼奇",
+        "desc": "維茨特蘭的獵龍人，精於度量代價。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/12/0099e74b4d0c919f6feab4bade3ab748_5795733017114624391.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「焰靈的契約」</color>\n隊伍中的附近的角色觸發「夜魂迸發」後，將為基尼奇賦予一層「獵人心得」，持續15秒，至多疊加2層。基尼奇在施放 <color=#ffd780>懸獵·遊騁高狩</color> 的迴獵貫鱗炮時，將消耗所有的「獵人心得」，並依據消耗的層數，每層使本次迴獵貫鱗炮造成的傷害基於基尼奇攻擊力的320%提高。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6924,
+        "name": "希諾寧",
+        "desc": "<p>納茨卡延的鑄名師，善於在工作的重擔與舒適的生活之間找到平衡點。</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/b07074c2b9040516fd240b6b8d65c011_2487211347344319683.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「獻予午後的花之夢」</color>\n希諾寧施放 <color=#ffd780>音火鍛淬</color> 後，將為隊伍中附近的所有角色施加「榮花之賜」效果，持續15秒。擁有「榮花之賜」的角色的普通攻擊、重擊與下落攻擊造成的傷害提升，提升值相當於希諾寧的防禦力的65%。\n<color=#ffffff>命之座 第6層「獻予永夜的狂歡舞」</color>\n處於夜魂加持狀態下時，希諾寧進行衝刺、騰躍、普通攻擊、下落攻擊時，將獲得「永夜的祝福」，希諾寧在夜魂加持狀態下的普通攻擊與下落攻擊造成的傷害提升，提升值相當於希諾寧的防禦力的300%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7299,
+        "name": "瑪薇卡",
+        "desc": "納塔的領袖，繼承「基揚戈茲」之古名，誓以聖火為戰爭國度照亮未來。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/30/2f098b1f15854fd9dafc54998795a59e_864981592196815761.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「灰燼的代價」</color>\n處於夜魂加持狀態下時，若諸火武裝以馳輪車的形態顯現，瑪薇卡的普通攻擊、重擊、元素爆發 <color=#ffd780>燔天之時</color> 中的墜日斬造成的傷害提升，提升值相當於瑪薇卡攻擊力的60%/90%/120%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7300,
+        "name": "茜特菈莉",
+        "desc": "煙謎主的大薩滿，令所有族人敬畏的黑曜石奶奶。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/27/c4ab2530bb8bbe3c0e811684f97ec124_6688582217610741079.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「白燧蝶的星衣」</color>\n元素戰技 <color=#ffd780>霜晝黑星</color> 中，伊茲帕帕的霜隕風暴造成的傷害提升，提升值相當於茜特菈莉的元素精通的90%；元素爆發 <color=#ffd780>諸曜飭令</color> 中，冰風暴造成的傷害提升，提升值相當於茜特菈莉的元素精通的1200%。\n<color=#ffffff>命之座 第1層「四百星的芒刃」</color>\n施放元素戰技 <color=#ffd780>霜晝黑星</color> 時，茜特菈莉將獲得「白星之裙」效果，持續至伊茲帕帕退場：持續期間，茜特菈莉獲得10層「星刃」，除茜特菈莉外的附近的目前場上角色的普通攻擊、重擊、下落攻擊、元素戰技或元素爆發造成傷害時，將消耗1層「星刃」，提升造成的傷害，提升值相當於茜特菈莉元素精通的200%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7301,
+        "name": "藍硯",
+        "desc": "沉玉谷來的藤編師，神清骨秀，像山間清泉一般靈動。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/01/17/02a299cec38b4ef4f21952c37a624258_5744396397316809821.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「蒼翎鎮邪敕符」</color>\n元素戰技 <color=#ffd780>鳳縷隨翦舞</color> 與元素爆發 <color=#ffd780>鶤弦踏月出</color> 造成的傷害值提升，提升值分別相當於藍硯元素精通的309%和774%。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "武器",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1932,
+        "name": "不滅月華",
+        "desc": "出自深海的美玉之環，閃爍著清澈如月的光澤，一如遙遠往昔。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/不灭月华.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "普通攻擊造成的傷害增加，增加值為裝備該武器的角色生命值上限的 <color=#37ffff>1%/1.5%/2%/2.5%/3%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2031,
+        "name": "赤角石潰杵",
+        "desc": "依據過去的主人的說法，這是何等鬼怪精妖都能打跑的大杵「赤角石見石潰金塗金齧御獅子」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/赤角石溃杵.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "普通攻擊與重擊造成的傷害值提高，提高數值相當於防禦力的 <color=#37ffff>40%/50%/60%/70%/80%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2032,
+        "name": "辰砂之紡錘",
+        "desc": "由不似這個世界的物質製成的劍，其中的力量就連侵蝕龍的腐殖之毒也能抵禦住吧。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/辰砂之纺锤.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "元素戰技造成的傷害值提高，提高數值相當於防禦力的 <color=#37ffff>40%/50%/60%/70%/80%</color> 。該效果每1.5秒最多觸發一次，並將在元素戰技造成傷害後的0.1秒後清除效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2665,
+        "name": "獵人之徑",
+        "desc": "<p>以珍貴的白枝製成的飾金獵弓，曾經射落無數侵入森林的惡獸。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/27/7998136/110a33dca005873d039a32c6c931d405_6220623713043137434.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "重擊命中敵人後，將獲得「無休止的狩獵」：重擊造成的傷害值提高相當於元素精通數值的 <color=#37ffff>160%/200%/240%/280%/320%</color> 。該效果將在生效12次或10秒後消失，每12秒至多獲得一次無休止的狩獵。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3461,
+        "name": "裁葉萃光",
+        "desc": "<p>以珍貴的白枝製成的飾金之刃，曾經斬斷無數浸染森林的黯毒。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/18/7998136/bf4ef5696afdf695a26fab9510228060_7027652817674529819.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "普通攻擊造成元素傷害後，獲得「裁葉」效果：普通攻擊和元素戰技造成的傷害提高，提高值相當於元素精通的 <color=#37ffff>120%/150%/180%/210%/240%</color> 。該效果在生效28次或12秒後消失，每12秒至多獲得一次「裁葉」效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7028,
+        "name": "彌堅骨",
+        "desc": "在千萬次敲打和揮舞中變得更加堅硬的骨製長劍，據傳曾是英傑萬傑魯手拿得很順手的武器。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/9fbe8cf3da1d476d4c5a228017656cd1_114889972255186755.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "使用衝刺或替代衝刺的能力後，普通攻擊造成的傷害提高，提高數值相當於攻擊力的 <color=#37ffff>16%/20%/24%/28%/32%</color> ，該效果在生效18次或7秒後消失。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "聖遺物",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2076,
+        "name": "來歆餘響",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n普通攻擊命中敵人時，有36%機率觸發「幽谷祝祀」：普通攻擊造成的傷害提高，傷害提高值為攻擊力的70%，該效果將在普通攻擊造成傷害後的0.05秒後清除。普通攻擊未觸發「幽谷祝祀」時，會使下次觸發機率提升20%；0.2秒內至多判定1次觸發與否。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4717,
+        "name": "昔時之歌",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2023/12/13/7789fb5e684cf95a7011657d0fa8a971_4471572732262685833.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n裝備者對隊伍中的角色進行治療時，將產生持續6秒的渴盼效果，記錄治療的生命值回復量（包括溢出值）。持續時間結束時，渴盼效果將轉變為「彼時的浪潮」效果：隊伍中自己的目前場上角色的普通攻擊、重擊、下落攻擊、元素戰技與元素爆發命中敵人時，將基於渴盼效果所記錄的回復量的8%提高造成的傷害，「彼時的浪潮」將在生效5次或10秒後移除。一次渴盼效果至多記錄15000點回復量，同時至多存在一個，能夠記錄多個裝備者的產生的回復量；裝備者處於隊伍後臺時，依然能觸發該效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>附加反應</color> （蔓激化和超激化）擁有自己的額外基礎傷害加成。\n<color=#ffffff>【附加反應加成計算公式】</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>額外基礎傷害加成 = 角色等級 × 元素反應倍率 ×（100% + 元素精通加成 + 元素反應加成）</color>\n<color=#ffffff>元素反應倍率</color>\n<color=#ffffff>超激化</color>\n115%\n<color=#ffffff>蔓激化</color>\n125%",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素精通加成</color> 可以依照角色屬性面板內的元素精通數值來計算："
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素精通加成 = （元素精通 × 5） / （元素精通 + 1200）</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "一些提高附加反應傷害所提供的元素反應加成："
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "如雷的盛怒",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n超激化反應帶來的傷害提升提高20%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "白朮",
+        "desc": "<p>藥廬「不卜廬」的主人，隨身懸著名為「長生」的白蛇。精於藥石，深於城府。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/01/7998136/05599650d7f42e1c4adde373de6b297d_1949970766490129649.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「在地為化」</color>\n受到 <color=#ffd780>無郤氣護盾</color> 治療的角色，將獲得「木運之歲」效果：基於白朮生命值上限不超過50000點的部分，每1000點將使該角色觸發的燃燒、綻放、超綻放、烈綻放反應造成的傷害提升2%，超激化、蔓激化反應帶來的傷害提升0.8%，持續6秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "敵人相關的倍率",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>【敵人防禦倍率】</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>（角色等級 + 100）/ [（角色等級 + 100）+（敵人等級 + 100）×（100% - 所降低的敵人防禦）×（100% - 所無視的敵人防禦）]</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "可透過以下方式降低敵人的防禦："
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2,
+        "name": "麗莎",
+        "desc": "慵懶而博學的圖書管理員，須彌教令院「兩百年一見」的天才畢業生。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Lisa_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「靜電場力」</color>\n敵人受到 <color=#ffd780>薔薇的雷光</color> 攻擊後，降低15%防禦力，持續10秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 12,
+        "name": "可莉",
+        "desc": "西風騎士團禁閉室的常客，蒙德的爆破大師。人稱「逃跑的太陽」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「破破彈片」</color>\n<color=#ffd780>蹦蹦炸彈</color> 的「詭雷」會使敵人的防禦力降低23%，持續10秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 32,
+        "name": "神里綾華",
+        "desc": "稻妻「社奉行」神里家的大小姐。端莊而文雅，聰慧又堅韌。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kamisato Ayaka_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「盈缺流返」</color>\n敵人受到 <color=#ffd780>神里流·霜滅</color> 的「霜見雪關扉」造成的傷害後，防禦力降低30%，持續6秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 48,
+        "name": "雷澤",
+        "desc": "住在蒙德地區奔狼領、遠離城市與人群，和狼一起生活的少年。直覺銳利，身姿迅捷。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Razor_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「撕咬」</color>\n<color=#ffd780>利爪與蒼雷</color> 點按時，會使命中的敵人防禦力降低15%，持續7秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2850,
+        "name": "納西妲",
+        "desc": "<p>深居淨善宮的籠中之鳥，只能在夢中將世界盡收眼底。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/01/7998136/f29490bddc56b4a6773b6c5003bbb853_2458576086062564041.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「正等善見之根」</color>\n處於納西妲自身施加的 <color=#ffd780>蘊種印</color> 狀態下的敵人，受到原激化、超激化、蔓激化反應影響後的8秒內，防禦力降低30%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7299,
+        "name": "瑪薇卡",
+        "desc": "納塔的領袖，繼承「基揚戈茲」之古名，誓以聖火為戰爭國度照亮未來。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/30/2f098b1f15854fd9dafc54998795a59e_864981592196815761.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「灰燼的代價」</color>\n處於夜魂加持狀態下時，若 <color=#ffd780>諸火武裝</color> 以 <color=#ffd780>焚曜之環</color> 的形態顯現，附近的敵人的防禦力降低20%。\n<color=#ffffff>命之座 第6層「『人之名』解放」</color>\n元素戰技 <color=#ffd780>稱名之刻</color> 中的諸火武裝獲得完全強化：\n·馳輪車：瑪薇卡駕駛馳輪車時，還會召喚出持續跟隨瑪薇卡的「焚曜之環·灼象」，使附近的敵人的防禦力降低20%。",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "可透過以下方式 <color=#ffffff>無視</color> 敵人防禦："
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 49,
+        "name": "雷電將軍",
+        "desc": "其身為御建鳴神主尊大御所大人，許稻妻人民以亙古不變之「永恆」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Raiden Shogun_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「斬鐵斷金」</color>\n<color=#ffd780>奧義·夢想真說</color> 的「夢想一刀」與「夢想一心」狀態下的雷電將軍的攻擊將無視敵人60%的防禦力。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7,
+        "name": "八重神子",
+        "desc": "鳴神大社的宮司大人，兼任「八重堂」總編。豔麗動人的外表下藏著令人意想不到的聰慧與狡黠。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yae Miko_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「大殺生咒禁」</color>\n<color=#ffd780>殺生櫻</color> 在攻擊時無視敵人60%的防禦力。",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "以下圖片展示了菲米尼使用相同的武器和聖遺物的情況下，在20級、60級、80級和90級時，對相同敵人進行第一段普通攻擊的傷害數值。每個等級都以三張圖片各別展示：沒有任何減益效果、受到雷澤減益效果以及同時受到雷澤和麗莎減益效果時的傷害對比。"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/8b3d56a808afc0d35cba5493f69382e4_8595035854653448890.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "菲米尼 等級20",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/29cc048a9c313d16749942ada150d833_8044534170240290363.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "菲米尼 等級60",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/54c4e5f18c6716a6cf9d47dc0005b73a_2422153234558294531.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "菲米尼 等級80",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/6affd761772e1189caa421a001ce1bde_2886603267244421346.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "菲米尼 等級90",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>敵人抗性倍率</color> 如下："
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>公式</color>\n<color=#ffffff>抗性 < 0%</color>\n<color=#ffffff73>100% -（抗性 / 2）</color>\n<color=#ffffff>0% ≤ 抗性 < 75%</color>\n<color=#ffffff73>100% - 抗性</color>\n<color=#ffffff>抗性 ≥ 75%</color>\n<color=#ffffff73>100% /（100% + 抗性 × 4）</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "可透過以下方式降低敵人的抗性："
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "角色",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6,
+        "name": "優菈",
+        "desc": "古老家族出身的「浪花騎士」，西風騎士團游擊小隊隊長。身為舊貴族後裔卻加入了堪稱死對頭的西風騎士團，該事件至今仍是蒙德一大謎團。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Eula_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「冰潮的渦旋」</color>\n長按施放時，消耗所有的「冷酷之心」效果，並揮舞大劍向前揮砍，前方的敵人造成冰元素範圍傷害。若消耗了「冷酷之心」效果，會使身邊敵人的物理抗性與 <color=#99ffff>冰元素抗性</color> 降低。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 11,
+        "name": "北斗",
+        "desc": "武裝船隊「南十字」的首領，豪快的大姊頭。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Beidou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「北斗祓幽孽」</color>\n「斫雷」持續期間，周圍敵人的 <color=#ffacff>雷元素抗性</color> 降低15%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 18,
+        "name": "旅行者（雷）",
+        "desc": "從世界之外漂流而來的旅行者，被神帶走血親，自此踏上尋找七神之路。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Traveler_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「震怒的蒼雷」</color>\n「雷轟電轉」的「威光落雷」命中敵人後，會使敵人的 <color=#ffacff>雷元素抗性</color> 降低15%，持續8秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 19,
+        "name": "旅行者（風）",
+        "desc": "從世界之外漂流而來的旅行者，被神帶走血親，自此踏上尋找七神之路。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Traveler_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「糾纏的信風」</color>\n受到「風息激盪」傷害的目標， <color=#80ffd7>風元素抗性</color> 下降20%。\n如果產生了元素轉化，那麼對應元素抗性也下降20%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 23,
+        "name": "溫迪",
+        "desc": "蒙德城諸多吟遊詩人中的一位，自由自在地穿行在街頭巷尾。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Venti_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「眷戀的泠風」</color>\n「高天之歌」會使敵人的 <color=#80ffd7>風元素抗性</color> 與物理抗性降低12%，持續10秒。\n被「高天之歌」擊飛的敵人在落地前， <color=#80ffd7>風元素抗性</color> 與物理抗性額外降低12%。\n<color=#ffffff>命之座 第6層「抗爭的暴風」</color>\n受「風神之詩」傷害的敵人， <color=#80ffd7>風元素抗性</color> 降低20%；\n若產生了元素轉化，則使轉換的元素抗性也降低20%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 27,
+        "name": "琴",
+        "desc": "正直嚴謹的蒲公英騎士，蒙德西風騎士團的代理團長。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Jean_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「蒲公英的國土」</color>\n在「蒲公英之風」的領域內，所有敵人的 <color=#80ffd7>風元素抗性</color> 下降40%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 28,
+        "name": "甘雨",
+        "desc": "月海亭的秘書，體內流淌著仙獸「麒麟」的血脈。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Ganyu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「飲露」</color>\n二段蓄力重擊的霜華矢或霜華綻放命中敵人時，會使敵人的 <color=#99ffff>冰元素抗性</color> 降低15%，持續6秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 29,
+        "name": "申鶴",
+        "desc": "氣質出塵的仙家子弟。隱修在璃月群山之間，個性也如仙人般淡漠疏離。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Shenhe_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「神女遣靈真訣」</color>\n施放時，「籙靈」將結成領域，使其中敵人的 <color=#99ffff>冰元素抗性</color> 與物理抗性降低。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 33,
+        "name": "蘿莎莉亞",
+        "desc": "只有穿著像神職人員的修女。冷淡的言行中透著銳利。總是單獨行動。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Rosaria_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「代行裁判」</color>\n「終命的聖禮」的攻擊會使敵人的物理抗性降低20%，持續10秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 39,
+        "name": "行秋",
+        "desc": "經常能在書攤看到的少年人。手執長劍，胸中常懷俠義之心。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xingqiu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「天青現虹」</color>\n受到劍雨攻擊的敵人， <color=#80c0ff>水元素抗性</color> 降低15%，持續4秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 41,
+        "name": "辛焱",
+        "desc": "璃月港唯一的搖滾樂手，以音樂和熱情歌頌著對「成見」的反抗。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xinyan_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「節奏的傳染」</color>\n「熱情拂掃」的揮舞傷害，會使敵人的物理抗性降低15%，持續12秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 45,
+        "name": "重雲",
+        "desc": "驅邪世家的年輕術士，為壓制自身的「純陽之體」費盡心機。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Chongyun_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「追冰劍訣」</color>\n被額外的靈刃擊中的敵人 <color=#99ffff>冰元素抗性</color> 降低10%，持續8秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 46,
+        "name": "鍾離",
+        "desc": "被「往生堂」請來的神祕客人，知識淵博，對各種事物都頗有見地。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Zhongli_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「地心」</color>\n施放時，處於「玉璋護盾」庇護下的角色，會使附近小範圍內敵人的所有元素抗性與物理抗性降低20%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 50,
+        "name": "香菱",
+        "desc": "來自璃月，名聲在外的少女廚師，對料理之道極具熱情，拿手麻辣菜餚堪稱一絕。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xiangling_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「外酥裡嫩」</color>\n受到鍋巴攻擊的敵人， <color=#ff9999>火元素抗性</color> 降低15%，持續6秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "妮露",
+        "desc": "<p>祖拜爾劇場的知名舞者，舞姿靈動優美，為人純真親善。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/09/7998136/586d726f9ebda3506c78beaaa41f13b6_4107942922283942464.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「星天的花雨」</color>\n處於「金杯的豐饋」狀態下的角色對敵人造成水元素傷害後，該敵人的 <color=#80c0ff>水元素抗性</color> 降低35%，持續10秒；觸發綻放反應對敵人造成傷害後，該敵人的 <color=#99ff88>草元素抗性</color> 降低35%，持續10秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2967,
+        "name": "琺露珊",
+        "desc": "<p>來自「一百年前」的學者，喜歡以前輩自居，對各類古老文字與古典機關都頗有研究。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/7998136/38c12ab46678a4008f83a0e46c900ef5_8414742091537624810.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「摶風秘道」</color>\n「烈風波」釋放時，將對周圍的敵人施加「詭風之禍」效果：降低敵人的 <color=#80ffd7>風元素抗性</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3963,
+        "name": "林尼",
+        "desc": "<p>伶牙俐齒，演技精湛的著名楓丹魔術師，以精妙的手法和言語牽動著觀眾的心。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/15/7998136/e343d4442cc3b8e243f0d528bb715f75_292413766649029849.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「熟稔習練的籌謀」</color>\n林尼的元素類型為火元素的重擊攻擊命中敵人後，該敵人的 <color=#ff9999>火元素抗性</color> 降低20%，持續6秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4577,
+        "name": "夏沃蕾",
+        "desc": "<p>時刻恪守著心中「正義」的特巡隊隊長，手中的銃槍只會指向負罪之人。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/01/08/125391187/a846729f31f16a987a8696466ebabcc0_6920090480115558173.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「尖兵協同戰法」</color>\n當隊伍中角色的元素類型滿足固有天賦的條件時，夏沃蕾將為隊伍中附近的角色施加「協同戰法」：角色觸發超載反應後，受本次反應影響的敵人的 <color=#ff9999>火元素抗性</color> 與 <color=#ffacff>雷元素抗性</color> 降低40%，持續6秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4576,
+        "name": "娜維婭",
+        "desc": "<p>刺玫會現任會長，一位可愛、盡責的好老闆。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/20/142229365/3fc7580c01a9e622692402889706c4db_9060602796687984077.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「銘誓者的絕不姑息」</color>\n「如霰澄天的鳴禮」命中敵人時，將使該敵人的 <color=#ffe699>岩元素抗性</color> 降低20%，持續8秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5714,
+        "name": "艾梅莉埃",
+        "desc": "楓丹香水設計師，將秘密藏於瓶中之人。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「湖光頂調」</color>\n<color=#ffd780>擷萃調香</color> 、 <color=#ffd780>香氛演繹</color> 或固有天賦「餘薰」的清露香氛（需解鎖該固有天賦）命中敵人時，該敵人的 <color=#99ff88>草元素抗性</color> 降低30%，持續10秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6317,
+        "name": "基尼奇",
+        "desc": "維茨特蘭的獵龍人，精於度量代價。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/12/0099e74b4d0c919f6feab4bade3ab748_5795733017114624391.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「星虎之掌」</color>\n基尼奇的元素戰技命中敵人時，將使其 <color=#99ff88>草元素抗性</color> 降低30%，持續6秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6924,
+        "name": "希諾寧",
+        "desc": "<p>納茨卡延的鑄名師，善於在工作的重擔與舒適的生活之間找到平衡點。</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/b07074c2b9040516fd240b6b8d65c011_2487211347344319683.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「音火鍛淬」</color>\n希諾寧擁有三枚取樣器，根據隊伍中其他角色的元素類型，能夠呈現出不同的「音型」，並在啟動時降低附近的敵人的對應元素抗性。三枚取樣器初始記錄的「源音取樣」均為 <color=#ffe699>岩元素</color> ，隊伍中每存在一名 <color=#ff9999>火元素</color> 、 <color=#80c0ff>水元素</color> 、 <color=#99ffff>冰元素</color> 或 <color=#ffacff>雷元素</color> 角色，一枚 <color=#ffe699>岩元素</color> 取樣便將轉變為對應的元素類型。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7306,
+        "name": "旅行者（火）",
+        "desc": "<p>從世界之外漂流而來的旅行者，被神帶走血親，自此踏上尋找七神之路。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/31/142453215/77d14c83c68cc40c55134c5082fa71ad_4761541532867260597.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「長明的燭火」</color>\n對抗「古斯托特」化形的蝕滅的源焰之主時，處於夜魂加持狀態下時，旅行者的元素類型為 <color=#ff9999>火元素</color> 的攻擊命中敵人後，該敵人的 <color=#ff9999>火元素抗性</color> 降低20%，持續6秒，此效果至多疊加2層，每層獨立計算持續時間。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7300,
+        "name": "茜特菈莉",
+        "desc": "煙謎主的大薩滿，令所有族人敬畏的黑曜石奶奶。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/27/c4ab2530bb8bbe3c0e811684f97ec124_6688582217610741079.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「五重天的寒雨」</color>\n伊茲帕帕存在期間，隊伍中附近的角色觸發凍結反應或融化反應後，受本次反應影響的敵人的 <color=#ff9999>火元素</color> 與 <color=#80c0ff>水元素</color> 抗性還會降低20%，持續12秒。\n<color=#ffffff>命之座 第2層「吞心者的巡行」</color>\n伊茲帕帕存在期間，隊伍中附近的角色觸發凍結反應或融化反應後，受本次反應影響的敵人的 <color=#ff9999>火元素</color> 與 <color=#80c0ff>水元素</color> 抗性還會額外降低20%，持續12秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "聖遺物",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "翠綠之影",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n根據擴散的元素類型，降低受到影響的敵人40%的對應元素抗性，持續10秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2672,
+        "name": "深林的記憶",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/26/7998136/f526e111c9c7dcbaed0d7fd8c8d58ef2_915625744135471261.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n元素戰技或元素爆發命中敵人後，使命中目標的草元素抗性降低30%，持續8秒。\n其他： 元素共鳴 - 岩：堅定之岩 （",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5559,
+        "name": "元素共鳴",
+        "desc": "<p>元素共鳴會根據隊伍中角色的元素，提供額外的效果。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/12/142453215/48a42573a047430dc750c3170811b465_5746105649190034818.png",
+        "displayStyle": "text",
+        "menuId": 14
+      },
+      {
+        "type": "RichText",
+        "text": "）",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/5d19563cbf05ce24d8d844625bb0590f_3624340874907172436.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "以上展示了麗莎在不同情況下，攻擊同個敵人所造成的傷害對比。第一張圖：沒有抗性相關的減益效果；第二張圖：獲得翠綠之影4件套裝觸發的減抗效果；第三張圖：同時獲得翠綠之影4件套裝和鍾離（玉璋護盾）觸發的減抗效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "傷害加成倍率",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "所有傷害類型（劇變反應除外）都有一個通用傷害倍率。每種元素傷害和技能還有各自的專屬傷害倍率。另外還有三種特殊傷害倍率：暴擊傷害倍率（觸發暴擊時）、增幅反應傷害加成（觸發蒸發或融化反應時）和傷害承受倍率。因此 ：\n<color=#ffffff>【傷害加成倍率】</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>傷害加成倍率 = （100% + 基礎傷害加成 + 元素傷害加成 + 技能傷害加成 + 傷害承受倍率）× 增幅反應加成 × 暴擊加成</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "基礎傷害加成",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "有許多效果將提供基礎傷害加成（亦或者是傷害加成、普通傷害加成）。\n上述傷害可透過以下方式進行提升："
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "角色",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 43,
+        "name": "迪盧克",
+        "desc": "坐擁蒙德大半酒業的貴公子，財力、人望、能力都令人無法小覷。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Diluc_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「罪罰裁斷」</color>\n對生命值高於50%的敵人，迪盧克造成的傷害提高15%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 47,
+        "name": "阿貝多",
+        "desc": "西風騎士團首席煉金術士兼調查小隊隊長，被稱做「白堊之子」的天才。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Albedo_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「白堊色的威壓」</color>\n「創生法·擬造陽華」的刹那之花對生命值低於50%的敵人造成的傷害提高25%。\n<color=#ffffff>命之座 第6層「無垢之土」</color>\n處在「陽華」的領域中的隊伍中目前場上角色，若處於結晶反應產生的護盾庇護下，造成的傷害提高17%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 48,
+        "name": "雷澤",
+        "desc": "住在蒙德地區奔狼領、遠離城市與人群，和狼一起生活的少年。直覺銳利，身姿迅捷。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Razor_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「狼性」</color>\n雷澤獲得元素晶球或元素微粒後的8秒內，造成的傷害提高10%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 51,
+        "name": "魈",
+        "desc": "守護璃月的仙人，「夜叉」。美號「降魔大聖」，妙稱「護法夜叉大將」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xiao_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「降魔·平妖大聖」</color>\n在「靖妖儺舞」狀態下，魈造成的所有傷害提高5%。此後，在技能持續時間內，每經過3秒，造成的傷害再額外提高5%。\n至多獲得25%傷害加成。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2252,
+        "name": "夜蘭",
+        "desc": "自稱供職於總務司的神秘人士，卻又是總務司名錄裡的「不存在之人」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yelan_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「妙轉隨心」</color>\n<color=#ffd780>玄擲玲瓏</color> 存在期間，能使隊伍中自己的目前場上角色造成的傷害提高1%，並且每1秒進一步提高3.5%，至多使角色造成的傷害提高50%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3963,
+        "name": "林尼",
+        "desc": "<p>伶牙俐齒，演技精湛的著名楓丹魔術師，以精妙的手法和言語牽動著觀眾的心。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/15/7998136/e343d4442cc3b8e243f0d528bb715f75_292413766649029849.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「完場喝彩」</color>\n林尼對處於 <color=#ff9999>火元素</color> 影響下的敵人造成的傷害，將以下述方式提升：\n· 基礎提升60%。\n· 隊伍中林尼以外每位元素類型為 <color=#ff9999>火元素</color> 的角色，提升20%。\n藉由上述方式，至多使林尼對處於 <color=#ff9999>火元素</color> 影響下的敵人造成的傷害提升100%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4376,
+        "name": "芙寧娜",
+        "desc": "<p>審判舞臺上的絕對焦點，直至謝幕的掌聲響起。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/07/133389800/263e5ea0784d182b393f67a7e24146a5_1412526942426865234.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「萬眾狂歡」</color>\n施放時，使隊伍中附近的角色進入「普世歡騰」狀態：持續期間，角色的目前生命值提升或降低時，基於提升或降低數值相對於生命值上限的比例，每1%都將使芙寧娜獲得1點「氣氛值」。\n同時，基於芙寧娜持有的「氣氛值」，附近的隊伍中所有角色造成的傷害提升，受治療加成提升。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5714,
+        "name": "艾梅莉埃",
+        "desc": "楓丹香水設計師，將秘密藏於瓶中之人。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「精餾」</color>\n基於艾梅莉埃的攻擊力，提升艾梅莉埃對處於燃燒狀態下的敵人造成的傷害：每1000點攻擊力都將提升15%傷害，至多依此方式提升36%傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6924,
+        "name": "希諾寧",
+        "desc": "<p>納茨卡延的鑄名師，善於在工作的重擔與舒適的生活之間找到平衡點。</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/b07074c2b9040516fd240b6b8d65c011_2487211347344319683.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「獻予灼原的五重奏」</color>\n希諾寧的「源音取樣」啟動時，使隊伍中附近所有 <color=#ffe699>岩元素</color> 的角色獲得對應效果：造成的傷害提升50%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7306,
+        "name": "旅行者（火）",
+        "desc": "<p>從世界之外漂流而來的旅行者，被神帶走血親，自此踏上尋找七神之路。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/31/142453215/77d14c83c68cc40c55134c5082fa71ad_4761541532867260597.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「流光的星火」</color>\n<color=#ffd780>焰烈之檻</color> 或 <color=#ffd780>灼火之檻</color> 存在期間，目前場上角色造成的傷害提升6%；若目前場上角色處於夜魂加持狀態，造成的傷害還會提升9%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7299,
+        "name": "瑪薇卡",
+        "desc": "納塔的領袖，繼承「基揚戈茲」之古名，誓以聖火為戰爭國度照亮未來。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/30/2f098b1f15854fd9dafc54998795a59e_864981592196815761.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「『基揚戈茲』」</color>\n施放元素爆發 <color=#ffd780>燔天之時</color> 後，依據施放時的戰意，每點戰意都將使目前場上角色造成的傷害提升0.2%，依此方式至多使隊伍中的目前場上角色造成的傷害提升40%，該效果持續20秒，並會在持續時間內逐漸降低為0。\n<color=#ffffff>命之座 第4層「『領袖』的覺悟」</color>\n施放元素爆發 <color=#ffd780>燔天之時</color> 後的傷害提升效果不再隨時間降低，並額外獲得10%傷害加成。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "武器",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1938,
+        "name": "冷刃",
+        "desc": "多層鍛打的精鋼鑄就的可靠兵器，曾見證舊主諸多冒險奇譚。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/冷刃.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "對處於水元素或冰元素影響下的敵人，造成的傷害提高 <color=#37ffff>12%/15%/18%/21%/24%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1940,
+        "name": "匣裡滅辰",
+        "desc": "金龍纏繞的長槍，輕快銳利無比。大概真能輕易屠龍。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/匣里灭辰.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "對處於水元素或火元素影響下的敵人，造成的傷害提高 <color=#37ffff>20%/24%/28%/32%/36%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1941,
+        "name": "匣裡龍吟",
+        "desc": "雕飾浮華的利刃，卻絲毫不損它的柔韌與鋒銳。破空之聲有如龍吟。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/匣里龙吟.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "對處於火元素或雷元素影響下的敵人，造成的傷害提高 <color=#37ffff>20%/24%/28%/32%/36%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1948,
+        "name": "和璞鳶",
+        "desc": "魔神翡玉化作的長槍，擁有刺殺遠古海獸的沉重與鋒利。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/和璞鸢.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "命中敵人時自身攻擊力提高 <color=#37ffff>3.2%/3.9%/4.6%/5.3%/6%</color> ，持續6秒，最高可以疊加七層。該效果每0.3秒最多觸發一次。疊滿狀態時傷害提升 <color=#37ffff>12%/15%/18%/21%/24%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1953,
+        "name": "天空之傲",
+        "desc": "象徵風龍的驕傲廣布長空的雙手劍。揮舞時的低吟是風龍的氣勢，蘊含蒼空與長風的力量。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之傲.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "造成的傷害提高 <color=#37ffff>8%/10%/12%/14%/16%</color> ；施放元素爆發後：普通攻擊和重擊命中時會發出真空刃，對路徑上的敵人造成 <color=#37ffff>80%/100%/120%/140%/160%</color> 攻擊力的傷害，持續20秒或直至發出8次真空刃。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1981,
+        "name": "暗巷獵手",
+        "desc": "外形精巧奢華的長弓，曾屬於某位從未被抓獲的義賊。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/暗巷猎手.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "裝備該武器的角色處於隊伍後臺時，每1秒角色造成的傷害提升 <color=#37ffff>2%/2.5%/3%/3.5%/4%</color> ，最多可透過這種方式獲得 <color=#37ffff>20%/25%/30%/35%/40%</color> 的傷害提升；在場上超過4秒後，上述傷害提升效果每1秒會流失 <color=#37ffff>4%/5%/6%/7%/8%</color> ，直到降低至0%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1983,
+        "name": "暗巷閃光",
+        "desc": "有著黑夜顏色的筆直長劍，曾屬於穿行於暗巷的盜賊。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/暗巷闪光.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "角色造成的傷害提升 <color=#37ffff>12%/15%/18%/21%/24%</color> 。受到傷害後，該傷害提升效果會失效5秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1988,
+        "name": "沐浴龍血的劍",
+        "desc": "據說是北方英雄浸過龍血的鋼鐵大劍，有刀槍不入的神力…這種護佑並不會延伸到揮舞它的人身上。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/沐浴龙血的剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "對處於火元素或雷元素影響下的敵人，造成的傷害提高 <color=#37ffff>12%/15%/18%/21%/24%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2002,
+        "name": "神射手之誓",
+        "desc": "據說曾屬於技藝高強的射手，是一把上好的弓。因為散發出強烈的氣息，難以用於狩獵。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/神射手之誓.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "針對要害造成的傷害提升 <color=#37ffff>24%/30%/36%/42%/48%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2012,
+        "name": "蒼古自由之誓",
+        "desc": "如同悠古的歌聲一般蒼藍的直劍，如同風之國土自由的誓言一般銳利的武器。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/苍古自由之誓.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "飄遊風中的「千年的大樂章」的一部分。造成的傷害提高 <color=#37ffff>10%/12.5%/15%/17.5%/20%</color> ；「千年的大樂章·抗爭之歌」效果：普通攻擊、重擊、下落攻擊造成的傷害提高 <color=#37ffff>16%/20%/24%/28%/32%</color> ，攻擊力提升 <color=#37ffff>20%/25%/30%/35%/40%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2015,
+        "name": "螭骨劍",
+        "desc": "來自古代大海的稀有兵器，舞劍獵獵宛如太古的濤聲。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/螭骨剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "角色在場上時，每4秒提升 <color=#37ffff>6%/7%/8%/9%/10%</color> 造成的傷害，同時增加 <color=#37ffff>3%/2.7%/2.4%/2.2%/2%</color> 所受到的傷害。該效果最多疊加五層，不隨角色退場重置，受到傷害後會失去一層效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2033,
+        "name": "鐘劍",
+        "desc": "裝有時鐘的厚重大劍，其中的計時機關早已被破壞。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/钟剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "受到傷害時，產生一個傷害吸收量等同於生命值上限 <color=#37ffff>20%/23%/26%/29%/32%</color> 的護盾，持續10秒或直到護盾失效，每45秒只能觸發一次。角色處於護盾庇護下時，造成的傷害提升 <color=#37ffff>12%/15%/18%/21%/24%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2038,
+        "name": "鐵蜂刺",
+        "desc": "外形流利的細長刺劍，是從異國經由商路流落到璃月的奇異兵器。輕快無比，劍芒極其銳利。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/铁蜂刺.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "造成元素傷害後的6秒內，角色造成的傷害提高 <color=#37ffff>6%/7.5%/9%/10.5%/12%</color> ，最多疊加兩層。該效果每秒只能觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2042,
+        "name": "雨裁",
+        "desc": "散發著黯淡螢光的無鋒大劍，純粹以氣勢和力量碾碎敵人。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/雨裁.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "對處於水元素或雷元素影響的敵人，造成的傷害提高 <color=#37ffff>20%/24%/28%/32%/36%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2050,
+        "name": "魔導緒論",
+        "desc": "第十二版。結合時代發展加註了新內容，並修訂了第十一版的錯別字。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/魔导绪论.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "對受水元素或雷元素影響的敵人，造成的傷害提高 <color=#37ffff>12%/15%/18%/21%/24%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2051,
+        "name": "鴉羽弓",
+        "desc": "相傳渡鴉是死的使者。將鴉羽裝飾在弓臂上，射出的每一箭都宣告著獵物的終末。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/鸦羽弓.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "對處於水元素或火元素影響下的敵人，造成的傷害提高 <color=#37ffff>12%/15%/18%/21%/24%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2059,
+        "name": "黑纓槍",
+        "desc": "解決了白纓容易弄髒問題的絕世好槍。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/黑缨枪.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "對史萊姆類敵人造成的傷害增加 <color=#37ffff>40%/50%/60%/70%/80%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2254,
+        "name": "若水",
+        "desc": "色澤流移難測的長弓，在光下顯現著如水的潤藍。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/若水.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "生命值提升 <color=#37ffff>16%/20%/24%/28%/32%</color> 。周圍存在敵人時，裝備該武器的角色造成的傷害都會提升 <color=#37ffff>20%/25%/30%/35%/40%</color> ，不論該角色處於場上或是處於隊伍後台。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2255,
+        "name": "落霞",
+        "desc": "以白金精製而成的寶弓，其上鑲嵌著霞光閃爍的寶珠。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/落霞.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "具有夕暮、流霞、朝暉三種狀態，分別能使造成的傷害提升 <color=#37ffff>6%/10%/14%</color> | <color=#37ffff>7.5%/12.5%/17.5%</color> | <color=#37ffff>9%/15%/21%</color> | <color=#37ffff>10.5%/17.5%/24.5%</color> | <color=#37ffff>12%/20%/28%</color> 。攻擊命中敵人後，將轉換為下一種狀態，每7秒至多轉換一次狀態。裝備該武器的角色處於隊伍後台時該效果依舊能觸發轉換。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3319,
+        "name": "東花坊時雨",
+        "desc": "<p>稍微有點特別的油紙傘。儘管長久的旅行中已經習慣風雨，與之一同靜賞雨景或許也有其中妙趣。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/15/7998136/e611885dcef509e0ced1b3aec547ebf0_6995852718995842968.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "攻擊命中敵人後，會向命中的一名敵人施加「紙傘作祟」狀態，持續10秒。該效果每15秒至多觸發一次；持續期間該敵人被擊敗時，將清除該效果的冷卻時間。裝備者對處於「紙傘作祟」狀態下的敵人造成的傷害提升 <color=#37ffff>16%/20%/24%/28%/32%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3987,
+        "name": "靜謐之曲",
+        "desc": "<p>外觀奇異有如海中生物的長弓，弦振之時似乎毫無聲音。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/7998136/2cec558b676eefaafe23b64d42f2067e_8999221175004845776.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "受到治療後，造成的傷害提升 <color=#37ffff>16%/20%/24%/28%/32%</color> ，持續8秒。角色處於隊伍後臺也能觸發。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5577,
+        "name": "赤月之形",
+        "desc": "色澤如赤月般刺眼的鋒利銳器。據說在某個古老的王朝中曾被視為連接兩界的禮器，但如今早已不再有人記得彼時的信仰與典儀。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/24/ce91a453b9a942c9ab20df0f62caa033_358081180956617633.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "重擊命中敵人時，賦予生命值上限25%的生命之契，該效果每14秒至多觸發一次。此外，裝備者具有生命之契時，造成的傷害提升 <color=#37ffff>12%/16%/20%/24%/28%</color> ；若生命之契的數值大於等於生命值上限的30%，造成的傷害將進一步提升 <color=#37ffff>24%/32%/40%/48%/56%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5674,
+        "name": "赦罪",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">曾經棄絕一切的騙徒使用過的刺劍，過去主要是他偽裝身分活動時用的道具。</span></p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/05/142453215/bb6b46b6833be392831d87e836fd979d_5081124797689846688.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "暴擊傷害提升 <color=#37ffff>20%/25%/30%/35%/40%</color> ；生命之契的數值增加時，裝備者造成的傷害提升 <color=#37ffff>16%/20%/24%/28%/32%</color> 。該效果持續6秒，至多疊加3次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5847,
+        "name": "柔燈輓歌",
+        "desc": "裝飾著蒼水晶的華美長槍，據說曾是某位傳奇決鬥代理人終生珍藏卻從未使用過的武器。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/3dff07a4b024917cb63c933d2078ccc8_8401589850337226556.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "裝備者對敵人觸發燃燒反應或對處於燃燒狀態下的敵人造成草元素傷害後，造成的傷害提高 <color=#37ffff>18%/23%/28%/33%/38%</color> 。該效果持續8秒，至多疊加2層。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7366,
+        "name": "祭星者之望",
+        "desc": "以鷹之形雕刻的造像，煙謎主世代傳承的聖物之一。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/26/de225a286996965268c32027a6c484d9_2367767765928118667.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "元素精通提升 <color=#37ffff>100/125/150/175/200</color> 點。裝備者創造護盾後的15秒內，獲得「照夜之鏡」效果：隊伍中自己的目前場上角色對附近的敵人造成的傷害提升 <color=#37ffff>28%/35%/42%/49%/56%</color> ，每14秒至多獲得一次「照夜之鏡」效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "聖遺物",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2063,
+        "name": "勇士之心",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Brave Heart/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n對生命值高於50%的敵人，造成的傷害增加30%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2070,
+        "name": "平息鳴雷的尊者",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundersoother/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n對處於雷元素影響下的敵人造成的傷害提升35%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2083,
+        "name": "渡過烈火的賢人",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Lavawalker/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n對處於火元素影響下的敵人造成的傷害提升35%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5578,
+        "name": "諧律異想斷章",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/24/7557f4558ab243d82e8b6b9994fc97ee_7049965257988970706.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n生命之契的數值提升或降低時，角色造成的傷害提升18%，該效果持續6秒，至多疊加3次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5579,
+        "name": "未竟的遐思",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/24/356c6b0e1be129282f759d8844872c7d_2911260570448763671.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n脫離戰鬥狀態3秒後，造成的傷害提升50%。在戰鬥狀態下，附近不存在處於燃燒狀態下的敵人超過6秒後，上述傷害提升效果每秒降低10%，直到降低至0%；存在處於燃燒狀態下的敵人時，每秒提升10%，直到達到50%。裝備此聖遺物套裝的角色處於隊伍後臺時，依然會觸發該效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6554,
+        "name": "黑曜秘典",
+        "desc": "<p>用黑色晶石精心雕琢而成的花朵，在夜間似乎會散發出神秘的幽光。</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/cd11df3be5420d2c53c2da0d3298eb92_4238581052558034331.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n裝備者處於夜魂加持狀態，並且在場上時，造成的傷害提高15%。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "元素傷害加成",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "一些角色的突破屬性會提升特定元素傷害加成："
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ff9999>火元素傷害</color> 加成",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 12,
+        "name": "可莉",
+        "desc": "西風騎士團禁閉室的常客，蒙德的爆破大師。人稱「逃跑的太陽」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 24,
+        "name": "煙緋",
+        "desc": "活躍在璃月港的知名律法諮詢師，混有仙獸血脈的精明少女。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yanfei_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#80c0ff>水元素傷害</color> 加成",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 42,
+        "name": "達達利亞",
+        "desc": "愚人眾執行官第十一位，「公子」，其戰績威名遠揚。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Tartaglia_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 25,
+        "name": "珊瑚宮心海",
+        "desc": "海祇島的「現人神巫女」，統管海祇島各項事宜的少女。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sangonomiya Kokomi_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffacff>雷元素傷害</color> 加成",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 11,
+        "name": "北斗",
+        "desc": "武裝船隊「南十字」的首領，豪快的大姊頭。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Beidou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#99ffff>冰元素傷害</color> 加成",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 44,
+        "name": "迪奧娜",
+        "desc": "遺傳了稀薄「非人」血統的少女，「貓尾酒館」的超人氣調酒師。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Diona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 13,
+        "name": "亞蘿伊",
+        "desc": "曾經是被逐者，如今則是無比機敏的獵人。隨時準備著為了正當之事而挽弓放箭。",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/03/7998136/7f270a1c3d5be225a3c61bff4fbe4ac6_3311723060547883859.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#80ffd7>風元素傷害</color> 加成",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 30,
+        "name": "砂糖",
+        "desc": "對萬物充滿好奇的煉金術士，「生物煉金」學派的研究者。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sucrose_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2263,
+        "name": "鹿野院平藏",
+        "desc": "天領奉行的天才少年偵探，直覺敏銳，心思玲瓏。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Shikanoin Heizou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3962,
+        "name": "琳妮特",
+        "desc": "<p>寡言少語，罕有表情的魔術助手，性情像貓一樣難以猜測。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/15/7998136/436e6f2b9b9006bfe511a98093259daf_4443395808825570583.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffe699>岩元素傷害</color> 加成",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 47,
+        "name": "阿貝多",
+        "desc": "西風騎士團首席煉金術士兼調查小隊隊長，被稱做「白堊之子」的天才。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Albedo_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8,
+        "name": "凝光",
+        "desc": "「璃月七星」中的「天權」，其名下財富之多，全大陸鮮有人能望其項背。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Ningguang_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 46,
+        "name": "鍾離",
+        "desc": "被「往生堂」請來的神祕客人，知識淵博，對各種事物都頗有見地。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Zhongli_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5,
+        "name": "五郎",
+        "desc": "海祇島軍的大將，深受部下信賴。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Gorou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6318,
+        "name": "卡齊娜",
+        "desc": "納茨卡延的年輕戰士，受賜古名「烏沙博蒂」。善良執著的少女，在挫折中不斷成長。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/26925adb1092d29c8afdf46d92fad8bd_343637410022641529.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#99ff88>草元素傷害</color> 加成",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2265,
+        "name": "提納里",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">精通植物學的少年學者，現於道成林任巡林官一職。直率熱忱，擅長教導腦袋不清楚的人。</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/24/7998136/d039c6da9285163f46b85f0241f29c17_1332543106735487687.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3336,
+        "name": "艾爾海森",
+        "desc": "<p>須彌教令院現任書記官，有過人的智慧與才能。生活的自由自在，一般人很難找到他。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/12/7998136/25249dd20b86c775fb35bdbbd805d9ec_6145693736965233433.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>物理傷害</color> 加成",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 48,
+        "name": "雷澤",
+        "desc": "住在蒙德地區奔狼領、遠離城市與人群，和狼一起生活的少年。直覺銳利，身姿迅捷。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Razor_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "一些武器被動效果提供特定元素傷害加成："
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1931,
+        "name": "萬國諸海圖譜",
+        "desc": "詳盡記載了大陸周邊海流氣候的海圖，是從異國經由商路流落到璃月的奇異典籍。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/万国诸海图谱.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "觸發元素反應後的10秒內，獲得 <color=#37ffff>8%/10%/12%/14%/16%</color> 元素傷害加成，該效果最多可以疊加兩層。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1951,
+        "name": "四風原典",
+        "desc": "崇信風的無名先民所寫的教典珍本。數千年流傳的信仰之力得到了風的青睞，飽含祝福與力量。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/四风原典.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "在場上每4秒獲得 <color=#37ffff>8%/10%/12%/14%/16%</color> 元素傷害加成。該效果最多疊加四層，持續直到角色倒下或離場。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1955,
+        "name": "天空之卷",
+        "desc": "象徵風龍與其主風之神的雲圖集。細緻記載了北地天空的風與雲，蘊含蒼空與長風的力量。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之卷.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "元素傷害加成提升 <color=#37ffff>12%/15%/18%/21%/24%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1970,
+        "name": "息災",
+        "desc": "由奇異晶石打造成的鋒銳利器。幽幽藍光似乎訴說著無盡往事。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/息灾.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "獲得 <color=#37ffff>12%/15%/18%/21%/24%</color> 所有元素傷害加成。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1989,
+        "name": "波亂月白經津",
+        "desc": "經津傳奉命鍛造的名作。因其如洶湧海濤般的氣度，而得「波亂」之名。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/波乱月白经津.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "獲得 <color=#37ffff>12%/15%/18%/21%/24%</color> 所有元素傷害加成。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1991,
+        "name": "流浪樂章",
+        "desc": "記載著歌譜的厚重記事簿。儘管遭受了蟲蛀和風化，殘留的手跡仍透露出力量。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/流浪乐章.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "角色登場時，隨機獲得一個主題曲，持續10秒。每30秒只能觸發一次。宣敘調：攻擊力提升 <color=#37ffff>60%/75%/90%/105%/120%</color> ；詠嘆調：全元素傷害提升 <color=#37ffff>48%/60%/72%/84%/96%</color> ；間奏曲：元素精通提升 <color=#37ffff>240/300/360/420/480</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1997,
+        "name": "白辰之環",
+        "desc": "承載著過去的「狐齋宮」思念的法器。但她的思念之大，是無法完全裝進這樣小小的器物當中的。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/白辰之环.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "裝備該武器的角色觸發雷元素相關反應後，附近如有隊伍成員角色具備相關元素類型，則其獲得 <color=#37ffff>10%/12.5%/15%/17.5%/20%</color> 對應元素的元素傷害加成，持續6秒。透過這種方式，角色獲得的元素傷害加成無法疊加。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2001,
+        "name": "神樂之真意",
+        "desc": "表演神樂之舞時所用的神鈴，為宮司所賜福。神櫻之香縈繞其上。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/神乐之真意.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "施放元素戰技時，將獲得「神樂舞」的效果，使裝備該武器的角色的元素戰技造成的傷害提高 <color=#37ffff>12%/15%/18%/21%/24%</color> ，該效果持續16秒，至多疊加3層。持有3層時，該角色獲得 <color=#37ffff>12%/15%/18%/21%/24%</color> 所有元素傷害加成。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2044,
+        "name": "霧切之回光",
+        "desc": "閃爍著淒烈紫光的太刀。名之為「回光」是因為一度破碎的過去。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/雾切之回光.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "獲得 <color=#37ffff>12%/15%/18%/21%/24%</color> 所有元素傷害加成，並能獲得「霧切之巴印」的威勢。持有1/2/3層霧切之巴印時，獲得 <color=#37ffff>8%/16%/28%</color> | <color=#37ffff>10%/20%/35%</color> | <color=#37ffff>12%/24%/42%</color> | <color=#37ffff>14%/28%/49%</color> | <color=#37ffff>16%/32%/56%</color> 自己的元素類型的元素傷害加成。在下列情況下，角色將各獲得一層霧切之巴印：普通攻擊造成元素傷害時，持續5秒；施放元素爆發時，持續10秒；此外，角色元素能量低於100%時，將獲得一層霧切之巴印，此霧切之巴印會在角色的元素能量充滿時消失。每層霧切之巴印的持續時間獨立計算。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2665,
+        "name": "獵人之徑",
+        "desc": "<p>以珍貴的白枝製成的飾金獵弓，曾經射落無數侵入森林的惡獸。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/27/7998136/110a33dca005873d039a32c6c931d405_6220623713043137434.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "獲得 <color=#37ffff>12%/15%/18%/21%/24%</color> 所有元素傷害加成。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2966,
+        "name": "千夜浮夢",
+        "desc": "<p>浮映千夜之夢的燈盞，蒼翠的光中流溢著遙世的歌。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/05/7998136/afd146c520b3a0bd72489a3426d8f283_2843731128544519943.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "隊伍中每個其他角色，都會依據元素類型與裝備者相同與否，為裝備者提供提升效果。不同：裝備者元素類型的元素傷害加成提升 <color=#37ffff>10%/14%/18%/22%/26%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3692,
+        "name": "碧落之瓏",
+        "desc": "<p>由碧色美玉雕成的禮器，放射著天空與碧水的光澤。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/05/7998136/60b6e74409a2968274520d00d89d8752_9097915064544716385.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "施放元素爆發或創造護盾後的3秒內，將產生「定土玉圭」效果：每2.5秒恢復 <color=#37ffff>4.5/5/5.5/6/6.5</color> 點元素能量，並基於裝備者的生命值上限，每1000點使其對應元素類型的元素傷害加成提高 <color=#37ffff>0.3%/0.5%/0.7%/0.9%/1.1%</color> ，至多提高 <color=#37ffff>12%/20%/28%/36%/44%</color> 。裝備該武器的角色處於隊伍後臺時，依然能產生「定土玉圭」效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3988,
+        "name": "純水流華",
+        "desc": "<p>造型奇特的劇本集，其中收錄了科培琉司創作的所有劇本。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/7998136/0130ca8183d3daa2eddbb9200a1d776f_1236265886471627969.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "施放元素戰技時，所有元素傷害加成提升 <color=#37ffff>8%/10%/12%/14%/16%</color> ，持續15秒，並賦予生命值上限24%的生命之契，該效果每10秒至多觸發一次。生命之契清除時，每清除1000點將會提供 <color=#37ffff>2%/2.5%/3%/3.5%/4%</color> 所有元素傷害加成，至多依此方式獲得 <color=#37ffff>12%/15%/18%/21%/24%</color> 所有元素傷害加成，持續15秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4000,
+        "name": "聊聊棒",
+        "desc": "<p>一柄沉重並鑲有黑曜石的大棒，有很強的說服力。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/7998136/6e0130263c2de43a0bd7863edce22df3_5914488214031233634.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "承受火元素附著後的15秒內，攻擊力提升 <color=#37ffff>16%/20%/24%/28%/32%</color> ，每12秒至多觸發一次；承受水元素、冰元素、雷元素或草元素附著後的15秒內，所有元素傷害加成提升 <color=#37ffff>12%/15%/18%/21%/24%</color> ，每12秒至多觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4336,
+        "name": "勘探鑽機",
+        "desc": "<p>如今幾乎絕跡的長柄鑽機，常用於勘探與石料切割雕刻作業。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/10/01/125391187/4bfc21303d8ff98cd546aae980b55090_6997813976314131516.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "受到治療或進行治療時，將賦予一枚團結標記，持續30秒，至多擁有三枚團結標記。施放元素戰技或元素爆發時，將消耗所有的團結標記，產生持續10秒的「抗爭」效果：每枚消耗的團結標記提高 <color=#37ffff>3%/4%/5%/6%/7%</color> 攻擊力與 <color=#37ffff>7%/8.5%/10%/11.5%/13%</color> 所有元素傷害加成。每15秒至多觸發一次抗爭效果；角色處於隊伍後臺時也能獲得團結標記。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4337,
+        "name": "測距規",
+        "desc": "<p>如今幾乎絕跡的測量工具，具有發射箭矢的能力。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/10/01/125391187/4e67e6c313220ea1ca84a48d42d78806_6014863263279751367.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "受到治療或進行治療時，將賦予一枚團結標記，持續30秒，至多擁有三枚團結標記。施放元素戰技或元素爆發時，將消耗所有的團結標記，產生持續10秒的「抗爭」效果：每枚消耗的團結標記提高 <color=#37ffff>3%/4%/5%/6%/7%</color> 攻擊力與 <color=#37ffff>7%/8.5%/10%/11.5%/13%</color> 所有元素傷害加成。每15秒至多觸發一次抗爭效果；角色處於隊伍後臺時也能獲得團結標記。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7029,
+        "name": "岩峰巡歌",
+        "desc": "鋒銳無比的黑曜石長刀，輕巧如歌。經過某位工匠的改造後，附加了能夠播放唱片的可拆式燃素裝置。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/862200e1c8e0ee60c2396d8f4fbe7fb8_4291183729855777874.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "普通攻擊或下落攻擊命中敵人後，將獲得「榮花之歌」：防禦力提高 <color=#37ffff>8%/10%/12%/14%/16%</color> ，並獲得 <color=#37ffff>10%/12.5%/15%/17.5%/20%</color> 所有元素傷害加成，該效果持續6秒，至多疊加2層，每0.1秒至多觸發一次。該效果疊加至2層或2層的持續時間重置時，基於裝備者的防禦力，每1000點使隊伍中附近所有角色的所有元素傷害加成提高 <color=#37ffff>8%/10%/12%/14%/16%</color> ，至多提高 <color=#37ffff>25.6%/32%/38.4%/44.8%/51.2%</color> ，持續15秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "一些聖遺物提供特定元素傷害加成："
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2062,
+        "name": "冰風迷途的勇士",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Blizzard Strayer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n獲得15% <color=#99ffff>冰元素傷害</color> 加成。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2065,
+        "name": "華館夢醒形骸記",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Husk of Opulent Dreams/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n裝備此聖遺物套裝的角色在以下情況下，將獲得「問答」效果：在場上用岩元素攻擊命中敵人後獲得一層，每0.3秒至多觸發一次；在隊伍後台中，每3秒獲得一層。問答至多疊加4層，每層能提供6%防禦力與6% <color=#ffe699>岩元素傷害</color> 加成。每6秒，若未獲得問答效果，將損失一層。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "如雷的盛怒",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n獲得15% <color=#ffacff>雷元素傷害</color> 加成。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2072,
+        "name": "悠古的磐岩",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Archaic Petra/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n獲得15% <color=#ffe699>岩元素傷害</color> 加成。\n<color=#ffffff>4件套裝</color>\n獲得結晶反應形成的晶片時，隊伍中所有角色獲得35%對應元素傷害加成，持續10秒。同時只能通過該效果獲得一種元素傷害加成。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2077,
+        "name": "染血的騎士道",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Bloodstained Chivalry/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n造成的 <color=#ffffff>物理傷害</color> 提高25%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2079,
+        "name": "沉淪之心",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Heart of Depth/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n獲得15% <color=#80c0ff>水元素傷害</color> 加成。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "熾烈的炎之魔女",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n獲得15% <color=#ff9999>火元素傷害</color> 加成。\n<color=#ffffff>4件套裝</color>\n施放元素戰技後的10秒內，2件套的效果提高50%，該效果最多疊加3次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "翠綠之影",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n獲得15% <color=#80ffd7>風元素傷害</color> 加成。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2092,
+        "name": "蒼白之火",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Pale Flame/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n造成的 <color=#ffffff>物理傷害</color> 提高25%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2672,
+        "name": "深林的記憶",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/26/7998136/f526e111c9c7dcbaed0d7fd8c8d58ef2_915625744135471261.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n獲得15% <color=#99ff88>草元素傷害</color> 加成。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3322,
+        "name": "沙上樓閣史話",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/13/7998136/b86d9fd7cf57937a021c9c68c9b185ed_5106279965807427888.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n獲得15% <color=#80ffd7>風元素傷害</color> 加成。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3693,
+        "name": "水仙之夢",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/12/7998136/1bde348ad550ef356ff197b93caed6c8_5720571480310732128.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n獲得15% <color=#80c0ff>水元素傷害</color> 加成。\n<color=#ffffff>4件套裝</color>\n普通攻擊、重擊、下落攻擊、元素戰技或元素爆發命中敵人後，將產生1層持續8秒的「鏡中水仙」效果。處於1/2/3層及以上「鏡中水仙」效果下時，攻擊力將提高7%/16%/25%， <color=#80c0ff>水元素傷害</color> 加成提升4%/9%/15%。由普通攻擊、重擊、下落攻擊、元素戰技或元素爆發產生的「鏡中水仙」將分別獨立存在。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4716,
+        "name": "回聲之林夜話",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2023/12/13/d9d39d9f046d5d23c3d497574be55a82_3464070329311643566.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n施放元素戰技後的10秒內， <color=#ffe699>岩元素傷害</color> 加成提升20%；若處於結晶反應產生的護盾庇護下，上述效果提高150%，進一步提高的效果將在失去結晶護盾庇護的1秒後移除。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6553,
+        "name": "燼城勇者繪卷",
+        "desc": "<p>用燧石與龍晶鐫刻而成的花，意味著佩戴者已獲得成為馴獸師的資格。</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/6ad5095f324c2da829ecaa5e2ed13af9_2791497672459683103.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n裝備者觸發其對應元素類型的相關反應後，隊伍中附近的所有角色的該元素反應相關的元素傷害加成提升12%，持續15秒。若觸發該效果時，裝備者處於夜魂加持狀態下，還將使隊伍中附近的所有角色的與該元素反應相關的元素傷害加成提升28%，持續20秒。裝備者處於後臺時也能觸發上述效果。同名聖遺物套裝產生的傷害加成效果無法疊加。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "技能傷害加成",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "可透過以下方式獲得技能傷害加成："
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "角色",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1,
+        "name": "七七",
+        "desc": "藥廬「不卜廬」的採藥姑娘兼學徒，面色蒼白如紙的不死之人。話很少，也沒有什麼表情。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Qiqi_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「冰寒蝕骨」</color>\n對受到 <color=#99ffff>冰元素</color> 影響的敵人，七七的普通攻擊與重擊造成的傷害提升15%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4,
+        "name": "雲堇",
+        "desc": "集劇作與演唱能力於一身的璃月戲曲名角。風格自成一派，雅致柔美，恰如其人。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yun Jin_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「諸般切末」</color>\n施放 <color=#ffd780>破嶂見旌儀</color> 後，附近隊伍中所有角色普通攻擊造成的傷害提升15%，持續12秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6,
+        "name": "優菈",
+        "desc": "古老家族出身的「浪花騎士」，西風騎士團游擊小隊隊長。身為舊貴族後裔卻加入了堪稱死對頭的西風騎士團，該事件至今仍是蒙德一大謎團。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Eula_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「自卑者的逞強」</color>\n對生命值低於50%的敵人，「光降之劍」造成的傷害提高25%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7,
+        "name": "八重神子",
+        "desc": "鳴神大社的宮司大人，兼任「八重堂」總編。豔麗動人的外表下藏著令人意想不到的聰慧與狡黠。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yae Miko_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「啟蜇之祝詞」</color>\n八重神子的每點元素精通，能使 <color=#ffd780>殺生櫻</color> 造成的傷害提升0.15%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 11,
+        "name": "北斗",
+        "desc": "武裝船隊「南十字」的首領，豪快的大姊頭。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Beidou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「霹靂連霄」</color>\n施放擁有最高傷害加成的 <color=#ffd780>捉浪</color> 後的10秒內，普通攻擊與重擊造成的傷害提升15%，攻擊速度提高15%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 12,
+        "name": "可莉",
+        "desc": "西風騎士團禁閉室的常客，蒙德的爆破大師。人稱「逃跑的太陽」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「砰砰禮物」</color>\n<color=#ffd780>蹦蹦炸彈</color> 與普通攻擊造成傷害時，有50%的機率賦予可莉一朵爆裂火花。\n施放重擊時將消耗爆裂火花，使本次重擊不消耗體力，造成的傷害提升50%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 13,
+        "name": "亞蘿伊",
+        "desc": "曾經是被逐者，如今則是無比機敏的獵人。隨時準備著為了正當之事而挽弓放箭。",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/03/7998136/7f270a1c3d5be225a3c61bff4fbe4ac6_3311723060547883859.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「冰塵雪野」</color>\n向目標方向投擲一枚急凍炸彈，在命中後引發爆炸，急凍炸彈將分裂成許多冷凍炸彈，在接觸到敵人或一段時間後爆炸，造成 <color=#99ffff>冰元素傷害</color> 。\n急凍炸彈或冷凍炸彈命中敵人後，會使敵人的攻擊力降低，並為亞蘿伊賦予1層「線圈」效果。\n每0.1秒至多獲得1層線圈效果：\n· 依據層數，提高亞蘿伊的普通攻擊造成的傷害；\n· 擁有4層線圈時，亞蘿伊清除所有的線圈效果，並獲得「冰馳」，進一步提高普通攻擊造成的傷害，並將普通攻擊造成的傷害轉為 <color=#99ffff>冰元素傷害</color> 。\n線圈效果會在脫離戰鬥30秒後清除。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 14,
+        "name": "安柏",
+        "desc": "永遠充滿活力的女孩，騎士團最優秀、同時也是最後的偵察騎士。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Amber_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「一觸即發」</color>\n兔兔伯爵進行了全新改良！蓄力完成的瞄準射擊命中兔兔伯爵腳部時，能直接引爆兔兔伯爵…\n透過這種方式主動引爆兔兔伯爵時，會額外造成200%傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 16,
+        "name": "托馬",
+        "desc": "神里家的家政官，活躍在稻妻的「地頭蛇」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Thoma_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「熾燒的至心」</color>\n獲得或重置 <color=#ffd780>烈燒佑命護盾</color> 時，隊伍中所有角色的普通攻擊，重擊與下落攻擊造成的傷害提升15%，持續6秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 22,
+        "name": "楓原萬葉",
+        "desc": "來自稻妻的浪人武士，如今棲身於璃月船隊「南十字」中。性情溫和而灑脫，心中埋藏著許多往事。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kaedehara Kazuha_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「血赤葉紅」</color>\n楓原萬葉施放 <color=#ffd780>千早振</color> 或 <color=#ffd780>萬葉之一刀</color> 後的5秒內，獲得風元素附魔，並且楓原萬葉的每點元素精通，都會使他的普通攻擊、重擊、下落攻擊造成的傷害提高0.2%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 24,
+        "name": "煙緋",
+        "desc": "活躍在璃月港的知名律法諮詢師，混有仙獸血脈的精明少女。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yanfei_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「憑此結契」</color>\n引發噴薄爆發的烈火，衝擊周圍的敵人，造成 <color=#ff9999>火元素範圍傷害</color> ，並為煙緋自己賦予最大數量的丹火印與「灼灼」效果： 提高重擊造成的傷害。\n「灼灼」效果會在煙緋退場與倒下時移除。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 27,
+        "name": "琴",
+        "desc": "正直嚴謹的蒲公英騎士，蒙德西風騎士團的代理團長。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Jean_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「流轉劍脊的暴風」</color>\n<color=#ffd780>風壓劍</color> 長按超過1秒後，提升牽引速度，並使造成的傷害提升40%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 29,
+        "name": "申鶴",
+        "desc": "氣質出塵的仙家子弟。隱修在璃月群山之間，個性也如仙人般淡漠疏離。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Shenhe_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「縛靈通真法印」</color>\n申鶴施放 <color=#ffd780>仰靈威召將役咒</color> 後，將使附近的隊伍中所有角色獲得如下效果：\n· 點按：元素戰技和元素爆發造成的傷害提高15%，持續10秒；\n· 長按：普通攻擊、重擊和下落攻擊造成的傷害提高15%，持續15秒。\n<color=#ffffff>命之座 第4層「洞觀」</color>\n處於申鶴自己施加的 <color=#ffd780>冰翎</color> 狀態下的角色，觸發冰翎的傷害增加時，申鶴將獲得一層「霜霄訣」：\n· 申鶴施放仰靈威召將役咒時，將清除所有「霜霄訣」，並根據清除的層數，每層使本次 <color=#ffd780>仰靈威召將役咒</color> 造成的傷害提高5%；\n· 該效果至多疊加50次，持續60秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 31,
+        "name": "神里綾人",
+        "desc": "社奉行神里家年輕有為的現任家主，為人溫雅有禮，處事頗有手段。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kamisato Ayato_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「神里流·水囿」</color>\n展開清淨之園囿，存在期間，提高其中的角色的普通攻擊傷害。\n<color=#ffffff>命之座 第1層「鏡華風姿」</color>\n對於生命值低於或等於50%的敵人， <color=#ffd780>瞬水劍</color> 造成的傷害提升40%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 32,
+        "name": "神里綾華",
+        "desc": "稻妻「社奉行」神里家的大小姐。端莊而文雅，聰慧又堅韌。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kamisato Ayaka_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「天罪國罪鎮詞」</color>\n施放 <color=#ffd780>神里流·冰華</color> 後的6秒內，神里綾華的普通攻擊與重擊造成的傷害提升30%。\n<color=#ffffff>命之座 第6層「間水月」</color>\n每過10秒，神里綾華會獲得「薄冰舞踏」，使重擊造成的傷害提高298%。薄冰舞踏效果將在重擊命中敵人的0.5秒後清除，並重新開始計算時間。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 33,
+        "name": "蘿莎莉亞",
+        "desc": "只有穿著像神職人員的修女。冷淡的言行中透著銳利。總是單獨行動。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Rosaria_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「罪之導引」</color>\n蘿莎莉亞的攻擊造成暴擊後，自身攻擊速度提升10%，普通攻擊造成的傷害提升10%，持續4秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "莫娜",
+        "desc": "神秘的少女占星術士，聲稱自己是「偉大的占星術士莫娜」，擁有與名號相符的不俗實力，博學而高傲。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「厄運的修辭」</color>\n進入 <color=#ffd780>虛實流動</color> 狀態後，每移動1秒，莫娜的下一次重擊傷害就增加60%，\n透過這種方式至多可以獲得180%重擊傷害加成，該效果至多持續8秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 40,
+        "name": "諾艾爾",
+        "desc": "「西風騎士團」的可靠女僕，夢想有一天能成為正式的騎士。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Noelle_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「旋風女僕」</color>\n諾艾爾的重擊的體力消耗降低20%，傷害提升15%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 43,
+        "name": "迪盧克",
+        "desc": "坐擁蒙德大半酒業的貴公子，財力、人望、能力都令人無法小覷。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Diluc_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「流火焦灼」</color>\n施放 <color=#ffd780>逆焰之刃</color> 的2秒後，使下一段逆焰之刃的傷害提高40%，持續2秒。\n<color=#ffffff>命之座 第6層「清算黑暗的炎之劍」</color>\n施放 <color=#ffd780>逆焰之刃</color> 後，接下來6秒內的2次普通攻擊速度提升30%，造成的傷害提高30%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 44,
+        "name": "迪奧娜",
+        "desc": "遺傳了稀薄「非人」血統的少女，「貓尾酒館」的超人氣調酒師。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Diona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「貓爪冰搖」</color>\n<color=#ffd780>貓爪凍凍</color> 造成的傷害提高15%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 45,
+        "name": "重雲",
+        "desc": "驅邪世家的年輕術士，為壓制自身的「純陽之體」費盡心機。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Chongyun_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「四靈捧聖」</color>\n<color=#ffd780>靈刃·雲開星落</color> 對生命值百分比低於重雲的敵人造成傷害時，傷害提升15%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 47,
+        "name": "阿貝多",
+        "desc": "西風騎士團首席煉金術士兼調查小隊隊長，被稱做「白堊之子」的天才。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Albedo_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「神性之隕」</color>\n處於「陽華」的領域中的隊伍中目前場上角色，造成的下落攻擊傷害提高30%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 49,
+        "name": "雷電將軍",
+        "desc": "其身為御建鳴神主尊大御所大人，許稻妻人民以亙古不變之「永恆」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Raiden Shogun_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「神變·惡曜開眼」</color>\n施放「神變·惡曜開眼」時，獲授「雷罰惡曜之眼」的角色在持續期間內，元素爆發造成的傷害獲得提升，提升程度基於元素爆發的元素能量。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 51,
+        "name": "魈",
+        "desc": "守護璃月的仙人，「夜叉」。美號「降魔大聖」，妙稱「護法夜叉大將」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xiao_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「靖妖儺舞」</color>\n處於「夜叉儺面」狀態下，提高攻擊範圍與攻擊傷害。\n<color=#ffffff>固有天賦「壞劫·國土碾塵」</color>\n施放 <color=#ffd780>風輪兩立</color> 會使之後7秒內的風輪兩立造成的傷害提高15%。 該效果持續7秒，最多疊加三次，疊加時重置持續時間。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2265,
+        "name": "提納里",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">精通植物學的少年學者，現於道成林任巡林官一職。直率熱忱，擅長教導腦袋不清楚的人。</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/24/7998136/d039c6da9285163f46b85f0241f29c17_1332543106735487687.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「諸葉辨通」</color>\n提納里的每點元素精通，都會使其重擊與 <color=#ffd780>造生纏藤箭</color> 造成的傷害提升0.06%。\n依此方式，至多使上述攻擊造成的傷害提升60%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2674,
+        "name": "旅行者（草）",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">从世界之外漂流而来的旅行者，被神带走血亲，自此踏上寻找七神之路</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/169177528/04f769b0b1671b5ffbbafefd7286b4b2_1172734566027486028.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「繁蕪的叢草」</color>\n旅行者自己的每點元素精通，能使 <color=#ffd780>草緣劍</color> 造成的傷害提升0.15%， <color=#ffd780>偃草若化</color> 造成的傷害提升0.1%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "妮露",
+        "desc": "<p>祖拜爾劇場的知名舞者，舞姿靈動優美，為人純真親善。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/09/7998136/586d726f9ebda3506c78beaaa41f13b6_4107942922283942464.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「卻月的輕舞」</color>\n施放 <color=#ffd780>七域舞步</color> ，「水月」造成的傷害提升65%。\n<color=#ffffff>命之座 第4層「挽漪的節音」</color>\n<color=#ffd780>七域舞步</color> 的「翩轉」狀態下的第三段舞步命中敵人後，使妮露的 <color=#ffd780>浮蓮舞步·遠夢聆泉</color> 造成的傷害提升50%，持續8秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2813,
+        "name": "賽諾",
+        "desc": "<p>教令院內負責監管學者們的「大風紀官」。工作時比剎訶伐羅學院製作的「大風機關」更有效率。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/26/7998136/e09e2bda5e022611fad0dea1bb6518bb_6963723648787937375.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「落羽的裁擇」</color>\n在 <color=#ffd780>聖儀·煟煌隨狼行</color> 的「啟途誓使」狀態下時，賽諾將間歇性處於「末途真眼」狀態下。在該狀態期間施放 <color=#ffd780>秘儀·律淵渡魂</color> 時，將觸發「裁定」效果，使此次 <color=#ffd780>秘儀·律淵渡魂</color> 造成的傷害提升35%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2815,
+        "name": "坎蒂絲",
+        "desc": "<p>有著琥珀色左眼的赤王後裔，阿如村的守護者。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/26/7998136/2f43da4ece9eabfbde6ec2fcc81b3bff_693228621905250476.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「聖儀·灰鴒衒潮」</color>\n施放「聖儀·灰鴒衒潮」時，坎蒂絲持續為目前場上自己的角色賦予「赤冕祝禱」狀態：角色的普通攻擊對敵人造成元素傷害時，提高造成的傷害。\n<color=#ffffff>固有天賦「漫沙隕穹」</color>\n處於 <color=#ffd780>聖儀·灰鴒衒潮</color> 的「赤冕祝禱」狀態下的角色，普通攻擊對敵人造成元素傷害時，坎蒂絲每1000點生命值上限會使這次傷害提高0.5%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2850,
+        "name": "納西妲",
+        "desc": "<p>深居淨善宮的籠中之鳥，只能在夢中將世界盡收眼底。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/01/7998136/f29490bddc56b4a6773b6c5003bbb853_2458576086062564041.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「心景幻成」</color>\n展開「摩耶之殿」領域，隊伍中若存在 <color=#ff9999>火元素</color> 類型的角色，並處於「摩耶之殿」當中時，提升元素戰技「所聞遍計」的滅淨三業造成的傷害。展開領域時，若上述元素類型的角色數量有至少2名，產生的對應效果將進一步增強。\n<color=#ffffff>固有天賦「慧明緣覺智論」</color>\n基於納西妲元素精通超過200點的部分，每1點元素精通能使 <color=#ffd780>所聞遍計</color> 的「滅淨三業」造成的傷害提升0.1%。\n依此方式，至多使「滅淨三業」造成的傷害提升80%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2859,
+        "name": "萊依拉",
+        "desc": "<p>專攻理論星相學的梨多梵諦學院學生。時常夢遊，長期睡眠不足，飽受睡眠問題困擾。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/12/7998136/48a495acadaf37f12d0a7f653d85bd83_9084142372306287188.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「曜光靈炬」</color>\n<color=#ffd780>垂裳端凝之夜</color> 的「飛星」造成的傷害提升40%， <color=#ffd780>星流搖床之夢</color> 的「星光彈」造成的傷害提升40%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2968,
+        "name": "流浪者",
+        "desc": "<p>身分成謎的流浪人士。衣著打扮像是修驗者，言行卻並不是修驗者應有的模樣。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/7998136/24d97a22be742fb732ea96f625d1faac_5450959615815575586.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「二番·箙島廓白浪」</color>\n在 <color=#ffd780>優風傾姿</color> 狀態下， <color=#ffd780>狂言·式樂五番</color> 將依據「空居力」上限與目前的「空居力」的差值，每1點使此次狂言·式樂五番造成的傷害提升4%。\n依此方式，至多使狂言·式樂五番造成的傷害提升200%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3336,
+        "name": "艾爾海森",
+        "desc": "<p>須彌教令院現任書記官，有過人的智慧與才能。生活的自由自在，一般人很難找到他。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/12/7998136/25249dd20b86c775fb35bdbbd805d9ec_6145693736965233433.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「謎林道破」</color>\n艾爾海森的每點元素精通，都會使光幕傷害與 <color=#ffd780>殊境·顯象縛結</color> 造成的傷害提升0.1%。\n依此方式，至多使光幕傷害與殊境·顯象縛結造成的傷害提升100%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3719,
+        "name": "綺良良",
+        "desc": "<p>稻妻快遞公司「狛荷屋」的送貨員，一隻熱愛自己工作、嚮往人類社會的「貓又」。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/23/7998136/d1699810632f8c3bc8c1e8c8beb8250f_5421756291708143270.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「應時惑目之靈」</color>\n基於綺良良的生命值上限，每1000點生命值上限將使 <color=#ffd780>嗚喵町飛足</color> 造成的傷害提升0.4%， <color=#ffd780>秘法·驚喜特派</color> 造成的傷害提升0.3%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3964,
+        "name": "菲米尼",
+        "desc": "<p>精於潛水的寡言少年，在如寒冰般拒人千里的外表下，藏有一顆無瑕的純真之心。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/04/133389800/8e44111a378f4e5379b8e7444e8c2daa_8389499528948865519.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「並流式冷凝機關」</color>\n菲米尼對敵人觸發碎冰反應後，會使 <color=#ffd780>浮冰增壓·高壓粉碎</color> 造成的傷害提高40%，持續5秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4022,
+        "name": "萊歐斯利",
+        "desc": "<p>梅洛彼得堡的公爵，隱於漆黑海底的領主。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/10/16/133389800/31a0eb2dec5d69ca8dd7616572136b8b_4651795574833344139.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「公理終有辯訴之日」</color>\n萊歐斯利的生命值低於60%時，將獲得「恩典之誡」，使下次 <color=#ffd780>普通攻擊·迅烈傾霜拳</color> 的重擊強化為「懲戒·凌躍拳」：不消耗體力，造成的傷害提升50%。\n<color=#ffffff>命之座 第2層「予驕暴者以鐐鎖」</color>\n施放 <color=#ffd780>黑金狼噬</color> 時，固有天賦「罪業終有報償之時」的每層「檢償之敕」效果都將使造成的傷害提升40%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4376,
+        "name": "芙寧娜",
+        "desc": "<p>審判舞臺上的絕對焦點，直至謝幕的掌聲響起。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/07/133389800/263e5ea0784d182b393f67a7e24146a5_1412526942426865234.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「無人聽的自白」</color>\n每1000點生命值上限都將使處於不同始基力屬性下的芙寧娜的「孤心沙龍」獲得增益效果：「沙龍成員」造成的傷害提升0.7%，依此方式至多使「沙龍成員」造成的傷害提升28%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4377,
+        "name": "夏洛蒂",
+        "desc": "<p>充滿活力的《蒸汽鳥報》記者，時時刻刻都在為「真相」而奔走。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/08/125391187/7bbbff3f35661a93b5091b1f17fae6c0_5385568939909776698.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「以督促為責任」</color>\n<color=#ffd780>定格·全方位確證</color> 命中附有「瞬時剪影」或「聚焦印像」印記的敵人時，造成的傷害提升10%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4576,
+        "name": "娜維婭",
+        "desc": "<p>刺玫會現任會長，一位可愛、盡責的好老闆。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/20/142229365/3fc7580c01a9e622692402889706c4db_9060602796687984077.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「典儀式晶火」</color>\n命中同一個敵人的「玫瑰晶彈」越多，對這名敵人造成的傷害越高；11枚「玫瑰晶彈」全部命中時，將造成原本200%的傷害。 此外，消耗的「裂晶彈片」超過3枚時，超過3枚的每枚「裂晶彈片」都將使本次射擊造成的傷害額外提升15%。\n<color=#ffffff>固有天賦「不明流通管道」</color>\n施放 <color=#ffd780>典儀式晶火</color> 後的4秒內，娜維婭的普通攻擊、重擊與下落攻擊造成的傷害提升40%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4775,
+        "name": "嘉明",
+        "desc": "<p>劍匣鏢局的鏢師，威水舞獸隊的話事人。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/01/31/142229365/b041ad23a9d6245efac952a9379c5114_4464737108851290647.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「祥煙瑞氣」</color>\n嘉明的生命值低於50%時，獲得20%受治療加成。嘉明的生命值高於或等於50%時， <color=#ffd780>下落攻擊·踏雲獻瑞</color> 造成的傷害提升20%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5596,
+        "name": "克洛琳德",
+        "desc": "<p>不敗的決鬥代理人。以手中的劍維護楓丹廷的「公義」。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/06/142453215/770a66030815971c697ab81bc5436329_5538768133624290010.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「銘記淚、生命與仁愛」</color>\n<color=#ffd780>殘光將終</color> 對敵人造成傷害時，將根據克洛琳德的目前生命之契百分比提升此次傷害，每1%生命之契都將使此次 <color=#ffd780>殘光將終</color> 造成的傷害提升2%；依此方式，至多使 <color=#ffd780>殘光將終</color> 造成的傷害提升200%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5597,
+        "name": "希格雯",
+        "desc": "<p>梅洛彼得堡的美露莘護士長，平等地關愛著海底監牢中的每一名罪人。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/25/157749474/2d607aa4d729030ea04f79919257e311_4478856742722800409.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「彈跳水療法」</color>\n<color=#ffd780>激癒水球</color> 將隨長按時間變大，至多變大二級，每級將使造成的傷害提升5%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5714,
+        "name": "艾梅莉埃",
+        "desc": "楓丹香水設計師，將秘密藏於瓶中之人。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「淡香浸析」</color>\n<color=#ffd780>擷萃調香</color> 與固有天賦「餘薰」的 <color=#ffd780>清露香氛</color> 造成的傷害提升20%，後者需要解鎖固有天賦「餘薰」。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6319,
+        "name": "瑪拉妮",
+        "desc": "納塔遠近聞名的嚮導，水上用品商店的經營者，精通各類水上運動的逐浪客。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/f4c75caad42923eb91ee760aa2eb473a_7439123622315070718.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「鯊鯊主食是豚豚。」</color>\n<color=#ffd780>爆瀑飛彈</color> 造成的傷害提升75%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6317,
+        "name": "基尼奇",
+        "desc": "維茨特蘭的獵龍人，精於度量代價。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/12/0099e74b4d0c919f6feab4bade3ab748_5795733017114624391.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「星虎之掌」</color>\n基尼奇的元素戰技命中敵人時，基尼奇在進入夜魂加持狀態下的首次迴獵貫鱗炮的影響範圍提升，造成的傷害提升100%。\n<color=#ffffff>命之座 第4層「蜂鳥之羽」</color>\n<color=#ffd780>向偉大聖龍致意</color> 造成的傷害提升70%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6924,
+        "name": "希諾寧",
+        "desc": "<p>納茨卡延的鑄名師，善於在工作的重擔與舒適的生活之間找到平衡點。</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/b07074c2b9040516fd240b6b8d65c011_2487211347344319683.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「四境四象回聲」</color>\n在夜魂加持狀態下，若希諾寧擁有少於兩枚經過元素轉化的「源音取樣」，普通攻擊與下落攻擊造成的傷害提升30%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7080,
+        "name": "恰斯卡",
+        "desc": "特拉洛坎的「調停人」，萬千爭端的終結者。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/abe1192cc7aad45f6b273478dd5fa88a_4799372826012752249.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「子彈的戲法」</color>\n進行元素戰技 <color=#ffd780>靈韁追影</color> 中的 <color=#ffd780>多重瞄準</color> 的蓄力時，若隊伍中存在符合元素轉化條件的元素類型角色，則依據符合條件的不同元素的數量，每種元素將為恰斯卡產生一層「煥影之靈」效果，使煥光追影彈造成的傷害提升15%/35%/65%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7299,
+        "name": "瑪薇卡",
+        "desc": "納塔的領袖，繼承「基揚戈茲」之古名，誓以聖火為戰爭國度照亮未來。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/30/2f098b1f15854fd9dafc54998795a59e_864981592196815761.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「燔天之時」</color>\n<color=#ffd780>死生之爐</color> 持續期間，依據施放元素爆發時的戰意，提升墜日斬、「古名解放」時的普通攻擊與重擊造成的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "武器",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1930,
+        "name": "「漁獲」",
+        "desc": "在久遠的過去，曾經聞名稻妻的大盜愛用的槍。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/「渔获」.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "元素爆發造成的傷害提升 <color=#37ffff>16%/20%/24%/28%/32%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1936,
+        "name": "冬極白星",
+        "desc": "如同深冬堅冰一樣尖銳的無垢之弓。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/冬极白星.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "元素戰技和元素爆發造成的傷害提高 <color=#37ffff>12%/15%/18%/21%/24%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1939,
+        "name": "匣裡日月",
+        "desc": "材質難解的暗金珠寶，飽含日月天地的光輝，脈動著溫暖的力量。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/匣里日月.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "普通攻擊命中後的6秒內，元素戰技與元素爆發的傷害提高 <color=#37ffff>20%/25%/30%/35%/40%</color> ；元素戰技與元素爆發命中後的6秒內，普通攻擊的傷害提高 <color=#37ffff>20%/25%/30%/35%/40%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1949,
+        "name": "喜多院十文字",
+        "desc": "曾經在八醞島守望「祟神」的槍法名士所用的特殊長槍。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/喜多院十文字.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "元素戰技造成的傷害提升 <color=#37ffff>6%/7.5%/9%/10.5%/12%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1950,
+        "name": "嘟嘟可故事集",
+        "desc": "一本封面華麗的童書，內容皆是童言無忌的短小故事，讀之令人忍俊不禁。<br/>即使業已成年的讀者，讀到書中天真無邪的冒險故事，也會忍不住神往吧。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/嘟嘟可故事集.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "普通攻擊命中敵人後的6秒內，重擊造成的傷害提高 <color=#37ffff>16%/20%/24%/28%/32%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1965,
+        "name": "幽夜華爾滋",
+        "desc": "有著如同罪與幻想之夜一般顏色的弓。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/幽夜华尔兹.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "普通攻擊命中敵人後的5秒內，元素戰技造成的傷害提升 <color=#37ffff>20%/25%/30%/35%/40%</color> ；元素戰技命中敵人後的5秒內，普通攻擊造成的傷害提升 <color=#37ffff>20%/25%/30%/35%/40%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1967,
+        "name": "弓藏",
+        "desc": "佈滿鏽跡的鐵造大弓，一般人根本拿不動，遑論引弓放矢。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/弓藏.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "普通攻擊造成的傷害提升 <color=#37ffff>40%/50%/60%/70%/80%</color> ，重擊造成的傷害下降10%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1968,
+        "name": "彈弓",
+        "desc": "其實就是一把弓。在無數的改進和實驗中，發明出究極彈弓的人發現自己做了一把弓。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/弹弓.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "普通攻擊與重擊的箭矢若在發射後的0.3秒內擊中敵人，則造成的傷害增加 <color=#37ffff>36%/42%/48%/54%/60%</color> ；否則，造成的傷害下降10%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1971,
+        "name": "惡王丸",
+        "desc": "傳說中「惡王」的愛刀，刀身龐大雄偉，但揮舞起來卻出乎意料地輕便。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/恶王丸.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "隊伍中所有角色的元素能量上限的總和，每1點能使裝備此武器的角色的元素爆發造成的傷害提高 <color=#37ffff>0.12%/0.15%/0.18%/0.21%/0.24%</color> ，依此方式，元素爆發造成的傷害至多提高 <color=#37ffff>40%/50%/60%/70%/80%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1973,
+        "name": "掠食者",
+        "desc": "設計風格相當獨特的弓，應該不屬於這個世界。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/掠食者.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "對敵人造成冰元素傷害後，普通攻擊與重擊造成的傷害提高10%，該效果持續6秒，至多疊加2次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1975,
+        "name": "斷浪長鰭",
+        "desc": "以海淵之下的閃亮材質打造而成的薙刀，一度曾為天狗一族所有。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/断浪长鳍.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "隊伍中所有角色的元素能量上限的總和，每1點能使裝備此武器的角色的元素爆發造成的傷害提高 <color=#37ffff>0.12%/0.15%/0.18%/0.21%/0.24%</color> ，依此方式，元素爆發造成的傷害至多提高 <color=#37ffff>40%/50%/60%/70%/80%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1985,
+        "name": "曚雲之月",
+        "desc": "出自螺鈿與珊瑚的精美戰弓，月色的弓臂上流動著淒然的光彩。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/曚云之月.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "隊伍中所有角色的元素能量上限的總和，每1點能使裝備此武器的角色的元素爆發造成的傷害提高 <color=#37ffff>0.12%/0.15%/0.18%/0.21%/0.24%</color> ，依此方式，元素爆發造成的傷害至多提高 <color=#37ffff>40%/50%/60%/70%/80%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1987,
+        "name": "桂木斬長正",
+        "desc": "過去在踏鞴砂打造的刀，沉重而堅韌。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/桂木斩长正.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "元素戰技造成的傷害提升 <color=#37ffff>6%/7.5%/9%/10.5%/12%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1989,
+        "name": "波亂月白經津",
+        "desc": "經津傳奉命鍛造的名作。因其如洶湧海濤般的氣度，而得「波亂」之名。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/波乱月白经津.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "隊伍中附近的其他角色在施放元素戰技時，會為裝備該武器的角色產生1層「波穗」效果，至多疊加2層，每0.3秒最多觸發1次。裝備該武器的角色施放元素戰技時，如果有累積的「波穗」效果，則將消耗已有的「波穗」，獲得「波亂」：根據消耗的層數，每層提升 <color=#37ffff>20%/25%/30%/35%/40%</color> 普通攻擊傷害，持續8秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1996,
+        "name": "白纓槍",
+        "desc": "千岩軍士兵的制式裝備，槍身牢靠，槍尖鋒銳，是無比可靠的武器。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/白缨枪.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "普通攻擊造成的傷害提升 <color=#37ffff>24%/30%/36%/42%/48%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1999,
+        "name": "破魔之弓",
+        "desc": "曾經屬於某個巫女的戰弓。以優越的技法打造，精巧而耐用。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/破魔之弓.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "普通攻擊造成的傷害提升 <color=#37ffff>16%/20%/24%/28%/32%</color> ，重擊造成的傷害提升 <color=#37ffff>12%/15%/18%/21%/24%</color> 。當裝備該武器的角色元素能量等於100%時，這個效果提升100%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2001,
+        "name": "神樂之真意",
+        "desc": "表演神樂之舞時所用的神鈴，為宮司所賜福。神櫻之香縈繞其上。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/神乐之真意.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "施放元素戰技時，將獲得「神樂舞」的效果，使裝備該武器的角色的元素戰技造成的傷害提高 <color=#37ffff>12%/15%/18%/21%/24%</color> ，該效果持續16秒，至多疊加3層。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2009,
+        "name": "絕弦",
+        "desc": "曾經作為樂器大放異彩的弓。如今已經不再能令人起舞。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/绝弦.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "元素戰技與元素爆發的傷害提高 <color=#37ffff>24%/30%/36%/42%/48%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2011,
+        "name": "腐殖之劍",
+        "desc": "希冀著生命的詭譎直劍，附有連龍也能侵蝕的腐殖之毒。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/腐殖之剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "元素戰技造成的傷害增加 <color=#37ffff>16%/20%/24%/28%/32%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2012,
+        "name": "蒼古自由之誓",
+        "desc": "如同悠古的歌聲一般蒼藍的直劍，如同風之國土自由的誓言一般銳利的武器。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/苍古自由之誓.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "擁有兩枚奮起之符時，將消耗所有奮起之符，使附近的隊伍中所有角色獲得持續12秒的「千年的大樂章·抗爭之歌」效果：普通攻擊、重擊、下落攻擊造成的傷害提高 <color=#37ffff>16%/20%/24%/28%/32%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2016,
+        "name": "銜珠海皇",
+        "desc": "海中的大王。經過風乾，是很稱手的兵器以及應急食品。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/衔珠海皇.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "元素爆發造成的傷害提升 <color=#37ffff>12%/15%/18%/21%/24%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2027,
+        "name": "試作星鐮",
+        "desc": "黑岩廠中密藏的古老鉤槍。鋒芒上點點的閃光有如夜空稀星。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/试作星镰.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "施放元素戰技後，普通攻擊和重擊造成的傷害提高 <color=#37ffff>8%/10%/12%/14%/16%</color> 。該效果持續12秒，最多疊加兩層。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2037,
+        "name": "鐵影闊劍",
+        "desc": "這把劍是著名的光之獅艾倫德林佩劍的仿製品。握緊它，感受傳說中大英雄的力量吧！注意：幻想請適度。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/铁影阔剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "生命值低於 <color=#37ffff>70%/75%/80%/85%/90%</color> 時，提高 <color=#37ffff>30%/35%/40%/45%/50%</color> 重擊傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2040,
+        "name": "阿莫斯之弓",
+        "desc": "極為古老的弓。即使原主不復存在，其中蘊藏之力依舊——那種力量無主，卻在萬物當中。距離心繫之物越是遙遠，那種力量越是劇烈。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/阿莫斯之弓.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "普通攻擊和重擊傷害提升 <color=#37ffff>12%/15%/18%/21%/24%</color> ；普通攻擊與重擊的箭矢發射後每經過0.1秒，傷害還會提升 <color=#37ffff>8%/10%/12%/14%/16%</color> ，至多提升五次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2049,
+        "name": "飛雷之弦振",
+        "desc": "曾由將軍御賜的長弓，閃爍著永不熄滅的雷光。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/飞雷之弦振.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "持有1/2/3層「飛雷之巴印」時，普通攻擊造成的傷害提高 <color=#37ffff>12%/24%/40%</color> | <color=#37ffff>15%/30%/50%</color> | <color=#37ffff>18%/36%/60%</color> | <color=#37ffff>21%/42%/70%</color> | <color=#37ffff>24%/48%/80%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2053,
+        "name": "黑劍",
+        "desc": "渴求著紛爭與砍殺的漆黑長劍，據說會讓人沉醉在浴血廝殺的亢奮中。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/黑剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "普通攻擊與重擊的造成的傷害提升 <color=#37ffff>20%/25%/30%/35%/40%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3320,
+        "name": "圖萊杜拉的回憶",
+        "desc": "<p>深藍寶石與純銀雕成的鈴鐺，迴響之聲清脆悠遠。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/11/7998136/8de363bf716e4538ba86014fbea827ef_7049642079895428217.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "施放元素戰技後的14秒內：普通攻擊造成的傷害每1秒提升 <color=#37ffff>4.8%/6%/7.2%/8.4%/9.6%</color> ；普通攻擊命中敵人後，普通攻擊造成的傷害提升 <color=#37ffff>9.6%/12%/14.4%/16.8%/19.2%</color> ，該效果每0.3秒至多觸發1次。持續期間內，普通攻擊造成的傷害至多透過上述效果提升至 <color=#37ffff>48%/60%/72%/84%/96%</color> 。角色退場時將移除效果，再次施放元素戰技時會先移除原有的效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3983,
+        "name": "最初的大魔術",
+        "desc": "<p>過去的「大魔術師」曾經使用的表演道具，最終揭露的秘密是它其實也是不俗的武器。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/7998136/150d6ae6dec75c2af1e4c37a084bf80f_1086479564765668137.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "重擊造成的傷害提升 <color=#37ffff>16%/20%/24%/28%/32%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3999,
+        "name": "狼牙",
+        "desc": "<p>傳說中，遙遠過去的流浪騎士所使用的長劍。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/7998136/e1d10d55b8b96e0695000018664e17ef_601768988063610533.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "元素戰技與元素爆發造成的傷害提升 <color=#37ffff>16%/20%/24%/28%/32%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4002,
+        "name": "烈陽之嗣",
+        "desc": "<p>赤王國度的古老時代所留下的古代長弓，其上雕刻著不可理解的古老文字與莊嚴圖案。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/7998136/b10e2c320e65f991f0e829879761af72_4516583143716830961.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "裝備者的重擊對處於灼心狀態下的敵人造成的傷害提升 <color=#37ffff>28%/35%/42%/49%/56%</color> 。陽炎矢每10秒至多觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4338,
+        "name": "無垠蔚藍之歌",
+        "desc": "<p>一本裝訂精美的詩集，其中收錄了不少有關天空、蒲公英等蒙德人偏愛的詩歌。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/10/01/125391187/ab271b223abd6086b69e079af128e945_3118654225808772776.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "普通攻擊或重擊命中敵人後的6秒內，普通攻擊造成的傷害提升 <color=#37ffff>8%/10%/12%/14%/16%</color> ，重擊造成的傷害提升 <color=#37ffff>6%/7.5%/9%/10.5%/12%</color> 。該效果至多疊加3次，每0.3秒至多觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4339,
+        "name": "萬世流湧大典",
+        "desc": "<p>曾在水下的隱修會中代代流傳的教諭書，如今已經無人知曉其存在。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/28/327628065/5828ed7b48c39e5d15aaf6f2495ddabc_5596931011853553314.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "生命值提升 <color=#37ffff>16%/20%/24%/28%/32%</color> 。目前生命值提升或降低時，重擊造成的傷害提升 <color=#37ffff>14%/18%/22%/26%/30%</color> 。該效果持續4秒，至多疊加3次，每0.3秒至多觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4340,
+        "name": "金流監督",
+        "desc": "<p>能夠監控特定現象的懸浮儀器，廢棄後被拾獲者重新改造為其他用途。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/10/20/125391187/6d8248633da24c16368b6570bf578874_5554650168594609425.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "目前生命值提升或降低時，普通攻擊造成的傷害提升 <color=#37ffff>16%/20%/24%/28%/32%</color> ，重擊造成的傷害提升 <color=#37ffff>14%/17.5%/21%/24.5%/28%</color> 。該效果持續4秒，至多疊加3層，每0.3秒至多觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4570,
+        "name": "靜水流湧之輝",
+        "desc": "<p>縈繞著至純之水的權杖，在遙遠的昔日曾象徵著海原之上至高的權威。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/125391187/9807aa25f336daae391a6f6d4995af3d_8803097821935611796.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "裝備者的目前生命值提升或降低時，元素戰技造成的傷害提升 <color=#37ffff>8%/10%/12%/14%/16%</color> ，該效果持續6秒，至多疊加3次，每0.2秒至多觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4719,
+        "name": "裁斷",
+        "desc": "曾經拋棄家名的貴族少女使用過的武器，過去沾染了敵人與摯愛的血液。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2023/12/13/1f6d97f9c8c4146fd0062cd27f65886f_5379959338655377611.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "隊伍中的角色獲得結晶反應產生的晶片時，會為裝備者賦予1枚「約印」，使元素戰技造成的傷害提升 <color=#37ffff>18%/22.5%/27%/31.5%/37%</color> ，約印持續15秒，至多同時持有2枚。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4941,
+        "name": "鶴鳴餘音",
+        "desc": "由純淨的翡玉琢刻而成的寶扇，縈繞著古老的仙力氣息。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/01/30/7d49f94bfb8725b8c04332b11eb7df60_6820630625383555046.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "裝備者下落攻擊命中敵人後，隊伍中附近的所有角色下落攻擊造成的傷害提高 <color=#37ffff>28%/41%/54%/67%/80%</color> ，持續20秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5150,
+        "name": "有樂御簾切",
+        "desc": "曾由著名的風雅之士有樂齋親自監製的名劍，傳說在過去數百年間不嘗斬過活物。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/13/4388952f90bcfcf702ebe5a333daf2bc_7863677904377472234.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "普通攻擊造成的傷害提升 <color=#37ffff>16/20/24/28/32%</color> ，元素戰技造成的傷害提升 <color=#37ffff>24/30/36/42/48%</color> ；隊伍中附近的角色在場上造成岩元素傷害後，上述效果進一步提升100%，持續15秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6551,
+        "name": "木棉之環",
+        "desc": "昔日的雙生英傑鍛造的玉器，傳說曾將盤踞火山的巨龍從天穹擊墜。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/9ab70898644274ce31f91faea8216bd8_5924884446177979679.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "施放元素戰技時，獲得「玉鍛之冕」效果：每1000點生命值上限都會使普通攻擊造成的傷害提升 <color=#37ffff>0.6%/0.7%/0.8%/0.9%/1%</color> ，持續10秒。依此方式至多使普通攻擊造成的傷害提升 <color=#37ffff>16%/20%/24%/28%/32%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6548,
+        "name": "撼地者",
+        "desc": "人稱「竊火者」的英傑愛用的重劍，據說就連燼城之王的烈火也未能將其焚斷。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/dc6bf4c87afe67014579743618e97371_6360663376854922140.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "隊伍中的角色觸發火元素相關反應後，裝備者元素戰技造成的傷害提升 <color=#37ffff>16%/20%/24%/28%/32%</color> ，持續8秒。該效果隊伍中的角色處於隊伍後臺時也能觸發。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6546,
+        "name": "衝浪時光",
+        "desc": "原本預訂發放給「第一屆全部族衝浪競速錦標賽」冠軍的紀念品。鑑於賽事目前尚處於籌備階段，獎品便被臨時寄存在「悠遊豚豚」內，由店主代為保管。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/6ce2e0da75fbdc19fc4b6f9e7bae9049_5151463723015160354.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "每15秒一次，施放元素戰技後的14秒內，產生如下效果：獲得4層「熾夏」，每層使普通攻擊造成的傷害提升 <color=#37ffff>12%/15%/18%/21%/24%</color> 。持續期間內，每1.5秒一次：普通攻擊命中敵人後，移除1層；每1.5秒一次：對敵人觸發蒸發反應後，增加1層。「熾夏」效果至多疊加4層。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6545,
+        "name": "山王長牙",
+        "desc": "由純然的綠松石鍛造而成的巨劍，因遠超一般兵刃的重量而被冠以「山王」康加瑪托之名。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/1fd3c498faccab68bfa5d961477a8c29_2936359463997877474.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "元素戰技命中敵人後，會獲得1層「懸木祝賜」，該效果每0.5秒至多觸發1次；隊伍中附近的角色觸發了燃燒或烈綻放反應後，裝備者會獲得3層懸木祝賜，該效果每2秒至多觸發1次，隊伍中的角色處於隊伍後臺時也能觸發。懸木祝賜：元素戰技傷害和元素爆發傷害提升 <color=#37ffff>10%/12.5%/15%/17.5%/20%</color> ，持續6秒，至多疊加6層，每層持續時間獨立計算。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7031,
+        "name": "鎮山之釘",
+        "desc": "礦山的工匠們合力鍛造的長槍，在過去是獻給群山之靈的貢物。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/201424fa6a98ffb190ae82c8ad7d0cc3_6084387639848528037.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "元素戰技造成的傷害提升 <color=#37ffff>12%/15%/18%/21%/24%</color> ；此外，隊伍中附近的其他角色施放元素戰技後，裝備者的元素戰技造成的傷害還會提升 <color=#37ffff>12%/15%/18%/21%/24%</color> ，持續8秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7030,
+        "name": "碩果鉤",
+        "desc": "<p>一度為了奪得品質冠絕納塔的火榴果，懸木人的勇士布基納在英雄特諾切的幫助下特意打製的武器。</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/25c75653d47f882870e96d9119a17e9a_6960324287026452673.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "下落攻擊命中敵人後，普通攻擊、重擊、下落攻擊造成的傷害提升 <color=#37ffff>16%/20%/24%/28%/32%</color> ，持續10秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7116,
+        "name": "星鷲赤羽",
+        "desc": "飾以赤色翎羽的古老長弓，花羽會世代傳承的聖物之一。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/d3bb0f9d936379661d409644e4269ff1_2888646900955247330.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "隊伍中存在至少1/2名與裝備者元素類型不同的角色時，裝備者重擊造成的傷害提高 <color=#37ffff>20%/48%</color> | <color=#37ffff>25%/60%</color> | <color=#37ffff>30%/72%</color> | <color=#37ffff>35%/84%</color> | <color=#37ffff>40%/96%</color> ，元素爆發造成的傷害提高 <color=#37ffff>10%/24%</color> | <color=#37ffff>12.5%/30%</color> | <color=#37ffff>15%/36%</color> | <color=#37ffff>17.5%/42%</color> | <color=#37ffff>20%/48%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7115,
+        "name": "綴花之翎",
+        "desc": "熾灼似火的長弓，其上裝飾的絨羽據說來自古老的「暴君」恩古布。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/0d166f885502452188022563f5fc8797_876127194185049091.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "進行瞄準射擊時，每0.5秒提升重擊造成的傷害 <color=#37ffff>6%/7.5%/9%/10.5%/12%</color> ，該效果最多疊加6層，並將在不處於瞄準狀態下10秒後移除。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7113,
+        "name": "厄水之禍",
+        "desc": "「煙謎主」偉大祭司桑哈傑打造的儀式之刃，在過往的故事中，桑哈傑能夠用這把彎曲的長刃舉行儀式，模糊夜神之國與現世的邊界。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/034a74a58833bc506791e2d2c8e00539_8351835749900866009.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "角色處於護盾庇護下時，普通攻擊和重擊造成的傷害提升 <color=#37ffff>20%/25%/30%/35%/40%</color> ，普通攻擊和重擊的暴擊率提升 <color=#37ffff>8%/10%/12%/14%/16%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "聖遺物",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2075,
+        "name": "昔日宗室之儀",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n元素爆發造成的傷害提升20%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2077,
+        "name": "染血的騎士道",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Bloodstained Chivalry/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n擊敗敵人後的10秒內，施放重擊時不消耗體力，且重擊造成的傷害提升50%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2079,
+        "name": "沉淪之心",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Heart of Depth/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n施放元素戰技後的15秒內，普通攻擊與重擊造成的傷害提高30%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2078,
+        "name": "武人",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Martial Artist/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n普通攻擊與重擊造成的傷害提高15%。\n<color=#ffffff>4件套裝</color>\n施放元素戰技後的8秒內，普通攻擊和重擊造成的傷害提升25%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2081,
+        "name": "流浪大地的樂團",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n裝備該聖遺物套裝的角色為法器、弓箭角色時，角色重擊造成的傷害提高35%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2090,
+        "name": "絕緣之旗印",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n基於元素充能效率的25%，提高元素爆發造成的傷害。至多依此方式獲得75%提升。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2095,
+        "name": "角鬥士的終幕禮",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n裝備該聖遺物套裝的角色為單手劍、雙手劍、長柄武器角色時，角色普通攻擊造成的傷害提高35%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2096,
+        "name": "賭徒",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gambler/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n元素戰技造成的傷害提升20%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2098,
+        "name": "追憶之注連",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n施放元素戰技時，如果角色的元素能量高於或等於15點，則會流失15點元素能量，使接下來的10秒內，普通攻擊、重擊、下落攻擊造成的傷害提高50%，持續期間內該效果不會再次觸發。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2099,
+        "name": "逆飛的流星",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Retracing Bolide/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n處於護盾庇護下時，額外獲得40%普通攻擊和重擊傷害加成。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3322,
+        "name": "沙上樓閣史話",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/13/7998136/b86d9fd7cf57937a021c9c68c9b185ed_5106279965807427888.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n重擊命中敵人後，該角色的普通攻擊速度提升10%，普通攻擊、重擊與下落攻擊造成的傷害提升40%，持續15秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3694,
+        "name": "花海甘露之光",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/12/7998136/bc9329baf36935b2fb094f783a7695f2_5028213677798854773.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n元素戰技與元素爆發造成的傷害提升10%；裝備者受到傷害後的5秒內，上述傷害提升效果提高80%，該提高效果至多疊加5層，每層持續時間獨立計算，處於隊伍後臺時依然能觸發該效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3990,
+        "name": "逐影獵人",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/7998136/539b03bed1057707abd643147e18abde_5509495731576233903.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n普通攻擊與重擊造成的傷害提高15%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3991,
+        "name": "黃金劇團",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/7998136/c32bab10651059ad3c0c8a0e5bbd2e03_8172162348454084110.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n元素戰技造成的傷害提升20%。\n<color=#ffffff>4件套裝</color>\n元素戰技造成的傷害提升25%；此外，處於隊伍後臺時，元素戰技造成的傷害還將進一步提升25%，該效果將在登場後2秒移除。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "傷害承受倍率",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "與其他傷害倍率不同，傷害承受倍率適用於敵人，並不是角色。\n一些角色可以提高敵人的傷害承受倍率："
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "莫娜",
+        "desc": "神秘的少女占星術士，聲稱自己是「偉大的占星術士莫娜」，擁有與名號相符的不俗實力，博學而高傲。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「星命定軌」</color>\n處於「泡影」影響下的敵人受到傷害時，對敵人施加「星異」的傷害加成效果，並以此提高這一次造成的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 28,
+        "name": "甘雨",
+        "desc": "月海亭的秘書，體內流淌著仙獸「麒麟」的血脈。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Ganyu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「西狩」</color>\n在 <color=#ffd780>降眾天華</color> 的領域內，敵人受到的傷害會增加，這個效果會隨時間逐步加強。\n受傷害加成初始為5%，每3秒提升5%，至多提升至25%。\n離開領域後，效果至多持續3秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7079,
+        "name": "歐洛倫",
+        "desc": "來自煙謎主的年輕人，卻與萬千生靈一起生活在原野之中。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/e4830690f8b6a1ebb02cfbc8ce955671_8091252479018770784.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「林霧間的行跡」</color>\n<color=#ffd780>宿靈球</color> 命中敵人後，將為該敵人施加「夜暝」效果，持續12秒；對處於「夜暝」效果影響下的敵人，固有天賦「夜翳的通感」觸發的「顯象超感」造成的傷害提升50%，該效果需要解鎖固有天賦「夜翳的通感」。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "增幅反應加成",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "當攻擊觸發 <color=#ffffff>增幅反應</color> （例：蒸發或融化）時，會在原有的傷害基礎上，另外乘上一個倍率。\n<color=#ffffff>【增幅反應加成計算公式】</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>增幅反應加成 = 元素反應倍率 ×（100% + 元素精通加成 + 元素反應加成）</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "水元素攻擊並觸發蒸發反應時，元素反應倍率為200%；火元素攻擊並觸發融化反應時，元素反應倍率為200%；\n火元素攻擊並觸發蒸發反應時，元素反應倍率為150%；冰元素攻擊並觸發融化反應時，元素反應倍率為150%。"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>200%</color>\n<color=#ffffff>150%</color>\n<color=#ff9999>火元素</color> <color=#ffffff73>附著</color>\n<color=#ffffff73>造成</color> <color=#80c0ff>水元素傷害</color>\n<color=#80c0ff>水元素</color> <color=#ffffff73>附著</color>\n<color=#ffffff73>造成</color> <color=#ff9999>火元素傷害</color>\n<color=#99ffff>冰元素</color> <color=#ffffff73>附著</color>\n<color=#ffffff73>造成</color> <color=#ff9999>火元素傷害</color>\n<color=#ff9999>火元素</color> <color=#ffffff73>附著</color>\n<color=#ffffff73>造成</color> <color=#99ffff>冰元素傷害</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素精通加成</color> 可以依照角色屬性面板內的元素精通數值來計算："
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素精通加成 = （元素精通 × 2.78） / （元素精通 + 1400）</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "一些提高增幅反應傷害所提供的元素反應加成："
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "熾烈的炎之魔女",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n蒸發、融化反應的加成係數提高15%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "莫娜",
+        "desc": "神秘的少女占星術士，聲稱自己是「偉大的占星術士莫娜」，擁有與名號相符的不俗實力，博學而高傲。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「沉沒的預言」</color>\n隊伍中自己的角色攻擊命中處於「星異」狀態下的敵人後的8秒內，自己的角色所造成的 <color=#80c0ff>水元素相關反應</color> 效果提升。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "暴擊加成",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "當角色的攻擊造成暴擊時，傷害會額外乘上 <color=#ffffff>暴擊倍率</color> ，計算方式如下：\n<color=#ffffff>【暴擊傷害】</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>100% + 暴擊傷害</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "劇變反應包括：綻放、超綻放、燃燒、烈綻放、超載、感電、超導、碎冰和擴散。\n劇變反應的傷害會無視敵人的防禦力，但會受到敵人對應 <color=#ffffff>元素抗性</color> 的影響。它們皆無法暴擊（除了納西妲的命之座第2層：使綻放、超綻放、燃燒和烈綻放得以暴擊，暴擊率固定為20%，暴擊傷害為100%）。傷害只與 <color=#ffffff>觸發角色的等級和元素精通</color> 有關。\n例：當綻放反應由草元素角色觸發時（在水元素上附加草元素），劇變反應計算公式只會以該草元素角色的等級、元素精通和敵人的草元素抗性。\n公式如下："
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>敵人抗性倍率 × 元素反應倍率 × 角色等級倍率 ×（100% + 元素精通加成倍率 + 元素反應加成）</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "元素反應倍率",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "每種劇變反應都有各自的元素反應倍率，詳細數據如下："
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素反應倍率</color>\n<color=#ffffff>元素反應</color>\n<color=#ffffff73>300%</color>\n<color=#ffffff73>烈綻放、超綻放、碎冰</color>\n<color=#ffffff73>275%</color>\n<color=#ffffff73>超載</color>\n<color=#ffffff73>200%</color>\n綻放、感電\n<color=#ffffff73>60%</color>\n<color=#ffffff73>擴散</color>\n<color=#ffffff73>25%</color>\n燃燒",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "角色等級倍率",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "角色等級倍率是依照角色現有的等級來判斷。詳細數據如下："
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>角色等級</color>\n<color=#ffffff>角色等級倍率</color>\n<color=#ffffff73>60</color>\n<color=#ffffff73>492.88</color>\n<color=#ffffff73>70</color>\n<color=#ffffff73>765.64</color>\n<color=#ffffff73>80</color>\n<color=#ffffff73>1077.44</color>\n<color=#ffffff73>85</color>\n<color=#ffffff73>1253.84</color>\n<color=#ffffff73>90</color>\n<color=#ffffff73>1446.85</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "元素精通加成倍率",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素精通加成</color> 可以依照角色屬性面板內的元素精通數值來計算："
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素精通加成 = （元素精通 × 16） / （元素精通 + 2000）</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "元素反應加成",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "一些提高劇變反應傷害所提供的元素反應加成："
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "角色",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "莫娜",
+        "desc": "神秘的少女占星術士，聲稱自己是「偉大的占星術士莫娜」，擁有與名號相符的不俗實力，博學而高傲。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「沉沒的預言」</color>\n隊伍中自己的角色攻擊命中處於「星異」狀態下的敵人後的8秒內，自己的角色所造成的 <color=#80c0ff>水元素相關反應</color> 效果提升。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "妮露",
+        "desc": "<p>祖拜爾劇場的知名舞者，舞姿靈動優美，為人純真親善。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/09/7998136/586d726f9ebda3506c78beaaa41f13b6_4107942922283942464.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「翩舞永世之夢」</color>\n基於妮露生命值上限超過30000的部分，每1000點生命值上限將使處於「金杯的豐饋」狀態下的角色觸發的豐穰之核造成的傷害提升9%。\n依此方式至多使豐穰之核造成的傷害提升400%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "卡維",
+        "desc": "<p>須彌著名建築設計師，對太多事物抱有過度關懷心。美學主義者，為現實所困擾。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/7998136/2270aba02b92034d7d76b4426be8f53b_7799297199784451356.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「繁繪隅穹」</color>\n施放「繁繪隅穹」時，提高卡維的普通攻擊、重擊與下落攻擊的攻擊範圍，並將攻擊傷害轉為無法被附魔覆蓋的 <color=#99ff88>草元素傷害</color> 。隊伍中自己的角色觸發綻放反應產生的草原核，在迸發時造成的傷害提升。\n<color=#ffffff>命之座 第4層「百柱的酣宴」</color>\n卡維觸發綻放反應產生的草原核在迸發時造成的傷害提升60%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "白朮",
+        "desc": "<p>藥廬「不卜廬」的主人，隨身懸著名為「長生」的白蛇。精於藥石，深於城府。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/01/7998136/05599650d7f42e1c4adde373de6b297d_1949970766490129649.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「在地為化」</color>\n受到 <color=#ffd780>無郤氣護盾</color> 治療的角色，將獲得「木運之歲」效果：基於白朮生命值上限不超過50000點的部分，每1000點將使該角色觸發的燃燒、綻放、超綻放、烈綻放反應造成的傷害提升2%，超激化、蔓激化反應帶來的傷害提升0.8%，持續6秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "聖遺物",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "如雷的盛怒",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n超載、感電、超導、超綻放反應造成的傷害提升40%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "熾烈的炎之魔女",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n超載、燃燒、烈綻放反應造成的傷害提升40%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "樂園遺落之花",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/13/7998136/50ce09dfa5a91a33aa9cedfb15bcf2d1_3010612142959070125.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n裝備者綻放、超綻放、烈綻放反應造成的傷害提升40%。此外，裝備者觸發綻放、超綻放、烈綻放後，上述效果帶來的加成提升25%，該效果持續10秒，至多疊加4次，每1秒至多觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "翠綠之影",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n擴散反應造成的傷害提升60%。",
+        "alignment": "center"
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "名稱",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "傷害計算公式"
+          }
+        ]
+      },
+      {
+        "key": "類型",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "內置計算型系統"
+          }
+        ]
+      },
+      {
+        "key": "相關詞條",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5206,
+            "name": "元素反應",
+            "desc": "<p>元素反應是原神戰鬥系統的核心。理解和掌握這些互動可以極大地提高玩家在戰鬥中的熟練度。</p><p>觸發元素反應時需要考慮多個因素，例如元素附著、後手元素、元素衰減等。元素計量理論和內建冷卻時間將在幫助玩家理解元素反應背後的複雜性方面發揮重要作用。</p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/17/157749474/1ef525b101a31611b9fe2cc1b0a59aa8_5091762420924568630.png"
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "造成物理傷害",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/12/142453215/6c5ed1eeb09d687c7b8c8cec217c8f63_5385487969474927697.png"
+      },
+      {
+        "key": "元素反應傷害",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/12/142453215/6bb6c739a1c6f8aae3dd898604d75339_5796938751135781048.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "一些特殊要素將納入在增幅反應和附加反應的傷害計算公式當中。"
+          }
+        ]
+      },
+      {
+        "key": "元素反應傷害2",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/12/142453215/f68558a58bc96b9836586c2cb823d99d_7952374767481599495.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "劇變反應會使用特殊的傷害計算公式。"
+          }
+        ]
+      },
+      {
+        "key": "傷害加成",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/12/142453215/166446e96948e4800450695c3960b927_4633692688945380420.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "部分傷害加成會以特別的圖示，顯示在角色的生命條上方。"
+          }
+        ]
+      }
+    ]
+  }
+}

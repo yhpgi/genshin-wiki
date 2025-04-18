@@ -1,0 +1,1367 @@
+{
+  "epId": 5206,
+  "name": "元素反應",
+  "desc": "<p>元素反應是原神戰鬥系統的核心。理解和掌握這些互動可以極大地提高玩家在戰鬥中的熟練度。</p><p>觸發元素反應時需要考慮多個因素，例如元素附著、後手元素、元素衰減等。元素計量理論和內建冷卻時間將在幫助玩家理解元素反應背後的複雜性方面發揮重要作用。</p>",
+  "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/17/157749474/1ef525b101a31611b9fe2cc1b0a59aa8_5091762420924568630.png",
+  "menuId": 14,
+  "menuName": "教學",
+  "version": 1740205571,
+  "components": {
+    "customize": [
+      {
+        "type": "RichText",
+        "text": "元素反應發生在不同的元素施加在已受到元素影響的目標上時。\n在《原神》中，總共有七種元素，每種元素至少有一種可以觸發的反應。但是，這些反應有一些限制，某些元素不與其他元素發生反應，具體如下： <color=#ffe699>岩元素</color> 、 <color=#99ff88>草元素</color> 和 <color=#80ffd7>風元素</color> 不會相互反應， <color=#99ff88>草元素</color> 和 <color=#99ffff>冰元素</color> 也不會相互反應。\n元素反應可以分為不同的類別，例如： <color=#ffffff>無傷害反應</color> 、 <color=#ffffff>增幅反應</color> 、 <color=#ffffff>劇變反應</color> 和 <color=#ffffff>附加反應</color> 。\n爲了更好地理解某些機制和互動，有必要概述和定義一些術語和機制。這些術語和機制已經在社區中得到了廣泛使用，並通過專注玩家的嚴格測試和研究加以確認。其中一些範例和機制相當複雜，因此這裡列出的是一個簡明的概述。"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "元素附著與後手元素",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "在談論元素反應時，有些元素反應是需要考慮其使用順序，而有些元素反應則不受順序影響。無論敵人是受到 <color=#ffacff>雷元素</color> 或 <color=#99ffff>冰元素</color> 影響，只要施加相應的其他元素，超導反應就會發生，所產生的效果是相同的。然而，在觸發蒸發反應時，如果使用的是 <color=#ff9999>火元素</color> 或 <color=#80c0ff>水元素</color> ，施加元素的順序會影響反應的效果（例如1.5倍率和2倍率之間的差距）。\n爲了便於討論這個問題，社區採用了 <color=#ffffff>元素附著</color> 和 <color=#ffffff>後手元素</color> 這兩個術語。在中性狀態下（元素反應前或者反應後）， <color=#ffffff>元素附著</color> 用於描述該生物上存在哪些元素，而 <color=#ffffff>後手元素</color> 則是用於描述哪個元素觸發了反應。"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "元素計量理論",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素計量理論</color> 指的是根據元素附著自身的強度以及相應的後手元素的強度，來理解元素附著被「消耗」程度不同的概念。在這種情況下，元素附著或後手元素的強度並不是由施加的元素攻擊強度所造成的傷害來定義的，而是由該攻擊的預定數值來定義。這些數值可以通過各種因素來調節，比如施加順序（強或弱元素）或施加間隔的時間（衰減）。\n實質上，某些攻擊施加的元素可能會「更多」或「更少」，這可以反映在元素附著或後手元素的強度上。這種強度以所謂的單位來計算，比如1單位 <color=#99ffff>冰元素</color> 或2單位 <color=#ff9999>火元素</color> 。\n以下是一些例子，可以幫助說明這個理念：\n夏洛蒂的普通攻擊施加1單位 <color=#99ffff>冰元素</color> ，而麗莎的普通攻擊施加1單位 <color=#ffacff>雷元素</color> 。兩者相互抵消，從而引發超導反應。\n行秋的元素爆發施加1單位 <color=#80c0ff>水元素</color> ，而胡桃的重擊攻擊施加1單位 <color=#ff9999>火元素</color> 。然而，在這種情況下，由於水克火，所以 <color=#ff9999>火元素</color> 因為蒸發的性質而被視為「弱」元素，其強度減半，這意味著它只消耗了行秋 <color=#80c0ff>水元素附著</color> 的0.5單位。這意味著，在攻擊之後，敵人身上仍然保留了0.5單位的 <color=#80c0ff>水元素附著</color> ，胡桃可以觸發第二次反應。\n班尼特的元素爆發攻擊敵人施加2單位 <color=#ff9999>火元素</color> ，之後莫娜的普通攻擊施加1單位 <color=#80c0ff>水元素</color> 。然而，由於水克火，所以 <color=#80c0ff>水元素</color> 被視為「強」元素，它消耗的數量是 <color=#ff9999>火元素</color> 的兩倍，這導致最初的 <color=#ff9999>火元素</color> <color=#ff9999>附著</color> 被完全消除。\n需要注意的是，即使後手元素施加的元素超過了敵人身上的元素附著中可被消耗的部分，後手元素也不會殘留。一次攻擊只可以施加一個新元素，並留下元素附著，或者消耗部分敵人身上的元素附著並觸發反應。單次攻擊永遠不能同時做這兩件事。"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "內置冷卻時間（ICD）",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "和元素戰技與元素爆發有冷卻時間一樣，施放出之後等待一段時間便可再次使用，大多數施加元素的攻擊也遵循特定的規則。這些冷卻時間大多是相互獨立的，並且沒有任何指示器顯示，因此稱為 <color=#ffffff>內置冷卻時間</color> （Internal Cooldown, ICD）。\n除了一些沒有任何內置冷卻時間且每次使用/擊中都施加元素的例外情況外，大多數攻擊都遵循類似的模式。實際上，有兩個規則共同作用，即時間規則和擊中規則，時間規則是優先於擊中規則。\n其中一個例子是凱亞的元素爆發。雖然這個技能旋轉並快速造成 <color=#99ffff>冰元素傷害</color> ，但並非每次擊中都能觸發反應或施加其元素。實際上，每第三次擊中會施加 <color=#99ffff>冰元素</color> ，意味著第1次、第4次、第7次、第10次、第13次等。此外，每2.5秒，下一次擊中也會保證施加元素，覆蓋前面提到的擊中規則並將其重置為1。與之前凱亞的元素爆發相同的例子，這可能是一個序列："
+      },
+      {
+        "type": "RichText",
+        "text": "1、4、7 / 8、11、14 / 15、18、…",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "在這個例子中，計時器從第1次擊中開始計時。第7次擊中發生在2.4秒後，意味著下一次擊中將在2.5秒後發生。由於時間規則優先，第8次擊中將應用 <color=#99ffff>冰元素</color> ，重置計時器並重新設定時間規則。\n這個3次擊中規則和2.5秒時間規則通常被稱為 <color=#ffffff>標準ICD</color> ，因為這些情況通常是最常見的。一些例外情況是無視這些規則的，比如缺少時間規則或擊中規則的技能，或者具有修改的時間或擊中規則技能。\n這些例外情況的例子包括香菱的元素爆發（無 ICD）或菲謝爾的奧茲攻擊（4次擊中規則和5秒時間規則）。"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "無傷害反應",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "可以分為3個部分：分別為 <color=#ffffff>凍結</color> 、 <color=#ffffff>結晶</color> 和 <color=#ffffff>激化</color> 的元素反應。與造成傷害的元素反應不同，這些反應提供了與相關元素相關聯的其他屬性。"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "I. 凍結",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>凍結</color> 的元素反應是由 <color=#99ffff>冰元素</color> 和 <color=#80c0ff>水元素</color> 造成的，在對手或角色上發生，使受到相應元素影響的目標無法移動，並消耗目標上施加的較弱的元素附著。凍結的持續時間根據施加的單位數和目標抗性計算。"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/f7ca3b98a4323e51179822a2857a956f_703100634561086553.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/7aa68f6cfdc3216424a2b691f12d3453_8427346204557988974.gif",
+        "alignment": "right"
+      },
+      {
+        "type": "RichText",
+        "text": "（凱亞元素戰技2單位，芭芭拉普通攻擊1單位能凍結目標2秒。由於還存在潛在的 <color=#99ffff>冰元素附著</color> ，芭芭拉可以再次觸發另一個凍結效果。）",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "在凍結狀態下，目標可以通過使用另一個元素來獲得觸發元素反應（融化、超導、碎冰、擴散、綻放），這將減少或清除目標上的 <color=#99ffff>冰元素附著</color> 持續時間。"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/e9a908ab320bbb06ce05bb08770762b1_3986696504893110804.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/7261fca8300eac3549936e6e0ced5ca2_69616300500122683.gif",
+        "alignment": "right"
+      },
+      {
+        "type": "RichText",
+        "text": "（比如在已經被凍結的目標上觸發超導或擴散反應將立即清除或減少凍結持續時間。第二個例子中，由於不斷施加 <color=#80c0ff>水元素</color> ，所以其實是 <color=#80c0ff>水元素</color> 從敵人身上擴散出，而不是 <color=#99ffff>冰元素</color> 。）",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#99ff88>草元素附著</color> 在受影響的目標將不會觸發任何反應。反之，若處於凍結狀態的目標擁有更強的 <color=#80c0ff>水元素附著</color> 或更強的元素計量單位，將產生1個草原核（至多可通過此方式產生3個草原核）。"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/3aeac403ad31e20920f54f8c48886c9d_5677600415338105232.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/dd2c1f3cf222977f9f1452d52f563a19_9086478006534469735.gif",
+        "alignment": "right"
+      },
+      {
+        "type": "RichText",
+        "text": "（因為 <color=#99ff88>草元素</color> 具有更強的元素附著，對凍結狀態下的目標使用1單位和2單位的 <color=#80c0ff>水元素</color> 將產生3個草原核。）",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "II. 結晶",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "結晶反應發生在受到 <color=#ff9999>火元素</color> 、 <color=#ffacff>雷元素</color> 、 <color=#99ffff>冰元素</color> 或 <color=#80c0ff>水元素</color> 影響的目標承受到 <color=#ffe699>岩元素傷害</color> 時，會在附近產生一個 <color=#ffffff>結晶碎片</color> 。這個碎片可被角色拾取，並賦予一個特定基礎值的護盾。結晶護盾強度的計算基於角色等級（基礎護盾生命值）和元素精通（額外護盾生命值）。"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/5d299591b3f64cdfa82fa055f90eecb9_7198248087726378669.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "角色90級且具有1000點元素精通的護盾強度。"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/03c7f58b6ea44611c15d7790f3b375f5_4273356288171463538.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "角色90級且具有0點元素精通的護盾強度。\n每次最多可在場上出現3個結晶碎片，新產生的結晶碎片將會替換最舊的碎片。每個碎片在場上最多持續17秒。當被拾取後，結晶護盾將持續15秒，結晶護盾的對應元素將有該元素的250%的傷害吸收和抗打斷的效果。\n角色只能同時擁有一個結晶護盾，拾取另一個碎片將替換它，並重新整理其持續時間和護盾傷害吸收效果。與遊戲中的其他護盾一樣，結晶護盾不會與其他護盾疊加，無論是從能力、武器或者命座，所有護盾都將同時承受傷害。"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/74bbce8a18d6bcfd0bec48cc2b7792b9_5345317538845091544.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "（用鍾離的元素戰技來疊加結晶碎片）"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "III. 激化",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>激化</color> 反應能觸發激化狀態，而激化有分為兩種分別是 <color=#ffffff>蔓激化</color> 和 <color=#ffffff>超激化</color> 。當 <color=#99ff88>草元素</color> 和 <color=#ffacff>雷元素</color> 擊中目標時，目標將受到激化狀態的影響，並且這種狀態將持續到這兩種元素消失在敵人身上（大約11秒）。在激化狀態的目標身上，施加 <color=#99ff88>草元素</color> 會觸發蔓激化反應，施加 <color=#ffacff>雷元素</color> 會觸發超激化反應，從而增加額外的傷害。由於需要在激化的敵人身上施放 <color=#99ff88>草元素</color> 或 <color=#ffacff>雷元素</color> 攻擊來引發蔓激化/超激化反應，因此這種狀態是會不斷重新整理的持續時間的。"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/ba8b5289bf3984d33ee58d4899a2cf0d_1673697031811751886.gif",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "儘管怪物處於激化狀態時，怪物頭上的 <color=#99ff88>草元素</color> 標誌並不是 <color=#99ff88>草元素附著</color> 。 <color=#99ff88>草元素</color> 在與 <color=#ff9999>火元素</color> 和 <color=#80c0ff>水元素</color> 觸發反應時，也會出現同樣的情況。蔓激化和超激化不會消耗或減少目標身上的激化狀態，各自獨立且視為新增狀態，但是施加 <color=#ff9999>火元素</color> 或 <color=#80c0ff>水元素</color> 會觸發燃燒或綻放，從而減少激化狀態的持續時間。"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/b7a6e2555a42ac4c0a290b1aaaacca4f_6360988579815652156.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "（將 <color=#80c0ff>水元素</color> 施加到激化狀態下的目標上會消耗 <color=#99ff88>草元素</color> 並清除目標身上的激化狀態。）"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "傷害反應",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "在遊戲中，角色屬性的元素精通數值下，元素反應被分為四種類別，其中3個具有破壞性質。這些型別可以被分類為 <color=#ffffff>增幅反應</color> 、 <color=#ffffff>劇變反應</color> 和 <color=#ffffff>附加反應</color> 。\n增幅反應包括了 <color=#ffffff>蒸發</color> 和 <color=#ffffff>融化</color> 。這些反應通過各種乘區來放大它們的傷害。\n附加反應包括了 <color=#ffffff>蔓激化</color> 和 <color=#ffffff>超激化</color> 。這些反應能新增一定的數值對於那些能觸發這些反應的攻擊。\n劇變反應導致的傷害與觸發它們的攻擊無關，並且可以具有額外的屬性，例如造成多次傷害或施加元素。這些反應包括 <color=#ffffff>燃燒</color> 、 <color=#ffffff>超導</color> 、 <color=#ffffff>擴散</color> 、 <color=#ffffff>感電</color> 、 <color=#ffffff>碎冰</color> 、 <color=#ffffff>超載</color> 、 <color=#ffffff>原綻放</color> 、 <color=#ffffff>超綻放</color> 和 <color=#ffffff>烈綻放</color> 。\n所有這些反應都考慮了觸發反應的角色的 <color=#ffffff>元素精通</color> 和每種反應的 <color=#ffffff>特定倍率</color> ，以及敵人對該反應的 <color=#ffffff>元素抗性</color> 。此外，對於附加和劇變反應， <color=#ffffff>角色等級</color> 也是需要納入考量的因素。"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "I. 增幅反應",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>蒸發</color> 和 <color=#ffffff>融化</color> 屬於增幅反應的一種，它們將普通傷害乘以元素精通加成和一個特殊增幅倍率。對於由 <color=#80c0ff>水元素</color> 觸發的蒸發和由 <color=#ff9999>火元素</color> 觸發的融化，增幅倍率為 <color=#ffffff>200%</color> ；對於由 <color=#ff9999>火元素</color> 觸發的蒸發和由 <color=#99ffff>冰元素</color> 觸發的融化，增幅倍率則是 <color=#ffffff>150%</color> 。\n觸發200%倍率加成的反應通常稱為「強」元素，而觸發150%倍率加成的反應則稱為「弱」元素。不過這與它們造成的傷害量關係較小，更多地則是與涉及的元素相互克制關係有關。假設怪物身上的元素附著和後續觸發的後手元素的元素計量單位相同，「弱」元素反應會消耗較少的元素附著。因此，「弱」元素反應只會消耗「強」元素反應消耗的一半的元素附著，玩家們可以利用這點來觸發更多的反應。"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/43af11363070a0ce522a7f88e6398eb0_2532039850847443716.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "（上方圖顯示了元素攻擊的傷害，底部圖顯示了帶有元素精通為0的元素反應。）\n火蒸發（x1.5）、水蒸發（x2.0）、冰融化（x1.5）、火融化（x2.0）",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "II. 劇變反應",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "劇變反應有分很多種，但它們都有以下特點：能產生獨立於別的攻擊（和其基礎傷害）的 <color=#ffffff>傷害</color> ， <color=#ffffff>不能觸發暴擊</color> ， <color=#ffffff>不受任何普通傷害</color> 加成的影響，也不考慮 <color=#ffffff>敵人防禦力</color> ，而是考慮 <color=#ffffff>觸發該反應的角色等級</color> 。等級係數對每個等級都是特定的，但最重要的是80級和90級的等級係數分別為1077和1446。\n【劇變反應計算方式】"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>( 100% + 元素精通 ) × 怪物抗性 × 角色等級係數 × 元素反應倍率</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素反應倍率</color> 係數為燃燒 <color=#ffffff>25％</color> ；擴散 <color=#ffffff>60％</color> ；超導 <color=#ffffff>150％</color> ；感電與原綻放 <color=#ffffff>200％</color> ；超載 <color=#ffffff>275%</color> ；碎冰、烈綻放與超綻放 <color=#ffffff>300％</color> 。\n<color=#ffffff>燃燒</color> 是由 <color=#ff9999>火元素</color> 和 <color=#99ff88>草元素</color> 觸發的。它能造成 <color=#ff9999>火元素範圍傷害</color> ，並施加一個燃燒效果，持續造成 <color=#ff9999>火元素傷害</color> ，直到敵人身上的 <color=#99ff88>草元素附著</color> 消失。\n<color=#ffffff>擴散</color> 在 <color=#80ffd7>風元素</color> 和 <color=#ff9999>火元素</color> / <color=#80c0ff>水元素</color> / <color=#ffacff>雷元素</color> / <color=#99ffff>冰元素</color> 相互遇見時觸發。它造成擴散（非 <color=#80ffd7>風元素</color> ）範圍傷害，對受影響的敵人和附近的敵人造成傷害。同時在2個以上的敵人身上觸發擴散反應會對所有受擊的敵人（包括其本身和相鄰的敵人）造成2次擴散傷害。唯一的例外是 <color=#80c0ff>水元素</color> ：擴散 <color=#80c0ff>水元素</color> 只會施加潮濕狀態，並對觸發的敵人造成傷害。擴散反應被認為是一種「弱」元素互動；因此，敵人身上的元素附著並不會完全清除，這有利於進一步觸發其他反應。\n<color=#ffffff>超導</color> 是由 <color=#ffacff>雷元素</color> 和 <color=#99ffff>冰元素</color> 觸發的。它能造成 <color=#99ffff>冰元素範圍傷害</color> ，並在12秒內降低所有被擊中的敵人的 <color=#ffffff>物理抗性</color> 40％。該反應的 <color=#99ffff>冰元素傷害</color> 並不會附加元素效果。\n<color=#ffffff>感電</color> 是在 <color=#80c0ff>水元素</color> 和 <color=#ffacff>雷元素</color> 相互作用時觸發的。它每秒對受影響的敵人和被潮濕影響的附近敵人造成 <color=#ffacff>雷元素傷害</color> ，直到 <color=#80c0ff>水元素附著</color> 或 <color=#ffacff>雷元素附</color> 著消失。\n<color=#ffffff>原綻放</color> 是由 <color=#99ff88>草元素</color> 和 <color=#80c0ff>水元素</color> 相互作用時觸發的。它不會造成額外的傷害，但會建立一個草原核，爆炸後會造成 <color=#99ff88>草元素範圍傷害</color> （爆炸將在6秒後或建立超過5個的草原核時）。每個敵人每0.5秒最多隻能承受兩次草原核的傷害。當我方角色受到草原核傷害時，傷害將只有其傷害的5%。如果是 <color=#80c0ff>水元素</color> 觸發綻放， <color=#99ff88>草元素附著</color> 將完全被清除；但如果是 <color=#99ff88>草元素</color> 觸發，則只有 <color=#80c0ff>水元素附著</color> 的一半。（草克水所以消耗比例是1:2）\n<color=#ffffff>超載</color> 是由 <color=#ff9999>火元素</color> 和 <color=#ffacff>雷元素</color> 相互作用時觸發的。它造成的 <color=#ff9999>火元素範圍傷害</color> ，並引發強烈的爆炸，清除 <color=#ff9999>火元素附著</color> 和 <color=#ffacff>雷元素附著</color> 。\n<color=#ffffff>碎冰</color> 是在凍結敵人後被重擊（大劍、下落攻擊、爆炸、岩石傷害等）命中時觸發的。它能結束凍結狀態，並且造成 <color=#ffffff>物理傷害</color> （因此無法觸發冰風迷途的勇士四件套和 <color=#99ffff>冰元素</color> 共鳴的加成）。\n<color=#ffffff>烈綻放</color> 是由草原核與 <color=#ff9999>火元素</color> 接觸時觸發的。它能造成 <color=#99ff88>草元素範圍傷害</color> 。\n<color=#ffffff>超綻放</color> 是由草原核與 <color=#ffacff>雷元素</color> 接觸時觸發的。它並不會造成額外的傷害，但會將草原核轉化為追蹤式噴射彈，擊中目標時會造成 <color=#99ff88>草元素傷害</color> 。它的範圍非常小，但如果多個敵人足夠接近彼此，它也可以擊中它們。"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/e9426a37463131d1d5a65bd0677b01e0_8714591292414216019.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "（觸發以上說明過的元素反應，角色等級都是一樣且元素精通是0。）",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "III. 附加反應",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>蔓激化</color> 和 <color=#ffffff>超激化</color> 是屬於附加反應，它們會為觸發它們的能力的傷害新增一定數值。附加反應只能在受到 <color=#ffffff>激化</color> 狀態影響的敵人身上觸發（第二張圖）。造成 <color=#99ff88>草元素傷害</color> 會觸發蔓激化，而 <color=#ffacff>雷元素傷害</color> 會觸發超激化。這個額外傷害應用於觸發攻擊的 <color=#ffffff>基礎傷害</color> ，並且受益於所有進一步增強的加成和因素（傷害%，暴擊，抗性，防禦）應用到該攻擊上。\n【附加反應計算方式】"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>( 100% + 元素精通 ) × 角色等級係數 × 元素反應倍率</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "超激化的 <color=#ffffff>元素反應倍率</color> 是 <color=#ffffff>115%</color> ；蔓激化則是 <color=#ffffff>125%</color> 。"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/3c436038857810cddd36dcbcd2a25307_2246617110877344145.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "（菲謝爾和柯萊分別觸發附加反應，兩者的等級，攻擊，技能倍率，元素精通0都是一樣的。）",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "相關機制",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "I. 元素共鳴",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "元素共鳴會根據你隊伍中角色的元素而改變。當隊伍中有2個相同元素型別的角色時以及隊伍中有4個角色時，元素共鳴效果將會觸發。在8種可能的效果中，只有兩種與元素反應有關分別為 <color=#99ff88>草元素</color> 的 <color=#ffffff>「蔓生之草」</color> 和 <color=#ffacff>雷元素</color> 的 <color=#ffffff>「強能之雷」</color> 。"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/17/157749474/69f12fbd872d17cc702916d666bb196f_1978589350774625422.png",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "II. 元素反應觸發角色天賦效果",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9,
+        "name": "凱亞",
+        "desc": "異國面容的劍鬥士，西風騎士團的頭腦派人物。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kaeya_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「冰淵之心」</color>\n<color=#ffd780>霜襲</color> 使敵人 <color=#99ffff>凍結</color> 時，被凍結的敵人會掉落額外的元素微粒。\n一次霜襲至多因此產生2個額外元素微粒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 38,
+        "name": "菲謝爾",
+        "desc": "自稱「斷罪之皇女」，與名為奧茲的漆黑夜鴉同行的神秘少女。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Fischl_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「斷罪雷影」</color>\n奧茲在場時，若當前場上自己的角色攻擊敵人時觸發了 <color=#ffacff>雷元素相關反應</color> ，則會對敵人降下聖裁之雷，造成菲謝爾80%攻擊力的 <color=#ffacff>雷元素傷害</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 30,
+        "name": "砂糖",
+        "desc": "對萬物充滿好奇的煉金術士，「生物煉金」學派的研究者。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sucrose_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「觸媒置換術」</color>\n砂糖觸發擴散反應時，使隊伍中所有對應元素類型的（不包括砂糖自身）角色元素精通提升50，持續8秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1,
+        "name": "七七",
+        "desc": "藥廬「不卜廬」的採藥姑娘兼學徒，面色蒼白如紙的不死之人。話很少，也沒有什麼表情。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Qiqi_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「延命妙法」</color>\n處於 <color=#ffd780>仙法·寒病鬼差</color> 狀態下的角色觸發元素反應時，受治療加成提升20%，持續8秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 22,
+        "name": "楓原萬葉",
+        "desc": "來自稻妻的浪人武士，如今棲身於璃月船隊「南十字」中。性情溫和而灑脫，心中埋藏著許多往事。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kaedehara Kazuha_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「風物之詩詠」</color>\n楓原萬葉觸發擴散反應後，楓原萬葉的每點元素精通，會為隊伍中所有角色提供0.04%對應元素傷害加成，持續8秒。透過這種方式獲得的不同元素傷害加成可以共存。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 21,
+        "name": "早柚",
+        "desc": "隸屬於「終末番」的忍者。身形小巧，總像沒睡飽一樣。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sayu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「更加合適的人選」</color>\n早柚在場上觸發擴散反應時，為隊伍中自己的角色以及附近的友方角色恢復300點生命值。除此之外，早柚的每點元素精通將額外恢復1.2點生命值。\n該效果每2秒只能觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2263,
+        "name": "鹿野院平藏",
+        "desc": "天領奉行的天才少年偵探，直覺敏銳，心思玲瓏。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Shikanoin Heizou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「反論稽古」</color>\n鹿野院平藏在場上觸發擴散反應時，將獲得1層 <color=#ffd780>勠心拳</color> 的「變格」效果，該效果每0.1秒至多觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2268,
+        "name": "柯萊",
+        "desc": "<p>活躍於道成林的見習巡林員，熱情的言行背後是一顆依舊稍顯內向的心。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/24/7998136/37a18b6b6865c59063003a9380f08225_1266672008615328646.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「飛葉迴斜」</color>\n在 <color=#ffd780>飛葉輪</color> 返回前，如果隊伍中自己的角色觸發了燃燒、原激化、超激化、蔓激化、綻放、超綻放或烈綻放反應，則會在返回時為角色賦予「新葉」狀態，持續對身邊的敵人造成相當於柯萊攻擊力40%的 <color=#99ff88>草元素傷害</color> ，持續3秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2268,
+        "name": "柯萊",
+        "desc": "<p>活躍於道成林的見習巡林員，熱情的言行背後是一顆依舊稍顯內向的心。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/24/7998136/37a18b6b6865c59063003a9380f08225_1266672008615328646.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「徐如曠林」</color>\n<color=#ffd780>柯里安巴領域</color> 中的角色觸發燃燒、原激化、超激化、蔓激化、綻放、超綻放或烈綻放反應時，將使領域的持續時間延長1秒。\n一次 <color=#ffd780>貓貓秘寶</color> 中，至多依此方式延長3次持續時間。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2269,
+        "name": "多莉",
+        "desc": "<p>神出鬼沒的旅行百貨商人，最喜歡閃亮亮的摩拉。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/09/7998136/6539bea71efd0f839db897cfc4094362_1942875010588429590.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「批沙瀝金」</color>\n與 <color=#ffd780>燈中幽精</color> 相連的角色在觸發感電、超導、超載、原激化、超激化、超綻放、雷元素擴散或雷元素結晶反應後， <color=#ffd780>鎮靈之燈·煩惱解決炮</color> 的冷卻時間縮短1秒。\n該效果每3秒至多觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2850,
+        "name": "納西妲",
+        "desc": "<p>深居淨善宮的籠中之鳥，只能在夢中將世界盡收眼底。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/01/7998136/f29490bddc56b4a6773b6c5003bbb853_2458576086062564041.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「所聞遍計」</color>\n對處於蘊種印狀態下的敵人觸發元素反應，以及在該敵人受到草原核（包含烈綻放、超綻放）造成的傷害後，納西妲將基於攻擊力與元素精通，對該敵人及其所處連結中的所有敵人釋放滅淨三業，造成 <color=#99ff88>草元素傷害</color> 。\n短時間內至多觸發一次滅淨三業。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "卡維",
+        "desc": "<p>須彌著名建築設計師，對太多事物抱有過度關懷心。美學主義者，為現實所困擾。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/7998136/2270aba02b92034d7d76b4426be8f53b_7799297199784451356.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「營造者的擔當」</color>\n草原核造成的傷害（包含烈綻放、超綻放）命中卡維時，卡維將恢復生命值，回復量相當於卡維元素精通的300%。該效果每0.5秒至多觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3964,
+        "name": "菲米尼",
+        "desc": "<p>精於潛水的寡言少年，在如寒冰般拒人千里的外表下，藏有一顆無瑕的純真之心。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/04/133389800/8e44111a378f4e5379b8e7444e8c2daa_8389499528948865519.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「並流式冷凝機關」</color>\n菲米尼對敵人觸發碎冰反應後，會使 <color=#ffd780>浮冰增壓·高壓粉碎</color> 造成的傷害提高40%，持續5秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4023,
+        "name": "那維萊特",
+        "desc": "<p>楓丹的最高審判官，因其無懈可擊的「秉公無私」而聞名。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/20/133389800/0513aa7f482dbb4778545d02f94956fe_4448918334482979837.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「古海孑遺的權柄」</color>\n隊伍中的角色對敵人觸發蒸發、凍結、感電、綻放、水元素擴散或水元素結晶反應時，將為那維萊特產生持續30秒，至多疊加3層的「遺龍之榮」效果，使重擊·衡平推裁造成原本110%/125%/160%的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4577,
+        "name": "夏沃蕾",
+        "desc": "<p>時刻恪守著心中「正義」的特巡隊隊長，手中的銃槍只會指向負罪之人。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/01/08/125391187/a846729f31f16a987a8696466ebabcc0_6920090480115558173.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「尖兵協同戰法」</color>\n隊伍中所有角色的元素類型均為 <color=#ff9999>火元素</color> 與 <color=#ffacff>雷元素</color> ，並且至少有一名火元素角色、一名雷元素角色時：\n夏沃蕾將為隊伍中附近的角色施加「協同戰法」：角色觸發超載反應後，受本次反應影響的敵人的 <color=#ff9999>火元素</color> 與 <color=#ffacff>雷元素</color> 抗性降低40%，持續6秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5596,
+        "name": "克洛琳德",
+        "desc": "<p>不敗的決鬥代理人。以手中的劍維護楓丹廷的「公義」。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/06/142453215/770a66030815971c697ab81bc5436329_5538768133624290010.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「破夜的明焰」</color>\n隊伍中附近的角色對敵人觸發 <color=#ffacff>雷元素相關反應</color> 後，將基於克洛琳德攻擊力的20%，提升克洛琳德的普通攻擊與 <color=#ffd780>殘光將終</color> 造成的 <color=#ffacff>雷元素傷害</color> 。此效果持續15秒，至多疊加3層，每層獨立計時。依此方式至多使克洛琳德的上述攻擊造成的傷害提升1800。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5598,
+        "name": "賽索斯",
+        "desc": "<p>緘默之殿的繼承者。背負著秘密，自沙中而來。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/06/142453215/cdb7abfcb86138e5b618946a5466d442_1443291969112851528.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「古儀·鳴砂掣雷」</color>\n<color=#ffffff73>凝集轟雷，造成</color> <color=#ffacff>雷元素範圍傷害</color> <color=#ffffff73>並快速後退。如果此次攻擊對敵人觸發了感電、超導、超載、原激化、超激化、超綻放或雷元素擴散反應，賽索斯將恢復一定的元素能量。</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5714,
+        "name": "艾梅莉埃",
+        "desc": "楓丹香水設計師，將秘密藏於瓶中之人。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「擷萃調香」</color>\n附近的敵人處於燃燒狀態下時，將間歇性產生「香韻」，每2秒至多依此方式產生一枚香韻。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5714,
+        "name": "艾梅莉埃",
+        "desc": "楓丹香水設計師，將秘密藏於瓶中之人。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「精餾」</color>\n基於艾梅莉埃的攻擊力，提升艾梅莉埃對處於燃燒狀態下的敵人造成的傷害：每1000點攻擊力都將提升15%傷害，至多依此方式提升36%傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6317,
+        "name": "基尼奇",
+        "desc": "維茨特蘭的獵龍人，精於度量代價。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/12/0099e74b4d0c919f6feab4bade3ab748_5795733017114624391.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「噩地的代價」</color>\n處於夜魂加持狀態下時，基尼奇的元素戰技命中的敵人，將陷入「噩地」狀態，在受到燃燒反應或烈綻放反應傷害時，為基尼奇產生7點夜魂值，每0.8秒至多依此方式產生一次夜魂值。噩地狀態持續直至基尼奇此次夜魂加持狀態結束。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7079,
+        "name": "歐洛倫",
+        "desc": "來自煙謎主的年輕人，卻與萬千生靈一起生活在原野之中。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/e4830690f8b6a1ebb02cfbc8ce955671_8091252479018770784.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「夜翳的通感」</color>\n附近的敵人受到 <color=#ffacff>感電</color> 反應的傷害或隊伍中附近的其他角色造成的具有夜魂性質的傷害時，若歐洛倫擁有至少10點夜魂值，歐洛倫將消耗10點夜魂值，進入夜魂加持狀態，並觸發「顯象超感」效果：基於歐洛倫攻擊力的160%，對周圍至多4名敵人造成具有夜魂性質的 <color=#ffacff>雷元素傷害</color> 。上述效果每1.8秒至多觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7300,
+        "name": "茜特菈莉",
+        "desc": "煙謎主的大薩滿，令所有族人敬畏的黑曜石奶奶。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/27/c4ab2530bb8bbe3c0e811684f97ec124_6688582217610741079.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「五重天的寒雨」</color>\n伊茲帕帕存在期間，隊伍中附近的角色觸發凍結反應或融化反應後，受本次反應影響的敵人的 <color=#ff9999>火元素</color> 與 <color=#80c0ff>水元素</color> 抗性還會降低20%，持續12秒；此外，茜特菈莉還會恢復16點夜魂值，每8秒至多依此方式恢復一次夜魂值。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "III. 元素反應觸發命之座效果",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 10,
+        "name": "刻晴",
+        "desc": "璃月七星之一，玉衡星。對「帝君一言而決的璃月」頗有微詞——但實際上，神還滿欣賞她這樣的人。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Keqing_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層 「調律」</color>\n刻晴觸發 <color=#ffacff>雷元素相關反應</color> 後的10秒內，攻擊力提升25%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 21,
+        "name": "早柚",
+        "desc": "隸屬於「終末番」的忍者。身形小巧，總像沒睡飽一樣。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sayu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層 「偷懒的新方法」</color>\n早柚在場上觸發擴散反應時，將恢復1.2點元素能量。\n該效果每2秒只能觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4,
+        "name": "雲堇",
+        "desc": "集劇作與演唱能力於一身的璃月戲曲名角。風格自成一派，雅致柔美，恰如其人。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yun Jin_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層 「昇堂吊雲」</color>\n雲堇觸發結晶反應後，防禦力提升20%，持續12秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2268,
+        "name": "柯萊",
+        "desc": "<p>活躍於道成林的見習巡林員，熱情的言行背後是一顆依舊稍顯內向的心。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/24/7998136/37a18b6b6865c59063003a9380f08225_1266672008615328646.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層 「漫行山藪」</color>\n從施放 <color=#ffd780>拂花偈葉</color> 開始，到此次新葉狀態消失前，如果隊伍中自己的角色觸發了燃燒、原激化、超激化、蔓激化、綻放、超綻放或烈綻放反應，則使此次新葉效果的持續時間延長3秒。\n新葉效果至多依此方式延長一次持續時間。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2265,
+        "name": "提納里",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">精通植物學的少年學者，現於道成林任巡林官一職。直率熱忱，擅長教導腦袋不清楚的人。</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/24/7998136/d039c6da9285163f46b85f0241f29c17_1332543106735487687.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層 「由片葉管窺枯榮」</color>\n施放 <color=#ffd780>造生纏藤箭</color> 時，隊伍中附近的所有角色的元素精通提升60點，持續8秒。若造生纏藤箭觸發了燃燒、綻放、原激化或蔓激化反應，元素精通將進一步提升60點，並重置該狀態的持續時間。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2813,
+        "name": "賽諾",
+        "desc": "<p>教令院內負責監管學者們的「大風紀官」。工作時比剎訶伐羅學院製作的「大風機關」更有效率。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/26/7998136/e09e2bda5e022611fad0dea1bb6518bb_6963723648787937375.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層 「巡儀·蕆護禁罔」</color>\n賽諾處於 <color=#ffd780>聖儀·煟煌隨狼行</color> 的啟途誓使狀態下時，觸發感電、超導、超載、原激化、超激化、超綻放、雷元素擴散反應後，將為隊伍中附近的所有角色（除了賽諾自己）恢復3點元素能量。\n該效果在一次 <color=#ffd780>聖儀·煟煌隨狼行</color> 中，至多觸發5次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "妮露",
+        "desc": "<p>祖拜爾劇場的知名舞者，舞姿靈動優美，為人純真親善。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/09/7998136/586d726f9ebda3506c78beaaa41f13b6_4107942922283942464.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層 「星天的花雨」</color>\n處於「金杯的豐饋」狀態下的角色對敵人造成 <color=#80c0ff>水元素傷害</color> 後，該敵人的 <color=#80c0ff>水元素抗性</color> 降低35%，持續10秒；觸發綻放反應對敵人造成傷害後，該敵人的 <color=#99ff88>草元素抗性</color> 降低35%，持續10秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2850,
+        "name": "納西妲",
+        "desc": "<p>深居淨善宮的籠中之鳥，只能在夢中將世界盡收眼底。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/01/7998136/f29490bddc56b4a6773b6c5003bbb853_2458576086062564041.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層 「正等善見之根」</color>\n處於納西妲自身施加的 <color=#ffd780>蘊種印</color> 狀態下的敵人，將受到以下效果影響：\n·受到原激化、超激化、蔓激化反應影響後的8秒內，防禦力降低30%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3964,
+        "name": "菲米尼",
+        "desc": "<p>精於潛水的寡言少年，在如寒冰般拒人千里的外表下，藏有一顆無瑕的純真之心。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/04/133389800/8e44111a378f4e5379b8e7444e8c2daa_8389499528948865519.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層 「雪月與蘆笛之舞」</color>\n菲米尼對敵人觸發冰凍、碎冰、超導反應後，攻擊力提升9%。該效果持續6秒，至多疊加2次，每0.3秒至多觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3964,
+        "name": "菲米尼",
+        "desc": "<p>精於潛水的寡言少年，在如寒冰般拒人千里的外表下，藏有一顆無瑕的純真之心。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/04/133389800/8e44111a378f4e5379b8e7444e8c2daa_8389499528948865519.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層 「夢曉與決意之刻」</color>\n菲米尼對敵人觸發冰凍、碎冰、超導反應後，暴擊傷害提升12%。該效果持續6秒，至多疊加3次，每0.3秒至多觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5596,
+        "name": "克洛琳德",
+        "desc": "<p>不敗的決鬥代理人。以手中的劍維護楓丹廷的「公義」。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/06/142453215/770a66030815971c697ab81bc5436329_5538768133624290010.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層 「『自此，直面長夜之危』」</color>\n隊伍中附近的角色對敵人觸發 <color=#ffacff>雷元素相關反應</color> 後，將基於克洛琳德攻擊力的30%，提升克洛琳德的普通攻擊與 <color=#ffd780>殘光將終</color> 造成的 <color=#ffacff>雷元素傷害</color> 。此效果持續15秒，至多疊加3層，每層獨立計時。處於3層狀態下時，克洛琳德的抗打斷能力提升。依此方式至多使克洛琳德的上述攻擊造成的傷害提升2700。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5598,
+        "name": "賽索斯",
+        "desc": "<p>緘默之殿的繼承者。背負著秘密，自沙中而來。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/06/142453215/cdb7abfcb86138e5b618946a5466d442_1443291969112851528.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層 「寂秘紙草經」</color>\n<color=#ffffff73>透過</color> <color=#ffd780>古儀·鳴砂掣雷</color> <color=#ffffff73>觸發元素反應恢復元素能量或其他條件時，賽索斯的</color> <color=#ffacff>雷元素傷害加成</color> <color=#ffffff73>提升15%，持續10秒，至多疊加2層，每層獨立計時</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5714,
+        "name": "艾梅莉埃",
+        "desc": "楓丹香水設計師，將秘密藏於瓶中之人。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層 「淡香浸析」</color>\n隊伍中附近的角色對敵人觸發燃燒反應或對處於燃燒狀態下的敵人造成 <color=#99ff88>草元素傷害</color> 時，會額外生成一枚 <color=#ffd780>香韻</color> 。此效果每2.9秒至多觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7300,
+        "name": "茜特菈莉",
+        "desc": "煙謎主的大薩滿，令所有族人敬畏的黑曜石奶奶。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/27/c4ab2530bb8bbe3c0e811684f97ec124_6688582217610741079.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層 「吞心者的巡行」</color>\n伊茲帕帕存在期間，隊伍中附近的角色觸發凍結反應或融化反應後，受本次反應影響的敵人的 <color=#ff9999>火元素</color> 與 <color=#80c0ff>水元素</color> 抗性還會額外降低20%，持續12秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "IV. 角色天賦提升元素反應",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "妮露",
+        "desc": "<p>祖拜爾劇場的知名舞者，舞姿靈動優美，為人純真親善。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/09/7998136/586d726f9ebda3506c78beaaa41f13b6_4107942922283942464.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「折旋落英之庭」</color>\n隊伍中所有角色的元素類型均為 <color=#99ff88>草元素</color> 與 <color=#80c0ff>水元素</color> ，並且至少有一名草元素角色、一名水元素角色時：\n妮露完成 <color=#ffd780>七域舞步</color> 的第三段舞步會為附近的所有角色賦予持續30秒的「金杯的豐饋」狀態。\n處於金杯的豐饋狀態下的角色受到 <color=#99ff88>草元素攻擊</color> 會使附近的所有角色元素精通提升100點，持續10秒；此外，觸發綻放反應時，將取代草原核產生「豐穰之核」。\n相比草原核，豐穰之核在產生後將迅速迸發，並且具有更大的影響範圍。\n豐穰之核無法觸發超綻放與烈綻放反應，與草原核共用數量上限。豐穰之核的攻擊視為綻放反應的草原核的攻擊。\n當隊伍中角色的元素類型不滿足本固有天賦的條件時，將移除已有的金杯的豐饋效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "妮露",
+        "desc": "<p>祖拜爾劇場的知名舞者，舞姿靈動優美，為人純真親善。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/09/7998136/586d726f9ebda3506c78beaaa41f13b6_4107942922283942464.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「翩舞永世之夢」</color>\n基於妮露生命值上限超過30000的部分，每1000點生命值上限將使處於「金杯的豐饋」狀態下的角色觸發的豐穰之核造成的傷害提升9%。\n依此方式至多使豐穰之核造成的傷害提升400%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "卡維",
+        "desc": "<p>須彌著名建築設計師，對太多事物抱有過度關懷心。美學主義者，為現實所困擾。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/7998136/2270aba02b92034d7d76b4426be8f53b_7799297199784451356.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「畫則巧施」</color>\n將「梅赫拉克」的測繪能量轉為攻勢用途，進行圓狀掃描，造成 <color=#99ff88>草元素範圍傷害</color> ，並使掃描範圍內的所有草原核立即迸發。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "卡維",
+        "desc": "<p>須彌著名建築設計師，對太多事物抱有過度關懷心。美學主義者，為現實所困擾。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/7998136/2270aba02b92034d7d76b4426be8f53b_7799297199784451356.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「繁繪隅穹」</color>\n施放元素爆發後的12秒內，隊伍中自己的角色觸發綻放反應產生的草原核，在迸發時造成的傷害提升。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "白朮",
+        "desc": "<p>藥廬「不卜廬」的主人，隨身懸著名為「長生」的白蛇。精於藥石，深於城府。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/01/7998136/05599650d7f42e1c4adde373de6b297d_1949970766490129649.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「在地為化」</color>\n受到 <color=#ffd780>無郤氣護盾</color> 治療的角色，將獲得「木運之歲」效果：基於白朮生命值上限不超過50000點的部分，每1000點將使該角色觸發的燃燒、綻放、超綻放、烈綻放反應造成的傷害提升2%，超激化、蔓激化反應帶來的傷害提升0.8%，持續6秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "V. 命之座提升元素反應",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "莫娜",
+        "desc": "神秘的少女占星術士，聲稱自己是「偉大的占星術士莫娜」，擁有與名號相符的不俗實力，博學而高傲。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層 「沉沒的預言」</color>\n隊伍中自己的角色攻擊命中處於星異狀態下的敵人後的8秒內，自己的角色所造成的 <color=#80c0ff>水元素相關反應</color> 效果提升：\n·感電反應造成的傷害提升15%，蒸發反應造成的傷害提升15%，水元素擴散反應造成的傷害提升15%；\n·凍結反應的持續時間延長15%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2850,
+        "name": "納西妲",
+        "desc": "<p>深居淨善宮的籠中之鳥，只能在夢中將世界盡收眼底。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/01/7998136/f29490bddc56b4a6773b6c5003bbb853_2458576086062564041.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層 「正等善見之根」</color>\n處於納西妲自身施加的 <color=#ffd780>蘊種印</color> 狀態下的敵人，將受到以下效果影響：\n·受到的燃燒、綻放、超綻放、烈綻放反應傷害能夠造成暴擊，暴擊率固定為20%，暴擊傷害固定為100% <color=#ffffff73>。</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "卡維",
+        "desc": "<p>須彌著名建築設計師，對太多事物抱有過度關懷心。美學主義者，為現實所困擾。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/7998136/2270aba02b92034d7d76b4426be8f53b_7799297199784451356.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層 「百柱的酣宴」</color>\n卡維觸發綻放反應產生的草原核在迸發時造成的傷害提升60%。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "VI. 元素反應觸發武器被動效果",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2010,
+        "name": "翡玉法球",
+        "desc": "由璃月北郊絕雲間出產的硬玉雕琢而成的法器。小巧輕盈，經久耐用，江湖人稱「翡玉丸」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/翡玉法球.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "觸發蒸發、感電、冰凍、綻放或水元素擴散反應後的12秒內，攻擊力提高 <color=#37ffff>20%/25%/30%/35%/40%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1984,
+        "name": "暗鐵劍",
+        "desc": "其實就是稍微有點黑的鐵劍。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/暗铁剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "觸發超載、超導、感電、原激化、超激化、超綻放或雷元素擴散反應後的12秒內，攻擊力提高 <color=#37ffff>20%/25%/30%/35%/40%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1931,
+        "name": "萬國諸海圖譜",
+        "desc": "詳盡記載了大陸周邊海流氣候的海圖，是從異國經由商路流落到璃月的奇異典籍。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/万国诸海图谱.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "觸發元素反應後的10秒內，獲得 <color=#37ffff>8%/10%/12%/14%/16%</color> 元素傷害加成，該效果最多可以疊加兩層。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2012,
+        "name": "蒼古自由之誓",
+        "desc": "如同悠古的歌聲一般蒼藍的直劍，如同風之國土自由的誓言一般銳利的武器。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/苍古自由之誓.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "觸發元素反應時，角色獲得一枚奮起之符，每0.5秒內至多觸發一次，角色處於隊伍後台也能觸發。擁有兩枚奮起之符時，將消耗所有奮起之符，使附近的隊伍中所有角色獲得持續12秒的「千年的大樂章·抗爭之歌」效果：普通攻擊、重擊、下落攻擊造成的傷害提高 <color=#37ffff>16%/20%/24%/28%/32%</color> ，攻擊力提升 <color=#37ffff>20%/25%/30%/35%/40%</color> 。觸發後20秒內，無法再次獲得奮起之符。「千年的大樂章」觸發的多種數值效果中，同類數值效果不可疊加。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1997,
+        "name": "白辰之環",
+        "desc": "承載著過去的「狐齋宮」思念的法器。但她的思念之大，是無法完全裝進這樣小小的器物當中的。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/白辰之环.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "裝備該武器的角色觸發雷元素相關反應後，附近如有隊伍成員角色具備相關元素類型，則其獲得 <color=#37ffff>10%/12.5%/15%/17.5%/20%</color> 對應元素的元素傷害加成，持續6秒。透過這種方式，角色獲得的元素傷害加成無法疊加。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2667,
+        "name": "原木刀",
+        "desc": "<p>從蘭那羅的故事中得到的武器。具有刀的形制，能夠貫穿森林的敵人。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/30/7998136/b7dc579e8ad60147a049d14fc277629c_7581510175866190731.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "觸發燃燒、原激化、超激化、蔓激化、綻放、超綻放或烈綻放後，將在角色周圍產生至多存在10秒的「種識之葉」。拾取種識之葉的角色元素精通提升 <color=#37ffff>60/75/90/105/120</color> 點，持續12秒。每20秒至多依此方式產生一枚種識之葉。角色處於隊伍後臺時也能觸發。種識之葉的效果無法疊加。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2671,
+        "name": "森林王器",
+        "desc": "<p>從蘭那羅的故事中得到的武器。具有大劍的形制，能夠粉碎森林的敵人。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/30/7998136/236f42a62e034034870c2c4e44015572_1525648380521939239.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "觸發燃燒、原激化、超激化、蔓激化、綻放、超綻放或烈綻放後，將在角色周圍產生至多存在10秒的「種識之葉」。拾取種識之葉的角色元素精通提升 <color=#37ffff>60/75/90/105/120</color> 點，持續12秒。每20秒至多依此方式產生一枚種識之葉。角色處於隊伍後臺時也能觸發。種識之葉的效果無法疊加。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2668,
+        "name": "貫月矢",
+        "desc": "<p>從蘭那羅的故事中得到的武器。形制如同巨大的箭矢，能夠作為槍矛使用。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/30/7998136/2ab37345c6972292fda8b3095c15f971_2194568173103807320.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "觸發燃燒、原激化、超激化、蔓激化、綻放、超綻放或烈綻放後，將在角色周圍產生至多存在10秒的「蘇生之葉」。拾取蘇生之葉的角色攻擊力提升 <color=#37ffff>16%/20%/24%/28%/32%</color> ，持續12秒。每20秒至多依此方式產生一枚蘇生之葉。角色處於隊伍後臺時也能觸發。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2669,
+        "name": "盈滿之實",
+        "desc": "<p>從蘭那羅的故事中得到的果實。其中蘊含著戰勝任何危機的潛能。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/30/7998136/0e1cecaeba7b12c8c9adcb2f11eccd5e_5762184244019785700.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "觸發元素反應後，獲得「盈缺」效果：元素精通提升 <color=#37ffff>24/27/30/33/36</color> 點，攻擊力降低5%。每0.3秒至少獲得一層盈缺效果，至多疊加5層。未觸發元素反應時將每6秒失去一層。角色處於隊伍後臺時也能觸發效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2847,
+        "name": "風信之鋒",
+        "desc": "<p>導示長風的標鵠。風的牧歌並不總是輕柔如初…</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/01/7998136/98f3fb9e0886b25bfd094828cc391978_5657660689201702927.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "觸發元素反應後的10秒內，攻擊力提升 <color=#37ffff>12%/15%/18%/21%/24%</color> ，元素精通提升 <color=#37ffff>48/60/72/84/96</color> 點。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3614,
+        "name": "飾鐵之花",
+        "desc": "<p>造型優雅利落的大劍，其上裝飾節慶的鮮花與緞帶。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/04/7998136/bca5e3d255c646e42449a06b79b5d019_1781666827561710868.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "元素戰技命中敵人或觸發元素反應後的8秒內，攻擊力提升 <color=#37ffff>12%/15%/18%/21%/24%</color> ，元素精通提升 <color=#37ffff>48/60/72/84/96</color> 點。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4719,
+        "name": "裁斷",
+        "desc": "曾經拋棄家名的貴族少女使用過的武器，過去沾染了敵人與摯愛的血液。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2023/12/13/1f6d97f9c8c4146fd0062cd27f65886f_5379959338655377611.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "隊伍中的角色獲得結晶反應產生的晶片時，會為裝備者賦予1枚「約印」，使元素戰技造成的傷害提升 <color=#37ffff>18%/22.5%/27%/31.5%/37%</color> ，約印持續15秒，至多同時持有2枚。所有約印將在裝備者的元素戰技造成傷害後的0.2秒後移除。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5847,
+        "name": "柔燈輓歌",
+        "desc": "裝飾著蒼水晶的華美長槍，據說曾是某位傳奇決鬥代理人終生珍藏卻從未使用過的武器。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/3dff07a4b024917cb63c933d2078ccc8_8401589850337226556.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "裝備者對敵人觸發燃燒反應或對處於燃燒狀態下的敵人造成草元素傷害後，造成的傷害提高 <color=#37ffff>18%/23%/28%/33%/38%</color> 。該效果持續8秒，至多疊加2層；疊加至2層或2層的持續時間重置時，恢復 <color=#37ffff>12/13/14/15/16</color> 點元素能量，每12秒至多依此方式恢復一次元素能量。上述2種效果角色處於隊伍後臺時也能觸發。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6548,
+        "name": "撼地者",
+        "desc": "人稱「竊火者」的英傑愛用的重劍，據說就連燼城之王的烈火也未能將其焚斷。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/dc6bf4c87afe67014579743618e97371_6360663376854922140.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "隊伍中的角色觸發火元素相關反應後，裝備者元素戰技造成的傷害提升 <color=#37ffff>16%/20%/24%/28%/32%</color> ，持續8秒。該效果隊伍中的角色處於隊伍後臺時也能觸發。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6546,
+        "name": "衝浪時光",
+        "desc": "原本預訂發放給「第一屆全部族衝浪競速錦標賽」冠軍的紀念品。鑑於賽事目前尚處於籌備階段，獎品便被臨時寄存在「悠遊豚豚」內，由店主代為保管。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/6ce2e0da75fbdc19fc4b6f9e7bae9049_5151463723015160354.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "每15秒一次，施放元素戰技後的14秒內，產生如下效果：獲得4層「熾夏」，每層使普通攻擊造成的傷害提升 <color=#37ffff>12%/15%/18%/21%/24%</color> 。持續期間內，每1.5秒一次：普通攻擊命中敵人後，移除1層；每1.5秒一次：對敵人觸發蒸發反應後，增加1層。「熾夏」效果至多疊加4層。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6545,
+        "name": "山王長牙",
+        "desc": "由純然的綠松石鍛造而成的巨劍，因遠超一般兵刃的重量而被冠以「山王」康加瑪托之名。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/1fd3c498faccab68bfa5d961477a8c29_2936359463997877474.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "元素戰技命中敵人後，會獲得1層「懸木祝賜」，該效果每0.5秒至多觸發1次；隊伍中附近的角色觸發了燃燒或烈綻放反應後，裝備者會獲得3層懸木祝賜，該效果每2秒至多觸發1次，隊伍中的角色處於隊伍後臺時也能觸發。懸木祝賜：元素戰技傷害和元素爆發傷害提升 <color=#37ffff>10%/12.5%/15%/17.5%/20%</color> ，持續6秒，至多疊加6層，每層持續時間獨立計算。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7116,
+        "name": "星鷲赤羽",
+        "desc": "飾以赤色翎羽的古老長弓，花羽會世代傳承的聖物之一。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/d3bb0f9d936379661d409644e4269ff1_2888646900955247330.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "觸發擴散反應後的12秒內，攻擊力提高 <color=#37ffff>24%/30%/36%/42%/48%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "VII. 元素反應觸發聖遺物套裝效果",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2074,
+        "name": "教官",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Instructor/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n觸發元素反應後，隊伍中所有角色的元素精通提高120點，持續8秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "翠綠之影",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n根據擴散的元素類型，降低受到影響的敵人40%的對應元素抗性，持續10秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "如雷的盛怒",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n超載、感電、超導、超綻放、超激化或原激化反應時，元素戰技冷卻時間減少1秒。該效果每0.8秒最多觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2062,
+        "name": "冰風迷途的勇士",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Blizzard Strayer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n攻擊處於冰元素影響下的敵人時，暴擊率提高20%；若敵人處於凍結狀態下，則暴擊率額外提高20%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2673,
+        "name": "飾金之夢",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/26/7998136/ae8a2c6f24df66e1bd7cc2dbd83d330d_5349850958563862364.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n觸發元素反應後的8秒內，會根據隊伍內其他角色的元素類型，使裝備者獲得強化：隊伍中每包含1個和裝備者同類元素的角色，攻擊力提升14%：每包含1個和裝備者不同元素類型的角色，元素精通提升50點。上述每類效果至多計算3個角色。該效果每8秒至多觸發一次。裝備者處於隊伍後臺時，依然能觸發該效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "樂園遺落之花",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/13/7998136/50ce09dfa5a91a33aa9cedfb15bcf2d1_3010612142959070125.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n裝備者綻放、超綻放、烈綻放反應造成的傷害提升40%。此外，裝備者觸發綻放、超綻放、烈綻放後，上述效果帶來的加成提升25%，該效果持續10秒，至多疊加4次，每1秒至多觸發一次。裝備者處於隊伍後臺時依然能觸發該效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5579,
+        "name": "未竟的遐思",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/24/356c6b0e1be129282f759d8844872c7d_2911260570448763671.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n脫離戰鬥狀態3秒後，造成的傷害提升50%。在戰鬥狀態下，附近不存在處於燃燒狀態下的敵人超過6秒後，上述傷害提升效果每秒降低10%，直到降低至0%；存在處於燃燒狀態下的敵人時，每秒提升10%，直到達到50%。裝備此聖遺物套裝的角色處於隊伍後臺時，依然會觸發該效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6553,
+        "name": "燼城勇者繪卷",
+        "desc": "<p>用燧石與龍晶鐫刻而成的花，意味著佩戴者已獲得成為馴獸師的資格。</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/6ad5095f324c2da829ecaa5e2ed13af9_2791497672459683103.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n裝備者觸發其對應元素類型的相關反應後，隊伍中附近的所有角色的該元素反應相關的元素傷害加成提升12%，持續15秒。若觸發該效果時，裝備者處於夜魂加持狀態下，還將使隊伍中附近的所有角色的與該元素反應相關的元素傷害加成提升28%，持續20秒。裝備者處於後臺時也能觸發上述效果。同名聖遺物套裝產生的傷害加成效果無法疊加。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "VIII. 聖遺物套裝效果提升元素反應",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "翠綠之影",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n擴散反應造成的傷害提升60%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "如雷的盛怒",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n超載、感電、超導、超綻放反應造成的傷害提升40%，超激化反應帶來的傷害提升提高20%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "熾烈的炎之魔女",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n超載、燃燒、烈綻放反應造成的傷害提升40%，蒸發、融化反應的加成係數提高15%。施放元素戰技後的10秒內，2件套的效果提高50%，該效果最多疊加3次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "樂園遺落之花",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/13/7998136/50ce09dfa5a91a33aa9cedfb15bcf2d1_3010612142959070125.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n裝備者綻放、超綻放、烈綻放反應造成的傷害提升40%。此外，裝備者觸發綻放、超綻放、烈綻放後，上述效果帶來的加成提升25%，該效果持續10秒，至多疊加4次，每1秒至多觸發一次。裝備者處於隊伍後臺時依然能觸發該效果。",
+        "alignment": "center"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1358 @@
+{
+  "epId": 5206,
+  "name": "Reacción Elemental",
+  "desc": "<p>Las Reacciones Elementales representan una pieza central del sistema de combate de Genshin Impact. Comprender y dominar estas interacciones puede mejorar drásticamente tu habilidad en batalla.</p><p>Hay múltiples factores a considerar al activar reacciones elementales, como el aura, trigger, decay, etc. La Teoría del Indicador Elemental (Elemental Gauge Theory) y los Tiempos de Espera internos (ICD) desempeñarán un papel importante para ayudar a los jugadores a comprender la complejidad detrás de las Reacciones Elementales.</p>",
+  "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/15/205556113/b8c1c27b62b2cfd816438e9c251958b0_3928936131902089830.png",
+  "menuId": 14,
+  "menuName": "Tutorial",
+  "version": 1738611794,
+  "components": {
+    "customize": [
+      {
+        "type": "RichText",
+        "text": "Una Reacción Elemental ocurre cuando se aplican diferentes elementos a un objetivo que ya está afectado por un elemento.\nEn Genshin Impact, hay siete elementos, cada uno con al menos una reacción que se puede desencadenar al usarlo. Sin embargo, existen restricciones para estas reacciones ya que ciertos elementos no interactúan con otro elemento, lo cual es así: Geo, Dendro y Anemo, y Dendro y Cryo no reaccionan entre sí.\nLas reacciones elementales se pueden dividir en categorías separadas, tales como: Reacciones sin daño, Reacciones Amplificadoras, Reacciones Transformativas y Reacciones Aditivas.\nPara comprender mejor ciertos mecanismos e interacciones, resulta útil delinear y definir un par de términos y mecanismos. Estos han encontrado un uso establecido en la comunidad y han sido identificados mediante pruebas e investigaciones rigurosas por parte de jugadores más dedicados. Algunos de estos paradigmas y mecanismos son de naturaleza bastante compleja, por lo que su lista aquí no es más que un resumen condensado."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Triggers (Desencadenamiento) & Auras",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Cuando se habla de reacciones, en algunas de ellas es importante considerar cuál elemento se aplica sobre cuál, mientras que en otras es indiferente a la hora de considerar el efecto de la reacción. Por ejemplo, no importa si un enemigo se ve afectado por Electro o Cryo, en el instante en que se aplica el otro elemento respectivo, se produce la reacción del Superconductor y el efecto es el mismo. Sin embargo, hay una diferencia si es Pyro o Hydro el que desencadena la reacción de Vaporizado, ya que aquí la secuencia de aplicación tiene un impacto en el efecto de la reacción (es decir, un multiplicador x1.5 en comparación con uno x2).\nPara facilitar la comunicación sobre este asunto, la comunidad adoptó los términos <color=#ffffff>\"Aura\"</color> y <color=#ffffff>\"Trigger\"</color> . <color=#ffffff>\"Aura\"</color> se usa para describir qué elemento(s) está presente en una entidad durante un estado neutral (antes o después de una reacción), mientras que <color=#ffffff>\"Trigger\"</color> (desencadenar) se usa para describir qué elemento desencadena la(s) reacción(es)."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Elemental Gauge (Unit) Theory",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>La</color> <color=#ffffff>\"Elemental Gauge (Unit) Theory\"</color> ( Teoría de la (Unidad de) Indicador Elemental ) se refiere a la comprensión de que las auras elementales se \"consumen\" en diferentes grados dependiendo de su propia fuerza y ​​la fuerza del trigger respectivo. En este caso, la fuerza de un aura elemental o trigger no está definida por el daño que hizo un movimiento de ataque al aplicar dicho elemento, sino por un valor predefinido para ese ataque. Estos valores pueden ser modulados por factores, como el orden de aplicación (elementos fuertes o débiles) o el tiempo entre aplicaciones (\"decay\", decaimiento).\nEn esencia, ciertos ataques aplican \"más\" o \"menos\" de un elemento, lo que puede reflejarse en la fuerza del aura o del trigger. Esta fuerza se cuenta en las así llamadas unidades, v.g. 1U Cryo o 2U Pyro.\nAquí hay algunos ejemplos que pueden ayudar a demostrar esta idea:\nEl Ataque Normal Charlotte aplica 1U Cryo y el Ataque Normal de Lisa aplica 1U Electro. Ambos se cancelan entre sí y desencadenan la reacción Superconductor.\nLa Habilidad Definitiva de Xingchiu aplica 1U Hydro, mientras que el Ataque Cargado de Hu Tao aplica 1U Pyro. Sin embargo, en este caso, como Pyro es el elemento \"débil\" debido a la naturaleza de Vaporización, su fuerza se reduce a la mitad, lo cual significa que solo consume 0.5U del aura Hydro de Xingchiu. Así, después del ataque, permanece 0.5U de aura Hydro en el enemigo, y Hu Tao puede desencadenar (trigger) una segunda reacción.\nAsimismo, la Habilidad Definitiva de Bennett aplica 2U Pyro a un enemigo, después de lo cual, el Ataque Normal de Mona aplica 1U Hydro. Sin embargo, como Hydro es el elemento \"fuerte\", consume el doble, resultando en una remoción total del aura Pyro inicial.\nCabe señalar que un trigger (desencadenante), incluso si aplica más unidades elementales de lo que se puede consumir del aura de un enemigo, nunca aplicará el resto de su elemento. Un ataque puede aplicar un nuevo elemento si no hay ninguno presente y establecer un aura, o consumir un aura (total o parcialmente) y desencadenar una reacción. Un solo ataque nunca puede lograr ambas cosas."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Internal Cooldown (ICD)",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Del mismo modo en que las Habilidades Elementales y Definitivas tienen tiempos de espera (TdE, Cooldown en inglés, CD) tras el que pueden ser usados de nuevo, así también la mayoría de los ataques que aplican un elemento siguen reglas específicas. Estos tiempos de espera están, en su mayor parte, separados unos de otros y no son visibles por ningún indicador; por eso el nombre <color=#ffffff>Internal Cooldown (ICD, Tiempo de Espera interno)</color> .\nAparte de algunas excepciones que no tienen ningún ICD y aplican su elemento con cada uso/golpe, la mayoría de los ataques siguen patrones similares. De hecho, hay dos reglas que funcionan en conjunto, la regla del tiempo y la regla del golpe, teniendo prioridad la regla del tiempo.\nEn pocas palabras, cada X impactos, el mismo ataque puede aplicar su elemento nuevamente, y también cada X segundos, independientemente de los impactos.\nUn ejemplo práctico para esto es la Habilidad Definitiva de Kaeya . Mientras esta habilidad gira rápidamente y lanza golpes rápidos de Daño Cryo, no todo golpe puede desencadenar una reacción o aplicar su elemento. De hecho, aplicará Cryo cada tres golpes (es decir, el golpe 1, 4, 7, 10, 13... y así). Además, cada 2.5s, también se garantizará que el siguiente golpe aplique el elemento, sobrescribiendo la regla del golpe mencionada anteriormente y restableciéndola a 1. El mismo ejemplo que el anterior con la Definitiva de Kaeya seguiría esta secuencia:\n1, 4, 7 / 8, 11, 14 / 15, 18, …\nEn este ejemplo, el contador comienza tras el golpe 1. El golpe 7 ocurre tras 2.4s, por lo que el siguiente golpe sería tras 2.5s después de iniciado el contador. Como la regla del tiempo tiene prioridad, el golpe 8 aplica Cryo, reinicia el contador de golpes y también la regla del tiempo.\nEsta regla del 3er golpe es conocida normalmente como <color=#ffffff>\"Standard ICD\"</color> , ya que estos valores son los más comunes. Algunas excepciones no tienen regla alguna, o les falta alguna de las dos, o las tienen modificadas.\nAlgunos ejemplos de tales excepciones son la Habilidad Definitiva de Xiangling (que no tiene ICD) o los ataques del cuervo Oz de Fischl (regla de 4 golpes & regla de 5s)."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Reacciones Sin Daño",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Puede ser dividida en 3 secciones: <color=#ffffff>Congelado</color> , <color=#ffffff>Cristalización</color> y <color=#ffffff>Aceleración</color> . En vez de añadir daño, estas reacciones proveen otros atributos con los elementos involucrados."
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Congelado",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Las reacciones elementales de <color=#ffffff>Congelado</color> son desencadenadas por los elementos <color=#ffffff>Cryo</color> e <color=#ffffff>Hydro</color> , y puede ocurrir en enemigos o en los personajes, inmovilizando a los objetivos afectados por los elementos correspondientes, y consumiendo el aura más débil aplicada en ese objetivo. La duración es calculada en base a la cantidad de unidades aplicada y a la RES del objetivo."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/f7ca3b98a4323e51179822a2857a956f_703100634561086553.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/7aa68f6cfdc3216424a2b691f12d3453_8427346204557988974.gif",
+        "alignment": "right"
+      },
+      {
+        "type": "RichText",
+        "text": "(La Habilidad Elemental de Kaeya 2U + el Ataque Normal de Bárbara 1U congelan al enemigo por 2s. Al permanecer el aura Cryo, se le permite a Bárbara desencadenar otra vez Congelado)",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "En el estado Congelado, el objetivo puede recibir una reacción adicional aplicándosele otro elemento (Derretido, Superconductor, Rompehielo, Torbellino, Florecimiento) que reducirá la duración del aura de Congelado o quitará completamente el aura en el objetivo."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/e9a908ab320bbb06ce05bb08770762b1_3986696504893110804.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/7261fca8300eac3549936e6e0ced5ca2_69616300500122683.gif",
+        "alignment": "right"
+      },
+      {
+        "type": "RichText",
+        "text": "(Ejemplos: Desencadenando Superconductor o Torbellino en un objetivo congelado acabaría inmediatamente o reduciría la duración de Congelado. El segundo ejemplo tiene aplicación Hydro constante, por lo que Torbellino quitaría el elemento Hydro del enemigo antes que el Cryo)",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Aplicar un aura Dendro en los objetivos afectados no desencadenaría ninguna reacción. En vez de eso, si el objetivo tiene un aura Hydro más fuerte o más unidades elementales bajo el estado Congelado, se creará un núcleo Dendro (se pueden hacer un máximo de 3 núcleos Dendro de este modo)."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/3aeac403ad31e20920f54f8c48886c9d_5677600415338105232.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/dd2c1f3cf222977f9f1452d52f563a19_9086478006534469735.gif",
+        "alignment": "right"
+      },
+      {
+        "type": "RichText",
+        "text": "(Aplicar 1U Dendro y 2U Hydro permite crear 2 núcleos Dendro durante el estado Congelado porque Dendro tiene un aura más fuerte)",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Cristalización",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "La reacción Cristalización ocurre cuando un objetivo que está afectado por Pyro, Electro, Cryo o Hydro recibe <color=#ffffff>Daño Geo</color> , creando un <color=#ffffff>Cristal Elemental</color> cercano. Este Cristal puede ser recogido y otorga un escudo de cierto valor base. La fuerza del Escudo de Cristalización es calculado en base al nivel del personaje (Vida base del escudo) y su Maestría Elemental (Vida adicional del escudo)."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/5d299591b3f64cdfa82fa055f90eecb9_7198248087726378669.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "Cristal creado con 1000 pts de Maestría Elemental a nivel 90."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/03c7f58b6ea44611c15d7790f3b375f5_4273356288171463538.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "Cristal creado con 0 pts de Maestría Elemental a nivel 90.\nEn el campo puede haber presentes hasta 3 Cristales. Crear un nuevo Cristal reemplazará al más antiguo. Una vez creado, cada Cristal durará hasta 17s en el suelo. Tras ser recogido, el Escudo durará hasta 15s, otorgando 250% de absorción de daño frente al elemento correspondiente y RES a interrupción.\nSolo puede haber un Escudo de Cristal activo a la vez, y recoger un Cristal reemplazará el escudo reiniciando su duración y su capacidad de absorción. Como otros escudos en el juego, los Escudos de Cristal no se acumula con los escudos procedentes de habilidades, armas o constelaciones, sino que todos los escudos toman daño a la vez."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/74bbce8a18d6bcfd0bec48cc2b7792b9_5345317538845091544.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "(Creando Cristales con la Habilidad Elemental de Zhongli)"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Aceleración",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "La Reacción <color=#ffffff>Aceleración</color> y el estado resultante es parte de las reacciones <color=#ffffff>Propagación</color> e <color=#ffffff>Intensificación</color> . Cuando Dendro y Electro se encuentran en un objetivo, se aplica el estado de Aceleración en él y dura tanto cuanto estos dos elementos logran coexistir (11s aproximadamente). En un objetivo en estado de Aceleración, aplicando el elemento Dendro desencadenaría la reacción Propagación, y aplicando Electro desencadenaría la reacción Intensificación, añadiendo daño adicional. Ya que se necesita usar ataques Dendro/Electro en un enemigo con Aceleración para causar las reacciones de Propagación/Intensificación, este estado se renueva constantemente."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/ba8b5289bf3984d33ee58d4899a2cf0d_1673697031811751886.gif",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Aunque el estado de Aceleración no es técnicamente un aura Dendro, aparece con el símbolo Dendro y opera de una manera similar cuando se trata de interacciones con Pyro e Hydro. Intensificación y Propagación no consumen o reducen el aura de Aceleración en el objetivo y pueden ser añadidos respectivamente. Sin embargo, al infligir Pyro o Hydro, se desencadenará Quemadura o Florecimiento reduciendo la duración de Aceleración."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/b7a6e2555a42ac4c0a290b1aaaacca4f_6360988579815652156.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "(Aplicar Hydro en un objetivo con Aceleración consume las unidades Dendro y quita el estado de Aceleración en el objetivo)"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Reacciones de daño",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Bajo la Maestría Elemental en la ventana del juego de los atributos del personaje, las Reacciones Elementales se dividen en 4 categorías, 3 de ellas son de daño por naturaleza. Estos arquetipos pueden ser clasificados como <color=#ffffff>Reacciones Amplificadoras</color> , <color=#ffffff>Reacciones Transformativas</color> , y <color=#ffffff>Reacciones Aditivas</color> .\nLas Reacciones Amplificadoras son <color=#ffffff>Vaporizado</color> y <color=#ffffff>Derretido</color> . Estas reacciones amplifican el daño del ataque desencadenante por un factor multiplicativo.\nLas Reacciones Aditivas son <color=#ffffff>Propagación</color> e <color=#ffffff>Intensificación</color> . Estas añaden un cierto valor al ataque desencadenante.\nLas Reacciones Transformativas producen un daño independiente del ataque que lo desencadena y puede tener propiedades adicionales, tales como causar muchas instancias de daño o aplica un elemento. Estas reacciones incluyen <color=#ffffff>Quemadura</color> , <color=#ffffff>Superconductor</color> , <color=#ffffff>Torbellino</color> , <color=#ffffff>Electrocargado</color> , <color=#ffffff>Rompehielo</color> , <color=#ffffff>Sobrecarga</color> , <color=#ffffff>Florecimiento</color> , <color=#ffffff>Sobreflorecimiento</color> y <color=#ffffff>Crepitar</color> .\nTodas estas reacciones toman en consideración la <color=#ffffff>Maestría Elemental</color> del personaje que desencadena la reacción y un <color=#ffffff>multiplicador específico</color> para cada reacción, así como también la <color=#ffffff>RES enemiga</color> correspondiente al elemento de la reacción. Para las Reacciones Aditivas y Transformativas, también es tomado en cuenta el <color=#ffffff>nivel del personaje</color> ."
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Reacciones Amplificadoras",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Vaporizado</color> y <color=#ffffff>Derretido</color> son Reacciones Amplificadoras, las cuales multiplican el daño normal con el Bono de Maestría Elemental y un Multiplicador especial. Este es <color=#ffffff>200%</color> para Vaporizado desencadenado por Hydro y Derretido desencadenado por Pyro, y <color=#ffffff>150%</color> para Vaporizado desencadenado por Pyro y Derretido desencadenado por Cryo.\nLas reacciones que aplican el Bono de 200% son llamadas comúnmente \"fuertes\"; mientras que las de 150%, \"débiles\". Esto no tiene tanto que ver con el daño que causan, sino con la interacción de los elementos involucrados. Como tal, una reacción \"débil\" consume menos del aura elemental, asumiendo que ambos (aura y trigger) son del mismo calibre. Así, las reacciones \"débiles\" consumen del aura solamente la mitad de lo que las reacciones \"fuertes\" consumirían, lo cual permite desencadenar más reacciones."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/43af11363070a0ce522a7f88e6398eb0_2532039850847443716.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "(Arriba, el Ataque Elemental es mostrado sin más; abajo, desencadenando una reacción con 0 pts de Maestría Elemental,\nVaporizado Pyro (x1.5), Vaporizado Hydro (x2.0), Derretido Pyro (x1.5), Derretido Cryo (x2.0) respectivamente)",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Reacciones Transformativas",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Las Reacciones Transformativas son muchas, pero todas ellas comparten estas características: infligen <color=#ffffff>daño</color> independiente del ataque desencadenante (y de su daño base), <color=#ffffff>no puede infligir daño crítico</color> , no se beneficia de ningún <color=#ffffff>bono de daño genérico</color> , y no considera la <color=#ffffff>DEF enemiga</color> , sino el <color=#ffffff>nivel del personaje desencadenante</color> . El <color=#ffffff>Level Multiplier (multiplicador de nivel)</color> es específico para cada nivel, pero los más importantes son 1077 y 1446 para los niveles 80 y 90 respectivamente."
+      },
+      {
+        "type": "RichText",
+        "text": "El daño de estas reacciones se calcula de esta forma:\n<color=#ffffff>( 100% + EM Bonus ) × RES Multiplier × Level Multiplier × Reaction Multiplier</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "El <color=#ffffff>Reaction Multiplier (Multiplicador de Reacción)</color> es <color=#ffffff>25%</color> para Quemadura, <color=#ffffff>60%</color> para Torbellino, <color=#ffffff>150%</color> para Superconductor, <color=#ffffff>200%</color> para Electrocargado y Florecimiento, <color=#ffffff>275%</color> para Sobrecarga, y <color=#ffffff>300%</color> para Rompehielo, Crepitar y Sobreflorecimiento.\n<color=#ffffff>Quemadura</color> se desencadena cuando reaccionan Pyro y Dendro. Inflige Daño Pyro en el AdE y aplica un aura de Quemadura causando Daño Pyro continuo hasta que se consuma.\n<color=#ffffff>Torbellino</color> se desencadena cuando reaccionan Anemo y Pyro/Hydro/Electro/Cryo. Esto inflige Daño del elemento con que Anemo reacciona en el AdE, infligiendo su daño al enemigo afectado y a los enemigos cercanos. Simultáneamente, desencadenando Torbellino en 2+ enemigos, causa dos instancias de Daño de Torbellino a todos los enemigos golpeados (el suyo propio y el del cercano). La única excepción aquí es Hydro: el Torbellino Hydro aplica solamente el estado Mojado, y le inflige daño únicamente al enemigo en que fue desencadenado. Torbellino es considerada una interacción elemental \"débil\"; como tal, no se quita completamente el aura del enemigo, lo cual permite más reacciones.\n<color=#ffffff>Superconductor</color> se desencadena cuando reaccionan Electro y Cryo. Inflige Daño Cryo en el AdE y reduce la RES Física de todos los enemigos afectados un 40% por 12s. El Daño Cryo de la reacción no aplica el elemento.\n<color=#ffffff>Electrocargado</color> se desencadena cuando reaccionan Hydro y Electro. Inflige Daño Electro una vez por segundo al enemigo involucrado y a los enemigos cercanos que estén afectados por el estado Mojado hasta que el aura Hydro o Electro se consuma.\n<color=#ffffff>Florecimiento</color> se desencadena cuando reaccionan Dendro e Hydro. No inflige daño adicional, sino que crea un núcleo Dendro que inflige Daño Dendro en el AdE después de explotar (tras 6s, o cuando sean creados 5 nuevos núcleos Dendro). Cada enemigo no puede tomar el daño de un núcleo Dendro más de dos veces cada 0.5s. Cuando el personaje recibe daño de un núcleo Dendro, será tan solo un 5% de él. Si es Hydro quien desencadena Florecimiento, el aura Dendro será completamente quitada; pero si es Dendro, entonces solamente la mitad del aura Hydro.\n<color=#ffffff>Sobrecarga</color> se desencadena cuando reaccionan Pyro y Electro. Inflige Daño Pyro en el AdE y causa una explosión fuerte que quita el aura Pyro y Electro.\n<color=#ffffff>Rompehielo</color> se desencadena cuando un enemigo congelado es golpeado con un ataque pesado (de mandoble, o Ataques Descendentes, o explosiones, Daño Geo, etc.). Acaba con el estado de Congelado e inflige luego Daño Físico (por lo que no se aprovecha de los bonus del set de 4 piezas de Nómada del Invierno ni de la Consonancia Cryo).\n<color=#ffffff>Crepitar</color> se desencadena cuando un núcleo Dendro entra en contacto con Pyro. Inflige Daño Dendro en el AdE.\n<color=#ffffff>Sobreflorecimiento</color> se desencadena cuando un núcleo Dendro entra en contacto con Electro. No inflige ningún daño adicional, sino que transforma los núcleos en proyectiles enredadores que persiguen al enemigo más cercano y le infligen Daño Dendro al golpearlo. Tiene un AdE muy pequeño, pero puede golpear a varios enemigos a la vez si están lo suficientemente cerca entre sí."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/e9426a37463131d1d5a65bd0677b01e0_8714591292414216019.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "(Desencadenando las reacciones mencionadas con personajes del mismo nivel y 0pts de Maestría Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Reacciones Aditivas",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Propagación</color> e <color=#ffffff>Intensificación</color> son Reacciones Aditivas, las cuales añaden cierto valor al daño de la habilidad desencadenante. Las Reacciones Aditivas solamente pueden ser desencadenadas en quienes estén afectados por el estado de <color=#ffffff>Aceleración</color> (como se vio en la sección 2). Infligir Daño Dendro causa Propagación; mientras que Daño Electro, Intensificación. Este Bono de Daño se aplica al <color=#ffffff>Daño Base</color> del ataque desencadenante y se aprovecha de todos los bonos y factores siguientes aplicados a ese ataque (DMG%, CRIT, RES, DEF)."
+      },
+      {
+        "type": "RichText",
+        "text": "El daño añadido de estas reacciones se calcula de esta forma:\n<color=#ffffff>( 100% + EM Bonus ) × Level Multiplier × Reaction Multiplier</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "El <color=#ffffff>Reaction Multiplier (Multiplicador de Reacción)</color> es <color=#ffffff>115%</color> para Intensificación y <color=#ffffff>125%</color> para Propagación."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/3c436038857810cddd36dcbcd2a25307_2246617110877344145.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "(Fischl y Collei desencadenando una reacción Aditiva con el mismo nivel, ATQ, porcentaje de habilidad y 0 pts de Maestría Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Mecanismos relacionados",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Consonancia Elemental",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "La Consonancia Elemental cambia en base a los Elementos de los personajes en tu equipo. El efecto de la Consonancia Elemental se activa cuando hay 4 personajes en tu equipo, y 2 de ellos del mismo elemento o todos de elementos diferentes. De los 8 posibles efectos, solamente 2 son relativos a las Reacciones Elementales: la Consonancia Dendro: \"Planta trepadora\" y la Consonancia Electro: \"Alto Voltaje\"."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/d39be9e3b662f042e0f9ad82fa8676c7_7459064268625470154.png",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Talents activated by Elemental Reactions",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9,
+        "name": "Kaeya",
+        "desc": "El gran estratega de los Caballeros de Favonius. Se rumorea que procede de un lugar de fuera de Mondstadt.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kaeya_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 4ta Ascensión</color>\nCuando <color=#ffd780>Golpe de escarcha</color> <color=#99ffff>congela</color> a un enemigo, el enemigo congelado dejará caer partículas elementales adicionales.\nCada golpe dará un máximo de 2 partículas elementales adicionales.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 38,
+        "name": "Fischl",
+        "desc": "Una chica misteriosa que se hace llamar “Princesa del Juicio”. Siempre camina junto con un cuervo oscuro llamado Oz.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Fischl_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 4ta Ascensión</color>\nSi el personaje en uso desencadena una <color=#ffacff>Reacción Elemental con Electro</color> cuando Oz está en combate, el enemigo será golpeado con retribución del trueno, infligiendo <color=#ffacff>Daño Electro</color> igual al 80% del ATQ de Fischl.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 30,
+        "name": "Sacarosa",
+        "desc": "Una alquimista e investigadora de la escuela de bioalquimia que siente curiosidad por todo.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sucrose_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 1ra Ascensión</color>\nCuando Sacarosa cause una reacción de Torbellino, aumentará en 50 pts. la Maestría Elemental de todos los miembros del equipo (a excepción de Sacarosa) cuyo tipo elemental coincida con el elemento contra el que provocó dicho Torbellino. Este efecto tiene una duración de 8 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1,
+        "name": "Qiqi",
+        "desc": "Una aprendiz y recolectora de hierbas en la Farmacia Bubu. Una zombi con una tez blanca como el hueso, de pocas palabras y emociones.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Qiqi_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 1ra Ascensión</color>\nCuando un personaje bajo el efecto de <color=#ffd780>Magia Adeptus: Heraldo de la escarcha</color> provoca una Reacción Elemental, aumenta su Bono de Curación recibida en un 20% durante 8 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 22,
+        "name": "Kaedehara Kazuha",
+        "desc": "Un samurái errante de Inazuma que actualmente se hospeda en la Flota Crux Meridianam de Liyue. El corazón de este amable y libre joven encierra sus muchas cargas del pasado.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kaedehara Kazuha_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 4ta Ascensión</color>\nCuando Kaedehara Kazuha provoca una reacción de Torbellino, otorga durante 8 s a todos los miembros del equipo un 0.04% de Bono de Daño Elemental del elemento al que cambió Torbellino por cada punto de Maestría Elemental que él tenga. Puede haber al mismo tiempo distintos Bonos de Daño Elemental obtenidos de esta manera.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 21,
+        "name": "Sayu",
+        "desc": "Una ninja perteneciente a Los Ocelos. Muy bajita y siempre con aspecto de no haber dormido suficiente.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sayu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 1ra Ascensión</color>\nCuando Sayu causa una reacción de Torbellino mientras está en combate, todos los miembros de tu equipo y los aliados cercanos recuperan 300 pts. de Vida, además de 1.2 pts. de Vida adicionales por cada punto de Maestría Elemental de Sayu. Este efecto solo puede ocurrir una vez cada 2 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2263,
+        "name": "Shikanoin Heizou",
+        "desc": "El joven y talentoso detective de la Comisión Tenryou. Intuitivo, sagaz y muy inteligente.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Shikanoin Heizou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 1ra Ascensión</color>\nCuando Shikanoin Heizou causa una reacción de Torbellino mientras está en uso, obtiene 1 carga de decantación para <color=#ffd780>Puñetazo cardiaco</color> . Esto solo puede ocurrir una vez cada 0.1 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2268,
+        "name": "Collei",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una guardabosques en prácticas que suele rondar por el Bosque Avidya. Detrás de su apasionado carácter se esconde una personalidad más bien introvertida.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/22/10742394/37a18b6b6865c59063003a9380f08225_3011387316393945956.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 1ra Ascensión</color>\nSi algún personaje de tu equipo causa una reacción de Quemadura, Aceleración, Intensificación, Propagación, Florecimiento, Sobreflorecimiento o Crepitar antes de que el <color=#ffe699>bumerán fol</color> <color=#ffd780>iá</color> <color=#ffe699>ceo</color> regrese, al regresar otorga al personaje el estado de \"germinación\", el cual inflige continuamente <color=#99ff88>Daño Dendro</color> contra los enemigos cercanos en una cantidad equivalente al 40% del ATQ de Collei durante 3 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2268,
+        "name": "Collei",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una guardabosques en prácticas que suele rondar por el Bosque Avidya. Detrás de su apasionado carácter se esconde una personalidad más bien introvertida.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/22/10742394/37a18b6b6865c59063003a9380f08225_3011387316393945956.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 4ta Ascensión</color>\nCuando un personaje dentro del <color=#ffe699>área de Colleámbar</color> causa una reacción de Quemadura, Aceleración, Intensificación, Propagación, Florecimiento, Sobreflorecimiento o Crepitar, la duración de dicha área aumenta en 1 s.\nEsta duración solo puede aumentar un máximo de 3 veces de esta manera por cada vez que se use <color=#ffe699>Secreto miauravilloso</color> .",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2269,
+        "name": "Dori",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una impredecible comerciante itinerante cuya mayor pasión es el Mora contante y sonante.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/09/10742394/6539bea71efd0f839db897cfc4094362_6348318336367351254.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 1ra Ascensión</color>\nCuando el personaje conectado con el <color=#ffd780>genio de la lámpara</color> causa una reacción de Electrocargado, Superconductor, Sobrecarga, Aceleración, Intensificación, Sobreflorecimiento, Torbellino Electro o Cristalización Electro, el TdE de <color=#ffd780>Lámpara mágica: Cañonazo apaciguador</color> se reduce en 1 s. Este efecto solo puede ocurrir una vez cada 3 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2850,
+        "name": "Nahida",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un pajarito enjaulado en el Santuario Surasthana que solo puede contemplar el mundo desde sus sueños.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/01/10742394/f29490bddc56b4a6773b6c5003bbb853_4504849464985713888.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Habilidad Elemental</color>\nTras causar una Reacción Elemental contra un enemigo afectado por una semilla, o infligir daño contra él por medio de un núcleo Dendro (esto incluye el daño infligido con Crepitar y Sobreflorecimiento), Nahida libera un trikarma acrisolador contra ese enemigo y contra todos los enemigos encadenados a él para infligir <color=#99ff88>Daño Dendro</color> en función de su ATQ y su Maestría Elemental. El trikarma acrisolador solo se puede liberar una vez en un breve periodo de tiempo.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "Kaveh",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un célebre arquitecto de Sumeru que se preocupa demasiado por las cosas. Es un fanático de la estética, pero está atrapado por la realidad.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/73555894/2270aba02b92034d7d76b4426be8f53b_4151264377306244528.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 1ra Ascensión</color>\nCuando Kaveh es golpeado por el daño que infligen los núcleos Dendro (incluyendo el daño infligido con Crepitar y Sobreflorecimiento), recuperará Vida en una cantidad equivalente al 300% de su Maestría Elemental. Este efecto solo se puede activar una vez cada 0.5 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3964,
+        "name": "Fréminet",
+        "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Un retraído joven experto en el arte del submarinismo. Bajo su gélido y distante talante, se oculta un corazón sin mácula alguna.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/05/73555894/8e44111a378f4e5379b8e7444e8c2daa_6536409230344776456.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 4ta Ascensión</color>\nCuando Fréminet causa una reacción de Rompehielo contra un enemigo, el daño infligido por <color=#ffd780>Criopresurización: Presión quebrantadora</color> aumenta en un 40% durante 5 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4023,
+        "name": "Neuvillette",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">El juez supremo de Fontaine. Es conocido por su impecable imparcialidad y abnegación.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/27/10742394/0513aa7f482dbb4778545d02f94956fe_8995905590904061248.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 1ra Ascensión</color>\nCuando un personaje del equipo causa una reacción de Vaporización, Congelado, Electrocargado, Florecimiento, Torbellino Hydro o Cristalización Hydro, Neuvillette obtiene una carga de “gloria del legado dacroniano” durante 30s. Este efecto puede acumularse hasta 3 veces y hace que el Ataque Cargado: Sentencia ecuánime inflija, respectivamente, un 110/125/160% de su daño original.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4577,
+        "name": "Chevreuse",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">La capitana de la Unidad Especial de Seguridad y Vigilancia. Su corazón siempre late por la justicia, y su mosquete solo apunta a los criminales.</span></p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/01/09/10742394/a846729f31f16a987a8696466ebabcc0_4551926290637121530.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 1ra Ascensión</color>\nSi el equipo está formado únicamente por personajes <color=#ff9999>Pyro</color> y <color=#ffacff>Electro</color> y hay al menos un personaje Pyro y uno Electro en él, Chevreuse otorga el efecto de \"maniobra coordinada\" a los miembros del equipo cercanos. Cuando un personaje bajo este efecto causa una reacción de Sobrecarga, la RES <color=#ff9999>Pyro</color> y <color=#ffacff>Electro</color> del enemigo afectado por dicha reacción se reduce en un 40% durante 6s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5596,
+        "name": "Clorinde",
+        "desc": "<p>Una verduga del justiciazgo invicta que defiende la Corte de Fontaine a capa y espada.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/03/10742394/770a66030815971c697ab81bc5436329_2503878551904601198.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 1ra Ascensión</color>\nCuando un personaje cercano del equipo causa una <color=#ffacff>Reacción Elemental Electro</color> contra un enemigo, el <color=#ffacff>Daño Electro</color> del Ataque Normal y de <color=#ffe699>Destello final</color> de Clorinde aumenta en una cantidad equivalente al 20% de su ATQ. Este efecto dura 15 s, puede acumularse hasta 3 veces y la duración de cada acumulación se calcula de manera independiente. Como máximo, el daño de los anteriores ataques de Clorinde puede aumentar en 1800 pts. de esta manera.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5598,
+        "name": "Sethos",
+        "desc": "<p>El heredero del Templo del Silencio. Portador de secretos y procedente del desierto.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/03/10742394/cdb7abfcb86138e5b618946a5466d442_3772513767535994448.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Habilidad Elemental</color>\nConcentra el poder del trueno para infligir <color=#ffacff>Daño Electro en el AdE</color> y realizar una retirada con presteza. Si este ataque causa una reacción de Electrocargado, Superconductor, Sobrecarga, Aceleración, Intensificación, Sobreflorecimiento o Torbellino Electro, Sethos recupera cierta cantidad de Energía Elemental.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5714,
+        "name": "Émilie",
+        "desc": "Una perfumista de Fontaine que guarda sus secretos en sus frascos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Habilidad Elemental</color>\nCuando un enemigo cercano esté quemado, emitirá una fragancia. Solo se puede crear una fragancia cada 2 s de esta manera.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5714,
+        "name": "Émilie",
+        "desc": "Una perfumista de Fontaine que guarda sus secretos en sus frascos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 4ta Ascensión</color>\nEl daño que inflige Émilie contra los enemigos quemados aumenta en un 15% por cada 1000 pts. de ATQ que tenga. Como máximo, dicho daño puede aumentar en un 36% de esta manera.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6317,
+        "name": "Kinich",
+        "desc": "Un cazasaurios de Huitztlán experto en calcular el precio de las cosas.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/12/0099e74b4d0c919f6feab4bade3ab748_5795733017114624391.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 1ra Ascensión</color>\nCuando Kinich esté bajo el estado de bendición noctámbula, los enemigos que sean golpeados por su Habilidad Elemental entrarán en estado de \"desolación\", y cuando reciban daño de las reacciones de Quemadura o Crepitar, Kinich generará 7 pts. de noctambulismo. Solo se pueden obtener pts. de noctambulismo una vez cada 0.8 s de esta manera. El estado de desolación dura hasta que termine el de bendición noctámbula de Kinich.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7079,
+        "name": "Ororon",
+        "desc": "Un joven de los Augures Vientonocturno que vive en la naturaleza junto a toda clase de seres vivos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/e4830690f8b6a1ebb02cfbc8ce955671_8091252479018770784.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 1ra Ascensión</color>\nCuando un enemigo cercano recibe daño de la reacción de <color=#ffacff>Electrocargado</color> o cuando otro personaje cercano del equipo inflige daño de naturaleza noctámbula, si Ororon tiene al menos 10pts. de noctambulismo, consumirá dicha cantidad para entrar en estado de bendición noctámbula y activar el efecto de “ultrapercepción”, el cual inflige <color=#ffacff>Daño Electro</color> de naturaleza noctámbula a un máximo de 4 enemigos cercanos en una cantidad equivalente al 160% del ATQ de Ororon. Este efecto solo se puede activar una vez cada 1.8s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7300,
+        "name": "Citlalí",
+        "desc": "La gran chamana y la abu Itztli de los Augures Vientonocturno, respetada por toda la gente de su tribu.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/27/c4ab2530bb8bbe3c0e811684f97ec124_6688582217610741079.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 1ra Ascensión</color>\nMientras Itzpapa esté activa, después de que un personaje cercano del equipo cause una reacción de Congelado o Derretido, la RES <color=#ff9999>Pyro</color> e <color=#80c0ff>Hydro</color> de los enemigos afectados por dichas reacciones se reduce en un 20% durante 12 s. Además, Citlalí recupera 16 pts. de noctambulismo. Solo puede recuperar pts. de noctambulismo una vez cada 8 s de esta forma.",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Constelaciones activadas por Reacciones Elementales",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 10,
+        "name": "Keching",
+        "desc": "El Equilibrio Terrenal de las Siete Estrellas de Liyue. Tiene su opinión sobre el gobierno de Rex Lapis en Liyue, pero, en verdad, a los dioses les gustan bastante los escépticos como ella.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Keqing_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4ta Constelación</color>\nCuando Keching causa una <color=#ffacff>Reacción Elemental con Electro</color> , su ATQ aumenta en un 25% durante 10 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 21,
+        "name": "Sayu",
+        "desc": "Una ninja perteneciente a Los Ocelos. Muy bajita y siempre con aspecto de no haber dormido suficiente.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sayu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4ta Constelación</color>\nCuando Sayu causa una reacción de Torbellino, recupera 1.2 pts. de Energía Elemental. Esto puede ocurrir una vez cada 2 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4,
+        "name": "Yun Jin",
+        "desc": "Una renombrada cantante de ópera de Liyue que es experta tanto en la composición de obras como en el canto. Su estilo es único, exquisito y delicado, como su propia persona.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yun Jin_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4ta Constelación</color>\nCuando Yun Jin causa una reacción de Cristalización, su DEF aumenta en un 20% durante 12 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2268,
+        "name": "Collei",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una guardabosques en prácticas que suele rondar por el Bosque Avidya. Detrás de su apasionado carácter se esconde una personalidad más bien introvertida.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/22/10742394/37a18b6b6865c59063003a9380f08225_3011387316393945956.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2da Constelación</color>\nDesde que Collei usa <color=#ffd780>Caricia de las flores</color> hasta que desaparece el estado de germinación, si algún personaje de tu equipo causa una reacción de Quemadura, Aceleración, Intensificación, Propagación, Florecimiento, Sobreflorecimiento o Crepitar, la duración de germinación aumenta en 3 s.\nLa duración de este efecto solo se puede aumentar una vez de esta manera como máximo.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2265,
+        "name": "Tignari",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.85)\">Un joven erudito experto en botánica que desempeña el cargo de guarda forestal en el Bosque Avidya. Es muy franco, entusiasta y bueno instruyendo a las personas con menos conocimientos.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/10742394/d039c6da9285163f46b85f0241f29c17_2540025342696563359.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4ta Constelación</color>\nAl usar <color=#ffd780>Flecha enredadora artificial</color> , la Maestría Elemental de todos los miembros del equipo aumenta en 60 pts. durante 8 s. Si esta habilidad causa una reacción de Quemadura, Florecimiento, Aceleración o Propagación, la Maestría Elemental aumenta en 60 pts. adicionales y se reinicia la duración de esta bonificación de estado.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2813,
+        "name": "Cyno",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Gran Juez de la matra y supervisor de los eruditos de la Academia de Sumeru. Cuando trabaja, es incluso más eficiente que la “Gran Vayuvyastra” creada por la Facultad Kshahrewar.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/27/10742394/e09e2bda5e022611fad0dea1bb6518bb_8874602525694071527.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4ta Constelación</color>\nCuando Cyno está en el estado de \"abrecaminos del juramento\" de <color=#ffd780>Rito sagrado: Celeridad lupina</color> y causa una reacción de Electrocargado, Superconductor, Sobrecarga, Aceleración, Intensificación, Sobreflorecimiento o Torbellino Electro, todos los miembros del equipo cercanos (a excepción de Cyno) recuperan 3 pts. de Energía Elemental.\nEste efecto solo puede ocurrir 5 veces por cada uso de <color=#ffd780>Rito sagrado: Celeridad lupina</color> .",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "Nilou",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">La famosa bailarina del Teatro Zubayr. Su estilo de danza es elegante y agraciado, y posee un carácter puro y bondadoso.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/11/10742394/586d726f9ebda3506c78beaaa41f13b6_3171942866417884631.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2da Constelación</color>\nCuando un personaje en el estado de cáliz de la abundancia inflige <color=#80c0ff>Daño Hydro</color> contra un enemigo, la <color=#80c0ff>RES Hydro</color> de dicho enemigo se reduce en un 35% durante 10 s. Además, tras infligir daño contra un enemigo con una reacción de Florecimiento, la <color=#99ff88>RES Dendro</color> de dicho enemigo también se reduce en un 35% durante 10 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2850,
+        "name": "Nahida",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un pajarito enjaulado en el Santuario Surasthana que solo puede contemplar el mundo desde sus sueños.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/01/10742394/f29490bddc56b4a6773b6c5003bbb853_4504849464985713888.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2da Constelación</color>\nLos enemigos afectados por una <color=#ffd780>semilla skandha</color> aplicada por Nahida reciben los siguientes efectos:\n• La DEF de dichos enemigos se reduce en un 30% durante 8 s al ser afectados por las reacciones de Aceleración, Intensificación y Propagación.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3964,
+        "name": "Fréminet",
+        "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Un retraído joven experto en el arte del submarinismo. Bajo su gélido y distante talante, se oculta un corazón sin mácula alguna.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/05/73555894/8e44111a378f4e5379b8e7444e8c2daa_6536409230344776456.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4ta Constelación</color>\nCuando Fréminet causa una reacción de Congelación, Rompehielo o Superconductor a un enemigo, aumenta el ATQ en un 9 %. Este efecto dura 6 s, puede acumularse hasta 2 veces y puede ocurrir una vez cada 0.3 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3964,
+        "name": "Fréminet",
+        "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Un retraído joven experto en el arte del submarinismo. Bajo su gélido y distante talante, se oculta un corazón sin mácula alguna.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/05/73555894/8e44111a378f4e5379b8e7444e8c2daa_6536409230344776456.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>6ta Constelación</color>\nCuando Fréminet causa una reacción de Congelación, Rompehielo o Superconductor contra un enemigo, su Daño CRIT aumenta en un 12%. Este efecto dura 6 s, puede acumularse hasta 3 veces y puede ocurrir una vez cada 0.3 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5596,
+        "name": "Clorinde",
+        "desc": "<p>Una verduga del justiciazgo invicta que defiende la Corte de Fontaine a capa y espada.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/03/10742394/770a66030815971c697ab81bc5436329_2503878551904601198.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2da Constelación</color>\nCuando un personaje cercano del equipo causa una <color=#ffacff>Reacción Elemental Electro</color> contra un enemigo, el <color=#ffacff>Daño Electro</color> del Ataque Normal de Clorinde y de <color=#ffd780>Destello final</color> aumenta en una cantidad equivalente al 30% de su ATQ. Este efecto dura 15 s, puede acumularse hasta 3 veces y la duración de cada acumulación se calcula de manera independiente. Al tener 3 acumulaciones, la RES a interrupción de Clorinde aumenta. Como máximo, el daño de los anteriores ataques de Clorinde puede aumentar en 2700 pts. de esta manera.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5598,
+        "name": "Sethos",
+        "desc": "<p>El heredero del Templo del Silencio. Portador de secretos y procedente del desierto.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/03/10742394/cdb7abfcb86138e5b618946a5466d442_3772513767535994448.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2da Constelación</color>\nCuando Sethos recupera Energía Elemental al causar una Reacción Elemental con <color=#ffd780>Rito ancestral: Rugido atronarena</color> o se cumplen otros requisitos, su Bono de Daño Electro aumenta en un 15% durante 10 s. Este efecto puede acumularse hasta 2 veces y cada acumulación tendrá una duración independiente.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5714,
+        "name": "Émilie",
+        "desc": "Una perfumista de Fontaine que guarda sus secretos en sus frascos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1ra Constelación</color>\nCuando un personaje cercano del equipo causa una reacción de Quemadura contra un enemigo o inflige <color=#99ff88>Daño Dendro</color> a un enemigo quemado, se crea una <color=#ffd780>fragancia</color> adicional. Este efecto solo puede ocurrir una vez cada 2.9 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7300,
+        "name": "Citlalí",
+        "desc": "La gran chamana y la abu Itztli de los Augures Vientonocturno, respetada por toda la gente de su tribu.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/27/c4ab2530bb8bbe3c0e811684f97ec124_6688582217610741079.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2da Constelación</color>\nMientras Itzpapa esté activa, después de que un personaje cercano del equipo cause una reacción de Congelado o Derretido, la RES <color=#ff9999>Pyro</color> e <color=#80c0ff>Hydro</color> de los enemigos afectados por dichas reacciones se reduce en un 20% adicional. Este efecto dura 12 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Talentos que potencian a las Reacciones Elementales",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "Nilou",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">La famosa bailarina del Teatro Zubayr. Su estilo de danza es elegante y agraciado, y posee un carácter puro y bondadoso.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/11/10742394/586d726f9ebda3506c78beaaa41f13b6_3171942866417884631.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 1ra Ascensión</color>\nSi el equipo está formado únicamente por personajes <color=#99ff88>Dendro</color> o <color=#80c0ff>Hydro</color> y hay al menos un personaje Dendro y uno Hydro en él, cuando Nilou completa el tercer paso de baile de Danza de los siete reinos, otorga a los personajes cercanos el estado de \"cáliz de la abundancia\" durante 30 s.\nCuando un personaje bajo el estado de cáliz de la abundancia recibe un <color=#99ff88>ataque Dendro</color> , la Maestría Elemental de todos los personajes cercanos aumenta en 100 pts. durante 10 s. Además, al causar una reacción de Florecimiento, se crearán núcleos feraces en lugar de núcleos Dendro.\nA diferencia de estos últimos, los núcleos feraces explotan rápidamente tras ser creados y tienen una mayor AdE.\nSin embargo, estos núcleos no pueden activar las reacciones de Sobreflorecimiento y Crepitar y comparten la misma limitación de cantidad que los núcleos Dendro. Los ataques de los núcleos feraces se consideran ataques de núcleos Dendro causados por la reacción de Florecimiento.\nCuando el equipo no cumple con los requisitos de los tipos elementales necesarios para este talento pasivo, se eliminarán los efectos de cáliz de la abundancia existentes.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "Nilou",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">La famosa bailarina del Teatro Zubayr. Su estilo de danza es elegante y agraciado, y posee un carácter puro y bondadoso.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/11/10742394/586d726f9ebda3506c78beaaa41f13b6_3171942866417884631.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 4ta Ascensión</color>\nPor cada 1000 pts. de Vida Máx. que Nilou tenga una vez superados los 30.000 pts. de Vida Máx., el daño de los núcleos feraces creados por los personajes en el estado de cáliz de la abundancia aumenta en un 9%.\nEl daño infligido con los núcleos feraces solo puede aumentar un máximo del 400% de esta manera.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "Kaveh",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un célebre arquitecto de Sumeru que se preocupa demasiado por las cosas. Es un fanático de la estética, pero está atrapado por la realidad.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/73555894/2270aba02b92034d7d76b4426be8f53b_4151264377306244528.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Habilidad Elemental</color>\nUsa la habilidad de elaborar planos de Mehrak para atacar y ejecutar un escaneo radial que inflige <color=#99ff88>Daño Dendro en el AdE</color> y provoca la explosión inmediata de todos los núcleos Dendro que se encuentren en el área de escaneo.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "Kaveh",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un célebre arquitecto de Sumeru que se preocupa demasiado por las cosas. Es un fanático de la estética, pero está atrapado por la realidad.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/73555894/2270aba02b92034d7d76b4426be8f53b_4151264377306244528.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Habilidad Definitiva</color>\nDurante 12 tras la activación de <color=#ffd780>Bóveda policromada</color> , aumenta el daño de explosión de los núcleos Dendro creados por tus personajes del equipo con la reacción de Florecimiento.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "Baizhu",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">El dueño de la Farmacia Bubu, siempre con una serpiente blanca llamada Changsheng colgándole del cuello. Gran conocedor de la medicina, sus auténticas intenciones son un verdadero misterio.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/10742394/05599650d7f42e1c4adde373de6b297d_8469470954258639823.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de la 4ta Ascensión</color>\nEl personaje que sea curado con el <color=#ffd780>escudo incólume</color> obtendrá el efecto de \"fortuna de la madera\", el cual hace que, por cada 1000 pts. de Vida Máx. de Baizhu que no superen los 50000 pts., el daño que inflige dicho personaje con las reacciones de Quemadura, Florecimiento, Sobreflorecimiento y Crepitar aumenta en un 2%, y el de las reacciones de Intensificación y Propagación aumenta en un 0.8% durante 6s.",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Constelaciones que potencian a las Reacciones Elementales",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "Mona",
+        "desc": "Una misteriosa y joven astróloga que se hace llamar “Astróloga Mona Megistus”. Está convencida de que posee las habilidades para estar a la altura del título. Erudita y orgullosa.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1ra Constelación</color>\nCuando un personaje de tu equipo ataca a un enemigo afectado por un presagio, los efectos de las <color=#80c0ff>Reacciones Elementales con Hydro</color> se potencian durante 8 s:\n·Aumenta en un 15% el daño de Electrocargado, Vaporización y Torbellino Hydro.\n·Aumenta en un 15% la duración de Congelado en enemigos.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2850,
+        "name": "Nahida",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un pajarito enjaulado en el Santuario Surasthana que solo puede contemplar el mundo desde sus sueños.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/01/10742394/f29490bddc56b4a6773b6c5003bbb853_4504849464985713888.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2da Constelación</color>\nLos enemigos afectados por una <color=#ffd780>semilla skandha</color> aplicada por Nahida reciben los siguientes efectos:\n·El daño que reciben por medio de las reacciones de Quemadura, Florecimiento, Sobreflorecimiento y Crepitar puede infligir críticos contra ellos, con una Prob. CRIT fija del 20% y un Daño CRIT fijo del 100%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "Kaveh",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un célebre arquitecto de Sumeru que se preocupa demasiado por las cosas. Es un fanático de la estética, pero está atrapado por la realidad.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/73555894/2270aba02b92034d7d76b4426be8f53b_4151264377306244528.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4ta Constelación</color>\nAumenta en un 60% el daño de explosión de los núcleos Dendro creados por Kaveh con la reacción de Florecimiento.",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Armas con pasivas activadas por Reacciones Elementales",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2010,
+        "name": "Orbe Esmeralda",
+        "desc": "Un catalizador tallado en jade extraído del Desfiladero Jueyun, al norte de Liyue. Es pequeño, ligero y duradero. Popularmente se conoce como “Orbe de Jade”.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/翡玉法球.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Tras causar una reacción de Vaporización, Electrocargado, Congelación, o Torbellino Hydro, el ATQ aumenta en un <color=#37ffff>20%/25%/30%/35%/40%</color> durante 12 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1984,
+        "name": "Espada de Hierro Oscuro",
+        "desc": "Esta espada... es simplemente una espada de hierro de un tono oscuro.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/暗铁剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Tras causar una reacción de Sobrecarga, Superconductor, Electrocargado o Torbellino Electro, aumenta el ATQ en un <color=#37ffff>20%/25%/30%/35%/40%</color> durante 12 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1931,
+        "name": "Carta Náutica",
+        "desc": "Un mapa muy detallado de las aguas alrededor de Teyvat. Este es uno de los maravillosos documentos que llegaron a través de las rutas comerciales de Liyue.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/万国诸海图谱.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Causar una Reacción Elemental otorga un <color=#37ffff>8%/10%/12%/14%/16%</color> de Bono de Daño Elemental durante 10 s. Puede acumularse hasta 2 veces.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2012,
+        "name": "Juramento por la Libertad",
+        "desc": "Una espada azul celeste que recuerda a una canción de la antigüedad. Es tan tajante como el juramento por la libertad del Reino del Viento.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/苍古自由之誓.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Al causar una Reacción Elemental, el personaje obtiene un talismán de insurrección que puede adquirirse una vez cada 0.5 s como máximo. Este efecto también puede ocurrir cuando el personaje que lleva equipada esta arma está en tu equipo pero no en combate. Al obtener 2 talismanes de insurrección, estos se consumirán y otorgarán a todos los miembros del equipo cercanos el efecto de «Gran concierto milenario: Canción de la resistencia» durante 12 s, el cual aumenta en un\n<color=#37ffff>16%/20%/24%/28%/32%</color> el daño de los Ataques Normales, Cargados y Descendentes, y en un <color=#37ffff>20%/25%/30%/35%/40%</color> el ATQ. Tras activarse este efecto, no podrán obtenerse talismanes de insurrección durante 20 s. Los efectos de «Gran concierto milenario» no se acumularán con otros efectos del mismo tipo.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1997,
+        "name": "Anillo de Hakushin",
+        "desc": "Un catalizador que conserva los antiguos pensamientos de la Sacerdotisa Kitsune. Sin embargo, estos pensamientos eran tantos que no fue posible que todos cupieran en este objeto.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/白辰之环.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Cuando el personaje que lleva esta arma equipada causa una Reacción Elemental relacionada con Electro, los personajes del equipo cercanos cuyo tipo elemental coincida con los elementos implicados en la reacción obtienen un <color=#37ffff>10%/12.5%/15%/17.5%/20%</color> de su respectivo Bono de Daño Elemental durante 6 s. Los bonos elementales obtenidos de esta manera no se pueden acumular.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2667,
+        "name": "Espada de Madera",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un arma obtenida a través de una de las historias de los aranara. Tiene forma de espada y es capaz de atravesar a cualquier enemigo del bosque.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/10742394/b7dc579e8ad60147a049d14fc277629c_8966855474118475960.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Al causar una reacción de Quemadura, Aceleración, Intensificación, Propagación, Florecimiento, Sobreflorecimiento o Crepitar, se crea cerca del personaje una hoja alayavijñana que existirá durante 10 s. La Maestría Elemental del personaje que la recoja aumentará en <color=#37ffff>60/75/90/105/120</color> pts. durante 12 s. Solo se puede crear una hoja alayavijñana cada 20 s de esta manera. Este efecto también se puede activar cuando el personaje está en tu equipo pero no en combate, y no se puede acumular.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2671,
+        "name": "Espada Real del Bosque",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un arma obtenida a través de una de las historias de los aranara. Tiene forma de mandoble y es capaz de aplastar a cualquier enemigo del bosque.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/10742394/236f42a62e034034870c2c4e44015572_4105504905590136749.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Al causar una reacción de Quemadura, Aceleración, Intensificación, Propagación, Florecimiento, Sobreflorecimiento o Crepitar, se crea cerca del personaje una hoja alayavijñana que existirá durante 10 s. La Maestría Elemental del personaje que la recoja aumentará en <color=#37ffff>60/75/90/105/120</color> pts. durante 12 s. Solo se puede crear una hoja alayavijñana cada 20 s de esta manera. Este efecto también se puede activar cuando el personaje está en tu equipo pero no en combate, y no se puede acumular.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2668,
+        "name": "Perforalunas",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un arma obtenida a través de una de las historias de los aranara. Al tener la forma de una punta de flecha gigante, se puede usar como lanza.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/10742394/2ab37345c6972292fda8b3095c15f971_3143338572958833724.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Al causar una reacción de Quemadura, Aceleración, Intensificación, Propagación, Florecimiento, Sobreflorecimiento o Crepitar, se crea cerca del personaje una hoja de la reencarnación que existirá durante 10 s. El ATQ del personaje que la recoja aumentará en un <color=#37ffff>16%/20%/24%/28%/32%</color> durante 12 s. Solo se puede crear una hoja de la reencarnación cada 20 s de esta manera. Este efecto también se puede activar cuando el personaje está en tu equipo pero no en combate.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2669,
+        "name": "Fruto de la Culminación",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un fruto obtenido a través de una de las historias de los aranara. Tiene la capacidad de salir airoso de cualquier crisis.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/10742394/0e1cecaeba7b12c8c9adcb2f11eccd5e_7365479183641772721.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Al causar una Reacción Elemental, obtienes el efecto de \"fase lunar\", el cual aumenta la Maestría Elemental en <color=#37ffff>24/27/30/33/36</color> pts. y reduce el ATQ en un 5%. Solo se puede obtener una carga de este efecto cada 0.3 s y acumularse un máximo de 5 veces. Si no se causa ninguna Reacción Elemental en 6 s, perderás una carga de fase lunar. Este efecto puede activarse incluso cuando el personaje está en tu equipo pero no en combate.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2847,
+        "name": "Alabarda del Viento Epistolar",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un estandarte que puede guiar hacia el viento. Los vientos que soplan por lugares idílicos no siempre son gentiles.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/06/10742394/98f3fb9e0886b25bfd094828cc391978_7257405228369060231.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Tras causar una Reacción Elemental, el ATQ aumenta en un <color=#37ffff>12%/15%/18%/21%/24%</color> y la Maestría Elemental aumenta en <color=#37ffff>48/60/72/84/96</color> pts. durante 10 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3614,
+        "name": "Fierro Floriorlado",
+        "desc": "<p>Un mandoble de líneas esbeltas y elegantes, adornado con lazos y flores festivos.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/26/10742394/bca5e3d255c646e42449a06b79b5d019_7267087856743773303.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Tras golpear a un enemigo con una Habilidad Elemental o tras causar una Reacción Elemental, el ATQ aumenta en un <color=#37ffff>12%/15%/18%/21%/24%</color> y la Maestría Elemental aumenta en <color=#37ffff>48/60/72/84/96</color> pts. durante 8 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4719,
+        "name": "Sentenciadora",
+        "desc": "El arma que usó la joven aristócrata que renunció a su apellido. Está manchada con la sangre de enemigos y seres queridos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2023/12/13/4f35f9bf1bceead8fa216873ce321847_6475651973647579739.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Cuando un personaje del equipo recoge un fragmento creado con la reacción de Cristalización, el portador de esta arma obtiene 1 \"sello promisorio\", el cual aumenta en un <color=#37ffff>18%/22.5%/27%/31.5%/36%</color> el daño de la Habilidad Elemental. El sello promisorio dura 15s y se pueden poseer un máximo de 2 al mismo tiempo. Todos los sellos se eliminarán 0.2s después de que el portador de esta arma inflija daño con su Habilidad Elemental.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5847,
+        "name": "Elegía Lumidulce",
+        "desc": "Una magnífica lanza decorada con cristales azulados. Dicen que era el arma más preciada de cierta verduga del justiciazgo legendaria, aunque ella nunca llegó a usarla.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/3dff07a4b024917cb63c933d2078ccc8_8401589850337226556.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Cuando el portador de esta arma causa una reacción de Quemadura contra un enemigo o tras infligir Daño Dendro a un enemigo quemado, el daño infligido aumenta en un <color=#37ffff>18%/23%/28%/33%/38%</color> . Este efecto dura 8 s y puede acumularse hasta 2 veces. Al alcanzar 2 acumulaciones o cuando la duración de estas se reinicia, restaura <color=#37ffff>12/13/14/15/16</color> pts. de Energía Elemental. Solo se puede restaurar Energía Elemental una vez cada 12 s de esta manera. Estos dos efectos se pueden activar incluso cuando el personaje está en tu equipo pero no en uso.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6548,
+        "name": "Terragitador",
+        "desc": "La espada pesada que le gustaba utilizar al héroe conocido como “Robafuegos”. Dicen que ni siquiera las llamas del rey de la Ciudad de las Cenizas pudieron quemarla.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/dc6bf4c87afe67014579743618e97371_6360663376854922140.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Cuando un personaje del equipo causa una Reacción Elemental Pyro, el daño que inflige el portador de esta arma con su Habilidad Elemental aumenta en un <color=#37ffff>16%/20%/24%/28%/32%</color> durante 8s. Este efecto se puede activar incluso cuando el personaje está en tu equipo pero no en uso.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6546,
+        "name": "Hora de Surfear",
+        "desc": "Un objeto conmemorativo que, supuestamente, se le iba a entregar al ganador de la primera edición del Campeonato de Surf Intertribal. Como el torneo aún está en fase de preparación, el premio lo está guardando temporalmente la dueña de la tienda Peciglobos Parsimoniosos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/6ce2e0da75fbdc19fc4b6f9e7bae9049_5151463723015160354.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Una vez cada 15s, otorga los siguientes efectos durante 14s después de usar la Habilidad Elemental: otorga 4 cargas de \"estío\". Cada carga aumenta en un <color=#37ffff>12%/15%/18%/21%/24%</color> el daño del Ataque Normal. Mientras este efecto está activo, una vez cada 1.5s, elimina 1 carga de estío tras golpear a un enemigo con un Ataque Normal, y otorga 1 carga tras causar una reacción de Vaporización contra un enemigo. El efecto de estío puede acumularse hasta 4 veces.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6545,
+        "name": "Colmillo del Rey de la Montaña",
+        "desc": "Una gran espada forjada con turquesa pura. Recibió el nombre de Kongamato, el Rey de la Montaña, porque pesa muchísimo más que cualquier otra espada normal.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/1fd3c498faccab68bfa5d961477a8c29_2936359463997877474.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Tras golpear a un enemigo con la Habilidad Elemental, otorga 1 carga de \"bendición arbórea\". Este efecto solo se puede activar una vez cada 0.5s. Cuando un miembro cercano del equipo causa una reacción de Quemadura o Crepitar, el portador de esta arma obtiene 3 cargas de bendición arbórea. Este efecto solo puede ocurrir una vez cada 2s y se puede activar incluso cuando el personaje está en tu equipo pero no en uso. La bendición arbórea aumenta en un <color=#37ffff>10%/12.5%/15%/17.5%/20%</color> el daño infligido con la Habilidad Elemental y Definitiva durante 6s. Esto puede acumularse hasta 6 veces y la duración de cada carga se calcula de manera independiente.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7116,
+        "name": "Pluma Carmesí Buitreastral",
+        "desc": "Un antiguo arco largo adornado con plumas de color carmesí que ha pasado de generación en generación en la Tribu Plumaflora.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/d3bb0f9d936379661d409644e4269ff1_2888646900955247330.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Tras causar una reacción de Torbellino, el ATQ aumenta en un <color=#37ffff>24%/30%/34%/38%/42%</color> durante 12 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Efectos de conjunto de artefactos activados por Reacciones Elementales",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2074,
+        "name": "Instructor",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Instructor/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\nDespués de activar una Reacción Elemental, aumenta la Maestría Elemental de todos los miembros del equipo en 120 pts. durante 8 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "Sombra Verde Esmeralda",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\nDependiendo del tipo elemental que tenga, disminuye la RES Elemental correspondiente del enemigo en un 40% durante 10 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "Furia del Trueno",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\nAl causar Sobrecarga, Electrocargado, Superconductor, Sobreflorecimiento, Intensificación o una reacción de Aceleración, el TdE de la Habilidad Elemental se reduce en 1 s. Solo puede ocurrir una vez cada 0.8 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2062,
+        "name": "Nómada del Invierno",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Blizzard Strayer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\nAumenta en un 20% la Prob. CRIT contra los enemigos afectados por Cryo. Si el enemigo está Congelado, la Prob. CRIT aumentará en un 20% adicional.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2673,
+        "name": "Sueños Áureos",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/10742394/ae8a2c6f24df66e1bd7cc2dbd83d330d_8321994502123836349.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\nTras causar una Reacción Elemental, el personaje que lleve equipado este conjunto obtiene durante 8 s los siguientes fortalecimientos en función de los tipos elementales de los miembros del equipo: por cada personaje del mismo tipo elemental que el portador de este conjunto, el ATQ aumenta en un 14%; por cada personaje de tipo elemental distinto al portador de este conjunto, la Maestría Elemental aumenta en 50 pts. Cada uno de estos efectos se calcula para un máximo de 3 personajes. Este efecto solo se puede activar una vez cada 8 s, y se activará incluso cuando el personaje que lleva este conjunto equipado esté en tu equipo pero no en combate.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Flor Olvidada del Paraíso",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/10/10742394/50ce09dfa5a91a33aa9cedfb15bcf2d1_6735549224128370489.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\nAumenta en un 40% el daño que inflige el portador de este conjunto con las reacciones de Florecimiento, Sobreflorecimiento y Crepitar. Además, cuando el portador de este conjunto causa alguna de estas reacciones, el bono anterior aumenta en un 25%. Este efecto dura 10 s, puede acumularse hasta 4 veces y ocurrir una vez por segundo. Puede activarse incluso cuando el portador del conjunto está en tu equipo pero no en combate.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5579,
+        "name": "Ensoñación Inacabada",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/24/356c6b0e1be129282f759d8844872c7d_2911260570448763671.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\nSi estando en combate han pasado más de 6s sin que haya ningún enemigo cercano quemado, dicho aumento de daño irá disminuyendo en un 10% por segundo, hasta llegar al 0%. Si hay algún enemigo cercano quemado, el daño infligido aumenta en un 10% por segundo, hasta llegar al 50%. Estos efectos se pueden activar incluso cuando el personaje que lleva equipado este conjunto de artefactos está en tu equipo pero no en uso.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6553,
+        "name": "Pergamino del Héroe de la Ciudad de las Cenizas",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/6ad5095f324c2da829ecaa5e2ed13af9_2791497672459683103.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\nCuando el portador de este conjunto causa una Reacción Elemental relacionada con su tipo elemental, los Bonos de Daño Elemental relacionados con esa Reacción Elemental de todos los personajes cercanos del equipo aumentan en un 12% durante 15s. Si el portador de este conjunto está en el estado de bendición noctámbula cuando se activa este efecto, los Bonos de Daño Elemental relacionados con esa Reacción Elemental de dichos personajes aumentan en un 28% adicional durante 20s. Estos efectos se pueden activar incluso cuando el portador está en tu equipo pero no en uso. Los bonos de daño otorgados por este conjunto de artefactos no se pueden acumular con los de otro conjunto del mismo tipo.",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Efectos de conjunto de artefactos que potencian a las Reacciones Elementales",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "Sombra Verde Esmeralda",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\nAumenta el daño de Torbellino en un 60%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "Furia del Trueno",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\nAumenta en un 40% el daño infligido por Sobrecarga, Electrocargado, Superconductor y Sobreflorecimiento, y aumenta en un 20% el bono de daño generado por Intensificación.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "Bruja Carmesí en Llamas",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\nAumenta el daño causado por Sobrecarga, Quemadura y Crepitar en un 40%, y el de Vaporización y Derretido en un 15%. El uso de una Habilidad Elemental aumenta los efectos del conjunto de 2 piezas en un 50% durante 10 s. Puede acumularse hasta un máximo de 3 veces.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Flor Olvidada del Paraíso",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/10/10742394/50ce09dfa5a91a33aa9cedfb15bcf2d1_6735549224128370489.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\nAumenta en un 40% el daño que inflige el portador de este conjunto con las reacciones de Florecimiento, Sobreflorecimiento y Crepitar. Además, cuando el portador de este conjunto causa alguna de estas reacciones, el bono anterior aumenta en un 25%. Este efecto dura 10 s, puede acumularse hasta 4 veces y ocurrir una vez por segundo. Puede activarse incluso cuando el portador del conjunto está en tu equipo pero no en combate.",
+        "alignment": "center"
+      }
+    ]
+  }
+}

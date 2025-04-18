@@ -1,0 +1,1362 @@
+{
+  "epId": 5206,
+  "name": "Elemental Reactions",
+  "desc": "<p>Elemental Reactions represent the centerpiece of the combat system of Genshin Impact. Understanding and mastering these interactions can drastically improve one’s proficiency in battle.</p><p>There are multiple factors to consider when triggering Elemental Reactions, such as aura, trigger, decay, etc. Elemental Gauge Theory and Internal Cooldowns will play a major role to help players understand the complexity behind Elemental Reactions.</p>",
+  "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/18/e03d84da04797c0ad0d6bd99c0d6ed57_8218276776082843931.png",
+  "menuId": 14,
+  "menuName": "Tutorial",
+  "version": 1737486932,
+  "components": {
+    "customize": [
+      {
+        "type": "RichText",
+        "text": "An Elemental Reaction occurs when different elements are applied to a target that is already affected by an element.\nIn Genshin Impact, there are seven elements, each with at least 1 reaction that can be triggered using it. However, there are restrictions to these reactions as certain elements do not interact with another element, which is as follows: Geo, Dendro and Anemo, and Dendro and Cryo do not react with each other.\nElemental Reactions can be divided into separate categories, such as: Non Damage Reactions, Amplifying Reactions, Transformative Reactions and Additive Reactions.\nTo better understand certain mechanisms and interactions, it is helpful to outline and define a couple of terms and mechanisms. These have found an established use in the community and have been identified through rigorous testing and research from dedicated players. Some of these paradigms and mechanisms are rather complex in nature, so their listing here is but a condensed summary."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Triggers & Auras",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "When talking about reactions, some of them do care about the order of use, while others are indifferent when considering the effect of the reaction. No matter if an enemy is affected by Electro or Cryo, the instant the respective other element is applied, the Superconduct reaction occurs and the effect is the same. However, there is a difference whether it is Pyro or Hydro which triggers the Vaporize reaction, since here, the sequence of application has an impact on the effect of the reaction (i.e. x1.5 multiplier compared to x2 multiplier).\nTo facilitate communication on this matter, the community adopted the terms of <color=#ffffff>\"Aura\"</color> and <color=#ffffff>\"Trigger\"</color> . <color=#ffffff>\"Aura\"</color> being used to describe which element(s) is present on an entity during a neutral state (before or after a reaction), while <color=#ffffff>\"Trigger\"</color> is used to describe which element triggers the reaction(s)."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Elemental Gauge (Unit) Theory",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>\"Elemental Gauge (Unit) Theory\"</color> refers to the understanding that elemental auras are \"consumed\" to different degrees depending on their own strength and the strength of the respective trigger. In this case, the strength of an elemental aura or trigger is not defined by the damage an attacking move did when applying said element, but a predefined value for that attack. These values can be modulated by factors, such as order of application (strong or weak elements), or the time between applications (decay).\nIn essence, certain attacks apply \"more\" or \"less\" of an element, which can be reflected in the strength of the aura or the trigger. This strength is counted in so-called units, e.g. 1U Cryo or 2U Pyro.\nHere are some examples, that can help to demonstrate this idea:\nCharlotte's Normal Attack applies 1U Cryo and Lisa's Normal Attack applies 1U Electro. Both cancel each other out and the Superconduct reaction occurs.\nXingqiu's Burst applies 1U Hydro, while Hu Tao's Charged Attack applies 1U Pyro. However, since in this case, Pyro is the \"weak\" Element due the nature of Vaporize, its strength is halved, which means it only consumes 0.5U of Xingqiu's Hydro aura. This means, after the attack, a 0.5U Hydro aura remains on the enemy, and Hu Tao can trigger a second reaction.\nLikewise, Bennett's Burst applies 2U Pyro to an enemy, after which, Mona's Normal Attack applies 1U Hydro. However, since Hydro is the \"strong\" Element, it consumes twice as much, resulting in a full removal of the initial Pyro aura.\nIt should be noted that a trigger, even if applying more of an element than what can be consumed from an enemies aura, will never apply the rest of its element. An attack can either apply a new element, if none is present, and establish an aura OR consume (part of) an aura and trigger a reaction. A single attack can never do both."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Internal Cooldown (ICD)",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "The same way that Elemental Skills and Bursts have cooldowns, after which they can be used again, most attacks that apply an element also follow specific rules. These cooldowns are for the most part separate from another and not visible by any indicator, hence the name <color=#ffffff>Internal Cooldown (ICD)</color> .\nApart from some exceptions that do not have any internal cooldown and apply their element with each use/hit, most attacks follow similar patterns. In fact, there are two rules working in tandem, the time-rule and the hit-rule, with the time-rule taking priority.\nSimply put, every X hits, the same attack can apply its element again, while also every X seconds, regardless of hits.\nA practical example for this is Kaeya's Burst . While this ability rotates rapidly and deals quick hits of Cryo Damage, not every hit can trigger a reaction or apply its element. In fact, every third hit will apply Cryo, meaning hits number 1, 4, 7, 10, 13, .. and so forth. Also, every 2.5 seconds, the next hit will also be guaranteed to apply the element, overwriting the previously mentioned hit-rule and resetting that one back to 1. Same example as before with Kaeya's Burst, this could be a sequence:\n1, 4, 7 / 8, 11, 14 / 15, 18, …\nIn this example, the timer starts after hit 1. Hit 7 occurs after 2.4s, meaning the next hit would happen after 2.5 seconds. Since the time-rule takes priority, hit 8 applies Cryo instead, restarts the timer and also resets the time rule.\nThis 3-hit-rule and 2.5s-time-rule are commonly referred to as <color=#ffffff>\"Standard ICD\"</color> , since these values are the most common ones. Some exceptions do not have a rule at all, are missing a time- or hit-rule, or have modified time- and/or hit-rules.\nExamples for such exceptions are Xiangling's Burst (no ICD) or Fischl's Oz Attacks (4 hits hit-rule & 5 seconds time-rule)."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Non Damage Reactions",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Can be divided into 3 sections: Elemental Reaction classified by <color=#ffffff>Frozen</color> , <color=#ffffff>Crystallize</color> and <color=#ffffff>Quicken</color> . Instead of adding DMG, these reactions provide other attributes with associated elements."
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Frozen",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Frozen</color> elemental reactions are inflicted by <color=#ffffff>Cryo</color> and <color=#ffffff>Hydro</color> elements that can occur on Opponents or Characters, immobilizing targets affected by corresponding elements, and consuming weaker aura applied on its target. The duration is calculated based on the amount of gauge units applied and target RES."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/f7ca3b98a4323e51179822a2857a956f_703100634561086553.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/7aa68f6cfdc3216424a2b691f12d3453_8427346204557988974.gif",
+        "alignment": "right"
+      },
+      {
+        "type": "RichText",
+        "text": "( Kaeya Elemental Skill 2U, Barbara Normal Attack 1U Frozen target for 2s. With underlying Cryo Aura allowed Barbara to trigger another Frozen)",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "In Frozen state, target can receive a follow-up reaction by applying another element (Melt, Superconduct, Shatter, Swirls, Bloom) that will remove or reduce Frozen aura duration or completely clear the aura on the target."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/e9a908ab320bbb06ce05bb08770762b1_3986696504893110804.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/7261fca8300eac3549936e6e0ced5ca2_69616300500122683.gif",
+        "alignment": "right"
+      },
+      {
+        "type": "RichText",
+        "text": "( Examples: Triggering Superconduct or Swirls on Frozen target would immediately clear or reduce Frozen duration. The second example has constant Hydro application, so Hydro was Swirled off of the enemy rather than Cryo)",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Applying Dendro aura on affected targets would not trigger any reaction. Instead, if the target has a stronger Hydro aura or more gauge unit underlying on Frozen target, 1 Dendro Core will be created (maximum 3 Dendro Cores can be made this way)."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/3aeac403ad31e20920f54f8c48886c9d_5677600415338105232.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/205556113/dd2c1f3cf222977f9f1452d52f563a19_9086478006534469735.gif",
+        "alignment": "right"
+      },
+      {
+        "type": "RichText",
+        "text": "(Applying 1U Hydro and 2U Hydro will allow the creation of 3 Dendro cores during the Frozen state since Dendro has a stronger aura.)",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Crystallize",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "The Crystallize reaction occurs when a target that is affected by Pyro, Electro, Cryo, or Hydro takes <color=#ffffff>Geo DMG</color> , creating a <color=#ffffff>Crystallize Shard</color> nearby. This shard can be picked up and grants a shield of a certain base value. Crystallize Shield Strength is calculated based on Character Level (Base Shield HP) and EM (Bonus Shield HP)."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/5d299591b3f64cdfa82fa055f90eecb9_7198248087726378669.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "Crystallize Shard with 1000 EM at level 90."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/03c7f58b6ea44611c15d7790f3b375f5_4273356288171463538.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "Crystallize Shard with 0 EM at level 90.\nAt most 3 Crystallize Shards can be present on the field, creating a new crystal shard will replace the oldest one. Once created, each Shard will last for 17 seconds on the ground. After being picked up, the Crystallize Shield will last for 15 seconds, providing 250% Damage Absorption against its corresponding element and resistance to interruption.\nOnly one Crystallize Shield can be active at a time and picking up a Shard will replace it, refreshing its duration and shield absorption. Like other shields in the game, Crystallize Shields do not stack with shields from abilities, weapons, or constellations as all shields take damage simultaneously."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/74bbce8a18d6bcfd0bec48cc2b7792b9_5345317538845091544.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "(Stacking Crystallize shard with other Zhongli Elemental Skill)"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Quicken",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "The <color=#ffffff>Quicken</color> Reaction and resulting Quickened State is part of the <color=#ffffff>Spread</color> and <color=#ffffff>Aggravate</color> Reactions. When Dendro and Electro interact on a target, the Quickened State is inflicted on it and lasts as long as these two elements are lingering on the enemy (approximately 11s). On a target in the Quickened state, applying Dendro element would trigger Spread reaction and inflicting Electro would trigger Aggravate reaction, adding additional DMG. Since you need to use Dendro/Electro attacks on a Quickened enemy to cause the Spread/Aggravate Reactions, this State is constantly refreshed."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/ba8b5289bf3984d33ee58d4899a2cf0d_1673697031811751886.gif",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "While the Quicken state is not technically a Dendro aura, it has the Dendro symbol and behaves similarly when it comes to its interactions with Pyro and Hydro. Aggravate and Spread does not consume or reduce Quicken aura on target and can be added respectively, but inflicting Pyro or Hydro will trigger Burning or Bloom, reducing the Quicken duration."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/b7a6e2555a42ac4c0a290b1aaaacca4f_6360988579815652156.gif",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "(Applying Hydro on Quickened target consume the Dendro and clear the Quicken status on target)"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Damage Reactions",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Under the in-game Elemental Mastery value of the character’s attributes, Elemental Reactions are divided into 4 categories, 3 of these are of a damaging nature. These archetypes can be classified as <color=#ffffff>Amplifying Reactions</color> , <color=#ffffff>Transformative Reactions</color> , and <color=#ffffff>Additive Reactions</color> .\nAmplifying Reactions are <color=#ffffff>Vaporize</color> and <color=#ffffff>Melt</color> . These reactions amplify the damage of the attack that triggers it by a multiplicative factor.\nAdditive Reactions are <color=#ffffff>Spread</color> and <color=#ffffff>Aggravate</color> . These ones add a certain value to the attack that triggers one of these reactions.\nTransformative Reactions cause damage independent from the attack that triggers them and can have additional properties, such as causing multiple instances of damage or applying an element. These reactions include <color=#ffffff>Burning</color> , <color=#ffffff>Superconduct</color> , <color=#ffffff>Swirl</color> , <color=#ffffff>Electro-charged</color> , <color=#ffffff>Shattered</color> , <color=#ffffff>Overloaded</color> , <color=#ffffff>Bloom</color> , <color=#ffffff>Hyperbloom</color> and <color=#ffffff>Burgeon</color> .\nAll these reactions take into consideration the <color=#ffffff>Elemental Mastery</color> of the character that triggers the reaction and a <color=#ffffff>specific multiplier</color> for each reaction, as well as an <color=#ffffff>enemy's RES</color> to the reaction's elemental type. For Additive and Transformative Reactions, a <color=#ffffff>character's level</color> is also taken into account."
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Amplifying Reactions",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Vaporize</color> and <color=#ffffff>Melt</color> are Amplifying Reactions, which multiply the normal damage with the EM Bonus and a special Multiplier. This one is <color=#ffffff>200%</color> for Vaporize triggered by Hydro and for Melt triggered by Pyro, and <color=#ffffff>150%</color> for Vaporize triggered by Pyro and for Melt triggered by Cryo.\nThe reactions that apply the 200% Bonus are often called \"strong\", whereas the 150% reaction is labeled \"weak\". This has less to do with the damage they cause, but with the interaction of the elements involved. As such, a \"weak\" reaction consumes less of the aura-element, assuming both aura and trigger are of the same caliber. As such, \"weak\" reactions only consume half the aura that \"strong\" reactions do, which allows to trigger more reactions."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/43af11363070a0ce522a7f88e6398eb0_2532039850847443716.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "(At the top, the Elemental Attack's damage is shown simply; at the bottom, triggering a reaction with EM 0,\nPyro Vaporize (x1.5), Hydro Vaporize (x2.0), Pyro Melt (x1.5), Cryo Melt (x2.0) respectively)",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Transformative Reactions",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Transformative Reactions are quite a lot, but all of them share these characteristics: they generate <color=#ffffff>damage</color> independent of the triggering attack (and its base DMG), <color=#ffffff>cannot critically strike</color> , does not benefit from any <color=#ffffff>generic damage bonus</color> , and do not consider the <color=#ffffff>enemy DEF</color> , but the <color=#ffffff>level of the triggering character</color> . The <color=#ffffff>level multiplier</color> is specific for each level, but the most important ones are 1077 and 1446 for the levels 80 and 90 respectively."
+      },
+      {
+        "type": "RichText",
+        "text": "The damage of these reactions is calculated this way:\n<color=#ffffff>( 100% + EM Bonus ) × RES Multiplier × Level Multiplier × Reaction Multiplier</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "The <color=#ffffff>Reaction Multiplier</color> is <color=#ffffff>25%</color> for Burning, <color=#ffffff>60%</color> for Swirl, <color=#ffffff>150%</color> for Superconduct, <color=#ffffff>200%</color> for Electro-Charged and Bloom, <color=#ffffff>275%</color> for Overloaded, and <color=#ffffff>300%</color> for Shattered, Burgeon and Hyperbloom.\n<color=#ffffff>Burning</color> is triggered when Pyro and Dendro react. It deals AoE Pyro DMG and applies a Burning aura dealing continuous Pyro DMG until it wears off.\n<color=#ffffff>Swirl</color> is triggered when Anemo and Pyro/Hydro/Electro/Cryo react. This deals AoE DMG of the swirled (non-Anemo) element, dealing its damage both to the affected enemy and enemies nearby. Simultaneously triggering a Swirl Reaction off of 2+ enemies causes 2 instances of Swirl DMG to all opponents hit (their own and up to one adjacent one). The only exception here is Hydro: swirling Hydro only applies the Wet state, while dealing damage only to the enemy that it was triggered on. Triggering a Swirl reaction is considered a \"weak\" elemental interaction; as such, the aura is not fully cleared from the enemy, which allows for further reactions.\n<color=#ffffff>Superconduct</color> is triggered when Electro and Cryo react. It deals AoE Cryo DMG and reduces the Physical RES of all the enemies hit by 40% for 12s. The Cryo DMG of the reaction does not apply the element.\n<color=#ffffff>Electro-Charged</color> is triggered when Hydro and Electro react. It deals Electro DMG once per second to the involved enemy and nearby enemies affected by Wet until the Hydro or the Electro aura wears off.\n<color=#ffffff>Bloom</color> is triggered when Dendro and Hydro react. It doesn’t deal any additional DMG but creates a Dendro Core that deals AoE Dendro DMG after exploding (within 6s or when 5 newer Dendro cores are created). Each enemy cannot take Dendro Core DMG more than twice every 0.5s. When the character takes damage from a Dendro Core, it will be just the 5% of it. If Dendro triggers Bloom, the Hydro aura will be completely cleared; but if Hydro does, then just half of the Dendro aura.\n<color=#ffffff>Overloaded</color> is triggered when Pyro and Electro react. It deals AoE Pyro DMG and causes a strong explosion clearing the Pyro and Electro aura.\n<color=#ffffff>Shattered</color> is triggered when a Frozen enemy is hit with a heavy attack (claymore and plunging attacks, explosions, Geo DMG, etc.). It ends the Frozen state and then deals Physical DMG (so it doesn’t take advantage of the bonuses of the Blizzard Strayer 4-pieces set and Cryo Resonance).\n<color=#ffffff>Burgeon</color> is triggered when a Dendro Core comes into contact with Pyro. It deals AoE Dendro DMG.\n<color=#ffffff>Hyperbloom</color> is triggered when a Dendro Core comes into contact with Electro. It doesn’t deal any additional DMG but transforms the cores into a homing Sprawling Shot that deals Dendro DMG on hitting. It has a very small AoE, but if multiple enemies are close enough it can hit them too."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/e9426a37463131d1d5a65bd0677b01e0_8714591292414216019.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "(Triggering the mentioned reactions with characters at the same level and EM 0)",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Additive Reactions",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Spread</color> and <color=#ffffff>Aggravate</color> are Additive Reactions, which add a certain value to the damage of the ability that triggers it. The Additive Reactions can only be triggered on enemies affected by the <color=#ffffff>Quicken</color> state (as seen in section 2). Dealing Dendro DMG causes Spread, while Electro DMG causes Aggravate. This Bonus Damage is applied to the <color=#ffffff>Base Damage</color> of the triggering attack and profits from all further amplifying bonuses and factors applied to that attack (DMG%, CRIT, RES, DEF)."
+      },
+      {
+        "type": "RichText",
+        "text": "The added damage of these reactions is calculated this way:\n<color=#ffffff>( 100% + EM Bonus ) × Level Multiplier × Reaction Multiplier</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "The <color=#ffffff>Reaction Multiplier</color> is <color=#ffffff>115%</color> for Aggravate and <color=#ffffff>125%</color> for Spread."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/3c436038857810cddd36dcbcd2a25307_2246617110877344145.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "(Fischl and Collei triggering an Additive reaction at the same level, ATK, ability percentage and EM 0)",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Related Mechanisms",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Elemental Resonance",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Elemental Resonance changes based on the Elements of Characters in your Party. The Elemental Resonance Effect activates when there are 2 Characters of the same Elemental Type and when there are 4 characters in the Party. Of the 8 possible Effects, only two are relative to Elemental Reactions: Dendro: \"Sprawling Greenery\" and Electro: \"High Voltage\"."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/d39be9e3b662f042e0f9ad82fa8676c7_7459064268625470154.png",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Talents activated by Elemental Reactions",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9,
+        "name": "Kaeya",
+        "desc": "An accomplished swordsman and a strategic thinker in the Knights of Favonius, rumored to hail from beyond Mondstadt.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kaeya_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4th Ascension passive</color>\nOpponents Frozen by Frostgnaw will drop additional Elemental Particles.\nFrostgnaw may only produce a maximum of 2 additional Elemental Particles per use.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 38,
+        "name": "Fischl",
+        "desc": "A mysterious girl who calls herself \"Prinzessin der Verurteilung\" and travels with a night raven named Oz.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Fischl_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4th Ascension passive</color>\nIf your current active character triggers an <color=#ffacff>Electro-related Elemental Reaction</color> when Oz is on the field, the opponent shall be stricken with Thundering Retribution, dealing <color=#ffacff>Electro DMG</color> equal to 80% of Fischl's ATK.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 30,
+        "name": "Sucrose",
+        "desc": "An alchemist filled with curiosity about all things. She researches bio-alchemy.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sucrose_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1st Ascension passive</color>\nWhen Sucrose triggers a Swirl reaction, all characters in the party with the matching element (excluding Sucrose) have their Elemental Mastery increased by 50 for 8s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1,
+        "name": "Qiqi",
+        "desc": "An apprentice and herb gatherer at Bubu Pharmacy. An undead with a bone-white complexion, she seldom has much in the way of words or emotion.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Qiqi_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1st Ascension passive</color>\nWhen a character under the effects of <color=#ffd780>Adeptus Art: Herald of Frost</color> triggers an Elemental Reaction, their Incoming Healing Bonus is increased by 20% for 8s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 22,
+        "name": "Kaedehara Kazuha",
+        "desc": "A wandering samurai from Inazuma who is currently with Liyue's Crux Fleet. A gentle and carefree soul whose heart hides a great many burdens from the past.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kaedehara Kazuha_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4th Ascension passive</color>\nUpon triggering a Swirl reaction, Kaedehara Kazuha will grant all party members a 0.04% Elemental DMG Bonus to the element absorbed by Swirl for every point of Elemental Mastery he has for 8s. Bonuses for different elements obtained through this method can co-exist.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 21,
+        "name": "Sayu",
+        "desc": "A pint-sized ninja attached to the Shuumatsuban, who always seems sleep-deprived.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sayu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1st Ascension passive</color>\nWhen Sayu triggers a Swirl reaction while active, she heals all your characters and nearby allies for 300 HP. She will also heal an additional 1.2 HP for every point of Elemental Mastery she has.\nThis effect can be triggered once every 2s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2263,
+        "name": "Shikanoin Heizou",
+        "desc": "A young prodigy detective from the Tenryou Commission. His senses are sharp and his thoughts are clear.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Shikanoin Heizou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1st Ascension passive</color>\nWhen Shikanoin Heizou activates a Swirl reaction while on the field, he will gain 1 Declension stack for <color=#ffd780>Heartstopper Strike</color> . This effect can be triggered once every 0.1s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2268,
+        "name": "Collei",
+        "desc": "<p>A trainee ranger active in Avidya Forest. Behind her enthusiastic words and actions hides a slightly introverted personality.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/24/194600931/37a18b6b6865c59063003a9380f08225_7758071773430345954.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1st Ascension passive</color>\nIf one of your party members has triggered Burning, Quicken, Aggravate, Spread, Bloom, Hyperbloom, or Burgeon reactions before the <color=#ffd780>Floral Ring</color> returns, it will grant the character the Sprout effect upon return, which will continuously deal <color=#99ff88>Dendro DMG</color> equivalent to 40% of Collei's ATK to nearby opponents for 3s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2268,
+        "name": "Collei",
+        "desc": "<p>A trainee ranger active in Avidya Forest. Behind her enthusiastic words and actions hides a slightly introverted personality.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/24/194600931/37a18b6b6865c59063003a9380f08225_7758071773430345954.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4th Ascension passive</color>\nWhen a character within the <color=#ffd780>Cuilein-Anbar Zone</color> triggers Burning, Quicken, Aggravate, Spread, Bloom, Hyperbloom, or Burgeon reactions, the Zone's duration will be increased by 1s.\nA single <color=#ffd780>Trump-Card Kitty</color> can be extended by up to 3s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2269,
+        "name": "Dori",
+        "desc": "<p>An elusive merchant who has a fondness for glittering Mora.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/08/35428890/6539bea71efd0f839db897cfc4094362_3469125131800075941.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1st Ascension passive</color>\nAfter a character connected to the <color=#ffe699>Jinni</color> triggers an Electro-Charged, Superconduct, Overloaded, Quicken, Aggravate, Hyperbloom, or an Electro Swirl or Crystallize reaction, the CD of <color=#ffe699>Spirit-Wandering Lamp: Troubleshooter Cannon</color> is decreased by 1s.\nThis effect can be triggered once every 3s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2850,
+        "name": "Nahida",
+        "desc": "<p>A caged bird secluded within the confines of the Sanctuary of Surasthana who can only see the world in her dreams.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/29/35428890/f29490bddc56b4a6773b6c5003bbb853_9091170755650648414.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Elemental Skill</color>\nAfter you trigger Elemental Reactions on opponents who are affected by the Seeds of Skandha or when they take DMG from Dendro Cores (including Burgeon and Hyperbloom DMG), Nahida will unleash Tri-Karma Purification on the opponents and all connected opponents, dealing <color=#99ff88>Dendro DMG</color> based on her ATK and Elemental Mastery.\nYou can trigger at most 1 Tri-Karma Purification within a short period of time.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "Kaveh",
+        "desc": "<p>A renowned architect from Sumeru who perhaps cares a bit too much about too many things. He is an aesthete troubled by reality. </p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/35428890/2270aba02b92034d7d76b4426be8f53b_7062168821433378650.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1st Ascension passive</color>\nWhen DMG dealt by a Dendro Core (including DMG from Burgeon and Hyperbloom) hits Kaveh, Kaveh will regain HP equal to 300% of his Elemental Mastery. This effect can be triggered once every 0.5s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3964,
+        "name": "Freminet",
+        "desc": "<p>A reserved young man who is well-versed in diving. Beneath his distant, icy demeanor lies a pure heart bereft of all flaws. </p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/03/35428890/8e44111a378f4e5379b8e7444e8c2daa_4713775899437074849.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4th Ascension passive</color>\nWhen Freminet triggers Shatter against opponents, the DMG dealt by <color=#ffd780>Pressurized Floe: Shattering Pressure</color> will be increased by 40% for 5s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4023,
+        "name": "Neuvillette",
+        "desc": "<p>The Chief Justice of Fontaine, known as the Iudex, is renowned for his unassailable impartiality. </p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/26/35428890/0513aa7f482dbb4778545d02f94956fe_7540616405773975535.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1st Ascension passive</color>\nWhen a party member triggers a Vaporize, Frozen, Electro-Charged, Bloom, Hydro Swirl, or a Hydro Crystallize reaction on opponents, 1 stack of Past Draconic Glories will be granted to Neuvillette for 30s. Max 3 stacks. Past Draconic Glories causes Charged Attack: Equitable Judgment to deal 110%/125%/160% of its original DMG.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4577,
+        "name": "Chevreuse",
+        "desc": "<p>The captain of the Special Security and Surveillance Patrol, who wears justice as an ever-present seal upon her heart. Her musket shall only ever point at the guilty. </p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/01/09/35428890/a846729f31f16a987a8696466ebabcc0_6857330048220230431.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1st Ascension passive</color>\nWhen all party members are <color=#ff9999>Pyro</color> and <color=#ffacff>Electro</color> characters and there is at least one Pyro and one Electro character each in the party:\nChevreuse grants \"Coordinated Tactics\" to nearby party members: After a character triggers the Overloaded reaction, the <color=#ff9999>Pyro</color> and <color=#ffacff>Electro</color> RES of the opponent(s) affected by this Overloaded reaction will be decreased by 40% for 6s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5596,
+        "name": "Clorinde",
+        "desc": "<p>An undefeated Champion Duelist. Sword in hand, she defends justice in the Court of Fontaine. </p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/04/35428890/770a66030815971c697ab81bc5436329_1296341861352728851.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1st Ascension passive</color>\nAfter a nearby party member triggers an <color=#ffacff>Electro-related reaction</color> against an opponent, <color=#ffacff>Electro DMG</color> dealt by Clorinde's Normal Attacks and <color=#ffd780>Last Lightfall</color> will be increased by 20% of Clorinde's ATK for 15s. Max 3 stacks. Each stack is counted independently. The Maximum DMG increase achievable this way for the above attacks is 1,800.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5598,
+        "name": "Sethos",
+        "desc": "<p>The Temple of Silence's heir. Burdened with secrets, he comes from the sands. </p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/04/35428890/cdb7abfcb86138e5b618946a5466d442_6414132746291261116.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Elemental Skill</color>\nGathers the might of thunder, dealing <color=#ffacff>AoE Electro DMG</color> and quickly retreating. If this attack triggers Electro-Charged, Superconduct, Overloaded, Quicken, Aggravate, Hyperbloom, or Electro Swirl reactions, Sethos recovers a certain amount of Elemental Energy.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5714,
+        "name": "Emilie",
+        "desc": "A Fontainian perfumer, one who bottles secrets.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Elemental Skill</color>\nWhen nearby opponents are affected by Burning, they will give off Scents at intervals, and 1 Scent can be created this way every 2s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5714,
+        "name": "Emilie",
+        "desc": "A Fontainian perfumer, one who bottles secrets.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4th Ascension passive</color>\nEmilie deals increased DMG to Burning opponents based on her ATK, with every 1,000 ATK increasing DMG dealt by 15%. The maximum DMG bonus that can be gained this way is 36%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6317,
+        "name": "Kinich",
+        "desc": "A Huitztlan Saurian Hunter skilled at counting costs.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/12/0099e74b4d0c919f6feab4bade3ab748_5795733017114624391.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1st Ascension passive</color>\nWhen Kinich is in Nightsoul's Blessing state, opponents hit by his Elemental Skill will enter the Desolation state, and when affected by Burning or Burgeon reaction DMG, they will restore 7 Nightsoul points to him. Nightsoul points can be gained this way once every 0.8s. The Desolation state will persist until this instance of Kinich's Nightsoul's Blessing state ends.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7079,
+        "name": "Ororon",
+        "desc": "A young man from the Masters of the Night-Wind who instead lives in the wild alongside all manner of life.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/e4830690f8b6a1ebb02cfbc8ce955671_8091252479018770784.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1st Ascension passive</color>\nWhen nearby opponents take <color=#ffacff>Electro-Charged</color> reaction DMG or Nightsoul-aligned DMG dealt by other nearby characters, Ororon will consume 10 Nightsoul points (provided he has at least that amount), entering the Nightsoul's Blessing state and triggering the Hypersense effect: Deal Nightsoul-aligned <color=#ffacff>Electro DMG</color> based on 160% of Ororon's ATK to at most 4 nearby opponents. The aforementioned effect can trigger once every 1.8s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7300,
+        "name": "Citlali",
+        "desc": "The great shaman from the Masters of the Night-Wind, the universally-revered Granny Itztli.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/27/c4ab2530bb8bbe3c0e811684f97ec124_6688582217610741079.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1st Ascension passive</color>\nWhile Itzpapa is on the field, after nearby party members trigger the Frozen or Melt reactions, the <color=#ff9999>Pyro</color> and <color=#80c0ff>Hydro</color> RES of opponents affected by that reaction decreases by 20% for 12s. Additionally, Citlali will regain 16 Nightsoul points. Nightsoul points can be restored this way once every 8s.",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Constellations activated by Elemental Reactions",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 10,
+        "name": "Keqing",
+        "desc": "The Yuheng of the Liyue Qixing. Keqing has much to say about Rex Lapis's unilateral approach to policymaking in Liyue — but in truth, gods admire skeptics such as her quite a lot.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Keqing_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4th Constellation</color>\nFor 10s after Keqing triggers an <color=#ffacff>Electro-related Elemental Reaction</color> , her ATK is increased by 25%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 21,
+        "name": "Sayu",
+        "desc": "A pint-sized ninja attached to the Shuumatsuban, who always seems sleep-deprived.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sayu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4th Constellation</color>\nSayu recovers 1.2 Energy when she triggers a Swirl reaction.\nThis effect occurs once every 2s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4,
+        "name": "Yun Jin",
+        "desc": "A renowned Liyue opera singer who is skilled in both playwriting and singing. Her style is one-of-a-kind, exquisite and delicate, much like the person herself.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yun Jin_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4th Constellation</color>\nWhen Yun Jin triggers the Crystallize Reaction, her DEF is increased by 20% for 12s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2268,
+        "name": "Collei",
+        "desc": "<p>A trainee ranger active in Avidya Forest. Behind her enthusiastic words and actions hides a slightly introverted personality.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/24/194600931/37a18b6b6865c59063003a9380f08225_7758071773430345954.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2nd Constellation</color>\nFrom the moment of using <color=#ffd780>Floral Brush</color> to the moment when this instance of Sprout effect ends, if any of your party members triggers Burning, Quicken, Aggravate, Spread, Bloom, Hyperbloom, or Burgeon reactions, the Sprout effect will be extended by 3s.\nThe Sprout effect can only be extended this way once.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2265,
+        "name": "Tighnari",
+        "desc": "<p>A young researcher well-versed in botany who currently serves as a Forest Watcher in Avidya Forest. He is a straight shooter with a warm heart - and a dab hand at guiding even the dullest of pupils.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/22/35428890/497dd6fac3d3c652a367c67428550747_306268558608889633.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4th Constellation</color>\nWhen <color=#ffe699>Fashioner's Tanglevine Shaft</color> is unleashed, all nearby party members gain 60 Elemental Mastery for 8s. If the Fashioner's Tanglevine Shaft triggers a Burning, Bloom, Quicken, or Spread reaction, their Elemental Mastery will be further increased by 60. This latter case will also refresh the buff state's duration.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2813,
+        "name": "Cyno",
+        "desc": "<p>The General Mahamatra in charge of supervising the researchers of the Akademiya. It is said that when he gets down to work, the General Mahamatra is even more efficient than the &#34;Great Vayuvyastra&#34; made by the Kshahrewar.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/28/77454259/e09e2bda5e022611fad0dea1bb6518bb_6757667565719577204.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4th Constellation</color>\nWhen Cyno is in the Pactsworn Pathclearer state triggered by Sacred Rite: Wolf's Swiftness, after he triggers Electro-Charged, Superconduct, Overloaded, Quicken, Aggravate, Hyperbloom, or an Electro Swirl reaction, he will restore 3 Elemental Energy for all nearby party members (except himself.)",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "This effect can occur 5 times within one use of <color=#ffd780>Sacred Rite: Wolf's Swiftness</color> ."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "Nilou",
+        "desc": "<p>The star of the Zubayr Theater. She is full of warmth and innocence, and her dances are lively and elegant.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/10/35428890/586d726f9ebda3506c78beaaa41f13b6_5916447718992361520.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2nd Constellation</color>\nAfter characters affected by the Golden Chalice's Bounty deal <color=#80c0ff>Hydro DMG</color> to an opponent, that opponent's <color=#80c0ff>Hydro RES</color> will be decreased by 35% for 10s. After a triggered Bloom reaction deals DMG to opponents, their <color=#99ff88>Dendro RES</color> will be decreased by 35% for 10s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2850,
+        "name": "Nahida",
+        "desc": "<p>A caged bird secluded within the confines of the Sanctuary of Surasthana who can only see the world in her dreams.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/29/35428890/f29490bddc56b4a6773b6c5003bbb853_9091170755650648414.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2nd Constellation</color>\nOpponents that are marked by <color=#ffd780>Seeds of Skandha</color> applied by Nahida herself will be affected by the following effects:\n• Within 8s of being affected by Quicken, Aggravate, Spread, DEF is decreased by 30%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3964,
+        "name": "Freminet",
+        "desc": "<p>A reserved young man who is well-versed in diving. Beneath his distant, icy demeanor lies a pure heart bereft of all flaws. </p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/03/35428890/8e44111a378f4e5379b8e7444e8c2daa_4713775899437074849.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4th Constellation</color>\nAfter Freminet triggers Frozen, Shatter, or Superconduct against opponents, his ATK will be increased by 9% for 6s. Max 2 stacks. This can be triggered once every 0.3s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3964,
+        "name": "Freminet",
+        "desc": "<p>A reserved young man who is well-versed in diving. Beneath his distant, icy demeanor lies a pure heart bereft of all flaws. </p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/03/35428890/8e44111a378f4e5379b8e7444e8c2daa_4713775899437074849.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>6th Constellation</color>\nAfter Freminet triggers Frozen, Shatter, or Superconduct against opponents, his CRIT DMG will be increased by 12% for 6s. Max 3 stacks. This can be triggered once every 0.3s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5596,
+        "name": "Clorinde",
+        "desc": "<p>An undefeated Champion Duelist. Sword in hand, she defends justice in the Court of Fontaine. </p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/04/35428890/770a66030815971c697ab81bc5436329_1296341861352728851.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2nd Constellation</color>\nAfter a nearby party member triggers an <color=#ffacff>Electro-related reaction</color> against an opponent, <color=#ffacff>Electro DMG</color> dealt by Clorinde's Normal Attacks and <color=#ffd780>Last Lightfall</color> will be increased by 30% of Clorinde's ATK for 15s. Max 3 stacks. Each stack is counted independently. When you have 3 stacks, Clorinde's interruption resistance will be increased. The Maximum DMG increase achievable this way for the above attacks is 2,700.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5598,
+        "name": "Sethos",
+        "desc": "<p>The Temple of Silence's heir. Burdened with secrets, he comes from the sands. </p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/04/35428890/cdb7abfcb86138e5b618946a5466d442_6414132746291261116.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2nd Constellation</color>\nWhen Sethos regains Elemental Energy by triggering Elemental Reactions using <color=#ffd780>Ancient Rite: The Thundering Sands</color> or other conditions are met, he will gain a 15% <color=#ffacff>Electro DMG Bonus</color> for 10s that may stack twice, with each stack duration counted independently.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5714,
+        "name": "Emilie",
+        "desc": "A Fontainian perfumer, one who bottles secrets.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1st Constellation</color>\nWhen nearby party members trigger the Burning reaction on opponents or deal <color=#99ff88>Dendro DMG</color> to Burning opponents, they will generate an additional <color=#ffd780>Scent</color> . This effect can be triggered once every 2.9s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7300,
+        "name": "Citlali",
+        "desc": "The great shaman from the Masters of the Night-Wind, the universally-revered Granny Itztli.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/27/c4ab2530bb8bbe3c0e811684f97ec124_6688582217610741079.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2nd Constellation</color>\nWhile Itzpapa is on the field, after nearby party members trigger Frozen or Melt, the opponent(s) affected by this reaction will have their <color=#ff9999>Pyro</color> and <color=#80c0ff>Hydro</color> RES additionally decreased by 20% for 12s.",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Talents that enhance Elemental Reactions",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "Nilou",
+        "desc": "<p>The star of the Zubayr Theater. She is full of warmth and innocence, and her dances are lively and elegant.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/10/35428890/586d726f9ebda3506c78beaaa41f13b6_5916447718992361520.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1st Ascension passive</color>\nWhen all characters in the party are all <color=#99ff88>Dendro</color> or <color=#80c0ff>Hydro</color> , and there are at least one Dendro character and one Hydro character.\nThe completion of the third dance step of Nilou's <color=#ffd780>Dance of Haftkarsvar</color> will grant all nearby characters the Golden Chalice's Bounty for 30s upon its completion.\nCharacters under the effect of Golden Chalice's Bounty will increase the Elemental Mastery of all nearby characters by up to 100 for 10s whenever they are hit by <color=#99ff88>Dendro attacks</color> . Also, triggering the Bloom reaction will create Bountiful Cores instead of Dendro Cores.\nSuch Cores will burst very quickly after being created, and they have larger AoEs.\nBountiful Cores cannot trigger Hyperbloom or Burgeon, and they share an upper numerical limit with Dendro Cores. Bountiful Core DMG is considered DMG dealt by Dendro Cores produced by Bloom.\nShould the party not meet the conditions for this Passive Talent, any existing Golden Chalice's Bounty effects will be canceled.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "Nilou",
+        "desc": "<p>The star of the Zubayr Theater. She is full of warmth and innocence, and her dances are lively and elegant.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/10/35428890/586d726f9ebda3506c78beaaa41f13b6_5916447718992361520.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4th Ascension passive</color>\nEvery 1,000 points of Nilou's Max HP above 30,000 will cause the DMG dealt by Bountiful Cores created by characters affected by Golden Chalice's Bounty to increase by 9%. The maximum increase in Bountiful Core DMG that can be activated this way is 400%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "Kaveh",
+        "desc": "<p>A renowned architect from Sumeru who perhaps cares a bit too much about too many things. He is an aesthete troubled by reality. </p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/35428890/2270aba02b92034d7d76b4426be8f53b_7062168821433378650.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Elemental Skill</color>\nUses Mehrak's mapping ability for offensive purposes, initiating a radial scan that deals <color=#99ff88>AoE Dendro DMG</color> . It will also scan all Dendro Cores in its AoE and cause them to immediately burst.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "Kaveh",
+        "desc": "<p>A renowned architect from Sumeru who perhaps cares a bit too much about too many things. He is an aesthete troubled by reality. </p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/35428890/2270aba02b92034d7d76b4426be8f53b_7062168821433378650.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Elemental Burst</color>\nFor 12s after <color=#ffd780>Painted Dome</color> activation, all Dendro Cores created by all your own party members through Bloom reactions will deal additional DMG when they burst.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "Baizhu",
+        "desc": "<p>The owner of Bubu Pharmacy, who is rarely seen without the white snake named Changsheng. His medicinal knowledge is encyclopedic, and his personal intrigues subtle. </p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/35428890/05599650d7f42e1c4adde373de6b297d_8001303176243726128.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4th Ascension passive</color>\nCharacters who are healed by <color=#ffd780>Seamless Shields</color> will gain the Year of Verdant Favor effect: Each 1,000 Max HP that Baizhu possesses that does not exceed 50,000 will increase the Burning, Bloom, Hyperbloom, and Burgeon reaction DMG dealt by these characters by 2%, and will increase the DMG Bonus provided by Aggravate and Spread by 0.8%. This effect lasts 6s.",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Constellations that enhance Elemental Reactions",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "Mona",
+        "desc": "A mysterious young astrologer who proclaims herself to be \"Astrologist Mona Megistus,\" and who possesses abilities to match the title. Erudite, but prideful.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1st Constellation</color>\nWhen any of your own party members hits an opponent affected by an Omen, the effects of <color=#80c0ff>Hydro-related Elemental Reactions</color> are enhanced for 8s:\n· Electro-Charged DMG increases by 15%.\n· Vaporize DMG increases by 15%.\n· Hydro Swirl DMG increases by 15%.\n· Frozen duration is extended by 15%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2850,
+        "name": "Nahida",
+        "desc": "<p>A caged bird secluded within the confines of the Sanctuary of Surasthana who can only see the world in her dreams.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/29/35428890/f29490bddc56b4a6773b6c5003bbb853_9091170755650648414.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2nd Constellation</color>\nOpponents that are marked by <color=#ffd780>Seeds of Skandha</color> applied by Nahida herself will be affected by the following effects:\n• Burning, Bloom, Hyperbloom, and Burgeon Reaction DMG they receive can score CRIT Hits. CRIT Rate and CRIT DMG are fixed at 20% and 100% respectively.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "Kaveh",
+        "desc": "<p>A renowned architect from Sumeru who perhaps cares a bit too much about too many things. He is an aesthete troubled by reality. </p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/35428890/2270aba02b92034d7d76b4426be8f53b_7062168821433378650.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4th Constellation</color>\nDendro Cores created from Bloom reactions Kaveh triggers will deal 60% more DMG when they burst.",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Weapons with passives triggered by Elemental Reactions",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2010,
+        "name": "Emerald Orb",
+        "desc": "A catalyst carved out of the hard jade from Jueyun Karst north of Liyue. Small, light, and durable, it is known more colloquially as the \"jade ball.\"",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/翡玉法球.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Upon causing a Vaporize, Electro-Charged, Frozen, Bloom or a Hydro-infused Swirl reaction, increases ATK by <color=#37ffff>20%/25%/30%/35%/40%</color> for 12s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1984,
+        "name": "Dark Iron Sword",
+        "desc": "A perfectly ordinary iron sword, just slightly darker than most.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/暗铁剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Upon causing an Overloaded, Superconduct, Electro-Charged, Quicken, Aggravate, Hyperbloom, or Electro-infused Swirl reaction, ATK is increased by <color=#37ffff>20%/25%/30%/35%/40%</color> for 12s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1931,
+        "name": "Mappa Mare",
+        "desc": "A nautical chart featuring nearby currents and climates that somehow found its way into Liyue via foreign traders.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/万国诸海图谱.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Triggering an Elemental reaction grants a <color=#37ffff>8%/10%/12%/14%/16%</color> Elemental DMG Bonus for 10s. Max 2 stacks.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2012,
+        "name": "Freedom-Sworn",
+        "desc": "A straight sword, azure as antediluvian song, and as keen as the oaths of freedom taken in the Land of Wind.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/苍古自由之誓.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "When the character wielding this weapon triggers Elemental Reactions, they gain a Sigil of Rebellion. This effect can be triggered once every 0.5s and can be triggered even if said character is not on the field. When you possess 2 Sigils of Rebellion, all of them will be consumed and all nearby party members will obtain \"Millennial Movement: Song of Resistance\" for 12s. \"Millennial Movement: Song of Resistance\" increases Normal, Charged and Plunging Attack DMG by <color=#37ffff>16%/20%/24%/28%/32%</color> and increases ATK by <color=#37ffff>20%/25%/30%/35%/40%</color> . Once this effect is triggered, you will not gain Sigils of Rebellion for 20s. Of the many effects of the \"Millennial Movement,\" buffs of the same type will not stack.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1997,
+        "name": "Hakushin Ring",
+        "desc": "A catalyst that carries the memory of the Kitsune Saiguu of ancient times. However, this device is but an impoverished vessel for the full breadth of her thought.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/白辰之环.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "After the character equipped with this weapon triggers an Electro elemental reaction, nearby party members of an Elemental Type involved in the elemental reaction receive a <color=#37ffff>10%/12.5%/15%/17.5%/20%</color> Elemental DMG Bonus for their element, lasting 6s. Elemental Bonuses gained in this way cannot be stacked.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2667,
+        "name": "Sapwood Blade",
+        "desc": "<p>It has taken on the shape of a blade that can cut down the foes of the forest.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/26/194600931/b7dc579e8ad60147a049d14fc277629c_8193231495693842461.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "After triggering Burning, Quicken, Aggravate, Spread, Bloom, Hyperbloom, or Burgeon, a Leaf of Consciousness will be created around the character for a maximum of 10s. When picked up, the Leaf will grant the character <color=#37ffff>60/75/90/105/120</color> Elemental Mastery for 12s. Only 1 Leaf can be generated this way every 20s. This effect can still be triggered if the character is not on the field. The Leaf of Consciousness' effect cannot stack.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2671,
+        "name": "Forest Regalia",
+        "desc": "<p>It has taken on the shape of a greatsword that shall cut down the foes of the forest.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/26/194600931/236f42a62e034034870c2c4e44015572_5474035930475118540.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "After triggering Burning, Quicken, Aggravate, Spread, Bloom, Hyperbloom, or Burgeon, a Leaf of Consciousness will be created around the character for a maximum of 10s. When picked up, the Leaf will grant the character <color=#37ffff>60/75/90/105/120</color> Elemental Mastery for 12s. Only 1 Leaf can be generated this way every 20s. This effect can still be triggered if the character is not on the field. The Leaf of Consciousness' effect cannot stack.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2668,
+        "name": "Moonpiercer",
+        "desc": "<p>It is shaped like a giant arrow and can be used as a spear.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/26/194600931/2ab37345c6972292fda8b3095c15f971_8878508254336755657.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "After triggering Burning, Quicken, Aggravate, Spread, Bloom, Hyperbloom, or Burgeon, a Leaf of Revival will be created around the character for a maximum of 10s. When picked up, the Leaf will grant the character <color=#37ffff>16%/20%/24%/28%/32%</color> ATK for 12s. Only 1 Leaf can be generated this way every 20s. This effect can still be triggered if the character is not on the field.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2669,
+        "name": "Fruit of Fulfillment",
+        "desc": "<p>It holds the potential to conquer any crisis.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/26/194600931/0e1cecaeba7b12c8c9adcb2f11eccd5e_416583125189394990.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Obtain the \"Wax and Wane\" effect after an Elemental Reaction is triggered, gaining <color=#37ffff>24/27/30/33/36</color> Elemental Mastery while losing 5% ATK. For every 0.3s, 1 stack of Wax and Wane can be gained. Max 5 stacks. For every 6s that go by without an Elemental Reaction being triggered, 1 stack will be lost. This effect can be triggered even when the character is off-field.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2847,
+        "name": "Missive Windspear",
+        "desc": "<p>A beacon that shows the direction of the wind. Not every idyll carried on the breeze remains a gentle thing...</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/30/94376896/98f3fb9e0886b25bfd094828cc391978_4027924857629812923.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Within 10s after an Elemental Reaction is triggered, ATK is increased by <color=#37ffff>12%/15%/18%/21%/24%</color> and Elemental Mastery is increased by <color=#37ffff>48/60/72/84/96</color> .",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3614,
+        "name": "Mailed Flower",
+        "desc": "<p>A graceful and elegant greatsword that is decorated with flowers and ribbons.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/28/35428890/bca5e3d255c646e42449a06b79b5d019_8759736612810872622.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Within 8s after the character's Elemental Skill hits an opponent or the character triggers an Elemental Reaction, their ATK and Elemental Mastery will be increased by <color=#37ffff>12%/15%/18%/21%/24%</color> and <color=#37ffff>48/60/72/84/96</color> respectively.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4719,
+        "name": "Verdict",
+        "desc": "<p>A weapon once used by a young maiden who forsook her family name, stained with the blood of enemies and loved ones both.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/18/35428890/4f35f9bf1bceead8fa216873ce321847_580447322497057561.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "When characters in your party obtain Elemental Shards from Crystallize reactions, the equipping character will gain 1 Seal, increasing Elemental Skill DMG by <color=#37ffff>18%/22.5%/27%/31.5%/36%</color> . The Seal lasts for 15s, and the equipper may have up to 2 Seals at once. All of the equipper's Seals will disappear 0.2s after their Elemental Skill deals DMG.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5847,
+        "name": "Lumidouce Elegy",
+        "desc": "A magnificent polearm adorned with azure crystal. It is said to have been a certain legendary Champion Duelist's treasure — and yet, not once was it ever used.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/3dff07a4b024917cb63c933d2078ccc8_8401589850337226556.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "After the equipping character triggers Burning on an opponent or deals Dendro DMG to Burning opponents, the DMG dealt is increased by <color=#37ffff>18%/23%/28%/33%/38%</color> . This effect lasts for 8s, max 2 stacks. When 2 stacks are reached or when the duration is refreshed at 2 stacks, restore <color=#37ffff>12/13/14/15/16</color> Energy. Energy can be restored this way once every 12s. The 2 aforementioned effects can be triggered even when the character is off-field.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6548,
+        "name": "Earth Shaker",
+        "desc": "A heavy blade that people claim was beloved by the hero known as the Firethief. They say that even the Lord of Cinder Keep's flames could not burn it away.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/dc6bf4c87afe67014579743618e97371_6360663376854922140.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "After a party member triggers a Pyro-related reaction, the equipping character's Elemental Skill DMG is increased by <color=#37ffff>16%/20%/24%/28%/32%</color> for 8s. This effect can be triggered even when the triggering party member is not on the field.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6546,
+        "name": "Surf's Up",
+        "desc": "A commemorative item originally reserved for the champion of the \"First All-Tribe Surfing Championship.\" Since said tournament is currently in the preparatory stage, the prize is in temporary storage at the Leisurely Puffer, with the shop owner as its custodian.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/6ce2e0da75fbdc19fc4b6f9e7bae9049_5151463723015160354.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Once every 15s, for the 14s after using an Elemental Skill: Gain 4 Scorching Summer stacks. Each stack increases Normal Attack DMG by <color=#37ffff>12%/15%/18%/21%/24%</color> . For the duration of the effect, once every 1.5s, lose 1 stack after a Normal Attack hits an opponent; once every 1.5s, gain 1 stack after triggering a Vaporize reaction on an opponent. Max 4 Scorching Summer stacks.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6545,
+        "name": "Fang of the Mountain King",
+        "desc": "A giant sword forged from pure turquoise. Due to its greater weight than most ordinary weapons, it was named for Kongomato the Mountain King.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/1fd3c498faccab68bfa5d961477a8c29_2936359463997877474.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Gain 1 stack of Canopy's Favor after hitting an opponent with an Elemental Skill. This can be triggered once every 0.5s. After a nearby party member triggers a Burning or Burgeon reaction, the equipping character will gain 3 stacks. This effect can be triggered once every 2s and can be triggered even when the triggering party member is off-field. Canopy's Favor: Elemental Skill and Burst DMG is increased by <color=#37ffff>10%/12.5%/15%/17.5%/20%</color> for 6s. Max 6 stacks. Each stack is counted independently.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7116,
+        "name": "Astral Vulture's Crimson Plumage",
+        "desc": "An ancient longbow crested with red feathers, a sacred relic of the Flower-Feather Clan that has been passed down from generation to generation.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/d3bb0f9d936379661d409644e4269ff1_2888646900955247330.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "For 12s after triggering a Swirl reaction, ATK increases by <color=#37ffff>24%/30%/34%/38%/42%</color> .",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Artifact Set effects activated by Elemental Reactions",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2074,
+        "name": "Instructor",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Instructor/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4-Piece Set</color>\nUpon triggering an Elemental Reaction, increases all party members' Elemental Mastery by 120 for 8s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "Viridescent Venerer",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4-Piece Set</color>\nDecreases opponent's Elemental RES to the element infused in the Swirl by 40% for 10s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "Thundering Fury",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4-Piece Set</color>\nWhen Quicken, Overloaded, Electro-Charged, Superconduct, Hyperbloom, or Aggravate is triggered, Elemental Skill CD is decreased by 1s. Can only occur once every 0.8s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2062,
+        "name": "Blizzard Strayer",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Blizzard Strayer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4-Piece Set</color>\nWhen a character attacks an opponent affected by Cryo, their CRIT Rate is increased by 20%. If the opponent is Frozen, CRIT Rate is increased by an additional 20%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2673,
+        "name": "Gilded Dreams",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/ae8a2c6f24df66e1bd7cc2dbd83d330d_5836084318530605114.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4-Piece Set</color>\nWithin 8s of triggering an Elemental Reaction, the character equipping this will obtain buffs based on the Elemental Type of the other party members. ATK is increased by 14% for each party member whose Elemental Type is the same as the equipping character, and Elemental Mastery is increased by 50 for every party member with a different Elemental Type. Each of the aforementioned buffs will count up to 3 characters. This effect can be triggered once every 8s. The character who equips this can still trigger its effects when not on the field.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Flower of Paradise Lost",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/05/35428890/50ce09dfa5a91a33aa9cedfb15bcf2d1_864016614991586234.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4-Piece Set</color>\nThe equipping character's Bloom, Hyperbloom, and Burgeon reaction DMG are increased by 40%. Additionally, after the equipping character triggers Bloom, Hyperbloom, or Burgeon, they will gain another 25% bonus to the effect mentioned prior. Each stack of this lasts 10s. Max 4 stacks simultaneously. This effect can only be triggered once per second. The character who equips this can still trigger its effects when not on the field.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5579,
+        "name": "Unfinished Reverie",
+        "desc": "",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/22/35428890/356c6b0e1be129282f759d8844872c7d_544884929456263860.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4-Piece Set</color>\nIn combat, if no Burning opponents are nearby for more than 6s, this DMG Bonus will decrease by 10% per second until it reaches 0%. When a Burning opponent exists, it will increase by 10% instead until it reaches 50%. This effect still triggers if the equipping character is off-field.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6553,
+        "name": "Scroll of the Hero of Cinder City",
+        "desc": "",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/6ad5095f324c2da829ecaa5e2ed13af9_552940265782217486.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4-Piece Set</color>\nAfter the equipping character triggers a reaction related to their Elemental Type, all nearby party members gain a 12% Elemental DMG Bonus for reaction-proximate Elemental Types for 15s. If the equipping character is in the Nightsoul's Blessing state when triggering this effect, all nearby party members gain an additional 28% Elemental DMG Bonus for reaction-proximate Elemental Types for 20s. The equipping character can trigger this effect while off-field, and the DMG bonus from Artifact Sets with the same name do not stack.",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Artifact Set effects that enhance Elemental Reactions",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "Viridescent Venerer",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4-Piece Set</color>\nIncreases Swirl DMG by 60%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "Thundering Fury",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4-Piece Set</color>\nIncreases DMG caused by Overloaded, Electro-Charged, Superconduct, and Hyperbloom by 40%, and the DMG Bonus conferred by Aggravate is increased by 20%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "Crimson Witch of Flames",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4-Piece Set</color>\nIncreases Overloaded and Burning DMG by 40%. Increases Vaporize and Melt DMG by 15%. Using Elemental Skill increases the 2-Piece Set Bonus by 50% of its starting value for 10s. Max 3 stacks.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Flower of Paradise Lost",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/05/35428890/50ce09dfa5a91a33aa9cedfb15bcf2d1_864016614991586234.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4-Piece Set</color>\nThe equipping character's Bloom, Hyperbloom, and Burgeon reaction DMG are increased by 40%. Additionally, after the equipping character triggers Bloom, Hyperbloom, or Burgeon, they will gain another 25% bonus to the effect mentioned prior. Each stack of this lasts 10s. Max 4 stacks simultaneously. This effect can only be triggered once per second. The character who equips this can still trigger its effects when not on the field.",
+        "alignment": "center"
+      }
+    ]
+  }
+}

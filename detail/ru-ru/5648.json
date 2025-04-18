@@ -1,0 +1,712 @@
+{
+  "epId": 5648,
+  "name": "Восстановление энергии ",
+  "desc": "<p>Восстановление энергии - процентная характеристика, показывающая, сколько энергии восстанавливает персонаж, получая одинаковое количество элементальных частиц.</p>",
+  "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/18/237301566/1ef525b101a31611b9fe2cc1b0a59aa8_1319623659797422084.png",
+  "menuId": 14,
+  "menuName": "Обучение",
+  "version": 1734296268,
+  "components": {
+    "baseInfo": [
+      {
+        "key": "Имя:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Восстановление энергии"
+          }
+        ]
+      },
+      {
+        "key": "Связанные статьи:",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 2642,
+            "name": "Восстановление энергии...",
+            "desc": "<span style=\"color:#FFE14BFF\">Элементальные сферы</span> и <span style=\"color:#FFE14BFF\">частицы</span> помогут вам пополнить элементальную энергию. Появляются эти частицы и сферы тогда, когда вы наносите <span style=\"color:#FFE14BFF\">элементальный урон или побеждаете противников</span>.",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/22/91977426/1ef525b101a31611b9fe2cc1b0a59aa8_1283620358001152284.png"
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 5652,
+            "name": "Элементальная энергия",
+            "desc": "<p>Элементальная энергия - ресурс, который позволяет каждому персонажу активировать свой взрыв стихии после накопления определенного количества.</p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/18/237301566/1ef525b101a31611b9fe2cc1b0a59aa8_3411260776325603038.png"
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Описание",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/18/237301566/3624adacfd61e2491a0004f04aba5735_2279178208344066433.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "Механика восстановления энергии тесно связана с энергией, производимой частицами и сферами. Частицы генерируют 1 единицу элементальной энергии; а сферы - 3 единицы. Существуют элементальные частицы и сферы (которые могут совпадать или не совпадать с элементом персонажей) и чистые. Кроме того, персонаж может быть на поле или вне поля. Если элементы частицы/сферы и персонажа одинаковы, то персонаж получает 300% единиц элементальной энергии; если частицы/сферы чистые, то 200%; и если есть элементальное различие, то 100%. Если персонаж находится на поле, он получает 100% элементальной энергии; если нет, то только 60% (70% или 80%, если в группе всего 3 или 2 члена соответственно)."
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Частицы/сферы с отличным элементом</color>\n<color=#ffffff>Чистые частицы/сферы</color>\n<color=#ffffff>Частицы/сферы с совпадающим элементом</color>\n<color=#ffffff73>Персонажи на поле</color>\n<color=#ffffff73>1/3 единицы</color>\n<color=#ffffff73>2/6 единиц</color>\n<color=#ffffff73>3/9 единиц</color>\n<color=#ffffff73>Персонажи вне поля</color>\n<color=#ffffff73>0,6/1,8 единиц</color>\n<color=#ffffff73>1,2/3,6 единиц</color>\n<color=#ffffff73>1,8/5,4 единиц</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Таким образом, если чистая частица восстанавливает 2 единицы элементальной энергии персонажу на поле, при 200% Восст. энергии она восстановит 4 единицы (2 x 100% x 200%); а при 150% - 3 единицы (2 x 100% x 150%).\nНе всё восстановление энергии зависит от характеристики Восст. энергии, а только энергия, производимая элементальными навыками и убийством противников. Энергия, производимая обычными атаками, так называемое «прямое» восстановление энергии, может зависеть от артефактов, оружия, талантов, созвездий и т.д."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/18/237301566/0b81f02282fb2ecd03afe4e0e523dd60_5008998004196330747.png",
+        "alignment": "right"
+      },
+      {
+        "type": "RichText",
+        "text": "Например, Син Цю создаёт 5 Гидро частиц с помощью своего элементального навыка. Поскольку элементы совпадают (х3) и Син Цю находится на поле (х1), он получит 15 единицы энергии. Если его Восст. энергии равно 200%, он получит 30 единиц энергии. Если 265%, то 40 единиц. Таким образом, всего за два использования элементального навыка Син Цю восстановит всю энергию для активации взрыва стихии (не считая другие частицы, которые он может получить)."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Повышение восстановления энергии",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Изначальное восстановление энергии в 100% может быть увеличено Песками времени с основной характеристикой Восст. энергии (+51,8%), дополнительными характеристиками артефактов, бонусами комплекта, дополнительной характеристикой оружия, пассивной способностью оружия, характеристикой возвышения некоторых персонажей, талантами или созвездиями."
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Артефакты",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2080,
+        "name": "Изгнанник",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/The Exile/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Изнанник</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Бонус 2 предметов:\nУвеличивает <color=#ffd780>скорость восстановления энергии</color> на 20%."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2068,
+        "name": "Учёный",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Scholar/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Учёный</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Бонус 2 предметов:\nУвеличивает <color=#ffd780>скорость восстановления энергии</color> на 20%."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2090,
+        "name": "Эмблема рассечённой судьбы",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Эмблема рассечённой судьбы</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Бонус 2 предметов:\nУвеличивает <color=#ffd780>скорость восстановления энергии</color> на 20%."
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Пассивная способность оружия",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2024,
+        "name": "Око клятвы",
+        "desc": "Реликвия Бякуякоку, которая хранилась в Дайнити Микоси. После прихода бога-змея она стала доказательством великой клятвы и чаяний Энканомии.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/证誓之明瞳.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffacff>Око клятвы</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Использование элементального навыка увеличивает <color=#ffd780>восстановление энергии</color> на <color=#80c0ff>24%</color> / <color=#80c0ff>30%</color> / <color=#80c0ff>36%</color> / <color=#80c0ff>42%</color> / <color=#80c0ff>48%</color> в течение 10 сек."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3989,
+        "name": "Перевозчик Флёв Сандр",
+        "desc": "<p>Выброшенный кусок медной трубы, который в прошлом использовался как оружие. Популярная в одних кругах, в других она снискала дурную славу.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/19/51635400/920ca2fe25ca2db1796848099b59b2d8_6565608129139267875.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffacff>Перевозчик Флёв Сандр</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "После применения элементального навыка <color=#ffd780>восстановление энергии</color> повышается на <color=#80c0ff>16%</color> / <color=#80c0ff>20%</color> / <color=#80c0ff>24%</color> / <color=#80c0ff>28%</color> / <color=#80c0ff>32%</color> на 5 сек."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2909,
+        "name": "Лунное сияние ксифоса",
+        "desc": "<p>Древний обоюдоострый меч, сверкающий лунным светом. Говорят, что в нём живёт умолкший джинн.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/12/51635400/06be2dc5c5b80671ddf01cc9dc01bb49_1429986394622969140.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffacff>Лунное сияние Ксифоса</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Каждые 10 сек. срабатывает следующий эффект: <color=#ffd780>восстановление энергии</color> экипированного этим оружием персонажа увеличивается на <color=#80c0ff>0,036%</color> / <color=#80c0ff>0,045%</color> / <color=#80c0ff>0,054%</color> / <color=#80c0ff>0,063%</color> / <color=#80c0ff>0,072%</color> за каждую единицу собственного <color=#ffd780>мастерства стихий</color> на 12 сек. Члены отряда поблизости получают 30% этого эффекта."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2014,
+        "name": "Сияющая жатва",
+        "desc": "Нагината для лёгкого «срезания травы». С такой же лёгкостью соберёт свою жатву с вражеской армии.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/薙草之稻光.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffe14b>Сияющая жатва</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Даёт <color=#80c0ff>30%</color> / <color=#80c0ff>35%</color> / <color=#80c0ff>40%</color> / <color=#80c0ff>45%</color> / <color=#80c0ff>50%</color> <color=#ffd780>восстановления энергии</color> на 12 сек. после активации <color=#ffd780>взрыва стихии</color> ."
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Оружие",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "30,6%\n( <color=#ffacff>4★ оружие</color> )",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2667,
+        "name": "Деревянный клинок",
+        "desc": "<p>Оружие, полученное из истории аранар. Оно приняло форму меча, который способен пронзать врагов леса.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/26/51635400/b7dc579e8ad60147a049d14fc277629c_6906583080738590155.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2004,
+        "name": "Церемониальный двуручный меч",
+        "desc": "Декоративный церемониальный двуручный меч, со временем покрывшийся камнем, но украшения на нём всё ещё можно разобрать. Позволяет владельцу выстоять под суровостью песков времени.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/祭礼大剑.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2671,
+        "name": "Регалия леса",
+        "desc": "<p>Оружие, полученное из истории аранар. Оно приняло форму двуручного меча, который способен пронзать врагов леса.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/26/51635400/236f42a62e034034870c2c4e44015572_7423035962795560483.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4720,
+        "name": "«Магический супермеч высшего владыки»",
+        "desc": "<p>Магический супермеч, который может использовать только высший владыка, покоривший моря и океаны. Он сделан из особого водонепроницаемого материала, потому его можно использовать даже под водой. Выходит, он неуязвимый? Можно сказать и так!</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2023/12/13/9eb77ebc428cc08b695d166c70d72012_8077919549792565749.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2005,
+        "name": "Церемониальный лук",
+        "desc": "Декоративный церемониальный лук, со временем покрывшийся камнем, но украшения на нём всё ещё можно разобрать. Позволяет владельцу выстоять под суровостью песков времени.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/祭礼弓.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2255,
+        "name": "Гаснущие сумерки",
+        "desc": "Драгоценный лук из платины, инкрустированный мерцающей сферой цвета зари.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/落霞.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1997,
+        "name": "Кольцо Хакусин",
+        "desc": "Катализатор, в котором заточены воспоминания о кицунэ Сайгу с древнейших времен. Однако этих воспоминаний так много, что вместить их все в одном сосуде не представлялось возможным.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/白辰之环.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1982,
+        "name": "Вино и песни",
+        "desc": "Сборник песен давно минувшей эпохи аристократии. В нём автор, чьё имя кануло в лету, ведёт сказ об одном благородном разбойнике.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/暗巷的酒与诗.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4338,
+        "name": "Песнь необъятной лазури",
+        "desc": "<p>Сборник стихов в изящном переплёте. В нём немало произведений, посвящённых небосводу, одуванчикам и другим излюбленным мондштадцами темам.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/19/51635400/ab271b223abd6086b69e079af128e945_6632624238768571452.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2021,
+        "name": "Копьё Фавония",
+        "desc": "Копьё, состоящее на вооружении рыцарей Ордо Фавониус. Лёгкий ветерок ласкает направленный в небеса наконечник.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风长枪.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7031,
+        "name": "Крепящий горы шип",
+        "desc": "Это копьё выковали мастера рудников, чтобы преподнести его духам гор.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/201424fa6a98ffb190ae82c8ad7d0cc3_6084387639848528037.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "36,8%\n( <color=#ffe14b>5★ оружие</color> )",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1953,
+        "name": "Небесное величие",
+        "desc": "Двуручный меч, символ власти Двалина над небесами. Дыхание дракона питает его силой небес и ветров.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之傲.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1957,
+        "name": "Небесная ось",
+        "desc": "Длинное копьё, символ твёрдой воли дракона ветра. Тянущееся вверх древко указывает на небесный свод, питающий его силой небес и ветров.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之脊.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "39%\n( <color=#ffffff>3★ оружие</color> )",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1966,
+        "name": "Потусторонняя история",
+        "desc": "Дешёвая фантастика. Если использовать в качестве катализатора, можно понять, что силы её - тоже фантастика.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/异世界行记.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "45,9%\n( <color=#ffacff>4★ оружие</color> )",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2011,
+        "name": "Осквернённое желание",
+        "desc": "Зловещий меч, жаждущий жизни. Он пропитан сильным ядом, способным осквернить даже могучего дракона.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/腐殖之剑.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3989,
+        "name": "Перевозчик Флёв Сандр",
+        "desc": "<p>Выброшенный кусок медной трубы, который в прошлом использовался как оружие. Популярная в одних кругах, в других она снискала дурную славу.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/19/51635400/920ca2fe25ca2db1796848099b59b2d8_6565608129139267875.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1987,
+        "name": "Кацурагикири Нагамаса",
+        "desc": "Клинок, выкованный в Татарасуне. Тяжёлый и прочный.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/桂木斩长正.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2666,
+        "name": "Иссушитель",
+        "desc": "<p>Рыба, принадлежащая к вымершему виду. Если к её гибкому телу прикрепить тетиву, она может послужить в качестве лука.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/26/51635400/80d2c21b70f486d9d9cb90e491e5b9da_2092121151179488067.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2020,
+        "name": "Кодекс Фавония",
+        "desc": "Тайный гримуар, принадлежащий учёным Ордо Фавониус. Описывает силу и логику элементов и материи.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风秘典.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2669,
+        "name": "Плод восполнения",
+        "desc": "<p>Плод, полученный из истории аранар. В нём заключены силы для преодоления любого бедствия.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/26/51635400/0e1cecaeba7b12c8c9adcb2f11eccd5e_5765555305162773691.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1930,
+        "name": "«Улов»",
+        "desc": "В далёком прошлом это копьё принадлежало знаменитому инадзумскому разбойнику.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/「渔获」.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2027,
+        "name": "Прототип: Звёздный блеск",
+        "desc": "Древнее копьё, обнаруженное в кузнице Черногорья. Самоцветы на лезвии этого копья сверкают, словно звёзды в ночном небе.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/试作星镰.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "51,7%\n( <color=#ffffff>3★ оружие</color> )",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2048,
+        "name": "Меч небесного всадника",
+        "desc": "Надёжный стальной меч. Однажды некто пытался заставить его летать...",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/飞天御剑.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "55,1%\n( <color=#ffe14b>5★ оружие</color> )",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1954,
+        "name": "Небесный меч",
+        "desc": "Меч рыцаря, символ вернувшего свою честь Двалина. Благословения Анемо Архонта питают его силой небес и ветров.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之刃.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2008,
+        "name": "Элегия погибели",
+        "desc": "В изящности этот лук не уступает лире барда. Словно вздох печали, выпущенные из него стрелы разят точно в сердце.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/终末嗟叹之诗.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2014,
+        "name": "Сияющая жатва",
+        "desc": "Нагината для лёгкого «срезания травы». С такой же лёгкостью соберёт свою жатву с вражеской армии.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/薙草之稻光.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "61,3%\n( <color=#ffacff>4★ оружие</color> )",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2003,
+        "name": "Церемониальный меч",
+        "desc": "Декоративный церемониальный меч, со временем покрывшийся камнем, но украшения на нём всё ещё можно разобрать. Позволяет владельцу выстоять под суровостью песков времени.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/祭礼剑.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2017,
+        "name": "Меч Фавония",
+        "desc": "Стандартный длинный меч на вооружении рыцарей Ордо Фавониус. Легко позволяет проводить через себя энергию стихий.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风剑.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2018,
+        "name": "Двуручный меч Фавония",
+        "desc": "Тяжёлый церемониальный меч Ордо Фавониус. С лёгкостью направляет элементальную энергию и обладает высокой разрушительной силой.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风大剑.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2019,
+        "name": "Боевой лук Фавония",
+        "desc": "Лук, входящий в стандартную экипировку рыцарей Ордо Фавониус, но только самые опытные лучники могут использовать весь его потенциал.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风猎弓.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7114,
+        "name": "Вихрь на волнах",
+        "desc": "Бумеранг из клыков гигантского морского змея. Оно было тем редким оружием, которое великан Тупак считал надёжным.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/7d6082c11138d4e71e7cb7ce6276e8bb_8319120219748886665.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Персонажи",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "+26,7%\nпосле 6 возвышения\n( <color=#ffacff>4★ персонажи</color> <color=#ffffff73>)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9,
+        "name": "Кэйа",
+        "desc": "Капитан Ордо Фавониус выглядит довольно экзотично. Несмотря на дружелюбие и приветливость, от него веет странным холодком.",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/07/237301566/a59b105ea80a314fc010e1886667facb_435122796050807398.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 26,
+        "name": "Беннет",
+        "desc": "Добросердечный и порядочный искатель приключений из Мондштадта, который, к несчастью, сказочно невезуч.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Bennett_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4,
+        "name": "Юнь Цзинь",
+        "desc": "Прославленная оперная певица Ли Юэ, которая искусна как в написании пьес, так и в пении. Её неповторимый стиль, изысканный и нежный, - это отражение глубин её души.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yun Jin_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "+32%\nпосле 6 возвышения\n( <color=#ffe14b>5★ персонажи</color> <color=#ffffff73>)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "Мона",
+        "desc": "Таинственный молодой астролог, которая представляется как «великий астролог Мона Мегистус» и на самом деле достойна этого звания. Эрудирована и горделива.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 23,
+        "name": "Венти",
+        "desc": "Обычный бард, слоняющийся по улочкам Мондштадта.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Venti_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 49,
+        "name": "Райдэн",
+        "desc": "Её превосходительство Наруками Огосё, пообещавшая неизменную вечность для жителей Инадзумы.",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/22/237301566/2669f7bf2fdea7ccf0a4aa7ac9f250b2_4767168744052349748.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Таланты",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 48,
+        "name": "Рэйзор",
+        "desc": "Мальчик, живущий среди волков в Вольфендоме у Мондштадта, вдали от цивилизации. Ловок как молния.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Razor_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Гром и когти</color> <color=#ffffffd9>(элементальный навык)</color>\nПри попадании Рэйзор получает символ <color=#ffacff>Электро</color> , который увеличивает <color=#ffd780>скорость восстановления</color> его <color=#ffd780>энергии</color> .\nРэйзор может иметь до 3 символов <color=#ffacff>Электро</color> одновременно.\n<color=#ffffffd9>Голод</color> <color=#ffffffd9>(пассивный талант)</color>\n<color=#ffd780>Восстановление энергии</color> Рэйзора увеличивается на 30%, когда количество его <color=#ffd780>энергии</color> опускается ниже 50%."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 18,
+        "name": "Путешественник (Электро)",
+        "desc": "<p>Путешественник/ца из другого мира, разлучённый/ая со своей сестрой/своим братом. Он/а отправляется в долгое путешествие, чтобы найти всех семерых Архонтов и вернуть родного человека.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/16/70239714/f00d18b57acb4aa37bf2fc39bf67ddd0_4483870832674509923.gif",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Клинок молнии</color> <color=#ffffffd9>(элементальный навык)</color>\nОставляют после себя Амулеты изобилия. Когда персонаж находится рядом с Амулетом изобилия, он поглощает его и восстанавливает <color=#ffd780>элементальную энергию</color> , а также повышает <color=#ffd780>восстановление энергии</color> .\n<color=#ffffffd9>Сокрушительный рокот</color> <color=#ffffffd9>(пассивный талант)</color>\n<color=#ffffff73>Увеличивает эффект</color> <color=#ffd780>восстановления энергии</color> <color=#ffffff73>, даруемый Амулетом изобилия</color> <color=#ffd780>элементального навыка</color> <color=#ffffff73>, на 10% от</color> <color=#ffd780>восстановления энергии</color> <color=#ffffff73>Путешественника/цы.</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 10,
+        "name": "Кэ Цин",
+        "desc": "Нефритовое Равновесие группировки Цисин в Ли Юэ. У неё есть что сказать против «Властелина Камня, правящего Ли Юэ лишь словом», но, оказывается, боги любят таких скептиков, как она.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Keqing_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Благородие аристократа</color> <color=#ffffffd9>(пассивный талант)</color>\nАктивация <color=#ffd780>взрыва стихии</color> увеличивает <color=#ffd780>восстановление энергии</color> Кэ Цин на 15%. Эффект длится 8 сек."
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Созвездия",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 19,
+        "name": "Путешественник (Анемо)",
+        "desc": "<p>Путешественник/ца из другого мира, разлучённый/ая со своей сестрой/своим братом. Он/а отправляется в долгое путешествие, чтобы найти всех семерых Архонтов и вернуть родного человека.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/16/70239714/f00d18b57acb4aa37bf2fc39bf67ddd0_6442153304051989653.gif",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Вздымающийся вихрь</color> <color=#ffffffd9>(созвездие 2)</color>\nУвеличивает <color=#ffd780>восстановление энергии</color> на 16%."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 26,
+        "name": "Беннет",
+        "desc": "Добросердечный и порядочный искатель приключений из Мондштадта, который, к несчастью, сказочно невезуч.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Bennett_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Тупиковая ситуация</color> <color=#ffffffd9>(созвездие 2)</color>\nУвеличивает <color=#ffd780>восстановление энергии</color> Беннета на 30%, когда его <color=#ffd780>HP</color> падает ниже 70%."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 51,
+        "name": "Сяо",
+        "desc": "Бессмертный дух Якса, охраняющий гавань Ли Юэ. Также зовётся Охотником на демонов или Защитником Якса.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xiao_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Эра истребления: Расцвет Калейдоса</color> <color=#ffffffd9>(созвездие 2)</color>\nКогда Сяо в отряде, но не является активным персонажем, его <color=#ffd780>энергия</color> восстанавливается на 25% быстрее."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2268,
+        "name": "Коллеи",
+        "desc": "<p>Стажёр Лесного дозора в лесу Авидья. За её энергичной речью и действиями скрывается довольно закрытая личность.</p><p></p><p><em>«Ты направляешься в Сумеру? Передашь привет Коллеи? Прошло так много времени... Должно быть, она стала выше, а её волосы ещё длиннее...»</em> - Эмбер.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/22/70239714/37a18b6b6865c59063003a9380f08225_1506165806794491631.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Охрана чащи</color> <color=#ffffffd9>(созвездие 1)</color>\n<color=#ffffff73>Когда Коллеи в отряде, но не является активным персонажем, её</color> <color=#ffd780>энергия</color> <color=#ffffff73>восстанавливается на 20% быстрее.</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2269,
+        "name": "Дори",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.85)\">Неуловимая негоциантка из Сумеру, которая больше всего любит блеск монет.</span></p><p></p><p><em><span style=\"color: rgba(255, 255, 255, 0.85)\">«Даже самые редкие материалы для экспериментов можно приобрести у Дори. Не знаю, откуда она берёт свои товары... И обязательно обращайте внимание на цену. У меня сердце болит каждый раз, когда я оплачиваю счёт», </span></em><span style=\"color: rgba(255, 255, 255, 0.85)\">- Тигнари.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/08/70239714/6539bea71efd0f839db897cfc4094362_3785464122785425096.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Разумное распределение</color> <color=#ffffffd9>(созвездие 4)</color>\nПерсонаж, у которого установлена связь с <color=#ffd780>Духом лампы</color> , в зависимости от текущего <color=#ffd780>HP</color> и <color=#ffd780>энергии</color> получает одно из следующих усилений: Если осталось не более 50% <color=#ffd780>энергии</color> , <color=#ffd780>восстановление энергии</color> увеличивается на 30%."
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Восстановление энергии",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/18/237301566/1fd390305e27dbb83bb8d84edee47537_7396235058424192140.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "По умолчанию у каждого персонажа 100% восстановления энергии."
+          }
+        ]
+      },
+      {
+        "key": "Получение частиц",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/18/237301566/72805430b98eb4e47e6858b020fac4e9_5283864414777143802.png"
+      },
+      {
+        "key": "Возвышение",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/18/237301566/854e21f877434ac32e1d6657c30941cf_7535049295251737978.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "У некоторых персонажей характеристика Восст. энергии увеличивается при возвышении."
+          }
+        ]
+      }
+    ]
+  }
+}

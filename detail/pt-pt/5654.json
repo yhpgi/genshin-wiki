@@ -1,0 +1,3387 @@
+{
+  "epId": 5654,
+  "name": "Fórmula de cálculo de Dano",
+  "desc": "<p>A Fórmula de cálculo de Dano engloba todos os elementos que envolvem o dano. Como tal, é uma operação complexa que requer a consideração de muitas coisas.</p>",
+  "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/28/42646513/b8c1c27b62b2cfd816438e9c251958b0_6233747194813574750.png",
+  "menuId": 14,
+  "menuName": "Tutorial",
+  "version": 1731110258,
+  "components": {
+    "galleryCharacter": [
+      {
+        "key": "Causando Dano Físico",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/28/42646513/6c5ed1eeb09d687c7b8c8cec217c8f63_2724875105257055882.png"
+      },
+      {
+        "key": "Dano de Reações Elementais 1",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/28/42646513/6bb6c739a1c6f8aae3dd898604d75339_3507715465257915899.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "As Reações Amplificantes e Aditivas têm elementos especiais na Fórmula de cálculo de Dano"
+          }
+        ]
+      },
+      {
+        "key": "Dano de Reações Elementais 2",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/28/42646513/f68558a58bc96b9836586c2cb823d99d_2016187330815594453.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "As Reações Transformativas têm uma fórmula especial de cálculo de Dano"
+          }
+        ]
+      },
+      {
+        "key": "Bônus do Dano",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/09/42646513/adb228bc8c5df2ceb8eb68f6c68e7f40_1019337101617799807.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Alguns dos buffs de Dano mostrarão um ícone específico acima da barra de Vida do personagem.\n\"Buffs\" são reforços dos atributos habituais para além da norma (neste caso ao aumentar o Dano do personagem)."
+          }
+        ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "RichText",
+        "text": "As Reações Transformativas são: <color=#ffffff73>Florescimento</color> , <color=#ffffff73>Superflorecimento</color> , <color=#ffffff73>Germinação</color> , <color=#ffffff73>Queimadura</color> , <color=#ffffff73>Sobrecarga</color> , <color=#ffffff73>Eletricamente Carregado</color> , <color=#ffffff73>Supercondutor</color> , Quebrar Gelo, <color=#ffffff73>Redemoinho</color> .\nAs Reações Transformativas ignoram a DEF Inimiga, mas são afetadas pela <color=#ffffff>RES Inimiga</color> . Estas reações não podem causar dano crítico (exceto Nahida com sua 2ª Constelação, que permite golpes críticos com <color=#ffffff73>Florescimento</color> , <color=#ffffff73>Superflorecimento</color> , <color=#ffffff73>Germinação</color> e <color=#ffffff73>Queimadura</color> com uma quantidade fixa de Taxa Crítica e Dano Crítico em 20% e 100% respetivamente). Só importa o <color=#ffffff>Nível e a Proficiência Elemental do personagem ativador</color> .\nExemplo: Se <color=#ffffff73>Florescimento</color> for ativado por um personagem Dendro (aplicando Dendro sobre Hydro), são considerados o Nível e a Proficiência Elemental do personagem Dendro, e a RES Dendro do inimigo.\nAssim, o dano das Reações Elementais é calculado com a seguinte fórmula:"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Multiplicador da RES Inimiga × Multiplicador da Reação × Multiplicador do Nível do Personagem ×</color>\n<color=#ffffff>( 100% + Bônus da Proficiência Elemental + Bônus da Reação )</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Multiplicador da Reação",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Cada Reação Transformativa possui seu próprio Multiplicador da Reação, conforme mostrado na tabela:\n<color=#ffffff73>Multiplicador da Reação</color>\n<color=#ffffff73>Reação</color>\n<color=#ffffff73>300%</color>\n<color=#ffffff73>Germinação, Superflorecimento</color>\n<color=#ffffff73>200%</color>\n<color=#ffffff73>Sobrecarga, Florescimento</color>\n<color=#ffffff73>150%</color>\nQuebrar Gelo\n<color=#ffffff73>120%</color>\n<color=#ffffff73>Eletricamente Carregado</color>\n<color=#ffffff73>60%</color>\n<color=#ffffff73>Redemoinho</color>\n<color=#ffffff73>50%</color>\n<color=#ffffff73>Supercondutor</color>\n<color=#ffffff73>25%</color>\n<color=#ffffff73>Queimadura</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Multiplicador do Nível do Personagem",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Os personagens têm um Multiplicador do Nível dependendo do nível atual do personagem. Isso é mostrado na tabela:\nNível do Personagem\nMultiplicador do Nível do Personagem\n<color=#ffffff73>60</color>\n<color=#ffffff73>492,88</color>\n<color=#ffffff73>70</color>\n<color=#ffffff73>765,64</color>\n<color=#ffffff73>80</color>\n<color=#ffffff73>1077,44</color>\n<color=#ffffff73>85</color>\n<color=#ffffff73>1253,84</color>\n<color=#ffffff73>90</color>\n<color=#ffffff73>1446,85</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Bônus da Proficiência Elemental",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Para o Bônus da Proficiência Elemental é tido em conta apenas a Proficiência Elemental total do personagem ativador da reação, conforme aparece no campo Informação Detalhada sob o menu Atributos do personagem.\nÉ calculado da seguinte forma:"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>( Proficiência Elemental × 16 ) / ( Proficiência Elemental + 2000 )</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Bônus da Reação",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Existem alguns Bônus da Reação para o Dano das Reações Transformativas:"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "Trovão Furioso",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças\n<color=#ffffff73>(Sobrecarga, Eletricamente Carregado, Supercondutor e Superflorecimento)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "Sombra Verde",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças\n<color=#ffffff73>(Redemoinho)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "A Bruxa das Chamas Carmesim",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças\n<color=#ffffff73>(Queimadura, Germinação)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Flor do Paraíso Perdido",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/13/16791688/50ce09dfa5a91a33aa9cedfb15bcf2d1_1667065419123799079.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças\n<color=#ffffff73>(Florescimento, Superflorecimento, Germinação)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "Nilou",
+        "desc": "<p>A Estrela no Teatro Zubayr. Seu estilo de dança é alegre e elegante, e possui caráter pura e bondosa.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/21/16791688/586d726f9ebda3506c78beaaa41f13b6_756855207633259471.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão\n<color=#ffffff73>(Florescimento)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "Baizhu",
+        "desc": "<p>O dono do Chalé de Bubu, sempre com uma cobra branca chamada Changsheng pendurada no pescoço. Um grande conhecedor de medicina, suas verdadeiras intenções são um grande mistério.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/04/12804176/05599650d7f42e1c4adde373de6b297d_7647946592614991692.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão\n<color=#ffffff73>(Queimadura, Florescimento, Superflorecimento, Germinação)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "Kaveh",
+        "desc": "<p>Um arquiteto renomado de Sumeru, é preocupado demais com muitas coisas. Um esteta perturbado pela realidade</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/89220822/2270aba02b92034d7d76b4426be8f53b_1693033154442525886.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Supremo e 4</color> ª Constelação\n<color=#ffffff73>(Florescimento)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "Mona",
+        "desc": "Uma jovem astróloga misteriosa que proclama a si mesma como a \"Grande Astróloga Mona\" e que possui as habilidades para o título. Uma pessoa erudita, mas orgulhosa.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>1</color> ª Constelação\n<color=#ffffff73>(Eletricamente Carregado, Redemoinho Hydro)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "A Fórmula de cálculo de Dano",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Existem nove tipos de dano: sete deles são Dano Elemental, um é Dano Físico e outro é chamado Dano Real (que ignora a DEF, a RES e o multiplicador do Dano recebido).\nA <color=#ffffff>Fórmula de cálculo de Dano</color> é:"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Dano =</color>\n<color=#ffffff>( ( Dano Base × Multiplicador do Dano Base ) + Bônus do Dano Base )</color>\n<color=#ffffff>× Multiplicador da DEF Inimiga × Multiplicador da RES Inimiga</color>\n<color=#ffffff>× Multiplicador de Bônus do Dano</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Dano Base",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "O primeiro elemento a considerar é o <color=#ffffff>atributo</color> que a habilidade assume (Vida Máxima, ATQ, DEF, Proficiência Elemental) e a <color=#ffffff>porcentagem</color> tomada deles (maior dependendo do nível da habilidade).\nTomemos, por exemplo, a Habilidade Elemental de Dehya."
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Nv.1</color>\n<color=#ffffff73>Nv.10</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Dano de Coragem Flamejante"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>112,90% ATQ</color>\n<color=#ffffff73>203,20% ATQ</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Dano do Campo da Espada Incinerante"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>132,80% ATQ</color>\n<color=#ffffff73>239% ATQ</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Dano do campo"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>60,2% ATQ</color>\n<color=#ffffff73>+</color>\n<color=#ffffff73>1,03% da</color> Vida Máxima\n<color=#ffffff73>108,4% ATQ</color>\n<color=#ffffff73>+</color>\n<color=#ffffff73>1,86% da</color> Vida Máxima",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Algumas habilidades (como o Dano do campo de Dehya) consideram mais de um atributo. Nesse caso, o Dano Base é a soma deles."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Multiplicadores do Dano Base e Bônus aditivos do Dano Base",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Existem alguns multiplicadores que afetam diretamente o Dano Base após seu cálculo.\nOs <color=#ffffff>Multiplicadores do Dano Base</color> são:"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 39,
+        "name": "Xingqiu",
+        "desc": "Um jovem carregando uma espada longa que é frequentemente visto em estantes de livros. Ele tem um coração de ouro e anseia por justiça e equidade para todos.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xingqiu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "4ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 18,
+        "name": "Viajante (Electro)",
+        "desc": "Uma/Um Viajante de outro mundo que teve seu ente querido levado e foi forçada/o a embarcar em uma jornada em busca dos Sete.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Traveler_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "6ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 15,
+        "name": "Yoimiya",
+        "desc": "Dona da Fogos de Artifício Naganohara. Conhecida como \"Rainha do Festival de Verão\", ela é excelente na criação de fogos de artifício que simbolizam a esperança e sonhos das pessoas.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yoimiya_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Habilidade Elemental",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2968,
+        "name": "Andarilho",
+        "desc": "<p>Um jovem andarilho de identidade misteriosa. Se veste como um shugenja, mas com certeza não age como um.</p><p></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/16791688/24d97a22be742fb732ea96f625d1faac_6179643747821580209.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Habilidade Elemental",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4023,
+        "name": "Neuvillette ",
+        "desc": "<p>O Juiz Supremo de Fontaine, conhecido com Iudex, é renomado por sua imparcialidade inabalável.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/27/101132274/0513aa7f482dbb4778545d02f94956fe_916827246523274276.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 1a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4022,
+        "name": "Wriothesley",
+        "desc": "<p>Duque da Fortaleza Meropide, Lorde Incógnito das profundezas obscuras.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/10/18/59559639/31a0eb2dec5d69ca8dd7616572136b8b_8832196977977678933.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Habilidade Elemental",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4376,
+        "name": "Furina",
+        "desc": "<p>O foco absoluto em cima do palco durante um julgamento, até o momento das cortinas fecharem e dos aplausos soarem.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/263e5ea0784d182b393f67a7e24146a5_4302086651062817901.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Habilidade Elemental",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4576,
+        "name": "Navia",
+        "desc": "<p>A atual Presidente da Spina di Rosula, é uma patroa adorável e responsável.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/22/59559639/3fc7580c01a9e622692402889706c4db_987831617704915527.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Habilidade Elemental",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Após esse bônus multiplicativo, existe um bônus aditivo que é considerado após este cálculo.\nOs <color=#ffffff>Bônus aditivos do Dano Base</color> são:"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 46,
+        "name": "Zhongli",
+        "desc": "Um convidado misterioso da Funerária de Wangsheng. É um erudito que tem um profundo conhecimento sobre todos os tipos de coisa.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Zhongli_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 47,
+        "name": "Albedo",
+        "desc": "Um gênio conhecido como Príncipe do Giz, ele é o Chefe Alquimista e Capitão da Equipe de Investigação dos Cavaleiros de Favonius.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Albedo_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "2ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 34,
+        "name": "Hutao",
+        "desc": "A 77.ª diretora da Funerária de Wangsheng. Apesar de ser jovem, já está encarregada de todos os assuntos funerários de Liyue.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Hu Tao_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "2ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 21,
+        "name": "Sayu",
+        "desc": "Uma Ninja pertencente ao Shiyuumatsu-Ban que parece sempre estar cansada.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sayu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "6ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 25,
+        "name": "Sangonomiya Kokomi",
+        "desc": "A Sacerdotisa Divina da Ilha Watatsumi. Todos os assuntos da ilha estão na ponta dos dedos desta jovem senhora.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sangonomiya Kokomi_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Supremo e\nTalento Passivo de 4a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 16,
+        "name": "Thoma",
+        "desc": "O Empregado do Clã Kamisato e animado Mediador de Inazuma.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Thoma_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 36,
+        "name": "Arataki Itto",
+        "desc": "O primeiro e maior chefe da Gangue Arataki, famosa em Hanamizaka, na cidade de Inazuma... Espere, o quê? Nunca ouviu falar deles? Sério?",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Arataki Itto_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5,
+        "name": "Gorou",
+        "desc": "O grande general das tropas da Ilha Watatsumi. Seus subordinados acreditam profundamente nele.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Gorou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 29,
+        "name": "Shenhe",
+        "desc": "Uma discípula adepti com um ar muito incomum sobre ela. Tendo passado muito tempo vivendo em isolamento nas montanhas de Liyue, ela se tornou tão fria e distante quanto os próprios adepti.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Shenhe_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Habilidade Elemental",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4,
+        "name": "Yunjin",
+        "desc": "Uma renomada cantora de ópera de Liyue, hábil tanto em dramaturgia quanto em canto. Seu estilo é único, requintado e delicado, exatamente como ela.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yun Jin_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Supremo e\nTalento Passivo de 4a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2256,
+        "name": "Kuki Shinobu",
+        "desc": "Uma talentosa e confiável ajudante da Gangue Arataki — Nota: Talentosa e confiável descreve a ajudante, mas não a Gangue Arataki.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kuki Shinobu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2813,
+        "name": "Cyno",
+        "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O General Mahamatra está encarregado de supervisionar os estudiosos da Academia.</span><br><span style=\"color: rgb(255, 255, 255)\">Dizem que quando o General Mahamatra está trabalhando, ele é mais eficiente que o \"Grande Vayuvyastra\" criado pelos Kshahrewar.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/22/6926027/e09e2bda5e022611fad0dea1bb6518bb_2643611509346867500.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2859,
+        "name": "Layla",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.85)\">Estudante dos Rtawahist, especializada em astrologia teórica. Sofre de sonambulismo e insônia, ela está sempre enfrentando distúrbios de sono.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/16/16791688/48a495acadaf37f12d0a7f653d85bd83_147377982387517332.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão e\n4ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2968,
+        "name": "Andarilho",
+        "desc": "<p>Um jovem andarilho de identidade misteriosa. Se veste como um shugenja, mas com certeza não age como um.</p><p></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/16791688/24d97a22be742fb732ea96f625d1faac_6179643747821580209.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "1ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2967,
+        "name": "Faruzan",
+        "desc": "<p>Uma pesquisadora de \"cem anos atrás\". Ela gosta de se identificar como a mais velha de todas, com um conhecimento significativo de escrituras antigas e máquinas de todos os tipos.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/05/16791688/38c12ab46678a4008f83a0e46c900ef5_2542346274933708256.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "Baizhu",
+        "desc": "<p>O dono do Chalé de Bubu, sempre com uma cobra branca chamada Changsheng pendurada no pescoço. Um grande conhecedor de medicina, suas verdadeiras intenções são um grande mistério.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/04/12804176/05599650d7f42e1c4adde373de6b297d_7647946592614991692.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "6ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3997,
+        "name": "Viajante (Hydro)",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Uma/Um Viajante de outro mundo que teve seu ente querido levado e foi forçada/o a embarcar em uma jornada em busca dos Sete.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/59559639/75bb898fe1c3b4ed29a2931829ddb845_4421635139643683132.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3963,
+        "name": "Lyney",
+        "desc": "<p>Um mágico astuto e habilidoso de Fontaine que sempre conquista o público com seus truques engenhosos e sua eloquência.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/03/59559639/e343d4442cc3b8e243f0d528bb715f75_4313588781914638849.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 1a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4774,
+        "name": "Xianyun ",
+        "desc": "<p><span style=\"color: rgb(231, 233, 234)\">Uma dos Adepti Poderosos e Iluminados de Jueyun, conhecida como Retentora de Nuvem. Domina as artes mecânicas, seu coração percorre o mundo efêmero dos mortais, e seu nome entre eles é Xianyun.</span></p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/02/20/59559639/2c2be27f8876e9435ab8c8b933b8408c_5508300109869918091.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão e\n2ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2032,
+        "name": "Haste de Cinábrio",
+        "desc": "Uma espada feita de materiais que não pertencem a este mundo. O poder dentro dela pode até mesmo ser capaz de resistir à corrupção de um veneno que poderia corroer um poderoso dragão.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/辰砂之纺锤.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2031,
+        "name": "Chifres Vermelhos Destruidores de Pedras",
+        "desc": "De acordo com seu dono anterior, esta arma é o \"Leão Heroico, Poderoso e de Chifres Vermelhos Destruidores de Pedras\" que pode fazer com que qualquer monstro saia correndo com sua cauda entre suas pernas.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/赤角石溃杵.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1932,
+        "name": "Fumetsu Gekka",
+        "desc": "Um lindo cordão de jaspe das profundezas do mar. Ele brilha com um brilho puro, e igualmente distante quanto o da lua.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/不灭月华.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2665,
+        "name": "Caminho do Caçador",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Este arco adornado foi feito usando galhos brancos preciosos. Ele já derrotou inúmeras bestas malignas que tentaram infiltrar a floresta.</span><br></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/25/16791688/110a33dca005873d039a32c6c931d405_8025905031796700542.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3461,
+        "name": "Luz das Folhas Cortadas",
+        "desc": "<p>Uma lâmina ornamentada feita de preciosos ramos brancos. No passado cortou incontáveis sujeiras que percorreram a floresta contaminada.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/18/8078404/bf4ef5696afdf695a26fab9510228060_7729027148559715024.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2076,
+        "name": "Eco do Sacrifício",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4717,
+        "name": "Canção do Passado",
+        "desc": "",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/15/59559639/7789fb5e684cf95a7011657d0fa8a971_5183604261447268705.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "As <color=#ffffff>Reações Aditivas</color> (Propagação e Intensificação) adicionam seu próprio bônus aditivo. Sua fórmula é calculada desta forma:"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Bônus Aditivo do Dano Base = Nível do Personagem × Multiplicador da Reação ×</color>\n<color=#ffffff>( 100% + Bônus da Proficiência Elemental + Bônus da Reação )</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "O Multiplicador da Reação é 115% para a reação Intensificação e 125% para a reação Propagação.\nO Bônus da Proficiência Elemental é mostrado no campo Informação Detalhada sob o menu Atributos do personagem, e é calculado como:"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>( Proficiência Elemental × 5 ) / ( Proficiência Elemental + 1200 )</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Existem alguns Bônus da Reação para estas Reações Aditivas:"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "Trovão Furioso",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "Baizhu",
+        "desc": "<p>O dono do Chalé de Bubu, sempre com uma cobra branca chamada Changsheng pendurada no pescoço. Um grande conhecedor de medicina, suas verdadeiras intenções são um grande mistério.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/04/12804176/05599650d7f42e1c4adde373de6b297d_7647946592614991692.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Multiplicadores do Inimigo",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "O <color=#ffffff>Multiplicador da DEF Inimiga</color> é alcançado com esta fórmula:"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>( Nível do Personagem + 100 ) / [ ( Nível do Personagem + 100 ) +</color>\n<color=#ffffff>( Nível do Inimigo + 100 ) × ( 100%-DEF Reduzida do Inimigo ) × ( 100%-DEF Ignorada do Inimigo ) ]</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "A DEF Inimiga pode ser reduzida das seguintes formas:"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2,
+        "name": "Lisa",
+        "desc": "Preguiçosa, mas conhecida como bibliotecária dos Cavaleiros de Favonius, na verdade foi considerada pela Academia Sumeru como a mais graduada dos últimos dois séculos.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Lisa_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 12,
+        "name": "Klee",
+        "desc": "Uma visitante frequente da sala de confinamento dos Cavaleiros de Favonius, também conhecida como \"Sol Fugitivo\".",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "2ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 48,
+        "name": "Razor",
+        "desc": "Um garoto que vive entre os lobos no Reino dos Lobos em Mondstadt, longe da civilização. É ágil como um relâmpago.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Razor_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 32,
+        "name": "Kamisato Ayaka",
+        "desc": "Filha do Clã Kamisato da Comissão Yashiro. Solene e elegante, e também sábia e forte.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kamisato Ayaka_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "4ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2850,
+        "name": "Nahida",
+        "desc": "<p>Um pássaro enjaulado no Santuário de Surasthana, que só pode contemplar o mundo através de seus sonhos.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/31/6926027/f29490bddc56b4a6773b6c5003bbb853_259627165814207986.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "2ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "A DEF Inimiga pode ser ignorada das seguintes formas:"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 49,
+        "name": "Shogun Raiden",
+        "desc": "Sua Excelência, a Toda-Poderosa Narukami Ogosho, que prometeu ao povo de Inazuma uma Eternidade imutável.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Raiden Shogun_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "2ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7,
+        "name": "Yae Miko",
+        "desc": "A Senhorita Guuji do Grande Santuário Narukami, e também a Editora-Chefe da Editora Yae. Por trás de sua bela aparência escondem-se sabedoria e astúcia inimagináveis.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yae Miko_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "6ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Este é um exemplo com Freminet Nv.20, 60, 80 e 90 (realizando seu Ataque Normal 1) com a mesma arma e artefatos contra o mesmo inimigo sem debuffs na primeira imagem, com o debuff de Razor na segunda, e com os debuffs de Razor e Lisa na última imagem.\n\"Debuffs\" reduzem os atributos habituais para além da norma (neste caso ao reduzir a DEF Inimiga)."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/8b3d56a808afc0d35cba5493f69382e4_8595035854653448890.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Freminet Nv.20",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/29cc048a9c313d16749942ada150d833_8044534170240290363.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Freminet Nv.60",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/54c4e5f18c6716a6cf9d47dc0005b73a_2422153234558294531.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Freminet Nv.80",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/6affd761772e1189caa421a001ce1bde_2886603267244421346.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Freminet Nv.90",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "O <color=#ffffff>Multiplicador da RES Inimiga</color> é dado na seguinte tabela:"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Condição</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Fórmula</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>RES ≥ 75%</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>100% / ( 100% + RES × 4 )</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>75% > RES ≥ 0%</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>100% - RES</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>RES < 0%</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>100% - ( RES / 2 )</color>\nA RES Inimiga pode ser reduzida das seguintes formas:"
+      },
+      {
+        "type": "RichText",
+        "text": "Ressonância Elemental: Durabilidade de Geo",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "Sombra Verde",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2672,
+        "name": "Memórias da Floresta",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/24/16791688/f526e111c9c7dcbaed0d7fd8c8d58ef2_4415364661412473078.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 29,
+        "name": "Shenhe",
+        "desc": "Uma discípula adepti com um ar muito incomum sobre ela. Tendo passado muito tempo vivendo em isolamento nas montanhas de Liyue, ela se tornou tão fria e distante quanto os próprios adepti.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Shenhe_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Supremo",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6,
+        "name": "Eula",
+        "desc": "A Cavaleira das Ondas, uma descendente da antiga aristocracia, e a Capitã de Reconhecimento dos Cavaleiros de Favonius. A razão pela qual uma descendente dos antigos nobres poderia se juntar aos Cavaleiros permanece um grande mistério em Mondstadt até os dias de hoje.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Eula_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Habilidade Elemental",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 46,
+        "name": "Zhongli",
+        "desc": "Um convidado misterioso da Funerária de Wangsheng. É um erudito que tem um profundo conhecimento sobre todos os tipos de coisa.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Zhongli_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Habilidade Elemental",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 45,
+        "name": "Chongyun",
+        "desc": "Um jovem exorcista de uma família de exorcistas. Ele tem feito de tudo para superar seu próprio Psíquico Yang Puro.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Chongyun_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2967,
+        "name": "Faruzan",
+        "desc": "<p>Uma pesquisadora de \"cem anos atrás\". Ela gosta de se identificar como a mais velha de todas, com um conhecimento significativo de escrituras antigas e máquinas de todos os tipos.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/05/16791688/38c12ab46678a4008f83a0e46c900ef5_2542346274933708256.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Supremo e\nTalento Passivo de 1a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4577,
+        "name": "Chevreuse",
+        "desc": "<p>A capitã da Patrulha de Segurança e Monitoramento Especial, que tem a justiça como uma insígnia eterna em seu coração. Seu mosquete só aponta contra os culpados.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/01/24/59559639/a846729f31f16a987a8696466ebabcc0_6725058705366070179.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 1a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 19,
+        "name": "Viajante (Anemo)",
+        "desc": "Uma/Um Viajante de outro mundo que teve seu ente querido levado e foi forçada/o a embarcar em uma jornada em busca dos Sete.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Traveler_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "6ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 27,
+        "name": "Jean",
+        "desc": "A justa e rigorosa Cavaleira de Dandelion, a Grande Mestre Intendente dos Cavaleiros de Favonius em Mondstadt.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Jean_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "4ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 39,
+        "name": "Xingqiu",
+        "desc": "Um jovem carregando uma espada longa que é frequentemente visto em estantes de livros. Ele tem um coração de ouro e anseia por justiça e equidade para todos.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xingqiu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "2ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 50,
+        "name": "Xiangling",
+        "desc": "Uma renomada chef de Liyue. Ela é extremamente apaixonada por cozinhar e se destaca em fazer seus pratos quentes e picantes.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xiangling_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "1ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 11,
+        "name": "Beidou",
+        "desc": "Líder da Frota Crux. Ela é uma chefe sem limites e franca.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Beidou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "6ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 33,
+        "name": "Rosaria",
+        "desc": "Uma freira que, além das suas vestes, não se parece em nada com uma pessoa do clero. Conhecida por seus modos e palavras diretos e frios, ela costuma trabalhar sozinha.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Rosaria_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "6ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 23,
+        "name": "Venti",
+        "desc": "Um dos muitos bardos de Mondstadt que vagueia livremente pelas ruas e becos da cidade.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Venti_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "2ª e 6ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 28,
+        "name": "Ganyu",
+        "desc": "Secretária do Pavilhão Yuehai. O sangue da besta iluminada Qilin flui nas suas veias.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Ganyu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "1ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 41,
+        "name": "Xinyan",
+        "desc": "A única roqueira do Porto de Liyue, ela usa sua música e canções apaixonadas para resistir aos preconceitos.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xinyan_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "4ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 18,
+        "name": "Viajante (Electro)",
+        "desc": "Uma/Um Viajante de outro mundo que teve seu ente querido levado e foi forçada/o a embarcar em uma jornada em busca dos Sete.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Traveler_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "2ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "Nilou",
+        "desc": "<p>A Estrela no Teatro Zubayr. Seu estilo de dança é alegre e elegante, e possui caráter pura e bondosa.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/21/16791688/586d726f9ebda3506c78beaaa41f13b6_756855207633259471.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "2ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3963,
+        "name": "Lyney",
+        "desc": "<p>Um mágico astuto e habilidoso de Fontaine que sempre conquista o público com seus truques engenhosos e sua eloquência.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/03/59559639/e343d4442cc3b8e243f0d528bb715f75_4313588781914638849.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "4ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4576,
+        "name": "Navia",
+        "desc": "<p>A atual Presidente da Spina di Rosula, é uma patroa adorável e responsável.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/22/59559639/3fc7580c01a9e622692402889706c4db_987831617704915527.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "4ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/5d19563cbf05ce24d8d844625bb0590f_3624340874907172436.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Exemplo de Lisa atacando o mesmo inimigo sem debuffs RES na primeira imagem, com debuff Sombra Verde na segunda, e com debuffs Sombra Verde e Escudo de Jade de Zhongli na última imagem.",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Multiplicador do Bônus de Dano",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Existe um multiplicador geral para todos os tipos de dano (com exceção das Reações Transformativas). Existem também multiplicadores específicos para cada tipo de dano elemental e das habilidades. Além disso, existem três multiplicadores especiais: o Multiplicador Crítico (quando é um acerto crítico), o Bônus da Reação Amplificante (quando as reações Vaporização ou Fusão são ativadas) e o Multiplicador do Dano Recebido. Então a fórmula é calculada como:"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Multiplicador de Bônus do Dano =</color>\n<color=#ffffff>( 100% + Bônus do Dano Geral + Bônus do Dano Elemental +</color>\n<color=#ffffff>Bônus do Dano de Habilidade + Multiplicador do Dano Recebido )</color>\n<color=#ffffff>× Bônus da Reação Amplificante × Multiplicador Crítico</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Bônus de Dano Geral",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Existem muitos efeitos que adicionam um Bônus de Dano Geral (ou apenas \"Dano\", ou como \"Dano Comum\").\nO Dano pode ser aumentado das seguintes formas:"
+      },
+      {
+        "type": "RichText",
+        "text": "Ressonância Elemental: Durabilidade de Geo",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2252,
+        "name": "Yelan",
+        "desc": "Uma pessoa misteriosa que afirma trabalhar para o Ministério dos Assuntos Civis, mas \"não existe\" nos registros deles.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yelan_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 47,
+        "name": "Albedo",
+        "desc": "Um gênio conhecido como Príncipe do Giz, ele é o Chefe Alquimista e Capitão da Equipe de Investigação dos Cavaleiros de Favonius.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Albedo_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 1a Ascensão e\n6ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3963,
+        "name": "Lyney",
+        "desc": "<p>Um mágico astuto e habilidoso de Fontaine que sempre conquista o público com seus truques engenhosos e sua eloquência.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/03/59559639/e343d4442cc3b8e243f0d528bb715f75_4313588781914638849.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 51,
+        "name": "Xiao",
+        "desc": "Um Yaksha, um ser imortal que protege Liyue. Também chamado de \"Conquistador de Demônios\" ou \"Guardião Yaksha\".",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xiao_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 1a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4376,
+        "name": "Furina",
+        "desc": "<p>O foco absoluto em cima do palco durante um julgamento, até o momento das cortinas fecharem e dos aplausos soarem.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/263e5ea0784d182b393f67a7e24146a5_4302086651062817901.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Supremo",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 43,
+        "name": "Diluc",
+        "desc": "O magnata do império de vinhedos em Mondstadt, inigualável em todos os sentidos.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Diluc_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "1ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 28,
+        "name": "Ganyu",
+        "desc": "Secretária do Pavilhão Yuehai. O sangue da besta iluminada Qilin flui nas suas veias.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Ganyu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "4ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 48,
+        "name": "Razor",
+        "desc": "Um garoto que vive entre os lobos no Reino dos Lobos em Mondstadt, longe da civilização. É ágil como um relâmpago.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Razor_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "1ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3719,
+        "name": "Kirara",
+        "desc": "<p>Uma entregadora do Komaniya Express, empresa de entregas em Inazuma. Uma Nekomata que ama seu trabalho e a sociedade humana.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/24/89220822/d1699810632f8c3bc8c1e8c8beb8250f_6769819129186227664.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "6ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2254,
+        "name": "Aqua Simulacra",
+        "desc": "A cor desse arco longo muda imprevisivelmente. Sob a luz, possui um brilho azulado como água.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/若水.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5577,
+        "name": "Semblante da Lua Carmesim",
+        "desc": "Uma arma de gume afiado, brilho deslumbrante como a Lua Carmesim. Dizem que uma antiga dinastia a considerava um objeto ritual que poderia unir dois mundos, mas ninguém mais se lembra das crenças e cerimônias daquela era passada.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/24/ce91a453b9a942c9ab20df0f62caa033_358081180956617633.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2012,
+        "name": "Juramento pela Liberdade",
+        "desc": "Uma espada azul como canção antediluviana e tão aguçada quanto os juramentos de liberdade prestados na Terra do Vento.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/苍古自由之誓.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2001,
+        "name": "Prova de Kagura",
+        "desc": "Sino usado para a execução da Dança Kagura, abençoado pela própria Guuji. O cheiro da Sakura Sagrada ainda permanece nele.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/神乐之真意.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1948,
+        "name": "Lança de Jade Primitiva",
+        "desc": "Uma lança pesada e afiada feita de jade. Usada para derrotar monstros marinhos poderosos e pré-históricos.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/和璞鸢.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1953,
+        "name": "Orgulho Celestial",
+        "desc": "Um espadão que simboliza o orgulho de Dvalin nos céus. Quando é utilizada, emite um som que representa a força de Dvalin e o poder de Anemo.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之傲.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1981,
+        "name": "Caçador do Beco",
+        "desc": "Um arco longo e opulento intrincado. Pertenceu a um ladrão de cavalheiros que nunca foi pego.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/暗巷猎手.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1940,
+        "name": "Perdição do Dragão",
+        "desc": "Uma lança decorada com um dragão dourado entrelaçado. Leve e afiada, esta arma pode muito bem matar dragões com facilidade.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/匣里灭辰.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2255,
+        "name": "Crepúsculo Desvanecido",
+        "desc": "Um arco precioso feito de platina, com uma gema incrustada que cintila com o brilho do crepúsculo.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/落霞.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2038,
+        "name": "Espinho de Ferro",
+        "desc": "Espada exótica que de alguma forma acabou nas mãos dos comerciantes de Liyue. É leve, ágil e afiada.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/铁蜂刺.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2042,
+        "name": "Segadeira da Chuva",
+        "desc": "Uma espada grande fluorescente sem ponta afiada que esmaga os inimigos com força brutal.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/雨裁.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2015,
+        "name": "Espinha Dorsal da Serpente",
+        "desc": "Uma arma rara cuja origem são os oceanos antigos. Ao brandi-la, é possível ouvir as ondas do mar.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/螭骨剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1983,
+        "name": "Brilho do Beco",
+        "desc": "Uma espada negra, tão escura quanto a noite. Pertenceu a um ladrão que vagava pelas ruas à noite.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/暗巷闪光.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2033,
+        "name": "O Sino",
+        "desc": "Um espadão pesado com um relógio, mas seus mecanismos internos foram danificados.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/钟剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2033,
+        "name": "O Sino",
+        "desc": "Um espadão pesado com um relógio, mas seus mecanismos internos foram danificados.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/钟剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3319,
+        "name": "Chuva Floral",
+        "desc": "<p>Um guarda-chuva especial feito de papel e óleo. Apesar de longas viagens poderem fazer alguém se acostumar com o vento e a chuva, talvez ainda exista razão para admirar uma cena chuvosa sob esse guarda-chuva.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/16/16791688/cc8333f912792ec62acab44da8ede120_7737000310785834587.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2059,
+        "name": "Borla Preta",
+        "desc": "Bem, isso resolve o problema das borlas brancas que se mancham facilmente.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/黑缨枪.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1988,
+        "name": "Espadão Sangrento",
+        "desc": "Uma espada de aço que quem dizem ter sido revestida com sangue de dragão, tornando-a invulnerável ao dano. Contudo, este bônus não é estendido ao seu portador.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/沐浴龙血的剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1938,
+        "name": "Lâmina Fria",
+        "desc": "Uma arma laminada confiável, forjada em aço, que serve como testemunho das grandes aventuras de seu antigo mestre.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/冷刃.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2050,
+        "name": "Guia de Magia",
+        "desc": "12ª edição. Uma reedição com correção da 11ª edição e novas adições baseadas nos desenvolvimentos atuais.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/魔导绪论.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2051,
+        "name": "Arco de Corvo",
+        "desc": "Os corvos são conhecidos como mensageiros da morte. O arco é decorado com penas de corvo que prenunciam a morte iminente de qualquer alvo.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/鸦羽弓.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2002,
+        "name": "Juramento de Sagitário",
+        "desc": "Este poderoso arco pertencia a um grande arqueiro. Contudo, emana um aroma bastante forte, o tornando inadequado para caças.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/神射手之誓.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2063,
+        "name": "Coração Valente",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Brave Heart/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2083,
+        "name": "Atravessador do Fogo",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Lavawalker/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2070,
+        "name": "Lançador de Trovões",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundersoother/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Bônus de Dano Elemental",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Existem alguns personagens que possuem um Bônus de Dano Elemental específico como o seu atributo especial de ascensão:"
+      },
+      {
+        "type": "RichText",
+        "text": "Bônus de Dano Elemental",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Personagens</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Pyro</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 12,
+        "name": "Klee",
+        "desc": "Uma visitante frequente da sala de confinamento dos Cavaleiros de Favonius, também conhecida como \"Sol Fugitivo\".",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 24,
+        "name": "Yanfei",
+        "desc": "Uma Consultora Jurídica animada que vive no Porto de Liyue, é uma garota esperta com sangue da Besta Iluminada.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yanfei_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Hydro</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 42,
+        "name": "Tartaglia",
+        "desc": "O N.° 11 dos Mensageiros dos Fatui, também conhecido como \"Childe\". O seu nome é bastante temido nos campos de batalha.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Tartaglia_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 25,
+        "name": "Sangonomiya Kokomi",
+        "desc": "A Sacerdotisa Divina da Ilha Watatsumi. Todos os assuntos da ilha estão na ponta dos dedos desta jovem senhora.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sangonomiya Kokomi_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Electro</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 11,
+        "name": "Beidou",
+        "desc": "Líder da Frota Crux. Ela é uma chefe sem limites e franca.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Beidou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Cryo</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 44,
+        "name": "Diona",
+        "desc": "Uma jovem que herdou pequenas quantidades de sangue não humano. Ela é a Barmaid incrivelmente popular da taverna da Cauda do Gato.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Diona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 13,
+        "name": "Aloy",
+        "desc": "Era uma pária, agora uma caçadora de uma avidez inigualável. Pronta para fazer a coisa certa com seu arco, a qualquer momento.",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/01/169177528/92f6eddaf09e71b259bf80534ff8b640_3975109830708874484.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Anemo</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 30,
+        "name": "Sucrose",
+        "desc": "Uma alquimista cheia de curiosidade sobre todas as coisas e que pesquisa Bioalquimia.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sucrose_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2263,
+        "name": "Shikanoin Heizou",
+        "desc": "Um jovem e talentoso detetive da Comissão Tenryou. Tem uma intuição astuta e aguçada.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Shikanoin Heizou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3962,
+        "name": "Lynette",
+        "desc": "<p>Uma assistente mágica de poucas palavras. Sua personalidade é tão indecifrável quanto a de um gato.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/04/59559639/436e6f2b9b9006bfe511a98093259daf_786851561707919100.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Geo</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 47,
+        "name": "Albedo",
+        "desc": "Um gênio conhecido como Príncipe do Giz, ele é o Chefe Alquimista e Capitão da Equipe de Investigação dos Cavaleiros de Favonius.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Albedo_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8,
+        "name": "Ningguang",
+        "desc": "\"Tianquan\" dos \"Qixing de Liyue\". Sua fortuna é insuperável em todo Teyvat.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Ningguang_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 46,
+        "name": "Zhongli",
+        "desc": "Um convidado misterioso da Funerária de Wangsheng. É um erudito que tem um profundo conhecimento sobre todos os tipos de coisa.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Zhongli_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5,
+        "name": "Gorou",
+        "desc": "O grande general das tropas da Ilha Watatsumi. Seus subordinados acreditam profundamente nele.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Gorou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Dendro</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2265,
+        "name": "Tighnari",
+        "desc": "<p>Um jovem pesquisador que conhece bastante de botânica e que atualmente trabalha como um Patrulheiro Florestal na Floresta Avidya. Ele é extremamente sincero com um bom coração — e muito bom na orientação até mesmo dos alunos mais ingênuos.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/22/6926027/497dd6fac3d3c652a367c67428550747_951620929506896293.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3336,
+        "name": "Alhaitham",
+        "desc": "<p>O atual Escriba da Academia de Sumeru, um homem de grande inteligência e talento. Vive sua vida livre e despreocupado, sendo uma pessoa muito difícil de se encontrar.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/12/8078404/25249dd20b86c775fb35bdbbd805d9ec_1621708276776511768.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Físico</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 48,
+        "name": "Razor",
+        "desc": "Um garoto que vive entre os lobos no Reino dos Lobos em Mondstadt, longe da civilização. É ágil como um relâmpago.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Razor_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Alguns artefatos que adicionam um Bônus de Dano Elemental específico:"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "A Bruxa das Chamas Carmesim",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 2 e 4 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2079,
+        "name": "Profundezas do Coração",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Heart of Depth/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 2 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3693,
+        "name": "Sonho da Ninfa",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/21/12804176/1bde348ad550ef356ff197b93caed6c8_7901480160306636715.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 2 e 4 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "Trovão Furioso",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 2 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2062,
+        "name": "Herói Invernal",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Blizzard Strayer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 2 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "Sombra Verde",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 2 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3322,
+        "name": "Crônicas do Pavilhão do Deserto",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/13/16791688/b86d9fd7cf57937a021c9c68c9b185ed_8830463352663030741.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 2 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2072,
+        "name": "Pedra Arcaica",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Archaic Petra/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 2 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2065,
+        "name": "Casca de Sonhos Opulentos",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Husk of Opulent Dreams/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2672,
+        "name": "Memórias da Floresta",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/24/16791688/f526e111c9c7dcbaed0d7fd8c8d58ef2_4415364661412473078.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 2 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2077,
+        "name": "Cavaleiro Manchado de Sangue",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Bloodstained Chivalry/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 2 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2092,
+        "name": "Chama Pálida",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Pale Flame/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 2 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Existem algumas habilidades que podem aumentar diferentes tipos de Danos Elementais, mas não necessariamente todos eles:"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 22,
+        "name": "Kaedehara Kazuha",
+        "desc": "Um samurai errante de Inazuma que atualmente está com a Frota Crux de Liyue. Uma alma gentil e livre cujo coração esconde muitas feridas.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kaedehara Kazuha_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 30,
+        "name": "Sucrose",
+        "desc": "Uma alquimista cheia de curiosidade sobre todas as coisas e que pesquisa Bioalquimia.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sucrose_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>6</color> ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2072,
+        "name": "Pedra Arcaica",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Archaic Petra/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Bônus de Dano de Habilidade",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "O Dano de uma habilidade pode ser aumentado das seguintes formas:"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4775,
+        "name": "Gaming",
+        "desc": "<p>Guarda de aluguel da Agência de Transporte Seguro Espada &amp; Caixa, líder do grupo Bestas Místicas Poderosas.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/02/19/327628065/b041ad23a9d6245efac952a9379c5114_5293278123914251887.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão\n(+Ataque Imersivo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 32,
+        "name": "Kamisato Ayaka",
+        "desc": "Filha do Clã Kamisato da Comissão Yashiro. Solene e elegante, e também sábia e forte.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kamisato Ayaka_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 1a Ascensão\n(+Ataque Normal/Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2850,
+        "name": "Nahida",
+        "desc": "<p>Um pássaro enjaulado no Santuário de Surasthana, que só pode contemplar o mundo através de seus sonhos.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/31/6926027/f29490bddc56b4a6773b6c5003bbb853_259627165814207986.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão\n(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 51,
+        "name": "Xiao",
+        "desc": "Um Yaksha, um ser imortal que protege Liyue. Também chamado de \"Conquistador de Demônios\" ou \"Guardião Yaksha\".",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xiao_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Supremo\n(+Ataque Normal/Carregado/Imersivo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2815,
+        "name": "Candace",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.85)\">Guardiã da Vila Aaru, descendente do Rei Deshret, seu olho esquerdo é da cor do âmbar.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/23/16791688/2f43da4ece9eabfbde6ec2fcc81b3bff_5035049344843066579.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão\n(+Ataque Normal)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4576,
+        "name": "Navia",
+        "desc": "<p>A atual Presidente da Spina di Rosula, é uma patroa adorável e responsável.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/22/59559639/3fc7580c01a9e622692402889706c4db_987831617704915527.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Habilidade Elemental\n(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 51,
+        "name": "Xiao",
+        "desc": "Um Yaksha, um ser imortal que protege Liyue. Também chamado de \"Conquistador de Demônios\" ou \"Guardião Yaksha\".",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xiao_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão\n(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 24,
+        "name": "Yanfei",
+        "desc": "Uma Consultora Jurídica animada que vive no Porto de Liyue, é uma garota esperta com sangue da Besta Iluminada.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yanfei_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Supremo\n(+Ataque Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7,
+        "name": "Yae Miko",
+        "desc": "A Senhorita Guuji do Grande Santuário Narukami, e também a Editora-Chefe da Editora Yae. Por trás de sua bela aparência escondem-se sabedoria e astúcia inimagináveis.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yae Miko_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão\n(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2813,
+        "name": "Cyno",
+        "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O General Mahamatra está encarregado de supervisionar os estudiosos da Academia.</span><br><span style=\"color: rgb(255, 255, 255)\">Dizem que quando o General Mahamatra está trabalhando, ele é mais eficiente que o \"Grande Vayuvyastra\" criado pelos Kshahrewar.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/22/6926027/e09e2bda5e022611fad0dea1bb6518bb_2643611509346867500.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 1a Ascensão\n(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 13,
+        "name": "Aloy",
+        "desc": "Era uma pária, agora uma caçadora de uma avidez inigualável. Pronta para fazer a coisa certa com seu arco, a qualquer momento.",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/01/169177528/92f6eddaf09e71b259bf80534ff8b640_3975109830708874484.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Habilidade Elemental\n(+Ataque Normal)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2850,
+        "name": "Nahida",
+        "desc": "<p>Um pássaro enjaulado no Santuário de Surasthana, que só pode contemplar o mundo através de seus sonhos.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/31/6926027/f29490bddc56b4a6773b6c5003bbb853_259627165814207986.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Supremo\n(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 31,
+        "name": "Kamisato Ayato",
+        "desc": "O jovem promissor e chefe atual da Comissão Yashiro, é culto e educado, e sempre tem uma forma de fazer as coisas.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kamisato Ayato_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Supremo\n(+Ataque Normal)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 11,
+        "name": "Beidou",
+        "desc": "Líder da Frota Crux. Ela é uma chefe sem limites e franca.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Beidou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão\n(+Ataque Normal/Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3336,
+        "name": "Alhaitham",
+        "desc": "<p>O atual Escriba da Academia de Sumeru, um homem de grande inteligência e talento. Vive sua vida livre e despreocupado, sendo uma pessoa muito difícil de se encontrar.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/12/8078404/25249dd20b86c775fb35bdbbd805d9ec_1621708276776511768.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão\n(+Habilidade Elemental e +Supremo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3964,
+        "name": "Freminet",
+        "desc": "<p>Um jovem reservado muito habilidoso em mergulho. Sob seu comportamento distante e frio, há um coração puro isento de qualquer falha.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/09/101132274/8e44111a378f4e5379b8e7444e8c2daa_7629952329871790377.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão\n(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 12,
+        "name": "Klee",
+        "desc": "Uma visitante frequente da sala de confinamento dos Cavaleiros de Favonius, também conhecida como \"Sol Fugitivo\".",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 1a Ascensão\n(+Ataque Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3719,
+        "name": "Kirara",
+        "desc": "<p>Uma entregadora do Komaniya Express, empresa de entregas em Inazuma. Uma Nekomata que ama seu trabalho e a sociedade humana.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/24/89220822/d1699810632f8c3bc8c1e8c8beb8250f_6769819129186227664.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão\n(+Habilidade Elemental e +Supremo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2815,
+        "name": "Candace",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.85)\">Guardiã da Vila Aaru, descendente do Rei Deshret, seu olho esquerdo é da cor do âmbar.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/23/16791688/2f43da4ece9eabfbde6ec2fcc81b3bff_5035049344843066579.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Supremo\n(+Ataque Normal)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2265,
+        "name": "Tighnari",
+        "desc": "<p>Um jovem pesquisador que conhece bastante de botânica e que atualmente trabalha como um Patrulheiro Florestal na Floresta Avidya. Ele é extremamente sincero com um bom coração — e muito bom na orientação até mesmo dos alunos mais ingênuos.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/22/6926027/497dd6fac3d3c652a367c67428550747_951620929506896293.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão\n(+Ataque Carregado e +Supremo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 29,
+        "name": "Shenhe",
+        "desc": "Uma discípula adepti com um ar muito incomum sobre ela. Tendo passado muito tempo vivendo em isolamento nas montanhas de Liyue, ela se tornou tão fria e distante quanto os próprios adepti.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Shenhe_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão\n(+Habilidade Elemental e Supremo\nou +Ataque Normal/Carregado/Imersivo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4022,
+        "name": "Wriothesley",
+        "desc": "<p>Duque da Fortaleza Meropide, Lorde Incógnito das profundezas obscuras.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/10/18/59559639/31a0eb2dec5d69ca8dd7616572136b8b_8832196977977678933.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 1a Ascensão\n(+Ataque Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 49,
+        "name": "Shogun Raiden",
+        "desc": "Sua Excelência, a Toda-Poderosa Narukami Ogosho, que prometeu ao povo de Inazuma uma Eternidade imutável.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Raiden Shogun_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Habilidade Elemental\n(+Supremo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4576,
+        "name": "Navia",
+        "desc": "<p>A atual Presidente da Spina di Rosula, é uma patroa adorável e responsável.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/22/59559639/3fc7580c01a9e622692402889706c4db_987831617704915527.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 1a Ascensão\n(+Ataque Normal/Carregado/Imersivo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4376,
+        "name": "Furina",
+        "desc": "<p>O foco absoluto em cima do palco durante um julgamento, até o momento das cortinas fecharem e dos aplausos soarem.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/263e5ea0784d182b393f67a7e24146a5_4302086651062817901.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão\n(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2674,
+        "name": "Viajante (Dendro)",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Uma/Um Viajante de outro mundo que teve seu ente querido levado e foi forçada/o a embarcar em uma jornada em busca dos Sete.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/169177528/04f769b0b1671b5ffbbafefd7286b4b2_2608095309026490301.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão\n(+Habilidade Elemental e +Supremo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 47,
+        "name": "Albedo",
+        "desc": "Um gênio conhecido como Príncipe do Giz, ele é o Chefe Alquimista e Capitão da Equipe de Investigação dos Cavaleiros de Favonius.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Albedo_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "4ª Constelação\n(+Ataque Imersivo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 14,
+        "name": "Amber",
+        "desc": "Sempre energética e cheia de vida, a Amber é a melhor, mas também a última Aventureira dos Cavaleiros de Favonius.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Amber_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "2ª Constelação\n(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 45,
+        "name": "Chongyun",
+        "desc": "Um jovem exorcista de uma família de exorcistas. Ele tem feito de tudo para superar seu próprio Psíquico Yang Puro.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Chongyun_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "6ª Constelação\n(+Supremo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 43,
+        "name": "Diluc",
+        "desc": "O magnata do império de vinhedos em Mondstadt, inigualável em todos os sentidos.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Diluc_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "4ª Constelação\n(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 43,
+        "name": "Diluc",
+        "desc": "O magnata do império de vinhedos em Mondstadt, inigualável em todos os sentidos.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Diluc_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "6ª Constelação\n(+Ataque Normal)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 44,
+        "name": "Diona",
+        "desc": "Uma jovem que herdou pequenas quantidades de sangue não humano. Ela é a Barmaid incrivelmente popular da taverna da Cauda do Gato.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Diona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "2ª Constelação\n(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 27,
+        "name": "Jean",
+        "desc": "A justa e rigorosa Cavaleira de Dandelion, a Grande Mestre Intendente dos Cavaleiros de Favonius em Mondstadt.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Jean_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "1ª Constelação\n(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 40,
+        "name": "Noelle",
+        "desc": "Uma empregada em serviço dos Cavaleiros de Favonius que sonha em se juntar aos cavaleiros um dia.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Noelle_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "2ª Constelação\n(+Ataque Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1,
+        "name": "Qiqi",
+        "desc": "Uma aprendiz e colhedora de ervas no Chalé de Bubu. Uma morta-viva com pele branca como osso, ela raramente tem muitas palavras ou emoções.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Qiqi_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "2ª Constelação\n(+Ataque Normal/Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 33,
+        "name": "Rosaria",
+        "desc": "Uma freira que, além das suas vestes, não se parece em nada com uma pessoa do clero. Conhecida por seus modos e palavras diretos e frios, ela costuma trabalhar sozinha.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Rosaria_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "1ª Constelação\n(+Ataque Normal)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6,
+        "name": "Eula",
+        "desc": "A Cavaleira das Ondas, uma descendente da antiga aristocracia, e a Capitã de Reconhecimento dos Cavaleiros de Favonius. A razão pela qual uma descendente dos antigos nobres poderia se juntar aos Cavaleiros permanece um grande mistério em Mondstadt até os dias de hoje.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Eula_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "4ª Constelação\n(+Supremo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 22,
+        "name": "Kaedehara Kazuha",
+        "desc": "Um samurai errante de Inazuma que atualmente está com a Frota Crux de Liyue. Uma alma gentil e livre cujo coração esconde muitas feridas.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kaedehara Kazuha_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "6ª Constelação\n(+Ataque Normal/Carregado/Imersivo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 32,
+        "name": "Kamisato Ayaka",
+        "desc": "Filha do Clã Kamisato da Comissão Yashiro. Solene e elegante, e também sábia e forte.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kamisato Ayaka_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "6ª Constelação\n(+Ataque Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 18,
+        "name": "Viajante (Electro)",
+        "desc": "Uma/Um Viajante de outro mundo que teve seu ente querido levado e foi forçada/o a embarcar em uma jornada em busca dos Sete.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Traveler_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "6ª Constelação\n(+Supremo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 16,
+        "name": "Thoma",
+        "desc": "O Empregado do Clã Kamisato e animado Mediador de Inazuma.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Thoma_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "6ª Constelação\n(+Ataque Normal/Carregado/Imersivo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4,
+        "name": "Yunjin",
+        "desc": "Uma renomada cantora de ópera de Liyue, hábil tanto em dramaturgia quanto em canto. Seu estilo é único, requintado e delicado, exatamente como ela.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yun Jin_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "2ª Constelação\n(+Ataque Normal)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 29,
+        "name": "Shenhe",
+        "desc": "Uma discípula adepti com um ar muito incomum sobre ela. Tendo passado muito tempo vivendo em isolamento nas montanhas de Liyue, ela se tornou tão fria e distante quanto os próprios adepti.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Shenhe_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "4ª Constelação\n(+Supremo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 31,
+        "name": "Kamisato Ayato",
+        "desc": "O jovem promissor e chefe atual da Comissão Yashiro, é culto e educado, e sempre tem uma forma de fazer as coisas.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kamisato Ayato_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "1ª Constelação\n(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "Nilou",
+        "desc": "<p>A Estrela no Teatro Zubayr. Seu estilo de dança é alegre e elegante, e possui caráter pura e bondosa.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/21/16791688/586d726f9ebda3506c78beaaa41f13b6_756855207633259471.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "1ª Constelação\n(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "Nilou",
+        "desc": "<p>A Estrela no Teatro Zubayr. Seu estilo de dança é alegre e elegante, e possui caráter pura e bondosa.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/21/16791688/586d726f9ebda3506c78beaaa41f13b6_756855207633259471.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "4ª Constelação\n(+Supremo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2859,
+        "name": "Layla",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.85)\">Estudante dos Rtawahist, especializada em astrologia teórica. Sofre de sonambulismo e insônia, ela está sempre enfrentando distúrbios de sono.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/16/16791688/48a495acadaf37f12d0a7f653d85bd83_147377982387517332.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "6ª Constelação\n(+Habilidade Elemental e +Supremo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2968,
+        "name": "Andarilho",
+        "desc": "<p>Um jovem andarilho de identidade misteriosa. Se veste como um shugenja, mas com certeza não age como um.</p><p></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/16791688/24d97a22be742fb732ea96f625d1faac_6179643747821580209.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "2ª Constelação\n(+Supremo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "Mona",
+        "desc": "Uma jovem astróloga misteriosa que proclama a si mesma como a \"Grande Astróloga Mona\" e que possui as habilidades para o título. Uma pessoa erudita, mas orgulhosa.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "6ª Constelação\n(+Ataque Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4022,
+        "name": "Wriothesley",
+        "desc": "<p>Duque da Fortaleza Meropide, Lorde Incógnito das profundezas obscuras.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/10/18/59559639/31a0eb2dec5d69ca8dd7616572136b8b_8832196977977678933.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "2ª Constelação\n(+Ataque Normal)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4377,
+        "name": "Charlotte",
+        "desc": "<p>A jornalista cheia de energia do Pássaro a Vapor, sempre correndo atrás da \"verdade\".</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/7bbbff3f35661a93b5091b1f17fae6c0_2121070525624575281.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "4ª Constelação\n(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2040,
+        "name": "Arco de Amos",
+        "desc": "Um arco extremamente antigo que reteve seu poder, apesar de seu mestre original ter desaparecido há muito tempo. Ele extrai poder de todos e de tudo no mundo, e quanto mais longe você estiver daquilo que seu coração deseja, mais poderoso será.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/阿莫斯之弓.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "(+Ataque Normal/Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2012,
+        "name": "Juramento pela Liberdade",
+        "desc": "Uma espada azul como canção antediluviana e tão aguçada quanto os juramentos de liberdade prestados na Terra do Vento.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/苍古自由之誓.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "(+Ataque Normal/Carregado/Imersivo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2001,
+        "name": "Prova de Kagura",
+        "desc": "Sino usado para a execução da Dança Kagura, abençoado pela própria Guuji. O cheiro da Sakura Sagrada ainda permanece nele.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/神乐之真意.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3320,
+        "name": "Reminiscências de Tulaytullah",
+        "desc": "<p>Um sino feito de safira e prata pura. Seus ecos são claros, mas distantes.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/11/16791688/8de363bf716e4538ba86014fbea827ef_8623330913688942992.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "(+Ataque Normal)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1950,
+        "name": "Contos de Dodoco",
+        "desc": "Um livro infantil com uma bela capa. Seu conteúdo é pequenas estórias infantis inofensivas, e quem as ler não poderá evitar rir.<br/>Mesmo que seu leitor já seja um adulto, ao ler tais aventuras inocentes, também acabará fascinado por elas.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/嘟嘟可故事集.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "(+Ataque Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2011,
+        "name": "Espada Pútrida",
+        "desc": "Uma espada reta assustadora que parece ansiar pela vida. Ela verte um veneno enfraquecedor que poderia corromper até mesmo um dragão poderoso.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/腐殖之剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1965,
+        "name": "Valsa do Crepúsculo",
+        "desc": "Um arco que possui cores como as da noite de ilusões e de pecados.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/幽夜华尔兹.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "(+Ataque Normal e Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2027,
+        "name": "Protótipo Estelar",
+        "desc": "Um rancor descoberto na Forja do Penhasco Obscuro. Os vislumbres ao longo da borda afiada são como estrelas na noite.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/试作星镰.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "(+Ataque Normal/Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1967,
+        "name": "Arco Enferrujado",
+        "desc": "Um arco de ferro completamente enferrujado. Uma pessoa comum não teria forças para sequer levantá-lo, muito menos dispará-lo.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/弓藏.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "(+Ataque Normal/Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1939,
+        "name": "Pérola Solar",
+        "desc": "Abriga a luz do sol e da lua, uma pérola feita de materiais desconhecidos pulsa com uma força calorosa.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/匣里日月.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "(+Ataque Normal, Habilidade Elemental e Supremo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2053,
+        "name": "Espada Negra",
+        "desc": "Uma espada longa que anseia por conflito e combate. Dizem-se que mergulha seu portador em um desejo violento de se manchar de sangue em um massacre.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/黑剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "(+Ataque Normal/Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2009,
+        "name": "Último Acorde",
+        "desc": "Um arco que serviu como um instrumento extraordinário. Não é mais capaz de fazer pessoas dançarem.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/绝弦.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "(+Habilidade Elemental e +Supremo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2037,
+        "name": "Sombra de Ferro",
+        "desc": "Uma réplica da espada famosa de Arundolyn, o Leão da Luz. Maneje-a e sinta o poder de um herói lendário! Aviso: Sonhar demais pode ser prejudicial para você.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/铁影阔剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "(+Ataque Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1968,
+        "name": "Estilingue",
+        "desc": "Na verdade, é um arco. Depois de incontáveis experimentos e melhorias, o mestre criador de estilingues acabou criando um arco.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/弹弓.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "(+Ataque Normal/Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1996,
+        "name": "Borla Branca",
+        "desc": "Uma arma padrão dos soldados de Millelith. Tem uma ponta bastante afida e resistente. É uma arma confiável.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/白缨枪.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "(+Ataque Normal)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2077,
+        "name": "Cavaleiro Manchado de Sangue",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Bloodstained Chivalry/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças\n(+Ataque Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2090,
+        "name": "Selo da Insulação",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças\n(+Supremo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2096,
+        "name": "Apostador",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gambler/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 2 peças\n(+Habilidade Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2095,
+        "name": "Último Juramento do Gladiador",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças\n(+Ataque Normal)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2079,
+        "name": "Profundezas do Coração",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Heart of Depth/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças\n(+Ataque Normal/Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2078,
+        "name": "Artista Marcial",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Martial Artist/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 2 e 4 peças\n(+Ataque Normal/Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2075,
+        "name": "Antigo Ritual Real",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 2 peças\n(+Supremo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2099,
+        "name": "Meteoro Invertido",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Retracing Bolide/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças\n(+Ataque Normal/Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2098,
+        "name": "Reminiscência Nostálgica",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças\n(+Ataque Normal/Carregado/Imersivo)",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2081,
+        "name": "Trupe Itinerante",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças\n(+Ataque Carregado)",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Multiplicador do Dano Recebido",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Ao contrário dos outros multiplicadores de dano, este é aplicado ao inimigo e não aos personagens.\nAlguns personagens podem aumentar o Dano Recebido pelos inimigos:"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "Mona",
+        "desc": "Uma jovem astróloga misteriosa que proclama a si mesma como a \"Grande Astróloga Mona\" e que possui as habilidades para o título. Uma pessoa erudita, mas orgulhosa.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Supremo</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 28,
+        "name": "Ganyu",
+        "desc": "Secretária do Pavilhão Yuehai. O sangue da besta iluminada Qilin flui nas suas veias.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Ganyu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>4</color> ª Constelação",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Este multiplicador pode ser chamado de \"Redução de Dano\" para o efeito oposto.\nAlguns inimigos podem reduzir o seu próprio Dano Recebido:"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2105,
+        "name": "Lawachurl dos Braços Congelantes",
+        "desc": "Um misterioso \"chefe\" dos Hilichurls que espreita a neve e o nevoeiro.<br/>Este enorme Hilichurl é chamado de \"Lawa\" por seus companheiros. Seu corpo, aperfeiçoado até o limite, quase parece se misturar com o ambiente repleto de Cryo, e sua nobreza estoica é como a dos rios congelados do Reino do Norte.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Frostarm Lawachurl_icon.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2173,
+        "name": "Kairagi: Trovão Dançante",
+        "desc": "Samurais que caíram no banditismo.<br/>Eles possuem habilidades de artes marciais altamente avançadas, mas não encontraram utilidade para elas por vários motivos. Por desespero, eles caíram no caminho do mal. Eles usam selos de papel, criados a partir de uma arte Kamuna perdida há séculos para infundir em suas lâminas o poder do relâmpago.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Kairagi: Dancing Thunder_icon.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2172,
+        "name": "Kairagi: Força Poderosa",
+        "desc": "Samurais que caíram no banditismo.<br/>Eles praticavam artes marciais desde jovens, mas perderam a oportunidade de servir ao povo por certos motivos e se desviaram do caminho da retidão. As pontas de suas lâminas não são frias como o aço comum, mas queimam com uma chama amarga. Eles parecem ter usado selos de papel criados a partir de uma arte Kamuna perdida para incendiar suas lâminas.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Kairagi: Fiery Might_icon.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Bônus da Reação Amplificante",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Quando uma Reação Amplificante é ativada, como Vaporização ou Fusão, adiciona-se um multiplicador adicional.\nEste <color=#ffffff>Bônus da Reação Amplificante</color> é calculado como:"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Multiplicador da Reação × ( 100% + Bônus da Proficiência Elemental + Bônus da Reação )</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "O Multiplicador da Reação é de 200% para a reação Vaporização ativada por um ataque Hydro e para a reação Fusão ativada por um ataque Pyro; e 150% para a reação Vaporização ativada por um ataque Pyro e para a reação Fusão desencadeada por um ataque Cryo."
+      },
+      {
+        "type": "RichText",
+        "text": "Vaporização\nFusão\n<color=#ffffff73>150%</color>\n<color=#ffffff73>Aura Hydro ← Acerto Pyro</color>\n<color=#ffffff73>Aura Pyro ← Acerto Cryo</color>\n<color=#ffffff73>200%</color>\n<color=#ffffff73>Aura Pyro ← Acerto Hydro</color>\n<color=#ffffff73>Aura Cryo ← Acerto Pyro</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "O Bônus da Proficiência Elemental é <color=#ffffff73>mostrado no campo Informação Detalhada sob o menu Atributos do personagem, e é calculado como:</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>( Proficiência Elemental × 2,78 ) / ( Proficiência Elemental + 1400 )</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Existem alguns Bônus da Reação para essas Reações Amplificantes:"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "A Bruxa das Chamas Carmesim",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "Mona",
+        "desc": "Uma jovem astróloga misteriosa que proclama a si mesma como a \"Grande Astróloga Mona\" e que possui as habilidades para o título. Uma pessoa erudita, mas orgulhosa.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>1</color> ª Constelação\n<color=#ffffff73>(apenas para Vaporização)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Multiplicador Crítico",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Quando o ataque é crítico o <color=#ffffff>Multiplicador Crítico</color> adicionado é:"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>100% + Dano Crítico</color>",
+        "alignment": "center"
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "Nome",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Fórmula de cálculo de Dano"
+          }
+        ]
+      },
+      {
+        "key": "Tipo",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Cálculo interno do sistema"
+          }
+        ]
+      },
+      {
+        "key": "Entrada Relacionada",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5206,
+            "name": "Reação Elemental",
+            "desc": "<p>As Reações Elementais representam uma peça central do sistema de combate de Genshin Impact. Compreender e dominar estas interações pode melhorar drasticamente a proficiência em batalha.</p><p>Existem múltiplos fatores a considerar ao desencadear Reações Elementais como a aura, ativador (<em>trigger</em>), decaimento (<em>decay</em>), etc. A Teoria dos Medidores Elementais (<em>Elemental Gauge Theory</em>) e o Tempo de Recarga Interno (<em>Internal Cooldown, ICD</em>) desempenharão um papel importante para ajudar os jogadores a compreender a complexidade por trás das Reações Elementais.</p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/22/42646513/e03d84da04797c0ad0d6bd99c0d6ed57_7349691488119184487.png"
+          }
+        ],
+        "isMaterial": true
+      }
+    ]
+  }
+}
