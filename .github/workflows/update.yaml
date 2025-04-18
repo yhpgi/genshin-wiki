@@ -1,0 +1,60 @@
+name: Update wiki
+
+on:
+  workflow_dispatch:
+  schedule:
+   - cron: '20 20 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: stable
+          components: clippy
+
+      - name: Update wiki data
+        run: |
+          cargo fmt
+          cargo run -- -l 'all'
+
+      - name: Commit and push wiki data
+        if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET_BRANCH: 'rel'
+        run: |
+          {
+            git clone "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" -b "$TARGET_BRANCH" result
+            cd result
+          } || {
+            mkdir -p result
+            cd result
+            git init
+            git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
+            git checkout --orphan "$TARGET_BRANCH"
+          }
+
+          rm -rf *
+          mkdir -p calendar detail list navigation example
+
+          cp -rf ../generated_wiki_data/calendar/* ./calendar/
+          cp -rf ../generated_wiki_data/detail/* ./detail/
+          cp -rf ../generated_wiki_data/list/* ./list/
+          cp -rf ../generated_wiki_data/navigation/* ./navigation/
+          cp -rf ../generated_wiki_data/merged/* ./example/
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add .
+
+          git commit -m "chore: update wiki data" -m "Triggered by run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+          git push origin HEAD:refs/heads/"$TARGET_BRANCH"
+          echo "Changes pushed successfully."
