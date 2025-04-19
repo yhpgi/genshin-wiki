@@ -12,17 +12,10 @@
   "menuName": "Artifacts",
   "version": 1743419643,
   "components": {
-    "baseInfo": [
-      {
-        "key": "Name",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Gilded Dreams"
-          }
-        ]
-      }
-    ],
+    "reliquarySetEffect": {
+      "twoSetEffect": "<p>Elemental Mastery +80.</p>",
+      "fourSetEffect": "<p>Within 8s of triggering an Elemental Reaction, the character equipping this will obtain buffs based on the Elemental Type of the other party members. ATK is increased by 14% for each party member whose Elemental Type is the same as the equipping character, and Elemental Mastery is increased by 50 for every party member with a different Elemental Type. Each of the aforementioned buffs will count up to 3 characters. This effect can be triggered once every 8s. The character who equips this can still trigger its effects when not on the field.</p>"
+    },
     "story": [
       {
         "title": "Dreaming Steelbloom",
@@ -70,43 +63,17 @@
         ]
       }
     ],
-    "reliquarySetEffect": {
-      "twoSetEffect": "<p>Elemental Mastery +80.</p>",
-      "fourSetEffect": "<p>Within 8s of triggering an Elemental Reaction, the character equipping this will obtain buffs based on the Elemental Type of the other party members. ATK is increased by 14% for each party member whose Elemental Type is the same as the equipping character, and Elemental Mastery is increased by 50 for every party member with a different Elemental Type. Each of the aforementioned buffs will count up to 3 characters. This effect can be triggered once every 8s. The character who equips this can still trigger its effects when not on the field.</p>"
-    },
     "artifactList": {
-      "plume_of_death": {
-        "title": "Feather of Judgment",
-        "position": "Plume of Death",
+      "flower_of_life": {
+        "title": "Dreaming Steelbloom",
+        "position": "Flower of Life",
         "desc": [
           {
             "type": "RichText",
-            "text": "This special feather was once used to weigh the hearts of the guilty, but it has since lost its original function."
+            "text": "A flower bud made of hammered dark gold. Its crimson core is wrapped by petals that shall never open."
           }
         ],
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/b195ea9ea3c908859ea4e09e409305a2_7989292675371443357.png"
-      },
-      "goblet_of_eonothem": {
-        "title": "Honeyed Final Feast",
-        "position": "Goblet of Eonothem",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "A wine cup that was once used at a grand and ancient feast. It has now lost much of that luster."
-          }
-        ],
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/03/31/151578876/3668bbfcc8d7242aa295b7e073e71d9f_7073112547863600765.png"
-      },
-      "sands_of_eon": {
-        "title": "The Sunken Years",
-        "position": "Sands of Eon",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "This dark-golden sundial seems to tell the ancient tale of the desert."
-          }
-        ],
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/03/31/151578876/8842156fb124596d6a0d7aa56f8483e0_5470864437485294807.png"
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/ae8a2c6f24df66e1bd7cc2dbd83d330d_9176911893609858619.png"
       },
       "circlet_of_logos": {
         "title": "Shadow of the Sand King",
@@ -119,17 +86,50 @@
         ],
         "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/03/31/151578876/892e17a4a5d0b9438bf3581d88bf209e_3455825961111195436.png"
       },
-      "flower_of_life": {
-        "title": "Dreaming Steelbloom",
-        "position": "Flower of Life",
+      "sands_of_eon": {
+        "title": "The Sunken Years",
+        "position": "Sands of Eon",
         "desc": [
           {
             "type": "RichText",
-            "text": "A flower bud made of hammered dark gold. Its crimson core is wrapped by petals that shall never open."
+            "text": "This dark-golden sundial seems to tell the ancient tale of the desert."
           }
         ],
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/ae8a2c6f24df66e1bd7cc2dbd83d330d_9176911893609858619.png"
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/03/31/151578876/8842156fb124596d6a0d7aa56f8483e0_5470864437485294807.png"
+      },
+      "goblet_of_eonothem": {
+        "title": "Honeyed Final Feast",
+        "position": "Goblet of Eonothem",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "A wine cup that was once used at a grand and ancient feast. It has now lost much of that luster."
+          }
+        ],
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/03/31/151578876/3668bbfcc8d7242aa295b7e073e71d9f_7073112547863600765.png"
+      },
+      "plume_of_death": {
+        "title": "Feather of Judgment",
+        "position": "Plume of Death",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "This special feather was once used to weigh the hearts of the guilty, but it has since lost its original function."
+          }
+        ],
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/b195ea9ea3c908859ea4e09e409305a2_7989292675371443357.png"
       }
-    }
+    },
+    "baseInfo": [
+      {
+        "key": "Name",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Gilded Dreams"
+          }
+        ]
+      }
+    ]
   }
 }

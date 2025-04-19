@@ -5,34 +5,92 @@
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/8530ed16338ca3786d7e7da69a895036_9122782491500527107.png",
   "filterValues": {
     "cardCharacterElement": "풀 원소",
-    "cardCharacterObtainingMethod": "캐릭터 초대",
-    "cardCharacterChargingPoint": "원소 에너지: 2",
-    "cardCharacterWeaponType": "법구",
     "cardCharacterCamp": [
       "리월"
-    ]
+    ],
+    "cardCharacterWeaponType": "법구",
+    "cardCharacterChargingPoint": "원소 에너지: 2",
+    "cardCharacterObtainingMethod": "캐릭터 초대"
   },
   "menuId": 17,
   "menuName": "캐릭터 카드",
   "version": 1718576810,
   "components": {
-    "tcg": {
-      "headerImgs": [
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/8530ed16338ca3786d7e7da69a895036_9122782491500527107.png",
-          "imgDesc": "일반 커버"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/6cd0232fa00dce183328b3e7f86a6445_6253199429887311526.png",
-          "imgDesc": "뒷면 커버 「리월」"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/aae48385cbdad2fff72874023b5a067d_6919367248833153616.gif",
-          "imgDesc": "환영 커버"
-        }
-      ],
-      "hp": 10
-    },
+    "talent": [
+      {
+        "key": "금궤 침술",
+        "title": "금궤 침술",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/95142c2955e1896817dc3d6ff9639ac5_6500246598480540.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffe14b>일반 공격</color>\n<color=#99ff88>풀 원소 피해</color> 를 1pt 준다."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "태소 진단",
+        "title": "태소 진단",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/02943d17a2ad29f325fdac70651d2bae_2298189789230256836.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffe14b>원소전투 스킬</color>\n<color=#99ff88>풀 원소 피해</color> 를 1pt 주고 <color=#ffffff>사역령</color> 을 소환한다."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "치유 전형론",
+        "title": "치유 전형론",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/ed10b8e3def17c518055b3421bfcb94a_8862921195882229986.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffe14b>원소폭발</color>\n<color=#ffffff>진맥</color> 과 <color=#ffffff>무간 보호막</color> 을 생성한다.\n<color=#ffffff>진맥</color>\n<color=#ffe14b>출전 상태</color>\n<color=#ffffff>행동 단계 시작 시: 무간 보호막</color> 을 생성한다.\n<color=#ffffff>사용 가능 횟수: 2</color>\n<color=#ffffff>무간 보호막</color>\n<color=#ffe14b>출전 상태</color>\n아군 출전 캐릭터에게 <color=#ffffff>보호막을 1pt</color> 제공한다.\n<color=#ffffff>해당 효과가 제거되거나 중복 생성 시:</color> <color=#99ff88>풀 원소 피해</color> 를 1pt 주고 아군 출전 캐릭터의 HP를 1pt 치유한다."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "사역령",
+        "title": "사역령",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/db13288db6b90ec33f8adc2656d2019f_8192319096100877810.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffe14b>소환물</color>\n<color=#ffffff>종료 단계:</color> <color=#99ff88>풀 원소 피해</color> 를 1pt 주고 아군 출전 캐릭터의 HP를 1pt 치유한다.\n<color=#ffffff>사용 가능 횟수: 1</color>"
+          }
+        ],
+        "attributes": [],
+        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/a3d29e698acee488ea48e7cd36af0835_1318578777214723402.png"
+      },
+      {
+        "key": "풀 원소 피해",
+        "title": "풀 원소 피해",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/e8cff941b5a0ff248efde360ec9e91fe_4781034904465947197.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "풀 원소 부착 시 다음 원소 반응이 발생할 수 있다.\n[ <color=#99ff88>풀</color> + <color=#80c0ff>물</color> ] <color=#ffffff>개화</color> : 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [ <color=#ffffff>풀 원핵</color> ]을 생성한다.\n[ <color=#99ff88>풀</color> + <color=#ff9999>불</color> ] <color=#ffffff>연소</color> : 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 가하는 [ <color=#ffffff>불타는 화염</color> ]을 생성한다. (사용 가능 횟수: 1회, 최대 중첩수: 2)\n[ <color=#99ff88>풀</color> + <color=#ffacff>번개</color> ] <color=#ffffff>활성</color> : 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [ <color=#ffffff>격화 영역</color> ]을 생성한다."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "규칙 설명",
+        "title": "규칙 설명",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/245c229cf6f7364c7c9a7aea3db1a1ad_8771670355748136598.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ece5d8>사용 가능 횟수</color>\n해당 카드의 효과가 발동하면 <color=#ffffff>사용 가능 횟수</color> 가 1회 차감된다.\n<color=#ffffff>사용 가능 횟수</color> 가 전부 소진되면 즉시 해당 패를 버린다.\n<color=#ece5d8>보호막</color>\n해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+          }
+        ],
+        "attributes": []
+      }
+    ],
     "customize": [
       {
         "type": "Heading",
@@ -260,81 +318,23 @@
         "displayStyle": "card"
       }
     ],
-    "talent": [
-      {
-        "key": "금궤 침술",
-        "title": "금궤 침술",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/95142c2955e1896817dc3d6ff9639ac5_6500246598480540.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffe14b>일반 공격</color>\n<color=#99ff88>풀 원소 피해</color> 를 1pt 준다."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "태소 진단",
-        "title": "태소 진단",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/02943d17a2ad29f325fdac70651d2bae_2298189789230256836.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffe14b>원소전투 스킬</color>\n<color=#99ff88>풀 원소 피해</color> 를 1pt 주고 <color=#ffffff>사역령</color> 을 소환한다."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "치유 전형론",
-        "title": "치유 전형론",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/ed10b8e3def17c518055b3421bfcb94a_8862921195882229986.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffe14b>원소폭발</color>\n<color=#ffffff>진맥</color> 과 <color=#ffffff>무간 보호막</color> 을 생성한다.\n<color=#ffffff>진맥</color>\n<color=#ffe14b>출전 상태</color>\n<color=#ffffff>행동 단계 시작 시: 무간 보호막</color> 을 생성한다.\n<color=#ffffff>사용 가능 횟수: 2</color>\n<color=#ffffff>무간 보호막</color>\n<color=#ffe14b>출전 상태</color>\n아군 출전 캐릭터에게 <color=#ffffff>보호막을 1pt</color> 제공한다.\n<color=#ffffff>해당 효과가 제거되거나 중복 생성 시:</color> <color=#99ff88>풀 원소 피해</color> 를 1pt 주고 아군 출전 캐릭터의 HP를 1pt 치유한다."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "사역령",
-        "title": "사역령",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/db13288db6b90ec33f8adc2656d2019f_8192319096100877810.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffe14b>소환물</color>\n<color=#ffffff>종료 단계:</color> <color=#99ff88>풀 원소 피해</color> 를 1pt 주고 아군 출전 캐릭터의 HP를 1pt 치유한다.\n<color=#ffffff>사용 가능 횟수: 1</color>"
-          }
-        ],
-        "attributes": [],
-        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/a3d29e698acee488ea48e7cd36af0835_1318578777214723402.png"
-      },
-      {
-        "key": "풀 원소 피해",
-        "title": "풀 원소 피해",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/e8cff941b5a0ff248efde360ec9e91fe_4781034904465947197.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "풀 원소 부착 시 다음 원소 반응이 발생할 수 있다.\n[ <color=#99ff88>풀</color> + <color=#80c0ff>물</color> ] <color=#ffffff>개화</color> : 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [ <color=#ffffff>풀 원핵</color> ]을 생성한다.\n[ <color=#99ff88>풀</color> + <color=#ff9999>불</color> ] <color=#ffffff>연소</color> : 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 가하는 [ <color=#ffffff>불타는 화염</color> ]을 생성한다. (사용 가능 횟수: 1회, 최대 중첩수: 2)\n[ <color=#99ff88>풀</color> + <color=#ffacff>번개</color> ] <color=#ffffff>활성</color> : 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [ <color=#ffffff>격화 영역</color> ]을 생성한다."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "규칙 설명",
-        "title": "규칙 설명",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/245c229cf6f7364c7c9a7aea3db1a1ad_8771670355748136598.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ece5d8>사용 가능 횟수</color>\n해당 카드의 효과가 발동하면 <color=#ffffff>사용 가능 횟수</color> 가 1회 차감된다.\n<color=#ffffff>사용 가능 횟수</color> 가 전부 소진되면 즉시 해당 패를 버린다.\n<color=#ece5d8>보호막</color>\n해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
-          }
-        ],
-        "attributes": []
-      }
-    ],
+    "tcg": {
+      "headerImgs": [
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/8530ed16338ca3786d7e7da69a895036_9122782491500527107.png",
+          "imgDesc": "일반 커버"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/6cd0232fa00dce183328b3e7f86a6445_6253199429887311526.png",
+          "imgDesc": "뒷면 커버 「리월」"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/163795657/aae48385cbdad2fff72874023b5a067d_6919367248833153616.gif",
+          "imgDesc": "환영 커버"
+        }
+      ],
+      "hp": 10
+    },
     "baseInfo": [
       {
         "key": "카드 이름",
