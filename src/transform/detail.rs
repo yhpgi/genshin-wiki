@@ -474,13 +474,6 @@ async fn transform_video_collection(
         Value::String(s) => {
             let trimmed = s.trim();
             if trimmed.is_empty() || trimmed == "null" {
-                log(
-                    LogLevel::Info,
-                    &format!(
-                        "video_collection data is empty or null string for [{} / {}]",
-                        lang, page_id
-                    ),
-                );
                 return Ok(vec![]);
             }
             match from_str::<ApiVideoCollectionDataList>(trimmed) {
@@ -525,13 +518,6 @@ async fn transform_video_collection(
             }
         }
         Value::Null => {
-            log(
-                LogLevel::Info,
-                &format!(
-                    "video_collection data is JSON null for [{} / {}]",
-                    lang, page_id
-                ),
-            );
             return Ok(vec![]);
         }
         _ => {
