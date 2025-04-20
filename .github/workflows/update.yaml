@@ -21,7 +21,7 @@ jobs:
       - name: Update wiki data
         run: |
           cargo fmt
-          cargo run -- -l 'all'
+          cargo run --release -- -l 'all'
 
       - name: Commit and push wiki data
         if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
