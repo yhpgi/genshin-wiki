@@ -40,7 +40,224 @@
         "isMaterial": true
       }
     ],
+    "galleryCharacter": [
+      {
+        "key": "DGT physiques",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/05/267357714/6c5ed1eeb09d687c7b8c8cec217c8f63_3573169150745648646.png"
+      },
+      {
+        "key": "DGT de Réactions élémentaires",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/05/267357714/6bb6c739a1c6f8aae3dd898604d75339_339471042214199252.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Les Réactions d'addition et d'amplification ont un membre spécial dans la formule de calcul des DGT.</color>"
+          }
+        ]
+      },
+      {
+        "key": "DGT de Réactions élémentaires",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/05/267357714/f68558a58bc96b9836586c2cb823d99d_8748461846913767254.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Les Réactions de transformation possèdent une formule de calcul des DGT à part entière.</color>"
+          }
+        ]
+      },
+      {
+        "key": "Bonus de DGT",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/05/267357714/166446e96948e4800450695c3960b927_253072310102879286.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Certains Bonus de DGT seront indiqués par un icone spécifique au-dessus de la barre des PV du personnage.</color>"
+          }
+        ]
+      }
+    ],
     "customize": [
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Les réactions de transformation sont : Fleurissement, Exubérance, Bourgeonnement, Brûlure, Surcharge, Électrocution, Supraconduction, Brise-glace et Dispersion.</color>\n<color=#ffffff73>Les Réactions de transformation ignorent la DÉF ennemi mais sont affectées par la</color> <color=#ffffffd9>RÉS ennemi</color> <color=#ffffff73>. Elles ne peuvent pas toucher en coup critique (excepté grâce à l'effet de la deuxième constellation de Nahida, qui permet à Fleurissement, Exubérance, Bourgeonnement et Brûlure de toucher en coup critique avec des valeurs définies de 20 % de Taux CRIT et 100 % de DGT CRIT). Seuls le</color> <color=#ffffffd9>NIV et la ME du personnage déclenchant la réaction</color> <color=#ffffff73>importent.</color>\n<color=#ffffff73>Exemple : Si Fleurissement est déclenché par un personnage Dendro (appliquant l'élément Dendro sur Hydro), le NIV et la ME du personnage Dendro ainsi que le RÉS Dendro ennemi sont pris en compte dans le calcul des DGT de la réaction.</color>\n<color=#ffffff73>Ainsi, les DGT des Réactions de transformations sont calculés grâce à la formule suivante :</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>DGT de Réaction de transformation = Multiplicateur RÉS ennemi × Multiplicateur Réaction × Multiplicateur NIV personnage ×</color>\n<color=#ffffffd9>( 100 % + Multiplicateur Bonus ME + Bonus Réaction )</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Multiplicateur Réaction",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Chaque Réaction de transformation possède son propre Multiplicateur Réaction :"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Réaction</color>\n<color=#ffffff>Multiplicateur Réaction</color>\nBourgeonnement, <color=#ffffff73>Exubérance</color>\n300 %\nSurcharge, Fleurissement\n200 %\nBrise-glace\n150 %\nÉlectrocution\n120 %\nDispersion\n60 %\nSupraconduction\n50 %\nBrûlure\n25 %",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Multiplicateur NIV personnage",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Les personnages possèdent un Multiplicateur NIV qui dépend de leur NIV actuel :"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>NIV personnage</color>\n<color=#ffffff>Multiplicateur NIV personnage</color>\n60\n492,88\n70\n765,64\n80\n1077,44\n85\n1253,84\n90\n1446,85",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Multiplicateur Bonus ME",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Pour le Multiplicateur Bonus ME, seule la ME totale du personnage qui déclenche la réaction, telle qu’indiquée dans l'écran des statistiques de celui-ci, est prise en compte.</color>\n<color=#ffffff73>Le multiplicateur est calculé comme suit :</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Multiplicateur Bonus ME = ( EM × 16 ) / ( ME + 2000 )</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Bonus Réaction",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Il existe des Bonus Réaction pour les réactions de transformation :"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Personnages</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "Mona",
+        "desc": "Jeune astromancienne mystérieuse, Mona se surnomme elle-même « la grande astromancienne Mona », et fait preuve d'une force singulière et d'une érudition hors-norme qui ne désavouent pas cette appellation.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Première constellation</color>\nLes effets des <color=#80c0ff>réactions liées à l'élément Hydro</color> sont renforcés pendant 8 s lorsque l'attaque de vos personnages dans l'équipe touche un ennemi marqué par un présage :\n· Les DGT d'Électrocution, d'Évaporation, de Dispersion Hydro augmentent de 15 %.\n· La durée de Gel augmente de 15 %.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "Nilou",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">La star du théâtre Zubayr. Pleine de chaleur et d&#39;innocence, ses danses sont vives et élégantes.</span></p><p><em><span style=\"color: rgba(255, 255, 255, 0.65)\">« Qu&#39;est-ce qu&#39;il a de spécial, ce petit théâtre ? Si elle partait avec moi en tournée à travers Teyvat, elle gagnerait tous les moras dont elle pourrait rêver... Hélas, elle est trop candide, au point de ne pas connaître sa propre valeur. » — Dori</span></em></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/16/158750877/586d726f9ebda3506c78beaaa41f13b6_7952156413041950089.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Aptitude passive d'élévation 4</color>\nPour chaque tranche de 1 000 au-dessus de 30 000 PV max que Nilou possède, les DGT infligés par les noyaux d'abondance déclenchés par les personnages sous l'effet de Prime du calice d'or augmentent de 9 %.\nLes DGT des noyaux d'abondance peuvent être augmentés d'un maximum de 400 % de cette manière.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "Kaveh",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un célèbre architecte de Sumeru, excessivement préoccupé par bon nombre de choses. Prônant l'esthétisme, il est troublé par la réalité.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/03/43281454/2270aba02b92034d7d76b4426be8f53b_8084314715738816443.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Déchaînement élémentaire</color>\nPendant la durée du Déchaînement élémentaire de Kaveh, les effets suivants s'appliquent <color=#ffffff73>:</color>\n<color=#ffffff73>· La portée des attaques normales, chargées et plongeantes de Kaveh est augmentée et ses DGT d'attaque sont convertis en</color> <color=#99ff88>DGT Dendro</color> <color=#ffffff73>ne pouvant pas être enchantés.</color>\n<color=#ffffff73>· Les DGT infligés lors de l'éclatement des noyaux Dendro créés par vos personnages grâce aux réactions de Fleurissement sont augmentés.</color>\n<color=#ffffffd9>Quatrième constellation</color>\nLes DGT infligés par l'éclatement des noyaux Dendro générés lorsque Kaveh déclenche une réaction de Fleurissement augmentent de 60 %.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "Baizhu",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Le propriétaire du Cottage Bubu, un serpent blanc appelé Changsheng l'accompagnant. Médecin extrêmement compétent, ses véritables intentions restent cependant un mystère.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/01/35653081/05599650d7f42e1c4adde373de6b297d_902344357684236871.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Aptitude passive d'élévation 4</color>\n<color=#ffffff73>Les personnages soignés par un</color> <color=#ffd780>bouclier aseptique</color> <color=#ffffff73>obtiennent l'effet Année de la chance boisée : pour chaque tranche de 1 000 PV max que Baizhu possède jusqu'à 50 000 PV, les DGT infligés par leurs réactions de Brûlure, de Fleurissement, d'Exubérance et de Bourgeonnement augmentent de 2 % et ceux infligés par leurs réactions de Suractivation et de Propagation augmentent de 0,8 %, pendant 6 s.</color>\n<color=#ffffff>Artéfacts</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "Ombre de la Verte Chasseuse",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Set de 4 pièce(s)</color>\nAugmente les DGT infligés par Dispersion de 60 %.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "Sorcière des flammes ardentes",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Set de 4 pièce(s)</color>\nAugmente les DGT infligés par Surcharge, Brûlure et Bourgeonnement de 40 % et ceux d’Évaporation et de Fonte de 15 %. L’utilisation d’une compétence élémentaire augmente pendant 10 s l’effet du set de 2 pièces de 50 %. Cet effet peut être cumulé 3 fois maximum.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "Colère de tonnerre",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Set de 4 pièce(s)</color>\nAugmente les DGT infligés par Surcharge, Électrocution et Supraconduction de 40 %.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Fleur du paradis perdu",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/09/152708310/50ce09dfa5a91a33aa9cedfb15bcf2d1_1550121477098472457.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Set de 4 pièce(s)</color>\nAugmente les DGT infligés par les réactions de Fleurissement, d'Exubérance et de Bourgeonnement du personnage équipé de l'artéfact de 40 %. De plus, lorsque le personnage équipé de l'artéfact a déclenché une réaction de Fleurissement, d'Exubérance ou de Bourgeonnement, le bonus mentionné précédemment augmente de 25 % pendant 10 s. Cet effet peut être cumulé 4 fois maximum et déclenché une fois toutes les secondes.",
+        "alignment": "center"
+      },
       {
         "type": "Heading",
         "level": 1,
@@ -4264,223 +4481,6 @@
         "type": "RichText",
         "text": "<color=#ffffffd9>Multiplicateur CRIT = 100 % + DGT CRIT</color>",
         "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Les réactions de transformation sont : Fleurissement, Exubérance, Bourgeonnement, Brûlure, Surcharge, Électrocution, Supraconduction, Brise-glace et Dispersion.</color>\n<color=#ffffff73>Les Réactions de transformation ignorent la DÉF ennemi mais sont affectées par la</color> <color=#ffffffd9>RÉS ennemi</color> <color=#ffffff73>. Elles ne peuvent pas toucher en coup critique (excepté grâce à l'effet de la deuxième constellation de Nahida, qui permet à Fleurissement, Exubérance, Bourgeonnement et Brûlure de toucher en coup critique avec des valeurs définies de 20 % de Taux CRIT et 100 % de DGT CRIT). Seuls le</color> <color=#ffffffd9>NIV et la ME du personnage déclenchant la réaction</color> <color=#ffffff73>importent.</color>\n<color=#ffffff73>Exemple : Si Fleurissement est déclenché par un personnage Dendro (appliquant l'élément Dendro sur Hydro), le NIV et la ME du personnage Dendro ainsi que le RÉS Dendro ennemi sont pris en compte dans le calcul des DGT de la réaction.</color>\n<color=#ffffff73>Ainsi, les DGT des Réactions de transformations sont calculés grâce à la formule suivante :</color>"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>DGT de Réaction de transformation = Multiplicateur RÉS ennemi × Multiplicateur Réaction × Multiplicateur NIV personnage ×</color>\n<color=#ffffffd9>( 100 % + Multiplicateur Bonus ME + Bonus Réaction )</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "Multiplicateur Réaction",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Chaque Réaction de transformation possède son propre Multiplicateur Réaction :"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Réaction</color>\n<color=#ffffff>Multiplicateur Réaction</color>\nBourgeonnement, <color=#ffffff73>Exubérance</color>\n300 %\nSurcharge, Fleurissement\n200 %\nBrise-glace\n150 %\nÉlectrocution\n120 %\nDispersion\n60 %\nSupraconduction\n50 %\nBrûlure\n25 %",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "Multiplicateur NIV personnage",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Les personnages possèdent un Multiplicateur NIV qui dépend de leur NIV actuel :"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>NIV personnage</color>\n<color=#ffffff>Multiplicateur NIV personnage</color>\n60\n492,88\n70\n765,64\n80\n1077,44\n85\n1253,84\n90\n1446,85",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "Multiplicateur Bonus ME",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Pour le Multiplicateur Bonus ME, seule la ME totale du personnage qui déclenche la réaction, telle qu’indiquée dans l'écran des statistiques de celui-ci, est prise en compte.</color>\n<color=#ffffff73>Le multiplicateur est calculé comme suit :</color>"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Multiplicateur Bonus ME = ( EM × 16 ) / ( ME + 2000 )</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "Bonus Réaction",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Il existe des Bonus Réaction pour les réactions de transformation :"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Personnages</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 37,
-        "name": "Mona",
-        "desc": "Jeune astromancienne mystérieuse, Mona se surnomme elle-même « la grande astromancienne Mona », et fait preuve d'une force singulière et d'une érudition hors-norme qui ne désavouent pas cette appellation.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Première constellation</color>\nLes effets des <color=#80c0ff>réactions liées à l'élément Hydro</color> sont renforcés pendant 8 s lorsque l'attaque de vos personnages dans l'équipe touche un ennemi marqué par un présage :\n· Les DGT d'Électrocution, d'Évaporation, de Dispersion Hydro augmentent de 15 %.\n· La durée de Gel augmente de 15 %.",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2812,
-        "name": "Nilou",
-        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">La star du théâtre Zubayr. Pleine de chaleur et d&#39;innocence, ses danses sont vives et élégantes.</span></p><p><em><span style=\"color: rgba(255, 255, 255, 0.65)\">« Qu&#39;est-ce qu&#39;il a de spécial, ce petit théâtre ? Si elle partait avec moi en tournée à travers Teyvat, elle gagnerait tous les moras dont elle pourrait rêver... Hélas, elle est trop candide, au point de ne pas connaître sa propre valeur. » — Dori</span></em></p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/16/158750877/586d726f9ebda3506c78beaaa41f13b6_7952156413041950089.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Aptitude passive d'élévation 4</color>\nPour chaque tranche de 1 000 au-dessus de 30 000 PV max que Nilou possède, les DGT infligés par les noyaux d'abondance déclenchés par les personnages sous l'effet de Prime du calice d'or augmentent de 9 %.\nLes DGT des noyaux d'abondance peuvent être augmentés d'un maximum de 400 % de cette manière.",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3608,
-        "name": "Kaveh",
-        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un célèbre architecte de Sumeru, excessivement préoccupé par bon nombre de choses. Prônant l'esthétisme, il est troublé par la réalité.</span></p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/03/43281454/2270aba02b92034d7d76b4426be8f53b_8084314715738816443.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Déchaînement élémentaire</color>\nPendant la durée du Déchaînement élémentaire de Kaveh, les effets suivants s'appliquent <color=#ffffff73>:</color>\n<color=#ffffff73>· La portée des attaques normales, chargées et plongeantes de Kaveh est augmentée et ses DGT d'attaque sont convertis en</color> <color=#99ff88>DGT Dendro</color> <color=#ffffff73>ne pouvant pas être enchantés.</color>\n<color=#ffffff73>· Les DGT infligés lors de l'éclatement des noyaux Dendro créés par vos personnages grâce aux réactions de Fleurissement sont augmentés.</color>\n<color=#ffffffd9>Quatrième constellation</color>\nLes DGT infligés par l'éclatement des noyaux Dendro générés lorsque Kaveh déclenche une réaction de Fleurissement augmentent de 60 %.",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3609,
-        "name": "Baizhu",
-        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Le propriétaire du Cottage Bubu, un serpent blanc appelé Changsheng l'accompagnant. Médecin extrêmement compétent, ses véritables intentions restent cependant un mystère.</span></p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/01/35653081/05599650d7f42e1c4adde373de6b297d_902344357684236871.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Aptitude passive d'élévation 4</color>\n<color=#ffffff73>Les personnages soignés par un</color> <color=#ffd780>bouclier aseptique</color> <color=#ffffff73>obtiennent l'effet Année de la chance boisée : pour chaque tranche de 1 000 PV max que Baizhu possède jusqu'à 50 000 PV, les DGT infligés par leurs réactions de Brûlure, de Fleurissement, d'Exubérance et de Bourgeonnement augmentent de 2 % et ceux infligés par leurs réactions de Suractivation et de Propagation augmentent de 0,8 %, pendant 6 s.</color>\n<color=#ffffff>Artéfacts</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2091,
-        "name": "Ombre de la Verte Chasseuse",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Set de 4 pièce(s)</color>\nAugmente les DGT infligés par Dispersion de 60 %.",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2085,
-        "name": "Sorcière des flammes ardentes",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Set de 4 pièce(s)</color>\nAugmente les DGT infligés par Surcharge, Brûlure et Bourgeonnement de 40 % et ceux d’Évaporation et de Fonte de 15 %. L’utilisation d’une compétence élémentaire augmente pendant 10 s l’effet du set de 2 pièces de 50 %. Cet effet peut être cumulé 3 fois maximum.",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2067,
-        "name": "Colère de tonnerre",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Set de 4 pièce(s)</color>\nAugmente les DGT infligés par Surcharge, Électrocution et Supraconduction de 40 %.",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3321,
-        "name": "Fleur du paradis perdu",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/09/152708310/50ce09dfa5a91a33aa9cedfb15bcf2d1_1550121477098472457.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Set de 4 pièce(s)</color>\nAugmente les DGT infligés par les réactions de Fleurissement, d'Exubérance et de Bourgeonnement du personnage équipé de l'artéfact de 40 %. De plus, lorsque le personnage équipé de l'artéfact a déclenché une réaction de Fleurissement, d'Exubérance ou de Bourgeonnement, le bonus mentionné précédemment augmente de 25 % pendant 10 s. Cet effet peut être cumulé 4 fois maximum et déclenché une fois toutes les secondes.",
-        "alignment": "center"
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "DGT physiques",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/05/267357714/6c5ed1eeb09d687c7b8c8cec217c8f63_3573169150745648646.png"
-      },
-      {
-        "key": "DGT de Réactions élémentaires",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/05/267357714/6bb6c739a1c6f8aae3dd898604d75339_339471042214199252.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Les Réactions d'addition et d'amplification ont un membre spécial dans la formule de calcul des DGT.</color>"
-          }
-        ]
-      },
-      {
-        "key": "DGT de Réactions élémentaires",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/05/267357714/f68558a58bc96b9836586c2cb823d99d_8748461846913767254.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Les Réactions de transformation possèdent une formule de calcul des DGT à part entière.</color>"
-          }
-        ]
-      },
-      {
-        "key": "Bonus de DGT",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/05/267357714/166446e96948e4800450695c3960b927_253072310102879286.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Certains Bonus de DGT seront indiqués par un icone spécifique au-dessus de la barre des PV du personnage.</color>"
-          }
-        ]
       }
     ]
   }
