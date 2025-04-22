@@ -7,6 +7,68 @@
   "menuName": "Carte personaggio",
   "version": 1677158389,
   "components": {
+    "talent": [
+      {
+        "key": "Steel Fang",
+        "title": "Steel Fang",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396185/10316b5178d5109d597f415d6e7903dc_8368774856945804558.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Normal Attack</color>\nDeals 2 <color=#ffffff>Physical DMG</color> ."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Claw and Thunder",
+        "title": "Claw and Thunder",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396185/5a7f4821eca7816e8d923684ccee651c_5472608320432600513.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Elemental Skill</color>\nDeals 3 <color=#ffacff>Electro DMG</color> ."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Lightning Fang",
+        "title": "Lightning Fang",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396185/898eb03f9942b7b7833a3c082a86fdef_43337737387285581.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Elemental Burst</color>\nDeals 5 <color=#ffacff>Electro DMG</color> . This character gains <color=#ffffff>The Wolf Within</color> .\n<color=#ece5d8>The Wolf Within</color>\n<color=#ffd780>Status</color>\n<color=#ffffff>After the character to which this is attached uses a Normal Attack or an Elemental Skill</color> : Deal 2 <color=#ffacff>Electro DMG</color> .\n<color=#ffffff>Duration (Rounds): 2</color>"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Electro DMG",
+        "title": "Electro DMG",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/05/35428890/11ea6117480145a30b7893f1e8bd7115_33283454010105710.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Applies Electro and can trigger the following Elemental Reactions:\n[ <color=#ffacff>Electro</color> + <color=#ff9999>Pyro</color> ] <color=#ffffff>Overloaded</color> : DMG +2 for this instance, the target is forcibly switched to the next character\n[ <color=#ffacff>Electro</color> + <color=#99ffff>Cryo</color> ] <color=#ffffff>Superconduct</color> : DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\n[ <color=#ffacff>Electro</color> + <color=#80c0ff>Hydro</color> ] <color=#ffffff>Electro-Charged</color> : DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\n[ <color=#ffacff>Electro</color> + <color=#99ff88>Dendro</color> ] <color=#ffffff>Quicken</color> : DMG +1 for this instance, creates a [ <color=#ffffff>Catalyzing Field</color> ] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Detailed Rules",
+        "title": "Detailed Rules",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/15/35428890/245c229cf6f7364c7c9a7aea3db1a1ad_7324966611157876976.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ece5d8>Physical DMG</color>\nPhysical DMG will not apply any Elements, nor can it engage in Elemental Reactions.\n<color=#ece5d8>Duration (Rounds)</color>\nEach time you reach the end of a Round, <color=#ffffff>Duration (Rounds)</color> -1.\nThis card will be discarded immediately once <color=#ffffff>Duration (Rounds)</color> runs out."
+          }
+        ],
+        "attributes": []
+      }
+    ],
     "tcg": {
       "headerImgs": [
         {
@@ -24,20 +86,104 @@
       ],
       "hp": 10
     },
-    "galleryCharacter": [
+    "baseInfo": [
       {
-        "key": "Elemental Burst",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/15/35428890/7ec750fa7020893a8bcc4f3fcd9176bc_7966079184226591733.gif",
-        "imgDesc": [
+        "key": "Name",
+        "value": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>Elemental Burst</color>\nLightning Fang"
+            "text": "Razor"
           }
         ]
       },
       {
-        "key": "Avatar Icon",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/15/35428890/af65eb4951456b9bca902f1a0195ce08_5438905411651173328.png"
+        "key": "Type",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Character Card"
+          }
+        ]
+      },
+      {
+        "key": "HP",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "10"
+          }
+        ]
+      },
+      {
+        "key": "Energy",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "3"
+          }
+        ]
+      },
+      {
+        "key": "Element",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Electro"
+          }
+        ]
+      },
+      {
+        "key": "Weapon",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Claymore"
+          }
+        ]
+      },
+      {
+        "key": "Faction",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Mondstadt"
+          }
+        ]
+      },
+      {
+        "key": "Talent",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3226,
+            "name": "Risveglio",
+            "desc": "<p><span style=\"color: #FFFFFF\">Razor: Awakening</span></p><p>The hunt is about to begin.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/35428890/c5cee39d24207d15ed0383b971e8afed_8942377550117248549.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Source",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Reward for inviting Razor to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with him"
+          }
+        ]
+      },
+      {
+        "key": "Character Entry",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 48,
+            "name": "Razor",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un ragazzo che vive con i lupi nel Regno dei Lupi di Mondstadt, lontano dalla civiltà umana. Rapido come il fulmine.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Razor_icon.png"
+          }
+        ],
+        "isMaterial": true
       }
     ],
     "customize": [
@@ -393,166 +539,20 @@
         "text": "*Counts player level at the start of weekly reset"
       }
     ],
-    "baseInfo": [
+    "galleryCharacter": [
       {
-        "key": "Name",
-        "value": [
+        "key": "Elemental Burst",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/15/35428890/7ec750fa7020893a8bcc4f3fcd9176bc_7966079184226591733.gif",
+        "imgDesc": [
           {
             "type": "RichText",
-            "text": "Razor"
+            "text": "<color=#ffd780>Elemental Burst</color>\nLightning Fang"
           }
         ]
       },
       {
-        "key": "Type",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Character Card"
-          }
-        ]
-      },
-      {
-        "key": "HP",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "10"
-          }
-        ]
-      },
-      {
-        "key": "Energy",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "3"
-          }
-        ]
-      },
-      {
-        "key": "Element",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Electro"
-          }
-        ]
-      },
-      {
-        "key": "Weapon",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Claymore"
-          }
-        ]
-      },
-      {
-        "key": "Faction",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Mondstadt"
-          }
-        ]
-      },
-      {
-        "key": "Talent",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3226,
-            "name": "Risveglio",
-            "desc": "<p><span style=\"color: #FFFFFF\">Razor: Awakening</span></p><p>The hunt is about to begin.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/35428890/c5cee39d24207d15ed0383b971e8afed_8942377550117248549.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Source",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Reward for inviting Razor to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with him"
-          }
-        ]
-      },
-      {
-        "key": "Character Entry",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 48,
-            "name": "Razor",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un ragazzo che vive con i lupi nel Regno dei Lupi di Mondstadt, lontano dalla civiltà umana. Rapido come il fulmine.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Razor_icon.png"
-          }
-        ],
-        "isMaterial": true
-      }
-    ],
-    "talent": [
-      {
-        "key": "Steel Fang",
-        "title": "Steel Fang",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396185/10316b5178d5109d597f415d6e7903dc_8368774856945804558.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Normal Attack</color>\nDeals 2 <color=#ffffff>Physical DMG</color> ."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Claw and Thunder",
-        "title": "Claw and Thunder",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396185/5a7f4821eca7816e8d923684ccee651c_5472608320432600513.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Elemental Skill</color>\nDeals 3 <color=#ffacff>Electro DMG</color> ."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Lightning Fang",
-        "title": "Lightning Fang",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396185/898eb03f9942b7b7833a3c082a86fdef_43337737387285581.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Elemental Burst</color>\nDeals 5 <color=#ffacff>Electro DMG</color> . This character gains <color=#ffffff>The Wolf Within</color> .\n<color=#ece5d8>The Wolf Within</color>\n<color=#ffd780>Status</color>\n<color=#ffffff>After the character to which this is attached uses a Normal Attack or an Elemental Skill</color> : Deal 2 <color=#ffacff>Electro DMG</color> .\n<color=#ffffff>Duration (Rounds): 2</color>"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Electro DMG",
-        "title": "Electro DMG",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/05/35428890/11ea6117480145a30b7893f1e8bd7115_33283454010105710.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Applies Electro and can trigger the following Elemental Reactions:\n[ <color=#ffacff>Electro</color> + <color=#ff9999>Pyro</color> ] <color=#ffffff>Overloaded</color> : DMG +2 for this instance, the target is forcibly switched to the next character\n[ <color=#ffacff>Electro</color> + <color=#99ffff>Cryo</color> ] <color=#ffffff>Superconduct</color> : DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\n[ <color=#ffacff>Electro</color> + <color=#80c0ff>Hydro</color> ] <color=#ffffff>Electro-Charged</color> : DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\n[ <color=#ffacff>Electro</color> + <color=#99ff88>Dendro</color> ] <color=#ffffff>Quicken</color> : DMG +1 for this instance, creates a [ <color=#ffffff>Catalyzing Field</color> ] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Detailed Rules",
-        "title": "Detailed Rules",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/15/35428890/245c229cf6f7364c7c9a7aea3db1a1ad_7324966611157876976.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ece5d8>Physical DMG</color>\nPhysical DMG will not apply any Elements, nor can it engage in Elemental Reactions.\n<color=#ece5d8>Duration (Rounds)</color>\nEach time you reach the end of a Round, <color=#ffffff>Duration (Rounds)</color> -1.\nThis card will be discarded immediately once <color=#ffffff>Duration (Rounds)</color> runs out."
-          }
-        ],
-        "attributes": []
+        "key": "Avatar Icon",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/15/35428890/af65eb4951456b9bca902f1a0195ce08_5438905411651173328.png"
       }
     ]
   }

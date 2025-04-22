@@ -4,18 +4,202 @@
   "desc": "<p><strong><span style=\"color: #FFFFFF\">Гроза в тумане</span></strong></p><p>...Словно туманная трава, что отравляет сознаие Электро цицинов, жажда насилия над своими врагами затмевает разум мага...</p>",
   "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/124137736/b9b0619a6587a2f893bf40b375cec043_4970312359934179415.png",
   "filterValues": {
+    "cardCharacterWeaponType": "Прочее",
     "cardCharacterElement": "Электро",
-    "cardCharacterChargingPoint": "Энергия: 2",
     "cardCharacterCamp": [
       "Фатуи"
     ],
     "cardCharacterObtainingMethod": "Испытания в таверне",
-    "cardCharacterWeaponType": "Прочее"
+    "cardCharacterChargingPoint": "Энергия: 2"
   },
   "menuId": 17,
   "menuName": "Карты персонажей",
   "version": 1713892666,
   "components": {
+    "talent": [
+      {
+        "key": "Грозовые разряды",
+        "title": "Грозовые разряды",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/124137736/464df75643b85d808ea7457d333c2520_785615290992077390.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Обычная атака</color>\nНаносит <color=#ffacff>Электро урон</color> , 1 ед."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Зов в тумане",
+        "title": "Зов в тумане",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/124137736/ba8a520b631a5349ea54ca1fad2ec264_361636496429789726.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Элементальный навык</color>\nПризывает помощника: <color=#ffffff>Электро цицин</color> ."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Громовая защита",
+        "title": "Громовая защита",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/124137736/58e7aa03ca09a144cdac07649148383f_1515369263516611066.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Взрыв стихии</color>\nНаносит <color=#ffacff>Электро урон</color> , 1 ед., этот персонаж получает <color=#ffacff>Эффект Электро</color> , создаёт <color=#ffffff>Купол Электро цицина</color> и подготавливает <color=#ffffff>Молниеносный взрыв</color> .\n<color=#ffffff>Купол Электро цицина</color>\n<color=#ffd780>Боевой статус</color>\nВаш активный персонаж получает <color=#ffffff>Щит, 1 ед</color> .\n<color=#ffffff>При создании</color> : если у вас на поле есть <color=#ffffff>Электро цицин</color> , то <color=#ffffff>Щит</color> увеличивается на число, равное числу <color=#ffffff>Кол-во применений</color> . <color=#ffffff>Щит</color> может увеличиться максимум на 3 ед.\n<color=#ffffff>Молниеносный взрыв</color>\n<color=#ffd780>Взрыв стихии</color>\nНа подготовку требуется 1 раунд.\nНаносит <color=#ffacff>Электро урон</color> , 2 ед."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Электро цицин",
+        "title": "Электро цицин",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/124137736/db13288db6b90ec33f8adc2656d2019f_2053424671433127713.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Помощник</color>\n<color=#ffffff>Финальная фаза</color> : наносит <color=#ffacff>Электро урон</color> , 1 ед.\n<color=#ffffff>Кол-во применений: 3</color> .\n<color=#ffffff>Когда противник разыграет суммарно 3 карты действия: Кол-во применений</color> этой карты увеличиваются на 1 ед. (но не более 3 ед.)\n<color=#ffffff>Когда Фатуи: Маг Электро цицинов получает урон, вызванный элементальной реакцией</color> : эта карта теряет 1 ед. <color=#ffffff>Кол-во применений</color> ."
+          }
+        ],
+        "attributes": [],
+        "talentImg": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/124137736/c32e8d1f898b13385973738aba9d5c6a_4401636058914876862.png"
+      },
+      {
+        "key": "Электро урон",
+        "title": "Электро урон",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/124137736/11ea6117480145a30b7893f1e8bd7115_6093944644945671567.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Создаёт эффект <color=#ffacff>Электро</color> и вызывает следующие реакции:\n<color=#ffffff>[</color> <color=#ffacff>Электро</color> <color=#ffffff>+</color> <color=#ff9999>Пиро</color> <color=#ffffff>] Перегрузка:</color> урон +2 (в этот раз), делает активным следующего персонажа противника\n<color=#ffffff>[</color> <color=#ffacff>Электро</color> <color=#ffffff>+</color> <color=#99ffff>Крио</color> <color=#ffffff>] Сверхпроводник:</color> урон +1 (в этот раз), наносит проникающий урон 1 ед. для всех персонажей противника, кроме цели\n<color=#ffffff>[</color> <color=#ffacff>Электро</color> <color=#ffffff>+</color> <color=#80c0ff>Гидро</color> <color=#ffffff>] Заряжен:</color> урон +1 (в этот раз), наносит проникающий урон 1 ед. для всех персонажей противника, кроме цели\n<color=#ffffff>[</color> <color=#ffacff>Электро</color> <color=#ffffff>+</color> <color=#99ff88>Дендро</color> <color=#ffffff>] Стимуляция:</color> урон +1 (в этот раз), создаёт <color=#ffffff>область катализа,</color> которая увеличит следующие два Дендро или Электро урона на 1 ед."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Подробные правила",
+        "title": "Подробные правила",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/124137736/245c229cf6f7364c7c9a7aea3db1a1ad_5964983698311747068.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ece5d8>Кол-во применений</color>\nКогда срабатывает эффект этой карты, расходуется 1 <color=#ffffff>применение</color> .\n<color=#ece5d8>Щит</color>\nЩит расходуется для защиты персонажа, который его экипировал, от урона.\nКогда <color=#ffffff>применения</color> кончаются, карта исчезает."
+          }
+        ],
+        "attributes": []
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "Название:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Фатуи: Маг Электро цицинов"
+          }
+        ]
+      },
+      {
+        "key": "Тип карты:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Карта персонажа"
+          }
+        ]
+      },
+      {
+        "key": "НР:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "10"
+          }
+        ]
+      },
+      {
+        "key": "Энергия:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "2"
+          }
+        ]
+      },
+      {
+        "key": "Элемент:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Электро"
+          }
+        ]
+      },
+      {
+        "key": "Оружие:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Прочее"
+          }
+        ]
+      },
+      {
+        "key": "Команда:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Фатуи"
+          }
+        ]
+      },
+      {
+        "key": "Способ получения:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Награда за победу над Фатуи: Магом Электро цицинов в Дружеской дуэли в «Кошкином хвосте»"
+          }
+        ]
+      },
+      {
+        "key": "Талант:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Пульсация Электро цицинов"
+          }
+        ]
+      },
+      {
+        "key": "Карта таланта:",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5165,
+            "name": "Пульсация Электро цицина",
+            "desc": "<p><strong><span style=\"color: #FFFFFF\">Маг Электро цицинов: Пульсация Электро цицина</span></strong></p><p>«Привет! Ты хочешь с нами поиграть?»</p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/124137736/1648e6b86dde2d740dfa01aa663a86be_1106553873352571607.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Страница существа:",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 2150,
+            "name": "Фатуи: Маг Электро цицинов",
+            "desc": "Маг Фатуи, управляющий в бою Электро цицинами. Их происхождение так же загадочно, как и их скрывающиеся под маской лица.<br/>Электро цицины сходят с ума от туманной травы, а сами призыватели цицинов теряют рассудок от игр со своей жертвой.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Fatui Electro Cicin Mage_icon.png"
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
     "customize": [
       {
         "type": "Heading",
@@ -203,190 +387,6 @@
       {
         "type": "RichText",
         "text": "<color=#9b9c9f>Одержите победу</color>"
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Название:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Фатуи: Маг Электро цицинов"
-          }
-        ]
-      },
-      {
-        "key": "Тип карты:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Карта персонажа"
-          }
-        ]
-      },
-      {
-        "key": "НР:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "10"
-          }
-        ]
-      },
-      {
-        "key": "Энергия:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "2"
-          }
-        ]
-      },
-      {
-        "key": "Элемент:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Электро"
-          }
-        ]
-      },
-      {
-        "key": "Оружие:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Прочее"
-          }
-        ]
-      },
-      {
-        "key": "Команда:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Фатуи"
-          }
-        ]
-      },
-      {
-        "key": "Способ получения:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Награда за победу над Фатуи: Магом Электро цицинов в Дружеской дуэли в «Кошкином хвосте»"
-          }
-        ]
-      },
-      {
-        "key": "Талант:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Пульсация Электро цицинов"
-          }
-        ]
-      },
-      {
-        "key": "Карта таланта:",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 5165,
-            "name": "Пульсация Электро цицина",
-            "desc": "<p><strong><span style=\"color: #FFFFFF\">Маг Электро цицинов: Пульсация Электро цицина</span></strong></p><p>«Привет! Ты хочешь с нами поиграть?»</p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/124137736/1648e6b86dde2d740dfa01aa663a86be_1106553873352571607.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Страница существа:",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 2150,
-            "name": "Фатуи: Маг Электро цицинов",
-            "desc": "Маг Фатуи, управляющий в бою Электро цицинами. Их происхождение так же загадочно, как и их скрывающиеся под маской лица.<br/>Электро цицины сходят с ума от туманной травы, а сами призыватели цицинов теряют рассудок от игр со своей жертвой.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Fatui Electro Cicin Mage_icon.png"
-          }
-        ],
-        "isMaterial": true
-      }
-    ],
-    "talent": [
-      {
-        "key": "Грозовые разряды",
-        "title": "Грозовые разряды",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/124137736/464df75643b85d808ea7457d333c2520_785615290992077390.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Обычная атака</color>\nНаносит <color=#ffacff>Электро урон</color> , 1 ед."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Зов в тумане",
-        "title": "Зов в тумане",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/124137736/ba8a520b631a5349ea54ca1fad2ec264_361636496429789726.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Элементальный навык</color>\nПризывает помощника: <color=#ffffff>Электро цицин</color> ."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Громовая защита",
-        "title": "Громовая защита",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/124137736/58e7aa03ca09a144cdac07649148383f_1515369263516611066.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Взрыв стихии</color>\nНаносит <color=#ffacff>Электро урон</color> , 1 ед., этот персонаж получает <color=#ffacff>Эффект Электро</color> , создаёт <color=#ffffff>Купол Электро цицина</color> и подготавливает <color=#ffffff>Молниеносный взрыв</color> .\n<color=#ffffff>Купол Электро цицина</color>\n<color=#ffd780>Боевой статус</color>\nВаш активный персонаж получает <color=#ffffff>Щит, 1 ед</color> .\n<color=#ffffff>При создании</color> : если у вас на поле есть <color=#ffffff>Электро цицин</color> , то <color=#ffffff>Щит</color> увеличивается на число, равное числу <color=#ffffff>Кол-во применений</color> . <color=#ffffff>Щит</color> может увеличиться максимум на 3 ед.\n<color=#ffffff>Молниеносный взрыв</color>\n<color=#ffd780>Взрыв стихии</color>\nНа подготовку требуется 1 раунд.\nНаносит <color=#ffacff>Электро урон</color> , 2 ед."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Электро цицин",
-        "title": "Электро цицин",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/124137736/db13288db6b90ec33f8adc2656d2019f_2053424671433127713.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Помощник</color>\n<color=#ffffff>Финальная фаза</color> : наносит <color=#ffacff>Электро урон</color> , 1 ед.\n<color=#ffffff>Кол-во применений: 3</color> .\n<color=#ffffff>Когда противник разыграет суммарно 3 карты действия: Кол-во применений</color> этой карты увеличиваются на 1 ед. (но не более 3 ед.)\n<color=#ffffff>Когда Фатуи: Маг Электро цицинов получает урон, вызванный элементальной реакцией</color> : эта карта теряет 1 ед. <color=#ffffff>Кол-во применений</color> ."
-          }
-        ],
-        "attributes": [],
-        "talentImg": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/124137736/c32e8d1f898b13385973738aba9d5c6a_4401636058914876862.png"
-      },
-      {
-        "key": "Электро урон",
-        "title": "Электро урон",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/124137736/11ea6117480145a30b7893f1e8bd7115_6093944644945671567.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Создаёт эффект <color=#ffacff>Электро</color> и вызывает следующие реакции:\n<color=#ffffff>[</color> <color=#ffacff>Электро</color> <color=#ffffff>+</color> <color=#ff9999>Пиро</color> <color=#ffffff>] Перегрузка:</color> урон +2 (в этот раз), делает активным следующего персонажа противника\n<color=#ffffff>[</color> <color=#ffacff>Электро</color> <color=#ffffff>+</color> <color=#99ffff>Крио</color> <color=#ffffff>] Сверхпроводник:</color> урон +1 (в этот раз), наносит проникающий урон 1 ед. для всех персонажей противника, кроме цели\n<color=#ffffff>[</color> <color=#ffacff>Электро</color> <color=#ffffff>+</color> <color=#80c0ff>Гидро</color> <color=#ffffff>] Заряжен:</color> урон +1 (в этот раз), наносит проникающий урон 1 ед. для всех персонажей противника, кроме цели\n<color=#ffffff>[</color> <color=#ffacff>Электро</color> <color=#ffffff>+</color> <color=#99ff88>Дендро</color> <color=#ffffff>] Стимуляция:</color> урон +1 (в этот раз), создаёт <color=#ffffff>область катализа,</color> которая увеличит следующие два Дендро или Электро урона на 1 ед."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Подробные правила",
-        "title": "Подробные правила",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/124137736/245c229cf6f7364c7c9a7aea3db1a1ad_5964983698311747068.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ece5d8>Кол-во применений</color>\nКогда срабатывает эффект этой карты, расходуется 1 <color=#ffffff>применение</color> .\n<color=#ece5d8>Щит</color>\nЩит расходуется для защиты персонажа, который его экипировал, от урона.\nКогда <color=#ffffff>применения</color> кончаются, карта исчезает."
-          }
-        ],
-        "attributes": []
       }
     ],
     "tcg": {

@@ -6,6 +6,57 @@
   "menuName": "NPC図鑑",
   "version": 1740750865,
   "components": {
+    "baseInfo": [
+      {
+        "key": "名前",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "章"
+          }
+        ]
+      },
+      {
+        "key": "国",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "璃月"
+          }
+        ]
+      },
+      {
+        "key": "所属",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "寒鋒鉄器"
+          }
+        ]
+      },
+      {
+        "key": "肩書き",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "「寒鋒鉄器」の鉄工職人"
+          }
+        ]
+      },
+      {
+        "key": "七聖召喚のカード",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3952,
+            "name": "章",
+            "desc": "<p><strong>百鍛千練からの宝剣・章</strong></p><p></p><p>鋭い剣になる前に、鉄塊はいつも色んな挫折を乗り越えなければならない。</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/07/02/132746206/c24d0348d669ec8a1b3b6443fff663ef_8856354775330534355.png"
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
     "textualResearch": [
       {
         "title": "チ虎岩告知板",
@@ -24,15 +75,6 @@
       }
     ],
     "customize": [
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "会話内容"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#37ffff>待機中：</color> 寒鋒鉄器…\n<color=#37ffff>章：</color> 武器の購入？それとも鍛造依頼？修理は無料でできるぞ。\n<color=#ffd780>分岐が発生</color>\n<color=#37ffff>旅人：</color> 鍛造依頼…\n<color=#37ffff>章：</color> 材料を持ってきたのか？確認するよ。\n鍛造画面へ\n<color=#ffffff>完了後</color>\n<color=#37ffff>章：</color> そういえば、この前の依頼はもう完了したぞ。他に依頼はあるのか？\n<color=#37ffff>旅人：</color> 璃月の鉱物について…\n<color=#ffd780>魔晶の塊の有無で分岐が発生</color>\n<color=#ffffff>魔晶の塊が範囲内にある場合</color>\n<color=#37ffff>章：</color> 璃月は岩王帝君の管轄だからな、ここの鉱石はお前さんを失望させないぞ。\n<color=#37ffff>章：</color> 俺は普段、無料で修理の仕事もしているおかげで、お客さんがたまに鉱石に関する情報をくれるんだ…\n<color=#37ffff>章：</color> 近頃「魔晶鉱」という変わった水晶鉱がたくさん発見されたらしくてな、その品質や色味は、普通の水晶鉱と比べもんにならない代物だ。\n<color=#37ffff>章：</color> しかし、あの鉱石の加工はかなり難しい。この俺でもお手上げでね…\n<color=#37ffff>章：</color> 加工の方法が分かったら、また俺のところに来てくれ。\n<color=#37ffff>章：</color> …鉱脈の位置は地図に描いておいたから、この辺りを探せば収穫があるはずだ。\n鉱物が豊富な採鉱地がマップにマークされる\n<color=#ffffff>魔晶の塊が範囲内にない場合</color>\n<color=#37ffff>章：</color> 鉱石か…この付近の採掘場所はほとんど行ったんだろ？\n<color=#37ffff>章：</color> こっちも新しい情報がないからな、時間を置いてからまた来てみてくれ。\n<color=#37ffff>旅人：</color> なにがある？\n<color=#37ffff>章：</color> 最高の鉱材、受け継がれた技術、安心して選ぶといい。\nショップ画面へ\n<color=#37ffff>旅人：</color> 「寒鋒鉄器」について…\n<color=#37ffff>章：</color> この工房はおやじが俺にくれたんだ。おやじは今軽策荘にいるよ。\n<color=#37ffff>章：</color> 親父は道具を俺に残してくれて、商売は人情だって教えてくれたんだ。\n<color=#37ffff>章：</color> 周りの鉱夫が壊れた鉄器を持ってくると、いつも代金なしで修理してるんだ。でも代わりにレアな鉱石があれば俺に教えてもらうようにしてる。\n<color=#37ffff>章：</color> 鉄職人はみんな最高の武器を作りたいからな。璃月は岩王帝君の領土だから、きっと他の場所では見られない最高の鉱石があるはすだ…\n<color=#37ffff>章：</color> 最高の武器を作ってこの老舗の名を上げるぞ！へへっ、お前も見かけたら教えてくれよ。\n<color=#37ffff>旅人：</color> さようなら。\n<color=#37ffff>章：</color> ああ、いつでも来てくれ。"
-      },
       {
         "type": "RichText",
         "text": "※特にアイテムの個数を表記しない場合は1個とする。\n※1日あたり5個まで購入可能である場合、5個/1日と表記する。"
@@ -163,57 +205,15 @@
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
         "amount": 600,
         "displayStyle": "card"
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "名前",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "章"
-          }
-        ]
       },
       {
-        "key": "国",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "璃月"
-          }
-        ]
+        "type": "Heading",
+        "level": 2,
+        "text": "会話内容"
       },
       {
-        "key": "所属",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "寒鋒鉄器"
-          }
-        ]
-      },
-      {
-        "key": "肩書き",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "「寒鋒鉄器」の鉄工職人"
-          }
-        ]
-      },
-      {
-        "key": "七聖召喚のカード",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3952,
-            "name": "章",
-            "desc": "<p><strong>百鍛千練からの宝剣・章</strong></p><p></p><p>鋭い剣になる前に、鉄塊はいつも色んな挫折を乗り越えなければならない。</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/07/02/132746206/c24d0348d669ec8a1b3b6443fff663ef_8856354775330534355.png"
-          }
-        ],
-        "isMaterial": true
+        "type": "RichText",
+        "text": "<color=#37ffff>待機中：</color> 寒鋒鉄器…\n<color=#37ffff>章：</color> 武器の購入？それとも鍛造依頼？修理は無料でできるぞ。\n<color=#ffd780>分岐が発生</color>\n<color=#37ffff>旅人：</color> 鍛造依頼…\n<color=#37ffff>章：</color> 材料を持ってきたのか？確認するよ。\n鍛造画面へ\n<color=#ffffff>完了後</color>\n<color=#37ffff>章：</color> そういえば、この前の依頼はもう完了したぞ。他に依頼はあるのか？\n<color=#37ffff>旅人：</color> 璃月の鉱物について…\n<color=#ffd780>魔晶の塊の有無で分岐が発生</color>\n<color=#ffffff>魔晶の塊が範囲内にある場合</color>\n<color=#37ffff>章：</color> 璃月は岩王帝君の管轄だからな、ここの鉱石はお前さんを失望させないぞ。\n<color=#37ffff>章：</color> 俺は普段、無料で修理の仕事もしているおかげで、お客さんがたまに鉱石に関する情報をくれるんだ…\n<color=#37ffff>章：</color> 近頃「魔晶鉱」という変わった水晶鉱がたくさん発見されたらしくてな、その品質や色味は、普通の水晶鉱と比べもんにならない代物だ。\n<color=#37ffff>章：</color> しかし、あの鉱石の加工はかなり難しい。この俺でもお手上げでね…\n<color=#37ffff>章：</color> 加工の方法が分かったら、また俺のところに来てくれ。\n<color=#37ffff>章：</color> …鉱脈の位置は地図に描いておいたから、この辺りを探せば収穫があるはずだ。\n鉱物が豊富な採鉱地がマップにマークされる\n<color=#ffffff>魔晶の塊が範囲内にない場合</color>\n<color=#37ffff>章：</color> 鉱石か…この付近の採掘場所はほとんど行ったんだろ？\n<color=#37ffff>章：</color> こっちも新しい情報がないからな、時間を置いてからまた来てみてくれ。\n<color=#37ffff>旅人：</color> なにがある？\n<color=#37ffff>章：</color> 最高の鉱材、受け継がれた技術、安心して選ぶといい。\nショップ画面へ\n<color=#37ffff>旅人：</color> 「寒鋒鉄器」について…\n<color=#37ffff>章：</color> この工房はおやじが俺にくれたんだ。おやじは今軽策荘にいるよ。\n<color=#37ffff>章：</color> 親父は道具を俺に残してくれて、商売は人情だって教えてくれたんだ。\n<color=#37ffff>章：</color> 周りの鉱夫が壊れた鉄器を持ってくると、いつも代金なしで修理してるんだ。でも代わりにレアな鉱石があれば俺に教えてもらうようにしてる。\n<color=#37ffff>章：</color> 鉄職人はみんな最高の武器を作りたいからな。璃月は岩王帝君の領土だから、きっと他の場所では見られない最高の鉱石があるはすだ…\n<color=#37ffff>章：</color> 最高の武器を作ってこの老舗の名を上げるぞ！へへっ、お前も見かけたら教えてくれよ。\n<color=#37ffff>旅人：</color> さようなら。\n<color=#37ffff>章：</color> ああ、いつでも来てくれ。"
       }
     ]
   }
