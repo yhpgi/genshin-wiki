@@ -5,16 +5,691 @@
   "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/11/291064744/5470f90694af13476e49be7b8346e2b1_7850030834879271268.png",
   "headerImgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/11/291064744/2760dd6c9638da46586032f7b4dc0ef8_553252449001251237.png",
   "filterValues": {
-    "characterProperty": "치명타 확률",
-    "characterRarity": "★5",
     "characterWeapon": "한손검",
     "characterVision": "바위 원소",
-    "characterRegion": "이나즈마성"
+    "characterRarity": "★5",
+    "characterRegion": "이나즈마성",
+    "characterProperty": "치명타 확률"
   },
   "menuId": 2,
   "menuName": "캐릭터 도감",
   "version": 1731326948,
   "components": {
+    "talent": [
+      {
+        "title": "일반 공격·직조 검술",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/94aa30ae75b8c7c6a9c64ab05bd5dda7_3928174472566950539.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>일반 공격</color>\n검으로 최대 4번 공격한다.\n<color=#ffd780>강공격</color>\n일정 스태미나를 소모해 순간적으로 전방을 향해 쌍검을 휘두른다.\n<color=#ffd780>낙하 공격</color>\n공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11"
+            ]
+          },
+          {
+            "key": "1단 공격 피해",
+            "values": [
+              "49.4%",
+              "53.4%",
+              "57.5%",
+              "63.2%",
+              "67.2%",
+              "71.8%",
+              "78.1%",
+              "84.5%",
+              "90.8%",
+              "97.7%",
+              "104.6%"
+            ]
+          },
+          {
+            "key": "2단 공격 피해",
+            "values": [
+              "46.8%",
+              "50.6%",
+              "54.5%",
+              "59.9%",
+              "63.7%",
+              "68.1%",
+              "74.1%",
+              "80.1%",
+              "86.0%",
+              "92.6%",
+              "99.1%"
+            ]
+          },
+          {
+            "key": "3단 공격 피해",
+            "values": [
+              "30.4%+30.4%",
+              "32.9%+32.9%",
+              "35.4%+35.4%",
+              "38.9%+38.9%",
+              "41.4%+41.4%",
+              "44.2%+44.2%",
+              "48.1%+48.1%",
+              "52.0%+52.0%",
+              "55.9%+55.9%",
+              "60.1%+60.1%",
+              "64.4%+64.4%"
+            ]
+          },
+          {
+            "key": "4단 공격 피해",
+            "values": [
+              "75.1%",
+              "81.2%",
+              "87.4%",
+              "96.1%",
+              "102.2%",
+              "109.2%",
+              "118.8%",
+              "128.4%",
+              "138.0%",
+              "148.5%",
+              "159.0%"
+            ]
+          },
+          {
+            "key": "강공격 피해",
+            "values": [
+              "54.3%+54.3%",
+              "58.7%+58.7%",
+              "63.1%+63.1%",
+              "69.5%+69.5%",
+              "73.9%+73.9%",
+              "78.9%+78.9%",
+              "85.9%+85.9%",
+              "92.8%+92.8%",
+              "99.8%+99.8%",
+              "107.4%+107.4%",
+              "114.9%+114.9%"
+            ]
+          },
+          {
+            "key": "강공격 스태미나 소모",
+            "values": [
+              "20.0pt",
+              "20.0pt",
+              "20.0pt",
+              "20.0pt",
+              "20.0pt",
+              "20.0pt",
+              "20.0pt",
+              "20.0pt",
+              "20.0pt",
+              "20.0pt",
+              "20.0pt"
+            ]
+          },
+          {
+            "key": "낙하 기간 피해",
+            "values": [
+              "63.9%",
+              "69.1%",
+              "74.3%",
+              "81.8%",
+              "87.0%",
+              "92.9%",
+              "101.1%",
+              "109.3%",
+              "117.5%",
+              "126.4%",
+              "135.3%"
+            ]
+          },
+          {
+            "key": "저공/고공 추락 충격 피해",
+            "values": [
+              "128%/160%",
+              "138%/173%",
+              "149%/186%",
+              "164%/204%",
+              "174%/217%",
+              "186%/232%",
+              "202%/253%",
+              "219%/273%",
+              "235%/293%",
+              "253%/316%",
+              "271%/338%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 92,
+              "name": "「천광」의 가르침",
+              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>스스로 모든 걸 달관했다고 자부하는 대군도, 영원히 저 높은 하늘의 빛을 손에 넣고 싶어 한다. 허나 나눌 길 없는 그 바람이, 찰나를 사는 인간으로 하여금 더욱 열렬하게 천광을 추구하게 만든다. 마치 불 속에 뛰어드는 불나방처럼 말이다</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Light_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1018,
+              "name": "떠도는 정령 코어 껍데기",
+              "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어. 미량의 원소가 담겨있다.<br>대부분의 에너지는 이미 흩어진 듯하다.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Husk_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 91,
+              "name": "「천광」의 인도",
+              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>찬란한 빛이 두꺼운 번개 구름에 가려져 있어도, 나루카미 신의 국토에는 여전히 종달새처럼 뇌광과 노해를 뚫고, 가혹한 죽음에 맞서 하늘의 빛을 쫓는 자들이 존재한다</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Light_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1019,
+              "name": "떠도는 정령 코어",
+              "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어.<br>이 원소 생물은 기이한 습성을 가지고 있어 주기적으로 무리를 지어 출현과 잠적을 반복한다.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 91,
+              "name": "「천광」의 인도",
+              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>찬란한 빛이 두꺼운 번개 구름에 가려져 있어도, 나루카미 신의 국토에는 여전히 종달새처럼 뇌광과 노해를 뚫고, 가혹한 죽음에 맞서 하늘의 빛을 쫓는 자들이 존재한다</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Light_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1019,
+              "name": "떠도는 정령 코어",
+              "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어.<br>이 원소 생물은 기이한 습성을 가지고 있어 주기적으로 무리를 지어 출현과 잠적을 반복한다.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 91,
+              "name": "「천광」의 인도",
+              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>찬란한 빛이 두꺼운 번개 구름에 가려져 있어도, 나루카미 신의 국토에는 여전히 종달새처럼 뇌광과 노해를 뚫고, 가혹한 죽음에 맞서 하늘의 빛을 쫓는 자들이 존재한다</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Light_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1019,
+              "name": "떠도는 정령 코어",
+              "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어.<br>이 원소 생물은 기이한 습성을 가지고 있어 주기적으로 무리를 지어 출현과 잠적을 반복한다.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 91,
+              "name": "「천광」의 인도",
+              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>찬란한 빛이 두꺼운 번개 구름에 가려져 있어도, 나루카미 신의 국토에는 여전히 종달새처럼 뇌광과 노해를 뚫고, 가혹한 죽음에 맞서 하늘의 빛을 쫓는 자들이 존재한다</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Light_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1019,
+              "name": "떠도는 정령 코어",
+              "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어.<br>이 원소 생물은 기이한 습성을 가지고 있어 주기적으로 무리를 지어 출현과 잠적을 반복한다.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 90,
+              "name": "「천광」의 철학",
+              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>영원토록 지하에 살고 있어도, 인간들은 불요불굴의 의지로 천광을 기도한다. 인간은 늘 쉬지 않고 초월을 추구한다. 봉쇄되고 멈춘 영원함도 물론 웅장하고 장려하나, 그 본질은 결국 죽음이다</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Light_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1020,
+              "name": "떠도는 정령 결정화 코어",
+              "desc": "떠도는 정령 처치 시 일정 확률로 발견할 수 있는 완벽한 에너지 코어.<br/>무엇이든 우열을 가리기 좋아하는 사람들 사이에선 이런 논쟁이 자주 일어난다. \"떠도는 정령과 바람 슬라임의 부력 중 뭐가 더 뛰어난 걸까\"",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 4580,
+              "name": "빛 없는 실",
+              "desc": "<p>별을 삼킨 고래와의 전투에서 저도 모르는 사이에 무기를 휘감은 가느다란 실.</p><p>고대 폰타인 사람들은 만물의 현상을 주관하는 「포르투나」가 마치 하프의 현처럼 극도로 미세한 「섬유」로 이루어져 있다고 생각했다. 웅장한 음악과 공명하는 섬유가 우주적 행복을 가져다주듯, 불협화음은 우주의 구조를 파괴한다</p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/181512822/8288b6edc80aeaf7d78746cfd960f328_7362088913080895824.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 90,
+              "name": "「천광」의 철학",
+              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>영원토록 지하에 살고 있어도, 인간들은 불요불굴의 의지로 천광을 기도한다. 인간은 늘 쉬지 않고 초월을 추구한다. 봉쇄되고 멈춘 영원함도 물론 웅장하고 장려하나, 그 본질은 결국 죽음이다</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Light_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1020,
+              "name": "떠도는 정령 결정화 코어",
+              "desc": "떠도는 정령 처치 시 일정 확률로 발견할 수 있는 완벽한 에너지 코어.<br/>무엇이든 우열을 가리기 좋아하는 사람들 사이에선 이런 논쟁이 자주 일어난다. \"떠도는 정령과 바람 슬라임의 부력 중 뭐가 더 뛰어난 걸까\"",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 4580,
+              "name": "빛 없는 실",
+              "desc": "<p>별을 삼킨 고래와의 전투에서 저도 모르는 사이에 무기를 휘감은 가느다란 실.</p><p>고대 폰타인 사람들은 만물의 현상을 주관하는 「포르투나」가 마치 하프의 현처럼 극도로 미세한 「섬유」로 이루어져 있다고 생각했다. 웅장한 음악과 공명하는 섬유가 우주적 행복을 가져다주듯, 불협화음은 우주의 구조를 파괴한다</p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/181512822/8288b6edc80aeaf7d78746cfd960f328_7362088913080895824.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 90,
+              "name": "「천광」의 철학",
+              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>영원토록 지하에 살고 있어도, 인간들은 불요불굴의 의지로 천광을 기도한다. 인간은 늘 쉬지 않고 초월을 추구한다. 봉쇄되고 멈춘 영원함도 물론 웅장하고 장려하나, 그 본질은 결국 죽음이다</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Light_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1020,
+              "name": "떠도는 정령 결정화 코어",
+              "desc": "떠도는 정령 처치 시 일정 확률로 발견할 수 있는 완벽한 에너지 코어.<br/>무엇이든 우열을 가리기 좋아하는 사람들 사이에선 이런 논쟁이 자주 일어난다. \"떠도는 정령과 바람 슬라임의 부력 중 뭐가 더 뛰어난 걸까\"",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 4580,
+              "name": "빛 없는 실",
+              "desc": "<p>별을 삼킨 고래와의 전투에서 저도 모르는 사이에 무기를 휘감은 가느다란 실.</p><p>고대 폰타인 사람들은 만물의 현상을 주관하는 「포르투나」가 마치 하프의 현처럼 극도로 미세한 「섬유」로 이루어져 있다고 생각했다. 웅장한 음악과 공명하는 섬유가 우주적 행복을 가져다주듯, 불협화음은 우주의 구조를 파괴한다</p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/181512822/8288b6edc80aeaf7d78746cfd960f328_7362088913080895824.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 90,
+              "name": "「천광」의 철학",
+              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>영원토록 지하에 살고 있어도, 인간들은 불요불굴의 의지로 천광을 기도한다. 인간은 늘 쉬지 않고 초월을 추구한다. 봉쇄되고 멈춘 영원함도 물론 웅장하고 장려하나, 그 본질은 결국 죽음이다</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Light_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1020,
+              "name": "떠도는 정령 결정화 코어",
+              "desc": "떠도는 정령 처치 시 일정 확률로 발견할 수 있는 완벽한 에너지 코어.<br/>무엇이든 우열을 가리기 좋아하는 사람들 사이에선 이런 논쟁이 자주 일어난다. \"떠도는 정령과 바람 슬라임의 부력 중 뭐가 더 뛰어난 걸까\"",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 4580,
+              "name": "빛 없는 실",
+              "desc": "<p>별을 삼킨 고래와의 전투에서 저도 모르는 사이에 무기를 휘감은 가느다란 실.</p><p>고대 폰타인 사람들은 만물의 현상을 주관하는 「포르투나」가 마치 하프의 현처럼 극도로 미세한 「섬유」로 이루어져 있다고 생각했다. 웅장한 음악과 공명하는 섬유가 우주적 행복을 가져다주듯, 불협화음은 우주의 구조를 파괴한다</p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/181512822/8288b6edc80aeaf7d78746cfd960f328_7362088913080895824.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "지식의 왕관",
+              "desc": "<p>특성을 올리는데 필요한 진귀한 소재.<br>먼 옛날, 지식을 전수하는데 사용한 의식용 도구이다. 오늘날에는 지혜가 언어와 책에 들어있으나, 「지식의 왕관」에 남아있는 힘과 지혜는 요즘 사람들도 위대한 진전을 이룰 수 있게 해준다</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/940bdffc40819399a3e9913178469bf0_132147124674728583.gif"
+      },
+      {
+        "title": "하소데의 손길",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/a52ecdd3a48e6905794b67bb0225f33b_3438510648539062243.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "비단 춤 태세로 빠르게 돌진한다. 돌진 종료 시 근처에 자동제어 인형 「타모토」를 소환하고 올려치기 공격으로 치오리의 공격력과 방어력에 기반해 주변에 있는 적에게 <color=#ffe699>바위 원소 범위 피해</color> 를 준다.\n홀드 시 각기 다른 방식으로 발동한다.\n<color=#ffd780>홀드</color>\n조준 상태에 진입해 돌진 방향을 조정한다.\n<color=#ffd780>타모토</color>\n· 간헐적으로 주변에 있는 적에게 참격을 날려 치오리의 공격력과 방어력에 기반해 <color=#ffe699>바위 원소 범위 피해</color> 를 준다.\n· 존재 기간 동안 주변에 <color=#ffe699>바위 원소 창조물</color> 이 있거나 <color=#ffe699>바위 원소 창조물</color> 이 창조되면, 현재 필드 위에 있는 자신의 캐릭터 근처에 추가로 타모토를 1개 소환한다. 해당 방식으로 최대 1개의 타모토를 소환할 수 있으며, 지속 시간은 독립적으로 계산된다.\n「비단에 물든 벚꽃 향기는 소매에 남아 꾀꼬리를 취하게 하네」"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13"
+            ]
+          },
+          {
+            "key": "타모토 피해",
+            "values": [
+              "공격력의 82%+방어력의 103%",
+              "공격력의 88%+방어력의 110%",
+              "공격력의 94%+방어력의 118%",
+              "공격력의 103%+방어력의 128%",
+              "공격력의 109%+방어력의 136%",
+              "공격력의 115%+방어력의 144%",
+              "공격력의 123%+방어력의 154%",
+              "공격력의 131%+방어력의 164%",
+              "공격력의 140%+방어력의 174%",
+              "공격력의 148%+방어력의 185%",
+              "공격력의 156%+방어력의 195%",
+              "공격력의 164%+방어력의 205%",
+              "공격력의 174%+방어력의 218%"
+            ]
+          },
+          {
+            "key": "타모토 지속 시간",
+            "values": [
+              "17.0초",
+              "17.0초",
+              "17.0초",
+              "17.0초",
+              "17.0초",
+              "17.0초",
+              "17.0초",
+              "17.0초",
+              "17.0초",
+              "17.0초",
+              "17.0초",
+              "17.0초",
+              "17.0초"
+            ]
+          },
+          {
+            "key": "타모토 공격 간격",
+            "values": [
+              "3.6초",
+              "3.6초",
+              "3.6초",
+              "3.6초",
+              "3.6초",
+              "3.6초",
+              "3.6초",
+              "3.6초",
+              "3.6초",
+              "3.6초",
+              "3.6초",
+              "3.6초",
+              "3.6초"
+            ]
+          },
+          {
+            "key": "올려치기 공격 피해",
+            "values": [
+              "공격력의 149%+방어력의 187%",
+              "공격력의 160%+방어력의 201%",
+              "공격력의 172%+방어력의 215%",
+              "공격력의 187%+방어력의 233%",
+              "공격력의 198%+방어력의 247%",
+              "공격력의 209%+방어력의 261%",
+              "공격력의 224%+방어력의 280%",
+              "공격력의 239%+방어력의 299%",
+              "공격력의 254%+방어력의 317%",
+              "공격력의 269%+방어력의 336%",
+              "공격력의 284%+방어력의 355%",
+              "공격력의 299%+방어력의 373%",
+              "공격력의 317%+방어력의 397%"
+            ]
+          },
+          {
+            "key": "재사용 대기 시간",
+            "values": [
+              "16.0초",
+              "16.0초",
+              "16.0초",
+              "16.0초",
+              "16.0초",
+              "16.0초",
+              "16.0초",
+              "16.0초",
+              "16.0초",
+              "16.0초",
+              "16.0초",
+              "16.0초",
+              "16.0초"
+            ]
+          }
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/86f36086c2af9dce8fdc5cd84b1fff7f_1614760824424381552.gif"
+      },
+      {
+        "title": "쌍검·비익",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/25e24f7aca9d3161df069b8d0da3aa23_332740243345011763.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "쌍검을 뽑아 프로 재단사의 기세로 예리한 일격을 날려, 치오리의 공격력과 방어력에 기반한 <color=#ffe699>바위 원소 범위 피해</color> 를 준다.\n「모든 이치는 서로 통하기 때문에 하나를 알면 모든 것을 알게 된다」"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "LV.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13"
+            ]
+          },
+          {
+            "key": "스킬 피해",
+            "values": [
+              "공격력의 256%+방어력의 320%",
+              "공격력의 276%+방어력의 344%",
+              "공격력의 295%+방어력의 368%",
+              "공격력의 320%+방어력의 401%",
+              "공격력의 340%+방어력의 425%",
+              "공격력의 359%+방어력의 449%",
+              "공격력의 384%+방어력의 481%",
+              "공격력의 410%+방어력의 513%",
+              "공격력의 436%+방어력의 545%",
+              "공격력의 461%+방어력의 577%",
+              "공격력의 487%+방어력의 609%",
+              "공격력의 513%+방어력의 641%",
+              "공격력의 545%+방어력의 681%"
+            ]
+          },
+          {
+            "key": "재사용 대기 시간",
+            "values": [
+              "13.5초",
+              "13.5초",
+              "13.5초",
+              "13.5초",
+              "13.5초",
+              "13.5초",
+              "13.5초",
+              "13.5초",
+              "13.5초",
+              "13.5초",
+              "13.5초",
+              "13.5초",
+              "13.5초"
+            ]
+          },
+          {
+            "key": "원소 에너지",
+            "values": [
+              "50",
+              "50",
+              "50",
+              "50",
+              "50",
+              "50",
+              "50",
+              "50",
+              "50",
+              "50",
+              "50",
+              "50",
+              "50"
+            ]
+          }
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/d055127ae49efcd0a4bbbf117822e88d_3737430084337173923.gif"
+      },
+      {
+        "title": "맞춤 제작",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/2bbc223f38c861973d24c3a93e08f34d_3528468950128030803.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffe699>하소데의 손길</color> 의 올려치기 공격 발동 후 짧은 시간 내의 후속 조작에 따라 각기 다른 효과가 발생한다: 원소전투 스킬을 누르면 「직조」를 발동한다. 일반 공격을 누르면 「재단」을 발동한다.\n<color=#ffd780>직조</color>\n· 캐릭터를 교체해 파티 내 자신의 다음 캐릭터가 등장한다.\n· 파티 내 모든 자신의 캐릭터에게 「임기응변」을 부여한다: 파티 내 자신의 현재 필드 위 캐릭터의 일반 공격, 강공격, 낙하 공격이 주변의 적에게 명중 시, 타모토가 협동 공격으로 적의 위치에 하소데의 손길의 올려치기 공격의 100%에 해당하는 <color=#ffe699>바위 원소 범위 피해</color> 를 준다. 해당 방식으로 주는 피해는 원소전투 스킬 피해로 간주한다.\n· 「임기응변」은 8초 지속되며, 2초마다 타모토의 협동 공격을 최대 1회 발동할 수 있다. 한 번의 「임기응변」 지속 시간 동안 협동 공격을 최대 2회 발동할 수 있다.\n<color=#ffd780>재단</color>\n· 치오리가 <color=#ffe699>바위 원소 부여</color> 를 획득한다. 지속 시간: 5초.\n치오리가 필드 위에 있을 때, 하소데의 손길의 올려치기 공격을 발동한 후 짧은 시간 내에 원소전투 스킬 또는 일반 공격을 다시 누르지 않으면, 후속 효과 「재단」이 발동된다"
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "title": "금상첨화",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/b82808af7382520c0084107a507d64c8_7593374877068318326.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "주변에 있는 파티 내 캐릭터가 <color=#ffe699>바위 원소 창조물</color> 창조 시, 치오리가 <color=#ffe699>바위 원소 피해 보너스</color> 를 20% 획득한다. 지속 시간: 20초"
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "title": "옷이 날개",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/2a02d46ce04e5544dccfce9a9119b589_4828824341157211618.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "파티 내 자신의 임의 캐릭터가 기본 코스튬이 아닌 코스튬을 장착하거나 최초의 날개를 제외한 다른 바람의 날개 장착 시, 파티 내 자신의 캐릭터는 이동 속도가 10% 증가하는 속행 효과를 획득한다.\n속행 효과는 비경, 영역 토벌, 나선 비경에서 적용되지 않는다. 또한 속행 효과는 중첩되지 않는다"
+          }
+        ],
+        "attributes": null
+      }
+    ],
     "galleryCharacter": [
       {
         "key": "Character Card",
@@ -47,124 +722,6 @@
             "text": "재단가위자리"
           }
         ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "이름",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "치오리"
-          }
-        ]
-      },
-      {
-        "key": "생일",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "8월 17일"
-          }
-        ]
-      },
-      {
-        "key": "운명의 자리",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "재단가위자리"
-          }
-        ]
-      },
-      {
-        "key": "호칭",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "뇌명의 재단사"
-          }
-        ]
-      },
-      {
-        "key": "신의 눈",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "바위"
-          }
-        ]
-      },
-      {
-        "key": "소속",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "폰타인성"
-          }
-        ]
-      },
-      {
-        "key": "中文 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "陈阳"
-          }
-        ]
-      },
-      {
-        "key": "日本語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Taketatsu Ayana"
-          }
-        ]
-      },
-      {
-        "key": "English CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Brittany Lauda"
-          }
-        ]
-      },
-      {
-        "key": "한국어 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "이다은"
-          }
-        ]
-      },
-      {
-        "key": "특제 요리",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 5190,
-            "name": "「패션쇼」",
-            "desc": "<p>치오리의 특제 요리. 흔한 붕어빵이 치오리의 날렵한 손끝에서 재탄생했다.</p><p>각종 의상에 싸인 속 재료가 시각과 미각의 성대한 축제를 열어서 보는 이로 하여금 헤어 나올 수 없게 만든다. 이 정도로 대단한 요리는 디저트 장인의 걸작이라고 해도 과언이 아닐 것이다</p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/13/291064744/020409821742e9e488c345ebe7d06098_982688942889839165.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "캐릭터 카드",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 7061,
-            "name": "치오리",
-            "desc": "<p><strong><span style=\"color: rgb(255, 255, 255)\">뇌명의 재단사 · 치오리</span></strong></p><p>천 가지 색채를 짜는 쿠튀리에르</p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/13/24090565/7092737dc26796da3d9a5e763b605e58_1299168195654600213.png"
-          }
-        ],
-        "isMaterial": true
       }
     ],
     "videoCollection": [
@@ -771,66 +1328,122 @@
         ]
       }
     ],
-    "summaryList": [
+    "baseInfo": [
       {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/73573764923d75f3f85febe0813d807d_6912939807663902928.png",
-        "name": "육할 무늬",
-        "desc": [
+        "key": "이름",
+        "value": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>하소데의 손길</color> 의 자동제어 인형 「타모토」의 공격 범위가 50% 증가한다.\n또한 파티에 치오리 외의 <color=#ffe699>바위 원소</color> 캐릭터가 존재할 경우, 하소데의 손길의 돌진 종료 시 아래 효과를 발동한다:\n· 추가로 1개의 타모토를 소환한다. 해당 방식으로 치오리 자신이 소환한 타모토와 바위 원소 창조물을 통해 치오리 자신이 추가로 소환한 타모토는 동시에 최대 1개만 존재할 수 있다.\n· 고유 특성 「금상첨화」를 발동한다. 해당 효과는 고유 특성 「금상첨화」를 해금해야 한다"
+            "text": "치오리"
           }
         ]
       },
       {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/9ce0135a911a0f51a581703d9921bb2d_6597749518917739566.png",
-        "name": "오색 염색",
-        "desc": [
+        "key": "생일",
+        "value": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>쌍검·비익</color> 발동 후 10초 동안, 3초마다 현재 필드 위에 있는 자신의 캐릭터 근처에 간단 자동제어 인형 「키누」를 소환한다. 키누는 주변에 있는 적을 공격하며 타모토의 170%에 해당하는 <color=#ffe699>바위 원소 범위 피해</color> 를 준다. 해당 방식으로 주는 피해는 원소전투 스킬 피해로 간주된다.\n키누는 한 번 공격 또는 3초 동안 존재 후 퇴장한다"
+            "text": "8월 17일"
           }
         ]
       },
       {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/a52ecdd3a48e6905794b67bb0225f33b_6721244243328673865.png",
-        "name": "사분 자수",
-        "desc": [
+        "key": "운명의 자리",
+        "value": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>하소데의 손길</color> 의 스킬 레벨+3\n최대 Lv.15까지 상승"
+            "text": "재단가위자리"
           }
         ]
       },
       {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/2c5a4ae00022c13fd9a2b00499496ca3_7404078273372828371.png",
-        "name": "삼례 재단",
-        "desc": [
+        "key": "호칭",
+        "value": [
           {
             "type": "RichText",
-            "text": "고유 특성 「맞춤 제작」의 후속 효과 발동 후, 8초 동안 현재 파티 내 자신의 필드 위에 있는 캐릭터의 일반 공격, 강공격 또는 낙하 공격이 주변에 있는 적에게 명중 시, 적 주변에 간단 자동제어 인형 「키누」를 1개 소환한다. 상술한 방식으로 1초마다 최대 1개의 키누를 소환할 수 있으며, 고유 특성 「맞춤 제작」의 임기응변 또는 재단이 한 번 지속되는 동안, 상술한 방식으로 최대 3개의 키누를 소환할 수 있다. 상술한 효과는 15초마다 최대 1회 발동된다.\n고유 특성 「맞춤 제작」을 해금해야 한다"
+            "text": "뇌명의 재단사"
           }
         ]
       },
       {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/25e24f7aca9d3161df069b8d0da3aa23_2415029813595147176.png",
-        "name": "이중 능직",
-        "desc": [
+        "key": "신의 눈",
+        "value": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>쌍검·비익</color> 의 스킬 레벨+3\n최대 Lv.15까지 상승"
+            "text": "바위"
           }
         ]
       },
       {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/81562248b133476cba52d2e83edb140f_6216861344873074688.png",
-        "name": "만리일공",
-        "desc": [
+        "key": "소속",
+        "value": [
           {
             "type": "RichText",
-            "text": "고유 특성 「맞춤 제작」의 후속 효과 발동 후, 치오리 자신의 <color=#ffd780>하소데의 손길</color> 의 재사용 대기시간이 12초 감소한다. 고유 특성 「맞춤 제작」을 해금해야 한다.\n또한, 치오리 자신의 일반 공격으로 주는 피해가 치오리 자신의 방어력의 235%만큼 증가한다"
+            "text": "폰타인성"
           }
         ]
+      },
+      {
+        "key": "中文 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "陈阳"
+          }
+        ]
+      },
+      {
+        "key": "日本語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Taketatsu Ayana"
+          }
+        ]
+      },
+      {
+        "key": "English CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Brittany Lauda"
+          }
+        ]
+      },
+      {
+        "key": "한국어 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "이다은"
+          }
+        ]
+      },
+      {
+        "key": "특제 요리",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5190,
+            "name": "「패션쇼」",
+            "desc": "<p>치오리의 특제 요리. 흔한 붕어빵이 치오리의 날렵한 손끝에서 재탄생했다.</p><p>각종 의상에 싸인 속 재료가 시각과 미각의 성대한 축제를 열어서 보는 이로 하여금 헤어 나올 수 없게 만든다. 이 정도로 대단한 요리는 디저트 장인의 걸작이라고 해도 과언이 아닐 것이다</p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/13/291064744/020409821742e9e488c345ebe7d06098_982688942889839165.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "캐릭터 카드",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 7061,
+            "name": "치오리",
+            "desc": "<p><strong><span style=\"color: rgb(255, 255, 255)\">뇌명의 재단사 · 치오리</span></strong></p><p>천 가지 색채를 짜는 쿠튀리에르</p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/13/24090565/7092737dc26796da3d9a5e763b605e58_1299168195654600213.png"
+          }
+        ],
+        "isMaterial": true
       }
     ],
     "voice": [
@@ -2356,6 +2969,68 @@
         ]
       }
     ],
+    "summaryList": [
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/73573764923d75f3f85febe0813d807d_6912939807663902928.png",
+        "name": "육할 무늬",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>하소데의 손길</color> 의 자동제어 인형 「타모토」의 공격 범위가 50% 증가한다.\n또한 파티에 치오리 외의 <color=#ffe699>바위 원소</color> 캐릭터가 존재할 경우, 하소데의 손길의 돌진 종료 시 아래 효과를 발동한다:\n· 추가로 1개의 타모토를 소환한다. 해당 방식으로 치오리 자신이 소환한 타모토와 바위 원소 창조물을 통해 치오리 자신이 추가로 소환한 타모토는 동시에 최대 1개만 존재할 수 있다.\n· 고유 특성 「금상첨화」를 발동한다. 해당 효과는 고유 특성 「금상첨화」를 해금해야 한다"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/9ce0135a911a0f51a581703d9921bb2d_6597749518917739566.png",
+        "name": "오색 염색",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>쌍검·비익</color> 발동 후 10초 동안, 3초마다 현재 필드 위에 있는 자신의 캐릭터 근처에 간단 자동제어 인형 「키누」를 소환한다. 키누는 주변에 있는 적을 공격하며 타모토의 170%에 해당하는 <color=#ffe699>바위 원소 범위 피해</color> 를 준다. 해당 방식으로 주는 피해는 원소전투 스킬 피해로 간주된다.\n키누는 한 번 공격 또는 3초 동안 존재 후 퇴장한다"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/a52ecdd3a48e6905794b67bb0225f33b_6721244243328673865.png",
+        "name": "사분 자수",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>하소데의 손길</color> 의 스킬 레벨+3\n최대 Lv.15까지 상승"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/2c5a4ae00022c13fd9a2b00499496ca3_7404078273372828371.png",
+        "name": "삼례 재단",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "고유 특성 「맞춤 제작」의 후속 효과 발동 후, 8초 동안 현재 파티 내 자신의 필드 위에 있는 캐릭터의 일반 공격, 강공격 또는 낙하 공격이 주변에 있는 적에게 명중 시, 적 주변에 간단 자동제어 인형 「키누」를 1개 소환한다. 상술한 방식으로 1초마다 최대 1개의 키누를 소환할 수 있으며, 고유 특성 「맞춤 제작」의 임기응변 또는 재단이 한 번 지속되는 동안, 상술한 방식으로 최대 3개의 키누를 소환할 수 있다. 상술한 효과는 15초마다 최대 1회 발동된다.\n고유 특성 「맞춤 제작」을 해금해야 한다"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/25e24f7aca9d3161df069b8d0da3aa23_2415029813595147176.png",
+        "name": "이중 능직",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>쌍검·비익</color> 의 스킬 레벨+3\n최대 Lv.15까지 상승"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/81562248b133476cba52d2e83edb140f_6216861344873074688.png",
+        "name": "만리일공",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "고유 특성 「맞춤 제작」의 후속 효과 발동 후, 치오리 자신의 <color=#ffd780>하소데의 손길</color> 의 재사용 대기시간이 12초 감소한다. 고유 특성 「맞춤 제작」을 해금해야 한다.\n또한, 치오리 자신의 일반 공격으로 주는 피해가 치오리 자신의 방어력의 235%만큼 증가한다"
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "title": "캐릭터 상세정보",
@@ -2431,26 +3106,6 @@
       }
     ],
     "customize": [
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "캐릭터 소개",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "천 가지 색채를 짜는 쿠튀리에르"
-      },
-      {
-        "type": "RichText",
-        "text": "폰타인 리오네 구역의 가장 번화한 거리에는 「치오리 부티크」라는 의상점이 있다. 언뜻 보기에는 작은 가게인 것 같지만, 쇼윈도 앞에는 언제나 가던 길을 멈추고 그 안을 홀린 듯이 바라보는 사람들이 서 있다. 들리는 바에 의하면 그곳의 사장인 치오리는 이나즈마 출신으로, 말투가 마치 내리꽂히는 벼락처럼 직설적이라고 한다. 그럼에도 꿋꿋이 그녀의 사업을 방해하려던 사람들이 어떤 결말을 맞이했느냐에 대해서는… 이미 많은 사람이 자신의 눈으로 직접 목도했다. 그들은 패배의 쓴맛을 봐야 했고, 심지어 그중 일부는 난생처음으로 시궁창에 엉덩방아를 찧는 경험을 해야만 했다.\n대체 어떤 배경을 지녔고, 어떤 경험을 해왔기에 다른 나라에서 온 패션 디자이너가 이토록 대담하게 행동할 수 있는 걸까? 폰타인 기자들은 비슷한 일화를 들을 때마다 동그랗게 뜬 눈으로 서로를 바라보며 이렇게 질문했다. 그래서 그들은 그녀의 과거를 파헤쳤다. 치오리의 삶과 이런저런 소문에 대해 조사한 사람도 있었고, 저 멀리 이나즈마까지 가서 그녀의 친구와 과거 재봉술을 가르쳐줬던 스승을 찾아가 몰래 인터뷰한 사람도 있었다.\n어렸을 적부터 고집불통에 반항적이었고, 어른에게 존대를 한 적이 없었다…. 평가는 그리 긍정적이지 않았다.\n오직 치오리의 부모만이 흐뭇한 미소를 지으며 「생각이 독특하다」, 「자기의 꿈을 좇는 데 전념하는 아이다」라고 말했을 뿐이다.\n「치오리 씨, 어떻게 이런 성공을 거두신 건가요? 멋진 옷을 디자인하는 비결 같은 거라도 있나요?」\n맞은편에 앉아있던 치오리는 바늘과 실을 한쪽으로 치우고는 「손님」인 척하던 기자를 차가운 눈으로 바라보며 말했다.\n「난 그냥 하고 싶은 대로 해 온 것뿐이야. 그래서… 옷은 살 거야, 말 거야?」"
-      },
-      {
-        "type": "RichText",
-        "text": "https:/www.hoyolab.com/article/24689938",
-        "alignment": "right"
-      },
       {
         "type": "Heading",
         "level": 2,
@@ -3070,681 +3725,26 @@
         "desc": "",
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/10/80830045/c32bab10651059ad3c0c8a0e5bbd2e03_9013995759343394230.png",
         "displayStyle": "card"
-      }
-    ],
-    "talent": [
-      {
-        "title": "일반 공격·직조 검술",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/94aa30ae75b8c7c6a9c64ab05bd5dda7_3928174472566950539.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>일반 공격</color>\n검으로 최대 4번 공격한다.\n<color=#ffd780>강공격</color>\n일정 스태미나를 소모해 순간적으로 전방을 향해 쌍검을 휘두른다.\n<color=#ffd780>낙하 공격</color>\n공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11"
-            ]
-          },
-          {
-            "key": "1단 공격 피해",
-            "values": [
-              "49.4%",
-              "53.4%",
-              "57.5%",
-              "63.2%",
-              "67.2%",
-              "71.8%",
-              "78.1%",
-              "84.5%",
-              "90.8%",
-              "97.7%",
-              "104.6%"
-            ]
-          },
-          {
-            "key": "2단 공격 피해",
-            "values": [
-              "46.8%",
-              "50.6%",
-              "54.5%",
-              "59.9%",
-              "63.7%",
-              "68.1%",
-              "74.1%",
-              "80.1%",
-              "86.0%",
-              "92.6%",
-              "99.1%"
-            ]
-          },
-          {
-            "key": "3단 공격 피해",
-            "values": [
-              "30.4%+30.4%",
-              "32.9%+32.9%",
-              "35.4%+35.4%",
-              "38.9%+38.9%",
-              "41.4%+41.4%",
-              "44.2%+44.2%",
-              "48.1%+48.1%",
-              "52.0%+52.0%",
-              "55.9%+55.9%",
-              "60.1%+60.1%",
-              "64.4%+64.4%"
-            ]
-          },
-          {
-            "key": "4단 공격 피해",
-            "values": [
-              "75.1%",
-              "81.2%",
-              "87.4%",
-              "96.1%",
-              "102.2%",
-              "109.2%",
-              "118.8%",
-              "128.4%",
-              "138.0%",
-              "148.5%",
-              "159.0%"
-            ]
-          },
-          {
-            "key": "강공격 피해",
-            "values": [
-              "54.3%+54.3%",
-              "58.7%+58.7%",
-              "63.1%+63.1%",
-              "69.5%+69.5%",
-              "73.9%+73.9%",
-              "78.9%+78.9%",
-              "85.9%+85.9%",
-              "92.8%+92.8%",
-              "99.8%+99.8%",
-              "107.4%+107.4%",
-              "114.9%+114.9%"
-            ]
-          },
-          {
-            "key": "강공격 스태미나 소모",
-            "values": [
-              "20.0pt",
-              "20.0pt",
-              "20.0pt",
-              "20.0pt",
-              "20.0pt",
-              "20.0pt",
-              "20.0pt",
-              "20.0pt",
-              "20.0pt",
-              "20.0pt",
-              "20.0pt"
-            ]
-          },
-          {
-            "key": "낙하 기간 피해",
-            "values": [
-              "63.9%",
-              "69.1%",
-              "74.3%",
-              "81.8%",
-              "87.0%",
-              "92.9%",
-              "101.1%",
-              "109.3%",
-              "117.5%",
-              "126.4%",
-              "135.3%"
-            ]
-          },
-          {
-            "key": "저공/고공 추락 충격 피해",
-            "values": [
-              "128%/160%",
-              "138%/173%",
-              "149%/186%",
-              "164%/204%",
-              "174%/217%",
-              "186%/232%",
-              "202%/253%",
-              "219%/273%",
-              "235%/293%",
-              "253%/316%",
-              "271%/338%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 92,
-              "name": "「천광」의 가르침",
-              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>스스로 모든 걸 달관했다고 자부하는 대군도, 영원히 저 높은 하늘의 빛을 손에 넣고 싶어 한다. 허나 나눌 길 없는 그 바람이, 찰나를 사는 인간으로 하여금 더욱 열렬하게 천광을 추구하게 만든다. 마치 불 속에 뛰어드는 불나방처럼 말이다</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Light_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1018,
-              "name": "떠도는 정령 코어 껍데기",
-              "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어. 미량의 원소가 담겨있다.<br>대부분의 에너지는 이미 흩어진 듯하다.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Husk_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 91,
-              "name": "「천광」의 인도",
-              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>찬란한 빛이 두꺼운 번개 구름에 가려져 있어도, 나루카미 신의 국토에는 여전히 종달새처럼 뇌광과 노해를 뚫고, 가혹한 죽음에 맞서 하늘의 빛을 쫓는 자들이 존재한다</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Light_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1019,
-              "name": "떠도는 정령 코어",
-              "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어.<br>이 원소 생물은 기이한 습성을 가지고 있어 주기적으로 무리를 지어 출현과 잠적을 반복한다.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 91,
-              "name": "「천광」의 인도",
-              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>찬란한 빛이 두꺼운 번개 구름에 가려져 있어도, 나루카미 신의 국토에는 여전히 종달새처럼 뇌광과 노해를 뚫고, 가혹한 죽음에 맞서 하늘의 빛을 쫓는 자들이 존재한다</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Light_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1019,
-              "name": "떠도는 정령 코어",
-              "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어.<br>이 원소 생물은 기이한 습성을 가지고 있어 주기적으로 무리를 지어 출현과 잠적을 반복한다.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 91,
-              "name": "「천광」의 인도",
-              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>찬란한 빛이 두꺼운 번개 구름에 가려져 있어도, 나루카미 신의 국토에는 여전히 종달새처럼 뇌광과 노해를 뚫고, 가혹한 죽음에 맞서 하늘의 빛을 쫓는 자들이 존재한다</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Light_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1019,
-              "name": "떠도는 정령 코어",
-              "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어.<br>이 원소 생물은 기이한 습성을 가지고 있어 주기적으로 무리를 지어 출현과 잠적을 반복한다.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 91,
-              "name": "「천광」의 인도",
-              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>찬란한 빛이 두꺼운 번개 구름에 가려져 있어도, 나루카미 신의 국토에는 여전히 종달새처럼 뇌광과 노해를 뚫고, 가혹한 죽음에 맞서 하늘의 빛을 쫓는 자들이 존재한다</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Light_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1019,
-              "name": "떠도는 정령 코어",
-              "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어.<br>이 원소 생물은 기이한 습성을 가지고 있어 주기적으로 무리를 지어 출현과 잠적을 반복한다.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 90,
-              "name": "「천광」의 철학",
-              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>영원토록 지하에 살고 있어도, 인간들은 불요불굴의 의지로 천광을 기도한다. 인간은 늘 쉬지 않고 초월을 추구한다. 봉쇄되고 멈춘 영원함도 물론 웅장하고 장려하나, 그 본질은 결국 죽음이다</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Light_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1020,
-              "name": "떠도는 정령 결정화 코어",
-              "desc": "떠도는 정령 처치 시 일정 확률로 발견할 수 있는 완벽한 에너지 코어.<br/>무엇이든 우열을 가리기 좋아하는 사람들 사이에선 이런 논쟁이 자주 일어난다. \"떠도는 정령과 바람 슬라임의 부력 중 뭐가 더 뛰어난 걸까\"",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 4580,
-              "name": "빛 없는 실",
-              "desc": "<p>별을 삼킨 고래와의 전투에서 저도 모르는 사이에 무기를 휘감은 가느다란 실.</p><p>고대 폰타인 사람들은 만물의 현상을 주관하는 「포르투나」가 마치 하프의 현처럼 극도로 미세한 「섬유」로 이루어져 있다고 생각했다. 웅장한 음악과 공명하는 섬유가 우주적 행복을 가져다주듯, 불협화음은 우주의 구조를 파괴한다</p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/181512822/8288b6edc80aeaf7d78746cfd960f328_7362088913080895824.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 90,
-              "name": "「천광」의 철학",
-              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>영원토록 지하에 살고 있어도, 인간들은 불요불굴의 의지로 천광을 기도한다. 인간은 늘 쉬지 않고 초월을 추구한다. 봉쇄되고 멈춘 영원함도 물론 웅장하고 장려하나, 그 본질은 결국 죽음이다</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Light_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1020,
-              "name": "떠도는 정령 결정화 코어",
-              "desc": "떠도는 정령 처치 시 일정 확률로 발견할 수 있는 완벽한 에너지 코어.<br/>무엇이든 우열을 가리기 좋아하는 사람들 사이에선 이런 논쟁이 자주 일어난다. \"떠도는 정령과 바람 슬라임의 부력 중 뭐가 더 뛰어난 걸까\"",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 4580,
-              "name": "빛 없는 실",
-              "desc": "<p>별을 삼킨 고래와의 전투에서 저도 모르는 사이에 무기를 휘감은 가느다란 실.</p><p>고대 폰타인 사람들은 만물의 현상을 주관하는 「포르투나」가 마치 하프의 현처럼 극도로 미세한 「섬유」로 이루어져 있다고 생각했다. 웅장한 음악과 공명하는 섬유가 우주적 행복을 가져다주듯, 불협화음은 우주의 구조를 파괴한다</p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/181512822/8288b6edc80aeaf7d78746cfd960f328_7362088913080895824.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 90,
-              "name": "「천광」의 철학",
-              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>영원토록 지하에 살고 있어도, 인간들은 불요불굴의 의지로 천광을 기도한다. 인간은 늘 쉬지 않고 초월을 추구한다. 봉쇄되고 멈춘 영원함도 물론 웅장하고 장려하나, 그 본질은 결국 죽음이다</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Light_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1020,
-              "name": "떠도는 정령 결정화 코어",
-              "desc": "떠도는 정령 처치 시 일정 확률로 발견할 수 있는 완벽한 에너지 코어.<br/>무엇이든 우열을 가리기 좋아하는 사람들 사이에선 이런 논쟁이 자주 일어난다. \"떠도는 정령과 바람 슬라임의 부력 중 뭐가 더 뛰어난 걸까\"",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 4580,
-              "name": "빛 없는 실",
-              "desc": "<p>별을 삼킨 고래와의 전투에서 저도 모르는 사이에 무기를 휘감은 가느다란 실.</p><p>고대 폰타인 사람들은 만물의 현상을 주관하는 「포르투나」가 마치 하프의 현처럼 극도로 미세한 「섬유」로 이루어져 있다고 생각했다. 웅장한 음악과 공명하는 섬유가 우주적 행복을 가져다주듯, 불협화음은 우주의 구조를 파괴한다</p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/181512822/8288b6edc80aeaf7d78746cfd960f328_7362088913080895824.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 90,
-              "name": "「천광」의 철학",
-              "desc": "<p>특성 육성 소재.<br>번개의 나라의 염원은 곧 천광이다<br>영원토록 지하에 살고 있어도, 인간들은 불요불굴의 의지로 천광을 기도한다. 인간은 늘 쉬지 않고 초월을 추구한다. 봉쇄되고 멈춘 영원함도 물론 웅장하고 장려하나, 그 본질은 결국 죽음이다</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Light_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1020,
-              "name": "떠도는 정령 결정화 코어",
-              "desc": "떠도는 정령 처치 시 일정 확률로 발견할 수 있는 완벽한 에너지 코어.<br/>무엇이든 우열을 가리기 좋아하는 사람들 사이에선 이런 논쟁이 자주 일어난다. \"떠도는 정령과 바람 슬라임의 부력 중 뭐가 더 뛰어난 걸까\"",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 4580,
-              "name": "빛 없는 실",
-              "desc": "<p>별을 삼킨 고래와의 전투에서 저도 모르는 사이에 무기를 휘감은 가느다란 실.</p><p>고대 폰타인 사람들은 만물의 현상을 주관하는 「포르투나」가 마치 하프의 현처럼 극도로 미세한 「섬유」로 이루어져 있다고 생각했다. 웅장한 음악과 공명하는 섬유가 우주적 행복을 가져다주듯, 불협화음은 우주의 구조를 파괴한다</p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/09/181512822/8288b6edc80aeaf7d78746cfd960f328_7362088913080895824.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "지식의 왕관",
-              "desc": "<p>특성을 올리는데 필요한 진귀한 소재.<br>먼 옛날, 지식을 전수하는데 사용한 의식용 도구이다. 오늘날에는 지혜가 언어와 책에 들어있으나, 「지식의 왕관」에 남아있는 힘과 지혜는 요즘 사람들도 위대한 진전을 이룰 수 있게 해준다</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/940bdffc40819399a3e9913178469bf0_132147124674728583.gif"
       },
       {
-        "title": "하소데의 손길",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/a52ecdd3a48e6905794b67bb0225f33b_3438510648539062243.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "비단 춤 태세로 빠르게 돌진한다. 돌진 종료 시 근처에 자동제어 인형 「타모토」를 소환하고 올려치기 공격으로 치오리의 공격력과 방어력에 기반해 주변에 있는 적에게 <color=#ffe699>바위 원소 범위 피해</color> 를 준다.\n홀드 시 각기 다른 방식으로 발동한다.\n<color=#ffd780>홀드</color>\n조준 상태에 진입해 돌진 방향을 조정한다.\n<color=#ffd780>타모토</color>\n· 간헐적으로 주변에 있는 적에게 참격을 날려 치오리의 공격력과 방어력에 기반해 <color=#ffe699>바위 원소 범위 피해</color> 를 준다.\n· 존재 기간 동안 주변에 <color=#ffe699>바위 원소 창조물</color> 이 있거나 <color=#ffe699>바위 원소 창조물</color> 이 창조되면, 현재 필드 위에 있는 자신의 캐릭터 근처에 추가로 타모토를 1개 소환한다. 해당 방식으로 최대 1개의 타모토를 소환할 수 있으며, 지속 시간은 독립적으로 계산된다.\n「비단에 물든 벚꽃 향기는 소매에 남아 꾀꼬리를 취하게 하네」"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13"
-            ]
-          },
-          {
-            "key": "타모토 피해",
-            "values": [
-              "공격력의 82%+방어력의 103%",
-              "공격력의 88%+방어력의 110%",
-              "공격력의 94%+방어력의 118%",
-              "공격력의 103%+방어력의 128%",
-              "공격력의 109%+방어력의 136%",
-              "공격력의 115%+방어력의 144%",
-              "공격력의 123%+방어력의 154%",
-              "공격력의 131%+방어력의 164%",
-              "공격력의 140%+방어력의 174%",
-              "공격력의 148%+방어력의 185%",
-              "공격력의 156%+방어력의 195%",
-              "공격력의 164%+방어력의 205%",
-              "공격력의 174%+방어력의 218%"
-            ]
-          },
-          {
-            "key": "타모토 지속 시간",
-            "values": [
-              "17.0초",
-              "17.0초",
-              "17.0초",
-              "17.0초",
-              "17.0초",
-              "17.0초",
-              "17.0초",
-              "17.0초",
-              "17.0초",
-              "17.0초",
-              "17.0초",
-              "17.0초",
-              "17.0초"
-            ]
-          },
-          {
-            "key": "타모토 공격 간격",
-            "values": [
-              "3.6초",
-              "3.6초",
-              "3.6초",
-              "3.6초",
-              "3.6초",
-              "3.6초",
-              "3.6초",
-              "3.6초",
-              "3.6초",
-              "3.6초",
-              "3.6초",
-              "3.6초",
-              "3.6초"
-            ]
-          },
-          {
-            "key": "올려치기 공격 피해",
-            "values": [
-              "공격력의 149%+방어력의 187%",
-              "공격력의 160%+방어력의 201%",
-              "공격력의 172%+방어력의 215%",
-              "공격력의 187%+방어력의 233%",
-              "공격력의 198%+방어력의 247%",
-              "공격력의 209%+방어력의 261%",
-              "공격력의 224%+방어력의 280%",
-              "공격력의 239%+방어력의 299%",
-              "공격력의 254%+방어력의 317%",
-              "공격력의 269%+방어력의 336%",
-              "공격력의 284%+방어력의 355%",
-              "공격력의 299%+방어력의 373%",
-              "공격력의 317%+방어력의 397%"
-            ]
-          },
-          {
-            "key": "재사용 대기 시간",
-            "values": [
-              "16.0초",
-              "16.0초",
-              "16.0초",
-              "16.0초",
-              "16.0초",
-              "16.0초",
-              "16.0초",
-              "16.0초",
-              "16.0초",
-              "16.0초",
-              "16.0초",
-              "16.0초",
-              "16.0초"
-            ]
-          }
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/86f36086c2af9dce8fdc5cd84b1fff7f_1614760824424381552.gif"
+        "type": "Heading",
+        "level": 1,
+        "text": "캐릭터 소개",
+        "alignment": "center"
       },
       {
-        "title": "쌍검·비익",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/25e24f7aca9d3161df069b8d0da3aa23_332740243345011763.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "쌍검을 뽑아 프로 재단사의 기세로 예리한 일격을 날려, 치오리의 공격력과 방어력에 기반한 <color=#ffe699>바위 원소 범위 피해</color> 를 준다.\n「모든 이치는 서로 통하기 때문에 하나를 알면 모든 것을 알게 된다」"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "LV.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13"
-            ]
-          },
-          {
-            "key": "스킬 피해",
-            "values": [
-              "공격력의 256%+방어력의 320%",
-              "공격력의 276%+방어력의 344%",
-              "공격력의 295%+방어력의 368%",
-              "공격력의 320%+방어력의 401%",
-              "공격력의 340%+방어력의 425%",
-              "공격력의 359%+방어력의 449%",
-              "공격력의 384%+방어력의 481%",
-              "공격력의 410%+방어력의 513%",
-              "공격력의 436%+방어력의 545%",
-              "공격력의 461%+방어력의 577%",
-              "공격력의 487%+방어력의 609%",
-              "공격력의 513%+방어력의 641%",
-              "공격력의 545%+방어력의 681%"
-            ]
-          },
-          {
-            "key": "재사용 대기 시간",
-            "values": [
-              "13.5초",
-              "13.5초",
-              "13.5초",
-              "13.5초",
-              "13.5초",
-              "13.5초",
-              "13.5초",
-              "13.5초",
-              "13.5초",
-              "13.5초",
-              "13.5초",
-              "13.5초",
-              "13.5초"
-            ]
-          },
-          {
-            "key": "원소 에너지",
-            "values": [
-              "50",
-              "50",
-              "50",
-              "50",
-              "50",
-              "50",
-              "50",
-              "50",
-              "50",
-              "50",
-              "50",
-              "50",
-              "50"
-            ]
-          }
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/d055127ae49efcd0a4bbbf117822e88d_3737430084337173923.gif"
+        "type": "Heading",
+        "level": 2,
+        "text": "천 가지 색채를 짜는 쿠튀리에르"
       },
       {
-        "title": "맞춤 제작",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/2bbc223f38c861973d24c3a93e08f34d_3528468950128030803.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffe699>하소데의 손길</color> 의 올려치기 공격 발동 후 짧은 시간 내의 후속 조작에 따라 각기 다른 효과가 발생한다: 원소전투 스킬을 누르면 「직조」를 발동한다. 일반 공격을 누르면 「재단」을 발동한다.\n<color=#ffd780>직조</color>\n· 캐릭터를 교체해 파티 내 자신의 다음 캐릭터가 등장한다.\n· 파티 내 모든 자신의 캐릭터에게 「임기응변」을 부여한다: 파티 내 자신의 현재 필드 위 캐릭터의 일반 공격, 강공격, 낙하 공격이 주변의 적에게 명중 시, 타모토가 협동 공격으로 적의 위치에 하소데의 손길의 올려치기 공격의 100%에 해당하는 <color=#ffe699>바위 원소 범위 피해</color> 를 준다. 해당 방식으로 주는 피해는 원소전투 스킬 피해로 간주한다.\n· 「임기응변」은 8초 지속되며, 2초마다 타모토의 협동 공격을 최대 1회 발동할 수 있다. 한 번의 「임기응변」 지속 시간 동안 협동 공격을 최대 2회 발동할 수 있다.\n<color=#ffd780>재단</color>\n· 치오리가 <color=#ffe699>바위 원소 부여</color> 를 획득한다. 지속 시간: 5초.\n치오리가 필드 위에 있을 때, 하소데의 손길의 올려치기 공격을 발동한 후 짧은 시간 내에 원소전투 스킬 또는 일반 공격을 다시 누르지 않으면, 후속 효과 「재단」이 발동된다"
-          }
-        ],
-        "attributes": null
+        "type": "RichText",
+        "text": "폰타인 리오네 구역의 가장 번화한 거리에는 「치오리 부티크」라는 의상점이 있다. 언뜻 보기에는 작은 가게인 것 같지만, 쇼윈도 앞에는 언제나 가던 길을 멈추고 그 안을 홀린 듯이 바라보는 사람들이 서 있다. 들리는 바에 의하면 그곳의 사장인 치오리는 이나즈마 출신으로, 말투가 마치 내리꽂히는 벼락처럼 직설적이라고 한다. 그럼에도 꿋꿋이 그녀의 사업을 방해하려던 사람들이 어떤 결말을 맞이했느냐에 대해서는… 이미 많은 사람이 자신의 눈으로 직접 목도했다. 그들은 패배의 쓴맛을 봐야 했고, 심지어 그중 일부는 난생처음으로 시궁창에 엉덩방아를 찧는 경험을 해야만 했다.\n대체 어떤 배경을 지녔고, 어떤 경험을 해왔기에 다른 나라에서 온 패션 디자이너가 이토록 대담하게 행동할 수 있는 걸까? 폰타인 기자들은 비슷한 일화를 들을 때마다 동그랗게 뜬 눈으로 서로를 바라보며 이렇게 질문했다. 그래서 그들은 그녀의 과거를 파헤쳤다. 치오리의 삶과 이런저런 소문에 대해 조사한 사람도 있었고, 저 멀리 이나즈마까지 가서 그녀의 친구와 과거 재봉술을 가르쳐줬던 스승을 찾아가 몰래 인터뷰한 사람도 있었다.\n어렸을 적부터 고집불통에 반항적이었고, 어른에게 존대를 한 적이 없었다…. 평가는 그리 긍정적이지 않았다.\n오직 치오리의 부모만이 흐뭇한 미소를 지으며 「생각이 독특하다」, 「자기의 꿈을 좇는 데 전념하는 아이다」라고 말했을 뿐이다.\n「치오리 씨, 어떻게 이런 성공을 거두신 건가요? 멋진 옷을 디자인하는 비결 같은 거라도 있나요?」\n맞은편에 앉아있던 치오리는 바늘과 실을 한쪽으로 치우고는 「손님」인 척하던 기자를 차가운 눈으로 바라보며 말했다.\n「난 그냥 하고 싶은 대로 해 온 것뿐이야. 그래서… 옷은 살 거야, 말 거야?」"
       },
       {
-        "title": "금상첨화",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/b82808af7382520c0084107a507d64c8_7593374877068318326.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "주변에 있는 파티 내 캐릭터가 <color=#ffe699>바위 원소 창조물</color> 창조 시, 치오리가 <color=#ffe699>바위 원소 피해 보너스</color> 를 20% 획득한다. 지속 시간: 20초"
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "title": "옷이 날개",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/12/2a02d46ce04e5544dccfce9a9119b589_4828824341157211618.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "파티 내 자신의 임의 캐릭터가 기본 코스튬이 아닌 코스튬을 장착하거나 최초의 날개를 제외한 다른 바람의 날개 장착 시, 파티 내 자신의 캐릭터는 이동 속도가 10% 증가하는 속행 효과를 획득한다.\n속행 효과는 비경, 영역 토벌, 나선 비경에서 적용되지 않는다. 또한 속행 효과는 중첩되지 않는다"
-          }
-        ],
-        "attributes": null
+        "type": "RichText",
+        "text": "https:/www.hoyolab.com/article/24689938",
+        "alignment": "right"
       }
     ]
   }

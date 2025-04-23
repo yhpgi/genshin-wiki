@@ -12,39 +12,21 @@
   "menuName": "Artefactos",
   "version": 1678129422,
   "components": {
+    "reliquarySetEffect": {
+      "twoSetEffect": "ATQ +18%.",
+      "fourSetEffect": "Si el personaje tiene 15 pts. de Energía Elemental o más, perderá 15 pts. al realizar una Habilidad Elemental y el daño infligido con los Ataques Normales, Cargados y Descendentes aumentará en un 50% durante 10 s. Este efecto no puede activarse más de una vez simultáneamente."
+    },
     "artifactList": {
-      "goblet_of_eonothem": {
-        "title": "Corazón de la Esperanza",
-        "position": "Cáliz de Eonothem",
+      "plume_of_death": {
+        "title": "Flecha de la Nostalgia",
+        "position": "Pluma de la Muerte",
         "desc": [
           {
             "type": "RichText",
-            "text": "Un recipiente para guardar palillos de la fortuna. En su fondo hay un mecanismo que hace que la gente saque con mayor probabilidad un palillo de mala fortuna."
+            "text": "Esta desgastada y vieja flecha mágica parece haber sido guardada con mucho cuidado por alguien."
           }
         ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/goblet_of_eonothem_icon.png"
-      },
-      "flower_of_life": {
-        "title": "Flor del Entrelazamiento",
-        "position": "Flor de la Vida",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Un talismán de papel de arroz de exquisita elaboración. Se dice que tiene el poder de hacer los deseos realidad."
-          }
-        ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png"
-      },
-      "sands_of_eon": {
-        "title": "Reloj de la Transitoriedad",
-        "position": "Arenas del Eón",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Un reloj de bolsillo de bronce decorado con un lazo de papel de arroz y un cascabel. La hora que marca se paró en el alba de un día de otoño."
-          }
-        ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/sands_of_eon_icon.png"
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/plume_of_death_icon.png"
       },
       "circlet_of_logos": {
         "title": "Máscara de la Mutabilidad",
@@ -57,18 +39,85 @@
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/circlet_of_logos_icon.png"
       },
-      "plume_of_death": {
-        "title": "Flecha de la Nostalgia",
-        "position": "Pluma de la Muerte",
+      "sands_of_eon": {
+        "title": "Reloj de la Transitoriedad",
+        "position": "Arenas del Eón",
         "desc": [
           {
             "type": "RichText",
-            "text": "Esta desgastada y vieja flecha mágica parece haber sido guardada con mucho cuidado por alguien."
+            "text": "Un reloj de bolsillo de bronce decorado con un lazo de papel de arroz y un cascabel. La hora que marca se paró en el alba de un día de otoño."
           }
         ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/plume_of_death_icon.png"
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/sands_of_eon_icon.png"
+      },
+      "flower_of_life": {
+        "title": "Flor del Entrelazamiento",
+        "position": "Flor de la Vida",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Un talismán de papel de arroz de exquisita elaboración. Se dice que tiene el poder de hacer los deseos realidad."
+          }
+        ],
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png"
+      },
+      "goblet_of_eonothem": {
+        "title": "Corazón de la Esperanza",
+        "position": "Cáliz de Eonothem",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Un recipiente para guardar palillos de la fortuna. En su fondo hay un mecanismo que hace que la gente saque con mayor probabilidad un palillo de mala fortuna."
+          }
+        ],
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/goblet_of_eonothem_icon.png"
       }
     },
+    "customize": [
+      {
+        "type": "RichText",
+        "text": "Personaje\nRazón"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 15,
+        "name": "Yoimiya",
+        "desc": "La dueña de la tienda Pirotecnia Naganohara y Reina del Festival de Verano. Deposita los deseos de la gente en sus artesanales fuegos artificiales.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yoimiya_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Aumenta los ataques normales de Yoimiya por 10 segundos a cambio de energía elemental, lo que coincide muy bien con los tiempos de espera del personaje. Además Yoimiya no necesita tirar mucho la habilidad definitiva, así que el gasto de energía no es muy importante."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 34,
+        "name": "Hu Tao",
+        "desc": "77.ª directora de la Funeraria El Camino. Pese a su corta edad, ya es la principal encargada de todos los asuntos funerarios de Liyue.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Hu Tao_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Al igual que con Yoimiya, aumenta sus ataques normales y cargados. A Hu Tao sí que habría que ponerle un poco más re recarga para usar este set, ya que su habilidad definitiva hace bastante daño, pero es una buena opción."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2968,
+        "name": "Trotamundos",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un joven errante de identidad enigmática. Viste como un asceta, pero no actúa como tal.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/07/10742394/24d97a22be742fb732ea96f625d1faac_5832031618222617237.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Aumenta sus ataques normales y cargados, cosa importante para el personaje. Habría que ponerle un poco de recarga, al igual que a Hu Tao, pero es una buena opción."
+      }
+    ],
     "story": [
       {
         "title": "Flor del Entrelazamiento",
@@ -125,55 +174,6 @@
             "text": "Reminiscencia de la Purificación"
           }
         ]
-      }
-    ],
-    "reliquarySetEffect": {
-      "twoSetEffect": "ATQ +18%.",
-      "fourSetEffect": "Si el personaje tiene 15 pts. de Energía Elemental o más, perderá 15 pts. al realizar una Habilidad Elemental y el daño infligido con los Ataques Normales, Cargados y Descendentes aumentará en un 50% durante 10 s. Este efecto no puede activarse más de una vez simultáneamente."
-    },
-    "customize": [
-      {
-        "type": "RichText",
-        "text": "Personaje\nRazón"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 15,
-        "name": "Yoimiya",
-        "desc": "La dueña de la tienda Pirotecnia Naganohara y Reina del Festival de Verano. Deposita los deseos de la gente en sus artesanales fuegos artificiales.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yoimiya_icon.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "Aumenta los ataques normales de Yoimiya por 10 segundos a cambio de energía elemental, lo que coincide muy bien con los tiempos de espera del personaje. Además Yoimiya no necesita tirar mucho la habilidad definitiva, así que el gasto de energía no es muy importante."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 34,
-        "name": "Hu Tao",
-        "desc": "77.ª directora de la Funeraria El Camino. Pese a su corta edad, ya es la principal encargada de todos los asuntos funerarios de Liyue.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Hu Tao_icon.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "Al igual que con Yoimiya, aumenta sus ataques normales y cargados. A Hu Tao sí que habría que ponerle un poco más re recarga para usar este set, ya que su habilidad definitiva hace bastante daño, pero es una buena opción."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2968,
-        "name": "Trotamundos",
-        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un joven errante de identidad enigmática. Viste como un asceta, pero no actúa como tal.</span></p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/07/10742394/24d97a22be742fb732ea96f625d1faac_5832031618222617237.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "Aumenta sus ataques normales y cargados, cosa importante para el personaje. Habría que ponerle un poco de recarga, al igual que a Hu Tao, pero es una buena opción."
       }
     ]
   }
