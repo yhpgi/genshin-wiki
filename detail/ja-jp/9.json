@@ -5,1280 +5,643 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kaeya_icon.png",
   "headerImgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/18/119725280/eaed087aacc9d4f662416504f5f78933_2946456488244632025.png",
   "filterValues": {
-    "characterRarity": "★4",
-    "characterWeapon": "片手剣",
-    "characterProperty": "元素チャージ効率",
     "characterRegion": "モンド城",
-    "characterVision": "氷元素"
+    "characterProperty": "元素チャージ効率",
+    "characterRarity": "★4",
+    "characterVision": "氷元素",
+    "characterWeapon": "片手剣"
   },
   "menuId": 2,
   "menuName": "キャラ図鑑",
   "version": 1740049102,
   "components": {
     "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=31&center=33.51,-168.61&zoom=-1.50",
-    "ascension": [
+    "customize": [
       {
-        "key": "Lv.1",
-        "combatStats": [
+        "type": "Heading",
+        "level": 1,
+        "text": "祈願履歴",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "祈願履歴：暁風の詩"
+      },
+      {
+        "type": "RichText",
+        "text": "期間\nピックアップ\n2024/03/13 ~ 2024/04/02\n(Ver.4.5前半)"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6,
+        "name": "エウルア",
+        "desc": "<p>古き一族出身の「波花騎士」。同時に西風騎士団の遊撃小隊隊長でもある。旧貴族の末裔でありながら、敵対関係にある西風騎士団に入団した理由は、未だ謎に包まれている。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Eula_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "モナ",
+        "desc": "<p>謎の占星術師の少女。自分のことを「偉大なる占星術師モナ」と自称するが、その肩書きに相応しい実力を持っている。博学で、高慢。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 47,
+        "name": "アルベド",
+        "desc": "西風騎士団の首席錬金術師兼調査小隊隊長。「白亜の申し子」と呼ばれる天才。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Albedo_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 12,
+        "name": "クレー",
+        "desc": "<p>西風騎士団反省室の常連で、モンドの爆破スペシャリスト。人呼んで「逃げ回る太陽」。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 43,
+        "name": "ディルック",
+        "desc": "<p>モンドの大半の酒造を掌握する貴公子。財力も人望も実力も、見くびってはならない。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Diluc_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 27,
+        "name": "ジン",
+        "desc": "<p>正直で真面目な蒲公英騎士。モンド西風騎士団の代理団長。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Jean_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2,
+        "name": "リサ",
+        "desc": "無気力だが博学な図書館司書。スメール教令院「200年に1人」の天才卒業生。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Lisa_icon.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 35,
+        "name": "バーバラ",
+        "desc": "モンド城のみんなはバーバラが大好き。ちなみに「アイドル」という言葉は彼女が雑誌で見たものらしい。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Barbara_icon.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9,
+        "name": "ガイア",
+        "desc": "<p>異国の顔を持つ剣士。西風騎士団の頭脳派である。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kaeya_icon.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 48,
+        "name": "レザー",
+        "desc": "<p>人間の町から離れた、モンド地域の奔狼領で狼と暮らす少年。勘が鋭く、動きが俊敏。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Razor_icon.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 14,
+        "name": "アンバー",
+        "desc": "元気満々な女の子、騎士団で最も優秀で、最後の偵察騎士である。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Amber_icon.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 38,
+        "name": "フィッシュル",
+        "desc": "<p>自称「断罪の皇女」。オズという漆黒の鴉とともに行動する謎の少女。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Fischl_icon.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 26,
+        "name": "ベネット",
+        "desc": "<p>モンドの少年冒険者。その優しさにそぐわない不運の持ち主。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Bennett_icon.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 40,
+        "name": "ノエル",
+        "desc": "<p>「西風騎士団」の頼もしいメイド。いつか本当の騎士になることを夢見ている。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Noelle_icon.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 44,
+        "name": "ディオナ",
+        "desc": "稀な「非人類」の血統を引いている少女、「キャッツテール」の超人気バーテンダー。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Diona_icon.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 30,
+        "name": "スクロース",
+        "desc": "この世界のありとあらゆるものに強い好奇心を抱く錬金術師。研究分野は「生物錬金」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sucrose_icon.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 33,
+        "name": "ロサリア",
+        "desc": "身にまとう服装以外、何ひとつとして聖職者とは思えないシスター。冷たい言動の中には、相手を見透かす鋭さが隠されている。また、いつも一人で行動をしている。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Rosaria_icon.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3462,
+        "name": "ミカ",
+        "desc": "<p>平凡な家庭に生まれた若い騎士。小隊では「前進測量士」を担当している。控えめで慎重な性格の持ち主。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/19/132746206/da13e3b1a2c6c0e5892b201cec735f9b_6427639047927610211.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "概論"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>ガイアは周囲に</color> <color=#99ffff>氷元素ダメージ</color> <color=#ffffff73>を与える元素爆発を用いて戦うキャラクターである。</color>\nガイアは元素爆発を発動することで、フィールド上のキャラクターの周囲を回転し <color=#99ffff>氷元素ダメージ</color> <color=#ffffff73>を与える氷柱を生成する。この氷柱はガイアが控えに回った後も持続し、敵にダメージを与え、</color> <color=#99ffff>凍結</color> <color=#ffffff73>などの</color> <color=#ffd780>元素反応</color> <color=#ffffff73>を起こすことができる。</color>\n元素爆発を強化するため、 <color=#ffd780>会心率</color> <color=#ffffff73>や</color> <color=#ffd780>会心ダメージ</color> <color=#ffffff73>、</color> <color=#ffd780>攻撃力</color> <color=#ffffff73>を強化する武器・聖遺物を選定すると良いだろう。また、</color> 元素爆発を発動しやすいよう <color=#ffd780>元素チャージ効率</color> <color=#ffffff73>を強化するのも良い。</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "おすすめ武器"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2044,
+        "name": "霧切の廻光",
+        "desc": "烈々たる紫の光に輝く太刀。「廻光」という名は、かつて砕かれた過去に由来している。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/雾切之回光.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>霧切の廻光(★5)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>入手方法</color>\n<color=#ffffff73>限定祈願「神鋳賦形」より入手可能</color>\n<color=#ffffff>基礎攻撃力</color>\n48 ~ 674\n<color=#ffffff>サブステータス：</color> <color=#ffd780>会心ダメージ</color>\n9.6% ~ 44.1%\n<color=#ffffff>「霧切の御腰物」</color>\n<color=#ffd780>全元素ダメージ</color> が上昇する。通常攻撃で元素ダメージを与えた時5秒間、元素爆発を発動した時10秒間、キャラクターの元素エネルギーが100%未満の場合「霧切の巴紋」を獲得し、霧切の巴紋を有するとき自身元素タイプの <color=#ffd780>元素ダメージ</color> が上昇する。最大3層まで重ね掛け可能、継続時間は層ごとに独立している。\n<color=#ffffff>おすすめ理由</color>\nサブステータス： <color=#ffd780>会心ダメージ</color> が上昇する。\n武器効果：ガイアが与える <color=#99ffff>氷元素ダメージ</color> が上昇し、元素スキルと元素爆発を強化できる。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1952,
+        "name": "天目影打",
+        "desc": "神速で名を馳せる天狗をも斬り墜とすという伝説を持つ、名士が発注した刀。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天目影打刀.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>天目影打(★4)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>入手方法</color>\n<color=#ffffff73>鍛造により入手可能</color>\n<color=#ffffff>基礎攻撃力</color>\n41 ~ 454\n<color=#ffffff>サブステータス：</color> <color=#ffd780>攻撃力</color>\n12.0% ~ 55.1%\n<color=#ffffff>「岩蔵の胤」</color>\n元素スキルを発動した後、継続時間30秒の継承の印を1つ獲得する。この効果は5秒毎に1回のみ発動可能、同時に最大3つまで存在可能。元素爆発を発動すると、所持している継承の印を全て消費し、2秒後に該当キャラクターの元素エネルギーが回復する。\n<color=#ffffff>おすすめ理由</color>\nサブステータス： <color=#ffd780>攻撃力</color> が上昇する。\n武器効果：元素スキルのクールタイムが6秒であるため高頻度で印を獲得でき、元素爆発の度に元素エネルギーを回復できる。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3999,
+        "name": "狼牙",
+        "desc": "<p>伝説によると、遥か昔の流浪騎士が使っていた長剣。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/14/94675339/fcb69a6f01bb2be8bb0abd2f67a9d887_3642394821822912160.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>狼牙(★4)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>入手方法</color>\n天空紀行(Ver.4.0-)Lv.30到達報酬\n<color=#ffffff>基礎攻撃力</color>\n42 ~ 510\n<color=#ffffff>サブステータス：</color> <color=#ffd780>会心率</color>\n6.0% ~ 27.6%\n<color=#ffffff>「蒼き狼の北風」</color>\n元素スキルと元素爆発のダメージが上昇する。元素スキルが敵に命中した時、元素スキルの <color=#ffd780>会心率</color> が上昇、元素爆発が敵に命中した時、元素爆発の <color=#ffd780>会心率</color> が上昇する。 <color=#ffd780>会心率</color> が上昇する効果はそれぞれ、継続時間10秒、最大4層まで重ね掛け可能、0.1秒毎に1回のみ発動できる。\n<color=#ffffff>おすすめ理由</color>\nサブステータス： <color=#ffd780>会心率</color> が上昇する。\n武器効果：元素爆発により生成される氷柱が連続的に攻撃を行うため、効果を発動しやすい。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2017,
+        "name": "西風剣",
+        "desc": "西風騎士団でよく使われる長剣。軽くて鋭い上、元素の力が集まりやすい。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风剑.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>西風剣(★4)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>入手方法</color>\n<color=#ffffff73>祈願より入手可能</color>\n<color=#ffffff>基礎攻撃力</color>\n41 ~ 454\n<color=#ffffff>サブステータス：</color> <color=#ffd780>元素チャージ効率</color>\n13.3% ~ 61.3%\n<color=#ffffff>「追い風が吹く」</color>\n会心攻撃をした時、確率で元素粒子を生成し、元素エネルギーを6回復する。\n<color=#ffffff>おすすめ理由</color>\nサブステータス： <color=#ffd780>元素チャージ効率</color> が上昇する。\n武器効果： <color=#ffffff73>会心攻撃をすることにより、チーム全員の元素エネルギー回復をサポートできる。</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "おすすめ聖遺物"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "ステータス"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/1387f1512524772db99ae30b6303f939_5072609172935942900.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>攻撃力</color> <color=#ffffff73>/</color> <color=#ffd780>元素チャージ効率</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/56451470fe75f710b812ac28e226273b_5774236690802856497.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#99ffff>氷元素ダメージ</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/8bc07934c9290b83751c7fa183a43ab7_32021027934025390.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>会心率</color> <color=#ffffff73>/</color> <color=#ffd780>会心ダメージ</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>サブステータス</color>\n<color=#ffd780>会心率</color> <color=#ffffff73>/</color> <color=#ffd780>会心ダメージ</color> ： <color=#ffd780>会心率</color> は60%、 <color=#ffd780>会心ダメージ</color> は130%以上が目標となるだろう。"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "4セット構成"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2090,
+        "name": "絶縁の旗印",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>絶縁の旗印</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2セット効果</color>\n<color=#ffd780>元素チャージ効率</color> +20%。\n<color=#ffffff>4セット効果</color>\n<color=#ffd780>元素チャージ効率</color> <color=#ffffff73>の25%を基準に、元素爆発のダメージが上昇する。</color>\n<color=#ffffff>おすすめ理由</color>\n2セット効果： <color=#ffd780>元素チャージ効率</color> が上昇する。\n4セット効果：元素爆発のダメージが増加する。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2062,
+        "name": "氷風を彷徨う勇士",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Blizzard Strayer/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>氷風を彷徨う勇士</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2セット効果</color>\n<color=#99ffff>氷元素ダメージ</color> +15%。\n<color=#ffffff>4セット効果</color>\n<color=#99ffff>氷元素</color> <color=#ffffff73>の影響を受けている敵を攻撃した場合、</color> <color=#ffd780>会心率</color> <color=#ffffff73>+20%。敵が</color> <color=#99ffff>凍結状態</color> <color=#ffffff73>の場合、</color> <color=#ffd780>会心率</color> <color=#ffffff73>は更に+20%。</color>\n<color=#ffffff>おすすめ理由</color>\n2セット効果： <color=#99ffff>氷元素ダメージ</color> が上昇する。\n4セット効果：元素爆発の氷柱が連続的に <color=#99ffff>氷元素ダメージ</color> を与えるため、効果を発動しやすい。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2075,
+        "name": "旧貴族のしつけ",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>旧貴族のしつけ</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2セット効果</color>\n<color=#ffffff73>元素爆発のダメージ+20%。</color>\n<color=#ffffff>4セット効果</color>\n元素爆発を発動すると、チーム全員の <color=#ffd780>攻撃力</color> +20%。\n<color=#ffffff>おすすめ理由</color>\n2セット効果：元素爆発のダメージが上昇する。\n4セット効果：チーム全員の <color=#ffd780>攻撃力</color> が上昇する。"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "2セット+2セット構成"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2062,
+        "name": "氷風を彷徨う勇士",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Blizzard Strayer/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2095,
+        "name": "剣闘士のフィナーレ",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2075,
+        "name": "旧貴族のしつけ",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2090,
+        "name": "絶縁の旗印",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>「氷風を彷徨う勇士」の2セット効果</color>\n<color=#99ffff>氷元素ダメージ</color> <color=#ffffff73>+15%。</color>\n<color=#ffffff>「剣闘士のフィナーレ」の2セット効果</color>\n<color=#ffd780>攻撃力</color> <color=#ffffff73>+18%。</color>\n<color=#ffffff>「旧貴族のしつけ」の2セット効果</color>\n<color=#ffffff73>元素爆発のダメージ+20%。</color>\n<color=#ffffff>「絶縁の旗印」の2セット効果</color>\n<color=#ffd780>元素チャージ効率</color> <color=#ffffff73>+20%。</color>\n上記の2セット効果から、足りないステータスを補うような構成を組むと良い。 <color=#ffffff73>「</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2098,
+        "name": "追憶のしめ縄",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "」など、上記以外の代用もある。"
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "和名 / 英名",
+        "value": [
           {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎HP",
-            "values": [
-              "-",
-              "976"
-            ]
-          },
-          {
-            "key": "基礎攻撃力",
-            "values": [
-              "-",
-              "19"
-            ]
-          },
-          {
-            "key": "基礎防御力",
-            "values": [
-              "-",
-              "66"
-            ]
-          },
-          {
-            "key": "元素チャージ効率",
-            "values": [
-              "-",
-              "0.0%"
-            ]
+            "type": "RichText",
+            "text": "ガイア / Kaeya"
           }
         ]
       },
       {
-        "key": "Lv.20",
-        "combatStats": [
+        "key": "誕生日",
+        "value": [
           {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
+            "type": "RichText",
+            "text": "11月30日"
+          }
+        ]
+      },
+      {
+        "key": "命ノ星座",
+        "value": [
           {
-            "key": "基礎HP",
-            "values": [
-              "2506",
-              "3235"
-            ]
-          },
+            "type": "RichText",
+            "text": "孔雀羽座"
+          }
+        ]
+      },
+      {
+        "key": "称号",
+        "value": [
           {
-            "key": "基礎攻撃力",
-            "values": [
-              "48",
-              "62"
-            ]
-          },
+            "type": "RichText",
+            "text": "寒風の剣士"
+          }
+        ]
+      },
+      {
+        "key": "神の目",
+        "value": [
           {
-            "key": "基礎防御力",
-            "values": [
-              "171",
-              "220"
-            ]
-          },
+            "type": "RichText",
+            "text": "氷"
+          }
+        ]
+      },
+      {
+        "key": "所属",
+        "value": [
           {
-            "key": "元素チャージ効率",
-            "values": [
-              "0.0%",
-              "0.0%"
-            ]
+            "type": "RichText",
+            "text": "西風騎士団"
+          }
+        ]
+      },
+      {
+        "key": "中国語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "孙晔"
+          }
+        ]
+      },
+      {
+        "key": "英語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Josey Montana McCoy"
+          }
+        ]
+      },
+      {
+        "key": "日本語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "鳥海浩輔"
+          }
+        ]
+      },
+      {
+        "key": "韓国語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "정주원"
+          }
+        ]
+      },
+      {
+        "key": "オリジナル料理",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 949,
+            "name": "フルーティーな串焼き",
+            "desc": "ガイアのオリジナル料理。とても美味しそうな串焼き、しっかりとした濃厚な甘みを感じる。待って…本当にフルーツの香り？",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fruity Skewers_icon.png"
           }
         ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "モラ",
-            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 411,
-            "name": "哀切なアイスクリスタル・砕屑",
-            "desc": "キャラクターの突破用アイテム。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 421,
-            "name": "ドドリアン",
-            "desc": "<p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。</p><p></p><p>（以下は図鑑より抜粋）</p><p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。現代医学の見解によれば、ドドリアンはある程度の解毒効果があるという。しかし生で食べると渋いため、多くの人は好まない。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Calla Lily_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 629,
-            "name": "宝探しの鴉マーク",
-            "desc": "宝盗団の誇りであるマーク、彼らの宝物に対する永遠不滅の情熱を示すものである。とはいえ、自分が盗賊ということを誇らしげに示す必要はあるかな…？",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
-            "amount": 3
-          }
-        ]
+        "isMaterial": true
       },
       {
-        "key": "Lv.40",
-        "combatStats": [
+        "key": "七聖召喚のカード",
+        "value": [
           {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎HP",
-            "values": [
-              "4846",
-              "5364"
-            ]
-          },
-          {
-            "key": "基礎攻撃力",
-            "values": [
-              "93",
-              "103"
-            ]
-          },
-          {
-            "key": "基礎防御力",
-            "values": [
-              "330",
-              "365"
-            ]
-          },
-          {
-            "key": "元素チャージ効率",
-            "values": [
-              "0.0%",
-              "6.7%"
-            ]
+            "type": "CustomEntry",
+            "epId": 3175,
+            "name": "ガイア",
+            "desc": "<p><strong>寒風の剣士・ガイア</strong></p><p></p><p>彼は他人が持つ「騎士のような美徳」を見つけることに長けている。</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/194600931/a4641f3c8a186e2948662aa255638a9c_5809583609174930384.png"
           }
         ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "モラ",
-            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 410,
-            "name": "哀切なアイスクリスタル・欠片",
-            "desc": "キャラクターの突破用アイテム。<br/>「…すみません…」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 938,
-            "name": "極寒のコア",
-            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 421,
-            "name": "ドドリアン",
-            "desc": "<p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。</p><p></p><p>（以下は図鑑より抜粋）</p><p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。現代医学の見解によれば、ドドリアンはある程度の解毒効果があるという。しかし生で食べると渋いため、多くの人は好まない。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Calla Lily_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 629,
-            "name": "宝探しの鴉マーク",
-            "desc": "宝盗団の誇りであるマーク、彼らの宝物に対する永遠不滅の情熱を示すものである。とはいえ、自分が盗賊ということを誇らしげに示す必要はあるかな…？",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
-            "amount": 15
-          }
-        ]
+        "isMaterial": true
       },
       {
-        "key": "Lv.50",
-        "combatStats": [
+        "key": "追加コスチューム",
+        "value": [
           {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎HP",
-            "values": [
-              "6170",
-              "6860"
-            ]
-          },
-          {
-            "key": "基礎攻撃力",
-            "values": [
-              "118",
-              "131"
-            ]
-          },
-          {
-            "key": "基礎防御力",
-            "values": [
-              "420",
-              "467"
-            ]
-          },
-          {
-            "key": "元素チャージ効率",
-            "values": [
-              "6.7%",
-              "13.3%"
-            ]
+            "type": "CustomEntry",
+            "epId": 5782,
+            "name": "帆影に戯る風",
+            "desc": "ガイアが舞台上で「短刀の大盗賊」を演じる時の衣装。「目を引く」ことをコンセプトとした華やかな作り。しかし、着用にはそこまで手間がかからず、むしろ一番手入れに時間を要するのは装飾品と短刀のほうになっている。",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/06/24/d99def11f06b2292c06cab126c205d8c_3267539322665900555.png"
           }
         ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "モラ",
-            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 410,
-            "name": "哀切なアイスクリスタル・欠片",
-            "desc": "キャラクターの突破用アイテム。<br/>「…すみません…」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 938,
-            "name": "極寒のコア",
-            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 421,
-            "name": "ドドリアン",
-            "desc": "<p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。</p><p></p><p>（以下は図鑑より抜粋）</p><p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。現代医学の見解によれば、ドドリアンはある程度の解毒効果があるという。しかし生で食べると渋いため、多くの人は好まない。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Calla Lily_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1553,
-            "name": "シルバーの鴉マーク",
-            "desc": "宝盗団のメンバーが互いの存在を証明する鴉マーク。宝盗団のメンバーは出身を問わず、宝物への貪欲さえあれば、「優秀」なメンバーになれる。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-            "amount": 12
-          }
-        ]
+        "isMaterial": true
       },
       {
-        "key": "Lv.60",
-        "combatStats": [
+        "key": "実装バージョン",
+        "value": [
           {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎HP",
-            "values": [
-              "7666",
-              "8184 "
-            ]
-          },
-          {
-            "key": "基礎攻撃力",
-            "values": [
-              "147",
-              "157"
-            ]
-          },
-          {
-            "key": "基礎防御力",
-            "values": [
-              "522",
-              "557"
-            ]
-          },
-          {
-            "key": "元素チャージ効率",
-            "values": [
-              "13.3%",
-              "13.3%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "モラ",
-            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 409,
-            "name": "哀切なアイスクリスタル・塊",
-            "desc": "キャラクターの突破用アイテム。<br/>「…すみません…」<br/>「あなた達まで、わたしと一緒にこの世界の悲しみを背負わせるなんて…」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 938,
-            "name": "極寒のコア",
-            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 421,
-            "name": "ドドリアン",
-            "desc": "<p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。</p><p></p><p>（以下は図鑑より抜粋）</p><p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。現代医学の見解によれば、ドドリアンはある程度の解毒効果があるという。しかし生で食べると渋いため、多くの人は好まない。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Calla Lily_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1553,
-            "name": "シルバーの鴉マーク",
-            "desc": "宝盗団のメンバーが互いの存在を証明する鴉マーク。宝盗団のメンバーは出身を問わず、宝物への貪欲さえあれば、「優秀」なメンバーになれる。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Lv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎HP",
-            "values": [
-              "8989",
-              "9507"
-            ]
-          },
-          {
-            "key": "基礎攻撃力",
-            "values": [
-              "172",
-              "182"
-            ]
-          },
-          {
-            "key": "基礎防御力",
-            "values": [
-              "612",
-              "647"
-            ]
-          },
-          {
-            "key": "元素チャージ効率",
-            "values": [
-              "13.3%",
-              "20.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "モラ",
-            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 409,
-            "name": "哀切なアイスクリスタル・塊",
-            "desc": "キャラクターの突破用アイテム。<br/>「…すみません…」<br/>「あなた達まで、わたしと一緒にこの世界の悲しみを背負わせるなんて…」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 938,
-            "name": "極寒のコア",
-            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 421,
-            "name": "ドドリアン",
-            "desc": "<p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。</p><p></p><p>（以下は図鑑より抜粋）</p><p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。現代医学の見解によれば、ドドリアンはある程度の解毒効果があるという。しかし生で食べると渋いため、多くの人は好まない。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Calla Lily_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 760,
-            "name": "ゴールドの鴉マーク",
-            "desc": "宝盗団の信仰と誇りを示す鴉マーク。この広い大地、幽邃の深淵、未知な海に秘宝が存在していれば、宝盗団の信念は永遠に続く。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎HP",
-            "values": [
-              "10312",
-              "10830"
-            ]
-          },
-          {
-            "key": "基礎攻撃力",
-            "values": [
-              "198",
-              "208"
-            ]
-          },
-          {
-            "key": "基礎防御力",
-            "values": [
-              "702",
-              "737"
-            ]
-          },
-          {
-            "key": "元素チャージ効率",
-            "values": [
-              "20.0%",
-              "26.7%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "モラ",
-            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 408,
-            "name": "哀切なアイスクリスタル",
-            "desc": "キャラクターの突破用アイテム。<br/>「…すみません、あなた達まで、わたしと一緒にこの世界の悲しみを背負わせるなんて…」<br/>「わたしの寒さを耐えられる者は、きっと心の中に熱い欲望を持っているだろう？」<br/>「なら、わたしの代わりに、旧世界を焼き尽くそう。」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 938,
-            "name": "極寒のコア",
-            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 421,
-            "name": "ドドリアン",
-            "desc": "<p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。</p><p></p><p>（以下は図鑑より抜粋）</p><p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。現代医学の見解によれば、ドドリアンはある程度の解毒効果があるという。しかし生で食べると渋いため、多くの人は好まない。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Calla Lily_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 760,
-            "name": "ゴールドの鴉マーク",
-            "desc": "宝盗団の信仰と誇りを示す鴉マーク。この広い大地、幽邃の深淵、未知な海に秘宝が存在していれば、宝盗団の信念は永遠に続く。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Lv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎HP",
-            "values": [
-              "11636",
-              "-"
-            ]
-          },
-          {
-            "key": "基礎攻撃力",
-            "values": [
-              "223",
-              "-"
-            ]
-          },
-          {
-            "key": "基礎防御力",
-            "values": [
-              "792",
-              "-"
-            ]
-          },
-          {
-            "key": "元素チャージ効率",
-            "values": [
-              "26.7%",
-              "-"
-            ]
+            "type": "RichText",
+            "text": "1.0"
           }
         ]
       }
     ],
-    "talent": [
+    "story": [
       {
-        "key": "通常攻撃・儀典の剣術",
-        "title": "通常攻撃・儀典の剣術",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/battle_talent_0/battle_talent_0.png",
+        "title": "キャラクター詳細",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>通常攻撃</color>\n剣による最大5段の連続攻撃を行う。\n<color=#ffd780>重撃</color>\n一定のスタミナを消費し、前方に斬撃を2回放つ。\n<color=#ffd780>落下攻撃</color>\n空中から落下し地面に衝撃を与える。経路上の敵を攻撃し、落下時に範囲ダメージを与える。"
+            "text": "ガイア・アルベリヒは、造酒名家「ラグヴィンド」家の養子である。\n彼がディルック・ラグヴィンドを「義兄」と呼ばなくなってから、随分長い時間が経った。\n今のガイアは、西風騎士団の騎兵隊隊長。頼れる行動派で、ジンから信頼されている人物である。\nそして、このモンドで何かアクシデントが起こった時、その後始末をするのはいつもガイアなのである。"
           }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11"
-            ]
-          },
-          {
-            "key": "1段ダメージ",
-            "values": [
-              "53.8%",
-              "58.1%",
-              "62.5%",
-              "68.8%",
-              "73.1%",
-              "78.1%",
-              "85%",
-              "91.9%",
-              "98.8%",
-              "106.2%",
-              "114.8%"
-            ]
-          },
-          {
-            "key": "2段ダメージ",
-            "values": [
-              "51.7%",
-              "55.9%",
-              "60.1%",
-              "66.1%",
-              "70.3%",
-              "75.1%",
-              "81.7%",
-              "88.3%",
-              "95%",
-              "102.2%",
-              "110.4%"
-            ]
-          },
-          {
-            "key": "3段ダメージ",
-            "values": [
-              "65.3%",
-              "70.6%",
-              "75.9%",
-              "83.5%",
-              "88.8%",
-              "94.9%",
-              "103.2%",
-              "111.6%",
-              "119.9%",
-              "129%",
-              "139.5%"
-            ]
-          },
-          {
-            "key": "4段ダメージ",
-            "values": [
-              "70.9%",
-              "76.6%",
-              "82.4%",
-              "90.6%",
-              "96.4%",
-              "103%",
-              "112.1%",
-              "121.1%",
-              "130.2%",
-              "140.1%",
-              "151.4%"
-            ]
-          },
-          {
-            "key": "5段ダメージ",
-            "values": [
-              "88.2%",
-              "95.4%",
-              "102.5%",
-              "112.9%",
-              "120%",
-              "128.3%",
-              "139.5%",
-              "150.8%",
-              "162.1%",
-              "174.4%",
-              "188.5%"
-            ]
-          },
-          {
-            "key": "重撃ダメージ",
-            "values": [
-              "55.0%+73.1%",
-              "59.5%+79.1%",
-              "64.0%+85.0%",
-              "70.4%+93.5%",
-              "74.9%+99.5%",
-              "80.0%+106.3%",
-              "87.0%+115.6%",
-              "94.1%+125.0%",
-              "101.1%+134.3%",
-              "108.8%+144.5%",
-              "117.6%+156.2%"
-            ]
-          },
-          {
-            "key": "重撃スタミナ消費",
-            "values": [
-              "20",
-              "20",
-              "20",
-              "20",
-              "20",
-              "20",
-              "20",
-              "20",
-              "20",
-              "20",
-              "20"
-            ]
-          },
-          {
-            "key": "落下期間のダメージ",
-            "values": [
-              "63.9%",
-              "69.1%",
-              "74.3%",
-              "81.8%",
-              "87%",
-              "92.9%",
-              "101.1%",
-              "109.3%",
-              "117.5%",
-              "126.4%",
-              "135.3%"
-            ]
-          },
-          {
-            "key": "低空/高空落下攻撃ダメージ",
-            "values": [
-              "128%/160%",
-              "138%/173%",
-              "149%/186%",
-              "164%/204%",
-              "174%/217%",
-              "186%/232%",
-              "202%/253%",
-              "219%/273%",
-              "235%/293%",
-              "253%/316%",
-              "271%/338%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "モラ",
-              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 179,
-              "name": "「詩文」の教え",
-              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は美しい気持ちである。美しい日々に野原の風が田園の詩や愛の詩を連れて、風が葉を撫でるように、人々の心を優しく撫でる。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Ballad_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 629,
-              "name": "宝探しの鴉マーク",
-              "desc": "宝盗団の誇りであるマーク、彼らの宝物に対する永遠不滅の情熱を示すものである。とはいえ、自分が盗賊ということを誇らしげに示す必要はあるかな…？",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "モラ",
-              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 178,
-              "name": "「詩文」の導き",
-              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は激励の心意気。暗い日々の中で、巷を通る風は怒りの詩を囁き、それは戦鼓、嵐の前の呟きである。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1553,
-              "name": "シルバーの鴉マーク",
-              "desc": "宝盗団のメンバーが互いの存在を証明する鴉マーク。宝盗団のメンバーは出身を問わず、宝物への貪欲さえあれば、「優秀」なメンバーになれる。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "モラ",
-              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 178,
-              "name": "「詩文」の導き",
-              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は激励の心意気。暗い日々の中で、巷を通る風は怒りの詩を囁き、それは戦鼓、嵐の前の呟きである。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1553,
-              "name": "シルバーの鴉マーク",
-              "desc": "宝盗団のメンバーが互いの存在を証明する鴉マーク。宝盗団のメンバーは出身を問わず、宝物への貪欲さえあれば、「優秀」なメンバーになれる。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "モラ",
-              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 178,
-              "name": "「詩文」の導き",
-              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は激励の心意気。暗い日々の中で、巷を通る風は怒りの詩を囁き、それは戦鼓、嵐の前の呟きである。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1553,
-              "name": "シルバーの鴉マーク",
-              "desc": "宝盗団のメンバーが互いの存在を証明する鴉マーク。宝盗団のメンバーは出身を問わず、宝物への貪欲さえあれば、「優秀」なメンバーになれる。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "モラ",
-              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 178,
-              "name": "「詩文」の導き",
-              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は激励の心意気。暗い日々の中で、巷を通る風は怒りの詩を囁き、それは戦鼓、嵐の前の呟きである。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1553,
-              "name": "シルバーの鴉マーク",
-              "desc": "宝盗団のメンバーが互いの存在を証明する鴉マーク。宝盗団のメンバーは出身を問わず、宝物への貪欲さえあれば、「優秀」なメンバーになれる。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "モラ",
-              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 177,
-              "name": "「詩文」の哲学",
-              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は謳う気持ちである。全てが消え、全てがなくなったとしても、風と共にある詩と歌はこの世の美しいものを何一つ残さず空、大地、海の片隅まで届ける。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 760,
-              "name": "ゴールドの鴉マーク",
-              "desc": "宝盗団の信仰と誇りを示す鴉マーク。この広い大地、幽邃の深淵、未知な海に秘宝が存在していれば、宝盗団の信念は永遠に続く。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 357,
-              "name": "北風の魂箱",
-              "desc": "北風の王狼の魂から取ったごくわずかな力。<br/>この大地はかつて北風に吹かれ、氷霜に包まれていた。しかし強い北風は命を育むことはできず、命の苗を消すのみであったと、彼は最後にようやく理解した。命の終わりに、彼は自分の力を大地に込めて、大地とその住民を永遠に守ると誓った。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spirit Locket of Boreas_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "モラ",
-              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 177,
-              "name": "「詩文」の哲学",
-              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は謳う気持ちである。全てが消え、全てがなくなったとしても、風と共にある詩と歌はこの世の美しいものを何一つ残さず空、大地、海の片隅まで届ける。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 760,
-              "name": "ゴールドの鴉マーク",
-              "desc": "宝盗団の信仰と誇りを示す鴉マーク。この広い大地、幽邃の深淵、未知な海に秘宝が存在していれば、宝盗団の信念は永遠に続く。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 357,
-              "name": "北風の魂箱",
-              "desc": "北風の王狼の魂から取ったごくわずかな力。<br/>この大地はかつて北風に吹かれ、氷霜に包まれていた。しかし強い北風は命を育むことはできず、命の苗を消すのみであったと、彼は最後にようやく理解した。命の終わりに、彼は自分の力を大地に込めて、大地とその住民を永遠に守ると誓った。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spirit Locket of Boreas_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "モラ",
-              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 177,
-              "name": "「詩文」の哲学",
-              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は謳う気持ちである。全てが消え、全てがなくなったとしても、風と共にある詩と歌はこの世の美しいものを何一つ残さず空、大地、海の片隅まで届ける。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 760,
-              "name": "ゴールドの鴉マーク",
-              "desc": "宝盗団の信仰と誇りを示す鴉マーク。この広い大地、幽邃の深淵、未知な海に秘宝が存在していれば、宝盗団の信念は永遠に続く。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 357,
-              "name": "北風の魂箱",
-              "desc": "北風の王狼の魂から取ったごくわずかな力。<br/>この大地はかつて北風に吹かれ、氷霜に包まれていた。しかし強い北風は命を育むことはできず、命の苗を消すのみであったと、彼は最後にようやく理解した。命の終わりに、彼は自分の力を大地に込めて、大地とその住民を永遠に守ると誓った。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spirit Locket of Boreas_icon.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "モラ",
-              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 177,
-              "name": "「詩文」の哲学",
-              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は謳う気持ちである。全てが消え、全てがなくなったとしても、風と共にある詩と歌はこの世の美しいものを何一つ残さず空、大地、海の片隅まで届ける。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 760,
-              "name": "ゴールドの鴉マーク",
-              "desc": "宝盗団の信仰と誇りを示す鴉マーク。この広い大地、幽邃の深淵、未知な海に秘宝が存在していれば、宝盗団の信念は永遠に続く。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 357,
-              "name": "北風の魂箱",
-              "desc": "北風の王狼の魂から取ったごくわずかな力。<br/>この大地はかつて北風に吹かれ、氷霜に包まれていた。しかし強い北風は命を育むことはできず、命の苗を消すのみであったと、彼は最後にようやく理解した。命の終わりに、彼は自分の力を大地に込めて、大地とその住民を永遠に守ると誓った。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spirit Locket of Boreas_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "知恵の冠",
-              "desc": "天賦のLvUpに必要なレア素材。<br/>遥か昔に、知恵の伝承に使用していた儀式の器具。現在、知恵はすでに言語や典籍と一体化している。しかし「知恵の冠」に残された力と知識は今の人に偉大なる突破をもたらしてくれる。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/battle_talent_0/battle_talent_0.gif"
+        ]
       },
       {
-        "key": "霜の襲撃",
-        "title": "霜の襲撃",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/battle_talent_1/battle_talent_1.png",
+        "title": "キャラクターストーリー1",
         "desc": [
           {
             "type": "RichText",
-            "text": "急速に凍結する寒気を放ち、前方の敵に <color=#99ffff>氷元素ダメージ</color> を与える。\n優しくて親切なガイアだが、本当は誰にも溶かすことができない固い氷である。"
+            "text": "面白いことに、この騎兵隊隊長と最も遭遇できる場所は、騎士団本部ではなく、夜の酒場だ。\nガイアはよく一人でカウンター席に座り、モンドで有名な混成酒「午後の死」を飲みながら、酒好きなモンドの住民たちと会話を楽しむ。\n彼は、モンドの酒飲みと年寄りの間で特に人気があり、「安心して孫娘を託せる男」という称号すらある。\n会話を楽しみながら、ゆっくりと酒を嗜む。これほど親しみやすい男を、西風騎士団の騎兵隊隊長と結びつけることは難しい。\nガイアの酒の相手は、すでにほろ酔い状態の狩人もいれば、酒好きな盗賊もいる。しかし警戒心がどれほど強い者でも、ガイアの前ではつい本音を漏らしてしまう。\nその後が悪夢となるか、それともなんともない冗談で済むか、それは相手がうっかり話してしまった内容次第である。\n「誰もが秘密を持っているが、皆がそれを正しく扱う方法を理解しているわけではない」\n少し憎たらしい微笑みを浮かべながら、ガイアはそう言った。"
           }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13",
-              "Lv.14"
-            ]
-          },
-          {
-            "key": "スキルダメージ",
-            "values": [
-              "191%",
-              "206%",
-              "220%",
-              "239%",
-              "253%",
-              "268%",
-              "287%",
-              "306%",
-              "325%",
-              "344%",
-              "363%",
-              "382%",
-              "406%"
-            ]
-          },
-          {
-            "key": "クールタイム",
-            "values": [
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/battle_talent_1/battle_talent_1.gif"
+        ]
       },
       {
-        "key": "凛冽なる輪舞",
-        "title": "凛冽なる輪舞",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/battle_talent_2/battle_talent_2.png",
+        "title": "キャラクターストーリー2",
         "desc": [
           {
             "type": "RichText",
-            "text": "空気中の霜を凝集させ、自身を囲む氷柱を3本召喚する。\nスキル継続中、氷柱はキャラクターと共に動き、経路上の敵に <color=#99ffff>氷元素ダメージ</color> を与える。\n親切な笑顔と優しい言葉、そしてその二つに隠された無情の氷霜、それらは全てガイアの武器である。"
+            "text": "「正義は絶対的な原則ではなく、武力と策略のバランスによってできた結果だ。だからその過程で…あまり自分を追い詰めなくてもいいかと」\n大団長ファルカの前で、ガイアはそう口にしたことがある。\n結果が期待通りであれば、結末がどんな形であろうと、ガイアは気にしない。\nその考えが、彼の型にはまらないやり方と、自由気ままな態度を作り上げた。まるで、刺激の強い「午後の死」のようである。\nしかし、このような自分勝手なやり方は、多くの批判を招くものだった。\nある日、盗賊の首領を正面から討つため、ガイアは上古遺跡の守衛をわざと発動させ、敵の退路を断つことに成功した。しかし、それは同時に、自身と仲間を危険に晒すことになった。\nこういう時、彼を信頼している代理団長ジンでさえも、頭を横に振るのだ。\nしかし、ガイアはそんな事を少しも気にしていない。むしろ、他人に選択を迫られる状況を、楽しんでいるようにすら見える。\n仲間が共に戦う時に見せた一瞬の迷いも、決死の戦いを前にした敵が恐怖を隠そうとする姿も、彼の大好物である。"
           }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13",
-              "Lv.14"
-            ]
-          },
-          {
-            "key": "スキルダメージ",
-            "values": [
-              "77.6%",
-              "83.4%",
-              "89.2%",
-              "97%",
-              "103%",
-              "109%",
-              "116%",
-              "124%",
-              "132%",
-              "140%",
-              "147%",
-              "155%",
-              "165%",
-              "175%"
-            ]
-          },
-          {
-            "key": "クールタイム",
-            "values": [
-              "15秒",
-              "15秒",
-              "15秒",
-              "15秒",
-              "15秒",
-              "15秒",
-              "15秒",
-              "15秒",
-              "15秒",
-              "15秒",
-              "15秒",
-              "15秒",
-              "15秒",
-              "15秒"
-            ]
-          },
-          {
-            "key": "継続時間",
-            "values": [
-              "8秒",
-              "8秒",
-              "8秒",
-              "8秒",
-              "8秒",
-              "8秒",
-              "8秒",
-              "8秒",
-              "8秒",
-              "8秒",
-              "8秒",
-              "8秒",
-              "8秒",
-              "8秒"
-            ]
-          },
-          {
-            "key": "元素エネルギー",
-            "values": [
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/battle_talent_2/battle_talent_2.gif"
+        ]
       },
       {
-        "key": "冷血の剣",
-        "title": "冷血の剣",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/const_talent_0.png",
+        "title": "キャラクターストーリー3",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>霜の襲撃</color> が敵1体に命中する度、攻撃力15%分のHPを回復する。"
+            "text": "長い歴史を持つ醸造業はモンドに富を運び、そしてその富は盗賊と魔物を引き寄せた。\n影に潜むそれらの根源は複雑で、集まる理由も様々である。モンドに侵入してくる盗賊と魔物に抵抗するため、ガイアは剣だけでなく、その頭脳とユーモアセンスをも駆使して敵を倒す。\nある若い騎士が、数年かけて観察し得た結果は、彼自身も信じられない内容だった——\n名酒「午後の死」の出荷時期が過ぎると、城内外の襲撃報告は大幅に減る…そしてそれは、次の「午後の死」が出荷されるとまた増え始めるのだ。\n若い騎士は緊張した顔つきで、報告書を情報整理に長けた騎兵隊長ガイアに見せ、彼からアドバイスをもらおうとした。\n目の前の不安そうな騎士を見ながら、ガイアは怪しく微笑みながら答える。「…いい考えだ、参考にさせてもらうぜ」"
           }
-        ],
-        "attributes": null
+        ]
       },
       {
-        "key": "氷淵の心",
-        "title": "氷淵の心",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/const_talent_1.png",
+        "title": "キャラクターストーリー4",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>霜の襲撃</color> が敵を <color=#99ffff>凍結</color> 状態にした場合、凍結された敵から追加の元素粒子が落ちる。\n1回の霜襲は2つの元素粒子が追加で発生する。"
+            "text": "普段のガイアはかなり饒舌な人だが、自身の過去に関することになると、口を固く閉ざしてしまう。\nたとえそれが、大団長の命令であっても、彼は詳しく話そうとせず、当たり障りのない言葉で、自分の身の上を説明した。\n「あれは十数年前、ある夏の日の午後。俺は父に連れられ、アカツキワイナリーの前を通りかかった」\n「『ブドウジュースを買ってくる』そう言ったのを覚えている。しかし父は行ったきり、二度と帰ってこなかった」\n「クリプス様が助けてくれなかったら、あの嵐の夜に、俺はもう死んでいたかもな」\n理にかなった説明に聞こえるが、それは真実を隠すための嘘だ。\nあの午後にあった本当の出来事を、ガイアは誰にも教えたことがない——\n「これはお前のチャンスだ。お前は我々の最後の希望だ」\n父親が彼の薄い肩を強く掴んでいる。その目は、彼を通り抜け遥か遠い先を見ていた。\n地平線の果てに、親子の故郷カーンルイアがある。\nガイアは、あの憎しみと期待が混ざった眼差しを忘れることはない。"
           }
-        ],
-        "attributes": null
+        ]
       },
       {
-        "key": "秘められた実力",
-        "title": "秘められた実力",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/const_talent_2.png",
+        "title": "キャラクターストーリー5",
         "desc": [
           {
             "type": "RichText",
-            "text": "チーム内の自身のキャラクター全員がダッシュに消費するスタミナ-20%。\n同じ効果を持つ固有天賦との重ね掛け不可。"
+            "text": "数年前、モンドにいた一際目を引く二人の少年を、今でも多くの住民が覚えている。\n一人は完璧な紳士、ディルック。在りし日の彼は、剣を執る優雅な剣士で、優しい笑顔と自信に溢れる姿が印象的だった。\nもう一人は異国の風貌を持つ庶務長ガイア。あの時の彼はディルックの友人、協力者、そして「頭脳」であり、ディルックの戦いの後始末をしていた。\n彼らは、まるで心が通じ合う双子のように、表と裏からモンドを守り、一度も失敗したことがなかった。\n…あの暗い日までは。ディルックが護衛をしていた馬車隊が、森で魔物の襲撃を受けたのだ。\nあれは、ガイアにとって初めてで唯一の失敗だった。\n彼は急いで現場に向かったが、到着した時にはもう何もかもが終わっていた。\n彼とディルックの「父親」は、正体不明の力を操って魔物を撃退したが、その力の反動により命を落とした。\nガイアもディルックも目の前の光景に呆然とし、騎士が持つべき冷静さを失っていた。\n「クリプス様のような人でも、危険な力に手を出すとはな」\n悪い考えが頭をよぎり、ガイアは微笑んだ——\n「この世界は、本当…面白い」\n共通の「父親」を失った夜、二人の少年は別々の道を歩き始めた。"
           }
-        ],
-        "attributes": null
+        ]
+      },
+      {
+        "title": "ある名簿",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "騎士団の公文書に書かれた名前のリストが、『アンゲロス探偵集』に挟まれてている。\nリストにはモンド内や郊外の盗賊、傭兵と宝盗団の中高層人物の名前及び、その活動範囲や個人情報が記載されている。\nそのうちの十数人の名前が丸で囲まれており、隣に「退屈すぎるとまずいから」と書かれていた。\nこのリストに対しガイアは「酔っ払って適当に書いたのだ」とコメントした。\nガイアが、わざとこのリストを見せてくれた気がしてならないと思うが、その証拠はどこにもないのだ。"
+          }
+        ]
+      },
+      {
+        "title": "神の目",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "ガイア・アルベリヒが「神の目」を手に入れたあの夜、モンドの空から大雨が降っていた。\nこの日の午後、クリプス・ラグヴィンドが無理やり邪な力を使用し、結局「邪眼」のフラッシュバックに襲われた。父を苦しみから解放しようと、ディルック・ラグヴィンドは自らの手で父にとどめを刺した。\n養子であるガイアは隣で見ていただけであった。養子の彼は親子の惨劇に溶け込めなかった。\nあの夜、クリプスを弔うようにモンドの空から大雨が降っていた。\nガイアには人に知られていない一面がある——彼はカーンルイアがモンドに送り込んだスパイであった。この使命を果たすために、生みの父はガイアを異国に見捨てた。当時のガイアを引き取ったのはクリプスとモンドであった。\nカーンルイアとモンドが戦争になったら、どっちにつく？自分を見捨てた生みの父と自分を引き取ってくれた養父、どっちを助ける？\n長い間、ガイアはこの答えのない問題で苦しんでいた。本音を言わない彼にとって、忠誠と使命、真心と幸福は同時に手に入れない。\nだがクリプスの死がこのバランスを崩した。苦しみから解放されたと同時にガイアは自分の利己的な気持ちを恥と思った。養子であった彼はクリプスを救うべきであったが、彼は間に合わなかった。義兄弟として彼はディルックと共に苦しみを分かち合うはずであったのに、彼はただ後ろに隠れて古い陰謀を考えていた。\n罪悪感に追われて、ガイアはディルックの部屋のドアを叩いた。土砂降りの雨が嘘の匂いを洗い流し、ガイアの秘密は暴かれた。\nディルックが憤るのをガイアはもう予想した。兄弟二人が剣を抜き相手に向けた。嘘つきの報いだと、ガイアは心に思っていた。\nだが戦いが始まると、ガイアは初めて身体中に迸る凄まじい元素力を感じた。今までディルックの影響で彼はずっと自分の実力を隠していた。全力を出して自分の兄と向き合ったのは今回で初めてであった。\n冷たくて、脆い元素の力が剣先を経由しディルックの炎へと。赤と青の力がぶつかり、凄まじい嵐を形成した。そしてガイアの「神の目」はこの時に誕生した。\nあの日から、ガイアと彼の義兄弟の間に少し変化が起こった。だが彼は一切口にしない、自分の「神の目」の由来を教えないように。\nたとえそれが全力の一戦の記念、家族に本音を語った結果でも、ガイアはそれを自分への警告としか思っていない。そして嘘の重みを背負いながら生きていくと。"
+          }
+        ]
       }
     ],
     "voice": [
@@ -2973,220 +2336,6 @@
         ]
       }
     ],
-    "baseInfo": [
-      {
-        "key": "和名 / 英名",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ガイア / Kaeya"
-          }
-        ]
-      },
-      {
-        "key": "誕生日",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "11月30日"
-          }
-        ]
-      },
-      {
-        "key": "命ノ星座",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "孔雀羽座"
-          }
-        ]
-      },
-      {
-        "key": "称号",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "寒風の剣士"
-          }
-        ]
-      },
-      {
-        "key": "神の目",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "氷"
-          }
-        ]
-      },
-      {
-        "key": "所属",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "西風騎士団"
-          }
-        ]
-      },
-      {
-        "key": "中国語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "孙晔"
-          }
-        ]
-      },
-      {
-        "key": "英語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Josey Montana McCoy"
-          }
-        ]
-      },
-      {
-        "key": "日本語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "鳥海浩輔"
-          }
-        ]
-      },
-      {
-        "key": "韓国語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "정주원"
-          }
-        ]
-      },
-      {
-        "key": "オリジナル料理",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 949,
-            "name": "フルーティーな串焼き",
-            "desc": "ガイアのオリジナル料理。とても美味しそうな串焼き、しっかりとした濃厚な甘みを感じる。待って…本当にフルーツの香り？",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fruity Skewers_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "七聖召喚のカード",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3175,
-            "name": "ガイア",
-            "desc": "<p><strong>寒風の剣士・ガイア</strong></p><p></p><p>彼は他人が持つ「騎士のような美徳」を見つけることに長けている。</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/194600931/a4641f3c8a186e2948662aa255638a9c_5809583609174930384.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "追加コスチューム",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 5782,
-            "name": "帆影に戯る風",
-            "desc": "ガイアが舞台上で「短刀の大盗賊」を演じる時の衣装。「目を引く」ことをコンセプトとした華やかな作り。しかし、着用にはそこまで手間がかからず、むしろ一番手入れに時間を要するのは装飾品と短刀のほうになっている。",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/06/24/d99def11f06b2292c06cab126c205d8c_3267539322665900555.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "実装バージョン",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.0"
-          }
-        ]
-      }
-    ],
-    "story": [
-      {
-        "title": "キャラクター詳細",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "ガイア・アルベリヒは、造酒名家「ラグヴィンド」家の養子である。\n彼がディルック・ラグヴィンドを「義兄」と呼ばなくなってから、随分長い時間が経った。\n今のガイアは、西風騎士団の騎兵隊隊長。頼れる行動派で、ジンから信頼されている人物である。\nそして、このモンドで何かアクシデントが起こった時、その後始末をするのはいつもガイアなのである。"
-          }
-        ]
-      },
-      {
-        "title": "キャラクターストーリー1",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "面白いことに、この騎兵隊隊長と最も遭遇できる場所は、騎士団本部ではなく、夜の酒場だ。\nガイアはよく一人でカウンター席に座り、モンドで有名な混成酒「午後の死」を飲みながら、酒好きなモンドの住民たちと会話を楽しむ。\n彼は、モンドの酒飲みと年寄りの間で特に人気があり、「安心して孫娘を託せる男」という称号すらある。\n会話を楽しみながら、ゆっくりと酒を嗜む。これほど親しみやすい男を、西風騎士団の騎兵隊隊長と結びつけることは難しい。\nガイアの酒の相手は、すでにほろ酔い状態の狩人もいれば、酒好きな盗賊もいる。しかし警戒心がどれほど強い者でも、ガイアの前ではつい本音を漏らしてしまう。\nその後が悪夢となるか、それともなんともない冗談で済むか、それは相手がうっかり話してしまった内容次第である。\n「誰もが秘密を持っているが、皆がそれを正しく扱う方法を理解しているわけではない」\n少し憎たらしい微笑みを浮かべながら、ガイアはそう言った。"
-          }
-        ]
-      },
-      {
-        "title": "キャラクターストーリー2",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "「正義は絶対的な原則ではなく、武力と策略のバランスによってできた結果だ。だからその過程で…あまり自分を追い詰めなくてもいいかと」\n大団長ファルカの前で、ガイアはそう口にしたことがある。\n結果が期待通りであれば、結末がどんな形であろうと、ガイアは気にしない。\nその考えが、彼の型にはまらないやり方と、自由気ままな態度を作り上げた。まるで、刺激の強い「午後の死」のようである。\nしかし、このような自分勝手なやり方は、多くの批判を招くものだった。\nある日、盗賊の首領を正面から討つため、ガイアは上古遺跡の守衛をわざと発動させ、敵の退路を断つことに成功した。しかし、それは同時に、自身と仲間を危険に晒すことになった。\nこういう時、彼を信頼している代理団長ジンでさえも、頭を横に振るのだ。\nしかし、ガイアはそんな事を少しも気にしていない。むしろ、他人に選択を迫られる状況を、楽しんでいるようにすら見える。\n仲間が共に戦う時に見せた一瞬の迷いも、決死の戦いを前にした敵が恐怖を隠そうとする姿も、彼の大好物である。"
-          }
-        ]
-      },
-      {
-        "title": "キャラクターストーリー3",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "長い歴史を持つ醸造業はモンドに富を運び、そしてその富は盗賊と魔物を引き寄せた。\n影に潜むそれらの根源は複雑で、集まる理由も様々である。モンドに侵入してくる盗賊と魔物に抵抗するため、ガイアは剣だけでなく、その頭脳とユーモアセンスをも駆使して敵を倒す。\nある若い騎士が、数年かけて観察し得た結果は、彼自身も信じられない内容だった——\n名酒「午後の死」の出荷時期が過ぎると、城内外の襲撃報告は大幅に減る…そしてそれは、次の「午後の死」が出荷されるとまた増え始めるのだ。\n若い騎士は緊張した顔つきで、報告書を情報整理に長けた騎兵隊長ガイアに見せ、彼からアドバイスをもらおうとした。\n目の前の不安そうな騎士を見ながら、ガイアは怪しく微笑みながら答える。「…いい考えだ、参考にさせてもらうぜ」"
-          }
-        ]
-      },
-      {
-        "title": "キャラクターストーリー4",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "普段のガイアはかなり饒舌な人だが、自身の過去に関することになると、口を固く閉ざしてしまう。\nたとえそれが、大団長の命令であっても、彼は詳しく話そうとせず、当たり障りのない言葉で、自分の身の上を説明した。\n「あれは十数年前、ある夏の日の午後。俺は父に連れられ、アカツキワイナリーの前を通りかかった」\n「『ブドウジュースを買ってくる』そう言ったのを覚えている。しかし父は行ったきり、二度と帰ってこなかった」\n「クリプス様が助けてくれなかったら、あの嵐の夜に、俺はもう死んでいたかもな」\n理にかなった説明に聞こえるが、それは真実を隠すための嘘だ。\nあの午後にあった本当の出来事を、ガイアは誰にも教えたことがない——\n「これはお前のチャンスだ。お前は我々の最後の希望だ」\n父親が彼の薄い肩を強く掴んでいる。その目は、彼を通り抜け遥か遠い先を見ていた。\n地平線の果てに、親子の故郷カーンルイアがある。\nガイアは、あの憎しみと期待が混ざった眼差しを忘れることはない。"
-          }
-        ]
-      },
-      {
-        "title": "キャラクターストーリー5",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "数年前、モンドにいた一際目を引く二人の少年を、今でも多くの住民が覚えている。\n一人は完璧な紳士、ディルック。在りし日の彼は、剣を執る優雅な剣士で、優しい笑顔と自信に溢れる姿が印象的だった。\nもう一人は異国の風貌を持つ庶務長ガイア。あの時の彼はディルックの友人、協力者、そして「頭脳」であり、ディルックの戦いの後始末をしていた。\n彼らは、まるで心が通じ合う双子のように、表と裏からモンドを守り、一度も失敗したことがなかった。\n…あの暗い日までは。ディルックが護衛をしていた馬車隊が、森で魔物の襲撃を受けたのだ。\nあれは、ガイアにとって初めてで唯一の失敗だった。\n彼は急いで現場に向かったが、到着した時にはもう何もかもが終わっていた。\n彼とディルックの「父親」は、正体不明の力を操って魔物を撃退したが、その力の反動により命を落とした。\nガイアもディルックも目の前の光景に呆然とし、騎士が持つべき冷静さを失っていた。\n「クリプス様のような人でも、危険な力に手を出すとはな」\n悪い考えが頭をよぎり、ガイアは微笑んだ——\n「この世界は、本当…面白い」\n共通の「父親」を失った夜、二人の少年は別々の道を歩き始めた。"
-          }
-        ]
-      },
-      {
-        "title": "ある名簿",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "騎士団の公文書に書かれた名前のリストが、『アンゲロス探偵集』に挟まれてている。\nリストにはモンド内や郊外の盗賊、傭兵と宝盗団の中高層人物の名前及び、その活動範囲や個人情報が記載されている。\nそのうちの十数人の名前が丸で囲まれており、隣に「退屈すぎるとまずいから」と書かれていた。\nこのリストに対しガイアは「酔っ払って適当に書いたのだ」とコメントした。\nガイアが、わざとこのリストを見せてくれた気がしてならないと思うが、その証拠はどこにもないのだ。"
-          }
-        ]
-      },
-      {
-        "title": "神の目",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "ガイア・アルベリヒが「神の目」を手に入れたあの夜、モンドの空から大雨が降っていた。\nこの日の午後、クリプス・ラグヴィンドが無理やり邪な力を使用し、結局「邪眼」のフラッシュバックに襲われた。父を苦しみから解放しようと、ディルック・ラグヴィンドは自らの手で父にとどめを刺した。\n養子であるガイアは隣で見ていただけであった。養子の彼は親子の惨劇に溶け込めなかった。\nあの夜、クリプスを弔うようにモンドの空から大雨が降っていた。\nガイアには人に知られていない一面がある——彼はカーンルイアがモンドに送り込んだスパイであった。この使命を果たすために、生みの父はガイアを異国に見捨てた。当時のガイアを引き取ったのはクリプスとモンドであった。\nカーンルイアとモンドが戦争になったら、どっちにつく？自分を見捨てた生みの父と自分を引き取ってくれた養父、どっちを助ける？\n長い間、ガイアはこの答えのない問題で苦しんでいた。本音を言わない彼にとって、忠誠と使命、真心と幸福は同時に手に入れない。\nだがクリプスの死がこのバランスを崩した。苦しみから解放されたと同時にガイアは自分の利己的な気持ちを恥と思った。養子であった彼はクリプスを救うべきであったが、彼は間に合わなかった。義兄弟として彼はディルックと共に苦しみを分かち合うはずであったのに、彼はただ後ろに隠れて古い陰謀を考えていた。\n罪悪感に追われて、ガイアはディルックの部屋のドアを叩いた。土砂降りの雨が嘘の匂いを洗い流し、ガイアの秘密は暴かれた。\nディルックが憤るのをガイアはもう予想した。兄弟二人が剣を抜き相手に向けた。嘘つきの報いだと、ガイアは心に思っていた。\nだが戦いが始まると、ガイアは初めて身体中に迸る凄まじい元素力を感じた。今までディルックの影響で彼はずっと自分の実力を隠していた。全力を出して自分の兄と向き合ったのは今回で初めてであった。\n冷たくて、脆い元素の力が剣先を経由しディルックの炎へと。赤と青の力がぶつかり、凄まじい嵐を形成した。そしてガイアの「神の目」はこの時に誕生した。\nあの日から、ガイアと彼の義兄弟の間に少し変化が起こった。だが彼は一切口にしない、自分の「神の目」の由来を教えないように。\nたとえそれが全力の一戦の記念、家族に本音を語った結果でも、ガイアはそれを自分への警告としか思っていない。そして嘘の重みを背負いながら生きていくと。"
-          }
-        ]
-      }
-    ],
     "textualResearch": [
       {
         "title": "[誕生日メッセージ] メール (2024)",
@@ -3544,418 +2693,1269 @@
         ]
       }
     ],
-    "customize": [
+    "talent": [
       {
-        "type": "Heading",
-        "level": 1,
-        "text": "祈願履歴",
-        "alignment": "center"
+        "key": "通常攻撃・儀典の剣術",
+        "title": "通常攻撃・儀典の剣術",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/battle_talent_0/battle_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>通常攻撃</color>\n剣による最大5段の連続攻撃を行う。\n<color=#ffd780>重撃</color>\n一定のスタミナを消費し、前方に斬撃を2回放つ。\n<color=#ffd780>落下攻撃</color>\n空中から落下し地面に衝撃を与える。経路上の敵を攻撃し、落下時に範囲ダメージを与える。"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11"
+            ]
+          },
+          {
+            "key": "1段ダメージ",
+            "values": [
+              "53.8%",
+              "58.1%",
+              "62.5%",
+              "68.8%",
+              "73.1%",
+              "78.1%",
+              "85%",
+              "91.9%",
+              "98.8%",
+              "106.2%",
+              "114.8%"
+            ]
+          },
+          {
+            "key": "2段ダメージ",
+            "values": [
+              "51.7%",
+              "55.9%",
+              "60.1%",
+              "66.1%",
+              "70.3%",
+              "75.1%",
+              "81.7%",
+              "88.3%",
+              "95%",
+              "102.2%",
+              "110.4%"
+            ]
+          },
+          {
+            "key": "3段ダメージ",
+            "values": [
+              "65.3%",
+              "70.6%",
+              "75.9%",
+              "83.5%",
+              "88.8%",
+              "94.9%",
+              "103.2%",
+              "111.6%",
+              "119.9%",
+              "129%",
+              "139.5%"
+            ]
+          },
+          {
+            "key": "4段ダメージ",
+            "values": [
+              "70.9%",
+              "76.6%",
+              "82.4%",
+              "90.6%",
+              "96.4%",
+              "103%",
+              "112.1%",
+              "121.1%",
+              "130.2%",
+              "140.1%",
+              "151.4%"
+            ]
+          },
+          {
+            "key": "5段ダメージ",
+            "values": [
+              "88.2%",
+              "95.4%",
+              "102.5%",
+              "112.9%",
+              "120%",
+              "128.3%",
+              "139.5%",
+              "150.8%",
+              "162.1%",
+              "174.4%",
+              "188.5%"
+            ]
+          },
+          {
+            "key": "重撃ダメージ",
+            "values": [
+              "55.0%+73.1%",
+              "59.5%+79.1%",
+              "64.0%+85.0%",
+              "70.4%+93.5%",
+              "74.9%+99.5%",
+              "80.0%+106.3%",
+              "87.0%+115.6%",
+              "94.1%+125.0%",
+              "101.1%+134.3%",
+              "108.8%+144.5%",
+              "117.6%+156.2%"
+            ]
+          },
+          {
+            "key": "重撃スタミナ消費",
+            "values": [
+              "20",
+              "20",
+              "20",
+              "20",
+              "20",
+              "20",
+              "20",
+              "20",
+              "20",
+              "20",
+              "20"
+            ]
+          },
+          {
+            "key": "落下期間のダメージ",
+            "values": [
+              "63.9%",
+              "69.1%",
+              "74.3%",
+              "81.8%",
+              "87%",
+              "92.9%",
+              "101.1%",
+              "109.3%",
+              "117.5%",
+              "126.4%",
+              "135.3%"
+            ]
+          },
+          {
+            "key": "低空/高空落下攻撃ダメージ",
+            "values": [
+              "128%/160%",
+              "138%/173%",
+              "149%/186%",
+              "164%/204%",
+              "174%/217%",
+              "186%/232%",
+              "202%/253%",
+              "219%/273%",
+              "235%/293%",
+              "253%/316%",
+              "271%/338%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "モラ",
+              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 179,
+              "name": "「詩文」の教え",
+              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は美しい気持ちである。美しい日々に野原の風が田園の詩や愛の詩を連れて、風が葉を撫でるように、人々の心を優しく撫でる。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Ballad_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 629,
+              "name": "宝探しの鴉マーク",
+              "desc": "宝盗団の誇りであるマーク、彼らの宝物に対する永遠不滅の情熱を示すものである。とはいえ、自分が盗賊ということを誇らしげに示す必要はあるかな…？",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "モラ",
+              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 178,
+              "name": "「詩文」の導き",
+              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は激励の心意気。暗い日々の中で、巷を通る風は怒りの詩を囁き、それは戦鼓、嵐の前の呟きである。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1553,
+              "name": "シルバーの鴉マーク",
+              "desc": "宝盗団のメンバーが互いの存在を証明する鴉マーク。宝盗団のメンバーは出身を問わず、宝物への貪欲さえあれば、「優秀」なメンバーになれる。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "モラ",
+              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 178,
+              "name": "「詩文」の導き",
+              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は激励の心意気。暗い日々の中で、巷を通る風は怒りの詩を囁き、それは戦鼓、嵐の前の呟きである。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1553,
+              "name": "シルバーの鴉マーク",
+              "desc": "宝盗団のメンバーが互いの存在を証明する鴉マーク。宝盗団のメンバーは出身を問わず、宝物への貪欲さえあれば、「優秀」なメンバーになれる。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "モラ",
+              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 178,
+              "name": "「詩文」の導き",
+              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は激励の心意気。暗い日々の中で、巷を通る風は怒りの詩を囁き、それは戦鼓、嵐の前の呟きである。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1553,
+              "name": "シルバーの鴉マーク",
+              "desc": "宝盗団のメンバーが互いの存在を証明する鴉マーク。宝盗団のメンバーは出身を問わず、宝物への貪欲さえあれば、「優秀」なメンバーになれる。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "モラ",
+              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 178,
+              "name": "「詩文」の導き",
+              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は激励の心意気。暗い日々の中で、巷を通る風は怒りの詩を囁き、それは戦鼓、嵐の前の呟きである。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1553,
+              "name": "シルバーの鴉マーク",
+              "desc": "宝盗団のメンバーが互いの存在を証明する鴉マーク。宝盗団のメンバーは出身を問わず、宝物への貪欲さえあれば、「優秀」なメンバーになれる。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "モラ",
+              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 177,
+              "name": "「詩文」の哲学",
+              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は謳う気持ちである。全てが消え、全てがなくなったとしても、風と共にある詩と歌はこの世の美しいものを何一つ残さず空、大地、海の片隅まで届ける。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 760,
+              "name": "ゴールドの鴉マーク",
+              "desc": "宝盗団の信仰と誇りを示す鴉マーク。この広い大地、幽邃の深淵、未知な海に秘宝が存在していれば、宝盗団の信念は永遠に続く。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 357,
+              "name": "北風の魂箱",
+              "desc": "北風の王狼の魂から取ったごくわずかな力。<br/>この大地はかつて北風に吹かれ、氷霜に包まれていた。しかし強い北風は命を育むことはできず、命の苗を消すのみであったと、彼は最後にようやく理解した。命の終わりに、彼は自分の力を大地に込めて、大地とその住民を永遠に守ると誓った。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spirit Locket of Boreas_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "モラ",
+              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 177,
+              "name": "「詩文」の哲学",
+              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は謳う気持ちである。全てが消え、全てがなくなったとしても、風と共にある詩と歌はこの世の美しいものを何一つ残さず空、大地、海の片隅まで届ける。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 760,
+              "name": "ゴールドの鴉マーク",
+              "desc": "宝盗団の信仰と誇りを示す鴉マーク。この広い大地、幽邃の深淵、未知な海に秘宝が存在していれば、宝盗団の信念は永遠に続く。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 357,
+              "name": "北風の魂箱",
+              "desc": "北風の王狼の魂から取ったごくわずかな力。<br/>この大地はかつて北風に吹かれ、氷霜に包まれていた。しかし強い北風は命を育むことはできず、命の苗を消すのみであったと、彼は最後にようやく理解した。命の終わりに、彼は自分の力を大地に込めて、大地とその住民を永遠に守ると誓った。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spirit Locket of Boreas_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "モラ",
+              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 177,
+              "name": "「詩文」の哲学",
+              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は謳う気持ちである。全てが消え、全てがなくなったとしても、風と共にある詩と歌はこの世の美しいものを何一つ残さず空、大地、海の片隅まで届ける。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 760,
+              "name": "ゴールドの鴉マーク",
+              "desc": "宝盗団の信仰と誇りを示す鴉マーク。この広い大地、幽邃の深淵、未知な海に秘宝が存在していれば、宝盗団の信念は永遠に続く。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 357,
+              "name": "北風の魂箱",
+              "desc": "北風の王狼の魂から取ったごくわずかな力。<br/>この大地はかつて北風に吹かれ、氷霜に包まれていた。しかし強い北風は命を育むことはできず、命の苗を消すのみであったと、彼は最後にようやく理解した。命の終わりに、彼は自分の力を大地に込めて、大地とその住民を永遠に守ると誓った。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spirit Locket of Boreas_icon.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "モラ",
+              "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 177,
+              "name": "「詩文」の哲学",
+              "desc": "天賦育成素材。<br/>風の国の魂は詩と文章である。<br/>詩と文章は謳う気持ちである。全てが消え、全てがなくなったとしても、風と共にある詩と歌はこの世の美しいものを何一つ残さず空、大地、海の片隅まで届ける。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 760,
+              "name": "ゴールドの鴉マーク",
+              "desc": "宝盗団の信仰と誇りを示す鴉マーク。この広い大地、幽邃の深淵、未知な海に秘宝が存在していれば、宝盗団の信念は永遠に続く。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 357,
+              "name": "北風の魂箱",
+              "desc": "北風の王狼の魂から取ったごくわずかな力。<br/>この大地はかつて北風に吹かれ、氷霜に包まれていた。しかし強い北風は命を育むことはできず、命の苗を消すのみであったと、彼は最後にようやく理解した。命の終わりに、彼は自分の力を大地に込めて、大地とその住民を永遠に守ると誓った。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spirit Locket of Boreas_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "知恵の冠",
+              "desc": "天賦のLvUpに必要なレア素材。<br/>遥か昔に、知恵の伝承に使用していた儀式の器具。現在、知恵はすでに言語や典籍と一体化している。しかし「知恵の冠」に残された力と知識は今の人に偉大なる突破をもたらしてくれる。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/battle_talent_0/battle_talent_0.gif"
       },
       {
-        "type": "Heading",
-        "level": 2,
-        "text": "祈願履歴：暁風の詩"
+        "key": "霜の襲撃",
+        "title": "霜の襲撃",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/battle_talent_1/battle_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "急速に凍結する寒気を放ち、前方の敵に <color=#99ffff>氷元素ダメージ</color> を与える。\n優しくて親切なガイアだが、本当は誰にも溶かすことができない固い氷である。"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13",
+              "Lv.14"
+            ]
+          },
+          {
+            "key": "スキルダメージ",
+            "values": [
+              "191%",
+              "206%",
+              "220%",
+              "239%",
+              "253%",
+              "268%",
+              "287%",
+              "306%",
+              "325%",
+              "344%",
+              "363%",
+              "382%",
+              "406%"
+            ]
+          },
+          {
+            "key": "クールタイム",
+            "values": [
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/battle_talent_1/battle_talent_1.gif"
       },
       {
-        "type": "RichText",
-        "text": "期間\nピックアップ\n2024/03/13 ~ 2024/04/02\n(Ver.4.5前半)"
+        "key": "凛冽なる輪舞",
+        "title": "凛冽なる輪舞",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/battle_talent_2/battle_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "空気中の霜を凝集させ、自身を囲む氷柱を3本召喚する。\nスキル継続中、氷柱はキャラクターと共に動き、経路上の敵に <color=#99ffff>氷元素ダメージ</color> を与える。\n親切な笑顔と優しい言葉、そしてその二つに隠された無情の氷霜、それらは全てガイアの武器である。"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13",
+              "Lv.14"
+            ]
+          },
+          {
+            "key": "スキルダメージ",
+            "values": [
+              "77.6%",
+              "83.4%",
+              "89.2%",
+              "97%",
+              "103%",
+              "109%",
+              "116%",
+              "124%",
+              "132%",
+              "140%",
+              "147%",
+              "155%",
+              "165%",
+              "175%"
+            ]
+          },
+          {
+            "key": "クールタイム",
+            "values": [
+              "15秒",
+              "15秒",
+              "15秒",
+              "15秒",
+              "15秒",
+              "15秒",
+              "15秒",
+              "15秒",
+              "15秒",
+              "15秒",
+              "15秒",
+              "15秒",
+              "15秒",
+              "15秒"
+            ]
+          },
+          {
+            "key": "継続時間",
+            "values": [
+              "8秒",
+              "8秒",
+              "8秒",
+              "8秒",
+              "8秒",
+              "8秒",
+              "8秒",
+              "8秒",
+              "8秒",
+              "8秒",
+              "8秒",
+              "8秒",
+              "8秒",
+              "8秒"
+            ]
+          },
+          {
+            "key": "元素エネルギー",
+            "values": [
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/battle_talent_2/battle_talent_2.gif"
       },
       {
-        "type": "CustomEntry",
-        "epId": 6,
-        "name": "エウルア",
-        "desc": "<p>古き一族出身の「波花騎士」。同時に西風騎士団の遊撃小隊隊長でもある。旧貴族の末裔でありながら、敵対関係にある西風騎士団に入団した理由は、未だ謎に包まれている。</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Eula_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
+        "key": "冷血の剣",
+        "title": "冷血の剣",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/const_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>霜の襲撃</color> が敵1体に命中する度、攻撃力15%分のHPを回復する。"
+          }
+        ],
+        "attributes": null
       },
       {
-        "type": "CustomEntry",
-        "epId": 37,
-        "name": "モナ",
-        "desc": "<p>謎の占星術師の少女。自分のことを「偉大なる占星術師モナ」と自称するが、その肩書きに相応しい実力を持っている。博学で、高慢。</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
+        "key": "氷淵の心",
+        "title": "氷淵の心",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/const_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>霜の襲撃</color> が敵を <color=#99ffff>凍結</color> 状態にした場合、凍結された敵から追加の元素粒子が落ちる。\n1回の霜襲は2つの元素粒子が追加で発生する。"
+          }
+        ],
+        "attributes": null
       },
       {
-        "type": "CustomEntry",
-        "epId": 47,
-        "name": "アルベド",
-        "desc": "西風騎士団の首席錬金術師兼調査小隊隊長。「白亜の申し子」と呼ばれる天才。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Albedo_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
+        "key": "秘められた実力",
+        "title": "秘められた実力",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凯亚/const_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "チーム内の自身のキャラクター全員がダッシュに消費するスタミナ-20%。\n同じ効果を持つ固有天賦との重ね掛け不可。"
+          }
+        ],
+        "attributes": null
+      }
+    ],
+    "ascension": [
+      {
+        "key": "Lv.1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎HP",
+            "values": [
+              "-",
+              "976"
+            ]
+          },
+          {
+            "key": "基礎攻撃力",
+            "values": [
+              "-",
+              "19"
+            ]
+          },
+          {
+            "key": "基礎防御力",
+            "values": [
+              "-",
+              "66"
+            ]
+          },
+          {
+            "key": "元素チャージ効率",
+            "values": [
+              "-",
+              "0.0%"
+            ]
+          }
+        ]
       },
       {
-        "type": "CustomEntry",
-        "epId": 12,
-        "name": "クレー",
-        "desc": "<p>西風騎士団反省室の常連で、モンドの爆破スペシャリスト。人呼んで「逃げ回る太陽」。</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
+        "key": "Lv.20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎HP",
+            "values": [
+              "2506",
+              "3235"
+            ]
+          },
+          {
+            "key": "基礎攻撃力",
+            "values": [
+              "48",
+              "62"
+            ]
+          },
+          {
+            "key": "基礎防御力",
+            "values": [
+              "171",
+              "220"
+            ]
+          },
+          {
+            "key": "元素チャージ効率",
+            "values": [
+              "0.0%",
+              "0.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "モラ",
+            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 411,
+            "name": "哀切なアイスクリスタル・砕屑",
+            "desc": "キャラクターの突破用アイテム。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 421,
+            "name": "ドドリアン",
+            "desc": "<p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。</p><p></p><p>（以下は図鑑より抜粋）</p><p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。現代医学の見解によれば、ドドリアンはある程度の解毒効果があるという。しかし生で食べると渋いため、多くの人は好まない。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Calla Lily_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 629,
+            "name": "宝探しの鴉マーク",
+            "desc": "宝盗団の誇りであるマーク、彼らの宝物に対する永遠不滅の情熱を示すものである。とはいえ、自分が盗賊ということを誇らしげに示す必要はあるかな…？",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
+            "amount": 3
+          }
+        ]
       },
       {
-        "type": "CustomEntry",
-        "epId": 43,
-        "name": "ディルック",
-        "desc": "<p>モンドの大半の酒造を掌握する貴公子。財力も人望も実力も、見くびってはならない。</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Diluc_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
+        "key": "Lv.40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎HP",
+            "values": [
+              "4846",
+              "5364"
+            ]
+          },
+          {
+            "key": "基礎攻撃力",
+            "values": [
+              "93",
+              "103"
+            ]
+          },
+          {
+            "key": "基礎防御力",
+            "values": [
+              "330",
+              "365"
+            ]
+          },
+          {
+            "key": "元素チャージ効率",
+            "values": [
+              "0.0%",
+              "6.7%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "モラ",
+            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 410,
+            "name": "哀切なアイスクリスタル・欠片",
+            "desc": "キャラクターの突破用アイテム。<br/>「…すみません…」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 938,
+            "name": "極寒のコア",
+            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 421,
+            "name": "ドドリアン",
+            "desc": "<p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。</p><p></p><p>（以下は図鑑より抜粋）</p><p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。現代医学の見解によれば、ドドリアンはある程度の解毒効果があるという。しかし生で食べると渋いため、多くの人は好まない。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Calla Lily_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 629,
+            "name": "宝探しの鴉マーク",
+            "desc": "宝盗団の誇りであるマーク、彼らの宝物に対する永遠不滅の情熱を示すものである。とはいえ、自分が盗賊ということを誇らしげに示す必要はあるかな…？",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
+            "amount": 15
+          }
+        ]
       },
       {
-        "type": "CustomEntry",
-        "epId": 27,
-        "name": "ジン",
-        "desc": "<p>正直で真面目な蒲公英騎士。モンド西風騎士団の代理団長。</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Jean_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
+        "key": "Lv.50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎HP",
+            "values": [
+              "6170",
+              "6860"
+            ]
+          },
+          {
+            "key": "基礎攻撃力",
+            "values": [
+              "118",
+              "131"
+            ]
+          },
+          {
+            "key": "基礎防御力",
+            "values": [
+              "420",
+              "467"
+            ]
+          },
+          {
+            "key": "元素チャージ効率",
+            "values": [
+              "6.7%",
+              "13.3%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "モラ",
+            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 410,
+            "name": "哀切なアイスクリスタル・欠片",
+            "desc": "キャラクターの突破用アイテム。<br/>「…すみません…」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 938,
+            "name": "極寒のコア",
+            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 421,
+            "name": "ドドリアン",
+            "desc": "<p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。</p><p></p><p>（以下は図鑑より抜粋）</p><p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。現代医学の見解によれば、ドドリアンはある程度の解毒効果があるという。しかし生で食べると渋いため、多くの人は好まない。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Calla Lily_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1553,
+            "name": "シルバーの鴉マーク",
+            "desc": "宝盗団のメンバーが互いの存在を証明する鴉マーク。宝盗団のメンバーは出身を問わず、宝物への貪欲さえあれば、「優秀」なメンバーになれる。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+            "amount": 12
+          }
+        ]
       },
       {
-        "type": "CustomEntry",
-        "epId": 2,
-        "name": "リサ",
-        "desc": "無気力だが博学な図書館司書。スメール教令院「200年に1人」の天才卒業生。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Lisa_icon.png",
-        "displayStyle": "text",
-        "menuId": 2
+        "key": "Lv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎HP",
+            "values": [
+              "7666",
+              "8184 "
+            ]
+          },
+          {
+            "key": "基礎攻撃力",
+            "values": [
+              "147",
+              "157"
+            ]
+          },
+          {
+            "key": "基礎防御力",
+            "values": [
+              "522",
+              "557"
+            ]
+          },
+          {
+            "key": "元素チャージ効率",
+            "values": [
+              "13.3%",
+              "13.3%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "モラ",
+            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 409,
+            "name": "哀切なアイスクリスタル・塊",
+            "desc": "キャラクターの突破用アイテム。<br/>「…すみません…」<br/>「あなた達まで、わたしと一緒にこの世界の悲しみを背負わせるなんて…」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 938,
+            "name": "極寒のコア",
+            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 421,
+            "name": "ドドリアン",
+            "desc": "<p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。</p><p></p><p>（以下は図鑑より抜粋）</p><p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。現代医学の見解によれば、ドドリアンはある程度の解毒効果があるという。しかし生で食べると渋いため、多くの人は好まない。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Calla Lily_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1553,
+            "name": "シルバーの鴉マーク",
+            "desc": "宝盗団のメンバーが互いの存在を証明する鴉マーク。宝盗団のメンバーは出身を問わず、宝物への貪欲さえあれば、「優秀」なメンバーになれる。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+            "amount": 18
+          }
+        ]
       },
       {
-        "type": "CustomEntry",
-        "epId": 35,
-        "name": "バーバラ",
-        "desc": "モンド城のみんなはバーバラが大好き。ちなみに「アイドル」という言葉は彼女が雑誌で見たものらしい。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Barbara_icon.png",
-        "displayStyle": "text",
-        "menuId": 2
+        "key": "Lv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎HP",
+            "values": [
+              "8989",
+              "9507"
+            ]
+          },
+          {
+            "key": "基礎攻撃力",
+            "values": [
+              "172",
+              "182"
+            ]
+          },
+          {
+            "key": "基礎防御力",
+            "values": [
+              "612",
+              "647"
+            ]
+          },
+          {
+            "key": "元素チャージ効率",
+            "values": [
+              "13.3%",
+              "20.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "モラ",
+            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 409,
+            "name": "哀切なアイスクリスタル・塊",
+            "desc": "キャラクターの突破用アイテム。<br/>「…すみません…」<br/>「あなた達まで、わたしと一緒にこの世界の悲しみを背負わせるなんて…」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 938,
+            "name": "極寒のコア",
+            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 421,
+            "name": "ドドリアン",
+            "desc": "<p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。</p><p></p><p>（以下は図鑑より抜粋）</p><p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。現代医学の見解によれば、ドドリアンはある程度の解毒効果があるという。しかし生で食べると渋いため、多くの人は好まない。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Calla Lily_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 760,
+            "name": "ゴールドの鴉マーク",
+            "desc": "宝盗団の信仰と誇りを示す鴉マーク。この広い大地、幽邃の深淵、未知な海に秘宝が存在していれば、宝盗団の信念は永遠に続く。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+            "amount": 12
+          }
+        ]
       },
       {
-        "type": "CustomEntry",
-        "epId": 9,
-        "name": "ガイア",
-        "desc": "<p>異国の顔を持つ剣士。西風騎士団の頭脳派である。</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kaeya_icon.png",
-        "displayStyle": "text",
-        "menuId": 2
+        "key": "Lv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎HP",
+            "values": [
+              "10312",
+              "10830"
+            ]
+          },
+          {
+            "key": "基礎攻撃力",
+            "values": [
+              "198",
+              "208"
+            ]
+          },
+          {
+            "key": "基礎防御力",
+            "values": [
+              "702",
+              "737"
+            ]
+          },
+          {
+            "key": "元素チャージ効率",
+            "values": [
+              "20.0%",
+              "26.7%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "モラ",
+            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 408,
+            "name": "哀切なアイスクリスタル",
+            "desc": "キャラクターの突破用アイテム。<br/>「…すみません、あなた達まで、わたしと一緒にこの世界の悲しみを背負わせるなんて…」<br/>「わたしの寒さを耐えられる者は、きっと心の中に熱い欲望を持っているだろう？」<br/>「なら、わたしの代わりに、旧世界を焼き尽くそう。」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 938,
+            "name": "極寒のコア",
+            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 421,
+            "name": "ドドリアン",
+            "desc": "<p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。</p><p></p><p>（以下は図鑑より抜粋）</p><p>水辺に育つ花。花びらを料理すると、爽やかな口当たりで、ほろ苦い。現代医学の見解によれば、ドドリアンはある程度の解毒効果があるという。しかし生で食べると渋いため、多くの人は好まない。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Calla Lily_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 760,
+            "name": "ゴールドの鴉マーク",
+            "desc": "宝盗団の信仰と誇りを示す鴉マーク。この広い大地、幽邃の深淵、未知な海に秘宝が存在していれば、宝盗団の信念は永遠に続く。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+            "amount": 24
+          }
+        ]
       },
       {
-        "type": "CustomEntry",
-        "epId": 48,
-        "name": "レザー",
-        "desc": "<p>人間の町から離れた、モンド地域の奔狼領で狼と暮らす少年。勘が鋭く、動きが俊敏。</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Razor_icon.png",
-        "displayStyle": "text",
-        "menuId": 2
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 14,
-        "name": "アンバー",
-        "desc": "元気満々な女の子、騎士団で最も優秀で、最後の偵察騎士である。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Amber_icon.png",
-        "displayStyle": "text",
-        "menuId": 2
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 38,
-        "name": "フィッシュル",
-        "desc": "<p>自称「断罪の皇女」。オズという漆黒の鴉とともに行動する謎の少女。</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Fischl_icon.png",
-        "displayStyle": "text",
-        "menuId": 2
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 26,
-        "name": "ベネット",
-        "desc": "<p>モンドの少年冒険者。その優しさにそぐわない不運の持ち主。</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Bennett_icon.png",
-        "displayStyle": "text",
-        "menuId": 2
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 40,
-        "name": "ノエル",
-        "desc": "<p>「西風騎士団」の頼もしいメイド。いつか本当の騎士になることを夢見ている。</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Noelle_icon.png",
-        "displayStyle": "text",
-        "menuId": 2
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 44,
-        "name": "ディオナ",
-        "desc": "稀な「非人類」の血統を引いている少女、「キャッツテール」の超人気バーテンダー。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Diona_icon.png",
-        "displayStyle": "text",
-        "menuId": 2
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 30,
-        "name": "スクロース",
-        "desc": "この世界のありとあらゆるものに強い好奇心を抱く錬金術師。研究分野は「生物錬金」。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sucrose_icon.png",
-        "displayStyle": "text",
-        "menuId": 2
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 33,
-        "name": "ロサリア",
-        "desc": "身にまとう服装以外、何ひとつとして聖職者とは思えないシスター。冷たい言動の中には、相手を見透かす鋭さが隠されている。また、いつも一人で行動をしている。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Rosaria_icon.png",
-        "displayStyle": "text",
-        "menuId": 2
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3462,
-        "name": "ミカ",
-        "desc": "<p>平凡な家庭に生まれた若い騎士。小隊では「前進測量士」を担当している。控えめで慎重な性格の持ち主。</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/19/132746206/da13e3b1a2c6c0e5892b201cec735f9b_6427639047927610211.png",
-        "displayStyle": "text",
-        "menuId": 2
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "概論"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>ガイアは周囲に</color> <color=#99ffff>氷元素ダメージ</color> <color=#ffffff73>を与える元素爆発を用いて戦うキャラクターである。</color>\nガイアは元素爆発を発動することで、フィールド上のキャラクターの周囲を回転し <color=#99ffff>氷元素ダメージ</color> <color=#ffffff73>を与える氷柱を生成する。この氷柱はガイアが控えに回った後も持続し、敵にダメージを与え、</color> <color=#99ffff>凍結</color> <color=#ffffff73>などの</color> <color=#ffd780>元素反応</color> <color=#ffffff73>を起こすことができる。</color>\n元素爆発を強化するため、 <color=#ffd780>会心率</color> <color=#ffffff73>や</color> <color=#ffd780>会心ダメージ</color> <color=#ffffff73>、</color> <color=#ffd780>攻撃力</color> <color=#ffffff73>を強化する武器・聖遺物を選定すると良いだろう。また、</color> 元素爆発を発動しやすいよう <color=#ffd780>元素チャージ効率</color> <color=#ffffff73>を強化するのも良い。</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "おすすめ武器"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2044,
-        "name": "霧切の廻光",
-        "desc": "烈々たる紫の光に輝く太刀。「廻光」という名は、かつて砕かれた過去に由来している。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/雾切之回光.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>霧切の廻光(★5)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>入手方法</color>\n<color=#ffffff73>限定祈願「神鋳賦形」より入手可能</color>\n<color=#ffffff>基礎攻撃力</color>\n48 ~ 674\n<color=#ffffff>サブステータス：</color> <color=#ffd780>会心ダメージ</color>\n9.6% ~ 44.1%\n<color=#ffffff>「霧切の御腰物」</color>\n<color=#ffd780>全元素ダメージ</color> が上昇する。通常攻撃で元素ダメージを与えた時5秒間、元素爆発を発動した時10秒間、キャラクターの元素エネルギーが100%未満の場合「霧切の巴紋」を獲得し、霧切の巴紋を有するとき自身元素タイプの <color=#ffd780>元素ダメージ</color> が上昇する。最大3層まで重ね掛け可能、継続時間は層ごとに独立している。\n<color=#ffffff>おすすめ理由</color>\nサブステータス： <color=#ffd780>会心ダメージ</color> が上昇する。\n武器効果：ガイアが与える <color=#99ffff>氷元素ダメージ</color> が上昇し、元素スキルと元素爆発を強化できる。"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1952,
-        "name": "天目影打",
-        "desc": "神速で名を馳せる天狗をも斬り墜とすという伝説を持つ、名士が発注した刀。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天目影打刀.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>天目影打(★4)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>入手方法</color>\n<color=#ffffff73>鍛造により入手可能</color>\n<color=#ffffff>基礎攻撃力</color>\n41 ~ 454\n<color=#ffffff>サブステータス：</color> <color=#ffd780>攻撃力</color>\n12.0% ~ 55.1%\n<color=#ffffff>「岩蔵の胤」</color>\n元素スキルを発動した後、継続時間30秒の継承の印を1つ獲得する。この効果は5秒毎に1回のみ発動可能、同時に最大3つまで存在可能。元素爆発を発動すると、所持している継承の印を全て消費し、2秒後に該当キャラクターの元素エネルギーが回復する。\n<color=#ffffff>おすすめ理由</color>\nサブステータス： <color=#ffd780>攻撃力</color> が上昇する。\n武器効果：元素スキルのクールタイムが6秒であるため高頻度で印を獲得でき、元素爆発の度に元素エネルギーを回復できる。"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3999,
-        "name": "狼牙",
-        "desc": "<p>伝説によると、遥か昔の流浪騎士が使っていた長剣。</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/14/94675339/fcb69a6f01bb2be8bb0abd2f67a9d887_3642394821822912160.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>狼牙(★4)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>入手方法</color>\n天空紀行(Ver.4.0-)Lv.30到達報酬\n<color=#ffffff>基礎攻撃力</color>\n42 ~ 510\n<color=#ffffff>サブステータス：</color> <color=#ffd780>会心率</color>\n6.0% ~ 27.6%\n<color=#ffffff>「蒼き狼の北風」</color>\n元素スキルと元素爆発のダメージが上昇する。元素スキルが敵に命中した時、元素スキルの <color=#ffd780>会心率</color> が上昇、元素爆発が敵に命中した時、元素爆発の <color=#ffd780>会心率</color> が上昇する。 <color=#ffd780>会心率</color> が上昇する効果はそれぞれ、継続時間10秒、最大4層まで重ね掛け可能、0.1秒毎に1回のみ発動できる。\n<color=#ffffff>おすすめ理由</color>\nサブステータス： <color=#ffd780>会心率</color> が上昇する。\n武器効果：元素爆発により生成される氷柱が連続的に攻撃を行うため、効果を発動しやすい。"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2017,
-        "name": "西風剣",
-        "desc": "西風騎士団でよく使われる長剣。軽くて鋭い上、元素の力が集まりやすい。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风剑.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>西風剣(★4)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>入手方法</color>\n<color=#ffffff73>祈願より入手可能</color>\n<color=#ffffff>基礎攻撃力</color>\n41 ~ 454\n<color=#ffffff>サブステータス：</color> <color=#ffd780>元素チャージ効率</color>\n13.3% ~ 61.3%\n<color=#ffffff>「追い風が吹く」</color>\n会心攻撃をした時、確率で元素粒子を生成し、元素エネルギーを6回復する。\n<color=#ffffff>おすすめ理由</color>\nサブステータス： <color=#ffd780>元素チャージ効率</color> が上昇する。\n武器効果： <color=#ffffff73>会心攻撃をすることにより、チーム全員の元素エネルギー回復をサポートできる。</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "おすすめ聖遺物"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "ステータス"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/1387f1512524772db99ae30b6303f939_5072609172935942900.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>攻撃力</color> <color=#ffffff73>/</color> <color=#ffd780>元素チャージ効率</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/56451470fe75f710b812ac28e226273b_5774236690802856497.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#99ffff>氷元素ダメージ</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/8bc07934c9290b83751c7fa183a43ab7_32021027934025390.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>会心率</color> <color=#ffffff73>/</color> <color=#ffd780>会心ダメージ</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>サブステータス</color>\n<color=#ffd780>会心率</color> <color=#ffffff73>/</color> <color=#ffd780>会心ダメージ</color> ： <color=#ffd780>会心率</color> は60%、 <color=#ffd780>会心ダメージ</color> は130%以上が目標となるだろう。"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "4セット構成"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2090,
-        "name": "絶縁の旗印",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>絶縁の旗印</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>2セット効果</color>\n<color=#ffd780>元素チャージ効率</color> +20%。\n<color=#ffffff>4セット効果</color>\n<color=#ffd780>元素チャージ効率</color> <color=#ffffff73>の25%を基準に、元素爆発のダメージが上昇する。</color>\n<color=#ffffff>おすすめ理由</color>\n2セット効果： <color=#ffd780>元素チャージ効率</color> が上昇する。\n4セット効果：元素爆発のダメージが増加する。"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2062,
-        "name": "氷風を彷徨う勇士",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Blizzard Strayer/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>氷風を彷徨う勇士</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>2セット効果</color>\n<color=#99ffff>氷元素ダメージ</color> +15%。\n<color=#ffffff>4セット効果</color>\n<color=#99ffff>氷元素</color> <color=#ffffff73>の影響を受けている敵を攻撃した場合、</color> <color=#ffd780>会心率</color> <color=#ffffff73>+20%。敵が</color> <color=#99ffff>凍結状態</color> <color=#ffffff73>の場合、</color> <color=#ffd780>会心率</color> <color=#ffffff73>は更に+20%。</color>\n<color=#ffffff>おすすめ理由</color>\n2セット効果： <color=#99ffff>氷元素ダメージ</color> が上昇する。\n4セット効果：元素爆発の氷柱が連続的に <color=#99ffff>氷元素ダメージ</color> を与えるため、効果を発動しやすい。"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2075,
-        "name": "旧貴族のしつけ",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>旧貴族のしつけ</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>2セット効果</color>\n<color=#ffffff73>元素爆発のダメージ+20%。</color>\n<color=#ffffff>4セット効果</color>\n元素爆発を発動すると、チーム全員の <color=#ffd780>攻撃力</color> +20%。\n<color=#ffffff>おすすめ理由</color>\n2セット効果：元素爆発のダメージが上昇する。\n4セット効果：チーム全員の <color=#ffd780>攻撃力</color> が上昇する。"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "2セット+2セット構成"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2062,
-        "name": "氷風を彷徨う勇士",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Blizzard Strayer/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2095,
-        "name": "剣闘士のフィナーレ",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2075,
-        "name": "旧貴族のしつけ",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2090,
-        "name": "絶縁の旗印",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>「氷風を彷徨う勇士」の2セット効果</color>\n<color=#99ffff>氷元素ダメージ</color> <color=#ffffff73>+15%。</color>\n<color=#ffffff>「剣闘士のフィナーレ」の2セット効果</color>\n<color=#ffd780>攻撃力</color> <color=#ffffff73>+18%。</color>\n<color=#ffffff>「旧貴族のしつけ」の2セット効果</color>\n<color=#ffffff73>元素爆発のダメージ+20%。</color>\n<color=#ffffff>「絶縁の旗印」の2セット効果</color>\n<color=#ffd780>元素チャージ効率</color> <color=#ffffff73>+20%。</color>\n上記の2セット効果から、足りないステータスを補うような構成を組むと良い。 <color=#ffffff73>「</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2098,
-        "name": "追憶のしめ縄",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "」など、上記以外の代用もある。"
+        "key": "Lv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎HP",
+            "values": [
+              "11636",
+              "-"
+            ]
+          },
+          {
+            "key": "基礎攻撃力",
+            "values": [
+              "223",
+              "-"
+            ]
+          },
+          {
+            "key": "基礎防御力",
+            "values": [
+              "792",
+              "-"
+            ]
+          },
+          {
+            "key": "元素チャージ効率",
+            "values": [
+              "26.7%",
+              "-"
+            ]
+          }
+        ]
       }
     ]
   }
