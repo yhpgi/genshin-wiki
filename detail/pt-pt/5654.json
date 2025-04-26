@@ -7,209 +7,7 @@
   "menuName": "Tutorial",
   "version": 1731110258,
   "components": {
-    "galleryCharacter": [
-      {
-        "key": "Causando Dano Físico",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/28/42646513/6c5ed1eeb09d687c7b8c8cec217c8f63_2724875105257055882.png"
-      },
-      {
-        "key": "Dano de Reações Elementais 1",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/28/42646513/6bb6c739a1c6f8aae3dd898604d75339_3507715465257915899.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "As Reações Amplificantes e Aditivas têm elementos especiais na Fórmula de cálculo de Dano"
-          }
-        ]
-      },
-      {
-        "key": "Dano de Reações Elementais 2",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/28/42646513/f68558a58bc96b9836586c2cb823d99d_2016187330815594453.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "As Reações Transformativas têm uma fórmula especial de cálculo de Dano"
-          }
-        ]
-      },
-      {
-        "key": "Bônus do Dano",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/09/42646513/adb228bc8c5df2ceb8eb68f6c68e7f40_1019337101617799807.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Alguns dos buffs de Dano mostrarão um ícone específico acima da barra de Vida do personagem.\n\"Buffs\" são reforços dos atributos habituais para além da norma (neste caso ao aumentar o Dano do personagem)."
-          }
-        ]
-      }
-    ],
     "customize": [
-      {
-        "type": "RichText",
-        "text": "As Reações Transformativas são: <color=#ffffff73>Florescimento</color> , <color=#ffffff73>Superflorecimento</color> , <color=#ffffff73>Germinação</color> , <color=#ffffff73>Queimadura</color> , <color=#ffffff73>Sobrecarga</color> , <color=#ffffff73>Eletricamente Carregado</color> , <color=#ffffff73>Supercondutor</color> , Quebrar Gelo, <color=#ffffff73>Redemoinho</color> .\nAs Reações Transformativas ignoram a DEF Inimiga, mas são afetadas pela <color=#ffffff>RES Inimiga</color> . Estas reações não podem causar dano crítico (exceto Nahida com sua 2ª Constelação, que permite golpes críticos com <color=#ffffff73>Florescimento</color> , <color=#ffffff73>Superflorecimento</color> , <color=#ffffff73>Germinação</color> e <color=#ffffff73>Queimadura</color> com uma quantidade fixa de Taxa Crítica e Dano Crítico em 20% e 100% respetivamente). Só importa o <color=#ffffff>Nível e a Proficiência Elemental do personagem ativador</color> .\nExemplo: Se <color=#ffffff73>Florescimento</color> for ativado por um personagem Dendro (aplicando Dendro sobre Hydro), são considerados o Nível e a Proficiência Elemental do personagem Dendro, e a RES Dendro do inimigo.\nAssim, o dano das Reações Elementais é calculado com a seguinte fórmula:"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Multiplicador da RES Inimiga × Multiplicador da Reação × Multiplicador do Nível do Personagem ×</color>\n<color=#ffffff>( 100% + Bônus da Proficiência Elemental + Bônus da Reação )</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Multiplicador da Reação",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Cada Reação Transformativa possui seu próprio Multiplicador da Reação, conforme mostrado na tabela:\n<color=#ffffff73>Multiplicador da Reação</color>\n<color=#ffffff73>Reação</color>\n<color=#ffffff73>300%</color>\n<color=#ffffff73>Germinação, Superflorecimento</color>\n<color=#ffffff73>200%</color>\n<color=#ffffff73>Sobrecarga, Florescimento</color>\n<color=#ffffff73>150%</color>\nQuebrar Gelo\n<color=#ffffff73>120%</color>\n<color=#ffffff73>Eletricamente Carregado</color>\n<color=#ffffff73>60%</color>\n<color=#ffffff73>Redemoinho</color>\n<color=#ffffff73>50%</color>\n<color=#ffffff73>Supercondutor</color>\n<color=#ffffff73>25%</color>\n<color=#ffffff73>Queimadura</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Multiplicador do Nível do Personagem",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Os personagens têm um Multiplicador do Nível dependendo do nível atual do personagem. Isso é mostrado na tabela:\nNível do Personagem\nMultiplicador do Nível do Personagem\n<color=#ffffff73>60</color>\n<color=#ffffff73>492,88</color>\n<color=#ffffff73>70</color>\n<color=#ffffff73>765,64</color>\n<color=#ffffff73>80</color>\n<color=#ffffff73>1077,44</color>\n<color=#ffffff73>85</color>\n<color=#ffffff73>1253,84</color>\n<color=#ffffff73>90</color>\n<color=#ffffff73>1446,85</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Bônus da Proficiência Elemental",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Para o Bônus da Proficiência Elemental é tido em conta apenas a Proficiência Elemental total do personagem ativador da reação, conforme aparece no campo Informação Detalhada sob o menu Atributos do personagem.\nÉ calculado da seguinte forma:"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>( Proficiência Elemental × 16 ) / ( Proficiência Elemental + 2000 )</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Bônus da Reação",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Existem alguns Bônus da Reação para o Dano das Reações Transformativas:"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2067,
-        "name": "Trovão Furioso",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "Conjunto de 4 peças\n<color=#ffffff73>(Sobrecarga, Eletricamente Carregado, Supercondutor e Superflorecimento)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2091,
-        "name": "Sombra Verde",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "Conjunto de 4 peças\n<color=#ffffff73>(Redemoinho)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2085,
-        "name": "A Bruxa das Chamas Carmesim",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "Conjunto de 4 peças\n<color=#ffffff73>(Queimadura, Germinação)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3321,
-        "name": "Flor do Paraíso Perdido",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/13/16791688/50ce09dfa5a91a33aa9cedfb15bcf2d1_1667065419123799079.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "Conjunto de 4 peças\n<color=#ffffff73>(Florescimento, Superflorecimento, Germinação)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2812,
-        "name": "Nilou",
-        "desc": "<p>A Estrela no Teatro Zubayr. Seu estilo de dança é alegre e elegante, e possui caráter pura e bondosa.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/21/16791688/586d726f9ebda3506c78beaaa41f13b6_756855207633259471.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "Talento Passivo de 4a Ascensão\n<color=#ffffff73>(Florescimento)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3609,
-        "name": "Baizhu",
-        "desc": "<p>O dono do Chalé de Bubu, sempre com uma cobra branca chamada Changsheng pendurada no pescoço. Um grande conhecedor de medicina, suas verdadeiras intenções são um grande mistério.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/04/12804176/05599650d7f42e1c4adde373de6b297d_7647946592614991692.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "Talento Passivo de 4a Ascensão\n<color=#ffffff73>(Queimadura, Florescimento, Superflorecimento, Germinação)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3608,
-        "name": "Kaveh",
-        "desc": "<p>Um arquiteto renomado de Sumeru, é preocupado demais com muitas coisas. Um esteta perturbado pela realidade</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/89220822/2270aba02b92034d7d76b4426be8f53b_1693033154442525886.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Supremo e 4</color> ª Constelação\n<color=#ffffff73>(Florescimento)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 37,
-        "name": "Mona",
-        "desc": "Uma jovem astróloga misteriosa que proclama a si mesma como a \"Grande Astróloga Mona\" e que possui as habilidades para o título. Uma pessoa erudita, mas orgulhosa.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>1</color> ª Constelação\n<color=#ffffff73>(Eletricamente Carregado, Redemoinho Hydro)</color>",
-        "alignment": "center"
-      },
       {
         "type": "Heading",
         "level": 1,
@@ -3348,6 +3146,172 @@
         "type": "RichText",
         "text": "<color=#ffffff>100% + Dano Crítico</color>",
         "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "As Reações Transformativas são: <color=#ffffff73>Florescimento</color> , <color=#ffffff73>Superflorecimento</color> , <color=#ffffff73>Germinação</color> , <color=#ffffff73>Queimadura</color> , <color=#ffffff73>Sobrecarga</color> , <color=#ffffff73>Eletricamente Carregado</color> , <color=#ffffff73>Supercondutor</color> , Quebrar Gelo, <color=#ffffff73>Redemoinho</color> .\nAs Reações Transformativas ignoram a DEF Inimiga, mas são afetadas pela <color=#ffffff>RES Inimiga</color> . Estas reações não podem causar dano crítico (exceto Nahida com sua 2ª Constelação, que permite golpes críticos com <color=#ffffff73>Florescimento</color> , <color=#ffffff73>Superflorecimento</color> , <color=#ffffff73>Germinação</color> e <color=#ffffff73>Queimadura</color> com uma quantidade fixa de Taxa Crítica e Dano Crítico em 20% e 100% respetivamente). Só importa o <color=#ffffff>Nível e a Proficiência Elemental do personagem ativador</color> .\nExemplo: Se <color=#ffffff73>Florescimento</color> for ativado por um personagem Dendro (aplicando Dendro sobre Hydro), são considerados o Nível e a Proficiência Elemental do personagem Dendro, e a RES Dendro do inimigo.\nAssim, o dano das Reações Elementais é calculado com a seguinte fórmula:"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Multiplicador da RES Inimiga × Multiplicador da Reação × Multiplicador do Nível do Personagem ×</color>\n<color=#ffffff>( 100% + Bônus da Proficiência Elemental + Bônus da Reação )</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Multiplicador da Reação",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Cada Reação Transformativa possui seu próprio Multiplicador da Reação, conforme mostrado na tabela:\n<color=#ffffff73>Multiplicador da Reação</color>\n<color=#ffffff73>Reação</color>\n<color=#ffffff73>300%</color>\n<color=#ffffff73>Germinação, Superflorecimento</color>\n<color=#ffffff73>200%</color>\n<color=#ffffff73>Sobrecarga, Florescimento</color>\n<color=#ffffff73>150%</color>\nQuebrar Gelo\n<color=#ffffff73>120%</color>\n<color=#ffffff73>Eletricamente Carregado</color>\n<color=#ffffff73>60%</color>\n<color=#ffffff73>Redemoinho</color>\n<color=#ffffff73>50%</color>\n<color=#ffffff73>Supercondutor</color>\n<color=#ffffff73>25%</color>\n<color=#ffffff73>Queimadura</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Multiplicador do Nível do Personagem",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Os personagens têm um Multiplicador do Nível dependendo do nível atual do personagem. Isso é mostrado na tabela:\nNível do Personagem\nMultiplicador do Nível do Personagem\n<color=#ffffff73>60</color>\n<color=#ffffff73>492,88</color>\n<color=#ffffff73>70</color>\n<color=#ffffff73>765,64</color>\n<color=#ffffff73>80</color>\n<color=#ffffff73>1077,44</color>\n<color=#ffffff73>85</color>\n<color=#ffffff73>1253,84</color>\n<color=#ffffff73>90</color>\n<color=#ffffff73>1446,85</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Bônus da Proficiência Elemental",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Para o Bônus da Proficiência Elemental é tido em conta apenas a Proficiência Elemental total do personagem ativador da reação, conforme aparece no campo Informação Detalhada sob o menu Atributos do personagem.\nÉ calculado da seguinte forma:"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>( Proficiência Elemental × 16 ) / ( Proficiência Elemental + 2000 )</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Bônus da Reação",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Existem alguns Bônus da Reação para o Dano das Reações Transformativas:"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "Trovão Furioso",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças\n<color=#ffffff73>(Sobrecarga, Eletricamente Carregado, Supercondutor e Superflorecimento)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "Sombra Verde",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças\n<color=#ffffff73>(Redemoinho)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "A Bruxa das Chamas Carmesim",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças\n<color=#ffffff73>(Queimadura, Germinação)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Flor do Paraíso Perdido",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/13/16791688/50ce09dfa5a91a33aa9cedfb15bcf2d1_1667065419123799079.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 peças\n<color=#ffffff73>(Florescimento, Superflorecimento, Germinação)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "Nilou",
+        "desc": "<p>A Estrela no Teatro Zubayr. Seu estilo de dança é alegre e elegante, e possui caráter pura e bondosa.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/21/16791688/586d726f9ebda3506c78beaaa41f13b6_756855207633259471.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão\n<color=#ffffff73>(Florescimento)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "Baizhu",
+        "desc": "<p>O dono do Chalé de Bubu, sempre com uma cobra branca chamada Changsheng pendurada no pescoço. Um grande conhecedor de medicina, suas verdadeiras intenções são um grande mistério.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/04/12804176/05599650d7f42e1c4adde373de6b297d_7647946592614991692.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Talento Passivo de 4a Ascensão\n<color=#ffffff73>(Queimadura, Florescimento, Superflorecimento, Germinação)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "Kaveh",
+        "desc": "<p>Um arquiteto renomado de Sumeru, é preocupado demais com muitas coisas. Um esteta perturbado pela realidade</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/16/89220822/2270aba02b92034d7d76b4426be8f53b_1693033154442525886.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Supremo e 4</color> ª Constelação\n<color=#ffffff73>(Florescimento)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "Mona",
+        "desc": "Uma jovem astróloga misteriosa que proclama a si mesma como a \"Grande Astróloga Mona\" e que possui as habilidades para o título. Uma pessoa erudita, mas orgulhosa.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>1</color> ª Constelação\n<color=#ffffff73>(Eletricamente Carregado, Redemoinho Hydro)</color>",
+        "alignment": "center"
       }
     ],
     "baseInfo": [
@@ -3381,6 +3345,42 @@
           }
         ],
         "isMaterial": true
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Causando Dano Físico",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/28/42646513/6c5ed1eeb09d687c7b8c8cec217c8f63_2724875105257055882.png"
+      },
+      {
+        "key": "Dano de Reações Elementais 1",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/28/42646513/6bb6c739a1c6f8aae3dd898604d75339_3507715465257915899.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "As Reações Amplificantes e Aditivas têm elementos especiais na Fórmula de cálculo de Dano"
+          }
+        ]
+      },
+      {
+        "key": "Dano de Reações Elementais 2",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/28/42646513/f68558a58bc96b9836586c2cb823d99d_2016187330815594453.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "As Reações Transformativas têm uma fórmula especial de cálculo de Dano"
+          }
+        ]
+      },
+      {
+        "key": "Bônus do Dano",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/09/42646513/adb228bc8c5df2ceb8eb68f6c68e7f40_1019337101617799807.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Alguns dos buffs de Dano mostrarão um ícone específico acima da barra de Vida do personagem.\n\"Buffs\" são reforços dos atributos habituais para além da norma (neste caso ao aumentar o Dano do personagem)."
+          }
+        ]
       }
     ]
   }

@@ -5,16 +5,819 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Bennett_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/avatar.png",
   "filterValues": {
-    "characterRarity": 4,
-    "characterProperty": "Enerji Yüklemesi",
     "characterRegion": "Mondstadt",
     "characterVision": "Ateş",
+    "characterProperty": "Enerji Yüklemesi",
+    "characterRarity": 4,
     "characterWeapon": "Kılıç"
   },
   "menuId": 2,
   "menuName": "Karakter Arşivi",
   "version": 1692899021,
   "components": {
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_1.png",
+        "name": "Büyük Umutlar",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unutulmaz Serüven</color> becerisinin verdiği Saldırı artışının Can kısıtlaması kalkar ve Bennett'in Temel Saldırısının %20'si kadar ek artış sağlar."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_2.png",
+        "name": "Çıkmazların Fatihi",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Bennett'in Canı %70'in altına düştüğünde Enerji Yüklemesi %30 artar."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_3.png",
+        "name": "Durmak Bilmeyen Coşku",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Tutku Patlaması</color> Seviyesini 3 artırır.\nMaksimum Yükseltme Seviyesi 15'tir."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_4.png",
+        "name": "Beklenmedik Seyahat",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "1. Seviye Yüklü <color=#ffd780>Tutku Patlaması</color> becerisinin ikinci saldırısını gerçekleştirirken Normal Saldırı kullanıldığında ek bir saldırı daha yapılır.\nBu ek saldırı, ikinci saldırının %135'i kadar Hasar verir."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_5.png",
+        "name": "Gerçek Bir Kaşif",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unutulmaz Serüven</color> Seviyesini 3 artırır.\nMaksimum Yükseltme Seviyesi 15'tir."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_6.png",
+        "name": "Alev Almış Cesaret",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Kılıç, Çift Elli Kılıç veya Mızrak kullanan karakterler <color=#ffd780>Unutulmaz Serüven</color> alanındayken %15 <color=#ff9999>Ateş Hasarı Bonusu</color> kazanır ve silahları <color=#ff9999>Ateş</color> etkisi alır."
+          }
+        ]
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "İsim",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Bennett"
+          }
+        ]
+      },
+      {
+        "key": "Doğum Günü",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "2/29"
+          }
+        ]
+      },
+      {
+        "key": "Takımyıldızı",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Çarkıfelaket"
+          }
+        ]
+      },
+      {
+        "key": "Künye",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Ateşle İmtihan"
+          }
+        ]
+      },
+      {
+        "key": "Önsezi",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Ateş"
+          }
+        ]
+      },
+      {
+        "key": "İlişki",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Maceracılar Loncası"
+          }
+        ]
+      },
+      {
+        "key": "Çince Ses",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "穆雪婷"
+          }
+        ]
+      },
+      {
+        "key": "İngilizce Ses",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Cristina Vee Valenzuela"
+          }
+        ]
+      },
+      {
+        "key": "Japonca Ses",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "逢坂良太"
+          }
+        ]
+      },
+      {
+        "key": "Korece Ses",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Song Ha-rim"
+          }
+        ]
+      },
+      {
+        "key": "Özel Tarif",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 750,
+            "name": "Teyvat Usulü Çıtır Yumurta",
+            "desc": "<p>Bennett's specialty. For some reason, every single fried egg is a little burnt around the edges. That said, the burnt crisp does lend a whole new flavor to the dish.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teyvat Charred Egg_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Karakter Kartı",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3184,
+            "name": "Bennett",
+            "desc": "<p><span style=\"color: #FFFFFF\">\"Trial by Fire\" Bennett</span></p><p>Once you know that you will certainly lose, then you must certainly know the way to win.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/35428890/9d7ad9d3cf203bf7ff1f53966709c4f1_257397517751703740.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "İlk Çıktığı Versiyon ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.0"
+          }
+        ],
+        "isMaterial": false
+      }
+    ],
+    "ascension": [
+      {
+        "key": "Sv.1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Yükseltmeden Önce",
+              "Yükseltmeden Sonra"
+            ]
+          },
+          {
+            "key": "Temel Can",
+            "values": [
+              "-",
+              "1039"
+            ]
+          },
+          {
+            "key": "Temel Saldırı",
+            "values": [
+              "-",
+              "16"
+            ]
+          },
+          {
+            "key": "Temel Savunma",
+            "values": [
+              "-",
+              "65"
+            ]
+          },
+          {
+            "key": "Enerji Yüklemesi ",
+            "values": [
+              "-",
+              "0%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Sv.20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Yükseltmeden Önce",
+              "Yükseltmeden Sonra"
+            ]
+          },
+          {
+            "key": "Temel Can",
+            "values": [
+              "2670",
+              "3447"
+            ]
+          },
+          {
+            "key": "Temel Saldırı",
+            "values": [
+              "41",
+              "53"
+            ]
+          },
+          {
+            "key": "Temel Savunma",
+            "values": [
+              "166",
+              "214"
+            ]
+          },
+          {
+            "key": "Enerji Yüklemesi",
+            "values": [
+              "0%",
+              "0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1100,
+            "name": "Agnidus Akiği Tozu",
+            "desc": "Character Ascension Material.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Rüzgargülü Çiçeği",
+            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 629,
+            "name": "Hazine Avcısı Nişanı",
+            "desc": "A signet that proudly represents its owner&#39;s position as member of the Treasure Hoarders. The pursuit of treasure knows no bounds. That said... Is being a thief something to be proud of?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "Sv.40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Yükseltmeden Önce",
+              "Yükseltmeden Sonra"
+            ]
+          },
+          {
+            "key": "Temel Can",
+            "values": [
+              "5163",
+              "5715"
+            ]
+          },
+          {
+            "key": "Temel Saldırı",
+            "values": [
+              "80",
+              "88"
+            ]
+          },
+          {
+            "key": "Temel Savunma ",
+            "values": [
+              "321",
+              "356"
+            ]
+          },
+          {
+            "key": "Enerji Yüklemesi ",
+            "values": [
+              "0%",
+              "6.7%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1099,
+            "name": "Agnidus Akiği Kırıntısı",
+            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Alev Tohumu",
+            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Rüzgargülü Çiçeği",
+            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 629,
+            "name": "Hazine Avcısı Nişanı",
+            "desc": "A signet that proudly represents its owner&#39;s position as member of the Treasure Hoarders. The pursuit of treasure knows no bounds. That said... Is being a thief something to be proud of?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "Sv.50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Yükseltmeden Önce",
+              "Yükseltmeden Sonra"
+            ]
+          },
+          {
+            "key": "Temel Can",
+            "values": [
+              "6573",
+              "7309"
+            ]
+          },
+          {
+            "key": "Temel Saldırı",
+            "values": [
+              "101",
+              "113"
+            ]
+          },
+          {
+            "key": "Temel Savunma",
+            "values": [
+              "409",
+              "455"
+            ]
+          },
+          {
+            "key": "Enerji Yüklemesi ",
+            "values": [
+              "6.7%",
+              "13.3%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1099,
+            "name": "Agnidus Akiği Kırıntısı",
+            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Alev Tohumu",
+            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Rüzgargülü Çiçeği",
+            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1553,
+            "name": "Gümüş Kuzgun Nişanı",
+            "desc": "A raven insignia used by members of the Treasure Hoarders to identify each other. The Treasure Hoarders ask for no resume. Anyone who has an insatiable desire for treasure and is backed up by an equal amount of courage can become a worthy member.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Sv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Yükseltmeden Önce",
+              "Yükseltmeden Sonra"
+            ]
+          },
+          {
+            "key": "Temel Can",
+            "values": [
+              "8168",
+              "8719"
+            ]
+          },
+          {
+            "key": "Temel Saldırı",
+            "values": [
+              "126",
+              "134"
+            ]
+          },
+          {
+            "key": "Temel Savunma ",
+            "values": [
+              "508",
+              "542"
+            ]
+          },
+          {
+            "key": "Enerji Yüklemesi ",
+            "values": [
+              "13.3%",
+              "13.3%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1098,
+            "name": "Agnidus Akiği Parçası",
+            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Alev Tohumu",
+            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Rüzgargülü Çiçeği",
+            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1553,
+            "name": "Gümüş Kuzgun Nişanı",
+            "desc": "A raven insignia used by members of the Treasure Hoarders to identify each other. The Treasure Hoarders ask for no resume. Anyone who has an insatiable desire for treasure and is backed up by an equal amount of courage can become a worthy member.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Sv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Yükseltmeden Önce",
+              "Yükseltmeden Sonra"
+            ]
+          },
+          {
+            "key": "Temel Can",
+            "values": [
+              "9577",
+              "10129"
+            ]
+          },
+          {
+            "key": "Temel Saldırı",
+            "values": [
+              "148",
+              "156"
+            ]
+          },
+          {
+            "key": "Temel Savunma",
+            "values": [
+              "596",
+              "630"
+            ]
+          },
+          {
+            "key": "Enerji Yüklemesi ",
+            "values": [
+              "13.3%",
+              "20%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1098,
+            "name": "Agnidus Akiği Parçası",
+            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Alev Tohumu",
+            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Rüzgargülü Çiçeği",
+            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 760,
+            "name": "Altın Kuzgun Nişanı",
+            "desc": "A raven insignia that symbolizes the pride and the guiding principle of the Treasure Hoarders. Whether it&#39;s hidden amidst the vastness of the land or in the depths of the seas, as long as there are treasures to be hunted down, the spirit of Treasure Hoarders, who will stop at nothing to acquire them, will never die.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Sv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Yükseltmeden Önce",
+              "Yükseltmeden Sonra"
+            ]
+          },
+          {
+            "key": "Temel Can",
+            "values": [
+              "10987",
+              "11539"
+            ]
+          },
+          {
+            "key": "Temel Saldırı",
+            "values": [
+              "169",
+              "178"
+            ]
+          },
+          {
+            "key": "Temel Savunma",
+            "values": [
+              "684",
+              "718"
+            ]
+          },
+          {
+            "key": "Enerji Yüklemesi ",
+            "values": [
+              "20%",
+              "26.7%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1097,
+            "name": "Agnidus Akiği Külçesi",
+            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.<br/>If the intention yet remains, achieved ██'s truth he has.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Alev Tohumu",
+            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Rüzgargülü Çiçeği",
+            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 760,
+            "name": "Altın Kuzgun Nişanı",
+            "desc": "A raven insignia that symbolizes the pride and the guiding principle of the Treasure Hoarders. Whether it&#39;s hidden amidst the vastness of the land or in the depths of the seas, as long as there are treasures to be hunted down, the spirit of Treasure Hoarders, who will stop at nothing to acquire them, will never die.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "Sv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Yükseltmeden Önce",
+              "Yükseltmeden Sonra"
+            ]
+          },
+          {
+            "key": "Temel Can",
+            "values": [
+              "12397",
+              "-"
+            ]
+          },
+          {
+            "key": "Temel Saldırı",
+            "values": [
+              "191",
+              "-"
+            ]
+          },
+          {
+            "key": "Temel Savunma",
+            "values": [
+              "771",
+              "-"
+            ]
+          },
+          {
+            "key": "Enerji Yüklemesi ",
+            "values": [
+              "26.7%",
+              "-"
+            ]
+          }
+        ]
+      }
+    ],
+    "textualResearch": [
+      {
+        "title": "[Birthday Message] SNS & Illustration (2021)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "A day as lucky as this one is hard to come by!\nYour wishes and company make it even better than the official celebration could ever be!\nWhat say we go treasure hunting... You know, before it starts to rain...\nTwitter URL: https:/twitter.com/GenshinImpact/status/1365874367339458563"
+          }
+        ]
+      },
+      {
+        "title": "[Birthday Message] SNS & Illustration 1 (2022)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "My birthday? Ah... right. After all, it only happens once every four years. Only my dads used to give me presents...\nEven if my birthday didn't happen this year, you still gave me a present, and you went through all the trouble to decorate the place with balloons, too!\nThank you! I really do count myself fortune to have you as a friend. It feels like my luck in future is looking up!\nWait... why did the string holding the balloon suddenly snap?\nHoYoLAB Article: https:/www.hoyolab.com/article/3560429"
+          }
+        ]
+      },
+      {
+        "title": "[Birthday Message] SNS & Illustration 2 (2022)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "\"Traveler, thanks for your present! You've taken very good care of me all the time, and it's your kindness and goodwill towards me that has saved me from my bad luck. This is a very special Teyvat Charred Egg I made. Hehe... Come and try it!\"\n\"Let Paimon try... The burnt parts are really delicious! This is the first time Paimon's tasted such a crispy Teyvat Charred Egg~\"\nHoYoLAB Article: https:/www.hoyolab.com/article/3560428"
+          }
+        ]
+      },
+      {
+        "title": "[Of Ballads and Brews] Bennett, Fecund Hamper",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Clue\nThere is a small shoal in the Whispering Wood near Cider Lake where a small pier lies. I have placed my present in that area. (The road there is somewhat bumpy, so be careful not to fall.)\nMessage\nThanks for finding the gift that I left here!\nSolving puzzles, avoiding traps, completing challenges, collecting precious rewards... These are my favorite things! It's quite rare that I get this kind of chance, so I hid my treasure somewhere out in the wild before designing a little quest around it. I hope it didn't bring you too much trouble.\nThis treasure is yours — good luck in your future endeavors!\nBennett, Adventurer\nItem\nStorefront Furnishing: Please, Enjoy Your Meal, 20,000 Mora, Agnidus Agate Fragment ×2"
+          }
+        ]
+      },
+      {
+        "title": "[Message] Bennett, Cat's Tail Message Board",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Message\n\"I am an official member of the Adventurer's Guild! Ad astra abyssosque, towards the stars and the abyss! Isn't it a wonderful motto!\"\n\"But, I don't understand why. I've been unlucky my whole life. I wasn't like the others, I never went out there looking for an adventure, all I ever did was stay at home and do nothing, but even then, the adventure would still come for me. Ha!\"\n\"I can be annoying sometimes. All my fellow adventurers would tell me something along the lines of: \"Just being around you is dangerous, I guess it's still to early for me to go on an adventure\" and they eventually all left the guild, one by one.\"\n\"In the end. I'm the only one left to take care of the elders. It's not that I don't want to, it's just that doing everything alone can be hard sometimes...\"\nCat's Tail's reply\nIf you feel burdened by the hardships of life, why not come to Cat's Tail and try our wine? In our tavern, adventurous tales are always popular. Who knows, you might even find another adventurer like you."
+          }
+        ]
+      }
+    ],
     "customize": [
       {
         "type": "Heading",
@@ -232,68 +1035,7 @@
         "text": "<color=#ffffff>Set Bonusları</color>\n• Element Patlaması Hasarı +20%\n• Element Patlaması kullandıktan sonra tüm takım arkadaşlarına Saldırı Bonusu sağlar.\n<color=#ffffff>Kaynak:</color> Berrak Gölet ve Dağ Mağarası (savaş başına 20 reçine), Mistik Adak"
       }
     ],
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_1.png",
-        "name": "Büyük Umutlar",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unutulmaz Serüven</color> becerisinin verdiği Saldırı artışının Can kısıtlaması kalkar ve Bennett'in Temel Saldırısının %20'si kadar ek artış sağlar."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_2.png",
-        "name": "Çıkmazların Fatihi",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Bennett'in Canı %70'in altına düştüğünde Enerji Yüklemesi %30 artar."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_3.png",
-        "name": "Durmak Bilmeyen Coşku",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Tutku Patlaması</color> Seviyesini 3 artırır.\nMaksimum Yükseltme Seviyesi 15'tir."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_4.png",
-        "name": "Beklenmedik Seyahat",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "1. Seviye Yüklü <color=#ffd780>Tutku Patlaması</color> becerisinin ikinci saldırısını gerçekleştirirken Normal Saldırı kullanıldığında ek bir saldırı daha yapılır.\nBu ek saldırı, ikinci saldırının %135'i kadar Hasar verir."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_5.png",
-        "name": "Gerçek Bir Kaşif",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unutulmaz Serüven</color> Seviyesini 3 artırır.\nMaksimum Yükseltme Seviyesi 15'tir."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_6.png",
-        "name": "Alev Almış Cesaret",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Kılıç, Çift Elli Kılıç veya Mızrak kullanan karakterler <color=#ffd780>Unutulmaz Serüven</color> alanındayken %15 <color=#ff9999>Ateş Hasarı Bonusu</color> kazanır ve silahları <color=#ff9999>Ateş</color> etkisi alır."
-          }
-        ]
-      }
-    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=43&center=450.50,248.00&zoom=0.00",
     "story": [
       {
         "title": "Character Details",
@@ -368,7 +1110,61 @@
         ]
       }
     ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=43&center=450.50,248.00&zoom=0.00",
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/avatar_header.jpg"
+      },
+      {
+        "key": "Avatar",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/avatar.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Orijinal Kıyafet - Talihin Lütfu\nBennett'in giysisi. Çeşitli yerlerinden dikilip yamalanmış eski bir maceracının üniforması."
+          }
+        ]
+      },
+      {
+        "key": "Boş Durma Animasyonu 1 ",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/1023623/253d4d0f543836ac1d5c4dd28684c5c3_1262777856850748790.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Orijinal Kıyafet - Talihin Lütfu"
+          }
+        ]
+      },
+      {
+        "key": "Boş Durma Animasyonu 2 ",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/1023623/ead150a81a57c6c117778e553960d1d4_5662116647606974233.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Orijinal Kıyafet - Talihin Lütfu"
+          }
+        ]
+      },
+      {
+        "key": "Takımyıldızı",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/12/35428890/0a4c5c29b24e64b08a24ca95faec62c7_6669442018915136433.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Çarkıfelaket"
+          }
+        ]
+      },
+      {
+        "key": "Gruba Katılma Animasyonu",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Orijinal Kıyafet - Talihin Lütfu"
+          }
+        ]
+      }
+    ],
     "talent": [
       {
         "key": "Normal Saldırı: Şanslı Vuruş",
@@ -1165,747 +1961,6 @@
         "attributes": null
       }
     ],
-    "baseInfo": [
-      {
-        "key": "İsim",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Bennett"
-          }
-        ]
-      },
-      {
-        "key": "Doğum Günü",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "2/29"
-          }
-        ]
-      },
-      {
-        "key": "Takımyıldızı",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Çarkıfelaket"
-          }
-        ]
-      },
-      {
-        "key": "Künye",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Ateşle İmtihan"
-          }
-        ]
-      },
-      {
-        "key": "Önsezi",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Ateş"
-          }
-        ]
-      },
-      {
-        "key": "İlişki",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Maceracılar Loncası"
-          }
-        ]
-      },
-      {
-        "key": "Çince Ses",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "穆雪婷"
-          }
-        ]
-      },
-      {
-        "key": "İngilizce Ses",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Cristina Vee Valenzuela"
-          }
-        ]
-      },
-      {
-        "key": "Japonca Ses",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "逢坂良太"
-          }
-        ]
-      },
-      {
-        "key": "Korece Ses",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Song Ha-rim"
-          }
-        ]
-      },
-      {
-        "key": "Özel Tarif",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 750,
-            "name": "Teyvat Usulü Çıtır Yumurta",
-            "desc": "<p>Bennett's specialty. For some reason, every single fried egg is a little burnt around the edges. That said, the burnt crisp does lend a whole new flavor to the dish.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teyvat Charred Egg_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Karakter Kartı",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3184,
-            "name": "Bennett",
-            "desc": "<p><span style=\"color: #FFFFFF\">\"Trial by Fire\" Bennett</span></p><p>Once you know that you will certainly lose, then you must certainly know the way to win.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/35428890/9d7ad9d3cf203bf7ff1f53966709c4f1_257397517751703740.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "İlk Çıktığı Versiyon ",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.0"
-          }
-        ],
-        "isMaterial": false
-      }
-    ],
-    "ascension": [
-      {
-        "key": "Sv.1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Yükseltmeden Önce",
-              "Yükseltmeden Sonra"
-            ]
-          },
-          {
-            "key": "Temel Can",
-            "values": [
-              "-",
-              "1039"
-            ]
-          },
-          {
-            "key": "Temel Saldırı",
-            "values": [
-              "-",
-              "16"
-            ]
-          },
-          {
-            "key": "Temel Savunma",
-            "values": [
-              "-",
-              "65"
-            ]
-          },
-          {
-            "key": "Enerji Yüklemesi ",
-            "values": [
-              "-",
-              "0%"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Sv.20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Yükseltmeden Önce",
-              "Yükseltmeden Sonra"
-            ]
-          },
-          {
-            "key": "Temel Can",
-            "values": [
-              "2670",
-              "3447"
-            ]
-          },
-          {
-            "key": "Temel Saldırı",
-            "values": [
-              "41",
-              "53"
-            ]
-          },
-          {
-            "key": "Temel Savunma",
-            "values": [
-              "166",
-              "214"
-            ]
-          },
-          {
-            "key": "Enerji Yüklemesi",
-            "values": [
-              "0%",
-              "0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1100,
-            "name": "Agnidus Akiği Tozu",
-            "desc": "Character Ascension Material.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Rüzgargülü Çiçeği",
-            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 629,
-            "name": "Hazine Avcısı Nişanı",
-            "desc": "A signet that proudly represents its owner&#39;s position as member of the Treasure Hoarders. The pursuit of treasure knows no bounds. That said... Is being a thief something to be proud of?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "key": "Sv.40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Yükseltmeden Önce",
-              "Yükseltmeden Sonra"
-            ]
-          },
-          {
-            "key": "Temel Can",
-            "values": [
-              "5163",
-              "5715"
-            ]
-          },
-          {
-            "key": "Temel Saldırı",
-            "values": [
-              "80",
-              "88"
-            ]
-          },
-          {
-            "key": "Temel Savunma ",
-            "values": [
-              "321",
-              "356"
-            ]
-          },
-          {
-            "key": "Enerji Yüklemesi ",
-            "values": [
-              "0%",
-              "6.7%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1099,
-            "name": "Agnidus Akiği Kırıntısı",
-            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Alev Tohumu",
-            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Rüzgargülü Çiçeği",
-            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 629,
-            "name": "Hazine Avcısı Nişanı",
-            "desc": "A signet that proudly represents its owner&#39;s position as member of the Treasure Hoarders. The pursuit of treasure knows no bounds. That said... Is being a thief something to be proud of?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
-            "amount": 15
-          }
-        ]
-      },
-      {
-        "key": "Sv.50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Yükseltmeden Önce",
-              "Yükseltmeden Sonra"
-            ]
-          },
-          {
-            "key": "Temel Can",
-            "values": [
-              "6573",
-              "7309"
-            ]
-          },
-          {
-            "key": "Temel Saldırı",
-            "values": [
-              "101",
-              "113"
-            ]
-          },
-          {
-            "key": "Temel Savunma",
-            "values": [
-              "409",
-              "455"
-            ]
-          },
-          {
-            "key": "Enerji Yüklemesi ",
-            "values": [
-              "6.7%",
-              "13.3%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1099,
-            "name": "Agnidus Akiği Kırıntısı",
-            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Alev Tohumu",
-            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Rüzgargülü Çiçeği",
-            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1553,
-            "name": "Gümüş Kuzgun Nişanı",
-            "desc": "A raven insignia used by members of the Treasure Hoarders to identify each other. The Treasure Hoarders ask for no resume. Anyone who has an insatiable desire for treasure and is backed up by an equal amount of courage can become a worthy member.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Sv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Yükseltmeden Önce",
-              "Yükseltmeden Sonra"
-            ]
-          },
-          {
-            "key": "Temel Can",
-            "values": [
-              "8168",
-              "8719"
-            ]
-          },
-          {
-            "key": "Temel Saldırı",
-            "values": [
-              "126",
-              "134"
-            ]
-          },
-          {
-            "key": "Temel Savunma ",
-            "values": [
-              "508",
-              "542"
-            ]
-          },
-          {
-            "key": "Enerji Yüklemesi ",
-            "values": [
-              "13.3%",
-              "13.3%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1098,
-            "name": "Agnidus Akiği Parçası",
-            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Alev Tohumu",
-            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Rüzgargülü Çiçeği",
-            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1553,
-            "name": "Gümüş Kuzgun Nişanı",
-            "desc": "A raven insignia used by members of the Treasure Hoarders to identify each other. The Treasure Hoarders ask for no resume. Anyone who has an insatiable desire for treasure and is backed up by an equal amount of courage can become a worthy member.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Sv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Yükseltmeden Önce",
-              "Yükseltmeden Sonra"
-            ]
-          },
-          {
-            "key": "Temel Can",
-            "values": [
-              "9577",
-              "10129"
-            ]
-          },
-          {
-            "key": "Temel Saldırı",
-            "values": [
-              "148",
-              "156"
-            ]
-          },
-          {
-            "key": "Temel Savunma",
-            "values": [
-              "596",
-              "630"
-            ]
-          },
-          {
-            "key": "Enerji Yüklemesi ",
-            "values": [
-              "13.3%",
-              "20%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1098,
-            "name": "Agnidus Akiği Parçası",
-            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Alev Tohumu",
-            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Rüzgargülü Çiçeği",
-            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 760,
-            "name": "Altın Kuzgun Nişanı",
-            "desc": "A raven insignia that symbolizes the pride and the guiding principle of the Treasure Hoarders. Whether it&#39;s hidden amidst the vastness of the land or in the depths of the seas, as long as there are treasures to be hunted down, the spirit of Treasure Hoarders, who will stop at nothing to acquire them, will never die.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Sv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Yükseltmeden Önce",
-              "Yükseltmeden Sonra"
-            ]
-          },
-          {
-            "key": "Temel Can",
-            "values": [
-              "10987",
-              "11539"
-            ]
-          },
-          {
-            "key": "Temel Saldırı",
-            "values": [
-              "169",
-              "178"
-            ]
-          },
-          {
-            "key": "Temel Savunma",
-            "values": [
-              "684",
-              "718"
-            ]
-          },
-          {
-            "key": "Enerji Yüklemesi ",
-            "values": [
-              "20%",
-              "26.7%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1097,
-            "name": "Agnidus Akiği Külçesi",
-            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.<br/>If the intention yet remains, achieved ██'s truth he has.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Alev Tohumu",
-            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Rüzgargülü Çiçeği",
-            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 760,
-            "name": "Altın Kuzgun Nişanı",
-            "desc": "A raven insignia that symbolizes the pride and the guiding principle of the Treasure Hoarders. Whether it&#39;s hidden amidst the vastness of the land or in the depths of the seas, as long as there are treasures to be hunted down, the spirit of Treasure Hoarders, who will stop at nothing to acquire them, will never die.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Sv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Yükseltmeden Önce",
-              "Yükseltmeden Sonra"
-            ]
-          },
-          {
-            "key": "Temel Can",
-            "values": [
-              "12397",
-              "-"
-            ]
-          },
-          {
-            "key": "Temel Saldırı",
-            "values": [
-              "191",
-              "-"
-            ]
-          },
-          {
-            "key": "Temel Savunma",
-            "values": [
-              "771",
-              "-"
-            ]
-          },
-          {
-            "key": "Enerji Yüklemesi ",
-            "values": [
-              "26.7%",
-              "-"
-            ]
-          }
-        ]
-      }
-    ],
-    "textualResearch": [
-      {
-        "title": "[Birthday Message] SNS & Illustration (2021)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "A day as lucky as this one is hard to come by!\nYour wishes and company make it even better than the official celebration could ever be!\nWhat say we go treasure hunting... You know, before it starts to rain...\nTwitter URL: https:/twitter.com/GenshinImpact/status/1365874367339458563"
-          }
-        ]
-      },
-      {
-        "title": "[Birthday Message] SNS & Illustration 1 (2022)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "My birthday? Ah... right. After all, it only happens once every four years. Only my dads used to give me presents...\nEven if my birthday didn't happen this year, you still gave me a present, and you went through all the trouble to decorate the place with balloons, too!\nThank you! I really do count myself fortune to have you as a friend. It feels like my luck in future is looking up!\nWait... why did the string holding the balloon suddenly snap?\nHoYoLAB Article: https:/www.hoyolab.com/article/3560429"
-          }
-        ]
-      },
-      {
-        "title": "[Birthday Message] SNS & Illustration 2 (2022)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "\"Traveler, thanks for your present! You've taken very good care of me all the time, and it's your kindness and goodwill towards me that has saved me from my bad luck. This is a very special Teyvat Charred Egg I made. Hehe... Come and try it!\"\n\"Let Paimon try... The burnt parts are really delicious! This is the first time Paimon's tasted such a crispy Teyvat Charred Egg~\"\nHoYoLAB Article: https:/www.hoyolab.com/article/3560428"
-          }
-        ]
-      },
-      {
-        "title": "[Of Ballads and Brews] Bennett, Fecund Hamper",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Clue\nThere is a small shoal in the Whispering Wood near Cider Lake where a small pier lies. I have placed my present in that area. (The road there is somewhat bumpy, so be careful not to fall.)\nMessage\nThanks for finding the gift that I left here!\nSolving puzzles, avoiding traps, completing challenges, collecting precious rewards... These are my favorite things! It's quite rare that I get this kind of chance, so I hid my treasure somewhere out in the wild before designing a little quest around it. I hope it didn't bring you too much trouble.\nThis treasure is yours — good luck in your future endeavors!\nBennett, Adventurer\nItem\nStorefront Furnishing: Please, Enjoy Your Meal, 20,000 Mora, Agnidus Agate Fragment ×2"
-          }
-        ]
-      },
-      {
-        "title": "[Message] Bennett, Cat's Tail Message Board",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Message\n\"I am an official member of the Adventurer's Guild! Ad astra abyssosque, towards the stars and the abyss! Isn't it a wonderful motto!\"\n\"But, I don't understand why. I've been unlucky my whole life. I wasn't like the others, I never went out there looking for an adventure, all I ever did was stay at home and do nothing, but even then, the adventure would still come for me. Ha!\"\n\"I can be annoying sometimes. All my fellow adventurers would tell me something along the lines of: \"Just being around you is dangerous, I guess it's still to early for me to go on an adventure\" and they eventually all left the guild, one by one.\"\n\"In the end. I'm the only one left to take care of the elders. It's not that I don't want to, it's just that doing everything alone can be hard sometimes...\"\nCat's Tail's reply\nIf you feel burdened by the hardships of life, why not come to Cat's Tail and try our wine? In our tavern, adventurous tales are always popular. Who knows, you might even find another adventurer like you."
-          }
-        ]
-      }
-    ],
     "voice": [
       {
         "title": "Hello",
@@ -2198,61 +2253,6 @@
       {
         "title": "Ally at Low HP: II",
         "desc": "<p>Hey, pick on someone your own size!</p>"
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/avatar_header.jpg"
-      },
-      {
-        "key": "Avatar",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/avatar.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Orijinal Kıyafet - Talihin Lütfu\nBennett'in giysisi. Çeşitli yerlerinden dikilip yamalanmış eski bir maceracının üniforması."
-          }
-        ]
-      },
-      {
-        "key": "Boş Durma Animasyonu 1 ",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/1023623/253d4d0f543836ac1d5c4dd28684c5c3_1262777856850748790.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Orijinal Kıyafet - Talihin Lütfu"
-          }
-        ]
-      },
-      {
-        "key": "Boş Durma Animasyonu 2 ",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/1023623/ead150a81a57c6c117778e553960d1d4_5662116647606974233.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Orijinal Kıyafet - Talihin Lütfu"
-          }
-        ]
-      },
-      {
-        "key": "Takımyıldızı",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/12/35428890/0a4c5c29b24e64b08a24ca95faec62c7_6669442018915136433.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Çarkıfelaket"
-          }
-        ]
-      },
-      {
-        "key": "Gruba Katılma Animasyonu",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Orijinal Kıyafet - Talihin Lütfu"
-          }
-        ]
       }
     ]
   }
