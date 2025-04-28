@@ -40,43 +40,178 @@
         "isMaterial": true
       }
     ],
-    "galleryCharacter": [
-      {
-        "key": "Infligiendo Daño Físico",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/16/205556113/6c5ed1eeb09d687c7b8c8cec217c8f63_5127295873517051926.png"
-      },
-      {
-        "key": "Daño de Reacciones Elementales",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/16/205556113/6bb6c739a1c6f8aae3dd898604d75339_2932947871867605377.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Las Reacciones Amplificadoras y Aditivas tienen un elemento especial en la Fórmula de cálculo de daño."
-          }
-        ]
-      },
-      {
-        "key": "Daño de Reacciones Elementales 2",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/16/205556113/f68558a58bc96b9836586c2cb823d99d_5894857767005688174.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Las Reacciones Transformativas tienen una fórmula especial de cálculo de daño."
-          }
-        ]
-      },
-      {
-        "key": "Bono de daño",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/16/205556113/166446e96948e4800450695c3960b927_6047328421274734573.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Algunos bonos de daño se mostrarán sobre la barra de Vida del personaje."
-          }
-        ]
-      }
-    ],
     "customize": [
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Las Reacciones Transformativas son: Florecimiento, Sobreflorecimiento, Crepitar, Quemadura, Sobrecarga, Electrocargado, Superconductor, Rompehielo, Torbellino.</color>\n<color=#ffffff73>Las Reacciones Transformativas ignoran la DEF enemiga, pero están afectadas por la</color> <color=#ffffff>RES enemiga</color> <color=#ffffff73>. No pueden hacer daño crítico (a excepción de Nahida con su 2da Constelación, que permite hacer críticos con Florecimiento, Sobreflorecimiento, Crepitar y Quemadura con una cantidad fija de ProbCRIT y DañoCRIT en 20% y 100% respectivamente). Únicamente importa el</color> <color=#ffffff>Nivel y la Maestría Elemental del personaje desencadenante</color> <color=#ffffff73>.</color>\n<color=#ffffff73>Ejemplo: Si Florecimiento es desencadenado por un personaje Dendro (aplicando Dendro sobre Hydro), se considerarán el Nivel y la Maestría Elemental del personaje Dendro, y la RES Dendro del enemigo.</color>\n<color=#ffffff73>Así, el daño de las Reacciones Elementales es calcula con la siguiente fórmula:</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Multiplicador de RES enemiga × Reaction Multiplier × Multiplicador del Nivel del personaje ×</color>\n<color=#ffffff>× (100% + EM Bonus + Reaction Bonus)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Reaction Multiplier",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Cada Reacción Transformativa tiene su propio Reaction Multiplier (Multiplicador de Reacción), como se muestra en la tabla:</color>\n<color=#ffffff>Reaction Multiplier</color>\n<color=#ffffff>Reacción</color>\n<color=#ffffff73>300%</color>\n<color=#ffffff73>Crepitar, Sobreflorecimiento, Rompehielo</color>\n<color=#ffffff73>275%</color>\n<color=#ffffff73>Sobrecarga</color>\n<color=#ffffff73>200%</color>\n<color=#ffffff73>Florecimiento, Electrocargado</color>\n<color=#ffffff73>60%</color>\n<color=#ffffff73>Torbellino</color>\n<color=#ffffff73>25%</color>\n<color=#ffffff73>Quemadura</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Multiplicador de Nivel del personaje",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Los personajes tienen un Multiplicador de Nivel dependiendo del nivel actual del personaje. Esto es como se muestra en la tabla:</color>\n<color=#ffffff>Nivel del personaje</color>\n<color=#ffffff>Multiplicador de Nivel del personaje</color>\n<color=#ffffff73>60</color>\n<color=#ffffff73>492.88</color>\n<color=#ffffff73>70</color>\n<color=#ffffff73>765.64</color>\n<color=#ffffff73>80</color>\n<color=#ffffff73>1077.44</color>\n<color=#ffffff73>85</color>\n<color=#ffffff73>1253.84</color>\n<color=#ffffff73>90</color>\n<color=#ffffff73>1446.85</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "EM Bonus",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Para el EM Bonus (Bono de Maestría Elemental), es tenido en cuenta solamente la Maestría Elemental total del personaje desencadenante, como aparece en la ventana de las estadísticas del personaje.</color>\n<color=#ffffff73>Se calcula de la siguiente forma:</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>( Maestría Elemental × 16 ) / ( Maestría Elemental + 2000 )</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Reaction Bonus",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Hay algunos Reaction Bonus (Bonos de Reacción) para el daño de la Reacción Transformativa:</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "Personajes",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "Mona",
+        "desc": "Una misteriosa y joven astróloga que se hace llamar “Astróloga Mona Megistus”. Está convencida de que posee las habilidades para estar a la altura del título. Erudita y orgullosa.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1ra Constelación</color>\nCuando un personaje de tu equipo ataca a un enemigo afectado por un presagio, los efectos de las <color=#80c0ff>Reacciones Elementales con Hydro</color> se potencian durante 8 s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "Nilou",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">La famosa bailarina del Teatro Zubayr. Su estilo de danza es elegante y agraciado, y posee un carácter puro y bondadoso.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/11/10742394/586d726f9ebda3506c78beaaa41f13b6_3171942866417884631.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de su 4ta Ascensión</color>\n<color=#ffffff73>Por cada 1000 pts. de Vida Máx. que Nilou tenga una vez superados los 30 000 pts. de Vida Máx., el daño de los núcleos feraces creados por los personajes en el estado de cáliz de la abundancia aumenta en un 9%. El daño infligido con los núcleos feraces solo puede aumentar un máximo del 400% de esta manera.</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "Kaveh",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un célebre arquitecto de Sumeru que se preocupa demasiado por las cosas. Es un fanático de la estética, pero está atrapado por la realidad.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/73555894/2270aba02b92034d7d76b4426be8f53b_4151264377306244528.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Habilidad Definitiva</color>\nMientras esté activa la Definitiva de Kaveh, <color=#ffffff73>aumenta el daño de explosión de los núcleos Dendro creados por tus personajes del equipo con la reacción de Florecimiento.</color>\n<color=#ffffff>4ta Constelación</color>\n<color=#ffffff73>Aumenta en un 60% el daño de explosión de los núcleos Dendro creados por Kaveh con la reacción de Florecimiento.</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "Baizhu",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">El dueño de la Farmacia Bubu, siempre con una serpiente blanca llamada Changsheng colgándole del cuello. Gran conocedor de la medicina, sus auténticas intenciones son un verdadero misterio.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/10742394/05599650d7f42e1c4adde373de6b297d_8469470954258639823.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Pasiva de su 4ta Ascensión</color>\n<color=#ffffff73>El personaje que sea curado con el</color> <color=#ffe699>escudo incólume</color> <color=#ffffff73>obtendrá el efecto de \"fortuna de la madera\", el cual hace que, por cada 1000pts. de Vida Máx. de Baizhu que no superen los 50000pts., el daño que inflige dicho personaje con las reacciones de Quemadura, Florecimiento, Sobreflorecimiento y Crepitar aumenta en un 2%, y el de las reacciones de Intensificación y Propagación aumenta en un 0.8% durante 6s.</color>\nArtefactos",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "Furia del Trueno",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\n<color=#ffffff73>Aumenta en un 20% el bono de daño generado por Intensificación.</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "Bruja Carmesí en Llamas",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\n<color=#ffffff73>Aumenta el daño causado por Sobrecarga, Quemadura y Crepitar en un 40%.</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Flor Olvidada del Paraíso",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/10/10742394/50ce09dfa5a91a33aa9cedfb15bcf2d1_6735549224128370489.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\n<color=#ffffff73>Aumenta en un 40% el daño que inflige el portador de este conjunto con las reacciones de Florecimiento, Sobreflorecimiento y Crepitar. Además, cuando el portador de este conjunto causa alguna de estas reacciones, el bono anterior aumenta en un 25%. Este efecto dura 10 s, puede acumularse hasta 4 veces.</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "Sombra Verde Esmeralda",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\n<color=#ffffff73>Aumenta el daño de Torbellino en un 60%.</color>",
+        "alignment": "center"
+      },
       {
         "type": "Heading",
         "level": 1,
@@ -1390,7 +1525,7 @@
         "epId": 7306,
         "name": "Viajero (Pyro)",
         "desc": "",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/05/157749474/75bb898fe1c3b4ed29a2931829ddb845_998097527747088629.png",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/29/39324012/75bb898fe1c3b4ed29a2931829ddb845_1132637839144901298.png",
         "displayStyle": "card"
       },
       {
@@ -1630,7 +1765,7 @@
         "epId": 7306,
         "name": "Viajero (Pyro)",
         "desc": "",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/05/157749474/75bb898fe1c3b4ed29a2931829ddb845_998097527747088629.png",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/29/39324012/75bb898fe1c3b4ed29a2931829ddb845_1132637839144901298.png",
         "displayStyle": "card"
       },
       {
@@ -4471,177 +4606,42 @@
         "type": "RichText",
         "text": "<color=#ffffff>100% + DañoCRIT</color>",
         "alignment": "center"
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Infligiendo Daño Físico",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/16/205556113/6c5ed1eeb09d687c7b8c8cec217c8f63_5127295873517051926.png"
       },
       {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Las Reacciones Transformativas son: Florecimiento, Sobreflorecimiento, Crepitar, Quemadura, Sobrecarga, Electrocargado, Superconductor, Rompehielo, Torbellino.</color>\n<color=#ffffff73>Las Reacciones Transformativas ignoran la DEF enemiga, pero están afectadas por la</color> <color=#ffffff>RES enemiga</color> <color=#ffffff73>. No pueden hacer daño crítico (a excepción de Nahida con su 2da Constelación, que permite hacer críticos con Florecimiento, Sobreflorecimiento, Crepitar y Quemadura con una cantidad fija de ProbCRIT y DañoCRIT en 20% y 100% respectivamente). Únicamente importa el</color> <color=#ffffff>Nivel y la Maestría Elemental del personaje desencadenante</color> <color=#ffffff73>.</color>\n<color=#ffffff73>Ejemplo: Si Florecimiento es desencadenado por un personaje Dendro (aplicando Dendro sobre Hydro), se considerarán el Nivel y la Maestría Elemental del personaje Dendro, y la RES Dendro del enemigo.</color>\n<color=#ffffff73>Así, el daño de las Reacciones Elementales es calcula con la siguiente fórmula:</color>"
+        "key": "Daño de Reacciones Elementales",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/16/205556113/6bb6c739a1c6f8aae3dd898604d75339_2932947871867605377.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Las Reacciones Amplificadoras y Aditivas tienen un elemento especial en la Fórmula de cálculo de daño."
+          }
+        ]
       },
       {
-        "type": "RichText",
-        "text": "<color=#ffffff>Multiplicador de RES enemiga × Reaction Multiplier × Multiplicador del Nivel del personaje ×</color>\n<color=#ffffff>× (100% + EM Bonus + Reaction Bonus)</color>",
-        "alignment": "center"
+        "key": "Daño de Reacciones Elementales 2",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/16/205556113/f68558a58bc96b9836586c2cb823d99d_5894857767005688174.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Las Reacciones Transformativas tienen una fórmula especial de cálculo de daño."
+          }
+        ]
       },
       {
-        "type": "Heading",
-        "level": 1,
-        "text": "Reaction Multiplier",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Cada Reacción Transformativa tiene su propio Reaction Multiplier (Multiplicador de Reacción), como se muestra en la tabla:</color>\n<color=#ffffff>Reaction Multiplier</color>\n<color=#ffffff>Reacción</color>\n<color=#ffffff73>300%</color>\n<color=#ffffff73>Crepitar, Sobreflorecimiento, Rompehielo</color>\n<color=#ffffff73>275%</color>\n<color=#ffffff73>Sobrecarga</color>\n<color=#ffffff73>200%</color>\n<color=#ffffff73>Florecimiento, Electrocargado</color>\n<color=#ffffff73>60%</color>\n<color=#ffffff73>Torbellino</color>\n<color=#ffffff73>25%</color>\n<color=#ffffff73>Quemadura</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Multiplicador de Nivel del personaje",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Los personajes tienen un Multiplicador de Nivel dependiendo del nivel actual del personaje. Esto es como se muestra en la tabla:</color>\n<color=#ffffff>Nivel del personaje</color>\n<color=#ffffff>Multiplicador de Nivel del personaje</color>\n<color=#ffffff73>60</color>\n<color=#ffffff73>492.88</color>\n<color=#ffffff73>70</color>\n<color=#ffffff73>765.64</color>\n<color=#ffffff73>80</color>\n<color=#ffffff73>1077.44</color>\n<color=#ffffff73>85</color>\n<color=#ffffff73>1253.84</color>\n<color=#ffffff73>90</color>\n<color=#ffffff73>1446.85</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "EM Bonus",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Para el EM Bonus (Bono de Maestría Elemental), es tenido en cuenta solamente la Maestría Elemental total del personaje desencadenante, como aparece en la ventana de las estadísticas del personaje.</color>\n<color=#ffffff73>Se calcula de la siguiente forma:</color>"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>( Maestría Elemental × 16 ) / ( Maestría Elemental + 2000 )</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Reaction Bonus",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Hay algunos Reaction Bonus (Bonos de Reacción) para el daño de la Reacción Transformativa:</color>"
-      },
-      {
-        "type": "RichText",
-        "text": "Personajes",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 37,
-        "name": "Mona",
-        "desc": "Una misteriosa y joven astróloga que se hace llamar “Astróloga Mona Megistus”. Está convencida de que posee las habilidades para estar a la altura del título. Erudita y orgullosa.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>1ra Constelación</color>\nCuando un personaje de tu equipo ataca a un enemigo afectado por un presagio, los efectos de las <color=#80c0ff>Reacciones Elementales con Hydro</color> se potencian durante 8 s.",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2812,
-        "name": "Nilou",
-        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">La famosa bailarina del Teatro Zubayr. Su estilo de danza es elegante y agraciado, y posee un carácter puro y bondadoso.</span></p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/11/10742394/586d726f9ebda3506c78beaaa41f13b6_3171942866417884631.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Pasiva de su 4ta Ascensión</color>\n<color=#ffffff73>Por cada 1000 pts. de Vida Máx. que Nilou tenga una vez superados los 30 000 pts. de Vida Máx., el daño de los núcleos feraces creados por los personajes en el estado de cáliz de la abundancia aumenta en un 9%. El daño infligido con los núcleos feraces solo puede aumentar un máximo del 400% de esta manera.</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3608,
-        "name": "Kaveh",
-        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un célebre arquitecto de Sumeru que se preocupa demasiado por las cosas. Es un fanático de la estética, pero está atrapado por la realidad.</span></p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/73555894/2270aba02b92034d7d76b4426be8f53b_4151264377306244528.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Habilidad Definitiva</color>\nMientras esté activa la Definitiva de Kaveh, <color=#ffffff73>aumenta el daño de explosión de los núcleos Dendro creados por tus personajes del equipo con la reacción de Florecimiento.</color>\n<color=#ffffff>4ta Constelación</color>\n<color=#ffffff73>Aumenta en un 60% el daño de explosión de los núcleos Dendro creados por Kaveh con la reacción de Florecimiento.</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3609,
-        "name": "Baizhu",
-        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">El dueño de la Farmacia Bubu, siempre con una serpiente blanca llamada Changsheng colgándole del cuello. Gran conocedor de la medicina, sus auténticas intenciones son un verdadero misterio.</span></p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/10742394/05599650d7f42e1c4adde373de6b297d_8469470954258639823.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Pasiva de su 4ta Ascensión</color>\n<color=#ffffff73>El personaje que sea curado con el</color> <color=#ffe699>escudo incólume</color> <color=#ffffff73>obtendrá el efecto de \"fortuna de la madera\", el cual hace que, por cada 1000pts. de Vida Máx. de Baizhu que no superen los 50000pts., el daño que inflige dicho personaje con las reacciones de Quemadura, Florecimiento, Sobreflorecimiento y Crepitar aumenta en un 2%, y el de las reacciones de Intensificación y Propagación aumenta en un 0.8% durante 6s.</color>\nArtefactos",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2067,
-        "name": "Furia del Trueno",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\n<color=#ffffff73>Aumenta en un 20% el bono de daño generado por Intensificación.</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2085,
-        "name": "Bruja Carmesí en Llamas",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\n<color=#ffffff73>Aumenta el daño causado por Sobrecarga, Quemadura y Crepitar en un 40%.</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3321,
-        "name": "Flor Olvidada del Paraíso",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/10/10742394/50ce09dfa5a91a33aa9cedfb15bcf2d1_6735549224128370489.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\n<color=#ffffff73>Aumenta en un 40% el daño que inflige el portador de este conjunto con las reacciones de Florecimiento, Sobreflorecimiento y Crepitar. Además, cuando el portador de este conjunto causa alguna de estas reacciones, el bono anterior aumenta en un 25%. Este efecto dura 10 s, puede acumularse hasta 4 veces.</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2091,
-        "name": "Sombra Verde Esmeralda",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Conjunto de 4 piezas</color>\n<color=#ffffff73>Aumenta el daño de Torbellino en un 60%.</color>",
-        "alignment": "center"
+        "key": "Bono de daño",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/16/205556113/166446e96948e4800450695c3960b927_6047328421274734573.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Algunos bonos de daño se mostrarán sobre la barra de Vida del personaje."
+          }
+        ]
       }
     ]
   }
