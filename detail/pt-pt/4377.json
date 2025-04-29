@@ -8,29 +8,668 @@
     "characterRarity": 4,
     "characterProperty": "Taxa Crítica",
     "characterWeapon": "Catalisador",
-    "characterRegion": "Fontaine",
-    "characterVision": "Cryo"
+    "characterVision": "Cryo",
+    "characterRegion": "Fontaine"
   },
   "menuId": 2,
   "menuName": "Guia de Personagens",
   "version": 1729062758,
   "components": {
-    "galleryCharacter": [
+    "talent": [
       {
-        "key": "Avatar",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/45c552941667ceea4fabe74013738690_3332358904448570748.png"
+        "key": "Ataque Normal: Foto de Cores Frias",
+        "title": "Ataque Normal: Foto de Cores Frias",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/464df75643b85d808ea7457d333c2520_601921127233239673.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffe699>Ataque Normal</color>\nMira nos alvos com a Monsieur Verite, e com sua câmera personalizada, Charlotte desfere 3 golpes consecutivos, causando <color=#99ffff>Dano Cryo</color>\n<color=#ffe699>Ataque Carregado</color>\nConsome uma quantidade fixa de Stamina, e depois de uma curta preparação, envia Monsieur Verite para causar <color=#99ffff>Dano Cryo em AdE.</color>\n<color=#ffe699>Ataque Imersivo</color>\nReunindo o poder do Cryo, mergulha na direção do chão, causando Dano contra todos os oponentes no caminho e causando <color=#99ffff>Dano Cryo em AdE</color> ao impactar com o chão.\n<color=#ffe699>Arkhe: Pneuma</color>\nPeriodicamente, ao lançar um Ataque Carregado, um Espinho Espiritual cairá e perfurará os inimigos, causando <color=#99ffff>Dano Cryo em AdE</color> com Pneuma contra os oponentes."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Nível",
+            "values": [
+              "Nv.1",
+              "Nv.2",
+              "Nv.3",
+              "Nv.4",
+              "Nv.5",
+              "Nv.6",
+              "Nv.7",
+              "Nv.8",
+              "Nv.9",
+              "Nv.10",
+              "Nv.11"
+            ]
+          },
+          {
+            "key": "Dano do 1º Golpe",
+            "values": [
+              "49.9%",
+              "53.6%",
+              "57.3%",
+              "62.3%",
+              "66.0%",
+              "69.8%",
+              "74.8%",
+              "79.8%",
+              "84.7%",
+              "89.7%",
+              "94.7%"
+            ]
+          },
+          {
+            "key": "Dano do 2º Golpe",
+            "values": [
+              "43.4%",
+              "46.6%",
+              "49.9%",
+              "54.2%",
+              "57.5%",
+              "60.7%",
+              "65.1%",
+              "69.4%",
+              "73.7%",
+              "78.1%",
+              "82.4%"
+            ]
+          },
+          {
+            "key": "Dano do 3º Golpe",
+            "values": [
+              "64.6%",
+              "69.4%",
+              "74.3%",
+              "80.8%",
+              "85.6%",
+              "90.4%",
+              "96.9%",
+              "103.4%",
+              "109.8%",
+              "116%",
+              "123%"
+            ]
+          },
+          {
+            "key": "Dano do Ataque Carregado",
+            "values": [
+              "100.5%",
+              "108.1%",
+              "115.6%",
+              "125.6%",
+              "133.2%",
+              "140.7%",
+              "150.8%",
+              "160.8%",
+              "170.9%",
+              "180.9%",
+              "191.0%"
+            ]
+          },
+          {
+            "key": "Consumo de Stamina de Ataque Carregado",
+            "values": [
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0"
+            ]
+          },
+          {
+            "key": "Dano Durante a Queda",
+            "values": [
+              "56.8%",
+              "61.5%",
+              "66.1%",
+              "72.7%",
+              "77.3%",
+              "82.6%",
+              "89.9%",
+              "97.1%",
+              "104.4%",
+              "112.3%",
+              "120.3%"
+            ]
+          },
+          {
+            "key": "Dano de Queda de Baixa/Alta Altitude",
+            "values": [
+              "114%/142%",
+              "123%/153%",
+              "132%/165%",
+              "145%/182%",
+              "155%/193%",
+              "165%/206%",
+              "180%/224%",
+              "194%/243%",
+              "209%/261%",
+              "225%/281%",
+              "240%/300%"
+            ]
+          },
+          {
+            "key": "Dano do Espinho Epiritual",
+            "values": [
+              "11.2%",
+              "12.0%",
+              "12.8%",
+              "14.0%",
+              "14.8%",
+              "15.6%",
+              "16.8%",
+              "17.9%",
+              "19.0%",
+              "20.1%",
+              "21.2%"
+            ]
+          },
+          {
+            "key": "Intervalo de Espinho Espiritual",
+            "values": [
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s"
+            ]
+          }
+        ],
+        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/8477e3ba5c1db1041a81ff61fcb7f750_4146553127371233708.gif"
       },
       {
-        "key": "Animação 1",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/3cc45185ee335f2ffc557bac415f6fb1_6951883527022575899.gif"
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/54adbd6e0af44cff009737afb67b0409_1227860899518232432.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Usando os instintos aguçados de uma repórtes, Charlotte usa suas habilidades de fotografia para produzir efeitos diferentes.\n<color=#ffd780>Pressionar</color>\nTira uma foto usando Monsieur Verite causando <color=#99ffff>Dano Cryo em AdE</color> contraos inimigos em frente, e marcando até 5 inimigos atingidos com Silhueta Instantânea. Na duração de Silhueta Instantânea, causará periodicamente <color=#99ffff>Dano Cryo</color> contra os inimigos.\n<color=#ffe699>Manter Pressionado</color>\nAbre o Visor do Monsieur Verite, entrando no estado Composição. O Visor irá gradualmente aumentar até virar a Foto Enorme enquanto estiver mantendo pressionado. nesse estado, Charlotte é capaz de se mover e mudar de direção.\nQuando terminar de manter pressionado, Monsieur Verite causará <color=#99ffff>Dano Cryo</color> contra os inimigos fixados pelo Visor, e os aplicará com Silhueta Instantânea de pressionar. Se a Habilidade for lançada depois que o Visor chegar em Foto Enorme, aplicará com duração maior, Dano de Foco Impressionante mais alto, e a recarga da Habilidade será maior.\nO estado Composição pode durar até 15 segundos e marcar 5 inimigos.\n\"Fotografia jornalística precisa de ângulos simples com temas excepcionais, mas acima de tudo, você precisa ter talento pra capturar o momento!\""
+          }
+        ],
+        "attributes": [
+          {
+            "key": "",
+            "values": [
+              "Nv.1",
+              "Nv.2",
+              "Nv.3",
+              "Nv.4",
+              "Nv.5",
+              "Nv.6",
+              "Nv.7",
+              "Nv.8",
+              "Nv.9",
+              "Nv.10",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "key": "Dano de Pressionar Fotografar",
+            "values": [
+              "67.2%",
+              "72.2%",
+              "77.3%",
+              "84.0%",
+              "89.0%",
+              "94.1%",
+              "100.8%",
+              "107.5%",
+              "114.2%",
+              "121.0%",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "key": "Dano de Manter Pressionado Fotografar",
+            "values": [
+              "139.2%",
+              "149.6%",
+              "160.1%",
+              "174.0%",
+              "184.4%",
+              "194.9%",
+              "208.8%",
+              "222.7%",
+              "236.6%",
+              "250.6%",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "key": "Dano de Marca \"Silhueta Instantânea\"",
+            "values": [
+              "39.2%",
+              "42.1%",
+              "45.1%",
+              "49.0%",
+              "51.9%",
+              "54.9%",
+              "58.8%",
+              "62.7%",
+              "66.6%",
+              "70.6%",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "key": "Intervalo de ativação de Marca \"Silhueta Instantânea\"",
+            "values": [
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s"
+            ]
+          },
+          {
+            "key": "Duração de Marca \"Silhueta Instantânea\"",
+            "values": [
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s",
+              "6.0s"
+            ]
+          },
+          {
+            "key": "Dano da Marca \"Foco Impressionante\"",
+            "values": [
+              "40.6%",
+              "43.6%",
+              "46.7%",
+              "50.8%",
+              "53.8%",
+              "56.8%",
+              "60.9%",
+              "65.0%",
+              "69.0%",
+              "73.1%",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "key": "Intervalo da Marca \"Foco Impressionante\"",
+            "values": [
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s",
+              "1.5s"
+            ]
+          },
+          {
+            "key": "Duração da Marca \"Foco Impressionante\"",
+            "values": [
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s"
+            ]
+          },
+          {
+            "key": "Recarga",
+            "values": [
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s"
+            ]
+          },
+          {
+            "key": "Recarga de lançamento de Foto Enorme",
+            "values": [
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s"
+            ]
+          }
+        ]
       },
       {
-        "key": "Animação 2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/eeec01af2a374215cd65e106d9997889_1074709337929032237.gif"
+        "key": "Determinado: Confirmação Geral",
+        "title": "Determinado: Confirmação Geral",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/d1cf9afd3481f21b5ec894c5c65557fe_4025005205755538813.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Condensa o gelo para criar a assinatura do Pássaro a Vapor, Charlotte estabelece o Ângulo Correto, causando <color=#99ffff>Dano Cryo em AdE</color> e regenera Vida para todos os membros da equipe. A quantidade regenerada é baseada no ATQ de Charlotte.\n<color=#ffe699>Ângulo Correto</color>\n- Em sua duração, Monsieur Verite periodicamente atacará os inimigos dentro da AdE, causando <color=#99ffff>Dano Cryo</color> .\n- Personagens ativos no campo no interior da área terão sua Vida regenerada continuamente, a quantidade regenerada é baseada no ATQ de Charlotte.\n\"Ouvir as histórias de múltiplas perspectivas para recriar o que aconteceu é a chave de uma notícia... Bem, é assim que você escolhe o melhorângulo para o artigo!\""
+          }
+        ],
+        "attributes": [
+          {
+            "key": "",
+            "values": [
+              "Nv.1",
+              "Nv.2",
+              "Nv.3",
+              "Nv.4",
+              "Nv.5",
+              "Nv.6",
+              "Nv.7",
+              "Nv.8",
+              "Nv.9",
+              "Nv.10",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "key": "Curar ao lançar",
+            "values": [
+              "256.6% ATK + 1,608",
+              "275.82% ATK + 1,769",
+              "295.1% ATK + 1,944",
+              "320.7% ATK + 2,131",
+              "340.0% ATK + 2,332",
+              "359.2% ATK + 2,547",
+              "384.9% ATK + 2,775",
+              "410.5% ATK + 3,016",
+              "436.2% ATK + 3,271",
+              "461.8% ATK + 3,539",
+              "",
+              "",
+              "545.2% ATK + 4,424"
+            ]
+          },
+          {
+            "key": "Dano de Habilidade",
+            "values": [
+              "77.6%",
+              "83.4%",
+              "89.3%",
+              "97.0%",
+              "102.8%",
+              "108.7%",
+              "116.4%",
+              "124.2%",
+              "131.9%",
+              "139.7%",
+              "",
+              "",
+              "164.9%"
+            ]
+          },
+          {
+            "key": "Regeneração Contínua da Câmera",
+            "values": [
+              "9.2% ATK + 57",
+              "9.9% ATK + 63",
+              "10.6% ATK + 69",
+              "11.5% ATK + 76",
+              "12.2% ATK + 83",
+              "12.9% ATK + 91",
+              "13.8% ATK + 99",
+              "14.7% ATK + 108",
+              "15.7% ATK + 117",
+              "16.6% ATK + 126",
+              "",
+              "",
+              "19.6% ATK + 158"
+            ]
+          },
+          {
+            "key": "Dano da Câmera",
+            "values": [
+              "6.5%",
+              "7.0%",
+              "7.4%",
+              "8.1%",
+              "8.6%",
+              "9.1%",
+              "9.7%",
+              "10.3%",
+              "11.0%",
+              "11.6%",
+              "",
+              "",
+              "13.7%"
+            ]
+          },
+          {
+            "key": "Tempo de Recarga",
+            "values": [
+              "4.0s",
+              "4.0s",
+              "4.0s",
+              "4.0s",
+              "4.0s",
+              "4.0s",
+              "4.0s",
+              "4.0s",
+              "4.0s",
+              "4.0s",
+              "4.0s",
+              "4.0s",
+              "4.0s"
+            ]
+          },
+          {
+            "key": "Energia Elemental",
+            "values": [
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s"
+            ]
+          },
+          {
+            "key": "Energia Elemental",
+            "values": [
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80"
+            ]
+          }
+        ]
       },
       {
-        "key": "Constelação",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/7798c641a8e5b33dbfaf0a417ad5c092_1258248376126126372.png"
+        "key": "Momento do Impacto",
+        "title": "Momento do Impacto",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/13bf917ab94ad77afd3008927b6f7d59_4752043278662736360.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Ao derrotar inimigos marcados por Foco Impressionante, reduz a recarga de <color=#ffe699>Enquadramento: Composição do ponto de Congelamento</color> em 2s.A recarga da Habilidade Elemental pode ser reduzida até 4 vezes a cada 12s dessa forma."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "",
+            "values": [
+              ""
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Investigação Diversa",
+        "title": "Investigação Diversa",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/8513d378355f3a0e2c5773e829650d97_4460556480261582969.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Com exceção de Charlotte, para cada personagem de Fontaine na equipe, faz Charlotte ganhar 5% de Bônus de Cura. Para cada personagem que não é de Fontaine na equipe, faz Charlotte ganhar 5% de Bônus de Dano Cryo."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "",
+            "values": []
+          }
+        ]
+      },
+      {
+        "key": "Porta em Primeira Pessoa",
+        "title": "Porta em Primeira Pessoa",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/312788cca79f79778a04a5b2e10502dc_657490148273753613.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Depois de equipar a Lente de Zoom de Análise Especial, não causará mais o efeito original de manter pressionada a Habilidade Elemental \"Enquadramento: Composição do ponto de Congelamento\", mas agora vai poder tirar fotos de um jeito mais especial..."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "",
+            "values": []
+          }
+        ]
+      }
+    ],
+    "summaryList": [
+      {
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/4b8212535fad0607be41250162547107_3763480332734969252.png",
+        "name": "Necessidade de Verificar Fatos",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Depois de <color=#ffe699>Determinado: Confirmação Geral</color> curar um personagem, aplicará o personagem com Verificação, que o curará uma vez a cada 2s com base em 80% do ATQ de Charlotte. Esse efeito dura 6s."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/ccdd795bdba7a0d79868ddfb54499dc0_1717258504746148390.png",
+        "name": "Dever de Buscar a Verdade",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Ao lançar <color=#ffe699>Enquadramento: Composição do Ponto de Congelamento</color> , quando monsieur Verite atingir 1/2/3 ou mais inimigos, aumenta o ATQ de Charlotte em 10%/20%/30% por 12s."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/d1cf9afd3481f21b5ec894c5c65557fe_218978066449032736.png",
+        "name": "Imperativo pela Independência",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Aumenta o nível da <color=#ffe699>Determinado: Confirmação</color> geral em 3.\nO nível máximo de elevação é 15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/b426d7c56bd8b4dce647e525f3ab292b_8280811901264972948.png",
+        "name": "Responsabilidade para Supervisionar",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Quando <color=#ffe699>Determinado: Confirmação Geral</color> atinge um inimigo marcado por Silhueta Instantânea ou Foco impressionante, aumenta o Dano causado em 10% e regenera 2 de Energia Elemental para Charlotte. Energia Elemental pode ser regenerada até 5 vezes a cada 20s dessa forma."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/54adbd6e0af44cff009737afb67b0409_3911993631272497084.png",
+        "name": "Princípio de Consciência",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Aumenta o nível de <color=#ffe699>Enquadramento: Composição do Ponto de Congelamento</color> em 3.\nO nível máximo de elevação é 15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/ec01f16bacb407bd77f28949f33ecd5b_8272909355433581955.png",
+        "name": "Resumo de Interesse",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Quando o Ataque Normal e Carregado do personagem ativo atingem um inimigo marcado por Foco Impressionante de <color=#ffe699>Enquadramento: Composição do Ponto de Congelamento</color> <color=#ece5d8>,</color> Monsieur Verite fará um ataque seguinte que causa 180% do Dano do ATQ de Charlotte como <color=#99ffff>Dano Cryo em AdE</color> , e cura os personagens ativos na AdE em 42% do ATQ de Charlotte. Esse efeito pode ser desencadeado uma vez a cada 6s, e tanto o Dano quanto a cura realizada serão considerados como feitos pelo Supremo de Charlotte."
+          }
+        ]
       }
     ],
     "story": [
@@ -1583,64 +2222,124 @@
         ]
       }
     ],
-    "summaryList": [
+    "galleryCharacter": [
       {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/4b8212535fad0607be41250162547107_3763480332734969252.png",
-        "name": "Necessidade de Verificar Fatos",
-        "desc": [
+        "key": "Avatar",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/45c552941667ceea4fabe74013738690_3332358904448570748.png"
+      },
+      {
+        "key": "Animação 1",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/3cc45185ee335f2ffc557bac415f6fb1_6951883527022575899.gif"
+      },
+      {
+        "key": "Animação 2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/eeec01af2a374215cd65e106d9997889_1074709337929032237.gif"
+      },
+      {
+        "key": "Constelação",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/7798c641a8e5b33dbfaf0a417ad5c092_1258248376126126372.png"
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "Nome",
+        "value": [
           {
             "type": "RichText",
-            "text": "Depois de <color=#ffe699>Determinado: Confirmação Geral</color> curar um personagem, aplicará o personagem com Verificação, que o curará uma vez a cada 2s com base em 80% do ATQ de Charlotte. Esse efeito dura 6s."
+            "text": "Charlotte"
           }
         ]
       },
       {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/ccdd795bdba7a0d79868ddfb54499dc0_1717258504746148390.png",
-        "name": "Dever de Buscar a Verdade",
-        "desc": [
+        "key": "Aniversário",
+        "value": [
           {
             "type": "RichText",
-            "text": "Ao lançar <color=#ffe699>Enquadramento: Composição do Ponto de Congelamento</color> , quando monsieur Verite atingir 1/2/3 ou mais inimigos, aumenta o ATQ de Charlotte em 10%/20%/30% por 12s."
+            "text": "4/10"
           }
         ]
       },
       {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/d1cf9afd3481f21b5ec894c5c65557fe_218978066449032736.png",
-        "name": "Imperativo pela Independência",
-        "desc": [
+        "key": "Constelação",
+        "value": [
           {
             "type": "RichText",
-            "text": "Aumenta o nível da <color=#ffe699>Determinado: Confirmação</color> geral em 3.\nO nível máximo de elevação é 15."
+            "text": "Hualina Veritas"
           }
         ]
       },
       {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/b426d7c56bd8b4dce647e525f3ab292b_8280811901264972948.png",
-        "name": "Responsabilidade para Supervisionar",
-        "desc": [
+        "key": "Título",
+        "value": [
           {
             "type": "RichText",
-            "text": "Quando <color=#ffe699>Determinado: Confirmação Geral</color> atinge um inimigo marcado por Silhueta Instantânea ou Foco impressionante, aumenta o Dano causado em 10% e regenera 2 de Energia Elemental para Charlotte. Energia Elemental pode ser regenerada até 5 vezes a cada 20s dessa forma."
+            "text": "<color=#e7e9ea>Lentes em Busca da Verdade</color>"
           }
         ]
       },
       {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/54adbd6e0af44cff009737afb67b0409_3911993631272497084.png",
-        "name": "Princípio de Consciência",
-        "desc": [
+        "key": "Visão",
+        "value": [
           {
             "type": "RichText",
-            "text": "Aumenta o nível de <color=#ffe699>Enquadramento: Composição do Ponto de Congelamento</color> em 3.\nO nível máximo de elevação é 15."
+            "text": "Cryo"
           }
         ]
       },
       {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/ec01f16bacb407bd77f28949f33ecd5b_8272909355433581955.png",
-        "name": "Resumo de Interesse",
-        "desc": [
+        "key": "Afiliação",
+        "value": [
           {
             "type": "RichText",
-            "text": "Quando o Ataque Normal e Carregado do personagem ativo atingem um inimigo marcado por Foco Impressionante de <color=#ffe699>Enquadramento: Composição do Ponto de Congelamento</color> <color=#ece5d8>,</color> Monsieur Verite fará um ataque seguinte que causa 180% do Dano do ATQ de Charlotte como <color=#99ffff>Dano Cryo em AdE</color> , e cura os personagens ativos na AdE em 42% do ATQ de Charlotte. Esse efeito pode ser desencadeado uma vez a cada 6s, e tanto o Dano quanto a cura realizada serão considerados como feitos pelo Supremo de Charlotte."
+            "text": "Pássaro a Vapor"
+          }
+        ]
+      },
+      {
+        "key": "Chinês CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "阮从青 (Ruan Congqing)"
+          }
+        ]
+      },
+      {
+        "key": "Inglês CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Maya Aoki Tuttle"
+          }
+        ]
+      },
+      {
+        "key": "Japonês CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "和氣あず未 (Azumi Waki)"
+          }
+        ]
+      },
+      {
+        "key": "Coreano CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "신온유 (Shin On-yu)"
+          }
+        ]
+      },
+      {
+        "key": "Prato Especial"
+      },
+      {
+        "key": "Versão de Lançamento",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "4.2"
           }
         ]
       }
@@ -1986,705 +2685,6 @@
       {
         "type": "RichText",
         "text": "<color=#ffd780>Sigewinne - Sobre Charlotte</color>\nAdoro olhar as fotos de Charlotte. Você consegue ver os músculos faciais de todos em todas as diferentes situações: tensos, relaxados, esticados, caídos... Hehe, eu me lembro de todos com muito amor."
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Nome",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Charlotte"
-          }
-        ]
-      },
-      {
-        "key": "Aniversário",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "4/10"
-          }
-        ]
-      },
-      {
-        "key": "Constelação",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Hualina Veritas"
-          }
-        ]
-      },
-      {
-        "key": "Título",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#e7e9ea>Lentes em Busca da Verdade</color>"
-          }
-        ]
-      },
-      {
-        "key": "Visão",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Cryo"
-          }
-        ]
-      },
-      {
-        "key": "Afiliação",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Pássaro a Vapor"
-          }
-        ]
-      },
-      {
-        "key": "Chinês CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "阮从青 (Ruan Congqing)"
-          }
-        ]
-      },
-      {
-        "key": "Inglês CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Maya Aoki Tuttle"
-          }
-        ]
-      },
-      {
-        "key": "Japonês CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "和氣あず未 (Azumi Waki)"
-          }
-        ]
-      },
-      {
-        "key": "Coreano CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "신온유 (Shin On-yu)"
-          }
-        ]
-      },
-      {
-        "key": "Prato Especial"
-      },
-      {
-        "key": "Versão de Lançamento",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "4.2"
-          }
-        ]
-      }
-    ],
-    "talent": [
-      {
-        "key": "Ataque Normal: Foto de Cores Frias",
-        "title": "Ataque Normal: Foto de Cores Frias",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/464df75643b85d808ea7457d333c2520_601921127233239673.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffe699>Ataque Normal</color>\nMira nos alvos com a Monsieur Verite, e com sua câmera personalizada, Charlotte desfere 3 golpes consecutivos, causando <color=#99ffff>Dano Cryo</color>\n<color=#ffe699>Ataque Carregado</color>\nConsome uma quantidade fixa de Stamina, e depois de uma curta preparação, envia Monsieur Verite para causar <color=#99ffff>Dano Cryo em AdE.</color>\n<color=#ffe699>Ataque Imersivo</color>\nReunindo o poder do Cryo, mergulha na direção do chão, causando Dano contra todos os oponentes no caminho e causando <color=#99ffff>Dano Cryo em AdE</color> ao impactar com o chão.\n<color=#ffe699>Arkhe: Pneuma</color>\nPeriodicamente, ao lançar um Ataque Carregado, um Espinho Espiritual cairá e perfurará os inimigos, causando <color=#99ffff>Dano Cryo em AdE</color> com Pneuma contra os oponentes."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Nível",
-            "values": [
-              "Nv.1",
-              "Nv.2",
-              "Nv.3",
-              "Nv.4",
-              "Nv.5",
-              "Nv.6",
-              "Nv.7",
-              "Nv.8",
-              "Nv.9",
-              "Nv.10",
-              "Nv.11"
-            ]
-          },
-          {
-            "key": "Dano do 1º Golpe",
-            "values": [
-              "49.9%",
-              "53.6%",
-              "57.3%",
-              "62.3%",
-              "66.0%",
-              "69.8%",
-              "74.8%",
-              "79.8%",
-              "84.7%",
-              "89.7%",
-              "94.7%"
-            ]
-          },
-          {
-            "key": "Dano do 2º Golpe",
-            "values": [
-              "43.4%",
-              "46.6%",
-              "49.9%",
-              "54.2%",
-              "57.5%",
-              "60.7%",
-              "65.1%",
-              "69.4%",
-              "73.7%",
-              "78.1%",
-              "82.4%"
-            ]
-          },
-          {
-            "key": "Dano do 3º Golpe",
-            "values": [
-              "64.6%",
-              "69.4%",
-              "74.3%",
-              "80.8%",
-              "85.6%",
-              "90.4%",
-              "96.9%",
-              "103.4%",
-              "109.8%",
-              "116%",
-              "123%"
-            ]
-          },
-          {
-            "key": "Dano do Ataque Carregado",
-            "values": [
-              "100.5%",
-              "108.1%",
-              "115.6%",
-              "125.6%",
-              "133.2%",
-              "140.7%",
-              "150.8%",
-              "160.8%",
-              "170.9%",
-              "180.9%",
-              "191.0%"
-            ]
-          },
-          {
-            "key": "Consumo de Stamina de Ataque Carregado",
-            "values": [
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0"
-            ]
-          },
-          {
-            "key": "Dano Durante a Queda",
-            "values": [
-              "56.8%",
-              "61.5%",
-              "66.1%",
-              "72.7%",
-              "77.3%",
-              "82.6%",
-              "89.9%",
-              "97.1%",
-              "104.4%",
-              "112.3%",
-              "120.3%"
-            ]
-          },
-          {
-            "key": "Dano de Queda de Baixa/Alta Altitude",
-            "values": [
-              "114%/142%",
-              "123%/153%",
-              "132%/165%",
-              "145%/182%",
-              "155%/193%",
-              "165%/206%",
-              "180%/224%",
-              "194%/243%",
-              "209%/261%",
-              "225%/281%",
-              "240%/300%"
-            ]
-          },
-          {
-            "key": "Dano do Espinho Epiritual",
-            "values": [
-              "11.2%",
-              "12.0%",
-              "12.8%",
-              "14.0%",
-              "14.8%",
-              "15.6%",
-              "16.8%",
-              "17.9%",
-              "19.0%",
-              "20.1%",
-              "21.2%"
-            ]
-          },
-          {
-            "key": "Intervalo de Espinho Espiritual",
-            "values": [
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s"
-            ]
-          }
-        ],
-        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/8477e3ba5c1db1041a81ff61fcb7f750_4146553127371233708.gif"
-      },
-      {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/54adbd6e0af44cff009737afb67b0409_1227860899518232432.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Usando os instintos aguçados de uma repórtes, Charlotte usa suas habilidades de fotografia para produzir efeitos diferentes.\n<color=#ffd780>Pressionar</color>\nTira uma foto usando Monsieur Verite causando <color=#99ffff>Dano Cryo em AdE</color> contraos inimigos em frente, e marcando até 5 inimigos atingidos com Silhueta Instantânea. Na duração de Silhueta Instantânea, causará periodicamente <color=#99ffff>Dano Cryo</color> contra os inimigos.\n<color=#ffe699>Manter Pressionado</color>\nAbre o Visor do Monsieur Verite, entrando no estado Composição. O Visor irá gradualmente aumentar até virar a Foto Enorme enquanto estiver mantendo pressionado. nesse estado, Charlotte é capaz de se mover e mudar de direção.\nQuando terminar de manter pressionado, Monsieur Verite causará <color=#99ffff>Dano Cryo</color> contra os inimigos fixados pelo Visor, e os aplicará com Silhueta Instantânea de pressionar. Se a Habilidade for lançada depois que o Visor chegar em Foto Enorme, aplicará com duração maior, Dano de Foco Impressionante mais alto, e a recarga da Habilidade será maior.\nO estado Composição pode durar até 15 segundos e marcar 5 inimigos.\n\"Fotografia jornalística precisa de ângulos simples com temas excepcionais, mas acima de tudo, você precisa ter talento pra capturar o momento!\""
-          }
-        ],
-        "attributes": [
-          {
-            "key": "",
-            "values": [
-              "Nv.1",
-              "Nv.2",
-              "Nv.3",
-              "Nv.4",
-              "Nv.5",
-              "Nv.6",
-              "Nv.7",
-              "Nv.8",
-              "Nv.9",
-              "Nv.10",
-              "",
-              "",
-              ""
-            ]
-          },
-          {
-            "key": "Dano de Pressionar Fotografar",
-            "values": [
-              "67.2%",
-              "72.2%",
-              "77.3%",
-              "84.0%",
-              "89.0%",
-              "94.1%",
-              "100.8%",
-              "107.5%",
-              "114.2%",
-              "121.0%",
-              "",
-              "",
-              ""
-            ]
-          },
-          {
-            "key": "Dano de Manter Pressionado Fotografar",
-            "values": [
-              "139.2%",
-              "149.6%",
-              "160.1%",
-              "174.0%",
-              "184.4%",
-              "194.9%",
-              "208.8%",
-              "222.7%",
-              "236.6%",
-              "250.6%",
-              "",
-              "",
-              ""
-            ]
-          },
-          {
-            "key": "Dano de Marca \"Silhueta Instantânea\"",
-            "values": [
-              "39.2%",
-              "42.1%",
-              "45.1%",
-              "49.0%",
-              "51.9%",
-              "54.9%",
-              "58.8%",
-              "62.7%",
-              "66.6%",
-              "70.6%",
-              "",
-              "",
-              ""
-            ]
-          },
-          {
-            "key": "Intervalo de ativação de Marca \"Silhueta Instantânea\"",
-            "values": [
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s"
-            ]
-          },
-          {
-            "key": "Duração de Marca \"Silhueta Instantânea\"",
-            "values": [
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s",
-              "6.0s"
-            ]
-          },
-          {
-            "key": "Dano da Marca \"Foco Impressionante\"",
-            "values": [
-              "40.6%",
-              "43.6%",
-              "46.7%",
-              "50.8%",
-              "53.8%",
-              "56.8%",
-              "60.9%",
-              "65.0%",
-              "69.0%",
-              "73.1%",
-              "",
-              "",
-              ""
-            ]
-          },
-          {
-            "key": "Intervalo da Marca \"Foco Impressionante\"",
-            "values": [
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s",
-              "1.5s"
-            ]
-          },
-          {
-            "key": "Duração da Marca \"Foco Impressionante\"",
-            "values": [
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s"
-            ]
-          },
-          {
-            "key": "Recarga",
-            "values": [
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s"
-            ]
-          },
-          {
-            "key": "Recarga de lançamento de Foto Enorme",
-            "values": [
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Determinado: Confirmação Geral",
-        "title": "Determinado: Confirmação Geral",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/d1cf9afd3481f21b5ec894c5c65557fe_4025005205755538813.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Condensa o gelo para criar a assinatura do Pássaro a Vapor, Charlotte estabelece o Ângulo Correto, causando <color=#99ffff>Dano Cryo em AdE</color> e regenera Vida para todos os membros da equipe. A quantidade regenerada é baseada no ATQ de Charlotte.\n<color=#ffe699>Ângulo Correto</color>\n- Em sua duração, Monsieur Verite periodicamente atacará os inimigos dentro da AdE, causando <color=#99ffff>Dano Cryo</color> .\n- Personagens ativos no campo no interior da área terão sua Vida regenerada continuamente, a quantidade regenerada é baseada no ATQ de Charlotte.\n\"Ouvir as histórias de múltiplas perspectivas para recriar o que aconteceu é a chave de uma notícia... Bem, é assim que você escolhe o melhorângulo para o artigo!\""
-          }
-        ],
-        "attributes": [
-          {
-            "key": "",
-            "values": [
-              "Nv.1",
-              "Nv.2",
-              "Nv.3",
-              "Nv.4",
-              "Nv.5",
-              "Nv.6",
-              "Nv.7",
-              "Nv.8",
-              "Nv.9",
-              "Nv.10",
-              "",
-              "",
-              ""
-            ]
-          },
-          {
-            "key": "Curar ao lançar",
-            "values": [
-              "256.6% ATK + 1,608",
-              "275.82% ATK + 1,769",
-              "295.1% ATK + 1,944",
-              "320.7% ATK + 2,131",
-              "340.0% ATK + 2,332",
-              "359.2% ATK + 2,547",
-              "384.9% ATK + 2,775",
-              "410.5% ATK + 3,016",
-              "436.2% ATK + 3,271",
-              "461.8% ATK + 3,539",
-              "",
-              "",
-              "545.2% ATK + 4,424"
-            ]
-          },
-          {
-            "key": "Dano de Habilidade",
-            "values": [
-              "77.6%",
-              "83.4%",
-              "89.3%",
-              "97.0%",
-              "102.8%",
-              "108.7%",
-              "116.4%",
-              "124.2%",
-              "131.9%",
-              "139.7%",
-              "",
-              "",
-              "164.9%"
-            ]
-          },
-          {
-            "key": "Regeneração Contínua da Câmera",
-            "values": [
-              "9.2% ATK + 57",
-              "9.9% ATK + 63",
-              "10.6% ATK + 69",
-              "11.5% ATK + 76",
-              "12.2% ATK + 83",
-              "12.9% ATK + 91",
-              "13.8% ATK + 99",
-              "14.7% ATK + 108",
-              "15.7% ATK + 117",
-              "16.6% ATK + 126",
-              "",
-              "",
-              "19.6% ATK + 158"
-            ]
-          },
-          {
-            "key": "Dano da Câmera",
-            "values": [
-              "6.5%",
-              "7.0%",
-              "7.4%",
-              "8.1%",
-              "8.6%",
-              "9.1%",
-              "9.7%",
-              "10.3%",
-              "11.0%",
-              "11.6%",
-              "",
-              "",
-              "13.7%"
-            ]
-          },
-          {
-            "key": "Tempo de Recarga",
-            "values": [
-              "4.0s",
-              "4.0s",
-              "4.0s",
-              "4.0s",
-              "4.0s",
-              "4.0s",
-              "4.0s",
-              "4.0s",
-              "4.0s",
-              "4.0s",
-              "4.0s",
-              "4.0s",
-              "4.0s"
-            ]
-          },
-          {
-            "key": "Energia Elemental",
-            "values": [
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s"
-            ]
-          },
-          {
-            "key": "Energia Elemental",
-            "values": [
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Momento do Impacto",
-        "title": "Momento do Impacto",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/13bf917ab94ad77afd3008927b6f7d59_4752043278662736360.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Ao derrotar inimigos marcados por Foco Impressionante, reduz a recarga de <color=#ffe699>Enquadramento: Composição do ponto de Congelamento</color> em 2s.A recarga da Habilidade Elemental pode ser reduzida até 4 vezes a cada 12s dessa forma."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "",
-            "values": [
-              ""
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Investigação Diversa",
-        "title": "Investigação Diversa",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/8513d378355f3a0e2c5773e829650d97_4460556480261582969.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Com exceção de Charlotte, para cada personagem de Fontaine na equipe, faz Charlotte ganhar 5% de Bônus de Cura. Para cada personagem que não é de Fontaine na equipe, faz Charlotte ganhar 5% de Bônus de Dano Cryo."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "",
-            "values": []
-          }
-        ]
-      },
-      {
-        "key": "Porta em Primeira Pessoa",
-        "title": "Porta em Primeira Pessoa",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/101132274/312788cca79f79778a04a5b2e10502dc_657490148273753613.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Depois de equipar a Lente de Zoom de Análise Especial, não causará mais o efeito original de manter pressionada a Habilidade Elemental \"Enquadramento: Composição do ponto de Congelamento\", mas agora vai poder tirar fotos de um jeito mais especial..."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "",
-            "values": []
-          }
-        ]
       }
     ],
     "ascension": [

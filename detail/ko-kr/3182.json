@@ -4,11 +4,11 @@
   "desc": "<p><strong><span style=\"color: #ECE5D8\">만민백미·향릉</span></strong><br>요리사로서 그녀는 뭐든 해낼 수 있다.</p>",
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/194600931/6219bf1fb0b7c46b8ecf960443f737d5_2970395899757735075.png",
   "filterValues": {
+    "cardCharacterWeaponType": "장병기",
     "cardCharacterCamp": [
       "리월"
     ],
     "cardCharacterObtainingMethod": "캐릭터 초대",
-    "cardCharacterWeaponType": "장병기",
     "cardCharacterChargingPoint": "원소 에너지: 2",
     "cardCharacterElement": "불 원소"
   },
@@ -16,23 +16,81 @@
   "menuName": "캐릭터 카드",
   "version": 1718636815,
   "components": {
-    "tcg": {
-      "headerImgs": [
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/194600931/6219bf1fb0b7c46b8ecf960443f737d5_2970395899757735075.png",
-          "imgDesc": "일반 커버"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/194600931/6cd0232fa00dce183328b3e7f86a6445_6280299676135011450.png",
-          "imgDesc": "뒷면 커버 「리월」"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/08/194600931/cbdfcf2ad2576a20e83b97f677cf81fd_2312431839529019532.gif",
-          "imgDesc": "환영 커버"
-        }
-      ],
-      "hp": 10
-    },
+    "talent": [
+      {
+        "key": "밀가루 음식 솜씨",
+        "title": "밀가루 음식 솜씨",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/194600931/241eba6e4c00020975cf91170050f435_3337030454012555599.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>일반 공격</color>\n<color=#ffffff>물리 피해</color> 를 2pt 준다."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "누룽지 출격",
+        "title": "누룽지 출격",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/194600931/26fc236bd113d2bcb3ea4b2e946fefe3_3940337980967904427.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>원소전투 스킬</color>\n<color=#ffffff>누룽지</color> 를 소환한다."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "화륜",
+        "title": "화륜",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/194600931/f10ee07430ab7e5e55a9263695844987_497845363578660122.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>원소폭발</color>\n<color=#ff9999>불 원소 피해</color> 를 3pt 주고 <color=#ffffff>화륜</color> 을 생성한다.\n<color=#ece5d8>화륜</color>\n<color=#ffd780>출전 상태</color>\n<color=#ffffff>아군 캐릭터가 스킬 사용 후:</color> <color=#ff9999>불 원소 피해</color> 를 2pt 가한다.\n<color=#ffffff>사용 가능 횟수: 2</color>"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "누룽지",
+        "title": "누룽지",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/19/194600931/db13288db6b90ec33f8adc2656d2019f_3487677804434720277.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>소환물</color>\n<color=#ffffff>종료 단계:</color> <color=#ff9999>불 원소 피해</color> 를 2pt 가한다.\n<color=#ffffff>사용 가능 횟수: 2</color>"
+          }
+        ],
+        "attributes": [],
+        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/19/194600931/e2813d89dc49ef548d3b82cf9b277a04_1148924210840461214.png"
+      },
+      {
+        "key": "불 원소 피해",
+        "title": "불 원소 피해",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/19/194600931/d714b3b669cc08d1d8e34464fd7a3630_5894028924900061148.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "불 원소 부착 시 원소 반응이 발생할 수 있다.\n[ <color=#ff9999>불</color> + <color=#99ffff>얼음</color> ] <color=#ffffff>융해</color> : 이번 피해+2pt\n[ <color=#ff9999>불</color> + <color=#80c0ff>물</color> ] <color=#ffffff>증발</color> : 이번 피해+2pt\n[ <color=#ff9999>불</color> + <color=#ffacff>번개</color> ] <color=#ffffff>과부하</color> : 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\n[ <color=#ff9999>불</color> + <color=#99ff88>풀</color> ] <color=#ffffff>연소</color> : 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 가하는 [ <color=#ffffff>불타는 화염</color> ]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "규칙 설명",
+        "title": "규칙 설명",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/24/194600931/245c229cf6f7364c7c9a7aea3db1a1ad_8071161066775684245.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ece5d8>물리 피해</color>\n물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다.\n<color=#ece5d8>사용 가능 횟수</color>\n해당 카드의 효과가 발동하면 <color=#ffffff>사용 가능 횟수</color> 가 1회 차감된다.\n<color=#ffffff>사용 가능 횟수</color> 가 전부 소진되면 즉시 해당 패를 버린다."
+          }
+        ],
+        "attributes": []
+      }
+    ],
     "baseInfo": [
       {
         "key": "카드 이름",
@@ -133,91 +191,23 @@
         "isMaterial": true
       }
     ],
-    "talent": [
-      {
-        "key": "밀가루 음식 솜씨",
-        "title": "밀가루 음식 솜씨",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/194600931/241eba6e4c00020975cf91170050f435_3337030454012555599.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>일반 공격</color>\n<color=#ffffff>물리 피해</color> 를 2pt 준다."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "누룽지 출격",
-        "title": "누룽지 출격",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/194600931/26fc236bd113d2bcb3ea4b2e946fefe3_3940337980967904427.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>원소전투 스킬</color>\n<color=#ffffff>누룽지</color> 를 소환한다."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "화륜",
-        "title": "화륜",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/194600931/f10ee07430ab7e5e55a9263695844987_497845363578660122.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>원소폭발</color>\n<color=#ff9999>불 원소 피해</color> 를 3pt 주고 <color=#ffffff>화륜</color> 을 생성한다.\n<color=#ece5d8>화륜</color>\n<color=#ffd780>출전 상태</color>\n<color=#ffffff>아군 캐릭터가 스킬 사용 후:</color> <color=#ff9999>불 원소 피해</color> 를 2pt 가한다.\n<color=#ffffff>사용 가능 횟수: 2</color>"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "누룽지",
-        "title": "누룽지",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/19/194600931/db13288db6b90ec33f8adc2656d2019f_3487677804434720277.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>소환물</color>\n<color=#ffffff>종료 단계:</color> <color=#ff9999>불 원소 피해</color> 를 2pt 가한다.\n<color=#ffffff>사용 가능 횟수: 2</color>"
-          }
-        ],
-        "attributes": [],
-        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/19/194600931/e2813d89dc49ef548d3b82cf9b277a04_1148924210840461214.png"
-      },
-      {
-        "key": "불 원소 피해",
-        "title": "불 원소 피해",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/19/194600931/d714b3b669cc08d1d8e34464fd7a3630_5894028924900061148.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "불 원소 부착 시 원소 반응이 발생할 수 있다.\n[ <color=#ff9999>불</color> + <color=#99ffff>얼음</color> ] <color=#ffffff>융해</color> : 이번 피해+2pt\n[ <color=#ff9999>불</color> + <color=#80c0ff>물</color> ] <color=#ffffff>증발</color> : 이번 피해+2pt\n[ <color=#ff9999>불</color> + <color=#ffacff>번개</color> ] <color=#ffffff>과부하</color> : 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\n[ <color=#ff9999>불</color> + <color=#99ff88>풀</color> ] <color=#ffffff>연소</color> : 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 가하는 [ <color=#ffffff>불타는 화염</color> ]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "규칙 설명",
-        "title": "규칙 설명",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/24/194600931/245c229cf6f7364c7c9a7aea3db1a1ad_8071161066775684245.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ece5d8>물리 피해</color>\n물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다.\n<color=#ece5d8>사용 가능 횟수</color>\n해당 카드의 효과가 발동하면 <color=#ffffff>사용 가능 횟수</color> 가 1회 차감된다.\n<color=#ffffff>사용 가능 횟수</color> 가 전부 소진되면 즉시 해당 패를 버린다."
-          }
-        ],
-        "attributes": []
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "화륜",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/17/24090565/6cf2fd987c011ca4a280909a9b725420_7902501965409969518.gif"
-      },
-      {
-        "key": "아이콘",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/17/24090565/772efa58b1996ddf862f4bfeea6f3c9e_1573276277234024357.png"
-      }
-    ],
+    "tcg": {
+      "headerImgs": [
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/194600931/6219bf1fb0b7c46b8ecf960443f737d5_2970395899757735075.png",
+          "imgDesc": "일반 커버"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/194600931/6cd0232fa00dce183328b3e7f86a6445_6280299676135011450.png",
+          "imgDesc": "뒷면 커버 「리월」"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/08/194600931/cbdfcf2ad2576a20e83b97f677cf81fd_2312431839529019532.gif",
+          "imgDesc": "환영 커버"
+        }
+      ],
+      "hp": 10
+    },
     "customize": [
       {
         "type": "Heading",
@@ -443,6 +433,16 @@
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/08/80830045/c85bfab46d8c95659ab6dfb2e1629a87_8090082082642936994.png",
         "amount": 1000,
         "displayStyle": "card"
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "화륜",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/17/24090565/6cf2fd987c011ca4a280909a9b725420_7902501965409969518.gif"
+      },
+      {
+        "key": "아이콘",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/17/24090565/772efa58b1996ddf862f4bfeea6f3c9e_1573276277234024357.png"
       }
     ]
   }
