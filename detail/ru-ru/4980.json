@@ -11,9 +11,52 @@
   },
   "menuId": 9,
   "menuName": "Ресурсы Тейвата",
-  "version": 1715085822,
+  "version": 1746094089,
   "components": {
+    "baseInfo": [
+      {
+        "key": "Имя:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "«Вкусный чай, полная луна»"
+          }
+        ]
+      },
+      {
+        "key": "Тип:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Еда"
+          }
+        ]
+      },
+      {
+        "key": "Назначение:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Восстанавливает выбранному персонажу 32% HP + 1250 HP."
+          }
+        ]
+      },
+      {
+        "key": "Где найти:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "• Готовка\n• Купить у торговцев"
+          }
+        ]
+      }
+    ],
     "customize": [
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Приготовление"
+      },
       {
         "type": "RichText",
         "text": "Рецепт"
@@ -85,44 +128,45 @@
         "desc": "Песочное печенье с начинкой из желтка. Сначала солёный яичный желток готовится на пару, покрывается начинкой и заворачивается в тесто из чайной муки. Затем полученной массе придают форму лунного диска и запекают до готовности. Внешний слой получается хрустящим и рассыпчатым, а начинка - солёной и сладкой одновременно. В результате получается завораживающее угощение с насыщенным вкусом.",
         "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/02/11/124137736/e1e07c17bd28938b2995b3357d4cbb6b_6282343186470279762.png",
         "displayStyle": "card"
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Имя:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "«Вкусный чай, полная луна»"
-          }
-        ]
       },
       {
-        "key": "Тип:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Еда"
-          }
-        ]
+        "type": "Heading",
+        "level": 3,
+        "text": "Покупка у торговцев"
       },
       {
-        "key": "Назначение:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Восстанавливает выбранному персонажу 32% HP + 1250 HP."
-          }
-        ]
+        "type": "RichText",
+        "text": "<color=#ffffff>Торговец</color>\n<color=#ffffff>Количество</color>\n<color=#ffffff>Стоимость</color>\n<color=#ffffff>Обновление</color>",
+        "alignment": "center"
       },
       {
-        "key": "Где найти:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Готовка"
-          }
-        ]
+        "type": "CustomEntry",
+        "epId": 5081,
+        "name": "Лянь Фан",
+        "desc": "<p>Торговка закусками в порту Илун.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/02/14/237301566/da3fb421979ab0536958623e2eee5ad5_3071585565179115073.png",
+        "displayStyle": "card",
+        "menuId": 10
+      },
+      {
+        "type": "RichText",
+        "text": "2",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "Мора",
+        "desc": "Повсеместная валюта. Международный язык общения.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 6000,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "ежедневно",
+        "alignment": "center"
       }
     ]
   }

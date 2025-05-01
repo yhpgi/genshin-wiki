@@ -5,17 +5,255 @@
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/b9a4ece363d697dfb565dda772efbaf4_2178936383880618953.png",
   "filterValues": {
     "cardCharacterElement": "风元素",
-    "cardCharacterChargingPoint": "2充能",
-    "cardCharacterObtainingMethod": "初始获得",
     "cardCharacterWeaponType": "法器",
+    "cardCharacterChargingPoint": "2充能",
     "cardCharacterCamp": [
       "蒙德"
-    ]
+    ],
+    "cardCharacterObtainingMethod": "初始获得"
   },
   "menuId": 17,
   "menuName": "角色牌",
   "version": 1719374930,
   "components": {
+    "talent": [
+      {
+        "key": "简式风灵作成",
+        "title": "简式风灵作成",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/1ce09211f025bf5470682189e0837732_8514538413622699867.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>普通攻击</color>\n造成1点 <color=#99ffff>风元素伤害</color> 。"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "风灵作成·陆叁零捌",
+        "title": "风灵作成·陆叁零捌",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/dceff798de3e5575ac1c3dad5718d18e_2629685874909591473.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>元素战技</color>\n造成3点 <color=#99ffff>风元素伤害</color> ，使对方强制切换到前一个角色。"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "禁·风灵作成·柒伍同构贰型",
+        "title": "禁·风灵作成·柒伍同构贰型",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/28de70f699de4ba7cf0f77f2fcfb1483_7275114095131387912.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>元素爆发</color>\n造成1点 <color=#99ffff>风元素伤害</color> ，召唤 <color=#ffffff>大型风灵</color> 。"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "大型风灵",
+        "title": "大型风灵",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/47826599/db13288db6b90ec33f8adc2656d2019f_9042605472783550235.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>召唤物</color>\n<color=#ffffff>结束阶段：</color> 造成2点 <color=#80ffd7>风元素伤害</color> 。\n<color=#ffffff>可用次数：3</color>\n<color=#ffffff>我方角色或召唤物引发扩散反应后：</color> 转换此牌的元素类型，改为造成被扩散的元素类型的伤害。（离场前仅限一次）"
+          }
+        ],
+        "attributes": [],
+        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/07/10/88072335/b91de96bc6f45b8b9a5b10ab4a127a88_1490621129884252374.png"
+      },
+      {
+        "key": "风元素伤害",
+        "title": "风元素伤害",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/47826599/c97292d96456bfe4abeca16bfce801e4_1328299654435191759.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "和已附着的元素发生元素反应：\n【 <color=#80ffd7>风元素</color> + <color=#99ffff>冰元素</color> 】 <color=#ffffff>扩散（冰）</color> ：对目标以外的所有敌方角色造成1点冰元素伤害\n【 <color=#80ffd7>风元素</color> + <color=#80c0ff>水元素</color> 】 <color=#ffffff>扩散（水）</color> ：对目标以外的所有敌方角色造成1点水元素伤害\n【 <color=#80ffd7>风元素</color> + <color=#ff9999>火元素</color> 】 <color=#ffffff>扩散（火）</color> ：对目标以外的所有敌方角色造成1点火元素伤害\n【 <color=#80ffd7>风元素</color> + <color=#ffacff>雷元素</color> 】 <color=#ffffff>扩散（雷）</color> ：对目标以外的所有敌方角色造成1点雷元素伤害"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "规则术语",
+        "title": "规则术语",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/47826599/07bae546ac7c69ef6402170b283840c5_2501942162550169625.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ece5d8>可用次数</color>\n此牌效果触发后，会消耗1次 <color=#ffffff>可用次数</color> ；\n<color=#ffffff>可用次数</color> 耗尽后，立刻弃置此牌。"
+          }
+        ],
+        "attributes": []
+      }
+    ],
+    "textualResearch": [
+      {
+        "title": "调整与优化",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#bfbfbf>3.8版本「</color> <color=#ffffffd9>清夏！乐园？大秘境！</color> <color=#bfbfbf>」</color>\n<color=#ffffff>调整了「七圣召唤」中，角色牌「砂糖」装备天赋牌后，元素爆发召唤的大型风灵的文本描述（用于和未装备天赋牌时召唤的大型风灵进行区分）；</color>"
+          }
+        ]
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "名称",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "砂糖"
+          }
+        ]
+      },
+      {
+        "key": "卡牌类型",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "角色牌"
+          }
+        ]
+      },
+      {
+        "key": "生命值",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "10"
+          }
+        ]
+      },
+      {
+        "key": "充能",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "2"
+          }
+        ]
+      },
+      {
+        "key": "元素属性",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "风"
+          }
+        ]
+      },
+      {
+        "key": "武器",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "法器"
+          }
+        ]
+      },
+      {
+        "key": "阵营",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "蒙德"
+          }
+        ]
+      },
+      {
+        "key": "天赋牌",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3223,
+            "name": "混元熵增论",
+            "desc": "<p><strong><span>砂糖 · 混元熵增论<br></span></strong><span>狂风骤降，乱中取胜。</span></p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/05/47826599/cd6c794e776c2ffc9e325665a85284eb_1342961331126998845.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "入手方式",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "初始获得"
+          }
+        ]
+      },
+      {
+        "key": "相关角色",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 30,
+            "name": "砂糖",
+            "desc": "对万物充满好奇的炼金术士，「生物炼金」学派的研究者。",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/22/327628065/c89e6cb0c50857edfd5ff438db3879de_3523850344623399779.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "上线版本",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "3.3"
+          }
+        ]
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "元素爆发（初始牌面）",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/26/47826599/bb946a6c55f995187a4379b2417a0385_7013838335222685116.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>元素爆发</color>\n禁·风灵作成·柒伍同构贰型"
+          }
+        ]
+      },
+      {
+        "key": "元素爆发（影幻牌面）",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/14/88072335/5bd11c788eab9f88f65097a66f4d46d7_9117117402365232223.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>元素爆发</color>\n禁·风灵作成·柒伍同构贰型"
+          }
+        ]
+      },
+      {
+        "key": "头像",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/14/88072335/998f2d8ddaf86e6c8d7ec885d23fc91f_4275543096347490929.png"
+      }
+    ],
+    "tcg": {
+      "headerImgs": [
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/b9a4ece363d697dfb565dda772efbaf4_2178936383880618953.png",
+          "imgDesc": "初始牌面"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/47826599/222fb468e06208fb287d029a5071eb41_4236935203298954897.gif",
+          "imgDesc": "影幻牌面"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/47826599/afe1fe1cd77fac3d23e52afa1171d89c_8680076411740624330.png",
+          "imgDesc": "蒙德"
+        }
+      ],
+      "hp": 10
+    },
     "customize": [
       {
         "type": "Heading",
@@ -220,244 +458,6 @@
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/01/88072335/9abc5c25a9c6d9eef5098d74fd708981_8667328795210251955.png",
         "amount": 1,
         "displayStyle": "text"
-      }
-    ],
-    "tcg": {
-      "headerImgs": [
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/b9a4ece363d697dfb565dda772efbaf4_2178936383880618953.png",
-          "imgDesc": "初始牌面"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/47826599/222fb468e06208fb287d029a5071eb41_4236935203298954897.gif",
-          "imgDesc": "影幻牌面"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/47826599/afe1fe1cd77fac3d23e52afa1171d89c_8680076411740624330.png",
-          "imgDesc": "蒙德"
-        }
-      ],
-      "hp": 10
-    },
-    "baseInfo": [
-      {
-        "key": "名称",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "砂糖"
-          }
-        ]
-      },
-      {
-        "key": "卡牌类型",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "角色牌"
-          }
-        ]
-      },
-      {
-        "key": "生命值",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "10"
-          }
-        ]
-      },
-      {
-        "key": "充能",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "2"
-          }
-        ]
-      },
-      {
-        "key": "元素属性",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "风"
-          }
-        ]
-      },
-      {
-        "key": "武器",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "法器"
-          }
-        ]
-      },
-      {
-        "key": "阵营",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "蒙德"
-          }
-        ]
-      },
-      {
-        "key": "天赋牌",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3223,
-            "name": "混元熵增论",
-            "desc": "<p><strong><span>砂糖 · 混元熵增论<br></span></strong><span>狂风骤降，乱中取胜。</span></p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/05/47826599/cd6c794e776c2ffc9e325665a85284eb_1342961331126998845.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "入手方式",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "初始获得"
-          }
-        ]
-      },
-      {
-        "key": "相关角色",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 30,
-            "name": "砂糖",
-            "desc": "对万物充满好奇的炼金术士，「生物炼金」学派的研究者。",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/22/327628065/c89e6cb0c50857edfd5ff438db3879de_3523850344623399779.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "上线版本",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "3.3"
-          }
-        ]
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "元素爆发（初始牌面）",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/26/47826599/bb946a6c55f995187a4379b2417a0385_7013838335222685116.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>元素爆发</color>\n禁·风灵作成·柒伍同构贰型"
-          }
-        ]
-      },
-      {
-        "key": "元素爆发（影幻牌面）",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/14/88072335/5bd11c788eab9f88f65097a66f4d46d7_9117117402365232223.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>元素爆发</color>\n禁·风灵作成·柒伍同构贰型"
-          }
-        ]
-      },
-      {
-        "key": "头像",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/14/88072335/998f2d8ddaf86e6c8d7ec885d23fc91f_4275543096347490929.png"
-      }
-    ],
-    "textualResearch": [
-      {
-        "title": "调整与优化",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#bfbfbf>3.8版本「</color> <color=#ffffffd9>清夏！乐园？大秘境！</color> <color=#bfbfbf>」</color>\n<color=#ffffff>调整了「七圣召唤」中，角色牌「砂糖」装备天赋牌后，元素爆发召唤的大型风灵的文本描述（用于和未装备天赋牌时召唤的大型风灵进行区分）；</color>"
-          }
-        ]
-      }
-    ],
-    "talent": [
-      {
-        "key": "简式风灵作成",
-        "title": "简式风灵作成",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/1ce09211f025bf5470682189e0837732_8514538413622699867.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>普通攻击</color>\n造成1点 <color=#99ffff>风元素伤害</color> 。"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "风灵作成·陆叁零捌",
-        "title": "风灵作成·陆叁零捌",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/dceff798de3e5575ac1c3dad5718d18e_2629685874909591473.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>元素战技</color>\n造成3点 <color=#99ffff>风元素伤害</color> ，使对方强制切换到前一个角色。"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "禁·风灵作成·柒伍同构贰型",
-        "title": "禁·风灵作成·柒伍同构贰型",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/28de70f699de4ba7cf0f77f2fcfb1483_7275114095131387912.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>元素爆发</color>\n造成1点 <color=#99ffff>风元素伤害</color> ，召唤 <color=#ffffff>大型风灵</color> 。"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "大型风灵",
-        "title": "大型风灵",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/47826599/db13288db6b90ec33f8adc2656d2019f_9042605472783550235.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>召唤物</color>\n<color=#ffffff>结束阶段：</color> 造成2点 <color=#80ffd7>风元素伤害</color> 。\n<color=#ffffff>可用次数：3</color>\n<color=#ffffff>我方角色或召唤物引发扩散反应后：</color> 转换此牌的元素类型，改为造成被扩散的元素类型的伤害。（离场前仅限一次）"
-          }
-        ],
-        "attributes": [],
-        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/07/10/88072335/b91de96bc6f45b8b9a5b10ab4a127a88_1490621129884252374.png"
-      },
-      {
-        "key": "风元素伤害",
-        "title": "风元素伤害",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/47826599/c97292d96456bfe4abeca16bfce801e4_1328299654435191759.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "和已附着的元素发生元素反应：\n【 <color=#80ffd7>风元素</color> + <color=#99ffff>冰元素</color> 】 <color=#ffffff>扩散（冰）</color> ：对目标以外的所有敌方角色造成1点冰元素伤害\n【 <color=#80ffd7>风元素</color> + <color=#80c0ff>水元素</color> 】 <color=#ffffff>扩散（水）</color> ：对目标以外的所有敌方角色造成1点水元素伤害\n【 <color=#80ffd7>风元素</color> + <color=#ff9999>火元素</color> 】 <color=#ffffff>扩散（火）</color> ：对目标以外的所有敌方角色造成1点火元素伤害\n【 <color=#80ffd7>风元素</color> + <color=#ffacff>雷元素</color> 】 <color=#ffffff>扩散（雷）</color> ：对目标以外的所有敌方角色造成1点雷元素伤害"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "规则术语",
-        "title": "规则术语",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/47826599/07bae546ac7c69ef6402170b283840c5_2501942162550169625.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ece5d8>可用次数</color>\n此牌效果触发后，会消耗1次 <color=#ffffff>可用次数</color> ；\n<color=#ffffff>可用次数</color> 耗尽后，立刻弃置此牌。"
-          }
-        ],
-        "attributes": []
       }
     ]
   }

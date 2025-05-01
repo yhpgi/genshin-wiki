@@ -7,6 +7,24 @@
   "menuName": "Eğitim",
   "version": 1733584931,
   "components": {
+    "galleryCharacter": [
+      {
+        "key": "Fiziksel Hasar",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/147527911/e53fd4c2e60852768d615bae8dc96457_5534120598786043934.png"
+      },
+      {
+        "key": "Element Tepkisi ile Hasar",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/147527911/5229bf30f6b78cea6d7f5690187c74fd_450031182493067914.png"
+      },
+      {
+        "key": "Element Tepkisi ile Hasar 2",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/147527911/2b1482ee2b655c1366f92602b88f9903_5265384889539938371.png"
+      },
+      {
+        "key": "Hasar Bonusu",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/147527911/9eecbc78f101b2df94742114b9ef2fa3_1250541360995247312.png"
+      }
+    ],
     "baseInfo": [
       {
         "key": "İsim",
@@ -42,6 +60,184 @@
       }
     ],
     "customize": [
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Dönüştürücü Tepkimeler şunlardır: Çiçeklenme, Aşırı Çiçeklenme, Filizlenme, Yanma, Yüksek Voltajlı, Elektrik Yüklü, Süperiletken, Parçalama, Girdap.</color>\n<color=#ffffff73>Dönüştürücü Tepkimeler düşmanın SAV değerini yok sayar ancak düşmanın Direncinden etkilenir. Dönüştürücü Tepkimeler kritik vuruş yapamazlar. (Nahida'nın 2.Takımyıldızı Özelliği bazı reaksiyonlar için kritik vurma şansı kazandırır.)</color> Sadece bu reaksiyonu tetikleyen karakterin Element Ustalığı ve Seviyesi önemlidir.\n<color=#ffffff73>Örnek Olarak: Eğer Çiçeklenme bir Doğa karakteri tarafından tetiklendiğinde. (Düşman üzerine Su ve Doğa uygulanmalıdır.) Bu durumda önemli olan Düşmanın Doğa direnci ve Doğa karakteri'nin Seviyesi ile Element Ustalığıdır.</color>\n<color=#ffffff73>Böylece Dönüştürücü Reaksiyonların Hesaplanma Formülü şudur:</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Düşmanın Direnç Çarpanı × Reaksiyon Çarpanı × Karakter Seviye Çarpanı ×</color>\n<color=#ffffff>(%100 + Element Ustalığı Bonusu Çarpanı + Reaksiyon Bonusu)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Reaksiyon Çarpanı",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Tabloda'da görüldüğü gibi her Dönüştürücü Reaksiyonu'n kendine ait Reaksiyon Çarpanı vardır.</color>\n<color=#ffffff>Reaksiyon Çarpanı</color>\n<color=#ffffff>Reaksion</color>\n<color=#ffffff73>%300</color>\n<color=#ffffff73>Filizlenme, Aşırı Çiçeklenme</color>\n<color=#ffffff73>%200</color>\n<color=#ffffff73>Yüksek Voltajlı, Çiçeklenme</color>\n<color=#ffffff73>%150</color>\n<color=#ffffff73>Parçalama</color>\n<color=#ffffff73>%120</color>\n<color=#ffffff73>Elektrik Yüklü</color>\n<color=#ffffff73>%60</color>\n<color=#ffffff73>Girdap</color>\n<color=#ffffff73>%50</color>\n<color=#ffffff73>Süperiletim</color>\n<color=#ffffff73>%25</color>\n<color=#ffffff73>Yanma</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Karakter Seviye Çarpanı",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Tabloda'da görüldüğü gibi Karakter Seviye Çarpanı, karakterin anlık olarak leveline bağlıdır. (Bu yüzden Dönüştürücü Reaksiyona oynayan takımlarda Karakterlerin Seviyesini yükseltmek önemlidir.)</color>\n<color=#ffffff>Karakter Seviyesi</color>\n<color=#ffffff>Karakter Seviye Çarpanı</color>\n<color=#ffffff73>60</color>\n<color=#ffffff73>492.88</color>\n<color=#ffffff73>70</color>\n<color=#ffffff73>765.64</color>\n<color=#ffffff73>80</color>\n<color=#ffffff73>1077.44</color>\n<color=#ffffff73>85</color>\n<color=#ffffff73>1253.84</color>\n<color=#ffffff73>90</color>\n<color=#ffffff73>1446.85</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Element Ustalığı Bonusu Çarpanı",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Element Ustalığı Bonusu hesaplanırken, sadece reaksiyonu tetikleyen karakterin özellikler kısmındaki o anki Element Ustalığı önemlidir.</color>\n<color=#ffffff73>Şu şekilde hesaplanır:</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Element Ustalığı × 16 / Element Ustalığı + 2000</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Reaksiyon Bonusu",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Dönüştürücü Reaksiyonların Hasarı hesaplanırken formülde kullanılan Reaksiyon Bonusları şunlardır:</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Karakterler",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "Mona",
+        "desc": "<p>Kendisini \"Astrolog Mona Megistus\" olarak tanıtan ve bu unvana uygun yeteneklere sahip gizemli genç bir astrolog. Bilgili olmasına karşın kibirlidir.</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>1. Takımyıldızı Özelliği</color>\n<color=#ffffffa6>Kendi grup üyelerinden biri Alamet etkisi altındayken</color> <color=#80c0ff>Su içeren Element Tepkimelerinin</color> <color=#ffffffa6>etkileri 8 saniyeliğine artar.</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "Nilou",
+        "desc": "<p>Zubayr Tiyatrosunun yıldızı. Oldukça samimi ve saf olmakla birlikte dansı da hareketli ve zariftir.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/10/35428890/586d726f9ebda3506c78beaaa41f13b6_5916447718992361520.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4. Yükseltme Pasifi</color>\nNilou'nun Maks. Canı 30.000 üzerindeyse fazlalık olan her 1.000 Can için Altın Kadeh etkisinde olan karakterlerin verdiği Bereketli Çekirdek Hasarı %9 artar. Bu yöntemle Bereketli Çekirdek Hasarı en fazla %400 artırılabilir.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "Kaveh",
+        "desc": "<p>Bazen birçok konuyu gereğinden fazla önemseyen, Sumerulu ünlü bir mimar.</p><p>Gerçek hayatın dertlerinde boğulan bir estetik sevdalısı.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/25073864/2270aba02b92034d7d76b4426be8f53b_1906269483904815174.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Element Patlaması</color>\nMehrak'ın haritalama özelliğini saldırı için kullanarak <color=#99ff88>Doğa Alan Hasarı</color> veren dairesel bir tarama başlatır. Bu saldırı ayrıca Etki Alanındaki tüm Doğa Çekirdeklerini tarayarak anında patlatır.\n<color=#ffffff>4. Takımyıldızı Özelliği</color>\nKaveh'nin tetiklediği Çiçeklenme tepkimeleriyle oluşan Doğa Çekirdekleri, patladıklarında %60 daha fazla Hasar verir.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "Baizhu",
+        "desc": "<p>Bubu Eczanesi'nin sahibi. Genelde Changsheng adında beyaz bir yılanla beraber dolaşır. Tıp bilgisi engin, planları üstü kapalıdır.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/28/145542732/05599650d7f42e1c4adde373de6b297d_2841207865565455085.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4. Yükseltme Pasifi</color>\n<color=#ffd780>Kusursuz Kalkan</color> <color=#ffffff73>tarafından iyileştirilen karakterler, Yeşil Talihin Yılı etkisi kazanır. Baizhu'nun 50.000'e kadar sahip olduğu her 1.000 Maks. Can, iyileştirilen karakterlerin verdiği Yanma, Çiçeklenme, Aşırı Çiçeklenme ve Filizlenme tepkimesi Hasarını %2, Şiddetlenme ve Yayılma tepkimesi Hasarını ise %0,8 artırır. Bu etki 6 saniye sürer.</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Yadigarlar",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "Yıldırım Öfkesi",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4 Parçalı Set</color>\nYüksek Voltaj, Elektrik Yüklü, Süper İletim ve Aşırı Çiçeklenme ile verilen Hasarı %40 artırır.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "Kızıl Alev Cadısı",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4 Parçalı Set</color>\nYüksek Voltaj, Yanma ve Filizlenme Hasarını %40 artırır.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Kayıp Cennet Çiçeği",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/05/35428890/50ce09dfa5a91a33aa9cedfb15bcf2d1_864016614991586234.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4 Parçalı Set</color>\n<color=#bfbfbf>Kuşanan karakterin Çiçeklenme, Aşırı Çiçeklenme ve Filizlenme tepkimelerinin Hasarı %40 artar. Ayrıca kuşanan karakter Çiçeklenme, Aşırı Çiçeklenme veya Filizlenme tetiklerse yukarıdaki etkiye ek olarak %25 bonus daha kazanır. Bu etkinin her bir kademesi 10 saniye sürer. Aynı anda 4 kademeye kadar birikebilir.</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "Yeşil Gölge",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4 Parçalı Set</color>\nGirdap Hasarını %60 artırır.",
+        "alignment": "center"
+      },
       {
         "type": "Heading",
         "level": 1,
@@ -590,184 +786,6 @@
       {
         "type": "RichText",
         "text": "Örnek olarak Lisa aynı düşmana saldırıyor 1. Fotoğrafta Direnç Azaltıcıları yok. 2. Fotoğrafta Lisa'nın 4. Takımyıldızı Özelliği vardır. 3. Fotoğrafta ise hem Lisa'nın 4. Takımyıldızı Özelliği hem de Zhongli'nin Element Becerisinin Özelliği vardır.",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Dönüştürücü Tepkimeler şunlardır: Çiçeklenme, Aşırı Çiçeklenme, Filizlenme, Yanma, Yüksek Voltajlı, Elektrik Yüklü, Süperiletken, Parçalama, Girdap.</color>\n<color=#ffffff73>Dönüştürücü Tepkimeler düşmanın SAV değerini yok sayar ancak düşmanın Direncinden etkilenir. Dönüştürücü Tepkimeler kritik vuruş yapamazlar. (Nahida'nın 2.Takımyıldızı Özelliği bazı reaksiyonlar için kritik vurma şansı kazandırır.)</color> Sadece bu reaksiyonu tetikleyen karakterin Element Ustalığı ve Seviyesi önemlidir.\n<color=#ffffff73>Örnek Olarak: Eğer Çiçeklenme bir Doğa karakteri tarafından tetiklendiğinde. (Düşman üzerine Su ve Doğa uygulanmalıdır.) Bu durumda önemli olan Düşmanın Doğa direnci ve Doğa karakteri'nin Seviyesi ile Element Ustalığıdır.</color>\n<color=#ffffff73>Böylece Dönüştürücü Reaksiyonların Hesaplanma Formülü şudur:</color>"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Düşmanın Direnç Çarpanı × Reaksiyon Çarpanı × Karakter Seviye Çarpanı ×</color>\n<color=#ffffff>(%100 + Element Ustalığı Bonusu Çarpanı + Reaksiyon Bonusu)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Reaksiyon Çarpanı",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Tabloda'da görüldüğü gibi her Dönüştürücü Reaksiyonu'n kendine ait Reaksiyon Çarpanı vardır.</color>\n<color=#ffffff>Reaksiyon Çarpanı</color>\n<color=#ffffff>Reaksion</color>\n<color=#ffffff73>%300</color>\n<color=#ffffff73>Filizlenme, Aşırı Çiçeklenme</color>\n<color=#ffffff73>%200</color>\n<color=#ffffff73>Yüksek Voltajlı, Çiçeklenme</color>\n<color=#ffffff73>%150</color>\n<color=#ffffff73>Parçalama</color>\n<color=#ffffff73>%120</color>\n<color=#ffffff73>Elektrik Yüklü</color>\n<color=#ffffff73>%60</color>\n<color=#ffffff73>Girdap</color>\n<color=#ffffff73>%50</color>\n<color=#ffffff73>Süperiletim</color>\n<color=#ffffff73>%25</color>\n<color=#ffffff73>Yanma</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Karakter Seviye Çarpanı",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Tabloda'da görüldüğü gibi Karakter Seviye Çarpanı, karakterin anlık olarak leveline bağlıdır. (Bu yüzden Dönüştürücü Reaksiyona oynayan takımlarda Karakterlerin Seviyesini yükseltmek önemlidir.)</color>\n<color=#ffffff>Karakter Seviyesi</color>\n<color=#ffffff>Karakter Seviye Çarpanı</color>\n<color=#ffffff73>60</color>\n<color=#ffffff73>492.88</color>\n<color=#ffffff73>70</color>\n<color=#ffffff73>765.64</color>\n<color=#ffffff73>80</color>\n<color=#ffffff73>1077.44</color>\n<color=#ffffff73>85</color>\n<color=#ffffff73>1253.84</color>\n<color=#ffffff73>90</color>\n<color=#ffffff73>1446.85</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Element Ustalığı Bonusu Çarpanı",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Element Ustalığı Bonusu hesaplanırken, sadece reaksiyonu tetikleyen karakterin özellikler kısmındaki o anki Element Ustalığı önemlidir.</color>\n<color=#ffffff73>Şu şekilde hesaplanır:</color>"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Element Ustalığı × 16 / Element Ustalığı + 2000</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Reaksiyon Bonusu",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Dönüştürücü Reaksiyonların Hasarı hesaplanırken formülde kullanılan Reaksiyon Bonusları şunlardır:</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Karakterler",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 37,
-        "name": "Mona",
-        "desc": "<p>Kendisini \"Astrolog Mona Megistus\" olarak tanıtan ve bu unvana uygun yeteneklere sahip gizemli genç bir astrolog. Bilgili olmasına karşın kibirlidir.</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>1. Takımyıldızı Özelliği</color>\n<color=#ffffffa6>Kendi grup üyelerinden biri Alamet etkisi altındayken</color> <color=#80c0ff>Su içeren Element Tepkimelerinin</color> <color=#ffffffa6>etkileri 8 saniyeliğine artar.</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2812,
-        "name": "Nilou",
-        "desc": "<p>Zubayr Tiyatrosunun yıldızı. Oldukça samimi ve saf olmakla birlikte dansı da hareketli ve zariftir.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/10/35428890/586d726f9ebda3506c78beaaa41f13b6_5916447718992361520.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>4. Yükseltme Pasifi</color>\nNilou'nun Maks. Canı 30.000 üzerindeyse fazlalık olan her 1.000 Can için Altın Kadeh etkisinde olan karakterlerin verdiği Bereketli Çekirdek Hasarı %9 artar. Bu yöntemle Bereketli Çekirdek Hasarı en fazla %400 artırılabilir.",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3608,
-        "name": "Kaveh",
-        "desc": "<p>Bazen birçok konuyu gereğinden fazla önemseyen, Sumerulu ünlü bir mimar.</p><p>Gerçek hayatın dertlerinde boğulan bir estetik sevdalısı.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/25073864/2270aba02b92034d7d76b4426be8f53b_1906269483904815174.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Element Patlaması</color>\nMehrak'ın haritalama özelliğini saldırı için kullanarak <color=#99ff88>Doğa Alan Hasarı</color> veren dairesel bir tarama başlatır. Bu saldırı ayrıca Etki Alanındaki tüm Doğa Çekirdeklerini tarayarak anında patlatır.\n<color=#ffffff>4. Takımyıldızı Özelliği</color>\nKaveh'nin tetiklediği Çiçeklenme tepkimeleriyle oluşan Doğa Çekirdekleri, patladıklarında %60 daha fazla Hasar verir.",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3609,
-        "name": "Baizhu",
-        "desc": "<p>Bubu Eczanesi'nin sahibi. Genelde Changsheng adında beyaz bir yılanla beraber dolaşır. Tıp bilgisi engin, planları üstü kapalıdır.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/28/145542732/05599650d7f42e1c4adde373de6b297d_2841207865565455085.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>4. Yükseltme Pasifi</color>\n<color=#ffd780>Kusursuz Kalkan</color> <color=#ffffff73>tarafından iyileştirilen karakterler, Yeşil Talihin Yılı etkisi kazanır. Baizhu'nun 50.000'e kadar sahip olduğu her 1.000 Maks. Can, iyileştirilen karakterlerin verdiği Yanma, Çiçeklenme, Aşırı Çiçeklenme ve Filizlenme tepkimesi Hasarını %2, Şiddetlenme ve Yayılma tepkimesi Hasarını ise %0,8 artırır. Bu etki 6 saniye sürer.</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Yadigarlar",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2067,
-        "name": "Yıldırım Öfkesi",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>4 Parçalı Set</color>\nYüksek Voltaj, Elektrik Yüklü, Süper İletim ve Aşırı Çiçeklenme ile verilen Hasarı %40 artırır.",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2085,
-        "name": "Kızıl Alev Cadısı",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>4 Parçalı Set</color>\nYüksek Voltaj, Yanma ve Filizlenme Hasarını %40 artırır.",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3321,
-        "name": "Kayıp Cennet Çiçeği",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/05/35428890/50ce09dfa5a91a33aa9cedfb15bcf2d1_864016614991586234.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>4 Parçalı Set</color>\n<color=#bfbfbf>Kuşanan karakterin Çiçeklenme, Aşırı Çiçeklenme ve Filizlenme tepkimelerinin Hasarı %40 artar. Ayrıca kuşanan karakter Çiçeklenme, Aşırı Çiçeklenme veya Filizlenme tetiklerse yukarıdaki etkiye ek olarak %25 bonus daha kazanır. Bu etkinin her bir kademesi 10 saniye sürer. Aynı anda 4 kademeye kadar birikebilir.</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2091,
-        "name": "Yeşil Gölge",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>4 Parçalı Set</color>\nGirdap Hasarını %60 artırır.",
         "alignment": "center"
       },
       {
@@ -1518,24 +1536,6 @@
         "type": "RichText",
         "text": "<color=#ffffff>4. Yükseltme Pasifi</color>\n<color=#ffd780>Kusursuz Kalkan</color> <color=#ffffff73>tarafından iyileştirilen karakterler, Yeşil Talihin Yılı etkisi kazanır. Baizhu'nun 50.000'e kadar sahip olduğu her 1.000 Maks. Can, iyileştirilen karakterlerin verdiği Yanma, Çiçeklenme, Aşırı Çiçeklenme ve Filizlenme tepkimesi Hasarını %2, Şiddetlenme ve Yayılma tepkimesi Hasarını ise %0,8 artırır. Bu etki 6 saniye sürer.</color>",
         "alignment": "center"
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Fiziksel Hasar",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/147527911/e53fd4c2e60852768d615bae8dc96457_5534120598786043934.png"
-      },
-      {
-        "key": "Element Tepkisi ile Hasar",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/147527911/5229bf30f6b78cea6d7f5690187c74fd_450031182493067914.png"
-      },
-      {
-        "key": "Element Tepkisi ile Hasar 2",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/147527911/2b1482ee2b655c1366f92602b88f9903_5265384889539938371.png"
-      },
-      {
-        "key": "Hasar Bonusu",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/147527911/9eecbc78f101b2df94742114b9ef2fa3_1250541360995247312.png"
       }
     ]
   }
