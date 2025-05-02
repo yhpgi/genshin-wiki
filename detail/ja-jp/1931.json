@@ -4,14 +4,100 @@
   "desc": "大陸周辺の海流気候を詳しく記載した海図、貿易ルートを経て異国から璃月に渡った。",
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/万国诸海图谱.png",
   "filterValues": {
+    "weaponRarity": "★4",
     "weaponProperty": "元素熟知",
-    "weaponType": "法器",
-    "weaponRarity": "★4"
+    "weaponType": "法器"
   },
   "menuId": 4,
   "menuName": "武器",
   "version": 1730611279,
   "components": {
+    "baseInfo": [
+      {
+        "key": "和名 / 英名",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "万国諸海の図譜 / Mappa Mare"
+          }
+        ]
+      },
+      {
+        "key": "入手方法",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "鍛造により入手可能"
+          }
+        ]
+      },
+      {
+        "key": "種類",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "法器"
+          }
+        ]
+      },
+      {
+        "key": "サブステータス",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "元素熟知"
+          }
+        ]
+      },
+      {
+        "key": "注入の巻",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "元素反応を起こした後、元素ダメージ+ <color=#37ffff>8/10/12/14/16%</color> 、継続時間10秒、最大2重まで。"
+          }
+        ]
+      },
+      {
+        "key": "鍛造素材",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 352,
+            "name": "北陸法器の原型",
+            "desc": "武器鍛造に必要な材料。鍛造により、★4の法器が製造できる。<br/>大理石は美しい彫刻になる可能性が秘められているように、この原型にも無限の可能性がある。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Northlander Catalyst Billet_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 976,
+            "name": "水晶の塊",
+            "desc": "<p>加工していないクリスタルの塊。専門的な処理を施すと、本当の価値を発揮します。</p><p></p><p>（以下は図鑑より抜粋）</p><p>加工していないクリスタルの塊。専門的な処理を施すと、本当の価値を発揮する。一般的に「水晶」と呼ばれる透き通ったものは大地から出る希少な結晶体、武器の製造に使われるレアの素材である。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystal Chunk_icon.png",
+            "amount": 50
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1224,
+            "name": "白鉄の塊",
+            "desc": "<p>白鉄の鉱石。相応の技術を持った職人の手にかかれば、異彩を放つでしょう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>白鉄の鉱石。相応の技術を持った職人の手にかかれば、異彩を放つでしょう。大地に流れる戦いの記憶が宿っている鉱石、その記憶の故に上質な素材として武器の製造によく使われている。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
+            "amount": 50
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "実装バージョン",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.0"
+          }
+        ]
+      }
+    ],
     "galleryCharacter": [
       {
         "key": "2段階突破前",
@@ -30,16 +116,6 @@
           {
             "type": "RichText",
             "text": "<color=#ffffff>Lv.40 突破後</color>"
-          }
-        ]
-      }
-    ],
-    "story": [
-      {
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "世の全てが璃月にあり。これは偉大な璃月港への讃美である。\n他の国の珍宝も人と共に璃月港に来る。\n大陸周辺の海域を集録した図譜に、各水域の海流、暗礁、風向のことが細かく記載されている。\n異国の典籍らしく、開拓者精神、冒険者の知識、勇気、そして信仰が秘められている。\n標題紙にこう書いてある。\n「海風と海流を愛せ。さすれば風と水が目的地まで導くだろう」\n「海風と海流を畏れよ。風と水は時に鋼鉄をも引き裂くだろう」\n全ての海の性質を把握するため、満遍なく暗礁を探り、貿易風を感じ、鯨の群れを探す。\n無数の船員が全ての出来事を、このしみだらけの本に記録した。恋人の髪と肌を描くように夢中になった。\n異国では、ベテランの船員は海を恋人だと考える。そして塩辛い海水を「彼女」と呼ぶ。\n海の心は秋の空か、それとも海のロマンか。\nそして、この典籍は海と同じように、誰かの所有物ではない。夢とロマンを求める水夫のように、世界を旅する。"
           }
         ]
       }
@@ -370,88 +446,12 @@
         ]
       }
     ],
-    "baseInfo": [
+    "story": [
       {
-        "key": "和名 / 英名",
-        "value": [
+        "desc": [
           {
             "type": "RichText",
-            "text": "万国諸海の図譜 / Mappa Mare"
-          }
-        ]
-      },
-      {
-        "key": "入手方法",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "鍛造により入手可能"
-          }
-        ]
-      },
-      {
-        "key": "種類",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "法器"
-          }
-        ]
-      },
-      {
-        "key": "サブステータス",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "元素熟知"
-          }
-        ]
-      },
-      {
-        "key": "注入の巻",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "元素反応を起こした後、元素ダメージ+ <color=#37ffff>8/10/12/14/16%</color> 、継続時間10秒、最大2重まで。"
-          }
-        ]
-      },
-      {
-        "key": "鍛造素材",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 352,
-            "name": "北陸法器の原型",
-            "desc": "武器鍛造に必要な材料。鍛造により、★4の法器が製造できる。<br/>大理石は美しい彫刻になる可能性が秘められているように、この原型にも無限の可能性がある。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Northlander Catalyst Billet_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 976,
-            "name": "水晶の塊",
-            "desc": "<p>加工していないクリスタルの塊。専門的な処理を施すと、本当の価値を発揮します。</p><p></p><p>（以下は図鑑より抜粋）</p><p>加工していないクリスタルの塊。専門的な処理を施すと、本当の価値を発揮する。一般的に「水晶」と呼ばれる透き通ったものは大地から出る希少な結晶体、武器の製造に使われるレアの素材である。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystal Chunk_icon.png",
-            "amount": 50
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1224,
-            "name": "白鉄の塊",
-            "desc": "<p>白鉄の鉱石。相応の技術を持った職人の手にかかれば、異彩を放つでしょう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>白鉄の鉱石。相応の技術を持った職人の手にかかれば、異彩を放つでしょう。大地に流れる戦いの記憶が宿っている鉱石、その記憶の故に上質な素材として武器の製造によく使われている。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
-            "amount": 50
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "実装バージョン",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.0"
+            "text": "世の全てが璃月にあり。これは偉大な璃月港への讃美である。\n他の国の珍宝も人と共に璃月港に来る。\n大陸周辺の海域を集録した図譜に、各水域の海流、暗礁、風向のことが細かく記載されている。\n異国の典籍らしく、開拓者精神、冒険者の知識、勇気、そして信仰が秘められている。\n標題紙にこう書いてある。\n「海風と海流を愛せ。さすれば風と水が目的地まで導くだろう」\n「海風と海流を畏れよ。風と水は時に鋼鉄をも引き裂くだろう」\n全ての海の性質を把握するため、満遍なく暗礁を探り、貿易風を感じ、鯨の群れを探す。\n無数の船員が全ての出来事を、このしみだらけの本に記録した。恋人の髪と肌を描くように夢中になった。\n異国では、ベテランの船員は海を恋人だと考える。そして塩辛い海水を「彼女」と呼ぶ。\n海の心は秋の空か、それとも海のロマンか。\nそして、この典籍は海と同じように、誰かの所有物ではない。夢とロマンを求める水夫のように、世界を旅する。"
           }
         ]
       }
