@@ -4,18 +4,207 @@
   "desc": "<p><strong><span style=\"color: #ECE5D8\">도망치는 태양·클레</span></strong><br>모든 카드 뽑기에는 「폭발적인 서프라이즈」가 숨어 있다.</p>",
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/16/194600931/24190d55c500e2eae31705e6590b1302_5212456341494130222.png",
   "filterValues": {
-    "cardCharacterObtainingMethod": "캐릭터 초대",
     "cardCharacterWeaponType": "법구",
     "cardCharacterChargingPoint": "원소 에너지: 3",
+    "cardCharacterObtainingMethod": "캐릭터 초대",
+    "cardCharacterElement": "불 원소",
     "cardCharacterCamp": [
       "몬드"
-    ],
-    "cardCharacterElement": "불 원소"
+    ]
   },
   "menuId": 17,
   "menuName": "캐릭터 카드",
   "version": 1718636287,
   "components": {
+    "tcg": {
+      "headerImgs": [
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/16/194600931/24190d55c500e2eae31705e6590b1302_5212456341494130222.png",
+          "imgDesc": "일반 커버"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/18/194600931/afe1fe1cd77fac3d23e52afa1171d89c_6633823050173050112.png",
+          "imgDesc": "뒷면 커버 「몬드」"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/18/194600931/d4b607280b57cc7f35bac2ecae199c2f_3780480426458308883.gif",
+          "imgDesc": "환영 커버"
+        }
+      ],
+      "hp": 10
+    },
+    "galleryCharacter": [
+      {
+        "key": "쾅쾅 불꽃",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/17/24090565/663944b1945f7a153c95b3741ed29ae6_2987750974299318452.gif"
+      },
+      {
+        "key": "아이콘",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/17/24090565/efbb82f6e16b18b89482f9d97c3d4afb_2239984022872445069.png"
+      }
+    ],
+    "talent": [
+      {
+        "key": "펑펑",
+        "title": "펑펑",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/16/194600931/1ce09211f025bf5470682189e0837732_929904732063533794.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>일반 공격</color>\n<color=#ff9999>불 원소 피해</color> 를 1pt 준다."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "통통 폭탄",
+        "title": "통통 폭탄",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/16/194600931/ce0014e0d25cd397fef22aafb4b411c0_1602422015904148056.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>원소전투 스킬</color>\n<color=#ff9999>불 원소 피해</color> 를 3pt 주고, 본 캐릭터에게 <color=#ffffff>폭렬 불꽃</color> 이 부착된다.\n<color=#ece5d8>폭렬 불꽃</color>\n<color=#ffd780>상태</color>\n<color=#ffffff>부착 캐릭터가 강공격 발동 시:</color> <color=#ff9999>불 원소</color> 소모가 1개 감소하고 피해+1pt\n<color=#ffffff>사용 가능 횟수: 1</color>"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "쾅쾅 불꽃",
+        "title": "쾅쾅 불꽃",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/16/194600931/3f2b5db15d922d53d7d4db8261138f17_8052258705937350330.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>원소폭발</color>\n<color=#ff9999>불 원소 피해</color> 를 3pt 주고 상대방 필드에 <color=#ffffff>쾅쾅 불꽃</color> 을 생성한다.\n<color=#ece5d8>쾅쾅 불꽃</color>\n<color=#ffd780>출전 상태</color>\n<color=#ffffff>소속 진영의 캐릭터가 스킬 발동 후:</color> 소속 진영의 출전 캐릭터에게 <color=#ff9999>불 원소 피해</color> 를 2pt 가한다.\n<color=#ffffff>사용 가능 횟수: 2</color>"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "불 원소 피해",
+        "title": "불 원소 피해",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/16/194600931/d714b3b669cc08d1d8e34464fd7a3630_2250520640553445169.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "불 원소 부착 시 원소 반응이 발생할 수 있다.\n[ <color=#ff9999>불</color> + <color=#99ffff>얼음</color> ] <color=#ffffff>융해</color> : 이번 피해+2pt\n[ <color=#ff9999>불</color> + <color=#80c0ff>물</color> ] <color=#ffffff>증발</color> : 이번 피해+2pt\n[ <color=#ff9999>불</color> + <color=#ffacff>번개</color> ] <color=#ffffff>과부하</color> : 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\n[ <color=#ff9999>불</color> + <color=#99ff88>풀</color> ] <color=#ffffff>연소</color> : 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 가하는 [ <color=#ffffff>불타는 화염</color> ]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "규칙 설명",
+        "title": "규칙 설명",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/18/194600931/245c229cf6f7364c7c9a7aea3db1a1ad_4151189574544236493.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ece5d8>강공격</color>\n아군이 행동을 시작하기 전에 원소 주사위 총개수가 짝수인 경우, 발동한 「일반 공격」을 「강공격」으로 간주한다.\n<color=#ece5d8>불 원소</color>\n굴려서 나온 <color=#ff9999>불 원소</color> 주사위를 소모해 사용할 수 있다.\n(만능 원소 사용 가능)\n<color=#ece5d8>사용 가능 횟수</color>\n해당 카드의 효과가 발동하면 <color=#ffffff>사용 가능 횟수</color> 가 1회 차감된다.\n<color=#ffffff>사용 가능 횟수</color> 가 전부 소진되면 즉시 해당 패를 버린다."
+          }
+        ],
+        "attributes": []
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "카드 이름",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "클레"
+          }
+        ]
+      },
+      {
+        "key": "종류",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "캐릭터 카드"
+          }
+        ]
+      },
+      {
+        "key": "HP",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "10"
+          }
+        ]
+      },
+      {
+        "key": "원소 에너지",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "3"
+          }
+        ]
+      },
+      {
+        "key": "원소 속성",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "불"
+          }
+        ]
+      },
+      {
+        "key": "무기",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "법구"
+          }
+        ]
+      },
+      {
+        "key": "진영",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "몬드"
+          }
+        ]
+      },
+      {
+        "key": "장비 카드",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3458,
+            "name": "펑펑 선물",
+            "desc": "<p><strong><span style=\"color: #ECE5D8\">클레·펑펑 선물</span></strong></p><p>이 카드가 나오면 신나게 웃어도 좋다.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/16/194600931/49e22b7e32977ad69087997e88edf00c_4469484269819184594.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "획득 경로",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "캣테일 술집에서 클레 초대 및 친선 대전 난이도 승리 후 획득"
+          }
+        ]
+      },
+      {
+        "key": "캐릭터 도감",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 12,
+            "name": "클레",
+            "desc": "<p>페보니우스 기사단 감금실의 단골손님이자 몬드의 폭파 마스터. 「도망치는 태양」이라고 불린다.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png"
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
     "customize": [
       {
         "type": "Heading",
@@ -241,195 +430,6 @@
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/08/80830045/c85bfab46d8c95659ab6dfb2e1629a87_8090082082642936994.png",
         "amount": 1000,
         "displayStyle": "card"
-      }
-    ],
-    "tcg": {
-      "headerImgs": [
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/16/194600931/24190d55c500e2eae31705e6590b1302_5212456341494130222.png",
-          "imgDesc": "일반 커버"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/18/194600931/afe1fe1cd77fac3d23e52afa1171d89c_6633823050173050112.png",
-          "imgDesc": "뒷면 커버 「몬드」"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/18/194600931/d4b607280b57cc7f35bac2ecae199c2f_3780480426458308883.gif",
-          "imgDesc": "환영 커버"
-        }
-      ],
-      "hp": 10
-    },
-    "baseInfo": [
-      {
-        "key": "카드 이름",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "클레"
-          }
-        ]
-      },
-      {
-        "key": "종류",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "캐릭터 카드"
-          }
-        ]
-      },
-      {
-        "key": "HP",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "10"
-          }
-        ]
-      },
-      {
-        "key": "원소 에너지",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "3"
-          }
-        ]
-      },
-      {
-        "key": "원소 속성",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "불"
-          }
-        ]
-      },
-      {
-        "key": "무기",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "법구"
-          }
-        ]
-      },
-      {
-        "key": "진영",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "몬드"
-          }
-        ]
-      },
-      {
-        "key": "장비 카드",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3458,
-            "name": "펑펑 선물",
-            "desc": "<p><strong><span style=\"color: #ECE5D8\">클레·펑펑 선물</span></strong></p><p>이 카드가 나오면 신나게 웃어도 좋다.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/16/194600931/49e22b7e32977ad69087997e88edf00c_4469484269819184594.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "획득 경로",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "캣테일 술집에서 클레 초대 및 친선 대전 난이도 승리 후 획득"
-          }
-        ]
-      },
-      {
-        "key": "캐릭터 도감",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 12,
-            "name": "클레",
-            "desc": "<p>페보니우스 기사단 감금실의 단골손님이자 몬드의 폭파 마스터. 「도망치는 태양」이라고 불린다.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png"
-          }
-        ],
-        "isMaterial": true
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "쾅쾅 불꽃",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/17/24090565/663944b1945f7a153c95b3741ed29ae6_2987750974299318452.gif"
-      },
-      {
-        "key": "아이콘",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/17/24090565/efbb82f6e16b18b89482f9d97c3d4afb_2239984022872445069.png"
-      }
-    ],
-    "talent": [
-      {
-        "key": "펑펑",
-        "title": "펑펑",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/16/194600931/1ce09211f025bf5470682189e0837732_929904732063533794.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>일반 공격</color>\n<color=#ff9999>불 원소 피해</color> 를 1pt 준다."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "통통 폭탄",
-        "title": "통통 폭탄",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/16/194600931/ce0014e0d25cd397fef22aafb4b411c0_1602422015904148056.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>원소전투 스킬</color>\n<color=#ff9999>불 원소 피해</color> 를 3pt 주고, 본 캐릭터에게 <color=#ffffff>폭렬 불꽃</color> 이 부착된다.\n<color=#ece5d8>폭렬 불꽃</color>\n<color=#ffd780>상태</color>\n<color=#ffffff>부착 캐릭터가 강공격 발동 시:</color> <color=#ff9999>불 원소</color> 소모가 1개 감소하고 피해+1pt\n<color=#ffffff>사용 가능 횟수: 1</color>"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "쾅쾅 불꽃",
-        "title": "쾅쾅 불꽃",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/16/194600931/3f2b5db15d922d53d7d4db8261138f17_8052258705937350330.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>원소폭발</color>\n<color=#ff9999>불 원소 피해</color> 를 3pt 주고 상대방 필드에 <color=#ffffff>쾅쾅 불꽃</color> 을 생성한다.\n<color=#ece5d8>쾅쾅 불꽃</color>\n<color=#ffd780>출전 상태</color>\n<color=#ffffff>소속 진영의 캐릭터가 스킬 발동 후:</color> 소속 진영의 출전 캐릭터에게 <color=#ff9999>불 원소 피해</color> 를 2pt 가한다.\n<color=#ffffff>사용 가능 횟수: 2</color>"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "불 원소 피해",
-        "title": "불 원소 피해",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/16/194600931/d714b3b669cc08d1d8e34464fd7a3630_2250520640553445169.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "불 원소 부착 시 원소 반응이 발생할 수 있다.\n[ <color=#ff9999>불</color> + <color=#99ffff>얼음</color> ] <color=#ffffff>융해</color> : 이번 피해+2pt\n[ <color=#ff9999>불</color> + <color=#80c0ff>물</color> ] <color=#ffffff>증발</color> : 이번 피해+2pt\n[ <color=#ff9999>불</color> + <color=#ffacff>번개</color> ] <color=#ffffff>과부하</color> : 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\n[ <color=#ff9999>불</color> + <color=#99ff88>풀</color> ] <color=#ffffff>연소</color> : 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 가하는 [ <color=#ffffff>불타는 화염</color> ]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "규칙 설명",
-        "title": "규칙 설명",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/18/194600931/245c229cf6f7364c7c9a7aea3db1a1ad_4151189574544236493.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ece5d8>강공격</color>\n아군이 행동을 시작하기 전에 원소 주사위 총개수가 짝수인 경우, 발동한 「일반 공격」을 「강공격」으로 간주한다.\n<color=#ece5d8>불 원소</color>\n굴려서 나온 <color=#ff9999>불 원소</color> 주사위를 소모해 사용할 수 있다.\n(만능 원소 사용 가능)\n<color=#ece5d8>사용 가능 횟수</color>\n해당 카드의 효과가 발동하면 <color=#ffffff>사용 가능 횟수</color> 가 1회 차감된다.\n<color=#ffffff>사용 가능 횟수</color> 가 전부 소진되면 즉시 해당 패를 버린다."
-          }
-        ],
-        "attributes": []
       }
     ]
   }
