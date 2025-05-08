@@ -5,16 +5,433 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Arataki Itto_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/avatar.png",
   "filterValues": {
+    "characterProperty": "Taux CRIT",
+    "characterVision": "Géo",
     "characterWeapon": "Épée à deux mains",
     "characterRarity": 5,
-    "characterRegion": "Cité d'Inazuma",
-    "characterVision": "Géo",
-    "characterProperty": "Taux CRIT"
+    "characterRegion": "Cité d'Inazuma"
   },
   "menuId": 2,
   "menuName": "Archives des personnages",
   "version": 1729219921,
   "components": {
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=196&center=6227.00,2532.00&zoom=-2.00",
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/avatar_header.jpg"
+      },
+      {
+        "key": "Avatar",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/avatar.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Tenue Originale - Oni excentrique</color>\n<color=#ffffffa6>Tenue d'Itto. Elle dégage une impression de génialité rare, et le masque oni porté comme boucle de ceinture est en effet assez imposant... Certainement assez pour transformer même l'enfant le plus méchant de Hanamizaka en bambin apeuré...</color>"
+          }
+        ]
+      },
+      {
+        "key": "Animation d'inaction 1",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/158750877/aee47595610c8365e1513f8a184a28a9_477158141104193870.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Tenue Originale - Oni excentrique"
+          }
+        ]
+      },
+      {
+        "key": "Animation d'inaction 2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/158750877/2669292a03f996c27674268c72fd2a76_2067232246792438049.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Tenue Originale - Oni excentrique"
+          }
+        ]
+      },
+      {
+        "key": "Constellation",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/43281454/c7628eeb80865cbf9cd007d5d1cdc50e_3861975166804018444.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Taurus Iracundus</color>"
+          }
+        ]
+      },
+      {
+        "key": "Thème",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/43281454/b3817855b37bb36d71555a58ed4092b6_4643887057186701085.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Itto - Visage d'Oni</color>\n<color=#ffffffa6>Les vrais hommes savent mettre le chagrin et la colère derrière eux et sourient au monde !</color>"
+          }
+        ]
+      }
+    ],
+    "voice": [
+      {
+        "title": "Première rencontre...",
+        "desc": "Le patron du gang Arataki, c'est bibi, et tout le monde connaît mon nom... Enfin, mes noms : « l'unique et inimitable » Arataki, Itto « l'Oni roi du sumo », Arataki « la fierté des Oni », Itto « le gladiateur scarabuto », Arataki « le champion imbattable des cartes et des paris », Itto « Il perd aux jeux, mais ne l'admet pas de sitôt »... Ce sont les titres que j'utilise le plus souvent. Tu peux choisir celui que tu veux pour t'adresser à moi. Ne te gêne pas, héhé..."
+      },
+      {
+        "title": "Bavardage - Itto dans la place",
+        "desc": "Et me voilà, Arataki Itto, le « numéro un », en chair et en os ! Héhéhé... *tousse* ..."
+      },
+      {
+        "title": "Bavardage - Encas",
+        "desc": "Quelle est la meilleure saveur au monde ? Le goût de la victoire bien sûr. C'est pourquoi je ne dépense jamais un mora pour mon casse-croûte, je le remporte toujours à la loyale... Et ouais."
+      },
+      {
+        "title": "Bavardage - Combat de scarabées",
+        "desc": "Ne sous-estime pas les scarabutos, ils peuvent être durs à cuire ! Tu sais ce que ce scarabuto mange au petit-déj' ? De la sueur et des larmes ! C'est comme ça qu'il devient aussi costaud. On devrait tous s'inspirer de lui !"
+      },
+      {
+        "title": "Quand il pleut...",
+        "desc": "Pff, les vrais mecs n'utilisent pas de parapluie ! Oups, on dirait que ça va flotter sévère... Qu'est-ce que t'attends ? File ton parapluie, vite !"
+      },
+      {
+        "title": "Quand le tonnerre gronde...",
+        "desc": "Hé ! Shogun Raiden, c'est vous ? Eh bien, écoutez-moi, vous n'êtes pas mon patron ! Vous allez faire quoi ? Allez-y, foudroyez-moi si vous en êtes capable !"
+      },
+      {
+        "title": "Quand il neige...",
+        "desc": "Et c'est parti pour une bataille de boules de neige ! Tu ne gagneras jamais contre moi, hahaha... At... Atchoum ! *snif* ..."
+      },
+      {
+        "title": "Il fait bon dehors...",
+        "desc": "Il fait beau aujourd'hui. C'est une journée idéale pour sortir son scarabuto et l'entraîner au combat. Allez, petit, montre-moi ce que tu sais faire."
+      },
+      {
+        "title": "Le vent souffle fort...",
+        "desc": "Un homme doit toujours faire attention à sa coupe de cheveux, même par temps de tempête. C'est encore plus vrai quand tu as du style comme moi. La classe !"
+      },
+      {
+        "title": "Au réveil...",
+        "desc": "Et c'est une nouvelle journée qui commence. J'ai plus un mora, mais bon, j'ai un peu la flemme de travailler. Allons voir s'il n'y a pas des jeux sympas aujourd'hui..."
+      },
+      {
+        "title": "À l'heure du déjeuner...",
+        "desc": "C'était un bien bon repas, mais maintenant j'aimerais me dégourdir les pattes. Voyons voir... Hanamizaka ? Non, j'y vais tout le temps. La Commission administrative ? Si c'est pour se tenir à carreau, non merci. Allez, on va à Ritou !"
+      },
+      {
+        "title": "Le soir...",
+        "desc": "Chut ! Écoute, il y a quelqu'un qui parle... AAH ! C'est un fantôme, COURS ! Hahaha, je t'ai bien eu/eue, tu aurais dû voir ta tête !"
+      },
+      {
+        "title": "La nuit...",
+        "desc": "Va te coucher si tu as sommeil. Ne te force pas à rester éveillé/ée. Quoi, moi ? Tss, je peux dormir même avec les yeux ouverts !"
+      },
+      {
+        "title": "À propos d'Itto - Trouver un vrai travail",
+        "desc": "Alors comme ça, ils disent que je suis incapable d'avoir un vrai travail, hein ? Hahahaha ! N'importe quoi ! Je suis un vrai voyou, moi. Tu as déjà vu un voyou avec un travail ? Oh, désolé, je m'emporte. Mais ne t'inquiète pas, je ne suis pas un voleur ni un cambrioleur. Quand je suis vraiment en galère, je fais des petits boulots pour gagner mon pain, comme faire de la manutention, livrer le courrier, ou aider les nouveaux commerces à attirer des clients dans la rue... C'est largement suffisant pour gagner ma journée, héhé."
+      },
+      {
+        "title": "À propos d'Itto - Oni",
+        "desc": "Les Oni ont traversé beaucoup d'épreuves, et pourtant, on a survécu jusqu'à maintenant en plus de pouvoir vivre en paix avec les humains. Mais c'est vraiment dommage qu'il y ait encore autant de gens qui ont des préjugés sur nous. Que ça change ? Bien sûr qu'il faut que ça change. Mais j'irais certainement pas leur lécher les bottes juste pour leur plaire ! Je gagnerai le respect des humains à ma propre manière !"
+      },
+      {
+        "title": "À propos de nous - Coopération",
+        "desc": "Je te vois souvent courir à gauche et à droite pour aider les gens. J'ai l'impression que tu ne fais pas ça que pour les moras, je me trompe ? Non, toi, t'es quelqu'un qui sait s'occuper des autres. Je sais de quoi je parle, parce que moi aussi, je sais m'occuper des gens. C'est la famille, tu vois ? Du coup, on va faire une super équipe, toi et moi !"
+      },
+      {
+        "title": "À propos de nous - Réaction",
+        "desc": "Je vais te dire un truc : j'ai toujours eu du respect pour toi. Bien sûr, j'adorerais que tu restes avec nous au gang Arataki. Je t'avais même trouvé un blase : « Numéro deux ». Comme ça, toi et moi, on aurait été les « Numéros un et deux », Hahaha ! *soupir* Trêve de plaisanteries, je sais que tu as des choses plus importantes à faire. Donc, je ne te retiens pas. Mais rappelle-toi que le gang Arataki sera toujours là pour toi."
+      },
+      {
+        "title": "À propos de l'œil divin...",
+        "desc": "Grr, ne m'en parle pas. Rien que le fait d'y penser fait bouillir mon sang ! Comme si le fait de voler les yeux divins des gens n'était pas déjà un crime assez odieux, l'armée de la Shogun s'est amusée à les coller sur une statue de manière complètement désordonnée ! Tss, quiconque avec un peu de jugeote aurait placé les yeux divins des gens importants tout en haut ! Alors qui est l'imbécile qui a mis le mien tout en bas ?"
+      },
+      {
+        "title": "Quelque chose à partager - Hina",
+        "desc": "Si quelque chose te préoccupe, tu peux essayer d'écrire à la rubrique des conseils du magazine « C'est la vie ». Mademoiselle Hina parvient toujours à trouver des réponses qui apportent un peu de chaleur au cœur de ses lecteurs. Tiens, regarde-moi par exemple : j'étais une âme perdue, mais plus maintenant, et c'est grâce à elle. Oh, ça me rappelle que j'ai réussi à m'inscrire à l'une de ses prochaines rencontres de fans. J'ai tellement hâte !"
+      },
+      {
+        "title": "Quelque chose à partager - Cornes",
+        "desc": "Dis-moi, est-ce qu'on finit par se lasser de mes cornes à force de les regarder ? Parce que je pensais à changer un peu de style en les colorant aux couleurs de l'arc-en-ciel et en y attachant quelques lucioles. J'aurais trop la classe comme ça, tu ne trouves pas ? Bon sang, je suis un vrai génie. Je vais dire aux gars de la bande de travailler là-dessus tout de suite."
+      },
+      {
+        "title": "Détails intéressants...",
+        "desc": "Tu veux connaître le vrai secret pour attraper des scarabutos ? Ce sont tes yeux. Tu dois t'assurer de prendre soin de tes yeux et il faut que ta vue soit aussi aiguisée que celle d'un faucon. Crois-moi, c'est quand tu es au milieu d'un orage, que la pluie tombe et que le vent te souffle dans la figure qu'il faut faire le plus attention... Parce qu'à ce moment-là, les melons lavandes et les scarabutos commencent à se ressembler... J'en sais quelque chose..."
+      },
+      {
+        "title": "À propos de Thomas...",
+        "desc": "Les gars du gang m'ont dit qu'il avait soi-disant été la « star » de la cérémonie de saisie. C'est une blague ou quoi ? Comment ça se fait qu'il ait eu droit à une cérémonie juste pour lui tout seul ? On ne va pas me dire que la saisie du 100e œil divin était plus importante que les 99 qui ont précédé ! Non, ça ne peut pas être ça... Parce que si c'était vrai, c'est moi qu'ils auraient choisi comme 100e œil divin."
+      },
+      {
+        "title": "À propos de Kamisato Ayato...",
+        "desc": "Hahaha, je regrette de ne pas avoir rencontré Ayato plus tôt. Il m'a vraiment appris quelque chose : « On peut insuffler un esprit combattif même au plus fragile des insectes ». Je l'ai vraiment pris à cœur. Sans ces mots de sagesse, je suis presque sûr que j'aurais abandonné le combat de scarabutos après avoir perdu pour la 780e fois... Comme on dit, seul un homme peut comprendre un autre homme. Lui et moi, on est sur la même longueur d'onde, que ce soit pour jouer aux cartes ou faire des combats de scarabutos."
+      },
+      {
+        "title": "À propos de Yoimiya...",
+        "desc": "Pff, elle est toujours en train de se pavaner avec ses feux d'artifice et ses jouets pour plaire aux enfants. Y'en a marre ! Elle n'a pas le droit de me voler la vedette, c'est moi que les enfants préfèrent ici ! Tu as intérêt à être de mon côté ! Comment ? Tu n'es pas un/une enfant ? Et alors ? Tous ceux qui sont plus petits que moi sont des gamins."
+      },
+      {
+        "title": "À propos de Kaedehara Kazuha...",
+        "desc": "La rumeur veut qu'il ait bloqué le Kendo d'insouciance après que tu t'es échappé/échappée du Tenshukaku. Si c'est vrai, alors c'est complètement dément ! Comment a-t-il fait ? Hé, quand tu y penses, il est issu d'un clan disparu, et moi aussi. Donc lui et moi, on est pareils au final, haha. Donc, la prochaine fois qu'on s'en prend à toi, c'est moi qui viendrai bloquer l'attaque !"
+      },
+      {
+        "title": "À propos de la Shogun Raiden...",
+        "desc": "Pendant le décret de saisie, elle a dû envoyer sa meilleure Tengu pour me prendre mon œil divin. Ça veut bien dire que je ne suis pas n'importe qui pour elle ! Mais bon, vu qu'elle a décidé d'abroger le décret, je n'ai pas de rancune envers elle. J'espère qu'elle a bien retenu la leçon et qu'il n'y aura pas de prochaine fois. Sinon, je vais lui donner encore plus de fil à retordre !"
+      },
+      {
+        "title": "À propos de la dame aux oreilles de renard...",
+        "desc": "C'est moi qui ai gagné le concours de kitsune ramen. Même avec du tofu frit dans le plat, je l'ai battue à plate couture ! Bon, après ça, j'ai été cloué au lit pendant un bon mois... Mais je préfère être un gagnant malade qu'un perdant en bonne santé ! Alors qu'elle, elle a dû payer une note de 32 bols de ramen. C'est trop la honte ! Hahahaha..."
+      },
+      {
+        "title": "À propos de Kujou Sara...",
+        "desc": "Bon, d'accord... Elle m'a battu pendant le décret de saisie. Mais il n'y a pas de quoi avoir honte ! Il faut savoir perdre et reconnaître ses faiblesses. C'est ça, être un homme, un vrai ! Alors qu'elle, une guerrière Tengu, n'ose même pas accepter de participer à un duel de revanche ! C'est juste un duel de sumo dans la rue, elle a peur de quoi... Si elle continue de refuser le combat, je vais arrêter de l'appeler « Tengu de Kujou » et la surnommer « Poule mouillée de Kujou » !"
+      },
+      {
+        "title": "À propos de Gorou...",
+        "desc": "Ah oui, tu parles du chien général de la Résistance... Je dois dire que malgré sa petite taille, il a une sacrée force de caractère ! En plus, il dégage une aura familière assez chaleureuse. C'est bizarre, parce que je ne l'ai vu qu'une ou deux fois..."
+      },
+      {
+        "title": "À propos de Kuki Shinobu...",
+        "desc": "C'est moi le chef du gang, et personne ne remet ça en question ! Sauf Shinobu... Elle veut toujours me contredire ! Et ce n'est pas tout, elle s'amuse aussi à rendre tous les objets du butin de guerre que j'ai durement gagné à leurs propriétaires originels ! Mais bon, elle vient me sortir de prison à chaque fois et m'a aidé à me sortir d'une situation épineuse plus d'une fois, donc je laisse couler... À vrai dire, je n'ai pas envie de l'énerver, parce qu'elle serait bien capable de transformer ma vie en enfer !"
+      },
+      {
+        "title": "À propos de Sayu...",
+        "desc": "Je lui ai juste mis une petite tape sur la tête quand elle ne regardait pas, et maintenant elle me bondit dessus pour m'attaquer dès qu'elle me voit... Mais que veux-tu, les Tanukis sont si mignons ! Personne d'autre n'aurait résisté à toucher sa tête à ma place. Ah oui aussi... Si tu as le malheur de lui dire : « hé, la Tanuki » pour l'appeler, elle t'attaque. C'est quoi son problème ? J'ai pourtant pas rêvé. C'est une Tanuki, pas une Kitsune..."
+      },
+      {
+        "title": "Connaître Arataki Itto (1)",
+        "desc": "Je sais à quoi tu penses : « Comment ce type a-t-il pu devenir le chef du gang Arataki si tout ce qu'il sait faire, c'est participer à des combats de scarabées et à des jeux de cartes ? ». Tu as raison. Ces trucs-là, ce sont des jeux pour enfant. Tu sais quelles compétences m'ont permis d'arriver là où je suis ? Manger des ramen à l'envers, dormir les yeux ouverts, jouer de l'harmonica avec mon nez et écraser des mouches avec mes cheveux. J'espère avoir éclairci tes doutes."
+      },
+      {
+        "title": "Connaître Arataki Itto (2)",
+        "desc": "Les habitants d'Inazuma pratiquent un rituel à chaque fois qu'il y a une fête, qu'ils déménagent, qu'ils tombent malades, ou pour d'autres occasions, rituel au cours duquel ils lancent des haricots autour d'eux et chantent : « Les haricots du bonheur tombent, les Oni de la ville succombent ! Le bonheur est là, les Oni ne passeront pas. Le bonheur est là, les Oni ne passeront pas ! ». Grr, rien que d'entendre cette chanson, j'en ai la nausée ! Mais le pire, ce sont les rues pleines de haricots... Avec mon allergie ? Je dois mettre un terme à ça, au nom de tous les Oni. Nous sommes innocents ! Arrêtez de vous protéger de nous et de nous chasser chaque fois qu'il vous arrive un truc !"
+      },
+      {
+        "title": "Connaître Arataki Itto (3)",
+        "desc": "Pour éliminer les préjugés qu'ont les humains vis-à-vis des Oni, j'ai demandé au gang de prendre une photo de moi qui montre mon côté sympa avec un Daguerréotype et de la coller sur un panneau d'affichage de la Cité d'Inazuma. Et tu sais ce qui s'est passé ? Des idiots se sont amusés à gribouiller sur mon magnifique portrait ! Mais le pire dans tout ça, c'est que j'ai été accusé par la Commission administrative de perturber l'ordre public et par la Commission culturelle de créer une mauvaise ambiance au sein de la ville. Même les sbires de la Commission économique sont venus pour me demander de payer une soi-disant « taxe sur la publicité »... Pff, ils ne savent même pas faire la différence entre un vrai citoyen honnête et un malfrat !"
+      },
+      {
+        "title": "Connaître Arataki Itto (4)",
+        "desc": "Au sein du gang Arataki, nous sommes fiers d'accepter ceux qui ont souffert de l'adversité au cours de leur vie. N'écoute pas ceux qui nous traitent de bizarres ou de fous... Chaque membre est comme un membre de ma famille, et tout le monde a la même façon de penser dans le gang. Quoi qu'il arrive, le gang Arataki restera soudé, pour le meilleur et pour le pire !"
+      },
+      {
+        "title": "Connaître Arataki Itto (5)",
+        "desc": "J'ai beaucoup de respect pour les Oni azurins qui se sont sacrifiés pour permettre aux Oni cramoisis de continuer à vivre... Mais je suis totalement contre ce principe. Personne ne devrait avoir à sacrifier les siens pour que les autres aient un meilleur avenir, point final. Ce n'est un meilleur avenir que si c'est un meilleur avenir pour tout le monde ! Il faut que tout le monde travaille ensemble, et non pas que chacun reste de son côté et décide de se sacrifier tout seul pour avoir l'air cool. M'enfin bon, je suppose qu'on ne peut pas changer le passé et que ce qui est fait est fait. Mais, à partir d'aujourd'hui, il n'y aura plus de sacrifices tant que je serai là ! Si tu veux te sacrifier, tu devras d'abord avoir affaire à moi !"
+      },
+      {
+        "title": "Les loisirs d'Itto...",
+        "desc": "Les combats de scarabées, les cartes à collectionner, la toupie, le kendama, cache-cache... Je sais jouer à tous les jeux ! Alors, tu veux jouer ? Prépare-toi à perdre misérablement, hahahaha !"
+      },
+      {
+        "title": "Les problèmes d'Itto...",
+        "desc": "Mamie Oni n'est pas une Oni du tout... En fait, c'est l'humaine la plus gentille du monde. Son surnom, c'est parce qu'elle m'a recueilli quand j'étais enfant. Je m'en fiche de ce que les autres pensent, mais j'aimerais que les gens arrêtent de l'embêter à cause de moi."
+      },
+      {
+        "title": "Plats préférés...",
+        "desc": "Il n'y a rien de mieux au monde que les sucettes. Et ce n'est pas seulement qu'elles ont bon goût ! Juste le fait d'avoir le bâtonnet dans la bouche me donne un air de dur à cuire. Tiens, essaie pour voir !"
+      },
+      {
+        "title": "Plats détestés...",
+        "desc": "Je suis un Oni, donc il n'y a rien que je déteste plus que les haricots, peu importe leur taille ou leur couleur ! Le simple fait de les toucher déclenche mes allergies, alors ne parlons même pas d'en manger... Vivement que cette coutume de jeter des haricots partout disparaisse une bonne fois pour toutes !"
+      },
+      {
+        "title": "Anniversaire...",
+        "desc": "Aujourd'hui est un jour important ! J'ai dû envoyer les gars du gang autre part, sinon ils m'auraient accusé de favoritisme. Tiens, regarde, je t'ai trouvé un super cadeau pour ton anniversaire : un scarabuto de qualité supérieure ! Ça m'a pris trois journées et trois nuits entières pour le capturer. Mais ce n'est pas tout, je t'offre aussi cette carte que j'ai réussi à gagner en 300 matchs à peine ! Et en plus de ça, tu as le droit à une chanson interprétée par nul autre que moi-même ! Ahem... Joyeux anniversaire, joyeux anniversaire, joyeux aaanniversaireuh voyageur/voyageuse, joyeuuux anniversaire !"
+      },
+      {
+        "title": "Affinité faible",
+        "desc": "Ah, j'aime cette sensation ! Je deviens plus fort. C'est bien, ça !"
+      },
+      {
+        "title": "Affinité moyenne",
+        "desc": "Ouais, quelle force ! Je vais gagner encore plus souvent aux jeux avec ça !"
+      },
+      {
+        "title": "Affinité élevée",
+        "desc": "Je me sens si puissant ! Tu veux me voir briser un rocher ?"
+      },
+      {
+        "title": "Affinité max",
+        "desc": "On dirait bien que « Numéro un » n'est plus simplement un surnom ! Mais ce n'est pas parce que j'ai atteint le sommet que je vais oublier tout ce que tu as fait pour moi, compris ? Tu peux toujours compter sur moi à tout moment."
+      },
+      {
+        "title": "Compétence élémentaire (1)",
+        "desc": "C'est parti !"
+      },
+      {
+        "title": "Compétence élémentaire (2)",
+        "desc": "Et bam !"
+      },
+      {
+        "title": "Compétence élémentaire (3)",
+        "desc": "Très bien !"
+      },
+      {
+        "title": "Déchaînement élémentaire (1)",
+        "desc": "Un Oni en approche !"
+      },
+      {
+        "title": "Déchaînement élémentaire (2)",
+        "desc": "Qui veut goûter à ça ?"
+      },
+      {
+        "title": "Déchaînement élémentaire (3)",
+        "desc": "Plein les mirettes !"
+      },
+      {
+        "title": "Ouverture de coffre (1)",
+        "desc": "Hoho, de nouveaux joujous !"
+      },
+      {
+        "title": "Ouverture de coffre (2)",
+        "desc": "C'est grâce à ma chance légendaire, ça !"
+      },
+      {
+        "title": "Ouverture de coffre (3)",
+        "desc": "Avec ça, plus besoin de bosser pendant au moins trois jours."
+      },
+      {
+        "title": "Début de sprint (1)",
+        "desc": "Tu ne m'attraperas pas !"
+      },
+      {
+        "title": "PV faibles (1)",
+        "desc": "Ne sous-estimez jamais un Oni !"
+      },
+      {
+        "title": "PV faibles (2)",
+        "desc": "Je ne suis pas en train de perdre ! C'est fait exprès..."
+      },
+      {
+        "title": "PV faibles (3)",
+        "desc": "Rien de plus qu'une égratignure !"
+      },
+      {
+        "title": "K.O. (1)",
+        "desc": "On se reverra à la revanche..."
+      },
+      {
+        "title": "K.O. (2)",
+        "desc": "Il faut savoir perdre... avec panache..."
+      },
+      {
+        "title": "K.O. (3)",
+        "desc": "Désolé, les gars... J'ai pas été à la hauteur..."
+      },
+      {
+        "title": "Attaque légère subie (1)",
+        "desc": "Pour qui tu te prends !"
+      },
+      {
+        "title": "Attaque légère subie (2)",
+        "desc": "C'est tout ce que t'as ?"
+      },
+      {
+        "title": "Attaque puissante subie (1)",
+        "desc": "Aïe, je l'ai sentie passer !"
+      },
+      {
+        "title": "Attaque puissante subie (2)",
+        "desc": "Hé ! J'étais pas prêt !"
+      },
+      {
+        "title": "Ajout dans l'équipe (1)",
+        "desc": "Du balai ! Itto est dans la place !"
+      },
+      {
+        "title": "Ajout dans l'équipe (2)",
+        "desc": "Votre sauveur est là !"
+      },
+      {
+        "title": "Ajout dans l'équipe (3)",
+        "desc": "Et la foule est en délire !"
+      },
+      {
+        "title": "Cadeau reçu (1)",
+        "desc": "Hahahahahaha ! Ça fait trois ans que j'ai pas mangé un plat aussi délicieux !"
+      },
+      {
+        "title": "Cadeau reçu (2)",
+        "desc": "Bien ! Je n'oublierai pas ton geste de révérence envers moi aujourd'hui."
+      },
+      {
+        "title": "Cadeau reçu (3)",
+        "desc": "Hé, tu cherches à m'empoisonner ou quoi ?! Ah..."
+      }
+    ],
+    "story": [
+      {
+        "title": "Info. personnage",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Il est difficile de ne pas remarquer le jeune Oni nommé Arataki Itto en se promenant dans les rues de Hanamizaka.\nQu'importe ses cornes d'Oni dressées sur sa tête ou sa voix portante, c'est d'abord cet enthousiasme qu'il possède à se joindre aux enfants pour jouer avec eux qui le distingue des autres.\nDe plus, son absence évidente d'occupations détonne énormément avec l'agitation de Hanamizaka, où les groupes d'artisans s'activent toute la journée.\nItto prétend être le « premier et plus grand chef du gang Arataki », statut dont il a tenté d'expliquer les responsabilités et obligations à des officiers de la Commission administrative venus enquêter après une bagarre de rue relativement inoffensive. Malheureusement, il fut interrompu après seulement deux minutes, avant que les mots « sans emploi » ne soient inscrits sur son dossier.\nCette description n'est pas tout à fait exacte. En dehors des activités du gang Arataki, que le Shogunat ne reconnaît pas, Itto fait quelques petites missions pour gagner sa croûte. Il travaille en général une seule journée avant d'en prendre trois de congé de manière constante.\nDe ce fait, il serait plus correct d'inscrire « aux trois quarts au chômage »."
+          }
+        ]
+      },
+      {
+        "title": "Histoire du personnage 1",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Objectivement, la réputation d'Itto laisse à désirer à Inazuma.\nBien qu'il ne soit pas considéré comme un malfaiteur, il ne rentre pas pour autant dans la catégorie des bons citoyens.\nS'il fallait lui attribuer un degré de dangerosité, il s'agirait sûrement de celui d'être utilisé comme excuse par les parents pour faire obéir leurs enfants : « Si tu n'es pas sage, Arataki Itto viendra voler tes bonbons ! ».\nEn comparaison avec les menaces du genre « Le grand démon mujina va venir t'attraper et t'emmener dans les montagnes ! » ou « Tu seras incrusté dans la statue de la Shogun ! », la probabilité de se faire voler ses bonbons par Itto est bien plus élevée.\nCependant, « voler » n'est pas le terme le plus approprié. En effet, le sort réservé à ces sucreries est défini de manière honnête au combat !\nAux yeux de la plupart des gens, remporter des bonbons face à des enfants est une chose éhontée, mais Itto possède la conviction que chaque bataille se doit d'être prise au sérieux, peu importe que l'adversaire soit un enfant de cinq ans ou la Shogun toute-puissante en personne.\nC'est aussi une des raisons pour lesquelles Itto peut perdre contre un enfant sans réserve.\nTandis que les commérages des adultes vont bon train lorsqu'il s'agit de le critiquer, les enfants quant à eux trouvent que ce monsieur oni est en réalité un compagnon de jeu très amusant.\nItto connaît sur le bout des doigts tous les jeux de rue et y joue avec grand plaisir. Il défend toujours ceux et celles qui se font malmener.\nRécemment, les enfants sont particulièrement friands des combats de scarabutos contre Itto.\nLes règles du jeu sont assez simples, les combats sont acharnés et ils se laissent regarder. Mais le plus important, c'est qu'ils ont une véritable chance de gagner à ce jeu, contrairement aux autres."
+          }
+        ]
+      },
+      {
+        "title": "Histoire du personnage 2",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Pendant très longtemps, la Commission administrative considérait le gang Arataki comme un groupe de fauteurs de trouble occasionnels à qui il n'était pas nécessaire d'accorder d'importance.\nLe groupe possède moins de dix membres titulaires et beaucoup de querelles internes existent quant à la date de sa création.\nAkira a la conviction que le gang s'est établi lorsqu'Itto est venu le sauver de quelques brutes de pacotille. Ce jour-là, Itto ne lâcha pas l'affaire, même après être tombé plus de sept fois, ce qui eut le don d'agacer les petites racailles au point de les faire partir. Itto aida Akira à se relever et déclara : « On dirait bien que tu fais partie du gang Arataki à présent ! ».\nGenta et Mamoru sont persuadés que le gang a été fondé à la fin d'une année en particulier, lorsqu'ils se sont rassemblés en périphérie d'Inazuma tout en faisant griller des melons lavandes.\nAucun d'entre eux n'avait un mora en poche ce jour-là alors qu'ils étaient tous affamés. Alors qu'il se gavait de melons lavandes, Itto dit : « On devrait faire griller des melons lavandes comme ça chaque année ! ».\nCeci dit, ni Genta ni Mamoru ne pense qu'il s'agisse là de moments particulièrement mémorables.\nPour Kuki Shinobu, le gang fut établi officiellement la première fois où elle a tiré Itto d'un cachot du Shogunat, car c'était également la première fois que le gang Arataki fut mentionné dans des documents officiels.\nQuant à Itto, il est certain que le gang Arataki vit le jour au moment même où ce nom lui vint à l'esprit.\nMalheureusement, il ne se rappelle plus de la date.\nEnfin, pour mamie Oni, qui s'est occupée d'Itto depuis sa tendre enfance, le gang ne s'est jamais constitué.\nElle croit qu'il s'agit simplement d'« Itto et de sa bande de copains »."
+          }
+        ]
+      },
+      {
+        "title": "Histoire du personnage 3",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "La race oni est présente à Inazuma depuis les temps anciens.\nElle a coexisté avec la lignée royale de Kitsunes Hakushin et les Tengu.\nDe tels démons possèdent souvent des aptitudes surnaturelles que les humains leur envient, mais seuls les Oni sont dépourvus de beaucoup de ces particularités.\nOutre leurs cornes, ils sont connus pour leur tempérament explosif et leur tendance à chercher des ennuis.\nEn ce qui concerne leur peur légendaire des haricots, celle-ci possède en réalité une explication tout à fait scientifique :\nLes Oni y sont allergiques. Cependant, le sang pur de la lignée oni s'étant fait rare avec le temps, la plupart d'entre eux ne présente aujourd'hui qu'une légère réaction.\nMalheureusement pour Itto, ses allergies sont plutôt graves ! Même pas besoin d'en ingérer, un simple contact cutané entraînera chez lui des démangeaisons et des difficultés respiratoires.\nC'est pourquoi les haricots représentent les seules choses dont Itto l'insouciant se méfie dans sa vie quotidienne.\nLes membres du gang Arataki quant à eux ne commandent jamais de plats à base de haricots, même en privé, comme marque de respect envers Itto.\nDe tous les produits du genre, c'est le tofu frit qu'il craint le plus. Selon lui, le simple fait d'en voir peut le rendre souffrant pendant trois jours."
+          }
+        ]
+      },
+      {
+        "title": "Histoire du personnage 4",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "En parlant de tofu frit, une certaine victoire à la Pyrrhus vient directement à l'esprit.\nLa bataille qui causa l'incident démarra comme une simple querelle insignifiante : une femme aux oreilles de renard s'était assise sur la chaise où Itto s'installait habituellement pour manger à l'étal de son petit restaurateur préféré, qui plus est le jour de sa paie.\nLes deux parties commencèrent à vociférer afin de déterminer à qui appartenait le droit de s'installer à cette place, résultant en un véritable, bien qu'inutile, affrontement.\nItto, qui était affamé après sa journée de travail, décida d'en découdre via un concours de nourriture, tandis que la femme aux oreilles de renard choisit que le thème de cet affrontement serait les kitsune ramen.\nItto fut pris au dépourvu lorsqu'il réalisa que ce plat était principalement composé de tofu frit, mais sa fierté d'Oni était en jeu et il concentra toute son énergie pour décrocher la victoire.\nQuant à l'innocente chaise, elle fut attribuée comme trophée à Itto par le restaurateur encore sous le choc.\nDe tous les affrontements auxquels il a pris part, deux d'entre eux occupent encore particulièrement l'esprit d'Itto.\nL'un d'eux est la revanche qu'il exige de Kujou Sara. Elle l'avait en effet vaincu avant de lui arracher son œil divin dans le cadre de ses obligations pour la Commission administrative.\nJusqu'à ce jour, elle n'a toujours pas accepté le duel de sumo de rue, non sans frustrer Itto...\nL'autre affrontement est un incident qui eut lieu il y a de ça bien des années, dans la jeunesse d'Itto. Une dispute avec un jeune Tengu résulta en un combat de sumo à la Plaine de Byakko. De manière inattendue dans le feu de l'action, ils dévalèrent tous les deux un versant de montagne.\nAu final, le Tengu transporta Itto jusque chez lui. En effet, il ne pouvait plus marcher à cause d'une entorse à la cheville. Le vainqueur ne fut donc pas désigné.\nComme par hasard, ces deux épisodes sont en lien avec un Tengu !\nD'où ces créatures tirent-elles leur force malgré une apparence aussi maigrichonne ?"
+          }
+        ]
+      },
+      {
+        "title": "Histoire du personnage 5",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Tous les jeunes Oni ont probablement entendu l'histoire de l'Oni cramoisi et de l'Oni azurin :\nLe gentil et serviable Oni cramoisi a triomphé du mauvais Oni azurin, gagnant le respect des humains.\nCette histoire était la préférée d'Itto lorsqu'il était enfant, ce qui le rendait fier de ses cornes d'Oni cramoisi et de la lignée dont il était issu.\nCependant, cette fierté enfantine fut ébranlée par un simple incident.\nLorsque des cambriolages eurent lieu dans le village d'Itto, la famille Arataki fut directement soupçonnée en raison de son sang oni.\nItto ne se souvient pas vraiment de tous les détails, mais il se rappelle des regards méfiants et dégoûtés des villageois lorsque ses parents et lui quittèrent les lieux, ainsi que des mots qui leur étaient destinés, qu'il a depuis entendu un nombre incalculable de fois :\n« Un Oni sera toujours un Oni. »\nPeu importe l'époque, les Oni sont tous les mêmes aux yeux des humains. Dans ce cas, ne vallait-il pas mieux être considéré comme l'Oni azurin, qui inspirait la crainte ? Cela était certainement préférable à la situation de ses parents qui furent poussés à l'exil, malgré le fait qu'ils n'avaient jamais rien fait de mal.\nAprès le décès de ses parents à la suite d'une maladie, le jeune Itto se retrouva à la rue. Il se mit à confronter quiconque osait dire du mal des Oni.\nIl se retrouvait la plupart du temps à encaisser les coups. Mais il ne se laissait pas faire pour autant, se relevant systématiquement peu importe le nombre de fois où il se retrouvait au sol.\nItto n'était pourtant encore qu'un enfant. Après un passage à tabac par des petits délinquants qui s'étaient ligués contre lui, il finit par s'effondrer dans la rue de fatigue et de faim.\nC'est à ce moment qu'il fut sauvé par une vieille femme humaine.\n« Pourquoi m'avez-vous sauvé ? Vous ne voyez pas que je suis un Oni ? » « Tu dois être mort de faim. Viens, j'ai préparé une soupe de riz. »\n« Je vous ai dit que j'étais un Oni ! Vous ne voyez pas les cornes sur ma tête ? » « Si, je les vois. Alors, tu veux un peu de cette soupe ? »\n« Ah, mais vous ne m'écoutez pas ! Bon, d'accord... Un bol de soupe de riz, s'il vous plaît. » « Tout de suite. »"
+          }
+        ]
+      },
+      {
+        "title": "La grande ritournelle",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "La fin de l'année approchant, les membres du gang Arataki se réunirent pour discuter de la façon dont ils pourraient célébrer le réveillon.\nContrairement à d'autres organisations plus respectables, le gang Arataki ne possède ni de lieu fixe où organiser leurs activités ni d'argent, ce qui pose quelques problèmes... d'ordre logistique.\nL'option des melons lavandes fut rapidement éliminée. Griller des melons lavandes n'était pas un problème en soi, mais ne manger que ça pour célébrer le réveillon en était un.\nL'idée d'un festival de scarabutos fut considérée, mais la fin d'année ne correspondant pas avec la saison des amours, les participants manqueraient donc d'un enthousiasme évident.\nEn fin de compte, un tirage au sort eut lieu et la « grande ritournelle » fut ainsi décidée.\nL'activité fut proposée par Itto en personne. Elle consistait en une soirée où tout le monde devait se rassembler au bord d'une falaise pour chanter à l'océan et exprimer ses sentiments les plus profonds et ses espoirs pour l'avenir.\nLes membres du gang n'étaient en réalité pas très partants en leur for intérieur à l'annonce de cette nouvelle. Après tout, chanter à pleins poumons vers la mer n'était pas aussi amusant que de manger des melons. Kuki Shinobu mentionna qu'elle aurait bien aimé profiter de cette occasion pour prendre congé et rentrer chez elle.\nCependant, l'événement eut lieu malgré tout. Les chants et les cris furent d'un effet étonnamment apaisant pour l'esprit. De plus, contre toute attente, cette occasion révéla qu'Itto était en réalité plutôt bon chanteur."
+          }
+        ]
+      },
+      {
+        "title": "Œil divin",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Itto fit la découverte de son œil divin accroché sous sa hanche alors qu'il se réveilla un matin après un combat. À cette époque, il se trouvait déjà à Hanamizaka depuis un bon bout de temps et sa vie était en quelque sorte stable.\n« Eh ben dis donc ! ... C'est vraiment incroyable ! »\nTels furent les mots qui vinrent à l'esprit d'Itto lorsqu'il découvrit son œil divin.\nCe jour-là, il le montra avec enthousiasme à qui voulait bien le voir. Il soulevait même ses vêtements pour montrer l'endroit où il avait laissé une marque sur son dos, jusqu'à ce que tout le monde en ait marre d'entendre son histoire.\nL'histoire changea cependant quelques jours plus tard :\n« Comme vous le savez, je n'ai pas été surpris le moins du monde quand j'ai vu cet œil divin. Après tout, on en attendait pas moins du premier et plus grand chef du gang Arataki ! »\n« Mais le plus important, c'est que la valeur d'une personne ne peut pas se mesurer à un simple œil divin, ah ça non ! »\nMais les plus observateurs ne purent s'empêcher de remarquer qu'Itto avait fait l'acquisition d'une étoffe à lunettes des plus soyeuses.\nEn outre, une certaine question apparut dans la rubrique des conseils du magazine « C'est la vie » :\n« Mademoiselle Hina, comment prendre soin de mon œil divin et le rendre plus brillant ? Je veux dire, plus brillant que n'importe lequel autre, bien sûr ! »\nQuand les membres du gang virent cette rubrique et la montrèrent avec entrain à Itto, quelle ne fut pas leur surprise de voir ce fan de la première heure de mademoiselle Hina se contenter de regarder le magazine avant de le mettre de côté."
+          }
+        ]
+      }
+    ],
     "summaryList": [
       {
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/constellation_1.png",
@@ -77,134 +494,6 @@
         ]
       }
     ],
-    "baseInfo": [
-      {
-        "key": "Nom",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Arataki Itto</color>"
-          }
-        ]
-      },
-      {
-        "key": "Anniversaire",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>1/6</color>"
-          }
-        ]
-      },
-      {
-        "key": "Constellation",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Taurus Iracundus</color>"
-          }
-        ]
-      },
-      {
-        "key": "Titre",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Héros de Hanamizaka</color>"
-          }
-        ]
-      },
-      {
-        "key": "Œil divin",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Géo</color>"
-          }
-        ]
-      },
-      {
-        "key": "Affiliation",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Gang Arataki</color>"
-          }
-        ]
-      },
-      {
-        "key": "Voix chinoise",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>刘照坤 (Liu Zhaokun)</color>"
-          }
-        ]
-      },
-      {
-        "key": "Voix anglaise",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Max Mittelman</color>"
-          }
-        ]
-      },
-      {
-        "key": "Voix japonaise",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>西川貴教 (NISHIKAWA Takanori)</color>"
-          }
-        ]
-      },
-      {
-        "key": "Voix coréenne",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>송준석 (Song Jun-seok)</color>"
-          }
-        ]
-      },
-      {
-        "key": "Plat Spécial",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 707,
-            "name": "Voie du puissant",
-            "desc": "Spécialité culinaire d'Arataki Itto. Il insiste sur le fait qu'il s'agisse d'un plat inégalé lorsqu'il est préparé par « Arataki Itto, le plus fin des gourmets » en personne. Que vous soyez debout, assis ou couché, votre ventre se remplira d'un coup et vous aurez l'impression d'être en voie de devenir le deuxième être le plus puissant au monde... Quel gars génial.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Way of the Strong_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Carte du Personnage",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3714,
-            "name": "Arataki Itto",
-            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Arataki Itto «&nbsp;Héros de Hanamizaka&nbsp;»</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">«&nbsp;Le champion imbattable des cartes et des paris&nbsp;»</span></p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/18/35653081/d84e70d6e7e547982240bbd1da5a0b64_1670264352787581358.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Ajout à la version",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>2.3</color>"
-          }
-        ]
-      }
-    ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=196&center=6227.00,2532.00&zoom=-2.00",
     "ascension": [
       {
         "key": "Niv.1",
@@ -767,6 +1056,919 @@
               "19.2%",
               "-"
             ]
+          }
+        ]
+      }
+    ],
+    "talent": [
+      {
+        "key": "Attaque normale : Légende de la baston",
+        "title": "Attaque normale : Légende de la baston",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/battle_talent_0/battle_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Attaque normale</color>\nEnchaîne jusqu'à 4 coups d'épée.\nLorsque son 2e et 4e coup touchent un ennemi, Itto gagne respectivement 1 et 2 cumuls de Mégaforce superlative.\nItto peut détenir un maximum de 5 cumuls de Mégaforce superlative, et chaque fois que cet effet se déclenche, la durée des cumuls en sa possession est réinitialisée.\nDe plus, l'enchaînement d'attaques normales d'Itto ne sera pas réinitialisé pendant une courte période après Zetsugi anti-démon : Catapultage d'akaushi ou l'initiation d'un sprint.\n<color=#ffd780>Attaque chargée</color>\nLorsque vous maintenez appuyé pour lancer une attaque chargée tout en possédant des cumuls de Mégaforce superlative, vous pouvez effectuer des kesa giri d'Arataki sans consommer d'endurance. Chaque kesa giri consommera à la place un cumul de Mégaforce superlative. Lorsque le dernier cumul de Mégaforce est consommé, Itto libère une attaque finale très puissante.\nSi aucun cumul de Mégaforce superlative n'est disponible, Itto consommera de l'endurance pour effectuer une simple entaille de Saichimonji.\n<color=#ffd780>Attaque plongeante</color>\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis sur la route et des DGT de zone à l'impact."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Niv.",
+            "values": [
+              "Niv.1",
+              "Niv.2",
+              "Niv.3",
+              "Niv.4",
+              "Niv.5",
+              "Niv.6",
+              "Niv.7",
+              "Niv.8",
+              "Niv.9",
+              "Niv.10",
+              "Niv.11"
+            ]
+          },
+          {
+            "key": "DGT 1er coup",
+            "values": [
+              "79.2%",
+              "85.7%",
+              "92.1%",
+              "101.3%",
+              "107.8%",
+              "115.2%",
+              "125.3%",
+              "135.4%",
+              "145.6%",
+              "156.6%",
+              "169.3%"
+            ]
+          },
+          {
+            "key": "DGT 2e coup",
+            "values": [
+              "76.4%",
+              "82.6%",
+              "88.8%",
+              "97.7%",
+              "103.9%",
+              "111%",
+              "120.8%",
+              "130.5%",
+              "140.3%",
+              "151%",
+              "163.2%"
+            ]
+          },
+          {
+            "key": "DGT 3e coup",
+            "values": [
+              "91.6%",
+              "99.1%",
+              "106.6%",
+              "117.2%",
+              "124.7%",
+              "133.2%",
+              "144.9%",
+              "156.6%",
+              "168.36%",
+              "181.15%",
+              "195.8%"
+            ]
+          },
+          {
+            "key": "DGT 4e coup",
+            "values": [
+              "117.2%",
+              "126.8%",
+              "136.3%",
+              "149.9%",
+              "159.5%",
+              "170.4%",
+              "185.4%",
+              "200.4%",
+              "215.4%",
+              "231.7%",
+              "250.5%"
+            ]
+          },
+          {
+            "key": "DGT kesa giri d'Arataki",
+            "values": [
+              "91.2%",
+              "98.6%",
+              "106%",
+              "116.6%",
+              "124%",
+              "132.5%",
+              "144.2%",
+              "155.8%",
+              "167.5%",
+              "180.2%",
+              "194.8%"
+            ]
+          },
+          {
+            "key": "DGT kesa giri final d'Arataki",
+            "values": [
+              "190.9%",
+              "206.5%",
+              "222%",
+              "244.2%",
+              "259.7%",
+              "277.5%",
+              "301.9%",
+              "326.3%",
+              "350.8%",
+              "377.4%",
+              "407.9%"
+            ]
+          },
+          {
+            "key": "Durée Mégaforce superlative",
+            "values": [
+              "60 s",
+              "60 s",
+              "60 s",
+              "60 s",
+              "60 s",
+              "60 s",
+              "60 s",
+              "60 s",
+              "60 s",
+              "60 s",
+              "60 s"
+            ]
+          },
+          {
+            "key": "DGT entaille de Saichimonji",
+            "values": [
+              "90.5%",
+              "97.8%",
+              "105.2%",
+              "115.7%",
+              "123.1%",
+              "131.5%",
+              "143.1%",
+              "154.6%",
+              "166.2%",
+              "178.8%",
+              "193.3%"
+            ]
+          },
+          {
+            "key": "Coût d'endurance entaille de Saichimonji",
+            "values": [
+              "20 pts",
+              "20 pts",
+              "20 pts",
+              "20 pts",
+              "20 pts",
+              "20 pts",
+              "20 pts",
+              "20 pts",
+              "20 pts",
+              "20 pts",
+              "20 pts"
+            ]
+          },
+          {
+            "key": "DGT durant la chute",
+            "values": [
+              "81.8%",
+              "88.5%",
+              "95.2%",
+              "104.7%",
+              "111.3%",
+              "118.9%",
+              "129.4%",
+              "139.8%",
+              "150.4%",
+              "161.8%",
+              "173.2%"
+            ]
+          },
+          {
+            "key": "DGT chute basse/élevée",
+            "values": [
+              "164%/205%",
+              "177%/222%",
+              "191%/238%",
+              "210%/262%",
+              "223%/279%",
+              "238%/298%",
+              "259%/324%",
+              "280%/350%",
+              "301%/376%",
+              "324%/405%",
+              "347%/434%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 195,
+              "name": "Enseignement de l'Élégance",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance n'aime pas la flatterie et les élégants sont toujours nobles. Ils sont comme ces grands oiseaux des mers qui planent au-dessus des tempêtes retentissantes. Ils ne répondent pas à la vulgarité, comme on ne jette pas une couronne de fleurs dans la boue, sans éclabousser sa propre dignité.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Elegance_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 396,
+              "name": "Bave de Blob",
+              "desc": "Liquide épais que l'on trouve sur les Blobs. Il s'agit d'un matériau commun utilisé chez les forgerons élémentaires.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 194,
+              "name": "Guide de l'Élégance",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance évite l'arrogance. Les élégants sont toujours humbles, et ce n'est qu'en rejetant la vanité et la négligence que l'on voit la véritable beauté, même dans l'apparence la plus inesthétique.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Elegance_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 398,
+              "name": "Mucus de Blob",
+              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 194,
+              "name": "Guide de l'Élégance",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance évite l'arrogance. Les élégants sont toujours humbles, et ce n'est qu'en rejetant la vanité et la négligence que l'on voit la véritable beauté, même dans l'apparence la plus inesthétique.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Elegance_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 398,
+              "name": "Mucus de Blob",
+              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 194,
+              "name": "Guide de l'Élégance",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance évite l'arrogance. Les élégants sont toujours humbles, et ce n'est qu'en rejetant la vanité et la négligence que l'on voit la véritable beauté, même dans l'apparence la plus inesthétique.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Elegance_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 398,
+              "name": "Mucus de Blob",
+              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 194,
+              "name": "Guide de l'Élégance",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance évite l'arrogance. Les élégants sont toujours humbles, et ce n'est qu'en rejetant la vanité et la négligence que l'on voit la véritable beauté, même dans l'apparence la plus inesthétique.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Elegance_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 398,
+              "name": "Mucus de Blob",
+              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 193,
+              "name": "Philosophie de l'Élégance",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance abhorre la vulgarité, et l'élégant marche toujours seul. Résister aux vils maux, ne pas se laisser émouvoir par l'amour de la médiocrité, ne jamais se réfugier dans la basse ignorance, voilà comment on perçoit l'abîme entre l'élégant et le méprisant.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Elegance_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 397,
+              "name": "Essence de Blob",
+              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1080,
+              "name": "Cœur de cendre",
+              "desc": "Un fragment déformé qui renferme un immense pouvoir. Vous l'avez obtenu après avoir vaincu Signora au summum de sa puissance.<br/>Les larmes ne peuvent éteindre les flammes. Tristesse et rage, aussi brûlantes que la fonte, coulent dans ses veines et s'évacuent par ses glandes lacrymales.<br/>Le premier Fatui l'a découverte avant que son cœur ne soit détruit par les flammes éternelles. Il fit d'elle une alliée, car il avait compris que seules une haine et une obstination plus féroces pouvaient éteindre le feu qui la dévorait.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ashen Heart_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 193,
+              "name": "Philosophie de l'Élégance",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance abhorre la vulgarité, et l'élégant marche toujours seul. Résister aux vils maux, ne pas se laisser émouvoir par l'amour de la médiocrité, ne jamais se réfugier dans la basse ignorance, voilà comment on perçoit l'abîme entre l'élégant et le méprisant.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Elegance_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 397,
+              "name": "Essence de Blob",
+              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1080,
+              "name": "Cœur de cendre",
+              "desc": "Un fragment déformé qui renferme un immense pouvoir. Vous l'avez obtenu après avoir vaincu Signora au summum de sa puissance.<br/>Les larmes ne peuvent éteindre les flammes. Tristesse et rage, aussi brûlantes que la fonte, coulent dans ses veines et s'évacuent par ses glandes lacrymales.<br/>Le premier Fatui l'a découverte avant que son cœur ne soit détruit par les flammes éternelles. Il fit d'elle une alliée, car il avait compris que seules une haine et une obstination plus féroces pouvaient éteindre le feu qui la dévorait.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ashen Heart_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 193,
+              "name": "Philosophie de l'Élégance",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance abhorre la vulgarité, et l'élégant marche toujours seul. Résister aux vils maux, ne pas se laisser émouvoir par l'amour de la médiocrité, ne jamais se réfugier dans la basse ignorance, voilà comment on perçoit l'abîme entre l'élégant et le méprisant.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Elegance_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 397,
+              "name": "Essence de Blob",
+              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1080,
+              "name": "Cœur de cendre",
+              "desc": "Un fragment déformé qui renferme un immense pouvoir. Vous l'avez obtenu après avoir vaincu Signora au summum de sa puissance.<br/>Les larmes ne peuvent éteindre les flammes. Tristesse et rage, aussi brûlantes que la fonte, coulent dans ses veines et s'évacuent par ses glandes lacrymales.<br/>Le premier Fatui l'a découverte avant que son cœur ne soit détruit par les flammes éternelles. Il fit d'elle une alliée, car il avait compris que seules une haine et une obstination plus féroces pouvaient éteindre le feu qui la dévorait.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ashen Heart_icon.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 193,
+              "name": "Philosophie de l'Élégance",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance abhorre la vulgarité, et l'élégant marche toujours seul. Résister aux vils maux, ne pas se laisser émouvoir par l'amour de la médiocrité, ne jamais se réfugier dans la basse ignorance, voilà comment on perçoit l'abîme entre l'élégant et le méprisant.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Elegance_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 397,
+              "name": "Essence de Blob",
+              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1080,
+              "name": "Cœur de cendre",
+              "desc": "Un fragment déformé qui renferme un immense pouvoir. Vous l'avez obtenu après avoir vaincu Signora au summum de sa puissance.<br/>Les larmes ne peuvent éteindre les flammes. Tristesse et rage, aussi brûlantes que la fonte, coulent dans ses veines et s'évacuent par ses glandes lacrymales.<br/>Le premier Fatui l'a découverte avant que son cœur ne soit détruit par les flammes éternelles. Il fit d'elle une alliée, car il avait compris que seules une haine et une obstination plus féroces pouvaient éteindre le feu qui la dévorait.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ashen Heart_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "Couronne de la sagesse",
+              "desc": "Matériau d'amélioration d'aptitude rare.<br/>Un support utilisé dans les temps anciens pour conserver et transmettre le savoir. Bien que de nos jours les connaissances se transmettent de différentes manières, autant orales qu'écrites, cet artéfact n'a pas perdu la moindre once de son pouvoir d'antan.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/battle_talent_0/battle_talent_0.gif"
+      },
+      {
+        "key": "Zetsugi anti-démon : Catapultage d'akaushi",
+        "title": "Zetsugi anti-démon : Catapultage d'akaushi",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/battle_talent_1/battle_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Projette Ushi, le jeune taureau akaushi et membre auxiliaire du gang Arataki, pour infliger des <color=#ffe699>DGT Géo</color> ! Lorsqu'Ushi touche un ennemi, il accorde à Arataki Itto 1 cumul de Mégaforce superlative.\nUshi reste ensuite sur le terrain et apporte son aide des façons suivantes :\n· Il nargue les ennemis proches et attire leur attention.\n· Il hérite d'un pourcentage des PV max d'Arataki Itto.\n· Lorsqu'il subit des DGT, il accorde à Arataki Itto 1 cumul de Mégaforce superlative. Un cumul peut être obtenu une fois toutes les 2 s de cette manière.\n· Si ses PV sont épuisés ou si la durée arrive à terme, il s'enfuit tout en accordant à Arataki Itto 1 cumul de Mégaforce superlative.\n<color=#ffd780>Appui long</color>\nAjuste la direction du jet.\nUshi est considéré comme une <color=#ffe699>construction Géo</color> , et Arataki Itto ne peut générer qu'un seul Ushi à la fois.\nLe nom de cette technique est dérivé d'« Onibudo », un roman écrit par Junkichi. Cependant, l'appeler « Zetsugi anti-oni » constituerait probablement une violation de droits d'auteur... Sans parler du fait qu'Itto lui-même est un Oni..."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Niv.",
+            "values": [
+              "Niv.1",
+              "Niv.2",
+              "Niv.3",
+              "Niv.4",
+              "Niv.5",
+              "Niv.6",
+              "Niv.7",
+              "Niv.8",
+              "Niv.9",
+              "Niv.10",
+              "Niv.11",
+              "Niv.12",
+              "Niv.13",
+              "Niv.14"
+            ]
+          },
+          {
+            "key": "DGT compétence",
+            "values": [
+              "307%",
+              "330%",
+              "353%",
+              "384%",
+              "407%",
+              "430%",
+              "461%",
+              "492%",
+              "522%",
+              "553%",
+              "584%",
+              "614%",
+              "653%"
+            ]
+          },
+          {
+            "key": "PV hérités",
+            "values": [
+              "100%",
+              "100%",
+              "100%",
+              "100%",
+              "100%",
+              "100%",
+              "100%",
+              "100%",
+              "100%",
+              "100%",
+              "100%",
+              "100%",
+              "100%"
+            ]
+          },
+          {
+            "key": "Durée",
+            "values": [
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s"
+            ]
+          },
+          {
+            "key": "Temps de recharge",
+            "values": [
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/battle_talent_1/battle_talent_1.gif"
+      },
+      {
+        "key": "Roi oni maléfique : Avènement d'Itto",
+        "title": "Roi oni maléfique : Avènement d'Itto",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/battle_talent_2/battle_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Il est temps de montrer la puissance du gang Arataki ! Itto laisse émerger son Roi oni courroucé intérieur pendant un certain temps, utilisant son kanabo de Roi oni au combat.\nLes caractéristiques suivantes s'appliquent :\n· Les attaques normales, chargées et plongeantes sont imprégnées de <color=#ffe699>DGT Géo</color> ne pouvant pas être enchantés.\n· La VIT d'attaque des attaques normales d'Itto augmente, et son ATQ sera augmentée en fonction de sa DÉF.\n· Lorsque le 1er ou 3e coup de son attaque normale touche un ennemi, Arataki Itto obtient 1 cumul de Mégaforce superlative.\n· Les RÉS élémentaires et physique d'Arataki Itto diminuent de 20 %.\nLes effets du Roi oni courroucé prennent fin lorsqu'Arataki Itto quitte le champ de bataille.\nC'est la meilleure super technique ultime d'Itto... Enfin, d'après lui... Il est inutile pour Arataki Itto d'imiter qui que ce soit d'autre pour devenir plus fort, car il est sans conteste l'Oni le plus fort et le plus terrible de tout le pays. En gros, Itto ne prend exemple que sur lui-même !\nShouta trouve que c'est super cool."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Niv.",
+            "values": [
+              "Niv.1",
+              "Niv.2",
+              "Niv.3",
+              "Niv.4",
+              "Niv.5",
+              "Niv.6",
+              "Niv.7",
+              "Niv.8",
+              "Niv.9",
+              "Niv.10",
+              "Niv.11",
+              "Niv.12",
+              "Niv.13",
+              "Niv.14"
+            ]
+          },
+          {
+            "key": "Bonus ATQ",
+            "values": [
+              "57.6% DÉF",
+              "61.9% DÉF",
+              "66.2% DÉF",
+              "72% DÉF",
+              "76.3% DÉF",
+              "80.6% DÉF",
+              "86.4% DÉF",
+              "92.2% DÉF",
+              "97.9% DÉF",
+              "103.7% DÉF",
+              "109.4% DÉF",
+              "115.2% DÉF",
+              "122.4% DÉF",
+              "129.6% DÉF"
+            ]
+          },
+          {
+            "key": "Bonus VIT d'attaque",
+            "values": [
+              "10%",
+              "10%",
+              "10%",
+              "10%",
+              "10%",
+              "10%",
+              "10%",
+              "10%",
+              "10%",
+              "10%",
+              "10%",
+              "10%",
+              "10%",
+              "10%"
+            ]
+          },
+          {
+            "key": "Durée",
+            "values": [
+              "11 s",
+              "11 s",
+              "11 s",
+              "11 s",
+              "11 s",
+              "11 s",
+              "11 s",
+              "11 s",
+              "11 s",
+              "11 s",
+              "11 s",
+              "11 s",
+              "11 s",
+              "11 s"
+            ]
+          },
+          {
+            "key": "Temps de recharge",
+            "values": [
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s"
+            ]
+          },
+          {
+            "key": "Énergie élémentaire",
+            "values": [
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/battle_talent_2/battle_talent_2.gif"
+      },
+      {
+        "key": "Arataki au top",
+        "title": "Arataki au top",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/05/61724976/1a1b647791e819ea9aaee91b614cdda6_8163362480891651334.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Lorsqu'Arataki Itto effectue une série de kesa giri d'Arataki, il obtient les effets suivants :\n· Chaque frappe augmente la VIT d'attaque de la prochaine de 10 %. La VIT d'attaque peut être augmentée de 30 % max de cette manière.\n· Sa RÉS à l'interruption augmente.\nCes effets prennent fin lorsqu'Arataki Itto arrête d'utiliser cette série d'attaques."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Lignée de l'Oni cramoisi",
+        "title": "Lignée de l'Oni cramoisi",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/05/61724976/03221d74e8d172087198a57b0b4956f3_6175952863852888172.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Les DGT infligés par les kesa giri d'Arataki augmentent d'une valeur équivalant à 35 % de la DÉF d'Arataki Itto."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Castor au rapport",
+        "title": "Castor au rapport",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/05/61724976/3fee6ed005481e005e3aeb767fc33257_1218763952949023237.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Lorsqu'un personnage de l'équipe utilise des attaques pour obtenir du bois d'un arbre, il a 25 % de chances d'obtenir un morceau de bois supplémentaire."
+          }
+        ],
+        "attributes": null
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "Nom",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Arataki Itto</color>"
+          }
+        ]
+      },
+      {
+        "key": "Anniversaire",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>1/6</color>"
+          }
+        ]
+      },
+      {
+        "key": "Constellation",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Taurus Iracundus</color>"
+          }
+        ]
+      },
+      {
+        "key": "Titre",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Héros de Hanamizaka</color>"
+          }
+        ]
+      },
+      {
+        "key": "Œil divin",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Géo</color>"
+          }
+        ]
+      },
+      {
+        "key": "Affiliation",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Gang Arataki</color>"
+          }
+        ]
+      },
+      {
+        "key": "Voix chinoise",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>刘照坤 (Liu Zhaokun)</color>"
+          }
+        ]
+      },
+      {
+        "key": "Voix anglaise",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Max Mittelman</color>"
+          }
+        ]
+      },
+      {
+        "key": "Voix japonaise",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>西川貴教 (NISHIKAWA Takanori)</color>"
+          }
+        ]
+      },
+      {
+        "key": "Voix coréenne",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>송준석 (Song Jun-seok)</color>"
+          }
+        ]
+      },
+      {
+        "key": "Plat Spécial",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 707,
+            "name": "Voie du puissant",
+            "desc": "Spécialité culinaire d'Arataki Itto. Il insiste sur le fait qu'il s'agisse d'un plat inégalé lorsqu'il est préparé par « Arataki Itto, le plus fin des gourmets » en personne. Que vous soyez debout, assis ou couché, votre ventre se remplira d'un coup et vous aurez l'impression d'être en voie de devenir le deuxième être le plus puissant au monde... Quel gars génial.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Way of the Strong_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Carte du Personnage",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3714,
+            "name": "Arataki Itto",
+            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Arataki Itto «&nbsp;Héros de Hanamizaka&nbsp;»</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">«&nbsp;Le champion imbattable des cartes et des paris&nbsp;»</span></p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/18/35653081/d84e70d6e7e547982240bbd1da5a0b64_1670264352787581358.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Ajout à la version",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>2.3</color>"
           }
         ]
       }
@@ -1609,1208 +2811,6 @@
       {
         "type": "RichText",
         "text": "<color=#ffffffa6>augmentent l’</color> <color=#ffd780>ATQ</color> <color=#ffffffa6>de 18 %</color> <color=#000000>.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#adadad>Cette combinaison d’artéfacts permet à Itto d’obtenir deux statistiques bonus qui lui sont profitables en toutes circonstances.</color>"
-      }
-    ],
-    "voice": [
-      {
-        "title": "Première rencontre...",
-        "desc": "Le patron du gang Arataki, c'est bibi, et tout le monde connaît mon nom... Enfin, mes noms : « l'unique et inimitable » Arataki, Itto « l'Oni roi du sumo », Arataki « la fierté des Oni », Itto « le gladiateur scarabuto », Arataki « le champion imbattable des cartes et des paris », Itto « Il perd aux jeux, mais ne l'admet pas de sitôt »... Ce sont les titres que j'utilise le plus souvent. Tu peux choisir celui que tu veux pour t'adresser à moi. Ne te gêne pas, héhé..."
-      },
-      {
-        "title": "Bavardage - Itto dans la place",
-        "desc": "Et me voilà, Arataki Itto, le « numéro un », en chair et en os ! Héhéhé... *tousse* ..."
-      },
-      {
-        "title": "Bavardage - Encas",
-        "desc": "Quelle est la meilleure saveur au monde ? Le goût de la victoire bien sûr. C'est pourquoi je ne dépense jamais un mora pour mon casse-croûte, je le remporte toujours à la loyale... Et ouais."
-      },
-      {
-        "title": "Bavardage - Combat de scarabées",
-        "desc": "Ne sous-estime pas les scarabutos, ils peuvent être durs à cuire ! Tu sais ce que ce scarabuto mange au petit-déj' ? De la sueur et des larmes ! C'est comme ça qu'il devient aussi costaud. On devrait tous s'inspirer de lui !"
-      },
-      {
-        "title": "Quand il pleut...",
-        "desc": "Pff, les vrais mecs n'utilisent pas de parapluie ! Oups, on dirait que ça va flotter sévère... Qu'est-ce que t'attends ? File ton parapluie, vite !"
-      },
-      {
-        "title": "Quand le tonnerre gronde...",
-        "desc": "Hé ! Shogun Raiden, c'est vous ? Eh bien, écoutez-moi, vous n'êtes pas mon patron ! Vous allez faire quoi ? Allez-y, foudroyez-moi si vous en êtes capable !"
-      },
-      {
-        "title": "Quand il neige...",
-        "desc": "Et c'est parti pour une bataille de boules de neige ! Tu ne gagneras jamais contre moi, hahaha... At... Atchoum ! *snif* ..."
-      },
-      {
-        "title": "Il fait bon dehors...",
-        "desc": "Il fait beau aujourd'hui. C'est une journée idéale pour sortir son scarabuto et l'entraîner au combat. Allez, petit, montre-moi ce que tu sais faire."
-      },
-      {
-        "title": "Le vent souffle fort...",
-        "desc": "Un homme doit toujours faire attention à sa coupe de cheveux, même par temps de tempête. C'est encore plus vrai quand tu as du style comme moi. La classe !"
-      },
-      {
-        "title": "Au réveil...",
-        "desc": "Et c'est une nouvelle journée qui commence. J'ai plus un mora, mais bon, j'ai un peu la flemme de travailler. Allons voir s'il n'y a pas des jeux sympas aujourd'hui..."
-      },
-      {
-        "title": "À l'heure du déjeuner...",
-        "desc": "C'était un bien bon repas, mais maintenant j'aimerais me dégourdir les pattes. Voyons voir... Hanamizaka ? Non, j'y vais tout le temps. La Commission administrative ? Si c'est pour se tenir à carreau, non merci. Allez, on va à Ritou !"
-      },
-      {
-        "title": "Le soir...",
-        "desc": "Chut ! Écoute, il y a quelqu'un qui parle... AAH ! C'est un fantôme, COURS ! Hahaha, je t'ai bien eu/eue, tu aurais dû voir ta tête !"
-      },
-      {
-        "title": "La nuit...",
-        "desc": "Va te coucher si tu as sommeil. Ne te force pas à rester éveillé/ée. Quoi, moi ? Tss, je peux dormir même avec les yeux ouverts !"
-      },
-      {
-        "title": "À propos d'Itto - Trouver un vrai travail",
-        "desc": "Alors comme ça, ils disent que je suis incapable d'avoir un vrai travail, hein ? Hahahaha ! N'importe quoi ! Je suis un vrai voyou, moi. Tu as déjà vu un voyou avec un travail ? Oh, désolé, je m'emporte. Mais ne t'inquiète pas, je ne suis pas un voleur ni un cambrioleur. Quand je suis vraiment en galère, je fais des petits boulots pour gagner mon pain, comme faire de la manutention, livrer le courrier, ou aider les nouveaux commerces à attirer des clients dans la rue... C'est largement suffisant pour gagner ma journée, héhé."
-      },
-      {
-        "title": "À propos d'Itto - Oni",
-        "desc": "Les Oni ont traversé beaucoup d'épreuves, et pourtant, on a survécu jusqu'à maintenant en plus de pouvoir vivre en paix avec les humains. Mais c'est vraiment dommage qu'il y ait encore autant de gens qui ont des préjugés sur nous. Que ça change ? Bien sûr qu'il faut que ça change. Mais j'irais certainement pas leur lécher les bottes juste pour leur plaire ! Je gagnerai le respect des humains à ma propre manière !"
-      },
-      {
-        "title": "À propos de nous - Coopération",
-        "desc": "Je te vois souvent courir à gauche et à droite pour aider les gens. J'ai l'impression que tu ne fais pas ça que pour les moras, je me trompe ? Non, toi, t'es quelqu'un qui sait s'occuper des autres. Je sais de quoi je parle, parce que moi aussi, je sais m'occuper des gens. C'est la famille, tu vois ? Du coup, on va faire une super équipe, toi et moi !"
-      },
-      {
-        "title": "À propos de nous - Réaction",
-        "desc": "Je vais te dire un truc : j'ai toujours eu du respect pour toi. Bien sûr, j'adorerais que tu restes avec nous au gang Arataki. Je t'avais même trouvé un blase : « Numéro deux ». Comme ça, toi et moi, on aurait été les « Numéros un et deux », Hahaha ! *soupir* Trêve de plaisanteries, je sais que tu as des choses plus importantes à faire. Donc, je ne te retiens pas. Mais rappelle-toi que le gang Arataki sera toujours là pour toi."
-      },
-      {
-        "title": "À propos de l'œil divin...",
-        "desc": "Grr, ne m'en parle pas. Rien que le fait d'y penser fait bouillir mon sang ! Comme si le fait de voler les yeux divins des gens n'était pas déjà un crime assez odieux, l'armée de la Shogun s'est amusée à les coller sur une statue de manière complètement désordonnée ! Tss, quiconque avec un peu de jugeote aurait placé les yeux divins des gens importants tout en haut ! Alors qui est l'imbécile qui a mis le mien tout en bas ?"
-      },
-      {
-        "title": "Quelque chose à partager - Hina",
-        "desc": "Si quelque chose te préoccupe, tu peux essayer d'écrire à la rubrique des conseils du magazine « C'est la vie ». Mademoiselle Hina parvient toujours à trouver des réponses qui apportent un peu de chaleur au cœur de ses lecteurs. Tiens, regarde-moi par exemple : j'étais une âme perdue, mais plus maintenant, et c'est grâce à elle. Oh, ça me rappelle que j'ai réussi à m'inscrire à l'une de ses prochaines rencontres de fans. J'ai tellement hâte !"
-      },
-      {
-        "title": "Quelque chose à partager - Cornes",
-        "desc": "Dis-moi, est-ce qu'on finit par se lasser de mes cornes à force de les regarder ? Parce que je pensais à changer un peu de style en les colorant aux couleurs de l'arc-en-ciel et en y attachant quelques lucioles. J'aurais trop la classe comme ça, tu ne trouves pas ? Bon sang, je suis un vrai génie. Je vais dire aux gars de la bande de travailler là-dessus tout de suite."
-      },
-      {
-        "title": "Détails intéressants...",
-        "desc": "Tu veux connaître le vrai secret pour attraper des scarabutos ? Ce sont tes yeux. Tu dois t'assurer de prendre soin de tes yeux et il faut que ta vue soit aussi aiguisée que celle d'un faucon. Crois-moi, c'est quand tu es au milieu d'un orage, que la pluie tombe et que le vent te souffle dans la figure qu'il faut faire le plus attention... Parce qu'à ce moment-là, les melons lavandes et les scarabutos commencent à se ressembler... J'en sais quelque chose..."
-      },
-      {
-        "title": "À propos de Thomas...",
-        "desc": "Les gars du gang m'ont dit qu'il avait soi-disant été la « star » de la cérémonie de saisie. C'est une blague ou quoi ? Comment ça se fait qu'il ait eu droit à une cérémonie juste pour lui tout seul ? On ne va pas me dire que la saisie du 100e œil divin était plus importante que les 99 qui ont précédé ! Non, ça ne peut pas être ça... Parce que si c'était vrai, c'est moi qu'ils auraient choisi comme 100e œil divin."
-      },
-      {
-        "title": "À propos de Kamisato Ayato...",
-        "desc": "Hahaha, je regrette de ne pas avoir rencontré Ayato plus tôt. Il m'a vraiment appris quelque chose : « On peut insuffler un esprit combattif même au plus fragile des insectes ». Je l'ai vraiment pris à cœur. Sans ces mots de sagesse, je suis presque sûr que j'aurais abandonné le combat de scarabutos après avoir perdu pour la 780e fois... Comme on dit, seul un homme peut comprendre un autre homme. Lui et moi, on est sur la même longueur d'onde, que ce soit pour jouer aux cartes ou faire des combats de scarabutos."
-      },
-      {
-        "title": "À propos de Yoimiya...",
-        "desc": "Pff, elle est toujours en train de se pavaner avec ses feux d'artifice et ses jouets pour plaire aux enfants. Y'en a marre ! Elle n'a pas le droit de me voler la vedette, c'est moi que les enfants préfèrent ici ! Tu as intérêt à être de mon côté ! Comment ? Tu n'es pas un/une enfant ? Et alors ? Tous ceux qui sont plus petits que moi sont des gamins."
-      },
-      {
-        "title": "À propos de Kaedehara Kazuha...",
-        "desc": "La rumeur veut qu'il ait bloqué le Kendo d'insouciance après que tu t'es échappé/échappée du Tenshukaku. Si c'est vrai, alors c'est complètement dément ! Comment a-t-il fait ? Hé, quand tu y penses, il est issu d'un clan disparu, et moi aussi. Donc lui et moi, on est pareils au final, haha. Donc, la prochaine fois qu'on s'en prend à toi, c'est moi qui viendrai bloquer l'attaque !"
-      },
-      {
-        "title": "À propos de la Shogun Raiden...",
-        "desc": "Pendant le décret de saisie, elle a dû envoyer sa meilleure Tengu pour me prendre mon œil divin. Ça veut bien dire que je ne suis pas n'importe qui pour elle ! Mais bon, vu qu'elle a décidé d'abroger le décret, je n'ai pas de rancune envers elle. J'espère qu'elle a bien retenu la leçon et qu'il n'y aura pas de prochaine fois. Sinon, je vais lui donner encore plus de fil à retordre !"
-      },
-      {
-        "title": "À propos de la dame aux oreilles de renard...",
-        "desc": "C'est moi qui ai gagné le concours de kitsune ramen. Même avec du tofu frit dans le plat, je l'ai battue à plate couture ! Bon, après ça, j'ai été cloué au lit pendant un bon mois... Mais je préfère être un gagnant malade qu'un perdant en bonne santé ! Alors qu'elle, elle a dû payer une note de 32 bols de ramen. C'est trop la honte ! Hahahaha..."
-      },
-      {
-        "title": "À propos de Kujou Sara...",
-        "desc": "Bon, d'accord... Elle m'a battu pendant le décret de saisie. Mais il n'y a pas de quoi avoir honte ! Il faut savoir perdre et reconnaître ses faiblesses. C'est ça, être un homme, un vrai ! Alors qu'elle, une guerrière Tengu, n'ose même pas accepter de participer à un duel de revanche ! C'est juste un duel de sumo dans la rue, elle a peur de quoi... Si elle continue de refuser le combat, je vais arrêter de l'appeler « Tengu de Kujou » et la surnommer « Poule mouillée de Kujou » !"
-      },
-      {
-        "title": "À propos de Gorou...",
-        "desc": "Ah oui, tu parles du chien général de la Résistance... Je dois dire que malgré sa petite taille, il a une sacrée force de caractère ! En plus, il dégage une aura familière assez chaleureuse. C'est bizarre, parce que je ne l'ai vu qu'une ou deux fois..."
-      },
-      {
-        "title": "À propos de Kuki Shinobu...",
-        "desc": "C'est moi le chef du gang, et personne ne remet ça en question ! Sauf Shinobu... Elle veut toujours me contredire ! Et ce n'est pas tout, elle s'amuse aussi à rendre tous les objets du butin de guerre que j'ai durement gagné à leurs propriétaires originels ! Mais bon, elle vient me sortir de prison à chaque fois et m'a aidé à me sortir d'une situation épineuse plus d'une fois, donc je laisse couler... À vrai dire, je n'ai pas envie de l'énerver, parce qu'elle serait bien capable de transformer ma vie en enfer !"
-      },
-      {
-        "title": "À propos de Sayu...",
-        "desc": "Je lui ai juste mis une petite tape sur la tête quand elle ne regardait pas, et maintenant elle me bondit dessus pour m'attaquer dès qu'elle me voit... Mais que veux-tu, les Tanukis sont si mignons ! Personne d'autre n'aurait résisté à toucher sa tête à ma place. Ah oui aussi... Si tu as le malheur de lui dire : « hé, la Tanuki » pour l'appeler, elle t'attaque. C'est quoi son problème ? J'ai pourtant pas rêvé. C'est une Tanuki, pas une Kitsune..."
-      },
-      {
-        "title": "Connaître Arataki Itto (1)",
-        "desc": "Je sais à quoi tu penses : « Comment ce type a-t-il pu devenir le chef du gang Arataki si tout ce qu'il sait faire, c'est participer à des combats de scarabées et à des jeux de cartes ? ». Tu as raison. Ces trucs-là, ce sont des jeux pour enfant. Tu sais quelles compétences m'ont permis d'arriver là où je suis ? Manger des ramen à l'envers, dormir les yeux ouverts, jouer de l'harmonica avec mon nez et écraser des mouches avec mes cheveux. J'espère avoir éclairci tes doutes."
-      },
-      {
-        "title": "Connaître Arataki Itto (2)",
-        "desc": "Les habitants d'Inazuma pratiquent un rituel à chaque fois qu'il y a une fête, qu'ils déménagent, qu'ils tombent malades, ou pour d'autres occasions, rituel au cours duquel ils lancent des haricots autour d'eux et chantent : « Les haricots du bonheur tombent, les Oni de la ville succombent ! Le bonheur est là, les Oni ne passeront pas. Le bonheur est là, les Oni ne passeront pas ! ». Grr, rien que d'entendre cette chanson, j'en ai la nausée ! Mais le pire, ce sont les rues pleines de haricots... Avec mon allergie ? Je dois mettre un terme à ça, au nom de tous les Oni. Nous sommes innocents ! Arrêtez de vous protéger de nous et de nous chasser chaque fois qu'il vous arrive un truc !"
-      },
-      {
-        "title": "Connaître Arataki Itto (3)",
-        "desc": "Pour éliminer les préjugés qu'ont les humains vis-à-vis des Oni, j'ai demandé au gang de prendre une photo de moi qui montre mon côté sympa avec un Daguerréotype et de la coller sur un panneau d'affichage de la Cité d'Inazuma. Et tu sais ce qui s'est passé ? Des idiots se sont amusés à gribouiller sur mon magnifique portrait ! Mais le pire dans tout ça, c'est que j'ai été accusé par la Commission administrative de perturber l'ordre public et par la Commission culturelle de créer une mauvaise ambiance au sein de la ville. Même les sbires de la Commission économique sont venus pour me demander de payer une soi-disant « taxe sur la publicité »... Pff, ils ne savent même pas faire la différence entre un vrai citoyen honnête et un malfrat !"
-      },
-      {
-        "title": "Connaître Arataki Itto (4)",
-        "desc": "Au sein du gang Arataki, nous sommes fiers d'accepter ceux qui ont souffert de l'adversité au cours de leur vie. N'écoute pas ceux qui nous traitent de bizarres ou de fous... Chaque membre est comme un membre de ma famille, et tout le monde a la même façon de penser dans le gang. Quoi qu'il arrive, le gang Arataki restera soudé, pour le meilleur et pour le pire !"
-      },
-      {
-        "title": "Connaître Arataki Itto (5)",
-        "desc": "J'ai beaucoup de respect pour les Oni azurins qui se sont sacrifiés pour permettre aux Oni cramoisis de continuer à vivre... Mais je suis totalement contre ce principe. Personne ne devrait avoir à sacrifier les siens pour que les autres aient un meilleur avenir, point final. Ce n'est un meilleur avenir que si c'est un meilleur avenir pour tout le monde ! Il faut que tout le monde travaille ensemble, et non pas que chacun reste de son côté et décide de se sacrifier tout seul pour avoir l'air cool. M'enfin bon, je suppose qu'on ne peut pas changer le passé et que ce qui est fait est fait. Mais, à partir d'aujourd'hui, il n'y aura plus de sacrifices tant que je serai là ! Si tu veux te sacrifier, tu devras d'abord avoir affaire à moi !"
-      },
-      {
-        "title": "Les loisirs d'Itto...",
-        "desc": "Les combats de scarabées, les cartes à collectionner, la toupie, le kendama, cache-cache... Je sais jouer à tous les jeux ! Alors, tu veux jouer ? Prépare-toi à perdre misérablement, hahahaha !"
-      },
-      {
-        "title": "Les problèmes d'Itto...",
-        "desc": "Mamie Oni n'est pas une Oni du tout... En fait, c'est l'humaine la plus gentille du monde. Son surnom, c'est parce qu'elle m'a recueilli quand j'étais enfant. Je m'en fiche de ce que les autres pensent, mais j'aimerais que les gens arrêtent de l'embêter à cause de moi."
-      },
-      {
-        "title": "Plats préférés...",
-        "desc": "Il n'y a rien de mieux au monde que les sucettes. Et ce n'est pas seulement qu'elles ont bon goût ! Juste le fait d'avoir le bâtonnet dans la bouche me donne un air de dur à cuire. Tiens, essaie pour voir !"
-      },
-      {
-        "title": "Plats détestés...",
-        "desc": "Je suis un Oni, donc il n'y a rien que je déteste plus que les haricots, peu importe leur taille ou leur couleur ! Le simple fait de les toucher déclenche mes allergies, alors ne parlons même pas d'en manger... Vivement que cette coutume de jeter des haricots partout disparaisse une bonne fois pour toutes !"
-      },
-      {
-        "title": "Anniversaire...",
-        "desc": "Aujourd'hui est un jour important ! J'ai dû envoyer les gars du gang autre part, sinon ils m'auraient accusé de favoritisme. Tiens, regarde, je t'ai trouvé un super cadeau pour ton anniversaire : un scarabuto de qualité supérieure ! Ça m'a pris trois journées et trois nuits entières pour le capturer. Mais ce n'est pas tout, je t'offre aussi cette carte que j'ai réussi à gagner en 300 matchs à peine ! Et en plus de ça, tu as le droit à une chanson interprétée par nul autre que moi-même ! Ahem... Joyeux anniversaire, joyeux anniversaire, joyeux aaanniversaireuh voyageur/voyageuse, joyeuuux anniversaire !"
-      },
-      {
-        "title": "Affinité faible",
-        "desc": "Ah, j'aime cette sensation ! Je deviens plus fort. C'est bien, ça !"
-      },
-      {
-        "title": "Affinité moyenne",
-        "desc": "Ouais, quelle force ! Je vais gagner encore plus souvent aux jeux avec ça !"
-      },
-      {
-        "title": "Affinité élevée",
-        "desc": "Je me sens si puissant ! Tu veux me voir briser un rocher ?"
-      },
-      {
-        "title": "Affinité max",
-        "desc": "On dirait bien que « Numéro un » n'est plus simplement un surnom ! Mais ce n'est pas parce que j'ai atteint le sommet que je vais oublier tout ce que tu as fait pour moi, compris ? Tu peux toujours compter sur moi à tout moment."
-      },
-      {
-        "title": "Compétence élémentaire (1)",
-        "desc": "C'est parti !"
-      },
-      {
-        "title": "Compétence élémentaire (2)",
-        "desc": "Et bam !"
-      },
-      {
-        "title": "Compétence élémentaire (3)",
-        "desc": "Très bien !"
-      },
-      {
-        "title": "Déchaînement élémentaire (1)",
-        "desc": "Un Oni en approche !"
-      },
-      {
-        "title": "Déchaînement élémentaire (2)",
-        "desc": "Qui veut goûter à ça ?"
-      },
-      {
-        "title": "Déchaînement élémentaire (3)",
-        "desc": "Plein les mirettes !"
-      },
-      {
-        "title": "Ouverture de coffre (1)",
-        "desc": "Hoho, de nouveaux joujous !"
-      },
-      {
-        "title": "Ouverture de coffre (2)",
-        "desc": "C'est grâce à ma chance légendaire, ça !"
-      },
-      {
-        "title": "Ouverture de coffre (3)",
-        "desc": "Avec ça, plus besoin de bosser pendant au moins trois jours."
-      },
-      {
-        "title": "Début de sprint (1)",
-        "desc": "Tu ne m'attraperas pas !"
-      },
-      {
-        "title": "PV faibles (1)",
-        "desc": "Ne sous-estimez jamais un Oni !"
-      },
-      {
-        "title": "PV faibles (2)",
-        "desc": "Je ne suis pas en train de perdre ! C'est fait exprès..."
-      },
-      {
-        "title": "PV faibles (3)",
-        "desc": "Rien de plus qu'une égratignure !"
-      },
-      {
-        "title": "K.O. (1)",
-        "desc": "On se reverra à la revanche..."
-      },
-      {
-        "title": "K.O. (2)",
-        "desc": "Il faut savoir perdre... avec panache..."
-      },
-      {
-        "title": "K.O. (3)",
-        "desc": "Désolé, les gars... J'ai pas été à la hauteur..."
-      },
-      {
-        "title": "Attaque légère subie (1)",
-        "desc": "Pour qui tu te prends !"
-      },
-      {
-        "title": "Attaque légère subie (2)",
-        "desc": "C'est tout ce que t'as ?"
-      },
-      {
-        "title": "Attaque puissante subie (1)",
-        "desc": "Aïe, je l'ai sentie passer !"
-      },
-      {
-        "title": "Attaque puissante subie (2)",
-        "desc": "Hé ! J'étais pas prêt !"
-      },
-      {
-        "title": "Ajout dans l'équipe (1)",
-        "desc": "Du balai ! Itto est dans la place !"
-      },
-      {
-        "title": "Ajout dans l'équipe (2)",
-        "desc": "Votre sauveur est là !"
-      },
-      {
-        "title": "Ajout dans l'équipe (3)",
-        "desc": "Et la foule est en délire !"
-      },
-      {
-        "title": "Cadeau reçu (1)",
-        "desc": "Hahahahahaha ! Ça fait trois ans que j'ai pas mangé un plat aussi délicieux !"
-      },
-      {
-        "title": "Cadeau reçu (2)",
-        "desc": "Bien ! Je n'oublierai pas ton geste de révérence envers moi aujourd'hui."
-      },
-      {
-        "title": "Cadeau reçu (3)",
-        "desc": "Hé, tu cherches à m'empoisonner ou quoi ?! Ah..."
-      }
-    ],
-    "talent": [
-      {
-        "key": "Attaque normale : Légende de la baston",
-        "title": "Attaque normale : Légende de la baston",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/battle_talent_0/battle_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Attaque normale</color>\nEnchaîne jusqu'à 4 coups d'épée.\nLorsque son 2e et 4e coup touchent un ennemi, Itto gagne respectivement 1 et 2 cumuls de Mégaforce superlative.\nItto peut détenir un maximum de 5 cumuls de Mégaforce superlative, et chaque fois que cet effet se déclenche, la durée des cumuls en sa possession est réinitialisée.\nDe plus, l'enchaînement d'attaques normales d'Itto ne sera pas réinitialisé pendant une courte période après Zetsugi anti-démon : Catapultage d'akaushi ou l'initiation d'un sprint.\n<color=#ffd780>Attaque chargée</color>\nLorsque vous maintenez appuyé pour lancer une attaque chargée tout en possédant des cumuls de Mégaforce superlative, vous pouvez effectuer des kesa giri d'Arataki sans consommer d'endurance. Chaque kesa giri consommera à la place un cumul de Mégaforce superlative. Lorsque le dernier cumul de Mégaforce est consommé, Itto libère une attaque finale très puissante.\nSi aucun cumul de Mégaforce superlative n'est disponible, Itto consommera de l'endurance pour effectuer une simple entaille de Saichimonji.\n<color=#ffd780>Attaque plongeante</color>\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis sur la route et des DGT de zone à l'impact."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Niv.",
-            "values": [
-              "Niv.1",
-              "Niv.2",
-              "Niv.3",
-              "Niv.4",
-              "Niv.5",
-              "Niv.6",
-              "Niv.7",
-              "Niv.8",
-              "Niv.9",
-              "Niv.10",
-              "Niv.11"
-            ]
-          },
-          {
-            "key": "DGT 1er coup",
-            "values": [
-              "79.2%",
-              "85.7%",
-              "92.1%",
-              "101.3%",
-              "107.8%",
-              "115.2%",
-              "125.3%",
-              "135.4%",
-              "145.6%",
-              "156.6%",
-              "169.3%"
-            ]
-          },
-          {
-            "key": "DGT 2e coup",
-            "values": [
-              "76.4%",
-              "82.6%",
-              "88.8%",
-              "97.7%",
-              "103.9%",
-              "111%",
-              "120.8%",
-              "130.5%",
-              "140.3%",
-              "151%",
-              "163.2%"
-            ]
-          },
-          {
-            "key": "DGT 3e coup",
-            "values": [
-              "91.6%",
-              "99.1%",
-              "106.6%",
-              "117.2%",
-              "124.7%",
-              "133.2%",
-              "144.9%",
-              "156.6%",
-              "168.36%",
-              "181.15%",
-              "195.8%"
-            ]
-          },
-          {
-            "key": "DGT 4e coup",
-            "values": [
-              "117.2%",
-              "126.8%",
-              "136.3%",
-              "149.9%",
-              "159.5%",
-              "170.4%",
-              "185.4%",
-              "200.4%",
-              "215.4%",
-              "231.7%",
-              "250.5%"
-            ]
-          },
-          {
-            "key": "DGT kesa giri d'Arataki",
-            "values": [
-              "91.2%",
-              "98.6%",
-              "106%",
-              "116.6%",
-              "124%",
-              "132.5%",
-              "144.2%",
-              "155.8%",
-              "167.5%",
-              "180.2%",
-              "194.8%"
-            ]
-          },
-          {
-            "key": "DGT kesa giri final d'Arataki",
-            "values": [
-              "190.9%",
-              "206.5%",
-              "222%",
-              "244.2%",
-              "259.7%",
-              "277.5%",
-              "301.9%",
-              "326.3%",
-              "350.8%",
-              "377.4%",
-              "407.9%"
-            ]
-          },
-          {
-            "key": "Durée Mégaforce superlative",
-            "values": [
-              "60 s",
-              "60 s",
-              "60 s",
-              "60 s",
-              "60 s",
-              "60 s",
-              "60 s",
-              "60 s",
-              "60 s",
-              "60 s",
-              "60 s"
-            ]
-          },
-          {
-            "key": "DGT entaille de Saichimonji",
-            "values": [
-              "90.5%",
-              "97.8%",
-              "105.2%",
-              "115.7%",
-              "123.1%",
-              "131.5%",
-              "143.1%",
-              "154.6%",
-              "166.2%",
-              "178.8%",
-              "193.3%"
-            ]
-          },
-          {
-            "key": "Coût d'endurance entaille de Saichimonji",
-            "values": [
-              "20 pts",
-              "20 pts",
-              "20 pts",
-              "20 pts",
-              "20 pts",
-              "20 pts",
-              "20 pts",
-              "20 pts",
-              "20 pts",
-              "20 pts",
-              "20 pts"
-            ]
-          },
-          {
-            "key": "DGT durant la chute",
-            "values": [
-              "81.8%",
-              "88.5%",
-              "95.2%",
-              "104.7%",
-              "111.3%",
-              "118.9%",
-              "129.4%",
-              "139.8%",
-              "150.4%",
-              "161.8%",
-              "173.2%"
-            ]
-          },
-          {
-            "key": "DGT chute basse/élevée",
-            "values": [
-              "164%/205%",
-              "177%/222%",
-              "191%/238%",
-              "210%/262%",
-              "223%/279%",
-              "238%/298%",
-              "259%/324%",
-              "280%/350%",
-              "301%/376%",
-              "324%/405%",
-              "347%/434%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 195,
-              "name": "Enseignement de l'Élégance",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance n'aime pas la flatterie et les élégants sont toujours nobles. Ils sont comme ces grands oiseaux des mers qui planent au-dessus des tempêtes retentissantes. Ils ne répondent pas à la vulgarité, comme on ne jette pas une couronne de fleurs dans la boue, sans éclabousser sa propre dignité.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Elegance_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 396,
-              "name": "Bave de Blob",
-              "desc": "Liquide épais que l'on trouve sur les Blobs. Il s'agit d'un matériau commun utilisé chez les forgerons élémentaires.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 194,
-              "name": "Guide de l'Élégance",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance évite l'arrogance. Les élégants sont toujours humbles, et ce n'est qu'en rejetant la vanité et la négligence que l'on voit la véritable beauté, même dans l'apparence la plus inesthétique.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Elegance_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 398,
-              "name": "Mucus de Blob",
-              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 194,
-              "name": "Guide de l'Élégance",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance évite l'arrogance. Les élégants sont toujours humbles, et ce n'est qu'en rejetant la vanité et la négligence que l'on voit la véritable beauté, même dans l'apparence la plus inesthétique.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Elegance_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 398,
-              "name": "Mucus de Blob",
-              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 194,
-              "name": "Guide de l'Élégance",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance évite l'arrogance. Les élégants sont toujours humbles, et ce n'est qu'en rejetant la vanité et la négligence que l'on voit la véritable beauté, même dans l'apparence la plus inesthétique.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Elegance_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 398,
-              "name": "Mucus de Blob",
-              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 194,
-              "name": "Guide de l'Élégance",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance évite l'arrogance. Les élégants sont toujours humbles, et ce n'est qu'en rejetant la vanité et la négligence que l'on voit la véritable beauté, même dans l'apparence la plus inesthétique.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Elegance_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 398,
-              "name": "Mucus de Blob",
-              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 193,
-              "name": "Philosophie de l'Élégance",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance abhorre la vulgarité, et l'élégant marche toujours seul. Résister aux vils maux, ne pas se laisser émouvoir par l'amour de la médiocrité, ne jamais se réfugier dans la basse ignorance, voilà comment on perçoit l'abîme entre l'élégant et le méprisant.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Elegance_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 397,
-              "name": "Essence de Blob",
-              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1080,
-              "name": "Cœur de cendre",
-              "desc": "Un fragment déformé qui renferme un immense pouvoir. Vous l'avez obtenu après avoir vaincu Signora au summum de sa puissance.<br/>Les larmes ne peuvent éteindre les flammes. Tristesse et rage, aussi brûlantes que la fonte, coulent dans ses veines et s'évacuent par ses glandes lacrymales.<br/>Le premier Fatui l'a découverte avant que son cœur ne soit détruit par les flammes éternelles. Il fit d'elle une alliée, car il avait compris que seules une haine et une obstination plus féroces pouvaient éteindre le feu qui la dévorait.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ashen Heart_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 193,
-              "name": "Philosophie de l'Élégance",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance abhorre la vulgarité, et l'élégant marche toujours seul. Résister aux vils maux, ne pas se laisser émouvoir par l'amour de la médiocrité, ne jamais se réfugier dans la basse ignorance, voilà comment on perçoit l'abîme entre l'élégant et le méprisant.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Elegance_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 397,
-              "name": "Essence de Blob",
-              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1080,
-              "name": "Cœur de cendre",
-              "desc": "Un fragment déformé qui renferme un immense pouvoir. Vous l'avez obtenu après avoir vaincu Signora au summum de sa puissance.<br/>Les larmes ne peuvent éteindre les flammes. Tristesse et rage, aussi brûlantes que la fonte, coulent dans ses veines et s'évacuent par ses glandes lacrymales.<br/>Le premier Fatui l'a découverte avant que son cœur ne soit détruit par les flammes éternelles. Il fit d'elle une alliée, car il avait compris que seules une haine et une obstination plus féroces pouvaient éteindre le feu qui la dévorait.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ashen Heart_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 193,
-              "name": "Philosophie de l'Élégance",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance abhorre la vulgarité, et l'élégant marche toujours seul. Résister aux vils maux, ne pas se laisser émouvoir par l'amour de la médiocrité, ne jamais se réfugier dans la basse ignorance, voilà comment on perçoit l'abîme entre l'élégant et le méprisant.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Elegance_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 397,
-              "name": "Essence de Blob",
-              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1080,
-              "name": "Cœur de cendre",
-              "desc": "Un fragment déformé qui renferme un immense pouvoir. Vous l'avez obtenu après avoir vaincu Signora au summum de sa puissance.<br/>Les larmes ne peuvent éteindre les flammes. Tristesse et rage, aussi brûlantes que la fonte, coulent dans ses veines et s'évacuent par ses glandes lacrymales.<br/>Le premier Fatui l'a découverte avant que son cœur ne soit détruit par les flammes éternelles. Il fit d'elle une alliée, car il avait compris que seules une haine et une obstination plus féroces pouvaient éteindre le feu qui la dévorait.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ashen Heart_icon.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 193,
-              "name": "Philosophie de l'Élégance",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'élégance est la forme sous laquelle se présente la Nation du Tonnerre.<br/>L'élégance abhorre la vulgarité, et l'élégant marche toujours seul. Résister aux vils maux, ne pas se laisser émouvoir par l'amour de la médiocrité, ne jamais se réfugier dans la basse ignorance, voilà comment on perçoit l'abîme entre l'élégant et le méprisant.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Elegance_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 397,
-              "name": "Essence de Blob",
-              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1080,
-              "name": "Cœur de cendre",
-              "desc": "Un fragment déformé qui renferme un immense pouvoir. Vous l'avez obtenu après avoir vaincu Signora au summum de sa puissance.<br/>Les larmes ne peuvent éteindre les flammes. Tristesse et rage, aussi brûlantes que la fonte, coulent dans ses veines et s'évacuent par ses glandes lacrymales.<br/>Le premier Fatui l'a découverte avant que son cœur ne soit détruit par les flammes éternelles. Il fit d'elle une alliée, car il avait compris que seules une haine et une obstination plus féroces pouvaient éteindre le feu qui la dévorait.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ashen Heart_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "Couronne de la sagesse",
-              "desc": "Matériau d'amélioration d'aptitude rare.<br/>Un support utilisé dans les temps anciens pour conserver et transmettre le savoir. Bien que de nos jours les connaissances se transmettent de différentes manières, autant orales qu'écrites, cet artéfact n'a pas perdu la moindre once de son pouvoir d'antan.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/battle_talent_0/battle_talent_0.gif"
-      },
-      {
-        "key": "Zetsugi anti-démon : Catapultage d'akaushi",
-        "title": "Zetsugi anti-démon : Catapultage d'akaushi",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/battle_talent_1/battle_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Projette Ushi, le jeune taureau akaushi et membre auxiliaire du gang Arataki, pour infliger des <color=#ffe699>DGT Géo</color> ! Lorsqu'Ushi touche un ennemi, il accorde à Arataki Itto 1 cumul de Mégaforce superlative.\nUshi reste ensuite sur le terrain et apporte son aide des façons suivantes :\n· Il nargue les ennemis proches et attire leur attention.\n· Il hérite d'un pourcentage des PV max d'Arataki Itto.\n· Lorsqu'il subit des DGT, il accorde à Arataki Itto 1 cumul de Mégaforce superlative. Un cumul peut être obtenu une fois toutes les 2 s de cette manière.\n· Si ses PV sont épuisés ou si la durée arrive à terme, il s'enfuit tout en accordant à Arataki Itto 1 cumul de Mégaforce superlative.\n<color=#ffd780>Appui long</color>\nAjuste la direction du jet.\nUshi est considéré comme une <color=#ffe699>construction Géo</color> , et Arataki Itto ne peut générer qu'un seul Ushi à la fois.\nLe nom de cette technique est dérivé d'« Onibudo », un roman écrit par Junkichi. Cependant, l'appeler « Zetsugi anti-oni » constituerait probablement une violation de droits d'auteur... Sans parler du fait qu'Itto lui-même est un Oni..."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Niv.",
-            "values": [
-              "Niv.1",
-              "Niv.2",
-              "Niv.3",
-              "Niv.4",
-              "Niv.5",
-              "Niv.6",
-              "Niv.7",
-              "Niv.8",
-              "Niv.9",
-              "Niv.10",
-              "Niv.11",
-              "Niv.12",
-              "Niv.13",
-              "Niv.14"
-            ]
-          },
-          {
-            "key": "DGT compétence",
-            "values": [
-              "307%",
-              "330%",
-              "353%",
-              "384%",
-              "407%",
-              "430%",
-              "461%",
-              "492%",
-              "522%",
-              "553%",
-              "584%",
-              "614%",
-              "653%"
-            ]
-          },
-          {
-            "key": "PV hérités",
-            "values": [
-              "100%",
-              "100%",
-              "100%",
-              "100%",
-              "100%",
-              "100%",
-              "100%",
-              "100%",
-              "100%",
-              "100%",
-              "100%",
-              "100%",
-              "100%"
-            ]
-          },
-          {
-            "key": "Durée",
-            "values": [
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s"
-            ]
-          },
-          {
-            "key": "Temps de recharge",
-            "values": [
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/battle_talent_1/battle_talent_1.gif"
-      },
-      {
-        "key": "Roi oni maléfique : Avènement d'Itto",
-        "title": "Roi oni maléfique : Avènement d'Itto",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/battle_talent_2/battle_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Il est temps de montrer la puissance du gang Arataki ! Itto laisse émerger son Roi oni courroucé intérieur pendant un certain temps, utilisant son kanabo de Roi oni au combat.\nLes caractéristiques suivantes s'appliquent :\n· Les attaques normales, chargées et plongeantes sont imprégnées de <color=#ffe699>DGT Géo</color> ne pouvant pas être enchantés.\n· La VIT d'attaque des attaques normales d'Itto augmente, et son ATQ sera augmentée en fonction de sa DÉF.\n· Lorsque le 1er ou 3e coup de son attaque normale touche un ennemi, Arataki Itto obtient 1 cumul de Mégaforce superlative.\n· Les RÉS élémentaires et physique d'Arataki Itto diminuent de 20 %.\nLes effets du Roi oni courroucé prennent fin lorsqu'Arataki Itto quitte le champ de bataille.\nC'est la meilleure super technique ultime d'Itto... Enfin, d'après lui... Il est inutile pour Arataki Itto d'imiter qui que ce soit d'autre pour devenir plus fort, car il est sans conteste l'Oni le plus fort et le plus terrible de tout le pays. En gros, Itto ne prend exemple que sur lui-même !\nShouta trouve que c'est super cool."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Niv.",
-            "values": [
-              "Niv.1",
-              "Niv.2",
-              "Niv.3",
-              "Niv.4",
-              "Niv.5",
-              "Niv.6",
-              "Niv.7",
-              "Niv.8",
-              "Niv.9",
-              "Niv.10",
-              "Niv.11",
-              "Niv.12",
-              "Niv.13",
-              "Niv.14"
-            ]
-          },
-          {
-            "key": "Bonus ATQ",
-            "values": [
-              "57.6% DÉF",
-              "61.9% DÉF",
-              "66.2% DÉF",
-              "72% DÉF",
-              "76.3% DÉF",
-              "80.6% DÉF",
-              "86.4% DÉF",
-              "92.2% DÉF",
-              "97.9% DÉF",
-              "103.7% DÉF",
-              "109.4% DÉF",
-              "115.2% DÉF",
-              "122.4% DÉF",
-              "129.6% DÉF"
-            ]
-          },
-          {
-            "key": "Bonus VIT d'attaque",
-            "values": [
-              "10%",
-              "10%",
-              "10%",
-              "10%",
-              "10%",
-              "10%",
-              "10%",
-              "10%",
-              "10%",
-              "10%",
-              "10%",
-              "10%",
-              "10%",
-              "10%"
-            ]
-          },
-          {
-            "key": "Durée",
-            "values": [
-              "11 s",
-              "11 s",
-              "11 s",
-              "11 s",
-              "11 s",
-              "11 s",
-              "11 s",
-              "11 s",
-              "11 s",
-              "11 s",
-              "11 s",
-              "11 s",
-              "11 s",
-              "11 s"
-            ]
-          },
-          {
-            "key": "Temps de recharge",
-            "values": [
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s"
-            ]
-          },
-          {
-            "key": "Énergie élémentaire",
-            "values": [
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/battle_talent_2/battle_talent_2.gif"
-      },
-      {
-        "key": "Arataki au top",
-        "title": "Arataki au top",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/05/61724976/1a1b647791e819ea9aaee91b614cdda6_8163362480891651334.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Lorsqu'Arataki Itto effectue une série de kesa giri d'Arataki, il obtient les effets suivants :\n· Chaque frappe augmente la VIT d'attaque de la prochaine de 10 %. La VIT d'attaque peut être augmentée de 30 % max de cette manière.\n· Sa RÉS à l'interruption augmente.\nCes effets prennent fin lorsqu'Arataki Itto arrête d'utiliser cette série d'attaques."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Lignée de l'Oni cramoisi",
-        "title": "Lignée de l'Oni cramoisi",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/05/61724976/03221d74e8d172087198a57b0b4956f3_6175952863852888172.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Les DGT infligés par les kesa giri d'Arataki augmentent d'une valeur équivalant à 35 % de la DÉF d'Arataki Itto."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Castor au rapport",
-        "title": "Castor au rapport",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/05/61724976/3fee6ed005481e005e3aeb767fc33257_1218763952949023237.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Lorsqu'un personnage de l'équipe utilise des attaques pour obtenir du bois d'un arbre, il a 25 % de chances d'obtenir un morceau de bois supplémentaire."
-          }
-        ],
-        "attributes": null
-      }
-    ],
-    "story": [
-      {
-        "title": "Info. personnage",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Il est difficile de ne pas remarquer le jeune Oni nommé Arataki Itto en se promenant dans les rues de Hanamizaka.\nQu'importe ses cornes d'Oni dressées sur sa tête ou sa voix portante, c'est d'abord cet enthousiasme qu'il possède à se joindre aux enfants pour jouer avec eux qui le distingue des autres.\nDe plus, son absence évidente d'occupations détonne énormément avec l'agitation de Hanamizaka, où les groupes d'artisans s'activent toute la journée.\nItto prétend être le « premier et plus grand chef du gang Arataki », statut dont il a tenté d'expliquer les responsabilités et obligations à des officiers de la Commission administrative venus enquêter après une bagarre de rue relativement inoffensive. Malheureusement, il fut interrompu après seulement deux minutes, avant que les mots « sans emploi » ne soient inscrits sur son dossier.\nCette description n'est pas tout à fait exacte. En dehors des activités du gang Arataki, que le Shogunat ne reconnaît pas, Itto fait quelques petites missions pour gagner sa croûte. Il travaille en général une seule journée avant d'en prendre trois de congé de manière constante.\nDe ce fait, il serait plus correct d'inscrire « aux trois quarts au chômage »."
-          }
-        ]
-      },
-      {
-        "title": "Histoire du personnage 1",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Objectivement, la réputation d'Itto laisse à désirer à Inazuma.\nBien qu'il ne soit pas considéré comme un malfaiteur, il ne rentre pas pour autant dans la catégorie des bons citoyens.\nS'il fallait lui attribuer un degré de dangerosité, il s'agirait sûrement de celui d'être utilisé comme excuse par les parents pour faire obéir leurs enfants : « Si tu n'es pas sage, Arataki Itto viendra voler tes bonbons ! ».\nEn comparaison avec les menaces du genre « Le grand démon mujina va venir t'attraper et t'emmener dans les montagnes ! » ou « Tu seras incrusté dans la statue de la Shogun ! », la probabilité de se faire voler ses bonbons par Itto est bien plus élevée.\nCependant, « voler » n'est pas le terme le plus approprié. En effet, le sort réservé à ces sucreries est défini de manière honnête au combat !\nAux yeux de la plupart des gens, remporter des bonbons face à des enfants est une chose éhontée, mais Itto possède la conviction que chaque bataille se doit d'être prise au sérieux, peu importe que l'adversaire soit un enfant de cinq ans ou la Shogun toute-puissante en personne.\nC'est aussi une des raisons pour lesquelles Itto peut perdre contre un enfant sans réserve.\nTandis que les commérages des adultes vont bon train lorsqu'il s'agit de le critiquer, les enfants quant à eux trouvent que ce monsieur oni est en réalité un compagnon de jeu très amusant.\nItto connaît sur le bout des doigts tous les jeux de rue et y joue avec grand plaisir. Il défend toujours ceux et celles qui se font malmener.\nRécemment, les enfants sont particulièrement friands des combats de scarabutos contre Itto.\nLes règles du jeu sont assez simples, les combats sont acharnés et ils se laissent regarder. Mais le plus important, c'est qu'ils ont une véritable chance de gagner à ce jeu, contrairement aux autres."
-          }
-        ]
-      },
-      {
-        "title": "Histoire du personnage 2",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Pendant très longtemps, la Commission administrative considérait le gang Arataki comme un groupe de fauteurs de trouble occasionnels à qui il n'était pas nécessaire d'accorder d'importance.\nLe groupe possède moins de dix membres titulaires et beaucoup de querelles internes existent quant à la date de sa création.\nAkira a la conviction que le gang s'est établi lorsqu'Itto est venu le sauver de quelques brutes de pacotille. Ce jour-là, Itto ne lâcha pas l'affaire, même après être tombé plus de sept fois, ce qui eut le don d'agacer les petites racailles au point de les faire partir. Itto aida Akira à se relever et déclara : « On dirait bien que tu fais partie du gang Arataki à présent ! ».\nGenta et Mamoru sont persuadés que le gang a été fondé à la fin d'une année en particulier, lorsqu'ils se sont rassemblés en périphérie d'Inazuma tout en faisant griller des melons lavandes.\nAucun d'entre eux n'avait un mora en poche ce jour-là alors qu'ils étaient tous affamés. Alors qu'il se gavait de melons lavandes, Itto dit : « On devrait faire griller des melons lavandes comme ça chaque année ! ».\nCeci dit, ni Genta ni Mamoru ne pense qu'il s'agisse là de moments particulièrement mémorables.\nPour Kuki Shinobu, le gang fut établi officiellement la première fois où elle a tiré Itto d'un cachot du Shogunat, car c'était également la première fois que le gang Arataki fut mentionné dans des documents officiels.\nQuant à Itto, il est certain que le gang Arataki vit le jour au moment même où ce nom lui vint à l'esprit.\nMalheureusement, il ne se rappelle plus de la date.\nEnfin, pour mamie Oni, qui s'est occupée d'Itto depuis sa tendre enfance, le gang ne s'est jamais constitué.\nElle croit qu'il s'agit simplement d'« Itto et de sa bande de copains »."
-          }
-        ]
-      },
-      {
-        "title": "Histoire du personnage 3",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "La race oni est présente à Inazuma depuis les temps anciens.\nElle a coexisté avec la lignée royale de Kitsunes Hakushin et les Tengu.\nDe tels démons possèdent souvent des aptitudes surnaturelles que les humains leur envient, mais seuls les Oni sont dépourvus de beaucoup de ces particularités.\nOutre leurs cornes, ils sont connus pour leur tempérament explosif et leur tendance à chercher des ennuis.\nEn ce qui concerne leur peur légendaire des haricots, celle-ci possède en réalité une explication tout à fait scientifique :\nLes Oni y sont allergiques. Cependant, le sang pur de la lignée oni s'étant fait rare avec le temps, la plupart d'entre eux ne présente aujourd'hui qu'une légère réaction.\nMalheureusement pour Itto, ses allergies sont plutôt graves ! Même pas besoin d'en ingérer, un simple contact cutané entraînera chez lui des démangeaisons et des difficultés respiratoires.\nC'est pourquoi les haricots représentent les seules choses dont Itto l'insouciant se méfie dans sa vie quotidienne.\nLes membres du gang Arataki quant à eux ne commandent jamais de plats à base de haricots, même en privé, comme marque de respect envers Itto.\nDe tous les produits du genre, c'est le tofu frit qu'il craint le plus. Selon lui, le simple fait d'en voir peut le rendre souffrant pendant trois jours."
-          }
-        ]
-      },
-      {
-        "title": "Histoire du personnage 4",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "En parlant de tofu frit, une certaine victoire à la Pyrrhus vient directement à l'esprit.\nLa bataille qui causa l'incident démarra comme une simple querelle insignifiante : une femme aux oreilles de renard s'était assise sur la chaise où Itto s'installait habituellement pour manger à l'étal de son petit restaurateur préféré, qui plus est le jour de sa paie.\nLes deux parties commencèrent à vociférer afin de déterminer à qui appartenait le droit de s'installer à cette place, résultant en un véritable, bien qu'inutile, affrontement.\nItto, qui était affamé après sa journée de travail, décida d'en découdre via un concours de nourriture, tandis que la femme aux oreilles de renard choisit que le thème de cet affrontement serait les kitsune ramen.\nItto fut pris au dépourvu lorsqu'il réalisa que ce plat était principalement composé de tofu frit, mais sa fierté d'Oni était en jeu et il concentra toute son énergie pour décrocher la victoire.\nQuant à l'innocente chaise, elle fut attribuée comme trophée à Itto par le restaurateur encore sous le choc.\nDe tous les affrontements auxquels il a pris part, deux d'entre eux occupent encore particulièrement l'esprit d'Itto.\nL'un d'eux est la revanche qu'il exige de Kujou Sara. Elle l'avait en effet vaincu avant de lui arracher son œil divin dans le cadre de ses obligations pour la Commission administrative.\nJusqu'à ce jour, elle n'a toujours pas accepté le duel de sumo de rue, non sans frustrer Itto...\nL'autre affrontement est un incident qui eut lieu il y a de ça bien des années, dans la jeunesse d'Itto. Une dispute avec un jeune Tengu résulta en un combat de sumo à la Plaine de Byakko. De manière inattendue dans le feu de l'action, ils dévalèrent tous les deux un versant de montagne.\nAu final, le Tengu transporta Itto jusque chez lui. En effet, il ne pouvait plus marcher à cause d'une entorse à la cheville. Le vainqueur ne fut donc pas désigné.\nComme par hasard, ces deux épisodes sont en lien avec un Tengu !\nD'où ces créatures tirent-elles leur force malgré une apparence aussi maigrichonne ?"
-          }
-        ]
-      },
-      {
-        "title": "Histoire du personnage 5",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Tous les jeunes Oni ont probablement entendu l'histoire de l'Oni cramoisi et de l'Oni azurin :\nLe gentil et serviable Oni cramoisi a triomphé du mauvais Oni azurin, gagnant le respect des humains.\nCette histoire était la préférée d'Itto lorsqu'il était enfant, ce qui le rendait fier de ses cornes d'Oni cramoisi et de la lignée dont il était issu.\nCependant, cette fierté enfantine fut ébranlée par un simple incident.\nLorsque des cambriolages eurent lieu dans le village d'Itto, la famille Arataki fut directement soupçonnée en raison de son sang oni.\nItto ne se souvient pas vraiment de tous les détails, mais il se rappelle des regards méfiants et dégoûtés des villageois lorsque ses parents et lui quittèrent les lieux, ainsi que des mots qui leur étaient destinés, qu'il a depuis entendu un nombre incalculable de fois :\n« Un Oni sera toujours un Oni. »\nPeu importe l'époque, les Oni sont tous les mêmes aux yeux des humains. Dans ce cas, ne vallait-il pas mieux être considéré comme l'Oni azurin, qui inspirait la crainte ? Cela était certainement préférable à la situation de ses parents qui furent poussés à l'exil, malgré le fait qu'ils n'avaient jamais rien fait de mal.\nAprès le décès de ses parents à la suite d'une maladie, le jeune Itto se retrouva à la rue. Il se mit à confronter quiconque osait dire du mal des Oni.\nIl se retrouvait la plupart du temps à encaisser les coups. Mais il ne se laissait pas faire pour autant, se relevant systématiquement peu importe le nombre de fois où il se retrouvait au sol.\nItto n'était pourtant encore qu'un enfant. Après un passage à tabac par des petits délinquants qui s'étaient ligués contre lui, il finit par s'effondrer dans la rue de fatigue et de faim.\nC'est à ce moment qu'il fut sauvé par une vieille femme humaine.\n« Pourquoi m'avez-vous sauvé ? Vous ne voyez pas que je suis un Oni ? » « Tu dois être mort de faim. Viens, j'ai préparé une soupe de riz. »\n« Je vous ai dit que j'étais un Oni ! Vous ne voyez pas les cornes sur ma tête ? » « Si, je les vois. Alors, tu veux un peu de cette soupe ? »\n« Ah, mais vous ne m'écoutez pas ! Bon, d'accord... Un bol de soupe de riz, s'il vous plaît. » « Tout de suite. »"
-          }
-        ]
-      },
-      {
-        "title": "La grande ritournelle",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "La fin de l'année approchant, les membres du gang Arataki se réunirent pour discuter de la façon dont ils pourraient célébrer le réveillon.\nContrairement à d'autres organisations plus respectables, le gang Arataki ne possède ni de lieu fixe où organiser leurs activités ni d'argent, ce qui pose quelques problèmes... d'ordre logistique.\nL'option des melons lavandes fut rapidement éliminée. Griller des melons lavandes n'était pas un problème en soi, mais ne manger que ça pour célébrer le réveillon en était un.\nL'idée d'un festival de scarabutos fut considérée, mais la fin d'année ne correspondant pas avec la saison des amours, les participants manqueraient donc d'un enthousiasme évident.\nEn fin de compte, un tirage au sort eut lieu et la « grande ritournelle » fut ainsi décidée.\nL'activité fut proposée par Itto en personne. Elle consistait en une soirée où tout le monde devait se rassembler au bord d'une falaise pour chanter à l'océan et exprimer ses sentiments les plus profonds et ses espoirs pour l'avenir.\nLes membres du gang n'étaient en réalité pas très partants en leur for intérieur à l'annonce de cette nouvelle. Après tout, chanter à pleins poumons vers la mer n'était pas aussi amusant que de manger des melons. Kuki Shinobu mentionna qu'elle aurait bien aimé profiter de cette occasion pour prendre congé et rentrer chez elle.\nCependant, l'événement eut lieu malgré tout. Les chants et les cris furent d'un effet étonnamment apaisant pour l'esprit. De plus, contre toute attente, cette occasion révéla qu'Itto était en réalité plutôt bon chanteur."
-          }
-        ]
-      },
-      {
-        "title": "Œil divin",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Itto fit la découverte de son œil divin accroché sous sa hanche alors qu'il se réveilla un matin après un combat. À cette époque, il se trouvait déjà à Hanamizaka depuis un bon bout de temps et sa vie était en quelque sorte stable.\n« Eh ben dis donc ! ... C'est vraiment incroyable ! »\nTels furent les mots qui vinrent à l'esprit d'Itto lorsqu'il découvrit son œil divin.\nCe jour-là, il le montra avec enthousiasme à qui voulait bien le voir. Il soulevait même ses vêtements pour montrer l'endroit où il avait laissé une marque sur son dos, jusqu'à ce que tout le monde en ait marre d'entendre son histoire.\nL'histoire changea cependant quelques jours plus tard :\n« Comme vous le savez, je n'ai pas été surpris le moins du monde quand j'ai vu cet œil divin. Après tout, on en attendait pas moins du premier et plus grand chef du gang Arataki ! »\n« Mais le plus important, c'est que la valeur d'une personne ne peut pas se mesurer à un simple œil divin, ah ça non ! »\nMais les plus observateurs ne purent s'empêcher de remarquer qu'Itto avait fait l'acquisition d'une étoffe à lunettes des plus soyeuses.\nEn outre, une certaine question apparut dans la rubrique des conseils du magazine « C'est la vie » :\n« Mademoiselle Hina, comment prendre soin de mon œil divin et le rendre plus brillant ? Je veux dire, plus brillant que n'importe lequel autre, bien sûr ! »\nQuand les membres du gang virent cette rubrique et la montrèrent avec entrain à Itto, quelle ne fut pas leur surprise de voir ce fan de la première heure de mademoiselle Hina se contenter de regarder le magazine avant de le mettre de côté."
-          }
-        ]
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/avatar_header.jpg"
-      },
-      {
-        "key": "Avatar",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/荒泷一斗/avatar.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Tenue Originale - Oni excentrique</color>\n<color=#ffffffa6>Tenue d'Itto. Elle dégage une impression de génialité rare, et le masque oni porté comme boucle de ceinture est en effet assez imposant... Certainement assez pour transformer même l'enfant le plus méchant de Hanamizaka en bambin apeuré...</color>"
-          }
-        ]
-      },
-      {
-        "key": "Animation d'inaction 1",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/158750877/aee47595610c8365e1513f8a184a28a9_477158141104193870.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Tenue Originale - Oni excentrique"
-          }
-        ]
-      },
-      {
-        "key": "Animation d'inaction 2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/158750877/2669292a03f996c27674268c72fd2a76_2067232246792438049.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Tenue Originale - Oni excentrique"
-          }
-        ]
-      },
-      {
-        "key": "Constellation",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/43281454/c7628eeb80865cbf9cd007d5d1cdc50e_3861975166804018444.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Taurus Iracundus</color>"
-          }
-        ]
-      },
-      {
-        "key": "Thème",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/43281454/b3817855b37bb36d71555a58ed4092b6_4643887057186701085.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Itto - Visage d'Oni</color>\n<color=#ffffffa6>Les vrais hommes savent mettre le chagrin et la colère derrière eux et sourient au monde !</color>"
-          }
-        ]
       }
     ]
   }

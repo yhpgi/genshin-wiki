@@ -12,6 +12,56 @@
   "menuName": "Manufatti",
   "version": 1713474489,
   "components": {
+    "baseInfo": [
+      {
+        "key": "Nome",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Fiamma fioca</color>"
+          }
+        ]
+      },
+      {
+        "key": "Origine",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Dominio Guardia della montagna</color>\n<color=#ffffffa6>Offerte mistiche</color>"
+          }
+        ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "RichText",
+        "text": "Personaggio\nMotivazione"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6,
+        "name": "Eula",
+        "desc": "<p>Cavaliere dell'Onda danzante, discendente dell'antica aristocrazia e capitana della compagnia di ricognizione dei Cavalieri di Favonius. Il motivo per cui una giovane nobile abbia voluto unirsi ai Cavalieri rimane tuttora un grande mistero in tutta Mondstadt.</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Eula_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Eula</color> è l'attaccante <color=#bfbfbf>Fisico</color> per eccellenza, in quanto tutto il suo stile di combattimento è incentrato sull'effettuare ingenti <color=#bfbfbf>DAN Fisici</color> , con i suoi <color=#ffd780>attacchi normali</color> e specialmente con il suo <color=#ffd780>Tripudio elementale</color> . Il set <color=#ffffff>Fiamma fioca</color> consente di aumentare esponenzialmente il bonus <color=#bfbfbf>DAN Fisici</color> , accrescendo la potenza del personaggio."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3964,
+        "name": "Freminet",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un giovane riservato esperto di immersioni. Al di là del suo atteggiamento distante e algido si nasconde un cuore puro e immacolato.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/08/157266935/8e44111a378f4e5379b8e7444e8c2daa_7358398536704337067.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Grazie al suo kit di abilità, Freminet è un attaccante Ibrido <color=#bfbfbf>Fisico</color> / <color=#99ffff>Cryo</color> . I suoi colpi godono della capacità di effettuare <color=#99ffff>DAN da Cryo</color> e <color=#bfbfbf>Fisici</color> , secondo la funzionalità delle sue <color=#ffd780>abilità</color> e, a volte, a scelta del giocatore. Questo set di manufatti è perfetto se si preferisce concentrarsi maggiormente sui <color=#bfbfbf>DAN Fisici</color> ."
+      }
+    ],
     "artifactList": {
       "goblet_of_eonothem": {
         "title": "Calice della trascendenza",
@@ -23,17 +73,6 @@
           }
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Pale Flame/goblet_of_eonothem_icon.png"
-      },
-      "sands_of_eon": {
-        "title": "Tempo sospeso",
-        "position": "Sabbie del tempo",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Un orologio con un coperchio impossibile da aprire. Il suo ticchettio continua inesorabilmente ad accompagnare lo scorrere del tempo.</color>"
-          }
-        ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Pale Flame/sands_of_eon_icon.png"
       },
       "plume_of_death": {
         "title": "Piuma del dottore saggio",
@@ -57,6 +96,17 @@
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Pale Flame/circlet_of_logos_icon.png"
       },
+      "sands_of_eon": {
+        "title": "Tempo sospeso",
+        "position": "Sabbie del tempo",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Un orologio con un coperchio impossibile da aprire. Il suo ticchettio continua inesorabilmente ad accompagnare lo scorrere del tempo.</color>"
+          }
+        ],
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Pale Flame/sands_of_eon_icon.png"
+      },
       "flower_of_life": {
         "title": "Fiore inossidabile",
         "position": "Fiore della vita",
@@ -68,6 +118,10 @@
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Pale Flame/flower_of_life_icon.png"
       }
+    },
+    "reliquarySetEffect": {
+      "twoSetEffect": "<p><span style=\"color: #FFD780\">DAN fisici</span><span style=\"color: rgba(255, 255, 255, 0.65)\"> +25%.</span></p>",
+      "fourSetEffect": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Quando un'</span><span style=\"color: rgb(255, 215, 128)\">abilità elementale</span><span style=\"color: rgba(255, 255, 255, 0.65)\"> colpisce un avversario, l'</span><span style=\"color: rgb(255, 215, 128)\">ATT</span><span style=\"color: rgba(255, 255, 255, 0.65)\"> aumenta di un</span><span style=\"color: rgb(55, 255, 255)\"> 9%</span><span style=\"color: rgba(255, 255, 255, 0.65)\"> per </span><span style=\"color: rgb(255, 215, 128)\">7 s</span><span style=\"color: rgba(255, 255, 255, 0.65)\">. Cumulabile fino a 2 volte, si può attivare una volta ogni </span><span style=\"color: rgb(255, 215, 128)\">0,3 s</span><span style=\"color: rgba(255, 255, 255, 0.65)\">. Raggiunta la quantità massima cumulabile, l'effetto del set da 2 pezzi aumenta di un </span><span style=\"color: #37FFFF\">100%</span><span style=\"color: rgba(255, 255, 255, 0.65)\">.</span></p>"
     },
     "story": [
       {
@@ -114,60 +168,6 @@
             "text": "<color=#ffffffa6>Il denaro è la linfa vitale del mondo, e le vie lungo le quali scorre ne sono le arterie.</color>\n<color=#ffffffa6>Il centro del mondo è un cuore fatto d'oro.</color>\n<color=#ffffffa6>Non essendo mai stato visto con favore, non gli restò che perseguire il potere mondano.</color>\n<color=#ffffffa6>Anche se il denaro dovrebbe essere insignificante agli occhi degli dèi,</color>\n<color=#ffffffa6>questi lo tenevano comunque sotto controllo, insieme alle innumerevoli altre forme di potere che esercitavano.</color>\n<color=#ffffffa6>Forse bramava il denaro per il suo passato da indigente,</color>\n<color=#ffffffa6>o forse il fatto che gli dèi non lo avessero mai trattato con benevolenza accese in lui un ardente desiderio di resistenza...</color>\n<color=#ffffffa6>\"Il popolo della terra da cui provengono queste monete venera i contratti più di ogni altra cosa.\"</color>\n<color=#ffffffa6>\"In nome del denaro, rispetterò il contratto tra di noi...\"</color>\n<color=#ffffffa6>\"Diventeremo, a qualsiasi costo, il cuore che pompa denaro nel mondo.\"</color>\n<color=#ffffffa6>\"E, quando sarà il momento, quel cuore cesserà di battere solo per nostra volontà.\"</color>"
           }
         ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Nome",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Fiamma fioca</color>"
-          }
-        ]
-      },
-      {
-        "key": "Origine",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Dominio Guardia della montagna</color>\n<color=#ffffffa6>Offerte mistiche</color>"
-          }
-        ]
-      }
-    ],
-    "reliquarySetEffect": {
-      "twoSetEffect": "<p><span style=\"color: #FFD780\">DAN fisici</span><span style=\"color: rgba(255, 255, 255, 0.65)\"> +25%.</span></p>",
-      "fourSetEffect": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Quando un'</span><span style=\"color: rgb(255, 215, 128)\">abilità elementale</span><span style=\"color: rgba(255, 255, 255, 0.65)\"> colpisce un avversario, l'</span><span style=\"color: rgb(255, 215, 128)\">ATT</span><span style=\"color: rgba(255, 255, 255, 0.65)\"> aumenta di un</span><span style=\"color: rgb(55, 255, 255)\"> 9%</span><span style=\"color: rgba(255, 255, 255, 0.65)\"> per </span><span style=\"color: rgb(255, 215, 128)\">7 s</span><span style=\"color: rgba(255, 255, 255, 0.65)\">. Cumulabile fino a 2 volte, si può attivare una volta ogni </span><span style=\"color: rgb(255, 215, 128)\">0,3 s</span><span style=\"color: rgba(255, 255, 255, 0.65)\">. Raggiunta la quantità massima cumulabile, l'effetto del set da 2 pezzi aumenta di un </span><span style=\"color: #37FFFF\">100%</span><span style=\"color: rgba(255, 255, 255, 0.65)\">.</span></p>"
-    },
-    "customize": [
-      {
-        "type": "RichText",
-        "text": "Personaggio\nMotivazione"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 6,
-        "name": "Eula",
-        "desc": "<p>Cavaliere dell'Onda danzante, discendente dell'antica aristocrazia e capitana della compagnia di ricognizione dei Cavalieri di Favonius. Il motivo per cui una giovane nobile abbia voluto unirsi ai Cavalieri rimane tuttora un grande mistero in tutta Mondstadt.</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Eula_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Eula</color> è l'attaccante <color=#bfbfbf>Fisico</color> per eccellenza, in quanto tutto il suo stile di combattimento è incentrato sull'effettuare ingenti <color=#bfbfbf>DAN Fisici</color> , con i suoi <color=#ffd780>attacchi normali</color> e specialmente con il suo <color=#ffd780>Tripudio elementale</color> . Il set <color=#ffffff>Fiamma fioca</color> consente di aumentare esponenzialmente il bonus <color=#bfbfbf>DAN Fisici</color> , accrescendo la potenza del personaggio."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3964,
-        "name": "Freminet",
-        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un giovane riservato esperto di immersioni. Al di là del suo atteggiamento distante e algido si nasconde un cuore puro e immacolato.</span></p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/08/157266935/8e44111a378f4e5379b8e7444e8c2daa_7358398536704337067.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "Grazie al suo kit di abilità, Freminet è un attaccante Ibrido <color=#bfbfbf>Fisico</color> / <color=#99ffff>Cryo</color> . I suoi colpi godono della capacità di effettuare <color=#99ffff>DAN da Cryo</color> e <color=#bfbfbf>Fisici</color> , secondo la funzionalità delle sue <color=#ffd780>abilità</color> e, a volte, a scelta del giocatore. Questo set di manufatti è perfetto se si preferisce concentrarsi maggiormente sui <color=#bfbfbf>DAN Fisici</color> ."
       }
     ]
   }
