@@ -12,10 +12,26 @@
   "menuName": "Yadigarlar",
   "version": 1694883582,
   "components": {
-    "reliquarySetEffect": {
-      "twoSetEffect": "<p>+%15 Doğa Hasarı Bonusu.</p>",
-      "fourSetEffect": "<p><span style=\"color: #BFBFBF\">Element Becerileri veya Patlamaları düşmana isabet ettiğinde, 8 saniyeliğine hedefin Doğa Direnci %30 azalır. Bu etki, karakter savaş alanında olmasa da tetiklenebilir.</span></p>"
-    },
+    "baseInfo": [
+      {
+        "key": "İsim",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Derin Orman Hatıraları"
+          }
+        ]
+      },
+      {
+        "key": "Kaynak",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Yadigar Zindanı: Yedi Duyu"
+          }
+        ]
+      }
+    ],
     "customize": [
       {
         "type": "RichText",
@@ -75,18 +91,11 @@
         "text": "takımlarında veya <color=#99ff88>Yayılma</color> takımlarında Yaoyao kullanıyorsanız bu seti tercih edebilirsiniz. Bu sayede düşmanların Doğa Direnci azalacak ve Çiçeklenme tepkimeleriniz ve Doğa Hasarı veren ana Hasar taşıyıcınız daha fazla Hasar vuracaktır."
       }
     ],
+    "reliquarySetEffect": {
+      "twoSetEffect": "<p>+%15 Doğa Hasarı Bonusu.</p>",
+      "fourSetEffect": "<p><span style=\"color: #BFBFBF\">Element Becerileri veya Patlamaları düşmana isabet ettiğinde, 8 saniyeliğine hedefin Doğa Direnci %30 azalır. Bu etki, karakter savaş alanında olmasa da tetiklenebilir.</span></p>"
+    },
     "artifactList": {
-      "plume_of_death": {
-        "title": "Sarmaşıklar Alimi",
-        "position": "Ölüm Tüyü",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffff73>Kuş tüyü kadar yumuşak olan zümrüt renginde bir yaprak. Bir orman aliminin kıyafetinden koparılmış.</color>"
-          }
-        ],
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/9339ebbf175d61844f0b4fafddf7c601_1824368975462472801.png"
-      },
       "flower_of_life": {
         "title": "Labirent Gezgini",
         "position": "Yaşam Çiçeği",
@@ -97,17 +106,6 @@
           }
         ],
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/f526e111c9c7dcbaed0d7fd8c8d58ef2_1582614701349912537.png"
-      },
-      "circlet_of_logos": {
-        "title": "Defne Tacı",
-        "position": "Logos Tacı",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffff73>Bitkilere ve ağaçlara hakim olan bir varlık tarafından bahşedilen bir taç. Bir zamanlar labirent kraliyet hanedanının bir yadigarıyken sonunda kralın hizmetkarlarından birine miras kaldı.</color>"
-          }
-        ],
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/11abc6739dff1cf50b95b394a3462162_5112345550386761066.png"
       },
       "goblet_of_eonothem": {
         "title": "Kayıpların Lambası",
@@ -130,6 +128,28 @@
           }
         ],
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/05d12e842479ba0a1427baba124c4929_4569610309171337625.png"
+      },
+      "circlet_of_logos": {
+        "title": "Defne Tacı",
+        "position": "Logos Tacı",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffff73>Bitkilere ve ağaçlara hakim olan bir varlık tarafından bahşedilen bir taç. Bir zamanlar labirent kraliyet hanedanının bir yadigarıyken sonunda kralın hizmetkarlarından birine miras kaldı.</color>"
+          }
+        ],
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/11abc6739dff1cf50b95b394a3462162_5112345550386761066.png"
+      },
+      "plume_of_death": {
+        "title": "Sarmaşıklar Alimi",
+        "position": "Ölüm Tüyü",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffff73>Kuş tüyü kadar yumuşak olan zümrüt renginde bir yaprak. Bir orman aliminin kıyafetinden koparılmış.</color>"
+          }
+        ],
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/9339ebbf175d61844f0b4fafddf7c601_1824368975462472801.png"
       }
     },
     "story": [
@@ -175,26 +195,6 @@
           {
             "type": "RichText",
             "text": "<color=#ffffff73>Deliliğin efendisi aynı hırsıyla kendini yok ettiğinde çölün krallarının birlik olup yükseldiği ve aynı hızda da düştükleri söylenir.</color>\n<color=#ffffff73>Birçok küçük tiran, felaketten kaçan mültecileri bir araya getirir ve bir zamanlar kadim harabelerin bulunduğu yerlere tapınaklar, saraylar ve yüksek duvarlar inşa ederdi.</color>\n<color=#ffffff73>Bu harabeye dönmüş şehirler birbiri ardına düştü, güçleri ve zenginlikleriyle övünen zorbalar da aynı kaderi paylaştı.</color>\n<color=#ffffff73>Bu kandil, çökmekte olan krallıkların genç prenslerinden birine aitti ve hazinesinde saklı kalan değerli eşyalardan biriydi.</color>\n<color=#ffffff73>\"Babam bir şahinin peşinden yüksek bir kuleye tırmandı ancak bu eski kule onun ağırlığına dayanamayıp çöktü ve çölün kızgın kumlarına düştü.\"</color>\n<color=#ffffff73>\"Böylece krallığımızın kalan günleri sayılıydı ve ben de anlamsız çatışmalara sürüklendim. İhanet dalgaları arasında bir o yana bir bu yana savruldum.\"</color>\n<color=#ffffff73>\"O günlerde kalbimde biri vardı. Kraliçe olmayı çok istiyordu ancak kralın kim olduğu onun için önemli değildi.\"</color>\n<color=#ffffff73>\"Ben aşkımı böyle kaybettim. Hayatımı ve kraliyet mührünü korumak için dudaklarına bir veda busesi kondurdum ve onu kumdan örtülerle örttüm.\"</color>\n<color=#ffffff73>\"Daha sonra, tıpkı diğer tüm kralların başına geldiği gibi dışarıdan tehditler, içeriden de düşmanlar ortaya çıktı. Akrabalar, yakınlar, köleler ve paryalar hepsi birbirine düştü ve birbirlerini öldürmeye başladılar.\"</color>\n<color=#ffffff73>\"Kıtlık ve savaş, bizi bir seraba gömmek için tanrının unuttuğu bu toprakların sıcak kumlarında ikizler gibi dans etmeye devam etti.\"</color>\n<color=#ffffff73>Böylece, kavurucu kumlardaki krallık geldiği yere geri döndü ve bir zamanlar tüm servetin sahibi olan prens, beş parasız bir göçebe oldu.</color>\n<color=#ffffff73>İçinde yeni toprakları fethetme arzusuyla ve elinde kalan azıcık servetle yağmur ormanına doğru yola koyuldu.</color>\n<color=#ffffff73>Çok daha sonra, ormanı bir Rishboland Kaplanı gibi miras almak isteyen prens, ay ışığının sessizliğine boyun eğdi.</color>\n<color=#ffffff73>Beyaz yaylı avcının gücüne kapıldı ve her gece onu takip edip her gece kovulurken</color>\n<color=#ffffff73>yurtsuz prens yavaş yavaş yağmur ormanın fısıltılarını ve kaplanların hırıltılarını anlamaya başladı. Sonunda da lütufkar rüya tarafından kabul edildi.</color>\n<color=#ffffff73>\"Hahaha, güzel bir hikaye değil mi? Evinden zorla atılıp kaderini ve şanını yeniden kazanan bir soylu...\"</color>\n<color=#ffffff73>\"Altın rüyalar sizi çağırıyor, ey diyar diyar dolaşan kum taneleri...\"</color>"
-          }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "İsim",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Derin Orman Hatıraları"
-          }
-        ]
-      },
-      {
-        "key": "Kaynak",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Yadigar Zindanı: Yedi Duyu"
           }
         ]
       }
