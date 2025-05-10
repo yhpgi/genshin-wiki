@@ -7,6 +7,36 @@
   "menuName": "NPC圖鑑",
   "version": 1679466474,
   "components": {
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/21/84496276/6112a13c080eec95d2f6a4b547e5bbc8_2320685103925212469.png"
+      },
+      {
+        "key": "圖鑑",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/21/84496276/cf1cfa2bc16d5d309977f73d2f8add86_5990974538142740142.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "瓦格納（出現時間：全天）"
+          }
+        ]
+      },
+      {
+        "key": "位置",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/21/84496276/27744026a3d1b1d20909e5f93d74b2fd_3528467449453884810.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "舒茨鐵鋪"
+          }
+        ]
+      },
+      {
+        "key": "NPC圖示",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/21/84496276/af964fe79dfdb389e5b3e38aa5d30e8a_8300739062211582971.png"
+      }
+    ],
     "textualResearch": [
       {
         "title": "地圖文本",
@@ -63,39 +93,94 @@
         ]
       }
     ],
-    "voice": [
+    "baseInfo": [
       {
-        "title": "待機·其一",
-        "desc": "<p>打鐵的訣竅，只有汗水…</p>"
+        "key": "名稱",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "瓦格納"
+          }
+        ]
       },
       {
-        "title": "待機·其二",
-        "desc": "<p>自己挑，我瓦格納的手藝不會有殘次品！</p>"
+        "key": "性別",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "男"
+          }
+        ]
+      },
+      {
+        "key": "出生地",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "蒙德"
+          }
+        ]
+      },
+      {
+        "key": "所屬",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "舒茨鐵鋪"
+          }
+        ]
+      },
+      {
+        "key": "位置",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "蒙德城鐵匠鋪"
+          }
+        ]
+      },
+      {
+        "key": "身份",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "鐵匠鋪老闆"
+          }
+        ]
+      },
+      {
+        "key": "對話贈禮",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "-"
+          }
+        ]
+      },
+      {
+        "key": "出現時間",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "全天"
+          }
+        ]
+      },
+      {
+        "key": "七聖召喚",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3285,
+            "name": "瓦格納",
+            "desc": "<p><span style=\"color: #FFFFFF\">鐵匠老闆·瓦格納</span></p><p>「打鐵依靠的不只是蠻力，還有日以繼夜努力而流下的汗水，以及比鍛鐵還要結實的毅力！」</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/292125737/6112a13c080eec95d2f6a4b547e5bbc8_1163184224462889891.png"
+          }
+        ],
+        "isMaterial": true
       }
     ],
     "customize": [
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>人物</color>\n<color=#ffffff>簡述</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "舒茨\n被瓦格納給予厚望的徒弟。「除了我和我徒弟舒茨之外，這地方沒有一個人能算得上是合格的鐵匠。」"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 40,
-        "name": "諾艾爾",
-        "desc": "「西風騎士團」的可靠女僕，夢想有一天能成為正式的騎士。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Noelle_icon.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "諾艾爾使用的雙手劍出自瓦格納之手\n勞倫斯\n勞倫斯的父親在不知曉「勞倫斯」之名的含義的情況下，輸掉了與瓦格納的賭局，不得不給自己兒子起名叫「勞倫斯」"
-      },
       {
         "type": "Heading",
         "level": 1,
@@ -276,123 +361,38 @@
         "type": "Heading",
         "level": 2,
         "text": "詳見："
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>人物</color>\n<color=#ffffff>簡述</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "舒茨\n被瓦格納給予厚望的徒弟。「除了我和我徒弟舒茨之外，這地方沒有一個人能算得上是合格的鐵匠。」"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 40,
+        "name": "諾艾爾",
+        "desc": "「西風騎士團」的可靠女僕，夢想有一天能成為正式的騎士。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Noelle_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "諾艾爾使用的雙手劍出自瓦格納之手\n勞倫斯\n勞倫斯的父親在不知曉「勞倫斯」之名的含義的情況下，輸掉了與瓦格納的賭局，不得不給自己兒子起名叫「勞倫斯」"
       }
     ],
-    "galleryCharacter": [
+    "voice": [
       {
-        "key": "Character Card",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/21/84496276/6112a13c080eec95d2f6a4b547e5bbc8_2320685103925212469.png"
+        "title": "待機·其一",
+        "desc": "<p>打鐵的訣竅，只有汗水…</p>"
       },
       {
-        "key": "圖鑑",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/21/84496276/cf1cfa2bc16d5d309977f73d2f8add86_5990974538142740142.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "瓦格納（出現時間：全天）"
-          }
-        ]
-      },
-      {
-        "key": "位置",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/21/84496276/27744026a3d1b1d20909e5f93d74b2fd_3528467449453884810.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "舒茨鐵鋪"
-          }
-        ]
-      },
-      {
-        "key": "NPC圖示",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/21/84496276/af964fe79dfdb389e5b3e38aa5d30e8a_8300739062211582971.png"
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "名稱",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "瓦格納"
-          }
-        ]
-      },
-      {
-        "key": "性別",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "男"
-          }
-        ]
-      },
-      {
-        "key": "出生地",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "蒙德"
-          }
-        ]
-      },
-      {
-        "key": "所屬",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "舒茨鐵鋪"
-          }
-        ]
-      },
-      {
-        "key": "位置",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "蒙德城鐵匠鋪"
-          }
-        ]
-      },
-      {
-        "key": "身份",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "鐵匠鋪老闆"
-          }
-        ]
-      },
-      {
-        "key": "對話贈禮",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "-"
-          }
-        ]
-      },
-      {
-        "key": "出現時間",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "全天"
-          }
-        ]
-      },
-      {
-        "key": "七聖召喚",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3285,
-            "name": "瓦格納",
-            "desc": "<p><span style=\"color: #FFFFFF\">鐵匠老闆·瓦格納</span></p><p>「打鐵依靠的不只是蠻力，還有日以繼夜努力而流下的汗水，以及比鍛鐵還要結實的毅力！」</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/292125737/6112a13c080eec95d2f6a4b547e5bbc8_1163184224462889891.png"
-          }
-        ],
-        "isMaterial": true
+        "title": "待機·其二",
+        "desc": "<p>自己挑，我瓦格納的手藝不會有殘次品！</p>"
       }
     ]
   }
