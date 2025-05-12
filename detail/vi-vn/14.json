@@ -5,17 +5,836 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Amber_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/avatar.png",
   "filterValues": {
-    "characterRarity": 4,
-    "characterWeapon": "Cung",
-    "characterRegion": "Thành Mondstadt",
     "characterVision": "Hỏa",
-    "characterProperty": "Tấn Công"
+    "characterWeapon": "Cung",
+    "characterRarity": 4,
+    "characterProperty": "Tấn Công",
+    "characterRegion": "Thành Mondstadt"
   },
   "menuId": 2,
   "menuName": "Thư Viện Nhân Vật",
   "version": 1729493857,
   "components": {
+    "baseInfo": [
+      {
+        "key": "Tên",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Amber"
+          }
+        ]
+      },
+      {
+        "key": "Sinh Nhật",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Ngày 10 tháng 8"
+          }
+        ]
+      },
+      {
+        "key": "Cung Mệnh",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Cung Tiểu Thố"
+          }
+        ]
+      },
+      {
+        "key": "Danh Hiệu",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Quán Quân Bay Lượn"
+          }
+        ]
+      },
+      {
+        "key": "Vision",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Hỏa"
+          }
+        ]
+      },
+      {
+        "key": "Thuộc",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Đội Kỵ Sĩ Tây Phong"
+          }
+        ]
+      },
+      {
+        "key": "Tiếng Trung CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "蔡书瑾"
+          }
+        ]
+      },
+      {
+        "key": "Tiếng Anh CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Kelly Baskin"
+          }
+        ]
+      },
+      {
+        "key": "Tiếng Nhật CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "石見舞菜香"
+          }
+        ]
+      },
+      {
+        "key": "Tiếng Hàn CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Kim Yeon-woo"
+          }
+        ]
+      },
+      {
+        "key": "Món Ăn Đặc Biệt",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 287,
+            "name": "Thịt Nướng Kỵ Sĩ Trinh Thám!",
+            "desc": "Món độc quyền của Amber. Thịt thăn một mặt vẫn sống, một mặt thì hơi khét. Nếu cứ nhắm mắt ăn đại thì có khiến Amber vui không nhỉ?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Outrider's Champion Steak!_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Thẻ Nhân Vật Thất Thánh Triệu Hồi",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3835,
+            "name": "Amber",
+            "desc": "<p><strong>Kỵ Sĩ Trinh Thám - Amber</strong></p><p>Nếu muốn trở thành một bài thủ vĩ đại...</p><p>Đầu tiên, phải có can đảm ngồi vào bàn đấu.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/06/02/44749939/6b0a16f307577d2a6903c70fb233c3c7_4991018137796697552.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Phiên Bản Phát Hành",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.0"
+          }
+        ]
+      }
+    ],
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/constellation_1.png",
+        "name": "Bắn Một Được Hai Hilichurl!",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Khi <color=#ffd780>ngắm bắn</color> , sẽ bắn ra 2 mũi tên liên tiếp. Mũi tên thứ hai tạo ra 20% sát thương so với sát thương gốc."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/constellation_2.png",
+        "name": "Thỏ Xông Lên",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Bá Tước Thỏ bản cải tiến! Khi hoàn thành tụ lực ngắm bắn trúng chân Bá Tước Thỏ, sẽ gây nổ ngay.\nChủ động làm nổ Bá Tước Thỏ, sẽ gây thêm 200% sát thương."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/constellation_3.png",
+        "name": "Cháy Lên Nào!",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Cấp kỹ năng <color=#ffd780>Mưa Tên</color> +3.\nTăng tối đa đến cấp 15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/constellation_4.png",
+        "name": "Không Phải Con Rối Thường",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "CD của <color=#ffd780>Con Rối Nổ</color> giảm 20%, và tăng thêm 1 lần sử dụng."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/constellation_5.png",
+        "name": "Là Bá Tước Thỏ!",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Cấp kỹ năng <color=#ffd780>Con Rối Nổ</color> +3.\nTăng tối đa đến cấp 15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/constellation_6.png",
+        "name": "Nhanh Như Lửa",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Sau khi sử dụng <color=#ffd780>Mưa Tên</color> , 10s tiếp theo tăng 15% tốc độ di chuyển của tất cả thành viên trong đội, tấn công tăng 15%."
+          }
+        ]
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/avatar_header.jpg"
+      },
+      {
+        "key": "Ảnh Gốc",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/avatar.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Trang Phục Mặc Định - \"Kỵ Sĩ Trinh Thám Điểm Tuyệt Đối\"\nPhong cách của Amber. Trang phục kỵ sĩ trinh thám với tính linh hoạt cao."
+          }
+        ]
+      },
+      {
+        "key": "Trang Phục",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/costume.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Trang Phục Thay Thế - Kỵ Sĩ Trinh Thám 100%\nPhong cách của Amber. Lần này xuất hiện, sẽ là một Kỵ Sĩ Trinh Thám càng chính thức hơn, càng anh dũng hơn đó nhé!"
+          }
+        ]
+      },
+      {
+        "key": "Hoạt Cảnh Nhàn Rỗi 1",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/07/148664880/ba9a513df39311c0dd47c2af81b46cf6_2437052031549126400.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Trang Phục Mặc Định - \"Kỵ Sĩ Trinh Thám Điểm Tuyệt Đối\""
+          }
+        ]
+      },
+      {
+        "key": "Hoạt Cảnh Nhàn Rỗi 2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/07/148664880/0ea1c13b56b214e8b6c1d272d123fc94_6169950919285795339.gif"
+      },
+      {
+        "key": "Hoạt Cảnh Nhàn Rỗi 3",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/07/148664880/3ff9ca321b006ea3ce6b6656773ad00c_251115490368951268.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Trang Phục Thay Thế - Kỵ Sĩ Trinh Thám 100%"
+          }
+        ]
+      },
+      {
+        "key": "Hoạt Cảnh Nhàn Rỗi 4",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/07/148664880/897b21ebdb88726cd6edb1eaf220aa64_5616782996358946006.gif"
+      },
+      {
+        "key": "Cung Mệnh",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/07/148664880/5c759e426ad0dbc2e9bf97b09331242e_4853407054213733859.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Cung Tiểu Thố</color>"
+          }
+        ]
+      }
+    ],
     "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=33&center=-107.92,-171.44&zoom=-1.50",
+    "ascension": [
+      {
+        "key": "Lv.1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Trước Đột Phá",
+              "Sau Đột Phá"
+            ]
+          },
+          {
+            "key": "HP Căn Bản",
+            "values": [
+              "-",
+              "793"
+            ]
+          },
+          {
+            "key": "Tấn Công Căn Bản",
+            "values": [
+              "-",
+              "19"
+            ]
+          },
+          {
+            "key": "P.Ngự Căn Bản",
+            "values": [
+              "-",
+              "50"
+            ]
+          },
+          {
+            "key": "Tấn Công",
+            "values": [
+              "-",
+              "0%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Lv.20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Trước Đột Phá",
+              "Sau Đột Phá"
+            ]
+          },
+          {
+            "key": "HP Căn Bản",
+            "values": [
+              "2038",
+              "2630 "
+            ]
+          },
+          {
+            "key": "Tấn Công Căn Bản",
+            "values": [
+              "48",
+              "62"
+            ]
+          },
+          {
+            "key": "P.Ngự Căn Bản",
+            "values": [
+              "129",
+              "167"
+            ]
+          },
+          {
+            "key": "Tấn Công",
+            "values": [
+              "0%",
+              "0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1100,
+            "name": "Vụn Mã Não Cháy",
+            "desc": "Nguyên Liệu Đột Phá Nhân Vật",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 642,
+            "name": "Tiểu Đăng Thảo",
+            "desc": "Loài hoa dại mọc trong đêm. Nấu cùng các món khác có thể tăng thêm hương vị.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Small Lamp Grass_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1105,
+            "name": "Mũi Tên Chắc Chắn",
+            "desc": "Mũi tên được làm sơ sài. Cho dù như vậy cũng không thể xem thường: Nỏ là một vũ khí nguy hiểm, cho dù là kỵ sĩ cao quý cũng có thể bị đánh ngã từ phía sau.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Firm Arrowhead_icon.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "Lv.40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Trước Đột Phá",
+              "Sau Đột Phá"
+            ]
+          },
+          {
+            "key": "HP Căn Bản",
+            "values": [
+              "3940",
+              "4361"
+            ]
+          },
+          {
+            "key": "Tấn Công Căn Bản",
+            "values": [
+              "93",
+              "103"
+            ]
+          },
+          {
+            "key": "P.Ngự Căn Bản",
+            "values": [
+              "250",
+              "277"
+            ]
+          },
+          {
+            "key": "Tấn Công",
+            "values": [
+              "0%",
+              "6%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1099,
+            "name": "Mảnh Mã Não Cháy",
+            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Ngọn Lửa Vĩnh Hằng",
+            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 642,
+            "name": "Tiểu Đăng Thảo",
+            "desc": "Loài hoa dại mọc trong đêm. Nấu cùng các món khác có thể tăng thêm hương vị.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Small Lamp Grass_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1105,
+            "name": "Mũi Tên Chắc Chắn",
+            "desc": "Mũi tên được làm sơ sài. Cho dù như vậy cũng không thể xem thường: Nỏ là một vũ khí nguy hiểm, cho dù là kỵ sĩ cao quý cũng có thể bị đánh ngã từ phía sau.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Firm Arrowhead_icon.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "Lv.50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Trước Đột Phá",
+              "Sau Đột Phá"
+            ]
+          },
+          {
+            "key": "HP Căn Bản",
+            "values": [
+              "5016",
+              "5578"
+            ]
+          },
+          {
+            "key": "Tấn Công Căn Bản",
+            "values": [
+              "118",
+              "131"
+            ]
+          },
+          {
+            "key": "P.Ngự Căn Bản",
+            "values": [
+              "318",
+              "354"
+            ]
+          },
+          {
+            "key": "Tấn Công",
+            "values": [
+              "6%",
+              "12%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1099,
+            "name": "Mảnh Mã Não Cháy",
+            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Ngọn Lửa Vĩnh Hằng",
+            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 642,
+            "name": "Tiểu Đăng Thảo",
+            "desc": "Loài hoa dại mọc trong đêm. Nấu cùng các món khác có thể tăng thêm hương vị.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Small Lamp Grass_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1683,
+            "name": "Mũi Tên Sắc Bén",
+            "desc": "Mũi tên tinh xảo. Đầu nhọn sắc bén có thể xuyên qua giáp kẻ địch như ném đá vào nước, đâm thẳng vào cơ thể thú săn.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sharp Arrowhead_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Trước Đột Phá",
+              "Sau Đột Phá"
+            ]
+          },
+          {
+            "key": "HP Căn Bản",
+            "values": [
+              "6233",
+              "6654"
+            ]
+          },
+          {
+            "key": "Tấn Công Căn Bản",
+            "values": [
+              "147",
+              "157"
+            ]
+          },
+          {
+            "key": "P.Ngự Căn Bản",
+            "values": [
+              "396",
+              "422"
+            ]
+          },
+          {
+            "key": "Tấn Công",
+            "values": [
+              "12%",
+              "12%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1098,
+            "name": "Miếng Mã Não Cháy",
+            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"<br/>\"Cuối cùng thiêu cháy tất cả vì giấc mơ.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Ngọn Lửa Vĩnh Hằng",
+            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 642,
+            "name": "Tiểu Đăng Thảo",
+            "desc": "Loài hoa dại mọc trong đêm. Nấu cùng các món khác có thể tăng thêm hương vị.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Small Lamp Grass_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1683,
+            "name": "Mũi Tên Sắc Bén",
+            "desc": "Mũi tên tinh xảo. Đầu nhọn sắc bén có thể xuyên qua giáp kẻ địch như ném đá vào nước, đâm thẳng vào cơ thể thú săn.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sharp Arrowhead_icon.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Lv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Trước Đột Phá",
+              "Sau Đột Phá"
+            ]
+          },
+          {
+            "key": "HP Căn Bản",
+            "values": [
+              "7309",
+              "7730"
+            ]
+          },
+          {
+            "key": "Tấn Công Căn Bản",
+            "values": [
+              "172",
+              "182"
+            ]
+          },
+          {
+            "key": "P.Ngự Căn Bản",
+            "values": [
+              "464",
+              "491"
+            ]
+          },
+          {
+            "key": "Tấn Công",
+            "values": [
+              "12%",
+              "18%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1098,
+            "name": "Miếng Mã Não Cháy",
+            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"<br/>\"Cuối cùng thiêu cháy tất cả vì giấc mơ.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Ngọn Lửa Vĩnh Hằng",
+            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 642,
+            "name": "Tiểu Đăng Thảo",
+            "desc": "Loài hoa dại mọc trong đêm. Nấu cùng các món khác có thể tăng thêm hương vị.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Small Lamp Grass_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 367,
+            "name": "Mũi Tên Thiện Chiến",
+            "desc": "Mũi tên cũ có vết máu khô. Do sử dụng nhiều nên đã mất đi sự sắc bén, không thể dùng làm vũ khí.<br/>Nhưng nó cũng là niềm tự hào của người thợ săn, là huân chương và bùa may mắn của họ.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Weathered Arrowhead_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Trước Đột Phá",
+              "Sau Đột Phá"
+            ]
+          },
+          {
+            "key": "HP Căn Bản",
+            "values": [
+              "8385",
+              "8806"
+            ]
+          },
+          {
+            "key": "Tấn Công Căn Bản",
+            "values": [
+              "198",
+              "208"
+            ]
+          },
+          {
+            "key": "P.Ngự Căn Bản",
+            "values": [
+              "532",
+              "559"
+            ]
+          },
+          {
+            "key": "Tấn Công",
+            "values": [
+              "18%",
+              "24%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1097,
+            "name": "Mã Não Cháy",
+            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"<br/>\"Cuối cùng thiêu cháy tất cả vì giấc mơ.\"<br/>\"Trong tro tàn nếu còn sót lại trái tim như ban đầu, vậy thì hắn sẽ đạt được ██ thật sự.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Ngọn Lửa Vĩnh Hằng",
+            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 642,
+            "name": "Tiểu Đăng Thảo",
+            "desc": "Loài hoa dại mọc trong đêm. Nấu cùng các món khác có thể tăng thêm hương vị.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Small Lamp Grass_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 367,
+            "name": "Mũi Tên Thiện Chiến",
+            "desc": "Mũi tên cũ có vết máu khô. Do sử dụng nhiều nên đã mất đi sự sắc bén, không thể dùng làm vũ khí.<br/>Nhưng nó cũng là niềm tự hào của người thợ săn, là huân chương và bùa may mắn của họ.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Weathered Arrowhead_icon.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "Lv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Trước Đột Phá",
+              "Sau Đột Phá"
+            ]
+          },
+          {
+            "key": "HP Căn Bản",
+            "values": [
+              "9461",
+              "-"
+            ]
+          },
+          {
+            "key": "Tấn Công Căn Bản",
+            "values": [
+              "223",
+              "-"
+            ]
+          },
+          {
+            "key": "P.Ngự Căn Bản",
+            "values": [
+              "601",
+              "-"
+            ]
+          },
+          {
+            "key": "Tấn Công",
+            "values": [
+              "24%",
+              "-"
+            ]
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "title": "Miêu Tả Nhân Vật",
@@ -88,6 +907,308 @@
             "text": "Amber vốn cho rằng, chỉ cần thừa kế chức vụ của ông, là có thể điều tra được lý do ông rời khỏi Mondstadt.\nNhưng cho đến khi cô chính thức trở thành Kỵ Sĩ Trinh Thám, cô vẫn chưa tìm được lý do tại sao ông không từ mà biệt.\nÔng không để lại gì cả, cũng có nghĩa là con đường phía trước hoàn toàn phụ thuộc vào Amber tự mình khám phá.\nAmber cũng đã từng cảm thấy lung lay mờ mịt, cho đến khi đọc được một cuốn sách ngụ ngôn mà sau đó đã được cô xem như là báu vật.\n\"Thứ quan trọng nhất không phải gió mạnh mà là dũng khí, là nó khiến các bạn trở thành những con chim đầu tiên trên thế giới\".\nAmber nhận ra rằng, cô không nên chờ đợi sự hướng dẫn của ai, mà nên trở thành một chú chim dũng cảm, tung cánh bay lên bầu trời.\nChắc chắn có \"những việc mà chỉ tôi mới làm\", chắc chắn còn có \"những việc mà chỉ tôi mới có thể làm được\".\nTrong khoảnh khắc hiểu được điều này, có một Vision toả sáng rực rỡ ở thắt lưng của Amber."
           }
         ]
+      }
+    ],
+    "voice": [
+      {
+        "title": "Lần đầu gặp mặt...",
+        "desc": "Kỵ Sĩ Trinh Thám Amber, báo cáo! Sau này có việc gì cần giúp đỡ thì cứ nói!"
+      },
+      {
+        "title": "Nói chuyện phiếm - Hứng thú",
+        "desc": "Muốn chạy bộ quá đi."
+      },
+      {
+        "title": "Nói chuyện phiếm - Nhớ nhung",
+        "desc": "Nếu để Jean phát hiện tôi lười biếng, cô ấy sẽ không vui."
+      },
+      {
+        "title": "Nói chuyện phiếm - Phát hiện mới",
+        "desc": "Bên kia hình như có vật gì kỳ lạ... Không muốn đi xem thử sao?"
+      },
+      {
+        "title": "Khi trời mưa - Lo lắng",
+        "desc": "Mưa rồi... Nơ bướm sẽ bị ướt..."
+      },
+      {
+        "title": "Khi trời mưa - Nhắc nhở",
+        "desc": "Mưa rồi... Tầm nhìn cũng sẽ bị ảnh hưởng, cẩn thận đấy."
+      },
+      {
+        "title": "Sau cơn mưa trời lại sáng...",
+        "desc": "Ồ! Thời tiết đẹp quá."
+      },
+      {
+        "title": "Ánh nắng thật chan hòa...",
+        "desc": "Ừm... phải mà gió lớn một chút thì tốt rồi."
+      },
+      {
+        "title": "Khi gió nổi lên - Thi vị",
+        "desc": "Thật dễ chịu..."
+      },
+      {
+        "title": "Khi gió nổi lên - Nhẹ nhõm",
+        "desc": "Tôi thích thời tiết này, ừm... thật dễ chịu!"
+      },
+      {
+        "title": "Chào buổi sáng...",
+        "desc": "Chào buổi sáng! Có muốn cùng chạy bộ không?"
+      },
+      {
+        "title": "Chào buổi trưa...",
+        "desc": "Tôi có thể ăn trưa cùng bạn không?"
+      },
+      {
+        "title": "Chào buổi tối...",
+        "desc": "Trời tối rồi, có cần tôi đốt lửa không?"
+      },
+      {
+        "title": "Chúc ngủ ngon...",
+        "desc": "Đúng vậy, nghỉ ngơi cũng rất quan trọng! Vậy nhé, mai gặp lại!"
+      },
+      {
+        "title": "Về bản thân Amber...",
+        "desc": "Quán quân bay lượn của thành Mondstadt chính là tôi!"
+      },
+      {
+        "title": "Về chúng tôi - Thi đấu",
+        "desc": "Dù là bạn, tôi cũng sẽ không lơ là khi thi đấu!"
+      },
+      {
+        "title": "Về chúng tôi - Bay lượn",
+        "desc": "Khi bay cùng bạn... dạy bạn bay, hình như tôi cũng bay được nhanh hơn... Này, bạn cười gì đấy? Thi với tôi đi, ngay bây giờ!"
+      },
+      {
+        "title": "Về Vision...",
+        "desc": "Vision\", là sự công nhận của Thần đối với tôi. Ừm, tôi phải trở thành Kỵ Sĩ Trinh Thám ưu tú nhất mới được!"
+      },
+      {
+        "title": "Có gì muốn chia sẻ không...",
+        "desc": "Đi thôi, đến tháp chuông của giáo đường xem xem, phong cảnh tuyệt đẹp!"
+      },
+      {
+        "title": "Những kiến thức thú vị...",
+        "desc": "Nhìn kìa, bên kia có bồ câu! Muốn bay cùng bọn chúng quá đi."
+      },
+      {
+        "title": "Về Jean - Giúp đỡ",
+        "desc": "Sau khi Đại Đội Trưởng ra trận, mọi chuyện lớn nhỏ đều đổ hết lên người Jean. Nếu tôi có thể giúp được chút gì cho cô ấy thì tốt quá..."
+      },
+      {
+        "title": "Về Jean - Quan tâm",
+        "desc": "Có lẽ Jean vẫn đang làm việc?... Đi, cùng mời cô ấy uống một ly cà phê nào."
+      },
+      {
+        "title": "Về Lisa - Nghe kể chuyện",
+        "desc": "Đợi bạn rảnh, chúng ta sẽ cùng đi tìm Lisa! Lần trước cô ấy có kể cho tôi nghe câu chuyện về kho báu Long Tích Tuyết Sơn, mới chỉ kể được một nửa. Ừm, tôi vẫn muốn biết phần còn lại!"
+      },
+      {
+        "title": "Về Lisa - Kính phục",
+        "desc": "Hình như Lisa ngoài giờ ngủ ra thì đều là đọc sách! Thật lợi hại, tôi không thể ngồi lâu như vậy được."
+      },
+      {
+        "title": "Về Kaeya - Lo lắng",
+        "desc": "...Có cảm giác bất an! Lúc nãy Kaeya đi cùng bạn đúng không? Cậu ấy không gây rắc rối gì cho bạn chứ?"
+      },
+      {
+        "title": "Về Kaeya - Thủ phạm",
+        "desc": "Bồ công anh trong vườn trông có vẻ xơ xác, hừm... chắc chắn là Kaeya giở trò rồi!"
+      },
+      {
+        "title": "Về Bennett...",
+        "desc": "Hửm? Bennett... hình như từng nghe ở đâu đó rồi... À! Người bạn nói là một chàng trai nhiệt huyết của Hiệp Hội Nhà Mạo Hiểm phải không! Có lúc tôi gặp cậu ấy ở gần Bí Cảnh, hình như cậu ấy rất đam mê với việc tìm kho báu."
+      },
+      {
+        "title": "Về Klee...",
+        "desc": "Klee đôi khi có hơi nghịch ngợm, nhưng mọi người ở Đội Kỵ Sĩ đều rất thích cô ấy! Ừm... để cô ấy không bị Jean bắt nhốt lần nữa, hãy trông chừng cô ấy kĩ một chút."
+      },
+      {
+        "title": "Về Albedo...",
+        "desc": "Hầu hết thời gian Albedo chỉ ở xưởng của mình, làm một số thứ rất lợi hại. Nhưng khi nhìn cậu ấy, sẽ có cảm giác như không thể đoán được cậu ấy đang nghĩ gì. Ừ, không đoán được..."
+      },
+      {
+        "title": "Về Noelle...",
+        "desc": "Bạn hỏi Noelle sao? Cô ấy rất kiên nhẫn. Là bậc tiền bối, bạn cũng nên quan tâm cô ấy một chút."
+      },
+      {
+        "title": "Về Eula...",
+        "desc": "Eula là người bạn tốt của tôi! Chỉ cần quen với những trò đùa của cô ấy thì bạn sẽ phát hiện ra rằng Eula thực sự rất tốt bụng. Thế nhưng chỉ vì cái họ của mình mà Eula thường xuyên bị vướng vào rắc rối, làm sao để mọi người có thể hiểu được Eula đây..."
+      },
+      {
+        "title": "Muốn tìm hiểu Amber - Điều thứ 1",
+        "desc": "Tôi cũng rất giỏi săn bắn! Thế nào, muốn xem kỹ năng của tôi không? Hay là... muốn thi đấu?"
+      },
+      {
+        "title": "Muốn tìm hiểu Amber - Điều thứ 2",
+        "desc": "Chia sẻ với bạn kinh nghiệm quán quân bay lượn của tôi nhé! Quan trọng nhất là phải đủ can đảm!"
+      },
+      {
+        "title": "Muốn tìm hiểu Amber - Điều thứ 3",
+        "desc": "Thật ra tôi không giỏi giải câu đố, trong Lễ Đánh Cầu hễ nhìn thấy gian hàng đố vui là bỏ đi ngay... Bạn thì sao?"
+      },
+      {
+        "title": "Muốn tìm hiểu Amber - Điều thứ 4",
+        "desc": "Tôi gia nhập đội kỵ sĩ là vì ông nội, và vì Jean. Bây giờ có bạn cùng tôi ngắm nhìn bầu trời bên ngoài Mondstadt. Tôi thật sự rất vui."
+      },
+      {
+        "title": "Muốn tìm hiểu Amber - Điều thứ 5",
+        "desc": "Tôi còn muốn đến những thế giới xa hơn. Tôi muốn nhìn thấy chân trời! Bạn vẫn sẽ đi cùng tôi đúng không, đúng không?"
+      },
+      {
+        "title": "Sở thích của Amber...",
+        "desc": "Bá Tước Thỏ, hôm nay cũng là một ngày nắng ráo!"
+      },
+      {
+        "title": "Nỗi buồn của Amber...",
+        "desc": "Ừm... Bạn có biết làm cách nào để làm ra được một chiếc bánh trung thu ngon không?"
+      },
+      {
+        "title": "Món ăn yêu thích...",
+        "desc": "Cà phê Jean pha thật sự rất thơm! Có dịp bạn nhớ thử nhé."
+      },
+      {
+        "title": "Món ăn ghét...",
+        "desc": "Chỉ cần không phải là nước trái cây quá lạnh... ừm... tôi đều có thể xử lý được!"
+      },
+      {
+        "title": "Sinh nhật...",
+        "desc": "Hihihi, sinh nhật vui vẻ! Tặng bạn, là \"Bá Tước Thỏ phiên bản đặc biệt\" tôi tự tay may đó... Yên tâm, là phiên bản đặc biệt, sẽ không nổ đâu!"
+      },
+      {
+        "title": "Cảm Giác Đột Phá - Khởi",
+        "desc": "Ồ! Nhanh như cưỡi gió vậy!"
+      },
+      {
+        "title": "Cảm Giác Đột Phá - Thừa",
+        "desc": "Với tốc độ bây giờ thì không ai đuổi kịp đâu nhỉ!"
+      },
+      {
+        "title": "Cảm Giác Đột Phá - Chuyển",
+        "desc": "Bầu trời Mondstadt hình như nhỏ lại... Hay là bởi vì tầm nhìn của tôi đã rộng hơn?"
+      },
+      {
+        "title": "Cảm Giác Đột Phá - Hợp",
+        "desc": "Tôi bây giờ... tiến bộ hơn nhiều so với lúc mới gặp bạn đúng không. Hihi, rất cảm ơn! Tôi mời bạn ăn Thịt Nướng Mật Ong nhé, đi theo tôi!"
+      },
+      {
+        "title": "Kỹ Năng Nguyên Tố I",
+        "desc": "Đón đấy."
+      },
+      {
+        "title": "Kỹ Năng Nguyên Tố II",
+        "desc": "Bá Tước Thỏ, xuất kích!"
+      },
+      {
+        "title": "Kỹ Năng Nguyên Tố III",
+        "desc": "♪Hmm~ hmm~ hmm~ hmm~ hmm~"
+      },
+      {
+        "title": "Kỹ Năng Nộ I",
+        "desc": "Bách phát bách trúng!"
+      },
+      {
+        "title": "Kỹ Năng Nộ II",
+        "desc": "Đổ mưa nào!"
+      },
+      {
+        "title": "Kỹ Năng Nộ III",
+        "desc": "Không còn đường lui đâu!"
+      },
+      {
+        "title": "Xung Kích Bắt Đầu I",
+        "desc": "Đến thi đấu nào!"
+      },
+      {
+        "title": "Xung Kích Bắt Đầu II",
+        "desc": "Theo kịp tôi chứ?"
+      },
+      {
+        "title": "Xung Kích Kết Thúc I",
+        "desc": "Đã nói là chạy không lại tôi đâu."
+      },
+      {
+        "title": "Xung Kích Kết Thúc II",
+        "desc": "Chính là cảm giác này!"
+      },
+      {
+        "title": "Mở Phong Chi Dực I",
+        "desc": "Tôi chính là Quán Quân Bay Lượn của Thành Mondstadt!"
+      },
+      {
+        "title": "Mở Phong Chi Dực II",
+        "desc": "Cứ việc giao cho tôi!"
+      },
+      {
+        "title": "Mở Rương I",
+        "desc": "Giây phút mở rương là kích thích nhất!"
+      },
+      {
+        "title": "Mở Rương II",
+        "desc": "Kỵ sĩ trinh thám phát hiện mục tiêu!"
+      },
+      {
+        "title": "Mở Rương III",
+        "desc": "Woa, toàn là đồ ngon!"
+      },
+      {
+        "title": "HP Thấp I",
+        "desc": "...Tôi sẽ không đầu hàng đâu!"
+      },
+      {
+        "title": "HP Thấp II",
+        "desc": "Á đau quá... cái tên này..."
+      },
+      {
+        "title": "HP Thấp III",
+        "desc": "Đừng xem thường tôi!"
+      },
+      {
+        "title": "Ngã Xuống I",
+        "desc": "...Chạy mệt rồi..."
+      },
+      {
+        "title": "Ngã Xuống II",
+        "desc": "Huấn luyện...vẫn chưa đủ..."
+      },
+      {
+        "title": "Ngã Xuống III",
+        "desc": "Lần này tôi...thua rồi..."
+      },
+      {
+        "title": "Chịu Đòn Thường I",
+        "desc": "Thật vướng víu!"
+      },
+      {
+        "title": "Bị Trọng Kích I",
+        "desc": "Đau quá!"
+      },
+      {
+        "title": "Bị Trọng Kích II",
+        "desc": "Phạm luật rồi!"
+      },
+      {
+        "title": "Vào Đội I",
+        "desc": "Giao cho tôi nhé!"
+      },
+      {
+        "title": "Vào Đội II",
+        "desc": "Chuẩn bị sẵn sàng!"
+      },
+      {
+        "title": "Vào Đội III",
+        "desc": "Kỵ Sĩ Trinh Thám có mặt!"
+      },
+      {
+        "title": "Nhận Được Quà I",
+        "desc": "Woa, món này ngon quá. Bạn cừ thật!"
+      },
+      {
+        "title": "Nhận Được Quà II",
+        "desc": "Giá như tôi cũng có được tay nghề như bạn thì tốt biết mấy..."
+      },
+      {
+        "title": "Nhận Được Quà III",
+        "desc": "Tôi không quen với mùi vị này lắm, thật xin lỗi! Không phải do bạn!"
       }
     ],
     "talent": [
@@ -824,1127 +1945,6 @@
           }
         ],
         "attributes": null
-      }
-    ],
-    "ascension": [
-      {
-        "key": "Lv.1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Trước Đột Phá",
-              "Sau Đột Phá"
-            ]
-          },
-          {
-            "key": "HP Căn Bản",
-            "values": [
-              "-",
-              "793"
-            ]
-          },
-          {
-            "key": "Tấn Công Căn Bản",
-            "values": [
-              "-",
-              "19"
-            ]
-          },
-          {
-            "key": "P.Ngự Căn Bản",
-            "values": [
-              "-",
-              "50"
-            ]
-          },
-          {
-            "key": "Tấn Công",
-            "values": [
-              "-",
-              "0%"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Lv.20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Trước Đột Phá",
-              "Sau Đột Phá"
-            ]
-          },
-          {
-            "key": "HP Căn Bản",
-            "values": [
-              "2038",
-              "2630 "
-            ]
-          },
-          {
-            "key": "Tấn Công Căn Bản",
-            "values": [
-              "48",
-              "62"
-            ]
-          },
-          {
-            "key": "P.Ngự Căn Bản",
-            "values": [
-              "129",
-              "167"
-            ]
-          },
-          {
-            "key": "Tấn Công",
-            "values": [
-              "0%",
-              "0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1100,
-            "name": "Vụn Mã Não Cháy",
-            "desc": "Nguyên Liệu Đột Phá Nhân Vật",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 642,
-            "name": "Tiểu Đăng Thảo",
-            "desc": "Loài hoa dại mọc trong đêm. Nấu cùng các món khác có thể tăng thêm hương vị.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Small Lamp Grass_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1105,
-            "name": "Mũi Tên Chắc Chắn",
-            "desc": "Mũi tên được làm sơ sài. Cho dù như vậy cũng không thể xem thường: Nỏ là một vũ khí nguy hiểm, cho dù là kỵ sĩ cao quý cũng có thể bị đánh ngã từ phía sau.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Firm Arrowhead_icon.png",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "key": "Lv.40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Trước Đột Phá",
-              "Sau Đột Phá"
-            ]
-          },
-          {
-            "key": "HP Căn Bản",
-            "values": [
-              "3940",
-              "4361"
-            ]
-          },
-          {
-            "key": "Tấn Công Căn Bản",
-            "values": [
-              "93",
-              "103"
-            ]
-          },
-          {
-            "key": "P.Ngự Căn Bản",
-            "values": [
-              "250",
-              "277"
-            ]
-          },
-          {
-            "key": "Tấn Công",
-            "values": [
-              "0%",
-              "6%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1099,
-            "name": "Mảnh Mã Não Cháy",
-            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Ngọn Lửa Vĩnh Hằng",
-            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 642,
-            "name": "Tiểu Đăng Thảo",
-            "desc": "Loài hoa dại mọc trong đêm. Nấu cùng các món khác có thể tăng thêm hương vị.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Small Lamp Grass_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1105,
-            "name": "Mũi Tên Chắc Chắn",
-            "desc": "Mũi tên được làm sơ sài. Cho dù như vậy cũng không thể xem thường: Nỏ là một vũ khí nguy hiểm, cho dù là kỵ sĩ cao quý cũng có thể bị đánh ngã từ phía sau.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Firm Arrowhead_icon.png",
-            "amount": 15
-          }
-        ]
-      },
-      {
-        "key": "Lv.50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Trước Đột Phá",
-              "Sau Đột Phá"
-            ]
-          },
-          {
-            "key": "HP Căn Bản",
-            "values": [
-              "5016",
-              "5578"
-            ]
-          },
-          {
-            "key": "Tấn Công Căn Bản",
-            "values": [
-              "118",
-              "131"
-            ]
-          },
-          {
-            "key": "P.Ngự Căn Bản",
-            "values": [
-              "318",
-              "354"
-            ]
-          },
-          {
-            "key": "Tấn Công",
-            "values": [
-              "6%",
-              "12%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1099,
-            "name": "Mảnh Mã Não Cháy",
-            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Ngọn Lửa Vĩnh Hằng",
-            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 642,
-            "name": "Tiểu Đăng Thảo",
-            "desc": "Loài hoa dại mọc trong đêm. Nấu cùng các món khác có thể tăng thêm hương vị.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Small Lamp Grass_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1683,
-            "name": "Mũi Tên Sắc Bén",
-            "desc": "Mũi tên tinh xảo. Đầu nhọn sắc bén có thể xuyên qua giáp kẻ địch như ném đá vào nước, đâm thẳng vào cơ thể thú săn.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sharp Arrowhead_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Trước Đột Phá",
-              "Sau Đột Phá"
-            ]
-          },
-          {
-            "key": "HP Căn Bản",
-            "values": [
-              "6233",
-              "6654"
-            ]
-          },
-          {
-            "key": "Tấn Công Căn Bản",
-            "values": [
-              "147",
-              "157"
-            ]
-          },
-          {
-            "key": "P.Ngự Căn Bản",
-            "values": [
-              "396",
-              "422"
-            ]
-          },
-          {
-            "key": "Tấn Công",
-            "values": [
-              "12%",
-              "12%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1098,
-            "name": "Miếng Mã Não Cháy",
-            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"<br/>\"Cuối cùng thiêu cháy tất cả vì giấc mơ.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Ngọn Lửa Vĩnh Hằng",
-            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 642,
-            "name": "Tiểu Đăng Thảo",
-            "desc": "Loài hoa dại mọc trong đêm. Nấu cùng các món khác có thể tăng thêm hương vị.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Small Lamp Grass_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1683,
-            "name": "Mũi Tên Sắc Bén",
-            "desc": "Mũi tên tinh xảo. Đầu nhọn sắc bén có thể xuyên qua giáp kẻ địch như ném đá vào nước, đâm thẳng vào cơ thể thú săn.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sharp Arrowhead_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Lv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Trước Đột Phá",
-              "Sau Đột Phá"
-            ]
-          },
-          {
-            "key": "HP Căn Bản",
-            "values": [
-              "7309",
-              "7730"
-            ]
-          },
-          {
-            "key": "Tấn Công Căn Bản",
-            "values": [
-              "172",
-              "182"
-            ]
-          },
-          {
-            "key": "P.Ngự Căn Bản",
-            "values": [
-              "464",
-              "491"
-            ]
-          },
-          {
-            "key": "Tấn Công",
-            "values": [
-              "12%",
-              "18%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1098,
-            "name": "Miếng Mã Não Cháy",
-            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"<br/>\"Cuối cùng thiêu cháy tất cả vì giấc mơ.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Ngọn Lửa Vĩnh Hằng",
-            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 642,
-            "name": "Tiểu Đăng Thảo",
-            "desc": "Loài hoa dại mọc trong đêm. Nấu cùng các món khác có thể tăng thêm hương vị.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Small Lamp Grass_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 367,
-            "name": "Mũi Tên Thiện Chiến",
-            "desc": "Mũi tên cũ có vết máu khô. Do sử dụng nhiều nên đã mất đi sự sắc bén, không thể dùng làm vũ khí.<br/>Nhưng nó cũng là niềm tự hào của người thợ săn, là huân chương và bùa may mắn của họ.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Weathered Arrowhead_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Trước Đột Phá",
-              "Sau Đột Phá"
-            ]
-          },
-          {
-            "key": "HP Căn Bản",
-            "values": [
-              "8385",
-              "8806"
-            ]
-          },
-          {
-            "key": "Tấn Công Căn Bản",
-            "values": [
-              "198",
-              "208"
-            ]
-          },
-          {
-            "key": "P.Ngự Căn Bản",
-            "values": [
-              "532",
-              "559"
-            ]
-          },
-          {
-            "key": "Tấn Công",
-            "values": [
-              "18%",
-              "24%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1097,
-            "name": "Mã Não Cháy",
-            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"<br/>\"Cuối cùng thiêu cháy tất cả vì giấc mơ.\"<br/>\"Trong tro tàn nếu còn sót lại trái tim như ban đầu, vậy thì hắn sẽ đạt được ██ thật sự.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Ngọn Lửa Vĩnh Hằng",
-            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 642,
-            "name": "Tiểu Đăng Thảo",
-            "desc": "Loài hoa dại mọc trong đêm. Nấu cùng các món khác có thể tăng thêm hương vị.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Small Lamp Grass_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 367,
-            "name": "Mũi Tên Thiện Chiến",
-            "desc": "Mũi tên cũ có vết máu khô. Do sử dụng nhiều nên đã mất đi sự sắc bén, không thể dùng làm vũ khí.<br/>Nhưng nó cũng là niềm tự hào của người thợ săn, là huân chương và bùa may mắn của họ.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Weathered Arrowhead_icon.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Lv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Trước Đột Phá",
-              "Sau Đột Phá"
-            ]
-          },
-          {
-            "key": "HP Căn Bản",
-            "values": [
-              "9461",
-              "-"
-            ]
-          },
-          {
-            "key": "Tấn Công Căn Bản",
-            "values": [
-              "223",
-              "-"
-            ]
-          },
-          {
-            "key": "P.Ngự Căn Bản",
-            "values": [
-              "601",
-              "-"
-            ]
-          },
-          {
-            "key": "Tấn Công",
-            "values": [
-              "24%",
-              "-"
-            ]
-          }
-        ]
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/avatar_header.jpg"
-      },
-      {
-        "key": "Ảnh Gốc",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/avatar.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Trang Phục Mặc Định - \"Kỵ Sĩ Trinh Thám Điểm Tuyệt Đối\"\nPhong cách của Amber. Trang phục kỵ sĩ trinh thám với tính linh hoạt cao."
-          }
-        ]
-      },
-      {
-        "key": "Trang Phục",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/costume.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Trang Phục Thay Thế - Kỵ Sĩ Trinh Thám 100%\nPhong cách của Amber. Lần này xuất hiện, sẽ là một Kỵ Sĩ Trinh Thám càng chính thức hơn, càng anh dũng hơn đó nhé!"
-          }
-        ]
-      },
-      {
-        "key": "Hoạt Cảnh Nhàn Rỗi 1",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/07/148664880/ba9a513df39311c0dd47c2af81b46cf6_2437052031549126400.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Trang Phục Mặc Định - \"Kỵ Sĩ Trinh Thám Điểm Tuyệt Đối\""
-          }
-        ]
-      },
-      {
-        "key": "Hoạt Cảnh Nhàn Rỗi 2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/07/148664880/0ea1c13b56b214e8b6c1d272d123fc94_6169950919285795339.gif"
-      },
-      {
-        "key": "Hoạt Cảnh Nhàn Rỗi 3",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/07/148664880/3ff9ca321b006ea3ce6b6656773ad00c_251115490368951268.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Trang Phục Thay Thế - Kỵ Sĩ Trinh Thám 100%"
-          }
-        ]
-      },
-      {
-        "key": "Hoạt Cảnh Nhàn Rỗi 4",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/07/148664880/897b21ebdb88726cd6edb1eaf220aa64_5616782996358946006.gif"
-      },
-      {
-        "key": "Cung Mệnh",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/07/148664880/5c759e426ad0dbc2e9bf97b09331242e_4853407054213733859.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Cung Tiểu Thố</color>"
-          }
-        ]
-      }
-    ],
-    "voice": [
-      {
-        "title": "Lần đầu gặp mặt...",
-        "desc": "Kỵ Sĩ Trinh Thám Amber, báo cáo! Sau này có việc gì cần giúp đỡ thì cứ nói!"
-      },
-      {
-        "title": "Nói chuyện phiếm - Hứng thú",
-        "desc": "Muốn chạy bộ quá đi."
-      },
-      {
-        "title": "Nói chuyện phiếm - Nhớ nhung",
-        "desc": "Nếu để Jean phát hiện tôi lười biếng, cô ấy sẽ không vui."
-      },
-      {
-        "title": "Nói chuyện phiếm - Phát hiện mới",
-        "desc": "Bên kia hình như có vật gì kỳ lạ... Không muốn đi xem thử sao?"
-      },
-      {
-        "title": "Khi trời mưa - Lo lắng",
-        "desc": "Mưa rồi... Nơ bướm sẽ bị ướt..."
-      },
-      {
-        "title": "Khi trời mưa - Nhắc nhở",
-        "desc": "Mưa rồi... Tầm nhìn cũng sẽ bị ảnh hưởng, cẩn thận đấy."
-      },
-      {
-        "title": "Sau cơn mưa trời lại sáng...",
-        "desc": "Ồ! Thời tiết đẹp quá."
-      },
-      {
-        "title": "Ánh nắng thật chan hòa...",
-        "desc": "Ừm... phải mà gió lớn một chút thì tốt rồi."
-      },
-      {
-        "title": "Khi gió nổi lên - Thi vị",
-        "desc": "Thật dễ chịu..."
-      },
-      {
-        "title": "Khi gió nổi lên - Nhẹ nhõm",
-        "desc": "Tôi thích thời tiết này, ừm... thật dễ chịu!"
-      },
-      {
-        "title": "Chào buổi sáng...",
-        "desc": "Chào buổi sáng! Có muốn cùng chạy bộ không?"
-      },
-      {
-        "title": "Chào buổi trưa...",
-        "desc": "Tôi có thể ăn trưa cùng bạn không?"
-      },
-      {
-        "title": "Chào buổi tối...",
-        "desc": "Trời tối rồi, có cần tôi đốt lửa không?"
-      },
-      {
-        "title": "Chúc ngủ ngon...",
-        "desc": "Đúng vậy, nghỉ ngơi cũng rất quan trọng! Vậy nhé, mai gặp lại!"
-      },
-      {
-        "title": "Về bản thân Amber...",
-        "desc": "Quán quân bay lượn của thành Mondstadt chính là tôi!"
-      },
-      {
-        "title": "Về chúng tôi - Thi đấu",
-        "desc": "Dù là bạn, tôi cũng sẽ không lơ là khi thi đấu!"
-      },
-      {
-        "title": "Về chúng tôi - Bay lượn",
-        "desc": "Khi bay cùng bạn... dạy bạn bay, hình như tôi cũng bay được nhanh hơn... Này, bạn cười gì đấy? Thi với tôi đi, ngay bây giờ!"
-      },
-      {
-        "title": "Về Vision...",
-        "desc": "Vision\", là sự công nhận của Thần đối với tôi. Ừm, tôi phải trở thành Kỵ Sĩ Trinh Thám ưu tú nhất mới được!"
-      },
-      {
-        "title": "Có gì muốn chia sẻ không...",
-        "desc": "Đi thôi, đến tháp chuông của giáo đường xem xem, phong cảnh tuyệt đẹp!"
-      },
-      {
-        "title": "Những kiến thức thú vị...",
-        "desc": "Nhìn kìa, bên kia có bồ câu! Muốn bay cùng bọn chúng quá đi."
-      },
-      {
-        "title": "Về Jean - Giúp đỡ",
-        "desc": "Sau khi Đại Đội Trưởng ra trận, mọi chuyện lớn nhỏ đều đổ hết lên người Jean. Nếu tôi có thể giúp được chút gì cho cô ấy thì tốt quá..."
-      },
-      {
-        "title": "Về Jean - Quan tâm",
-        "desc": "Có lẽ Jean vẫn đang làm việc?... Đi, cùng mời cô ấy uống một ly cà phê nào."
-      },
-      {
-        "title": "Về Lisa - Nghe kể chuyện",
-        "desc": "Đợi bạn rảnh, chúng ta sẽ cùng đi tìm Lisa! Lần trước cô ấy có kể cho tôi nghe câu chuyện về kho báu Long Tích Tuyết Sơn, mới chỉ kể được một nửa. Ừm, tôi vẫn muốn biết phần còn lại!"
-      },
-      {
-        "title": "Về Lisa - Kính phục",
-        "desc": "Hình như Lisa ngoài giờ ngủ ra thì đều là đọc sách! Thật lợi hại, tôi không thể ngồi lâu như vậy được."
-      },
-      {
-        "title": "Về Kaeya - Lo lắng",
-        "desc": "...Có cảm giác bất an! Lúc nãy Kaeya đi cùng bạn đúng không? Cậu ấy không gây rắc rối gì cho bạn chứ?"
-      },
-      {
-        "title": "Về Kaeya - Thủ phạm",
-        "desc": "Bồ công anh trong vườn trông có vẻ xơ xác, hừm... chắc chắn là Kaeya giở trò rồi!"
-      },
-      {
-        "title": "Về Bennett...",
-        "desc": "Hửm? Bennett... hình như từng nghe ở đâu đó rồi... À! Người bạn nói là một chàng trai nhiệt huyết của Hiệp Hội Nhà Mạo Hiểm phải không! Có lúc tôi gặp cậu ấy ở gần Bí Cảnh, hình như cậu ấy rất đam mê với việc tìm kho báu."
-      },
-      {
-        "title": "Về Klee...",
-        "desc": "Klee đôi khi có hơi nghịch ngợm, nhưng mọi người ở Đội Kỵ Sĩ đều rất thích cô ấy! Ừm... để cô ấy không bị Jean bắt nhốt lần nữa, hãy trông chừng cô ấy kĩ một chút."
-      },
-      {
-        "title": "Về Albedo...",
-        "desc": "Hầu hết thời gian Albedo chỉ ở xưởng của mình, làm một số thứ rất lợi hại. Nhưng khi nhìn cậu ấy, sẽ có cảm giác như không thể đoán được cậu ấy đang nghĩ gì. Ừ, không đoán được..."
-      },
-      {
-        "title": "Về Noelle...",
-        "desc": "Bạn hỏi Noelle sao? Cô ấy rất kiên nhẫn. Là bậc tiền bối, bạn cũng nên quan tâm cô ấy một chút."
-      },
-      {
-        "title": "Về Eula...",
-        "desc": "Eula là người bạn tốt của tôi! Chỉ cần quen với những trò đùa của cô ấy thì bạn sẽ phát hiện ra rằng Eula thực sự rất tốt bụng. Thế nhưng chỉ vì cái họ của mình mà Eula thường xuyên bị vướng vào rắc rối, làm sao để mọi người có thể hiểu được Eula đây..."
-      },
-      {
-        "title": "Muốn tìm hiểu Amber - Điều thứ 1",
-        "desc": "Tôi cũng rất giỏi săn bắn! Thế nào, muốn xem kỹ năng của tôi không? Hay là... muốn thi đấu?"
-      },
-      {
-        "title": "Muốn tìm hiểu Amber - Điều thứ 2",
-        "desc": "Chia sẻ với bạn kinh nghiệm quán quân bay lượn của tôi nhé! Quan trọng nhất là phải đủ can đảm!"
-      },
-      {
-        "title": "Muốn tìm hiểu Amber - Điều thứ 3",
-        "desc": "Thật ra tôi không giỏi giải câu đố, trong Lễ Đánh Cầu hễ nhìn thấy gian hàng đố vui là bỏ đi ngay... Bạn thì sao?"
-      },
-      {
-        "title": "Muốn tìm hiểu Amber - Điều thứ 4",
-        "desc": "Tôi gia nhập đội kỵ sĩ là vì ông nội, và vì Jean. Bây giờ có bạn cùng tôi ngắm nhìn bầu trời bên ngoài Mondstadt. Tôi thật sự rất vui."
-      },
-      {
-        "title": "Muốn tìm hiểu Amber - Điều thứ 5",
-        "desc": "Tôi còn muốn đến những thế giới xa hơn. Tôi muốn nhìn thấy chân trời! Bạn vẫn sẽ đi cùng tôi đúng không, đúng không?"
-      },
-      {
-        "title": "Sở thích của Amber...",
-        "desc": "Bá Tước Thỏ, hôm nay cũng là một ngày nắng ráo!"
-      },
-      {
-        "title": "Nỗi buồn của Amber...",
-        "desc": "Ừm... Bạn có biết làm cách nào để làm ra được một chiếc bánh trung thu ngon không?"
-      },
-      {
-        "title": "Món ăn yêu thích...",
-        "desc": "Cà phê Jean pha thật sự rất thơm! Có dịp bạn nhớ thử nhé."
-      },
-      {
-        "title": "Món ăn ghét...",
-        "desc": "Chỉ cần không phải là nước trái cây quá lạnh... ừm... tôi đều có thể xử lý được!"
-      },
-      {
-        "title": "Sinh nhật...",
-        "desc": "Hihihi, sinh nhật vui vẻ! Tặng bạn, là \"Bá Tước Thỏ phiên bản đặc biệt\" tôi tự tay may đó... Yên tâm, là phiên bản đặc biệt, sẽ không nổ đâu!"
-      },
-      {
-        "title": "Cảm Giác Đột Phá - Khởi",
-        "desc": "Ồ! Nhanh như cưỡi gió vậy!"
-      },
-      {
-        "title": "Cảm Giác Đột Phá - Thừa",
-        "desc": "Với tốc độ bây giờ thì không ai đuổi kịp đâu nhỉ!"
-      },
-      {
-        "title": "Cảm Giác Đột Phá - Chuyển",
-        "desc": "Bầu trời Mondstadt hình như nhỏ lại... Hay là bởi vì tầm nhìn của tôi đã rộng hơn?"
-      },
-      {
-        "title": "Cảm Giác Đột Phá - Hợp",
-        "desc": "Tôi bây giờ... tiến bộ hơn nhiều so với lúc mới gặp bạn đúng không. Hihi, rất cảm ơn! Tôi mời bạn ăn Thịt Nướng Mật Ong nhé, đi theo tôi!"
-      },
-      {
-        "title": "Kỹ Năng Nguyên Tố I",
-        "desc": "Đón đấy."
-      },
-      {
-        "title": "Kỹ Năng Nguyên Tố II",
-        "desc": "Bá Tước Thỏ, xuất kích!"
-      },
-      {
-        "title": "Kỹ Năng Nguyên Tố III",
-        "desc": "♪Hmm~ hmm~ hmm~ hmm~ hmm~"
-      },
-      {
-        "title": "Kỹ Năng Nộ I",
-        "desc": "Bách phát bách trúng!"
-      },
-      {
-        "title": "Kỹ Năng Nộ II",
-        "desc": "Đổ mưa nào!"
-      },
-      {
-        "title": "Kỹ Năng Nộ III",
-        "desc": "Không còn đường lui đâu!"
-      },
-      {
-        "title": "Xung Kích Bắt Đầu I",
-        "desc": "Đến thi đấu nào!"
-      },
-      {
-        "title": "Xung Kích Bắt Đầu II",
-        "desc": "Theo kịp tôi chứ?"
-      },
-      {
-        "title": "Xung Kích Kết Thúc I",
-        "desc": "Đã nói là chạy không lại tôi đâu."
-      },
-      {
-        "title": "Xung Kích Kết Thúc II",
-        "desc": "Chính là cảm giác này!"
-      },
-      {
-        "title": "Mở Phong Chi Dực I",
-        "desc": "Tôi chính là Quán Quân Bay Lượn của Thành Mondstadt!"
-      },
-      {
-        "title": "Mở Phong Chi Dực II",
-        "desc": "Cứ việc giao cho tôi!"
-      },
-      {
-        "title": "Mở Rương I",
-        "desc": "Giây phút mở rương là kích thích nhất!"
-      },
-      {
-        "title": "Mở Rương II",
-        "desc": "Kỵ sĩ trinh thám phát hiện mục tiêu!"
-      },
-      {
-        "title": "Mở Rương III",
-        "desc": "Woa, toàn là đồ ngon!"
-      },
-      {
-        "title": "HP Thấp I",
-        "desc": "...Tôi sẽ không đầu hàng đâu!"
-      },
-      {
-        "title": "HP Thấp II",
-        "desc": "Á đau quá... cái tên này..."
-      },
-      {
-        "title": "HP Thấp III",
-        "desc": "Đừng xem thường tôi!"
-      },
-      {
-        "title": "Ngã Xuống I",
-        "desc": "...Chạy mệt rồi..."
-      },
-      {
-        "title": "Ngã Xuống II",
-        "desc": "Huấn luyện...vẫn chưa đủ..."
-      },
-      {
-        "title": "Ngã Xuống III",
-        "desc": "Lần này tôi...thua rồi..."
-      },
-      {
-        "title": "Chịu Đòn Thường I",
-        "desc": "Thật vướng víu!"
-      },
-      {
-        "title": "Bị Trọng Kích I",
-        "desc": "Đau quá!"
-      },
-      {
-        "title": "Bị Trọng Kích II",
-        "desc": "Phạm luật rồi!"
-      },
-      {
-        "title": "Vào Đội I",
-        "desc": "Giao cho tôi nhé!"
-      },
-      {
-        "title": "Vào Đội II",
-        "desc": "Chuẩn bị sẵn sàng!"
-      },
-      {
-        "title": "Vào Đội III",
-        "desc": "Kỵ Sĩ Trinh Thám có mặt!"
-      },
-      {
-        "title": "Nhận Được Quà I",
-        "desc": "Woa, món này ngon quá. Bạn cừ thật!"
-      },
-      {
-        "title": "Nhận Được Quà II",
-        "desc": "Giá như tôi cũng có được tay nghề như bạn thì tốt biết mấy..."
-      },
-      {
-        "title": "Nhận Được Quà III",
-        "desc": "Tôi không quen với mùi vị này lắm, thật xin lỗi! Không phải do bạn!"
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Tên",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Amber"
-          }
-        ]
-      },
-      {
-        "key": "Sinh Nhật",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Ngày 10 tháng 8"
-          }
-        ]
-      },
-      {
-        "key": "Cung Mệnh",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Cung Tiểu Thố"
-          }
-        ]
-      },
-      {
-        "key": "Danh Hiệu",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Quán Quân Bay Lượn"
-          }
-        ]
-      },
-      {
-        "key": "Vision",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Hỏa"
-          }
-        ]
-      },
-      {
-        "key": "Thuộc",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Đội Kỵ Sĩ Tây Phong"
-          }
-        ]
-      },
-      {
-        "key": "Tiếng Trung CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "蔡书瑾"
-          }
-        ]
-      },
-      {
-        "key": "Tiếng Anh CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Kelly Baskin"
-          }
-        ]
-      },
-      {
-        "key": "Tiếng Nhật CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "石見舞菜香"
-          }
-        ]
-      },
-      {
-        "key": "Tiếng Hàn CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Kim Yeon-woo"
-          }
-        ]
-      },
-      {
-        "key": "Món Ăn Đặc Biệt",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 287,
-            "name": "Thịt Nướng Kỵ Sĩ Trinh Thám!",
-            "desc": "Món độc quyền của Amber. Thịt thăn một mặt vẫn sống, một mặt thì hơi khét. Nếu cứ nhắm mắt ăn đại thì có khiến Amber vui không nhỉ?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Outrider's Champion Steak!_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Thẻ Nhân Vật Thất Thánh Triệu Hồi",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3835,
-            "name": "Amber",
-            "desc": "<p><strong>Kỵ Sĩ Trinh Thám - Amber</strong></p><p>Nếu muốn trở thành một bài thủ vĩ đại...</p><p>Đầu tiên, phải có can đảm ngồi vào bàn đấu.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/06/02/44749939/6b0a16f307577d2a6903c70fb233c3c7_4991018137796697552.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Phiên Bản Phát Hành",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.0"
-          }
-        ]
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/constellation_1.png",
-        "name": "Bắn Một Được Hai Hilichurl!",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Khi <color=#ffd780>ngắm bắn</color> , sẽ bắn ra 2 mũi tên liên tiếp. Mũi tên thứ hai tạo ra 20% sát thương so với sát thương gốc."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/constellation_2.png",
-        "name": "Thỏ Xông Lên",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Bá Tước Thỏ bản cải tiến! Khi hoàn thành tụ lực ngắm bắn trúng chân Bá Tước Thỏ, sẽ gây nổ ngay.\nChủ động làm nổ Bá Tước Thỏ, sẽ gây thêm 200% sát thương."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/constellation_3.png",
-        "name": "Cháy Lên Nào!",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Cấp kỹ năng <color=#ffd780>Mưa Tên</color> +3.\nTăng tối đa đến cấp 15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/constellation_4.png",
-        "name": "Không Phải Con Rối Thường",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "CD của <color=#ffd780>Con Rối Nổ</color> giảm 20%, và tăng thêm 1 lần sử dụng."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/constellation_5.png",
-        "name": "Là Bá Tước Thỏ!",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Cấp kỹ năng <color=#ffd780>Con Rối Nổ</color> +3.\nTăng tối đa đến cấp 15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/安柏/constellation_6.png",
-        "name": "Nhanh Như Lửa",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Sau khi sử dụng <color=#ffd780>Mưa Tên</color> , 10s tiếp theo tăng 15% tốc độ di chuyển của tất cả thành viên trong đội, tấn công tăng 15%."
-          }
-        ]
       }
     ]
   }
