@@ -5,165 +5,537 @@
   "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/23/144837601/75bb898fe1c3b4ed29a2931829ddb845_3288881199680832356.png",
   "headerImgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/31/10257458/733dfcc873d613939c633cd206a1f37f_5486644689818272095.png",
   "filterValues": {
-    "characterVision": "ไฟ",
-    "characterProperty": "พลังโจมตี",
     "characterWeapon": "ดาบ",
-    "characterRarity": 5
+    "characterRarity": 5,
+    "characterVision": "ไฟ",
+    "characterProperty": "พลังโจมตี"
   },
   "menuId": 2,
   "menuName": "คู่มือตัวละคร",
   "version": 1735821450,
   "components": {
-    "summaryList": [
+    "ascension": [
       {
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/01/10257458/2601380dc91bdedf13509657ab21f8b1_4980369603576984631.png",
-        "name": "Starfire's Flowing Light",
-        "desc": [
+        "key": "Lv.1",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "ในช่วงเวลา <color=#ffd780>กงล้อเพลิงโหม</color> หรือ <color=#ffd780>กงล้อแผดเผา</color> ตัวละครที่เข้าร่วมการต่อสู้ในขณะนั้นจะสร้างความเสียหายเพิ่มขึ้น 6%; หากตัวละครที่เข้าร่วมการต่อสู้ในขณะนั้น อยู่ในสถานะพรวิญญาณราตรี จะสร้างความเสียหายเพิ่มขึ้นอีก 9%"
+            "key": "",
+            "values": [
+              "ก่อนเลื่อนขั้น",
+              "หลังเลื่อนขั้น"
+            ]
+          },
+          {
+            "key": "พลังชีวิตพื้นฐาน",
+            "values": [
+              "-",
+              "912"
+            ]
+          },
+          {
+            "key": "พลังโจมตีพื้นฐาน",
+            "values": [
+              "-",
+              "18"
+            ]
+          },
+          {
+            "key": "ป้องกันพื้นฐาน",
+            "values": [
+              "-",
+              "57"
+            ]
+          },
+          {
+            "key": "พลังโจมตีเปอร์เซ็น",
+            "values": [
+              "-",
+              "0%"
+            ]
           }
         ]
       },
       {
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/01/10257458/28a35d825bf5165dc1b98e9ef2822a31_8656388936292511133.png",
-        "name": "Ever-Lit Candle",
-        "desc": [
+        "key": "Lv.20",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "ภายใน 12 วินาที หลังจากปล่อยสกิลธาตุ <color=#ffd780>Flowfire Blade</color> เมื่อตัวละครในทีมที่อยู่ใกล้เคียง ทำให้เกิด <color=#ff9999>ปฏิกิริยาเกี่ยวกับธาตุไฟ</color> จะฟื้นฟูพลังงานธาตุให้กับนักเดินทาง 14 หน่วย และทุกครั้งที่ปล่อยสกิลธาตุ <color=#ffd780>Flowfire Blade</color> จะสามารถฟื้นฟูค่าวิญญาณราตรีด้วยวิธีนี้ได้มากสุด 28 หน่วย"
+            "key": "",
+            "values": [
+              "ก่อนเลื่อนขั้น",
+              "หลังเลื่อนขั้น"
+            ]
+          },
+          {
+            "key": "พลังชีวิตพิ้นฐาน",
+            "values": [
+              "2342",
+              "3024"
+            ]
+          },
+          {
+            "key": "พลังโจมตีพื้นฐาน",
+            "values": [
+              "46",
+              "59"
+            ]
+          },
+          {
+            "key": "ป้องกันพื้นฐาน",
+            "values": [
+              "147",
+              "190"
+            ]
+          },
+          {
+            "key": "พลังโจมตีเปอร์เซ็น",
+            "values": [
+              "0%",
+              "0.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1189,
+            "name": "Brilliant Diamond Sliver",
+            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"ขอต้อนรับสู่โลกกว้าง\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Brilliant Diamond Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Windwheel Aster",
+            "desc": "พืชที่ชอบลม สำหรับผู้ซึ่งมีความเชื่อในสายลมอย่างชาว Mondstadt ที่มีความจริงใจซื่อตรงแล้ว Windwheel Aster ก็เปรียบดั่ง \"ลมที่มองเห็นได้\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1247,
+            "name": "Damaged Mask",
+            "desc": "หน้ากากที่ทำจากกระดูกชิ้นนี้ เดิมทีเป็นของพวก Hilichurl <br/>แต่เนื่องจากได้รับความเสียหาย จำนวนมาก เลยทำให้ไม่สามารถใช้งานตามหน้าที่ของมันได้อีก",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
+            "amount": 3
           }
         ]
       },
       {
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/01/10257458/328dbf43a4ba4c5f008f7652f489c39e_8239602957262990467.png",
-        "name": "Relayed Beacon",
-        "desc": [
+        "key": "Lv.40",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "เพิ่มเลเวลสกิลของสกิลธาตุ <color=#ffd780>Flowfire Blade</color> ขึ้น 3 ระดับ\nเพิ่มได้สูงสุดถึงระดับ 15"
+            "key": "",
+            "values": [
+              "ก่อนเลื่อนขั้น",
+              "หลังเลื่อนขั้น"
+            ]
+          },
+          {
+            "key": "พลังชีวิตพื้นฐาน",
+            "values": [
+              "4529",
+              "5013"
+            ]
+          },
+          {
+            "key": "พลังโจมตีพื้นฐาน",
+            "values": [
+              "88",
+              "98"
+            ]
+          },
+          {
+            "key": "ป้องกันพื้นฐาน",
+            "values": [
+              "284",
+              "315"
+            ]
+          },
+          {
+            "key": "พลังโจมตีเปอร์เซ็น",
+            "values": [
+              "0.0%",
+              "6.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1188,
+            "name": "Brilliant Diamond Fragment",
+            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"ขอต้อนรับสู่โลกกว้าง\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Brilliant Diamond Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Windwheel Aster",
+            "desc": "พืชที่ชอบลม สำหรับผู้ซึ่งมีความเชื่อในสายลมอย่างชาว Mondstadt ที่มีความจริงใจซื่อตรงแล้ว Windwheel Aster ก็เปรียบดั่ง \"ลมที่มองเห็นได้\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1247,
+            "name": "Damaged Mask",
+            "desc": "หน้ากากที่ทำจากกระดูกชิ้นนี้ เดิมทีเป็นของพวก Hilichurl <br/>แต่เนื่องจากได้รับความเสียหาย จำนวนมาก เลยทำให้ไม่สามารถใช้งานตามหน้าที่ของมันได้อีก",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
+            "amount": 15
           }
         ]
       },
       {
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/01/10257458/3596c93e46d00e57d1f9ad4fea1549e4_8994880460913976882.png",
-        "name": "Ravaging Flame",
-        "desc": [
+        "key": "Lv.50",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "หลังจากปล่อยท่าไม้ตาย <color=#ffd780>Plains Scorcher</color> นักเดินทางจะได้รับ <color=#ff9999>โบนัสความเสียหายไฟ</color> 20% เป็นเวลา 9 วินาที"
+            "key": "",
+            "values": [
+              "ก่อนเลื่อนขั้น",
+              "หลังเลื่อนขั้น"
+            ]
+          },
+          {
+            "key": "พลังชีวิตพื้นฐาน",
+            "values": [
+              "5766",
+              "6411"
+            ]
+          },
+          {
+            "key": "พลังโจมตีพื้นฐาน",
+            "values": [
+              "113",
+              "125"
+            ]
+          },
+          {
+            "key": "ป้องกันพื้นฐาน",
+            "values": [
+              "362",
+              "402"
+            ]
+          },
+          {
+            "key": "พลังโจมตีเปอร์เซ็น",
+            "values": [
+              "6.0%",
+              "12.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1188,
+            "name": "Brilliant Diamond Fragment",
+            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"ขอต้อนรับสู่โลกกว้าง\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Brilliant Diamond Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Windwheel Aster",
+            "desc": "พืชที่ชอบลม สำหรับผู้ซึ่งมีความเชื่อในสายลมอย่างชาว Mondstadt ที่มีความจริงใจซื่อตรงแล้ว Windwheel Aster ก็เปรียบดั่ง \"ลมที่มองเห็นได้\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 983,
+            "name": "Stained Mask",
+            "desc": "หน้ากากที่เต็มไปด้วยคราบต่างๆ จนดูไม่ออกเลยว่ามันคือหน้ากากที่ทำมาจากกระดูก มีกลิ่นหอมอ่อนๆ ออกมาด้วย<br/>ต้องยอมสวมมัน เพราะพวก Hilichurl เคร่งครัดเรื่องหน้ากากมาก",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+            "amount": 12
           }
         ]
       },
       {
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/01/10257458/29d0891372bd9b706c6bfc1332be3bf2_7226488253228643312.png",
-        "name": "The Fire Inextinguishable",
-        "desc": [
+        "key": "Lv.60",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "เพิ่มเลเวลสกิลของท่าไม้ตาย <color=#ffd780>Plains Scorcher</color> ขึ้น 3 ระดับ\nเพิ่มได้สูงสุดถึงระดับ 15"
+            "key": "",
+            "values": [
+              "ก่อนเลื่อนขั้น",
+              "หลังเลื่อนขั้น"
+            ]
+          },
+          {
+            "key": "พลังชีวิตพื้นฐาน",
+            "values": [
+              "7164",
+              "7648"
+            ]
+          },
+          {
+            "key": "พลังโจมตีพื้นฐาน",
+            "values": [
+              "140",
+              "149"
+            ]
+          },
+          {
+            "key": "ป้องกันพื้นฐาน",
+            "values": [
+              "450",
+              "480"
+            ]
+          },
+          {
+            "key": "พลังโจมตีเปอร์เซ็น",
+            "values": [
+              "12.0%",
+              "12.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1187,
+            "name": "Brilliant Diamond Chunk",
+            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"ขอต้อนรับสู่โลกกว้าง\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Brilliant Diamond Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Windwheel Aster",
+            "desc": "พืชที่ชอบลม สำหรับผู้ซึ่งมีความเชื่อในสายลมอย่างชาว Mondstadt ที่มีความจริงใจซื่อตรงแล้ว Windwheel Aster ก็เปรียบดั่ง \"ลมที่มองเห็นได้\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 983,
+            "name": "Stained Mask",
+            "desc": "หน้ากากที่เต็มไปด้วยคราบต่างๆ จนดูไม่ออกเลยว่ามันคือหน้ากากที่ทำมาจากกระดูก มีกลิ่นหอมอ่อนๆ ออกมาด้วย<br/>ต้องยอมสวมมัน เพราะพวก Hilichurl เคร่งครัดเรื่องหน้ากากมาก",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+            "amount": 18
           }
         ]
       },
       {
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/01/10257458/b9d38ed03c31d0552f20fcb19a36cd58_2923518501734750604.png",
-        "name": "The Sacred Flame Imperishable",
-        "desc": [
+        "key": "Lv.70",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "เมื่อต่อสู้กับ Lord of Erodded Primal Fire ที่เป็นร่างแปลงของ \"Gosoythoth\" และอยู่ในสถานะพรวิญญาณราตรี ความเร็วในการเคลื่อนที่ของนักเดินทางจะเพิ่มขึ้น 20%\nการใช้พลังกายลดลง 30% และเมื่อทำการโจมตีปกติหรือชาร์จโจมตั จะเหวี่ยงกระแสเพลิงไปข้างหน้า สร้างความเสียหายไฟที่มีคุณสมบัติวิญญาณราตรีแก่ศัตรูที่อยู่ในเส้นทางเท่ากับ 96% ของพลังโจมตีของนักเดินทาง"
+            "key": "",
+            "values": [
+              "ก่อนเลื่อนขั้น",
+              "หลังเลื่อนขั้น"
+            ]
+          },
+          {
+            "key": "พลังชีวิตพื้นฐาน",
+            "values": [
+              "8401",
+              "8885"
+            ]
+          },
+          {
+            "key": "พลังโจมัตีพื้นฐาน",
+            "values": [
+              "164",
+              "174"
+            ]
+          },
+          {
+            "key": "ป้องกันพื้นฐาน",
+            "values": [
+              "527",
+              "558"
+            ]
+          },
+          {
+            "key": "พลังโจมตีเปอร์เซ็น",
+            "values": [
+              "12.0%",
+              "18.0%"
+            ]
           }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "ชื่อ",
-        "value": [
+        ],
+        "materials": [
           {
-            "type": "RichText",
-            "text": "นักเดินทาง"
-          }
-        ]
-      },
-      {
-        "key": "วันเกิด",
-        "value": [
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
           {
-            "type": "RichText",
-            "text": "-"
-          }
-        ]
-      },
-      {
-        "key": "กลุ่มดาว",
-        "value": [
+            "type": "CustomEntry",
+            "epId": 1187,
+            "name": "Brilliant Diamond Chunk",
+            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"ขอต้อนรับสู่โลกกว้าง\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Brilliant Diamond Chunk_icon.png",
+            "amount": 6
+          },
           {
-            "type": "RichText",
-            "text": "Viator & Viatrix"
-          }
-        ]
-      },
-      {
-        "key": "ฉายา",
-        "value": [
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Windwheel Aster",
+            "desc": "พืชที่ชอบลม สำหรับผู้ซึ่งมีความเชื่อในสายลมอย่างชาว Mondstadt ที่มีความจริงใจซื่อตรงแล้ว Windwheel Aster ก็เปรียบดั่ง \"ลมที่มองเห็นได้\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 45
+          },
           {
-            "type": "RichText",
-            "text": "-"
-          }
-        ]
-      },
-      {
-        "key": "วิชั่น",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ไม่มี"
-          }
-        ]
-      },
-      {
-        "key": "สังกัด",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "-"
-          }
-        ]
-      },
-      {
-        "key": "ภาษาจีน CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "鹿喑 & 宴宁"
-          }
-        ]
-      },
-      {
-        "key": "ภาษาอังกฤษ CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Zach Aguilar & Sarah Miller-Crews"
+            "type": "CustomEntry",
+            "epId": 983,
+            "name": "Stained Mask",
+            "desc": "หน้ากากที่เต็มไปด้วยคราบต่างๆ จนดูไม่ออกเลยว่ามันคือหน้ากากที่ทำมาจากกระดูก มีกลิ่นหอมอ่อนๆ ออกมาด้วย<br/>ต้องยอมสวมมัน เพราะพวก Hilichurl เคร่งครัดเรื่องหน้ากากมาก",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+            "amount": 12
           }
         ]
       },
       {
-        "key": "ภาษาญี่ปุ่น CV",
-        "value": [
+        "key": "Lv.80",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "堀江瞬 & 悠木碧"
+            "key": "",
+            "values": [
+              "ก่อนเลื่อนขั้น",
+              "หลังเลื่อนขั้น"
+            ]
+          },
+          {
+            "key": "พลังชีวิตพื้นฐาน",
+            "values": [
+              "9638",
+              "10122"
+            ]
+          },
+          {
+            "key": "พลังโจมตีพื้นฐาน",
+            "values": [
+              "188",
+              "198"
+            ]
+          },
+          {
+            "key": "ป้องกันพื้นฐาน",
+            "values": [
+              "605",
+              "635"
+            ]
+          },
+          {
+            "key": "พลังโจมตีเปอร์เซ็น",
+            "values": [
+              "18.0%",
+              "24.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1186,
+            "name": "Brilliant Diamond Gemstone",
+            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"ขอต้อนรับสู่โลกกว้าง\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Brilliant Diamond Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Windwheel Aster",
+            "desc": "พืชที่ชอบลม สำหรับผู้ซึ่งมีความเชื่อในสายลมอย่างชาว Mondstadt ที่มีความจริงใจซื่อตรงแล้ว Windwheel Aster ก็เปรียบดั่ง \"ลมที่มองเห็นได้\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 220,
+            "name": "Ominous Mask",
+            "desc": "หน้ากากที่เคลือบด้วยสีน้ำมัน มีความหมายถึงการข่มขู่ศัตรู<br/>ไม่มีใครทราบถึงความสัมพันธ์ที่แท้จริงระหว่างพวก Hilichurl กับหน้ากาก แต่มีคนเคยบอกไว้ว่าที่เป็นเช่นนี้ ก็เพราะว่าพวกมันไม่ต้องการเห็นเงาของตัวเองในแม่น้ำ",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+            "amount": 24
           }
         ]
       },
       {
-        "key": "ภาษาเกาหลี CV",
-        "value": [
+        "key": "Lv.90",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "Lee Kyeong-tae & Lee Sae-ah"
+            "key": "",
+            "values": [
+              "ก่อนเลื่อนขั้น",
+              "หลังเลื่อนขั้น"
+            ]
+          },
+          {
+            "key": "พลังชีวิตพื้นฐาน",
+            "values": [
+              "10875",
+              "-"
+            ]
+          },
+          {
+            "key": "พลังโจมตีพื้นฐาน",
+            "values": [
+              "212",
+              "-"
+            ]
+          },
+          {
+            "key": "ป้องกันพื้นฐาน",
+            "values": [
+              "683",
+              "-"
+            ]
+          },
+          {
+            "key": "พลังโจมตีเปอร์เซ็น",
+            "values": [
+              "24.0%",
+              "-"
+            ]
           }
         ]
       }
@@ -1384,548 +1756,6 @@
         "attributes": []
       }
     ],
-    "ascension": [
-      {
-        "key": "Lv.1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "ก่อนเลื่อนขั้น",
-              "หลังเลื่อนขั้น"
-            ]
-          },
-          {
-            "key": "พลังชีวิตพื้นฐาน",
-            "values": [
-              "-",
-              "912"
-            ]
-          },
-          {
-            "key": "พลังโจมตีพื้นฐาน",
-            "values": [
-              "-",
-              "18"
-            ]
-          },
-          {
-            "key": "ป้องกันพื้นฐาน",
-            "values": [
-              "-",
-              "57"
-            ]
-          },
-          {
-            "key": "พลังโจมตีเปอร์เซ็น",
-            "values": [
-              "-",
-              "0%"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Lv.20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "ก่อนเลื่อนขั้น",
-              "หลังเลื่อนขั้น"
-            ]
-          },
-          {
-            "key": "พลังชีวิตพิ้นฐาน",
-            "values": [
-              "2342",
-              "3024"
-            ]
-          },
-          {
-            "key": "พลังโจมตีพื้นฐาน",
-            "values": [
-              "46",
-              "59"
-            ]
-          },
-          {
-            "key": "ป้องกันพื้นฐาน",
-            "values": [
-              "147",
-              "190"
-            ]
-          },
-          {
-            "key": "พลังโจมตีเปอร์เซ็น",
-            "values": [
-              "0%",
-              "0.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1189,
-            "name": "Brilliant Diamond Sliver",
-            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"ขอต้อนรับสู่โลกกว้าง\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Brilliant Diamond Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Windwheel Aster",
-            "desc": "พืชที่ชอบลม สำหรับผู้ซึ่งมีความเชื่อในสายลมอย่างชาว Mondstadt ที่มีความจริงใจซื่อตรงแล้ว Windwheel Aster ก็เปรียบดั่ง \"ลมที่มองเห็นได้\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1247,
-            "name": "Damaged Mask",
-            "desc": "หน้ากากที่ทำจากกระดูกชิ้นนี้ เดิมทีเป็นของพวก Hilichurl <br/>แต่เนื่องจากได้รับความเสียหาย จำนวนมาก เลยทำให้ไม่สามารถใช้งานตามหน้าที่ของมันได้อีก",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "key": "Lv.40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "ก่อนเลื่อนขั้น",
-              "หลังเลื่อนขั้น"
-            ]
-          },
-          {
-            "key": "พลังชีวิตพื้นฐาน",
-            "values": [
-              "4529",
-              "5013"
-            ]
-          },
-          {
-            "key": "พลังโจมตีพื้นฐาน",
-            "values": [
-              "88",
-              "98"
-            ]
-          },
-          {
-            "key": "ป้องกันพื้นฐาน",
-            "values": [
-              "284",
-              "315"
-            ]
-          },
-          {
-            "key": "พลังโจมตีเปอร์เซ็น",
-            "values": [
-              "0.0%",
-              "6.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1188,
-            "name": "Brilliant Diamond Fragment",
-            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"ขอต้อนรับสู่โลกกว้าง\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Brilliant Diamond Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Windwheel Aster",
-            "desc": "พืชที่ชอบลม สำหรับผู้ซึ่งมีความเชื่อในสายลมอย่างชาว Mondstadt ที่มีความจริงใจซื่อตรงแล้ว Windwheel Aster ก็เปรียบดั่ง \"ลมที่มองเห็นได้\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1247,
-            "name": "Damaged Mask",
-            "desc": "หน้ากากที่ทำจากกระดูกชิ้นนี้ เดิมทีเป็นของพวก Hilichurl <br/>แต่เนื่องจากได้รับความเสียหาย จำนวนมาก เลยทำให้ไม่สามารถใช้งานตามหน้าที่ของมันได้อีก",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
-            "amount": 15
-          }
-        ]
-      },
-      {
-        "key": "Lv.50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "ก่อนเลื่อนขั้น",
-              "หลังเลื่อนขั้น"
-            ]
-          },
-          {
-            "key": "พลังชีวิตพื้นฐาน",
-            "values": [
-              "5766",
-              "6411"
-            ]
-          },
-          {
-            "key": "พลังโจมตีพื้นฐาน",
-            "values": [
-              "113",
-              "125"
-            ]
-          },
-          {
-            "key": "ป้องกันพื้นฐาน",
-            "values": [
-              "362",
-              "402"
-            ]
-          },
-          {
-            "key": "พลังโจมตีเปอร์เซ็น",
-            "values": [
-              "6.0%",
-              "12.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1188,
-            "name": "Brilliant Diamond Fragment",
-            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"ขอต้อนรับสู่โลกกว้าง\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Brilliant Diamond Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Windwheel Aster",
-            "desc": "พืชที่ชอบลม สำหรับผู้ซึ่งมีความเชื่อในสายลมอย่างชาว Mondstadt ที่มีความจริงใจซื่อตรงแล้ว Windwheel Aster ก็เปรียบดั่ง \"ลมที่มองเห็นได้\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 983,
-            "name": "Stained Mask",
-            "desc": "หน้ากากที่เต็มไปด้วยคราบต่างๆ จนดูไม่ออกเลยว่ามันคือหน้ากากที่ทำมาจากกระดูก มีกลิ่นหอมอ่อนๆ ออกมาด้วย<br/>ต้องยอมสวมมัน เพราะพวก Hilichurl เคร่งครัดเรื่องหน้ากากมาก",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "ก่อนเลื่อนขั้น",
-              "หลังเลื่อนขั้น"
-            ]
-          },
-          {
-            "key": "พลังชีวิตพื้นฐาน",
-            "values": [
-              "7164",
-              "7648"
-            ]
-          },
-          {
-            "key": "พลังโจมตีพื้นฐาน",
-            "values": [
-              "140",
-              "149"
-            ]
-          },
-          {
-            "key": "ป้องกันพื้นฐาน",
-            "values": [
-              "450",
-              "480"
-            ]
-          },
-          {
-            "key": "พลังโจมตีเปอร์เซ็น",
-            "values": [
-              "12.0%",
-              "12.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1187,
-            "name": "Brilliant Diamond Chunk",
-            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"ขอต้อนรับสู่โลกกว้าง\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Brilliant Diamond Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Windwheel Aster",
-            "desc": "พืชที่ชอบลม สำหรับผู้ซึ่งมีความเชื่อในสายลมอย่างชาว Mondstadt ที่มีความจริงใจซื่อตรงแล้ว Windwheel Aster ก็เปรียบดั่ง \"ลมที่มองเห็นได้\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 983,
-            "name": "Stained Mask",
-            "desc": "หน้ากากที่เต็มไปด้วยคราบต่างๆ จนดูไม่ออกเลยว่ามันคือหน้ากากที่ทำมาจากกระดูก มีกลิ่นหอมอ่อนๆ ออกมาด้วย<br/>ต้องยอมสวมมัน เพราะพวก Hilichurl เคร่งครัดเรื่องหน้ากากมาก",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Lv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "ก่อนเลื่อนขั้น",
-              "หลังเลื่อนขั้น"
-            ]
-          },
-          {
-            "key": "พลังชีวิตพื้นฐาน",
-            "values": [
-              "8401",
-              "8885"
-            ]
-          },
-          {
-            "key": "พลังโจมัตีพื้นฐาน",
-            "values": [
-              "164",
-              "174"
-            ]
-          },
-          {
-            "key": "ป้องกันพื้นฐาน",
-            "values": [
-              "527",
-              "558"
-            ]
-          },
-          {
-            "key": "พลังโจมตีเปอร์เซ็น",
-            "values": [
-              "12.0%",
-              "18.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1187,
-            "name": "Brilliant Diamond Chunk",
-            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"ขอต้อนรับสู่โลกกว้าง\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Brilliant Diamond Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Windwheel Aster",
-            "desc": "พืชที่ชอบลม สำหรับผู้ซึ่งมีความเชื่อในสายลมอย่างชาว Mondstadt ที่มีความจริงใจซื่อตรงแล้ว Windwheel Aster ก็เปรียบดั่ง \"ลมที่มองเห็นได้\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 983,
-            "name": "Stained Mask",
-            "desc": "หน้ากากที่เต็มไปด้วยคราบต่างๆ จนดูไม่ออกเลยว่ามันคือหน้ากากที่ทำมาจากกระดูก มีกลิ่นหอมอ่อนๆ ออกมาด้วย<br/>ต้องยอมสวมมัน เพราะพวก Hilichurl เคร่งครัดเรื่องหน้ากากมาก",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "ก่อนเลื่อนขั้น",
-              "หลังเลื่อนขั้น"
-            ]
-          },
-          {
-            "key": "พลังชีวิตพื้นฐาน",
-            "values": [
-              "9638",
-              "10122"
-            ]
-          },
-          {
-            "key": "พลังโจมตีพื้นฐาน",
-            "values": [
-              "188",
-              "198"
-            ]
-          },
-          {
-            "key": "ป้องกันพื้นฐาน",
-            "values": [
-              "605",
-              "635"
-            ]
-          },
-          {
-            "key": "พลังโจมตีเปอร์เซ็น",
-            "values": [
-              "18.0%",
-              "24.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1186,
-            "name": "Brilliant Diamond Gemstone",
-            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"ขอต้อนรับสู่โลกกว้าง\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Brilliant Diamond Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Windwheel Aster",
-            "desc": "พืชที่ชอบลม สำหรับผู้ซึ่งมีความเชื่อในสายลมอย่างชาว Mondstadt ที่มีความจริงใจซื่อตรงแล้ว Windwheel Aster ก็เปรียบดั่ง \"ลมที่มองเห็นได้\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 220,
-            "name": "Ominous Mask",
-            "desc": "หน้ากากที่เคลือบด้วยสีน้ำมัน มีความหมายถึงการข่มขู่ศัตรู<br/>ไม่มีใครทราบถึงความสัมพันธ์ที่แท้จริงระหว่างพวก Hilichurl กับหน้ากาก แต่มีคนเคยบอกไว้ว่าที่เป็นเช่นนี้ ก็เพราะว่าพวกมันไม่ต้องการเห็นเงาของตัวเองในแม่น้ำ",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Lv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "ก่อนเลื่อนขั้น",
-              "หลังเลื่อนขั้น"
-            ]
-          },
-          {
-            "key": "พลังชีวิตพื้นฐาน",
-            "values": [
-              "10875",
-              "-"
-            ]
-          },
-          {
-            "key": "พลังโจมตีพื้นฐาน",
-            "values": [
-              "212",
-              "-"
-            ]
-          },
-          {
-            "key": "ป้องกันพื้นฐาน",
-            "values": [
-              "683",
-              "-"
-            ]
-          },
-          {
-            "key": "พลังโจมตีเปอร์เซ็น",
-            "values": [
-              "24.0%",
-              "-"
-            ]
-          }
-        ]
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "ภาพตัวละคร",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/31/10257458/733dfcc873d613939c633cd206a1f37f_1193398906185026568.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "ชุดดั้งเดิม - ดวงดาวจรัสแสง\nชุดที่ร่วมเดินทางไปกับคุณบนหนทางที่แสนยาวไกล"
-          }
-        ]
-      },
-      {
-        "key": "การ์ด",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/31/10257458/3b5502dbe53a29924ba2b9bed6c84208_6086559666014238506.png"
-      }
-    ],
     "story": [
       {
         "title": "ข้อมูลตัวละคร",
@@ -1996,6 +1826,176 @@
           {
             "type": "RichText",
             "text": "เมื่อเผชิญกับสถานการณ์ที่อยู่เหนือ การควบคุม มนุษย์มักจะคร่ำครวญ ถึงความไร้อำนาจของตน\nเมื่อชีวิตเดินไปสู่ความยากลำบาก หากความคาดหวังของมนุษย์ใด มุ่งไปสู่จุดสูงสุด ตราบนั้นสายตา แห่งเทพจะมองมายังเบื้องล่าง...\nและนี่ก็คือวิชั่น ผู้ที่ได้รับการยอมรับ จากเทพก็จะได้รับอุปกรณ์เวทมนตร์ เพื่อใช้ดึงดูดพลังแห่งธาตุ\nบนท้องนภาคือดินแดนของเทพ ผู้ที่ได้รับวิชั่นดำเนินอยู่บนดิน เมื่อพวกเขาจากไป ผู้ที่ได้รับเลือกจะไปยังบนนภา\nตั้งแต่คุณมายังดินแดนแห่งนี้ มักได้ยินผู้คนพูดคุยเรื่องนี้\nคุณนั้นไม่สามารถได้รับวิชั่น เพราะไม่ใช่เป็นสิ่งมีชีวิตบนโลกนี้ พวกเขาได้แต่มองจากที่แสนไกล...\nการนำสิ่งที่คาดหวังในชั่วขณะ เข้าควบคุมไปทั้งชีวิตนั้นเป็นเรื่องที่ ดีหรือร้าย?\nเมื่อคุณเดินทางข้ามผ่านโลก มากมายดั่งเช่น\"วิชั่น\" สิ่งที่ควรใช้เวลาในการไตร่ตรอง ก็ยังคงมีมากมาย..."
+          }
+        ]
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "ภาพตัวละคร",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/31/10257458/733dfcc873d613939c633cd206a1f37f_1193398906185026568.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "ชุดดั้งเดิม - ดวงดาวจรัสแสง\nชุดที่ร่วมเดินทางไปกับคุณบนหนทางที่แสนยาวไกล"
+          }
+        ]
+      },
+      {
+        "key": "การ์ด",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/31/10257458/3b5502dbe53a29924ba2b9bed6c84208_6086559666014238506.png"
+      }
+    ],
+    "summaryList": [
+      {
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/01/10257458/2601380dc91bdedf13509657ab21f8b1_4980369603576984631.png",
+        "name": "Starfire's Flowing Light",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "ในช่วงเวลา <color=#ffd780>กงล้อเพลิงโหม</color> หรือ <color=#ffd780>กงล้อแผดเผา</color> ตัวละครที่เข้าร่วมการต่อสู้ในขณะนั้นจะสร้างความเสียหายเพิ่มขึ้น 6%; หากตัวละครที่เข้าร่วมการต่อสู้ในขณะนั้น อยู่ในสถานะพรวิญญาณราตรี จะสร้างความเสียหายเพิ่มขึ้นอีก 9%"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/01/10257458/28a35d825bf5165dc1b98e9ef2822a31_8656388936292511133.png",
+        "name": "Ever-Lit Candle",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "ภายใน 12 วินาที หลังจากปล่อยสกิลธาตุ <color=#ffd780>Flowfire Blade</color> เมื่อตัวละครในทีมที่อยู่ใกล้เคียง ทำให้เกิด <color=#ff9999>ปฏิกิริยาเกี่ยวกับธาตุไฟ</color> จะฟื้นฟูพลังงานธาตุให้กับนักเดินทาง 14 หน่วย และทุกครั้งที่ปล่อยสกิลธาตุ <color=#ffd780>Flowfire Blade</color> จะสามารถฟื้นฟูค่าวิญญาณราตรีด้วยวิธีนี้ได้มากสุด 28 หน่วย"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/01/10257458/328dbf43a4ba4c5f008f7652f489c39e_8239602957262990467.png",
+        "name": "Relayed Beacon",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "เพิ่มเลเวลสกิลของสกิลธาตุ <color=#ffd780>Flowfire Blade</color> ขึ้น 3 ระดับ\nเพิ่มได้สูงสุดถึงระดับ 15"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/01/10257458/3596c93e46d00e57d1f9ad4fea1549e4_8994880460913976882.png",
+        "name": "Ravaging Flame",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "หลังจากปล่อยท่าไม้ตาย <color=#ffd780>Plains Scorcher</color> นักเดินทางจะได้รับ <color=#ff9999>โบนัสความเสียหายไฟ</color> 20% เป็นเวลา 9 วินาที"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/01/10257458/29d0891372bd9b706c6bfc1332be3bf2_7226488253228643312.png",
+        "name": "The Fire Inextinguishable",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "เพิ่มเลเวลสกิลของท่าไม้ตาย <color=#ffd780>Plains Scorcher</color> ขึ้น 3 ระดับ\nเพิ่มได้สูงสุดถึงระดับ 15"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/01/10257458/b9d38ed03c31d0552f20fcb19a36cd58_2923518501734750604.png",
+        "name": "The Sacred Flame Imperishable",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "เมื่อต่อสู้กับ Lord of Erodded Primal Fire ที่เป็นร่างแปลงของ \"Gosoythoth\" และอยู่ในสถานะพรวิญญาณราตรี ความเร็วในการเคลื่อนที่ของนักเดินทางจะเพิ่มขึ้น 20%\nการใช้พลังกายลดลง 30% และเมื่อทำการโจมตีปกติหรือชาร์จโจมตั จะเหวี่ยงกระแสเพลิงไปข้างหน้า สร้างความเสียหายไฟที่มีคุณสมบัติวิญญาณราตรีแก่ศัตรูที่อยู่ในเส้นทางเท่ากับ 96% ของพลังโจมตีของนักเดินทาง"
+          }
+        ]
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "ชื่อ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "นักเดินทาง"
+          }
+        ]
+      },
+      {
+        "key": "วันเกิด",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "-"
+          }
+        ]
+      },
+      {
+        "key": "กลุ่มดาว",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Viator & Viatrix"
+          }
+        ]
+      },
+      {
+        "key": "ฉายา",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "-"
+          }
+        ]
+      },
+      {
+        "key": "วิชั่น",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "ไม่มี"
+          }
+        ]
+      },
+      {
+        "key": "สังกัด",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "-"
+          }
+        ]
+      },
+      {
+        "key": "ภาษาจีน CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "鹿喑 & 宴宁"
+          }
+        ]
+      },
+      {
+        "key": "ภาษาอังกฤษ CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Zach Aguilar & Sarah Miller-Crews"
+          }
+        ]
+      },
+      {
+        "key": "ภาษาญี่ปุ่น CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "堀江瞬 & 悠木碧"
+          }
+        ]
+      },
+      {
+        "key": "ภาษาเกาหลี CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Lee Kyeong-tae & Lee Sae-ah"
           }
         ]
       }
