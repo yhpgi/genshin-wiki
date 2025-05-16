@@ -5,9 +5,9 @@
   "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/11662c12fb353d88bd2b20a2726c9f1c_8013472600677983943.png",
   "headerImgUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/5f834f2d2f59353d326b5e9b0cfa8a62_4851369671043769453.png",
   "filterValues": {
+    "characterRegion": "稻妻城",
     "characterWeapon": "法器",
     "characterProperty": "元素精通",
-    "characterRegion": "稻妻城",
     "characterVision": "风元素",
     "characterRarity": "五星"
   },
@@ -15,18 +15,777 @@
   "menuName": "角色图鉴",
   "version": 1740381835,
   "components": {
-    "galleryCharacter": [
+    "talent": [
       {
-        "key": "Character Card",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/10/142453215/9690c15011fb823b2f3951a556fa0653_6734913623519715761.png"
-      },
-      {
-        "key": "原画",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/5f834f2d2f59353d326b5e9b0cfa8a62_4851369671043769453.png",
-        "imgDesc": [
+        "title": "普通攻击·梦我梦心",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/464df75643b85d808ea7457d333c2520_6428327854959294086.png",
+        "desc": [
           {
             "type": "RichText",
-            "text": "衣装「晞吹捲梦」\n梦见月瑞希的装扮款式。深宵冷雾浓，晓时枕貘醒春风，揽衣倦理梦。斜拔紫钗拨紫袖，动摇晞吹露月容。"
+            "text": "<color=#ffd780>普通攻击</color>\n进行至多三段攻击，造成 <color=#80ffd7>风元素伤害</color> 。\n<color=#ffd780>重击</color>\n消耗一定体力，短暂咏唱后，造成 <color=#80ffd7>风元素范围伤害</color> 。\n<color=#ffd780>下落攻击</color>\n凝聚风元素的力量，从空中下坠冲击地面，攻击下落路径上的敌人，并在落地时造成 <color=#80ffd7>风元素范围伤害</color> 。"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11"
+            ]
+          },
+          {
+            "key": "一段伤害",
+            "values": [
+              "52.3%",
+              "56.2%",
+              "60.1%",
+              "65.3%",
+              "69.3%",
+              "73.2%",
+              "78.4%",
+              "83.6%",
+              "88.9%",
+              "94.1%",
+              "99.3%"
+            ]
+          },
+          {
+            "key": "二段伤害",
+            "values": [
+              "46.9%",
+              "50.4%",
+              "54.0%",
+              "58.6%",
+              "62.2%",
+              "65.7%",
+              "70.4%",
+              "75.1%",
+              "79.8%",
+              "84.4%",
+              "89.1%"
+            ]
+          },
+          {
+            "key": "三段伤害",
+            "values": [
+              "71.4%",
+              "76.7%",
+              "82.1%",
+              "89.2%",
+              "94.6%",
+              "99.9%",
+              "107.1%",
+              "114.2%",
+              "121.3%",
+              "128.5%",
+              "135.6%"
+            ]
+          },
+          {
+            "key": "重击伤害",
+            "values": [
+              "130.0%",
+              "139.8%",
+              "149.5%",
+              "162.5%",
+              "172.3%",
+              "182.0%",
+              "195.0%",
+              "208.0%",
+              "221.0%",
+              "234.0%",
+              "247.0%"
+            ]
+          },
+          {
+            "key": "重击体力消耗",
+            "values": [
+              "50.0点",
+              "50.0点",
+              "50.0点",
+              "50.0点",
+              "50.0点",
+              "50.0点",
+              "50.0点",
+              "50.0点",
+              "50.0点",
+              "50.0点",
+              "50.0点"
+            ]
+          },
+          {
+            "key": "下坠期间伤害",
+            "values": [
+              "56.80%",
+              "61.5%",
+              "66.1%",
+              "72.7%",
+              "77.3%",
+              "82.6%",
+              "89.9%",
+              "97.1%",
+              "104.4%",
+              "112.3%",
+              "120.3%"
+            ]
+          },
+          {
+            "key": "低空/高空坠地冲击伤害",
+            "values": [
+              "114%/142%",
+              "123%/153%",
+              "132%/165%",
+              "145%/182%",
+              "155%/193%",
+              "165%/206%",
+              "180%/224%",
+              "194%/243%",
+              "209%/261%",
+              "225%/281%",
+              "240%/300%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 124,
+              "name": "「浮世」的教导",
+              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之荣华乃是人之美的最高体现。人之在世岂不与疾电相类？如美梦或花火般浮华一瞬，在永恒的夜幕中留下绚烂的印记。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Transience_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1248,
+              "name": "破旧的刀镡",
+              "desc": "装配在稻妻刀剑上的护具，见证过许多战斗。<br/>对剑术纯熟者而言，镡可以在实战中阻挡对手的刀刃；而对于新手剑士，镡是保护自己右手的关键。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Old Handguard_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 123,
+              "name": "「浮世」的指引",
+              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之难求乃是人之美的价值所在。人之在世岂不与雷影相似？意欲追逐掇取则遥踞云端，灯火阑珊的静谧之时却不期而来。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Transience_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 711,
+              "name": "影打刀镡",
+              "desc": "装配在优秀刀剑上的护具。<br/>稻妻有悠久的刀剑锻冶传统。匠人锻造一把刀时，常常会制造数柄样品，从中甄选。其中最为优秀的作品是为「真打」，而其余的则被称为「影打」。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Kageuchi Handguard_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 123,
+              "name": "「浮世」的指引",
+              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之难求乃是人之美的价值所在。人之在世岂不与雷影相似？意欲追逐掇取则遥踞云端，灯火阑珊的静谧之时却不期而来。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Transience_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 711,
+              "name": "影打刀镡",
+              "desc": "装配在优秀刀剑上的护具。<br/>稻妻有悠久的刀剑锻冶传统。匠人锻造一把刀时，常常会制造数柄样品，从中甄选。其中最为优秀的作品是为「真打」，而其余的则被称为「影打」。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Kageuchi Handguard_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 123,
+              "name": "「浮世」的指引",
+              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之难求乃是人之美的价值所在。人之在世岂不与雷影相似？意欲追逐掇取则遥踞云端，灯火阑珊的静谧之时却不期而来。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Transience_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 711,
+              "name": "影打刀镡",
+              "desc": "装配在优秀刀剑上的护具。<br/>稻妻有悠久的刀剑锻冶传统。匠人锻造一把刀时，常常会制造数柄样品，从中甄选。其中最为优秀的作品是为「真打」，而其余的则被称为「影打」。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Kageuchi Handguard_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 123,
+              "name": "「浮世」的指引",
+              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之难求乃是人之美的价值所在。人之在世岂不与雷影相似？意欲追逐掇取则遥踞云端，灯火阑珊的静谧之时却不期而来。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Transience_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 711,
+              "name": "影打刀镡",
+              "desc": "装配在优秀刀剑上的护具。<br/>稻妻有悠久的刀剑锻冶传统。匠人锻造一把刀时，常常会制造数柄样品，从中甄选。其中最为优秀的作品是为「真打」，而其余的则被称为「影打」。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Kageuchi Handguard_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 122,
+              "name": "「浮世」的哲学",
+              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之短暂乃是人之美的本性所在。人之在世岂不与稻光相近？神威显现的刹那恍若隽永，而永恒的威鸣又有谁人能够承受？",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Transience_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 400,
+              "name": "名刀镡",
+              "desc": "装配在名刀上的华美护具。<br/>有人坚信刀剑有灵魂、有生命，这也是为什么人们会为刀起名。爱护刀的人，也会得到刀的赏识。但与刀剑成为挚友、甚至爱人的人，须知这份情义是由杀伐浇灌的。常常浴血、与刀共舞之人，他们的热血最终总会被薄情的钢铁冷却。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Famed Handguard_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 5607,
+              "name": "残火灯烛",
+              "desc": "完成与「仆人」的决斗后，在废墟中拾起的灯烛。<br>相传当烛火摇曳于罪人的手中，光亮即可化作阴影，掩盖脚步声与杀意。<br>不知用何种材料制成，燃烧后没有蜡泪，只有黑色的灰烬散入风中，飘向未知的远方。",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/23/12c3d10c72d5f5908820015fc7856de8_673207213763798421.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 122,
+              "name": "「浮世」的哲学",
+              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之短暂乃是人之美的本性所在。人之在世岂不与稻光相近？神威显现的刹那恍若隽永，而永恒的威鸣又有谁人能够承受？",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Transience_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 400,
+              "name": "名刀镡",
+              "desc": "装配在名刀上的华美护具。<br/>有人坚信刀剑有灵魂、有生命，这也是为什么人们会为刀起名。爱护刀的人，也会得到刀的赏识。但与刀剑成为挚友、甚至爱人的人，须知这份情义是由杀伐浇灌的。常常浴血、与刀共舞之人，他们的热血最终总会被薄情的钢铁冷却。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Famed Handguard_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 5607,
+              "name": "残火灯烛",
+              "desc": "完成与「仆人」的决斗后，在废墟中拾起的灯烛。<br>相传当烛火摇曳于罪人的手中，光亮即可化作阴影，掩盖脚步声与杀意。<br>不知用何种材料制成，燃烧后没有蜡泪，只有黑色的灰烬散入风中，飘向未知的远方。",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/23/12c3d10c72d5f5908820015fc7856de8_673207213763798421.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 122,
+              "name": "「浮世」的哲学",
+              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之短暂乃是人之美的本性所在。人之在世岂不与稻光相近？神威显现的刹那恍若隽永，而永恒的威鸣又有谁人能够承受？",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Transience_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 400,
+              "name": "名刀镡",
+              "desc": "装配在名刀上的华美护具。<br/>有人坚信刀剑有灵魂、有生命，这也是为什么人们会为刀起名。爱护刀的人，也会得到刀的赏识。但与刀剑成为挚友、甚至爱人的人，须知这份情义是由杀伐浇灌的。常常浴血、与刀共舞之人，他们的热血最终总会被薄情的钢铁冷却。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Famed Handguard_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 5607,
+              "name": "残火灯烛",
+              "desc": "完成与「仆人」的决斗后，在废墟中拾起的灯烛。<br>相传当烛火摇曳于罪人的手中，光亮即可化作阴影，掩盖脚步声与杀意。<br>不知用何种材料制成，燃烧后没有蜡泪，只有黑色的灰烬散入风中，飘向未知的远方。",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/23/12c3d10c72d5f5908820015fc7856de8_673207213763798421.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 122,
+              "name": "「浮世」的哲学",
+              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之短暂乃是人之美的本性所在。人之在世岂不与稻光相近？神威显现的刹那恍若隽永，而永恒的威鸣又有谁人能够承受？",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Transience_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 400,
+              "name": "名刀镡",
+              "desc": "装配在名刀上的华美护具。<br/>有人坚信刀剑有灵魂、有生命，这也是为什么人们会为刀起名。爱护刀的人，也会得到刀的赏识。但与刀剑成为挚友、甚至爱人的人，须知这份情义是由杀伐浇灌的。常常浴血、与刀共舞之人，他们的热血最终总会被薄情的钢铁冷却。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Famed Handguard_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 5607,
+              "name": "残火灯烛",
+              "desc": "完成与「仆人」的决斗后，在废墟中拾起的灯烛。<br>相传当烛火摇曳于罪人的手中，光亮即可化作阴影，掩盖脚步声与杀意。<br>不知用何种材料制成，燃烧后没有蜡泪，只有黑色的灰烬散入风中，飘向未知的远方。",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/23/12c3d10c72d5f5908820015fc7856de8_673207213763798421.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "智识之冕",
+              "desc": "提升天赋所需的珍贵素材。<br/>远古时期，承载与传授智识所用的仪式器具。尽管如今，智慧居于言语及典籍中，但「智识之冕」中残存的力量与智慧仍能给如今的人们带来伟大的突破吧。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/fad5e4d449072f806c5461f0cb6c597c_5100354247638397152.gif"
+      },
+      {
+        "title": "秋沙歌枕巡礼",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/3549693e9a921054c17729763174c1ba_1211189847308077592.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "编织出「美梦」的回忆，进入悬浮于地面之上的 <color=#ffd780>梦浮</color> 状态，并对周围的敌人造成一次 <color=#80ffd7>风元素范围伤害</color> 。\n<color=#ffd780>梦浮</color>\n·处于梦浮状态下时，梦见月瑞希将持续向前浮行，并将周期性对附近的敌人造成 <color=#80ffd7>风元素范围伤害</color> ；\n·期间，梦见月瑞希可以控制浮行的方向，并提升元素爆发 <color=#ffd780>安乐秘汤疗法</color> 中的 <color=#ffd780>梦见风名物点心</color> 的拾取距离；\n·基于梦见月瑞希的元素精通，提升队伍中附近的角色触发的扩散反应造成的伤害；\n·梦见月瑞希退场时，或是再次施放技能时，梦浮状态将会结束。\n「宵宵夕月梦相逢，心曲缱绻绕意中。」"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13"
+            ]
+          },
+          {
+            "key": "技能伤害",
+            "values": [
+              "57.7%",
+              "62.1%",
+              "66.4%",
+              "72.2%",
+              "76.5%",
+              "80.8%",
+              "86.6%",
+              "92.4%",
+              "98.2%",
+              "103.9%",
+              "109.7%",
+              "115.5%",
+              "122.7%"
+            ]
+          },
+          {
+            "key": "持续攻击伤害",
+            "values": [
+              "44.9%",
+              "48.3%",
+              "51.6%",
+              "56.1%",
+              "59.5%",
+              "62.9%",
+              "67.4%",
+              "71.9%",
+              "76.4%",
+              "80.8%",
+              "85.3%",
+              "89.8%",
+              "95.4%"
+            ]
+          },
+          {
+            "key": "梦浮持续时间",
+            "values": [
+              "5.0秒",
+              "5.0秒",
+              "5.0秒",
+              "5.0秒",
+              "5.0秒",
+              "5.0秒",
+              "5.0秒",
+              "5.0秒",
+              "5.0秒",
+              "5.0秒",
+              "5.0秒",
+              "5.0秒",
+              "5.0秒"
+            ]
+          },
+          {
+            "key": "每点精通提升扩散伤害百分比",
+            "values": [
+              "0.18%",
+              "0.21%",
+              "0.24%",
+              "0.27%",
+              "0.30%",
+              "0.33%",
+              "0.36%",
+              "0.39%",
+              "0.42%",
+              "0.45%",
+              "0.48%",
+              "0.51%",
+              "0.54%"
+            ]
+          },
+          {
+            "key": "冷却时间",
+            "values": [
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒"
+            ]
+          }
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/793a05e575d7d4b1c32a955ff8701064_6780324345288156049.gif"
+      },
+      {
+        "title": "安乐秘汤疗法",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/62e19b7fd4c9150b4c34e6eb7e83b886_9011335285704882157.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "唤起无数「美梦」与「噩梦」的回忆，牵引附近的物体与敌人，造成 <color=#80ffd7>风元素范围伤害</color> ，并召唤出小貘来帮忙。\n<color=#ffd780>小貘</color>\n将跟随当前场上角色。每隔一段时间，小貘将在附近制造出1枚「梦见风名物点心」。队伍中自己的角色拾取梦见风名物点心后，若拾取者的生命值高于70%，梦见风名物点心便会发生爆炸并释放梦念冲击波，对周围的敌人造成一次 <color=#80ffd7>风元素范围伤害</color> ，否则会为拾取者恢复生命值，回复量受益于梦见月瑞希的元素精通。梦见月瑞希拾取梦见风名物点心并触发治疗时，治疗量还会提升100%。如果一段时间后仍未被拾取，梦见风名物点心也会发生爆炸并释放梦念冲击波，对周围的敌人造成一次 <color=#80ffd7>风元素范围伤害</color> 。\n「晦暗的情绪要是埋藏太久，就会变成『噩梦』了喔。所以呀，不妨趁着这个机会，将它们作为『美味的点心』吃掉吧？」"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13"
+            ]
+          },
+          {
+            "key": "技能伤害",
+            "values": [
+              "94.1%",
+              "101.1%",
+              "108.2%",
+              "117.6%",
+              "124.7%",
+              "131.7%",
+              "141.1%",
+              "150.5%",
+              "159.9%",
+              "169.3%",
+              "178.8%",
+              "188.2%",
+              "199.9%"
+            ]
+          },
+          {
+            "key": "梦念冲击波伤害",
+            "values": [
+              "70.6%",
+              "75.9%",
+              "81.1%",
+              "88.2%",
+              "93.5%",
+              "98.8%",
+              "105.8%",
+              "112.9%",
+              "120.0%",
+              "127.0%",
+              "134.1%",
+              "141.1%",
+              "149.9%"
+            ]
+          },
+          {
+            "key": "拾取点心回复生命值",
+            "values": [
+              "130.6%元素精通+315",
+              "140.4%元素精通+346",
+              "150.1%元素精通+380",
+              "163.2%元素精通+417",
+              "173.0%元素精通+456",
+              "182.2%元素精通+498",
+              "195.8%元素精通+543",
+              "208.9%元素精通+590",
+              "222.0%元素精通+640",
+              "235.0%元素精通+692",
+              "248.1%元素精通+747",
+              "261.1%元素精通+805",
+              "277.4%元素精通+865"
+            ]
+          },
+          {
+            "key": "持续时间",
+            "values": [
+              "12.0秒",
+              "12.0秒",
+              "12.0秒",
+              "12.0秒",
+              "12.0秒",
+              "12.0秒",
+              "12.0秒",
+              "12.0秒",
+              "12.0秒",
+              "12.0秒",
+              "12.0秒",
+              "12.0秒",
+              "12.0秒"
+            ]
+          },
+          {
+            "key": "冷却时间",
+            "values": [
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒",
+              "15.0秒"
+            ]
+          },
+          {
+            "key": "元素能量",
+            "values": [
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60"
+            ]
+          }
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/b4e64bedd327ad707556a8be104449fa_2204537414237885944.gif"
+      },
+      {
+        "title": "名月浮声",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/472dcd62c98db7061a80905ab30392c9_2111443070227758956.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "梦见月瑞希在梦浮状态下触发扩散反应时，梦浮状态的持续时间延长2.5秒。该效果每0.3秒至多触发1次，在一次梦浮状态期间至多触发2次。"
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "title": "昼想夜梦",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/abe0508393c999da60e1ea663cd4c5dd_4706424614493873604.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "梦见月瑞希处于梦浮状态下时，队伍中附近的其他角色的元素类型为 <color=#ff9999>火元素</color> 、 <color=#80c0ff>水元素</color> 、 <color=#99ffff>冰元素</color> 或 <color=#ffacff>雷元素</color> 的攻击命中敌人时，梦见月瑞希的元素精通提升100点，持续4秒。"
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "title": "诸病无病",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/15acd465dd03287f0acb457584800e01_650049512740127120.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "梦见月瑞希在队伍中时，队伍中自己的角色使用不具备复苏功能的恢复类料理时的回复量有概率提升30%，该效果的触发概率基于对应角色的好感等级（旅行者使用时，该效果将始终触发）。"
+          }
+        ],
+        "attributes": null
+      }
+    ],
+    "summaryList": [
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/18479d69077ce0455b012300473215fe_6902320226957932423.png",
+        "name": "宿雾若水遥",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "梦见月瑞希处于梦浮状态下时，每3.5秒将对附近的敌人施加持续3秒的「二十三夜待」效果。处于二十三夜待状态下的敌人受到风元素伤害而触发扩散反应时，将移除该效果，使此次扩散反应对该敌人造成的伤害提升，提升值相当于梦见月瑞希元素精通的1100%。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/90fabdc379fbd65a1e25e3a6b62a80e9_913376066389453885.png",
+        "name": "缠忆君影梦相见",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "进入梦浮状态时，梦见月瑞希的每点元素精通，会为附近的队伍中所有其他角色提供0.04% <color=#ff9999>火元素</color> 、 <color=#80c0ff>水元素</color> 、 <color=#99ffff>冰元素</color> 与 <color=#ffacff>雷元素</color> 伤害加成，效果持续至梦浮状态结束。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/3549693e9a921054c17729763174c1ba_1211189847308077592.png",
+        "name": "晓月又经宵",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "元素战技 <color=#ffd780>秋沙歌枕巡礼</color> 的技能等级提高3级。\n至多提升至15级。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/8bb9cbf9aed7f1fc82ec75ba25a5b42e_4835579005120590799.png",
+        "name": "泉轻流花暖",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "拾取元素爆发 <color=#ffd780>安乐秘汤疗法</color> 中的 <color=#ffd780>梦见风名物点心</color> 时，将同时造成伤害与治疗，并为梦见月瑞希恢复5点元素能量。一次 <color=#ffd780>安乐秘汤疗法</color> 持续期间，至多通过这种方式恢复4次元素能量。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/62e19b7fd4c9150b4c34e6eb7e83b886_9011335285704882157.png",
+        "name": "岁云暮矣待月归",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "元素爆发 <color=#ffd780>安乐秘汤疗法</color> 的技能等级提高3级。\n至多提升至15级。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/61a7d17a9fd99d5acdbf1db105826d2b_5727824276475688997.png",
+        "name": "慕念萦心间",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "梦见月瑞希处于梦浮状态下时，队伍中附近的角色触发的扩散反应造成的伤害能够造成暴击，暴击率固定为30%，暴击伤害固定为100%。"
           }
         ]
       }
@@ -101,6 +860,146 @@
           {
             "type": "RichText",
             "text": "好感等级达到6后开启\n就算是无比可口的料理，一日三餐重复不变，吃上百遍千遍，也会令普通人难以忍受。\n而在瑞希的味觉世界中，品尝寡淡的噩梦，已是一种幸运。\n有些人的噩梦就如厨房爆炸后的产物，各种调料混杂其中，还有木炭烟熏的苦味，甚至锈味和强酸。\n那美梦呢？\n鲜有食梦貘知道美梦的味道，因为食梦貘一族有着不成文的规矩：「未经允许，不得吞食他人的美梦。」\n成为心理诊疗师后的第十年，瑞希才有幸品尝到宝贵的美梦。\n一位接受了瑞希诊疗，完美痊愈的女孩带着礼物前来感谢她。闲聊之时，女孩突发奇想，要与瑞希分享自己色彩斑斓的好梦。\n饱含童真、活力与绮灿幻想的梦境，味道实在惬意、温暖细腻的清甜令瑞希完全沉浸其中。\n从那以后，瑞希就爱上了各种甜品，心底更是萌生了一个大胆的想法。\n妙不可言的美梦或许本身就是一种解药，足以消融人们的负面情绪？\n若是能够用妖力制造美梦，作为一剂良药，对病患的情绪想来大有裨益。\n而且…也能将其作为珍藏的美食，偶尔给自己一点调剂？\n不过，食梦貘毕竟没有造物的权柄。某种程度上，美梦是愿望投影在人们心中的产物，无比明净，难以用外力重现，凭空捏造更是一种奢求…\n每个人的愿望都有所不同，自然不能用笼统的「配方」调制万能的美梦。若是为了了解人们的真实想法，探寻人们内心深处的秘密，本身又可能成为越界的行为，加重人们的紧张和不安…\n结果略有遗憾，瑞希没能参悟解药之梦的制作方法。\n好在，上万个日夜的探寻与钻研也没有白费，瑞希的心意终究得到了回应——\n某个疲惫而充实的夜里，瑞希梦见自己变回了小小的梦貘，与挚友在拉面摊前享用料理。\n这梦境呈现出轻烟与柔风般的质感，似乎隐含着诸多美梦之间富有共性的轮廓。\n脱离束缚，自由自在，悠悠哉哉…\n梦境行至此处，一枚玲珑剔透的神之眼悄然出现在瑞希的枕边…\n此后，瑞希似乎得到了启发，换了个思路。\n她要将人们引向松弛与舒然的梦，唤起人们心中对宝贵事物的回忆。\n相信人们心底珍藏的美好，必定会在关键的时刻苏醒，为梦境着色，将其装点成最瑰丽的模样。"
+          }
+        ]
+      }
+    ],
+    "videoCollection": [
+      {
+        "title": "《原神》5.4版本PV：「梦间见月明」#原神 #版本PV #梦间见月明 #GenshinImpact #GenshinImpact5ꓸ4",
+        "url": "https://www.youtube.com/watch?v=3sUp4uPMJzg",
+        "coverUrl": "https://i.ytimg.com/vi/3sUp4uPMJzg/maxresdefault.jpg",
+        "duration": 183
+      },
+      {
+        "title": "《原神》拾枝杂谈-「梦见月瑞希：梦间行者」 #原神 #梦见月瑞希 #角色PV #GenshinImpact #YumemizukiMizuki",
+        "url": "https://www.youtube.com/watch?v=nXPtoWUcYyc",
+        "coverUrl": "https://i.ytimg.com/vi/nXPtoWUcYyc/maxresdefault.jpg",
+        "duration": 173
+      },
+      {
+        "title": "《原神》梦见月瑞希角色PV——「心中梦中盘中餐」",
+        "url": "https://www.youtube.com/watch?v=-rjucJ_CqNY",
+        "coverUrl": "https://i.ytimg.com/vi/-rjucJ_CqNY/maxresdefault.jpg",
+        "duration": 153
+      },
+      {
+        "title": "《原神》角色预告-「梦见月瑞希：心慌帮！帮心慌！」 #原神 #梦见月瑞希 #YumemizukiMizuki #GenshinImpact",
+        "url": "https://www.youtube.com/watch?v=60PACsnPoCE",
+        "coverUrl": "https://i.ytimg.com/vi/60PACsnPoCE/maxresdefault.jpg",
+        "duration": 147
+      }
+    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?lang=zh-cn#/map/2?shown_types=185,209,660&center=5757.25,2585.13&zoom=-1.50",
+    "baseInfo": [
+      {
+        "key": "名称",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "梦见月瑞希"
+          }
+        ]
+      },
+      {
+        "key": "生日",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "3月16日"
+          }
+        ]
+      },
+      {
+        "key": "命之座",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "貘枕座"
+          }
+        ]
+      },
+      {
+        "key": "称号",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "绮梦缱绻"
+          }
+        ]
+      },
+      {
+        "key": "神之眼",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "风"
+          }
+        ]
+      },
+      {
+        "key": "所属",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "稻妻"
+          }
+        ]
+      },
+      {
+        "key": "汉语 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "浮梦若薇"
+          }
+        ]
+      },
+      {
+        "key": "日语 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "会泽纱弥"
+          }
+        ]
+      },
+      {
+        "key": "英语 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "内奥米·麦克唐纳"
+          }
+        ]
+      },
+      {
+        "key": "韩语 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "金曙现"
+          }
+        ]
+      },
+      {
+        "key": "特殊料理",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 7446,
+            "name": "「一梦治愈」",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/07/1983aeeaac137af18edd566fb99f126d_2832534680607175453.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "实装版本",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "5.4"
           }
         ]
       }
@@ -667,6 +1566,150 @@
               "115",
               "-"
             ]
+          }
+        ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "角色详情",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "角色公布"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/10/142453215/93418486f885e71c79286a336658a342_2458861562180334298.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>2025年1月6日</color>\n「该怎么向你介绍我的这位老朋友呢？嗯…简而言之，她是一个有趣但不怎么可爱的家伙。作为全稻妻最出色的心理诊疗师，她很擅长揣摩别人的心思。而她自己的心思，却总是藏得严严实实，连我都很难猜透…如果你遇到她了，也可以猜猜她心里在想什么。」\n——八重神子"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "梦见月瑞希角色PV——「心中梦中盘中餐」"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/07/142453215/57867d6aea89290213e4828cfab19443_5358278906151195174.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>2025年2月6日</color>\n食梦貘以梦为食。\n当餐叉落下，她将一层一层，刺入你穿过的暗门、触过的荆棘、迎过的风浪。\n直至找到最柔软的那处「美味」，将它呈至你的面前。\n<color=#ff9999>Youtube：</color>"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=-rjucJ_CqNY"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "角色介绍——「绮梦缱绻」·梦见月瑞希"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/10/142453215/75fe47b1d52723b5999fc18b9576df19_1607312675575129670.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>2025年2月6日</color>\n「天上的乌云散去了，是时候收拾心头的阴霾了。」\n旅行者好呀！今天介绍的是一位传说中的“大妖怪”，来自稻妻梦貘一族的心理诊疗师——梦见月瑞希。"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "角色技能演示——「绮梦缱绻」·梦见月瑞希"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/10/142453215/4ea8ba9ec9e6ddb3f53eafe8d659af36_8960380971629664537.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>2025年2月6日</color>\n旅行者好呀！接下来为大家带来梦见月瑞希的战斗相关信息，一起来看看吧~"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "拾枝杂谈-「梦见月瑞希：梦间行者」"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/07/142453215/79bcf9d685953618fd92eada3bc8d5b8_2058543214532640573.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>2025年2月7日</color>\n当精通美梦疗法的诊疗师自己遭遇噩梦怎么办？\n当然是邀你一起，饱餐一顿咯。\n<color=#ff9999>Youtube：</color>"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=nXPtoWUcYyc"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "角色预告-「梦见月瑞希：心慌帮！帮心慌！」"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/12/142453215/ae3ad3b437ba1f1c8333ca15083dc1b6_4245263716384176148.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>2025年2月11日</color>\n「心慌帮！帮心慌！——稻妻妖怪们最为挚爱的综艺节目，好评开演！」\n「由游学归来、博闻多才的美女心理诊疗师梦见月小姐，帮助你解决最棘手的烦恼！\n「无论白天黑夜，在每个敞开心扉的梦境，与你相会！」\n<color=#ff9999>Youtube：</color>"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=60PACsnPoCE"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "过场动画与预告",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "5.4版本PV：「梦间见月明」"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/07/142453215/9b343d2594fb3fba2a4551796b6e6991_1865611233134467642.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>2025年1月24日</color>\n人生就像穿梭在美梦与噩梦之间。\n感觉到紧张、恐惧、无法喘息的时刻，\n请稍作休息，品尝美梦的甘甜，\n并将噩梦揉碎咀嚼。\n<color=#ff9999>Youtube：</color>"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=3sUp4uPMJzg"
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/10/142453215/9690c15011fb823b2f3951a556fa0653_6734913623519715761.png"
+      },
+      {
+        "key": "原画",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/5f834f2d2f59353d326b5e9b0cfa8a62_4851369671043769453.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "衣装「晞吹捲梦」\n梦见月瑞希的装扮款式。深宵冷雾浓，晓时枕貘醒春风，揽衣倦理梦。斜拔紫钗拨紫袖，动摇晞吹露月容。"
           }
         ]
       }
@@ -2255,1049 +3298,6 @@
             "url": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/10/f645edddddb7d1ab6ffe414c6277a0f3_4735766830831162347.mp3"
           }
         ]
-      }
-    ],
-    "talent": [
-      {
-        "title": "普通攻击·梦我梦心",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/464df75643b85d808ea7457d333c2520_6428327854959294086.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>普通攻击</color>\n进行至多三段攻击，造成 <color=#80ffd7>风元素伤害</color> 。\n<color=#ffd780>重击</color>\n消耗一定体力，短暂咏唱后，造成 <color=#80ffd7>风元素范围伤害</color> 。\n<color=#ffd780>下落攻击</color>\n凝聚风元素的力量，从空中下坠冲击地面，攻击下落路径上的敌人，并在落地时造成 <color=#80ffd7>风元素范围伤害</color> 。"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11"
-            ]
-          },
-          {
-            "key": "一段伤害",
-            "values": [
-              "52.3%",
-              "56.2%",
-              "60.1%",
-              "65.3%",
-              "69.3%",
-              "73.2%",
-              "78.4%",
-              "83.6%",
-              "88.9%",
-              "94.1%",
-              "99.3%"
-            ]
-          },
-          {
-            "key": "二段伤害",
-            "values": [
-              "46.9%",
-              "50.4%",
-              "54.0%",
-              "58.6%",
-              "62.2%",
-              "65.7%",
-              "70.4%",
-              "75.1%",
-              "79.8%",
-              "84.4%",
-              "89.1%"
-            ]
-          },
-          {
-            "key": "三段伤害",
-            "values": [
-              "71.4%",
-              "76.7%",
-              "82.1%",
-              "89.2%",
-              "94.6%",
-              "99.9%",
-              "107.1%",
-              "114.2%",
-              "121.3%",
-              "128.5%",
-              "135.6%"
-            ]
-          },
-          {
-            "key": "重击伤害",
-            "values": [
-              "130.0%",
-              "139.8%",
-              "149.5%",
-              "162.5%",
-              "172.3%",
-              "182.0%",
-              "195.0%",
-              "208.0%",
-              "221.0%",
-              "234.0%",
-              "247.0%"
-            ]
-          },
-          {
-            "key": "重击体力消耗",
-            "values": [
-              "50.0点",
-              "50.0点",
-              "50.0点",
-              "50.0点",
-              "50.0点",
-              "50.0点",
-              "50.0点",
-              "50.0点",
-              "50.0点",
-              "50.0点",
-              "50.0点"
-            ]
-          },
-          {
-            "key": "下坠期间伤害",
-            "values": [
-              "56.80%",
-              "61.5%",
-              "66.1%",
-              "72.7%",
-              "77.3%",
-              "82.6%",
-              "89.9%",
-              "97.1%",
-              "104.4%",
-              "112.3%",
-              "120.3%"
-            ]
-          },
-          {
-            "key": "低空/高空坠地冲击伤害",
-            "values": [
-              "114%/142%",
-              "123%/153%",
-              "132%/165%",
-              "145%/182%",
-              "155%/193%",
-              "165%/206%",
-              "180%/224%",
-              "194%/243%",
-              "209%/261%",
-              "225%/281%",
-              "240%/300%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 124,
-              "name": "「浮世」的教导",
-              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之荣华乃是人之美的最高体现。人之在世岂不与疾电相类？如美梦或花火般浮华一瞬，在永恒的夜幕中留下绚烂的印记。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Transience_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1248,
-              "name": "破旧的刀镡",
-              "desc": "装配在稻妻刀剑上的护具，见证过许多战斗。<br/>对剑术纯熟者而言，镡可以在实战中阻挡对手的刀刃；而对于新手剑士，镡是保护自己右手的关键。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Old Handguard_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 123,
-              "name": "「浮世」的指引",
-              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之难求乃是人之美的价值所在。人之在世岂不与雷影相似？意欲追逐掇取则遥踞云端，灯火阑珊的静谧之时却不期而来。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Transience_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 711,
-              "name": "影打刀镡",
-              "desc": "装配在优秀刀剑上的护具。<br/>稻妻有悠久的刀剑锻冶传统。匠人锻造一把刀时，常常会制造数柄样品，从中甄选。其中最为优秀的作品是为「真打」，而其余的则被称为「影打」。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Kageuchi Handguard_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 123,
-              "name": "「浮世」的指引",
-              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之难求乃是人之美的价值所在。人之在世岂不与雷影相似？意欲追逐掇取则遥踞云端，灯火阑珊的静谧之时却不期而来。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Transience_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 711,
-              "name": "影打刀镡",
-              "desc": "装配在优秀刀剑上的护具。<br/>稻妻有悠久的刀剑锻冶传统。匠人锻造一把刀时，常常会制造数柄样品，从中甄选。其中最为优秀的作品是为「真打」，而其余的则被称为「影打」。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Kageuchi Handguard_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 123,
-              "name": "「浮世」的指引",
-              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之难求乃是人之美的价值所在。人之在世岂不与雷影相似？意欲追逐掇取则遥踞云端，灯火阑珊的静谧之时却不期而来。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Transience_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 711,
-              "name": "影打刀镡",
-              "desc": "装配在优秀刀剑上的护具。<br/>稻妻有悠久的刀剑锻冶传统。匠人锻造一把刀时，常常会制造数柄样品，从中甄选。其中最为优秀的作品是为「真打」，而其余的则被称为「影打」。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Kageuchi Handguard_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 123,
-              "name": "「浮世」的指引",
-              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之难求乃是人之美的价值所在。人之在世岂不与雷影相似？意欲追逐掇取则遥踞云端，灯火阑珊的静谧之时却不期而来。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Transience_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 711,
-              "name": "影打刀镡",
-              "desc": "装配在优秀刀剑上的护具。<br/>稻妻有悠久的刀剑锻冶传统。匠人锻造一把刀时，常常会制造数柄样品，从中甄选。其中最为优秀的作品是为「真打」，而其余的则被称为「影打」。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Kageuchi Handguard_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 122,
-              "name": "「浮世」的哲学",
-              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之短暂乃是人之美的本性所在。人之在世岂不与稻光相近？神威显现的刹那恍若隽永，而永恒的威鸣又有谁人能够承受？",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Transience_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 400,
-              "name": "名刀镡",
-              "desc": "装配在名刀上的华美护具。<br/>有人坚信刀剑有灵魂、有生命，这也是为什么人们会为刀起名。爱护刀的人，也会得到刀的赏识。但与刀剑成为挚友、甚至爱人的人，须知这份情义是由杀伐浇灌的。常常浴血、与刀共舞之人，他们的热血最终总会被薄情的钢铁冷却。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Famed Handguard_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 5607,
-              "name": "残火灯烛",
-              "desc": "完成与「仆人」的决斗后，在废墟中拾起的灯烛。<br>相传当烛火摇曳于罪人的手中，光亮即可化作阴影，掩盖脚步声与杀意。<br>不知用何种材料制成，燃烧后没有蜡泪，只有黑色的灰烬散入风中，飘向未知的远方。",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/23/12c3d10c72d5f5908820015fc7856de8_673207213763798421.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 122,
-              "name": "「浮世」的哲学",
-              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之短暂乃是人之美的本性所在。人之在世岂不与稻光相近？神威显现的刹那恍若隽永，而永恒的威鸣又有谁人能够承受？",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Transience_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 400,
-              "name": "名刀镡",
-              "desc": "装配在名刀上的华美护具。<br/>有人坚信刀剑有灵魂、有生命，这也是为什么人们会为刀起名。爱护刀的人，也会得到刀的赏识。但与刀剑成为挚友、甚至爱人的人，须知这份情义是由杀伐浇灌的。常常浴血、与刀共舞之人，他们的热血最终总会被薄情的钢铁冷却。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Famed Handguard_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 5607,
-              "name": "残火灯烛",
-              "desc": "完成与「仆人」的决斗后，在废墟中拾起的灯烛。<br>相传当烛火摇曳于罪人的手中，光亮即可化作阴影，掩盖脚步声与杀意。<br>不知用何种材料制成，燃烧后没有蜡泪，只有黑色的灰烬散入风中，飘向未知的远方。",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/23/12c3d10c72d5f5908820015fc7856de8_673207213763798421.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 122,
-              "name": "「浮世」的哲学",
-              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之短暂乃是人之美的本性所在。人之在世岂不与稻光相近？神威显现的刹那恍若隽永，而永恒的威鸣又有谁人能够承受？",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Transience_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 400,
-              "name": "名刀镡",
-              "desc": "装配在名刀上的华美护具。<br/>有人坚信刀剑有灵魂、有生命，这也是为什么人们会为刀起名。爱护刀的人，也会得到刀的赏识。但与刀剑成为挚友、甚至爱人的人，须知这份情义是由杀伐浇灌的。常常浴血、与刀共舞之人，他们的热血最终总会被薄情的钢铁冷却。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Famed Handguard_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 5607,
-              "name": "残火灯烛",
-              "desc": "完成与「仆人」的决斗后，在废墟中拾起的灯烛。<br>相传当烛火摇曳于罪人的手中，光亮即可化作阴影，掩盖脚步声与杀意。<br>不知用何种材料制成，燃烧后没有蜡泪，只有黑色的灰烬散入风中，飘向未知的远方。",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/23/12c3d10c72d5f5908820015fc7856de8_673207213763798421.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 122,
-              "name": "「浮世」的哲学",
-              "desc": "天赋培养素材。<br/>雷之国土的梦想是浮世。<br/>浮世之短暂乃是人之美的本性所在。人之在世岂不与稻光相近？神威显现的刹那恍若隽永，而永恒的威鸣又有谁人能够承受？",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Transience_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 400,
-              "name": "名刀镡",
-              "desc": "装配在名刀上的华美护具。<br/>有人坚信刀剑有灵魂、有生命，这也是为什么人们会为刀起名。爱护刀的人，也会得到刀的赏识。但与刀剑成为挚友、甚至爱人的人，须知这份情义是由杀伐浇灌的。常常浴血、与刀共舞之人，他们的热血最终总会被薄情的钢铁冷却。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Famed Handguard_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 5607,
-              "name": "残火灯烛",
-              "desc": "完成与「仆人」的决斗后，在废墟中拾起的灯烛。<br>相传当烛火摇曳于罪人的手中，光亮即可化作阴影，掩盖脚步声与杀意。<br>不知用何种材料制成，燃烧后没有蜡泪，只有黑色的灰烬散入风中，飘向未知的远方。",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/23/12c3d10c72d5f5908820015fc7856de8_673207213763798421.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "智识之冕",
-              "desc": "提升天赋所需的珍贵素材。<br/>远古时期，承载与传授智识所用的仪式器具。尽管如今，智慧居于言语及典籍中，但「智识之冕」中残存的力量与智慧仍能给如今的人们带来伟大的突破吧。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/fad5e4d449072f806c5461f0cb6c597c_5100354247638397152.gif"
-      },
-      {
-        "title": "秋沙歌枕巡礼",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/3549693e9a921054c17729763174c1ba_1211189847308077592.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "编织出「美梦」的回忆，进入悬浮于地面之上的 <color=#ffd780>梦浮</color> 状态，并对周围的敌人造成一次 <color=#80ffd7>风元素范围伤害</color> 。\n<color=#ffd780>梦浮</color>\n·处于梦浮状态下时，梦见月瑞希将持续向前浮行，并将周期性对附近的敌人造成 <color=#80ffd7>风元素范围伤害</color> ；\n·期间，梦见月瑞希可以控制浮行的方向，并提升元素爆发 <color=#ffd780>安乐秘汤疗法</color> 中的 <color=#ffd780>梦见风名物点心</color> 的拾取距离；\n·基于梦见月瑞希的元素精通，提升队伍中附近的角色触发的扩散反应造成的伤害；\n·梦见月瑞希退场时，或是再次施放技能时，梦浮状态将会结束。\n「宵宵夕月梦相逢，心曲缱绻绕意中。」"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13"
-            ]
-          },
-          {
-            "key": "技能伤害",
-            "values": [
-              "57.7%",
-              "62.1%",
-              "66.4%",
-              "72.2%",
-              "76.5%",
-              "80.8%",
-              "86.6%",
-              "92.4%",
-              "98.2%",
-              "103.9%",
-              "109.7%",
-              "115.5%",
-              "122.7%"
-            ]
-          },
-          {
-            "key": "持续攻击伤害",
-            "values": [
-              "44.9%",
-              "48.3%",
-              "51.6%",
-              "56.1%",
-              "59.5%",
-              "62.9%",
-              "67.4%",
-              "71.9%",
-              "76.4%",
-              "80.8%",
-              "85.3%",
-              "89.8%",
-              "95.4%"
-            ]
-          },
-          {
-            "key": "梦浮持续时间",
-            "values": [
-              "5.0秒",
-              "5.0秒",
-              "5.0秒",
-              "5.0秒",
-              "5.0秒",
-              "5.0秒",
-              "5.0秒",
-              "5.0秒",
-              "5.0秒",
-              "5.0秒",
-              "5.0秒",
-              "5.0秒",
-              "5.0秒"
-            ]
-          },
-          {
-            "key": "每点精通提升扩散伤害百分比",
-            "values": [
-              "0.18%",
-              "0.21%",
-              "0.24%",
-              "0.27%",
-              "0.30%",
-              "0.33%",
-              "0.36%",
-              "0.39%",
-              "0.42%",
-              "0.45%",
-              "0.48%",
-              "0.51%",
-              "0.54%"
-            ]
-          },
-          {
-            "key": "冷却时间",
-            "values": [
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒"
-            ]
-          }
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/793a05e575d7d4b1c32a955ff8701064_6780324345288156049.gif"
-      },
-      {
-        "title": "安乐秘汤疗法",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/62e19b7fd4c9150b4c34e6eb7e83b886_9011335285704882157.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "唤起无数「美梦」与「噩梦」的回忆，牵引附近的物体与敌人，造成 <color=#80ffd7>风元素范围伤害</color> ，并召唤出小貘来帮忙。\n<color=#ffd780>小貘</color>\n将跟随当前场上角色。每隔一段时间，小貘将在附近制造出1枚「梦见风名物点心」。队伍中自己的角色拾取梦见风名物点心后，若拾取者的生命值高于70%，梦见风名物点心便会发生爆炸并释放梦念冲击波，对周围的敌人造成一次 <color=#80ffd7>风元素范围伤害</color> ，否则会为拾取者恢复生命值，回复量受益于梦见月瑞希的元素精通。梦见月瑞希拾取梦见风名物点心并触发治疗时，治疗量还会提升100%。如果一段时间后仍未被拾取，梦见风名物点心也会发生爆炸并释放梦念冲击波，对周围的敌人造成一次 <color=#80ffd7>风元素范围伤害</color> 。\n「晦暗的情绪要是埋藏太久，就会变成『噩梦』了喔。所以呀，不妨趁着这个机会，将它们作为『美味的点心』吃掉吧？」"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13"
-            ]
-          },
-          {
-            "key": "技能伤害",
-            "values": [
-              "94.1%",
-              "101.1%",
-              "108.2%",
-              "117.6%",
-              "124.7%",
-              "131.7%",
-              "141.1%",
-              "150.5%",
-              "159.9%",
-              "169.3%",
-              "178.8%",
-              "188.2%",
-              "199.9%"
-            ]
-          },
-          {
-            "key": "梦念冲击波伤害",
-            "values": [
-              "70.6%",
-              "75.9%",
-              "81.1%",
-              "88.2%",
-              "93.5%",
-              "98.8%",
-              "105.8%",
-              "112.9%",
-              "120.0%",
-              "127.0%",
-              "134.1%",
-              "141.1%",
-              "149.9%"
-            ]
-          },
-          {
-            "key": "拾取点心回复生命值",
-            "values": [
-              "130.6%元素精通+315",
-              "140.4%元素精通+346",
-              "150.1%元素精通+380",
-              "163.2%元素精通+417",
-              "173.0%元素精通+456",
-              "182.2%元素精通+498",
-              "195.8%元素精通+543",
-              "208.9%元素精通+590",
-              "222.0%元素精通+640",
-              "235.0%元素精通+692",
-              "248.1%元素精通+747",
-              "261.1%元素精通+805",
-              "277.4%元素精通+865"
-            ]
-          },
-          {
-            "key": "持续时间",
-            "values": [
-              "12.0秒",
-              "12.0秒",
-              "12.0秒",
-              "12.0秒",
-              "12.0秒",
-              "12.0秒",
-              "12.0秒",
-              "12.0秒",
-              "12.0秒",
-              "12.0秒",
-              "12.0秒",
-              "12.0秒",
-              "12.0秒"
-            ]
-          },
-          {
-            "key": "冷却时间",
-            "values": [
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒",
-              "15.0秒"
-            ]
-          },
-          {
-            "key": "元素能量",
-            "values": [
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60"
-            ]
-          }
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/b4e64bedd327ad707556a8be104449fa_2204537414237885944.gif"
-      },
-      {
-        "title": "名月浮声",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/472dcd62c98db7061a80905ab30392c9_2111443070227758956.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "梦见月瑞希在梦浮状态下触发扩散反应时，梦浮状态的持续时间延长2.5秒。该效果每0.3秒至多触发1次，在一次梦浮状态期间至多触发2次。"
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "title": "昼想夜梦",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/abe0508393c999da60e1ea663cd4c5dd_4706424614493873604.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "梦见月瑞希处于梦浮状态下时，队伍中附近的其他角色的元素类型为 <color=#ff9999>火元素</color> 、 <color=#80c0ff>水元素</color> 、 <color=#99ffff>冰元素</color> 或 <color=#ffacff>雷元素</color> 的攻击命中敌人时，梦见月瑞希的元素精通提升100点，持续4秒。"
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "title": "诸病无病",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/15acd465dd03287f0acb457584800e01_650049512740127120.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "梦见月瑞希在队伍中时，队伍中自己的角色使用不具备复苏功能的恢复类料理时的回复量有概率提升30%，该效果的触发概率基于对应角色的好感等级（旅行者使用时，该效果将始终触发）。"
-          }
-        ],
-        "attributes": null
-      }
-    ],
-    "videoCollection": [
-      {
-        "title": "《原神》5.4版本PV：「梦间见月明」#原神 #版本PV #梦间见月明 #GenshinImpact #GenshinImpact5ꓸ4",
-        "url": "https://www.youtube.com/watch?v=3sUp4uPMJzg",
-        "coverUrl": "https://i.ytimg.com/vi/3sUp4uPMJzg/maxresdefault.jpg",
-        "duration": 183
-      },
-      {
-        "title": "《原神》拾枝杂谈-「梦见月瑞希：梦间行者」 #原神 #梦见月瑞希 #角色PV #GenshinImpact #YumemizukiMizuki",
-        "url": "https://www.youtube.com/watch?v=nXPtoWUcYyc",
-        "coverUrl": "https://i.ytimg.com/vi/nXPtoWUcYyc/maxresdefault.jpg",
-        "duration": 173
-      },
-      {
-        "title": "《原神》梦见月瑞希角色PV——「心中梦中盘中餐」",
-        "url": "https://www.youtube.com/watch?v=-rjucJ_CqNY",
-        "coverUrl": "https://i.ytimg.com/vi/-rjucJ_CqNY/maxresdefault.jpg",
-        "duration": 153
-      },
-      {
-        "title": "《原神》角色预告-「梦见月瑞希：心慌帮！帮心慌！」 #原神 #梦见月瑞希 #YumemizukiMizuki #GenshinImpact",
-        "url": "https://www.youtube.com/watch?v=60PACsnPoCE",
-        "coverUrl": "https://i.ytimg.com/vi/60PACsnPoCE/maxresdefault.jpg",
-        "duration": 147
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "名称",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "梦见月瑞希"
-          }
-        ]
-      },
-      {
-        "key": "生日",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "3月16日"
-          }
-        ]
-      },
-      {
-        "key": "命之座",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "貘枕座"
-          }
-        ]
-      },
-      {
-        "key": "称号",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "绮梦缱绻"
-          }
-        ]
-      },
-      {
-        "key": "神之眼",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "风"
-          }
-        ]
-      },
-      {
-        "key": "所属",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "稻妻"
-          }
-        ]
-      },
-      {
-        "key": "汉语 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "浮梦若薇"
-          }
-        ]
-      },
-      {
-        "key": "日语 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "会泽纱弥"
-          }
-        ]
-      },
-      {
-        "key": "英语 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "内奥米·麦克唐纳"
-          }
-        ]
-      },
-      {
-        "key": "韩语 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "金曙现"
-          }
-        ]
-      },
-      {
-        "key": "特殊料理",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 7446,
-            "name": "「一梦治愈」",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/07/1983aeeaac137af18edd566fb99f126d_2832534680607175453.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "实装版本",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "5.4"
-          }
-        ]
-      }
-    ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?lang=zh-cn#/map/2?shown_types=185,209,660&center=5757.25,2585.13&zoom=-1.50",
-    "summaryList": [
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/18479d69077ce0455b012300473215fe_6902320226957932423.png",
-        "name": "宿雾若水遥",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "梦见月瑞希处于梦浮状态下时，每3.5秒将对附近的敌人施加持续3秒的「二十三夜待」效果。处于二十三夜待状态下的敌人受到风元素伤害而触发扩散反应时，将移除该效果，使此次扩散反应对该敌人造成的伤害提升，提升值相当于梦见月瑞希元素精通的1100%。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/90fabdc379fbd65a1e25e3a6b62a80e9_913376066389453885.png",
-        "name": "缠忆君影梦相见",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "进入梦浮状态时，梦见月瑞希的每点元素精通，会为附近的队伍中所有其他角色提供0.04% <color=#ff9999>火元素</color> 、 <color=#80c0ff>水元素</color> 、 <color=#99ffff>冰元素</color> 与 <color=#ffacff>雷元素</color> 伤害加成，效果持续至梦浮状态结束。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/3549693e9a921054c17729763174c1ba_1211189847308077592.png",
-        "name": "晓月又经宵",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "元素战技 <color=#ffd780>秋沙歌枕巡礼</color> 的技能等级提高3级。\n至多提升至15级。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/8bb9cbf9aed7f1fc82ec75ba25a5b42e_4835579005120590799.png",
-        "name": "泉轻流花暖",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "拾取元素爆发 <color=#ffd780>安乐秘汤疗法</color> 中的 <color=#ffd780>梦见风名物点心</color> 时，将同时造成伤害与治疗，并为梦见月瑞希恢复5点元素能量。一次 <color=#ffd780>安乐秘汤疗法</color> 持续期间，至多通过这种方式恢复4次元素能量。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/62e19b7fd4c9150b4c34e6eb7e83b886_9011335285704882157.png",
-        "name": "岁云暮矣待月归",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "元素爆发 <color=#ffd780>安乐秘汤疗法</color> 的技能等级提高3级。\n至多提升至15级。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/61a7d17a9fd99d5acdbf1db105826d2b_5727824276475688997.png",
-        "name": "慕念萦心间",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "梦见月瑞希处于梦浮状态下时，队伍中附近的角色触发的扩散反应造成的伤害能够造成暴击，暴击率固定为30%，暴击伤害固定为100%。"
-          }
-        ]
-      }
-    ],
-    "customize": [
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "角色详情",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "角色公布"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/10/142453215/93418486f885e71c79286a336658a342_2458861562180334298.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>2025年1月6日</color>\n「该怎么向你介绍我的这位老朋友呢？嗯…简而言之，她是一个有趣但不怎么可爱的家伙。作为全稻妻最出色的心理诊疗师，她很擅长揣摩别人的心思。而她自己的心思，却总是藏得严严实实，连我都很难猜透…如果你遇到她了，也可以猜猜她心里在想什么。」\n——八重神子"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "梦见月瑞希角色PV——「心中梦中盘中餐」"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/07/142453215/57867d6aea89290213e4828cfab19443_5358278906151195174.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>2025年2月6日</color>\n食梦貘以梦为食。\n当餐叉落下，她将一层一层，刺入你穿过的暗门、触过的荆棘、迎过的风浪。\n直至找到最柔软的那处「美味」，将它呈至你的面前。\n<color=#ff9999>Youtube：</color>"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=-rjucJ_CqNY"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "角色介绍——「绮梦缱绻」·梦见月瑞希"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/10/142453215/75fe47b1d52723b5999fc18b9576df19_1607312675575129670.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>2025年2月6日</color>\n「天上的乌云散去了，是时候收拾心头的阴霾了。」\n旅行者好呀！今天介绍的是一位传说中的“大妖怪”，来自稻妻梦貘一族的心理诊疗师——梦见月瑞希。"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "角色技能演示——「绮梦缱绻」·梦见月瑞希"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/10/142453215/4ea8ba9ec9e6ddb3f53eafe8d659af36_8960380971629664537.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>2025年2月6日</color>\n旅行者好呀！接下来为大家带来梦见月瑞希的战斗相关信息，一起来看看吧~"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "拾枝杂谈-「梦见月瑞希：梦间行者」"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/07/142453215/79bcf9d685953618fd92eada3bc8d5b8_2058543214532640573.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>2025年2月7日</color>\n当精通美梦疗法的诊疗师自己遭遇噩梦怎么办？\n当然是邀你一起，饱餐一顿咯。\n<color=#ff9999>Youtube：</color>"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=nXPtoWUcYyc"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "角色预告-「梦见月瑞希：心慌帮！帮心慌！」"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/12/142453215/ae3ad3b437ba1f1c8333ca15083dc1b6_4245263716384176148.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>2025年2月11日</color>\n「心慌帮！帮心慌！——稻妻妖怪们最为挚爱的综艺节目，好评开演！」\n「由游学归来、博闻多才的美女心理诊疗师梦见月小姐，帮助你解决最棘手的烦恼！\n「无论白天黑夜，在每个敞开心扉的梦境，与你相会！」\n<color=#ff9999>Youtube：</color>"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=60PACsnPoCE"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "过场动画与预告",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "5.4版本PV：「梦间见月明」"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/07/142453215/9b343d2594fb3fba2a4551796b6e6991_1865611233134467642.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>2025年1月24日</color>\n人生就像穿梭在美梦与噩梦之间。\n感觉到紧张、恐惧、无法喘息的时刻，\n请稍作休息，品尝美梦的甘甜，\n并将噩梦揉碎咀嚼。\n<color=#ff9999>Youtube：</color>"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=3sUp4uPMJzg"
       }
     ]
   }
