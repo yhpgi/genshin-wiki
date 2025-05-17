@@ -7,15 +7,915 @@
   "filterValues": {
     "characterRarity": "四星",
     "characterRegion": "稻妻城",
-    "characterWeapon": "弓",
     "characterVision": "岩元素",
+    "characterWeapon": "弓",
     "characterProperty": "岩元素伤害加成"
   },
   "menuId": 2,
   "menuName": "角色图鉴",
   "version": 1729233020,
   "components": {
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html#/map/2?shown_types=227,229,204&center=6099.25,163.00&zoom=1.00",
+    "textualResearch": [
+      {
+        "title": "锵锵领兵行",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "「良善与忠诚，乃是美德的体现。吾友五郎，便是一位具有美德的将领。」——枫原万叶\n忠勇双全的海祇军大将。天生具有野兽般的战斗直觉与顽强意志，能精准找出绝境中的胜机。\n领导着军备、物资皆不占优的海祇军与幕府军分庭抗礼，力求为活在这片土地上的人们支撑起一片生存之壁。\n外人或许很难想象，战场上有着万夫莫开之姿的五郎，私下却像个知心哥哥，能与每位部下相处融洽。\n在五郎眼中，身边的人既是勇猛作战的兵士，也是自己认可的亲近伙伴，是自己必须守护的珍贵宝物。脚下的土地、重要的伙伴、高尚的信念…他的「忠」与「勇」，正是为这些宝贵的人事物而存在。\n藏在五郎身躯之中的，是如大地般广袤坚实的灵魂。\nHoYoLAB网址：https:/www.hoyolab.com/article/1192171"
+          }
+        ]
+      },
+      {
+        "title": "【生日信息】邮件（2022）",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "邮件标题：蛋糕！\n发件人：五郎\n听我说，我喜欢吃甜食的事情，不知怎么传到了海祇岛将士们的耳边，结果，大家为我准备了一个蛋糕，说什么「五郎大哥一定要收下」...\n海祇岛的物产不算丰富，为将者也应保持克制...但我要是拒绝，就更对不起大家的心意了。\n于是，我尝试着换位思考！如果是我收到了一封类似情况的求助信，该如何给对方建议。\n「和将士、朋友们共同享用这个蛋糕，未来有什么好东西的时候，也和大家一起分享。」\n嗯！我觉得可行！\n一起来吃蛋糕吧！"
+          }
+        ]
+      },
+      {
+        "title": "【生日信息】SNS 1（2022）",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "以前生日有一碗鲜鱼炖萝卜我就很开心了。物资珍贵，不能铺张浪费。\n没想到今天能收到这么精致的生日蛋糕，谢谢你！\n造型这么可爱，要怎么切才好呢，难倒我了…\n呜…你有什么建议吗？\nHoYoLAB网址：https:/www.hoyolab.com/article/4825324"
+          }
+        ]
+      },
+      {
+        "title": "【生日信息】SNS 2（2022）",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "“今天的回信进度很顺利，这是最后一封……”\n“哇，好漂亮的蝴蝶！\nHoYoLAB网址：https:/www.hoyolab.com/article/4825130"
+          }
+        ]
+      }
+    ],
+    "talent": [
+      {
+        "key": "普通攻击·呲牙裂扇箭",
+        "title": "普通攻击·呲牙裂扇箭",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/battle_talent_0/battle_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>普通攻击</color>\n进行至多四段的连续弓箭射击。\n<color=#ffd780>重击</color>\n进行伤害更高、更为精准的 <color=#ffd780>瞄准射击</color> 。\n瞄准时，岩晶会在箭矢上持续积聚。聚满了晶岩的箭矢会造成 <color=#ffe699>岩元素伤害</color> 。\n<color=#ffd780>下落攻击</color>\n从空中射出箭雨，并迅速下坠冲击地面，在落地时造成范围伤害。"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11"
+            ]
+          },
+          {
+            "key": "一段伤害",
+            "values": [
+              "37.8%",
+              "40.8%",
+              "43.9%",
+              "48.3%",
+              "51.4%",
+              "54.9%",
+              "59.7%",
+              "64.5%",
+              "69.4%",
+              "74.6%",
+              "79.9%"
+            ]
+          },
+          {
+            "key": "二段伤害",
+            "values": [
+              "37.2%",
+              "40.2%",
+              "43.2%",
+              "47.5%",
+              "50.5%",
+              "54%",
+              "58.8%",
+              "63.5%",
+              "68.3%",
+              "73.4%",
+              "78.6%"
+            ]
+          },
+          {
+            "key": "三段伤害",
+            "values": [
+              "49.5%",
+              "53.5%",
+              "57.5%",
+              "63.3%",
+              "67.3%",
+              "71.9%",
+              "78.2%",
+              "84.5%",
+              "90.9%",
+              "97.8%",
+              "104.7%"
+            ]
+          },
+          {
+            "key": "四段伤害",
+            "values": [
+              "59%",
+              "63.8%",
+              "68.6%",
+              "75.5%",
+              "803%",
+              "85.8%",
+              "93.3%",
+              "100.8%",
+              "108.4%",
+              "116.6%",
+              "124.9%"
+            ]
+          },
+          {
+            "key": "瞄准射击",
+            "values": [
+              "43.9%",
+              "47.4%",
+              "51%",
+              "56.1%",
+              "59.7%",
+              "63.8%",
+              "69.4%",
+              "75%",
+              "80.6%",
+              "86.7%",
+              "92.8%"
+            ]
+          },
+          {
+            "key": "满蓄力瞄准射击",
+            "values": [
+              "124%",
+              "133%",
+              "143%",
+              "155%",
+              "164%",
+              "174%",
+              "186%",
+              "198%",
+              "211%",
+              "223%",
+              "236%"
+            ]
+          },
+          {
+            "key": "下坠期间伤害",
+            "values": [
+              "56.8%",
+              "61.5%",
+              "66.1%",
+              "72.7%",
+              "77.3%",
+              "82.6%",
+              "89.9%",
+              "97.1%",
+              "104%",
+              "112%",
+              "120%"
+            ]
+          },
+          {
+            "key": "低空/高空坠地冲击伤害",
+            "values": [
+              "114%/142%",
+              "123%/153%",
+              "132%/165%",
+              "145%/182%",
+              "155%/193%",
+              "165%/206%",
+              "180%/224%",
+              "194%/243%",
+              "209%/261%",
+              "225%/281%",
+              "240/300%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 92,
+              "name": "「天光」的教导",
+              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>自认通透一切的大君，永远企图将高天之光彩尽收囊中。然而无从分享的愿景，却反令须臾之人更加炽烈地追求，犹如飞蛾扑火。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Light_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1018,
+              "name": "浮游干核",
+              "desc": "能让飘浮灵浮游的能量核，其中含有些微的元素。<br/>大部分的能量似乎已经逸散了。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Husk_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 91,
+              "name": "「天光」的指引",
+              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>即使晖光被重重雷云所掩盖，鸣神的国土之上，依旧有志士如云雀般突破雷光与天之怒海，追寻天光之迹，哪怕迎来冷酷的殛灭。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Light_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1019,
+              "name": "浮游幽核",
+              "desc": "能让飘浮灵浮游的能量核。<br/>这种元素生物似乎有奇异的习性，会周期性大量涌现、消失。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 91,
+              "name": "「天光」的指引",
+              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>即使晖光被重重雷云所掩盖，鸣神的国土之上，依旧有志士如云雀般突破雷光与天之怒海，追寻天光之迹，哪怕迎来冷酷的殛灭。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Light_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1019,
+              "name": "浮游幽核",
+              "desc": "能让飘浮灵浮游的能量核。<br/>这种元素生物似乎有奇异的习性，会周期性大量涌现、消失。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 91,
+              "name": "「天光」的指引",
+              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>即使晖光被重重雷云所掩盖，鸣神的国土之上，依旧有志士如云雀般突破雷光与天之怒海，追寻天光之迹，哪怕迎来冷酷的殛灭。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Light_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1019,
+              "name": "浮游幽核",
+              "desc": "能让飘浮灵浮游的能量核。<br/>这种元素生物似乎有奇异的习性，会周期性大量涌现、消失。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 91,
+              "name": "「天光」的指引",
+              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>即使晖光被重重雷云所掩盖，鸣神的国土之上，依旧有志士如云雀般突破雷光与天之怒海，追寻天光之迹，哪怕迎来冷酷的殛灭。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Light_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1019,
+              "name": "浮游幽核",
+              "desc": "能让飘浮灵浮游的能量核。<br/>这种元素生物似乎有奇异的习性，会周期性大量涌现、消失。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 90,
+              "name": "「天光」的哲学",
+              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>即使永远生活在地下，人也会不屈地祈求天光。人总是追逐超越，无可止步。静止封闭的永恒亦固然壮丽，但其本质终究是死亡。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Light_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1020,
+              "name": "浮游晶化核",
+              "desc": "击败飘浮灵后有时能发现的完整的能量核。<br/>在热衷于给任何事物都分个高下的人当中，经常发生这样的争论：飘浮灵和风史莱姆的浮力，究竟孰高孰低。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1096,
+              "name": "熔毁之刻",
+              "desc": "战胜解放了原本力量的「女士」后，得到的某种蕴含着强大力量的畸形碎片。<br/>「我做了一个很长的梦。<br/>「我梦见我与你，在我们缔造的纯白世界中再会。<br/>「但我终于醒来了。我早已经被烈火吞没。你早已与毒血一同回归大地。<br/>「不过都无所谓了。要不断往前走，就要烧毁身后的一切，就要相信他所说的永远纯白无暇的国度，在地平线的尽头，『陛下』的梦中，在他让我看见的『妄念』里。」",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Molten Moment_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 90,
+              "name": "「天光」的哲学",
+              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>即使永远生活在地下，人也会不屈地祈求天光。人总是追逐超越，无可止步。静止封闭的永恒亦固然壮丽，但其本质终究是死亡。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Light_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1020,
+              "name": "浮游晶化核",
+              "desc": "击败飘浮灵后有时能发现的完整的能量核。<br/>在热衷于给任何事物都分个高下的人当中，经常发生这样的争论：飘浮灵和风史莱姆的浮力，究竟孰高孰低。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1096,
+              "name": "熔毁之刻",
+              "desc": "战胜解放了原本力量的「女士」后，得到的某种蕴含着强大力量的畸形碎片。<br/>「我做了一个很长的梦。<br/>「我梦见我与你，在我们缔造的纯白世界中再会。<br/>「但我终于醒来了。我早已经被烈火吞没。你早已与毒血一同回归大地。<br/>「不过都无所谓了。要不断往前走，就要烧毁身后的一切，就要相信他所说的永远纯白无暇的国度，在地平线的尽头，『陛下』的梦中，在他让我看见的『妄念』里。」",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Molten Moment_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 90,
+              "name": "「天光」的哲学",
+              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>即使永远生活在地下，人也会不屈地祈求天光。人总是追逐超越，无可止步。静止封闭的永恒亦固然壮丽，但其本质终究是死亡。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Light_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1020,
+              "name": "浮游晶化核",
+              "desc": "击败飘浮灵后有时能发现的完整的能量核。<br/>在热衷于给任何事物都分个高下的人当中，经常发生这样的争论：飘浮灵和风史莱姆的浮力，究竟孰高孰低。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1096,
+              "name": "熔毁之刻",
+              "desc": "战胜解放了原本力量的「女士」后，得到的某种蕴含着强大力量的畸形碎片。<br/>「我做了一个很长的梦。<br/>「我梦见我与你，在我们缔造的纯白世界中再会。<br/>「但我终于醒来了。我早已经被烈火吞没。你早已与毒血一同回归大地。<br/>「不过都无所谓了。要不断往前走，就要烧毁身后的一切，就要相信他所说的永远纯白无暇的国度，在地平线的尽头，『陛下』的梦中，在他让我看见的『妄念』里。」",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Molten Moment_icon.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 90,
+              "name": "「天光」的哲学",
+              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>即使永远生活在地下，人也会不屈地祈求天光。人总是追逐超越，无可止步。静止封闭的永恒亦固然壮丽，但其本质终究是死亡。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Light_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1020,
+              "name": "浮游晶化核",
+              "desc": "击败飘浮灵后有时能发现的完整的能量核。<br/>在热衷于给任何事物都分个高下的人当中，经常发生这样的争论：飘浮灵和风史莱姆的浮力，究竟孰高孰低。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1096,
+              "name": "熔毁之刻",
+              "desc": "战胜解放了原本力量的「女士」后，得到的某种蕴含着强大力量的畸形碎片。<br/>「我做了一个很长的梦。<br/>「我梦见我与你，在我们缔造的纯白世界中再会。<br/>「但我终于醒来了。我早已经被烈火吞没。你早已与毒血一同回归大地。<br/>「不过都无所谓了。要不断往前走，就要烧毁身后的一切，就要相信他所说的永远纯白无暇的国度，在地平线的尽头，『陛下』的梦中，在他让我看见的『妄念』里。」",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Molten Moment_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "智识之冕",
+              "desc": "提升天赋所需的珍贵素材。<br/>远古时期，承载与传授智识所用的仪式器具。尽管如今，智慧居于言语及典籍中，但「智识之冕」中残存的力量与智慧仍能给如今的人们带来伟大的突破吧。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/battle_talent_0/battle_talent_0.gif"
+      },
+      {
+        "key": "犬坂吠吠方圆阵",
+        "title": "犬坂吠吠方圆阵",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/battle_talent_1/battle_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "造成 <color=#ffe699>岩元素范围伤害</color> ，并立起大将旗指物。\n<color=#ffd780>大将旗指物</color>\n依据施放时队伍中元素类型为 <color=#ffe699>岩元素</color> 的角色数量，为其领域内的当前场上角色赋予如下效果：\n·一名角色时：「坚牢」：防御力提升；\n·二名角色时：「难破」：除上述效果外，提升抗打断能力；\n·三名角色时：「摧碎」：除上述效果外，获得 <color=#ffe699>岩元素伤害加成</color> 。\n同时只能存在一个由五郎自己创造的大将旗指物；角色只能获得一个大将旗指物提供的效果。角色离开领域后，领域的效果将持续2秒。\n<color=#ffd780>长按</color>\n可以调整技能生效位置。\n「只要进入此阵中，便能保证性命安全无虞！」无论何时何地，作为领军的大将，五郎最不希望看到的就是跟随其身后的同伴受到伤害吧。"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13"
+            ]
+          },
+          {
+            "key": "技能伤害",
+            "values": [
+              "107.2%",
+              "115.2%",
+              "123.3%",
+              "134%",
+              "142%",
+              "150.1%",
+              "160.8%",
+              "171.5%",
+              "182.2%",
+              "193%",
+              "203.7%",
+              "214.4%",
+              "227.8%"
+            ]
+          },
+          {
+            "key": "防御力提升",
+            "values": [
+              "206",
+              "222",
+              "237",
+              "258",
+              "273",
+              "289",
+              "309",
+              "330",
+              "350",
+              "371",
+              "392",
+              "412",
+              "438"
+            ]
+          },
+          {
+            "key": "岩元素伤害加成",
+            "values": [
+              "15%",
+              "15%",
+              "15%",
+              "15%",
+              "15%",
+              "15%",
+              "15%",
+              "15%",
+              "15%",
+              "15%",
+              "15%",
+              "15%",
+              "15%"
+            ]
+          },
+          {
+            "key": "持续时间",
+            "values": [
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒"
+            ]
+          },
+          {
+            "key": "冷却时间",
+            "values": [
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒",
+              "10秒"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/battle_talent_1/battle_talent_1.gif"
+      },
+      {
+        "key": "兽牙逐突形胜战法",
+        "title": "兽牙逐突形胜战法",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/battle_talent_2/battle_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "展现大将之威，造成 <color=#ffe699>岩元素范围伤害</color> ，并展开大将威仪之领域，鼓舞身边的战友。\n<color=#ffd780>大将威仪</color>\n具有如下特性：\n·领域拥有等同于元素战技「犬坂吠吠方圆阵」创造的大将旗指物的效果，依据施放时队伍中元素类型为 <color=#ffe699>岩元素</color> 的角色数量，为其领域内的当前场上角色赋予效果，并且会随着当前场上角色移动；\n·每1.5秒，会产生一次岩晶崩破，对领域内一名敌人造成 <color=#ffe699>岩元素范围伤害</color> ；\n·每1.5秒，将领域内1枚结晶反应产生的晶片吸引至当前角色的位置。\n施放时，若场上存在五郎自己的大将旗指物，会将其破坏。此外，在大将威仪的持续期间，五郎自己施放元素战技「犬坂吠吠方圆阵」时，将不会产生大将旗指物。\n五郎倒下时将解除五郎自己的大将威仪效果。\n「地势在我！」五郎能够稍许改变战场的地势以获得胜利，此为对抗强敌的不二秘诀。"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13"
+            ]
+          },
+          {
+            "key": "技能伤害",
+            "values": [
+              "98%防御力",
+              "106%防御力",
+              "113%防御力",
+              "123%防御力",
+              "130%防御力",
+              "138%防御力",
+              "147%防御力",
+              "157%防御力",
+              "167%防御力",
+              "177%防御力",
+              "187%防御力",
+              "196%防御力",
+              "209%防御力"
+            ]
+          },
+          {
+            "key": "岩晶崩破伤害",
+            "values": [
+              "62%防御力",
+              "66%防御力",
+              "70%防御力",
+              "77%防御力",
+              "81%防御力",
+              "86%防御力",
+              "92%防御力",
+              "98%防御力",
+              "104%防御力",
+              "110%防御力",
+              "116%防御力",
+              "123%防御力",
+              "130%防御力"
+            ]
+          },
+          {
+            "key": "持续时间",
+            "values": [
+              "9秒",
+              "9秒",
+              "9秒",
+              "9秒",
+              "9秒",
+              "9秒",
+              "9秒",
+              "9秒",
+              "9秒",
+              "9秒",
+              "9秒",
+              "9秒",
+              "9秒"
+            ]
+          },
+          {
+            "key": "冷却时间",
+            "values": [
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒"
+            ]
+          },
+          {
+            "key": "元素能量",
+            "values": [
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/battle_talent_2/battle_talent_2.gif"
+      },
+      {
+        "key": "不畏风雨",
+        "title": "不畏风雨",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/const_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "施放 <color=#ffd780>兽牙逐突形胜战法</color> 后的12秒内，附近的队伍中所有角色的防御力提升25%。"
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "报恩之守",
+        "title": "报恩之守",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/const_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "基于防御力，五郎的以下攻击造成的伤害提高：\n· <color=#ffd780>犬坂吠吠方圆阵</color> 的技能伤害提高值：防御力的156%；\n· <color=#ffd780>兽牙逐突形胜战法</color> 的技能伤害与岩晶崩破伤害提高值：防御力的15.6%。"
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "亮晶晶发现术",
+        "title": "亮晶晶发现术",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/const_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "在小地图上显示周围的 <color=#ffd780>稻妻区域特产</color> 的位置。"
+          }
+        ],
+        "attributes": null
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "名字",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "五郎"
+          }
+        ]
+      },
+      {
+        "key": "生日",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "5月18日"
+          }
+        ]
+      },
+      {
+        "key": "命之座",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "柴犬座"
+          }
+        ]
+      },
+      {
+        "key": "称号",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "戎犬锵锵"
+          }
+        ]
+      },
+      {
+        "key": "神之眼",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "岩"
+          }
+        ]
+      },
+      {
+        "key": "所属",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "海祇岛"
+          }
+        ]
+      },
+      {
+        "key": "汉语 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "杨昕燃"
+          }
+        ]
+      },
+      {
+        "key": "英语 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "科里·易"
+          }
+        ]
+      },
+      {
+        "key": "日语 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "畠中祐"
+          }
+        ]
+      },
+      {
+        "key": "韩语 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "李晓"
+          }
+        ]
+      },
+      {
+        "key": "特色料理",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 690,
+            "name": "常胜传说",
+            "desc": "五郎的特色料理。堆得又高又满的配菜，就如他的心意一般令人动容。一口气吃完面、喝完汤，揉揉略撑的肚皮，再抬头看向身边的五郎…只见他笑得灿烂，尾巴还在身后轻轻晃动，大概他自己也没有发现吧…",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Victorious Legend_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "实装版本",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "2.3版本「皑尘与雪影」"
+          }
+        ]
+      }
+    ],
     "voice": [
       {
         "title": "初次见面…",
@@ -1580,130 +2480,69 @@
         ]
       }
     ],
-    "textualResearch": [
+    "summaryList": [
       {
-        "title": "锵锵领兵行",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/constellation_1.png",
+        "name": "犬奔·疾如风",
         "desc": [
           {
             "type": "RichText",
-            "text": "「良善与忠诚，乃是美德的体现。吾友五郎，便是一位具有美德的将领。」——枫原万叶\n忠勇双全的海祇军大将。天生具有野兽般的战斗直觉与顽强意志，能精准找出绝境中的胜机。\n领导着军备、物资皆不占优的海祇军与幕府军分庭抗礼，力求为活在这片土地上的人们支撑起一片生存之壁。\n外人或许很难想象，战场上有着万夫莫开之姿的五郎，私下却像个知心哥哥，能与每位部下相处融洽。\n在五郎眼中，身边的人既是勇猛作战的兵士，也是自己认可的亲近伙伴，是自己必须守护的珍贵宝物。脚下的土地、重要的伙伴、高尚的信念…他的「忠」与「勇」，正是为这些宝贵的人事物而存在。\n藏在五郎身躯之中的，是如大地般广袤坚实的灵魂。\nHoYoLAB网址：https:/www.hoyolab.com/article/1192171"
+            "text": "处于五郎自己的 <color=#ffd780>大将旗指物</color> 或 <color=#ffd780>大将威仪</color> 领域中的当前场上角色（除了五郎自己）对敌人造成岩元素伤害后，五郎自己的 <color=#ffd780>犬坂吠吠方圆阵</color> 冷却时间减少2秒。\n该效果每10秒至多触发一次。"
           }
         ]
       },
       {
-        "title": "【生日信息】邮件（2022）",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/constellation_2.png",
+        "name": "犬坐·稳如钟",
         "desc": [
           {
             "type": "RichText",
-            "text": "邮件标题：蛋糕！\n发件人：五郎\n听我说，我喜欢吃甜食的事情，不知怎么传到了海祇岛将士们的耳边，结果，大家为我准备了一个蛋糕，说什么「五郎大哥一定要收下」...\n海祇岛的物产不算丰富，为将者也应保持克制...但我要是拒绝，就更对不起大家的心意了。\n于是，我尝试着换位思考！如果是我收到了一封类似情况的求助信，该如何给对方建议。\n「和将士、朋友们共同享用这个蛋糕，未来有什么好东西的时候，也和大家一起分享。」\n嗯！我觉得可行！\n一起来吃蛋糕吧！"
+            "text": "在 <color=#ffd780>大将威仪</color> 的持续期间，附近的当前场上角色获取结晶反应产生的晶片后，五郎自己的大将威仪的持续时间延长1秒。\n该效果每0.1秒至多触发一次，至多通过这种方式延长3秒持续时间。"
           }
         ]
       },
       {
-        "title": "【生日信息】SNS 1（2022）",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/constellation_3.png",
+        "name": "犬爪·势如火",
         "desc": [
           {
             "type": "RichText",
-            "text": "以前生日有一碗鲜鱼炖萝卜我就很开心了。物资珍贵，不能铺张浪费。\n没想到今天能收到这么精致的生日蛋糕，谢谢你！\n造型这么可爱，要怎么切才好呢，难倒我了…\n呜…你有什么建议吗？\nHoYoLAB网址：https:/www.hoyolab.com/article/4825324"
+            "text": "<color=#ffd780>犬坂吠吠方圆阵</color> 的技能等级提高3级。\n至多提升至15级。"
           }
         ]
       },
       {
-        "title": "【生日信息】SNS 2（2022）",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/constellation_4.png",
+        "name": "犬舐·温如水",
         "desc": [
           {
             "type": "RichText",
-            "text": "“今天的回信进度很顺利，这是最后一封……”\n“哇，好漂亮的蝴蝶！\nHoYoLAB网址：https:/www.hoyolab.com/article/4825130"
+            "text": "<color=#ffd780>大将威仪</color> 在具有「难破」或「摧碎」的效果时，每1.5秒，为领域内的当前场上角色恢复生命值，回复量相当于五郎自己防御力的50%。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/constellation_5.png",
+        "name": "犬突·动如雷",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>兽牙逐突形胜战法</color> 的技能等级提高3级。\n至多提升至15级。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/constellation_6.png",
+        "name": "犬勇·忠如山",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "施放 <color=#ffd780>犬坂吠吠方圆阵</color> 或 <color=#ffd780>兽牙逐突形胜战法</color> 后的12秒内，依据施放时的领域等级，提高附近的队伍中所有角色 <color=#ffe699>岩元素伤害</color> 的暴击伤害：\n·「坚牢」：提高10%；\n·「难破」：提高20%；\n·「摧碎」：提高40%。\n该效果无法叠加，以后生效的为准。"
           }
         ]
       }
     ],
-    "galleryCharacter": [
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/47685001/766d426511c8c88c4b0096f248096551_8409362901455930655.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/47685001/ca3e0fdf7d9b92f9e67667f8da0395c1_607193201951506701.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/47685001/ad9d56b6c7c715abe7644715b7ae7af1_3726588852408425446.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/47685001/6b3507d228a5cd822ac20d01cbb06fd1_7780485495801573195.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/47685001/8a445f22657af3317e3243eef2615631_8358783292956472327.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/47685001/aed8d396a90f3a954a1ce9c49f535326_2392002060043719498.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/47685001/e70f14ec76d10592476128f4c4239b16_4270462818290236001.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/9a208a5d6e104159a73045539d86c5e7_4492808835377093076.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/0cfa238d781b7a85ab90b2bd6c121891_1972397382918000148.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/06b89d3e4ae5407c30cdf230d0135124_5057287298268471752.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/836da58bb18cd19b68c238f377db6cde_1481371048257315762.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/43c09fa8a941cfb72c6209831cf71193_5200218718155661790.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/9a9499aaac591f603b2f5c580f18222c_7971341368833820150.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/00ee9fdc962b7ebb2b7d18fd26d45c71_555267167544377350.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/2b856c0ed2ed950038924e0502c5f2f5_2382879736398464190.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/8dab2c1b236dbcb18e289cac8ce1fd65_6369721692270783721.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/9b2d0e980247a9933654ac8902cb4d6e_7219855389543708212.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/5bed4d7eeb836691ede7c914a7846c1c_7462069340863045390.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/19/248832625/5cd7a7d13f4a5993c4e5a65942582269_8381570250824124221.png"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/19/248832625/5c5247fdaf1b8df02e7bb65c8ff5cfc9_4102878826551732540.jpg"
-      },
-      {
-        "key": "五郎",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/19/248832625/027d1c6ba4e3fefffa6ccb8538a9b214_704481891663282280.png"
-      }
-    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html#/map/2?shown_types=227,229,204&center=6099.25,163.00&zoom=1.00",
     "ascension": [
       {
         "key": "Lv.1",
@@ -2270,180 +3109,90 @@
         ]
       }
     ],
-    "baseInfo": [
+    "galleryCharacter": [
       {
-        "key": "名字",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "五郎"
-          }
-        ]
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/47685001/766d426511c8c88c4b0096f248096551_8409362901455930655.png"
       },
       {
-        "key": "生日",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "5月18日"
-          }
-        ]
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/47685001/ca3e0fdf7d9b92f9e67667f8da0395c1_607193201951506701.png"
       },
       {
-        "key": "命之座",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "柴犬座"
-          }
-        ]
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/47685001/ad9d56b6c7c715abe7644715b7ae7af1_3726588852408425446.png"
       },
       {
-        "key": "称号",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "戎犬锵锵"
-          }
-        ]
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/47685001/6b3507d228a5cd822ac20d01cbb06fd1_7780485495801573195.png"
       },
       {
-        "key": "神之眼",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "岩"
-          }
-        ]
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/47685001/8a445f22657af3317e3243eef2615631_8358783292956472327.png"
       },
       {
-        "key": "所属",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "海祇岛"
-          }
-        ]
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/47685001/aed8d396a90f3a954a1ce9c49f535326_2392002060043719498.png"
       },
       {
-        "key": "汉语 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "杨昕燃"
-          }
-        ]
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/47685001/e70f14ec76d10592476128f4c4239b16_4270462818290236001.png"
       },
       {
-        "key": "英语 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "科里·易"
-          }
-        ]
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/9a208a5d6e104159a73045539d86c5e7_4492808835377093076.png"
       },
       {
-        "key": "日语 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "畠中祐"
-          }
-        ]
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/0cfa238d781b7a85ab90b2bd6c121891_1972397382918000148.png"
       },
       {
-        "key": "韩语 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "李晓"
-          }
-        ]
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/06b89d3e4ae5407c30cdf230d0135124_5057287298268471752.png"
       },
       {
-        "key": "特色料理",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 690,
-            "name": "常胜传说",
-            "desc": "五郎的特色料理。堆得又高又满的配菜，就如他的心意一般令人动容。一口气吃完面、喝完汤，揉揉略撑的肚皮，再抬头看向身边的五郎…只见他笑得灿烂，尾巴还在身后轻轻晃动，大概他自己也没有发现吧…",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Victorious Legend_icon.png"
-          }
-        ],
-        "isMaterial": true
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/836da58bb18cd19b68c238f377db6cde_1481371048257315762.png"
       },
       {
-        "key": "实装版本",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "2.3版本「皑尘与雪影」"
-          }
-        ]
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/constellation_1.png",
-        "name": "犬奔·疾如风",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "处于五郎自己的 <color=#ffd780>大将旗指物</color> 或 <color=#ffd780>大将威仪</color> 领域中的当前场上角色（除了五郎自己）对敌人造成岩元素伤害后，五郎自己的 <color=#ffd780>犬坂吠吠方圆阵</color> 冷却时间减少2秒。\n该效果每10秒至多触发一次。"
-          }
-        ]
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/43c09fa8a941cfb72c6209831cf71193_5200218718155661790.png"
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/constellation_2.png",
-        "name": "犬坐·稳如钟",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "在 <color=#ffd780>大将威仪</color> 的持续期间，附近的当前场上角色获取结晶反应产生的晶片后，五郎自己的大将威仪的持续时间延长1秒。\n该效果每0.1秒至多触发一次，至多通过这种方式延长3秒持续时间。"
-          }
-        ]
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/9a9499aaac591f603b2f5c580f18222c_7971341368833820150.png"
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/constellation_3.png",
-        "name": "犬爪·势如火",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>犬坂吠吠方圆阵</color> 的技能等级提高3级。\n至多提升至15级。"
-          }
-        ]
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/00ee9fdc962b7ebb2b7d18fd26d45c71_555267167544377350.png"
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/constellation_4.png",
-        "name": "犬舐·温如水",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>大将威仪</color> 在具有「难破」或「摧碎」的效果时，每1.5秒，为领域内的当前场上角色恢复生命值，回复量相当于五郎自己防御力的50%。"
-          }
-        ]
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/2b856c0ed2ed950038924e0502c5f2f5_2382879736398464190.png"
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/constellation_5.png",
-        "name": "犬突·动如雷",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>兽牙逐突形胜战法</color> 的技能等级提高3级。\n至多提升至15级。"
-          }
-        ]
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/8dab2c1b236dbcb18e289cac8ce1fd65_6369721692270783721.png"
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/constellation_6.png",
-        "name": "犬勇·忠如山",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "施放 <color=#ffd780>犬坂吠吠方圆阵</color> 或 <color=#ffd780>兽牙逐突形胜战法</color> 后的12秒内，依据施放时的领域等级，提高附近的队伍中所有角色 <color=#ffe699>岩元素伤害</color> 的暴击伤害：\n·「坚牢」：提高10%；\n·「难破」：提高20%；\n·「摧碎」：提高40%。\n该效果无法叠加，以后生效的为准。"
-          }
-        ]
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/9b2d0e980247a9933654ac8902cb4d6e_7219855389543708212.png"
+      },
+      {
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/18/47685001/5bed4d7eeb836691ede7c914a7846c1c_7462069340863045390.png"
+      },
+      {
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/19/248832625/5cd7a7d13f4a5993c4e5a65942582269_8381570250824124221.png"
+      },
+      {
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/19/248832625/5c5247fdaf1b8df02e7bb65c8ff5cfc9_4102878826551732540.jpg"
+      },
+      {
+        "key": "五郎",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/19/248832625/027d1c6ba4e3fefffa6ccb8538a9b214_704481891663282280.png"
       }
     ],
     "story": [
@@ -2518,755 +3267,6 @@
             "text": "曾经很长一段时间里，五郎将战局失利一事完全归咎于自己。\n「再变强一些，说不定就能扭转战局。」\n带着这样的想法，五郎日夜训练弓术，试图靠个人力量带领同伴取得胜利。\n但到战场上磨砺一段时间后，五郎亲眼见到强大的战士落单被生擒，陷入劣势的弱小士兵却依靠团结作战击溃敌军。\n那时五郎才意识到，个人力量在战场上是有极限的。\n提升实力固然重要，更重要的却是让将士们齐心配合，并肩向前。\n一支队伍只有做到集体强大，才能在战场上无往不利。\n意识到这一点的五郎不再追求极致的弓术，而是把精力投给身边人，关注同伴各方面状态，帮助大家一起进步。\n——现在想来，这或许也是五郎获得神之眼的契机。"
           }
         ]
-      }
-    ],
-    "talent": [
-      {
-        "key": "普通攻击·呲牙裂扇箭",
-        "title": "普通攻击·呲牙裂扇箭",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/battle_talent_0/battle_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>普通攻击</color>\n进行至多四段的连续弓箭射击。\n<color=#ffd780>重击</color>\n进行伤害更高、更为精准的 <color=#ffd780>瞄准射击</color> 。\n瞄准时，岩晶会在箭矢上持续积聚。聚满了晶岩的箭矢会造成 <color=#ffe699>岩元素伤害</color> 。\n<color=#ffd780>下落攻击</color>\n从空中射出箭雨，并迅速下坠冲击地面，在落地时造成范围伤害。"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11"
-            ]
-          },
-          {
-            "key": "一段伤害",
-            "values": [
-              "37.8%",
-              "40.8%",
-              "43.9%",
-              "48.3%",
-              "51.4%",
-              "54.9%",
-              "59.7%",
-              "64.5%",
-              "69.4%",
-              "74.6%",
-              "79.9%"
-            ]
-          },
-          {
-            "key": "二段伤害",
-            "values": [
-              "37.2%",
-              "40.2%",
-              "43.2%",
-              "47.5%",
-              "50.5%",
-              "54%",
-              "58.8%",
-              "63.5%",
-              "68.3%",
-              "73.4%",
-              "78.6%"
-            ]
-          },
-          {
-            "key": "三段伤害",
-            "values": [
-              "49.5%",
-              "53.5%",
-              "57.5%",
-              "63.3%",
-              "67.3%",
-              "71.9%",
-              "78.2%",
-              "84.5%",
-              "90.9%",
-              "97.8%",
-              "104.7%"
-            ]
-          },
-          {
-            "key": "四段伤害",
-            "values": [
-              "59%",
-              "63.8%",
-              "68.6%",
-              "75.5%",
-              "803%",
-              "85.8%",
-              "93.3%",
-              "100.8%",
-              "108.4%",
-              "116.6%",
-              "124.9%"
-            ]
-          },
-          {
-            "key": "瞄准射击",
-            "values": [
-              "43.9%",
-              "47.4%",
-              "51%",
-              "56.1%",
-              "59.7%",
-              "63.8%",
-              "69.4%",
-              "75%",
-              "80.6%",
-              "86.7%",
-              "92.8%"
-            ]
-          },
-          {
-            "key": "满蓄力瞄准射击",
-            "values": [
-              "124%",
-              "133%",
-              "143%",
-              "155%",
-              "164%",
-              "174%",
-              "186%",
-              "198%",
-              "211%",
-              "223%",
-              "236%"
-            ]
-          },
-          {
-            "key": "下坠期间伤害",
-            "values": [
-              "56.8%",
-              "61.5%",
-              "66.1%",
-              "72.7%",
-              "77.3%",
-              "82.6%",
-              "89.9%",
-              "97.1%",
-              "104%",
-              "112%",
-              "120%"
-            ]
-          },
-          {
-            "key": "低空/高空坠地冲击伤害",
-            "values": [
-              "114%/142%",
-              "123%/153%",
-              "132%/165%",
-              "145%/182%",
-              "155%/193%",
-              "165%/206%",
-              "180%/224%",
-              "194%/243%",
-              "209%/261%",
-              "225%/281%",
-              "240/300%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 92,
-              "name": "「天光」的教导",
-              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>自认通透一切的大君，永远企图将高天之光彩尽收囊中。然而无从分享的愿景，却反令须臾之人更加炽烈地追求，犹如飞蛾扑火。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Light_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1018,
-              "name": "浮游干核",
-              "desc": "能让飘浮灵浮游的能量核，其中含有些微的元素。<br/>大部分的能量似乎已经逸散了。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Husk_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 91,
-              "name": "「天光」的指引",
-              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>即使晖光被重重雷云所掩盖，鸣神的国土之上，依旧有志士如云雀般突破雷光与天之怒海，追寻天光之迹，哪怕迎来冷酷的殛灭。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Light_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1019,
-              "name": "浮游幽核",
-              "desc": "能让飘浮灵浮游的能量核。<br/>这种元素生物似乎有奇异的习性，会周期性大量涌现、消失。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 91,
-              "name": "「天光」的指引",
-              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>即使晖光被重重雷云所掩盖，鸣神的国土之上，依旧有志士如云雀般突破雷光与天之怒海，追寻天光之迹，哪怕迎来冷酷的殛灭。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Light_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1019,
-              "name": "浮游幽核",
-              "desc": "能让飘浮灵浮游的能量核。<br/>这种元素生物似乎有奇异的习性，会周期性大量涌现、消失。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 91,
-              "name": "「天光」的指引",
-              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>即使晖光被重重雷云所掩盖，鸣神的国土之上，依旧有志士如云雀般突破雷光与天之怒海，追寻天光之迹，哪怕迎来冷酷的殛灭。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Light_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1019,
-              "name": "浮游幽核",
-              "desc": "能让飘浮灵浮游的能量核。<br/>这种元素生物似乎有奇异的习性，会周期性大量涌现、消失。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 91,
-              "name": "「天光」的指引",
-              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>即使晖光被重重雷云所掩盖，鸣神的国土之上，依旧有志士如云雀般突破雷光与天之怒海，追寻天光之迹，哪怕迎来冷酷的殛灭。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Light_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1019,
-              "name": "浮游幽核",
-              "desc": "能让飘浮灵浮游的能量核。<br/>这种元素生物似乎有奇异的习性，会周期性大量涌现、消失。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 90,
-              "name": "「天光」的哲学",
-              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>即使永远生活在地下，人也会不屈地祈求天光。人总是追逐超越，无可止步。静止封闭的永恒亦固然壮丽，但其本质终究是死亡。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Light_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1020,
-              "name": "浮游晶化核",
-              "desc": "击败飘浮灵后有时能发现的完整的能量核。<br/>在热衷于给任何事物都分个高下的人当中，经常发生这样的争论：飘浮灵和风史莱姆的浮力，究竟孰高孰低。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1096,
-              "name": "熔毁之刻",
-              "desc": "战胜解放了原本力量的「女士」后，得到的某种蕴含着强大力量的畸形碎片。<br/>「我做了一个很长的梦。<br/>「我梦见我与你，在我们缔造的纯白世界中再会。<br/>「但我终于醒来了。我早已经被烈火吞没。你早已与毒血一同回归大地。<br/>「不过都无所谓了。要不断往前走，就要烧毁身后的一切，就要相信他所说的永远纯白无暇的国度，在地平线的尽头，『陛下』的梦中，在他让我看见的『妄念』里。」",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Molten Moment_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 90,
-              "name": "「天光」的哲学",
-              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>即使永远生活在地下，人也会不屈地祈求天光。人总是追逐超越，无可止步。静止封闭的永恒亦固然壮丽，但其本质终究是死亡。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Light_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1020,
-              "name": "浮游晶化核",
-              "desc": "击败飘浮灵后有时能发现的完整的能量核。<br/>在热衷于给任何事物都分个高下的人当中，经常发生这样的争论：飘浮灵和风史莱姆的浮力，究竟孰高孰低。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1096,
-              "name": "熔毁之刻",
-              "desc": "战胜解放了原本力量的「女士」后，得到的某种蕴含着强大力量的畸形碎片。<br/>「我做了一个很长的梦。<br/>「我梦见我与你，在我们缔造的纯白世界中再会。<br/>「但我终于醒来了。我早已经被烈火吞没。你早已与毒血一同回归大地。<br/>「不过都无所谓了。要不断往前走，就要烧毁身后的一切，就要相信他所说的永远纯白无暇的国度，在地平线的尽头，『陛下』的梦中，在他让我看见的『妄念』里。」",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Molten Moment_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 90,
-              "name": "「天光」的哲学",
-              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>即使永远生活在地下，人也会不屈地祈求天光。人总是追逐超越，无可止步。静止封闭的永恒亦固然壮丽，但其本质终究是死亡。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Light_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1020,
-              "name": "浮游晶化核",
-              "desc": "击败飘浮灵后有时能发现的完整的能量核。<br/>在热衷于给任何事物都分个高下的人当中，经常发生这样的争论：飘浮灵和风史莱姆的浮力，究竟孰高孰低。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1096,
-              "name": "熔毁之刻",
-              "desc": "战胜解放了原本力量的「女士」后，得到的某种蕴含着强大力量的畸形碎片。<br/>「我做了一个很长的梦。<br/>「我梦见我与你，在我们缔造的纯白世界中再会。<br/>「但我终于醒来了。我早已经被烈火吞没。你早已与毒血一同回归大地。<br/>「不过都无所谓了。要不断往前走，就要烧毁身后的一切，就要相信他所说的永远纯白无暇的国度，在地平线的尽头，『陛下』的梦中，在他让我看见的『妄念』里。」",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Molten Moment_icon.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 90,
-              "name": "「天光」的哲学",
-              "desc": "天赋培养素材。<br/>雷之国土的愿望是天光。<br/>即使永远生活在地下，人也会不屈地祈求天光。人总是追逐超越，无可止步。静止封闭的永恒亦固然壮丽，但其本质终究是死亡。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Light_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1020,
-              "name": "浮游晶化核",
-              "desc": "击败飘浮灵后有时能发现的完整的能量核。<br/>在热衷于给任何事物都分个高下的人当中，经常发生这样的争论：飘浮灵和风史莱姆的浮力，究竟孰高孰低。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1096,
-              "name": "熔毁之刻",
-              "desc": "战胜解放了原本力量的「女士」后，得到的某种蕴含着强大力量的畸形碎片。<br/>「我做了一个很长的梦。<br/>「我梦见我与你，在我们缔造的纯白世界中再会。<br/>「但我终于醒来了。我早已经被烈火吞没。你早已与毒血一同回归大地。<br/>「不过都无所谓了。要不断往前走，就要烧毁身后的一切，就要相信他所说的永远纯白无暇的国度，在地平线的尽头，『陛下』的梦中，在他让我看见的『妄念』里。」",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Molten Moment_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "智识之冕",
-              "desc": "提升天赋所需的珍贵素材。<br/>远古时期，承载与传授智识所用的仪式器具。尽管如今，智慧居于言语及典籍中，但「智识之冕」中残存的力量与智慧仍能给如今的人们带来伟大的突破吧。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/battle_talent_0/battle_talent_0.gif"
-      },
-      {
-        "key": "犬坂吠吠方圆阵",
-        "title": "犬坂吠吠方圆阵",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/battle_talent_1/battle_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "造成 <color=#ffe699>岩元素范围伤害</color> ，并立起大将旗指物。\n<color=#ffd780>大将旗指物</color>\n依据施放时队伍中元素类型为 <color=#ffe699>岩元素</color> 的角色数量，为其领域内的当前场上角色赋予如下效果：\n·一名角色时：「坚牢」：防御力提升；\n·二名角色时：「难破」：除上述效果外，提升抗打断能力；\n·三名角色时：「摧碎」：除上述效果外，获得 <color=#ffe699>岩元素伤害加成</color> 。\n同时只能存在一个由五郎自己创造的大将旗指物；角色只能获得一个大将旗指物提供的效果。角色离开领域后，领域的效果将持续2秒。\n<color=#ffd780>长按</color>\n可以调整技能生效位置。\n「只要进入此阵中，便能保证性命安全无虞！」无论何时何地，作为领军的大将，五郎最不希望看到的就是跟随其身后的同伴受到伤害吧。"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13"
-            ]
-          },
-          {
-            "key": "技能伤害",
-            "values": [
-              "107.2%",
-              "115.2%",
-              "123.3%",
-              "134%",
-              "142%",
-              "150.1%",
-              "160.8%",
-              "171.5%",
-              "182.2%",
-              "193%",
-              "203.7%",
-              "214.4%",
-              "227.8%"
-            ]
-          },
-          {
-            "key": "防御力提升",
-            "values": [
-              "206",
-              "222",
-              "237",
-              "258",
-              "273",
-              "289",
-              "309",
-              "330",
-              "350",
-              "371",
-              "392",
-              "412",
-              "438"
-            ]
-          },
-          {
-            "key": "岩元素伤害加成",
-            "values": [
-              "15%",
-              "15%",
-              "15%",
-              "15%",
-              "15%",
-              "15%",
-              "15%",
-              "15%",
-              "15%",
-              "15%",
-              "15%",
-              "15%",
-              "15%"
-            ]
-          },
-          {
-            "key": "持续时间",
-            "values": [
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒"
-            ]
-          },
-          {
-            "key": "冷却时间",
-            "values": [
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒",
-              "10秒"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/battle_talent_1/battle_talent_1.gif"
-      },
-      {
-        "key": "兽牙逐突形胜战法",
-        "title": "兽牙逐突形胜战法",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/battle_talent_2/battle_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "展现大将之威，造成 <color=#ffe699>岩元素范围伤害</color> ，并展开大将威仪之领域，鼓舞身边的战友。\n<color=#ffd780>大将威仪</color>\n具有如下特性：\n·领域拥有等同于元素战技「犬坂吠吠方圆阵」创造的大将旗指物的效果，依据施放时队伍中元素类型为 <color=#ffe699>岩元素</color> 的角色数量，为其领域内的当前场上角色赋予效果，并且会随着当前场上角色移动；\n·每1.5秒，会产生一次岩晶崩破，对领域内一名敌人造成 <color=#ffe699>岩元素范围伤害</color> ；\n·每1.5秒，将领域内1枚结晶反应产生的晶片吸引至当前角色的位置。\n施放时，若场上存在五郎自己的大将旗指物，会将其破坏。此外，在大将威仪的持续期间，五郎自己施放元素战技「犬坂吠吠方圆阵」时，将不会产生大将旗指物。\n五郎倒下时将解除五郎自己的大将威仪效果。\n「地势在我！」五郎能够稍许改变战场的地势以获得胜利，此为对抗强敌的不二秘诀。"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13"
-            ]
-          },
-          {
-            "key": "技能伤害",
-            "values": [
-              "98%防御力",
-              "106%防御力",
-              "113%防御力",
-              "123%防御力",
-              "130%防御力",
-              "138%防御力",
-              "147%防御力",
-              "157%防御力",
-              "167%防御力",
-              "177%防御力",
-              "187%防御力",
-              "196%防御力",
-              "209%防御力"
-            ]
-          },
-          {
-            "key": "岩晶崩破伤害",
-            "values": [
-              "62%防御力",
-              "66%防御力",
-              "70%防御力",
-              "77%防御力",
-              "81%防御力",
-              "86%防御力",
-              "92%防御力",
-              "98%防御力",
-              "104%防御力",
-              "110%防御力",
-              "116%防御力",
-              "123%防御力",
-              "130%防御力"
-            ]
-          },
-          {
-            "key": "持续时间",
-            "values": [
-              "9秒",
-              "9秒",
-              "9秒",
-              "9秒",
-              "9秒",
-              "9秒",
-              "9秒",
-              "9秒",
-              "9秒",
-              "9秒",
-              "9秒",
-              "9秒",
-              "9秒"
-            ]
-          },
-          {
-            "key": "冷却时间",
-            "values": [
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒"
-            ]
-          },
-          {
-            "key": "元素能量",
-            "values": [
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/battle_talent_2/battle_talent_2.gif"
-      },
-      {
-        "key": "不畏风雨",
-        "title": "不畏风雨",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/const_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "施放 <color=#ffd780>兽牙逐突形胜战法</color> 后的12秒内，附近的队伍中所有角色的防御力提升25%。"
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "报恩之守",
-        "title": "报恩之守",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/const_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "基于防御力，五郎的以下攻击造成的伤害提高：\n· <color=#ffd780>犬坂吠吠方圆阵</color> 的技能伤害提高值：防御力的156%；\n· <color=#ffd780>兽牙逐突形胜战法</color> 的技能伤害与岩晶崩破伤害提高值：防御力的15.6%。"
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "亮晶晶发现术",
-        "title": "亮晶晶发现术",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/五郎/const_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "在小地图上显示周围的 <color=#ffd780>稻妻区域特产</color> 的位置。"
-          }
-        ],
-        "attributes": null
       }
     ]
   }

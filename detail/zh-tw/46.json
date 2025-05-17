@@ -5,16 +5,394 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Zhongli_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/钟离/avatar.png",
   "filterValues": {
+    "characterWeapon": "長柄武器",
     "characterProperty": "岩元素傷害加成",
-    "characterRegion": "璃月港",
-    "characterRarity": "五星",
     "characterVision": "岩元素",
-    "characterWeapon": "長柄武器"
+    "characterRarity": "五星",
+    "characterRegion": "璃月港"
   },
   "menuId": 2,
   "menuName": "角色圖鑑",
   "version": 1737458329,
   "components": {
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "天賦概覽",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "鍾離的 <color=#ffd780>元素戰技</color> 可創造岩脊，持續對周圍目標造成 <color=#ffe699>岩元素傷害</color>\n長按 <color=#ffd780>元素戰技</color> 可形成玉璋護盾， <color=#ffd780>傷害吸收量</color> 受益於鍾離的 <color=#ffd780>生命值上限</color>\n處於玉璋護盾庇護下的時候，附近敵人的 <color=#ffd780>抗性</color> 將會降低\n鍾離的 <color=#ffd780>元素爆發</color> 可造成範圍 <color=#ffe699>岩元素傷害</color> ，並 <color=#ffe699>石化</color> 敵人，使其無法行動\n鍾離造成的傷害可基於 <color=#ffe699>生命值上限</color> 得到提升"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "武器推薦",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "三星武器"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2059,
+        "name": "黑纓槍",
+        "desc": "解決了白纓容易弄髒問題的絕世好槍。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/黑缨枪.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>黑纓槍</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>基礎攻擊力：</color> 38~354\n<color=#ffffff>生命值：</color> 10.2%~46.9%\n<color=#ffffff>武器特效：</color> 對史萊姆類敵人造成的傷害增加 <color=#37ffff>40%/50%/60%/70%/80%</color> 。\n<color=#ffffff>入手方式：</color> 祈願\n<color=#ffd780>生命值</color> 可提高玉璋護盾的 <color=#ffd780>傷害吸收量</color> 以及鍾離的輸出。"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "四星武器"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2021,
+        "name": "西風長槍",
+        "desc": "西風騎士團的制式長槍。槍桿直挺，槍尖輕風流溢。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风长枪.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>決鬥之槍</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>基礎攻擊力：</color> 44~565\n<color=#ffffff>元素充能效率：</color> 6.7%~30.6%\n<color=#ffffff>武器特效：</color> 攻擊造成 <color=#ffd780>暴擊</color> 時，有 <color=#37ffff>60%/70%/80%/90%/100%</color> 的機率產生少量元素微粒，能為角色恢復6點 <color=#ffd780>元素能量</color> 。該效果每 <color=#37ffff>12/10.5/9/7.5/6</color> 秒只能觸發一次。\n<color=#ffffff>入手方式：</color> 祈願\n<color=#ffd780>元素充能效率</color> 可優化鍾離的 <color=#ffd780>元素爆發</color> 循環，且武器特效產生的元素微粒可改善全隊循環，進一步提升鍾離的輔助能力。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1937,
+        "name": "決鬥之槍",
+        "desc": "血紅色的鋒利長槍，過去是某位角鬥士無比珍視的寶物。槍芒上曾沾染了無數野獸與人的鮮血。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/决斗之枪.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>決鬥之槍</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>基礎攻擊力：</color> 41~454\n<color=#ffffff>暴擊率：</color> 8.0%~36.8%\n<color=#ffffff>武器特效：</color> 身邊至少有2個敵人時，獲得 <color=#37ffff>16%/20%/24%/28%/32%</color> <color=#ffd780>攻擊力</color> 提升與 <color=#37ffff>16%/20%/24%/28%/32%</color> <color=#ffd780>防禦力</color> 提升；身邊的敵人少於2個時，獲得 <color=#37ffff>24%/30%/36%/42%/48%</color> <color=#ffd780>攻擊力</color> 提升。\n<color=#ffffff>入手方式：</color> 珍珠紀行\n<color=#ffd780>暴擊率</color> 和 <color=#ffd780>攻擊力</color> 可提高鍾離的輸出。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1930,
+        "name": "「漁獲」",
+        "desc": "在久遠的過去，曾經聞名稻妻的大盜愛用的槍。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/「渔获」.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>「漁獲」</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>基礎攻擊力：</color> 42~510\n<color=#ffffff>元素充能效率：</color> 10.0%~45.9%\n<color=#ffffff>武器特效：</color> <color=#ffd780>元素爆發</color> 造成的傷害提升 <color=#37ffff>16%/20%/24%/28%/32%</color> ， <color=#ffd780>元素爆發</color> 的 <color=#ffd780>暴擊率</color> 提升 <color=#37ffff>6%/7.5%/9%/10.5%/12%</color> 。\n<color=#ffffff>入手方式：</color> 稻妻釣魚協會\n<color=#ffd780>元素充能效率</color> 可優化鍾離的 <color=#ffd780>元素爆發</color> 循環，且武器特效可提高其輸出。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3986,
+        "name": "公義的酬報",
+        "desc": "<p>一柄鋒利的長槍，僅在槍尖處留有點滴沾染鮮血的殘痕。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/7998136/9bb154ad1759bf2d9015b060cad1ca9c_8987982051346031328.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>公義的酬報</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>基礎攻擊力：</color> 44~565\n<color=#ffffff>生命值：</color> 6.0%~27.6%\n<color=#ffffff>武器特效：</color> 受到治療時，恢復 <color=#37ffff>8/10/12/14/16</color> 點能量，該效果每10秒至多觸發一次，角色處於隊伍後臺時也能觸發。\n<color=#ffffff>入手方式：</color> 鍛造\n<color=#ffd780>生命值</color> 可提高玉璋護盾的 <color=#ffd780>傷害吸收量</color> 以及鍾離的輸出。"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "五星武器"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1972,
+        "name": "護摩之杖",
+        "desc": "在早已失落的古老祭儀中，使用的朱赤「柴火杖」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/护摩之杖.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>護摩之杖</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>基礎攻擊力：</color> 46~608\n<color=#ffffff>暴擊傷害：</color> 14.4%~66.2%\n<color=#ffffff>武器特效：</color> <color=#ffd780>生命值</color> 提升 <color=#37ffff>20%/25%/30%/35%/40%</color> 。此外可獲得 <color=#ffd780>攻擊力</color> 加成，相當於該武器裝備者 <color=#ffd780>生命值上限</color> 的 <color=#37ffff>0.8%/1%/1.2%/1.4%/1.6%</color> 。當裝備該武器的角色 <color=#ffd780>生命值</color> 低於50%時，進一步獲得相當於 <color=#ffd780>生命值上限</color> <color=#37ffff>1%/1.2%/1.4%/1.6%/1.8%</color> 的 <color=#ffd780>攻擊力</color> 提升。\n<color=#ffffff>入手方式：</color> 祈願\n<color=#ffd780>暴擊傷害</color> 和 <color=#ffd780>攻擊力</color> 可提高鍾離的輸出， <color=#ffd780>生命值</color> 可提高玉璋護盾的 <color=#ffd780>傷害吸收量</color> 以及鍾離的輸出。"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "聖遺物推薦",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "聖遺物主屬性"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/1387f1512524772db99ae30b6303f939_5072609172935942900.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "時之沙\n<color=#ffd780>生命值百分比</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/56451470fe75f710b812ac28e226273b_5774236690802856497.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "空之杯\n<color=#ffd780>生命值百分比</color> / <color=#ffe699>岩元素傷害加成</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/8bc07934c9290b83751c7fa183a43ab7_32021027934025390.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "理之冠\n<color=#ffd780>生命值百分比</color> / <color=#ffd780>暴擊率</color> / <color=#ffd780>暴擊傷害</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "推薦副屬性"
+      },
+      {
+        "type": "RichText",
+        "text": "暴擊率、暴擊傷害、生命值、元素充能效率"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "4件套裝"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2064,
+        "name": "千岩牢固",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Tenacity of the Millelith/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>千岩牢固</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝效果：</color> <color=#ffd780>生命值</color> 提升20%。\n<color=#ffffff>4件套裝效果：</color> <color=#ffd780>元素戰技</color> 命中敵人後，使隊伍中附近的所有角色 <color=#ffd780>攻擊力</color> 提升20%， <color=#ffd780>護盾強效</color> 提升30%，持續3秒。該效果每0.5秒至多觸發一次。裝備此聖遺物套裝的角色處於隊伍後台時，依然能觸發該效果。\n<color=#ffd780>生命值</color> 可提高玉璋護盾的 <color=#ffd780>傷害吸收量</color> 以及鍾離的輸出，且4件套裝效果可提高隊伍角色的 <color=#ffd780>攻擊力</color> 與 <color=#ffd780>護盾強效</color> ，提高輸出的同時保障生存能力，進一步提升鍾離的輔助能力。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2072,
+        "name": "悠古的磐岩",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Archaic Petra/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>悠古的磐岩</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝效果：</color> 獲得15% <color=#ffe699>岩元素傷害加成</color> 。\n<color=#ffffff>4件套裝效果：</color> 獲得 <color=#ffe699>結晶</color> 反應形成的晶片時，隊伍中所有角色獲得35%對應 <color=#ffd780>元素傷害加成</color> ，持續10秒。同時只能通過該效果獲得一種 <color=#ffd780>元素傷害加成</color> 。\n<color=#ffe699>岩元素傷害加成</color> 可提高鍾離的輸出，且當鍾離獲得 <color=#ffe699>結晶</color> 反應形成的晶片時，可提高隊伍中對應 <color=#ffd780>元素傷害加成</color> ，提高全隊輸出。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2075,
+        "name": "昔日宗室之儀",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>昔日宗室之儀</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝效果：</color> <color=#ffd780>元素爆發</color> 造成的傷害提升20%。\n<color=#ffffff>4件套裝效果：</color> 施放 <color=#ffd780>元素爆發</color> 後，隊伍中所有角色 <color=#ffd780>攻擊力</color> 提升20%，持續12秒。該效果不可疊加。\n該套裝可同時提高鍾離的 <color=#ffd780>元素爆發</color> 傷害與隊伍中角色的 <color=#ffd780>攻擊力</color> ，兼顧輸出與輔助能力。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2090,
+        "name": "絕緣之旗印",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>絕緣之旗印</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝效果：</color> <color=#ffd780>元素充能效率</color> 提高20%。\n<color=#ffffff>4件套裝效果：</color> 基於 <color=#ffd780>元素充能效率</color> 的25%，提高 <color=#ffd780>元素爆發</color> 造成的傷害。至多依此方式獲得75%提升。\n<color=#ffd780>元素充能效率</color> 可優化鍾離的 <color=#ffd780>元素爆發</color> 循環，且4件套裝效果可再基於 <color=#ffd780>元素充能效率</color> 提高 <color=#ffd780>元素爆發</color> 造成的傷害，提高鍾離的輸出。"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "2件套裝"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2064,
+        "name": "千岩牢固",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Tenacity of the Millelith/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>千岩牢固</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝效果：</color> <color=#ffd780>生命值</color> 提升20%。\n<color=#ffd780>生命值</color> 可提高玉璋護盾的 <color=#ffd780>傷害吸收量</color> 以及鍾離的輸出。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2075,
+        "name": "昔日宗室之儀",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>昔日宗室之儀</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝效果：</color> <color=#ffd780>元素爆發</color> 造成的傷害提升20%。\n<color=#ffd780>元素爆發</color> 傷害加成可提高鍾離的輸出。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2072,
+        "name": "悠古的磐岩",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Archaic Petra/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>悠古的磐岩</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝效果：</color> 獲得15% <color=#ffe699>岩元素傷害加成</color> 。\n<color=#ffe699>岩元素傷害加成</color> 可提高鍾離的輸出。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2090,
+        "name": "絕緣之旗印",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>絕緣之旗印</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝效果：</color> <color=#ffd780>元素充能效率</color> 提高20%。\n<color=#ffd780>元素充能效率</color> 可優化鍾離的 <color=#ffd780>元素爆發</color> 循環。"
+      }
+    ],
+    "textualResearch": [
+      {
+        "title": "【生日訊息】信件（2020）",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "信件標題: 見信如晤。\n寄件者：鍾離\n今天已是一年最後一日。\n每年此時，當我回顧過往歲月，難免唏嘘。\n「人」之於這個世界，既是激流中的游魚，又是重壓下的植被。\n脆弱也頑強，短暫又雋永⋯不可思議。\n今年的變數比以往多了一些。\n與你的相遇，是諸多變數中最令我難忘的事。\n像你這般特別的人，會如何度過生辰之日？\n常見的那些習俗，我是知道，但你的慶祝方法令我好奇。\n如今的我正在習慣此等充滿塵俗之氣的生活。可惜，閒暇的日子並不比繁忙的日子輕鬆。\n不知可否許我一日空閒？我想四處走走。\n身旁若有你相伴，看慣了的風景或許也能變得新奇。"
+          }
+        ]
+      },
+      {
+        "title": "【生日訊息】信件（2021）",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "信件標題: 一年之末。\n寄件者：鍾離\n不知不覺，又到了一年最後一日。\n頗為特別的一天，既是結束，也是開始。每逢今日，便會心生感慨。\n時間、故事…塵世間悄然流動著的一切，都會在這日最後一刻首尾相接。\n驚濤巨浪或涓涓細流…總歸是奔湧不息的。\n今年你應是去了不少地方，做了許多事。你的存在，就像是大地上一面清澈的鏡子。\n鏡能鑑人，能明冷暖，能照天地之靈。\n在這般特殊的日子，我也想見見這個世界的明鏡。\n旅行許久的人，也應休憩片刻了。\n若你有空，不妨與我小聚一番。\n共品香茗，定會令人心情愉快。"
+          }
+        ]
+      },
+      {
+        "title": "【生日訊息】信件（2022）",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "信件標題：歲末小敘\n寄件者：鍾離\n又至年未。如此時節，寫信與朋友敘舊乃是傅統。\n近日受堂主所託，到輕策莊走了一趟。如今的輕策莊安寧平和，作物豐饒，諸事順利，觀之如明鏡在心，聞之似雅樂臨身。雅興不可辜負，隨手採了些絕雲椒椒贈予你。\n冬日吃些辣椒對身體有益。若實在不習慣，也可以將它們串成飾物掛在屋間，略增幾分喜慶。"
+          }
+        ]
+      },
+      {
+        "title": "【生日訊息】信件（2023）",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "信件標題：每至年末…\n寄件者：鍾離\n近日得閒，去了趟翹英莊。一來散心，二來想著年末將至，該給親朋好友備些薄禮了。\n沉玉谷山光清奇，水色俊秀，實屬散心漫步之佳地。你若來日有閒，定要親自過去看看。我便是一路緩步行去，回過神來周遭已升起炊煙，飄香入喉。\n歲末天寒，萬物閉藏。此時最應邀兩三親朋圍坐爐火旁，煮上一壺好茶與朋友共敘舊事。\n冬茗入口，想來也能祛濕禦寒，養蓄精力。\n只可惜這茶葉嬌貴，恐經不起路途顛簸，等你來時再沏吧。"
+          }
+        ]
+      },
+      {
+        "title": "【生日訊息】信件（2024）",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "信件標題：歲序更新…\n寄件者：鍾離\n每逢歲序更新之際，萬物訴寒，璃月港卻比尋常更添幾分熱鬧。\n道途人來客往，或僕僕風塵趕往家舍，或嬉笑漫步賞玩風光，又或往來紛紛採辦節禮…各從其志，步履不一，皆為團圓二字。\n慢煮風花，細燉歲月，飯食最能承載著情感與記憶，也是團圓中必不可少的一環。閒暇時分，不妨回璃月走走。如我一般，相信還有諸多親朋都期盼在璃月街頭重遇熟悉的身影。\n想你奔走四方，也積存了不少拿手菜。若你願意一展廚藝，這冬日定能 愈加圓滿。\n水已微沸，我們桌邊慢敘。"
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "title": "角色詳細",
@@ -89,54 +467,104 @@
         ]
       }
     ],
-    "textualResearch": [
+    "summaryList": [
       {
-        "title": "【生日訊息】信件（2020）",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/钟离/constellation_1.png",
+        "name": "岩者，六合引之為骨",
         "desc": [
           {
             "type": "RichText",
-            "text": "信件標題: 見信如晤。\n寄件者：鍾離\n今天已是一年最後一日。\n每年此時，當我回顧過往歲月，難免唏嘘。\n「人」之於這個世界，既是激流中的游魚，又是重壓下的植被。\n脆弱也頑強，短暫又雋永⋯不可思議。\n今年的變數比以往多了一些。\n與你的相遇，是諸多變數中最令我難忘的事。\n像你這般特別的人，會如何度過生辰之日？\n常見的那些習俗，我是知道，但你的慶祝方法令我好奇。\n如今的我正在習慣此等充滿塵俗之氣的生活。可惜，閒暇的日子並不比繁忙的日子輕鬆。\n不知可否許我一日空閒？我想四處走走。\n身旁若有你相伴，看慣了的風景或許也能變得新奇。"
+            "text": "<color=#ffd780>地心</color> 創造的岩脊至多可以同時存在2個。"
           }
         ]
       },
       {
-        "title": "【生日訊息】信件（2021）",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/钟离/constellation_2.png",
+        "name": "石者，八荒韞玉而明",
         "desc": [
           {
             "type": "RichText",
-            "text": "信件標題: 一年之末。\n寄件者：鍾離\n不知不覺，又到了一年最後一日。\n頗為特別的一天，既是結束，也是開始。每逢今日，便會心生感慨。\n時間、故事…塵世間悄然流動著的一切，都會在這日最後一刻首尾相接。\n驚濤巨浪或涓涓細流…總歸是奔湧不息的。\n今年你應是去了不少地方，做了許多事。你的存在，就像是大地上一面清澈的鏡子。\n鏡能鑑人，能明冷暖，能照天地之靈。\n在這般特殊的日子，我也想見見這個世界的明鏡。\n旅行許久的人，也應休憩片刻了。\n若你有空，不妨與我小聚一番。\n共品香茗，定會令人心情愉快。"
+            "text": "<color=#ffd780>天星</color> 隕落時，會為附近當前場上的角色賦予玉璋護盾。"
           }
         ]
       },
       {
-        "title": "【生日訊息】信件（2022）",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/钟离/constellation_3.png",
+        "name": "圭璋，暝仍不移其暉",
         "desc": [
           {
             "type": "RichText",
-            "text": "信件標題：歲末小敘\n寄件者：鍾離\n又至年未。如此時節，寫信與朋友敘舊乃是傅統。\n近日受堂主所託，到輕策莊走了一趟。如今的輕策莊安寧平和，作物豐饒，諸事順利，觀之如明鏡在心，聞之似雅樂臨身。雅興不可辜負，隨手採了些絕雲椒椒贈予你。\n冬日吃些辣椒對身體有益。若實在不習慣，也可以將它們串成飾物掛在屋間，略增幾分喜慶。"
+            "text": "<color=#ffd780>地心</color> 的技能等級提高3級。\n至多提升至15級。"
           }
         ]
       },
       {
-        "title": "【生日訊息】信件（2023）",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/钟离/constellation_4.png",
+        "name": "黃琮，破而不奪其堅",
         "desc": [
           {
             "type": "RichText",
-            "text": "信件標題：每至年末…\n寄件者：鍾離\n近日得閒，去了趟翹英莊。一來散心，二來想著年末將至，該給親朋好友備些薄禮了。\n沉玉谷山光清奇，水色俊秀，實屬散心漫步之佳地。你若來日有閒，定要親自過去看看。我便是一路緩步行去，回過神來周遭已升起炊煙，飄香入喉。\n歲末天寒，萬物閉藏。此時最應邀兩三親朋圍坐爐火旁，煮上一壺好茶與朋友共敘舊事。\n冬茗入口，想來也能祛濕禦寒，養蓄精力。\n只可惜這茶葉嬌貴，恐經不起路途顛簸，等你來時再沏吧。"
+            "text": "<color=#ffd780>天星</color> 的影響範圍擴大20%。\n此外，天星的石化效果持續時間延長2秒。"
           }
         ]
       },
       {
-        "title": "【生日訊息】信件（2024）",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/钟离/constellation_5.png",
+        "name": "蒼璧，驅之長昭天理",
         "desc": [
           {
             "type": "RichText",
-            "text": "信件標題：歲序更新…\n寄件者：鍾離\n每逢歲序更新之際，萬物訴寒，璃月港卻比尋常更添幾分熱鬧。\n道途人來客往，或僕僕風塵趕往家舍，或嬉笑漫步賞玩風光，又或往來紛紛採辦節禮…各從其志，步履不一，皆為團圓二字。\n慢煮風花，細燉歲月，飯食最能承載著情感與記憶，也是團圓中必不可少的一環。閒暇時分，不妨回璃月走走。如我一般，相信還有諸多親朋都期盼在璃月街頭重遇熟悉的身影。\n想你奔走四方，也積存了不少拿手菜。若你願意一展廚藝，這冬日定能 愈加圓滿。\n水已微沸，我們桌邊慢敘。"
+            "text": "<color=#ffd780>天星</color> 的技能等級提高3級。\n至多提升至15級。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/钟离/constellation_6.png",
+        "name": "金玉，禮予天地四方",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "玉璋護盾受到傷害時，將為當前角色恢復生命值，回復量為傷害的40%。\n單次回復量不超過該角色最大生命值的8%。"
           }
         ]
       }
     ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=40&center=1827.00,-952.00&zoom=-2.00",
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/钟离/avatar_header_cnt.png"
+      },
+      {
+        "key": "原畫",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/钟离/avatar.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "衣裝 - 凡世致身"
+          }
+        ]
+      },
+      {
+        "key": "閒置動作 1",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/8b16be2037972c29d5c940c1527fa99f_2507620974458983922.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "衣裝 - 凡世致身"
+          }
+        ]
+      },
+      {
+        "key": "閒置動作 2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/58e30489f3741f05acb0bf0d74089e88_7718337789111058520.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "衣裝 - 凡世致身"
+          }
+        ]
+      }
+    ],
     "voice": [
       {
         "title": "初次見面…",
@@ -1745,369 +2173,568 @@
         ]
       }
     ],
-    "customize": [
+    "ascension": [
       {
-        "type": "Heading",
-        "level": 2,
-        "text": "天賦概覽",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "鍾離的 <color=#ffd780>元素戰技</color> 可創造岩脊，持續對周圍目標造成 <color=#ffe699>岩元素傷害</color>\n長按 <color=#ffd780>元素戰技</color> 可形成玉璋護盾， <color=#ffd780>傷害吸收量</color> 受益於鍾離的 <color=#ffd780>生命值上限</color>\n處於玉璋護盾庇護下的時候，附近敵人的 <color=#ffd780>抗性</color> 將會降低\n鍾離的 <color=#ffd780>元素爆發</color> 可造成範圍 <color=#ffe699>岩元素傷害</color> ，並 <color=#ffe699>石化</color> 敵人，使其無法行動\n鍾離造成的傷害可基於 <color=#ffe699>生命值上限</color> 得到提升"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "武器推薦",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "三星武器"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2059,
-        "name": "黑纓槍",
-        "desc": "解決了白纓容易弄髒問題的絕世好槍。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/黑缨枪.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>黑纓槍</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>基礎攻擊力：</color> 38~354\n<color=#ffffff>生命值：</color> 10.2%~46.9%\n<color=#ffffff>武器特效：</color> 對史萊姆類敵人造成的傷害增加 <color=#37ffff>40%/50%/60%/70%/80%</color> 。\n<color=#ffffff>入手方式：</color> 祈願\n<color=#ffd780>生命值</color> 可提高玉璋護盾的 <color=#ffd780>傷害吸收量</color> 以及鍾離的輸出。"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "四星武器"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2021,
-        "name": "西風長槍",
-        "desc": "西風騎士團的制式長槍。槍桿直挺，槍尖輕風流溢。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风长枪.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>決鬥之槍</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>基礎攻擊力：</color> 44~565\n<color=#ffffff>元素充能效率：</color> 6.7%~30.6%\n<color=#ffffff>武器特效：</color> 攻擊造成 <color=#ffd780>暴擊</color> 時，有 <color=#37ffff>60%/70%/80%/90%/100%</color> 的機率產生少量元素微粒，能為角色恢復6點 <color=#ffd780>元素能量</color> 。該效果每 <color=#37ffff>12/10.5/9/7.5/6</color> 秒只能觸發一次。\n<color=#ffffff>入手方式：</color> 祈願\n<color=#ffd780>元素充能效率</color> 可優化鍾離的 <color=#ffd780>元素爆發</color> 循環，且武器特效產生的元素微粒可改善全隊循環，進一步提升鍾離的輔助能力。"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1937,
-        "name": "決鬥之槍",
-        "desc": "血紅色的鋒利長槍，過去是某位角鬥士無比珍視的寶物。槍芒上曾沾染了無數野獸與人的鮮血。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/决斗之枪.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>決鬥之槍</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>基礎攻擊力：</color> 41~454\n<color=#ffffff>暴擊率：</color> 8.0%~36.8%\n<color=#ffffff>武器特效：</color> 身邊至少有2個敵人時，獲得 <color=#37ffff>16%/20%/24%/28%/32%</color> <color=#ffd780>攻擊力</color> 提升與 <color=#37ffff>16%/20%/24%/28%/32%</color> <color=#ffd780>防禦力</color> 提升；身邊的敵人少於2個時，獲得 <color=#37ffff>24%/30%/36%/42%/48%</color> <color=#ffd780>攻擊力</color> 提升。\n<color=#ffffff>入手方式：</color> 珍珠紀行\n<color=#ffd780>暴擊率</color> 和 <color=#ffd780>攻擊力</color> 可提高鍾離的輸出。"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1930,
-        "name": "「漁獲」",
-        "desc": "在久遠的過去，曾經聞名稻妻的大盜愛用的槍。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/「渔获」.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>「漁獲」</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>基礎攻擊力：</color> 42~510\n<color=#ffffff>元素充能效率：</color> 10.0%~45.9%\n<color=#ffffff>武器特效：</color> <color=#ffd780>元素爆發</color> 造成的傷害提升 <color=#37ffff>16%/20%/24%/28%/32%</color> ， <color=#ffd780>元素爆發</color> 的 <color=#ffd780>暴擊率</color> 提升 <color=#37ffff>6%/7.5%/9%/10.5%/12%</color> 。\n<color=#ffffff>入手方式：</color> 稻妻釣魚協會\n<color=#ffd780>元素充能效率</color> 可優化鍾離的 <color=#ffd780>元素爆發</color> 循環，且武器特效可提高其輸出。"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3986,
-        "name": "公義的酬報",
-        "desc": "<p>一柄鋒利的長槍，僅在槍尖處留有點滴沾染鮮血的殘痕。</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/7998136/9bb154ad1759bf2d9015b060cad1ca9c_8987982051346031328.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>公義的酬報</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>基礎攻擊力：</color> 44~565\n<color=#ffffff>生命值：</color> 6.0%~27.6%\n<color=#ffffff>武器特效：</color> 受到治療時，恢復 <color=#37ffff>8/10/12/14/16</color> 點能量，該效果每10秒至多觸發一次，角色處於隊伍後臺時也能觸發。\n<color=#ffffff>入手方式：</color> 鍛造\n<color=#ffd780>生命值</color> 可提高玉璋護盾的 <color=#ffd780>傷害吸收量</color> 以及鍾離的輸出。"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "五星武器"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1972,
-        "name": "護摩之杖",
-        "desc": "在早已失落的古老祭儀中，使用的朱赤「柴火杖」。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/护摩之杖.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>護摩之杖</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>基礎攻擊力：</color> 46~608\n<color=#ffffff>暴擊傷害：</color> 14.4%~66.2%\n<color=#ffffff>武器特效：</color> <color=#ffd780>生命值</color> 提升 <color=#37ffff>20%/25%/30%/35%/40%</color> 。此外可獲得 <color=#ffd780>攻擊力</color> 加成，相當於該武器裝備者 <color=#ffd780>生命值上限</color> 的 <color=#37ffff>0.8%/1%/1.2%/1.4%/1.6%</color> 。當裝備該武器的角色 <color=#ffd780>生命值</color> 低於50%時，進一步獲得相當於 <color=#ffd780>生命值上限</color> <color=#37ffff>1%/1.2%/1.4%/1.6%/1.8%</color> 的 <color=#ffd780>攻擊力</color> 提升。\n<color=#ffffff>入手方式：</color> 祈願\n<color=#ffd780>暴擊傷害</color> 和 <color=#ffd780>攻擊力</color> 可提高鍾離的輸出， <color=#ffd780>生命值</color> 可提高玉璋護盾的 <color=#ffd780>傷害吸收量</color> 以及鍾離的輸出。"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "聖遺物推薦",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "聖遺物主屬性"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/1387f1512524772db99ae30b6303f939_5072609172935942900.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "時之沙\n<color=#ffd780>生命值百分比</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/56451470fe75f710b812ac28e226273b_5774236690802856497.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "空之杯\n<color=#ffd780>生命值百分比</color> / <color=#ffe699>岩元素傷害加成</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/8bc07934c9290b83751c7fa183a43ab7_32021027934025390.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "理之冠\n<color=#ffd780>生命值百分比</color> / <color=#ffd780>暴擊率</color> / <color=#ffd780>暴擊傷害</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "推薦副屬性"
-      },
-      {
-        "type": "RichText",
-        "text": "暴擊率、暴擊傷害、生命值、元素充能效率"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "4件套裝"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2064,
-        "name": "千岩牢固",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Tenacity of the Millelith/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>千岩牢固</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>2件套裝效果：</color> <color=#ffd780>生命值</color> 提升20%。\n<color=#ffffff>4件套裝效果：</color> <color=#ffd780>元素戰技</color> 命中敵人後，使隊伍中附近的所有角色 <color=#ffd780>攻擊力</color> 提升20%， <color=#ffd780>護盾強效</color> 提升30%，持續3秒。該效果每0.5秒至多觸發一次。裝備此聖遺物套裝的角色處於隊伍後台時，依然能觸發該效果。\n<color=#ffd780>生命值</color> 可提高玉璋護盾的 <color=#ffd780>傷害吸收量</color> 以及鍾離的輸出，且4件套裝效果可提高隊伍角色的 <color=#ffd780>攻擊力</color> 與 <color=#ffd780>護盾強效</color> ，提高輸出的同時保障生存能力，進一步提升鍾離的輔助能力。"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2072,
-        "name": "悠古的磐岩",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Archaic Petra/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>悠古的磐岩</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>2件套裝效果：</color> 獲得15% <color=#ffe699>岩元素傷害加成</color> 。\n<color=#ffffff>4件套裝效果：</color> 獲得 <color=#ffe699>結晶</color> 反應形成的晶片時，隊伍中所有角色獲得35%對應 <color=#ffd780>元素傷害加成</color> ，持續10秒。同時只能通過該效果獲得一種 <color=#ffd780>元素傷害加成</color> 。\n<color=#ffe699>岩元素傷害加成</color> 可提高鍾離的輸出，且當鍾離獲得 <color=#ffe699>結晶</color> 反應形成的晶片時，可提高隊伍中對應 <color=#ffd780>元素傷害加成</color> ，提高全隊輸出。"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2075,
-        "name": "昔日宗室之儀",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>昔日宗室之儀</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>2件套裝效果：</color> <color=#ffd780>元素爆發</color> 造成的傷害提升20%。\n<color=#ffffff>4件套裝效果：</color> 施放 <color=#ffd780>元素爆發</color> 後，隊伍中所有角色 <color=#ffd780>攻擊力</color> 提升20%，持續12秒。該效果不可疊加。\n該套裝可同時提高鍾離的 <color=#ffd780>元素爆發</color> 傷害與隊伍中角色的 <color=#ffd780>攻擊力</color> ，兼顧輸出與輔助能力。"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2090,
-        "name": "絕緣之旗印",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>絕緣之旗印</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>2件套裝效果：</color> <color=#ffd780>元素充能效率</color> 提高20%。\n<color=#ffffff>4件套裝效果：</color> 基於 <color=#ffd780>元素充能效率</color> 的25%，提高 <color=#ffd780>元素爆發</color> 造成的傷害。至多依此方式獲得75%提升。\n<color=#ffd780>元素充能效率</color> 可優化鍾離的 <color=#ffd780>元素爆發</color> 循環，且4件套裝效果可再基於 <color=#ffd780>元素充能效率</color> 提高 <color=#ffd780>元素爆發</color> 造成的傷害，提高鍾離的輸出。"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "2件套裝"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2064,
-        "name": "千岩牢固",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Tenacity of the Millelith/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>千岩牢固</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>2件套裝效果：</color> <color=#ffd780>生命值</color> 提升20%。\n<color=#ffd780>生命值</color> 可提高玉璋護盾的 <color=#ffd780>傷害吸收量</color> 以及鍾離的輸出。"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2075,
-        "name": "昔日宗室之儀",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>昔日宗室之儀</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>2件套裝效果：</color> <color=#ffd780>元素爆發</color> 造成的傷害提升20%。\n<color=#ffd780>元素爆發</color> 傷害加成可提高鍾離的輸出。"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2072,
-        "name": "悠古的磐岩",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Archaic Petra/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>悠古的磐岩</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>2件套裝效果：</color> 獲得15% <color=#ffe699>岩元素傷害加成</color> 。\n<color=#ffe699>岩元素傷害加成</color> 可提高鍾離的輸出。"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2090,
-        "name": "絕緣之旗印",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>絕緣之旗印</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>2件套裝效果：</color> <color=#ffd780>元素充能效率</color> 提高20%。\n<color=#ffd780>元素充能效率</color> 可優化鍾離的 <color=#ffd780>元素爆發</color> 循環。"
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/钟离/avatar_header_cnt.png"
-      },
-      {
-        "key": "原畫",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/钟离/avatar.png",
-        "imgDesc": [
+        "key": "Lv.1",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "衣裝 - 凡世致身"
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "-",
+              "1144"
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "-",
+              "20"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "-",
+              "57"
+            ]
+          },
+          {
+            "key": "岩元素傷害加成",
+            "values": [
+              "-",
+              "0%"
+            ]
           }
         ]
       },
       {
-        "key": "閒置動作 1",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/8b16be2037972c29d5c940c1527fa99f_2507620974458983922.gif",
-        "imgDesc": [
+        "key": "Lv.20",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "衣裝 - 凡世致身"
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "2967",
+              "3948"
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "51",
+              "67"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "149",
+              "198"
+            ]
+          },
+          {
+            "key": "岩元素傷害加成",
+            "values": [
+              "0%",
+              "0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 447,
+            "name": "堅牢黃玉碎屑",
+            "desc": "角色突破素材。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1242,
+            "name": "石珀",
+            "desc": "極純的岩元素凝成的珍稀晶石，常與其他礦物伴生。也被稱為「岩之心」。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cor Lapis_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 396,
+            "name": "史萊姆凝液",
+            "desc": "覆於史萊姆體表的濃稠流體，各地元素工坊中最常見的原料。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
+            "amount": 3
           }
         ]
       },
       {
-        "key": "閒置動作 2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/58e30489f3741f05acb0bf0d74089e88_7718337789111058520.gif",
-        "imgDesc": [
+        "key": "Lv.40",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "衣裝 - 凡世致身"
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "5908",
+              "6605"
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "101",
+              "113"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "297",
+              "332"
+            ]
+          },
+          {
+            "key": "岩元素傷害加成",
+            "values": [
+              "0%",
+              "7.2%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 446,
+            "name": "堅牢黃玉斷片",
+            "desc": "角色突破素材。<br/>「大陸所流通的一切銀錢皆是我的血肉。」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1169,
+            "name": "玄岩之塔",
+            "desc": "無相之岩的外殼構成的石柱。由純粹的岩元素高度濃縮而成。<br/>岩元素是最為沉重的元素。無相之岩將外殼築成高聳的岩柱，將自己抬升至高處，或許不僅是為了應敵。或許也是為了更加接近與它無緣的天空吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1242,
+            "name": "石珀",
+            "desc": "極純的岩元素凝成的珍稀晶石，常與其他礦物伴生。也被稱為「岩之心」。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cor Lapis_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 396,
+            "name": "史萊姆凝液",
+            "desc": "覆於史萊姆體表的濃稠流體，各地元素工坊中最常見的原料。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "Lv.50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "7599",
+              "8528"
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "130",
+              "146"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "382",
+              "428 "
+            ]
+          },
+          {
+            "key": "岩元素傷害加成",
+            "values": [
+              "7.2%",
+              "14.4%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 446,
+            "name": "堅牢黃玉斷片",
+            "desc": "角色突破素材。<br/>「大陸所流通的一切銀錢皆是我的血肉。」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1169,
+            "name": "玄岩之塔",
+            "desc": "無相之岩的外殼構成的石柱。由純粹的岩元素高度濃縮而成。<br/>岩元素是最為沉重的元素。無相之岩將外殼築成高聳的岩柱，將自己抬升至高處，或許不僅是為了應敵。或許也是為了更加接近與它無緣的天空吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1242,
+            "name": "石珀",
+            "desc": "極純的岩元素凝成的珍稀晶石，常與其他礦物伴生。也被稱為「岩之心」。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cor Lapis_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 398,
+            "name": "史萊姆清",
+            "desc": "略加純化的史萊姆分泌物，對皮膚有害，請務必避免沒有防護措施的接觸。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "9533",
+              "10230 "
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "163",
+              "175"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "479",
+              "514"
+            ]
+          },
+          {
+            "key": "岩元素傷害加成",
+            "values": [
+              "14.4%",
+              "14.4%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 445,
+            "name": "堅牢黃玉塊",
+            "desc": "角色突破素材。<br/>「大陸所流通的一切銀錢皆是我的血肉。」<br/>「我在以這樣的方式，為人類一切的汗水、智慧和未來做擔保。」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1169,
+            "name": "玄岩之塔",
+            "desc": "無相之岩的外殼構成的石柱。由純粹的岩元素高度濃縮而成。<br/>岩元素是最為沉重的元素。無相之岩將外殼築成高聳的岩柱，將自己抬升至高處，或許不僅是為了應敵。或許也是為了更加接近與它無緣的天空吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1242,
+            "name": "石珀",
+            "desc": "極純的岩元素凝成的珍稀晶石，常與其他礦物伴生。也被稱為「岩之心」。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cor Lapis_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 398,
+            "name": "史萊姆清",
+            "desc": "略加純化的史萊姆分泌物，對皮膚有害，請務必避免沒有防護措施的接觸。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Lv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "11243",
+              "11940 "
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "192",
+              "204"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "564",
+              "599"
+            ]
+          },
+          {
+            "key": "岩元素傷害加成",
+            "values": [
+              "14.4%",
+              "21.6%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 445,
+            "name": "堅牢黃玉塊",
+            "desc": "角色突破素材。<br/>「大陸所流通的一切銀錢皆是我的血肉。」<br/>「我在以這樣的方式，為人類一切的汗水、智慧和未來做擔保。」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1169,
+            "name": "玄岩之塔",
+            "desc": "無相之岩的外殼構成的石柱。由純粹的岩元素高度濃縮而成。<br/>岩元素是最為沉重的元素。無相之岩將外殼築成高聳的岩柱，將自己抬升至高處，或許不僅是為了應敵。或許也是為了更加接近與它無緣的天空吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1242,
+            "name": "石珀",
+            "desc": "極純的岩元素凝成的珍稀晶石，常與其他礦物伴生。也被稱為「岩之心」。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cor Lapis_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 397,
+            "name": "史萊姆原漿",
+            "desc": "濃縮的史萊姆原漿，靜置時會自主進行不規則運動。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "12965",
+              "13662"
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "222",
+              "233"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "651",
+              "686"
+            ]
+          },
+          {
+            "key": "岩元素傷害加成",
+            "values": [
+              "21.6%",
+              "28.8%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 444,
+            "name": "堅牢黃玉",
+            "desc": "角色突破素材。<br/>「大陸所流通的一切銀錢皆是我的血肉。」<br/>「我在以這樣的方式，為人類一切的汗水、智慧和未來做擔保。」<br/>「這是我對眾生的信任，辜負了它就是玷污了我的血。」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1169,
+            "name": "玄岩之塔",
+            "desc": "無相之岩的外殼構成的石柱。由純粹的岩元素高度濃縮而成。<br/>岩元素是最為沉重的元素。無相之岩將外殼築成高聳的岩柱，將自己抬升至高處，或許不僅是為了應敵。或許也是為了更加接近與它無緣的天空吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1242,
+            "name": "石珀",
+            "desc": "極純的岩元素凝成的珍稀晶石，常與其他礦物伴生。也被稱為「岩之心」。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cor Lapis_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 397,
+            "name": "史萊姆原漿",
+            "desc": "濃縮的史萊姆原漿，靜置時會自主進行不規則運動。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "Lv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "14695",
+              "-"
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "251",
+              "-"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "738",
+              "-"
+            ]
+          },
+          {
+            "key": "岩元素傷害加成",
+            "values": [
+              "28.8%",
+              "-"
+            ]
           }
         ]
       }
@@ -2917,634 +3544,7 @@
         "attributes": null
       }
     ],
-    "ascension": [
-      {
-        "key": "Lv.1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "-",
-              "1144"
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "-",
-              "20"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "-",
-              "57"
-            ]
-          },
-          {
-            "key": "岩元素傷害加成",
-            "values": [
-              "-",
-              "0%"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Lv.20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "2967",
-              "3948"
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "51",
-              "67"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "149",
-              "198"
-            ]
-          },
-          {
-            "key": "岩元素傷害加成",
-            "values": [
-              "0%",
-              "0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 447,
-            "name": "堅牢黃玉碎屑",
-            "desc": "角色突破素材。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1242,
-            "name": "石珀",
-            "desc": "極純的岩元素凝成的珍稀晶石，常與其他礦物伴生。也被稱為「岩之心」。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cor Lapis_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 396,
-            "name": "史萊姆凝液",
-            "desc": "覆於史萊姆體表的濃稠流體，各地元素工坊中最常見的原料。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "key": "Lv.40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "5908",
-              "6605"
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "101",
-              "113"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "297",
-              "332"
-            ]
-          },
-          {
-            "key": "岩元素傷害加成",
-            "values": [
-              "0%",
-              "7.2%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 446,
-            "name": "堅牢黃玉斷片",
-            "desc": "角色突破素材。<br/>「大陸所流通的一切銀錢皆是我的血肉。」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1169,
-            "name": "玄岩之塔",
-            "desc": "無相之岩的外殼構成的石柱。由純粹的岩元素高度濃縮而成。<br/>岩元素是最為沉重的元素。無相之岩將外殼築成高聳的岩柱，將自己抬升至高處，或許不僅是為了應敵。或許也是為了更加接近與它無緣的天空吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1242,
-            "name": "石珀",
-            "desc": "極純的岩元素凝成的珍稀晶石，常與其他礦物伴生。也被稱為「岩之心」。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cor Lapis_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 396,
-            "name": "史萊姆凝液",
-            "desc": "覆於史萊姆體表的濃稠流體，各地元素工坊中最常見的原料。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
-            "amount": 15
-          }
-        ]
-      },
-      {
-        "key": "Lv.50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "7599",
-              "8528"
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "130",
-              "146"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "382",
-              "428 "
-            ]
-          },
-          {
-            "key": "岩元素傷害加成",
-            "values": [
-              "7.2%",
-              "14.4%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 446,
-            "name": "堅牢黃玉斷片",
-            "desc": "角色突破素材。<br/>「大陸所流通的一切銀錢皆是我的血肉。」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1169,
-            "name": "玄岩之塔",
-            "desc": "無相之岩的外殼構成的石柱。由純粹的岩元素高度濃縮而成。<br/>岩元素是最為沉重的元素。無相之岩將外殼築成高聳的岩柱，將自己抬升至高處，或許不僅是為了應敵。或許也是為了更加接近與它無緣的天空吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1242,
-            "name": "石珀",
-            "desc": "極純的岩元素凝成的珍稀晶石，常與其他礦物伴生。也被稱為「岩之心」。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cor Lapis_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 398,
-            "name": "史萊姆清",
-            "desc": "略加純化的史萊姆分泌物，對皮膚有害，請務必避免沒有防護措施的接觸。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "9533",
-              "10230 "
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "163",
-              "175"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "479",
-              "514"
-            ]
-          },
-          {
-            "key": "岩元素傷害加成",
-            "values": [
-              "14.4%",
-              "14.4%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 445,
-            "name": "堅牢黃玉塊",
-            "desc": "角色突破素材。<br/>「大陸所流通的一切銀錢皆是我的血肉。」<br/>「我在以這樣的方式，為人類一切的汗水、智慧和未來做擔保。」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1169,
-            "name": "玄岩之塔",
-            "desc": "無相之岩的外殼構成的石柱。由純粹的岩元素高度濃縮而成。<br/>岩元素是最為沉重的元素。無相之岩將外殼築成高聳的岩柱，將自己抬升至高處，或許不僅是為了應敵。或許也是為了更加接近與它無緣的天空吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1242,
-            "name": "石珀",
-            "desc": "極純的岩元素凝成的珍稀晶石，常與其他礦物伴生。也被稱為「岩之心」。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cor Lapis_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 398,
-            "name": "史萊姆清",
-            "desc": "略加純化的史萊姆分泌物，對皮膚有害，請務必避免沒有防護措施的接觸。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Lv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "11243",
-              "11940 "
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "192",
-              "204"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "564",
-              "599"
-            ]
-          },
-          {
-            "key": "岩元素傷害加成",
-            "values": [
-              "14.4%",
-              "21.6%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 445,
-            "name": "堅牢黃玉塊",
-            "desc": "角色突破素材。<br/>「大陸所流通的一切銀錢皆是我的血肉。」<br/>「我在以這樣的方式，為人類一切的汗水、智慧和未來做擔保。」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1169,
-            "name": "玄岩之塔",
-            "desc": "無相之岩的外殼構成的石柱。由純粹的岩元素高度濃縮而成。<br/>岩元素是最為沉重的元素。無相之岩將外殼築成高聳的岩柱，將自己抬升至高處，或許不僅是為了應敵。或許也是為了更加接近與它無緣的天空吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1242,
-            "name": "石珀",
-            "desc": "極純的岩元素凝成的珍稀晶石，常與其他礦物伴生。也被稱為「岩之心」。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cor Lapis_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 397,
-            "name": "史萊姆原漿",
-            "desc": "濃縮的史萊姆原漿，靜置時會自主進行不規則運動。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "12965",
-              "13662"
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "222",
-              "233"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "651",
-              "686"
-            ]
-          },
-          {
-            "key": "岩元素傷害加成",
-            "values": [
-              "21.6%",
-              "28.8%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 444,
-            "name": "堅牢黃玉",
-            "desc": "角色突破素材。<br/>「大陸所流通的一切銀錢皆是我的血肉。」<br/>「我在以這樣的方式，為人類一切的汗水、智慧和未來做擔保。」<br/>「這是我對眾生的信任，辜負了它就是玷污了我的血。」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1169,
-            "name": "玄岩之塔",
-            "desc": "無相之岩的外殼構成的石柱。由純粹的岩元素高度濃縮而成。<br/>岩元素是最為沉重的元素。無相之岩將外殼築成高聳的岩柱，將自己抬升至高處，或許不僅是為了應敵。或許也是為了更加接近與它無緣的天空吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1242,
-            "name": "石珀",
-            "desc": "極純的岩元素凝成的珍稀晶石，常與其他礦物伴生。也被稱為「岩之心」。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cor Lapis_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 397,
-            "name": "史萊姆原漿",
-            "desc": "濃縮的史萊姆原漿，靜置時會自主進行不規則運動。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Lv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "14695",
-              "-"
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "251",
-              "-"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "738",
-              "-"
-            ]
-          },
-          {
-            "key": "岩元素傷害加成",
-            "values": [
-              "28.8%",
-              "-"
-            ]
-          }
-        ]
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/钟离/constellation_1.png",
-        "name": "岩者，六合引之為骨",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>地心</color> 創造的岩脊至多可以同時存在2個。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/钟离/constellation_2.png",
-        "name": "石者，八荒韞玉而明",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>天星</color> 隕落時，會為附近當前場上的角色賦予玉璋護盾。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/钟离/constellation_3.png",
-        "name": "圭璋，暝仍不移其暉",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>地心</color> 的技能等級提高3級。\n至多提升至15級。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/钟离/constellation_4.png",
-        "name": "黃琮，破而不奪其堅",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>天星</color> 的影響範圍擴大20%。\n此外，天星的石化效果持續時間延長2秒。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/钟离/constellation_5.png",
-        "name": "蒼璧，驅之長昭天理",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>天星</color> 的技能等級提高3級。\n至多提升至15級。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/钟离/constellation_6.png",
-        "name": "金玉，禮予天地四方",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "玉璋護盾受到傷害時，將為當前角色恢復生命值，回復量為傷害的40%。\n單次回復量不超過該角色最大生命值的8%。"
-          }
-        ]
-      }
-    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=40&center=1827.00,-952.00&zoom=-2.00",
     "baseInfo": [
       {
         "key": "名字",
