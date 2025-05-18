@@ -11,17 +11,21 @@
   "menuName": "Artéfacts",
   "version": 0,
   "components": {
+    "reliquarySetEffect": {
+      "twoSetEffect": "Augmente le bonus de soins de 15 %.",
+      "fourSetEffect": "Lorsqu'un personnage équipé de ce set d'artéfacts soigne un personnage de l'équipe, une mousse marine apparaîtra pendant 3 s, accumulant la quantité de PV récupérée grâce au soin (y compris tout surplus au-dessus de 100 %). À la fin de la durée, la mousse marine explosera, infligeant des DGT aux ennemis proches d'une valeur équivalant à 90 % du soin accumulé (Ces DGT sont calculés de la même manière que les réactions d'Électrocution et de Supraconduction, mais ne sont pas affectés par la maîtrise élémentaire, les niveaux des personnages ou les bonus de DGT de réactions élémentaires). Une mousse marine peut être générée toutes les 3,5 s, et chaque mousse marine peut accumuler jusqu'à 30 000 PV, incluant tout surplus au-dessus de 100 %. Il ne peut exister qu'une seule mousse marine à la fois. Cet effet peut être déclenché même si le personnage équipé de ce set d'artéfacts fait partie de l'équipe mais n'est pas déployé."
+    },
     "artifactList": {
-      "sands_of_eon": {
-        "title": "Pétoncle de séparation",
-        "position": "Sables du temps",
+      "circlet_of_logos": {
+        "title": "Couronne de Watatsumi",
+        "position": "Diadème de Logos",
         "desc": [
           {
             "type": "RichText",
-            "text": "Un coquillage propre et impeccable qui vient de l'océan sans fond."
+            "text": "Une ancienne couronne délicate qui était autrefois utilisée par un membre du clergé oublié. Aujourd'hui, cette relique a été enchâssée cérémonieusement par les Watatsumiens."
           }
         ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Ocean-Hued Clam/sands_of_eon_icon.png"
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Ocean-Hued Clam/circlet_of_logos_icon.png"
       },
       "plume_of_death": {
         "title": "Plume du palais des profondeurs",
@@ -33,17 +37,6 @@
           }
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Ocean-Hued Clam/plume_of_death_icon.png"
-      },
-      "circlet_of_logos": {
-        "title": "Couronne de Watatsumi",
-        "position": "Diadème de Logos",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Une ancienne couronne délicate qui était autrefois utilisée par un membre du clergé oublié. Aujourd'hui, cette relique a été enchâssée cérémonieusement par les Watatsumiens."
-          }
-        ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Ocean-Hued Clam/circlet_of_logos_icon.png"
       },
       "flower_of_life": {
         "title": "Fleur de teinte marine",
@@ -66,8 +59,30 @@
           }
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Ocean-Hued Clam/goblet_of_eonothem_icon.png"
+      },
+      "sands_of_eon": {
+        "title": "Pétoncle de séparation",
+        "position": "Sables du temps",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Un coquillage propre et impeccable qui vient de l'océan sans fond."
+          }
+        ],
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Ocean-Hued Clam/sands_of_eon_icon.png"
       }
     },
+    "baseInfo": [
+      {
+        "key": "Nom",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Palourde aux teintes océaniques"
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "title": "Fleur de teinte marine",
@@ -111,21 +126,6 @@
           {
             "type": "RichText",
             "text": "Le temps donne l'impression de s'écouler très lentement dans les profondeurs silencieuses et fluorescentes de l'océan.\nMême les coquillages brillants pourraient tout oublier au fil des années.\nLe peuple de Watatsumi est sorti des ténèbres des abysses et a fait ses adieux à ses vieux rêves, restés dans les profondeurs.\nIl a gravi les marches de corail jusqu'au royaume de la lumière du jour, échappant au regard des héritiers du dragon abyssal qui le scrutait dans l'ombre.\nIl est dit qu'à ce moment-là, les habitants de l'océan ramassèrent chacun un coquillage pour se remémorer leur clan.\nEt quant à ceux qui avaient perdu leur clan, ils seraient accueillis dans de nouvelles familles.\nDans leur langue ancienne, ces coquilles immaculées se nommaient « adieu ».\nDeux personnes qui s'enlacent ne peuvent être séparées par quelque force extérieure, bien qu'une telle union ne soit jamais éternelle.\nCes coquillages représentaient donc un adieu à la vie sous les vagues et le début d'une nouvelle vie sous le soleil."
-          }
-        ]
-      }
-    ],
-    "reliquarySetEffect": {
-      "twoSetEffect": "Augmente le bonus de soins de 15 %.",
-      "fourSetEffect": "Lorsqu'un personnage équipé de ce set d'artéfacts soigne un personnage de l'équipe, une mousse marine apparaîtra pendant 3 s, accumulant la quantité de PV récupérée grâce au soin (y compris tout surplus au-dessus de 100 %). À la fin de la durée, la mousse marine explosera, infligeant des DGT aux ennemis proches d'une valeur équivalant à 90 % du soin accumulé (Ces DGT sont calculés de la même manière que les réactions d'Électrocution et de Supraconduction, mais ne sont pas affectés par la maîtrise élémentaire, les niveaux des personnages ou les bonus de DGT de réactions élémentaires). Une mousse marine peut être générée toutes les 3,5 s, et chaque mousse marine peut accumuler jusqu'à 30 000 PV, incluant tout surplus au-dessus de 100 %. Il ne peut exister qu'une seule mousse marine à la fois. Cet effet peut être déclenché même si le personnage équipé de ce set d'artéfacts fait partie de l'équipe mais n'est pas déployé."
-    },
-    "baseInfo": [
-      {
-        "key": "Nom",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Palourde aux teintes océaniques"
           }
         ]
       }
