@@ -12,6 +12,10 @@
   "menuName": "聖遺物",
   "version": 1730570364,
   "components": {
+    "reliquarySetEffect": {
+      "twoSetEffect": "攻撃力+18%。",
+      "fourSetEffect": "命の契約の数値が増減する時、キャラクターの与えるダメージ+18%、継続時間6秒、最大3層まで重ね掛け可能。"
+    },
     "baseInfo": [
       {
         "key": "和名 / 英名",
@@ -83,49 +87,6 @@
         ]
       }
     ],
-    "customize": [
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "関連項目"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 4813,
-        "name": "レムリア",
-        "desc": "<p>数千年前、現在のフォンテーヌにあたる地域に存在した神王レムスが統治した古代文明。</p>",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/23/169033420/4f78eb7e03b130ca2efba77b4d2692bb_3686565865461914628.png",
-        "displayStyle": "card",
-        "menuId": 22
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 4779,
-        "name": "レムス",
-        "desc": "<p>フォンテーヌ廷が誕生する前に存在したレムリアを建国した神王。</p>",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/30/224893084/513d51e0ebfd54f5da34a9f85dfaf61f_8325244225857834126.png",
-        "displayStyle": "card",
-        "menuId": 10
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 4780,
-        "name": "エゲリア",
-        "desc": "<p>フォンテーヌの初代水神。<span class=\"wk-shady\">眷属である純水精霊の願いを叶えようとし原始胎海の力を使って疑似的人類を作り出す。</span></p>",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/27/224893084/a5b8d23dd3fbe0969cc3ebce78f9c29f_5630187859005704840.png",
-        "displayStyle": "card",
-        "menuId": 10
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 5619,
-        "name": "スキュラ",
-        "desc": "<p>かつての水のヴィシャップのプリンケプス。</p>",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/02/224893084/b2d6cefc957361355bd202af3efcb21d_754998302673972925.png",
-        "displayStyle": "card",
-        "menuId": 10
-      }
-    ],
     "story": [
       {
         "title": "響き合う諧律の前奏",
@@ -173,6 +134,49 @@
         ]
       }
     ],
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "関連項目"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4813,
+        "name": "レムリア",
+        "desc": "<p>数千年前、現在のフォンテーヌにあたる地域に存在した神王レムスが統治した古代文明。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/23/169033420/4f78eb7e03b130ca2efba77b4d2692bb_3686565865461914628.png",
+        "displayStyle": "card",
+        "menuId": 22
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4779,
+        "name": "レムス",
+        "desc": "<p>フォンテーヌ廷が誕生する前に存在したレムリアを建国した神王。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/30/224893084/513d51e0ebfd54f5da34a9f85dfaf61f_8325244225857834126.png",
+        "displayStyle": "card",
+        "menuId": 10
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4780,
+        "name": "エゲリア",
+        "desc": "<p>フォンテーヌの初代水神。<span class=\"wk-shady\">眷属である純水精霊の願いを叶えようとし原始胎海の力を使って疑似的人類を作り出す。</span></p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/27/224893084/a5b8d23dd3fbe0969cc3ebce78f9c29f_5630187859005704840.png",
+        "displayStyle": "card",
+        "menuId": 10
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5619,
+        "name": "スキュラ",
+        "desc": "<p>かつての水のヴィシャップのプリンケプス。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/02/224893084/b2d6cefc957361355bd202af3efcb21d_754998302673972925.png",
+        "displayStyle": "card",
+        "menuId": 10
+      }
+    ],
     "artifactList": {
       "plume_of_death": {
         "title": "古海の幽深なる夜想",
@@ -196,6 +200,17 @@
         ],
         "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/24/8a60b825d5c4ea6a98ca21ae0d1ccc72_307495920493492963.png"
       },
+      "flower_of_life": {
+        "title": "響き合う諧律の前奏",
+        "position": "生の花",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "黄金と青き石で飾られた咲き誇る花。かつて、不滅の者に与えられた栄章であった。"
+          }
+        ],
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/24/7557f4558ab243d82e8b6b9994fc97ee_7049965257988970706.png"
+      },
       "circlet_of_logos": {
         "title": "異想が枯れ落ちる円舞",
         "position": "理の冠",
@@ -217,22 +232,7 @@
           }
         ],
         "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/24/e68d2442bdc24bbbb13e6a22e4b38693_6863197715435008561.png"
-      },
-      "flower_of_life": {
-        "title": "響き合う諧律の前奏",
-        "position": "生の花",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "黄金と青き石で飾られた咲き誇る花。かつて、不滅の者に与えられた栄章であった。"
-          }
-        ],
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/24/7557f4558ab243d82e8b6b9994fc97ee_7049965257988970706.png"
       }
-    },
-    "reliquarySetEffect": {
-      "twoSetEffect": "攻撃力+18%。",
-      "fourSetEffect": "命の契約の数値が増減する時、キャラクターの与えるダメージ+18%、継続時間6秒、最大3層まで重ね掛け可能。"
     }
   }
 }
