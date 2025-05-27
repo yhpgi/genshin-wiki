@@ -11,10 +11,17 @@
   "menuName": "Artefakte",
   "version": 0,
   "components": {
-    "reliquarySetEffect": {
-      "twoSetEffect": "Erhöht die max. LP um 1000.",
-      "fourSetEffect": "Stellt nach dem Öffnen jeglicher Truhen 5 s lang 30 % LP wieder her."
-    },
+    "baseInfo": [
+      {
+        "key": "Name",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Abenteurer"
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "title": "Blume eines Abenteurers",
@@ -62,18 +69,18 @@
         ]
       }
     ],
-    "baseInfo": [
-      {
-        "key": "Name",
-        "value": [
+    "artifactList": {
+      "goblet_of_eonothem": {
+        "title": "Goldkelch eines Abenteurers",
+        "position": "Kelch der Leere",
+        "desc": [
           {
             "type": "RichText",
-            "text": "Abenteurer"
+            "text": "Die Beute eines Abenteurers von einer seiner Reisen, auf die man trotz der Einkerbungen stolz sein kann."
           }
-        ]
-      }
-    ],
-    "artifactList": {
+        ],
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Adventurer/goblet_of_eonothem_icon.png"
+      },
       "flower_of_life": {
         "title": "Blume eines Abenteurers",
         "position": "Blume des Lebens",
@@ -117,18 +124,11 @@
           }
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Adventurer/plume_of_death_icon.png"
-      },
-      "goblet_of_eonothem": {
-        "title": "Goldkelch eines Abenteurers",
-        "position": "Kelch der Leere",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Die Beute eines Abenteurers von einer seiner Reisen, auf die man trotz der Einkerbungen stolz sein kann."
-          }
-        ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Adventurer/goblet_of_eonothem_icon.png"
       }
+    },
+    "reliquarySetEffect": {
+      "twoSetEffect": "Erhöht die max. LP um 1000.",
+      "fourSetEffect": "Stellt nach dem Öffnen jeglicher Truhen 5 s lang 30 % LP wieder her."
     }
   }
 }

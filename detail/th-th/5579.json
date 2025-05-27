@@ -11,10 +11,17 @@
   "menuName": "อาร์ติแฟกต์",
   "version": 1714016692,
   "components": {
-    "reliquarySetEffect": {
-      "twoSetEffect": "<p><span style=\"color: rgb(255, 255, 255)\">เพิ่มพลังโจมตี 18%</span></p>",
-      "fourSetEffect": "<p><span style=\"color: rgb(255, 255, 255)\">หลังออกจากสถานะการต่อสู้ 3 วินาที จะสร้างความเสียหายเพิ่มขึ้น 50% ขณะอยู่ในสถานะการต่อสู้ ถ้าไม่มีศัตรูสถานะติดไฟอยู่ในบริเวณใกล้เคียงนานเกิน 6 วินาที เอฟเฟกต์เพิ่มความเสียหายดังกล่าวจะลดลง 10% ทุกวินาที จนกว่าจะถึง 0%; เมื่อมีศัตรูที่อยู่ในสถานะติดไฟ มันจะเพิ่มขึ้น 10% ทุกวินาที จนกว่าจะถึง 50% ซึ่งเอฟเฟกต์นี้สามารถเกิดขึ้นได้แม้ตัวละครที่สวมใส่เซ็ตอาร์ติแฟกต์นี้อยู่ในทีมแต่ไม่ได้เข้าร่วมการต่อสู้</span></p>"
-    },
+    "baseInfo": [
+      {
+        "key": "ชื่อ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffff>Unfinished Reverie</color>"
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "title": "Dark Fruit of Bright Flowers",
@@ -62,29 +69,7 @@
         ]
       }
     ],
-    "baseInfo": [
-      {
-        "key": "ชื่อ",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffff>Unfinished Reverie</color>"
-          }
-        ]
-      }
-    ],
     "artifactList": {
-      "plume_of_death": {
-        "title": "Moment of Attainment",
-        "position": "Plume of Death",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffff73>นาฬิกาแดดของอาณาจักรโบราณ มีรอยสัญลักษณ์เล็ก ๆ ประมาณหนึ่งไว้ ซึ่งต้องสังเกตอย่างละเอียดจึงจะมองเห็นได้</color>"
-          }
-        ],
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/23/65858273/925dc4dabaecad2b23d09b55aab1ddfa_6150867300367570061.png"
-      },
       "flower_of_life": {
         "title": "Dark Fruit of Bright Flowers",
         "position": "Flower of Life",
@@ -107,16 +92,16 @@
         ],
         "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/23/65858273/2715fda27d0c7648a18d86e63c0acde6_125305282595984053.png"
       },
-      "goblet_of_eonothem": {
-        "title": "Crownless Crown",
-        "position": "Goblet of Eonothem",
+      "plume_of_death": {
+        "title": "Moment of Attainment",
+        "position": "Plume of Death",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffffff73>มงกุฎทองคำที่ประดับด้วยเทอร์ควอยส์และขนนกมรกต แต่กลับถูกวางอยู่บนเบาะกำมะหยี่อันว่างเปล่า และไม่เคยปรากฏในพิธีกรรมเลย</color>"
+            "text": "<color=#ffffff73>นาฬิกาแดดของอาณาจักรโบราณ มีรอยสัญลักษณ์เล็ก ๆ ประมาณหนึ่งไว้ ซึ่งต้องสังเกตอย่างละเอียดจึงจะมองเห็นได้</color>"
           }
         ],
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/23/65858273/be0eae1774ad7d59a3eeeb5c6620ff04_49973447575376658.png"
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/23/65858273/925dc4dabaecad2b23d09b55aab1ddfa_6150867300367570061.png"
       },
       "circlet_of_logos": {
         "title": "The Wine-Flask Over Which the Plan Was Hatched",
@@ -128,7 +113,22 @@
           }
         ],
         "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/23/65858273/961efd0280cfadc4952d4c6712779ae0_4886322880776827324.png"
+      },
+      "goblet_of_eonothem": {
+        "title": "Crownless Crown",
+        "position": "Goblet of Eonothem",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffff73>มงกุฎทองคำที่ประดับด้วยเทอร์ควอยส์และขนนกมรกต แต่กลับถูกวางอยู่บนเบาะกำมะหยี่อันว่างเปล่า และไม่เคยปรากฏในพิธีกรรมเลย</color>"
+          }
+        ],
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/23/65858273/be0eae1774ad7d59a3eeeb5c6620ff04_49973447575376658.png"
       }
+    },
+    "reliquarySetEffect": {
+      "twoSetEffect": "<p><span style=\"color: rgb(255, 255, 255)\">เพิ่มพลังโจมตี 18%</span></p>",
+      "fourSetEffect": "<p><span style=\"color: rgb(255, 255, 255)\">หลังออกจากสถานะการต่อสู้ 3 วินาที จะสร้างความเสียหายเพิ่มขึ้น 50% ขณะอยู่ในสถานะการต่อสู้ ถ้าไม่มีศัตรูสถานะติดไฟอยู่ในบริเวณใกล้เคียงนานเกิน 6 วินาที เอฟเฟกต์เพิ่มความเสียหายดังกล่าวจะลดลง 10% ทุกวินาที จนกว่าจะถึง 0%; เมื่อมีศัตรูที่อยู่ในสถานะติดไฟ มันจะเพิ่มขึ้น 10% ทุกวินาที จนกว่าจะถึง 50% ซึ่งเอฟเฟกต์นี้สามารถเกิดขึ้นได้แม้ตัวละครที่สวมใส่เซ็ตอาร์ติแฟกต์นี้อยู่ในทีมแต่ไม่ได้เข้าร่วมการต่อสู้</span></p>"
     }
   }
 }
