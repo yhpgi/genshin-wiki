@@ -4,14 +4,111 @@
   "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Une lance pointue, dont seule la pointe reste tachée de sang frais.</span></p>",
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/13/158750877/9bb154ad1759bf2d9015b060cad1ca9c_1563960247471842759.png",
   "filterValues": {
-    "weaponProperty": "Pourcentage PV",
+    "weaponRarity": 4,
     "weaponType": "Arme d'hast",
-    "weaponRarity": 4
+    "weaponProperty": "Pourcentage PV"
   },
   "menuId": 4,
   "menuName": "Armes",
   "version": 1694377940,
   "components": {
+    "baseInfo": [
+      {
+        "key": "Nom",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Récompense légitime</color>"
+          }
+        ]
+      },
+      {
+        "key": "Source",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Forge</color>"
+          }
+        ]
+      },
+      {
+        "key": "Type",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Arme d'hast</color>"
+          }
+        ]
+      },
+      {
+        "key": "Attributs secondaires",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Pourcentage PV</color>"
+          }
+        ]
+      },
+      {
+        "key": "Pointe de la lance",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Recevoir des soins restaure</color> <color=#37ffff>8/10/12/14/16</color> <color=#ffffffd9>pts d'énergie. Cet effet peut être déclenché une fois toutes les 10 s, même lorsque le personnage fait partie de l'équipe mais n'est pas déployé.</color>"
+          }
+        ]
+      },
+      {
+        "key": "Plan de forge",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 4093,
+            "name": "Plan : Récompense légitime",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un plan dessiné par Estelle selon des légendes et des archives anciennes. Une fois maîtrisé, il vous permettra de reproduire l'arme d'hast « Récompense légitime ».</span></p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/11/76706780/908c5dd5e6d6b0e272d362a6f4bcf5b5_4978333265454868937.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Matériaux de forge",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 2807,
+            "name": "Base de lance du centre",
+            "desc": "<p>Un matériau qui peut être forgé en arme d'hast 4 étoiles.</p><p>D'après les philosophes, toutes les choses du monde ont quatre raisons d'être. Le but de ce matériau est de devenir une arme digne d'accompagner un héros.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/21/43281454/bb87d94717e67487fdd91d08eda8c47d_9217549846590363927.png"
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4096,
+            "name": "Cristal de condensat",
+            "desc": "<p>Un cristal brillant et clair, dont le noyau est à la fois dur et malléable.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/11/76706780/a06c6fbd29b5111702baf8c9271654c4_1115451233802668166.png",
+            "amount": 50
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1224,
+            "name": "Morceau de fer blanc",
+            "desc": "Un morceau de fer blanc que les mains expertes d'un bon forgeron peuvent transformer en objet.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
+            "amount": 50
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 500
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
     "galleryCharacter": [
       {
         "key": "Avant la 2ème élévation",
@@ -404,103 +501,6 @@
             ]
           }
         ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Nom",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Récompense légitime</color>"
-          }
-        ]
-      },
-      {
-        "key": "Source",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Forge</color>"
-          }
-        ]
-      },
-      {
-        "key": "Type",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Arme d'hast</color>"
-          }
-        ]
-      },
-      {
-        "key": "Attributs secondaires",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Pourcentage PV</color>"
-          }
-        ]
-      },
-      {
-        "key": "Pointe de la lance",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Recevoir des soins restaure</color> <color=#37ffff>8/10/12/14/16</color> <color=#ffffffd9>pts d'énergie. Cet effet peut être déclenché une fois toutes les 10 s, même lorsque le personnage fait partie de l'équipe mais n'est pas déployé.</color>"
-          }
-        ]
-      },
-      {
-        "key": "Plan de forge",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 4093,
-            "name": "Plan : Récompense légitime",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un plan dessiné par Estelle selon des légendes et des archives anciennes. Une fois maîtrisé, il vous permettra de reproduire l'arme d'hast « Récompense légitime ».</span></p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/11/76706780/908c5dd5e6d6b0e272d362a6f4bcf5b5_4978333265454868937.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Matériaux de forge",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 2807,
-            "name": "Base de lance du centre",
-            "desc": "<p>Un matériau qui peut être forgé en arme d'hast 4 étoiles.</p><p>D'après les philosophes, toutes les choses du monde ont quatre raisons d'être. Le but de ce matériau est de devenir une arme digne d'accompagner un héros.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/21/43281454/bb87d94717e67487fdd91d08eda8c47d_9217549846590363927.png"
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4096,
-            "name": "Cristal de condensat",
-            "desc": "<p>Un cristal brillant et clair, dont le noyau est à la fois dur et malléable.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/11/76706780/a06c6fbd29b5111702baf8c9271654c4_1115451233802668166.png",
-            "amount": 50
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1224,
-            "name": "Morceau de fer blanc",
-            "desc": "Un morceau de fer blanc que les mains expertes d'un bon forgeron peuvent transformer en objet.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
-            "amount": 50
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 500
-          }
-        ],
-        "isMaterial": true
       }
     ]
   }
