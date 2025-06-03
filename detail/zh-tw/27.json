@@ -6,172 +6,786 @@
   "headerImgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/30/7998136/1c7aec60047574f90ae0702ee64eaeac_3217969276593266815.png",
   "filterValues": {
     "characterWeapon": "單手劍",
-    "characterVision": "風元素",
-    "characterRarity": "五星",
     "characterProperty": "治療加成",
+    "characterRarity": "五星",
+    "characterVision": "風元素",
     "characterRegion": "蒙德城"
   },
   "menuId": 2,
   "menuName": "角色圖鑑",
   "version": 1742308567,
   "components": {
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=37&center=-89.00,416.00&zoom=-2.00",
-    "summaryList": [
+    "talent": [
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/constellation_1.png",
-        "name": "流轉劍脊的暴風",
+        "key": "普通攻擊·西風劍術",
+        "title": "普通攻擊·西風劍術",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/battle_talent_0/battle_talent_0.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>風壓劍</color> 長按超過1秒後，提升牽引速度，並使造成的傷害提升40%。"
+            "text": "<color=#ffd780>普通攻擊</color>\n進行至多五段的連續劍擊。\n<color=#ffd780>重擊</color>\n消耗一定體力，進行飽含風之力的挑擊。\n被挑飛的敵人，在短時間內會緩慢墜落。\n<color=#ffd780>下落攻擊</color>\n從空中下墜衝擊地面，攻擊下落路徑上的敵人，並在落地時造成範圍傷害。"
           }
-        ]
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11"
+            ]
+          },
+          {
+            "key": "一段傷害",
+            "values": [
+              "48.3%",
+              "52.3%",
+              "56.2%",
+              "61.8%",
+              "65.8%",
+              "70.3%",
+              "76.4%",
+              "82.6%",
+              "88.8%",
+              "95.5%",
+              "103%"
+            ]
+          },
+          {
+            "key": "二段傷害",
+            "values": [
+              "45.6%",
+              "49.3%",
+              "53%",
+              "58.3%",
+              "62%",
+              "66.3%",
+              "72.1%",
+              "77.9%",
+              "83.7%",
+              "90.1%",
+              "97.4%"
+            ]
+          },
+          {
+            "key": "三段傷害",
+            "values": [
+              "60.3%",
+              "65.2%",
+              "70.1%",
+              "77.1%",
+              "82%",
+              "87.6%",
+              "95.3%",
+              "103%",
+              "111%",
+              "119%",
+              "129%"
+            ]
+          },
+          {
+            "key": "四段傷害",
+            "values": [
+              "65.9%",
+              "71.2%",
+              "76.6%",
+              "84.3%",
+              "89.6%",
+              "95.8%",
+              "104%",
+              "113%",
+              "121%",
+              "130%",
+              "141%"
+            ]
+          },
+          {
+            "key": "五段傷害",
+            "values": [
+              "79.2%",
+              "85.7%",
+              "92.1%",
+              "101%",
+              "108%",
+              "115%",
+              "125%",
+              "135%",
+              "146%",
+              "157%",
+              "169%"
+            ]
+          },
+          {
+            "key": "重擊傷害",
+            "values": [
+              "162%",
+              "175%",
+              "188%",
+              "207%",
+              "220%",
+              "236%",
+              "256%",
+              "277%",
+              "298%",
+              "320%",
+              "346%"
+            ]
+          },
+          {
+            "key": "重擊體力消耗",
+            "values": [
+              "20點",
+              "20點",
+              "20點",
+              "20點",
+              "20點",
+              "20點",
+              "20點",
+              "20點",
+              "20點",
+              "20點",
+              "20點"
+            ]
+          },
+          {
+            "key": "下墜期間傷害",
+            "values": [
+              "63.9%",
+              "69.1%",
+              "74.3%",
+              "81.8%",
+              "87%",
+              "92.9%",
+              "101%",
+              "109.3%",
+              "117%",
+              "126%",
+              "135%"
+            ]
+          },
+          {
+            "key": "低空/高空墜地衝擊傷害",
+            "values": [
+              "128%/160%",
+              "138%/173%",
+              "149%/186%",
+              "164%/204%",
+              "174%/217%",
+              "186%/232%",
+              "202%/253%",
+              "219%/273%",
+              "235%/293%",
+              "253%/316%",
+              "271%/338%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 111,
+              "name": "「抗爭」的教導",
+              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德過去的一切抗爭不被遺忘，如同草木突破土壤，如同恆風洞穿石牆。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Resistance_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1247,
+              "name": "破損的面具",
+              "desc": "破碎的骨質面具，曾經屬於某個丘丘人。<br/>破損的部分比完整的部分更多，已經失去了假面應有的功能。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 110,
+              "name": "「抗爭」的指引",
+              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德現在的人們能夠擁有自由，正如風之神吹散冰雪，正如溫妮莎奮起抗爭。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Resistance_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 983,
+              "name": "汙穢的面具",
+              "desc": "沾滿了難以辨認的污漬，散發著微妙氣味的骨質面具。<br/>即使這樣也要戴在臉上，這就是丘丘人的執著。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 110,
+              "name": "「抗爭」的指引",
+              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德現在的人們能夠擁有自由，正如風之神吹散冰雪，正如溫妮莎奮起抗爭。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Resistance_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 983,
+              "name": "汙穢的面具",
+              "desc": "沾滿了難以辨認的污漬，散發著微妙氣味的骨質面具。<br/>即使這樣也要戴在臉上，這就是丘丘人的執著。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 110,
+              "name": "「抗爭」的指引",
+              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德現在的人們能夠擁有自由，正如風之神吹散冰雪，正如溫妮莎奮起抗爭。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Resistance_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 983,
+              "name": "汙穢的面具",
+              "desc": "沾滿了難以辨認的污漬，散發著微妙氣味的骨質面具。<br/>即使這樣也要戴在臉上，這就是丘丘人的執著。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 110,
+              "name": "「抗爭」的指引",
+              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德現在的人們能夠擁有自由，正如風之神吹散冰雪，正如溫妮莎奮起抗爭。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Resistance_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 983,
+              "name": "汙穢的面具",
+              "desc": "沾滿了難以辨認的污漬，散發著微妙氣味的骨質面具。<br/>即使這樣也要戴在臉上，這就是丘丘人的執著。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 109,
+              "name": "「抗爭」的哲學",
+              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德未來的詩文，也能自由地隨著眷顧的風，傳到遠方。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Resistance_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 220,
+              "name": "不祥的面具",
+              "desc": "光亮的骨質面具，上面塗繪著意在恐嚇敵人的油彩。<br/>丘丘人對面具的執著緣起為何，至今無人能解。一說認為是不願看見自己在水中的倒影。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 238,
+              "name": "東風之翎",
+              "desc": "從蒙德的東風之主身上，取下的一枚翎羽。<br/>那是經歷了千年之風的龍之羽。追求自由的本心使它幾乎喚起輕風，好逃離現今的桎梏；但它的舊主對妳/你的賞識，使它留在了你的掌心裡。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Plume_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 109,
+              "name": "「抗爭」的哲學",
+              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德未來的詩文，也能自由地隨著眷顧的風，傳到遠方。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Resistance_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 220,
+              "name": "不祥的面具",
+              "desc": "光亮的骨質面具，上面塗繪著意在恐嚇敵人的油彩。<br/>丘丘人對面具的執著緣起為何，至今無人能解。一說認為是不願看見自己在水中的倒影。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 238,
+              "name": "東風之翎",
+              "desc": "從蒙德的東風之主身上，取下的一枚翎羽。<br/>那是經歷了千年之風的龍之羽。追求自由的本心使它幾乎喚起輕風，好逃離現今的桎梏；但它的舊主對妳/你的賞識，使它留在了你的掌心裡。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Plume_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 109,
+              "name": "「抗爭」的哲學",
+              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德未來的詩文，也能自由地隨著眷顧的風，傳到遠方。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Resistance_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 220,
+              "name": "不祥的面具",
+              "desc": "光亮的骨質面具，上面塗繪著意在恐嚇敵人的油彩。<br/>丘丘人對面具的執著緣起為何，至今無人能解。一說認為是不願看見自己在水中的倒影。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 238,
+              "name": "東風之翎",
+              "desc": "從蒙德的東風之主身上，取下的一枚翎羽。<br/>那是經歷了千年之風的龍之羽。追求自由的本心使它幾乎喚起輕風，好逃離現今的桎梏；但它的舊主對妳/你的賞識，使它留在了你的掌心裡。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Plume_icon.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "摩拉",
+              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 109,
+              "name": "「抗爭」的哲學",
+              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德未來的詩文，也能自由地隨著眷顧的風，傳到遠方。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Resistance_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 220,
+              "name": "不祥的面具",
+              "desc": "光亮的骨質面具，上面塗繪著意在恐嚇敵人的油彩。<br/>丘丘人對面具的執著緣起為何，至今無人能解。一說認為是不願看見自己在水中的倒影。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 238,
+              "name": "東風之翎",
+              "desc": "從蒙德的東風之主身上，取下的一枚翎羽。<br/>那是經歷了千年之風的龍之羽。追求自由的本心使它幾乎喚起輕風，好逃離現今的桎梏；但它的舊主對妳/你的賞識，使它留在了你的掌心裡。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Plume_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "智識之冕",
+              "desc": "提升天賦所需的珍貴素材。<br/>遠古時期，承載與傳授智識所用的儀式器具。儘管如今，智慧居於言語及典籍中，但「智識之冕」中殘存的力量與智慧仍能給如今的人們帶來偉大的突破吧。",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/battle_talent_0/battle_talent_0.gif"
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/constellation_2.png",
-        "name": "守護眾人的堅盾",
+        "key": "風壓劍",
+        "title": "風壓劍",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/battle_talent_1/battle_talent_1.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "琴獲得元素晶球或元素微粒時，隊伍中所有角色獲得15%攻擊速度和15%移動速度提升，持續15秒。"
+            "text": "將無形的風之力匯聚在劍上，釋放微型的風暴，將敵人朝瞄準的方向擊飛，造成大量 <color=#80ffd7>風元素傷害</color> 。\n<color=#ffd780>長按</color>\n以持續消耗體力為代價，令旋風將周圍的敵人與物體牽引至面前。\n可以調整方向。\n期間無法移動。\n與一心守護的琴同行的，是能將危險驅離夥伴身邊的守護之風。"
           }
-        ]
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13",
+              "Lv.14"
+            ]
+          },
+          {
+            "key": "技能傷害",
+            "values": [
+              "292%",
+              "314%",
+              "336%",
+              "365%",
+              "387%",
+              "409%",
+              "438%",
+              "467%",
+              "496%",
+              "525%",
+              "555%",
+              "584%",
+              "620%"
+            ]
+          },
+          {
+            "key": "體力消耗",
+            "values": [
+              "每秒20點",
+              "每秒20點",
+              "每秒20點",
+              "每秒20點",
+              "每秒20點",
+              "每秒20點",
+              "每秒20點",
+              "每秒20點",
+              "每秒20點",
+              "每秒20點",
+              "每秒20點",
+              "每秒20點",
+              "每秒20點"
+            ]
+          },
+          {
+            "key": "最大持續時間",
+            "values": [
+              "5秒",
+              "5秒",
+              "5秒",
+              "5秒",
+              "5秒",
+              "5秒",
+              "5秒",
+              "5秒",
+              "5秒",
+              "5秒",
+              "5秒",
+              "5秒",
+              "5秒"
+            ]
+          },
+          {
+            "key": "冷卻時間",
+            "values": [
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒",
+              "6秒"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/battle_talent_1/battle_talent_1.gif"
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/constellation_3.png",
-        "name": "西風吹拂之時",
+        "key": "蒲公英之風",
+        "title": "蒲公英之風",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/battle_talent_2/battle_talent_2.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>蒲公英之風</color> 的技能等級提高3級。\n至多提升至15級。"
+            "text": "呼喚風的護佑，創造千風湧動的蒲公英領域，擊退周圍的敵人並造成 <color=#80ffd7>風元素傷害</color> 。\n同時，為隊伍中的所有角色瞬間恢復大量生命值，回復量受益於琴的攻擊力。\n<color=#ffd780>蒲公英領域</color>\n·為其中的角色持續恢復生命值；\n·令其中的角色持續受到 <color=#80ffd7>風元素影響</color> ；\n·對出入領域的敵人造成 <color=#80ffd7>風元素傷害</color> 。\n風的恩澤如同廣布大地的蒲公英，這就是琴守護的根源與心意。"
           }
-        ]
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13",
+              "Lv.14"
+            ]
+          },
+          {
+            "key": "爆發傷害",
+            "values": [
+              "425%",
+              "457%",
+              "489%",
+              "531%",
+              "563%",
+              "595%",
+              "637%",
+              "680%",
+              "722%",
+              "765%",
+              "807%",
+              "850%",
+              "903%",
+              "956%"
+            ]
+          },
+          {
+            "key": "出入領域傷害",
+            "values": [
+              "78.4%",
+              "84.3%",
+              "90.2%",
+              "98%",
+              "104%",
+              "110%",
+              "118%",
+              "125%",
+              "133%",
+              "141%",
+              "149%",
+              "157%",
+              "167%",
+              "176%"
+            ]
+          },
+          {
+            "key": "領域發動治療量",
+            "values": [
+              "251%攻擊力+1540",
+              "270%攻擊力+1694",
+              "289%攻擊力+1861",
+              "314%攻擊力+2041",
+              "333%攻擊力+2234",
+              "352%攻擊力+2439",
+              "377%攻擊力+2657",
+              "402%攻擊力+2888",
+              "427%攻擊力+3132",
+              "452%攻擊力+3389",
+              "477%攻擊力+3659",
+              "502%攻擊力+3941",
+              "534%攻擊力+4236",
+              "565%攻擊力+4544"
+            ]
+          },
+          {
+            "key": "持續治療",
+            "values": [
+              "每秒25.12%攻擊力+154",
+              "每秒27.00%攻擊力+169",
+              "每秒28.89%攻擊力+186",
+              "每秒31.40%攻擊力+204",
+              "每秒33.28%攻擊力+223",
+              "每秒35.17%攻擊力+244",
+              "每秒37.68%攻擊力+266",
+              "每秒40.19%攻擊力+289",
+              "每秒42.70%攻擊力+313",
+              "每秒45.22%攻擊力+339",
+              "每秒47.73%攻擊力+366",
+              "每秒50.24%攻擊力+394",
+              "每秒53.38%攻擊力+424",
+              "每秒56.52%攻擊力+454"
+            ]
+          },
+          {
+            "key": "冷卻時間",
+            "values": [
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒",
+              "20秒"
+            ]
+          },
+          {
+            "key": "元素能量",
+            "values": [
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/battle_talent_2/battle_talent_2.gif"
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/constellation_4.png",
-        "name": "蒲公英的國土",
+        "key": "順風而行",
+        "title": "順風而行",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/const_talent_0.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "在 <color=#ffd780>蒲公英之風</color> 的領域內，所有敵人的 <color=#80ffd7>風元素抗性</color> 下降40%。"
+            "text": "琴的普通攻擊命中時，有50%的機率為隊伍中所有角色恢復等同於琴攻擊力15%的生命值。"
           }
-        ]
+        ],
+        "attributes": null
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/constellation_5.png",
-        "name": "須臾一瞬的烈風",
+        "key": "聽憑風引",
+        "title": "聽憑風引",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/const_talent_1.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>風壓劍</color> 的技能等級提高3級。\n至多提升至15級。"
+            "text": "使用 <color=#ffd780>蒲公英之風</color> 後，恢復20%元素能量。"
           }
-        ]
+        ],
+        "attributes": null
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/constellation_6.png",
-        "name": "恩眷萬民的獅牙",
+        "key": "引領之風",
+        "title": "引領之風",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/const_talent_2.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "在 <color=#ffd780>蒲公英之風</color> 的領域內，角色受到的傷害降低35%。\n離開領域後，這個效果會在承受3次攻擊或10秒後消失。"
+            "text": "完美烹飪恢復類食物時，有12%的機率獲得兩倍產出。"
           }
-        ]
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/avatar_header_cnt.jpg"
-      },
-      {
-        "key": "原畫",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/30/7998136/1c7aec60047574f90ae0702ee64eaeac_7125928640872806558.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "衣裝 - 風之虔護"
-          }
-        ]
-      },
-      {
-        "key": "衣裝 1",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/costume.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "衣裝 - 海風之夢"
-          }
-        ]
-      },
-      {
-        "key": "衣裝 2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/bb8dfedb80efa86f32e7479065e4b33d_4248421404396877906.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "衣裝 - 古恩希爾德的傳承"
-          }
-        ]
-      },
-      {
-        "key": "閒置動作 1",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/90080e8bd0aab42b39a3010ca17eeb31_8658879144690739697.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "衣裝 - 風之虔護"
-          }
-        ]
-      },
-      {
-        "key": "閒置動作 2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/5e7d2abea8dd4d587ca6f039893ca0a9_5141275383154016806.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "衣裝 - 風之虔護"
-          }
-        ]
-      },
-      {
-        "key": "閒置動作 3",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/29213e9973deb42beddd5855f38dfc40_8918790728591336085.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "衣裝 - 海風之夢"
-          }
-        ]
-      },
-      {
-        "key": "閒置動作 4",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/f589f88b30dc90af14dcb36862aeb991_3182964035369263937.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "衣裝 - 海風之夢"
-          }
-        ]
-      },
-      {
-        "key": "閒置動作 5",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/f23a61ab7199f43df1c45d7248af009d_1492813019040991968.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "衣裝 - 古恩希爾德的傳承"
-          }
-        ]
-      },
-      {
-        "key": "閒置動作 6",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/b127d96894fb75796cc7045790fae3b5_990021967177437975.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "衣裝 - 古恩希爾德的傳承"
-          }
-        ]
+        ],
+        "attributes": null
       }
     ],
     "customize": [
@@ -665,570 +1279,131 @@
         ]
       }
     ],
-    "ascension": [
+    "baseInfo": [
       {
-        "key": "Lv.1",
-        "combatStats": [
+        "key": "名字",
+        "value": [
           {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "-",
-              "1144"
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "-",
-              "19"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "-",
-              "60"
-            ]
-          },
-          {
-            "key": "治療加成",
-            "values": [
-              "-",
-              "0%"
-            ]
+            "type": "RichText",
+            "text": "琴"
           }
         ]
       },
       {
-        "key": "Lv.20",
-        "combatStats": [
+        "key": "生日",
+        "value": [
           {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
+            "type": "RichText",
+            "text": "3月14日"
+          }
+        ]
+      },
+      {
+        "key": "命之座",
+        "value": [
           {
-            "key": "基礎生命值",
-            "values": [
-              "2967",
-              "3948"
-            ]
-          },
+            "type": "RichText",
+            "text": "幼獅座"
+          }
+        ]
+      },
+      {
+        "key": "稱號",
+        "value": [
           {
-            "key": "基礎攻擊力",
-            "values": [
-              "48",
-              "64"
-            ]
-          },
+            "type": "RichText",
+            "text": "蒲公英騎士"
+          }
+        ]
+      },
+      {
+        "key": "神之眼",
+        "value": [
           {
-            "key": "基礎防禦力",
-            "values": [
-              "155",
-              "206"
-            ]
-          },
+            "type": "RichText",
+            "text": "風"
+          }
+        ]
+      },
+      {
+        "key": "所屬",
+        "value": [
           {
-            "key": "治療加成",
-            "values": [
-              "0%",
-              "0%"
-            ]
+            "type": "RichText",
+            "text": "西風騎士團"
+          }
+        ]
+      },
+      {
+        "key": "華語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "林簌"
+          }
+        ]
+      },
+      {
+        "key": "英語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Stephanie Southerland"
+          }
+        ]
+      },
+      {
+        "key": "日語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "斎藤千和"
+          }
+        ]
+      },
+      {
+        "key": "韓語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "安榮美"
+          }
+        ]
+      },
+      {
+        "key": "特色料理",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 753,
+            "name": "提神醒腦披薩",
+            "desc": "琴的特色料理。規整得像是工藝品的薄餅，吃一片就可以大大地振奮精神。這就是她能夠連續工作的秘密武器嗎？",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Invigorating Pizza_icon.png"
           }
         ],
-        "materials": [
+        "isMaterial": true
+      },
+      {
+        "key": "實裝版本",
+        "value": [
           {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1496,
-            "name": "自在松石碎屑",
-            "desc": "角色突破素材。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1543,
-            "name": "蒲公英籽",
-            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1247,
-            "name": "破損的面具",
-            "desc": "破碎的骨質面具，曾經屬於某個丘丘人。<br/>破損的部分比完整的部分更多，已經失去了假面應有的功能。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
-            "amount": 3
+            "type": "RichText",
+            "text": "1.0版本「歡迎來到提瓦特大陸」"
           }
         ]
       },
       {
-        "key": "Lv.40",
-        "combatStats": [
+        "key": "七聖召喚",
+        "value": [
           {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "5908",
-              "6605"
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "96",
-              "108 "
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "309",
-              "345"
-            ]
-          },
-          {
-            "key": "治療加成",
-            "values": [
-              "0%",
-              "5.5%"
-            ]
+            "type": "CustomEntry",
+            "epId": 3192,
+            "name": "琴",
+            "desc": "<p><span style=\"color: #FFFFFF\">蒲公英騎士·琴</span></p><p>在奪得最終的勝利之前，她總是認爲自己做得還不夠好。</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/292125737/d5390af00bb562ee5ee6a0425a900de1_724914525604536466.png"
           }
         ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1495,
-            "name": "自在松石斷片",
-            "desc": "角色突破素材。<br/>「但風向是會轉變的。」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1751,
-            "name": "颶風之種",
-            "desc": "無相之風被擊敗後，所坍縮成的形態。其中蘊含著至純的風之力。<br/>傳說在纖細脆弱的蝴蝶體內，也藏有引發颶風的力量。這由純粹的風構成的蝴蝶，無疑在等待著再次召來暴風的那一天吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1543,
-            "name": "蒲公英籽",
-            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1247,
-            "name": "破損的面具",
-            "desc": "破碎的骨質面具，曾經屬於某個丘丘人。<br/>破損的部分比完整的部分更多，已經失去了假面應有的功能。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
-            "amount": 15
-          }
-        ]
-      },
-      {
-        "key": "Lv.50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "7599",
-              "8528 "
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "124",
-              "139 "
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "397",
-              "446 "
-            ]
-          },
-          {
-            "key": "治療加成",
-            "values": [
-              "5.5%",
-              "11.1%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1495,
-            "name": "自在松石斷片",
-            "desc": "角色突破素材。<br/>「但風向是會轉變的。」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1751,
-            "name": "颶風之種",
-            "desc": "無相之風被擊敗後，所坍縮成的形態。其中蘊含著至純的風之力。<br/>傳說在纖細脆弱的蝴蝶體內，也藏有引發颶風的力量。這由純粹的風構成的蝴蝶，無疑在等待著再次召來暴風的那一天吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1543,
-            "name": "蒲公英籽",
-            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 983,
-            "name": "汙穢的面具",
-            "desc": "沾滿了難以辨認的污漬，散發著微妙氣味的骨質面具。<br/>即使這樣也要戴在臉上，這就是丘丘人的執著。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "9533",
-              "10230"
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "155",
-              "166"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "499",
-              "535"
-            ]
-          },
-          {
-            "key": "治療加成",
-            "values": [
-              "11.1%",
-              "11.1%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1494,
-            "name": "自在松石塊",
-            "desc": "角色突破素材。<br/>「但風向是會轉變的。」<br/>「終有一天，會吹向更有光亮的方向。」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1751,
-            "name": "颶風之種",
-            "desc": "無相之風被擊敗後，所坍縮成的形態。其中蘊含著至純的風之力。<br/>傳說在纖細脆弱的蝴蝶體內，也藏有引發颶風的力量。這由純粹的風構成的蝴蝶，無疑在等待著再次召來暴風的那一天吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1543,
-            "name": "蒲公英籽",
-            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 983,
-            "name": "汙穢的面具",
-            "desc": "沾滿了難以辨認的污漬，散發著微妙氣味的骨質面具。<br/>即使這樣也要戴在臉上，這就是丘丘人的執著。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Lv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "11243",
-              "11940"
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "183",
-              "194 "
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "588",
-              "624"
-            ]
-          },
-          {
-            "key": "治療加成",
-            "values": [
-              "11.1%",
-              "16.6%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1494,
-            "name": "自在松石塊",
-            "desc": "角色突破素材。<br/>「但風向是會轉變的。」<br/>「終有一天，會吹向更有光亮的方向。」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1751,
-            "name": "颶風之種",
-            "desc": "無相之風被擊敗後，所坍縮成的形態。其中蘊含著至純的風之力。<br/>傳說在纖細脆弱的蝴蝶體內，也藏有引發颶風的力量。這由純粹的風構成的蝴蝶，無疑在等待著再次召來暴風的那一天吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1543,
-            "name": "蒲公英籽",
-            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 220,
-            "name": "不祥的面具",
-            "desc": "光亮的骨質面具，上面塗繪著意在恐嚇敵人的油彩。<br/>丘丘人對面具的執著緣起為何，至今無人能解。一說認為是不願看見自己在水中的倒影。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "12965",
-              "13662 "
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "211",
-              "222"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "678",
-              "715"
-            ]
-          },
-          {
-            "key": "治療加成",
-            "values": [
-              "16.6%",
-              "22.2%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1493,
-            "name": "自在松石",
-            "desc": "角色突破素材。<br/>「但風向是會轉變的。」<br/>「終有一天，會吹向更有光亮的方向。」<br/>「從今往後，帶著我的祝福，活得更加從容一些吧。」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1751,
-            "name": "颶風之種",
-            "desc": "無相之風被擊敗後，所坍縮成的形態。其中蘊含著至純的風之力。<br/>傳說在纖細脆弱的蝴蝶體內，也藏有引發颶風的力量。這由純粹的風構成的蝴蝶，無疑在等待著再次召來暴風的那一天吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1543,
-            "name": "蒲公英籽",
-            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 220,
-            "name": "不祥的面具",
-            "desc": "光亮的骨質面具，上面塗繪著意在恐嚇敵人的油彩。<br/>丘丘人對面具的執著緣起為何，至今無人能解。一說認為是不願看見自己在水中的倒影。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Lv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "14695",
-              "-"
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "239",
-              "-"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "769",
-              "-"
-            ]
-          },
-          {
-            "key": "治療加成",
-            "values": [
-              "22.2%",
-              "-"
-            ]
-          }
-        ]
+        "isMaterial": true
       }
     ],
     "voice": [
@@ -2817,133 +2992,7 @@
         ]
       }
     ],
-    "baseInfo": [
-      {
-        "key": "名字",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "琴"
-          }
-        ]
-      },
-      {
-        "key": "生日",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "3月14日"
-          }
-        ]
-      },
-      {
-        "key": "命之座",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "幼獅座"
-          }
-        ]
-      },
-      {
-        "key": "稱號",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "蒲公英騎士"
-          }
-        ]
-      },
-      {
-        "key": "神之眼",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "風"
-          }
-        ]
-      },
-      {
-        "key": "所屬",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "西風騎士團"
-          }
-        ]
-      },
-      {
-        "key": "華語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "林簌"
-          }
-        ]
-      },
-      {
-        "key": "英語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Stephanie Southerland"
-          }
-        ]
-      },
-      {
-        "key": "日語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "斎藤千和"
-          }
-        ]
-      },
-      {
-        "key": "韓語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "安榮美"
-          }
-        ]
-      },
-      {
-        "key": "特色料理",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 753,
-            "name": "提神醒腦披薩",
-            "desc": "琴的特色料理。規整得像是工藝品的薄餅，吃一片就可以大大地振奮精神。這就是她能夠連續工作的秘密武器嗎？",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Invigorating Pizza_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "實裝版本",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.0版本「歡迎來到提瓦特大陸」"
-          }
-        ]
-      },
-      {
-        "key": "七聖召喚",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3192,
-            "name": "琴",
-            "desc": "<p><span style=\"color: #FFFFFF\">蒲公英騎士·琴</span></p><p>在奪得最終的勝利之前，她總是認爲自己做得還不夠好。</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/292125737/d5390af00bb562ee5ee6a0425a900de1_724914525604536466.png"
-          }
-        ],
-        "isMaterial": true
-      }
-    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=37&center=-89.00,416.00&zoom=-2.00",
     "story": [
       {
         "title": "角色詳細",
@@ -3018,777 +3067,728 @@
         ]
       }
     ],
-    "talent": [
+    "ascension": [
       {
-        "key": "普通攻擊·西風劍術",
-        "title": "普通攻擊·西風劍術",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/battle_talent_0/battle_talent_0.png",
-        "desc": [
+        "key": "Lv.1",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "<color=#ffd780>普通攻擊</color>\n進行至多五段的連續劍擊。\n<color=#ffd780>重擊</color>\n消耗一定體力，進行飽含風之力的挑擊。\n被挑飛的敵人，在短時間內會緩慢墜落。\n<color=#ffd780>下落攻擊</color>\n從空中下墜衝擊地面，攻擊下落路徑上的敵人，並在落地時造成範圍傷害。"
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "-",
+              "1144"
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "-",
+              "19"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "-",
+              "60"
+            ]
+          },
+          {
+            "key": "治療加成",
+            "values": [
+              "-",
+              "0%"
+            ]
           }
-        ],
-        "attributes": [
+        ]
+      },
+      {
+        "key": "Lv.20",
+        "combatStats": [
           {
-            "key": "Level",
+            "key": "",
             "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11"
+              "突破前",
+              "突破後"
             ]
           },
           {
-            "key": "一段傷害",
+            "key": "基礎生命值",
             "values": [
-              "48.3%",
-              "52.3%",
-              "56.2%",
-              "61.8%",
-              "65.8%",
-              "70.3%",
-              "76.4%",
-              "82.6%",
-              "88.8%",
-              "95.5%",
-              "103%"
+              "2967",
+              "3948"
             ]
           },
           {
-            "key": "二段傷害",
+            "key": "基礎攻擊力",
             "values": [
-              "45.6%",
-              "49.3%",
-              "53%",
-              "58.3%",
-              "62%",
-              "66.3%",
-              "72.1%",
-              "77.9%",
-              "83.7%",
-              "90.1%",
-              "97.4%"
+              "48",
+              "64"
             ]
           },
           {
-            "key": "三段傷害",
+            "key": "基礎防禦力",
             "values": [
-              "60.3%",
-              "65.2%",
-              "70.1%",
-              "77.1%",
-              "82%",
-              "87.6%",
-              "95.3%",
-              "103%",
-              "111%",
-              "119%",
-              "129%"
+              "155",
+              "206"
             ]
           },
           {
-            "key": "四段傷害",
+            "key": "治療加成",
             "values": [
-              "65.9%",
-              "71.2%",
-              "76.6%",
-              "84.3%",
-              "89.6%",
-              "95.8%",
-              "104%",
-              "113%",
-              "121%",
-              "130%",
-              "141%"
-            ]
-          },
-          {
-            "key": "五段傷害",
-            "values": [
-              "79.2%",
-              "85.7%",
-              "92.1%",
-              "101%",
-              "108%",
-              "115%",
-              "125%",
-              "135%",
-              "146%",
-              "157%",
-              "169%"
-            ]
-          },
-          {
-            "key": "重擊傷害",
-            "values": [
-              "162%",
-              "175%",
-              "188%",
-              "207%",
-              "220%",
-              "236%",
-              "256%",
-              "277%",
-              "298%",
-              "320%",
-              "346%"
-            ]
-          },
-          {
-            "key": "重擊體力消耗",
-            "values": [
-              "20點",
-              "20點",
-              "20點",
-              "20點",
-              "20點",
-              "20點",
-              "20點",
-              "20點",
-              "20點",
-              "20點",
-              "20點"
-            ]
-          },
-          {
-            "key": "下墜期間傷害",
-            "values": [
-              "63.9%",
-              "69.1%",
-              "74.3%",
-              "81.8%",
-              "87%",
-              "92.9%",
-              "101%",
-              "109.3%",
-              "117%",
-              "126%",
-              "135%"
-            ]
-          },
-          {
-            "key": "低空/高空墜地衝擊傷害",
-            "values": [
-              "128%/160%",
-              "138%/173%",
-              "149%/186%",
-              "164%/204%",
-              "174%/217%",
-              "186%/232%",
-              "202%/253%",
-              "219%/273%",
-              "235%/293%",
-              "253%/316%",
-              "271%/338%"
+              "0%",
+              "0%"
             ]
           }
         ],
         "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 111,
-              "name": "「抗爭」的教導",
-              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德過去的一切抗爭不被遺忘，如同草木突破土壤，如同恆風洞穿石牆。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Resistance_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1247,
-              "name": "破損的面具",
-              "desc": "破碎的骨質面具，曾經屬於某個丘丘人。<br/>破損的部分比完整的部分更多，已經失去了假面應有的功能。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 110,
-              "name": "「抗爭」的指引",
-              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德現在的人們能夠擁有自由，正如風之神吹散冰雪，正如溫妮莎奮起抗爭。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Resistance_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 983,
-              "name": "汙穢的面具",
-              "desc": "沾滿了難以辨認的污漬，散發著微妙氣味的骨質面具。<br/>即使這樣也要戴在臉上，這就是丘丘人的執著。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 110,
-              "name": "「抗爭」的指引",
-              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德現在的人們能夠擁有自由，正如風之神吹散冰雪，正如溫妮莎奮起抗爭。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Resistance_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 983,
-              "name": "汙穢的面具",
-              "desc": "沾滿了難以辨認的污漬，散發著微妙氣味的骨質面具。<br/>即使這樣也要戴在臉上，這就是丘丘人的執著。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 110,
-              "name": "「抗爭」的指引",
-              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德現在的人們能夠擁有自由，正如風之神吹散冰雪，正如溫妮莎奮起抗爭。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Resistance_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 983,
-              "name": "汙穢的面具",
-              "desc": "沾滿了難以辨認的污漬，散發著微妙氣味的骨質面具。<br/>即使這樣也要戴在臉上，這就是丘丘人的執著。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 110,
-              "name": "「抗爭」的指引",
-              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德現在的人們能夠擁有自由，正如風之神吹散冰雪，正如溫妮莎奮起抗爭。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Resistance_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 983,
-              "name": "汙穢的面具",
-              "desc": "沾滿了難以辨認的污漬，散發著微妙氣味的骨質面具。<br/>即使這樣也要戴在臉上，這就是丘丘人的執著。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 109,
-              "name": "「抗爭」的哲學",
-              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德未來的詩文，也能自由地隨著眷顧的風，傳到遠方。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Resistance_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 220,
-              "name": "不祥的面具",
-              "desc": "光亮的骨質面具，上面塗繪著意在恐嚇敵人的油彩。<br/>丘丘人對面具的執著緣起為何，至今無人能解。一說認為是不願看見自己在水中的倒影。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 238,
-              "name": "東風之翎",
-              "desc": "從蒙德的東風之主身上，取下的一枚翎羽。<br/>那是經歷了千年之風的龍之羽。追求自由的本心使它幾乎喚起輕風，好逃離現今的桎梏；但它的舊主對妳/你的賞識，使它留在了你的掌心裡。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Plume_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 109,
-              "name": "「抗爭」的哲學",
-              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德未來的詩文，也能自由地隨著眷顧的風，傳到遠方。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Resistance_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 220,
-              "name": "不祥的面具",
-              "desc": "光亮的骨質面具，上面塗繪著意在恐嚇敵人的油彩。<br/>丘丘人對面具的執著緣起為何，至今無人能解。一說認為是不願看見自己在水中的倒影。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 238,
-              "name": "東風之翎",
-              "desc": "從蒙德的東風之主身上，取下的一枚翎羽。<br/>那是經歷了千年之風的龍之羽。追求自由的本心使它幾乎喚起輕風，好逃離現今的桎梏；但它的舊主對妳/你的賞識，使它留在了你的掌心裡。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Plume_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 109,
-              "name": "「抗爭」的哲學",
-              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德未來的詩文，也能自由地隨著眷顧的風，傳到遠方。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Resistance_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 220,
-              "name": "不祥的面具",
-              "desc": "光亮的骨質面具，上面塗繪著意在恐嚇敵人的油彩。<br/>丘丘人對面具的執著緣起為何，至今無人能解。一說認為是不願看見自己在水中的倒影。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 238,
-              "name": "東風之翎",
-              "desc": "從蒙德的東風之主身上，取下的一枚翎羽。<br/>那是經歷了千年之風的龍之羽。追求自由的本心使它幾乎喚起輕風，好逃離現今的桎梏；但它的舊主對妳/你的賞識，使它留在了你的掌心裡。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Plume_icon.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "摩拉",
-              "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 109,
-              "name": "「抗爭」的哲學",
-              "desc": "天賦培養素材。<br/>風之國土的脊樑是抗爭。<br/>蒙德的歷史即是抗爭的歷史。抗爭是為了蒙德未來的詩文，也能自由地隨著眷顧的風，傳到遠方。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Resistance_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 220,
-              "name": "不祥的面具",
-              "desc": "光亮的骨質面具，上面塗繪著意在恐嚇敵人的油彩。<br/>丘丘人對面具的執著緣起為何，至今無人能解。一說認為是不願看見自己在水中的倒影。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 238,
-              "name": "東風之翎",
-              "desc": "從蒙德的東風之主身上，取下的一枚翎羽。<br/>那是經歷了千年之風的龍之羽。追求自由的本心使它幾乎喚起輕風，好逃離現今的桎梏；但它的舊主對妳/你的賞識，使它留在了你的掌心裡。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Plume_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "智識之冕",
-              "desc": "提升天賦所需的珍貴素材。<br/>遠古時期，承載與傳授智識所用的儀式器具。儘管如今，智慧居於言語及典籍中，但「智識之冕」中殘存的力量與智慧仍能給如今的人們帶來偉大的突破吧。",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/battle_talent_0/battle_talent_0.gif"
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1496,
+            "name": "自在松石碎屑",
+            "desc": "角色突破素材。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1543,
+            "name": "蒲公英籽",
+            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1247,
+            "name": "破損的面具",
+            "desc": "破碎的骨質面具，曾經屬於某個丘丘人。<br/>破損的部分比完整的部分更多，已經失去了假面應有的功能。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
+            "amount": 3
+          }
+        ]
       },
       {
-        "key": "風壓劍",
-        "title": "風壓劍",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/battle_talent_1/battle_talent_1.png",
-        "desc": [
+        "key": "Lv.40",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "將無形的風之力匯聚在劍上，釋放微型的風暴，將敵人朝瞄準的方向擊飛，造成大量 <color=#80ffd7>風元素傷害</color> 。\n<color=#ffd780>長按</color>\n以持續消耗體力為代價，令旋風將周圍的敵人與物體牽引至面前。\n可以調整方向。\n期間無法移動。\n與一心守護的琴同行的，是能將危險驅離夥伴身邊的守護之風。"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
+            "key": "",
             "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13",
-              "Lv.14"
+              "突破前",
+              "突破後"
             ]
           },
           {
-            "key": "技能傷害",
+            "key": "基礎生命值",
             "values": [
-              "292%",
-              "314%",
-              "336%",
-              "365%",
-              "387%",
-              "409%",
-              "438%",
-              "467%",
-              "496%",
-              "525%",
-              "555%",
-              "584%",
-              "620%"
+              "5908",
+              "6605"
             ]
           },
           {
-            "key": "體力消耗",
+            "key": "基礎攻擊力",
             "values": [
-              "每秒20點",
-              "每秒20點",
-              "每秒20點",
-              "每秒20點",
-              "每秒20點",
-              "每秒20點",
-              "每秒20點",
-              "每秒20點",
-              "每秒20點",
-              "每秒20點",
-              "每秒20點",
-              "每秒20點",
-              "每秒20點"
+              "96",
+              "108 "
             ]
           },
           {
-            "key": "最大持續時間",
+            "key": "基礎防禦力",
             "values": [
-              "5秒",
-              "5秒",
-              "5秒",
-              "5秒",
-              "5秒",
-              "5秒",
-              "5秒",
-              "5秒",
-              "5秒",
-              "5秒",
-              "5秒",
-              "5秒",
-              "5秒"
+              "309",
+              "345"
             ]
           },
           {
-            "key": "冷卻時間",
+            "key": "治療加成",
             "values": [
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒",
-              "6秒"
+              "0%",
+              "5.5%"
             ]
           }
         ],
         "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/battle_talent_1/battle_talent_1.gif"
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1495,
+            "name": "自在松石斷片",
+            "desc": "角色突破素材。<br/>「但風向是會轉變的。」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1751,
+            "name": "颶風之種",
+            "desc": "無相之風被擊敗後，所坍縮成的形態。其中蘊含著至純的風之力。<br/>傳說在纖細脆弱的蝴蝶體內，也藏有引發颶風的力量。這由純粹的風構成的蝴蝶，無疑在等待著再次召來暴風的那一天吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1543,
+            "name": "蒲公英籽",
+            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1247,
+            "name": "破損的面具",
+            "desc": "破碎的骨質面具，曾經屬於某個丘丘人。<br/>破損的部分比完整的部分更多，已經失去了假面應有的功能。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
+            "amount": 15
+          }
+        ]
       },
       {
-        "key": "蒲公英之風",
-        "title": "蒲公英之風",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/battle_talent_2/battle_talent_2.png",
-        "desc": [
+        "key": "Lv.50",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "呼喚風的護佑，創造千風湧動的蒲公英領域，擊退周圍的敵人並造成 <color=#80ffd7>風元素傷害</color> 。\n同時，為隊伍中的所有角色瞬間恢復大量生命值，回復量受益於琴的攻擊力。\n<color=#ffd780>蒲公英領域</color>\n·為其中的角色持續恢復生命值；\n·令其中的角色持續受到 <color=#80ffd7>風元素影響</color> ；\n·對出入領域的敵人造成 <color=#80ffd7>風元素傷害</color> 。\n風的恩澤如同廣布大地的蒲公英，這就是琴守護的根源與心意。"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
+            "key": "",
             "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13",
-              "Lv.14"
+              "突破前",
+              "突破後"
             ]
           },
           {
-            "key": "爆發傷害",
+            "key": "基礎生命值",
             "values": [
-              "425%",
-              "457%",
-              "489%",
-              "531%",
-              "563%",
-              "595%",
-              "637%",
-              "680%",
-              "722%",
-              "765%",
-              "807%",
-              "850%",
-              "903%",
-              "956%"
+              "7599",
+              "8528 "
             ]
           },
           {
-            "key": "出入領域傷害",
+            "key": "基礎攻擊力",
             "values": [
-              "78.4%",
-              "84.3%",
-              "90.2%",
-              "98%",
-              "104%",
-              "110%",
-              "118%",
-              "125%",
-              "133%",
-              "141%",
-              "149%",
-              "157%",
-              "167%",
-              "176%"
+              "124",
+              "139 "
             ]
           },
           {
-            "key": "領域發動治療量",
+            "key": "基礎防禦力",
             "values": [
-              "251%攻擊力+1540",
-              "270%攻擊力+1694",
-              "289%攻擊力+1861",
-              "314%攻擊力+2041",
-              "333%攻擊力+2234",
-              "352%攻擊力+2439",
-              "377%攻擊力+2657",
-              "402%攻擊力+2888",
-              "427%攻擊力+3132",
-              "452%攻擊力+3389",
-              "477%攻擊力+3659",
-              "502%攻擊力+3941",
-              "534%攻擊力+4236",
-              "565%攻擊力+4544"
+              "397",
+              "446 "
             ]
           },
           {
-            "key": "持續治療",
+            "key": "治療加成",
             "values": [
-              "每秒25.12%攻擊力+154",
-              "每秒27.00%攻擊力+169",
-              "每秒28.89%攻擊力+186",
-              "每秒31.40%攻擊力+204",
-              "每秒33.28%攻擊力+223",
-              "每秒35.17%攻擊力+244",
-              "每秒37.68%攻擊力+266",
-              "每秒40.19%攻擊力+289",
-              "每秒42.70%攻擊力+313",
-              "每秒45.22%攻擊力+339",
-              "每秒47.73%攻擊力+366",
-              "每秒50.24%攻擊力+394",
-              "每秒53.38%攻擊力+424",
-              "每秒56.52%攻擊力+454"
-            ]
-          },
-          {
-            "key": "冷卻時間",
-            "values": [
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒",
-              "20秒"
-            ]
-          },
-          {
-            "key": "元素能量",
-            "values": [
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80"
+              "5.5%",
+              "11.1%"
             ]
           }
         ],
         "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/battle_talent_2/battle_talent_2.gif"
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1495,
+            "name": "自在松石斷片",
+            "desc": "角色突破素材。<br/>「但風向是會轉變的。」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1751,
+            "name": "颶風之種",
+            "desc": "無相之風被擊敗後，所坍縮成的形態。其中蘊含著至純的風之力。<br/>傳說在纖細脆弱的蝴蝶體內，也藏有引發颶風的力量。這由純粹的風構成的蝴蝶，無疑在等待著再次召來暴風的那一天吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1543,
+            "name": "蒲公英籽",
+            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 983,
+            "name": "汙穢的面具",
+            "desc": "沾滿了難以辨認的污漬，散發著微妙氣味的骨質面具。<br/>即使這樣也要戴在臉上，這就是丘丘人的執著。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+            "amount": 12
+          }
+        ]
       },
       {
-        "key": "順風而行",
-        "title": "順風而行",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/const_talent_0.png",
+        "key": "Lv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "9533",
+              "10230"
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "155",
+              "166"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "499",
+              "535"
+            ]
+          },
+          {
+            "key": "治療加成",
+            "values": [
+              "11.1%",
+              "11.1%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1494,
+            "name": "自在松石塊",
+            "desc": "角色突破素材。<br/>「但風向是會轉變的。」<br/>「終有一天，會吹向更有光亮的方向。」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1751,
+            "name": "颶風之種",
+            "desc": "無相之風被擊敗後，所坍縮成的形態。其中蘊含著至純的風之力。<br/>傳說在纖細脆弱的蝴蝶體內，也藏有引發颶風的力量。這由純粹的風構成的蝴蝶，無疑在等待著再次召來暴風的那一天吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1543,
+            "name": "蒲公英籽",
+            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 983,
+            "name": "汙穢的面具",
+            "desc": "沾滿了難以辨認的污漬，散發著微妙氣味的骨質面具。<br/>即使這樣也要戴在臉上，這就是丘丘人的執著。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Lv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "11243",
+              "11940"
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "183",
+              "194 "
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "588",
+              "624"
+            ]
+          },
+          {
+            "key": "治療加成",
+            "values": [
+              "11.1%",
+              "16.6%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1494,
+            "name": "自在松石塊",
+            "desc": "角色突破素材。<br/>「但風向是會轉變的。」<br/>「終有一天，會吹向更有光亮的方向。」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1751,
+            "name": "颶風之種",
+            "desc": "無相之風被擊敗後，所坍縮成的形態。其中蘊含著至純的風之力。<br/>傳說在纖細脆弱的蝴蝶體內，也藏有引發颶風的力量。這由純粹的風構成的蝴蝶，無疑在等待著再次召來暴風的那一天吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1543,
+            "name": "蒲公英籽",
+            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 220,
+            "name": "不祥的面具",
+            "desc": "光亮的骨質面具，上面塗繪著意在恐嚇敵人的油彩。<br/>丘丘人對面具的執著緣起為何，至今無人能解。一說認為是不願看見自己在水中的倒影。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "12965",
+              "13662 "
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "211",
+              "222"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "678",
+              "715"
+            ]
+          },
+          {
+            "key": "治療加成",
+            "values": [
+              "16.6%",
+              "22.2%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1493,
+            "name": "自在松石",
+            "desc": "角色突破素材。<br/>「但風向是會轉變的。」<br/>「終有一天，會吹向更有光亮的方向。」<br/>「從今往後，帶著我的祝福，活得更加從容一些吧。」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1751,
+            "name": "颶風之種",
+            "desc": "無相之風被擊敗後，所坍縮成的形態。其中蘊含著至純的風之力。<br/>傳說在纖細脆弱的蝴蝶體內，也藏有引發颶風的力量。這由純粹的風構成的蝴蝶，無疑在等待著再次召來暴風的那一天吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1543,
+            "name": "蒲公英籽",
+            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 220,
+            "name": "不祥的面具",
+            "desc": "光亮的骨質面具，上面塗繪著意在恐嚇敵人的油彩。<br/>丘丘人對面具的執著緣起為何，至今無人能解。一說認為是不願看見自己在水中的倒影。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "Lv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "14695",
+              "-"
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "239",
+              "-"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "769",
+              "-"
+            ]
+          },
+          {
+            "key": "治療加成",
+            "values": [
+              "22.2%",
+              "-"
+            ]
+          }
+        ]
+      }
+    ],
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/constellation_1.png",
+        "name": "流轉劍脊的暴風",
         "desc": [
           {
             "type": "RichText",
-            "text": "琴的普通攻擊命中時，有50%的機率為隊伍中所有角色恢復等同於琴攻擊力15%的生命值。"
+            "text": "<color=#ffd780>風壓劍</color> 長按超過1秒後，提升牽引速度，並使造成的傷害提升40%。"
           }
-        ],
-        "attributes": null
+        ]
       },
       {
-        "key": "聽憑風引",
-        "title": "聽憑風引",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/const_talent_1.png",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/constellation_2.png",
+        "name": "守護眾人的堅盾",
         "desc": [
           {
             "type": "RichText",
-            "text": "使用 <color=#ffd780>蒲公英之風</color> 後，恢復20%元素能量。"
+            "text": "琴獲得元素晶球或元素微粒時，隊伍中所有角色獲得15%攻擊速度和15%移動速度提升，持續15秒。"
           }
-        ],
-        "attributes": null
+        ]
       },
       {
-        "key": "引領之風",
-        "title": "引領之風",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/const_talent_2.png",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/constellation_3.png",
+        "name": "西風吹拂之時",
         "desc": [
           {
             "type": "RichText",
-            "text": "完美烹飪恢復類食物時，有12%的機率獲得兩倍產出。"
+            "text": "<color=#ffd780>蒲公英之風</color> 的技能等級提高3級。\n至多提升至15級。"
           }
-        ],
-        "attributes": null
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/constellation_4.png",
+        "name": "蒲公英的國土",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "在 <color=#ffd780>蒲公英之風</color> 的領域內，所有敵人的 <color=#80ffd7>風元素抗性</color> 下降40%。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/constellation_5.png",
+        "name": "須臾一瞬的烈風",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>風壓劍</color> 的技能等級提高3級。\n至多提升至15級。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/constellation_6.png",
+        "name": "恩眷萬民的獅牙",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "在 <color=#ffd780>蒲公英之風</color> 的領域內，角色受到的傷害降低35%。\n離開領域後，這個效果會在承受3次攻擊或10秒後消失。"
+          }
+        ]
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/avatar_header_cnt.jpg"
+      },
+      {
+        "key": "原畫",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/30/7998136/1c7aec60047574f90ae0702ee64eaeac_7125928640872806558.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "衣裝 - 風之虔護"
+          }
+        ]
+      },
+      {
+        "key": "衣裝 1",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/琴/costume.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "衣裝 - 海風之夢"
+          }
+        ]
+      },
+      {
+        "key": "衣裝 2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/bb8dfedb80efa86f32e7479065e4b33d_4248421404396877906.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "衣裝 - 古恩希爾德的傳承"
+          }
+        ]
+      },
+      {
+        "key": "閒置動作 1",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/90080e8bd0aab42b39a3010ca17eeb31_8658879144690739697.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "衣裝 - 風之虔護"
+          }
+        ]
+      },
+      {
+        "key": "閒置動作 2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/5e7d2abea8dd4d587ca6f039893ca0a9_5141275383154016806.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "衣裝 - 風之虔護"
+          }
+        ]
+      },
+      {
+        "key": "閒置動作 3",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/29213e9973deb42beddd5855f38dfc40_8918790728591336085.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "衣裝 - 海風之夢"
+          }
+        ]
+      },
+      {
+        "key": "閒置動作 4",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/f589f88b30dc90af14dcb36862aeb991_3182964035369263937.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "衣裝 - 海風之夢"
+          }
+        ]
+      },
+      {
+        "key": "閒置動作 5",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/f23a61ab7199f43df1c45d7248af009d_1492813019040991968.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "衣裝 - 古恩希爾德的傳承"
+          }
+        ]
+      },
+      {
+        "key": "閒置動作 6",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/b127d96894fb75796cc7045790fae3b5_990021967177437975.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "衣裝 - 古恩希爾德的傳承"
+          }
+        ]
       }
     ]
   }

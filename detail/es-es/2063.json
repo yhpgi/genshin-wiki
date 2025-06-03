@@ -12,10 +12,17 @@
   "menuName": "Artefactos",
   "version": 0,
   "components": {
-    "reliquarySetEffect": {
-      "twoSetEffect": "ATQ +18%.",
-      "fourSetEffect": "Aumenta el daño en un 30% contra enemigos con más del 50% de Vida."
-    },
+    "baseInfo": [
+      {
+        "key": "Nombre",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Corazón del Guerrero"
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "title": "Medalla del Guerrero",
@@ -63,18 +70,18 @@
         ]
       }
     ],
-    "baseInfo": [
-      {
-        "key": "Nombre",
-        "value": [
+    "artifactList": {
+      "circlet_of_logos": {
+        "title": "Corona del Guerrero",
+        "position": "Tiara de Logos",
+        "desc": [
           {
             "type": "RichText",
-            "text": "Corazón del Guerrero"
+            "text": "Una corona rudimentaria hecha con plantas. Para algunos, es tan preciada como la corona de un rey."
           }
-        ]
-      }
-    ],
-    "artifactList": {
+        ],
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Brave Heart/circlet_of_logos_icon.png"
+      },
       "flower_of_life": {
         "title": "Medalla del Guerrero",
         "position": "Flor de la Vida",
@@ -97,17 +104,6 @@
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Brave Heart/sands_of_eon_icon.png"
       },
-      "plume_of_death": {
-        "title": "Esperanza del Guerrero",
-        "position": "Pluma de la Muerte",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "La pluma brillante de la cola de un pájaro cantor. Puede inspirar un poco de valor."
-          }
-        ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Brave Heart/plume_of_death_icon.png"
-      },
       "goblet_of_eonothem": {
         "title": "Gran Despedida del Guerrero",
         "position": "Cáliz de Eonothem",
@@ -119,17 +115,21 @@
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Brave Heart/goblet_of_eonothem_icon.png"
       },
-      "circlet_of_logos": {
-        "title": "Corona del Guerrero",
-        "position": "Tiara de Logos",
+      "plume_of_death": {
+        "title": "Esperanza del Guerrero",
+        "position": "Pluma de la Muerte",
         "desc": [
           {
             "type": "RichText",
-            "text": "Una corona rudimentaria hecha con plantas. Para algunos, es tan preciada como la corona de un rey."
+            "text": "La pluma brillante de la cola de un pájaro cantor. Puede inspirar un poco de valor."
           }
         ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Brave Heart/circlet_of_logos_icon.png"
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Brave Heart/plume_of_death_icon.png"
       }
+    },
+    "reliquarySetEffect": {
+      "twoSetEffect": "ATQ +18%.",
+      "fourSetEffect": "Aumenta el daño en un 30% contra enemigos con más del 50% de Vida."
     }
   }
 }
