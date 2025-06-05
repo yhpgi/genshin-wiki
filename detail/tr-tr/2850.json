@@ -5,16 +5,17 @@
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/29/35428890/f29490bddc56b4a6773b6c5003bbb853_9091170755650648414.png",
   "headerImgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/29/35428890/6e1e5196da96bd65e549abe7fa861915_5512582505515246122.png",
   "filterValues": {
-    "characterRegion": "Sumeru",
-    "characterWeapon": "Katalizör",
     "characterProperty": "Element Ustalığı",
+    "characterWeapon": "Katalizör",
     "characterVision": "Doğa",
+    "characterRegion": "Sumeru",
     "characterRarity": 5
   },
   "menuId": 2,
   "menuName": "Karakter Arşivi",
   "version": 1684994404,
   "components": {
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header&utm_source=hoyolab&utm_medium=tools&lang=en-us&bbs_theme=light&bbs_theme_device=1#/map/2?shown_types=391,452,221,401&center=3264.12,-4450.00&zoom=-2.00",
     "summaryList": [
       {
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/31/35428890/144c9c115d06542ec2e757769a193a13_3081320291128278272.png",
@@ -1707,135 +1708,275 @@
         ]
       }
     ],
-    "baseInfo": [
-      {
-        "key": "İsim",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Nahida"
-          }
-        ]
-      },
-      {
-        "key": "Doğum Günü",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "27/10"
-          }
-        ]
-      },
-      {
-        "key": "Takımyıldız",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Hürmüz'ün Bilgeliği"
-          }
-        ]
-      },
-      {
-        "key": "Künye",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Saflık Abidesi"
-          }
-        ]
-      },
-      {
-        "key": "Gnosis",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Doğa"
-          }
-        ]
-      },
-      {
-        "key": "İlişki",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Sumeru Şehri"
-          }
-        ]
-      },
-      {
-        "key": "Çince Ses.",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "花玲"
-          }
-        ]
-      },
-      {
-        "key": "İngilizce Ses.",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Kimberley Anne Campbell"
-          }
-        ]
-      },
-      {
-        "key": "Japonca Ses.",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "TAMURA Yukari"
-          }
-        ]
-      },
-      {
-        "key": "Korece Ses.",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "박시윤"
-          }
-        ]
-      },
-      {
-        "key": "Özel Tarif",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3091,
-            "name": "Halvamazd",
-            "desc": "<p>Nahida'nın özel tarifi. Sumeru dilinde \"mazd\"ın \"bilgelik\" anlamına geldiği söylenir ve böylesine lezzetli bir \"bilgelik\" karşı konulamazdır. Nahida gözlerinde kibar bir gülümsemeyle: \"Denizşakayığı küçük balığa yardım etti ve büyümesine tanık oldu. Bu yüzden küçük balığın karşılığında bir şeyler vermesi gayet normaldir.\"</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/13/77454259/0156a13895153083172e374ef868ad38_554387872915275840.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "İlk Çıkış Tarihi",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "3.2"
-          }
-        ]
-      },
-      {
-        "key": "Dehanın Yakarışı Kart Oyunu Karakter Kartı",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3841,
-            "name": "Nahida",
-            "desc": "<p><span style=\"color: #FFFFFF\">\"Saflık Abidesi\" Nahida</span></p><p>Sarayın derinliklerinden bahar canlanır, dertlere deva saflığıyla gelir.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/25/25073864/d19f6f9f8ca5ebe5120a00ff4a5331e0_6820993236537679910.png",
-            "amount": 1
-          }
-        ],
-        "isMaterial": true
-      }
-    ],
     "customize": [
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Karakter Yeteneklerine Genel Bakış",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Nahida'nın ana hasar kaynağı Element Becerisine basılı tutarak düşmanları <color=#ffd780>Skandha Tohumuyla</color> işaretlemesinden gelir.\n<color=#ffd780>Skandha Tohumuyla</color> işaretli olan bir düşman üzerinde <color=#ffd780>Element Tepkimesi</color> tetiklemek veya düşmanların <color=#99ff88>Doğa Çekirdekleri</color> nden hasar alma durumu bağlı bütün düşmanlarda <color=#ffd780>Üç Karma Arınmasını</color> tetikler.\n<color=#ffd780>Üç Karma Arınması,</color> Nahida'nın <color=#ffd780>Saldırı</color> ve <color=#ffd780>Element Ustalığına</color> dayalı olarak <color=#99ff88>Doğa Hasarı</color> verir.\nNahida'nın pasifi <color=#ffd780>Element Ustalığına</color> dayalı olacak şekilde, ek olarak Üç Karma Arınmasına <color=#ffd780>Hasar</color> ve <color=#ffd780>Kritik Oran</color> verir.\nNahida'nın <color=#ffd780>Element Patlaması</color> bir <color=#ffd780>Maya Tapınağı</color> oluşturur ve bu Tapınağın etkisi takım üyelerine göre farklı etkiler verir:\n2 <color=#ff9999>Ateş</color> Karakteri: Üç Karma Arınmasının verdiği Hasar artar.\n2 <color=#ffacff>Elektrik</color> Karakteri: her Üç Karma Arınması arasındaki süre azalır.\n2 <color=#80c0ff>Su</color> Karakteri: <color=#ffd780>Maya Tapınağı'</color> nın süresi artar.\nNahida'nın pasifi <color=#ffd780>Maya Tapınağı</color> 'nın içinde olan karakterlerin <color=#ffd780>Element Ustalığını</color> artırır."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Silah Önerileri",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "3-Yıldızlı Silahlar"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2050,
+        "name": "Büyü Rehberi",
+        "desc": "Version 12. A reprint featuring corrections to Version 11 and brand-new additions based on recent developments.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/魔导绪论.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Temel Saldırı</color>\n354\n<color=#ffffff>Element Ustalığı</color>\n187\n<color=#ffffff>Kaynak</color>\nDilek\nBüyü rehberi genel hasarını artırması için Nahida'ya <color=#ffd780>Element Ustalığı</color> verir. Kurban Kanunları hariç diğer tüm 4 yıldızlı silahlardan daha çok <color=#ffd780>Element Ustalığı</color> verir. Nahida bu silahın pasif özelliği ile eğer takımında <color=#ffacff>elektrik</color> veya <color=#80c0ff>su</color> karakteri var ise kendi hasarını artırabilir."
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "4-Yıldızlı Silahlar"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1931,
+        "name": "Deniz Haritası",
+        "desc": "<p>Bölgelerdeki akıntıları ve iklimi ayrıntılı olarak anlatan bir deniz haritası. Liyue'ye ticaret yoluyla gelindiği biliniyor. </p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/万国诸海图谱.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Temel Saldırı</color>\n565\n<color=#ffffff>Element Ustalığı</color>\n110\n<color=#ffffff>Kaynak</color>\nÜretilebilir Silah\nDeniz Haritası genel hasarını artırması için Nahida'ya <color=#ffd780>Element Ustalığı</color> verir. Bu silahın pasif özelliği ise <color=#ffd780>Element Tepkimesi</color> tetiklendiği zaman <color=#ffd780>Element Hasarı bonusu</color> verir. Bu pasif Nahida'nın Üç Karma Arınması ile sinerjiktir."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2006,
+        "name": "Kurban Kanunları",
+        "desc": "<p>Okunamayacak kadar hasar görmüş bir el yazması. Zamanın rüzgarları tarafından lanetlenmiş bir eşya. </p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/祭礼残章.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Temel Saldırı</color>\n454\n<color=#ffffff>Element Ustalığı</color>\n221\n<color=#ffffff>Kaynak</color>\nDilek\nKurban Kanunları genel hasarını artırması için Nahida'ya <color=#ffd780>Element Ustalığı</color> verir. 4 yıldızlar arasında en yüksek Element Ustalığına sahiptir. Ama Nahida, <color=#ffd780>Skandha Tohumları</color> özelliğini <color=#ffd780>Element Becerisinin BS</color> 'sini yenilemeden her zaman %100 kullanabildiği için bu silahın pasifi çok kullanışlı değildir."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2910,
+        "name": "Serseri Akşam Yıldızı",
+        "desc": "<p>Bu aygıt aslında araştırmacılar tarafından göksel olayları gözlemlemek için yapılmıştı. Hem geçit hem de katalizör görevi görür.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/12/35428890/350f5bf6ae4210be623556772c4c3836_6719838927234871355.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Temel Saldırı</color>\n510\n<color=#ffffff>Element Ustalığı</color>\n165\n<color=#ffffff>Kaynak</color>\nDilek\nSerseri Akşam Yıldızı genel hasarını artırması için Nahida'ya <color=#ffd780>Element Ustalığı</color> verir. Pasif özelliği ise Nahida'nın <color=#ffd780>Element Ustalığına</color> dayanarak takıma ek <color=#ffd780>Saldırı</color> Bonusu verir."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1997,
+        "name": "Hakushin Yüzüğü",
+        "desc": "A catalyst that carries the memory of the Kitsune Saiguu of ancient times. However, this device is but an impoverished vessel for the full breadth of her thought.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/白辰之环.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Temel Saldırı</color>\n565\n<color=#ffffff>Enerji Yüklemesi</color>\n30.6%\n<color=#ffffff>Kaynak</color>\nÜretilebilir Silah\nHakushin Yüzüğü, Nahida'ya <color=#ffd780>Enerji Yüklemesi</color> verir. Ve eğer Nahida bir <color=#ffacff>Elektrik Tepkimesi</color> tetikler ise bu silahın pasifi takıma <color=#99ff88>Doğa</color> ve <color=#ffacff>Elektrik Hasarı</color> bonusu verir. Bu silah en iyi <color=#99ff88>Şiddetlenme</color> tepkimesi odaklı takımlarda kullanılır."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1991,
+        "name": "Göçebenin Nota Kitabı",
+        "desc": "<p>Notalarla dolu, büyük bir müzik defteri. Güveler ve zaman bu deftere çok acımasız davranmış olsa da, satırlarında bulunabilecek gücün eşi benzeri yok.</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/流浪乐章.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Temel Saldırı</color>\n510\n<color=#ffffff>Kritik Hasar</color>\n55.1%\n<color=#ffffff>Kaynak</color>\nDilek\nGöçebenin Nota Kitabı, Nahida'ya <color=#ffd780>Kririk Hasar</color> verir ve rastgele şekilde şu etkilerden birini sağlar: <color=#ffd780>Saldırı</color> artışı, <color=#ffd780>Element Hasarı</color> artışı, <color=#ffd780>Element Ustalığı</color> artışı."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1939,
+        "name": "Güneş İncisi",
+        "desc": "<p>Güneşin ve ayın ışığını barındıran, mat altından yapılmış bir inci. Etrafı sıcak bir güçle sarılıdır.</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/匣里日月.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Temel Saldırı</color>\n510\n<color=#ffffff>Kritik Oran</color>\n27.6%\n<color=#ffffff>Kaynak</color>\nAydınlanma Şarkısını satın al\n(Savaş Bileti)\nGüneş İncisi, Nahida'ya <color=#ffd780>Kritik Oran</color> verir ve ekstra <color=#ffd780>Element Becerisi/Normal Saldırı Hasarı</color> verir. Dahası, eğer Nahida <color=#ffd780>Normal Saldırı</color> kullanırsa <color=#ffd780>Element Beceri Hasarı</color> yükselir ve <color=#ffd780>Element Becerisi/Patlamasını</color> kullandıktan sonra <color=#ffd780>Normal Saldırı Hasarını</color> artırır."
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "5-Yıldızlı Silahlar"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2966,
+        "name": "Binbir Gece Süzülen Rüyalar",
+        "desc": "<p>Bu lamba binbir geceyi aşkındır süzülen rüyaları aydınlatır ve zümrüt yeşili ışığında kadim günlerin bir şarkısı yankılanır.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/31/35428890/afd146c520b3a0bd72489a3426d8f283_7854516109466365358.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Temel Saldırı</color>\n542\n<color=#ffffff>Element Ustalığı</color>\n265\n<color=#ffffff>Kaynak</color>\nDilek\nBinbir Gece Süzülen Rüyalar, Nahida'nın imza/özel silahıdır. Nahida ve takımına <color=#ffd780>Element Ustalığı</color> bonusu verir. Dahası takım arkadaşları element tiplerine bağımlı olarak bonuslar elde ederler. <color=#99ff88>Doğa</color> karakterleri <color=#ffd780>Element Ustalığı</color> elde eder iken diğer tip elementler <color=#ffd780>Element Hasar</color> bonusu elde eder."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2001,
+        "name": "Kagura'nın Hakikati",
+        "desc": "<p>Kagura Dansı sırasında kullanılan bu çanlar bizzat Guuji tarafından kutsanmış ve Kutsal Kiraz Ağacının kokusu üzerlerine sinmiştir.</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/神乐之真意.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Temel Saldırı</color>\n608\n<color=#ffffff>Kritik Hasar</color>\n66.2%\n<color=#ffffff>Kaynak</color>\nDilek\nKagura'nın Hakikatı, Nahida'ya <color=#ffd780>Kritik Hasar</color> verir ve pasif özelliği <color=#ffd780>Element Beceri Hasarını</color> artırır. Nahida, <color=#ffd780>Elemental Becerisi</color> ndeki düşük <color=#ffd780>BS</color> nedeniyle silahın pasifinde olan 3 kademeyi kolayca oluştarabilir ve maksimum bonus <color=#ffd780>Hasarı</color> elde edebilir. Bununla birlikte, <color=#ffd780>Kritik Hasar</color> bonusunu tam olarak kullanmak için yeterli bir <color=#ffd780>Kritik Oranına</color> ihtiyacı olacaktır."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1951,
+        "name": "Kutsal Rüzgarların Kayıp Duası",
+        "desc": "<p>Rüzgarın ilk hizmetkarları tarafından yazılmış kutsal bir eser. Bin yıl boyunca bu mesajı taşıyan eser rüzgar tarafından kutsandı. </p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/四风原典.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Temel Saldırı</color>\n608\n<color=#ffffff>Kritik Oran</color>\n33.1%\n<color=#ffffff>Kaynak</color>\nDilek\nKutsal Rüzgarların Kayıp Duası, Nahida'ya <color=#ffd780>Kritik Oran</color> verir. Pasif özelliği ise <color=#ffd780>Hareket Hızını</color> artırır. Nahida sahada ne kadar uzun süre kalırsa (maksimum 4 yığın veya 16 sn), o kadarlık ek bir <color=#ffd780>Element Hasar</color> bonusu sağlar."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Yadigar Önerileri",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Yadigar Özellikleri"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/1387f1512524772db99ae30b6303f939_5072609172935942900.png",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/56451470fe75f710b812ac28e226273b_5774236690802856497.png",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/8bc07934c9290b83751c7fa183a43ab7_32021027934025390.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>Element Ustalığı</color>\n<color=#ffd780>Element Ustalığı</color>\n<color=#99ff88>Doğa Hasarı</color>\n<color=#ffd780>Element Ustalığı</color>\n<color=#ffd780>Kritik Oran</color>\n<color=#ffd780>Kritik Hasar</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "4-Parça Set"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2673,
+        "name": "Yaldızlı Rüyalar",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/ae8a2c6f24df66e1bd7cc2dbd83d330d_5836084318530605114.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Set Bonusu</color>\nElement Ustalığı +80\nElement Tepkimeleri Element Ustalığını/ Saldırıyı artırır.\nBu set Nahida'nın <color=#ffd780>Element Ustalığını</color> artırarak Element Tepkime Hasarını artırır. Ayrıca, tepkileri tetiklemek, tüm parti üyelerinin <color=#ffd780>Element Ustalığını/Saldırı</color> 'sını artırır."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2672,
+        "name": "Derin Orman Hatıraları",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/f526e111c9c7dcbaed0d7fd8c8d58ef2_6545580301650182707.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Set Bonusu</color>\nDoğa Hasarı +15%\nDüşmanın Doğa direncini düşürür.\nBu set takımın <color=#99ff88>Doğa Hasarını</color> artırır. 4 parçalık set bonusunun birikmediğine dikkat edilmelidir, bu nedenle takımda 4 parçalı Derin Orman Hatıraları setine sahip başka bir karakter varsa, set Nilou veya takım için herhangi bir bonus sağlamaz. Bu durumda başka bir 4 parça set veya 2 Parça / 2 Parça Set seçmek daha iyi olabilir."
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "2-Parça / 2-Parça Set"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2672,
+        "name": "Derin Orman Hatıraları",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/f526e111c9c7dcbaed0d7fd8c8d58ef2_6545580301650182707.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2081,
+        "name": "Göçebe Kumpanyası",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2673,
+        "name": "Yaldızlı Rüyalar",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/ae8a2c6f24df66e1bd7cc2dbd83d330d_5836084318530605114.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Kayıp Cennet Çiçeği",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/05/35428890/50ce09dfa5a91a33aa9cedfb15bcf2d1_864016614991586234.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Set Bonus</color>\nDoğa Hasarı +15%\nElement Ustalığı +80\nBu setlerin herhangi birinden ikişer adet (2 parça/2 parça olacak şekilde) kullanarak Nahida'nın <color=#ffd780>Element Ustalığı</color> , <color=#99ff88>Doğa Hasarı</color> , <color=#ffd780>Kritik Oran</color> , <color=#ffd780>Kritik Hasar ve Saldırısını</color> maksimize edin."
+      },
       {
         "type": "Heading",
         "level": 1,
@@ -2429,274 +2570,6 @@
       {
         "type": "RichText",
         "text": "<color=#ffd780>24/11/2022</color>\n<color=#ffffff>[İngilizceden çevrilmiştir]</color>\n<color=#ffffff>[İngilizceye Japoncadan çevrilmiştir]</color>\nGezginler sayesinde resmi Twitter takipçi sayısı 2,7 milyonu aştı!\nBunu kutlamak için özel bir illüstrasyon yayınlayacağız!\nLütfen Genshin Impact hakkında çeşitli bilgiler ileten resmi Twitter'ı sayfasını desteklemeye devam edin!\n<color=#80c0ff>Twitter:</color>\n<color=#37ffff>https:/twitter.com/Genshin_7/status/1595718877668954113</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Karakter Yeteneklerine Genel Bakış",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Nahida'nın ana hasar kaynağı Element Becerisine basılı tutarak düşmanları <color=#ffd780>Skandha Tohumuyla</color> işaretlemesinden gelir.\n<color=#ffd780>Skandha Tohumuyla</color> işaretli olan bir düşman üzerinde <color=#ffd780>Element Tepkimesi</color> tetiklemek veya düşmanların <color=#99ff88>Doğa Çekirdekleri</color> nden hasar alma durumu bağlı bütün düşmanlarda <color=#ffd780>Üç Karma Arınmasını</color> tetikler.\n<color=#ffd780>Üç Karma Arınması,</color> Nahida'nın <color=#ffd780>Saldırı</color> ve <color=#ffd780>Element Ustalığına</color> dayalı olarak <color=#99ff88>Doğa Hasarı</color> verir.\nNahida'nın pasifi <color=#ffd780>Element Ustalığına</color> dayalı olacak şekilde, ek olarak Üç Karma Arınmasına <color=#ffd780>Hasar</color> ve <color=#ffd780>Kritik Oran</color> verir.\nNahida'nın <color=#ffd780>Element Patlaması</color> bir <color=#ffd780>Maya Tapınağı</color> oluşturur ve bu Tapınağın etkisi takım üyelerine göre farklı etkiler verir:\n2 <color=#ff9999>Ateş</color> Karakteri: Üç Karma Arınmasının verdiği Hasar artar.\n2 <color=#ffacff>Elektrik</color> Karakteri: her Üç Karma Arınması arasındaki süre azalır.\n2 <color=#80c0ff>Su</color> Karakteri: <color=#ffd780>Maya Tapınağı'</color> nın süresi artar.\nNahida'nın pasifi <color=#ffd780>Maya Tapınağı</color> 'nın içinde olan karakterlerin <color=#ffd780>Element Ustalığını</color> artırır."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Silah Önerileri",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "3-Yıldızlı Silahlar"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2050,
-        "name": "Büyü Rehberi",
-        "desc": "Version 12. A reprint featuring corrections to Version 11 and brand-new additions based on recent developments.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/魔导绪论.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Temel Saldırı</color>\n354\n<color=#ffffff>Element Ustalığı</color>\n187\n<color=#ffffff>Kaynak</color>\nDilek\nBüyü rehberi genel hasarını artırması için Nahida'ya <color=#ffd780>Element Ustalığı</color> verir. Kurban Kanunları hariç diğer tüm 4 yıldızlı silahlardan daha çok <color=#ffd780>Element Ustalığı</color> verir. Nahida bu silahın pasif özelliği ile eğer takımında <color=#ffacff>elektrik</color> veya <color=#80c0ff>su</color> karakteri var ise kendi hasarını artırabilir."
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "4-Yıldızlı Silahlar"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1931,
-        "name": "Deniz Haritası",
-        "desc": "<p>Bölgelerdeki akıntıları ve iklimi ayrıntılı olarak anlatan bir deniz haritası. Liyue'ye ticaret yoluyla gelindiği biliniyor. </p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/万国诸海图谱.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Temel Saldırı</color>\n565\n<color=#ffffff>Element Ustalığı</color>\n110\n<color=#ffffff>Kaynak</color>\nÜretilebilir Silah\nDeniz Haritası genel hasarını artırması için Nahida'ya <color=#ffd780>Element Ustalığı</color> verir. Bu silahın pasif özelliği ise <color=#ffd780>Element Tepkimesi</color> tetiklendiği zaman <color=#ffd780>Element Hasarı bonusu</color> verir. Bu pasif Nahida'nın Üç Karma Arınması ile sinerjiktir."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2006,
-        "name": "Kurban Kanunları",
-        "desc": "<p>Okunamayacak kadar hasar görmüş bir el yazması. Zamanın rüzgarları tarafından lanetlenmiş bir eşya. </p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/祭礼残章.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Temel Saldırı</color>\n454\n<color=#ffffff>Element Ustalığı</color>\n221\n<color=#ffffff>Kaynak</color>\nDilek\nKurban Kanunları genel hasarını artırması için Nahida'ya <color=#ffd780>Element Ustalığı</color> verir. 4 yıldızlar arasında en yüksek Element Ustalığına sahiptir. Ama Nahida, <color=#ffd780>Skandha Tohumları</color> özelliğini <color=#ffd780>Element Becerisinin BS</color> 'sini yenilemeden her zaman %100 kullanabildiği için bu silahın pasifi çok kullanışlı değildir."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2910,
-        "name": "Serseri Akşam Yıldızı",
-        "desc": "<p>Bu aygıt aslında araştırmacılar tarafından göksel olayları gözlemlemek için yapılmıştı. Hem geçit hem de katalizör görevi görür.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/12/35428890/350f5bf6ae4210be623556772c4c3836_6719838927234871355.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Temel Saldırı</color>\n510\n<color=#ffffff>Element Ustalığı</color>\n165\n<color=#ffffff>Kaynak</color>\nDilek\nSerseri Akşam Yıldızı genel hasarını artırması için Nahida'ya <color=#ffd780>Element Ustalığı</color> verir. Pasif özelliği ise Nahida'nın <color=#ffd780>Element Ustalığına</color> dayanarak takıma ek <color=#ffd780>Saldırı</color> Bonusu verir."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1997,
-        "name": "Hakushin Yüzüğü",
-        "desc": "A catalyst that carries the memory of the Kitsune Saiguu of ancient times. However, this device is but an impoverished vessel for the full breadth of her thought.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/白辰之环.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Temel Saldırı</color>\n565\n<color=#ffffff>Enerji Yüklemesi</color>\n30.6%\n<color=#ffffff>Kaynak</color>\nÜretilebilir Silah\nHakushin Yüzüğü, Nahida'ya <color=#ffd780>Enerji Yüklemesi</color> verir. Ve eğer Nahida bir <color=#ffacff>Elektrik Tepkimesi</color> tetikler ise bu silahın pasifi takıma <color=#99ff88>Doğa</color> ve <color=#ffacff>Elektrik Hasarı</color> bonusu verir. Bu silah en iyi <color=#99ff88>Şiddetlenme</color> tepkimesi odaklı takımlarda kullanılır."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1991,
-        "name": "Göçebenin Nota Kitabı",
-        "desc": "<p>Notalarla dolu, büyük bir müzik defteri. Güveler ve zaman bu deftere çok acımasız davranmış olsa da, satırlarında bulunabilecek gücün eşi benzeri yok.</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/流浪乐章.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Temel Saldırı</color>\n510\n<color=#ffffff>Kritik Hasar</color>\n55.1%\n<color=#ffffff>Kaynak</color>\nDilek\nGöçebenin Nota Kitabı, Nahida'ya <color=#ffd780>Kririk Hasar</color> verir ve rastgele şekilde şu etkilerden birini sağlar: <color=#ffd780>Saldırı</color> artışı, <color=#ffd780>Element Hasarı</color> artışı, <color=#ffd780>Element Ustalığı</color> artışı."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1939,
-        "name": "Güneş İncisi",
-        "desc": "<p>Güneşin ve ayın ışığını barındıran, mat altından yapılmış bir inci. Etrafı sıcak bir güçle sarılıdır.</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/匣里日月.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Temel Saldırı</color>\n510\n<color=#ffffff>Kritik Oran</color>\n27.6%\n<color=#ffffff>Kaynak</color>\nAydınlanma Şarkısını satın al\n(Savaş Bileti)\nGüneş İncisi, Nahida'ya <color=#ffd780>Kritik Oran</color> verir ve ekstra <color=#ffd780>Element Becerisi/Normal Saldırı Hasarı</color> verir. Dahası, eğer Nahida <color=#ffd780>Normal Saldırı</color> kullanırsa <color=#ffd780>Element Beceri Hasarı</color> yükselir ve <color=#ffd780>Element Becerisi/Patlamasını</color> kullandıktan sonra <color=#ffd780>Normal Saldırı Hasarını</color> artırır."
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "5-Yıldızlı Silahlar"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2966,
-        "name": "Binbir Gece Süzülen Rüyalar",
-        "desc": "<p>Bu lamba binbir geceyi aşkındır süzülen rüyaları aydınlatır ve zümrüt yeşili ışığında kadim günlerin bir şarkısı yankılanır.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/31/35428890/afd146c520b3a0bd72489a3426d8f283_7854516109466365358.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Temel Saldırı</color>\n542\n<color=#ffffff>Element Ustalığı</color>\n265\n<color=#ffffff>Kaynak</color>\nDilek\nBinbir Gece Süzülen Rüyalar, Nahida'nın imza/özel silahıdır. Nahida ve takımına <color=#ffd780>Element Ustalığı</color> bonusu verir. Dahası takım arkadaşları element tiplerine bağımlı olarak bonuslar elde ederler. <color=#99ff88>Doğa</color> karakterleri <color=#ffd780>Element Ustalığı</color> elde eder iken diğer tip elementler <color=#ffd780>Element Hasar</color> bonusu elde eder."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2001,
-        "name": "Kagura'nın Hakikati",
-        "desc": "<p>Kagura Dansı sırasında kullanılan bu çanlar bizzat Guuji tarafından kutsanmış ve Kutsal Kiraz Ağacının kokusu üzerlerine sinmiştir.</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/神乐之真意.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Temel Saldırı</color>\n608\n<color=#ffffff>Kritik Hasar</color>\n66.2%\n<color=#ffffff>Kaynak</color>\nDilek\nKagura'nın Hakikatı, Nahida'ya <color=#ffd780>Kritik Hasar</color> verir ve pasif özelliği <color=#ffd780>Element Beceri Hasarını</color> artırır. Nahida, <color=#ffd780>Elemental Becerisi</color> ndeki düşük <color=#ffd780>BS</color> nedeniyle silahın pasifinde olan 3 kademeyi kolayca oluştarabilir ve maksimum bonus <color=#ffd780>Hasarı</color> elde edebilir. Bununla birlikte, <color=#ffd780>Kritik Hasar</color> bonusunu tam olarak kullanmak için yeterli bir <color=#ffd780>Kritik Oranına</color> ihtiyacı olacaktır."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1951,
-        "name": "Kutsal Rüzgarların Kayıp Duası",
-        "desc": "<p>Rüzgarın ilk hizmetkarları tarafından yazılmış kutsal bir eser. Bin yıl boyunca bu mesajı taşıyan eser rüzgar tarafından kutsandı. </p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/四风原典.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Temel Saldırı</color>\n608\n<color=#ffffff>Kritik Oran</color>\n33.1%\n<color=#ffffff>Kaynak</color>\nDilek\nKutsal Rüzgarların Kayıp Duası, Nahida'ya <color=#ffd780>Kritik Oran</color> verir. Pasif özelliği ise <color=#ffd780>Hareket Hızını</color> artırır. Nahida sahada ne kadar uzun süre kalırsa (maksimum 4 yığın veya 16 sn), o kadarlık ek bir <color=#ffd780>Element Hasar</color> bonusu sağlar."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Yadigar Önerileri",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Yadigar Özellikleri"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/1387f1512524772db99ae30b6303f939_5072609172935942900.png",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/56451470fe75f710b812ac28e226273b_5774236690802856497.png",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/8bc07934c9290b83751c7fa183a43ab7_32021027934025390.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>Element Ustalığı</color>\n<color=#ffd780>Element Ustalığı</color>\n<color=#99ff88>Doğa Hasarı</color>\n<color=#ffd780>Element Ustalığı</color>\n<color=#ffd780>Kritik Oran</color>\n<color=#ffd780>Kritik Hasar</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "4-Parça Set"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2673,
-        "name": "Yaldızlı Rüyalar",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/ae8a2c6f24df66e1bd7cc2dbd83d330d_5836084318530605114.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Set Bonusu</color>\nElement Ustalığı +80\nElement Tepkimeleri Element Ustalığını/ Saldırıyı artırır.\nBu set Nahida'nın <color=#ffd780>Element Ustalığını</color> artırarak Element Tepkime Hasarını artırır. Ayrıca, tepkileri tetiklemek, tüm parti üyelerinin <color=#ffd780>Element Ustalığını/Saldırı</color> 'sını artırır."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2672,
-        "name": "Derin Orman Hatıraları",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/f526e111c9c7dcbaed0d7fd8c8d58ef2_6545580301650182707.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Set Bonusu</color>\nDoğa Hasarı +15%\nDüşmanın Doğa direncini düşürür.\nBu set takımın <color=#99ff88>Doğa Hasarını</color> artırır. 4 parçalık set bonusunun birikmediğine dikkat edilmelidir, bu nedenle takımda 4 parçalı Derin Orman Hatıraları setine sahip başka bir karakter varsa, set Nilou veya takım için herhangi bir bonus sağlamaz. Bu durumda başka bir 4 parça set veya 2 Parça / 2 Parça Set seçmek daha iyi olabilir."
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "2-Parça / 2-Parça Set"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2672,
-        "name": "Derin Orman Hatıraları",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/f526e111c9c7dcbaed0d7fd8c8d58ef2_6545580301650182707.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2081,
-        "name": "Göçebe Kumpanyası",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2673,
-        "name": "Yaldızlı Rüyalar",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/194600931/ae8a2c6f24df66e1bd7cc2dbd83d330d_5836084318530605114.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3321,
-        "name": "Kayıp Cennet Çiçeği",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/05/35428890/50ce09dfa5a91a33aa9cedfb15bcf2d1_864016614991586234.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Set Bonus</color>\nDoğa Hasarı +15%\nElement Ustalığı +80\nBu setlerin herhangi birinden ikişer adet (2 parça/2 parça olacak şekilde) kullanarak Nahida'nın <color=#ffd780>Element Ustalığı</color> , <color=#99ff88>Doğa Hasarı</color> , <color=#ffd780>Kritik Oran</color> , <color=#ffd780>Kritik Hasar ve Saldırısını</color> maksimize edin."
       },
       {
         "type": "Heading",
@@ -3617,7 +3490,6 @@
         "text": "<color=#ece5d8>Mesaj:</color>\n\"Bugünkü gençler her şeye çok fazla kafa yoruyor. Doğa Hükümdarı olmasaydı, biz Aaru köylüleri çoktan şu tapınak kalıntılarının altında iskelet olmuştuk.\"\n\"Geçenlerde birinden Kral Deshret'in yeniden doğacağını duydum. Ne kadar saçma!\"\n\"Biz en iyisi işimize dönelim. Her ay Aaru Köyü'ne gelen azıcık erzakla geçinmemiz mümkün değil.\""
       }
     ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header&utm_source=hoyolab&utm_medium=tools&lang=en-us&bbs_theme=light&bbs_theme_device=1#/map/2?shown_types=391,452,221,401&center=3264.12,-4450.00&zoom=-2.00",
     "story": [
       {
         "title": "Karakter Ayrıntıları",
@@ -4571,6 +4443,134 @@
           }
         ],
         "attributes": []
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "İsim",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Nahida"
+          }
+        ]
+      },
+      {
+        "key": "Doğum Günü",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "27/10"
+          }
+        ]
+      },
+      {
+        "key": "Takımyıldız",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Hürmüz'ün Bilgeliği"
+          }
+        ]
+      },
+      {
+        "key": "Künye",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Saflık Abidesi"
+          }
+        ]
+      },
+      {
+        "key": "Gnosis",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Doğa"
+          }
+        ]
+      },
+      {
+        "key": "İlişki",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Sumeru Şehri"
+          }
+        ]
+      },
+      {
+        "key": "Çince Ses.",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "花玲"
+          }
+        ]
+      },
+      {
+        "key": "İngilizce Ses.",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Kimberley Anne Campbell"
+          }
+        ]
+      },
+      {
+        "key": "Japonca Ses.",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "TAMURA Yukari"
+          }
+        ]
+      },
+      {
+        "key": "Korece Ses.",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "박시윤"
+          }
+        ]
+      },
+      {
+        "key": "Özel Tarif",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3091,
+            "name": "Halvamazd",
+            "desc": "<p>Nahida'nın özel tarifi. Sumeru dilinde \"mazd\"ın \"bilgelik\" anlamına geldiği söylenir ve böylesine lezzetli bir \"bilgelik\" karşı konulamazdır. Nahida gözlerinde kibar bir gülümsemeyle: \"Denizşakayığı küçük balığa yardım etti ve büyümesine tanık oldu. Bu yüzden küçük balığın karşılığında bir şeyler vermesi gayet normaldir.\"</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/13/77454259/0156a13895153083172e374ef868ad38_554387872915275840.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "İlk Çıkış Tarihi",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "3.2"
+          }
+        ]
+      },
+      {
+        "key": "Dehanın Yakarışı Kart Oyunu Karakter Kartı",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3841,
+            "name": "Nahida",
+            "desc": "<p><span style=\"color: #FFFFFF\">\"Saflık Abidesi\" Nahida</span></p><p>Sarayın derinliklerinden bahar canlanır, dertlere deva saflığıyla gelir.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/25/25073864/d19f6f9f8ca5ebe5120a00ff4a5331e0_6820993236537679910.png",
+            "amount": 1
+          }
+        ],
+        "isMaterial": true
       }
     ],
     "ascension": [
