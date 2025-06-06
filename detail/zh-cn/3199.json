@@ -8,14 +8,101 @@
     "cardCharacterCamp": [
       "魔物"
     ],
-    "cardCharacterObtainingMethod": "酒馆挑战",
     "cardCharacterWeaponType": "其他武器",
-    "cardCharacterChargingPoint": "2充能"
+    "cardCharacterChargingPoint": "2充能",
+    "cardCharacterObtainingMethod": "酒馆挑战"
   },
   "menuId": 17,
   "menuName": "角色牌",
   "version": 1719394763,
   "components": {
+    "tcg": {
+      "headerImgs": [
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/920c7d546361d0b52dd95613517319f9_6929785408955439800.png",
+          "imgDesc": "初始牌面"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/05/47826599/8ba55ac2afa34a7cfce32fd140bbf192_4585802681125584212.gif",
+          "imgDesc": "影幻牌面"
+        }
+      ],
+      "hp": 10
+    },
+    "talent": [
+      {
+        "key": "菌王舞步",
+        "title": "菌王舞步",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/47817b4476bcd8b44c86c87debf042f2_5482752834034291550.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>普通攻击</color>\n造成2点 <color=#ffffff>物理伤害</color> 。"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "不稳定孢子云",
+        "title": "不稳定孢子云",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/24c3fc6700c665e8f0e67239c2244d74_2549646968151298512.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>元素战技</color>\n造成3点 <color=#99ff88>草元素伤害</color> 。"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "尾羽豪放",
+        "title": "尾羽豪放",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/515b825928f7e1ba52ff024f82afd1f8_7111784788391568808.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>元素爆发</color>\n造成4点 <color=#99ff88>草元素伤害</color> ，消耗所有 <color=#ffffff>活化激能</color> 层数，每层使此伤害+1。"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "活化激能",
+        "title": "活化激能",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/8eda35aa45e48dcada8e955719c1bfd1_2810343469383876894.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>被动技能</color>\n【被动】战斗开始时，初始附属 <color=#ffffff>活化激能</color> 。"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "草元素伤害",
+        "title": "草元素伤害",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/05/47826599/e8cff941b5a0ff248efde360ec9e91fe_2397857129027225162.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "附着草元素，可发生元素反应：\n【 <color=#99ff88>草元素</color> + <color=#80c0ff>水元素</color> 】 <color=#ffffff>绽放</color> ：本伤害+1，生成使下次火元素或雷元素伤害+2的[ <color=#ffffff>草原核</color> ]\n【 <color=#99ff88>草元素</color> + <color=#ff9999>火元素</color> 】 <color=#ffffff>燃烧</color> ：本伤害+1，生成回合结束时造成1点火元素伤害的[ <color=#ffffff>燃烧烈焰</color> ]（可用次数1，最多叠加到2）\n【 <color=#99ff88>草元素</color> + <color=#ffacff>雷元素</color> 】 <color=#ffffff>原激化</color> ：本伤害+1，生成使下2次草元素或雷元素伤害+1的[ <color=#ffffff>激化领域</color> ]"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "规则术语",
+        "title": "规则术语",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/05/47826599/07bae546ac7c69ef6402170b283840c5_5206518276073401140.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ece5d8>物理伤害</color>\n物理伤害不会附着元素，也不会发生元素反应。\n<color=#ece5d8>活化激能</color>\n<color=#ffd780>状态</color>\n<color=#ffffff>本角色造成或受到元素伤害后：</color> 累积1层 <color=#ffffff>「活化激能」</color> 。（最多累积3层）\n<color=#ffffff>结束阶段：</color> 如果 <color=#ffffff>「活化激能」</color> 层数已达到上限，就将其清空。同时，角色失去所有充能。"
+          }
+        ],
+        "attributes": []
+      }
+    ],
     "customize": [
       {
         "type": "Heading",
@@ -186,80 +273,6 @@
         "displayStyle": "text"
       }
     ],
-    "talent": [
-      {
-        "key": "菌王舞步",
-        "title": "菌王舞步",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/47817b4476bcd8b44c86c87debf042f2_5482752834034291550.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>普通攻击</color>\n造成2点 <color=#ffffff>物理伤害</color> 。"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "不稳定孢子云",
-        "title": "不稳定孢子云",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/24c3fc6700c665e8f0e67239c2244d74_2549646968151298512.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>元素战技</color>\n造成3点 <color=#99ff88>草元素伤害</color> 。"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "尾羽豪放",
-        "title": "尾羽豪放",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/515b825928f7e1ba52ff024f82afd1f8_7111784788391568808.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>元素爆发</color>\n造成4点 <color=#99ff88>草元素伤害</color> ，消耗所有 <color=#ffffff>活化激能</color> 层数，每层使此伤害+1。"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "活化激能",
-        "title": "活化激能",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/8eda35aa45e48dcada8e955719c1bfd1_2810343469383876894.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>被动技能</color>\n【被动】战斗开始时，初始附属 <color=#ffffff>活化激能</color> 。"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "草元素伤害",
-        "title": "草元素伤害",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/05/47826599/e8cff941b5a0ff248efde360ec9e91fe_2397857129027225162.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "附着草元素，可发生元素反应：\n【 <color=#99ff88>草元素</color> + <color=#80c0ff>水元素</color> 】 <color=#ffffff>绽放</color> ：本伤害+1，生成使下次火元素或雷元素伤害+2的[ <color=#ffffff>草原核</color> ]\n【 <color=#99ff88>草元素</color> + <color=#ff9999>火元素</color> 】 <color=#ffffff>燃烧</color> ：本伤害+1，生成回合结束时造成1点火元素伤害的[ <color=#ffffff>燃烧烈焰</color> ]（可用次数1，最多叠加到2）\n【 <color=#99ff88>草元素</color> + <color=#ffacff>雷元素</color> 】 <color=#ffffff>原激化</color> ：本伤害+1，生成使下2次草元素或雷元素伤害+1的[ <color=#ffffff>激化领域</color> ]"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "规则术语",
-        "title": "规则术语",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/05/47826599/07bae546ac7c69ef6402170b283840c5_5206518276073401140.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ece5d8>物理伤害</color>\n物理伤害不会附着元素，也不会发生元素反应。\n<color=#ece5d8>活化激能</color>\n<color=#ffd780>状态</color>\n<color=#ffffff>本角色造成或受到元素伤害后：</color> 累积1层 <color=#ffffff>「活化激能」</color> 。（最多累积3层）\n<color=#ffffff>结束阶段：</color> 如果 <color=#ffffff>「活化激能」</color> 层数已达到上限，就将其清空。同时，角色失去所有充能。"
-          }
-        ],
-        "attributes": []
-      }
-    ],
     "galleryCharacter": [
       {
         "key": "元素爆发（初始牌面）",
@@ -286,19 +299,6 @@
         "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/14/88072335/1e82c675119f203ed6cce96e15f32950_919040138620019212.png"
       }
     ],
-    "tcg": {
-      "headerImgs": [
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/47826599/920c7d546361d0b52dd95613517319f9_6929785408955439800.png",
-          "imgDesc": "初始牌面"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/05/47826599/8ba55ac2afa34a7cfce32fd140bbf192_4585802681125584212.gif",
-          "imgDesc": "影幻牌面"
-        }
-      ],
-      "hp": 10
-    },
     "baseInfo": [
       {
         "key": "名称",
