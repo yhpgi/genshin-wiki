@@ -5,16 +5,26 @@
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/da13e3b1a2c6c0e5892b201cec735f9b_1638991891275146899.png",
   "headerImgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/c23402e9898c07b79495d181deca4c13_1969962215781374793.png",
   "filterValues": {
-    "characterWeapon": "Lança",
     "characterRarity": 4,
-    "characterRegion": "Mondstadt",
+    "characterWeapon": "Lança",
+    "characterProperty": "Vida",
     "characterVision": "Cryo",
-    "characterProperty": "Vida"
+    "characterRegion": "Mondstadt"
   },
   "menuId": 2,
   "menuName": "Guia de Personagens",
   "version": 1728633806,
   "components": {
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/a8b37a3b583116f75f8c3772f1fb667b_2701269542740914445.png"
+      },
+      {
+        "key": "Avatar",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/c23402e9898c07b79495d181deca4c13_8261929088557493875.png"
+      }
+    ],
     "baseInfo": [
       {
         "key": "Nome",
@@ -119,78 +129,773 @@
         ]
       }
     ],
-    "story": [
+    "talent": [
       {
-        "title": "Informações do Personagem",
+        "key": "Ataque Normal: Lança de Favonius — Ponto de Passagem",
+        "title": "Ataque Normal: Lança de Favonius — Ponto de Passagem",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/ac85f420fede2390c2e850f3061458c4_3911136461564649990.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "Quando ele aparece no quartel-general dos Cavaleiros de Favonius, Mika rapidamente encerra qualquer discussão que tem com seus companheiros cavaleiros para então silenciosamente fugir e não ser um problema para o trabalho das outras pessoas.\nMika sempre fica nervoso quando alguém conversa com ele, fugindo rapidamente logo após terminar a conversa de uma maneira educada.\nOs cavaleiros sabem que o nome do jovem é Mika, e que ele é o irmão mais novo de Mika e o segundo filho da família Schmidt. Eles também sabem que ele um integrante do Grupo da Guerrilha, mas não muito mais do que isso.\nPoucos estão cientes do que é o trabalho de Mika, nem sabem que a versão amplamente promovida e atualizada de seus mapas militares é fruto de seu trabalho.\nO novo mapa possui dados estatísticos detalhadas sobre quase todo canto de Mondstadt com indicadores práticos para as condições de estradas, áreas com maiores atividades de monstros, terreno alto que pode servir como fortaleza temporária, e a distribuição de recursos naturais... A quantidade de detalhes é suficiente para deixar alguém confuso.\nTudo isso é resultado do trabalho de Mika ao longo de dois anos que passou viajando por Mondstadt, investigando todo canto do terreno que ele foi.\nCavaleiros que lutaram com ele sabem que ele acha usar uma lança e uma besta simultaneamente algo conveniente, e que seu estilo de luta único deixou uma impressão profunda.\nEntretanto, eles também \"alertados\" por Mika para nunca falarem dele para outras pessoas a não ser que seja completamente necessário.\n\"Mika tem muito medo de chamar a atenção de outras pessoas — ao ponto de ficar nervoso se você o encarar, quanto mais de elogiá-lo. Ele é um integrante vital dos Cavaleiros, assim como seus superiores, por isso temos que respeitar seus limites!\""
+            "text": "<color=#ffd780>Ataque Normal</color>\nRealiza até 5 golpes com a sua lança e besta de mão.\n<color=#ffd780>Ataque Carregado</color>\nConsome uma certa quantidade de Stamina para se lançar para frente, infligindo Dano em seu trajeto.\n<color=#ffd780>Ataque Imersivo</color>\nMergulha em pleno ar para golpear o chão, causando dano aos inimigos ao longo do caminho e infligindo Dano em uma AdE durante o impacto."
           }
-        ]
+        ],
+        "attributes": [
+          {
+            "key": "Nível",
+            "values": [
+              "Nv.1",
+              "Nv.2",
+              "Nv.3",
+              "Nv.4",
+              "Nv.5",
+              "Nv.6",
+              "Nv.7",
+              "Nv.8",
+              "Nv.9",
+              "Nv.10",
+              "Nv.11"
+            ]
+          },
+          {
+            "key": "Dano do 1° Golpe",
+            "values": [
+              "43.3%",
+              "46.8%",
+              "50.3%",
+              "55.3%",
+              "58.9%",
+              "62.9%",
+              "68.4%",
+              "74.0%",
+              "79.5%",
+              "85.5%",
+              "91.6%"
+            ]
+          },
+          {
+            "key": "Dano do 2° Golpe",
+            "values": [
+              "41.5%",
+              "44.9%",
+              "48.3%",
+              "53.1%",
+              "56.5%",
+              "60.3%",
+              "65.6%",
+              "70.9%",
+              "76.2%",
+              "82.0%",
+              "87.8%"
+            ]
+          },
+          {
+            "key": "Dano do 3° Golpe",
+            "values": [
+              "54.5%",
+              "58.9%",
+              "63.4%",
+              "69.7%",
+              "74.2%",
+              "79.2%",
+              "86.2%",
+              "93.2%",
+              "100.1%",
+              "107.7%",
+              "115.3%"
+            ]
+          },
+          {
+            "key": "Dano do 4° Golpe",
+            "values": [
+              "27.6%+27.6%",
+              "29.9%+29.9%",
+              "32.1%+32.1%",
+              "35.3%+35.3%",
+              "37.6%+37.6%",
+              "40.1%+40.1%",
+              "43.7%+43.7%",
+              "47.2%+47.2%",
+              "50.7%+50.7%",
+              "54.6%+54.6%",
+              "58.4%+58.4%"
+            ]
+          },
+          {
+            "key": "Dano do 5° Golpe",
+            "values": [
+              "70.9%",
+              "76.6%",
+              "82.4%",
+              "90.7%",
+              "96.4%",
+              "103.0%",
+              "112.1%",
+              "121.1%",
+              "130.2%",
+              "140.1%",
+              "150.0%"
+            ]
+          },
+          {
+            "key": "Dano de Ataque Carregado",
+            "values": [
+              "112.7%",
+              "121.9%",
+              "131.1%",
+              "144.2%",
+              "153.4%",
+              "163.9%",
+              "178.3%",
+              "192.7%",
+              "207.1%",
+              "222.9%",
+              "238.6%"
+            ]
+          },
+          {
+            "key": "Consumo de Stamina de Ataque Carregado",
+            "values": [
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0"
+            ]
+          },
+          {
+            "key": "Dano Durante a Queda",
+            "values": [
+              "63.9%",
+              "69.1%",
+              "74.3%",
+              "81.8%",
+              "87.0%",
+              "92.9%",
+              "101.1%",
+              "109.3%",
+              "117.5%",
+              "126.4%",
+              "135.3%"
+            ]
+          },
+          {
+            "key": "Dano de Queda de Baixa/Alta Altitude",
+            "values": [
+              "128%/160%",
+              "138%/173%",
+              "149%/186%",
+              "164%/204%",
+              "174%/217%",
+              "186%/232%",
+              "202%/253%",
+              "219%/273%",
+              "235%/293%",
+              "253%/316%",
+              "271%/338%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 179,
+              "name": "Ensinamentos de Poemas",
+              "desc": "Material para aprimorar o nível de Talento.<br/>A poesia é a alma do Reino do Vento.<br/>A poesia é a manifestação de sentimentos bonitos. Em um lindo dia, a brisa carrega consigo poesia que toca o coração das pessoas como o vento acariciando as folhas.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Ballad_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 778,
+              "name": "Insígnia de Recruta",
+              "desc": "Uma insígnia para identificar os recrutas. Faz com que alguém se pergunte o que estava pensando quando se uniram à máquina de guerra dos Fatui.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Recruit's Insignia_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 178,
+              "name": "Guia de Poemas",
+              "desc": "Material para aprimorar o nível de Talento.<br/>A poesia é a alma do Reino do Vento.<br/>A poesia é a manifestação da vontade de encorajar. Nos dias obscuros, os vendavais nas ruas e becos sussurram palavras de fúria, como os tambores de batalha, como o estrondo baixo antes da tempestade.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 466,
+              "name": "Insígnia de Sargento",
+              "desc": "Uma insígnia com uma forma diferente para distinguir os sargentos dos novos recrutas. Talvez haja emoções complicadas por trás disso.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 178,
+              "name": "Guia de Poemas",
+              "desc": "Material para aprimorar o nível de Talento.<br/>A poesia é a alma do Reino do Vento.<br/>A poesia é a manifestação da vontade de encorajar. Nos dias obscuros, os vendavais nas ruas e becos sussurram palavras de fúria, como os tambores de batalha, como o estrondo baixo antes da tempestade.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 466,
+              "name": "Insígnia de Sargento",
+              "desc": "Uma insígnia com uma forma diferente para distinguir os sargentos dos novos recrutas. Talvez haja emoções complicadas por trás disso.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 178,
+              "name": "Guia de Poemas",
+              "desc": "Material para aprimorar o nível de Talento.<br/>A poesia é a alma do Reino do Vento.<br/>A poesia é a manifestação da vontade de encorajar. Nos dias obscuros, os vendavais nas ruas e becos sussurram palavras de fúria, como os tambores de batalha, como o estrondo baixo antes da tempestade.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 466,
+              "name": "Insígnia de Sargento",
+              "desc": "Uma insígnia com uma forma diferente para distinguir os sargentos dos novos recrutas. Talvez haja emoções complicadas por trás disso.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 178,
+              "name": "Guia de Poemas",
+              "desc": "Material para aprimorar o nível de Talento.<br/>A poesia é a alma do Reino do Vento.<br/>A poesia é a manifestação da vontade de encorajar. Nos dias obscuros, os vendavais nas ruas e becos sussurram palavras de fúria, como os tambores de batalha, como o estrondo baixo antes da tempestade.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 466,
+              "name": "Insígnia de Sargento",
+              "desc": "Uma insígnia com uma forma diferente para distinguir os sargentos dos novos recrutas. Talvez haja emoções complicadas por trás disso.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 177,
+              "name": "Filosofia de Poemas",
+              "desc": "Material de Elevação de Talento.<br/>Poesia é a alma do Reino do Vento.<br/>Poesia é a manifestação do desejo de difundir as palavras. Embora nada seja eterno, ainda que nada seja o mesmo, a poesia do vento ainda se espalhará além dos céus, da terra e dos mares em todos os cantos do mundo.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 636,
+              "name": "Insígnia de Oficial",
+              "desc": "Uma insígnia para identificar os oficiais. Os Fatui possuem um exército colossal, portanto, deve haver algo extraordinário naqueles que alcançaram essa classificação dentro do grupo.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 2972,
+              "name": "Lentes Desalmadas",
+              "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O espelho que estava no peito de Shouki no Kami para separá-lo do mundo externo. O símbolo mitsudomoe está gravado nele como uma demonstração proposital de posição e poder.</span><br><span style=\"color: rgb(255, 255, 255)\">Entretanto, esse símbolo não é uma demonstração de obediência à Deusa do Trovão.</span><br><span style=\"color: rgb(255, 255, 255)\">É, na verdade, uma lâmina apontada para os poderes existentes neste mundo.</span><br><span style=\"color: rgb(255, 255, 255)\">O espelho também não é um meio de impedir os olhares de julgamento das pessoas, Mas um baluarte contra este mundo maculado. Dentro deste grande templo, o castigo deve ser aplicado e a ignorância deve ser purificada.</span><br><span style=\"color: rgb(255, 255, 255)\">Sonhos devem ser abandonados, desejos devem ser cortados, e o carma deve ser restabelecido.</span></p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/08/16791688/2fdcb5ec503cbb3640e2828a854aff8e_446548796358643966.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 177,
+              "name": "Filosofia de Poemas",
+              "desc": "Material de Elevação de Talento.<br/>Poesia é a alma do Reino do Vento.<br/>Poesia é a manifestação do desejo de difundir as palavras. Embora nada seja eterno, ainda que nada seja o mesmo, a poesia do vento ainda se espalhará além dos céus, da terra e dos mares em todos os cantos do mundo.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 636,
+              "name": "Insígnia de Oficial",
+              "desc": "Uma insígnia para identificar os oficiais. Os Fatui possuem um exército colossal, portanto, deve haver algo extraordinário naqueles que alcançaram essa classificação dentro do grupo.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 2972,
+              "name": "Lentes Desalmadas",
+              "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O espelho que estava no peito de Shouki no Kami para separá-lo do mundo externo. O símbolo mitsudomoe está gravado nele como uma demonstração proposital de posição e poder.</span><br><span style=\"color: rgb(255, 255, 255)\">Entretanto, esse símbolo não é uma demonstração de obediência à Deusa do Trovão.</span><br><span style=\"color: rgb(255, 255, 255)\">É, na verdade, uma lâmina apontada para os poderes existentes neste mundo.</span><br><span style=\"color: rgb(255, 255, 255)\">O espelho também não é um meio de impedir os olhares de julgamento das pessoas, Mas um baluarte contra este mundo maculado. Dentro deste grande templo, o castigo deve ser aplicado e a ignorância deve ser purificada.</span><br><span style=\"color: rgb(255, 255, 255)\">Sonhos devem ser abandonados, desejos devem ser cortados, e o carma deve ser restabelecido.</span></p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/08/16791688/2fdcb5ec503cbb3640e2828a854aff8e_446548796358643966.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 177,
+              "name": "Filosofia de Poemas",
+              "desc": "Material de Elevação de Talento.<br/>Poesia é a alma do Reino do Vento.<br/>Poesia é a manifestação do desejo de difundir as palavras. Embora nada seja eterno, ainda que nada seja o mesmo, a poesia do vento ainda se espalhará além dos céus, da terra e dos mares em todos os cantos do mundo.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 636,
+              "name": "Insígnia de Oficial",
+              "desc": "Uma insígnia para identificar os oficiais. Os Fatui possuem um exército colossal, portanto, deve haver algo extraordinário naqueles que alcançaram essa classificação dentro do grupo.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 2972,
+              "name": "Lentes Desalmadas",
+              "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O espelho que estava no peito de Shouki no Kami para separá-lo do mundo externo. O símbolo mitsudomoe está gravado nele como uma demonstração proposital de posição e poder.</span><br><span style=\"color: rgb(255, 255, 255)\">Entretanto, esse símbolo não é uma demonstração de obediência à Deusa do Trovão.</span><br><span style=\"color: rgb(255, 255, 255)\">É, na verdade, uma lâmina apontada para os poderes existentes neste mundo.</span><br><span style=\"color: rgb(255, 255, 255)\">O espelho também não é um meio de impedir os olhares de julgamento das pessoas, Mas um baluarte contra este mundo maculado. Dentro deste grande templo, o castigo deve ser aplicado e a ignorância deve ser purificada.</span><br><span style=\"color: rgb(255, 255, 255)\">Sonhos devem ser abandonados, desejos devem ser cortados, e o carma deve ser restabelecido.</span></p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/08/16791688/2fdcb5ec503cbb3640e2828a854aff8e_446548796358643966.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 177,
+              "name": "Filosofia de Poemas",
+              "desc": "Material de Elevação de Talento.<br/>Poesia é a alma do Reino do Vento.<br/>Poesia é a manifestação do desejo de difundir as palavras. Embora nada seja eterno, ainda que nada seja o mesmo, a poesia do vento ainda se espalhará além dos céus, da terra e dos mares em todos os cantos do mundo.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 636,
+              "name": "Insígnia de Oficial",
+              "desc": "Uma insígnia para identificar os oficiais. Os Fatui possuem um exército colossal, portanto, deve haver algo extraordinário naqueles que alcançaram essa classificação dentro do grupo.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 2972,
+              "name": "Lentes Desalmadas",
+              "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O espelho que estava no peito de Shouki no Kami para separá-lo do mundo externo. O símbolo mitsudomoe está gravado nele como uma demonstração proposital de posição e poder.</span><br><span style=\"color: rgb(255, 255, 255)\">Entretanto, esse símbolo não é uma demonstração de obediência à Deusa do Trovão.</span><br><span style=\"color: rgb(255, 255, 255)\">É, na verdade, uma lâmina apontada para os poderes existentes neste mundo.</span><br><span style=\"color: rgb(255, 255, 255)\">O espelho também não é um meio de impedir os olhares de julgamento das pessoas, Mas um baluarte contra este mundo maculado. Dentro deste grande templo, o castigo deve ser aplicado e a ignorância deve ser purificada.</span><br><span style=\"color: rgb(255, 255, 255)\">Sonhos devem ser abandonados, desejos devem ser cortados, e o carma deve ser restabelecido.</span></p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/08/16791688/2fdcb5ec503cbb3640e2828a854aff8e_446548796358643966.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "Coroa da Sabedoria",
+              "desc": "Um precioso material para aumento de Nível de Talento.<br/>Costumava ser um objeto de ensino de conhecimentos nos tempos antigos. Agora, a sabedoria é encontrada em textos antigos e em profundos discursos. No entanto, esta Coroa da Sabedoria ainda deve ser capaz de transmitir algum poder e sabedoria transcendente ao seu portador.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/65b10a00fa0d203e48649babf7f42930_3855596489582253794.gif"
       },
       {
-        "title": "História 1",
+        "key": "Redemoinho Estelar Gelado",
+        "title": "Redemoinho Estelar Gelado",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/42fcf620e0f27f0d92aa8cf0e0ec65b2_8585335572561043897.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>Desbloqueia quando Amizade atingir Nv.2</color>\nMika vem de uma família amorosa. Sua mãe é uma autora que escreve sobre as condições locais, seu pai é um Cavaleiro de Favonius aposentado e seu irmão, Huffman, é um membro ativo entre os Cavaleiros.\nQuando Mika estava aprendendo a ler, sua mãe saiu em busca de inspiração acompanhada pelo seu marido. Durante esse tempo, a responsabilidade de cuidar de Mika acabou nas mãos de seu irmão, Huffman.\nContudo, Huffman já havia adotado os Cavaleiros de Favonius como sua segunda casa, ele sempre estava ocupado durante os dias e saia para beber com os seus amigos durante quase todas as noites. Com a sua própria vida estando uma bagunça, como ele iria cuidar do seu irmãozinho?\nFoi assim que o pequeno Mika aprendeu a cuidar não apenas de si mesmo, mas de seu irmão quando ele retornava bêbado de noite. Enquanto as outras crianças estavam aproveitando a infância, Mika já havia aprendido a seguir uma rotina organizada, às vezes até ajudando Huffman com suas tarefas diárias.\nEnquanto estavam distantes, os pais de Mika enviavam cartas para Mondstadt todas as semanas para tranquilizar os seus filhos. A mãe de Mika é uma excelente escritora, ela descrevia todas as paisagens com uma maestria similar aos contos de fadas. Mika adorava ler as cartas dos seus pais antes de marcar as localizações exatas de tais aventuras em uma rota de seu mapa. Imaginar as aventuras de seus pais tornou-se o passatempo favorito de Mika.\nEm pouco tempo, Mika desenvolveu uma paixão pela leitura de mapas e até mesmo guardou o terreno de muitos locais na memória.\nInfelizmente, Huffman teve que estragar o clima quando deu a má notícia a Mika: \"Receio que seus esforços tenham sido desperdiçados no mapa que mamãe e papai nos deixaram. Está muito desatualizado e não foi desenhado com muita precisão.\" Mas isso era de se esperar. Afinal, aqueles que têm a habilidade de explorar livremente provavelmente se tornariam aventureiros com nada além de comissões e Mora em suas mentes. Para eles, qualquer mapa serviria.\nPor outro lado, a maioria daqueles que sabiam como desenhar mapas decentes não eram habilidosos em combate, então seria muito perigoso para eles inspecionar a selva por conta própria. Sem mencionar sua renda limitada, que não lhes permitiria pagar por proteção. Talvez chegasse o momento em que os Cavaleiros de Favonius finalmente tivessem orçamento suficiente para contratar especialistas para lidar com assuntos como esses, mas com Mondstadt tão pacífica quanto se poderia esperar, ninguém sabia ao certo quando algo tão trivial quanto a topografia poderia ser colocado em prática. Então, o pequeno Mika pensou consigo mesmo: Se ele pudesse alcançar todos os cantos do mundo como seus pais, e registrar cada detalhe do terreno sob seus pés... Isso seria a coisa mais divertida de todas.\nA partir de então, Mika estabeleceu um objetivo claro para si mesmo.\n\"Vou me tornar um topógrafo especialista de Mondstadt.\""
+            "text": "Usa sua besta para atacar os inimigos, e concede aos personagens próximos o estado Alma do Vento. Quando um personagem no estado Alma do Vento está ativo no campo de batalha, aumenta a sua Vel. de ATQ.\nGera efeitos diferentes se for lançado Pressionando ou Mantendo Pressionado.\n<color=#ffd780>Pressiona</color>\nDispara uma Flecha Gélida rapidamente que penetra os inimigos, causando Dano Cryo.\n<color=#ffd780>Manter Pressionado</color>\nEntra no modo de mira, e dispara um Sinal Estelar Gélido contra o inimigo fixado na mira, causando Dano Cryo. Quando o Sinal Estelar Gélido atinge o inimigo, ascenderá e explodirá, disparando Fragmentos Estelares Gélidos contra até 3 inimigos próximos, causando Dano Cryo.\nAs estrelas explodem sob os céus congelados."
           }
-        ]
+        ],
+        "attributes": [
+          {
+            "key": "Nível",
+            "values": [
+              "Nv.1",
+              "Nv.2",
+              "Nv.3",
+              "Nv.4",
+              "Nv.5",
+              "Nv.6",
+              "Nv.7",
+              "Nv.8",
+              "Nv.9",
+              "Nv.10",
+              "Nv.11",
+              "Nv.12",
+              "Nv.13"
+            ]
+          },
+          {
+            "key": "Dano da Flecha Gélida",
+            "values": [
+              "67.20%",
+              "72.24%",
+              "77.28%",
+              "84.00%",
+              "89.04%",
+              "94.08%",
+              "100.80%",
+              "107.52%",
+              "114.24%",
+              "120.96%",
+              "127.68%",
+              "134.40%",
+              "142.80%"
+            ]
+          },
+          {
+            "key": "Dano do Sinal Estelar Gélido",
+            "values": [
+              "84.00%",
+              "90.30%",
+              "96.60%",
+              "105.00%",
+              "111.30%",
+              "117.60%",
+              "126.00%",
+              "134.40%",
+              "142.80%",
+              "151.20%",
+              "159.6%",
+              "168.00%",
+              "178.50%"
+            ]
+          },
+          {
+            "key": "Dano de Fragmentos Estelares Gélidos",
+            "values": [
+              "25.20%",
+              "27.09%",
+              "28.98%",
+              "31.50%",
+              "33.39%",
+              "35.28%",
+              "37.80%",
+              "40.32%",
+              "42.84%",
+              "45.36%",
+              "47.88%",
+              "50.40%",
+              "53.55%"
+            ]
+          },
+          {
+            "key": "Aumento de Vel. de ATQ",
+            "values": [
+              "13%",
+              "14%",
+              "15%",
+              "16%",
+              "17%",
+              "18%",
+              "19%",
+              "20%",
+              "21%",
+              "22%",
+              "23%",
+              "24%",
+              "25%"
+            ]
+          },
+          {
+            "key": "Duração de Alma do Vento",
+            "values": [
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s"
+            ]
+          },
+          {
+            "key": "Tempo de Recarga",
+            "values": [
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s"
+            ]
+          }
+        ],
+        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/535f8c6a02e6e5208045c402733f4278_7418081822030880969.gif"
       },
       {
-        "title": "História 2",
+        "key": "Canção da Pena do Céu",
+        "title": "Canção da Pena do Céu",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/1419468e97597e090f1bfbf35a0fe961_3183795376207618743.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>Desbloqueia quando Amizade atingir Nv.3</color>\nQuando os pais do Mika retornaram para Mondstadt, ficaram felizes ao ouvir sobre o novo objetivo do Mika e prometeram fazer o que pudessem para apoiá-lo.\nDaquele dia em diante, Mika dedicou a maior parte do seu tempo lendo sobre livros de geografia e assiduamente aperfeiçoando suas habilidades com desenho na biblioteca.\nLisa gostou desta criança educada, talentosa, porém trabalhadora e muitas vezes recomendou livros para ele, orientando-o pelo caminho mais eficiente.\nDepois de um tempo, Mika ganhou o reconhecimento da Lisa — \"Com suas habilidades e conhecimentos atuais, você poderia até se qualificar para estudar na Academia.\"\nFoi então que Mika começou a procurar oportunidades para colocar seus conhecimentos à prova. E acontece que, Ella Musk, quem ele havia conhecido enquanto estudava na biblioteca, estava procurando um guia para uma viagem de troca de idiomas em uma área isolada na natureza.\nE essa então, foi a primeira expedição verdadeira do Mika. Embora tenham chegado ao destino em segurança, devido a um erro nas escolhas de palavra da Ella Musk, a dupla acabou levando uma surra dos Hilichurls.\nMika concluiu que este contratempo se devia à sua falta de habilidade de combate. \"Preciso aprender a me proteger\", pensou ele, \"ou não serei capaz de garantir o sucesso de minhas expedições em áreas desconhecidas.\"\nDesde então, Mika aproveitou o tempo que passou aprendendo na biblioteca e começou a aprender técnicas de luta com o seu irmão. Felizmente, Mika tinha uma forte constituição e rapidamente aprendeu o básico.\nAcontece que os Cavaleiros de Favonius tinham acabado de elaborar o seu plano para uma expedição programada para partir três anos depois. Eles ainda estavam procurando recrutar mais alguns membros para preencher alguns cargos, e \"Topógrafo da Linha de Frente\" estava dentre as vagas disponíveis.\nEsta função tinha pré-requisitos rigorosos: os candidatos ao cargo deveriam ter algum nível de especialização em cartografia e, devido a condições potencialmente perigosas, estariam liderando a equipe pela linha de frente, tornando as habilidades de combate uma obrigação.\nEssa era a chance do Mika, mas tudo parecia ser só um sonho...\nMika inicialmente acreditava que seria convidado para a equipe como um consultor externo, mas a posição de Topógrafo da Linha de Frente sem dúvidas o tornaria um membro completo para a expedição — e um elemento crucial para toda a equipe. Ele ficou assustado ao pensar nisso no início, com medo de não ser digno de um papel tão importante, que, segundo ele, \"somente os mais fortes se qualificariam para isso\".\nSuas dúvidas logo foram dissipadas pelo incentivo do seu pai e do seu irmão, e ele se lembra das palavras dele até hoje:\\n\"Você não tem que exigir muito de si mesmo. Dar o seu melhor para ajudar é mais do que suficiente.\n\"A maioria dos cavaleiros são apenas pessoas comuns como nós, mas uma vez que nossas forças são reunidas em equipe, até mesmo os mais fortes aventureiros lutariam para se provar iguais a nós.\"\\nAssim, Mika agarrou a oportunidade e se inscreveu para a posição.\\nEle se sentia seguro de que, pelo menos, estaria dedicando seu tempo ao que amava."
+            "text": "Eleva a moral dos companheiros através das orações dos Cavaleiros de Favonius, regenerando Vida para todos os personagens próximos baseada na Vida Máxima de Mika e concedendo a eles o estado Pena do Falcão.\n<color=#ffd780>Pena do Falcão</color>\nQuando os Ataques Normais de personagens ativos sob o estado Pena do Falcão atingem um inimigo, Mika regenerará Vida para esses personagens baseada na Vida Máxima de Mika.\nOs personagens nesse estado só podem regenerar Vida desta maneira uma vez em um curto intervalo de tempo.\n\"Leve a esperança nos momentos difíceis e não baixe a guarda que tudo ficará bem... Pois aquela pena branca pura guiará os errantes perdidos.\""
           }
-        ]
+        ],
+        "attributes": [
+          {
+            "key": "Nível",
+            "values": [
+              "Nv.1",
+              "Nv.2",
+              "Nv.3",
+              "Nv.4",
+              "Nv.5",
+              "Nv.6",
+              "Nv.7",
+              "Nv.8",
+              "Nv.9",
+              "Nv.10",
+              "Nv.11",
+              "Nv.12",
+              "Nv.13"
+            ]
+          },
+          {
+            "key": "Cura ao lançar Habilidade",
+            "values": [
+              "12.2% da Vida Máxima+1172",
+              "13.1% da Vida Máxima+1289",
+              "14.0% da Vida Máxima+1416",
+              "15.2% da Vida Máxima+1553",
+              "16.1% da Vida Máxima+1699",
+              "17.0% da Vida Máxima+1855",
+              "18.3% da Vida Máxima+2021",
+              "19.5% da Vida Máxima+2197",
+              "20.7% da Vida Máxima+2383",
+              "21.9% da Vida Máxima+2578",
+              "23.1% da Vida Máxima+2783",
+              "24.3%da Vida Máxima+2998",
+              "25.9% da Vida Máxima+3223"
+            ]
+          },
+          {
+            "key": "Cura de Pena do Falcão",
+            "values": [
+              "2.4% da Vida Máxima+233",
+              "2.6% da Vida Máxima+257",
+              "2.8% da Vida Máxima+282",
+              "3.0% da Vida Máxima+310",
+              "3.2% da Vida Máxima+339",
+              "3.4% da Vida Máxima+370",
+              "3.6% da Vida Máxima+403",
+              "3.9% da Vida Máxima+438",
+              "4.1% da Vida Máxima+475",
+              "4.4% da Vida Máxima+514",
+              "4.6% da Vida Máxima+555",
+              "4.9% da Vida Máxima+598",
+              "5.2% da Vida Máxima+643"
+            ]
+          },
+          {
+            "key": "Intervalo de Cura de Pena do Falcão",
+            "values": [
+              "2.5s",
+              "2.5s",
+              "2.5s",
+              "2.5s",
+              "2.5s",
+              "2.5s",
+              "2.5s",
+              "2.5s",
+              "2.5s",
+              "2.5s",
+              "2.5s",
+              "2.5s",
+              "2.5s"
+            ]
+          },
+          {
+            "key": "Duração da Pena do Falcão",
+            "values": [
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s"
+            ]
+          },
+          {
+            "key": "Tempo de Recarga",
+            "values": [
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s",
+              "18.0s"
+            ]
+          },
+          {
+            "key": "Energia Elemental",
+            "values": [
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70"
+            ]
+          }
+        ],
+        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/def7b55acd5af40f6528cf1eaf5dc890_1284765428420424757.gif"
       },
       {
-        "title": "História 3",
+        "key": "Supressão de Disparo Rápido",
+        "title": "Supressão de Disparo Rápido",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/f2287e0a3532a109306c67dcd8098da0_8283957257906708071.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>Desbloqueia quando Amizade atingir Nv.4</color>\nA notícia de que o Mika havia se inscrito na expedição se espalhou como um incêndio pelos Cavaleiros de Favonius.\nO irmãozinho do Huffman vai se juntar a nós! O garotinho que sempre cuida daquele bêbado vai se juntar aos Cavaleiros!\nA ansiedade de inesperadamente se tornar o centro das atenções acelerou sua respiração e fez o seu coração bater mais forte — Mika tinha medo de falhar na avaliação dos Cavaleiros e de desonrar seu pai, arruinando a carreira do seu irmão, ou pior, arruinando a reputação do nome de sua família.\nConsiderando que muitos membros da família Schmidt já haviam entrado, os Cavaleiros de Favonius decidiram aumentar os requisitos e tonar público todo o processo de avaliação, para fazer com que a seleção fosse a mais justa possível.\nLevando em consideração cenários da vida real, o avaliador principal, Kaeya, apresentou uma série de desafios que avaliaram rigorosamente as habilidades dos participantes:\nEscalar a Espinha do Dragão enquanto vestindo uma armadura completa e uma carga pesada;\nMapear uma região infestada de monstros sem o auxílio de qualquer material de referência...\nPor sorte, Mika veio bem preparado e deu tudo de si, eventualmente superando o desafio mais difícil e tornando-se um dos três candidatos bem sucedidos.\nOs outros dois candidatos também haviam recebido a ajuda do Mika ao longo do caminho — para ele, eles eram mais como futuros companheiros de equipe do que concorrentes.\nA excelente demonstração de trabalho em equipe do Mika ganhou o reconhecimento do Grande Mestre Varka, que alocou os outros dois recrutas para a Companhia de Cavalaria e Equipe de Investigação, enquanto que, pessoalmente levando Mika para fazer parte de sua expedição.\nTodas as semanas, Varka ensinava técnicas de combate ao Mika e lhe dava várias \"tarefas de casa\" para completar.\nMais tarde, Mika se juntaria ao Grupo da Guerrilha. Se comunicar com sua Capitã bastante peculiar, fortaleceu ainda mais suas habilidades de comunicação, o que o ajudaria muito ao trabalhar com os cavaleiros de elite da equipe de expedição.\nApós se juntar aos Cavaleiros, Mika aperfeiçoou suas habilidades cartográficas enquanto investigava locais perigosos como um Topógrafo da Linha de Frente, enquanto recebia dicas do Varka de como poderia melhorar suas habilidades.\nO jovem recruta diligente rapidamente se tornou um cavaleiro calmo e confiável — embora pareça que nem mesmo ele tenha percebido isso ainda."
+            "text": "O estado Alma do Vento de <color=#ffd780>Redeminho Estelar Gelado</color> concederá nas seguintes circunstâncias aos personagens ativos o efeito Detector, aumentando o Dano Físico causado em 10%:\n· Quando a Flecha Gélida atinge mais de um inimigo, gera 1 acúmulo do efeito Detector para cada inimigo adicional atingido;\n· Quando um Fragmento Estelar Gélido atinge um inimigo, gera 1 acúmulo do efeito Detector. Cada Fragmento Estelar Gélido só pode desencadear este efeito uma vez.\nÉ possível ter até 3 acúmulos do efeito Detector no estado Alma do Vento. Lançar Redemoinho Estelar Gelado novamente nessa duração removerá o estado Alma do Vento original e os seus acúmulos de efeito Detector."
           }
-        ]
+        ],
+        "attributes": []
       },
       {
-        "title": "História 4",
+        "key": "Mapeamento Topográfico",
+        "title": "Mapeamento Topográfico",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/ad6372b93ce237bdef57225c7d313a5d_6812178850215022537.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>Desbloqueia quando Amizade atingir Nv.5</color>\nA medida que Mika continuamente refinou suas habilidades de combate, passou a se tornar um membro central do Grupo da Guerrilha em menos de dois anos, completando incontáveis missões com seus companheiros.\nA data marcada estava cada vez mais próxima, e a expedição estava para partir.\nNa festa de despedida, o Grande Mestre Varka ficou agradavelmente surpreso pela nova Visão brilhante no braço direito de Mika. Mas após pessoalmente convidá-lo para uma luta, ele concluiu que as habilidades atuais de Mika eram \"notáveis, mas insuficientes\".\nMika não entendeu o que isso significava até que a expedição entrou numa área perigosa restrita, que foi onde ele viu com seus próprios olhos os monstros que o Grande Mestre Varka usou como referência para julgar seus poderes.\nEssas criaturas errantes poderiam se tornar um pesadelo para qualquer cavaleiro azarado que se perdesse da expedição.\nA velocidade de seus batedores na vanguarda determinava o quão rápido toda a expedição poderia prosseguir, por isso, durante os dias em que a equipe estava muito ocupada, Mika só conseguia descansar por meia hora em um dia.\nEra a primeira vez de Mika trabalhando sob tanta pressão, e ele fez isso com muita dificuldade. Sem mencionar que além dos perigos desconhecidos, a expedição estava sob observação de alguém...\nUm dia, quando Mika estava se preparando para encerrar o dia, ele recebeu um alerta de outro batedor que os Cavaleiros haviam encontrado inimigos.\nQuando Mika saiu correndo para o local, Varka já havia estabelecido as linhas de frente com seus subordinados.\nNas profundezas da noite escura, Mika mal conseguia perceber uma linha de soldados, silenciosamente a postos como se fossem máquinas de guerra sem vida.\nE no meio da formação inimiga, havia uma silhueta escura e distinta. Mesmo com tochas iluminando o local, Mika não conseguia ver nada a não ser seus olhos azuis-escuros, que pareciam brilhar com uma aura misteriosa.\nSeus companheiros mencionaram sua identidade para Mika — o Mensageiro Fatui conhecido como \"Capitano\", e seus subordinados de elite.\nA vanguarda dos Cavaleiros havia se encontrado com batedores dos Fatui, e uma altercação ocorreu, resultando em ambos aumentando seus ânimos e solicitando reforços, ao ponto de alertarem seus comandantes.\nO cheiro de pólvora era forte, e a sensação de uma crise deixou os membros de Mika com calafrios e dormentes.\nEle não conseguia evitar pensar no confronto subsequente se tornar um conflito armado, e o que ele faria caso algo assim acontecesse...\nO Mensageiro — Mika sabia que ele não tinha chance nenhuma de bloquear um golpe desinteressado sequer dessa pessoa.\nSeus pensamentos confusos e exaustão o deixaram com dificuldade para respirar ou se focar.\nVarka, entretanto, parecia inabalado. Ele cumprimentou o Mensageiro de longe e caminhou na sua direção, com sua arma e suas mãos. O Capitano, em troca, comandou que suas tropas ficassem paradas a medida que ele se aproximava.\nA tensão estava no seu ápice, Varka e Capitano conversaram brevemente e pareceram chegar a um consenso.\nA silhueta escura levantou seu braço, e as sombras fantasmagóricas dos soldados Fatui silenciosamente se viraram e partiram com ele.\nOs Cavaleiros suspiraram aliviados, alguns tremiam de medo. Mas quanto Varka retornou para a formação dos Cavaleiros, parecia relaxado como sempre fora.\n\"Que surpresa! Se não fosse pelas nossas circunstâncias únicas, eu adoraria convidá-lo para um duelo!\"\n\"E não é como se ele fosse uma pessoa teimosa. Ele sabe bem que lutar uma batalha numa terra estrangeira seria desvantajoso para nós dois.\"\nFoi nesse momento que Mika percebeu que eles estavam no precipício de uma guerra, mas que o Grande Mestre estava lá para impedir um conflito.\nA presença sobrepujante do Capitano e a calma com que o Grande Mestre lidou com a crise deixaram uma presença profunda em Mika.\nMika refletiu sobre essa experiência por muito tempo, e concluiu que apesar de estar ficando mais forte, ainda tinha um longo caminho pela frente para lidar com situações como essa.\nHavia ainda muito que ele podia fazer para ajudar sua equipe. Ele tinha que trabalhar duro para se tornar um Cavaleiro confiável que pudesse lidar com tudo..."
+            "text": "Personagens ativos que estiverem simultaneamente no estado Pena do Falcão de <color=#ffd780>Canção da Pena do Céu</color> e Alma do Vento de <color=#ffd780>Redemoinho Estelar Gelado</color> , ao causarem Dano CRIT com um ataque farão o estado Alma do Vento gerar 1 acúmulo do efeito Detector do Talento Passivo \"Supressão de Disparo Rápido\". É possível gerar até 1 acúmulo do efeito Detector em uma duração do estado Alma do Vento.\nAlém disso, o número máximo de acúmulos do efeito Detector que podem ser obtidos no estado Alma do Vento é aumentado em 1.\nÉ necessário desbloquear o Talento Passivo \"Supressão de Disparo Rápido\"."
           }
-        ]
+        ],
+        "attributes": []
       },
       {
-        "title": "História 5",
+        "key": "Demarcação",
+        "title": "Demarcação",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/055f5defd5f8c26a1d3d2d0903630cde_6915507936379147743.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>Desbloqueia quando Amizade atingir Nv.6</color>\nFelizmente, Mika não encontraria nada excessivamente perigoso durante a espera e tranquilamente passou pelo período mais difícil.\nDurante o Festvinho, Mika retornou a Mondstadt com a carta do Grande Mestre Varka e reassumiu seu posto no Grupo de Guerrilha.\nOs membros do Grupo de Guerrilha estavam animados com seu retorno e surpresos com o progresso surpreendente que ele havia feito, pois agora ele podia facilmente concluir tarefas que geralmente necessitavam de três batedores.\nConsiderando que a carta do Grande Mestre tinha vagamente mencionado os Fatui e que Mika tinha sido um membro chave na expedição sob o comando direto de Varka... Seus colegas de equipe rapidamente conectaram os pontos e uma estranha cadeia lógica surgiu:\n\"Mika lutou contra os Fatui! Mika pode ter lutado contra a elite dos Fatui! Mika deve ter lutado ao lado do Grande Mestre e vencido uma batalha contra um Mensageiro Fatuus!\"\n\"Como mais ele poderia ter se tornado tão forte de repente? Mika é o nosso herói! Ele pode fazer qualquer coisa por nós agora!\"\nVerdade seja dita, Mika havia simplesmente acumulado uma grande quantidade de experiência. Os outros Cavaleiros que haviam ido também tinham feito progresso em várias medidas. Eles simplesmente ainda não haviam retornado, portanto, nenhuma comparação válida podia ser feita.\nMika não sabia como lidar com todos os rumores absurdos, então ele consultou Jean e Kaeya para pedir conselhos.\nJean informou o líder de cada pelotão para permanecer racional e não espalhar rumores baseados puramente em especulação. Além disso, muitas questões relacionadas à expedição eram consideradas altamente confidenciais e deveriam ser tratadas com descrição.\nKaeya, por outro lado, parecia gostar de brincar com os rumores. Membros dos Cavaleiros de Favonius todos tinham mais ou menos algum tipo de antipatia pelos Fatui, e um rumor que diz \"Mika deu uma boa surra nos Fatui\" poderia muito bem elevar os ânimos.\nIndependente do caso, Mika se sentiu muito tranquilizado agora que a Grande Mestre Intendente tinha sido informada da situação e foi confortado em saber que ele não havia causado problemas a ninguém.\nEle se apresentou ao serviço como sempre e garantiu que fizesse o possível para ajudar os outros.\nMas os rumores exagerados não podiam ser recolhidos e Mika descobriu que ganhar confiança demais vem com seu próprio conjunto de dificuldades...\nRecentemente, mais Cavaleiros têm o abordado para pegar um novo mapa emprestado, pedir ajuda para fazer manutenção em uma arma ou solicitar uma porção dos mantimentos de campo do Grupo do Guerrilha.\nTodos parecem esperar que alguns dos poderes dele sejam transmitidos para si, para que possam ficar mais fortes rapidamente, exatamente como Mika."
+            "text": "Mostra a localização de Especialidades de Mondstadt próximas no mapa."
           }
-        ]
-      },
-      {
-        "title": "Aparelho Topográfico Multiúso de Linha de Frente",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Desbloqueia quando Amizade atingir Nv.4</color>\nUm dispositivo intrincado em formato de livro que Mika carrega consigo para onde for.\nEle foi desenvolvido por Mika e técnicos da Equipe de Investigação e seus componentes-chave foram feitos usando os criações alquímicas mais recentes de Albedo.\nUm caderno está incorporado no interior do dispositivo que pode ser usado para registrar informações. Projetado para facilitar a produção e utilização rápida de mapas, cada uma de suas páginas pode ser convenientemente removida e substituída.\nUm padrão elaborado está entalhado no painel do verso do aparelho. Canalizar energia elemental no entalhe ativará o componente em formato de prisma fora desse painel, o que por sua vez disparará um \"feixe de onda\" em direção a uma região alvo no formato de um leque.\nA distância entre o aparelho e a região alvo pode então ser precisamente calculada usando o tempo necessário para o feixe ricochetear de volta. Ao aumentar tanto a frequência e amplitude do feixe, o aparelho gerará um esboço de uma pequena área do terreno.\nEsta função pode melhorar imensamente a precisão de um mapa, mas infelizmente, todo o resto, incluindo as informações estatísticas e cálculos relacionados ao terreno em questão, deve ser computado na mente do usuário.\nApenas aqueles com excelentes habilidades de raciocínio espacial e um extenso conhecimento do terreno alvo são capazes de usar plenamente esta função.\nPortanto, Mika se tornou o único Topógrafo de Linha de Frente que consegue usar o aparelho sem dificuldades e sua taxa de uso geral não é muito alta.\nHouve outros aparelhos melhorados planejados originalmente para distribuição a outras equipes, mas eles foram armazenados, para serem usados como peças de substituição para o aparelho de Mika.\nO aparelho é o ajudante mais confiável de Mika em seu trabalho e um símbolo da honra de ser o melhor topógrafo, mas Mika jamais mencionou suas funções impressionantes para outros.\nPara Mika, isso parece muito com se gabar, sem mencionar que isso poderia potencialmente dar trabalho extra a Albedo... Atrapalhar os outros é a última coisa que Mika gostaria de fazer, afinal de contas."
-          }
-        ]
-      },
-      {
-        "title": "Visão",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Desbloqueia quando Amizade atingir Nv.6</color>\nMika já esteve em uma situação de vida ou morte uma vez.\nIsso não foi muito depois de ele ter entrado no Grupo de Guerrilha, as informações sobre certas áreas não eram mais válidas e Mika havia tomado a tarefa de atualizar os detalhes do terreno sozinho.\nEle lentamente subiu as ruínas, apenas para acidentalmente derrubar um pedaço de pedra de uma parede quebrada, alertando dois Feiticeiros do Abismo espreitando na escuridão.\nConforme as chamas se entrelaçavam, uma corrente de energia elemental o envolveu instantaneamente como se estivesse prestes a esmagá-lo e o transformar na próxima refeição dos monstros.\nDor e pânico inundaram os sentidos dele e apenas um pensamento permaneceu em sua consciência, ele precisava escapar e avisar os outros.\n\"Estes monstros... Eles seriam uma ameaça até aos membros mais experientes do pelotão...!\"\nEra responsabilidade de um Topógrafo de Linha de Frente manter seus colegas de equipe longe de situações como essa.\nOs Feiticeiros do Abismo gritaram em alegria e estavam prestes a comandar outros monstros a saírem de seus esconderijos quando uma lança giratória rompeu a cortina de chamas. Uma névoa gelada explodiu pelas ruínas, removendo o calor insuportável em um instante.\nQuando os Feiticeiros do Abismo finalmente entenderam a situação, Mika já havia fugido para longe, apesar de estar se desculpando em volume suficiente para os monstros ouvirem:\n\"Desculpe! Eu lembrarei de bater antes de entrar da próxima vez. Desse jeito, meus superiores podem lutar com vocês de maneira justa!\"\n\"A próxima vez\" veio logo, a força principal do Grupo de Guerrilha foi notificada sobre os monstros e rapidamente, mas cuidadosamente, eliminou a ameaça.\nEles ficaram surpresos em descobrir que ambos escudos dos Feiticeiros do Abismo já haviam sido severamente comprometidos, e olhando para o brilho radiante da Visão no braço direito de Mika, eles pareceram perceber algo...\nAquele dia, o jantar do Grupo de Guerrilha foi especialmente suntuoso. Todos brindaram em celebração, enquanto o próprio Mika parecia estar em choque, incapaz de entender o que estava acontecendo."
-          }
-        ]
+        ],
+        "attributes": []
       }
     ],
     "ascension": [
@@ -755,78 +1460,6 @@
               "24.0%",
               ""
             ]
-          }
-        ]
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/a8b37a3b583116f75f8c3772f1fb667b_2701269542740914445.png"
-      },
-      {
-        "key": "Avatar",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/c23402e9898c07b79495d181deca4c13_8261929088557493875.png"
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/43d1dab0b2d92ac1a103b0d9cf46b35d_7187085802132933816.png",
-        "name": "Contingência Inesperada",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "O estado Alma do Vento criado por <color=#ffd780>Redemoinho Estelar Gelado</color> reduzirá o intervalo de regeneração de Vida do estado Pena do Falcão de <color=#ffd780>Canção da Pena do Céu</color> . A proporção da redução será equivalente a proporção de aumento de Vel. de ATQ do estado Alma do Vento."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/b814884a9299cb331a6d8a202c0f5ceb_8450892387967457867.png",
-        "name": "Jornada Acompanhada",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Quando a Flecha Gélida de <color=#ffd780>Redemoinho Estelar Gelado</color> atinge o primeiro inimigo, ou quando o Sinal Estelar Gélido atinge um inimigo, gerará 1 acúmulo do efeito Detector do Talento Passivo \"Supressão de Disparo Rápido\".\nÉ necessário desbloquear o Talento Passivo \"Supressão de Disparo Rápido\"."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/1419468e97597e090f1bfbf35a0fe961_8895838216523076809.png",
-        "name": "Batedor Veterano",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Aumenta o nível de <color=#ffd780>Canção da Pena do Céu</color> em 3.\nO nível máximo de elevação é 15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/e9fff315e93fbe62e6c1fe12a13c5823_3589272687570689412.png",
-        "name": "Bênção do Sol Gelado",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Quando o estado Pena do Falcão de <color=#ffd780>Canção da Pena do Céu</color> de Mika cura os outros personagens da equipe, regenerará 3 de Energia Elemental para Mika. É possível regenerar Energia Elemental em um estado Pena do Falcão de Canção da Pena do Céu até 5 vezes."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/42fcf620e0f27f0d92aa8cf0e0ec65b2_6852248658491628843.png",
-        "name": "Flecha Sinalizadora",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Aumenta o nível do <color=#ffd780>Redemoinho Estelar Gelado</color> em 3.\nO nível máximo de elevação é 15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/10165413565a500b2243a154ffb91018_3661368178714876666.png",
-        "name": "Conselheiro Acompanhante",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Aumenta em 1 o número máximo de acúmulos do efeito Detector do estado Alma do Vento de <color=#ffd780>Redemoinho Estelar Gelado</color> . É necessário desbloquear o Talento Passivo \"Supressão de Disparo Rápido\".\nAlém disso, personagens ativos sob o estado Alma do Vento obterão 60% de aumento de Dano Físico CRIT."
           }
         ]
       }
@@ -2505,773 +3138,140 @@
         ]
       }
     ],
-    "talent": [
+    "summaryList": [
       {
-        "key": "Ataque Normal: Lança de Favonius — Ponto de Passagem",
-        "title": "Ataque Normal: Lança de Favonius — Ponto de Passagem",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/ac85f420fede2390c2e850f3061458c4_3911136461564649990.png",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/43d1dab0b2d92ac1a103b0d9cf46b35d_7187085802132933816.png",
+        "name": "Contingência Inesperada",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>Ataque Normal</color>\nRealiza até 5 golpes com a sua lança e besta de mão.\n<color=#ffd780>Ataque Carregado</color>\nConsome uma certa quantidade de Stamina para se lançar para frente, infligindo Dano em seu trajeto.\n<color=#ffd780>Ataque Imersivo</color>\nMergulha em pleno ar para golpear o chão, causando dano aos inimigos ao longo do caminho e infligindo Dano em uma AdE durante o impacto."
+            "text": "O estado Alma do Vento criado por <color=#ffd780>Redemoinho Estelar Gelado</color> reduzirá o intervalo de regeneração de Vida do estado Pena do Falcão de <color=#ffd780>Canção da Pena do Céu</color> . A proporção da redução será equivalente a proporção de aumento de Vel. de ATQ do estado Alma do Vento."
           }
-        ],
-        "attributes": [
-          {
-            "key": "Nível",
-            "values": [
-              "Nv.1",
-              "Nv.2",
-              "Nv.3",
-              "Nv.4",
-              "Nv.5",
-              "Nv.6",
-              "Nv.7",
-              "Nv.8",
-              "Nv.9",
-              "Nv.10",
-              "Nv.11"
-            ]
-          },
-          {
-            "key": "Dano do 1° Golpe",
-            "values": [
-              "43.3%",
-              "46.8%",
-              "50.3%",
-              "55.3%",
-              "58.9%",
-              "62.9%",
-              "68.4%",
-              "74.0%",
-              "79.5%",
-              "85.5%",
-              "91.6%"
-            ]
-          },
-          {
-            "key": "Dano do 2° Golpe",
-            "values": [
-              "41.5%",
-              "44.9%",
-              "48.3%",
-              "53.1%",
-              "56.5%",
-              "60.3%",
-              "65.6%",
-              "70.9%",
-              "76.2%",
-              "82.0%",
-              "87.8%"
-            ]
-          },
-          {
-            "key": "Dano do 3° Golpe",
-            "values": [
-              "54.5%",
-              "58.9%",
-              "63.4%",
-              "69.7%",
-              "74.2%",
-              "79.2%",
-              "86.2%",
-              "93.2%",
-              "100.1%",
-              "107.7%",
-              "115.3%"
-            ]
-          },
-          {
-            "key": "Dano do 4° Golpe",
-            "values": [
-              "27.6%+27.6%",
-              "29.9%+29.9%",
-              "32.1%+32.1%",
-              "35.3%+35.3%",
-              "37.6%+37.6%",
-              "40.1%+40.1%",
-              "43.7%+43.7%",
-              "47.2%+47.2%",
-              "50.7%+50.7%",
-              "54.6%+54.6%",
-              "58.4%+58.4%"
-            ]
-          },
-          {
-            "key": "Dano do 5° Golpe",
-            "values": [
-              "70.9%",
-              "76.6%",
-              "82.4%",
-              "90.7%",
-              "96.4%",
-              "103.0%",
-              "112.1%",
-              "121.1%",
-              "130.2%",
-              "140.1%",
-              "150.0%"
-            ]
-          },
-          {
-            "key": "Dano de Ataque Carregado",
-            "values": [
-              "112.7%",
-              "121.9%",
-              "131.1%",
-              "144.2%",
-              "153.4%",
-              "163.9%",
-              "178.3%",
-              "192.7%",
-              "207.1%",
-              "222.9%",
-              "238.6%"
-            ]
-          },
-          {
-            "key": "Consumo de Stamina de Ataque Carregado",
-            "values": [
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0"
-            ]
-          },
-          {
-            "key": "Dano Durante a Queda",
-            "values": [
-              "63.9%",
-              "69.1%",
-              "74.3%",
-              "81.8%",
-              "87.0%",
-              "92.9%",
-              "101.1%",
-              "109.3%",
-              "117.5%",
-              "126.4%",
-              "135.3%"
-            ]
-          },
-          {
-            "key": "Dano de Queda de Baixa/Alta Altitude",
-            "values": [
-              "128%/160%",
-              "138%/173%",
-              "149%/186%",
-              "164%/204%",
-              "174%/217%",
-              "186%/232%",
-              "202%/253%",
-              "219%/273%",
-              "235%/293%",
-              "253%/316%",
-              "271%/338%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 179,
-              "name": "Ensinamentos de Poemas",
-              "desc": "Material para aprimorar o nível de Talento.<br/>A poesia é a alma do Reino do Vento.<br/>A poesia é a manifestação de sentimentos bonitos. Em um lindo dia, a brisa carrega consigo poesia que toca o coração das pessoas como o vento acariciando as folhas.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Ballad_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 778,
-              "name": "Insígnia de Recruta",
-              "desc": "Uma insígnia para identificar os recrutas. Faz com que alguém se pergunte o que estava pensando quando se uniram à máquina de guerra dos Fatui.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Recruit's Insignia_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 178,
-              "name": "Guia de Poemas",
-              "desc": "Material para aprimorar o nível de Talento.<br/>A poesia é a alma do Reino do Vento.<br/>A poesia é a manifestação da vontade de encorajar. Nos dias obscuros, os vendavais nas ruas e becos sussurram palavras de fúria, como os tambores de batalha, como o estrondo baixo antes da tempestade.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 466,
-              "name": "Insígnia de Sargento",
-              "desc": "Uma insígnia com uma forma diferente para distinguir os sargentos dos novos recrutas. Talvez haja emoções complicadas por trás disso.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 178,
-              "name": "Guia de Poemas",
-              "desc": "Material para aprimorar o nível de Talento.<br/>A poesia é a alma do Reino do Vento.<br/>A poesia é a manifestação da vontade de encorajar. Nos dias obscuros, os vendavais nas ruas e becos sussurram palavras de fúria, como os tambores de batalha, como o estrondo baixo antes da tempestade.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 466,
-              "name": "Insígnia de Sargento",
-              "desc": "Uma insígnia com uma forma diferente para distinguir os sargentos dos novos recrutas. Talvez haja emoções complicadas por trás disso.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 178,
-              "name": "Guia de Poemas",
-              "desc": "Material para aprimorar o nível de Talento.<br/>A poesia é a alma do Reino do Vento.<br/>A poesia é a manifestação da vontade de encorajar. Nos dias obscuros, os vendavais nas ruas e becos sussurram palavras de fúria, como os tambores de batalha, como o estrondo baixo antes da tempestade.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 466,
-              "name": "Insígnia de Sargento",
-              "desc": "Uma insígnia com uma forma diferente para distinguir os sargentos dos novos recrutas. Talvez haja emoções complicadas por trás disso.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 178,
-              "name": "Guia de Poemas",
-              "desc": "Material para aprimorar o nível de Talento.<br/>A poesia é a alma do Reino do Vento.<br/>A poesia é a manifestação da vontade de encorajar. Nos dias obscuros, os vendavais nas ruas e becos sussurram palavras de fúria, como os tambores de batalha, como o estrondo baixo antes da tempestade.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 466,
-              "name": "Insígnia de Sargento",
-              "desc": "Uma insígnia com uma forma diferente para distinguir os sargentos dos novos recrutas. Talvez haja emoções complicadas por trás disso.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 177,
-              "name": "Filosofia de Poemas",
-              "desc": "Material de Elevação de Talento.<br/>Poesia é a alma do Reino do Vento.<br/>Poesia é a manifestação do desejo de difundir as palavras. Embora nada seja eterno, ainda que nada seja o mesmo, a poesia do vento ainda se espalhará além dos céus, da terra e dos mares em todos os cantos do mundo.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 636,
-              "name": "Insígnia de Oficial",
-              "desc": "Uma insígnia para identificar os oficiais. Os Fatui possuem um exército colossal, portanto, deve haver algo extraordinário naqueles que alcançaram essa classificação dentro do grupo.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 2972,
-              "name": "Lentes Desalmadas",
-              "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O espelho que estava no peito de Shouki no Kami para separá-lo do mundo externo. O símbolo mitsudomoe está gravado nele como uma demonstração proposital de posição e poder.</span><br><span style=\"color: rgb(255, 255, 255)\">Entretanto, esse símbolo não é uma demonstração de obediência à Deusa do Trovão.</span><br><span style=\"color: rgb(255, 255, 255)\">É, na verdade, uma lâmina apontada para os poderes existentes neste mundo.</span><br><span style=\"color: rgb(255, 255, 255)\">O espelho também não é um meio de impedir os olhares de julgamento das pessoas, Mas um baluarte contra este mundo maculado. Dentro deste grande templo, o castigo deve ser aplicado e a ignorância deve ser purificada.</span><br><span style=\"color: rgb(255, 255, 255)\">Sonhos devem ser abandonados, desejos devem ser cortados, e o carma deve ser restabelecido.</span></p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/08/16791688/2fdcb5ec503cbb3640e2828a854aff8e_446548796358643966.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 177,
-              "name": "Filosofia de Poemas",
-              "desc": "Material de Elevação de Talento.<br/>Poesia é a alma do Reino do Vento.<br/>Poesia é a manifestação do desejo de difundir as palavras. Embora nada seja eterno, ainda que nada seja o mesmo, a poesia do vento ainda se espalhará além dos céus, da terra e dos mares em todos os cantos do mundo.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 636,
-              "name": "Insígnia de Oficial",
-              "desc": "Uma insígnia para identificar os oficiais. Os Fatui possuem um exército colossal, portanto, deve haver algo extraordinário naqueles que alcançaram essa classificação dentro do grupo.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 2972,
-              "name": "Lentes Desalmadas",
-              "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O espelho que estava no peito de Shouki no Kami para separá-lo do mundo externo. O símbolo mitsudomoe está gravado nele como uma demonstração proposital de posição e poder.</span><br><span style=\"color: rgb(255, 255, 255)\">Entretanto, esse símbolo não é uma demonstração de obediência à Deusa do Trovão.</span><br><span style=\"color: rgb(255, 255, 255)\">É, na verdade, uma lâmina apontada para os poderes existentes neste mundo.</span><br><span style=\"color: rgb(255, 255, 255)\">O espelho também não é um meio de impedir os olhares de julgamento das pessoas, Mas um baluarte contra este mundo maculado. Dentro deste grande templo, o castigo deve ser aplicado e a ignorância deve ser purificada.</span><br><span style=\"color: rgb(255, 255, 255)\">Sonhos devem ser abandonados, desejos devem ser cortados, e o carma deve ser restabelecido.</span></p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/08/16791688/2fdcb5ec503cbb3640e2828a854aff8e_446548796358643966.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 177,
-              "name": "Filosofia de Poemas",
-              "desc": "Material de Elevação de Talento.<br/>Poesia é a alma do Reino do Vento.<br/>Poesia é a manifestação do desejo de difundir as palavras. Embora nada seja eterno, ainda que nada seja o mesmo, a poesia do vento ainda se espalhará além dos céus, da terra e dos mares em todos os cantos do mundo.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 636,
-              "name": "Insígnia de Oficial",
-              "desc": "Uma insígnia para identificar os oficiais. Os Fatui possuem um exército colossal, portanto, deve haver algo extraordinário naqueles que alcançaram essa classificação dentro do grupo.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 2972,
-              "name": "Lentes Desalmadas",
-              "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O espelho que estava no peito de Shouki no Kami para separá-lo do mundo externo. O símbolo mitsudomoe está gravado nele como uma demonstração proposital de posição e poder.</span><br><span style=\"color: rgb(255, 255, 255)\">Entretanto, esse símbolo não é uma demonstração de obediência à Deusa do Trovão.</span><br><span style=\"color: rgb(255, 255, 255)\">É, na verdade, uma lâmina apontada para os poderes existentes neste mundo.</span><br><span style=\"color: rgb(255, 255, 255)\">O espelho também não é um meio de impedir os olhares de julgamento das pessoas, Mas um baluarte contra este mundo maculado. Dentro deste grande templo, o castigo deve ser aplicado e a ignorância deve ser purificada.</span><br><span style=\"color: rgb(255, 255, 255)\">Sonhos devem ser abandonados, desejos devem ser cortados, e o carma deve ser restabelecido.</span></p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/08/16791688/2fdcb5ec503cbb3640e2828a854aff8e_446548796358643966.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 177,
-              "name": "Filosofia de Poemas",
-              "desc": "Material de Elevação de Talento.<br/>Poesia é a alma do Reino do Vento.<br/>Poesia é a manifestação do desejo de difundir as palavras. Embora nada seja eterno, ainda que nada seja o mesmo, a poesia do vento ainda se espalhará além dos céus, da terra e dos mares em todos os cantos do mundo.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 636,
-              "name": "Insígnia de Oficial",
-              "desc": "Uma insígnia para identificar os oficiais. Os Fatui possuem um exército colossal, portanto, deve haver algo extraordinário naqueles que alcançaram essa classificação dentro do grupo.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 2972,
-              "name": "Lentes Desalmadas",
-              "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O espelho que estava no peito de Shouki no Kami para separá-lo do mundo externo. O símbolo mitsudomoe está gravado nele como uma demonstração proposital de posição e poder.</span><br><span style=\"color: rgb(255, 255, 255)\">Entretanto, esse símbolo não é uma demonstração de obediência à Deusa do Trovão.</span><br><span style=\"color: rgb(255, 255, 255)\">É, na verdade, uma lâmina apontada para os poderes existentes neste mundo.</span><br><span style=\"color: rgb(255, 255, 255)\">O espelho também não é um meio de impedir os olhares de julgamento das pessoas, Mas um baluarte contra este mundo maculado. Dentro deste grande templo, o castigo deve ser aplicado e a ignorância deve ser purificada.</span><br><span style=\"color: rgb(255, 255, 255)\">Sonhos devem ser abandonados, desejos devem ser cortados, e o carma deve ser restabelecido.</span></p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/08/16791688/2fdcb5ec503cbb3640e2828a854aff8e_446548796358643966.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "Coroa da Sabedoria",
-              "desc": "Um precioso material para aumento de Nível de Talento.<br/>Costumava ser um objeto de ensino de conhecimentos nos tempos antigos. Agora, a sabedoria é encontrada em textos antigos e em profundos discursos. No entanto, esta Coroa da Sabedoria ainda deve ser capaz de transmitir algum poder e sabedoria transcendente ao seu portador.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/65b10a00fa0d203e48649babf7f42930_3855596489582253794.gif"
+        ]
       },
       {
-        "key": "Redemoinho Estelar Gelado",
-        "title": "Redemoinho Estelar Gelado",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/42fcf620e0f27f0d92aa8cf0e0ec65b2_8585335572561043897.png",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/b814884a9299cb331a6d8a202c0f5ceb_8450892387967457867.png",
+        "name": "Jornada Acompanhada",
         "desc": [
           {
             "type": "RichText",
-            "text": "Usa sua besta para atacar os inimigos, e concede aos personagens próximos o estado Alma do Vento. Quando um personagem no estado Alma do Vento está ativo no campo de batalha, aumenta a sua Vel. de ATQ.\nGera efeitos diferentes se for lançado Pressionando ou Mantendo Pressionado.\n<color=#ffd780>Pressiona</color>\nDispara uma Flecha Gélida rapidamente que penetra os inimigos, causando Dano Cryo.\n<color=#ffd780>Manter Pressionado</color>\nEntra no modo de mira, e dispara um Sinal Estelar Gélido contra o inimigo fixado na mira, causando Dano Cryo. Quando o Sinal Estelar Gélido atinge o inimigo, ascenderá e explodirá, disparando Fragmentos Estelares Gélidos contra até 3 inimigos próximos, causando Dano Cryo.\nAs estrelas explodem sob os céus congelados."
+            "text": "Quando a Flecha Gélida de <color=#ffd780>Redemoinho Estelar Gelado</color> atinge o primeiro inimigo, ou quando o Sinal Estelar Gélido atinge um inimigo, gerará 1 acúmulo do efeito Detector do Talento Passivo \"Supressão de Disparo Rápido\".\nÉ necessário desbloquear o Talento Passivo \"Supressão de Disparo Rápido\"."
           }
-        ],
-        "attributes": [
-          {
-            "key": "Nível",
-            "values": [
-              "Nv.1",
-              "Nv.2",
-              "Nv.3",
-              "Nv.4",
-              "Nv.5",
-              "Nv.6",
-              "Nv.7",
-              "Nv.8",
-              "Nv.9",
-              "Nv.10",
-              "Nv.11",
-              "Nv.12",
-              "Nv.13"
-            ]
-          },
-          {
-            "key": "Dano da Flecha Gélida",
-            "values": [
-              "67.20%",
-              "72.24%",
-              "77.28%",
-              "84.00%",
-              "89.04%",
-              "94.08%",
-              "100.80%",
-              "107.52%",
-              "114.24%",
-              "120.96%",
-              "127.68%",
-              "134.40%",
-              "142.80%"
-            ]
-          },
-          {
-            "key": "Dano do Sinal Estelar Gélido",
-            "values": [
-              "84.00%",
-              "90.30%",
-              "96.60%",
-              "105.00%",
-              "111.30%",
-              "117.60%",
-              "126.00%",
-              "134.40%",
-              "142.80%",
-              "151.20%",
-              "159.6%",
-              "168.00%",
-              "178.50%"
-            ]
-          },
-          {
-            "key": "Dano de Fragmentos Estelares Gélidos",
-            "values": [
-              "25.20%",
-              "27.09%",
-              "28.98%",
-              "31.50%",
-              "33.39%",
-              "35.28%",
-              "37.80%",
-              "40.32%",
-              "42.84%",
-              "45.36%",
-              "47.88%",
-              "50.40%",
-              "53.55%"
-            ]
-          },
-          {
-            "key": "Aumento de Vel. de ATQ",
-            "values": [
-              "13%",
-              "14%",
-              "15%",
-              "16%",
-              "17%",
-              "18%",
-              "19%",
-              "20%",
-              "21%",
-              "22%",
-              "23%",
-              "24%",
-              "25%"
-            ]
-          },
-          {
-            "key": "Duração de Alma do Vento",
-            "values": [
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s"
-            ]
-          },
-          {
-            "key": "Tempo de Recarga",
-            "values": [
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s"
-            ]
-          }
-        ],
-        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/535f8c6a02e6e5208045c402733f4278_7418081822030880969.gif"
+        ]
       },
       {
-        "key": "Canção da Pena do Céu",
-        "title": "Canção da Pena do Céu",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/1419468e97597e090f1bfbf35a0fe961_3183795376207618743.png",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/1419468e97597e090f1bfbf35a0fe961_8895838216523076809.png",
+        "name": "Batedor Veterano",
         "desc": [
           {
             "type": "RichText",
-            "text": "Eleva a moral dos companheiros através das orações dos Cavaleiros de Favonius, regenerando Vida para todos os personagens próximos baseada na Vida Máxima de Mika e concedendo a eles o estado Pena do Falcão.\n<color=#ffd780>Pena do Falcão</color>\nQuando os Ataques Normais de personagens ativos sob o estado Pena do Falcão atingem um inimigo, Mika regenerará Vida para esses personagens baseada na Vida Máxima de Mika.\nOs personagens nesse estado só podem regenerar Vida desta maneira uma vez em um curto intervalo de tempo.\n\"Leve a esperança nos momentos difíceis e não baixe a guarda que tudo ficará bem... Pois aquela pena branca pura guiará os errantes perdidos.\""
+            "text": "Aumenta o nível de <color=#ffd780>Canção da Pena do Céu</color> em 3.\nO nível máximo de elevação é 15."
           }
-        ],
-        "attributes": [
-          {
-            "key": "Nível",
-            "values": [
-              "Nv.1",
-              "Nv.2",
-              "Nv.3",
-              "Nv.4",
-              "Nv.5",
-              "Nv.6",
-              "Nv.7",
-              "Nv.8",
-              "Nv.9",
-              "Nv.10",
-              "Nv.11",
-              "Nv.12",
-              "Nv.13"
-            ]
-          },
-          {
-            "key": "Cura ao lançar Habilidade",
-            "values": [
-              "12.2% da Vida Máxima+1172",
-              "13.1% da Vida Máxima+1289",
-              "14.0% da Vida Máxima+1416",
-              "15.2% da Vida Máxima+1553",
-              "16.1% da Vida Máxima+1699",
-              "17.0% da Vida Máxima+1855",
-              "18.3% da Vida Máxima+2021",
-              "19.5% da Vida Máxima+2197",
-              "20.7% da Vida Máxima+2383",
-              "21.9% da Vida Máxima+2578",
-              "23.1% da Vida Máxima+2783",
-              "24.3%da Vida Máxima+2998",
-              "25.9% da Vida Máxima+3223"
-            ]
-          },
-          {
-            "key": "Cura de Pena do Falcão",
-            "values": [
-              "2.4% da Vida Máxima+233",
-              "2.6% da Vida Máxima+257",
-              "2.8% da Vida Máxima+282",
-              "3.0% da Vida Máxima+310",
-              "3.2% da Vida Máxima+339",
-              "3.4% da Vida Máxima+370",
-              "3.6% da Vida Máxima+403",
-              "3.9% da Vida Máxima+438",
-              "4.1% da Vida Máxima+475",
-              "4.4% da Vida Máxima+514",
-              "4.6% da Vida Máxima+555",
-              "4.9% da Vida Máxima+598",
-              "5.2% da Vida Máxima+643"
-            ]
-          },
-          {
-            "key": "Intervalo de Cura de Pena do Falcão",
-            "values": [
-              "2.5s",
-              "2.5s",
-              "2.5s",
-              "2.5s",
-              "2.5s",
-              "2.5s",
-              "2.5s",
-              "2.5s",
-              "2.5s",
-              "2.5s",
-              "2.5s",
-              "2.5s",
-              "2.5s"
-            ]
-          },
-          {
-            "key": "Duração da Pena do Falcão",
-            "values": [
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s"
-            ]
-          },
-          {
-            "key": "Tempo de Recarga",
-            "values": [
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s",
-              "18.0s"
-            ]
-          },
-          {
-            "key": "Energia Elemental",
-            "values": [
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70"
-            ]
-          }
-        ],
-        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/def7b55acd5af40f6528cf1eaf5dc890_1284765428420424757.gif"
+        ]
       },
       {
-        "key": "Supressão de Disparo Rápido",
-        "title": "Supressão de Disparo Rápido",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/f2287e0a3532a109306c67dcd8098da0_8283957257906708071.png",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/e9fff315e93fbe62e6c1fe12a13c5823_3589272687570689412.png",
+        "name": "Bênção do Sol Gelado",
         "desc": [
           {
             "type": "RichText",
-            "text": "O estado Alma do Vento de <color=#ffd780>Redeminho Estelar Gelado</color> concederá nas seguintes circunstâncias aos personagens ativos o efeito Detector, aumentando o Dano Físico causado em 10%:\n· Quando a Flecha Gélida atinge mais de um inimigo, gera 1 acúmulo do efeito Detector para cada inimigo adicional atingido;\n· Quando um Fragmento Estelar Gélido atinge um inimigo, gera 1 acúmulo do efeito Detector. Cada Fragmento Estelar Gélido só pode desencadear este efeito uma vez.\nÉ possível ter até 3 acúmulos do efeito Detector no estado Alma do Vento. Lançar Redemoinho Estelar Gelado novamente nessa duração removerá o estado Alma do Vento original e os seus acúmulos de efeito Detector."
+            "text": "Quando o estado Pena do Falcão de <color=#ffd780>Canção da Pena do Céu</color> de Mika cura os outros personagens da equipe, regenerará 3 de Energia Elemental para Mika. É possível regenerar Energia Elemental em um estado Pena do Falcão de Canção da Pena do Céu até 5 vezes."
           }
-        ],
-        "attributes": []
+        ]
       },
       {
-        "key": "Mapeamento Topográfico",
-        "title": "Mapeamento Topográfico",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/ad6372b93ce237bdef57225c7d313a5d_6812178850215022537.png",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/42fcf620e0f27f0d92aa8cf0e0ec65b2_6852248658491628843.png",
+        "name": "Flecha Sinalizadora",
         "desc": [
           {
             "type": "RichText",
-            "text": "Personagens ativos que estiverem simultaneamente no estado Pena do Falcão de <color=#ffd780>Canção da Pena do Céu</color> e Alma do Vento de <color=#ffd780>Redemoinho Estelar Gelado</color> , ao causarem Dano CRIT com um ataque farão o estado Alma do Vento gerar 1 acúmulo do efeito Detector do Talento Passivo \"Supressão de Disparo Rápido\". É possível gerar até 1 acúmulo do efeito Detector em uma duração do estado Alma do Vento.\nAlém disso, o número máximo de acúmulos do efeito Detector que podem ser obtidos no estado Alma do Vento é aumentado em 1.\nÉ necessário desbloquear o Talento Passivo \"Supressão de Disparo Rápido\"."
+            "text": "Aumenta o nível do <color=#ffd780>Redemoinho Estelar Gelado</color> em 3.\nO nível máximo de elevação é 15."
           }
-        ],
-        "attributes": []
+        ]
       },
       {
-        "key": "Demarcação",
-        "title": "Demarcação",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/055f5defd5f8c26a1d3d2d0903630cde_6915507936379147743.png",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/22/89220822/10165413565a500b2243a154ffb91018_3661368178714876666.png",
+        "name": "Conselheiro Acompanhante",
         "desc": [
           {
             "type": "RichText",
-            "text": "Mostra a localização de Especialidades de Mondstadt próximas no mapa."
+            "text": "Aumenta em 1 o número máximo de acúmulos do efeito Detector do estado Alma do Vento de <color=#ffd780>Redemoinho Estelar Gelado</color> . É necessário desbloquear o Talento Passivo \"Supressão de Disparo Rápido\".\nAlém disso, personagens ativos sob o estado Alma do Vento obterão 60% de aumento de Dano Físico CRIT."
           }
-        ],
-        "attributes": []
+        ]
+      }
+    ],
+    "story": [
+      {
+        "title": "Informações do Personagem",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Quando ele aparece no quartel-general dos Cavaleiros de Favonius, Mika rapidamente encerra qualquer discussão que tem com seus companheiros cavaleiros para então silenciosamente fugir e não ser um problema para o trabalho das outras pessoas.\nMika sempre fica nervoso quando alguém conversa com ele, fugindo rapidamente logo após terminar a conversa de uma maneira educada.\nOs cavaleiros sabem que o nome do jovem é Mika, e que ele é o irmão mais novo de Mika e o segundo filho da família Schmidt. Eles também sabem que ele um integrante do Grupo da Guerrilha, mas não muito mais do que isso.\nPoucos estão cientes do que é o trabalho de Mika, nem sabem que a versão amplamente promovida e atualizada de seus mapas militares é fruto de seu trabalho.\nO novo mapa possui dados estatísticos detalhadas sobre quase todo canto de Mondstadt com indicadores práticos para as condições de estradas, áreas com maiores atividades de monstros, terreno alto que pode servir como fortaleza temporária, e a distribuição de recursos naturais... A quantidade de detalhes é suficiente para deixar alguém confuso.\nTudo isso é resultado do trabalho de Mika ao longo de dois anos que passou viajando por Mondstadt, investigando todo canto do terreno que ele foi.\nCavaleiros que lutaram com ele sabem que ele acha usar uma lança e uma besta simultaneamente algo conveniente, e que seu estilo de luta único deixou uma impressão profunda.\nEntretanto, eles também \"alertados\" por Mika para nunca falarem dele para outras pessoas a não ser que seja completamente necessário.\n\"Mika tem muito medo de chamar a atenção de outras pessoas — ao ponto de ficar nervoso se você o encarar, quanto mais de elogiá-lo. Ele é um integrante vital dos Cavaleiros, assim como seus superiores, por isso temos que respeitar seus limites!\""
+          }
+        ]
+      },
+      {
+        "title": "História 1",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Desbloqueia quando Amizade atingir Nv.2</color>\nMika vem de uma família amorosa. Sua mãe é uma autora que escreve sobre as condições locais, seu pai é um Cavaleiro de Favonius aposentado e seu irmão, Huffman, é um membro ativo entre os Cavaleiros.\nQuando Mika estava aprendendo a ler, sua mãe saiu em busca de inspiração acompanhada pelo seu marido. Durante esse tempo, a responsabilidade de cuidar de Mika acabou nas mãos de seu irmão, Huffman.\nContudo, Huffman já havia adotado os Cavaleiros de Favonius como sua segunda casa, ele sempre estava ocupado durante os dias e saia para beber com os seus amigos durante quase todas as noites. Com a sua própria vida estando uma bagunça, como ele iria cuidar do seu irmãozinho?\nFoi assim que o pequeno Mika aprendeu a cuidar não apenas de si mesmo, mas de seu irmão quando ele retornava bêbado de noite. Enquanto as outras crianças estavam aproveitando a infância, Mika já havia aprendido a seguir uma rotina organizada, às vezes até ajudando Huffman com suas tarefas diárias.\nEnquanto estavam distantes, os pais de Mika enviavam cartas para Mondstadt todas as semanas para tranquilizar os seus filhos. A mãe de Mika é uma excelente escritora, ela descrevia todas as paisagens com uma maestria similar aos contos de fadas. Mika adorava ler as cartas dos seus pais antes de marcar as localizações exatas de tais aventuras em uma rota de seu mapa. Imaginar as aventuras de seus pais tornou-se o passatempo favorito de Mika.\nEm pouco tempo, Mika desenvolveu uma paixão pela leitura de mapas e até mesmo guardou o terreno de muitos locais na memória.\nInfelizmente, Huffman teve que estragar o clima quando deu a má notícia a Mika: \"Receio que seus esforços tenham sido desperdiçados no mapa que mamãe e papai nos deixaram. Está muito desatualizado e não foi desenhado com muita precisão.\" Mas isso era de se esperar. Afinal, aqueles que têm a habilidade de explorar livremente provavelmente se tornariam aventureiros com nada além de comissões e Mora em suas mentes. Para eles, qualquer mapa serviria.\nPor outro lado, a maioria daqueles que sabiam como desenhar mapas decentes não eram habilidosos em combate, então seria muito perigoso para eles inspecionar a selva por conta própria. Sem mencionar sua renda limitada, que não lhes permitiria pagar por proteção. Talvez chegasse o momento em que os Cavaleiros de Favonius finalmente tivessem orçamento suficiente para contratar especialistas para lidar com assuntos como esses, mas com Mondstadt tão pacífica quanto se poderia esperar, ninguém sabia ao certo quando algo tão trivial quanto a topografia poderia ser colocado em prática. Então, o pequeno Mika pensou consigo mesmo: Se ele pudesse alcançar todos os cantos do mundo como seus pais, e registrar cada detalhe do terreno sob seus pés... Isso seria a coisa mais divertida de todas.\nA partir de então, Mika estabeleceu um objetivo claro para si mesmo.\n\"Vou me tornar um topógrafo especialista de Mondstadt.\""
+          }
+        ]
+      },
+      {
+        "title": "História 2",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Desbloqueia quando Amizade atingir Nv.3</color>\nQuando os pais do Mika retornaram para Mondstadt, ficaram felizes ao ouvir sobre o novo objetivo do Mika e prometeram fazer o que pudessem para apoiá-lo.\nDaquele dia em diante, Mika dedicou a maior parte do seu tempo lendo sobre livros de geografia e assiduamente aperfeiçoando suas habilidades com desenho na biblioteca.\nLisa gostou desta criança educada, talentosa, porém trabalhadora e muitas vezes recomendou livros para ele, orientando-o pelo caminho mais eficiente.\nDepois de um tempo, Mika ganhou o reconhecimento da Lisa — \"Com suas habilidades e conhecimentos atuais, você poderia até se qualificar para estudar na Academia.\"\nFoi então que Mika começou a procurar oportunidades para colocar seus conhecimentos à prova. E acontece que, Ella Musk, quem ele havia conhecido enquanto estudava na biblioteca, estava procurando um guia para uma viagem de troca de idiomas em uma área isolada na natureza.\nE essa então, foi a primeira expedição verdadeira do Mika. Embora tenham chegado ao destino em segurança, devido a um erro nas escolhas de palavra da Ella Musk, a dupla acabou levando uma surra dos Hilichurls.\nMika concluiu que este contratempo se devia à sua falta de habilidade de combate. \"Preciso aprender a me proteger\", pensou ele, \"ou não serei capaz de garantir o sucesso de minhas expedições em áreas desconhecidas.\"\nDesde então, Mika aproveitou o tempo que passou aprendendo na biblioteca e começou a aprender técnicas de luta com o seu irmão. Felizmente, Mika tinha uma forte constituição e rapidamente aprendeu o básico.\nAcontece que os Cavaleiros de Favonius tinham acabado de elaborar o seu plano para uma expedição programada para partir três anos depois. Eles ainda estavam procurando recrutar mais alguns membros para preencher alguns cargos, e \"Topógrafo da Linha de Frente\" estava dentre as vagas disponíveis.\nEsta função tinha pré-requisitos rigorosos: os candidatos ao cargo deveriam ter algum nível de especialização em cartografia e, devido a condições potencialmente perigosas, estariam liderando a equipe pela linha de frente, tornando as habilidades de combate uma obrigação.\nEssa era a chance do Mika, mas tudo parecia ser só um sonho...\nMika inicialmente acreditava que seria convidado para a equipe como um consultor externo, mas a posição de Topógrafo da Linha de Frente sem dúvidas o tornaria um membro completo para a expedição — e um elemento crucial para toda a equipe. Ele ficou assustado ao pensar nisso no início, com medo de não ser digno de um papel tão importante, que, segundo ele, \"somente os mais fortes se qualificariam para isso\".\nSuas dúvidas logo foram dissipadas pelo incentivo do seu pai e do seu irmão, e ele se lembra das palavras dele até hoje:\\n\"Você não tem que exigir muito de si mesmo. Dar o seu melhor para ajudar é mais do que suficiente.\n\"A maioria dos cavaleiros são apenas pessoas comuns como nós, mas uma vez que nossas forças são reunidas em equipe, até mesmo os mais fortes aventureiros lutariam para se provar iguais a nós.\"\\nAssim, Mika agarrou a oportunidade e se inscreveu para a posição.\\nEle se sentia seguro de que, pelo menos, estaria dedicando seu tempo ao que amava."
+          }
+        ]
+      },
+      {
+        "title": "História 3",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Desbloqueia quando Amizade atingir Nv.4</color>\nA notícia de que o Mika havia se inscrito na expedição se espalhou como um incêndio pelos Cavaleiros de Favonius.\nO irmãozinho do Huffman vai se juntar a nós! O garotinho que sempre cuida daquele bêbado vai se juntar aos Cavaleiros!\nA ansiedade de inesperadamente se tornar o centro das atenções acelerou sua respiração e fez o seu coração bater mais forte — Mika tinha medo de falhar na avaliação dos Cavaleiros e de desonrar seu pai, arruinando a carreira do seu irmão, ou pior, arruinando a reputação do nome de sua família.\nConsiderando que muitos membros da família Schmidt já haviam entrado, os Cavaleiros de Favonius decidiram aumentar os requisitos e tonar público todo o processo de avaliação, para fazer com que a seleção fosse a mais justa possível.\nLevando em consideração cenários da vida real, o avaliador principal, Kaeya, apresentou uma série de desafios que avaliaram rigorosamente as habilidades dos participantes:\nEscalar a Espinha do Dragão enquanto vestindo uma armadura completa e uma carga pesada;\nMapear uma região infestada de monstros sem o auxílio de qualquer material de referência...\nPor sorte, Mika veio bem preparado e deu tudo de si, eventualmente superando o desafio mais difícil e tornando-se um dos três candidatos bem sucedidos.\nOs outros dois candidatos também haviam recebido a ajuda do Mika ao longo do caminho — para ele, eles eram mais como futuros companheiros de equipe do que concorrentes.\nA excelente demonstração de trabalho em equipe do Mika ganhou o reconhecimento do Grande Mestre Varka, que alocou os outros dois recrutas para a Companhia de Cavalaria e Equipe de Investigação, enquanto que, pessoalmente levando Mika para fazer parte de sua expedição.\nTodas as semanas, Varka ensinava técnicas de combate ao Mika e lhe dava várias \"tarefas de casa\" para completar.\nMais tarde, Mika se juntaria ao Grupo da Guerrilha. Se comunicar com sua Capitã bastante peculiar, fortaleceu ainda mais suas habilidades de comunicação, o que o ajudaria muito ao trabalhar com os cavaleiros de elite da equipe de expedição.\nApós se juntar aos Cavaleiros, Mika aperfeiçoou suas habilidades cartográficas enquanto investigava locais perigosos como um Topógrafo da Linha de Frente, enquanto recebia dicas do Varka de como poderia melhorar suas habilidades.\nO jovem recruta diligente rapidamente se tornou um cavaleiro calmo e confiável — embora pareça que nem mesmo ele tenha percebido isso ainda."
+          }
+        ]
+      },
+      {
+        "title": "História 4",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Desbloqueia quando Amizade atingir Nv.5</color>\nA medida que Mika continuamente refinou suas habilidades de combate, passou a se tornar um membro central do Grupo da Guerrilha em menos de dois anos, completando incontáveis missões com seus companheiros.\nA data marcada estava cada vez mais próxima, e a expedição estava para partir.\nNa festa de despedida, o Grande Mestre Varka ficou agradavelmente surpreso pela nova Visão brilhante no braço direito de Mika. Mas após pessoalmente convidá-lo para uma luta, ele concluiu que as habilidades atuais de Mika eram \"notáveis, mas insuficientes\".\nMika não entendeu o que isso significava até que a expedição entrou numa área perigosa restrita, que foi onde ele viu com seus próprios olhos os monstros que o Grande Mestre Varka usou como referência para julgar seus poderes.\nEssas criaturas errantes poderiam se tornar um pesadelo para qualquer cavaleiro azarado que se perdesse da expedição.\nA velocidade de seus batedores na vanguarda determinava o quão rápido toda a expedição poderia prosseguir, por isso, durante os dias em que a equipe estava muito ocupada, Mika só conseguia descansar por meia hora em um dia.\nEra a primeira vez de Mika trabalhando sob tanta pressão, e ele fez isso com muita dificuldade. Sem mencionar que além dos perigos desconhecidos, a expedição estava sob observação de alguém...\nUm dia, quando Mika estava se preparando para encerrar o dia, ele recebeu um alerta de outro batedor que os Cavaleiros haviam encontrado inimigos.\nQuando Mika saiu correndo para o local, Varka já havia estabelecido as linhas de frente com seus subordinados.\nNas profundezas da noite escura, Mika mal conseguia perceber uma linha de soldados, silenciosamente a postos como se fossem máquinas de guerra sem vida.\nE no meio da formação inimiga, havia uma silhueta escura e distinta. Mesmo com tochas iluminando o local, Mika não conseguia ver nada a não ser seus olhos azuis-escuros, que pareciam brilhar com uma aura misteriosa.\nSeus companheiros mencionaram sua identidade para Mika — o Mensageiro Fatui conhecido como \"Capitano\", e seus subordinados de elite.\nA vanguarda dos Cavaleiros havia se encontrado com batedores dos Fatui, e uma altercação ocorreu, resultando em ambos aumentando seus ânimos e solicitando reforços, ao ponto de alertarem seus comandantes.\nO cheiro de pólvora era forte, e a sensação de uma crise deixou os membros de Mika com calafrios e dormentes.\nEle não conseguia evitar pensar no confronto subsequente se tornar um conflito armado, e o que ele faria caso algo assim acontecesse...\nO Mensageiro — Mika sabia que ele não tinha chance nenhuma de bloquear um golpe desinteressado sequer dessa pessoa.\nSeus pensamentos confusos e exaustão o deixaram com dificuldade para respirar ou se focar.\nVarka, entretanto, parecia inabalado. Ele cumprimentou o Mensageiro de longe e caminhou na sua direção, com sua arma e suas mãos. O Capitano, em troca, comandou que suas tropas ficassem paradas a medida que ele se aproximava.\nA tensão estava no seu ápice, Varka e Capitano conversaram brevemente e pareceram chegar a um consenso.\nA silhueta escura levantou seu braço, e as sombras fantasmagóricas dos soldados Fatui silenciosamente se viraram e partiram com ele.\nOs Cavaleiros suspiraram aliviados, alguns tremiam de medo. Mas quanto Varka retornou para a formação dos Cavaleiros, parecia relaxado como sempre fora.\n\"Que surpresa! Se não fosse pelas nossas circunstâncias únicas, eu adoraria convidá-lo para um duelo!\"\n\"E não é como se ele fosse uma pessoa teimosa. Ele sabe bem que lutar uma batalha numa terra estrangeira seria desvantajoso para nós dois.\"\nFoi nesse momento que Mika percebeu que eles estavam no precipício de uma guerra, mas que o Grande Mestre estava lá para impedir um conflito.\nA presença sobrepujante do Capitano e a calma com que o Grande Mestre lidou com a crise deixaram uma presença profunda em Mika.\nMika refletiu sobre essa experiência por muito tempo, e concluiu que apesar de estar ficando mais forte, ainda tinha um longo caminho pela frente para lidar com situações como essa.\nHavia ainda muito que ele podia fazer para ajudar sua equipe. Ele tinha que trabalhar duro para se tornar um Cavaleiro confiável que pudesse lidar com tudo..."
+          }
+        ]
+      },
+      {
+        "title": "História 5",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Desbloqueia quando Amizade atingir Nv.6</color>\nFelizmente, Mika não encontraria nada excessivamente perigoso durante a espera e tranquilamente passou pelo período mais difícil.\nDurante o Festvinho, Mika retornou a Mondstadt com a carta do Grande Mestre Varka e reassumiu seu posto no Grupo de Guerrilha.\nOs membros do Grupo de Guerrilha estavam animados com seu retorno e surpresos com o progresso surpreendente que ele havia feito, pois agora ele podia facilmente concluir tarefas que geralmente necessitavam de três batedores.\nConsiderando que a carta do Grande Mestre tinha vagamente mencionado os Fatui e que Mika tinha sido um membro chave na expedição sob o comando direto de Varka... Seus colegas de equipe rapidamente conectaram os pontos e uma estranha cadeia lógica surgiu:\n\"Mika lutou contra os Fatui! Mika pode ter lutado contra a elite dos Fatui! Mika deve ter lutado ao lado do Grande Mestre e vencido uma batalha contra um Mensageiro Fatuus!\"\n\"Como mais ele poderia ter se tornado tão forte de repente? Mika é o nosso herói! Ele pode fazer qualquer coisa por nós agora!\"\nVerdade seja dita, Mika havia simplesmente acumulado uma grande quantidade de experiência. Os outros Cavaleiros que haviam ido também tinham feito progresso em várias medidas. Eles simplesmente ainda não haviam retornado, portanto, nenhuma comparação válida podia ser feita.\nMika não sabia como lidar com todos os rumores absurdos, então ele consultou Jean e Kaeya para pedir conselhos.\nJean informou o líder de cada pelotão para permanecer racional e não espalhar rumores baseados puramente em especulação. Além disso, muitas questões relacionadas à expedição eram consideradas altamente confidenciais e deveriam ser tratadas com descrição.\nKaeya, por outro lado, parecia gostar de brincar com os rumores. Membros dos Cavaleiros de Favonius todos tinham mais ou menos algum tipo de antipatia pelos Fatui, e um rumor que diz \"Mika deu uma boa surra nos Fatui\" poderia muito bem elevar os ânimos.\nIndependente do caso, Mika se sentiu muito tranquilizado agora que a Grande Mestre Intendente tinha sido informada da situação e foi confortado em saber que ele não havia causado problemas a ninguém.\nEle se apresentou ao serviço como sempre e garantiu que fizesse o possível para ajudar os outros.\nMas os rumores exagerados não podiam ser recolhidos e Mika descobriu que ganhar confiança demais vem com seu próprio conjunto de dificuldades...\nRecentemente, mais Cavaleiros têm o abordado para pegar um novo mapa emprestado, pedir ajuda para fazer manutenção em uma arma ou solicitar uma porção dos mantimentos de campo do Grupo do Guerrilha.\nTodos parecem esperar que alguns dos poderes dele sejam transmitidos para si, para que possam ficar mais fortes rapidamente, exatamente como Mika."
+          }
+        ]
+      },
+      {
+        "title": "Aparelho Topográfico Multiúso de Linha de Frente",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Desbloqueia quando Amizade atingir Nv.4</color>\nUm dispositivo intrincado em formato de livro que Mika carrega consigo para onde for.\nEle foi desenvolvido por Mika e técnicos da Equipe de Investigação e seus componentes-chave foram feitos usando os criações alquímicas mais recentes de Albedo.\nUm caderno está incorporado no interior do dispositivo que pode ser usado para registrar informações. Projetado para facilitar a produção e utilização rápida de mapas, cada uma de suas páginas pode ser convenientemente removida e substituída.\nUm padrão elaborado está entalhado no painel do verso do aparelho. Canalizar energia elemental no entalhe ativará o componente em formato de prisma fora desse painel, o que por sua vez disparará um \"feixe de onda\" em direção a uma região alvo no formato de um leque.\nA distância entre o aparelho e a região alvo pode então ser precisamente calculada usando o tempo necessário para o feixe ricochetear de volta. Ao aumentar tanto a frequência e amplitude do feixe, o aparelho gerará um esboço de uma pequena área do terreno.\nEsta função pode melhorar imensamente a precisão de um mapa, mas infelizmente, todo o resto, incluindo as informações estatísticas e cálculos relacionados ao terreno em questão, deve ser computado na mente do usuário.\nApenas aqueles com excelentes habilidades de raciocínio espacial e um extenso conhecimento do terreno alvo são capazes de usar plenamente esta função.\nPortanto, Mika se tornou o único Topógrafo de Linha de Frente que consegue usar o aparelho sem dificuldades e sua taxa de uso geral não é muito alta.\nHouve outros aparelhos melhorados planejados originalmente para distribuição a outras equipes, mas eles foram armazenados, para serem usados como peças de substituição para o aparelho de Mika.\nO aparelho é o ajudante mais confiável de Mika em seu trabalho e um símbolo da honra de ser o melhor topógrafo, mas Mika jamais mencionou suas funções impressionantes para outros.\nPara Mika, isso parece muito com se gabar, sem mencionar que isso poderia potencialmente dar trabalho extra a Albedo... Atrapalhar os outros é a última coisa que Mika gostaria de fazer, afinal de contas."
+          }
+        ]
+      },
+      {
+        "title": "Visão",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Desbloqueia quando Amizade atingir Nv.6</color>\nMika já esteve em uma situação de vida ou morte uma vez.\nIsso não foi muito depois de ele ter entrado no Grupo de Guerrilha, as informações sobre certas áreas não eram mais válidas e Mika havia tomado a tarefa de atualizar os detalhes do terreno sozinho.\nEle lentamente subiu as ruínas, apenas para acidentalmente derrubar um pedaço de pedra de uma parede quebrada, alertando dois Feiticeiros do Abismo espreitando na escuridão.\nConforme as chamas se entrelaçavam, uma corrente de energia elemental o envolveu instantaneamente como se estivesse prestes a esmagá-lo e o transformar na próxima refeição dos monstros.\nDor e pânico inundaram os sentidos dele e apenas um pensamento permaneceu em sua consciência, ele precisava escapar e avisar os outros.\n\"Estes monstros... Eles seriam uma ameaça até aos membros mais experientes do pelotão...!\"\nEra responsabilidade de um Topógrafo de Linha de Frente manter seus colegas de equipe longe de situações como essa.\nOs Feiticeiros do Abismo gritaram em alegria e estavam prestes a comandar outros monstros a saírem de seus esconderijos quando uma lança giratória rompeu a cortina de chamas. Uma névoa gelada explodiu pelas ruínas, removendo o calor insuportável em um instante.\nQuando os Feiticeiros do Abismo finalmente entenderam a situação, Mika já havia fugido para longe, apesar de estar se desculpando em volume suficiente para os monstros ouvirem:\n\"Desculpe! Eu lembrarei de bater antes de entrar da próxima vez. Desse jeito, meus superiores podem lutar com vocês de maneira justa!\"\n\"A próxima vez\" veio logo, a força principal do Grupo de Guerrilha foi notificada sobre os monstros e rapidamente, mas cuidadosamente, eliminou a ameaça.\nEles ficaram surpresos em descobrir que ambos escudos dos Feiticeiros do Abismo já haviam sido severamente comprometidos, e olhando para o brilho radiante da Visão no braço direito de Mika, eles pareceram perceber algo...\nAquele dia, o jantar do Grupo de Guerrilha foi especialmente suntuoso. Todos brindaram em celebração, enquanto o próprio Mika parecia estar em choque, incapaz de entender o que estava acontecendo."
+          }
+        ]
       }
     ]
   }
