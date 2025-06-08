@@ -5,16 +5,981 @@
   "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/b07074c2b9040516fd240b6b8d65c011_2487211347344319683.png",
   "headerImgUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/d6b244ef6ec3df3bd36e51067d450f17_4308094211599377757.png",
   "filterValues": {
-    "characterRegion": "Natlan",
-    "characterVision": "Geo",
     "characterWeapon": "Espada",
+    "characterRegion": "Natlan",
     "characterProperty": "DEF",
+    "characterVision": "Geo",
     "characterRarity": 5
   },
   "menuId": 2,
   "menuName": "Guia de Personagens",
   "version": 1734056607,
   "components": {
+    "talent": [
+      {
+        "title": "Ataque Normal: Rugido de Ehecatl",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/94aa30ae75b8c7c6a9c64ab05bd5dda7_8132094599204598576.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Ataque Normal</color>\nFaz até 3 golpes consecutivos.\n<color=#ffd780>Ataque Carregado</color>\nConsome uma certa quantidade de Stamina para fazer um chute em frente.\n<color=#ffd780>Ataque Imersivo</color>\nSe lança do ar para atacar o chão, causando dano aos oponentes ao longo do caminho e causando Dano em AdE durante o impacto com base na DEF de Xilonen.\n<color=#ffd780>Estado Espírito da Noite: Lâmina Giratória</color>\nQuando está no estado Bênção do Espírito da Noite, Xilonen troca para o modo Lâmina Giratória. Nesse estado, o Ataque Normal de Xilonen é convertido para Patins Cortantes, fazendo até 4 chutes consecutivos, e não podendo mais fazer Ataques Carregados.\nNesse estado, ao fazer um Ataque Normal e Imersivo, converterá eles para causar <color=#ffe699>Dano Geo</color> que não pode ser substituído com alinhamento de Espírito da Noite e baseados na DEF de Xilonen."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Nível",
+            "values": [
+              "Nv.1",
+              "Nv.2",
+              "Nv.3",
+              "Nv.4",
+              "Nv.5",
+              "Nv.6",
+              "Nv.7",
+              "Nv.8",
+              "Nv.9",
+              "Nv.10",
+              "Nv.11"
+            ]
+          },
+          {
+            "key": "Dano do 1º Golpe",
+            "values": [
+              "51.8%",
+              "56.0%",
+              "60.2%",
+              "66.2%",
+              "70.5%",
+              "75.3%",
+              "81.9%",
+              "88.5%",
+              "95.2%",
+              "102.4%",
+              "109.6%"
+            ]
+          },
+          {
+            "key": "Dano do 2º Golpe",
+            "values": [
+              "27.4%+27.4%",
+              "29.6%+29.6%",
+              "31.8%+31.8%",
+              "35.0%+35.0%",
+              "37.2%+37.2%",
+              "39.8%+39.8%",
+              "43.3%+43.3%",
+              "46.8%+46.8%",
+              "50.3%+50.3%",
+              "54.1%+54.1%",
+              "57.9%+57.9%"
+            ]
+          },
+          {
+            "key": "Dano do 3º Golpe",
+            "values": [
+              "72.9%",
+              "78.9%",
+              "84.8%",
+              "93.3%",
+              "99.2%",
+              "106.0%",
+              "115.4%",
+              "124.7%",
+              "134.0%",
+              "144.2%",
+              "154.4%"
+            ]
+          },
+          {
+            "key": "Dano de Ataque Carregado",
+            "values": [
+              "91.3%",
+              "98.8%",
+              "106.2%",
+              "116.8%",
+              "124.3%",
+              "132.8%",
+              "144.4%",
+              "156.1%",
+              "167.8%",
+              "180.5%",
+              "193.3%"
+            ]
+          },
+          {
+            "key": "Consumo de Stamina do Ataque Carregado",
+            "values": [
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0"
+            ]
+          },
+          {
+            "key": "Dano Durante a Queda",
+            "values": [
+              "63.9% DEF",
+              "69.1% DEF",
+              "74.3% DEF",
+              "81.8% DEF",
+              "87.0% DEF",
+              "92.9% DEF",
+              "101.1% DEF",
+              "109.3% DEF",
+              "117.5% DEF",
+              "126.4% DEF",
+              "135.3% DEF"
+            ]
+          },
+          {
+            "key": "Dano de Queda de Baixa/Alta Altitude",
+            "values": [
+              "127.8% DEF/159.7% DEF",
+              "138.2% DEF/172.7% DEF",
+              "148.6% DEF/185.7% DEF",
+              "163.5% DEF/204.2% DEF",
+              "173.9% DEF/217.2% DEF",
+              "185.8% DEF/232.1% DEF",
+              "202.2% DEF/252.5% DEF",
+              "218.5% DEF/272.9% DEF",
+              "234.9% DEF/293.4% DEF",
+              "252.7% DEF/315.6% DEF",
+              "270.5% DEF/337.9% DEF"
+            ]
+          },
+          {
+            "key": "Dano do 1º Golpe da Lâmina Giratoria",
+            "values": [
+              "56.0% DEF",
+              "60.6% DEF",
+              "65.1% DEF",
+              "71.7% DEF",
+              "76.2% DEF",
+              "81.4% DEF",
+              "88.6% DEF",
+              "95.8% DEF",
+              "102.9% DEF",
+              "110.7% DEF",
+              "118.6% DEF"
+            ]
+          },
+          {
+            "key": "Dano do 2º Golpe da Lâmina Giratoria",
+            "values": [
+              "55.0% DEF",
+              "59.5% DEF",
+              "64.0% DEF",
+              "70.4% DEF",
+              "74.9% DEF",
+              "80.0% DEF",
+              "87.1% DEF",
+              "94.1% DEF",
+              "101.1% DEF",
+              "108.8% DEF",
+              "116.5% DEF"
+            ]
+          },
+          {
+            "key": "Dano do 3º Golpe da Lâmina Giratoria",
+            "values": [
+              "65.8% DEF",
+              "71.2% DEF",
+              "76.5% DEF",
+              "84.2% DEF",
+              "89.5% DEF",
+              "95.7% DEF",
+              "104.1% DEF",
+              "112.5% DEF",
+              "120.9% DEF",
+              "130.1% DEF",
+              "139.3% DEF"
+            ]
+          },
+          {
+            "key": "Dano do 4º Golpe da Lâmina Giratoria",
+            "values": [
+              "86.0% DEF",
+              "93.0% DEF",
+              "100.0% DEF",
+              "110.0% DEF",
+              "117.0% DEF",
+              "125.0% DEF",
+              "136.0% DEF",
+              "147.0% DEF",
+              "158.1% DEF",
+              "170.1% DEF",
+              "182.1% DEF"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6633,
+              "name": "Ensinamentos da Ignição",
+              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/da7d45c793d53cd4a369d7c45afe9d81_3484506631950644156.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6644,
+              "name": "Apito de Madeira do Sentinela",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/e07c501cd10522b752f2c2f31ac8c642_5437826751307642869.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6634,
+              "name": "Guia da Ignição",
+              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/162ba8b049c0fd0359169fd55c2e180e_6634099661695760824.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6645,
+              "name": "Apito de Metal do Guerreiro",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/54375bf17fec5be6b0f4b9ca377cf847_4450482122144936428.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6634,
+              "name": "Guia da Ignição",
+              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/162ba8b049c0fd0359169fd55c2e180e_6634099661695760824.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6645,
+              "name": "Apito de Metal do Guerreiro",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/54375bf17fec5be6b0f4b9ca377cf847_4450482122144936428.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6634,
+              "name": "Guia da Ignição",
+              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/162ba8b049c0fd0359169fd55c2e180e_6634099661695760824.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6645,
+              "name": "Apito de Metal do Guerreiro",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/54375bf17fec5be6b0f4b9ca377cf847_4450482122144936428.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6634,
+              "name": "Guia da Ignição",
+              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/162ba8b049c0fd0359169fd55c2e180e_6634099661695760824.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6645,
+              "name": "Apito de Metal do Guerreiro",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/54375bf17fec5be6b0f4b9ca377cf847_4450482122144936428.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6635,
+              "name": "Filosofias da Ignição",
+              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/9c4596dc24ddc391b3b4ca2439261cde_2405366525579624554.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6646,
+              "name": "Apito Dourado do Guerreiro de Coroa Sauriana",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/c8648efda2051a6f005647a78ac907fb_1968831310426328047.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 2972,
+              "name": "Lentes Desalmadas",
+              "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O espelho que estava no peito de Shouki no Kami para separá-lo do mundo externo. O símbolo mitsudomoe está gravado nele como uma demonstração proposital de posição e poder.</span><br><span style=\"color: rgb(255, 255, 255)\">Entretanto, esse símbolo não é uma demonstração de obediência à Deusa do Trovão.</span><br><span style=\"color: rgb(255, 255, 255)\">É, na verdade, uma lâmina apontada para os poderes existentes neste mundo.</span><br><span style=\"color: rgb(255, 255, 255)\">O espelho também não é um meio de impedir os olhares de julgamento das pessoas, Mas um baluarte contra este mundo maculado. Dentro deste grande templo, o castigo deve ser aplicado e a ignorância deve ser purificada.</span><br><span style=\"color: rgb(255, 255, 255)\">Sonhos devem ser abandonados, desejos devem ser cortados, e o carma deve ser restabelecido.</span></p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/08/16791688/2fdcb5ec503cbb3640e2828a854aff8e_446548796358643966.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6635,
+              "name": "Filosofias da Ignição",
+              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/9c4596dc24ddc391b3b4ca2439261cde_2405366525579624554.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6646,
+              "name": "Apito Dourado do Guerreiro de Coroa Sauriana",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/c8648efda2051a6f005647a78ac907fb_1968831310426328047.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 2972,
+              "name": "Lentes Desalmadas",
+              "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O espelho que estava no peito de Shouki no Kami para separá-lo do mundo externo. O símbolo mitsudomoe está gravado nele como uma demonstração proposital de posição e poder.</span><br><span style=\"color: rgb(255, 255, 255)\">Entretanto, esse símbolo não é uma demonstração de obediência à Deusa do Trovão.</span><br><span style=\"color: rgb(255, 255, 255)\">É, na verdade, uma lâmina apontada para os poderes existentes neste mundo.</span><br><span style=\"color: rgb(255, 255, 255)\">O espelho também não é um meio de impedir os olhares de julgamento das pessoas, Mas um baluarte contra este mundo maculado. Dentro deste grande templo, o castigo deve ser aplicado e a ignorância deve ser purificada.</span><br><span style=\"color: rgb(255, 255, 255)\">Sonhos devem ser abandonados, desejos devem ser cortados, e o carma deve ser restabelecido.</span></p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/08/16791688/2fdcb5ec503cbb3640e2828a854aff8e_446548796358643966.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6635,
+              "name": "Filosofias da Ignição",
+              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/9c4596dc24ddc391b3b4ca2439261cde_2405366525579624554.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6646,
+              "name": "Apito Dourado do Guerreiro de Coroa Sauriana",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/c8648efda2051a6f005647a78ac907fb_1968831310426328047.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 2972,
+              "name": "Lentes Desalmadas",
+              "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O espelho que estava no peito de Shouki no Kami para separá-lo do mundo externo. O símbolo mitsudomoe está gravado nele como uma demonstração proposital de posição e poder.</span><br><span style=\"color: rgb(255, 255, 255)\">Entretanto, esse símbolo não é uma demonstração de obediência à Deusa do Trovão.</span><br><span style=\"color: rgb(255, 255, 255)\">É, na verdade, uma lâmina apontada para os poderes existentes neste mundo.</span><br><span style=\"color: rgb(255, 255, 255)\">O espelho também não é um meio de impedir os olhares de julgamento das pessoas, Mas um baluarte contra este mundo maculado. Dentro deste grande templo, o castigo deve ser aplicado e a ignorância deve ser purificada.</span><br><span style=\"color: rgb(255, 255, 255)\">Sonhos devem ser abandonados, desejos devem ser cortados, e o carma deve ser restabelecido.</span></p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/08/16791688/2fdcb5ec503cbb3640e2828a854aff8e_446548796358643966.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6635,
+              "name": "Filosofias da Ignição",
+              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/9c4596dc24ddc391b3b4ca2439261cde_2405366525579624554.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6646,
+              "name": "Apito Dourado do Guerreiro de Coroa Sauriana",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/c8648efda2051a6f005647a78ac907fb_1968831310426328047.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 2972,
+              "name": "Lentes Desalmadas",
+              "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O espelho que estava no peito de Shouki no Kami para separá-lo do mundo externo. O símbolo mitsudomoe está gravado nele como uma demonstração proposital de posição e poder.</span><br><span style=\"color: rgb(255, 255, 255)\">Entretanto, esse símbolo não é uma demonstração de obediência à Deusa do Trovão.</span><br><span style=\"color: rgb(255, 255, 255)\">É, na verdade, uma lâmina apontada para os poderes existentes neste mundo.</span><br><span style=\"color: rgb(255, 255, 255)\">O espelho também não é um meio de impedir os olhares de julgamento das pessoas, Mas um baluarte contra este mundo maculado. Dentro deste grande templo, o castigo deve ser aplicado e a ignorância deve ser purificada.</span><br><span style=\"color: rgb(255, 255, 255)\">Sonhos devem ser abandonados, desejos devem ser cortados, e o carma deve ser restabelecido.</span></p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/08/16791688/2fdcb5ec503cbb3640e2828a854aff8e_446548796358643966.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "Coroa da Sabedoria",
+              "desc": "Um precioso material para aumento de Nível de Talento.<br/>Costumava ser um objeto de ensino de conhecimentos nos tempos antigos. Agora, a sabedoria é encontrada em textos antigos e em profundos discursos. No entanto, esta Coroa da Sabedoria ainda deve ser capaz de transmitir algum poder e sabedoria transcendente ao seu portador.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/10/04/6585b1122e533bc38b2b6a82fe7056ff_2915866520530315161.gif"
+      },
+      {
+        "title": "Arranhão de Yohual",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/c75e956f8176e371a9eac14a7ec1a6eb_1081721965307152972.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Deixe os ritmos da paixão soarem pela terra! Xilonen troca para lâminas rápidas de combate e avança para frente, causando <color=#ffe699>Dano Geo</color> com alinhamento de Espírito da Noite baseado na DEF de Xilonen.\nDepois de lançar, Xilonen obtém 45 pontos de Espírito da Noite e entra no estado Bênção do Espírito da Noite. Nesse estado, Xilonen troca para o modo Lâmina Giratória.\n<color=#ffd780>Amostra da Origem</color>\nXilonen possui três Dispositivos de Amostra, e pode mostrar Notas diferentes com base nos Tipos Elementais dos membros da equipe, e ao ativar reduz a RES do Elemento correspondente do inimigo.\nO início registrado dos três Dispositivos de Amostra é <color=#ffe699>Geo</color> , e para cada personagem <color=#ff9999>Pyro</color> , <color=#80c0ff>Hydro</color> , <color=#99ffff>Cryo</color> ou <color=#ffacff>Electro</color> na equipe, uma amostra <color=#ffe699>Geo</color> será convertida para o Tipo Elemental correspondente.\nQuando está no estado Bênção do Espírito da Noite, a Amostra da Origem <color=#ffe699>Geo</color> que Xilonen carrega se manterá ativa do começo ao fim. Ao desbloquear o Talento Passivo \"Ecos de Netotiliztli\", Xilonen poderá regenerar seus pontos de Espírito da Noite através dos efeitos desse Talento Passivo. Quando seus pontos de Espírito da Noite alcançarem o máximo, Xilonen consome todos os pontos de Espírito da Noite e ativará as três Amostras da Origem de Xilonen por 15s.\nQuando Amostra da Origem é ativada, reduz a RES dos Elementos correspondentes dos inimigos próximos. Efeitos de Amostras da Origem com Tipos Elementais iguais não acumulam. Esse efeito pode ser desencadeado quando Xilonen não é a personagem ativa.\n<color=#ffd780>Bênção do Espírito da Noite</color>\nConsome pontos de Espírito da Noite continuamente. Quando os pontos de Espírito da Noite acabarem, ou quando lançar novamente, o estado Bênção do Espírito da Noite de Xilonen acabará. O estado Bênção do Espírito da Noite possui as seguintes características:\n· Troca para o modo Lâmina Giratória, aumentando a Veloc. Mov. e Veloc. de Escalada de Xilonen. Ao escalar, pode usar sua forma de Ocelote para fazer um salto alto rápido.\n· O estado Bênção do Espírito da Noite de Xilonen possui os seguintes limites: quando está nele, os pontos de Espírito da Noite de Xilonen possuem um limite de 9s. Ao ultrapassarem esse limite, serão imediatamente deduzidos.\nQuando está no estado Benção do Espírito da Noite e os pontos de Espírito da Noite acabarem, Xilonen não poderá gerar pontos de Espírito da Noite através do Talento Passivo \"Ecos de Netotiliztli\".\nDe certa forma, criar joias e fazer mix de música possuem princípios similares: filtrar as impurezas e reter só o que há de mais radiante\nXilonen não é muito exigente para escolher isso nos dois. Ela gosta bastante!"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Nível",
+            "values": [
+              "Nv.1",
+              "Nv.2",
+              "Nv.3",
+              "Nv.4",
+              "Nv.5",
+              "Nv.6",
+              "Nv.7",
+              "Nv.8",
+              "Nv.9",
+              "Nv.10",
+              "Nv.11",
+              "Nv.12",
+              "Nv.13"
+            ]
+          },
+          {
+            "key": "Dano de Investida",
+            "values": [
+              "179.2% DEF",
+              "192.6% DEF",
+              "206.1% DEF",
+              "224% DEF",
+              "237.4% DEF",
+              "250.9% DEF",
+              "268.8% DEF",
+              "286.7% DEF",
+              "304.6% DEF",
+              "322.6% DEF",
+              "340.5% DEF",
+              "358.4% DEF",
+              "380.8% DEF"
+            ]
+          },
+          {
+            "key": "Diminuição de RES Elemental",
+            "values": [
+              "9.0%",
+              "12.0%",
+              "15.0%",
+              "18.0%",
+              "21.0%",
+              "24.0%",
+              "27.0%",
+              "30.0%",
+              "33.0%",
+              "36.0%",
+              "39.0%",
+              "42.0%",
+              "45.0%"
+            ]
+          },
+          {
+            "key": "Duração de Ativação da Amostra da Origem",
+            "values": [
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s"
+            ]
+          },
+          {
+            "key": "Limite de Tempo de Pontos de Espírito da Noite ",
+            "values": [
+              "9.0s",
+              "9.0s",
+              "9.0s",
+              "9.0s",
+              "9.0s",
+              "9.0s",
+              "9.0s",
+              "9.0s",
+              "9.0s",
+              "9.0s",
+              "9.0s",
+              "9.0s",
+              "9.0s"
+            ]
+          },
+          {
+            "key": "Limite de Pontos de Espírito da Noite ",
+            "values": [
+              "90.0",
+              "90.0",
+              "90.0",
+              "90.0",
+              "90.0",
+              "90.0",
+              "90.0",
+              "90.0",
+              "90.0",
+              "90.0",
+              "90.0",
+              "90.0",
+              "90.0"
+            ]
+          },
+          {
+            "key": "Tempo de Recarga",
+            "values": [
+              "7.0s",
+              "7.0s",
+              "7.0s",
+              "7.0s",
+              "7.0s",
+              "7.0s",
+              "7.0s",
+              "7.0s",
+              "7.0s",
+              "7.0s",
+              "7.0s",
+              "7.0s",
+              "7.0s"
+            ]
+          }
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/10/04/4b6f66c55e588fd864e3cd0114d73c56_4483588669663079986.gif"
+      },
+      {
+        "title": "Ritmo Ocelotlicue!",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/9f80d64ea44f4aa0eee7accb229a21e6_4347470912743201934.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Ativa o Mixer Estéreo de Flogisto (Edição Portátil) na potência máxima, causando <color=#ffe699>Dano Geo em AdE</color> com alinhamento de Espírito da Noite com base na DEF de Xilonen.\nAlém disso, desencadeia os seguintes efeitos com base nos tipos de Amostra da Origem:\n· Quando possui pelo menos 2 Amostras da Origem que passaram por Conversão Elemental: Xilonen toca o ritmo \"Solta a Alegria\": regenera Vida para os personagens próximos ativos periodicamente, a quantidade regenerada é baseada na DEF de Xilonen.\n· Ao possuir menos de 2 Amostras da Origem que passaram por Conversão Elemental: Xilonen toca o ritmo \"Pipoco\", solta duas batidas adicionais, causando <color=#ffe699>Dano Geo em AdE</color> com alinhamento de Espírito da Noite baseado na DEF de Xilonen.\n\"Certo, vamos pausar aqui!\"\n\"Tranquilo, gravei essas batidas. Vamos ver o que vai sair quando fizermos o mix dos ritmos, beleza?\""
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Nível",
+            "values": [
+              "Nv.1",
+              "Nv.2",
+              "Nv.3",
+              "Nv.4",
+              "Nv.5",
+              "Nv.6",
+              "Nv.7",
+              "Nv.8",
+              "Nv.9",
+              "Nv.10",
+              "Nv.11",
+              "Nv.12",
+              "Nv.13"
+            ]
+          },
+          {
+            "key": "Dano de Habilidade",
+            "values": [
+              "281.3% DEF",
+              "302.4% DEF",
+              "323.5% DEF",
+              "351.6% DEF",
+              "372.7% DEF",
+              "393.8% DEF",
+              "421.9% DEF",
+              "450.0% DEF",
+              "478.2% DEF",
+              "506.3% DEF",
+              "534.4% DEF",
+              "562.6% DEF",
+              "597.7% DEF"
+            ]
+          },
+          {
+            "key": "Cura Contínua",
+            "values": [
+              "104% DEF+500",
+              "111.8% DEF+550",
+              "119.6% DEF+605",
+              "130.0% DEF+663",
+              "137.8% DEF+726",
+              "145.6% DEF+792",
+              "156.0% DEF+863",
+              "166.4% DEF+938",
+              "176.8% DEF+1018",
+              "187.2% DEF+1101",
+              "197.6% DEF+1189",
+              "208.0% DEF+1281",
+              "221.0% DEF+1377"
+            ]
+          },
+          {
+            "key": "Duração do Ritmo Solta a Alegria",
+            "values": [
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s"
+            ]
+          },
+          {
+            "key": "Dano da Batida Adicional",
+            "values": [
+              "281.3% DEF",
+              "302.4% DEF",
+              "323.5% DEF",
+              "351.6% DEF",
+              "372.7% DEF",
+              "393.8% DEF",
+              "421.9% DEF",
+              "450.0% DEF",
+              "478.2% DEF",
+              "506.3% DEF",
+              "534.4% DEF",
+              "562.6% DEF",
+              "597.7% DEF"
+            ]
+          },
+          {
+            "key": "Tempo de Recarga",
+            "values": [
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s"
+            ]
+          },
+          {
+            "key": "Energia Elemental",
+            "values": [
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60"
+            ]
+          }
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/10/04/ebc40e2bcde1af5d2ec253de58db1377_8476250483693894412.gif"
+      },
+      {
+        "title": "Ecos de Netotiliztli",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/0c63d4800aa86693d8bc45539683a549_1075211214281269223.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Enquanto estiver no estado de Bênção do Espírito da Noite:\n· Se Xilonen tiver pelo menos 2 Amostras da Origem que tiveram Conversão Elemental, ela ganha 35 pontos de Espírito da Noite quando seus Ataques Normais ou Imersivos atingirem os oponentes. Pode ser ativado uma vez a cada 0.1s.\n· Se Xilonen tiver menos de 2 Amostras da Origem que tiveram Conversão Elemental, seus Ataques Normais e Imersivos causam 30% a mais de Dano."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "title": "Bainha Armada Portátil",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/75aed39360b7e7bfdda8a1c559cd8cc4_8744160790797390038.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Quando está no estado Bênção do Espírito da Noite e quando os pontos de Espírito da Noite de Xilonen alcançam o valor máximo, desencadeia um efeito igual a Explosão do Espírito da Noite uma vez. Esse efeito pode ser desencadeado uma vez a cada 14s.\nAlém disso, quando um membro próximo da equipe desencadeia Explosão do Espírito da Noite, aumenta a DEF de Xilonen em 20% por 15s."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "title": "Presente do Reino da Noite: Bênção das Chamas Forjadas",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/8914ff7e9d97536ef8398003ad429c04_1462532151461583794.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Depois que os pontos de Espírito da Noite de Xilonen acabarem, ela mudará para consumir Flogisto para manter a Bênção do Espírito da Noite.\nEnquanto estiver numa área de Natlan com Dispositivos de Flogisto, ela pode usar Transmissão do Espírito da Noite: Xilonen. Quando o personagem ativo estiver correndo, escalando, sob um estado especial de movimento de um Talento ou em uma certa altura no ar, trocar para Xilonen como personagem ativa desencadeará: Xilonen entra no estado Bênção do Espírito da Noite e obtém 20 pontos de Espírito da Noite. Quando nessa situação, os pontos de Espírito da Noite de Xilonen possuem um limite de 4s. Depois de ultrapassarem esse tempo, os pontos de Espírito da Noite de Xilonen serão imediatamente exauridos. Depois de lançar <color=#ffd780>Arranhão de Yohual</color> dentro desse limite de tempo, o limite de tempo dos pontos de Espírito da Noite é estendido para 9s. Sua própria equipe pode entrar em Transmissão do Espírito da Noite uma vez a cada 10s.\nAlém disso, quando está em Natlan e no estado Bênção do Espírito da Noite, Xilonen não consumirá Stamina ao escalar."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "title": "Tour de Tepeilhuitl",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/cab05ad78a6812facbe768d16d8d1049_7269362006025458603.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Ativar Transmissão do Espírito da Noite regenera 15 de Flogisto."
+          }
+        ],
+        "attributes": null
+      }
+    ],
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Detalhes da Personagem",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Anúncio da Personagem"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/27/35428890/d908e49cf81886ce65f176fb8d1b1beb_6303430032665709110.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>26 de agosto, 2024</color>\n\"Oi, Xilonen! Então, sobre os óculos de sol que você fez para mim da última vez... Tenho alguns detalhes que gostaria de ajustar, especialmente no padrão das hastes... Hum? Onde ela foi? Ainda nem é hora do intervalo de almoço... Ei! Xilonen! Você está aí? Vamos, vamos revisar os detalhes do processo de fabricação dos óculos de novo!\"\n— Assim exclamou Mavuika em voz alta na frente da oficina de Xilonen."
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Apresentação da Personagem"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/12/42646513/985c7dd34645b402bc9860cbdd307f06_8297360227509907546.jpg",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>3 de outubro, 2024</color>\nOlá, Viajante! Hoje quem vamos conhecer é uma Forjadora de Nome de Nanatzcayan, ela é especialmente habilidosa em encontrar um bom equilíbrio entre as pesadas responsabilidades de seu trabalho e viver bem."
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Apresentação de Habilidade de Personagem: \"Fogo Ardente Forja a Alma\" - Xilonen"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/12/42646513/06dda3675400efbf25fe162c8238fb9a_2631614057527161707.jpg",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>3 de outubro, 2024</color>\nOlá, Viajantes! Em seguida, traremos informações de combate de Xilonen para todos, vamos dar uma olhada!"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Ilustrações da Personagem",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Ilustração da Personagem - Xilonen"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/21/35428890/7be3e5e71654ba48ec501af6aa1b3acd_4155951853558488692.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>9 de outubro, 2024</color>\n\"O trabalho também precisa de um equilíbrio entre esforço e descanso. Faça uma pausa e comece a dançar com a música.\""
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Versão 5.1 - \"Arco-Íris Destinado às Chamas\""
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/18/35428890/0a891091aa3a0349d30b753529311416_7603027188933691031.png",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/18/35428890/6d279994615234ad34c3fce27375f657_5128225052295162469.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>4 de novembro, 2024</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Festival Loi Krathong 2024"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/18/35428890/3e90743af4e3c19851d33bae3daa6117_1444394196149032579.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>15 de novembro, 2024</color>\nQue as inúmeras lanternas de água transportem desejos maravilhosos aos corações de cada Viajante!\n<color=#ffffff>X/Twitter:</color> <color=#37ffff>https:/x.com/GenshinImpact/status/1857258357327077825</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Emojis",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Desenhos da Paimon Série 36"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/12/42646513/6acb2e2cb71c38e7ecef90b1cdc584bf_6628704293784454345.jpg",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>28 de outubro, 2024</color>"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/18/35428890/515289f3aa512e33f4bb05d9d727f35a_3452336848743657902.png",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/18/35428890/0bbd9a5f0a63993a73f4f8344a1a5426_7986780141372895286.png",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/18/35428890/a14d890acec18b345191e8b764f90226_2656693483943321915.png",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/18/35428890/8702a76f059b825bb337d24395cceac5_3906675762070606125.png",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Eventos",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "\"Pedido Urgente\" — Evento Web"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/12/42646513/5730dd81a9ae79f3ff05d56cfca581ff_8937569615702989552.jpg",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/12/42646513/4211c8131f752cafca0b15ac2cf24355_6953814146025597231.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>4 de outubro, 2024</color>\nDurante o período do evento, interaja com os objetos no cenário para obter inspiração. Ajude Xilonen a completar todas as comissões de forja a tempo para poder resgatar recompensas no jogo depois de enviar os itens forjados.\n〓Duração do Evento〓\nDe 4 de outubro às 12:00 até 11 de outubro às 23:59 (UTC+8)"
+      }
+    ],
     "videoCollection": [
       {
         "title": "Character Teaser - \"Xilonen: The Duty of Name Forging\" | Genshin Impact  #Character #Teaser #Xilonen",
@@ -51,6 +1016,689 @@
         "url": "https://www.youtube.com/watch?v=yJ-tllvBvmI",
         "coverUrl": "https://i.ytimg.com/vi/yJ-tllvBvmI/maxresdefault.jpg",
         "duration": 157
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "Nome",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Xilonen"
+          }
+        ]
+      },
+      {
+        "key": "Aniversário",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "3/13"
+          }
+        ]
+      },
+      {
+        "key": "Constelação",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Panthera Ocelota"
+          }
+        ]
+      },
+      {
+        "key": "Título",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Fogo Ardente Forja a Alma"
+          }
+        ]
+      },
+      {
+        "key": "Visão",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Geo"
+          }
+        ]
+      },
+      {
+        "key": "Afiliação",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Nanatzcayan"
+          }
+        ]
+      },
+      {
+        "key": "Chinês CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "弭洋"
+          }
+        ]
+      },
+      {
+        "key": "Japonês CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Beth Curry"
+          }
+        ]
+      },
+      {
+        "key": "Inglês CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "FAIROUZ Ai"
+          }
+        ]
+      },
+      {
+        "key": "Coreano CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "김이안"
+          }
+        ]
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/12/42646513/dbc29d62feb4b58daf578729d81c4c97_8596402883761301448.png"
+      },
+      {
+        "key": "Avatar",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/d6b244ef6ec3df3bd36e51067d450f17_4308094211599377757.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Vestuário Original - Dourado e Reluzente\nEstilo de vestuário de Xilonen. O casaco dourado e a blusa curta e simples são a combinação de roupas mais comuns para Xilonen. Quando Xilonen começa a trabalhar, geralmente tira o casaco e se prepara para o trabalho. Em outras palavras, quando ela veste o casaco, geralmente é sinal de que está prestes a ter um tempo de descanso."
+          }
+        ]
+      },
+      {
+        "key": "Animação 1",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/10/04/8299d9330dbcab4a0093cfccbab49b46_8078412299183015230.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Vestuário Original - Dourado e Reluzente"
+          }
+        ]
+      },
+      {
+        "key": "Animação 2",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/10/04/fb02cf6c6cd80b5430a6910d14db6b70_4961159599260669262.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Vestuário Original - Dourado e Reluzente"
+          }
+        ]
+      }
+    ],
+    "ascension": [
+      {
+        "key": "Nv. 1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes do avanço",
+              "Após o avanço"
+            ]
+          },
+          {
+            "key": "Vida Básica",
+            "values": [
+              "-",
+              "966"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "-",
+              "21"
+            ]
+          },
+          {
+            "key": "DEF Básica",
+            "values": [
+              "-",
+              "72"
+            ]
+          },
+          {
+            "key": "Bônus de DEF",
+            "values": [
+              "-",
+              "0.0%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Nv. 20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes do avanço",
+              "Após o avanço"
+            ]
+          },
+          {
+            "key": "Vida Básica",
+            "values": [
+              "2505",
+              "3333"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "56",
+              "74"
+            ]
+          },
+          {
+            "key": "DEF Básica",
+            "values": [
+              "188",
+              "250"
+            ]
+          },
+          {
+            "key": "Bônus de DEF",
+            "values": [
+              "0.0%",
+              "0.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moeda comum. A língua que todos entendem.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 447,
+            "name": "Lasca de Topázio Prithiva",
+            "desc": "Material de Ascensão de Personagem.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 6670,
+            "name": "Crisântemo Brilhante",
+            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Uma flor com um formato de asa. Suas pétalas balançam tranquilamente como se fossem acariciadas pelo vento.</span></p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/100430559/8f8de98c77c9e4eee95e510f60d2b671_1953144100891006198.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 6644,
+            "name": "Apito de Madeira do Sentinela",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/e07c501cd10522b752f2c2f31ac8c642_5437826751307642869.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "Nv. 40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes do avanço",
+              "Após o avanço"
+            ]
+          },
+          {
+            "key": "Vida Básica",
+            "values": [
+              "4987",
+              "5576"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "111",
+              "124"
+            ]
+          },
+          {
+            "key": "DEF Básica",
+            "values": [
+              "374",
+              "418"
+            ]
+          },
+          {
+            "key": "Bônus de DEF",
+            "values": [
+              "0.0%",
+              "9.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moeda comum. A língua que todos entendem.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 446,
+            "name": "Fragmento de Topázio Prithiva",
+            "desc": "Material de Ascensão de Personagem.<br/>\"O preço que se paga nesta terra é com o sangue.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 7040,
+            "name": "Núcleo da Fonte Secreta com Inscrição Dourada",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/d25f84e49640d3f9820580a1d6ba925b_6062609948822034717.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 6670,
+            "name": "Crisântemo Brilhante",
+            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Uma flor com um formato de asa. Suas pétalas balançam tranquilamente como se fossem acariciadas pelo vento.</span></p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/100430559/8f8de98c77c9e4eee95e510f60d2b671_1953144100891006198.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 6644,
+            "name": "Apito de Madeira do Sentinela",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/e07c501cd10522b752f2c2f31ac8c642_5437826751307642869.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "Nv. 50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes do avanço",
+              "Após o avanço"
+            ]
+          },
+          {
+            "key": "Vida Básica",
+            "values": [
+              "6415",
+              "7199"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "142",
+              "160"
+            ]
+          },
+          {
+            "key": "DEF Básica",
+            "values": [
+              "481",
+              "540"
+            ]
+          },
+          {
+            "key": "Bônus de DEF",
+            "values": [
+              "9.0%",
+              "18.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moeda comum. A língua que todos entendem.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 446,
+            "name": "Fragmento de Topázio Prithiva",
+            "desc": "Material de Ascensão de Personagem.<br/>\"O preço que se paga nesta terra é com o sangue.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 7040,
+            "name": "Núcleo da Fonte Secreta com Inscrição Dourada",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/d25f84e49640d3f9820580a1d6ba925b_6062609948822034717.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 6670,
+            "name": "Crisântemo Brilhante",
+            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Uma flor com um formato de asa. Suas pétalas balançam tranquilamente como se fossem acariciadas pelo vento.</span></p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/100430559/8f8de98c77c9e4eee95e510f60d2b671_1953144100891006198.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 6645,
+            "name": "Apito de Metal do Guerreiro",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/54375bf17fec5be6b0f4b9ca377cf847_4450482122144936428.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Nv. 60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes do avanço",
+              "Após o avanço"
+            ]
+          },
+          {
+            "key": "Vida Básica",
+            "values": [
+              "8047",
+              "8636"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "178",
+              "191"
+            ]
+          },
+          {
+            "key": "DEF Básica",
+            "values": [
+              "603",
+              "647"
+            ]
+          },
+          {
+            "key": "Bônus de DEF",
+            "values": [
+              "18.0%",
+              "18.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moeda comum. A língua que todos entendem.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 445,
+            "name": "Pedaço de Topázio Prithiva",
+            "desc": "Material de Ascensão de Personagem.<br/>\"O preço que se paga nesta terra é com o sangue.\"<br/>\"Eu sou o que garante do trabalho duro, da sabedoria e do futuro das pessoas.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 7040,
+            "name": "Núcleo da Fonte Secreta com Inscrição Dourada",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/d25f84e49640d3f9820580a1d6ba925b_6062609948822034717.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 6670,
+            "name": "Crisântemo Brilhante",
+            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Uma flor com um formato de asa. Suas pétalas balançam tranquilamente como se fossem acariciadas pelo vento.</span></p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/100430559/8f8de98c77c9e4eee95e510f60d2b671_1953144100891006198.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 6645,
+            "name": "Apito de Metal do Guerreiro",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/54375bf17fec5be6b0f4b9ca377cf847_4450482122144936428.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Nv. 70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes do avanço",
+              "Após o avanço"
+            ]
+          },
+          {
+            "key": "Vida Básica",
+            "values": [
+              "9491",
+              "10079"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "210",
+              "223"
+            ]
+          },
+          {
+            "key": "DEF Básica",
+            "values": [
+              "712",
+              "756"
+            ]
+          },
+          {
+            "key": "Bônus de DEF",
+            "values": [
+              "18.0%",
+              "27.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moeda comum. A língua que todos entendem.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 445,
+            "name": "Pedaço de Topázio Prithiva",
+            "desc": "Material de Ascensão de Personagem.<br/>\"O preço que se paga nesta terra é com o sangue.\"<br/>\"Eu sou o que garante do trabalho duro, da sabedoria e do futuro das pessoas.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 7040,
+            "name": "Núcleo da Fonte Secreta com Inscrição Dourada",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/d25f84e49640d3f9820580a1d6ba925b_6062609948822034717.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 6670,
+            "name": "Crisântemo Brilhante",
+            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Uma flor com um formato de asa. Suas pétalas balançam tranquilamente como se fossem acariciadas pelo vento.</span></p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/100430559/8f8de98c77c9e4eee95e510f60d2b671_1953144100891006198.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 6646,
+            "name": "Apito Dourado do Guerreiro de Coroa Sauriana",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/c8648efda2051a6f005647a78ac907fb_1968831310426328047.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Nv. 80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes do avanço",
+              "Após o avanço"
+            ]
+          },
+          {
+            "key": "Vida Básica",
+            "values": [
+              "10945",
+              "11533"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "243",
+              "256"
+            ]
+          },
+          {
+            "key": "DEF Básica",
+            "values": [
+              "820",
+              "865"
+            ]
+          },
+          {
+            "key": "Bônus de DEF",
+            "values": [
+              "27.0%",
+              "36.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moeda comum. A língua que todos entendem.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 444,
+            "name": "Gema de Topázio Prithiva",
+            "desc": "Material de Ascensão de Personagem.<br/>\"O preço que se paga nesta terra é com o sangue.\"<br/>\"Eu sou o que garante do trabalho duro, da sabedoria e do futuro das pessoas.\"<br/>\"Esta é a confiança que depositei neles. Me traia, e você será manchado com o meu sangue.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 7040,
+            "name": "Núcleo da Fonte Secreta com Inscrição Dourada",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/d25f84e49640d3f9820580a1d6ba925b_6062609948822034717.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 6670,
+            "name": "Crisântemo Brilhante",
+            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Uma flor com um formato de asa. Suas pétalas balançam tranquilamente como se fossem acariciadas pelo vento.</span></p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/100430559/8f8de98c77c9e4eee95e510f60d2b671_1953144100891006198.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 6646,
+            "name": "Apito Dourado do Guerreiro de Coroa Sauriana",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/c8648efda2051a6f005647a78ac907fb_1968831310426328047.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "Nv. 90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes do avanço",
+              "Após o avanço"
+            ]
+          },
+          {
+            "key": "Vida Básica",
+            "values": [
+              "12405",
+              "-"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "275",
+              "-"
+            ]
+          },
+          {
+            "key": "DEF Básica",
+            "values": [
+              "930",
+              "-"
+            ]
+          },
+          {
+            "key": "Bônus de DEF",
+            "values": [
+              "36.0%",
+              "-"
+            ]
+          }
+        ]
       }
     ],
     "voice": [
@@ -1553,1654 +3201,6 @@
             "text": "Quando Xilonen está no estado de Bênção do Espírito da Noite, ao correr, saltar ou usar Ataques Normais, ou Imersivos, ela ganhará a Bênção da Noite Eterna, ignorando as limitações de seu estado de Bênção do Espírito da Noite e aumentando o Dano causado por seus Ataques Normais e Imersivos por 5s.\nDurante esse tempo:\n· O cronômetro de limite de tempo da Bênção do Espírito da Noite será pausado. Os pontos de Espírito da Noite de Xilonen, Flogisto e Stamina não diminuirão, e quando seus pontos de Espírito da Noite atingirem o máximo, seu estado de Bênção do Espírito da Noite também não terminará.\n· Xilonen causa 300% de sua DEF como aumento de Dano de Ataque Normal e Imersivo enquanto estiver no estado de Bênção do Espírito da Noite.\n· Ela cura os membros da equipe próximos em 120% de sua DEF a cada 1.5s.\nEla pode ganhar 1 Bênção da Noite Eterna uma vez a cada 15s."
           }
         ]
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/12/42646513/dbc29d62feb4b58daf578729d81c4c97_8596402883761301448.png"
-      },
-      {
-        "key": "Avatar",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/d6b244ef6ec3df3bd36e51067d450f17_4308094211599377757.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Vestuário Original - Dourado e Reluzente\nEstilo de vestuário de Xilonen. O casaco dourado e a blusa curta e simples são a combinação de roupas mais comuns para Xilonen. Quando Xilonen começa a trabalhar, geralmente tira o casaco e se prepara para o trabalho. Em outras palavras, quando ela veste o casaco, geralmente é sinal de que está prestes a ter um tempo de descanso."
-          }
-        ]
-      },
-      {
-        "key": "Animação 1",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/10/04/8299d9330dbcab4a0093cfccbab49b46_8078412299183015230.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Vestuário Original - Dourado e Reluzente"
-          }
-        ]
-      },
-      {
-        "key": "Animação 2",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/10/04/fb02cf6c6cd80b5430a6910d14db6b70_4961159599260669262.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Vestuário Original - Dourado e Reluzente"
-          }
-        ]
-      }
-    ],
-    "talent": [
-      {
-        "title": "Ataque Normal: Rugido de Ehecatl",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/94aa30ae75b8c7c6a9c64ab05bd5dda7_8132094599204598576.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Ataque Normal</color>\nFaz até 3 golpes consecutivos.\n<color=#ffd780>Ataque Carregado</color>\nConsome uma certa quantidade de Stamina para fazer um chute em frente.\n<color=#ffd780>Ataque Imersivo</color>\nSe lança do ar para atacar o chão, causando dano aos oponentes ao longo do caminho e causando Dano em AdE durante o impacto com base na DEF de Xilonen.\n<color=#ffd780>Estado Espírito da Noite: Lâmina Giratória</color>\nQuando está no estado Bênção do Espírito da Noite, Xilonen troca para o modo Lâmina Giratória. Nesse estado, o Ataque Normal de Xilonen é convertido para Patins Cortantes, fazendo até 4 chutes consecutivos, e não podendo mais fazer Ataques Carregados.\nNesse estado, ao fazer um Ataque Normal e Imersivo, converterá eles para causar <color=#ffe699>Dano Geo</color> que não pode ser substituído com alinhamento de Espírito da Noite e baseados na DEF de Xilonen."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Nível",
-            "values": [
-              "Nv.1",
-              "Nv.2",
-              "Nv.3",
-              "Nv.4",
-              "Nv.5",
-              "Nv.6",
-              "Nv.7",
-              "Nv.8",
-              "Nv.9",
-              "Nv.10",
-              "Nv.11"
-            ]
-          },
-          {
-            "key": "Dano do 1º Golpe",
-            "values": [
-              "51.8%",
-              "56.0%",
-              "60.2%",
-              "66.2%",
-              "70.5%",
-              "75.3%",
-              "81.9%",
-              "88.5%",
-              "95.2%",
-              "102.4%",
-              "109.6%"
-            ]
-          },
-          {
-            "key": "Dano do 2º Golpe",
-            "values": [
-              "27.4%+27.4%",
-              "29.6%+29.6%",
-              "31.8%+31.8%",
-              "35.0%+35.0%",
-              "37.2%+37.2%",
-              "39.8%+39.8%",
-              "43.3%+43.3%",
-              "46.8%+46.8%",
-              "50.3%+50.3%",
-              "54.1%+54.1%",
-              "57.9%+57.9%"
-            ]
-          },
-          {
-            "key": "Dano do 3º Golpe",
-            "values": [
-              "72.9%",
-              "78.9%",
-              "84.8%",
-              "93.3%",
-              "99.2%",
-              "106.0%",
-              "115.4%",
-              "124.7%",
-              "134.0%",
-              "144.2%",
-              "154.4%"
-            ]
-          },
-          {
-            "key": "Dano de Ataque Carregado",
-            "values": [
-              "91.3%",
-              "98.8%",
-              "106.2%",
-              "116.8%",
-              "124.3%",
-              "132.8%",
-              "144.4%",
-              "156.1%",
-              "167.8%",
-              "180.5%",
-              "193.3%"
-            ]
-          },
-          {
-            "key": "Consumo de Stamina do Ataque Carregado",
-            "values": [
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0"
-            ]
-          },
-          {
-            "key": "Dano Durante a Queda",
-            "values": [
-              "63.9% DEF",
-              "69.1% DEF",
-              "74.3% DEF",
-              "81.8% DEF",
-              "87.0% DEF",
-              "92.9% DEF",
-              "101.1% DEF",
-              "109.3% DEF",
-              "117.5% DEF",
-              "126.4% DEF",
-              "135.3% DEF"
-            ]
-          },
-          {
-            "key": "Dano de Queda de Baixa/Alta Altitude",
-            "values": [
-              "127.8% DEF/159.7% DEF",
-              "138.2% DEF/172.7% DEF",
-              "148.6% DEF/185.7% DEF",
-              "163.5% DEF/204.2% DEF",
-              "173.9% DEF/217.2% DEF",
-              "185.8% DEF/232.1% DEF",
-              "202.2% DEF/252.5% DEF",
-              "218.5% DEF/272.9% DEF",
-              "234.9% DEF/293.4% DEF",
-              "252.7% DEF/315.6% DEF",
-              "270.5% DEF/337.9% DEF"
-            ]
-          },
-          {
-            "key": "Dano do 1º Golpe da Lâmina Giratoria",
-            "values": [
-              "56.0% DEF",
-              "60.6% DEF",
-              "65.1% DEF",
-              "71.7% DEF",
-              "76.2% DEF",
-              "81.4% DEF",
-              "88.6% DEF",
-              "95.8% DEF",
-              "102.9% DEF",
-              "110.7% DEF",
-              "118.6% DEF"
-            ]
-          },
-          {
-            "key": "Dano do 2º Golpe da Lâmina Giratoria",
-            "values": [
-              "55.0% DEF",
-              "59.5% DEF",
-              "64.0% DEF",
-              "70.4% DEF",
-              "74.9% DEF",
-              "80.0% DEF",
-              "87.1% DEF",
-              "94.1% DEF",
-              "101.1% DEF",
-              "108.8% DEF",
-              "116.5% DEF"
-            ]
-          },
-          {
-            "key": "Dano do 3º Golpe da Lâmina Giratoria",
-            "values": [
-              "65.8% DEF",
-              "71.2% DEF",
-              "76.5% DEF",
-              "84.2% DEF",
-              "89.5% DEF",
-              "95.7% DEF",
-              "104.1% DEF",
-              "112.5% DEF",
-              "120.9% DEF",
-              "130.1% DEF",
-              "139.3% DEF"
-            ]
-          },
-          {
-            "key": "Dano do 4º Golpe da Lâmina Giratoria",
-            "values": [
-              "86.0% DEF",
-              "93.0% DEF",
-              "100.0% DEF",
-              "110.0% DEF",
-              "117.0% DEF",
-              "125.0% DEF",
-              "136.0% DEF",
-              "147.0% DEF",
-              "158.1% DEF",
-              "170.1% DEF",
-              "182.1% DEF"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6633,
-              "name": "Ensinamentos da Ignição",
-              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/da7d45c793d53cd4a369d7c45afe9d81_3484506631950644156.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6644,
-              "name": "Apito de Madeira do Sentinela",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/29705491/e07c501cd10522b752f2c2f31ac8c642_7798444019480594301.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6634,
-              "name": "Guia da Ignição",
-              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/162ba8b049c0fd0359169fd55c2e180e_6634099661695760824.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6645,
-              "name": "Apito de Metal do Guerreiro",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/29705491/54375bf17fec5be6b0f4b9ca377cf847_7941186793661736609.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6634,
-              "name": "Guia da Ignição",
-              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/162ba8b049c0fd0359169fd55c2e180e_6634099661695760824.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6645,
-              "name": "Apito de Metal do Guerreiro",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/29705491/54375bf17fec5be6b0f4b9ca377cf847_7941186793661736609.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6634,
-              "name": "Guia da Ignição",
-              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/162ba8b049c0fd0359169fd55c2e180e_6634099661695760824.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6645,
-              "name": "Apito de Metal do Guerreiro",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/29705491/54375bf17fec5be6b0f4b9ca377cf847_7941186793661736609.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6634,
-              "name": "Guia da Ignição",
-              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/162ba8b049c0fd0359169fd55c2e180e_6634099661695760824.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6645,
-              "name": "Apito de Metal do Guerreiro",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/29705491/54375bf17fec5be6b0f4b9ca377cf847_7941186793661736609.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6635,
-              "name": "Filosofias da Ignição",
-              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/9c4596dc24ddc391b3b4ca2439261cde_2405366525579624554.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6646,
-              "name": "Apito Dourado do Guerreiro de Coroa Sauriana",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/29705491/c8648efda2051a6f005647a78ac907fb_2801223258011175521.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 2972,
-              "name": "Lentes Desalmadas",
-              "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O espelho que estava no peito de Shouki no Kami para separá-lo do mundo externo. O símbolo mitsudomoe está gravado nele como uma demonstração proposital de posição e poder.</span><br><span style=\"color: rgb(255, 255, 255)\">Entretanto, esse símbolo não é uma demonstração de obediência à Deusa do Trovão.</span><br><span style=\"color: rgb(255, 255, 255)\">É, na verdade, uma lâmina apontada para os poderes existentes neste mundo.</span><br><span style=\"color: rgb(255, 255, 255)\">O espelho também não é um meio de impedir os olhares de julgamento das pessoas, Mas um baluarte contra este mundo maculado. Dentro deste grande templo, o castigo deve ser aplicado e a ignorância deve ser purificada.</span><br><span style=\"color: rgb(255, 255, 255)\">Sonhos devem ser abandonados, desejos devem ser cortados, e o carma deve ser restabelecido.</span></p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/08/16791688/2fdcb5ec503cbb3640e2828a854aff8e_446548796358643966.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6635,
-              "name": "Filosofias da Ignição",
-              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/9c4596dc24ddc391b3b4ca2439261cde_2405366525579624554.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6646,
-              "name": "Apito Dourado do Guerreiro de Coroa Sauriana",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/29705491/c8648efda2051a6f005647a78ac907fb_2801223258011175521.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 2972,
-              "name": "Lentes Desalmadas",
-              "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O espelho que estava no peito de Shouki no Kami para separá-lo do mundo externo. O símbolo mitsudomoe está gravado nele como uma demonstração proposital de posição e poder.</span><br><span style=\"color: rgb(255, 255, 255)\">Entretanto, esse símbolo não é uma demonstração de obediência à Deusa do Trovão.</span><br><span style=\"color: rgb(255, 255, 255)\">É, na verdade, uma lâmina apontada para os poderes existentes neste mundo.</span><br><span style=\"color: rgb(255, 255, 255)\">O espelho também não é um meio de impedir os olhares de julgamento das pessoas, Mas um baluarte contra este mundo maculado. Dentro deste grande templo, o castigo deve ser aplicado e a ignorância deve ser purificada.</span><br><span style=\"color: rgb(255, 255, 255)\">Sonhos devem ser abandonados, desejos devem ser cortados, e o carma deve ser restabelecido.</span></p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/08/16791688/2fdcb5ec503cbb3640e2828a854aff8e_446548796358643966.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6635,
-              "name": "Filosofias da Ignição",
-              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/9c4596dc24ddc391b3b4ca2439261cde_2405366525579624554.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6646,
-              "name": "Apito Dourado do Guerreiro de Coroa Sauriana",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/29705491/c8648efda2051a6f005647a78ac907fb_2801223258011175521.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 2972,
-              "name": "Lentes Desalmadas",
-              "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O espelho que estava no peito de Shouki no Kami para separá-lo do mundo externo. O símbolo mitsudomoe está gravado nele como uma demonstração proposital de posição e poder.</span><br><span style=\"color: rgb(255, 255, 255)\">Entretanto, esse símbolo não é uma demonstração de obediência à Deusa do Trovão.</span><br><span style=\"color: rgb(255, 255, 255)\">É, na verdade, uma lâmina apontada para os poderes existentes neste mundo.</span><br><span style=\"color: rgb(255, 255, 255)\">O espelho também não é um meio de impedir os olhares de julgamento das pessoas, Mas um baluarte contra este mundo maculado. Dentro deste grande templo, o castigo deve ser aplicado e a ignorância deve ser purificada.</span><br><span style=\"color: rgb(255, 255, 255)\">Sonhos devem ser abandonados, desejos devem ser cortados, e o carma deve ser restabelecido.</span></p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/08/16791688/2fdcb5ec503cbb3640e2828a854aff8e_446548796358643966.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6635,
-              "name": "Filosofias da Ignição",
-              "desc": "<p>Material de Elevação de Talento.</p><p>Oferecer a fagulha é a regra estabelecida da Nação do Pyro.</p><p>Quando há algo a se ganhar, deve haver algo a ser dado. Se você deseja obter algo, você primeiro deve pegar o preço correspondente, exatamente como as oferendas que devem ser feitas como fagulha no processo de incineração.</p>",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/9c4596dc24ddc391b3b4ca2439261cde_2405366525579624554.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6646,
-              "name": "Apito Dourado do Guerreiro de Coroa Sauriana",
-              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/29705491/c8648efda2051a6f005647a78ac907fb_2801223258011175521.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 2972,
-              "name": "Lentes Desalmadas",
-              "desc": "<p><span style=\"color: rgb(255, 255, 255)\">O espelho que estava no peito de Shouki no Kami para separá-lo do mundo externo. O símbolo mitsudomoe está gravado nele como uma demonstração proposital de posição e poder.</span><br><span style=\"color: rgb(255, 255, 255)\">Entretanto, esse símbolo não é uma demonstração de obediência à Deusa do Trovão.</span><br><span style=\"color: rgb(255, 255, 255)\">É, na verdade, uma lâmina apontada para os poderes existentes neste mundo.</span><br><span style=\"color: rgb(255, 255, 255)\">O espelho também não é um meio de impedir os olhares de julgamento das pessoas, Mas um baluarte contra este mundo maculado. Dentro deste grande templo, o castigo deve ser aplicado e a ignorância deve ser purificada.</span><br><span style=\"color: rgb(255, 255, 255)\">Sonhos devem ser abandonados, desejos devem ser cortados, e o carma deve ser restabelecido.</span></p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/08/16791688/2fdcb5ec503cbb3640e2828a854aff8e_446548796358643966.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "Coroa da Sabedoria",
-              "desc": "Um precioso material para aumento de Nível de Talento.<br/>Costumava ser um objeto de ensino de conhecimentos nos tempos antigos. Agora, a sabedoria é encontrada em textos antigos e em profundos discursos. No entanto, esta Coroa da Sabedoria ainda deve ser capaz de transmitir algum poder e sabedoria transcendente ao seu portador.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/10/04/6585b1122e533bc38b2b6a82fe7056ff_2915866520530315161.gif"
-      },
-      {
-        "title": "Arranhão de Yohual",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/c75e956f8176e371a9eac14a7ec1a6eb_1081721965307152972.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Deixe os ritmos da paixão soarem pela terra! Xilonen troca para lâminas rápidas de combate e avança para frente, causando <color=#ffe699>Dano Geo</color> com alinhamento de Espírito da Noite baseado na DEF de Xilonen.\nDepois de lançar, Xilonen obtém 45 pontos de Espírito da Noite e entra no estado Bênção do Espírito da Noite. Nesse estado, Xilonen troca para o modo Lâmina Giratória.\n<color=#ffd780>Amostra da Origem</color>\nXilonen possui três Dispositivos de Amostra, e pode mostrar Notas diferentes com base nos Tipos Elementais dos membros da equipe, e ao ativar reduz a RES do Elemento correspondente do inimigo.\nO início registrado dos três Dispositivos de Amostra é <color=#ffe699>Geo</color> , e para cada personagem <color=#ff9999>Pyro</color> , <color=#80c0ff>Hydro</color> , <color=#99ffff>Cryo</color> ou <color=#ffacff>Electro</color> na equipe, uma amostra <color=#ffe699>Geo</color> será convertida para o Tipo Elemental correspondente.\nQuando está no estado Bênção do Espírito da Noite, a Amostra da Origem <color=#ffe699>Geo</color> que Xilonen carrega se manterá ativa do começo ao fim. Ao desbloquear o Talento Passivo \"Ecos de Netotiliztli\", Xilonen poderá regenerar seus pontos de Espírito da Noite através dos efeitos desse Talento Passivo. Quando seus pontos de Espírito da Noite alcançarem o máximo, Xilonen consome todos os pontos de Espírito da Noite e ativará as três Amostras da Origem de Xilonen por 15s.\nQuando Amostra da Origem é ativada, reduz a RES dos Elementos correspondentes dos inimigos próximos. Efeitos de Amostras da Origem com Tipos Elementais iguais não acumulam. Esse efeito pode ser desencadeado quando Xilonen não é a personagem ativa.\n<color=#ffd780>Bênção do Espírito da Noite</color>\nConsome pontos de Espírito da Noite continuamente. Quando os pontos de Espírito da Noite acabarem, ou quando lançar novamente, o estado Bênção do Espírito da Noite de Xilonen acabará. O estado Bênção do Espírito da Noite possui as seguintes características:\n· Troca para o modo Lâmina Giratória, aumentando a Veloc. Mov. e Veloc. de Escalada de Xilonen. Ao escalar, pode usar sua forma de Ocelote para fazer um salto alto rápido.\n· O estado Bênção do Espírito da Noite de Xilonen possui os seguintes limites: quando está nele, os pontos de Espírito da Noite de Xilonen possuem um limite de 9s. Ao ultrapassarem esse limite, serão imediatamente deduzidos.\nQuando está no estado Benção do Espírito da Noite e os pontos de Espírito da Noite acabarem, Xilonen não poderá gerar pontos de Espírito da Noite através do Talento Passivo \"Ecos de Netotiliztli\".\nDe certa forma, criar joias e fazer mix de música possuem princípios similares: filtrar as impurezas e reter só o que há de mais radiante\nXilonen não é muito exigente para escolher isso nos dois. Ela gosta bastante!"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Nível",
-            "values": [
-              "Nv.1",
-              "Nv.2",
-              "Nv.3",
-              "Nv.4",
-              "Nv.5",
-              "Nv.6",
-              "Nv.7",
-              "Nv.8",
-              "Nv.9",
-              "Nv.10",
-              "Nv.11",
-              "Nv.12",
-              "Nv.13"
-            ]
-          },
-          {
-            "key": "Dano de Investida",
-            "values": [
-              "179.2% DEF",
-              "192.6% DEF",
-              "206.1% DEF",
-              "224% DEF",
-              "237.4% DEF",
-              "250.9% DEF",
-              "268.8% DEF",
-              "286.7% DEF",
-              "304.6% DEF",
-              "322.6% DEF",
-              "340.5% DEF",
-              "358.4% DEF",
-              "380.8% DEF"
-            ]
-          },
-          {
-            "key": "Diminuição de RES Elemental",
-            "values": [
-              "9.0%",
-              "12.0%",
-              "15.0%",
-              "18.0%",
-              "21.0%",
-              "24.0%",
-              "27.0%",
-              "30.0%",
-              "33.0%",
-              "36.0%",
-              "39.0%",
-              "42.0%",
-              "45.0%"
-            ]
-          },
-          {
-            "key": "Duração de Ativação da Amostra da Origem",
-            "values": [
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s"
-            ]
-          },
-          {
-            "key": "Limite de Tempo de Pontos de Espírito da Noite ",
-            "values": [
-              "9.0s",
-              "9.0s",
-              "9.0s",
-              "9.0s",
-              "9.0s",
-              "9.0s",
-              "9.0s",
-              "9.0s",
-              "9.0s",
-              "9.0s",
-              "9.0s",
-              "9.0s",
-              "9.0s"
-            ]
-          },
-          {
-            "key": "Limite de Pontos de Espírito da Noite ",
-            "values": [
-              "90.0",
-              "90.0",
-              "90.0",
-              "90.0",
-              "90.0",
-              "90.0",
-              "90.0",
-              "90.0",
-              "90.0",
-              "90.0",
-              "90.0",
-              "90.0",
-              "90.0"
-            ]
-          },
-          {
-            "key": "Tempo de Recarga",
-            "values": [
-              "7.0s",
-              "7.0s",
-              "7.0s",
-              "7.0s",
-              "7.0s",
-              "7.0s",
-              "7.0s",
-              "7.0s",
-              "7.0s",
-              "7.0s",
-              "7.0s",
-              "7.0s",
-              "7.0s"
-            ]
-          }
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/10/04/4b6f66c55e588fd864e3cd0114d73c56_4483588669663079986.gif"
-      },
-      {
-        "title": "Ritmo Ocelotlicue!",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/9f80d64ea44f4aa0eee7accb229a21e6_4347470912743201934.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Ativa o Mixer Estéreo de Flogisto (Edição Portátil) na potência máxima, causando <color=#ffe699>Dano Geo em AdE</color> com alinhamento de Espírito da Noite com base na DEF de Xilonen.\nAlém disso, desencadeia os seguintes efeitos com base nos tipos de Amostra da Origem:\n· Quando possui pelo menos 2 Amostras da Origem que passaram por Conversão Elemental: Xilonen toca o ritmo \"Solta a Alegria\": regenera Vida para os personagens próximos ativos periodicamente, a quantidade regenerada é baseada na DEF de Xilonen.\n· Ao possuir menos de 2 Amostras da Origem que passaram por Conversão Elemental: Xilonen toca o ritmo \"Pipoco\", solta duas batidas adicionais, causando <color=#ffe699>Dano Geo em AdE</color> com alinhamento de Espírito da Noite baseado na DEF de Xilonen.\n\"Certo, vamos pausar aqui!\"\n\"Tranquilo, gravei essas batidas. Vamos ver o que vai sair quando fizermos o mix dos ritmos, beleza?\""
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Nível",
-            "values": [
-              "Nv.1",
-              "Nv.2",
-              "Nv.3",
-              "Nv.4",
-              "Nv.5",
-              "Nv.6",
-              "Nv.7",
-              "Nv.8",
-              "Nv.9",
-              "Nv.10",
-              "Nv.11",
-              "Nv.12",
-              "Nv.13"
-            ]
-          },
-          {
-            "key": "Dano de Habilidade",
-            "values": [
-              "281.3% DEF",
-              "302.4% DEF",
-              "323.5% DEF",
-              "351.6% DEF",
-              "372.7% DEF",
-              "393.8% DEF",
-              "421.9% DEF",
-              "450.0% DEF",
-              "478.2% DEF",
-              "506.3% DEF",
-              "534.4% DEF",
-              "562.6% DEF",
-              "597.7% DEF"
-            ]
-          },
-          {
-            "key": "Cura Contínua",
-            "values": [
-              "104% DEF+500",
-              "111.8% DEF+550",
-              "119.6% DEF+605",
-              "130.0% DEF+663",
-              "137.8% DEF+726",
-              "145.6% DEF+792",
-              "156.0% DEF+863",
-              "166.4% DEF+938",
-              "176.8% DEF+1018",
-              "187.2% DEF+1101",
-              "197.6% DEF+1189",
-              "208.0% DEF+1281",
-              "221.0% DEF+1377"
-            ]
-          },
-          {
-            "key": "Duração do Ritmo Solta a Alegria",
-            "values": [
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s"
-            ]
-          },
-          {
-            "key": "Dano da Batida Adicional",
-            "values": [
-              "281.3% DEF",
-              "302.4% DEF",
-              "323.5% DEF",
-              "351.6% DEF",
-              "372.7% DEF",
-              "393.8% DEF",
-              "421.9% DEF",
-              "450.0% DEF",
-              "478.2% DEF",
-              "506.3% DEF",
-              "534.4% DEF",
-              "562.6% DEF",
-              "597.7% DEF"
-            ]
-          },
-          {
-            "key": "Tempo de Recarga",
-            "values": [
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s"
-            ]
-          },
-          {
-            "key": "Energia Elemental",
-            "values": [
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60"
-            ]
-          }
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/10/04/ebc40e2bcde1af5d2ec253de58db1377_8476250483693894412.gif"
-      },
-      {
-        "title": "Ecos de Netotiliztli",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/0c63d4800aa86693d8bc45539683a549_1075211214281269223.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Enquanto estiver no estado de Bênção do Espírito da Noite:\n· Se Xilonen tiver pelo menos 2 Amostras da Origem que tiveram Conversão Elemental, ela ganha 35 pontos de Espírito da Noite quando seus Ataques Normais ou Imersivos atingirem os oponentes. Pode ser ativado uma vez a cada 0.1s.\n· Se Xilonen tiver menos de 2 Amostras da Origem que tiveram Conversão Elemental, seus Ataques Normais e Imersivos causam 30% a mais de Dano."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "title": "Bainha Armada Portátil",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/75aed39360b7e7bfdda8a1c559cd8cc4_8744160790797390038.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Quando está no estado Bênção do Espírito da Noite e quando os pontos de Espírito da Noite de Xilonen alcançam o valor máximo, desencadeia um efeito igual a Explosão do Espírito da Noite uma vez. Esse efeito pode ser desencadeado uma vez a cada 14s.\nAlém disso, quando um membro próximo da equipe desencadeia Explosão do Espírito da Noite, aumenta a DEF de Xilonen em 20% por 15s."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "title": "Presente do Reino da Noite: Bênção das Chamas Forjadas",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/8914ff7e9d97536ef8398003ad429c04_1462532151461583794.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Depois que os pontos de Espírito da Noite de Xilonen acabarem, ela mudará para consumir Flogisto para manter a Bênção do Espírito da Noite.\nEnquanto estiver numa área de Natlan com Dispositivos de Flogisto, ela pode usar Transmissão do Espírito da Noite: Xilonen. Quando o personagem ativo estiver correndo, escalando, sob um estado especial de movimento de um Talento ou em uma certa altura no ar, trocar para Xilonen como personagem ativa desencadeará: Xilonen entra no estado Bênção do Espírito da Noite e obtém 20 pontos de Espírito da Noite. Quando nessa situação, os pontos de Espírito da Noite de Xilonen possuem um limite de 4s. Depois de ultrapassarem esse tempo, os pontos de Espírito da Noite de Xilonen serão imediatamente exauridos. Depois de lançar <color=#ffd780>Arranhão de Yohual</color> dentro desse limite de tempo, o limite de tempo dos pontos de Espírito da Noite é estendido para 9s. Sua própria equipe pode entrar em Transmissão do Espírito da Noite uma vez a cada 10s.\nAlém disso, quando está em Natlan e no estado Bênção do Espírito da Noite, Xilonen não consumirá Stamina ao escalar."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "title": "Tour de Tepeilhuitl",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/cab05ad78a6812facbe768d16d8d1049_7269362006025458603.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Ativar Transmissão do Espírito da Noite regenera 15 de Flogisto."
-          }
-        ],
-        "attributes": null
-      }
-    ],
-    "ascension": [
-      {
-        "key": "Nv. 1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes do avanço",
-              "Após o avanço"
-            ]
-          },
-          {
-            "key": "Vida Básica",
-            "values": [
-              "-",
-              "966"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "-",
-              "21"
-            ]
-          },
-          {
-            "key": "DEF Básica",
-            "values": [
-              "-",
-              "72"
-            ]
-          },
-          {
-            "key": "Bônus de DEF",
-            "values": [
-              "-",
-              "0.0%"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Nv. 20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes do avanço",
-              "Após o avanço"
-            ]
-          },
-          {
-            "key": "Vida Básica",
-            "values": [
-              "2505",
-              "3333"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "56",
-              "74"
-            ]
-          },
-          {
-            "key": "DEF Básica",
-            "values": [
-              "188",
-              "250"
-            ]
-          },
-          {
-            "key": "Bônus de DEF",
-            "values": [
-              "0.0%",
-              "0.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moeda comum. A língua que todos entendem.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 447,
-            "name": "Lasca de Topázio Prithiva",
-            "desc": "Material de Ascensão de Personagem.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 6670,
-            "name": "Crisântemo Brilhante",
-            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Uma flor com um formato de asa. Suas pétalas balançam tranquilamente como se fossem acariciadas pelo vento.</span></p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/100430559/8f8de98c77c9e4eee95e510f60d2b671_1953144100891006198.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 6644,
-            "name": "Apito de Madeira do Sentinela",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/29705491/e07c501cd10522b752f2c2f31ac8c642_7798444019480594301.png",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "key": "Nv. 40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes do avanço",
-              "Após o avanço"
-            ]
-          },
-          {
-            "key": "Vida Básica",
-            "values": [
-              "4987",
-              "5576"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "111",
-              "124"
-            ]
-          },
-          {
-            "key": "DEF Básica",
-            "values": [
-              "374",
-              "418"
-            ]
-          },
-          {
-            "key": "Bônus de DEF",
-            "values": [
-              "0.0%",
-              "9.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moeda comum. A língua que todos entendem.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 446,
-            "name": "Fragmento de Topázio Prithiva",
-            "desc": "Material de Ascensão de Personagem.<br/>\"O preço que se paga nesta terra é com o sangue.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 7040,
-            "name": "Núcleo da Fonte Secreta com Inscrição Dourada",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/d25f84e49640d3f9820580a1d6ba925b_6062609948822034717.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 6670,
-            "name": "Crisântemo Brilhante",
-            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Uma flor com um formato de asa. Suas pétalas balançam tranquilamente como se fossem acariciadas pelo vento.</span></p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/100430559/8f8de98c77c9e4eee95e510f60d2b671_1953144100891006198.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 6644,
-            "name": "Apito de Madeira do Sentinela",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/29705491/e07c501cd10522b752f2c2f31ac8c642_7798444019480594301.png",
-            "amount": 15
-          }
-        ]
-      },
-      {
-        "key": "Nv. 50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes do avanço",
-              "Após o avanço"
-            ]
-          },
-          {
-            "key": "Vida Básica",
-            "values": [
-              "6415",
-              "7199"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "142",
-              "160"
-            ]
-          },
-          {
-            "key": "DEF Básica",
-            "values": [
-              "481",
-              "540"
-            ]
-          },
-          {
-            "key": "Bônus de DEF",
-            "values": [
-              "9.0%",
-              "18.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moeda comum. A língua que todos entendem.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 446,
-            "name": "Fragmento de Topázio Prithiva",
-            "desc": "Material de Ascensão de Personagem.<br/>\"O preço que se paga nesta terra é com o sangue.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 7040,
-            "name": "Núcleo da Fonte Secreta com Inscrição Dourada",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/d25f84e49640d3f9820580a1d6ba925b_6062609948822034717.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 6670,
-            "name": "Crisântemo Brilhante",
-            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Uma flor com um formato de asa. Suas pétalas balançam tranquilamente como se fossem acariciadas pelo vento.</span></p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/100430559/8f8de98c77c9e4eee95e510f60d2b671_1953144100891006198.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 6645,
-            "name": "Apito de Metal do Guerreiro",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/29705491/54375bf17fec5be6b0f4b9ca377cf847_7941186793661736609.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Nv. 60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes do avanço",
-              "Após o avanço"
-            ]
-          },
-          {
-            "key": "Vida Básica",
-            "values": [
-              "8047",
-              "8636"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "178",
-              "191"
-            ]
-          },
-          {
-            "key": "DEF Básica",
-            "values": [
-              "603",
-              "647"
-            ]
-          },
-          {
-            "key": "Bônus de DEF",
-            "values": [
-              "18.0%",
-              "18.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moeda comum. A língua que todos entendem.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 445,
-            "name": "Pedaço de Topázio Prithiva",
-            "desc": "Material de Ascensão de Personagem.<br/>\"O preço que se paga nesta terra é com o sangue.\"<br/>\"Eu sou o que garante do trabalho duro, da sabedoria e do futuro das pessoas.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 7040,
-            "name": "Núcleo da Fonte Secreta com Inscrição Dourada",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/d25f84e49640d3f9820580a1d6ba925b_6062609948822034717.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 6670,
-            "name": "Crisântemo Brilhante",
-            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Uma flor com um formato de asa. Suas pétalas balançam tranquilamente como se fossem acariciadas pelo vento.</span></p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/100430559/8f8de98c77c9e4eee95e510f60d2b671_1953144100891006198.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 6645,
-            "name": "Apito de Metal do Guerreiro",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/29705491/54375bf17fec5be6b0f4b9ca377cf847_7941186793661736609.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Nv. 70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes do avanço",
-              "Após o avanço"
-            ]
-          },
-          {
-            "key": "Vida Básica",
-            "values": [
-              "9491",
-              "10079"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "210",
-              "223"
-            ]
-          },
-          {
-            "key": "DEF Básica",
-            "values": [
-              "712",
-              "756"
-            ]
-          },
-          {
-            "key": "Bônus de DEF",
-            "values": [
-              "18.0%",
-              "27.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moeda comum. A língua que todos entendem.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 445,
-            "name": "Pedaço de Topázio Prithiva",
-            "desc": "Material de Ascensão de Personagem.<br/>\"O preço que se paga nesta terra é com o sangue.\"<br/>\"Eu sou o que garante do trabalho duro, da sabedoria e do futuro das pessoas.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 7040,
-            "name": "Núcleo da Fonte Secreta com Inscrição Dourada",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/d25f84e49640d3f9820580a1d6ba925b_6062609948822034717.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 6670,
-            "name": "Crisântemo Brilhante",
-            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Uma flor com um formato de asa. Suas pétalas balançam tranquilamente como se fossem acariciadas pelo vento.</span></p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/100430559/8f8de98c77c9e4eee95e510f60d2b671_1953144100891006198.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 6646,
-            "name": "Apito Dourado do Guerreiro de Coroa Sauriana",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/29705491/c8648efda2051a6f005647a78ac907fb_2801223258011175521.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Nv. 80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes do avanço",
-              "Após o avanço"
-            ]
-          },
-          {
-            "key": "Vida Básica",
-            "values": [
-              "10945",
-              "11533"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "243",
-              "256"
-            ]
-          },
-          {
-            "key": "DEF Básica",
-            "values": [
-              "820",
-              "865"
-            ]
-          },
-          {
-            "key": "Bônus de DEF",
-            "values": [
-              "27.0%",
-              "36.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moeda comum. A língua que todos entendem.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 444,
-            "name": "Gema de Topázio Prithiva",
-            "desc": "Material de Ascensão de Personagem.<br/>\"O preço que se paga nesta terra é com o sangue.\"<br/>\"Eu sou o que garante do trabalho duro, da sabedoria e do futuro das pessoas.\"<br/>\"Esta é a confiança que depositei neles. Me traia, e você será manchado com o meu sangue.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 7040,
-            "name": "Núcleo da Fonte Secreta com Inscrição Dourada",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/d25f84e49640d3f9820580a1d6ba925b_6062609948822034717.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 6670,
-            "name": "Crisântemo Brilhante",
-            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Uma flor com um formato de asa. Suas pétalas balançam tranquilamente como se fossem acariciadas pelo vento.</span></p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/11/100430559/8f8de98c77c9e4eee95e510f60d2b671_1953144100891006198.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 6646,
-            "name": "Apito Dourado do Guerreiro de Coroa Sauriana",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/29705491/c8648efda2051a6f005647a78ac907fb_2801223258011175521.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Nv. 90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes do avanço",
-              "Após o avanço"
-            ]
-          },
-          {
-            "key": "Vida Básica",
-            "values": [
-              "12405",
-              "-"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "275",
-              "-"
-            ]
-          },
-          {
-            "key": "DEF Básica",
-            "values": [
-              "930",
-              "-"
-            ]
-          },
-          {
-            "key": "Bônus de DEF",
-            "values": [
-              "36.0%",
-              "-"
-            ]
-          }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Nome",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Xilonen"
-          }
-        ]
-      },
-      {
-        "key": "Aniversário",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "3/13"
-          }
-        ]
-      },
-      {
-        "key": "Constelação",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Panthera Ocelota"
-          }
-        ]
-      },
-      {
-        "key": "Título",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Fogo Ardente Forja a Alma"
-          }
-        ]
-      },
-      {
-        "key": "Visão",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Geo"
-          }
-        ]
-      },
-      {
-        "key": "Afiliação",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Nanatzcayan"
-          }
-        ]
-      },
-      {
-        "key": "Chinês CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "弭洋"
-          }
-        ]
-      },
-      {
-        "key": "Japonês CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Beth Curry"
-          }
-        ]
-      },
-      {
-        "key": "Inglês CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "FAIROUZ Ai"
-          }
-        ]
-      },
-      {
-        "key": "Coreano CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "김이안"
-          }
-        ]
-      }
-    ],
-    "customize": [
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Detalhes da Personagem",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Anúncio da Personagem"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/27/35428890/d908e49cf81886ce65f176fb8d1b1beb_6303430032665709110.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>26 de agosto, 2024</color>\n\"Oi, Xilonen! Então, sobre os óculos de sol que você fez para mim da última vez... Tenho alguns detalhes que gostaria de ajustar, especialmente no padrão das hastes... Hum? Onde ela foi? Ainda nem é hora do intervalo de almoço... Ei! Xilonen! Você está aí? Vamos, vamos revisar os detalhes do processo de fabricação dos óculos de novo!\"\n— Assim exclamou Mavuika em voz alta na frente da oficina de Xilonen."
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Apresentação da Personagem"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/12/42646513/985c7dd34645b402bc9860cbdd307f06_8297360227509907546.jpg",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>3 de outubro, 2024</color>\nOlá, Viajante! Hoje quem vamos conhecer é uma Forjadora de Nome de Nanatzcayan, ela é especialmente habilidosa em encontrar um bom equilíbrio entre as pesadas responsabilidades de seu trabalho e viver bem."
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Apresentação de Habilidade de Personagem: \"Fogo Ardente Forja a Alma\" - Xilonen"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/12/42646513/06dda3675400efbf25fe162c8238fb9a_2631614057527161707.jpg",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>3 de outubro, 2024</color>\nOlá, Viajantes! Em seguida, traremos informações de combate de Xilonen para todos, vamos dar uma olhada!"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Ilustrações da Personagem",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Ilustração da Personagem - Xilonen"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/21/35428890/7be3e5e71654ba48ec501af6aa1b3acd_4155951853558488692.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>9 de outubro, 2024</color>\n\"O trabalho também precisa de um equilíbrio entre esforço e descanso. Faça uma pausa e comece a dançar com a música.\""
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Versão 5.1 - \"Arco-Íris Destinado às Chamas\""
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/18/35428890/0a891091aa3a0349d30b753529311416_7603027188933691031.png",
-        "alignment": "left"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/18/35428890/6d279994615234ad34c3fce27375f657_5128225052295162469.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>4 de novembro, 2024</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Festival Loi Krathong 2024"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/18/35428890/3e90743af4e3c19851d33bae3daa6117_1444394196149032579.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>15 de novembro, 2024</color>\nQue as inúmeras lanternas de água transportem desejos maravilhosos aos corações de cada Viajante!\n<color=#ffffff>X/Twitter:</color> <color=#37ffff>https:/x.com/GenshinImpact/status/1857258357327077825</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Emojis",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Desenhos da Paimon Série 36"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/12/42646513/6acb2e2cb71c38e7ecef90b1cdc584bf_6628704293784454345.jpg",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>28 de outubro, 2024</color>"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/18/35428890/515289f3aa512e33f4bb05d9d727f35a_3452336848743657902.png",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/18/35428890/0bbd9a5f0a63993a73f4f8344a1a5426_7986780141372895286.png",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/18/35428890/a14d890acec18b345191e8b764f90226_2656693483943321915.png",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/18/35428890/8702a76f059b825bb337d24395cceac5_3906675762070606125.png",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Eventos",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "\"Pedido Urgente\" — Evento Web"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/12/42646513/5730dd81a9ae79f3ff05d56cfca581ff_8937569615702989552.jpg",
-        "alignment": "left"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/12/42646513/4211c8131f752cafca0b15ac2cf24355_6953814146025597231.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>4 de outubro, 2024</color>\nDurante o período do evento, interaja com os objetos no cenário para obter inspiração. Ajude Xilonen a completar todas as comissões de forja a tempo para poder resgatar recompensas no jogo depois de enviar os itens forjados.\n〓Duração do Evento〓\nDe 4 de outubro às 12:00 até 11 de outubro às 23:59 (UTC+8)"
       }
     ],
     "story": [

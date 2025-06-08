@@ -4,14 +4,190 @@
   "desc": "แผนที่เดินเรือที่มีบันทึกกระแสน้ำและสภาพอากาศบริเวณใกล้เคียง ช่วยให้ผู้ค้าจากต่างแดนเข้าถึงเมืองท่า Liyue ได้",
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/万国诸海图谱.png",
   "filterValues": {
+    "weaponType": "สื่อเวท",
     "weaponRarity": 4,
-    "weaponProperty": "ความชำนาญธาตุ",
-    "weaponType": "สื่อเวท"
+    "weaponProperty": "ความชำนาญธาตุ"
   },
   "menuId": 4,
   "menuName": "อาวุธ",
   "version": 1722319068,
   "components": {
+    "baseInfo": [
+      {
+        "key": "ชื่อ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Mappa Mare"
+          }
+        ]
+      },
+      {
+        "key": "หาได้จาก",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "การหลอม"
+          }
+        ]
+      },
+      {
+        "key": "ประเภท",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "สื่อเวท"
+          }
+        ]
+      },
+      {
+        "key": "ค่าสถานะรอง",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "ความชำนาญธาตุ"
+          }
+        ]
+      },
+      {
+        "key": "Infusion Scroll",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "ภายใน 10 วินาที หลังจากทำให้เกิดปฏิกิริยาธาตุ จะได้รับโบนัสความเสียหายธาตุ <color=#37ffff>8%/10%/12%/14%/16%</color> ซึ่งเอฟเฟกต์นี้จะซ้อนทับได้สูงสุด 2 ชั้น"
+          }
+        ]
+      },
+      {
+        "key": "วัสดุสำหรับหลอม",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 352,
+            "name": "Northlander Catalyst Billet",
+            "desc": "วัสดุสำหรับสร้างอาวุธ สามารถใช้เพื่อสร้างสื่อเวทระดับ 4 ดาวได้<br/>ในทางปรัชญานั้นคิดว่าหินอ่อนแฝง ไปด้วยศักยภาพของประติมากรรม ที่สวยงาม ซึ่งต้นแบบเหล่านี้ ยังมีความเป็นไปได้อีกมากมาย ไม่สิ้นสุด ช่างน่าสนใจจริง ๆ",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Northlander Catalyst Billet_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 976,
+            "name": "Crystal Chunk",
+            "desc": "ก้อนคริสตัลที่ยังไม่ผ่านการเจียระไน ช่างฝีมือที่ชำนาญแล้วเท่านั้นที่จะดึงเอาคุณค่าที่แท้จริงของมันออกมาได้",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystal Chunk_icon.png",
+            "amount": 50
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1224,
+            "name": "White Iron Chunk",
+            "desc": "ช่างเหล็กที่มีความสามารถ จะเปลี่ยนสิ่งนี้ให้เป็นสิ่งมหัศจรรย์ได้",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
+            "amount": 50
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "เวอร์ชันเผยแพร่",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.0"
+          }
+        ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "ตัวละคร"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "หมายเหตุ"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2850,
+        "name": "Nahida",
+        "desc": "<p>นกน้อยในกรงทองของวิหารแห่ง Surasthana ทำได้เพียงจ้องมองโลกใบนี้ผ่านทางความฝัน</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/29/144837601/f29490bddc56b4a6773b6c5003bbb853_2080858609251172602.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "เนื่องจาก Nahida เป็นตัวละครที่เน้น <color=#ffffff>ทำปฏิกิริยาธาตุ</color> เป็นหลัก และสามารถใช้ <color=#ffd780>ค่าความชำนาญธาตุ</color> จากค่าสถานะรองของอาวุธชิ้นนี้ได้ นอกจากนี้สกิลติดตัวของอาวุธชิ้นนี้ยังให้ค่า <color=#ffffff>โบนัสความเสียหายธาตุ</color> เพิ่มเติมจากการ <color=#ffffff>ทำปฏิกิริยาธาตุ</color> ทำให้ Nahida สามารถใช้งานอาวุธชิ้นนี้ได้เป็นอย่างดี"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 12,
+        "name": "Klee",
+        "desc": "แขกประจำห้องขังของกองอัศวินแห่ง Favonius ผู้เชี่ยวชาญด้านการระเบิดแห่ง Mondstadt ผู้คนเรียกเธอว่า &#34;ดวงอาทิตย์ที่หลบหนี&#34;",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "เนื่องจาก Klee เป็นตัวละครที่สามารถเล่นในรูปแบบเน้น <color=#ffffff>ทำปฏิกิริยาธาตุ</color> เป็นหลักได้ นอกจากนี้สกิลติดตัวของอาวุธชิ้นนี้ยังให้ค่า <color=#ffffff>โบนัสความเสียหายธาตุ</color> เพิ่มเติมจากการ <color=#ffffff>ทำปฏิกิริยาธาตุ</color> ทำให้ Klee สามารถใช้งานอาวุธชิ้นนี้เพิ่มความเสียหายโดยรวมได้เป็นอย่างดี"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7,
+        "name": "Yae Miko",
+        "desc": "<p>ท่าน Guuji แห่งศาลเจ้า Grand Narukami และเป็นหัวหน้าบรรณาธิการของ &#34;สำนักพิมพ์ Yae&#34;</p><p>ภายใต้รูปโฉมภายนอกที่งดงาม มีความเฉลียวฉลาดและเล่ห์กลซ่อนอยู่</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yae Miko_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "เนื่องจาก Yae Miko เป็นตัวละครที่เน้น <color=#ffffff>ทำปฏิกิริยาธาตุ</color> เป็นหลัก และสามารถใช้ <color=#ffd780>ค่าความชำนาญธาตุ</color> จากค่าสถานะรองของอาวุธชิ้นนี้เพิ่มความเสียหายโดยรวมจากพรสวรรค์ของเธอได้ นอกจากนี้สกิลติดตัวของอาวุธชิ้นนี้ยังให้ค่า <color=#ffffff>โบนัสความเสียหายธาตุ</color> เพิ่มเติมจากการ <color=#ffffff>ทำปฏิกิริยาธาตุ</color> ทำให้ Yae Miko สามารถใช้งานอาวุธชิ้นนี้ได้เป็นอย่างดี"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 30,
+        "name": "Sucrose",
+        "desc": "<p>นักเล่นแร่แปรธาตุผู้เต็มไปด้วยความอยากรู้อยากเห็นในทุกสิ่งทุกอย่าง เป็นนักวิจัยด้าน &#34;การแปรธาตุชีวภาพ&#34;</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sucrose_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "เนื่องจาก Sucrose เป็นตัวละครที่เน้น <color=#ffffff>ทำปฏิกิริยาธาตุ</color> เป็นหลัก นอกจากนี้สกิลติดตัวของอาวุธชิ้นนี้ยังให้ค่า <color=#ffffff>โบนัสความเสียหายธาตุ</color> เพิ่มเติมจากการ <color=#ffffff>ทำปฏิกิริยาธาตุ</color> ทำให้ Sucrose สามารถใช้งานอาวุธชิ้นนี้ได้เป็นอย่างดี"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 24,
+        "name": "Yanfei",
+        "desc": "ที่ปรึกษาด้านกฎหมายผู้โด่งดังที่ประจำอยู่ที่ท่าเรือ Liyue หญิงสาวผู้ปราดเปรื่องที่มีสายเลือดสัตว์เวทผสมอยู่",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yanfei_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "เนื่องจาก Yanfei เป็นตัวละครที่สามารถเล่นในรูปแบบเน้น <color=#ffffff>ทำปฏิกิริยาธาตุ</color> เป็นหลักได้ นอกจากนี้สกิลติดตัวของอาวุธชิ้นนี้ยังให้ค่า <color=#ffffff>โบนัสความเสียหายธาตุ</color> เพิ่มเติมจากการ <color=#ffffff>ทำปฏิกิริยาธาตุ</color> ทำให้ Yanfei สามารถใช้งานอาวุธชิ้นนี้เพิ่มความเสียหายโดยรวมได้เป็นอย่างดี"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2,
+        "name": "Lisa",
+        "desc": "<p>ผู้ดูแลหอสมุดอัศวินแห่ง Favonius ผู้เอื่อยเฉื่อยแต่รอบรู้ เธอได้รับการยอมรับว่าเป็น &#34;อัจฉริยะในรอบสองร้อยปี&#34; แห่งสถาบัน Sumeru</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Lisa_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "เนื่องจาก Lisa เป็นตัวละครที่สามารถเล่นในรูปแบบเน้น <color=#ffffff>ทำปฏิกิริยาธาตุ</color> เป็นหลักได้ นอกจากนี้สกิลติดตัวของอาวุธชิ้นนี้ยังให้ค่า <color=#ffffff>โบนัสความเสียหายธาตุ</color> เพิ่มเติมจากการ <color=#ffffff>ทำปฏิกิริยาธาตุ</color> ทำให้ Lisa สามารถใช้งานอาวุธชิ้นนี้เพิ่มความเสียหายโดยรวมได้เป็นอย่างดี"
+      }
+    ],
     "ascension": [
       {
         "key": "Lv.1",
@@ -348,96 +524,6 @@
         ]
       }
     ],
-    "customize": [
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "ตัวละคร"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "หมายเหตุ"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2850,
-        "name": "Nahida",
-        "desc": "<p>นกน้อยในกรงทองของวิหารแห่ง Surasthana ทำได้เพียงจ้องมองโลกใบนี้ผ่านทางความฝัน</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/29/144837601/f29490bddc56b4a6773b6c5003bbb853_2080858609251172602.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "เนื่องจาก Nahida เป็นตัวละครที่เน้น <color=#ffffff>ทำปฏิกิริยาธาตุ</color> เป็นหลัก และสามารถใช้ <color=#ffd780>ค่าความชำนาญธาตุ</color> จากค่าสถานะรองของอาวุธชิ้นนี้ได้ นอกจากนี้สกิลติดตัวของอาวุธชิ้นนี้ยังให้ค่า <color=#ffffff>โบนัสความเสียหายธาตุ</color> เพิ่มเติมจากการ <color=#ffffff>ทำปฏิกิริยาธาตุ</color> ทำให้ Nahida สามารถใช้งานอาวุธชิ้นนี้ได้เป็นอย่างดี"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 12,
-        "name": "Klee",
-        "desc": "แขกประจำห้องขังของกองอัศวินแห่ง Favonius ผู้เชี่ยวชาญด้านการระเบิดแห่ง Mondstadt ผู้คนเรียกเธอว่า &#34;ดวงอาทิตย์ที่หลบหนี&#34;",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "เนื่องจาก Klee เป็นตัวละครที่สามารถเล่นในรูปแบบเน้น <color=#ffffff>ทำปฏิกิริยาธาตุ</color> เป็นหลักได้ นอกจากนี้สกิลติดตัวของอาวุธชิ้นนี้ยังให้ค่า <color=#ffffff>โบนัสความเสียหายธาตุ</color> เพิ่มเติมจากการ <color=#ffffff>ทำปฏิกิริยาธาตุ</color> ทำให้ Klee สามารถใช้งานอาวุธชิ้นนี้เพิ่มความเสียหายโดยรวมได้เป็นอย่างดี"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 7,
-        "name": "Yae Miko",
-        "desc": "<p>ท่าน Guuji แห่งศาลเจ้า Grand Narukami และเป็นหัวหน้าบรรณาธิการของ &#34;สำนักพิมพ์ Yae&#34;</p><p>ภายใต้รูปโฉมภายนอกที่งดงาม มีความเฉลียวฉลาดและเล่ห์กลซ่อนอยู่</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yae Miko_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "เนื่องจาก Yae Miko เป็นตัวละครที่เน้น <color=#ffffff>ทำปฏิกิริยาธาตุ</color> เป็นหลัก และสามารถใช้ <color=#ffd780>ค่าความชำนาญธาตุ</color> จากค่าสถานะรองของอาวุธชิ้นนี้เพิ่มความเสียหายโดยรวมจากพรสวรรค์ของเธอได้ นอกจากนี้สกิลติดตัวของอาวุธชิ้นนี้ยังให้ค่า <color=#ffffff>โบนัสความเสียหายธาตุ</color> เพิ่มเติมจากการ <color=#ffffff>ทำปฏิกิริยาธาตุ</color> ทำให้ Yae Miko สามารถใช้งานอาวุธชิ้นนี้ได้เป็นอย่างดี"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 30,
-        "name": "Sucrose",
-        "desc": "<p>นักเล่นแร่แปรธาตุผู้เต็มไปด้วยความอยากรู้อยากเห็นในทุกสิ่งทุกอย่าง เป็นนักวิจัยด้าน &#34;การแปรธาตุชีวภาพ&#34;</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sucrose_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "เนื่องจาก Sucrose เป็นตัวละครที่เน้น <color=#ffffff>ทำปฏิกิริยาธาตุ</color> เป็นหลัก นอกจากนี้สกิลติดตัวของอาวุธชิ้นนี้ยังให้ค่า <color=#ffffff>โบนัสความเสียหายธาตุ</color> เพิ่มเติมจากการ <color=#ffffff>ทำปฏิกิริยาธาตุ</color> ทำให้ Sucrose สามารถใช้งานอาวุธชิ้นนี้ได้เป็นอย่างดี"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 24,
-        "name": "Yanfei",
-        "desc": "ที่ปรึกษาด้านกฎหมายผู้โด่งดังที่ประจำอยู่ที่ท่าเรือ Liyue หญิงสาวผู้ปราดเปรื่องที่มีสายเลือดสัตว์เวทผสมอยู่",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yanfei_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "เนื่องจาก Yanfei เป็นตัวละครที่สามารถเล่นในรูปแบบเน้น <color=#ffffff>ทำปฏิกิริยาธาตุ</color> เป็นหลักได้ นอกจากนี้สกิลติดตัวของอาวุธชิ้นนี้ยังให้ค่า <color=#ffffff>โบนัสความเสียหายธาตุ</color> เพิ่มเติมจากการ <color=#ffffff>ทำปฏิกิริยาธาตุ</color> ทำให้ Yanfei สามารถใช้งานอาวุธชิ้นนี้เพิ่มความเสียหายโดยรวมได้เป็นอย่างดี"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2,
-        "name": "Lisa",
-        "desc": "<p>ผู้ดูแลหอสมุดอัศวินแห่ง Favonius ผู้เอื่อยเฉื่อยแต่รอบรู้ เธอได้รับการยอมรับว่าเป็น &#34;อัจฉริยะในรอบสองร้อยปี&#34; แห่งสถาบัน Sumeru</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Lisa_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "เนื่องจาก Lisa เป็นตัวละครที่สามารถเล่นในรูปแบบเน้น <color=#ffffff>ทำปฏิกิริยาธาตุ</color> เป็นหลักได้ นอกจากนี้สกิลติดตัวของอาวุธชิ้นนี้ยังให้ค่า <color=#ffffff>โบนัสความเสียหายธาตุ</color> เพิ่มเติมจากการ <color=#ffffff>ทำปฏิกิริยาธาตุ</color> ทำให้ Lisa สามารถใช้งานอาวุธชิ้นนี้เพิ่มความเสียหายโดยรวมได้เป็นอย่างดี"
-      }
-    ],
     "galleryCharacter": [
       {
         "key": "รูปแบบดั้งเดิม",
@@ -456,92 +542,6 @@
           {
             "type": "RichText",
             "text": "หลังเลื่อนขั้นเลเวล 40"
-          }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "ชื่อ",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Mappa Mare"
-          }
-        ]
-      },
-      {
-        "key": "หาได้จาก",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "การหลอม"
-          }
-        ]
-      },
-      {
-        "key": "ประเภท",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "สื่อเวท"
-          }
-        ]
-      },
-      {
-        "key": "ค่าสถานะรอง",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ความชำนาญธาตุ"
-          }
-        ]
-      },
-      {
-        "key": "Infusion Scroll",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ภายใน 10 วินาที หลังจากทำให้เกิดปฏิกิริยาธาตุ จะได้รับโบนัสความเสียหายธาตุ <color=#37ffff>8%/10%/12%/14%/16%</color> ซึ่งเอฟเฟกต์นี้จะซ้อนทับได้สูงสุด 2 ชั้น"
-          }
-        ]
-      },
-      {
-        "key": "วัสดุสำหรับหลอม",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 352,
-            "name": "Northlander Catalyst Billet",
-            "desc": "วัสดุสำหรับสร้างอาวุธ สามารถใช้เพื่อสร้างสื่อเวทระดับ 4 ดาวได้<br/>ในทางปรัชญานั้นคิดว่าหินอ่อนแฝง ไปด้วยศักยภาพของประติมากรรม ที่สวยงาม ซึ่งต้นแบบเหล่านี้ ยังมีความเป็นไปได้อีกมากมาย ไม่สิ้นสุด ช่างน่าสนใจจริง ๆ",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Northlander Catalyst Billet_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 976,
-            "name": "Crystal Chunk",
-            "desc": "ก้อนคริสตัลที่ยังไม่ผ่านการเจียระไน ช่างฝีมือที่ชำนาญแล้วเท่านั้นที่จะดึงเอาคุณค่าที่แท้จริงของมันออกมาได้",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystal Chunk_icon.png",
-            "amount": 50
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1224,
-            "name": "White Iron Chunk",
-            "desc": "ช่างเหล็กที่มีความสามารถ จะเปลี่ยนสิ่งนี้ให้เป็นสิ่งมหัศจรรย์ได้",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
-            "amount": 50
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "เวอร์ชันเผยแพร่",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.0"
           }
         ]
       }

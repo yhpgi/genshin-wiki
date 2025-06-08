@@ -5,16 +5,1244 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Venti_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/温迪/avatar.png",
   "filterValues": {
-    "characterRegion": "Mondstadt",
     "characterProperty": "Recarga de Energía",
+    "characterRegion": "Mondstadt",
+    "characterRarity": 5,
     "characterWeapon": "Arco",
-    "characterVision": "Anemo",
-    "characterRarity": 5
+    "characterVision": "Anemo"
   },
   "menuId": 2,
   "menuName": "Galería de personajes",
   "version": 1729492603,
   "components": {
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/温迪/constellation_1.png",
+        "name": "Vendaval feroz",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Dispara 2 flechas adicionales por cada <color=#ffd780>Disparo Preciso</color> . Cada una inflige un 33% del daño de la flecha original."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/温迪/constellation_2.png",
+        "name": "Brisa de reminiscencia",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Sonata celestial</color> reduce la <color=#80ffd7>RES Anemo</color> y la RES Física del enemigo en un 12% durante 10 s.\nLos enemigos lanzados al aire por <color=#ffd780>Sonata celestial</color> sufren una reducción adicional del 12% de <color=#80ffd7>RES Anemo</color> y de RES física."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/温迪/constellation_3.png",
+        "name": "Oda a los Mil Vientos",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Aumenta el nivel de habilidad de <color=#ffd780>Gran Oda del Viento</color> +3.\nPuede ser aumentado hasta Niv. 15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/温迪/constellation_4.png",
+        "name": "Huracán de la libertad",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Venti obtiene un 25% de <color=#80ffd7>Bono de Daño Anemo</color> durante 10 s tras recoger un orbe o una partícula elemental."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/温迪/constellation_5.png",
+        "name": "Concierto celestial",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Aumenta el nivel de habilidad de <color=#ffd780>Sonata celestial</color> +3.\nPuede ser aumentado hasta Niv. 15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/温迪/constellation_6.png",
+        "name": "Tormenta de la rebelión",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "La RES Anemo de los enemigos se reduce en un 20% cuando reciben daño de <color=#ffd780>Gran Oda del Viento</color> .\nSi ocurre un cambio elemental durante <color=#80ffd7>Gran Oda del Viento</color> , su RES Elemental al nuevo elemento se reducirá en un 20%."
+          }
+        ]
+      }
+    ],
+    "voice": [
+      {
+        "title": "Hola...",
+        "desc": "*Bosteza*, ese fue un sueño reparador. Ah, viajera/viajero, ¡nos encontramos de nuevo! ¿Qué? ¿No me recuerdas? Jajaja, bueno, permíteme que te acompañe en tu viaje una vez más. ¡Las historias de los viajeros merecen ser difundidas por los bardos del mundo!"
+      },
+      {
+        "title": "Charla - Tocando la lira",
+        "desc": "Bueno... Si quieres escuchar más, regálame una manzana."
+      },
+      {
+        "title": "Charla - Sidra",
+        "desc": "*Suspira*, me encantaría sentarme en lo alto de un árbol mientras bebo una buena sidra de manzana..."
+      },
+      {
+        "title": "Charla - Oda",
+        "desc": "Vamos, viajera/o. El mundo está lleno de baladas que esperan ser redescubiertas."
+      },
+      {
+        "title": "Cuando llueve...",
+        "desc": "¡Saltemos sobre charcos de agua a ver quién salpica más!"
+      },
+      {
+        "title": "Tras la lluvia...",
+        "desc": "¿Ya dejó de llover? Qué lástima, aún quería seguir jugando..."
+      },
+      {
+        "title": "Cuando nieva...",
+        "desc": "Cuando haya más nieve, ¡haremos una pelea de bolas de nieve!"
+      },
+      {
+        "title": "Hace mucho viento...",
+        "desc": "¡Hay viento de nuevo! Vamos, ¡a volar!"
+      },
+      {
+        "title": "Buenos días...",
+        "desc": "¡Buenos días! ¿Lista/Listo para una nueva aventura?"
+      },
+      {
+        "title": "Buenas tardes...",
+        "desc": "¡Qué hambre tengo! Pero no puedo dejar que me vean robando comida del Viñedo del Amanecer otra vez... ¡Oh, eres tú! ¿A dónde vas? ¿Puedo ir contigo?"
+      },
+      {
+        "title": "Buenas noches... (I)",
+        "desc": "Todavía no tengo sueño. ¿Te apetece ir a pasear?"
+      },
+      {
+        "title": "Buenas noches... (II)",
+        "desc": "¿Eh? ¿Quieres descansar? Jeje, buenas noches."
+      },
+      {
+        "title": "Sobre Venti...",
+        "desc": "¿Practicar? ¿Yo? No lo necesito, ¡conozco todas las canciones de Teyvat!"
+      },
+      {
+        "title": "Sobre nosotros - Nuevas canciones",
+        "desc": "¡He decidido escribir una canción sobre ti! ¿Por qué me miras así? ¿No puedes pagarme la actuación? ¡No digas tonterías! Eres mi amiga/o, no te cobraré ningún Mora. Aunque... ¡una cosa que podrías hacer es contarme otra de tus historias!"
+      },
+      {
+        "title": "Sobre nosotros - Valientes",
+        "desc": "Jaja, una vez que el héroe/la heroína de la canción haya rescatado a la princesa/al príncipe, ¡me aseguraré de que esta canción llegue a todos los rincones del continente!"
+      },
+      {
+        "title": "Sobre nosotros - Apóstoles",
+        "desc": "Una noche con una brisa fresca crea el ambiente perfecto para convertirse en mi discípula/o, ¿no te parece? Podemos hacerlo ahora, solo tienes que hacerme una pequeña ofrenda."
+      },
+      {
+        "title": "Sobre nosotros - Peticiones",
+        "desc": "*Suspira*, ¿crees que debería esforzarme más para ser un buen Arconte Anemo? Bueno, tú también podrías ser una/un mejor creyente... Podrías ser más piadosa/o, más apasionada/o o..."
+      },
+      {
+        "title": "Sobre la Visión...",
+        "desc": "¿Eh? ¿Tienes curiosidad sobre mi Visión? Oh, bueno... Toma, puedo hacerte una para ti si quieres, jejeje."
+      },
+      {
+        "title": "¿Algo que decir?",
+        "desc": "“Olah!”. Jaja, así es como los Hilichurls dicen “hola”. ¿Que por qué aprendí eso? Pues para mis creaciones artísticas, por supuesto. Cuanto más conocimientos tenga, mejores cosas crearé... Sin embargo, hasta ahora no he escrito ninguna canción en hilichurlio..."
+      },
+      {
+        "title": "Un dato curioso...",
+        "desc": "Viajera/Viajero, ¿alguna vez has visto una cecilia? Es una magnífica flor silvestre de color blanco que solo crece en las montañas y acantilados más remotos. Para mí, al menos, es la flor más hermosa de todo Teyvat."
+      },
+      {
+        "title": "Sobre Jean...",
+        "desc": "La Gran Maestra Intendente Jean... ¿Tú qué piensas de ella? Sí, no podría estar más de acuerdo: es seria, valiente, amable y considerada. Me recuerda a un amigo..."
+      },
+      {
+        "title": "Sobre Diluc...",
+        "desc": "No me sorprende que quieras hacerte amigo del Maestro Diluc. Piensa en todo el vino que debe tener guardado... Muajajaja ... ¿Eh? ¿Que no deja que nadie lo pruebe? ¿Ni siquiera un sorbo? Hummm... Bueno, pero te dejará olerlo, ¿no? Sigue siendo mejor que nada."
+      },
+      {
+        "title": "Sobre Bárbara...",
+        "desc": "¿Conoces a la Diaconisa, una chica con una voz muy dulce? ¿No la conoces? Es una ídolo, ¿no te suena? ¿Nunca has tenido la oportunidad de saludarla? ¿O de ir a uno de sus conciertos? Vaya... Supongo que la música es un misterio para ti."
+      },
+      {
+        "title": "Sobre Razor...",
+        "desc": "Ah, el joven de pelo blanco del Reino de los Lobos, ¿dices? ¿Fue criado por lobos? ¿En serio? Bueno, no es de extrañar, con ese olor corporal inconfundible..."
+      },
+      {
+        "title": "Sobre Mona...",
+        "desc": "Oh, ¿esa astróloga? Bueno, la adivinación astrológica y mis canciones son muy parecidas: ¡con ambas serás tan pobre que no podrás gastarte ni un Mora en vino! ¿Crees que la astrología es una tradición cultural y que, al menos ella, todavía tiene algún valor? ¡Hum! ¡Qué grosería! ¡Cantar también tiene su valor!"
+      },
+      {
+        "title": "Sobre Diona...",
+        "desc": "En la Taberna Cola de Gato, hay una bebida especial que todo el mundo conoce. Pero me da a... a... ¡ACHÍS! ¿Podrías traerme una? Te estaré eternamente agradecido."
+      },
+      {
+        "title": "Sobre Albedo...",
+        "desc": "¿Cómo explicas que la roca caliza, de color blanco, se vea en un suelo negro, o que la Tierra, con su densa corteza, flote en el espacio? Por la misma razón por la que el suelo más puro dio lugar a la vida humana: se trata de un poder antiguo con propiedades inconfundibles. Si perdiéramos el control de un poder de esas características, no me quiero imaginar lo que sucedería en la ciudad... Bueno, no importa. ¡Los problemas de Mondstadt que los solucione la gente de Mondstadt!"
+      },
+      {
+        "title": "Sobre Morax...",
+        "desc": "¿Has visto a ese caballero? ¿Eh? ¿Que ahora es solo un hombre normal llamado Zhongli? Debe haber sido un gran cambio para ese viejo zopenco. ¿Quieres venir conmigo a visitarle? Tengo un vino añejo de Levantaviento que puedo llevarle como regalo para darle mis condolencias. ¡Oh! Ah... ¿todavía parecía fuerte cuando lo viste? ¿Qué tan fuerte? ¿Dices que me sorprenderé cuando lo vea?"
+      },
+      {
+        "title": "Sobre Eula...",
+        "desc": "Eula tiene muy buen gusto en cuanto a vinos. Ya sea verano o invierno, siempre lo bebe muy frío, ¡algo muy poco común entre la gente de Mondstadt de hoy en día! Creo que podríamos ser muy buenos compañeros de copas. ¿Eh? ¿Dices que ya ha escuchado... mis canciones sobre los Lawrence? Bueno, ¿y eso qué más da? ¡Tal vez podríamos hacer un dúo y todo!"
+      },
+      {
+        "title": "Más sobre Venti (I)",
+        "desc": "Llegas justo a tiempo, viajera/viajero. Dime, ¿cuál es tu deseo?"
+      },
+      {
+        "title": "Más sobre Venti (II)",
+        "desc": "¡Nunca me aburro viajando contigo! El único inconveniente es esa pequeña hada que te sigue a todas partes... Está todo el tiempo comiendo. ¡No me imagino cuánto gastas en comida!"
+      },
+      {
+        "title": "Más sobre Venti (III)",
+        "desc": "¡La Arconte Pyro es una tirana belicista, y el Arconte Geo es terco y no tiene empatía! ¿Que cómo lo sé? ¡Porque está escrito en los poemas del pasado!"
+      },
+      {
+        "title": "Más sobre Venti (IV)",
+        "desc": "Celestia... No sé si seré capaz de volar tan lejos. Además, allí no tienen agua dulce y la fruta no sabe bien. ¿Sabes lo que eso significa? ¡Que no tienen sidra! Jaja, no iría ni aunque me invitaran."
+      },
+      {
+        "title": "Más sobre Venti (V)",
+        "desc": "¿Mi mayor deseo? Siempre ha sido viajar libremente y explorar el mundo entero. Bueno, añadiría que, donde quiera que vaya, ¡me gustaría que fuera contigo! Cada día contigo es una aventura y, allá donde van los aventureros, ¡deben ir también los cuentacuentos!"
+      },
+      {
+        "title": "Aficiones de Venti...",
+        "desc": "¡Me gusta el vino! ¡Y también el viento! Qué bueno sería que inventaran un vino hecho con viento, ¿verdad?"
+      },
+      {
+        "title": "Preocupaciones de Venti...",
+        "desc": "En realidad, tengo mucha alergia a los gatos. Empiezo a estornudar tan pronto como se me acercan, y... a... ¡Achís! Ay, parece que ni siquiera puedo pensar en gatos sin estornudar. ¿Crees que hay una cura para esta horrible aflicción?"
+      },
+      {
+        "title": "Comida que más le gusta...",
+        "desc": "Toma, una manzana para ti también. ¡Recién arrancada del árbol! Ah... Dulce y jugosa... *Ñam, ñam*, ¡es la fruta de los dioses!"
+      },
+      {
+        "title": "Comida que menos le gusta...",
+        "desc": "¿Qué estás cocinando? ¿Eh? ¡Un panqueque de queso fundido! ¡Un desastre asqueroso, pegajoso y viscoso! ¡Puaj!"
+      },
+      {
+        "title": "Cumpleaños...",
+        "desc": "Alguien me dijo una vez que se supone que debes comer tarta en tu cumpleaños... ¡Ta táán! Aquí está tu tarta de cumpleaños: ¡es de manzana! Toma una cuchara. El pastel no subió lo suficiente en el horno, por eso se parece más a un pastelito de manzana... Uf, ¡la repostería es realmente complicada!"
+      },
+      {
+        "title": "El sentimiento de Ascensión - Introducción",
+        "desc": "¡Guau! ¿Qué fue eso?"
+      },
+      {
+        "title": "El sentimiento de Ascensión - Desarrollo",
+        "desc": "Buen trabajo. ¿Quieres relajarte un poco escuchando música? ¿Qué te gustaría escuchar? ¿Un capriccio o una serenata?"
+      },
+      {
+        "title": "El sentimiento de Ascensión - Nudo",
+        "desc": "Ven, siéntate a mi lado. Escribí un nuevo poema. Lo titulé «El viento de la viajera/del viajero»."
+      },
+      {
+        "title": "El sentimiento de Ascensión - Desenlace",
+        "desc": "Hummm... Aunque ya he visto este paisaje muchas veces, al verlo contigo, me parece que hay algo diferente en él. ¿No estarás usando alguna increíble habilidad que no conozco? Hummm... Pero si así fuera, significaría que mi intuición no falla."
+      },
+      {
+        "title": "Habilidad Elemental (I)",
+        "desc": "¡Yuju!"
+      },
+      {
+        "title": "Habilidad Elemental (II)",
+        "desc": "¡Allá vamos!"
+      },
+      {
+        "title": "Habilidad Elemental (III)",
+        "desc": "¡Agárrense bien!"
+      },
+      {
+        "title": "Habilidad Elemental (IV)",
+        "desc": "¡A divertirnos!"
+      },
+      {
+        "title": "Habilidad Definitiva (I)",
+        "desc": "¿Crees que puedes huir?"
+      },
+      {
+        "title": "Habilidad Definitiva (II)",
+        "desc": "¡Hora del despegue!"
+      },
+      {
+        "title": "Al esprintar (I)",
+        "desc": "¿No es volar lo más rápido?"
+      },
+      {
+        "title": "Al abrir el planeador (I)",
+        "desc": "¡Ya-he!"
+      },
+      {
+        "title": "Al abrir un cofre (I)",
+        "desc": "*Ejem*, ¿alguna vez has escuchado la “Balada del tesoro”?"
+      },
+      {
+        "title": "Al abrir un cofre (II)",
+        "desc": "¡Gracias a Barbatos! Un momento..."
+      },
+      {
+        "title": "Al abrir un cofre (III)",
+        "desc": "¡Qué descubrimiento! ¿Cuántas botellas podré comprar con esto...?"
+      },
+      {
+        "title": "Vida baja (I)",
+        "desc": "¡Ah, no estoy humor para esto!"
+      },
+      {
+        "title": "Vida baja (II)",
+        "desc": "¡Oye! ¡Aléjate de mí!"
+      },
+      {
+        "title": "Vida baja (III)",
+        "desc": "Qué impertinente."
+      },
+      {
+        "title": "Derrotado (I)",
+        "desc": "Deja que duerma un poco..."
+      },
+      {
+        "title": "Derrotado (II)",
+        "desc": "Oh, no, mi lira se rompió..."
+      },
+      {
+        "title": "Derrotado (III)",
+        "desc": "Ah... Ay..."
+      },
+      {
+        "title": "Recibiendo un ligero ataque (I)",
+        "desc": "¿Eh?"
+      },
+      {
+        "title": "Recibiendo un fuerte ataque (I)",
+        "desc": "¡Qué bruto!"
+      },
+      {
+        "title": "Unirse al equipo (I)",
+        "desc": "Dame un momento para afinar."
+      },
+      {
+        "title": "Unirse al equipo (II)",
+        "desc": "No te hice mucho esperar, ¿no?"
+      },
+      {
+        "title": "Unirse al equipo (III)",
+        "desc": "¿Lista/o para un ensayo?"
+      },
+      {
+        "title": "Al recibir un regalo (I)",
+        "desc": "Ahh, ¡está delicioso! Entonces, ¿puedes hacerme lo mismo para mañana? ¿Y tal vez también para pasado mañana?"
+      },
+      {
+        "title": "Al recibir un regalo (II)",
+        "desc": "¡Uff! Estoy lleno, no me queda sitio ni para la fruta del postre..."
+      },
+      {
+        "title": "Al recibir un regalo (III)",
+        "desc": "No me lo creo ni yo, pero no creo que pueda con esto... Ay... qué dilema."
+      }
+    ],
+    "customize": [
+      {
+        "type": "RichText",
+        "text": "Recomendación de armas"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2051,
+        "name": "Arco de Cuervo",
+        "desc": "Los cuervos son conocidos por ser los mensajeros de la muerte. Las plumas que decoran este arco presagian la muerte inminente de cualquier objetivo.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/鸦羽弓.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Arco de Cuervo (★★★)\nMotivos de recomendación:\nTiene un atributo secundario que proporciona la <color=#ffd780>Maestría Elemental</color> , un efecto pasivo que aumenta el daño a los enemigos bajo la influencia del elemento Hydro o Pyro\nSe adapta a la mayoría de los equipos\nFácil de adquirir\nUna buena opción de transición para los principiantes\nForma de obtener:\nGachapón"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2009,
+        "name": "Último Acorde",
+        "desc": "Un arco que alguna vez acompañó a un instrumento extraordinario. Ya no es capaz de hacer bailar a la gente.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/绝弦.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Último Acorde (★★★★)\nMotivos de recomendación:\nTiene un atributo secundario que proporciona la <color=#ffd780>Maestría Elemental</color> , un atributo pasivo que potencia el daño infligido por <color=#ffd780>habilidad elemental</color> y <color=#ffd780>habilidad definitiva</color>\nPotencia directamente el daño de Venti, y el atributo secundario también potencia la reacción de Toebellino\nSe adapta a la mayoría de los equipos\nAlto coste de adquisición\nForma de obtener:\nGachapón"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2019,
+        "name": "Arco de Favonius",
+        "desc": "Un arco recurvo estándar de los Caballeros de Favonius. Solo los mejores arqueros pueden aprovechar todo su potencial.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风猎弓.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Arco de Favonius（★★★★）\nMotivos de recomendación:\nEl atributo secundario añade <color=#ffd780>Recarga de Energía</color> , un efecto pasivo que recupera la <color=#ffd780>energía elemental</color> al personaje\nOptimiza el ciclo de Habilidad Definitiva, satisfaciendo la necesidad de Recarga de Energía de un equipo completo, pero requiere cierta Prob. CRIT\nEs adecuado para Venti que causa la reacción Toebellino y actúa como un apoyo\nAlto coste de adquisición\nForma de obtener:\nGachapón"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2666,
+        "name": "Fin de las Aguas",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Parece una especie piscícola ya extinta. Gracias a su flexibilidad, puede servir como arco si le atas una cuerda.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/20/10742394/80d2c21b70f486d9d9cb90e491e5b9da_3839590591323544027.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Fin de las Aguas（★★★★）\nMotivos de recomendación:\nTiene un atributo secundario que añade <color=#ffd780>Recarga de energía</color> , que inflige <color=#ffd780>daño en el AdE</color> al activar un efecto pasivo\nSatisface la recarga de Venti y garantiza el uso continuado de habilidad definitiva\nSe adapta a la mayoría de los grupos\nFácil de obtener\nForma de obtener:\nCanjeado en Gremio de Pescadores de Sumeru"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/02/01/248396186/6754b427007a979224fd881a13b54b6f_5597781976205569306.png",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/02/01/248396186/442ae91b13c0ecb0fdff20719d89ac46_6882751946675773529.png",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2045,
+        "name": "Oda a las Flores de Viento",
+        "desc": "Un arco ornamentado con flores desconocidas que carga con los fervientes deseos de una persona también desconocida.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/风花之颂.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Oda a las Flores de Viento（★★★★）\nMotivos de recomendación:\nTiene un atributo secundario que proporciona la <color=#ffd780>Maestría Elemental</color> , que aumenta el <color=#ffd780>ATQ</color> cuando se utiliza la habilidad elemental\nAumenta el daño Venti y el daño de reacción Toebellino\nSe adapta a la mayoría de los grupos\nArma limitada por el evento histórico, difícil de obtener\nForma de obtener:\nArma limitada para el evento Encuentro con las flores de viento en la versión 1.4"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2255,
+        "name": "Desvanecimiento del Crepúsculo",
+        "desc": "Un preciado arco de plata con una centelleante gema arrebol incrustada.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/落霞.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Desvanecimiento del Crepúsculo（★★★★）\nMotivos de recomendación:\nTiene un atributo secundario que aumenta <color=#ffd780>Recarga de Energía</color> , un atributo pasivo que potencia el <color=#ffd780>daño</color> del personaje\nPotencia la Recarga de energía y su capacidad de daño\nSe adapta a la mayoría de los grupos\nArma limitada por el evento histórico, difícil de obtener\nForma de obtener:\nArma limitada para el evento Senderos peligrosos en la versión 2.7"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2008,
+        "name": "Elegía del Fin",
+        "desc": "Un arco tan bello como el instrumento de un bardo. Las flechas que dispara son como un suspiro capaz de atravesar el corazón de una persona.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/终末嗟叹之诗.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Elegía del Fin（★★★★★）\nMotivos de recomendación:\nTiene un atributo secundario que proporciona <color=#ffd780>Recarga de Energía</color> , un efecto pasivo que potencia la <color=#ffd780>maestría elemental</color> del propio personaje y también potencia la <color=#ffd780>maestría elemental</color> y <color=#ffd780>ATQ</color> de los compañeros de equipo\nLa habilidad definitiva de Venti activa rápidamente los efectos pasivos, lo que se traduce en una ganancia que le viene perfecta\nSe adapta a la mayoría de los grupos\nAltos costes de adquisición\nForma de obtener:\nGachapón por tiempo limitado"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1936,
+        "name": "Estrella Invernal",
+        "desc": "Un arco inmaculado y punzante como el gélido hielo del invierno.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/冬极白星.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Estrella Invernal（★★★★★）\nMotivos de recomendación:\nTiene un atributo secundario que potencia <color=#ffd780>Prob. CRIT</color> y un atributo pasivo que aumenta el Daño causado por la <color=#ffd780>Habilidad Elemental & Definitiva</color> .También da un impulso adicional al <color=#ffd780>ATQ</color> cuando se activa el efecto pasivo\nEl estilo de ataque de Venti permite acceder fácilmente a toda la gama de efectos de ganancia, que pueden potenciar eficazmente el daño de Venti\nSe adapta a la mayoría de los equipos\nAlto coste de adquisición\nForma de obtener:\nGachapón por tiempo limitado"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1956,
+        "name": "Alas Celestiales",
+        "desc": "Un gran arco que simboliza el vínculo entre Stormterror y Barbatos. El sonido del disparo del arco es música para los oídos del Dios del Viento. Contiene el poder del cielo y del viento en su interior.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之翼.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Alas Celestiales（★★★★★）\nMotivos de recomendación:\nTiene un atributo secundario que potencia <color=#ffd780>Prob. CRIT</color> y un efecto pasivo que potencia <color=#ffd780>Daño CRIT,</color> un ataque que tiene una probabilidad de infligir un daño a un pequeño rango de daño físico cuando se activa el efecto pasivo\nProporciona a Venti una bonificación de los CRITs que aumenta el daño\nSe adapta a la mayoría de los grupos\nAlto coste de adquisición\nForma de obtener:\nGachapón"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2254,
+        "name": "Aqua Simulacra",
+        "desc": "Un arco largo de un brillo imprevisiblemente cambiante. Al recibir el reflejo de una luz, adquiere un color azulado.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/若水.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Aqua Simulacra（★★★★★）\nMotivos de recomendación:\nTiene un atributo secundario que potencia el <color=#ffd780>daño CRIT</color> y un atributo pasivo que potencia la vida y potencia <color=#ffd780>el daño infligido por el personaje</color> cuando hay enemigos a su alrededor. Este efecto se activa incluso cuando el personaje que lleva equipado está en tu equipo pero no en combate\nProporciona un alto daño CRIT, potenciando el daño infligido por la habilidad definitiva de Venti\nSe adapta a la mayoría de los grupos\nAlto coste de adquisición\nForma de obtener:\nGachapón por tiempo limitado\nRecomendación de artefactos"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "Sombra Verde Esmeralda",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "x4\nMotivos de recomendación:\n2 piezas de Sombra Verde Esmeralda proporcionan un 15% <color=#80ffd7>Bono de Daño Anemo</color>\n4 Piezas de Sombra Verde Esmeralda aumentan el daño de <color=#80ffd7>reacción Torbellino</color> y reduce <color=#ffd780>la RES elemental</color> del enemigo\nLos efectos del conjunto son potenciadores efectivos que aumentan el daño elemental de Venti y de sus compañeros de equipo\nSe da prioridad al <color=#ffd780>ATQ (Arenas de Eón),</color> <color=#80ffd7>Bono de daño Anemo</color> <color=#ffd780>(Cáliz de Eonothem), Prob. CRIT/Daño CRIT (Tiara de Logros)</color>\nConsigue 5* Artefactos tras el nivel de aventura ≥ 45\nForma de obtener:\nValle de los recuerdos, 20 resinas para una sola adquisición\nHacer ofrenda"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2090,
+        "name": "Emblema del Destino",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "x4\nMotivos de recomendación:\n2 Piezas de Emblema del Destino aumentan la <color=#ffd780>Recarga de Energía</color> en un 20%\n4 Piezas de Emblema del Destino aumentan el daño infligido con la Habilidad Definitiva en una cantidad equivalente al 25% de la <color=#ffd780>Recarga de Energía</color>\nProporciona la Recarga que potencia el daño infligido por la habilidad definitiva\nSe da prioridad al <color=#ffd780>ATQ (Arenas de Eón),</color> <color=#80ffd7>Bono de daño Anemo</color> <color=#ffd780>/ATQ(Cáliz de Eonothem), Prob. CRIT/Daño CRIT (Tiara de Logros)</color>\nConsigue 5* Artefactos tras el nivel de aventura ≥ 45\nForma de obtener:\nJardín del otoño, 20 resinas para una sola adquisición"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "Sombra Verde Esmeralda",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "x2"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2075,
+        "name": "Ritual Antiguo de la Nobleza",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "x2\nMotivos de recomendación:\n2 piezas de Sombra Verde Esmeralda proporcionan un 15% <color=#80ffd7>Bono de Daño Anemo</color>\n2 Piezas de Ritual Antiguo de la Nobleza aumentan el daño infligido por <color=#ffd780>Ataque Definitivo</color> en un 20%\nEl combo 2+2 es más accesible y aumenta tanto el daño elemental de anemo como el daño infligido por Ataque Definitivo, lo que lo convierte en una buena opción de transición\nSe da prioridad al <color=#ffd780>ATQ/Recarga (Arenas de Eón),</color> <color=#80ffd7>Bono de daño Anemo</color> <color=#ffd780>(Cáliz de Eonothem), Prob. CRIT/Daño CRIT (Tiara de Logros)</color>\nConsigue 5* Artefactos tras el nivel de aventura ≥ 45\nForma de obtener:\nValle de los recuerdos, 20 resinas para una sola adquisición\nEstanque claro y caverna de la montaña, 20 resinas para una sola adquisición\nRecompensas por ascenso de niveles de aventura\nHacer ofrenda"
+      }
+    ],
+    "ascension": [
+      {
+        "key": "Niv.1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes de ascender",
+              "Después de ascender"
+            ]
+          },
+          {
+            "key": "Vida Base",
+            "values": [
+              "-",
+              "820"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "-",
+              "20"
+            ]
+          },
+          {
+            "key": "DEF Base",
+            "values": [
+              "-",
+              "52"
+            ]
+          },
+          {
+            "key": "Recarga de Energía",
+            "values": [
+              "-",
+              "0%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Niv.20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes de ascender",
+              "Después de ascender"
+            ]
+          },
+          {
+            "key": "Vida Base",
+            "values": [
+              "2127",
+              "2830"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "53",
+              "71"
+            ]
+          },
+          {
+            "key": "DEF Base",
+            "values": [
+              "135",
+              "180"
+            ]
+          },
+          {
+            "key": "Recarga de Energía",
+            "values": [
+              "0%",
+              "0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moneda común. El lenguaje que todo el mundo entiende.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1496,
+            "name": "Pedacito de turquesa vayuda",
+            "desc": "Material de ascensión de personaje",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 464,
+            "name": "Cecilia",
+            "desc": "Una hermosa flor con un nombre muy bello. Solo crece donde soplan los vientos más fuertes, y es tan intangible como el corazón sincero de un alma sin ataduras.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cecilia_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 396,
+            "name": "Condensado de Slime",
+            "desc": "Denso fluido que cubre la superficie de un Slime. Es un material comúnmente visto en talleres elementales.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "Niv.40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes de ascender",
+              "Después de ascender"
+            ]
+          },
+          {
+            "key": "Vida Base",
+            "values": [
+              "4234",
+              "4734"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "106",
+              "118 "
+            ]
+          },
+          {
+            "key": "DEF Base",
+            "values": [
+              "269",
+              "301"
+            ]
+          },
+          {
+            "key": "Recarga de Energía",
+            "values": [
+              "0%",
+              "8%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moneda común. El lenguaje que todo el mundo entiende.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1495,
+            "name": "Fragmento de turquesa vayuda",
+            "desc": "Material de ascensión de personaje.<br/>“Aun así, los vientos cambian de dirección”.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1751,
+            "name": "Semilla de huracán",
+            "desc": "La forma condensada del Hipostasis Anemo después de ser derrotado. En su interior contiene poder Anemo puro.<br/>Se dice que una mariposa frágil y débil contiene el poder para generar un huracán. Esta mariposa hecha de viento puro, sin duda, espera el día para volver a invocar la tormenta.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 464,
+            "name": "Cecilia",
+            "desc": "Una hermosa flor con un nombre muy bello. Solo crece donde soplan los vientos más fuertes, y es tan intangible como el corazón sincero de un alma sin ataduras.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cecilia_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 396,
+            "name": "Condensado de Slime",
+            "desc": "Denso fluido que cubre la superficie de un Slime. Es un material comúnmente visto en talleres elementales.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "Niv.50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes de ascender",
+              "Después de ascender"
+            ]
+          },
+          {
+            "key": "Vida Base",
+            "values": [
+              "5446",
+              "6112"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "136",
+              "153 "
+            ]
+          },
+          {
+            "key": "DEF Base",
+            "values": [
+              "346",
+              "388"
+            ]
+          },
+          {
+            "key": "Recarga de Energía",
+            "values": [
+              "8%",
+              "16%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moneda común. El lenguaje que todo el mundo entiende.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1495,
+            "name": "Fragmento de turquesa vayuda",
+            "desc": "Material de ascensión de personaje.<br/>“Aun así, los vientos cambian de dirección”.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1751,
+            "name": "Semilla de huracán",
+            "desc": "La forma condensada del Hipostasis Anemo después de ser derrotado. En su interior contiene poder Anemo puro.<br/>Se dice que una mariposa frágil y débil contiene el poder para generar un huracán. Esta mariposa hecha de viento puro, sin duda, espera el día para volver a invocar la tormenta.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 464,
+            "name": "Cecilia",
+            "desc": "Una hermosa flor con un nombre muy bello. Solo crece donde soplan los vientos más fuertes, y es tan intangible como el corazón sincero de un alma sin ataduras.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cecilia_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 398,
+            "name": "Babas de Slime",
+            "desc": "Fluido puro de Slime. Ten cuidado de no dejar que entre en contacto con la piel... ¡Es venenoso!",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Niv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes de ascender",
+              "Después de ascender"
+            ]
+          },
+          {
+            "key": "Vida Base",
+            "values": [
+              "6832",
+              "7331"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "171",
+              "183"
+            ]
+          },
+          {
+            "key": "DEF Base",
+            "values": [
+              "434",
+              "465"
+            ]
+          },
+          {
+            "key": "Recarga de Energía",
+            "values": [
+              "16%",
+              "16%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moneda común. El lenguaje que todo el mundo entiende.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1494,
+            "name": "Trozo de turquesa vayuda",
+            "desc": "Material de ascensión de personaje.<br/>“Aun así, los vientos cambian de dirección”.<br/>“Algún día, soplarán hacia un futuro más brillante...”",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1751,
+            "name": "Semilla de huracán",
+            "desc": "La forma condensada del Hipostasis Anemo después de ser derrotado. En su interior contiene poder Anemo puro.<br/>Se dice que una mariposa frágil y débil contiene el poder para generar un huracán. Esta mariposa hecha de viento puro, sin duda, espera el día para volver a invocar la tormenta.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 464,
+            "name": "Cecilia",
+            "desc": "Una hermosa flor con un nombre muy bello. Solo crece donde soplan los vientos más fuertes, y es tan intangible como el corazón sincero de un alma sin ataduras.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cecilia_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 398,
+            "name": "Babas de Slime",
+            "desc": "Fluido puro de Slime. Ten cuidado de no dejar que entre en contacto con la piel... ¡Es venenoso!",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Niv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes de ascender",
+              "Después de ascender"
+            ]
+          },
+          {
+            "key": "Vida Base",
+            "values": [
+              "8058",
+              "8557"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "201",
+              "214"
+            ]
+          },
+          {
+            "key": "DEF Base",
+            "values": [
+              "512",
+              "543 "
+            ]
+          },
+          {
+            "key": "Recarga de Energía",
+            "values": [
+              "16%",
+              "24%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moneda común. El lenguaje que todo el mundo entiende.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1494,
+            "name": "Trozo de turquesa vayuda",
+            "desc": "Material de ascensión de personaje.<br/>“Aun así, los vientos cambian de dirección”.<br/>“Algún día, soplarán hacia un futuro más brillante...”",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1751,
+            "name": "Semilla de huracán",
+            "desc": "La forma condensada del Hipostasis Anemo después de ser derrotado. En su interior contiene poder Anemo puro.<br/>Se dice que una mariposa frágil y débil contiene el poder para generar un huracán. Esta mariposa hecha de viento puro, sin duda, espera el día para volver a invocar la tormenta.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 464,
+            "name": "Cecilia",
+            "desc": "Una hermosa flor con un nombre muy bello. Solo crece donde soplan los vientos más fuertes, y es tan intangible como el corazón sincero de un alma sin ataduras.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cecilia_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 397,
+            "name": "Esencia de Slime",
+            "desc": "Esencia concentrada de Slime. Si se deja en algún lugar, comenzará a moverse por sí misma.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Niv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes de ascender",
+              "Después de ascender"
+            ]
+          },
+          {
+            "key": "Vida Base",
+            "values": [
+              "9292",
+              "9791"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "232",
+              "245"
+            ]
+          },
+          {
+            "key": "DEF Base",
+            "values": [
+              "590",
+              "622"
+            ]
+          },
+          {
+            "key": "Recarga de Energía",
+            "values": [
+              "24%",
+              "32%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moneda común. El lenguaje que todo el mundo entiende.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1493,
+            "name": "Turquesa vayuda",
+            "desc": "Material de ascensión de personaje.<br/>“Aun así, los vientos cambian de dirección”.<br/>“Algún día, soplarán hacia un futuro más brillante...”<br/>“Acepta mis bendiciones y vive desde ahora en sosiego”.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1751,
+            "name": "Semilla de huracán",
+            "desc": "La forma condensada del Hipostasis Anemo después de ser derrotado. En su interior contiene poder Anemo puro.<br/>Se dice que una mariposa frágil y débil contiene el poder para generar un huracán. Esta mariposa hecha de viento puro, sin duda, espera el día para volver a invocar la tormenta.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 464,
+            "name": "Cecilia",
+            "desc": "Una hermosa flor con un nombre muy bello. Solo crece donde soplan los vientos más fuertes, y es tan intangible como el corazón sincero de un alma sin ataduras.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cecilia_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 397,
+            "name": "Esencia de Slime",
+            "desc": "Esencia concentrada de Slime. Si se deja en algún lugar, comenzará a moverse por sí misma.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "Niv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes de ascender",
+              "Después de ascender"
+            ]
+          },
+          {
+            "key": "Vida Base",
+            "values": [
+              "10531",
+              "-"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "263",
+              "-"
+            ]
+          },
+          {
+            "key": "DEF Base",
+            "values": [
+              "669",
+              "-"
+            ]
+          },
+          {
+            "key": "Recarga de Energía",
+            "values": [
+              "32%",
+              "-"
+            ]
+          }
+        ]
+      }
+    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=35&center=-179.69,923.87&zoom=0.50",
+    "baseInfo": [
+      {
+        "key": "Nombre",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Venti"
+          }
+        ]
+      },
+      {
+        "key": "Cumpleaños",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "16/6"
+          }
+        ]
+      },
+      {
+        "key": "Constelación",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Carmen Dei"
+          }
+        ]
+      },
+      {
+        "key": "Título",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "El Bardo Itinerante"
+          }
+        ]
+      },
+      {
+        "key": "Visión",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Anemo"
+          }
+        ]
+      },
+      {
+        "key": "Afiliación",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Mondstadt"
+          }
+        ]
+      },
+      {
+        "key": "Chino CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "喵酱"
+          }
+        ]
+      },
+      {
+        "key": "Inglés CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Erika Harlacher"
+          }
+        ]
+      },
+      {
+        "key": "Japonés CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "村瀬歩"
+          }
+        ]
+      },
+      {
+        "key": "Coreano CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Jung Yoo-jung"
+          }
+        ]
+      },
+      {
+        "key": "Plato especial",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 1236,
+            "name": "Puchero de Barbatos verdadero",
+            "desc": "La especialidad de Venti. Aparte de las cecilias utilizadas para decorar el plato, los ingredientes no son nada fuera de lo común. Si lo pruebas con atención, podrás saborear “una brizna de viento que trae consigo tenues cambios y pequeñas semillas de esperanza”. Quizás... eso sea exactamente lo que quiere.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/A Buoyant Breeze_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Carta de personaje",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3838,
+            "name": "Venti",
+            "desc": "<p><strong><span style=\"color: rgb(255, 255, 255)\">Venti - El Bardo Itinerante</span></strong></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">\"Igual que el paso del tiempo, el viento nunca se detiene. El mérito de esta obra fue mío, por supuesto, ya que sin los bardos, ¿quién difundiría las leyendas?\"</span></p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/22/73555894/622f184debdf3d8763a81f35bbd2da87_6668725379951079844.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Versión de lanzamiento",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.0"
+          }
+        ]
+      }
+    ],
     "talent": [
       {
         "key": "Ataque Normal: Puntería divina",
@@ -785,133 +2013,6 @@
         "attributes": null
       }
     ],
-    "baseInfo": [
-      {
-        "key": "Nombre",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Venti"
-          }
-        ]
-      },
-      {
-        "key": "Cumpleaños",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "16/6"
-          }
-        ]
-      },
-      {
-        "key": "Constelación",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Carmen Dei"
-          }
-        ]
-      },
-      {
-        "key": "Título",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "El Bardo Itinerante"
-          }
-        ]
-      },
-      {
-        "key": "Visión",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Anemo"
-          }
-        ]
-      },
-      {
-        "key": "Afiliación",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Mondstadt"
-          }
-        ]
-      },
-      {
-        "key": "Chino CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "喵酱"
-          }
-        ]
-      },
-      {
-        "key": "Inglés CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Erika Harlacher"
-          }
-        ]
-      },
-      {
-        "key": "Japonés CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "村瀬歩"
-          }
-        ]
-      },
-      {
-        "key": "Coreano CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Jung Yoo-jung"
-          }
-        ]
-      },
-      {
-        "key": "Plato especial",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 1236,
-            "name": "Puchero de Barbatos verdadero",
-            "desc": "La especialidad de Venti. Aparte de las cecilias utilizadas para decorar el plato, los ingredientes no son nada fuera de lo común. Si lo pruebas con atención, podrás saborear “una brizna de viento que trae consigo tenues cambios y pequeñas semillas de esperanza”. Quizás... eso sea exactamente lo que quiere.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/A Buoyant Breeze_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Carta de personaje",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3838,
-            "name": "Venti",
-            "desc": "<p><strong><span style=\"color: rgb(255, 255, 255)\">Venti - El Bardo Itinerante</span></strong></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">\"Igual que el paso del tiempo, el viento nunca se detiene. El mérito de esta obra fue mío, por supuesto, ya que sin los bardos, ¿quién difundiría las leyendas?\"</span></p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/22/73555894/622f184debdf3d8763a81f35bbd2da87_6668725379951079844.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Versión de lanzamiento",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.0"
-          }
-        ]
-      }
-    ],
     "galleryCharacter": [
       {
         "key": "Character Card",
@@ -938,1107 +2039,6 @@
           {
             "type": "RichText",
             "text": "Vestimenta original - Poeta de la brisa\n<color=#ece5d8>Modelo de vestimenta de Venti. De estilo libre e informal, igual que un bardo.</color>"
-          }
-        ]
-      }
-    ],
-    "ascension": [
-      {
-        "key": "Niv.1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes de ascender",
-              "Después de ascender"
-            ]
-          },
-          {
-            "key": "Vida Base",
-            "values": [
-              "-",
-              "820"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "-",
-              "20"
-            ]
-          },
-          {
-            "key": "DEF Base",
-            "values": [
-              "-",
-              "52"
-            ]
-          },
-          {
-            "key": "Recarga de Energía",
-            "values": [
-              "-",
-              "0%"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Niv.20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes de ascender",
-              "Después de ascender"
-            ]
-          },
-          {
-            "key": "Vida Base",
-            "values": [
-              "2127",
-              "2830"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "53",
-              "71"
-            ]
-          },
-          {
-            "key": "DEF Base",
-            "values": [
-              "135",
-              "180"
-            ]
-          },
-          {
-            "key": "Recarga de Energía",
-            "values": [
-              "0%",
-              "0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moneda común. El lenguaje que todo el mundo entiende.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1496,
-            "name": "Pedacito de turquesa vayuda",
-            "desc": "Material de ascensión de personaje",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 464,
-            "name": "Cecilia",
-            "desc": "Una hermosa flor con un nombre muy bello. Solo crece donde soplan los vientos más fuertes, y es tan intangible como el corazón sincero de un alma sin ataduras.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cecilia_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 396,
-            "name": "Condensado de Slime",
-            "desc": "Denso fluido que cubre la superficie de un Slime. Es un material comúnmente visto en talleres elementales.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "key": "Niv.40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes de ascender",
-              "Después de ascender"
-            ]
-          },
-          {
-            "key": "Vida Base",
-            "values": [
-              "4234",
-              "4734"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "106",
-              "118 "
-            ]
-          },
-          {
-            "key": "DEF Base",
-            "values": [
-              "269",
-              "301"
-            ]
-          },
-          {
-            "key": "Recarga de Energía",
-            "values": [
-              "0%",
-              "8%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moneda común. El lenguaje que todo el mundo entiende.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1495,
-            "name": "Fragmento de turquesa vayuda",
-            "desc": "Material de ascensión de personaje.<br/>“Aun así, los vientos cambian de dirección”.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1751,
-            "name": "Semilla de huracán",
-            "desc": "La forma condensada del Hipostasis Anemo después de ser derrotado. En su interior contiene poder Anemo puro.<br/>Se dice que una mariposa frágil y débil contiene el poder para generar un huracán. Esta mariposa hecha de viento puro, sin duda, espera el día para volver a invocar la tormenta.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 464,
-            "name": "Cecilia",
-            "desc": "Una hermosa flor con un nombre muy bello. Solo crece donde soplan los vientos más fuertes, y es tan intangible como el corazón sincero de un alma sin ataduras.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cecilia_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 396,
-            "name": "Condensado de Slime",
-            "desc": "Denso fluido que cubre la superficie de un Slime. Es un material comúnmente visto en talleres elementales.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
-            "amount": 15
-          }
-        ]
-      },
-      {
-        "key": "Niv.50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes de ascender",
-              "Después de ascender"
-            ]
-          },
-          {
-            "key": "Vida Base",
-            "values": [
-              "5446",
-              "6112"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "136",
-              "153 "
-            ]
-          },
-          {
-            "key": "DEF Base",
-            "values": [
-              "346",
-              "388"
-            ]
-          },
-          {
-            "key": "Recarga de Energía",
-            "values": [
-              "8%",
-              "16%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moneda común. El lenguaje que todo el mundo entiende.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1495,
-            "name": "Fragmento de turquesa vayuda",
-            "desc": "Material de ascensión de personaje.<br/>“Aun así, los vientos cambian de dirección”.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1751,
-            "name": "Semilla de huracán",
-            "desc": "La forma condensada del Hipostasis Anemo después de ser derrotado. En su interior contiene poder Anemo puro.<br/>Se dice que una mariposa frágil y débil contiene el poder para generar un huracán. Esta mariposa hecha de viento puro, sin duda, espera el día para volver a invocar la tormenta.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 464,
-            "name": "Cecilia",
-            "desc": "Una hermosa flor con un nombre muy bello. Solo crece donde soplan los vientos más fuertes, y es tan intangible como el corazón sincero de un alma sin ataduras.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cecilia_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 398,
-            "name": "Babas de Slime",
-            "desc": "Fluido puro de Slime. Ten cuidado de no dejar que entre en contacto con la piel... ¡Es venenoso!",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Niv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes de ascender",
-              "Después de ascender"
-            ]
-          },
-          {
-            "key": "Vida Base",
-            "values": [
-              "6832",
-              "7331"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "171",
-              "183"
-            ]
-          },
-          {
-            "key": "DEF Base",
-            "values": [
-              "434",
-              "465"
-            ]
-          },
-          {
-            "key": "Recarga de Energía",
-            "values": [
-              "16%",
-              "16%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moneda común. El lenguaje que todo el mundo entiende.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1494,
-            "name": "Trozo de turquesa vayuda",
-            "desc": "Material de ascensión de personaje.<br/>“Aun así, los vientos cambian de dirección”.<br/>“Algún día, soplarán hacia un futuro más brillante...”",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1751,
-            "name": "Semilla de huracán",
-            "desc": "La forma condensada del Hipostasis Anemo después de ser derrotado. En su interior contiene poder Anemo puro.<br/>Se dice que una mariposa frágil y débil contiene el poder para generar un huracán. Esta mariposa hecha de viento puro, sin duda, espera el día para volver a invocar la tormenta.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 464,
-            "name": "Cecilia",
-            "desc": "Una hermosa flor con un nombre muy bello. Solo crece donde soplan los vientos más fuertes, y es tan intangible como el corazón sincero de un alma sin ataduras.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cecilia_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 398,
-            "name": "Babas de Slime",
-            "desc": "Fluido puro de Slime. Ten cuidado de no dejar que entre en contacto con la piel... ¡Es venenoso!",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Niv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes de ascender",
-              "Después de ascender"
-            ]
-          },
-          {
-            "key": "Vida Base",
-            "values": [
-              "8058",
-              "8557"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "201",
-              "214"
-            ]
-          },
-          {
-            "key": "DEF Base",
-            "values": [
-              "512",
-              "543 "
-            ]
-          },
-          {
-            "key": "Recarga de Energía",
-            "values": [
-              "16%",
-              "24%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moneda común. El lenguaje que todo el mundo entiende.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1494,
-            "name": "Trozo de turquesa vayuda",
-            "desc": "Material de ascensión de personaje.<br/>“Aun así, los vientos cambian de dirección”.<br/>“Algún día, soplarán hacia un futuro más brillante...”",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1751,
-            "name": "Semilla de huracán",
-            "desc": "La forma condensada del Hipostasis Anemo después de ser derrotado. En su interior contiene poder Anemo puro.<br/>Se dice que una mariposa frágil y débil contiene el poder para generar un huracán. Esta mariposa hecha de viento puro, sin duda, espera el día para volver a invocar la tormenta.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 464,
-            "name": "Cecilia",
-            "desc": "Una hermosa flor con un nombre muy bello. Solo crece donde soplan los vientos más fuertes, y es tan intangible como el corazón sincero de un alma sin ataduras.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cecilia_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 397,
-            "name": "Esencia de Slime",
-            "desc": "Esencia concentrada de Slime. Si se deja en algún lugar, comenzará a moverse por sí misma.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Niv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes de ascender",
-              "Después de ascender"
-            ]
-          },
-          {
-            "key": "Vida Base",
-            "values": [
-              "9292",
-              "9791"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "232",
-              "245"
-            ]
-          },
-          {
-            "key": "DEF Base",
-            "values": [
-              "590",
-              "622"
-            ]
-          },
-          {
-            "key": "Recarga de Energía",
-            "values": [
-              "24%",
-              "32%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moneda común. El lenguaje que todo el mundo entiende.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1493,
-            "name": "Turquesa vayuda",
-            "desc": "Material de ascensión de personaje.<br/>“Aun así, los vientos cambian de dirección”.<br/>“Algún día, soplarán hacia un futuro más brillante...”<br/>“Acepta mis bendiciones y vive desde ahora en sosiego”.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1751,
-            "name": "Semilla de huracán",
-            "desc": "La forma condensada del Hipostasis Anemo después de ser derrotado. En su interior contiene poder Anemo puro.<br/>Se dice que una mariposa frágil y débil contiene el poder para generar un huracán. Esta mariposa hecha de viento puro, sin duda, espera el día para volver a invocar la tormenta.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 464,
-            "name": "Cecilia",
-            "desc": "Una hermosa flor con un nombre muy bello. Solo crece donde soplan los vientos más fuertes, y es tan intangible como el corazón sincero de un alma sin ataduras.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cecilia_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 397,
-            "name": "Esencia de Slime",
-            "desc": "Esencia concentrada de Slime. Si se deja en algún lugar, comenzará a moverse por sí misma.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Niv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes de ascender",
-              "Después de ascender"
-            ]
-          },
-          {
-            "key": "Vida Base",
-            "values": [
-              "10531",
-              "-"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "263",
-              "-"
-            ]
-          },
-          {
-            "key": "DEF Base",
-            "values": [
-              "669",
-              "-"
-            ]
-          },
-          {
-            "key": "Recarga de Energía",
-            "values": [
-              "32%",
-              "-"
-            ]
-          }
-        ]
-      }
-    ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=35&center=-179.69,923.87&zoom=0.50",
-    "customize": [
-      {
-        "type": "RichText",
-        "text": "Recomendación de armas"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2051,
-        "name": "Arco de Cuervo",
-        "desc": "Los cuervos son conocidos por ser los mensajeros de la muerte. Las plumas que decoran este arco presagian la muerte inminente de cualquier objetivo.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/鸦羽弓.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "Arco de Cuervo (★★★)\nMotivos de recomendación:\nTiene un atributo secundario que proporciona la <color=#ffd780>Maestría Elemental</color> , un efecto pasivo que aumenta el daño a los enemigos bajo la influencia del elemento Hydro o Pyro\nSe adapta a la mayoría de los equipos\nFácil de adquirir\nUna buena opción de transición para los principiantes\nForma de obtener:\nGachapón"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2009,
-        "name": "Último Acorde",
-        "desc": "Un arco que alguna vez acompañó a un instrumento extraordinario. Ya no es capaz de hacer bailar a la gente.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/绝弦.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "Último Acorde (★★★★)\nMotivos de recomendación:\nTiene un atributo secundario que proporciona la <color=#ffd780>Maestría Elemental</color> , un atributo pasivo que potencia el daño infligido por <color=#ffd780>habilidad elemental</color> y <color=#ffd780>habilidad definitiva</color>\nPotencia directamente el daño de Venti, y el atributo secundario también potencia la reacción de Toebellino\nSe adapta a la mayoría de los equipos\nAlto coste de adquisición\nForma de obtener:\nGachapón"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2019,
-        "name": "Arco de Favonius",
-        "desc": "Un arco recurvo estándar de los Caballeros de Favonius. Solo los mejores arqueros pueden aprovechar todo su potencial.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风猎弓.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "Arco de Favonius（★★★★）\nMotivos de recomendación:\nEl atributo secundario añade <color=#ffd780>Recarga de Energía</color> , un efecto pasivo que recupera la <color=#ffd780>energía elemental</color> al personaje\nOptimiza el ciclo de Habilidad Definitiva, satisfaciendo la necesidad de Recarga de Energía de un equipo completo, pero requiere cierta Prob. CRIT\nEs adecuado para Venti que causa la reacción Toebellino y actúa como un apoyo\nAlto coste de adquisición\nForma de obtener:\nGachapón"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2666,
-        "name": "Fin de las Aguas",
-        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Parece una especie piscícola ya extinta. Gracias a su flexibilidad, puede servir como arco si le atas una cuerda.</span></p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/20/10742394/80d2c21b70f486d9d9cb90e491e5b9da_3839590591323544027.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "Fin de las Aguas（★★★★）\nMotivos de recomendación:\nTiene un atributo secundario que añade <color=#ffd780>Recarga de energía</color> , que inflige <color=#ffd780>daño en el AdE</color> al activar un efecto pasivo\nSatisface la recarga de Venti y garantiza el uso continuado de habilidad definitiva\nSe adapta a la mayoría de los grupos\nFácil de obtener\nForma de obtener:\nCanjeado en Gremio de Pescadores de Sumeru"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/02/01/248396186/6754b427007a979224fd881a13b54b6f_5597781976205569306.png",
-        "alignment": "left"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/02/01/248396186/442ae91b13c0ecb0fdff20719d89ac46_6882751946675773529.png",
-        "alignment": "left"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2045,
-        "name": "Oda a las Flores de Viento",
-        "desc": "Un arco ornamentado con flores desconocidas que carga con los fervientes deseos de una persona también desconocida.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/风花之颂.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "Oda a las Flores de Viento（★★★★）\nMotivos de recomendación:\nTiene un atributo secundario que proporciona la <color=#ffd780>Maestría Elemental</color> , que aumenta el <color=#ffd780>ATQ</color> cuando se utiliza la habilidad elemental\nAumenta el daño Venti y el daño de reacción Toebellino\nSe adapta a la mayoría de los grupos\nArma limitada por el evento histórico, difícil de obtener\nForma de obtener:\nArma limitada para el evento Encuentro con las flores de viento en la versión 1.4"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2255,
-        "name": "Desvanecimiento del Crepúsculo",
-        "desc": "Un preciado arco de plata con una centelleante gema arrebol incrustada.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/落霞.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "Desvanecimiento del Crepúsculo（★★★★）\nMotivos de recomendación:\nTiene un atributo secundario que aumenta <color=#ffd780>Recarga de Energía</color> , un atributo pasivo que potencia el <color=#ffd780>daño</color> del personaje\nPotencia la Recarga de energía y su capacidad de daño\nSe adapta a la mayoría de los grupos\nArma limitada por el evento histórico, difícil de obtener\nForma de obtener:\nArma limitada para el evento Senderos peligrosos en la versión 2.7"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2008,
-        "name": "Elegía del Fin",
-        "desc": "Un arco tan bello como el instrumento de un bardo. Las flechas que dispara son como un suspiro capaz de atravesar el corazón de una persona.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/终末嗟叹之诗.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "Elegía del Fin（★★★★★）\nMotivos de recomendación:\nTiene un atributo secundario que proporciona <color=#ffd780>Recarga de Energía</color> , un efecto pasivo que potencia la <color=#ffd780>maestría elemental</color> del propio personaje y también potencia la <color=#ffd780>maestría elemental</color> y <color=#ffd780>ATQ</color> de los compañeros de equipo\nLa habilidad definitiva de Venti activa rápidamente los efectos pasivos, lo que se traduce en una ganancia que le viene perfecta\nSe adapta a la mayoría de los grupos\nAltos costes de adquisición\nForma de obtener:\nGachapón por tiempo limitado"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1936,
-        "name": "Estrella Invernal",
-        "desc": "Un arco inmaculado y punzante como el gélido hielo del invierno.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/冬极白星.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "Estrella Invernal（★★★★★）\nMotivos de recomendación:\nTiene un atributo secundario que potencia <color=#ffd780>Prob. CRIT</color> y un atributo pasivo que aumenta el Daño causado por la <color=#ffd780>Habilidad Elemental & Definitiva</color> .También da un impulso adicional al <color=#ffd780>ATQ</color> cuando se activa el efecto pasivo\nEl estilo de ataque de Venti permite acceder fácilmente a toda la gama de efectos de ganancia, que pueden potenciar eficazmente el daño de Venti\nSe adapta a la mayoría de los equipos\nAlto coste de adquisición\nForma de obtener:\nGachapón por tiempo limitado"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1956,
-        "name": "Alas Celestiales",
-        "desc": "Un gran arco que simboliza el vínculo entre Stormterror y Barbatos. El sonido del disparo del arco es música para los oídos del Dios del Viento. Contiene el poder del cielo y del viento en su interior.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之翼.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "Alas Celestiales（★★★★★）\nMotivos de recomendación:\nTiene un atributo secundario que potencia <color=#ffd780>Prob. CRIT</color> y un efecto pasivo que potencia <color=#ffd780>Daño CRIT,</color> un ataque que tiene una probabilidad de infligir un daño a un pequeño rango de daño físico cuando se activa el efecto pasivo\nProporciona a Venti una bonificación de los CRITs que aumenta el daño\nSe adapta a la mayoría de los grupos\nAlto coste de adquisición\nForma de obtener:\nGachapón"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2254,
-        "name": "Aqua Simulacra",
-        "desc": "Un arco largo de un brillo imprevisiblemente cambiante. Al recibir el reflejo de una luz, adquiere un color azulado.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/若水.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "Aqua Simulacra（★★★★★）\nMotivos de recomendación:\nTiene un atributo secundario que potencia el <color=#ffd780>daño CRIT</color> y un atributo pasivo que potencia la vida y potencia <color=#ffd780>el daño infligido por el personaje</color> cuando hay enemigos a su alrededor. Este efecto se activa incluso cuando el personaje que lleva equipado está en tu equipo pero no en combate\nProporciona un alto daño CRIT, potenciando el daño infligido por la habilidad definitiva de Venti\nSe adapta a la mayoría de los grupos\nAlto coste de adquisición\nForma de obtener:\nGachapón por tiempo limitado\nRecomendación de artefactos"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2091,
-        "name": "Sombra Verde Esmeralda",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "x4\nMotivos de recomendación:\n2 piezas de Sombra Verde Esmeralda proporcionan un 15% <color=#80ffd7>Bono de Daño Anemo</color>\n4 Piezas de Sombra Verde Esmeralda aumentan el daño de <color=#80ffd7>reacción Torbellino</color> y reduce <color=#ffd780>la RES elemental</color> del enemigo\nLos efectos del conjunto son potenciadores efectivos que aumentan el daño elemental de Venti y de sus compañeros de equipo\nSe da prioridad al <color=#ffd780>ATQ (Arenas de Eón),</color> <color=#80ffd7>Bono de daño Anemo</color> <color=#ffd780>(Cáliz de Eonothem), Prob. CRIT/Daño CRIT (Tiara de Logros)</color>\nConsigue 5* Artefactos tras el nivel de aventura ≥ 45\nForma de obtener:\nValle de los recuerdos, 20 resinas para una sola adquisición\nHacer ofrenda"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2090,
-        "name": "Emblema del Destino",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "x4\nMotivos de recomendación:\n2 Piezas de Emblema del Destino aumentan la <color=#ffd780>Recarga de Energía</color> en un 20%\n4 Piezas de Emblema del Destino aumentan el daño infligido con la Habilidad Definitiva en una cantidad equivalente al 25% de la <color=#ffd780>Recarga de Energía</color>\nProporciona la Recarga que potencia el daño infligido por la habilidad definitiva\nSe da prioridad al <color=#ffd780>ATQ (Arenas de Eón),</color> <color=#80ffd7>Bono de daño Anemo</color> <color=#ffd780>/ATQ(Cáliz de Eonothem), Prob. CRIT/Daño CRIT (Tiara de Logros)</color>\nConsigue 5* Artefactos tras el nivel de aventura ≥ 45\nForma de obtener:\nJardín del otoño, 20 resinas para una sola adquisición"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2091,
-        "name": "Sombra Verde Esmeralda",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "x2"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2075,
-        "name": "Ritual Antiguo de la Nobleza",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "x2\nMotivos de recomendación:\n2 piezas de Sombra Verde Esmeralda proporcionan un 15% <color=#80ffd7>Bono de Daño Anemo</color>\n2 Piezas de Ritual Antiguo de la Nobleza aumentan el daño infligido por <color=#ffd780>Ataque Definitivo</color> en un 20%\nEl combo 2+2 es más accesible y aumenta tanto el daño elemental de anemo como el daño infligido por Ataque Definitivo, lo que lo convierte en una buena opción de transición\nSe da prioridad al <color=#ffd780>ATQ/Recarga (Arenas de Eón),</color> <color=#80ffd7>Bono de daño Anemo</color> <color=#ffd780>(Cáliz de Eonothem), Prob. CRIT/Daño CRIT (Tiara de Logros)</color>\nConsigue 5* Artefactos tras el nivel de aventura ≥ 45\nForma de obtener:\nValle de los recuerdos, 20 resinas para una sola adquisición\nEstanque claro y caverna de la montaña, 20 resinas para una sola adquisición\nRecompensas por ascenso de niveles de aventura\nHacer ofrenda"
-      }
-    ],
-    "voice": [
-      {
-        "title": "Hola...",
-        "desc": "*Bosteza*, ese fue un sueño reparador. Ah, viajera/viajero, ¡nos encontramos de nuevo! ¿Qué? ¿No me recuerdas? Jajaja, bueno, permíteme que te acompañe en tu viaje una vez más. ¡Las historias de los viajeros merecen ser difundidas por los bardos del mundo!"
-      },
-      {
-        "title": "Charla - Tocando la lira",
-        "desc": "Bueno... Si quieres escuchar más, regálame una manzana."
-      },
-      {
-        "title": "Charla - Sidra",
-        "desc": "*Suspira*, me encantaría sentarme en lo alto de un árbol mientras bebo una buena sidra de manzana..."
-      },
-      {
-        "title": "Charla - Oda",
-        "desc": "Vamos, viajera/o. El mundo está lleno de baladas que esperan ser redescubiertas."
-      },
-      {
-        "title": "Cuando llueve...",
-        "desc": "¡Saltemos sobre charcos de agua a ver quién salpica más!"
-      },
-      {
-        "title": "Tras la lluvia...",
-        "desc": "¿Ya dejó de llover? Qué lástima, aún quería seguir jugando..."
-      },
-      {
-        "title": "Cuando nieva...",
-        "desc": "Cuando haya más nieve, ¡haremos una pelea de bolas de nieve!"
-      },
-      {
-        "title": "Hace mucho viento...",
-        "desc": "¡Hay viento de nuevo! Vamos, ¡a volar!"
-      },
-      {
-        "title": "Buenos días...",
-        "desc": "¡Buenos días! ¿Lista/Listo para una nueva aventura?"
-      },
-      {
-        "title": "Buenas tardes...",
-        "desc": "¡Qué hambre tengo! Pero no puedo dejar que me vean robando comida del Viñedo del Amanecer otra vez... ¡Oh, eres tú! ¿A dónde vas? ¿Puedo ir contigo?"
-      },
-      {
-        "title": "Buenas noches... (I)",
-        "desc": "Todavía no tengo sueño. ¿Te apetece ir a pasear?"
-      },
-      {
-        "title": "Buenas noches... (II)",
-        "desc": "¿Eh? ¿Quieres descansar? Jeje, buenas noches."
-      },
-      {
-        "title": "Sobre Venti...",
-        "desc": "¿Practicar? ¿Yo? No lo necesito, ¡conozco todas las canciones de Teyvat!"
-      },
-      {
-        "title": "Sobre nosotros - Nuevas canciones",
-        "desc": "¡He decidido escribir una canción sobre ti! ¿Por qué me miras así? ¿No puedes pagarme la actuación? ¡No digas tonterías! Eres mi amiga/o, no te cobraré ningún Mora. Aunque... ¡una cosa que podrías hacer es contarme otra de tus historias!"
-      },
-      {
-        "title": "Sobre nosotros - Valientes",
-        "desc": "Jaja, una vez que el héroe/la heroína de la canción haya rescatado a la princesa/al príncipe, ¡me aseguraré de que esta canción llegue a todos los rincones del continente!"
-      },
-      {
-        "title": "Sobre nosotros - Apóstoles",
-        "desc": "Una noche con una brisa fresca crea el ambiente perfecto para convertirse en mi discípula/o, ¿no te parece? Podemos hacerlo ahora, solo tienes que hacerme una pequeña ofrenda."
-      },
-      {
-        "title": "Sobre nosotros - Peticiones",
-        "desc": "*Suspira*, ¿crees que debería esforzarme más para ser un buen Arconte Anemo? Bueno, tú también podrías ser una/un mejor creyente... Podrías ser más piadosa/o, más apasionada/o o..."
-      },
-      {
-        "title": "Sobre la Visión...",
-        "desc": "¿Eh? ¿Tienes curiosidad sobre mi Visión? Oh, bueno... Toma, puedo hacerte una para ti si quieres, jejeje."
-      },
-      {
-        "title": "¿Algo que decir?",
-        "desc": "“Olah!”. Jaja, así es como los Hilichurls dicen “hola”. ¿Que por qué aprendí eso? Pues para mis creaciones artísticas, por supuesto. Cuanto más conocimientos tenga, mejores cosas crearé... Sin embargo, hasta ahora no he escrito ninguna canción en hilichurlio..."
-      },
-      {
-        "title": "Un dato curioso...",
-        "desc": "Viajera/Viajero, ¿alguna vez has visto una cecilia? Es una magnífica flor silvestre de color blanco que solo crece en las montañas y acantilados más remotos. Para mí, al menos, es la flor más hermosa de todo Teyvat."
-      },
-      {
-        "title": "Sobre Jean...",
-        "desc": "La Gran Maestra Intendente Jean... ¿Tú qué piensas de ella? Sí, no podría estar más de acuerdo: es seria, valiente, amable y considerada. Me recuerda a un amigo..."
-      },
-      {
-        "title": "Sobre Diluc...",
-        "desc": "No me sorprende que quieras hacerte amigo del Maestro Diluc. Piensa en todo el vino que debe tener guardado... Muajajaja ... ¿Eh? ¿Que no deja que nadie lo pruebe? ¿Ni siquiera un sorbo? Hummm... Bueno, pero te dejará olerlo, ¿no? Sigue siendo mejor que nada."
-      },
-      {
-        "title": "Sobre Bárbara...",
-        "desc": "¿Conoces a la Diaconisa, una chica con una voz muy dulce? ¿No la conoces? Es una ídolo, ¿no te suena? ¿Nunca has tenido la oportunidad de saludarla? ¿O de ir a uno de sus conciertos? Vaya... Supongo que la música es un misterio para ti."
-      },
-      {
-        "title": "Sobre Razor...",
-        "desc": "Ah, el joven de pelo blanco del Reino de los Lobos, ¿dices? ¿Fue criado por lobos? ¿En serio? Bueno, no es de extrañar, con ese olor corporal inconfundible..."
-      },
-      {
-        "title": "Sobre Mona...",
-        "desc": "Oh, ¿esa astróloga? Bueno, la adivinación astrológica y mis canciones son muy parecidas: ¡con ambas serás tan pobre que no podrás gastarte ni un Mora en vino! ¿Crees que la astrología es una tradición cultural y que, al menos ella, todavía tiene algún valor? ¡Hum! ¡Qué grosería! ¡Cantar también tiene su valor!"
-      },
-      {
-        "title": "Sobre Diona...",
-        "desc": "En la Taberna Cola de Gato, hay una bebida especial que todo el mundo conoce. Pero me da a... a... ¡ACHÍS! ¿Podrías traerme una? Te estaré eternamente agradecido."
-      },
-      {
-        "title": "Sobre Albedo...",
-        "desc": "¿Cómo explicas que la roca caliza, de color blanco, se vea en un suelo negro, o que la Tierra, con su densa corteza, flote en el espacio? Por la misma razón por la que el suelo más puro dio lugar a la vida humana: se trata de un poder antiguo con propiedades inconfundibles. Si perdiéramos el control de un poder de esas características, no me quiero imaginar lo que sucedería en la ciudad... Bueno, no importa. ¡Los problemas de Mondstadt que los solucione la gente de Mondstadt!"
-      },
-      {
-        "title": "Sobre Morax...",
-        "desc": "¿Has visto a ese caballero? ¿Eh? ¿Que ahora es solo un hombre normal llamado Zhongli? Debe haber sido un gran cambio para ese viejo zopenco. ¿Quieres venir conmigo a visitarle? Tengo un vino añejo de Levantaviento que puedo llevarle como regalo para darle mis condolencias. ¡Oh! Ah... ¿todavía parecía fuerte cuando lo viste? ¿Qué tan fuerte? ¿Dices que me sorprenderé cuando lo vea?"
-      },
-      {
-        "title": "Sobre Eula...",
-        "desc": "Eula tiene muy buen gusto en cuanto a vinos. Ya sea verano o invierno, siempre lo bebe muy frío, ¡algo muy poco común entre la gente de Mondstadt de hoy en día! Creo que podríamos ser muy buenos compañeros de copas. ¿Eh? ¿Dices que ya ha escuchado... mis canciones sobre los Lawrence? Bueno, ¿y eso qué más da? ¡Tal vez podríamos hacer un dúo y todo!"
-      },
-      {
-        "title": "Más sobre Venti (I)",
-        "desc": "Llegas justo a tiempo, viajera/viajero. Dime, ¿cuál es tu deseo?"
-      },
-      {
-        "title": "Más sobre Venti (II)",
-        "desc": "¡Nunca me aburro viajando contigo! El único inconveniente es esa pequeña hada que te sigue a todas partes... Está todo el tiempo comiendo. ¡No me imagino cuánto gastas en comida!"
-      },
-      {
-        "title": "Más sobre Venti (III)",
-        "desc": "¡La Arconte Pyro es una tirana belicista, y el Arconte Geo es terco y no tiene empatía! ¿Que cómo lo sé? ¡Porque está escrito en los poemas del pasado!"
-      },
-      {
-        "title": "Más sobre Venti (IV)",
-        "desc": "Celestia... No sé si seré capaz de volar tan lejos. Además, allí no tienen agua dulce y la fruta no sabe bien. ¿Sabes lo que eso significa? ¡Que no tienen sidra! Jaja, no iría ni aunque me invitaran."
-      },
-      {
-        "title": "Más sobre Venti (V)",
-        "desc": "¿Mi mayor deseo? Siempre ha sido viajar libremente y explorar el mundo entero. Bueno, añadiría que, donde quiera que vaya, ¡me gustaría que fuera contigo! Cada día contigo es una aventura y, allá donde van los aventureros, ¡deben ir también los cuentacuentos!"
-      },
-      {
-        "title": "Aficiones de Venti...",
-        "desc": "¡Me gusta el vino! ¡Y también el viento! Qué bueno sería que inventaran un vino hecho con viento, ¿verdad?"
-      },
-      {
-        "title": "Preocupaciones de Venti...",
-        "desc": "En realidad, tengo mucha alergia a los gatos. Empiezo a estornudar tan pronto como se me acercan, y... a... ¡Achís! Ay, parece que ni siquiera puedo pensar en gatos sin estornudar. ¿Crees que hay una cura para esta horrible aflicción?"
-      },
-      {
-        "title": "Comida que más le gusta...",
-        "desc": "Toma, una manzana para ti también. ¡Recién arrancada del árbol! Ah... Dulce y jugosa... *Ñam, ñam*, ¡es la fruta de los dioses!"
-      },
-      {
-        "title": "Comida que menos le gusta...",
-        "desc": "¿Qué estás cocinando? ¿Eh? ¡Un panqueque de queso fundido! ¡Un desastre asqueroso, pegajoso y viscoso! ¡Puaj!"
-      },
-      {
-        "title": "Cumpleaños...",
-        "desc": "Alguien me dijo una vez que se supone que debes comer tarta en tu cumpleaños... ¡Ta táán! Aquí está tu tarta de cumpleaños: ¡es de manzana! Toma una cuchara. El pastel no subió lo suficiente en el horno, por eso se parece más a un pastelito de manzana... Uf, ¡la repostería es realmente complicada!"
-      },
-      {
-        "title": "El sentimiento de Ascensión - Introducción",
-        "desc": "¡Guau! ¿Qué fue eso?"
-      },
-      {
-        "title": "El sentimiento de Ascensión - Desarrollo",
-        "desc": "Buen trabajo. ¿Quieres relajarte un poco escuchando música? ¿Qué te gustaría escuchar? ¿Un capriccio o una serenata?"
-      },
-      {
-        "title": "El sentimiento de Ascensión - Nudo",
-        "desc": "Ven, siéntate a mi lado. Escribí un nuevo poema. Lo titulé «El viento de la viajera/del viajero»."
-      },
-      {
-        "title": "El sentimiento de Ascensión - Desenlace",
-        "desc": "Hummm... Aunque ya he visto este paisaje muchas veces, al verlo contigo, me parece que hay algo diferente en él. ¿No estarás usando alguna increíble habilidad que no conozco? Hummm... Pero si así fuera, significaría que mi intuición no falla."
-      },
-      {
-        "title": "Habilidad Elemental (I)",
-        "desc": "¡Yuju!"
-      },
-      {
-        "title": "Habilidad Elemental (II)",
-        "desc": "¡Allá vamos!"
-      },
-      {
-        "title": "Habilidad Elemental (III)",
-        "desc": "¡Agárrense bien!"
-      },
-      {
-        "title": "Habilidad Elemental (IV)",
-        "desc": "¡A divertirnos!"
-      },
-      {
-        "title": "Habilidad Definitiva (I)",
-        "desc": "¿Crees que puedes huir?"
-      },
-      {
-        "title": "Habilidad Definitiva (II)",
-        "desc": "¡Hora del despegue!"
-      },
-      {
-        "title": "Al esprintar (I)",
-        "desc": "¿No es volar lo más rápido?"
-      },
-      {
-        "title": "Al abrir el planeador (I)",
-        "desc": "¡Ya-he!"
-      },
-      {
-        "title": "Al abrir un cofre (I)",
-        "desc": "*Ejem*, ¿alguna vez has escuchado la “Balada del tesoro”?"
-      },
-      {
-        "title": "Al abrir un cofre (II)",
-        "desc": "¡Gracias a Barbatos! Un momento..."
-      },
-      {
-        "title": "Al abrir un cofre (III)",
-        "desc": "¡Qué descubrimiento! ¿Cuántas botellas podré comprar con esto...?"
-      },
-      {
-        "title": "Vida baja (I)",
-        "desc": "¡Ah, no estoy humor para esto!"
-      },
-      {
-        "title": "Vida baja (II)",
-        "desc": "¡Oye! ¡Aléjate de mí!"
-      },
-      {
-        "title": "Vida baja (III)",
-        "desc": "Qué impertinente."
-      },
-      {
-        "title": "Derrotado (I)",
-        "desc": "Deja que duerma un poco..."
-      },
-      {
-        "title": "Derrotado (II)",
-        "desc": "Oh, no, mi lira se rompió..."
-      },
-      {
-        "title": "Derrotado (III)",
-        "desc": "Ah... Ay..."
-      },
-      {
-        "title": "Recibiendo un ligero ataque (I)",
-        "desc": "¿Eh?"
-      },
-      {
-        "title": "Recibiendo un fuerte ataque (I)",
-        "desc": "¡Qué bruto!"
-      },
-      {
-        "title": "Unirse al equipo (I)",
-        "desc": "Dame un momento para afinar."
-      },
-      {
-        "title": "Unirse al equipo (II)",
-        "desc": "No te hice mucho esperar, ¿no?"
-      },
-      {
-        "title": "Unirse al equipo (III)",
-        "desc": "¿Lista/o para un ensayo?"
-      },
-      {
-        "title": "Al recibir un regalo (I)",
-        "desc": "Ahh, ¡está delicioso! Entonces, ¿puedes hacerme lo mismo para mañana? ¿Y tal vez también para pasado mañana?"
-      },
-      {
-        "title": "Al recibir un regalo (II)",
-        "desc": "¡Uff! Estoy lleno, no me queda sitio ni para la fruta del postre..."
-      },
-      {
-        "title": "Al recibir un regalo (III)",
-        "desc": "No me lo creo ni yo, pero no creo que pueda con esto... Ay... qué dilema."
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/温迪/constellation_1.png",
-        "name": "Vendaval feroz",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Dispara 2 flechas adicionales por cada <color=#ffd780>Disparo Preciso</color> . Cada una inflige un 33% del daño de la flecha original."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/温迪/constellation_2.png",
-        "name": "Brisa de reminiscencia",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Sonata celestial</color> reduce la <color=#80ffd7>RES Anemo</color> y la RES Física del enemigo en un 12% durante 10 s.\nLos enemigos lanzados al aire por <color=#ffd780>Sonata celestial</color> sufren una reducción adicional del 12% de <color=#80ffd7>RES Anemo</color> y de RES física."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/温迪/constellation_3.png",
-        "name": "Oda a los Mil Vientos",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Aumenta el nivel de habilidad de <color=#ffd780>Gran Oda del Viento</color> +3.\nPuede ser aumentado hasta Niv. 15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/温迪/constellation_4.png",
-        "name": "Huracán de la libertad",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Venti obtiene un 25% de <color=#80ffd7>Bono de Daño Anemo</color> durante 10 s tras recoger un orbe o una partícula elemental."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/温迪/constellation_5.png",
-        "name": "Concierto celestial",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Aumenta el nivel de habilidad de <color=#ffd780>Sonata celestial</color> +3.\nPuede ser aumentado hasta Niv. 15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/温迪/constellation_6.png",
-        "name": "Tormenta de la rebelión",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "La RES Anemo de los enemigos se reduce en un 20% cuando reciben daño de <color=#ffd780>Gran Oda del Viento</color> .\nSi ocurre un cambio elemental durante <color=#80ffd7>Gran Oda del Viento</color> , su RES Elemental al nuevo elemento se reducirá en un 20%."
           }
         ]
       }
