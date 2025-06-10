@@ -12,18 +12,56 @@
   "menuName": "聖遺物",
   "version": 1730513526,
   "components": {
-    "artifactList": {
-      "sands_of_eon": {
-        "title": "雷霆の時計",
-        "position": "時の砂",
-        "desc": [
+    "baseInfo": [
+      {
+        "key": "和名 / 英名",
+        "value": [
           {
             "type": "RichText",
-            "text": "雷鳥を信奉する部族が、天空の雷の主の降臨を予告する際に使われた砂時計。一族の終焉によって永遠の静止に陥った。"
+            "text": "雷のような怒り / Thundering Fury"
+          }
+        ]
+      },
+      {
+        "key": "入手方法",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "祈聖秘境「仲夏の庭園」にて確率で入手可能\n聖遺物廻聖にて入手可能(Ver.3.0-)"
+          }
+        ]
+      },
+      {
+        "key": "七聖召喚のカード",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3253,
+            "name": "雷を呼ぶ冠",
+            "desc": "<p><strong>紫電急雨・雷を呼ぶ冠</strong></p><p></p><p>「澄んだ歌声が雷雨を貫いたあの日まで、雲を切り裂き、小さな光が高い空にいる鳥に届くその日まで。」</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/194600931/f3eb51dad5e9d7e75feac7c350bf90ee_3159690839012473242.png"
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 3254,
+            "name": "雷のような怒り",
+            "desc": "<p><strong>霆天の片羽・雷のような怒り</strong></p><p></p><p>「君が雷雨と一緒にまた来た時、他の歌を歌ってあげるよ！」</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/194600931/e2ff660b422239f6f58cd843d54743f5_6780837814206111279.png"
           }
         ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/sands_of_eon_icon.png"
+        "isMaterial": true
       },
+      {
+        "key": "実装バージョン",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.0"
+          }
+        ]
+      }
+    ],
+    "artifactList": {
       "plume_of_death": {
         "title": "雷災の生存者",
         "position": "死の羽",
@@ -34,17 +72,6 @@
           }
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/plume_of_death_icon.png"
-      },
-      "goblet_of_eonothem": {
-        "title": "落雷の前兆",
-        "position": "空の杯",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "鮮血が注がれた儀式の杯、雷鳴が中に響き渡るように願う。最終的に雷のような怒りが溢れていた。"
-          }
-        ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/goblet_of_eonothem_icon.png"
       },
       "flower_of_life": {
         "title": "雷鳥の憐み",
@@ -57,6 +84,17 @@
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png"
       },
+      "sands_of_eon": {
+        "title": "雷霆の時計",
+        "position": "時の砂",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "雷鳥を信奉する部族が、天空の雷の主の降臨を予告する際に使われた砂時計。一族の終焉によって永遠の静止に陥った。"
+          }
+        ],
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/sands_of_eon_icon.png"
+      },
       "circlet_of_logos": {
         "title": "雷を呼ぶ冠",
         "position": "理の冠",
@@ -67,6 +105,17 @@
           }
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/circlet_of_logos_icon.png"
+      },
+      "goblet_of_eonothem": {
+        "title": "落雷の前兆",
+        "position": "空の杯",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "鮮血が注がれた儀式の杯、雷鳴が中に響き渡るように願う。最終的に雷のような怒りが溢れていた。"
+          }
+        ],
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/goblet_of_eonothem_icon.png"
       }
     },
     "reliquarySetEffect": {
@@ -116,55 +165,6 @@
           {
             "type": "RichText",
             "text": "飾りの華麗な砂時計、雷鳥を崇拝する古い部族が所有していた。\nだが部族は滅ぼされ、この砂時計の存在も忘れられた。\n紫色の水晶と琥珀金で作られた華麗な砂時計、元々はシャーマンの時計であった。\n雷の魔鳥が降臨する季節、この砂時計は祭りの時期を知らせてくれる。\n最後の祭りでは、発狂した雷鳥が血に染まった祭壇をひっくり返した。\n守護神の降臨を告げる時計が雷霆を招く弔いの鐘となった。\n雷霆の巨鳥は1人の歌のために、部族の者に滅亡の災いを下した。\nだが雷鳥は知らなかった。少年は自ら犠牲を選んで命を捧げたことを。\n部族が巨鳥から恩賜を頂けるように、少年は自らこの苦しみを背負う道を選んだ。"
-          }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "和名 / 英名",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "雷のような怒り / Thundering Fury"
-          }
-        ]
-      },
-      {
-        "key": "入手方法",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "祈聖秘境「仲夏の庭園」にて確率で入手可能\n聖遺物廻聖にて入手可能(Ver.3.0-)"
-          }
-        ]
-      },
-      {
-        "key": "七聖召喚のカード",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3253,
-            "name": "雷を呼ぶ冠",
-            "desc": "<p><strong>紫電急雨・雷を呼ぶ冠</strong></p><p></p><p>「澄んだ歌声が雷雨を貫いたあの日まで、雲を切り裂き、小さな光が高い空にいる鳥に届くその日まで。」</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/194600931/f3eb51dad5e9d7e75feac7c350bf90ee_3159690839012473242.png"
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 3254,
-            "name": "雷のような怒り",
-            "desc": "<p><strong>霆天の片羽・雷のような怒り</strong></p><p></p><p>「君が雷雨と一緒にまた来た時、他の歌を歌ってあげるよ！」</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/194600931/e2ff660b422239f6f58cd843d54743f5_6780837814206111279.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "実装バージョン",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.0"
           }
         ]
       }
