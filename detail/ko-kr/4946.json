@@ -5,8 +5,8 @@
   "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/11/291064744/5470f90694af13476e49be7b8346e2b1_7850030834879271268.png",
   "headerImgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/11/291064744/2760dd6c9638da46586032f7b4dc0ef8_553252449001251237.png",
   "filterValues": {
-    "characterVision": "바위 원소",
     "characterRarity": "★5",
+    "characterVision": "바위 원소",
     "characterWeapon": "한손검",
     "characterRegion": "이나즈마성",
     "characterProperty": "치명타 확률"
@@ -15,71 +15,570 @@
   "menuName": "캐릭터 도감",
   "version": 1731326948,
   "components": {
-    "textualResearch": [
+    "ascension": [
       {
-        "title": "[생일] 편지(2024)",
-        "desc": [
+        "key": "Lv.1",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "편지 제목: 여행···\n발신인: 치오리\n요즘 나비아는 너희와 함께 「시뮬랑카」라는 동화 나라에서 모험을 했던 이야기만 하고 있어. 안 그래도 한동안 이곳에만 머물러 있었는데, 너희 이야기를 들으니까 밖으로 나가고 싶다는 생각이 간절해지더라.\n마침 최근에 들어온 주문들도 전부 일단락되었으니, 여행을 떠나 잠시 쉬면서··· 영감을 얻어보는 것도 좋겠지.\n혹시 같이 갈 생각 있어? 미리 말해두지만 따로 뭔가를 준비할 필요는 없어. 난 마음 가는 대로 여행하는 걸 좋아하거든.\n아 참, 그러고 보니 슬슬 나타로 갈 계획이라며?\n거기에는 정말로 온천이 잔뜩 있나? 나타의 용들은 어떤 옷을 입으려나? 궁금한 게 너무 많네. 거기서 돌아오면 조용한 식당에서 편히 쉬면서 이야기를 나누자."
+            "key": "",
+            "values": [
+              "돌파 전",
+              "돌파 후"
+            ]
+          },
+          {
+            "key": "기초 HP",
+            "values": [
+              "-",
+              "890"
+            ]
+          },
+          {
+            "key": "기초 공격력",
+            "values": [
+              "-",
+              "25"
+            ]
+          },
+          {
+            "key": "기초 방어력",
+            "values": [
+              "-",
+              "74"
+            ]
+          },
+          {
+            "key": "치명타 확률",
+            "values": [
+              "-",
+              "0.0%"
+            ]
           }
         ]
       },
       {
-        "title": "[생일] SNS 및 일러스트 1(2024)",
-        "desc": [
+        "key": "Lv.20",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "저기, 손님. 이곳 치오리 부티크에 와서는 옷은 거들떠도 안 보고 나만 바라보고 있네. 무슨 하고 싶은 말이라도 있어?\n같이 식사하러 가자고? 지금은 배 안 고파. 당장 처리해야 할 일 다 끝낼 때까지 기다리고 있으면 한 번 생각해 볼게.\n——하아…. 연기는 그쯤 해도 돼. 다 알고 있다고. 깜짝 생일 파티라도 준비해 둔 거겠지?\n다음부터 그런 건 이리저리 돌리지 말고 솔직하게 말해. 그럼 나도 솔직하게 대답해 줄 테니까. 무척… 기쁘다고 말이야.\nhttps:/www.hoyolab.com/article/32207058"
+            "key": "",
+            "values": [
+              "돌파 전",
+              "돌파 후"
+            ]
+          },
+          {
+            "key": "기초 HP",
+            "values": [
+              "2310",
+              "3073"
+            ]
+          },
+          {
+            "key": "기초 공격력",
+            "values": [
+              "65",
+              "87"
+            ]
+          },
+          {
+            "key": "기초 방어력",
+            "values": [
+              "192",
+              "256"
+            ]
+          },
+          {
+            "key": "치명타 확률",
+            "values": [
+              "0.0%",
+              "0.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "모라",
+            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 447,
+            "name": "단단한 황옥 가루",
+            "desc": "캐릭터 돌파 소재",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1574,
+            "name": "혈곡",
+            "desc": "시에서 「붉은 꽃술」로도 묘사되는 색상이 선명한 식물. 한때는 이나즈마에서 멸종된 적도 있으나, 전장에서 다시금 나타나게 된다. 소문에 따르면, 선혈이 낭자한 전장에서 유달리 요염하게 만개한다고 한다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dendrobium_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1018,
+            "name": "떠도는 정령 코어 껍데기",
+            "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어. 미량의 원소가 담겨있다.<br>대부분의 에너지는 이미 흩어진 듯하다.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Husk_icon.png",
+            "amount": 3
           }
         ]
       },
       {
-        "title": "[생일] SNS 및 일러스트 2(2024)",
-        "desc": [
+        "key": "Lv.40",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "「치오리 언니! 택배 왔어!」\n「음—— 요즘은 택배 받을 일이 없을 텐데… 누가 보낸 거야?」\n「바로 나야! 이건 치오리 언니한테 주는 생일 선물이야. 생일 축하해!」\nhttps:/www.hoyolab.com/article/32207057"
+            "key": "",
+            "values": [
+              "돌파 전",
+              "돌파 후"
+            ]
+          },
+          {
+            "key": "기초 HP",
+            "values": [
+              "4598",
+              "5141"
+            ]
+          },
+          {
+            "key": "기초 공격력",
+            "values": [
+              "130",
+              "145"
+            ]
+          },
+          {
+            "key": "기초 방어력",
+            "values": [
+              "383",
+              "428"
+            ]
+          },
+          {
+            "key": "치명타 확률",
+            "values": [
+              "0.0%",
+              "4.8%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "모라",
+            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 446,
+            "name": "단단한 황옥 조각",
+            "desc": "캐릭터 돌파 소재.<br/>「티바트 대륙에서 유통되고 있는 은전은 전부 나의 피와 살이다」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4038,
+            "name": "오토마톤 태엽 감개·코펠리아",
+            "desc": "<p>코펠리아의 오토마톤 태엽 감개. 오토마톤 무용수에게 에너지를 제공할 수 있다.</p><p>제작자의 구상 속에서, 섬세한 관절을 가진 오토마톤 무용수 이야기는 즐거운 순간에 멈춰 있다. 코펠리아는 비범한 전투 능력으로 이 순간을 방해하는 불청객을 악운의 장으로 보내버릴 것이다</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/181512822/dace74799abdabad33190d281d596e06_7064853620294278447.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1574,
+            "name": "혈곡",
+            "desc": "시에서 「붉은 꽃술」로도 묘사되는 색상이 선명한 식물. 한때는 이나즈마에서 멸종된 적도 있으나, 전장에서 다시금 나타나게 된다. 소문에 따르면, 선혈이 낭자한 전장에서 유달리 요염하게 만개한다고 한다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dendrobium_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1018,
+            "name": "떠도는 정령 코어 껍데기",
+            "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어. 미량의 원소가 담겨있다.<br>대부분의 에너지는 이미 흩어진 듯하다.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Husk_icon.png",
+            "amount": 15
           }
         ]
-      }
-    ],
-    "videoCollection": [
-      {
-        "title": "원신 | 4.3 버전 PV: 「장미와 화승총」",
-        "url": "https://youtu.be/7chKakDDe5w",
-        "coverUrl": "https://i.ytimg.com/vi/7chKakDDe5w/maxresdefault.jpg",
-        "duration": 240
       },
       {
-        "title": "원신 | 4.5 버전 PV: 「비단을 가르는 칼끝」",
-        "url": "https://youtu.be/QquFMXRNros",
-        "coverUrl": "https://i.ytimg.com/vi/QquFMXRNros/maxresdefault.jpg",
-        "duration": 169
+        "key": "Lv.50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "돌파 전",
+              "돌파 후"
+            ]
+          },
+          {
+            "key": "기초 HP",
+            "values": [
+              "5915",
+              "6638"
+            ]
+          },
+          {
+            "key": "기초 공격력",
+            "values": [
+              "167",
+              "187"
+            ]
+          },
+          {
+            "key": "기초 방어력",
+            "values": [
+              "493",
+              "553"
+            ]
+          },
+          {
+            "key": "치명타 확률",
+            "values": [
+              "4.8%",
+              "9.6%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "모라",
+            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 446,
+            "name": "단단한 황옥 조각",
+            "desc": "캐릭터 돌파 소재.<br/>「티바트 대륙에서 유통되고 있는 은전은 전부 나의 피와 살이다」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4038,
+            "name": "오토마톤 태엽 감개·코펠리아",
+            "desc": "<p>코펠리아의 오토마톤 태엽 감개. 오토마톤 무용수에게 에너지를 제공할 수 있다.</p><p>제작자의 구상 속에서, 섬세한 관절을 가진 오토마톤 무용수 이야기는 즐거운 순간에 멈춰 있다. 코펠리아는 비범한 전투 능력으로 이 순간을 방해하는 불청객을 악운의 장으로 보내버릴 것이다</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/181512822/dace74799abdabad33190d281d596e06_7064853620294278447.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1574,
+            "name": "혈곡",
+            "desc": "시에서 「붉은 꽃술」로도 묘사되는 색상이 선명한 식물. 한때는 이나즈마에서 멸종된 적도 있으나, 전장에서 다시금 나타나게 된다. 소문에 따르면, 선혈이 낭자한 전장에서 유달리 요염하게 만개한다고 한다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dendrobium_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1019,
+            "name": "떠도는 정령 코어",
+            "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어.<br>이 원소 생물은 기이한 습성을 가지고 있어 주기적으로 무리를 지어 출현과 잠적을 반복한다.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
+            "amount": 12
+          }
+        ]
       },
       {
-        "title": "원신 | 데인 여담-「치오리: 그 소매는 향기를 남기고」",
-        "url": "https://youtu.be/RWuZk5r5q7U?si=l6fjcBxNUsms6HgG",
-        "coverUrl": "https://i.ytimg.com/vi/RWuZk5r5q7U/maxresdefault.jpg",
-        "duration": 332
+        "key": "Lv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "돌파 전",
+              "돌파 후"
+            ]
+          },
+          {
+            "key": "기초 HP",
+            "values": [
+              "7420",
+              "7962"
+            ]
+          },
+          {
+            "key": "기초 공격력",
+            "values": [
+              "209",
+              "225"
+            ]
+          },
+          {
+            "key": "기초 방어력",
+            "values": [
+              "618",
+              "663"
+            ]
+          },
+          {
+            "key": "치명타 확률",
+            "values": [
+              "9.6%",
+              "9.6%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "모라",
+            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 445,
+            "name": "단단한 황옥 덩이",
+            "desc": "캐릭터 돌파 소재.<br/>「티바트 대륙에서 유통되고 있는 은전은 전부 나의 피와 살이다」<br/>「난 이 방법으로 인간들의 땀과 지혜, 미래에 대해 보증을 선 것이다」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4038,
+            "name": "오토마톤 태엽 감개·코펠리아",
+            "desc": "<p>코펠리아의 오토마톤 태엽 감개. 오토마톤 무용수에게 에너지를 제공할 수 있다.</p><p>제작자의 구상 속에서, 섬세한 관절을 가진 오토마톤 무용수 이야기는 즐거운 순간에 멈춰 있다. 코펠리아는 비범한 전투 능력으로 이 순간을 방해하는 불청객을 악운의 장으로 보내버릴 것이다</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/181512822/dace74799abdabad33190d281d596e06_7064853620294278447.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1574,
+            "name": "혈곡",
+            "desc": "시에서 「붉은 꽃술」로도 묘사되는 색상이 선명한 식물. 한때는 이나즈마에서 멸종된 적도 있으나, 전장에서 다시금 나타나게 된다. 소문에 따르면, 선혈이 낭자한 전장에서 유달리 요염하게 만개한다고 한다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dendrobium_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1019,
+            "name": "떠도는 정령 코어",
+            "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어.<br>이 원소 생물은 기이한 습성을 가지고 있어 주기적으로 무리를 지어 출현과 잠적을 반복한다.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
+            "amount": 18
+          }
+        ]
       },
       {
-        "title": "원신 | 스토리 PV-「바느질로 자아낸 밤」",
-        "url": "https://youtu.be/8NExKphp8yc",
-        "coverUrl": "https://i.ytimg.com/vi/8NExKphp8yc/maxresdefault.jpg",
-        "duration": 135
+        "key": "Lv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "돌파 전",
+              "돌파 후"
+            ]
+          },
+          {
+            "key": "기초 HP",
+            "values": [
+              "8751",
+              "9293"
+            ]
+          },
+          {
+            "key": "기초 공격력",
+            "values": [
+              "247",
+              "262"
+            ]
+          },
+          {
+            "key": "기초 방어력",
+            "values": [
+              "729",
+              "774"
+            ]
+          },
+          {
+            "key": "치명타 확률",
+            "values": [
+              "9.6%",
+              "14.4%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "모라",
+            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 445,
+            "name": "단단한 황옥 덩이",
+            "desc": "캐릭터 돌파 소재.<br/>「티바트 대륙에서 유통되고 있는 은전은 전부 나의 피와 살이다」<br/>「난 이 방법으로 인간들의 땀과 지혜, 미래에 대해 보증을 선 것이다」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4038,
+            "name": "오토마톤 태엽 감개·코펠리아",
+            "desc": "<p>코펠리아의 오토마톤 태엽 감개. 오토마톤 무용수에게 에너지를 제공할 수 있다.</p><p>제작자의 구상 속에서, 섬세한 관절을 가진 오토마톤 무용수 이야기는 즐거운 순간에 멈춰 있다. 코펠리아는 비범한 전투 능력으로 이 순간을 방해하는 불청객을 악운의 장으로 보내버릴 것이다</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/181512822/dace74799abdabad33190d281d596e06_7064853620294278447.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1574,
+            "name": "혈곡",
+            "desc": "시에서 「붉은 꽃술」로도 묘사되는 색상이 선명한 식물. 한때는 이나즈마에서 멸종된 적도 있으나, 전장에서 다시금 나타나게 된다. 소문에 따르면, 선혈이 낭자한 전장에서 유달리 요염하게 만개한다고 한다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dendrobium_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1020,
+            "name": "떠도는 정령 결정화 코어",
+            "desc": "떠도는 정령 처치 시 일정 확률로 발견할 수 있는 완벽한 에너지 코어.<br/>무엇이든 우열을 가리기 좋아하는 사람들 사이에선 이런 논쟁이 자주 일어난다. \"떠도는 정령과 바람 슬라임의 부력 중 뭐가 더 뛰어난 걸까\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
+            "amount": 12
+          }
+        ]
       },
       {
-        "title": "원신 | 신규 캐릭터 플레이-「치오리: 한 땀 한 땀 쌓아 올린 아름다움」",
-        "url": "https://youtu.be/pSwtvB-gd8E",
-        "coverUrl": "https://i.ytimg.com/vi/pSwtvB-gd8E/maxresdefault.jpg",
-        "duration": 151
+        "key": "Lv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "돌파 전",
+              "돌파 후"
+            ]
+          },
+          {
+            "key": "기초 HP",
+            "values": [
+              "10091",
+              "10634"
+            ]
+          },
+          {
+            "key": "기초 공격력",
+            "values": [
+              "285",
+              "300"
+            ]
+          },
+          {
+            "key": "기초 방어력",
+            "values": [
+              "841",
+              "886"
+            ]
+          },
+          {
+            "key": "치명타 확률",
+            "values": [
+              "14.4%",
+              "19.2%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "모라",
+            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 444,
+            "name": "단단한 황옥",
+            "desc": "캐릭터 돌파 소재.<br/>「대륙에서 유통되고 있는 은전은 전부 나의 피와 살이다」<br/>「난 이 방법으로 인간들의 땀과 지혜, 미래에 대해 보증을 선 것이다」<br/>「이는 중생에 대한 내 믿음이다. 이 믿음을 저버리는 것은 나의 피를 더럽히는 짓이다」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4038,
+            "name": "오토마톤 태엽 감개·코펠리아",
+            "desc": "<p>코펠리아의 오토마톤 태엽 감개. 오토마톤 무용수에게 에너지를 제공할 수 있다.</p><p>제작자의 구상 속에서, 섬세한 관절을 가진 오토마톤 무용수 이야기는 즐거운 순간에 멈춰 있다. 코펠리아는 비범한 전투 능력으로 이 순간을 방해하는 불청객을 악운의 장으로 보내버릴 것이다</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/181512822/dace74799abdabad33190d281d596e06_7064853620294278447.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1574,
+            "name": "혈곡",
+            "desc": "시에서 「붉은 꽃술」로도 묘사되는 색상이 선명한 식물. 한때는 이나즈마에서 멸종된 적도 있으나, 전장에서 다시금 나타나게 된다. 소문에 따르면, 선혈이 낭자한 전장에서 유달리 요염하게 만개한다고 한다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dendrobium_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1020,
+            "name": "떠도는 정령 결정화 코어",
+            "desc": "떠도는 정령 처치 시 일정 확률로 발견할 수 있는 완벽한 에너지 코어.<br/>무엇이든 우열을 가리기 좋아하는 사람들 사이에선 이런 논쟁이 자주 일어난다. \"떠도는 정령과 바람 슬라임의 부력 중 뭐가 더 뛰어난 걸까\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
+            "amount": 24
+          }
+        ]
       },
       {
-        "title": "원신｜치오리 캐릭터 PV——「진홍의 실로 빚어낸 심장」",
-        "url": "https://youtu.be/i3Lbsw1OKzQ",
-        "coverUrl": "https://i.ytimg.com/vi/i3Lbsw1OKzQ/maxresdefault.jpg",
-        "duration": 129
+        "key": "Lv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "돌파 전",
+              "돌파 후"
+            ]
+          },
+          {
+            "key": "기초 HP",
+            "values": [
+              "11438",
+              "-"
+            ]
+          },
+          {
+            "key": "기초 공격력",
+            "values": [
+              "323",
+              "-"
+            ]
+          },
+          {
+            "key": "기초 방어력",
+            "values": [
+              "953",
+              "-"
+            ]
+          },
+          {
+            "key": "치명타 확률",
+            "values": [
+              "19.2%",
+              "-"
+            ]
+          }
+        ]
       }
     ],
     "talent": [
@@ -2251,6 +2750,40 @@
         ]
       }
     ],
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/01/30/181512822/77ad9ab74cc5132b294f01f0827ac0d9_3044645553781779280.png"
+      },
+      {
+        "key": "알록달록 수놓인 황매화",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/13/291064744/2760dd6c9638da46586032f7b4dc0ef8_4900615312602597566.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "치오리의 코스튬. 치오리 본인이 직접 디자인해 제작한 우아한 옷으로 품질이 우수하고 이나즈마의 특색이 명확하게 드러난다. 치오리는 이 옷을 입고 패션 평론 잡지의 표지를 장식한 적이 있는데, 독특한 미적 감각으로 폰타인 패션계를 이끄는 인물이 되었다"
+          }
+        ]
+      },
+      {
+        "key": "대기 동작 1",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/08/24090565/4be598fcc68a4533308f158b57ecf8ff_4586765210474107217.gif"
+      },
+      {
+        "key": "대기 동작 2",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/08/24090565/b398661b2aa370d3cdbd64ae141f3568_587010571188347302.gif"
+      },
+      {
+        "key": "운명의 자리",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/13/291064744/c38e925a9b23ffa9c54c11e4623f6612_8508211844531005095.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "재단가위자리"
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "title": "캐릭터 상세정보",
@@ -2325,156 +2858,42 @@
         ]
       }
     ],
-    "galleryCharacter": [
+    "videoCollection": [
       {
-        "key": "Character Card",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/01/30/181512822/77ad9ab74cc5132b294f01f0827ac0d9_3044645553781779280.png"
+        "title": "원신 | 4.3 버전 PV: 「장미와 화승총」",
+        "url": "https://youtu.be/7chKakDDe5w",
+        "coverUrl": "https://i.ytimg.com/vi/7chKakDDe5w/maxresdefault.jpg",
+        "duration": 240
       },
       {
-        "key": "알록달록 수놓인 황매화",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/13/291064744/2760dd6c9638da46586032f7b4dc0ef8_4900615312602597566.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "치오리의 코스튬. 치오리 본인이 직접 디자인해 제작한 우아한 옷으로 품질이 우수하고 이나즈마의 특색이 명확하게 드러난다. 치오리는 이 옷을 입고 패션 평론 잡지의 표지를 장식한 적이 있는데, 독특한 미적 감각으로 폰타인 패션계를 이끄는 인물이 되었다"
-          }
-        ]
+        "title": "원신 | 4.5 버전 PV: 「비단을 가르는 칼끝」",
+        "url": "https://youtu.be/QquFMXRNros",
+        "coverUrl": "https://i.ytimg.com/vi/QquFMXRNros/maxresdefault.jpg",
+        "duration": 169
       },
       {
-        "key": "대기 동작 1",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/08/24090565/4be598fcc68a4533308f158b57ecf8ff_4586765210474107217.gif"
+        "title": "원신 | 데인 여담-「치오리: 그 소매는 향기를 남기고」",
+        "url": "https://youtu.be/RWuZk5r5q7U?si=l6fjcBxNUsms6HgG",
+        "coverUrl": "https://i.ytimg.com/vi/RWuZk5r5q7U/maxresdefault.jpg",
+        "duration": 332
       },
       {
-        "key": "대기 동작 2",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/08/24090565/b398661b2aa370d3cdbd64ae141f3568_587010571188347302.gif"
+        "title": "원신 | 스토리 PV-「바느질로 자아낸 밤」",
+        "url": "https://youtu.be/8NExKphp8yc",
+        "coverUrl": "https://i.ytimg.com/vi/8NExKphp8yc/maxresdefault.jpg",
+        "duration": 135
       },
       {
-        "key": "운명의 자리",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/13/291064744/c38e925a9b23ffa9c54c11e4623f6612_8508211844531005095.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "재단가위자리"
-          }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "이름",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "치오리"
-          }
-        ]
+        "title": "원신 | 신규 캐릭터 플레이-「치오리: 한 땀 한 땀 쌓아 올린 아름다움」",
+        "url": "https://youtu.be/pSwtvB-gd8E",
+        "coverUrl": "https://i.ytimg.com/vi/pSwtvB-gd8E/maxresdefault.jpg",
+        "duration": 151
       },
       {
-        "key": "생일",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "8월 17일"
-          }
-        ]
-      },
-      {
-        "key": "운명의 자리",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "재단가위자리"
-          }
-        ]
-      },
-      {
-        "key": "호칭",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "뇌명의 재단사"
-          }
-        ]
-      },
-      {
-        "key": "신의 눈",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "바위"
-          }
-        ]
-      },
-      {
-        "key": "소속",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "폰타인성"
-          }
-        ]
-      },
-      {
-        "key": "中文 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "陈阳"
-          }
-        ]
-      },
-      {
-        "key": "日本語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Taketatsu Ayana"
-          }
-        ]
-      },
-      {
-        "key": "English CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Brittany Lauda"
-          }
-        ]
-      },
-      {
-        "key": "한국어 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "이다은"
-          }
-        ]
-      },
-      {
-        "key": "특제 요리",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 5190,
-            "name": "「패션쇼」",
-            "desc": "<p>치오리의 특제 요리. 흔한 붕어빵이 치오리의 날렵한 손끝에서 재탄생했다.</p><p>각종 의상에 싸인 속 재료가 시각과 미각의 성대한 축제를 열어서 보는 이로 하여금 헤어 나올 수 없게 만든다. 이 정도로 대단한 요리는 디저트 장인의 걸작이라고 해도 과언이 아닐 것이다</p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/13/291064744/020409821742e9e488c345ebe7d06098_982688942889839165.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "캐릭터 카드",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 7061,
-            "name": "치오리",
-            "desc": "<p><strong><span style=\"color: rgb(255, 255, 255)\">뇌명의 재단사 · 치오리</span></strong></p><p>천 가지 색채를 짜는 쿠튀리에르</p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/13/24090565/7092737dc26796da3d9a5e763b605e58_1299168195654600213.png"
-          }
-        ],
-        "isMaterial": true
+        "title": "원신｜치오리 캐릭터 PV——「진홍의 실로 빚어낸 심장」",
+        "url": "https://youtu.be/i3Lbsw1OKzQ",
+        "coverUrl": "https://i.ytimg.com/vi/i3Lbsw1OKzQ/maxresdefault.jpg",
+        "duration": 129
       }
     ],
     "summaryList": [
@@ -2559,6 +2978,87 @@
         "type": "RichText",
         "text": "https:/www.hoyolab.com/article/24689938",
         "alignment": "right"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "기원 이력"
+      },
+      {
+        "type": "RichText",
+        "text": "「치잣빛 구름 하오리」\n버전\n대상 캐릭터\n5.1 (1차)\n2024/10/09 ~ 2024/10/29"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4946,
+        "name": "치오리",
+        "desc": "<p><em>「치오리 언니는 손재주가 정말 대단해! 새 옷을 입어볼 때마다 새로 머리를 매만져준다니까? 헤어 스타일도 디자인의 일부…라나? 헤헤, 언니가 머리를 빗겨줄 땐 엄청 기분이 좋아…」</em></p><p><em>——키라라</em></p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/11/291064744/5470f90694af13476e49be7b8346e2b1_7850030834879271268.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2269,
+        "name": "도리",
+        "desc": "<p>신출귀몰한 여행 잡화 상인. 빛나는 모라를 가장 좋아한다.<br><br><em>「아무리 희귀한 실험 재료라 할지라도 다 도리에게서 구할 수 있지. 대체 어디서 물건을 구해오는 걸까…? 그리고 도리의 물건을 살 땐 가격을 주의 깊게 봐야 해. 매번 계산할 때마다 가슴이 아프다니깐.」——타이나리</em></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/08/194600931/6539bea71efd0f839db897cfc4094362_2790017150396090261.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2815,
+        "name": "캔디스",
+        "desc": "<p>호박색 왼쪽 눈을 가진 적왕의 후예. 아루 마을의 수호자다.<br><br><em>「전에 캔디스에게 장신구를 선물하면서 일에 충실하는 것도 좋지만 조금 더 삶을 즐겨야 한다고 충고했어. 그런데 그녀는 평화로운 마을을 지켜보는 것만으로도 행복하다고 대답했지…. 그 수호자가 삶을 즐기는 방식은 참 독특하다니까….」</em></p><p><em>——「화염 갈기의 사자」 데히야가 어쩔 수 없다는 듯이.</em></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/27/194600931/2f43da4ece9eabfbde6ec2fcc81b3bff_6753734793164277537.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2268,
+        "name": "콜레이",
+        "desc": "<p>아비디야 숲에서 활약하는 숲의 견습 순찰자. 열정적인 겉모습 뒤에 조금은 내성적인 성격이 숨겨져 있다<br><br><em>「뭐, 수메르에 간다고? 그럼 나 대신 콜레이에게 안부 좀 전해 줄래? 음… 못 본 지 꽤 됐는데 그동안 키와 머리는 많이 자랐을까?」——엠버</em></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/22/194600931/37a18b6b6865c59063003a9380f08225_6703625288453173006.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "4.5 (1차)\n2024/03/13 ~ 2024/04/02"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4946,
+        "name": "치오리",
+        "desc": "<p><em>「치오리 언니는 손재주가 정말 대단해! 새 옷을 입어볼 때마다 새로 머리를 매만져준다니까? 헤어 스타일도 디자인의 일부…라나? 헤헤, 언니가 머리를 빗겨줄 땐 엄청 기분이 좋아…」</em></p><p><em>——키라라</em></p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/11/291064744/5470f90694af13476e49be7b8346e2b1_7850030834879271268.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5,
+        "name": "고로",
+        "desc": "<p>와타츠미군의 대장, 부하들의 깊은 신뢰를 받고 있다.<br><br><em>「선함과 충실함은 미덕의 표상이야. 나의 벗 고로는 이러한 미덕을 갖춘 장성이지」——카에데하라 카즈하</em></p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Gorou_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4,
+        "name": "운근",
+        "desc": "<p>극작과 연기, 노래 실력을 모두 갖춘 리월극의 명배우. 그녀의 독보적인 스타일은 마치 그녀 본인처럼 우아하고도 부드럽다.<br><br><em>「운근이 우리 다관에서 공연 한 번만 해도 1달 동안 영업을 안 해도 될 정도로 모라를 많이 번다니까!」——화유다관 주인, 범가 어르신</em></p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yun Jin_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2269,
+        "name": "도리",
+        "desc": "<p>신출귀몰한 여행 잡화 상인. 빛나는 모라를 가장 좋아한다.<br><br><em>「아무리 희귀한 실험 재료라 할지라도 다 도리에게서 구할 수 있지. 대체 어디서 물건을 구해오는 걸까…? 그리고 도리의 물건을 살 땐 가격을 주의 깊게 봐야 해. 매번 계산할 때마다 가슴이 아프다니깐.」——타이나리</em></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/08/194600931/6539bea71efd0f839db897cfc4094362_2790017150396090261.png",
+        "displayStyle": "card"
       },
       {
         "type": "RichText",
@@ -3098,653 +3598,153 @@
         "desc": "",
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/10/80830045/c32bab10651059ad3c0c8a0e5bbd2e03_9013995759343394230.png",
         "displayStyle": "card"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "기원 이력"
-      },
-      {
-        "type": "RichText",
-        "text": "「치잣빛 구름 하오리」\n버전\n대상 캐릭터\n5.1 (1차)\n2024/10/09 ~ 2024/10/29"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 4946,
-        "name": "치오리",
-        "desc": "<p><em>「치오리 언니는 손재주가 정말 대단해! 새 옷을 입어볼 때마다 새로 머리를 매만져준다니까? 헤어 스타일도 디자인의 일부…라나? 헤헤, 언니가 머리를 빗겨줄 땐 엄청 기분이 좋아…」</em></p><p><em>——키라라</em></p>",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/11/291064744/5470f90694af13476e49be7b8346e2b1_7850030834879271268.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2269,
-        "name": "도리",
-        "desc": "<p>신출귀몰한 여행 잡화 상인. 빛나는 모라를 가장 좋아한다.<br><br><em>「아무리 희귀한 실험 재료라 할지라도 다 도리에게서 구할 수 있지. 대체 어디서 물건을 구해오는 걸까…? 그리고 도리의 물건을 살 땐 가격을 주의 깊게 봐야 해. 매번 계산할 때마다 가슴이 아프다니깐.」——타이나리</em></p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/08/194600931/6539bea71efd0f839db897cfc4094362_2790017150396090261.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2815,
-        "name": "캔디스",
-        "desc": "<p>호박색 왼쪽 눈을 가진 적왕의 후예. 아루 마을의 수호자다.<br><br><em>「전에 캔디스에게 장신구를 선물하면서 일에 충실하는 것도 좋지만 조금 더 삶을 즐겨야 한다고 충고했어. 그런데 그녀는 평화로운 마을을 지켜보는 것만으로도 행복하다고 대답했지…. 그 수호자가 삶을 즐기는 방식은 참 독특하다니까….」</em></p><p><em>——「화염 갈기의 사자」 데히야가 어쩔 수 없다는 듯이.</em></p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/27/194600931/2f43da4ece9eabfbde6ec2fcc81b3bff_6753734793164277537.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2268,
-        "name": "콜레이",
-        "desc": "<p>아비디야 숲에서 활약하는 숲의 견습 순찰자. 열정적인 겉모습 뒤에 조금은 내성적인 성격이 숨겨져 있다<br><br><em>「뭐, 수메르에 간다고? 그럼 나 대신 콜레이에게 안부 좀 전해 줄래? 음… 못 본 지 꽤 됐는데 그동안 키와 머리는 많이 자랐을까?」——엠버</em></p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/22/194600931/37a18b6b6865c59063003a9380f08225_6703625288453173006.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "4.5 (1차)\n2024/03/13 ~ 2024/04/02"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 4946,
-        "name": "치오리",
-        "desc": "<p><em>「치오리 언니는 손재주가 정말 대단해! 새 옷을 입어볼 때마다 새로 머리를 매만져준다니까? 헤어 스타일도 디자인의 일부…라나? 헤헤, 언니가 머리를 빗겨줄 땐 엄청 기분이 좋아…」</em></p><p><em>——키라라</em></p>",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/11/291064744/5470f90694af13476e49be7b8346e2b1_7850030834879271268.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 5,
-        "name": "고로",
-        "desc": "<p>와타츠미군의 대장, 부하들의 깊은 신뢰를 받고 있다.<br><br><em>「선함과 충실함은 미덕의 표상이야. 나의 벗 고로는 이러한 미덕을 갖춘 장성이지」——카에데하라 카즈하</em></p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Gorou_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 4,
-        "name": "운근",
-        "desc": "<p>극작과 연기, 노래 실력을 모두 갖춘 리월극의 명배우. 그녀의 독보적인 스타일은 마치 그녀 본인처럼 우아하고도 부드럽다.<br><br><em>「운근이 우리 다관에서 공연 한 번만 해도 1달 동안 영업을 안 해도 될 정도로 모라를 많이 번다니까!」——화유다관 주인, 범가 어르신</em></p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yun Jin_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2269,
-        "name": "도리",
-        "desc": "<p>신출귀몰한 여행 잡화 상인. 빛나는 모라를 가장 좋아한다.<br><br><em>「아무리 희귀한 실험 재료라 할지라도 다 도리에게서 구할 수 있지. 대체 어디서 물건을 구해오는 걸까…? 그리고 도리의 물건을 살 땐 가격을 주의 깊게 봐야 해. 매번 계산할 때마다 가슴이 아프다니깐.」——타이나리</em></p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/08/194600931/6539bea71efd0f839db897cfc4094362_2790017150396090261.png",
-        "displayStyle": "card"
       }
     ],
-    "ascension": [
+    "textualResearch": [
       {
-        "key": "Lv.1",
-        "combatStats": [
+        "title": "[생일] 편지(2024)",
+        "desc": [
           {
-            "key": "",
-            "values": [
-              "돌파 전",
-              "돌파 후"
-            ]
-          },
-          {
-            "key": "기초 HP",
-            "values": [
-              "-",
-              "890"
-            ]
-          },
-          {
-            "key": "기초 공격력",
-            "values": [
-              "-",
-              "25"
-            ]
-          },
-          {
-            "key": "기초 방어력",
-            "values": [
-              "-",
-              "74"
-            ]
-          },
-          {
-            "key": "치명타 확률",
-            "values": [
-              "-",
-              "0.0%"
-            ]
+            "type": "RichText",
+            "text": "편지 제목: 여행···\n발신인: 치오리\n요즘 나비아는 너희와 함께 「시뮬랑카」라는 동화 나라에서 모험을 했던 이야기만 하고 있어. 안 그래도 한동안 이곳에만 머물러 있었는데, 너희 이야기를 들으니까 밖으로 나가고 싶다는 생각이 간절해지더라.\n마침 최근에 들어온 주문들도 전부 일단락되었으니, 여행을 떠나 잠시 쉬면서··· 영감을 얻어보는 것도 좋겠지.\n혹시 같이 갈 생각 있어? 미리 말해두지만 따로 뭔가를 준비할 필요는 없어. 난 마음 가는 대로 여행하는 걸 좋아하거든.\n아 참, 그러고 보니 슬슬 나타로 갈 계획이라며?\n거기에는 정말로 온천이 잔뜩 있나? 나타의 용들은 어떤 옷을 입으려나? 궁금한 게 너무 많네. 거기서 돌아오면 조용한 식당에서 편히 쉬면서 이야기를 나누자."
           }
         ]
       },
       {
-        "key": "Lv.20",
-        "combatStats": [
+        "title": "[생일] SNS 및 일러스트 1(2024)",
+        "desc": [
           {
-            "key": "",
-            "values": [
-              "돌파 전",
-              "돌파 후"
-            ]
-          },
+            "type": "RichText",
+            "text": "저기, 손님. 이곳 치오리 부티크에 와서는 옷은 거들떠도 안 보고 나만 바라보고 있네. 무슨 하고 싶은 말이라도 있어?\n같이 식사하러 가자고? 지금은 배 안 고파. 당장 처리해야 할 일 다 끝낼 때까지 기다리고 있으면 한 번 생각해 볼게.\n——하아…. 연기는 그쯤 해도 돼. 다 알고 있다고. 깜짝 생일 파티라도 준비해 둔 거겠지?\n다음부터 그런 건 이리저리 돌리지 말고 솔직하게 말해. 그럼 나도 솔직하게 대답해 줄 테니까. 무척… 기쁘다고 말이야.\nhttps:/www.hoyolab.com/article/32207058"
+          }
+        ]
+      },
+      {
+        "title": "[생일] SNS 및 일러스트 2(2024)",
+        "desc": [
           {
-            "key": "기초 HP",
-            "values": [
-              "2310",
-              "3073"
-            ]
-          },
+            "type": "RichText",
+            "text": "「치오리 언니! 택배 왔어!」\n「음—— 요즘은 택배 받을 일이 없을 텐데… 누가 보낸 거야?」\n「바로 나야! 이건 치오리 언니한테 주는 생일 선물이야. 생일 축하해!」\nhttps:/www.hoyolab.com/article/32207057"
+          }
+        ]
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "이름",
+        "value": [
           {
-            "key": "기초 공격력",
-            "values": [
-              "65",
-              "87"
-            ]
-          },
+            "type": "RichText",
+            "text": "치오리"
+          }
+        ]
+      },
+      {
+        "key": "생일",
+        "value": [
           {
-            "key": "기초 방어력",
-            "values": [
-              "192",
-              "256"
-            ]
-          },
+            "type": "RichText",
+            "text": "8월 17일"
+          }
+        ]
+      },
+      {
+        "key": "운명의 자리",
+        "value": [
           {
-            "key": "치명타 확률",
-            "values": [
-              "0.0%",
-              "0.0%"
-            ]
+            "type": "RichText",
+            "text": "재단가위자리"
+          }
+        ]
+      },
+      {
+        "key": "호칭",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "뇌명의 재단사"
+          }
+        ]
+      },
+      {
+        "key": "신의 눈",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "바위"
+          }
+        ]
+      },
+      {
+        "key": "소속",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "폰타인성"
+          }
+        ]
+      },
+      {
+        "key": "中文 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "陈阳"
+          }
+        ]
+      },
+      {
+        "key": "日本語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Taketatsu Ayana"
+          }
+        ]
+      },
+      {
+        "key": "English CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Brittany Lauda"
+          }
+        ]
+      },
+      {
+        "key": "한국어 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "이다은"
+          }
+        ]
+      },
+      {
+        "key": "특제 요리",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5190,
+            "name": "「패션쇼」",
+            "desc": "<p>치오리의 특제 요리. 흔한 붕어빵이 치오리의 날렵한 손끝에서 재탄생했다.</p><p>각종 의상에 싸인 속 재료가 시각과 미각의 성대한 축제를 열어서 보는 이로 하여금 헤어 나올 수 없게 만든다. 이 정도로 대단한 요리는 디저트 장인의 걸작이라고 해도 과언이 아닐 것이다</p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/13/291064744/020409821742e9e488c345ebe7d06098_982688942889839165.png"
           }
         ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "모라",
-            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 447,
-            "name": "단단한 황옥 가루",
-            "desc": "캐릭터 돌파 소재",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1574,
-            "name": "혈곡",
-            "desc": "시에서 「붉은 꽃술」로도 묘사되는 색상이 선명한 식물. 한때는 이나즈마에서 멸종된 적도 있으나, 전장에서 다시금 나타나게 된다. 소문에 따르면, 선혈이 낭자한 전장에서 유달리 요염하게 만개한다고 한다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dendrobium_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1018,
-            "name": "떠도는 정령 코어 껍데기",
-            "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어. 미량의 원소가 담겨있다.<br>대부분의 에너지는 이미 흩어진 듯하다.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Husk_icon.png",
-            "amount": 3
-          }
-        ]
+        "isMaterial": true
       },
       {
-        "key": "Lv.40",
-        "combatStats": [
+        "key": "캐릭터 카드",
+        "value": [
           {
-            "key": "",
-            "values": [
-              "돌파 전",
-              "돌파 후"
-            ]
-          },
-          {
-            "key": "기초 HP",
-            "values": [
-              "4598",
-              "5141"
-            ]
-          },
-          {
-            "key": "기초 공격력",
-            "values": [
-              "130",
-              "145"
-            ]
-          },
-          {
-            "key": "기초 방어력",
-            "values": [
-              "383",
-              "428"
-            ]
-          },
-          {
-            "key": "치명타 확률",
-            "values": [
-              "0.0%",
-              "4.8%"
-            ]
+            "type": "CustomEntry",
+            "epId": 7061,
+            "name": "치오리",
+            "desc": "<p><strong><span style=\"color: rgb(255, 255, 255)\">뇌명의 재단사 · 치오리</span></strong></p><p>천 가지 색채를 짜는 쿠튀리에르</p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/10/13/24090565/7092737dc26796da3d9a5e763b605e58_1299168195654600213.png"
           }
         ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "모라",
-            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 446,
-            "name": "단단한 황옥 조각",
-            "desc": "캐릭터 돌파 소재.<br/>「티바트 대륙에서 유통되고 있는 은전은 전부 나의 피와 살이다」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4038,
-            "name": "오토마톤 태엽 감개·코펠리아",
-            "desc": "<p>코펠리아의 오토마톤 태엽 감개. 오토마톤 무용수에게 에너지를 제공할 수 있다.</p><p>제작자의 구상 속에서, 섬세한 관절을 가진 오토마톤 무용수 이야기는 즐거운 순간에 멈춰 있다. 코펠리아는 비범한 전투 능력으로 이 순간을 방해하는 불청객을 악운의 장으로 보내버릴 것이다</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/181512822/dace74799abdabad33190d281d596e06_7064853620294278447.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1574,
-            "name": "혈곡",
-            "desc": "시에서 「붉은 꽃술」로도 묘사되는 색상이 선명한 식물. 한때는 이나즈마에서 멸종된 적도 있으나, 전장에서 다시금 나타나게 된다. 소문에 따르면, 선혈이 낭자한 전장에서 유달리 요염하게 만개한다고 한다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dendrobium_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1018,
-            "name": "떠도는 정령 코어 껍데기",
-            "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어. 미량의 원소가 담겨있다.<br>대부분의 에너지는 이미 흩어진 듯하다.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Husk_icon.png",
-            "amount": 15
-          }
-        ]
-      },
-      {
-        "key": "Lv.50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "돌파 전",
-              "돌파 후"
-            ]
-          },
-          {
-            "key": "기초 HP",
-            "values": [
-              "5915",
-              "6638"
-            ]
-          },
-          {
-            "key": "기초 공격력",
-            "values": [
-              "167",
-              "187"
-            ]
-          },
-          {
-            "key": "기초 방어력",
-            "values": [
-              "493",
-              "553"
-            ]
-          },
-          {
-            "key": "치명타 확률",
-            "values": [
-              "4.8%",
-              "9.6%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "모라",
-            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 446,
-            "name": "단단한 황옥 조각",
-            "desc": "캐릭터 돌파 소재.<br/>「티바트 대륙에서 유통되고 있는 은전은 전부 나의 피와 살이다」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4038,
-            "name": "오토마톤 태엽 감개·코펠리아",
-            "desc": "<p>코펠리아의 오토마톤 태엽 감개. 오토마톤 무용수에게 에너지를 제공할 수 있다.</p><p>제작자의 구상 속에서, 섬세한 관절을 가진 오토마톤 무용수 이야기는 즐거운 순간에 멈춰 있다. 코펠리아는 비범한 전투 능력으로 이 순간을 방해하는 불청객을 악운의 장으로 보내버릴 것이다</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/181512822/dace74799abdabad33190d281d596e06_7064853620294278447.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1574,
-            "name": "혈곡",
-            "desc": "시에서 「붉은 꽃술」로도 묘사되는 색상이 선명한 식물. 한때는 이나즈마에서 멸종된 적도 있으나, 전장에서 다시금 나타나게 된다. 소문에 따르면, 선혈이 낭자한 전장에서 유달리 요염하게 만개한다고 한다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dendrobium_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1019,
-            "name": "떠도는 정령 코어",
-            "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어.<br>이 원소 생물은 기이한 습성을 가지고 있어 주기적으로 무리를 지어 출현과 잠적을 반복한다.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "돌파 전",
-              "돌파 후"
-            ]
-          },
-          {
-            "key": "기초 HP",
-            "values": [
-              "7420",
-              "7962"
-            ]
-          },
-          {
-            "key": "기초 공격력",
-            "values": [
-              "209",
-              "225"
-            ]
-          },
-          {
-            "key": "기초 방어력",
-            "values": [
-              "618",
-              "663"
-            ]
-          },
-          {
-            "key": "치명타 확률",
-            "values": [
-              "9.6%",
-              "9.6%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "모라",
-            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 445,
-            "name": "단단한 황옥 덩이",
-            "desc": "캐릭터 돌파 소재.<br/>「티바트 대륙에서 유통되고 있는 은전은 전부 나의 피와 살이다」<br/>「난 이 방법으로 인간들의 땀과 지혜, 미래에 대해 보증을 선 것이다」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4038,
-            "name": "오토마톤 태엽 감개·코펠리아",
-            "desc": "<p>코펠리아의 오토마톤 태엽 감개. 오토마톤 무용수에게 에너지를 제공할 수 있다.</p><p>제작자의 구상 속에서, 섬세한 관절을 가진 오토마톤 무용수 이야기는 즐거운 순간에 멈춰 있다. 코펠리아는 비범한 전투 능력으로 이 순간을 방해하는 불청객을 악운의 장으로 보내버릴 것이다</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/181512822/dace74799abdabad33190d281d596e06_7064853620294278447.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1574,
-            "name": "혈곡",
-            "desc": "시에서 「붉은 꽃술」로도 묘사되는 색상이 선명한 식물. 한때는 이나즈마에서 멸종된 적도 있으나, 전장에서 다시금 나타나게 된다. 소문에 따르면, 선혈이 낭자한 전장에서 유달리 요염하게 만개한다고 한다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dendrobium_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1019,
-            "name": "떠도는 정령 코어",
-            "desc": "<p>떠도는 정령을 공중에 뜨게 하는 에너지 코어.<br>이 원소 생물은 기이한 습성을 가지고 있어 주기적으로 무리를 지어 출현과 잠적을 반복한다.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Heart_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Lv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "돌파 전",
-              "돌파 후"
-            ]
-          },
-          {
-            "key": "기초 HP",
-            "values": [
-              "8751",
-              "9293"
-            ]
-          },
-          {
-            "key": "기초 공격력",
-            "values": [
-              "247",
-              "262"
-            ]
-          },
-          {
-            "key": "기초 방어력",
-            "values": [
-              "729",
-              "774"
-            ]
-          },
-          {
-            "key": "치명타 확률",
-            "values": [
-              "9.6%",
-              "14.4%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "모라",
-            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 445,
-            "name": "단단한 황옥 덩이",
-            "desc": "캐릭터 돌파 소재.<br/>「티바트 대륙에서 유통되고 있는 은전은 전부 나의 피와 살이다」<br/>「난 이 방법으로 인간들의 땀과 지혜, 미래에 대해 보증을 선 것이다」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4038,
-            "name": "오토마톤 태엽 감개·코펠리아",
-            "desc": "<p>코펠리아의 오토마톤 태엽 감개. 오토마톤 무용수에게 에너지를 제공할 수 있다.</p><p>제작자의 구상 속에서, 섬세한 관절을 가진 오토마톤 무용수 이야기는 즐거운 순간에 멈춰 있다. 코펠리아는 비범한 전투 능력으로 이 순간을 방해하는 불청객을 악운의 장으로 보내버릴 것이다</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/181512822/dace74799abdabad33190d281d596e06_7064853620294278447.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1574,
-            "name": "혈곡",
-            "desc": "시에서 「붉은 꽃술」로도 묘사되는 색상이 선명한 식물. 한때는 이나즈마에서 멸종된 적도 있으나, 전장에서 다시금 나타나게 된다. 소문에 따르면, 선혈이 낭자한 전장에서 유달리 요염하게 만개한다고 한다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dendrobium_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1020,
-            "name": "떠도는 정령 결정화 코어",
-            "desc": "떠도는 정령 처치 시 일정 확률로 발견할 수 있는 완벽한 에너지 코어.<br/>무엇이든 우열을 가리기 좋아하는 사람들 사이에선 이런 논쟁이 자주 일어난다. \"떠도는 정령과 바람 슬라임의 부력 중 뭐가 더 뛰어난 걸까\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "돌파 전",
-              "돌파 후"
-            ]
-          },
-          {
-            "key": "기초 HP",
-            "values": [
-              "10091",
-              "10634"
-            ]
-          },
-          {
-            "key": "기초 공격력",
-            "values": [
-              "285",
-              "300"
-            ]
-          },
-          {
-            "key": "기초 방어력",
-            "values": [
-              "841",
-              "886"
-            ]
-          },
-          {
-            "key": "치명타 확률",
-            "values": [
-              "14.4%",
-              "19.2%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "모라",
-            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 444,
-            "name": "단단한 황옥",
-            "desc": "캐릭터 돌파 소재.<br/>「대륙에서 유통되고 있는 은전은 전부 나의 피와 살이다」<br/>「난 이 방법으로 인간들의 땀과 지혜, 미래에 대해 보증을 선 것이다」<br/>「이는 중생에 대한 내 믿음이다. 이 믿음을 저버리는 것은 나의 피를 더럽히는 짓이다」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4038,
-            "name": "오토마톤 태엽 감개·코펠리아",
-            "desc": "<p>코펠리아의 오토마톤 태엽 감개. 오토마톤 무용수에게 에너지를 제공할 수 있다.</p><p>제작자의 구상 속에서, 섬세한 관절을 가진 오토마톤 무용수 이야기는 즐거운 순간에 멈춰 있다. 코펠리아는 비범한 전투 능력으로 이 순간을 방해하는 불청객을 악운의 장으로 보내버릴 것이다</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/181512822/dace74799abdabad33190d281d596e06_7064853620294278447.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1574,
-            "name": "혈곡",
-            "desc": "시에서 「붉은 꽃술」로도 묘사되는 색상이 선명한 식물. 한때는 이나즈마에서 멸종된 적도 있으나, 전장에서 다시금 나타나게 된다. 소문에 따르면, 선혈이 낭자한 전장에서 유달리 요염하게 만개한다고 한다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dendrobium_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1020,
-            "name": "떠도는 정령 결정화 코어",
-            "desc": "떠도는 정령 처치 시 일정 확률로 발견할 수 있는 완벽한 에너지 코어.<br/>무엇이든 우열을 가리기 좋아하는 사람들 사이에선 이런 논쟁이 자주 일어난다. \"떠도는 정령과 바람 슬라임의 부력 중 뭐가 더 뛰어난 걸까\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spectral Nucleus_icon.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Lv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "돌파 전",
-              "돌파 후"
-            ]
-          },
-          {
-            "key": "기초 HP",
-            "values": [
-              "11438",
-              "-"
-            ]
-          },
-          {
-            "key": "기초 공격력",
-            "values": [
-              "323",
-              "-"
-            ]
-          },
-          {
-            "key": "기초 방어력",
-            "values": [
-              "953",
-              "-"
-            ]
-          },
-          {
-            "key": "치명타 확률",
-            "values": [
-              "19.2%",
-              "-"
-            ]
-          }
-        ]
+        "isMaterial": true
       }
     ]
   }
