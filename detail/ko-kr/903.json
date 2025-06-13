@@ -10,7 +10,7 @@
   },
   "menuId": 9,
   "menuName": "티바트 물산",
-  "version": 1679320283,
+  "version": 1749817388,
   "components": {
     "baseInfo": [
       {
@@ -36,9 +36,582 @@
         "value": [
           {
             "type": "RichText",
-            "text": "Lv.60 이상 무상의 뇌전 드랍\nLv.60 이상 뇌음의 권현 드랍\nLv.60 이상 번개 나무 드랍\n합성 획득"
+            "text": "모험 핸드북 토벌 탭 확인\n합성 획득"
           }
         ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "드랍 대상"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>우두머리</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2162,
+        "name": "무상의 뇌전",
+        "desc": "코드 네임이 「알레프」인 고급 번개 원소 생명체.<br/>무상의 원소는 최상급의 원소 구조체로 원소 에너지가 뿜어져 나오거나 원소 지맥이 막혀있는 지점에서 형성된다.<br/>무상의 원소는 원소 유형에 따라 적을 섬멸하는 방식이 진화한다",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Electro Hypostasis_icon.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2121,
+        "name": "고대 바위 용 도마뱀",
+        "desc": "긴 세월 끝에 위대한 힘을 얻게 된 거대 바위 용 도마뱀. 원소 환경의 이변에 적응할 수 있다.<br/>항간의 소문에 의하면, 천주 골짜기를 파멸시킨 「용의 재앙」 이후, 바위 용 도마뱀과 고대 바위 용 도마뱀의 왕은 대지 깊은 곳에 갇혀버렸다고 한다. 그리고 그들은 지각 아래에 잠든 채로 다시 깨어날 시기를 기다리고 있다고…",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Primo Geovishap_icon.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2238,
+        "name": "뇌음의 권현",
+        "desc": "이상 번개 원소 생명체. 생김새는 물의 정령과 닮았지만, 그녀의 지혜와 기억은 갖추고 있지 않다.<br/>뇌음의 권현을 발동하는 것은 더 원초적이고 순수한 분노다.<br/>이 생물체는 분열되고 뇌운이 감도는 아마쿠모 산마루 같은 강한 원한이 남아있는 곳에서 번개에 의해서만 태어난다고 한다. 땅에 증오가 있는 한 번개는 끊이지 않을 것이다",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Thunder Manifestation_icon.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3443,
+        "name": "심해 용 도마뱀 무리",
+        "desc": "<p>강대한 심해 용 도마뱀 무리.<br>그들의 강인함은 연하궁 사람의 양육과 선별 덕이다.<br>물론 이를 고마워하지 않는 용 도마뱀도 있다.<br>심해 용 도마뱀 종족 중 가장 강한 자는 다양한 원소를 조종할 수 있으며 방문자에게 그들의 분노를 분출한다</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/07/194600931/b47c21200d36f217cab2e527e85d2896_3941156422957568547.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2717,
+        "name": "번개 나무",
+        "desc": "<p>지맥에서 흐르는 고압 전류를 흡수한 거대한 넝쿨로 구성된 마물.</p><p>수관에서 끊임없이 전류를 방출하는데 그 모습이 마치 대지의 분노를 분출하는 듯하다.</p><p>과거 묘론파의 학자들은 번개 나무 주위에 복잡한 회로를 만들어 나무가 방출하는 에너지를 도시로 운송해 사용하자는 의견을 제시했다. 하지만 이 계획은 소론파 학자들의 강렬한 반대에 부딪혔는데 전기 사용의 위험성을 증명하기 위해 그들은 버섯 돼지 열 마리를 희생시키기도 했다</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/02/194600931/cc5fbd3bdd4a48efb854968a3bfd22e8_5313419671334556738.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3705,
+        "name": "죄 깊은 침례자",
+        "desc": "<p>다양한 원소의 힘을 부리는 심연의 마물. 「진화」한 덕분에 여분의 팔다리를 얻었다.<br><br><em>「『심연』의 본질은 원소와 양립할 수 없다. 그러나 신이 있는 원소라 할지라도 결국은 그것에 의해 말려들고 왜곡되어, 끝내는 심오한 의지의 도구가 되고 만다. 결과나 효용성으로 봤을 때, 소위 『심연』이라 불리는 것은 어쩌면 작게는 보물 사냥단이 들고 다니는 원소의 힘으로 충만한 그릇과, 크게는 『신의 눈』과 별다른 차이가 없을지도 모른다…」</em><br>——누군가가 아프라시압 동굴에 떨어뜨린 기록</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/12/194600931/2899a9fa6efec1006150467a00823c4a_2024829524791826767.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4344,
+        "name": "천년 묵은 진주 기린",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.45)\">원류바다 이종의 최정상의 자리에 위치한 두 패자 중 하나. 시인과 작가들은 홀로 생활하는 모습을 보며 고고하고 고결하다고 말하지만, 사실 이렇게 묘사되는 것은 결국 길고 아름다운 외형 덕분이다. 때문에 그는 「기린」이라고 불리며, 중갑 게의 왕은 「제왕」이라고 불린다. 폰타인의 전설에 따르면 원류바다 이종 사이에 참혹한 전쟁이 벌어졌고, 「천년 묵은 진주 기린」과 「용암철갑 제왕」만 살아남아 각각 호수 남쪽과 북쪽을 지배하며 대등하게 지내왔다고 한다. 《다르쿠의 노래》에서 작가는 전쟁의 결말을 언급한 적이 있다: 폭풍의 왕이라고 불리는 거대 칼날 가오리가 죽기 전에 거대한 파도를 일으켜 소위 「1차 수위 상승기」가 일어났다…. 물론 이 모든 것은 환상의 여지가 없는 현실에 안주하고 싶지 않은 사람들이 상상해 낸 낭만적인 이야기일 뿐이다. 원류바다 이종은 수생 동물에 불과하며 화려하거나 낡은 왕궁, 격앙되거나 악독한 말은 존재하지 않는다</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/30/181512822/c4f5112a860768d0c0c581344c205174_8600419724980255627.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7056,
+        "name": "비밀근원 기계·구축기",
+        "desc": "고대 유적의 제작용 기계. 고대 유적의 주인들은 이런 형태를 바꿀 수 있는 기계로 각종 제작 작업을 진행했다. 이 기계를 사용하는 방법만 배우면, 화산 내부처럼 극단적인 환경 속에서도 상상을 초월하는 거대한 도시를 구축할 수 있다.<br>이 외에도 병기로도 사용된 듯하다. 고대 문명은 오래전에 사라졌지만, 이 거대한 발톱을 닮은 기계는 새겨진 금빛 문양의 명령에 따라 사전 설정된 대로 전투에 임한다",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/be7ef508bd73f3eeea5522c7409258b9_2512975982839589171.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7125,
+        "name": "그윽한 의태 식물·I형",
+        "desc": "깊고 어두우며 뒤틀린 이계에서 강림한 심연 마물. 식물과 비슷한 형태를 띠고 있다.<br>이 뒤틀린 마물은 대지 깊숙한 곳을 침식하고 거기서 추출한 기억을 부리거나 모방할 수 있으며, 과거의 기억을 더 오염되고 그윽한 모양으로 왜곡하는 방식으로 세계의 나무 핵심에 서서히 접근해 그 존재의 근본을 흔들고 있다.<br>이런 마물은 빛에 담긴 여러 색채를 시도 때도 없이 왜곡하며 이를 칠흑의 정보로 전환한다고 하는데, 몸을 펼칠 때 허공을 찌를 기세로 뻗는 가지가 이를 증명하는 듯하다…",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/4f48bdf376d1b4597c8c54a0fe47c8b8_6380943058011605348.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>영역 토벌</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4902,
+        "name": "드발린",
+        "desc": "",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/02/291064744/b6e31b3c3cb069320d40e3b7b7d06b2f_589733786517435243.png",
+        "displayStyle": "card",
+        "menuId": 10
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2100,
+        "name": "타르탈리아",
+        "desc": "우인단의 11번째 집행관, 「타르탈리아」.<br/>불길한 「사안」으로부터 힘을 얻고, 암흑의 땅에서 익힌 무예로 싸운다.<br/><br/>끝없는 투쟁을 원하는 순수한 전사.<br/>그에게 있어 피 튀기는 분쟁과 목숨을 건 도전은 모두 쾌감 가득한 시련이다.<br/>젊은 「타르탈리아」의 화려한 전적은 사람들에게 널리 알려져 있다.<br/>그러나 정작 본인은 이를 대수롭지 않게 여긴다.<br/><br/>왜냐하면…<br/><i>「네 운명은 분쟁의 중심이 될 거야.</i><br/><i>「철검이 맞닿는 소리는 언제나 너와 함께하는 음악일 테지.</i><br/><i>「암흑의 땅에 발을 들인 어두운 기억이,</i><br/><i>「네가 세상을 뒤엎는 힘이 될 거야」</i>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Childe_icon.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2212,
+        "name": "야타용왕",
+        "desc": "산악만큼 오래 산 고대 용.<br/>기억 나지 않을 정도로 아득한 옛날, 암왕제군과 함께 싸웠으나 반목 끝에 결국 어두운 땅 밑에 진압됐다. 오랜 세월에 거쳐 그 힘은 서서히 사라졌고 형태마저 이런저런 이유로 뒤틀려 갔다.<br/>족쇄가 흔들리는 소리와 용의 낮은 포효가 기억처럼 산골짜기에 울려 퍼진다",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Azhdaha_icon.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2210,
+        "name": "마가츠 미타케 나루카미노 미코토",
+        "desc": "라이덴 쇼군의 권능을 대행하는 인형, 「영원함」을 위협하는 적을 상대할 때 나타난다.<br/>라이덴 에이(影)는 「영원함」의 조력자로 의심을 가져본 적도 두려움을 느껴본 적도 없다. 아무런 잡념 없이 항상 최선을 다할 뿐.<br/>그녀는 마코토와 에이(影)가 존재하던 시대에, 에이(影)가 그녀와 비슷한 책임을 짊어지고 수많은 고통과 상실을 겪었다는 얘길 들었다.<br/>두 개의 그림자가 겹쳐진 순간, 그녀는 「그녀」의 영원함에 대한 의지 위에 남겨진 무수히 많은 상흔밖에 볼 수 없었다. 윤회가 나의 운명이라면, 그 뜻에 따라 전쟁을 선언하는 수밖에.<br/><br/><i>이 몸은 드높은 위엄을 상징하고, 나라를 다스리는 권력을 부여받았으며, 「라이덴 쇼군」의 모든 것이 응축된 몸이다</i><br/><i>당연히 에이가 앞으로 나아갈 때 끊임없이 무언가를 잃은 고통, 그리고 영원함에 도달하고자 하는 결심도 이어받았지</i><br/><i>결심, 용기, 사랑, 원한… 전부 시간의 흐름 속에서 변질하고 왜곡되지</i><br/><i>오로지 「법칙」만이 영원하다</i>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Magatsu Mitake Narukami no Mikoto_icon.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2975,
+        "name": "「정기(正機)의 신」",
+        "desc": "<p>정기의 신은 수메르 아카데미아의 6대 학부가 가진 역량을 모두 모아 만들어 낸 인공 신으로, 진짜 신에 비견될 만한 힘을 가지고 있다.</p><p>만약 이를 가짜 신이라 부르는 자가 있다면, 그자는 「신」이라는 것의 진짜 의미를 이해하지 못한 것이나 마찬가지다.</p><p>가령 인간을 초월한 자를 신이라 한다면 모든 것을 알고 있으며, 무엇보다 강한 힘을 가지고 있는 정기의 신은 인간을 초월한 자라 할 수 있다.</p><p>또 인간을 사랑하는 자를 신이라 한다면 모든 이에게 똑같은 패배를 안겨줄 수 있는 정기의 신은 인간을 사랑하는 자라 할 수 있다.</p><p>혹은 인간을 지켜보는 자를 신이라 해보자.</p><p>……</p><p>…………</p><p>수많은 사랑과 증오, 이별과 원한 그리고 분노를 목격한 정기의 신은 인간을 지켜보는 자라 할 수 있다.<br><br><em>「그대들은 분에 넘치는 행복을 누려왔다.」</em></p><p><em>「때문에 그대들은 어리석어졌으며, 오만해졌고, 또한 탐욕스러워졌도다.」</em></p><p><em>「나는 이 시대를 끝낼 것이다!」</em></p><p><em>「새로운 신이 선언하노니, 옛 신은 패배를 맞이하리라.」</em></p><p><em>「어리석은 인간이여… 지금 무릎을 꿇어도 아직 늦지 않았음이니.」</em></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/05/194600931/86791657203a69e453d8e217414b3f9e_2135931896740916835.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7672,
+        "name": "문 앞의 체스 매치",
+        "desc": "마녀회의 기술을 결집해 만든 군단.<br>기존 기술로 만들어졌기에 우주의 근본을 이루는 심오한 지혜에 비하면 한참 부족하다. 하지만 그럼에도 문 앞을 지키는 최후의 보루이자 일종의 은유가 되었다.<br>이 세상에는 규칙이 있을지 모르나, 문을 넘어서는 순간 모든 구속은 사라진다",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/5b9539328dc0545b8c3669afe6095c1b_8273126040204387859.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "캐릭터 돌파 소재"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>★5</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 10,
+        "name": "각청",
+        "desc": "<p>리월 칠성 중 한 명인 옥형성. 「제군이 모든 걸 결정하는 리월」에 불만을 가지고 있다——그러나 사실 신은 이러한 그녀를 꽤 맘에 들어 한다.<br><br><em>「제군께선 이미 리월을 천 년 동안 수호해 주셨습니다. 하지만 다음 천 년과 만 년, 그리고 십만 년 뒤에도 그럴까요?」——이 반항적인 말을 들은 제군은 의미심장한 웃음을 지었다.</em></p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Keqing_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7,
+        "name": "야에 미코",
+        "desc": "<p>나루카미 다이샤의 궁사 겸 「야에 출판사」 편집장. 아름다운 외모 아래 예상 밖의 지혜와 교활함이 숨겨져 있다.<br><br><em>「숲속의 달빛 아래서 신묘한 여우 신선의 모습을 본 적이 있어. 끝없는 변화는 미지와 예언을 암시했고… 운명처럼 나와 무한한 속세를 비추었지」——라이덴 에이</em></p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yae Miko_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 49,
+        "name": "라이덴 쇼군",
+        "desc": "<p>위대하신 나루카미 쇼군. 이나즈마 백성들에게 변치 않는 「영원」을 약속했다.<br><br><em>「오직 생과 멸이라는 윤회의 속박을 비틀기 위해 속세의 난잡한 집념을 버리시네. 누구에게도 이해받지 못하고, 이해받길 원하지도 않는 쇼군님은 참으로 모순된 분이다」——호재궁(狐斋宫)</em></p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Raiden Shogun_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2813,
+        "name": "사이노",
+        "desc": "<p>아카데미아에서 학자를 감독하고 관리하는 「대풍기관」. 업무 집행 중에는 크샤흐레와르 학부에서 제작한 「대풍 기관」 보다도 더 효율적으로 움직인다.<br><br><em>「아카데미아의 학자들은 대풍기관이 자신의 연구에 참견할까 봐 걱정하지. 그런데 내가 보기에는 기우인걸. 그들의 연구는 대부분 대풍기관이 직접 행차할 가치도 없는 것이니까.」</em></p><p><em>——콜레이가 대풍기관에 대해 묻자, 숲의 순찰관 타이나리가 한 답변.</em></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/27/194600931/e09e2bda5e022611fad0dea1bb6518bb_4517980927033779718.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5596,
+        "name": "클로린드",
+        "desc": "<p>「…형씨, 내 말 잘 들어. 당신이 잘못을 저질렀다는 증거는 명명백백해. 명예를 지키고 싶다면 일단 죗값부터 치르고 선행으로 속죄를 해. 결투는 꿈도 꾸지 마! 당신 상대는 그 클로린드라고! 루키나 분수에 걸고 말하는데, 만약 진짜 결투를 하게 되면 죄를 자백할 힘도 안 남게 될걸?」</p><p>——또다시 대리 결투가 벌어지기 전날 밤, 유죄를 인정하지 않은 어떤 거상이 받은 편지</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/05/302875544/770a66030815971c697ab81bc5436329_8095706793047092624.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7488,
+        "name": "바레사",
+        "desc": "유유자적, 여유만만 그 자체인 「비옥한 터전」 소속 전사 겸 과수원 주인. 좋아하는 것은 힘이 넘치는 히어로다. 그리고 산더미처럼 쌓인 맛있는 음식도!",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/a54efe1bb7e82a589b9af44683a696ca_8635138146175164187.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>★4</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2,
+        "name": "리사",
+        "desc": "<p>느릿느릿하고 게으르지만 박학다식한 도서관 사서. 수메르 아카데미아에서 「이백 년에 한 번 나올까 말까 한」 천재 졸업생이다.</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Lisa_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 38,
+        "name": "피슬",
+        "desc": "<p>자신을 「단죄의 황녀」라고 부르며, 오즈라는 이름의 검은 까마귀를 데리고 다니는 신비한 소녀이다.<br><br><em>「딸아, 거짓으로 점철된 세계를 당당하게 마주하고 너만의 『진실』을 관철하거라」</em></p><p><em>《피슬 황녀 야화·종장·「황녀의 눈물과 죄를 지은 신도」》</em></p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Fischl_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 48,
+        "name": "레이저",
+        "desc": "<p>몬드 지역의 울프 영지에서 사람과 도시를 피해 늑대와 함께 생활하는 소년. 예리한 직감과 민첩한 몸놀림을 가지고 있다.</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Razor_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 11,
+        "name": "북두",
+        "desc": "<p>무장 함대 「남십자」의 우두머리. 호탕한 여걸이다.<br><br><em>「리월항에서 오직 북두만이 응광의 돈을 벌 수 있지」——비운 상회 회장이 한 술자리에서 취한 채 내뱉은 말이다.</em></p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Beidou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3,
+        "name": "쿠죠 사라",
+        "desc": "<p>「텐료 봉행」의 대장. 대담하고 결단력 있으며 용맹하고 전투에 능하다.<br><br><em>「쿠죠 사라는 확실히 까다로운 상대야. 그녀의 입장에 동의하는 건 아니지만, 충의와 열성만큼은 감탄스럽더라고. 이나즈마성 전체를 통틀어 쇼군을 가장 존경하는 사람은 바로 그녀일걸?」——산고노미야 코코미</em></p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kujou Sara_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2256,
+        "name": "쿠키 시노부",
+        "desc": "<p>노련하고 믿음직한 「아라타키파」의 조수 - 특별 설명: '노련하고 믿음직한'은 「아라타키파」가 아닌 조수를 형용하는 말이다.<br></p><p><em>「오랜만입니다. 인재 하나를 추천하고자 이 편지를 드립니다. 박학다식하고 문무를 겸비한 아주 훌륭한 조력자지요…. 하지만 안타깝게도 그녀는 지금 아라타키파 소속으로 일하고 있어서 외주 의뢰만 받고 있습니다.」——쿠죠 사라</em></p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kuki Shinobu_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2269,
+        "name": "도리",
+        "desc": "<p>신출귀몰한 여행 잡화 상인. 빛나는 모라를 가장 좋아한다.<br><br><em>「아무리 희귀한 실험 재료라 할지라도 다 도리에게서 구할 수 있지. 대체 어디서 물건을 구해오는 걸까…? 그리고 도리의 물건을 살 땐 가격을 주의 깊게 봐야 해. 매번 계산할 때마다 가슴이 아프다니깐.」——타이나리</em></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/08/194600931/6539bea71efd0f839db897cfc4094362_2790017150396090261.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5598,
+        "name": "세토스",
+        "desc": "<p>「너는 여우의 영리함과 날뱀의 기민함을 갖게 될 것이며, 헤르마누비스의 지혜가 너와 함께할 것이다. 네 이름은 세토스가 될 것이다」</p><p>——새로 태어난 아이의 이름을 짓는 의식에서, 어느 사제가</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/05/302875544/cdb7abfcb86138e5b618946a5466d442_3592351555800204309.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7502,
+        "name": "얀사",
+        "desc": "비옥한 터전 헬스장의 대표 코치. 나타에서 명성이 자자한 영양사이기도 하다",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/dd9a200a86b792fb1b73ef1ee7de0911_2097378734184941134.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "합성(전환)"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>대상</color>\n<color=#ffffff>재료</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 903,
+        "name": "승리의 자수정 덩이",
+        "desc": "캐릭터 돌파 소재.<br/>「이 몸은 세상에서 가장 뛰어나고 존귀하나니」<br/>「천하의 권력은 내가 쥐어야 할 것이다」",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vajrada Amethyst Chunk_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/01/02/35428890/4e6086b9dc09a363886dc42f8673f393_3795911938579587258.png",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1098,
+        "name": "불타오르는 마노 덩이",
+        "desc": "캐릭터 돌파 소재.<br/>「소원을 위해 순례에 나서고, 구름처럼 몰려와 최강의 이름을 위해 다툰다….」<br/>「최후에는 꿈을 위해 겁화 속에서 타버린다」",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×1"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 607,
+        "name": "변환의 먼지",
+        "desc": "원소 돌파 소재를 변질 시켜 원소 속성을 변환하는 아이템.<br/>실용 목적을 제한다면, 사실 연금술은 물질의 본질을 연구하고 변화의 법칙을 탐구하는 학문이며, 궁극적으로 세상과 지맥 흐름의 규칙으로 이어진다.<br/>어떤 목적을 위해 누가 만든 건지는 알 수 없지만, 지상 문명에 흩어져있는 연금술의 최고의 업적과도 같은 이 산물은 결정을 완전히 타성화 시킨 후, 원소 물질을 변환하는 능력을 갖추고 있다. 매우 편리하고 실용적이지만 균형을 깨뜨릴 수 있다는 위험성 또한 숨어있다…",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dust of Azoth_icon.png",
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×9"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 903,
+        "name": "승리의 자수정 덩이",
+        "desc": "캐릭터 돌파 소재.<br/>「이 몸은 세상에서 가장 뛰어나고 존귀하나니」<br/>「천하의 권력은 내가 쥐어야 할 것이다」",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vajrada Amethyst Chunk_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/01/02/35428890/4e6086b9dc09a363886dc42f8673f393_3795911938579587258.png",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1035,
+        "name": "순수한 청금석 덩이",
+        "desc": "캐릭터 돌파 소재.<br/>「나의 이상에는 한 치의 혼탁함도 존재하지 않는다」<br/>「난 너를 바로잡을 것이다. 이곳에서 인간은 신에게 심판 받지 않는다…」",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Varunada Lazurite Chunk_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×1"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 607,
+        "name": "변환의 먼지",
+        "desc": "원소 돌파 소재를 변질 시켜 원소 속성을 변환하는 아이템.<br/>실용 목적을 제한다면, 사실 연금술은 물질의 본질을 연구하고 변화의 법칙을 탐구하는 학문이며, 궁극적으로 세상과 지맥 흐름의 규칙으로 이어진다.<br/>어떤 목적을 위해 누가 만든 건지는 알 수 없지만, 지상 문명에 흩어져있는 연금술의 최고의 업적과도 같은 이 산물은 결정을 완전히 타성화 시킨 후, 원소 물질을 변환하는 능력을 갖추고 있다. 매우 편리하고 실용적이지만 균형을 깨뜨릴 수 있다는 위험성 또한 숨어있다…",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dust of Azoth_icon.png",
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×9"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 903,
+        "name": "승리의 자수정 덩이",
+        "desc": "캐릭터 돌파 소재.<br/>「이 몸은 세상에서 가장 뛰어나고 존귀하나니」<br/>「천하의 권력은 내가 쥐어야 할 것이다」",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vajrada Amethyst Chunk_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/01/02/35428890/4e6086b9dc09a363886dc42f8673f393_3795911938579587258.png",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1494,
+        "name": "자유로운 터키석 덩이",
+        "desc": "캐릭터 돌파 소재.<br/>「바람의 방향은 항상 바뀌는 거니까」<br/>「언젠가는, 더 빛나는 곳으로 향할 날이 올 거야」",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Chunk_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×1"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 607,
+        "name": "변환의 먼지",
+        "desc": "원소 돌파 소재를 변질 시켜 원소 속성을 변환하는 아이템.<br/>실용 목적을 제한다면, 사실 연금술은 물질의 본질을 연구하고 변화의 법칙을 탐구하는 학문이며, 궁극적으로 세상과 지맥 흐름의 규칙으로 이어진다.<br/>어떤 목적을 위해 누가 만든 건지는 알 수 없지만, 지상 문명에 흩어져있는 연금술의 최고의 업적과도 같은 이 산물은 결정을 완전히 타성화 시킨 후, 원소 물질을 변환하는 능력을 갖추고 있다. 매우 편리하고 실용적이지만 균형을 깨뜨릴 수 있다는 위험성 또한 숨어있다…",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dust of Azoth_icon.png",
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×9"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 903,
+        "name": "승리의 자수정 덩이",
+        "desc": "캐릭터 돌파 소재.<br/>「이 몸은 세상에서 가장 뛰어나고 존귀하나니」<br/>「천하의 권력은 내가 쥐어야 할 것이다」",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vajrada Amethyst Chunk_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/01/02/35428890/4e6086b9dc09a363886dc42f8673f393_3795911938579587258.png",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 445,
+        "name": "단단한 황옥 덩이",
+        "desc": "캐릭터 돌파 소재.<br/>「티바트 대륙에서 유통되고 있는 은전은 전부 나의 피와 살이다」<br/>「난 이 방법으로 인간들의 땀과 지혜, 미래에 대해 보증을 선 것이다」",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Chunk_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×1"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 607,
+        "name": "변환의 먼지",
+        "desc": "원소 돌파 소재를 변질 시켜 원소 속성을 변환하는 아이템.<br/>실용 목적을 제한다면, 사실 연금술은 물질의 본질을 연구하고 변화의 법칙을 탐구하는 학문이며, 궁극적으로 세상과 지맥 흐름의 규칙으로 이어진다.<br/>어떤 목적을 위해 누가 만든 건지는 알 수 없지만, 지상 문명에 흩어져있는 연금술의 최고의 업적과도 같은 이 산물은 결정을 완전히 타성화 시킨 후, 원소 물질을 변환하는 능력을 갖추고 있다. 매우 편리하고 실용적이지만 균형을 깨뜨릴 수 있다는 위험성 또한 숨어있다…",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dust of Azoth_icon.png",
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×9"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 903,
+        "name": "승리의 자수정 덩이",
+        "desc": "캐릭터 돌파 소재.<br/>「이 몸은 세상에서 가장 뛰어나고 존귀하나니」<br/>「천하의 권력은 내가 쥐어야 할 것이다」",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vajrada Amethyst Chunk_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/01/02/35428890/4e6086b9dc09a363886dc42f8673f393_3795911938579587258.png",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 409,
+        "name": "서늘한 빙옥 덩이",
+        "desc": "캐릭터 돌파 소재.<br/>「…미안하구나…」<br/>「너희들이 나와 함께 온 세상의 슬픔을 짊어지도록 했어」",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×1"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 607,
+        "name": "변환의 먼지",
+        "desc": "원소 돌파 소재를 변질 시켜 원소 속성을 변환하는 아이템.<br/>실용 목적을 제한다면, 사실 연금술은 물질의 본질을 연구하고 변화의 법칙을 탐구하는 학문이며, 궁극적으로 세상과 지맥 흐름의 규칙으로 이어진다.<br/>어떤 목적을 위해 누가 만든 건지는 알 수 없지만, 지상 문명에 흩어져있는 연금술의 최고의 업적과도 같은 이 산물은 결정을 완전히 타성화 시킨 후, 원소 물질을 변환하는 능력을 갖추고 있다. 매우 편리하고 실용적이지만 균형을 깨뜨릴 수 있다는 위험성 또한 숨어있다…",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dust of Azoth_icon.png",
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×9"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 903,
+        "name": "승리의 자수정 덩이",
+        "desc": "캐릭터 돌파 소재.<br/>「이 몸은 세상에서 가장 뛰어나고 존귀하나니」<br/>「천하의 권력은 내가 쥐어야 할 것이다」",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vajrada Amethyst Chunk_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/01/02/35428890/4e6086b9dc09a363886dc42f8673f393_3795911938579587258.png",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2677,
+        "name": "자라나는 비취 덩이",
+        "desc": "<p>캐릭터 돌파 소재.</p><p>「아주 기나긴 꿈을 꾸었어…」</p><p>「사람들은 서로 손을 잡고 빙글빙글 돌았어. 현자와 어리석은 자, 무녀와 용사, 인형과 신상까지…」</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/26/194600931/d45535e4a38da93077684ded74ff2ab7_3151227484896090028.PNG",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×1"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 607,
+        "name": "변환의 먼지",
+        "desc": "원소 돌파 소재를 변질 시켜 원소 속성을 변환하는 아이템.<br/>실용 목적을 제한다면, 사실 연금술은 물질의 본질을 연구하고 변화의 법칙을 탐구하는 학문이며, 궁극적으로 세상과 지맥 흐름의 규칙으로 이어진다.<br/>어떤 목적을 위해 누가 만든 건지는 알 수 없지만, 지상 문명에 흩어져있는 연금술의 최고의 업적과도 같은 이 산물은 결정을 완전히 타성화 시킨 후, 원소 물질을 변환하는 능력을 갖추고 있다. 매우 편리하고 실용적이지만 균형을 깨뜨릴 수 있다는 위험성 또한 숨어있다…",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dust of Azoth_icon.png",
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×9"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "관련 소재"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 905,
+        "name": "승리의 자수정 가루",
+        "desc": "캐릭터 돌파 소재",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vajrada Amethyst Sliver_icon.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 904,
+        "name": "승리의 자수정 조각",
+        "desc": "캐릭터 돌파 소재.<br/>「이 몸은 세상에서 가장 뛰어나고 존귀하나니」",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vajrada Amethyst Fragment_icon.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 902,
+        "name": "승리의 자수정",
+        "desc": "캐릭터 돌파 소재.<br/>「이 몸은 세상에서 가장 뛰어나고 존귀하나니」<br/>「천하의 권력은 내가 쥐어야 할 것이다」<br/>「내 백성들에게 꿈을 약속한 적 있다. 바로 천년만년 변하지 않는 『영원』이다」",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vajrada Amethyst Gemstone_icon.png",
+        "displayStyle": "card",
+        "menuId": 9
       }
     ]
   }

@@ -5,16 +5,753 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yanfei_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/avatar.png",
   "filterValues": {
-    "characterRarity": 4,
-    "characterWeapon": "Catalyseur",
     "characterVision": "Pyro",
+    "characterProperty": "Bonus de DGT Pyro",
     "characterRegion": "Port de Liyue",
-    "characterProperty": "Bonus de DGT Pyro"
+    "characterRarity": 4,
+    "characterWeapon": "Catalyseur"
   },
   "menuId": 2,
   "menuName": "Archives des personnages",
   "version": 1729238500,
   "components": {
+    "talent": [
+      {
+        "key": "Attaque normale : Sceau embrasé",
+        "title": "Attaque normale : Sceau embrasé",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/battle_talent_0/battle_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Attaque normale</color>\nTire des boules de feu qui infligent jusqu'à 3 vagues de <color=#ff9999>DGT Pyro</color> .\nLorsqu'une attaque normale touche un ennemi, Yanfei obtient un sceau écarlate. Yanfei peut détenir un maximum de 3 sceaux écarlates, et chaque fois que cet effet se déclenche, la durée des sceaux en sa possession est réinitialisée.\nChaque sceau écarlate diminue la consommation d'endurance de Yanfei, et disparaît lorsque Yanfei quitte le champ de bataille.\n<color=#ffd780>Attaque chargée</color>\nConsomme de l'endurance et tous les sceaux écarlates pour infliger des <color=#ff9999>DGT Pyro de zone</color> aux ennemis en face de Yanfei après un court délai.\nLa portée et l'intensité de ces DGT Pyro de zone augmentent avec le nombre de sceaux écarlates consommés.\n<color=#ffd780>Attaque plongeante</color>\nYanfei concentre son énergie Pyro et plonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis sur la route et des <color=#ff9999>DGT Pyro de zone</color> à l'impact."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Niv.",
+            "values": [
+              "Niv.1",
+              "Niv.2",
+              "Niv.3",
+              "Niv.4",
+              "Niv.5",
+              "Niv.6",
+              "Niv.7",
+              "Niv.8",
+              "Niv.9",
+              "Niv.10",
+              "Niv.11"
+            ]
+          },
+          {
+            "key": "DGT 1er coup",
+            "values": [
+              "58.34%",
+              "62.72%",
+              "67.09%",
+              "72.93%",
+              "77.3%",
+              "81.68%",
+              "87.51%",
+              "93.35%",
+              "99.18%",
+              "105.01%",
+              "110.85%"
+            ]
+          },
+          {
+            "key": "DGT 2e coup",
+            "values": [
+              "52.13%",
+              "56.04%",
+              "59.94%",
+              "65.16%",
+              "69.07%",
+              "72.98%",
+              "78.19%",
+              "83.4%",
+              "88.61%",
+              "93.83%",
+              "99.04%"
+            ]
+          },
+          {
+            "key": "DGT 3e coup",
+            "values": [
+              "76.01%",
+              "81.71%",
+              "87.41%",
+              "95.02%",
+              "100.72%",
+              "106.42%",
+              "114.02%",
+              "121.62%",
+              "129.22%",
+              "136.82%",
+              "144.42%"
+            ]
+          },
+          {
+            "key": "DGT attaque chargée",
+            "values": [
+              "98%/116%/132%/150%/168%",
+              "104%/122%/141%/159%/178%",
+              "110%/129%/149%/168%/188%",
+              "118%/138%/159%/180%/200%",
+              "124%/145%/167%/189%/211%",
+              "129%/152%/175%/198%/221%",
+              "137%/161%/185%/210%/234%",
+              "145%/170%/196%/221%/247%",
+              "152%/179%/206%/233%/260%",
+              "160%/188%/216%/245%/273%",
+              "168%/197%/227%/256%/286%"
+            ]
+          },
+          {
+            "key": "Coût d'endurance attaque chargée",
+            "values": [
+              "50 pts",
+              "50 pts",
+              "50 pts",
+              "50 pts",
+              "50 pts",
+              "50 pts",
+              "50 pts",
+              "50 pts",
+              "50 pts",
+              "50 pts",
+              "50 pts"
+            ]
+          },
+          {
+            "key": "Réduction du coût d'endurance",
+            "values": [
+              "15% par sceau écarlate",
+              "15% par sceau écarlate",
+              "15% par sceau écarlate",
+              "15% par sceau écarlate",
+              "15% par sceau écarlate",
+              "15% par sceau écarlate",
+              "15% par sceau écarlate",
+              "15% par sceau écarlate",
+              "15% par sceau écarlate",
+              "15% par sceau écarlate",
+              "15% par sceau écarlate"
+            ]
+          },
+          {
+            "key": "Durée des sceaux écarlates",
+            "values": [
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s"
+            ]
+          },
+          {
+            "key": "DGT durant la chute",
+            "values": [
+              "56.83%",
+              "61.45%",
+              "66.08%",
+              "72.69%",
+              "77.31%",
+              "82.6%",
+              "89.87%",
+              "97.14%",
+              "104.41%",
+              "112.34%",
+              "120.27%"
+            ]
+          },
+          {
+            "key": "DGT chute basse/élevée",
+            "values": [
+              "113.63%/141.93%",
+              "122.88%/153.49%",
+              "132.13%/165.04%",
+              "145.35%/181.54%",
+              "154.59%/193.1%",
+              "165.17%/206.3%",
+              "179.7%/224.45%",
+              "194.23%/242.61%",
+              "208.77%/260.76%",
+              "224.62%/280.57%",
+              "240.48%/300.37%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 200,
+              "name": "Enseignement de l'Or",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Abondant sous ses terres, il est le nerf de la guerre de Liyue qui tient debout grâce à lui.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Gold_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 629,
+              "name": "Insigne des Pilleurs",
+              "desc": "Un insigne porté avec fierté et qui indique le rang de son propriétaire au sein des Pilleurs de trésors. Leur soif de richesse ne pourra jamais être assouvie... Ceci dit, depuis quand peut-on se vanter d'être un voleur ?",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 199,
+              "name": "Guide de l'Or",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Il représente la transformation et le lien unissant le port, les monts, les terres et les hommes de Liyue : le travail se transforme en or, et ce dernier apporte la prospérité en retour.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1553,
+              "name": "Insigne de corbeau en argent",
+              "desc": "Un insigne en forme de corbeau porté par les Pilleurs de trésors pour se reconnaître entre eux. Pas besoin d'entretien pour adhérer à leur groupe, tant qu'on est suffisamment motivé par le gain et que le courage ne nous fait pas défaut.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 199,
+              "name": "Guide de l'Or",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Il représente la transformation et le lien unissant le port, les monts, les terres et les hommes de Liyue : le travail se transforme en or, et ce dernier apporte la prospérité en retour.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1553,
+              "name": "Insigne de corbeau en argent",
+              "desc": "Un insigne en forme de corbeau porté par les Pilleurs de trésors pour se reconnaître entre eux. Pas besoin d'entretien pour adhérer à leur groupe, tant qu'on est suffisamment motivé par le gain et que le courage ne nous fait pas défaut.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 199,
+              "name": "Guide de l'Or",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Il représente la transformation et le lien unissant le port, les monts, les terres et les hommes de Liyue : le travail se transforme en or, et ce dernier apporte la prospérité en retour.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1553,
+              "name": "Insigne de corbeau en argent",
+              "desc": "Un insigne en forme de corbeau porté par les Pilleurs de trésors pour se reconnaître entre eux. Pas besoin d'entretien pour adhérer à leur groupe, tant qu'on est suffisamment motivé par le gain et que le courage ne nous fait pas défaut.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 199,
+              "name": "Guide de l'Or",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Il représente la transformation et le lien unissant le port, les monts, les terres et les hommes de Liyue : le travail se transforme en or, et ce dernier apporte la prospérité en retour.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1553,
+              "name": "Insigne de corbeau en argent",
+              "desc": "Un insigne en forme de corbeau porté par les Pilleurs de trésors pour se reconnaître entre eux. Pas besoin d'entretien pour adhérer à leur groupe, tant qu'on est suffisamment motivé par le gain et que le courage ne nous fait pas défaut.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 198,
+              "name": "Philosophie de l'Or",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Liyue n'en manque pas, mais sa véritable richesse se trouve dans le cœur de ses habitants.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 760,
+              "name": "Insigne de corbeau en or",
+              "desc": "Un insigne qui représente la fierté des Pilleurs de trésors. Ils ne reculeront jamais devant rien pour s'emparer du moindre trésor, qu'il soit enfoui sous de vastes plaines ou sous l'océan.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1576,
+              "name": "Branche de jade cramoisi",
+              "desc": "Nourrie par la puissance du roi dragon, cette branche osseuse scintille de mille couleurs étranges et uniques.<br/>La haine qui parcourait les sources naturelles a embrassé le clair de lune froid, et c'est ainsi que sont nées et qu'ont poussé ces branches cristallines...<br/>Même si elles sont tranchées au cours de la bataille, ces branches imprégnées du sang du dragon continuent de bruisser comme si elles ne pouvaient jamais trouver la paix.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Bloodjade Branch_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 198,
+              "name": "Philosophie de l'Or",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Liyue n'en manque pas, mais sa véritable richesse se trouve dans le cœur de ses habitants.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 760,
+              "name": "Insigne de corbeau en or",
+              "desc": "Un insigne qui représente la fierté des Pilleurs de trésors. Ils ne reculeront jamais devant rien pour s'emparer du moindre trésor, qu'il soit enfoui sous de vastes plaines ou sous l'océan.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1576,
+              "name": "Branche de jade cramoisi",
+              "desc": "Nourrie par la puissance du roi dragon, cette branche osseuse scintille de mille couleurs étranges et uniques.<br/>La haine qui parcourait les sources naturelles a embrassé le clair de lune froid, et c'est ainsi que sont nées et qu'ont poussé ces branches cristallines...<br/>Même si elles sont tranchées au cours de la bataille, ces branches imprégnées du sang du dragon continuent de bruisser comme si elles ne pouvaient jamais trouver la paix.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Bloodjade Branch_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 198,
+              "name": "Philosophie de l'Or",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Liyue n'en manque pas, mais sa véritable richesse se trouve dans le cœur de ses habitants.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 760,
+              "name": "Insigne de corbeau en or",
+              "desc": "Un insigne qui représente la fierté des Pilleurs de trésors. Ils ne reculeront jamais devant rien pour s'emparer du moindre trésor, qu'il soit enfoui sous de vastes plaines ou sous l'océan.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1576,
+              "name": "Branche de jade cramoisi",
+              "desc": "Nourrie par la puissance du roi dragon, cette branche osseuse scintille de mille couleurs étranges et uniques.<br/>La haine qui parcourait les sources naturelles a embrassé le clair de lune froid, et c'est ainsi que sont nées et qu'ont poussé ces branches cristallines...<br/>Même si elles sont tranchées au cours de la bataille, ces branches imprégnées du sang du dragon continuent de bruisser comme si elles ne pouvaient jamais trouver la paix.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Bloodjade Branch_icon.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 198,
+              "name": "Philosophie de l'Or",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Liyue n'en manque pas, mais sa véritable richesse se trouve dans le cœur de ses habitants.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 760,
+              "name": "Insigne de corbeau en or",
+              "desc": "Un insigne qui représente la fierté des Pilleurs de trésors. Ils ne reculeront jamais devant rien pour s'emparer du moindre trésor, qu'il soit enfoui sous de vastes plaines ou sous l'océan.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1576,
+              "name": "Branche de jade cramoisi",
+              "desc": "Nourrie par la puissance du roi dragon, cette branche osseuse scintille de mille couleurs étranges et uniques.<br/>La haine qui parcourait les sources naturelles a embrassé le clair de lune froid, et c'est ainsi que sont nées et qu'ont poussé ces branches cristallines...<br/>Même si elles sont tranchées au cours de la bataille, ces branches imprégnées du sang du dragon continuent de bruisser comme si elles ne pouvaient jamais trouver la paix.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Bloodjade Branch_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "Couronne de la sagesse",
+              "desc": "Matériau d'amélioration d'aptitude rare.<br/>Un support utilisé dans les temps anciens pour conserver et transmettre le savoir. Bien que de nos jours les connaissances se transmettent de différentes manières, autant orales qu'écrites, cet artéfact n'a pas perdu la moindre once de son pouvoir d'antan.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/battle_talent_0/battle_talent_0.gif"
+      },
+      {
+        "key": "Pacte des flammes",
+        "title": "Pacte des flammes",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/battle_talent_1/battle_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Yanfei en appelle aux flammes dévastatrices, infligeant des <color=#ff9999>DGT Pyro de zone</color> .\nLorsque des ennemis sont touchés, Yanfei gagne le nombre maximum de sceaux écarlates.\nEn plus de leur valeur juridique, les sceaux de Yanfei présentent des conditions d'utilisation très personnalisées. Après tout, ce n'est pas comme si le Bureau des affaires civiles pouvait changer les lois de la nature."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Niv.",
+            "values": [
+              "Niv.1",
+              "Niv.2",
+              "Niv.3",
+              "Niv.4",
+              "Niv.5",
+              "Niv.6",
+              "Niv.7",
+              "Niv.8",
+              "Niv.9",
+              "Niv.10",
+              "Niv.11",
+              "Niv.12",
+              "Niv.13",
+              "Niv.14"
+            ]
+          },
+          {
+            "key": "DGT compétence",
+            "values": [
+              "169.6%",
+              "182.32%",
+              "195.04%",
+              "212%",
+              "224.72%",
+              "237.44%",
+              "254.4%",
+              "271.36%",
+              "288.32%",
+              "305.28%",
+              "322.24%",
+              "339.2%",
+              "360.4%"
+            ]
+          },
+          {
+            "key": "Temps de recharge",
+            "values": [
+              "9 s",
+              "9 s",
+              "9 s",
+              "9 s",
+              "9 s",
+              "9 s",
+              "9 s",
+              "9 s",
+              "9 s",
+              "9 s",
+              "9 s",
+              "9 s",
+              "9 s"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/battle_talent_1/battle_talent_1.gif"
+      },
+      {
+        "key": "Application des peines",
+        "title": "Application des peines",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/battle_talent_2/battle_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Invoque une explosion de flammes intenses qui jaillit vers les ennemis proches, infligeant des <color=#ff9999>DGT Pyro de zone</color> et conférant à Yanfei le nombre maximum de sceaux écarlates, tout en appliquant l'effet Brillance.\n<color=#ffd780>Brillance</color>\nConfère les effets suivants :\n· Confère à Yanfei un sceau écarlate à intervalles réguliers.\n· Augmente les DGT infligés par ses attaques chargées.\nLes effets de Brillance se dissipent lorsque Yanfei quitte le champ de bataille ou qu'elle est vaincue.\n« Veuillez trouver ici les termes de cette question de vie ou de mort, et par là j'entends ma vie et votre mort ! »"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Niv.",
+            "values": [
+              "Niv.1",
+              "Niv.2",
+              "Niv.3",
+              "Niv.4",
+              "Niv.5",
+              "Niv.6",
+              "Niv.7",
+              "Niv.8",
+              "Niv.9",
+              "Niv.10",
+              "Niv.11",
+              "Niv.12",
+              "Niv.13",
+              "Niv.14"
+            ]
+          },
+          {
+            "key": "DGT compétence",
+            "values": [
+              "182.4%",
+              "196.08%",
+              "209.76%",
+              "228%",
+              "241.68%",
+              "255.36%",
+              "273.6%",
+              "291.84%",
+              "310.08%",
+              "328.32%",
+              "346.56%",
+              "364.8%",
+              "387.6%",
+              "410.4%"
+            ]
+          },
+          {
+            "key": "Intervalle entre les sceaux écarlates",
+            "values": [
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s"
+            ]
+          },
+          {
+            "key": "Bonus ATQ chargée",
+            "values": [
+              "33.4%",
+              "35.4%",
+              "37.4%",
+              "40%",
+              "42%",
+              "44%",
+              "46.6%",
+              "49.2%",
+              "51.8%",
+              "54.4%",
+              "57%",
+              "59.6%",
+              "62.2%",
+              "64.8%"
+            ]
+          },
+          {
+            "key": "Durée",
+            "values": [
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s"
+            ]
+          },
+          {
+            "key": "Temps de recharge",
+            "values": [
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s"
+            ]
+          },
+          {
+            "key": "Énergie élémentaire",
+            "values": [
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/battle_talent_2/battle_talent_2.gif"
+      },
+      {
+        "key": "Dispositions supplémentaires",
+        "title": "Dispositions supplémentaires",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/const_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Lorsque Yanfei consomme un sceau écarlate en utilisant une attaque chargée, chaque sceau écarlate augmente le <color=#ff9999>bonus de DGT Pyro</color> de Yanfei de 5 % pour 6 s. Utiliser une attaque chargée avant la fin de la durée d'un effet dissipe l'effet précédent."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Œil de la justice",
+        "title": "Œil de la justice",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/const_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Quand les attaques chargées de Yanfei infligent des coups CRIT aux ennemis, elle inflige des <color=#ff9999>DGT Pyro de zone</color> supplémentaires équivalant à 80 % de son ATQ. Ces DGT comptent comme des DGT d'attaque chargée."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Connaissance du terrain",
+        "title": "Connaissance du terrain",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/const_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Affiche l'emplacement des <color=#ffd780>produits de Liyue</color> sur la mini-carte."
+          }
+        ],
+        "attributes": null
+      }
+    ],
     "customize": [
       {
         "type": "Heading",
@@ -301,133 +1038,6 @@
       {
         "type": "RichText",
         "text": "<color=#ffffffd9>Résumé :</color>\nXiao rencontre Yanfei lors de l'évènement de la Version 2.7 « Sentier Périlleux ». Il se retrouve coincé dans une illusion liée à son ancien camarade le Yaksha Bosacius. Pour en sortir, il devra s'allier à Yanfei, Yelan, Kuki Shinobu, Ushi, Arataki Itto, au Voyageur / à la Voyageuse et à Paimon."
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Nom",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Yanfei</color>"
-          }
-        ]
-      },
-      {
-        "key": "Anniversaire",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>28/7</color>"
-          }
-        ]
-      },
-      {
-        "key": "Constellation",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Bestia Iustitia</color>"
-          }
-        ]
-      },
-      {
-        "key": "Titre",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Sage innocence</color>"
-          }
-        ]
-      },
-      {
-        "key": "Œil divin",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Pyro</color>"
-          }
-        ]
-      },
-      {
-        "key": "Affiliation",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Cabinet juridique de Yanfei</color>"
-          }
-        ]
-      },
-      {
-        "key": "Voix chinoise",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>苏子芜 (Su Ziwu)</color>"
-          }
-        ]
-      },
-      {
-        "key": "Voix anglaise",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Lizzie Freeman</color>"
-          }
-        ]
-      },
-      {
-        "key": "Voix japonaise",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>花守ゆみり (HANAMORI Yumiri)</color>"
-          }
-        ]
-      },
-      {
-        "key": "Voix coréenne",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>조경이 (Jo Kyeong-lee)</color>"
-          }
-        ]
-      },
-      {
-        "key": "Plat Spécial",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 161,
-            "name": "« À ma façon »",
-            "desc": "Spécialité culinaire de Yanfei. Du tofu aux œufs de crabe préparé avec une incroyable régularité dans la présentation. Les proportions et les saveurs suivent à la lettre les « lois du tofu aux œufs de crabe » citées dans la recette, sans la moindre omission.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/\"My Way\"_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Carte du Personnage",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3960,
-            "name": "Yanfei",
-            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Yanfei «&nbsp;Sage innocence&nbsp;»</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">Celui qui ne révise pas les classiques est susceptible de tomber sous le coup de la loi.</span></p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/07/03/35653081/96cf1ba5e8affb67f2427407e37f0e10_1242813218230052108.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Ajout à la version",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>1.5</color>"
-          }
-        ]
       }
     ],
     "ascension": [
@@ -1258,7 +1868,232 @@
         "desc": "... Je sais ! Je vais réchauffer un peu ce plat avant de le manger."
       }
     ],
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/constellation_1.png",
+        "name": "Plaidoyer convaincant",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Lorsque Yanfei utilise une attaque chargée, chaque sceau écarlate existant réduit sa consommation d'endurance de 10 % supplémentaires et augmente la RÉS à l'interruption lors de son déclenchement."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/constellation_2.png",
+        "name": "Verdict final",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Le taux CRIT des attaques chargées de Yanfei augmente de 20 % lorsqu'elles touchent des ennemis dont les PV sont inférieurs à 50 %."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/constellation_3.png",
+        "name": "Mise sous scellés",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Niveau d'aptitude <color=#ffd780>Pacte des flammes</color> +3.\nNiveau max : 15"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/constellation_4.png",
+        "name": "Droit commun",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Application des peines</color> confère les effets suivants :\nGénère un bouclier qui absorbe une quantité de DGT équivalant à 45 % des PV max et dure 15 s.\nLe bouclier est efficace à 250 % contre les <color=#ff9999>DGT Pyro</color> ."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/constellation_5.png",
+        "name": "Déclaration sous serment",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Niveau d'aptitude <color=#ffd780>Application des peines</color> +3.\nNiveau max : 15"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/constellation_6.png",
+        "name": "Clause complémentaire",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Augmente le nombre max de sceaux écarlates de 1."
+          }
+        ]
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/avatar_header.png"
+      },
+      {
+        "key": "Avatar",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/avatar.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Tenue Originale - Règle d'or"
+          }
+        ]
+      },
+      {
+        "key": "Animation d'inaction 1",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/158750877/7c3aec1eea410847ce2c2dd8bdc9923b_2390432103491271206.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Tenue Originale - Règle d'or"
+          }
+        ]
+      },
+      {
+        "key": "Animation d'inaction 2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/158750877/dd61c6d2e7360c9d3a6f78ba9c8ea47d_4087339097848349804.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Tenue Originale - Règle d'or"
+          }
+        ]
+      }
+    ],
     "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=42&center=1782.89,-731.47&zoom=-2.50",
+    "baseInfo": [
+      {
+        "key": "Nom",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Yanfei</color>"
+          }
+        ]
+      },
+      {
+        "key": "Anniversaire",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>28/7</color>"
+          }
+        ]
+      },
+      {
+        "key": "Constellation",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Bestia Iustitia</color>"
+          }
+        ]
+      },
+      {
+        "key": "Titre",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Sage innocence</color>"
+          }
+        ]
+      },
+      {
+        "key": "Œil divin",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Pyro</color>"
+          }
+        ]
+      },
+      {
+        "key": "Affiliation",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Cabinet juridique de Yanfei</color>"
+          }
+        ]
+      },
+      {
+        "key": "Voix chinoise",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>苏子芜 (Su Ziwu)</color>"
+          }
+        ]
+      },
+      {
+        "key": "Voix anglaise",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Lizzie Freeman</color>"
+          }
+        ]
+      },
+      {
+        "key": "Voix japonaise",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>花守ゆみり (HANAMORI Yumiri)</color>"
+          }
+        ]
+      },
+      {
+        "key": "Voix coréenne",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>조경이 (Jo Kyeong-lee)</color>"
+          }
+        ]
+      },
+      {
+        "key": "Plat Spécial",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 161,
+            "name": "« À ma façon »",
+            "desc": "Spécialité culinaire de Yanfei. Du tofu aux œufs de crabe préparé avec une incroyable régularité dans la présentation. Les proportions et les saveurs suivent à la lettre les « lois du tofu aux œufs de crabe » citées dans la recette, sans la moindre omission.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/\"My Way\"_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Carte du Personnage",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3960,
+            "name": "Yanfei",
+            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Yanfei «&nbsp;Sage innocence&nbsp;»</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">Celui qui ne révise pas les classiques est susceptible de tomber sous le coup de la loi.</span></p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/07/03/35653081/96cf1ba5e8affb67f2427407e37f0e10_1242813218230052108.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Ajout à la version",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>1.5</color>"
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "title": "Info. personnage",
@@ -1329,841 +2164,6 @@
           {
             "type": "RichText",
             "text": "Yanfei est issue d'un père appartenant à une race de créatures mystiques, et d'une mère humaine exerçant le métier de marchande. Née en temps de paix, Yanfei n'eut pas à signer de contrat avec le Souverain de la Roche, mais dû promettre en revanche à ses parents de vivre heureuse.\nExperte en son domaine, Yanfei n'est pas étrangère à l'utilisation des failles du système juridique – parfois pour son propre compte, d'autres fois pour le compte des autres.\nLa jeune femme n'est pas, comme on pourrait le croire, en permanence à cheval sur les règles, et refuse de se voir contraindre d'aucune sorte par quelque règlement.\nMais si elle utilise parfois les failles de la loi, elle le fait pour son propre bien-être, et pour celui de Liyue : jamais elle ne le fera avec quelque mauvaise intention.\nLors de son annuelle révision et amendement des lois, la Megrez Ningguang prend généralement comme référence la conduite passée de Yanfei, un peu comme si cette dernière était officiellement là pour soumettre les textes juridiques à l'épreuve.\nD'un certain point de vue, on pourrait dire que Yanfei améliore les lois au moindre coût... C'est aussi la raison pour laquelle elle n'a jamais été accusée d'exploiter la loi à son avantage.\nYanfei croit fermement que la loi est indispensable à toute forme d'organisation, et n'aspire qu'à vivre librement dans les limites de ce cadre.\nAdeptes et mortels protègent chacun Liyue à leur façon.\nC'est pourquoi Yanfei possède également un œil divin – et que cet œil divin est de valeur égale à sa foi en ces principes."
-          }
-        ]
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/avatar_header.png"
-      },
-      {
-        "key": "Avatar",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/avatar.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Tenue Originale - Règle d'or"
-          }
-        ]
-      },
-      {
-        "key": "Animation d'inaction 1",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/158750877/7c3aec1eea410847ce2c2dd8bdc9923b_2390432103491271206.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Tenue Originale - Règle d'or"
-          }
-        ]
-      },
-      {
-        "key": "Animation d'inaction 2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/158750877/dd61c6d2e7360c9d3a6f78ba9c8ea47d_4087339097848349804.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Tenue Originale - Règle d'or"
-          }
-        ]
-      }
-    ],
-    "talent": [
-      {
-        "key": "Attaque normale : Sceau embrasé",
-        "title": "Attaque normale : Sceau embrasé",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/battle_talent_0/battle_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Attaque normale</color>\nTire des boules de feu qui infligent jusqu'à 3 vagues de <color=#ff9999>DGT Pyro</color> .\nLorsqu'une attaque normale touche un ennemi, Yanfei obtient un sceau écarlate. Yanfei peut détenir un maximum de 3 sceaux écarlates, et chaque fois que cet effet se déclenche, la durée des sceaux en sa possession est réinitialisée.\nChaque sceau écarlate diminue la consommation d'endurance de Yanfei, et disparaît lorsque Yanfei quitte le champ de bataille.\n<color=#ffd780>Attaque chargée</color>\nConsomme de l'endurance et tous les sceaux écarlates pour infliger des <color=#ff9999>DGT Pyro de zone</color> aux ennemis en face de Yanfei après un court délai.\nLa portée et l'intensité de ces DGT Pyro de zone augmentent avec le nombre de sceaux écarlates consommés.\n<color=#ffd780>Attaque plongeante</color>\nYanfei concentre son énergie Pyro et plonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis sur la route et des <color=#ff9999>DGT Pyro de zone</color> à l'impact."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Niv.",
-            "values": [
-              "Niv.1",
-              "Niv.2",
-              "Niv.3",
-              "Niv.4",
-              "Niv.5",
-              "Niv.6",
-              "Niv.7",
-              "Niv.8",
-              "Niv.9",
-              "Niv.10",
-              "Niv.11"
-            ]
-          },
-          {
-            "key": "DGT 1er coup",
-            "values": [
-              "58.34%",
-              "62.72%",
-              "67.09%",
-              "72.93%",
-              "77.3%",
-              "81.68%",
-              "87.51%",
-              "93.35%",
-              "99.18%",
-              "105.01%",
-              "110.85%"
-            ]
-          },
-          {
-            "key": "DGT 2e coup",
-            "values": [
-              "52.13%",
-              "56.04%",
-              "59.94%",
-              "65.16%",
-              "69.07%",
-              "72.98%",
-              "78.19%",
-              "83.4%",
-              "88.61%",
-              "93.83%",
-              "99.04%"
-            ]
-          },
-          {
-            "key": "DGT 3e coup",
-            "values": [
-              "76.01%",
-              "81.71%",
-              "87.41%",
-              "95.02%",
-              "100.72%",
-              "106.42%",
-              "114.02%",
-              "121.62%",
-              "129.22%",
-              "136.82%",
-              "144.42%"
-            ]
-          },
-          {
-            "key": "DGT attaque chargée",
-            "values": [
-              "98%/116%/132%/150%/168%",
-              "104%/122%/141%/159%/178%",
-              "110%/129%/149%/168%/188%",
-              "118%/138%/159%/180%/200%",
-              "124%/145%/167%/189%/211%",
-              "129%/152%/175%/198%/221%",
-              "137%/161%/185%/210%/234%",
-              "145%/170%/196%/221%/247%",
-              "152%/179%/206%/233%/260%",
-              "160%/188%/216%/245%/273%",
-              "168%/197%/227%/256%/286%"
-            ]
-          },
-          {
-            "key": "Coût d'endurance attaque chargée",
-            "values": [
-              "50 pts",
-              "50 pts",
-              "50 pts",
-              "50 pts",
-              "50 pts",
-              "50 pts",
-              "50 pts",
-              "50 pts",
-              "50 pts",
-              "50 pts",
-              "50 pts"
-            ]
-          },
-          {
-            "key": "Réduction du coût d'endurance",
-            "values": [
-              "15% par sceau écarlate",
-              "15% par sceau écarlate",
-              "15% par sceau écarlate",
-              "15% par sceau écarlate",
-              "15% par sceau écarlate",
-              "15% par sceau écarlate",
-              "15% par sceau écarlate",
-              "15% par sceau écarlate",
-              "15% par sceau écarlate",
-              "15% par sceau écarlate",
-              "15% par sceau écarlate"
-            ]
-          },
-          {
-            "key": "Durée des sceaux écarlates",
-            "values": [
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s"
-            ]
-          },
-          {
-            "key": "DGT durant la chute",
-            "values": [
-              "56.83%",
-              "61.45%",
-              "66.08%",
-              "72.69%",
-              "77.31%",
-              "82.6%",
-              "89.87%",
-              "97.14%",
-              "104.41%",
-              "112.34%",
-              "120.27%"
-            ]
-          },
-          {
-            "key": "DGT chute basse/élevée",
-            "values": [
-              "113.63%/141.93%",
-              "122.88%/153.49%",
-              "132.13%/165.04%",
-              "145.35%/181.54%",
-              "154.59%/193.1%",
-              "165.17%/206.3%",
-              "179.7%/224.45%",
-              "194.23%/242.61%",
-              "208.77%/260.76%",
-              "224.62%/280.57%",
-              "240.48%/300.37%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 200,
-              "name": "Enseignement de l'Or",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Abondant sous ses terres, il est le nerf de la guerre de Liyue qui tient debout grâce à lui.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Gold_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 629,
-              "name": "Insigne des Pilleurs",
-              "desc": "Un insigne porté avec fierté et qui indique le rang de son propriétaire au sein des Pilleurs de trésors. Leur soif de richesse ne pourra jamais être assouvie... Ceci dit, depuis quand peut-on se vanter d'être un voleur ?",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 199,
-              "name": "Guide de l'Or",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Il représente la transformation et le lien unissant le port, les monts, les terres et les hommes de Liyue : le travail se transforme en or, et ce dernier apporte la prospérité en retour.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1553,
-              "name": "Insigne de corbeau en argent",
-              "desc": "Un insigne en forme de corbeau porté par les Pilleurs de trésors pour se reconnaître entre eux. Pas besoin d'entretien pour adhérer à leur groupe, tant qu'on est suffisamment motivé par le gain et que le courage ne nous fait pas défaut.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 199,
-              "name": "Guide de l'Or",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Il représente la transformation et le lien unissant le port, les monts, les terres et les hommes de Liyue : le travail se transforme en or, et ce dernier apporte la prospérité en retour.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1553,
-              "name": "Insigne de corbeau en argent",
-              "desc": "Un insigne en forme de corbeau porté par les Pilleurs de trésors pour se reconnaître entre eux. Pas besoin d'entretien pour adhérer à leur groupe, tant qu'on est suffisamment motivé par le gain et que le courage ne nous fait pas défaut.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 199,
-              "name": "Guide de l'Or",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Il représente la transformation et le lien unissant le port, les monts, les terres et les hommes de Liyue : le travail se transforme en or, et ce dernier apporte la prospérité en retour.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1553,
-              "name": "Insigne de corbeau en argent",
-              "desc": "Un insigne en forme de corbeau porté par les Pilleurs de trésors pour se reconnaître entre eux. Pas besoin d'entretien pour adhérer à leur groupe, tant qu'on est suffisamment motivé par le gain et que le courage ne nous fait pas défaut.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 199,
-              "name": "Guide de l'Or",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Il représente la transformation et le lien unissant le port, les monts, les terres et les hommes de Liyue : le travail se transforme en or, et ce dernier apporte la prospérité en retour.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1553,
-              "name": "Insigne de corbeau en argent",
-              "desc": "Un insigne en forme de corbeau porté par les Pilleurs de trésors pour se reconnaître entre eux. Pas besoin d'entretien pour adhérer à leur groupe, tant qu'on est suffisamment motivé par le gain et que le courage ne nous fait pas défaut.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 198,
-              "name": "Philosophie de l'Or",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Liyue n'en manque pas, mais sa véritable richesse se trouve dans le cœur de ses habitants.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 760,
-              "name": "Insigne de corbeau en or",
-              "desc": "Un insigne qui représente la fierté des Pilleurs de trésors. Ils ne reculeront jamais devant rien pour s'emparer du moindre trésor, qu'il soit enfoui sous de vastes plaines ou sous l'océan.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1576,
-              "name": "Branche de jade cramoisi",
-              "desc": "Nourrie par la puissance du roi dragon, cette branche osseuse scintille de mille couleurs étranges et uniques.<br/>La haine qui parcourait les sources naturelles a embrassé le clair de lune froid, et c'est ainsi que sont nées et qu'ont poussé ces branches cristallines...<br/>Même si elles sont tranchées au cours de la bataille, ces branches imprégnées du sang du dragon continuent de bruisser comme si elles ne pouvaient jamais trouver la paix.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Bloodjade Branch_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 198,
-              "name": "Philosophie de l'Or",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Liyue n'en manque pas, mais sa véritable richesse se trouve dans le cœur de ses habitants.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 760,
-              "name": "Insigne de corbeau en or",
-              "desc": "Un insigne qui représente la fierté des Pilleurs de trésors. Ils ne reculeront jamais devant rien pour s'emparer du moindre trésor, qu'il soit enfoui sous de vastes plaines ou sous l'océan.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1576,
-              "name": "Branche de jade cramoisi",
-              "desc": "Nourrie par la puissance du roi dragon, cette branche osseuse scintille de mille couleurs étranges et uniques.<br/>La haine qui parcourait les sources naturelles a embrassé le clair de lune froid, et c'est ainsi que sont nées et qu'ont poussé ces branches cristallines...<br/>Même si elles sont tranchées au cours de la bataille, ces branches imprégnées du sang du dragon continuent de bruisser comme si elles ne pouvaient jamais trouver la paix.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Bloodjade Branch_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 198,
-              "name": "Philosophie de l'Or",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Liyue n'en manque pas, mais sa véritable richesse se trouve dans le cœur de ses habitants.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 760,
-              "name": "Insigne de corbeau en or",
-              "desc": "Un insigne qui représente la fierté des Pilleurs de trésors. Ils ne reculeront jamais devant rien pour s'emparer du moindre trésor, qu'il soit enfoui sous de vastes plaines ou sous l'océan.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1576,
-              "name": "Branche de jade cramoisi",
-              "desc": "Nourrie par la puissance du roi dragon, cette branche osseuse scintille de mille couleurs étranges et uniques.<br/>La haine qui parcourait les sources naturelles a embrassé le clair de lune froid, et c'est ainsi que sont nées et qu'ont poussé ces branches cristallines...<br/>Même si elles sont tranchées au cours de la bataille, ces branches imprégnées du sang du dragon continuent de bruisser comme si elles ne pouvaient jamais trouver la paix.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Bloodjade Branch_icon.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 198,
-              "name": "Philosophie de l'Or",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'or est le symbole du Pays de la Roche.<br/>Liyue n'en manque pas, mais sa véritable richesse se trouve dans le cœur de ses habitants.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 760,
-              "name": "Insigne de corbeau en or",
-              "desc": "Un insigne qui représente la fierté des Pilleurs de trésors. Ils ne reculeront jamais devant rien pour s'emparer du moindre trésor, qu'il soit enfoui sous de vastes plaines ou sous l'océan.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1576,
-              "name": "Branche de jade cramoisi",
-              "desc": "Nourrie par la puissance du roi dragon, cette branche osseuse scintille de mille couleurs étranges et uniques.<br/>La haine qui parcourait les sources naturelles a embrassé le clair de lune froid, et c'est ainsi que sont nées et qu'ont poussé ces branches cristallines...<br/>Même si elles sont tranchées au cours de la bataille, ces branches imprégnées du sang du dragon continuent de bruisser comme si elles ne pouvaient jamais trouver la paix.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Bloodjade Branch_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "Couronne de la sagesse",
-              "desc": "Matériau d'amélioration d'aptitude rare.<br/>Un support utilisé dans les temps anciens pour conserver et transmettre le savoir. Bien que de nos jours les connaissances se transmettent de différentes manières, autant orales qu'écrites, cet artéfact n'a pas perdu la moindre once de son pouvoir d'antan.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/battle_talent_0/battle_talent_0.gif"
-      },
-      {
-        "key": "Pacte des flammes",
-        "title": "Pacte des flammes",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/battle_talent_1/battle_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Yanfei en appelle aux flammes dévastatrices, infligeant des <color=#ff9999>DGT Pyro de zone</color> .\nLorsque des ennemis sont touchés, Yanfei gagne le nombre maximum de sceaux écarlates.\nEn plus de leur valeur juridique, les sceaux de Yanfei présentent des conditions d'utilisation très personnalisées. Après tout, ce n'est pas comme si le Bureau des affaires civiles pouvait changer les lois de la nature."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Niv.",
-            "values": [
-              "Niv.1",
-              "Niv.2",
-              "Niv.3",
-              "Niv.4",
-              "Niv.5",
-              "Niv.6",
-              "Niv.7",
-              "Niv.8",
-              "Niv.9",
-              "Niv.10",
-              "Niv.11",
-              "Niv.12",
-              "Niv.13",
-              "Niv.14"
-            ]
-          },
-          {
-            "key": "DGT compétence",
-            "values": [
-              "169.6%",
-              "182.32%",
-              "195.04%",
-              "212%",
-              "224.72%",
-              "237.44%",
-              "254.4%",
-              "271.36%",
-              "288.32%",
-              "305.28%",
-              "322.24%",
-              "339.2%",
-              "360.4%"
-            ]
-          },
-          {
-            "key": "Temps de recharge",
-            "values": [
-              "9 s",
-              "9 s",
-              "9 s",
-              "9 s",
-              "9 s",
-              "9 s",
-              "9 s",
-              "9 s",
-              "9 s",
-              "9 s",
-              "9 s",
-              "9 s",
-              "9 s"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/battle_talent_1/battle_talent_1.gif"
-      },
-      {
-        "key": "Application des peines",
-        "title": "Application des peines",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/battle_talent_2/battle_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Invoque une explosion de flammes intenses qui jaillit vers les ennemis proches, infligeant des <color=#ff9999>DGT Pyro de zone</color> et conférant à Yanfei le nombre maximum de sceaux écarlates, tout en appliquant l'effet Brillance.\n<color=#ffd780>Brillance</color>\nConfère les effets suivants :\n· Confère à Yanfei un sceau écarlate à intervalles réguliers.\n· Augmente les DGT infligés par ses attaques chargées.\nLes effets de Brillance se dissipent lorsque Yanfei quitte le champ de bataille ou qu'elle est vaincue.\n« Veuillez trouver ici les termes de cette question de vie ou de mort, et par là j'entends ma vie et votre mort ! »"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Niv.",
-            "values": [
-              "Niv.1",
-              "Niv.2",
-              "Niv.3",
-              "Niv.4",
-              "Niv.5",
-              "Niv.6",
-              "Niv.7",
-              "Niv.8",
-              "Niv.9",
-              "Niv.10",
-              "Niv.11",
-              "Niv.12",
-              "Niv.13",
-              "Niv.14"
-            ]
-          },
-          {
-            "key": "DGT compétence",
-            "values": [
-              "182.4%",
-              "196.08%",
-              "209.76%",
-              "228%",
-              "241.68%",
-              "255.36%",
-              "273.6%",
-              "291.84%",
-              "310.08%",
-              "328.32%",
-              "346.56%",
-              "364.8%",
-              "387.6%",
-              "410.4%"
-            ]
-          },
-          {
-            "key": "Intervalle entre les sceaux écarlates",
-            "values": [
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s"
-            ]
-          },
-          {
-            "key": "Bonus ATQ chargée",
-            "values": [
-              "33.4%",
-              "35.4%",
-              "37.4%",
-              "40%",
-              "42%",
-              "44%",
-              "46.6%",
-              "49.2%",
-              "51.8%",
-              "54.4%",
-              "57%",
-              "59.6%",
-              "62.2%",
-              "64.8%"
-            ]
-          },
-          {
-            "key": "Durée",
-            "values": [
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s"
-            ]
-          },
-          {
-            "key": "Temps de recharge",
-            "values": [
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s"
-            ]
-          },
-          {
-            "key": "Énergie élémentaire",
-            "values": [
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/battle_talent_2/battle_talent_2.gif"
-      },
-      {
-        "key": "Dispositions supplémentaires",
-        "title": "Dispositions supplémentaires",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/const_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Lorsque Yanfei consomme un sceau écarlate en utilisant une attaque chargée, chaque sceau écarlate augmente le <color=#ff9999>bonus de DGT Pyro</color> de Yanfei de 5 % pour 6 s. Utiliser une attaque chargée avant la fin de la durée d'un effet dissipe l'effet précédent."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Œil de la justice",
-        "title": "Œil de la justice",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/const_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Quand les attaques chargées de Yanfei infligent des coups CRIT aux ennemis, elle inflige des <color=#ff9999>DGT Pyro de zone</color> supplémentaires équivalant à 80 % de son ATQ. Ces DGT comptent comme des DGT d'attaque chargée."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Connaissance du terrain",
-        "title": "Connaissance du terrain",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/const_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Affiche l'emplacement des <color=#ffd780>produits de Liyue</color> sur la mini-carte."
-          }
-        ],
-        "attributes": null
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/constellation_1.png",
-        "name": "Plaidoyer convaincant",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Lorsque Yanfei utilise une attaque chargée, chaque sceau écarlate existant réduit sa consommation d'endurance de 10 % supplémentaires et augmente la RÉS à l'interruption lors de son déclenchement."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/constellation_2.png",
-        "name": "Verdict final",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Le taux CRIT des attaques chargées de Yanfei augmente de 20 % lorsqu'elles touchent des ennemis dont les PV sont inférieurs à 50 %."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/constellation_3.png",
-        "name": "Mise sous scellés",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Niveau d'aptitude <color=#ffd780>Pacte des flammes</color> +3.\nNiveau max : 15"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/constellation_4.png",
-        "name": "Droit commun",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Application des peines</color> confère les effets suivants :\nGénère un bouclier qui absorbe une quantité de DGT équivalant à 45 % des PV max et dure 15 s.\nLe bouclier est efficace à 250 % contre les <color=#ff9999>DGT Pyro</color> ."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/constellation_5.png",
-        "name": "Déclaration sous serment",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Niveau d'aptitude <color=#ffd780>Application des peines</color> +3.\nNiveau max : 15"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/烟绯/constellation_6.png",
-        "name": "Clause complémentaire",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Augmente le nombre max de sceaux écarlates de 1."
           }
         ]
       }

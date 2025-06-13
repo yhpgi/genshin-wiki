@@ -5,91 +5,963 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Shenhe_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/avatar.png",
   "filterValues": {
-    "characterWeapon": "Mızrak",
     "characterRarity": 5,
+    "characterRegion": "Liyue Limanı",
+    "characterWeapon": "Mızrak",
     "characterProperty": "Saldırı",
-    "characterVision": "Buz",
-    "characterRegion": "Liyue Limanı"
+    "characterVision": "Buz"
   },
   "menuId": 2,
   "menuName": "Karakter Arşivi",
   "version": 1685023965,
   "components": {
-    "story": [
+    "talent": [
       {
-        "title": "Karakter Ayrıntıları",
+        "key": "Normal Saldırı: Şafak Yıldızı Mızrağı",
+        "title": "Normal Saldırı: Şafak Yıldızı Mızrağı",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_0/battle_talent_0.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "Shenhe kötü ruh kovucu bir aileden geliyor ama bir dizi tesadüf sonucu bir Adeptusun talebesi oldu.\nYalnızca ismen Bulutlar Hakimi'nin öğrencisi olsa da etkileyici karakteri ve zekası sayesinde diğer birçok Adeptusu kendine hayran bıraktı.\nTüm bu Adeptuslardan öğrendiklerini kullanarak uzun çabaları sonucunda nihayet bir ölümlü olarak kendi başına Adeptus sanatlarında ustalaşmayı başardı.\nKendini taşıyışı ve benzersiz mizacıyla gerçek bir Adeptusu andırır. Hatta onunla ilk kez tanışan herkesi gerçek bir Adeptus olduğuna inandırabilir demek hiç de abartılı olmaz.\nBununla beraber işte tam da bu uzun yıllar süren eğitimi nedeniyle Adeptusların ve arada bir uğrayan aydınlanmış yaratığın dışında konuşacak kimsesi olmadı.\nBu yalnızlığı sonucunda gittikçe soğuk ve umursamaz birisi haline geldi."
+            "text": "<color=#ffd780>Normal Saldırı</color>\nArka arkaya en fazla 5 mızrak saldırısı yapar.\n<color=#ffd780>Yüklü Saldırı</color>\nİleri atılırken belirli miktarda Dayanıklılık harcar ve önündeki düşmanlara hasar verir.\n<color=#ffd780>Havadan Saldırı</color>\nHavadayken dalışa geçerek yere vurur ve yoluna çıkan düşmanlara Alan Hasarı verir."
           }
-        ]
+        ],
+        "attributes": [
+          {
+            "key": "Seviye",
+            "values": [
+              "Sv.1",
+              "Sv.2",
+              "Sv.3",
+              "Sv.4",
+              "Sv.5",
+              "Sv.6",
+              "Sv.7",
+              "Sv.8",
+              "Sv.9",
+              "Sv.10",
+              "Sv.11"
+            ]
+          },
+          {
+            "key": "1 - Vuruş Hasarı",
+            "values": [
+              "43.4%",
+              "46.8%",
+              "50.3%",
+              "55.3%",
+              "58.9%",
+              "62.9%",
+              "68.4%",
+              "73.9%",
+              "79.5%",
+              "85.5%",
+              "91.5%"
+            ]
+          },
+          {
+            "key": "2 - Vuruş Hasarı",
+            "values": [
+              "40.3%",
+              "43.5%",
+              "56.8%",
+              "51.5%",
+              "54.8%",
+              "58.5%",
+              "63.6%",
+              "68.8%",
+              "73.9%",
+              "79.6%",
+              "85.2%"
+            ]
+          },
+          {
+            "key": "3 - Vuruş Hasarı",
+            "values": [
+              "53.3%",
+              "57.7%",
+              "62.0%",
+              "68.2%",
+              "72.5%",
+              "77.5%",
+              "84.3%",
+              "91.1%",
+              "98.0%",
+              "105.4%",
+              "112.8%"
+            ]
+          },
+          {
+            "key": "4 - Vuruş Hasarı",
+            "values": [
+              "26.3%+26.3%",
+              "28.5%+28.5%",
+              "30.6%+30.6%",
+              "33.7%+33.7%",
+              "35.8%+35.8%",
+              "38.3%+38.3%",
+              "41.6%+41.6%",
+              "45.0%+45.0%",
+              "48.3%+48.3%",
+              "52.0%+52.0%",
+              "55.7%+55.7%"
+            ]
+          },
+          {
+            "key": "5 - Vuruş Hasarı",
+            "values": [
+              "65.6%",
+              "71.0%",
+              "76.3%",
+              "83.9%",
+              "89.3%",
+              "95.4%",
+              "103.8%",
+              "112.2%",
+              "120.6%",
+              "129.7%",
+              "138.9%"
+            ]
+          },
+          {
+            "key": "Yüklü Saldırı Hasarı",
+            "values": [
+              "110.7%",
+              "119.7%",
+              "128.7%",
+              "141.6%",
+              "150.6%",
+              "160.9%",
+              "175.0%",
+              "189.2%",
+              "203.3%",
+              "218.8%",
+              "234.2%"
+            ]
+          },
+          {
+            "key": "Yüklü Saldırı Dayanıklılık Maliyeti",
+            "values": [
+              "25.0",
+              "25.0",
+              "25.0",
+              "25.0",
+              "25.0",
+              "25.0",
+              "25.0",
+              "25.0",
+              "25.0",
+              "25.0",
+              "25.0"
+            ]
+          },
+          {
+            "key": "Havadan Saldırı Hasarı",
+            "values": [
+              "63.9%",
+              "69.1%",
+              "74.3%",
+              "81.8%",
+              "87.0%",
+              "92.9%",
+              "101.1%",
+              "109.3%",
+              "117.5%",
+              "126.4%",
+              "135.3%"
+            ]
+          },
+          {
+            "key": "Havadan Saldırı Hasarı (Alçaktan/Yüksekten)",
+            "values": [
+              "128%/160%",
+              "138%/173%",
+              "149%/186%",
+              "164%/204%",
+              "174%/217%",
+              "186%/232%",
+              "202%/253%",
+              "219%/273%",
+              "235%/293%",
+              "253%/316%",
+              "271%/338%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 152,
+              "name": "Refah Öğretisi",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the blessing of Liyue, it is the foundation of the great city built by the gods and the people of Liyue, and it is the source of the peace and safety of the land.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Prosperity_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1876,
+              "name": "Yalancı Çiçek Nektarı",
+              "desc": "Nectar extracted from the stamen of a Whopperflower that contains trace amounts of elemental energy.<br/>The taste of the nectar has a hint of Sweet Flower in it.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Whopperflower Nectar_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 151,
+              "name": "Refah Rehberi",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the promise made by Liyue to its children: To repay the hard-working laborers with enough gold to brighten up this land.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 722,
+              "name": "Parıltılı Nektar",
+              "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 151,
+              "name": "Refah Rehberi",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the promise made by Liyue to its children: To repay the hard-working laborers with enough gold to brighten up this land.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 722,
+              "name": "Parıltılı Nektar",
+              "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 151,
+              "name": "Refah Rehberi",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the promise made by Liyue to its children: To repay the hard-working laborers with enough gold to brighten up this land.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 722,
+              "name": "Parıltılı Nektar",
+              "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 151,
+              "name": "Refah Rehberi",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the promise made by Liyue to its children: To repay the hard-working laborers with enough gold to brighten up this land.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 722,
+              "name": "Parıltılı Nektar",
+              "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 150,
+              "name": "Refah Felsefesi",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is Liyue's past, present, and future. This prosperity is unmatched and unobtainable by any other nations — it all belongs to Liyue and its inhabitants.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 372,
+              "name": "Enerji Nektarı",
+              "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1163,
+              "name": "Cehennem Kelebeği",
+              "desc": "A warped shard that houses great might. You obtained this from defeating Signora, who unleashed her original power.<br/>The seal of ice was broken under duress, and as her former will surged forth from its pale white prison and she remembered her old name once more, the undying butterfly danced amidst burning flesh and blood. And she remembered her past, wandering the land, spreading the flame, burning away all evil — and she recalled the face of the person she could never meet again.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hellfire Butterfly_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 150,
+              "name": "Refah Felsefesi",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is Liyue's past, present, and future. This prosperity is unmatched and unobtainable by any other nations — it all belongs to Liyue and its inhabitants.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 372,
+              "name": "Enerji Nektarı",
+              "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1163,
+              "name": "Cehennem Kelebeği",
+              "desc": "A warped shard that houses great might. You obtained this from defeating Signora, who unleashed her original power.<br/>The seal of ice was broken under duress, and as her former will surged forth from its pale white prison and she remembered her old name once more, the undying butterfly danced amidst burning flesh and blood. And she remembered her past, wandering the land, spreading the flame, burning away all evil — and she recalled the face of the person she could never meet again.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hellfire Butterfly_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 150,
+              "name": "Refah Felsefesi",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is Liyue's past, present, and future. This prosperity is unmatched and unobtainable by any other nations — it all belongs to Liyue and its inhabitants.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 372,
+              "name": "Enerji Nektarı",
+              "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1163,
+              "name": "Cehennem Kelebeği",
+              "desc": "A warped shard that houses great might. You obtained this from defeating Signora, who unleashed her original power.<br/>The seal of ice was broken under duress, and as her former will surged forth from its pale white prison and she remembered her old name once more, the undying butterfly danced amidst burning flesh and blood. And she remembered her past, wandering the land, spreading the flame, burning away all evil — and she recalled the face of the person she could never meet again.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hellfire Butterfly_icon.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 150,
+              "name": "Refah Felsefesi",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is Liyue's past, present, and future. This prosperity is unmatched and unobtainable by any other nations — it all belongs to Liyue and its inhabitants.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 372,
+              "name": "Enerji Nektarı",
+              "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1163,
+              "name": "Cehennem Kelebeği",
+              "desc": "A warped shard that houses great might. You obtained this from defeating Signora, who unleashed her original power.<br/>The seal of ice was broken under duress, and as her former will surged forth from its pale white prison and she remembered her old name once more, the undying butterfly danced amidst burning flesh and blood. And she remembered her past, wandering the land, spreading the flame, burning away all evil — and she recalled the face of the person she could never meet again.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hellfire Butterfly_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "Bilgelik Tacı",
+              "desc": "A precious Talent Level-Up material.<br/>Once a medium for the storage and transfer of wisdom in ancient times. Now, wisdom is found in ancient texts and in profound speech. Nevertheless, this Crown of Insight must still be able to impart some transcendent power and wisdom to its bearer.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_0/battle_talent_0.gif"
       },
       {
-        "title": "Karakter Hikayesi 1",
+        "key": "Ruha Çağrı",
+        "title": "Ruha Çağrı",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_1/battle_talent_1.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "Bazen Liyue'deki küçük seyyah topluluklarını çıkardığı dedikodular şehrin arka sokaklarında duyulur.\nBu hikayelerde genellikle başı dertte olan bir kişi anlatılır. Aniden yoldan geçen beyaz saçlı bir Adeptus tam zamanında onun imdadına yetişir...\nBu tür hikayelerin çoğu, sokaklarda anlatılan destansı evlilikleri ve benzeri konuları ele alan hikayelerden biraz farklı olarak eğlenceli klişelerden oluşur. Fakat o beyaz saçlı Adeptustan hikayesini anlatması istendiğinde hikaye oldukça farklı bir şekle bürünür: \"Zaman zaman dağlara birkaç yaratık musallat olur.\nBen de ustamın meditasyonunu bozmamaları için onlardan kurtulurum, o kadar.\"\n\"Birileri çatışmanın ortasında kalıp yaralanırsa da... Sonuçta buraya gelmek onların kendi tercihiydi. Ben bu konuda bir şey yapamam.\""
+            "text": "Donuk, parlak ve yoğun çiy taneleri tüm iblisleri defedecek.\nYakındaki tüm grup üyelerine Buzdan Tüy etkisi verir. Basılmasına ya da basılı tutulmasına bağlı olarak bağlı olarak faklı şekilde <color=#99ffff>Buz Hasarı</color> verir.\n<color=#ffd780>Bas</color>\nBir Tılsım Ruhu ile ileri atılarak önündeki düşmanlara <color=#99ffff>Buz Hasarı</color> verir.\n<color=#ffd780>Basılı Tut</color>\nTılsım Ruhunu kontrol <color=#99ffff>Buz Alan Hasarı</color> ederek verir.\n<color=#ffd780>Buzdan Tüy</color>\nNormal Saldırılar, Yüklü Saldırılar, Havadan Saldırılar, Element Becerileri ve Element Patlamaları düşmanlara <color=#99ffff>Buz Hasarı</color> verdiğinde Hasar, Shenhe'nin mevcut Saldırısına göre artar.\nBuzdan Tüyün etkileri, süresi bittiğinde veya belirli sayıda tetiklendikten sonra kaybolur. Basmak yerine basılı tuttuğunda Buzdan Tüyün etkisi daha uzun sürer ve birkaç defa daha tetiklenebilir.\nTek seferde birden fazla düşman <color=#99ffff>Buz Hasarı</color> alırsa etki, isabet alan düşman sayısına göre birkaç defa tetiklenir.\nEtkinin tetiklenme sayısı Buzdan Tüye sahip her grup üyesi için ayrıca hesaplanır.\nRuhların gücü gerçektir. Verilen emirleri yerine getirmeye çalışan kutsal kadın yoluna devam eder!"
           }
-        ]
+        ],
+        "attributes": [
+          {
+            "key": "Seviye",
+            "values": [
+              "Sv.1",
+              "Sv.2",
+              "Sv.3",
+              "Sv.4",
+              "Sv.5",
+              "Sv.6",
+              "Sv.7",
+              "Sv.8",
+              "Sv.9",
+              "Sv.10",
+              "Sv.11",
+              "Sv.12",
+              "Sv.13"
+            ]
+          },
+          {
+            "key": "Basma Beceri Hasarı",
+            "values": [
+              "139%",
+              "150%",
+              "160%",
+              "174%",
+              "184%",
+              "195%",
+              "209%",
+              "223%",
+              "237%",
+              "251%",
+              "264%",
+              "278%",
+              "296%"
+            ]
+          },
+          {
+            "key": "Basılı Tutma Beceri Hasarı",
+            "values": [
+              "188.8%",
+              "203.0%",
+              "217.1%",
+              "236.0%",
+              "250.2%",
+              "264.3%",
+              "283.2%",
+              "302.1%",
+              "321.0%",
+              "339.8%",
+              "358.7%",
+              "377.6%",
+              "401.2%"
+            ]
+          },
+          {
+            "key": "Hasar Bonusu",
+            "values": [
+              "45.7% Saldırı",
+              "49.1% Saldırı",
+              "52.5% Saldırı",
+              "57.1% Saldırı",
+              "60.5% Saldırı",
+              "63.9% Saldırı",
+              "68.5% Saldırı",
+              "73.0% Saldırı",
+              "77.6% Saldırı",
+              "82.2% Saldırı",
+              "86.7% Saldırı",
+              "91.3% Saldırı",
+              "97.0% Saldırı"
+            ]
+          },
+          {
+            "key": "Basma/Basılı Tutma Süresi",
+            "values": [
+              "10.0sn/15.0sn",
+              "10.0sn/15.0sn",
+              "10.0sn/15.0sn",
+              "10.0sn/15.0sn",
+              "10.0sn/15.0sn",
+              "10.0sn/15.0sn",
+              "10.0sn/15.0sn",
+              "10.0sn/15.0sn",
+              "10.0sn/15.0sn",
+              "10.0sn/15.0sn",
+              "10.0sn/15.0sn",
+              "10.0sn/15.0sn",
+              "10.0sn/15.0sn"
+            ]
+          },
+          {
+            "key": "Basma/Basılı Tutma Tetiklenme Sınırı",
+            "values": [
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7"
+            ]
+          },
+          {
+            "key": "Tıklama BS",
+            "values": [
+              "10.0sn",
+              "10.0sn",
+              "10.0sn",
+              "10.0sn",
+              "10.0sn",
+              "10.0sn",
+              "10.0sn",
+              "10.0sn",
+              "10.0sn",
+              "10.0sn",
+              "10.0sn",
+              "10.0sn",
+              "10.0sn"
+            ]
+          },
+          {
+            "key": "Basılı Tutma BS ",
+            "values": [
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_1/battle_talent_1.gif"
       },
       {
-        "title": "Karakter Hikayesi 2",
+        "key": "Kutsal Kadının Hükmü",
+        "title": "Kutsal Kadının Hükmü",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_2/battle_talent_2.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "Shenhe, büyük ihtimalle Adeptus görünümlüler arasında ölümlülerin hayatına dair en az bilgiye sahip olandır.\nKüçüklüğünden itibaren dağlarda tek başına yaşadığından yeterli deneyime ve sağduyuya sahip değil. Bu da insanlarla normal bir ilişki kurmasını güçleştiriyor.\nSıradan insanlar için bir sorun birçok farklı yoldan çözülebilecekken Shenhe, en basit ve doğrudan çözümün dışında kalan seçenekleri aklına bile getirmez.\nÖrneğin, başkalarıyla yaşanan anlaşmazlıkları çözmek için gerekli olabilecek \"uzlaşma\" düşüncesini neredeyse hiç dikkate almayıp genelde \"tehditlere\" başvurmayı tercih eder. Sonuçta en basit ve etkili yol budur. O halde iyi bir çözümdür, öyle değil mi?\nAyrıca zamanını çok tuhaf sorunları düşünmekle geçirir. Örneğin: Neden yemek için para ödememiz gerekiyor?\nSıradan vatandaşlarla eşkıyaları tehdit etmek arasında bir fark var mı?\nHatta ustası Bulutlar Hakimi'nin sohbet etmek için mükemmel birisi olduğuna inanır. Bir bakıma saf olduğu da düşünülebilir.\nTıpkı bir çocuk gibi, hayatına yön verirken, alakasız da olsa düz mantığına ve sezgilerine güvenir. Dağkesen bir keresinde onun hakkında şöyle söyledi: \"Küçük Shenhe çoğundan kuvvetli olmakla kalmaz, aynı zamanda özgün bir kişiliğe sahiptir.\"\n\"Ne dünyadan haberi var ne de herhangi bir sağduyuya sahip. Onun için her yemeğin tadı aynı.\nAyrıca hiçbir hiyerarşiyi tanımaz.\"\n\"Bulutlar Hakimi için Shenhe'yi eğitmek kolay bir iş olmasa gerek.\""
+            "text": "Tılsım Ruhunun gücünü açığa çıkarır. Ruhun bu dünyada özgürce gezmesini sağlayarak <color=#99ffff>Buz Alan Hasarı</color> verir.\nSonrasında tılsım ruhu bir alan oluşturur. Alandaki düşmanların <color=#ffffff>Fiziksel Direnci</color> ve <color=#99ffff>Buz Direnci</color> düşer.\nAyrıca bu alandaki düşmanlar belirli aralıklarla <color=#99ffff>Buz Hasarı</color> alır.\nAdeptuslar sadece gizeme ve hayallere göre yaşamaz. Adeptusların doğası sadece gökteki ve yerdeki değişiklikleri gözlemleyip bu dünyada sebebin ve sonucun işleyişini kavrayarak anlaşılabilir."
           }
-        ]
+        ],
+        "attributes": [
+          {
+            "key": "Seviye",
+            "values": [
+              "Sv.1",
+              "Sv.2",
+              "Sv.3",
+              "Sv.4",
+              "Sv.5",
+              "Sv.6",
+              "Sv.7",
+              "Sv.8",
+              "Sv.9",
+              "Sv.10",
+              "Sv.11",
+              "Sv.12",
+              "Sv.13"
+            ]
+          },
+          {
+            "key": "Beceri Hasarı",
+            "values": [
+              "101%",
+              "108%",
+              "116%",
+              "126%",
+              "134%",
+              "141%",
+              "151%",
+              "161%",
+              "171%",
+              "181%",
+              "192%",
+              "202%",
+              "214%"
+            ]
+          },
+          {
+            "key": "Direnç Azalması",
+            "values": [
+              "6.0%",
+              "7.0%",
+              "8.0%",
+              "9.0%",
+              "10.0%",
+              "11.0%",
+              "12.0%",
+              "13.0%",
+              "14.0%",
+              "15.0%",
+              "15.0%",
+              "15.0%",
+              "15.0%"
+            ]
+          },
+          {
+            "key": "Süreli Hasar",
+            "values": [
+              "33.1%",
+              "35.6%",
+              "38.1%",
+              "41.4%",
+              "43.9%",
+              "46.4%",
+              "49.7%",
+              "53.0%",
+              "56.3%",
+              "59.6%",
+              "62.9%",
+              "66.2%",
+              "70.4%"
+            ]
+          },
+          {
+            "key": "Süre",
+            "values": [
+              "12.0sn",
+              "12.0sn",
+              "12.0sn",
+              "12.0sn",
+              "12.0sn",
+              "12.0sn",
+              "12.0sn",
+              "12.0sn",
+              "12.0sn",
+              "12.0sn",
+              "12.0sn",
+              "12.0sn",
+              "12.0sn"
+            ]
+          },
+          {
+            "key": "BS",
+            "values": [
+              "20.0sn",
+              "20.0sn",
+              "20.0sn",
+              "20.0sn",
+              "20.0sn",
+              "20.0sn",
+              "20.0sn",
+              "20.0sn",
+              "20.0sn",
+              "20.0sn",
+              "20.0sn",
+              "20.0sn",
+              "20.0sn"
+            ]
+          },
+          {
+            "key": "Enerji Maliyeti",
+            "values": [
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_2/battle_talent_2.gif"
       },
       {
-        "title": "Karakter Hikayesi 3",
+        "key": "Kutsal Kaide",
+        "title": "Kutsal Kaide",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/const_talent_0.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "Liyue'de Adeptuslarla olan karşılaşmalar hakkında birçok halk masalı anlatılır. Bunların çoğu, başta pek tanınmayan ancak bir Adeptusun himayesi altına girdikten sonra konumunu büyük ölçüde yükselten kişilerle ilgilidir.\nBununla beraber, Shenhe'nin kaderini Adeptuslarla bir araya getiren şey bu tarz bir hikaye değildi. Aksine keder ve ızdırap dolu bir hadisenin sonucunda gerçekleşti.\nShenhe beş yaşındayken annesi vefat etti; ancak eşini çok seven babası bu acıya katlanamadı. Zamanla acısı kine dönüştü ve bu kin de saplantıyı doğurdu. Aklını kaçırmış bir adam gibi sokaklarda başıboş dolaşmaya başladı.\nYaklaşık bir yıl boyunca durmaksızın, rahat bir uyku yüzü görmeden eşini tekrar hayata döndürmenin yollarını aradı.\nSonunda, bu yıl bitmeden hemen önce coşkulu bir çılgınlık içinde evine döndü.\nShenhe'nin babası \"Kader Aktarımı\" olarak bilinen gizli bir büyüyü yanında getirmişti. Bu büyü sayesinde, çağırdığı periye kurbanlık ayin gerçekleştirerek ölü birinin hayatıyla yaşayan birinin bedenini takas edebilecekti. O sırada Shenhe başına gelecek felaketten tamamen habersizdi. Sonuçta sıradan bir çocuktu ve uzun zamandır ortadan kaybolmuş babası eve döndüğü için çok mutluydu.\nBabası dağlardaki bir mağarada onu bir sürprizin beklediğini ve hemen mağaraya gidebileceklerini söyledi.\nBunu duyan Shenhe'nin yüreği sevinçle doldu...\nArdından gördükleri hayatının sonuna kadar aklına kazınacaktı. Babası o mağaraya iğrenç, korkunç bir kara \"peri\" çağırmıştı. Kan kırmızısı gözleri\nShenhe'nin cezbedici yaşam gücünü tatmak için can atıyordu. Şaşkına dönen Shenhe perinin nereden geldiğini veya ne istediğini bilmiyordu.\nKrizler genelde insanları sersemletir ama küçük Shenhe'nin aklından sadece tek bir düşünce geçti.\nBu yaratık onu yemek istiyordu ama o ölmek istemiyordu.\nYaşamak istiyordu! Annesinin hatırası olan kötü ruh kovma hançerini kavrayarak dehşet içinde, yine de kararlılıkla o kara \"peri\" ile yüzleşti.\nBirkaç gün sonra, büyük bir kötülüğün izini süren bir Adeptus mağarayı inceledi.\nMağaranın içinde küçük kızı yere yığılmış bir şekilde buldu.\nBitkinlik, açlık ve susuzluk içindeki kızın hayatı pamuk ipliğine bağlıydı.\nKızın acıklı kaderinė üzülen ve tek başına korkunç bir gücü defederek gösterdiği yüksek potansiyeli gören Adeptus, onu alıp iyileştirdi ve ermiş olmaya giden yolda eğitti.\nBu olay olmasa, Shenhe bugün bambaşka biri olacaktı."
+            "text": "<color=#ffd780>Kutsal Kadının Hükmü</color> becerisinin oluşturduğu alan içindeki aktif karakter %15 <color=#99ffff>Buz Hasar Bonusu</color> kazanır."
           }
-        ]
+        ],
+        "attributes": null
       },
       {
-        "title": "Karakter Hikayesi 4",
+        "key": "Ruh Birliği Mührü",
+        "title": "Ruh Birliği Mührü",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/const_talent_1.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "Yıllar boyunca dağlarda yaşayıp eğitim almanın sonucunda donuklaşan en duygusuz kalp bile bazen garip dalgalanmalar yaşayabilir.\nShenhe için de durum böyle oldu. Bir gece aniden dağlardan inip eskiden evi olarak gördüğü yere döndü.\nEvi veya ailesi hakkında ne düşündüğünü bilmiyordu. Onu buraya sürükleyen şey nereden kaynaklandığını bilmediği bir arzuydu:\nBir zamanlar kendisine ait olan evde yaşamak ve aklını kaçıran babasına ne olduğunu öğrenmek.\nKomşularından babasının birkaç yıl önce vefat ettiğini öğrendi.\nÇoçukluk evi tefeciler tarafından yıkılmış ve böylece burada geçirdiği çocukluk anılarından hiçbir iz kalmamıştı.\nNe kadar dikkat çektiği umurunda değildi.\nEtrafındakilerden gelen hiçbir soruyu yanıtlamadı.\nOrada öylece durup kalbinin derinliklerinde yankılanan iniltileri dinledi.\nBunun sebebi nefret miydi?\nDelilik mi? Yoksa rahatlama mı?\nBu duyguların hepsini yaşıyordu ama hiçbiri bir an bile olsa egemen olmadı. Sanki kalbi dalgaların olmadığı eski bir kuyu gibiydi.\nHayır, aslında dalgayı oluşturacak suyun bile olmadığı boş bir kuyu gibiydi.\nUzun bir süre bekledikten sonra herkesin şaşkın bakışları arasında tekrar yola koyuldu.\nHer adımının ağırlığını hissetmesine rağmen bir an bile olsa arkasına bakmadı."
+            "text": "Shenhe <color=#ffd780>Ruha Çağrı</color> becerisini kullandığında yakındaki tüm grup üyelerine aşağıdaki etkileri verir:\n· Bas: 10 saniyeliğine Element Becerisi ve Element Patlaması Hasarı %15 artar.\n· Basılı Tut: 15 saniyeliğine Normal, Yüklü ve Havadan Saldırı Hasarı %15 artar."
           }
-        ]
+        ],
+        "attributes": null
       },
       {
-        "title": "Karakter Hikayesi 5",
+        "key": "Vakitli Yolculuklar",
+        "title": "Vakitli Yolculuklar",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/const_talent_2.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "Liyue'nin astrolojiye benzer şekilde kendi fal bakma veya kehanette bulunma yöntemleri bulunur.\nBunlar arasında insanlar en çok iki kaderden kaçınır.\nBirincisi \"yalnız yıldız\"dır. Bu kader, kişinin aile ve arkadaşlarından ayrılıp hayatını tek başına geçireceğini gösterir.\nİkincisiyse \"büyük kötülük\"tür ve kişinin birçok zorluk ve tehlikeyle karşı karşıya kalacağı anlamına gelir.\nAdeptuslar Shenhe'yi kurtardığında Ay Oymacısı onun falına bakmıştı.\nFalında hem \"yalnız yıldız\" hem de \"büyük kötülük\" göründü.\nAyrıca yüreğini şiddetli öldürme arzusu kaplamıştı. Bu nedenle hem kendisine hem de başkalarına zarar vermeye mahkum, son derece uğursuz bir kadere sahipti.\nGüvenli bir şekilde büyüyebilmesi ve masumlara zarar vermemesi için Adeptuslar ruhunu kızıl iplerle bağladı.\nBu bağ, Shenhe'nin kötü kaderini ve şiddete olan eğilimlerini kısıtlamakla kalmadı, sıradan bir insanın hissedeceği doğal duyguların ortaya çıkmasını da engelledi.\nO andan itibaren gitgide küçük meselelerden etkilenmemeye başladı. Çoğunun önemli kabul ettiği hususlar bile onun için değersizdi.\nGittikçe insanlığını kaybetti ve güzel ama soğuk bir heykele dönüştü.\nFakat uzak diyarlardan gelen Gezgin ile karşılaştığında şaşırtıcı bir şekilde içinde bir şeyler uyandı.\nUzun süredir hareketsiz yatan artık kendisi için yabancı olan duygular bir anda kaderin derinliklerinden yüzeye çıktı.\nBelki de gerçekten Ay Oymacısı'nın bir zamanlar dediği gibiydi: Kaderi gökler belirleyebilir ama kaderin hikayesini ölümlüler yazar.\nShenhe'nin ve ölümlü dünyanın hikayesi henüz sona ermedi..."
+            "text": "20 saatliğine bir Liyue Keşfine gönderildiğinde %25 daha fazla ödül kazanır."
           }
-        ]
-      },
-      {
-        "title": "Beyaz Yeşim Tarak",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Bir zamanlar Shenhe'nin saçları simsiyahtı.\nAdeptus onu ilk defa Hula Dağı'na getirdiğinde Shenhe'nin ağzından hiçbir kelime çıkmadı. Dağa tırmanıp bulutlar denizini izlemekle yetindi.\nYorulduğunda uyudu, susadığında dağlardaki çiyi içti ve acıktığında Qingxin saplarını çiğnedi.\nBulutlar Hakimi onu rahatsız etmeden izledi. Kutsal taştan beyaz bir yeşim tarak yaptı ve Shenhe'ye verdi.\nAdeptus ona ölümlü dünyayla bağlarını koparıp Adeptusların vesayeti altına girmek isterse saçlarını bu tarakla üç kere taraması gerektiğini söyledi. Böylece çıraklık ayini yerine getirilmiş sayılacaktı.\nShenhe hiç tereddüt etmeden Adeptusun söylediğini harfiyen yaptı. O anda garip bir şey oldu. Yeşim tarakla saçlarını ilk taradığında siyah saçlarından bazıları kökünden ucuna kadar buz gümüşü rengine büründü.. İkinci tarayışında saçının yalnızca yarısı siyah renkteydi. Ayin tamamlandığında saçlarına\nkar yağmış gibiydi.\n...\nBugün Shenhe bu tarağı Adeptuslarla bağlantısının sembolü olarak taşıyor. Yıllar süren eğitimi sonunda o tarakla saçlarını üç defa tarayışının anlamını çözdü: İlkinin amacı gereksiz endişelerini ortadan kaldırmaktı. İkincisi sevinç ve kederi arkasında bırakması ve üçüncüsü de yaşlanana kadar bu yolda pişmanlık duymadan yürüyebilmesi içindi."
-          }
-        ]
-      },
-      {
-        "title": "Önsezi",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Babasının kurban etmeyi planladığı mağaradaki küçük kızın tek başına günler ve geceler boyunca canavara nasıl karşı koyabildiğini çok az kişi bilir.\nShenhe kötü ruh kovucu bir aileden gelmesine rağmen aklını kaçırmış babası ona kötü ruh kovma konusunda hiçbir şey öğretmemişti.\nAyrıca o masum yaştaki birçok çocuk gibi hayatın tehlikeleriyle tek başına yüzleşme konusunda hiç deneyimi yoktu.\nAncak o ışıksız mağarada anne babasının korumasından yoksun, hatta ailesinin ihanetine uğramış olan Shenhe bir dönüşüm geçirdi.\nAy Oymacısı'nın falında gördüğü gibi içinde yatan kötülük, şiddetli arzular ve yenilmez ruh aynı anda zincirlerini kopardı.\nBunlar kızın narin bedenini sararak görülmez bir kalkan ve bıçak işlevi gördü.\nOna güç verdiler, önündeki sefil yaratığa saldırabilmesi için pençe ve sivri diş verdiler.\nShenhe, yaratığı paramparça etmeye ve böylece karanlığın arkasında yatan en amansız kötülüğün yaratık değil kendisi olduğunu kanıtlamaya yemin etti.\nSonraki günlerde verdikleri yaşam ve ölüm mücadelesinin sonu gelmek bilmedi. Avcıyla av birçok defa yer değiştirirken çatışma çıkmaza girdi.\nÖlüm an meselesiyken tanrılar bu olağanüstü kıza lütufta bulundu.\nParlak, kristal bir nesne Shenhe'nin ellerine düştüğünde çatışmadaki denge geri dönülemez bir şekilde onun lehine döndü ve mücadelenin galibi belirlendi.\nBuz gibi parlak bir ışık karanlığı delerek geleceğe giden yolu gösterdi.\nGeçmişte Shenhe'yi acınası kaderinden kurtarmıştı.\nGelecekte de ölümlüler diyarına dönüşünde ona rehber olacaktı."
-          }
-        ]
+        ],
+        "attributes": null
       }
     ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=32&center=1935.62,-52.64&zoom=-2.50",
+    "baseInfo": [
+      {
+        "key": "İsim",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Shenhe"
+          }
+        ]
+      },
+      {
+        "key": "Doğum Günü",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "10/3"
+          }
+        ]
+      },
+      {
+        "key": "Takımyıldız",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Acının Doruğu"
+          }
+        ]
+      },
+      {
+        "key": "Künye",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Yalnızlığın Ötesi"
+          }
+        ]
+      },
+      {
+        "key": "Önsezi",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Buz"
+          }
+        ]
+      },
+      {
+        "key": "İlişki",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Bulutlar Hakimi'nin Evi"
+          }
+        ]
+      },
+      {
+        "key": "Çince Ses.",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "秦紫翼"
+          }
+        ]
+      },
+      {
+        "key": "İngilizce Ses.",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Chelsea Kwoka"
+          }
+        ]
+      },
+      {
+        "key": "Japonca Ses.",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "川澄綾子"
+          }
+        ]
+      },
+      {
+        "key": "Korece Ses.",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Lee Hyeon-jin"
+          }
+        ]
+      },
+      {
+        "key": "Özel Tarif",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 1638,
+            "name": "Gönüllerin Eriştesi",
+            "desc": "Shenhe's specialty. Perhaps this comes from her desire to recreate a flavor that lives only in her memories, but Shenhe has poured much time and effort into both making and plating this dish. The smooth noodles and delectable soup make a great impression indeed, but the most indelible aspects are the dedication and heart put into this dish...",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Heartstring Noodles_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "İlk Çıkış Tarihi",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "2.4"
+          }
+        ]
+      },
+      {
+        "key": "Dehanın Yakarışı Kart Oyunu Karakter Kartı",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3832,
+            "name": "Shenhe",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.85)\">\"Yalnızlığın Ötesi\" Shenhe</span></p><p><span style=\"color: rgba(255, 255, 255, 0.45)\">Ölümlüler diyarı, tıpkı kaybolup giden bir duman gibidir.</span></p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/25/145542732/9d4755dfcf7b10e16ef5cd965065bd8f_7123835737476161410.png",
+            "amount": 1
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
     "voice": [
       {
         "title": "Merhaba",
@@ -1722,6 +2594,69 @@
         ]
       }
     ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=32&center=1935.62,-52.64&zoom=-2.50",
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_1.png",
+        "name": "Duru Kalp",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Ruha Çağrı</color> 1 defa daha kullanılabilir."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_2.png",
+        "name": "Dengeli Ruh",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Kutsal Kadının Hükmü</color> 6 saniye daha uzun sürer. Beceri alanında bulunan aktif karakterlerin <color=#99ffff>Buz Kritik Hasarı</color> %15 artar."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_3.png",
+        "name": "İnziva",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Ruha Çağrı</color> seviyesini 3 artırır.\nMaksimum yükseltme seviyesi 15'tir."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_4.png",
+        "name": "Sezgi",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Shenhe'nin <color=#ffd780>Buzdan Tüy</color> becerisinin etkisi altında olan karakterler becerinin Hasar Bonusunu tetiklediğinde Shenhe bir Buzul Mantra kademesi kazanır.\n· Shenhe, <color=#ffd780>Ruha Çağrı</color> becerisini geri kullandığında Buzul Mantra'nın tüm kademeleri tükenir. Tükenen her kademe ile Ruha Çağrı becerisinin verdiği Hasar %5 artar.\n· 50 kademeye kadar birikir. Kademeler 60 saniye sürer."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_5.png",
+        "name": "Kutsallığa Ulaşmak",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Kutsal Kadının Hükmü</color> seviyesini 3 artırır.\nMaksimum yükseltme seviyesi 15'tir."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_6.png",
+        "name": "Unutulmuş Gizem",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Karakterler Normal veya Yüklü Saldırı Hasarı vererek <color=#ffd780>Buzdan Tüy</color> becerisinin etkilerini tetiklerse bu, Tetiklenme Sınırına dahil olmaz."
+          }
+        ]
+      }
+    ],
     "ascension": [
       {
         "key": "Sv.1",
@@ -2288,1011 +3223,76 @@
         ]
       }
     ],
-    "talent": [
+    "story": [
       {
-        "key": "Normal Saldırı: Şafak Yıldızı Mızrağı",
-        "title": "Normal Saldırı: Şafak Yıldızı Mızrağı",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_0/battle_talent_0.png",
+        "title": "Karakter Ayrıntıları",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>Normal Saldırı</color>\nArka arkaya en fazla 5 mızrak saldırısı yapar.\n<color=#ffd780>Yüklü Saldırı</color>\nİleri atılırken belirli miktarda Dayanıklılık harcar ve önündeki düşmanlara hasar verir.\n<color=#ffd780>Havadan Saldırı</color>\nHavadayken dalışa geçerek yere vurur ve yoluna çıkan düşmanlara Alan Hasarı verir."
+            "text": "Shenhe kötü ruh kovucu bir aileden geliyor ama bir dizi tesadüf sonucu bir Adeptusun talebesi oldu.\nYalnızca ismen Bulutlar Hakimi'nin öğrencisi olsa da etkileyici karakteri ve zekası sayesinde diğer birçok Adeptusu kendine hayran bıraktı.\nTüm bu Adeptuslardan öğrendiklerini kullanarak uzun çabaları sonucunda nihayet bir ölümlü olarak kendi başına Adeptus sanatlarında ustalaşmayı başardı.\nKendini taşıyışı ve benzersiz mizacıyla gerçek bir Adeptusu andırır. Hatta onunla ilk kez tanışan herkesi gerçek bir Adeptus olduğuna inandırabilir demek hiç de abartılı olmaz.\nBununla beraber işte tam da bu uzun yıllar süren eğitimi nedeniyle Adeptusların ve arada bir uğrayan aydınlanmış yaratığın dışında konuşacak kimsesi olmadı.\nBu yalnızlığı sonucunda gittikçe soğuk ve umursamaz birisi haline geldi."
           }
-        ],
-        "attributes": [
-          {
-            "key": "Seviye",
-            "values": [
-              "Sv.1",
-              "Sv.2",
-              "Sv.3",
-              "Sv.4",
-              "Sv.5",
-              "Sv.6",
-              "Sv.7",
-              "Sv.8",
-              "Sv.9",
-              "Sv.10",
-              "Sv.11"
-            ]
-          },
-          {
-            "key": "1 - Vuruş Hasarı",
-            "values": [
-              "43.4%",
-              "46.8%",
-              "50.3%",
-              "55.3%",
-              "58.9%",
-              "62.9%",
-              "68.4%",
-              "73.9%",
-              "79.5%",
-              "85.5%",
-              "91.5%"
-            ]
-          },
-          {
-            "key": "2 - Vuruş Hasarı",
-            "values": [
-              "40.3%",
-              "43.5%",
-              "56.8%",
-              "51.5%",
-              "54.8%",
-              "58.5%",
-              "63.6%",
-              "68.8%",
-              "73.9%",
-              "79.6%",
-              "85.2%"
-            ]
-          },
-          {
-            "key": "3 - Vuruş Hasarı",
-            "values": [
-              "53.3%",
-              "57.7%",
-              "62.0%",
-              "68.2%",
-              "72.5%",
-              "77.5%",
-              "84.3%",
-              "91.1%",
-              "98.0%",
-              "105.4%",
-              "112.8%"
-            ]
-          },
-          {
-            "key": "4 - Vuruş Hasarı",
-            "values": [
-              "26.3%+26.3%",
-              "28.5%+28.5%",
-              "30.6%+30.6%",
-              "33.7%+33.7%",
-              "35.8%+35.8%",
-              "38.3%+38.3%",
-              "41.6%+41.6%",
-              "45.0%+45.0%",
-              "48.3%+48.3%",
-              "52.0%+52.0%",
-              "55.7%+55.7%"
-            ]
-          },
-          {
-            "key": "5 - Vuruş Hasarı",
-            "values": [
-              "65.6%",
-              "71.0%",
-              "76.3%",
-              "83.9%",
-              "89.3%",
-              "95.4%",
-              "103.8%",
-              "112.2%",
-              "120.6%",
-              "129.7%",
-              "138.9%"
-            ]
-          },
-          {
-            "key": "Yüklü Saldırı Hasarı",
-            "values": [
-              "110.7%",
-              "119.7%",
-              "128.7%",
-              "141.6%",
-              "150.6%",
-              "160.9%",
-              "175.0%",
-              "189.2%",
-              "203.3%",
-              "218.8%",
-              "234.2%"
-            ]
-          },
-          {
-            "key": "Yüklü Saldırı Dayanıklılık Maliyeti",
-            "values": [
-              "25.0",
-              "25.0",
-              "25.0",
-              "25.0",
-              "25.0",
-              "25.0",
-              "25.0",
-              "25.0",
-              "25.0",
-              "25.0",
-              "25.0"
-            ]
-          },
-          {
-            "key": "Havadan Saldırı Hasarı",
-            "values": [
-              "63.9%",
-              "69.1%",
-              "74.3%",
-              "81.8%",
-              "87.0%",
-              "92.9%",
-              "101.1%",
-              "109.3%",
-              "117.5%",
-              "126.4%",
-              "135.3%"
-            ]
-          },
-          {
-            "key": "Havadan Saldırı Hasarı (Alçaktan/Yüksekten)",
-            "values": [
-              "128%/160%",
-              "138%/173%",
-              "149%/186%",
-              "164%/204%",
-              "174%/217%",
-              "186%/232%",
-              "202%/253%",
-              "219%/273%",
-              "235%/293%",
-              "253%/316%",
-              "271%/338%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 152,
-              "name": "Refah Öğretisi",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the blessing of Liyue, it is the foundation of the great city built by the gods and the people of Liyue, and it is the source of the peace and safety of the land.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Prosperity_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1876,
-              "name": "Yalancı Çiçek Nektarı",
-              "desc": "Nectar extracted from the stamen of a Whopperflower that contains trace amounts of elemental energy.<br/>The taste of the nectar has a hint of Sweet Flower in it.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Whopperflower Nectar_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 151,
-              "name": "Refah Rehberi",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the promise made by Liyue to its children: To repay the hard-working laborers with enough gold to brighten up this land.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 722,
-              "name": "Parıltılı Nektar",
-              "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 151,
-              "name": "Refah Rehberi",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the promise made by Liyue to its children: To repay the hard-working laborers with enough gold to brighten up this land.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 722,
-              "name": "Parıltılı Nektar",
-              "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 151,
-              "name": "Refah Rehberi",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the promise made by Liyue to its children: To repay the hard-working laborers with enough gold to brighten up this land.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 722,
-              "name": "Parıltılı Nektar",
-              "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 151,
-              "name": "Refah Rehberi",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the promise made by Liyue to its children: To repay the hard-working laborers with enough gold to brighten up this land.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 722,
-              "name": "Parıltılı Nektar",
-              "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 150,
-              "name": "Refah Felsefesi",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is Liyue's past, present, and future. This prosperity is unmatched and unobtainable by any other nations — it all belongs to Liyue and its inhabitants.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 372,
-              "name": "Enerji Nektarı",
-              "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1163,
-              "name": "Cehennem Kelebeği",
-              "desc": "A warped shard that houses great might. You obtained this from defeating Signora, who unleashed her original power.<br/>The seal of ice was broken under duress, and as her former will surged forth from its pale white prison and she remembered her old name once more, the undying butterfly danced amidst burning flesh and blood. And she remembered her past, wandering the land, spreading the flame, burning away all evil — and she recalled the face of the person she could never meet again.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hellfire Butterfly_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 150,
-              "name": "Refah Felsefesi",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is Liyue's past, present, and future. This prosperity is unmatched and unobtainable by any other nations — it all belongs to Liyue and its inhabitants.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 372,
-              "name": "Enerji Nektarı",
-              "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1163,
-              "name": "Cehennem Kelebeği",
-              "desc": "A warped shard that houses great might. You obtained this from defeating Signora, who unleashed her original power.<br/>The seal of ice was broken under duress, and as her former will surged forth from its pale white prison and she remembered her old name once more, the undying butterfly danced amidst burning flesh and blood. And she remembered her past, wandering the land, spreading the flame, burning away all evil — and she recalled the face of the person she could never meet again.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hellfire Butterfly_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 150,
-              "name": "Refah Felsefesi",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is Liyue's past, present, and future. This prosperity is unmatched and unobtainable by any other nations — it all belongs to Liyue and its inhabitants.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 372,
-              "name": "Enerji Nektarı",
-              "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1163,
-              "name": "Cehennem Kelebeği",
-              "desc": "A warped shard that houses great might. You obtained this from defeating Signora, who unleashed her original power.<br/>The seal of ice was broken under duress, and as her former will surged forth from its pale white prison and she remembered her old name once more, the undying butterfly danced amidst burning flesh and blood. And she remembered her past, wandering the land, spreading the flame, burning away all evil — and she recalled the face of the person she could never meet again.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hellfire Butterfly_icon.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 150,
-              "name": "Refah Felsefesi",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is Liyue's past, present, and future. This prosperity is unmatched and unobtainable by any other nations — it all belongs to Liyue and its inhabitants.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 372,
-              "name": "Enerji Nektarı",
-              "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1163,
-              "name": "Cehennem Kelebeği",
-              "desc": "A warped shard that houses great might. You obtained this from defeating Signora, who unleashed her original power.<br/>The seal of ice was broken under duress, and as her former will surged forth from its pale white prison and she remembered her old name once more, the undying butterfly danced amidst burning flesh and blood. And she remembered her past, wandering the land, spreading the flame, burning away all evil — and she recalled the face of the person she could never meet again.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hellfire Butterfly_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "Bilgelik Tacı",
-              "desc": "A precious Talent Level-Up material.<br/>Once a medium for the storage and transfer of wisdom in ancient times. Now, wisdom is found in ancient texts and in profound speech. Nevertheless, this Crown of Insight must still be able to impart some transcendent power and wisdom to its bearer.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_0/battle_talent_0.gif"
+        ]
       },
       {
-        "key": "Ruha Çağrı",
-        "title": "Ruha Çağrı",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_1/battle_talent_1.png",
+        "title": "Karakter Hikayesi 1",
         "desc": [
           {
             "type": "RichText",
-            "text": "Donuk, parlak ve yoğun çiy taneleri tüm iblisleri defedecek.\nYakındaki tüm grup üyelerine Buzdan Tüy etkisi verir. Basılmasına ya da basılı tutulmasına bağlı olarak bağlı olarak faklı şekilde <color=#99ffff>Buz Hasarı</color> verir.\n<color=#ffd780>Bas</color>\nBir Tılsım Ruhu ile ileri atılarak önündeki düşmanlara <color=#99ffff>Buz Hasarı</color> verir.\n<color=#ffd780>Basılı Tut</color>\nTılsım Ruhunu kontrol <color=#99ffff>Buz Alan Hasarı</color> ederek verir.\n<color=#ffd780>Buzdan Tüy</color>\nNormal Saldırılar, Yüklü Saldırılar, Havadan Saldırılar, Element Becerileri ve Element Patlamaları düşmanlara <color=#99ffff>Buz Hasarı</color> verdiğinde Hasar, Shenhe'nin mevcut Saldırısına göre artar.\nBuzdan Tüyün etkileri, süresi bittiğinde veya belirli sayıda tetiklendikten sonra kaybolur. Basmak yerine basılı tuttuğunda Buzdan Tüyün etkisi daha uzun sürer ve birkaç defa daha tetiklenebilir.\nTek seferde birden fazla düşman <color=#99ffff>Buz Hasarı</color> alırsa etki, isabet alan düşman sayısına göre birkaç defa tetiklenir.\nEtkinin tetiklenme sayısı Buzdan Tüye sahip her grup üyesi için ayrıca hesaplanır.\nRuhların gücü gerçektir. Verilen emirleri yerine getirmeye çalışan kutsal kadın yoluna devam eder!"
+            "text": "Bazen Liyue'deki küçük seyyah topluluklarını çıkardığı dedikodular şehrin arka sokaklarında duyulur.\nBu hikayelerde genellikle başı dertte olan bir kişi anlatılır. Aniden yoldan geçen beyaz saçlı bir Adeptus tam zamanında onun imdadına yetişir...\nBu tür hikayelerin çoğu, sokaklarda anlatılan destansı evlilikleri ve benzeri konuları ele alan hikayelerden biraz farklı olarak eğlenceli klişelerden oluşur. Fakat o beyaz saçlı Adeptustan hikayesini anlatması istendiğinde hikaye oldukça farklı bir şekle bürünür: \"Zaman zaman dağlara birkaç yaratık musallat olur.\nBen de ustamın meditasyonunu bozmamaları için onlardan kurtulurum, o kadar.\"\n\"Birileri çatışmanın ortasında kalıp yaralanırsa da... Sonuçta buraya gelmek onların kendi tercihiydi. Ben bu konuda bir şey yapamam.\""
           }
-        ],
-        "attributes": [
-          {
-            "key": "Seviye",
-            "values": [
-              "Sv.1",
-              "Sv.2",
-              "Sv.3",
-              "Sv.4",
-              "Sv.5",
-              "Sv.6",
-              "Sv.7",
-              "Sv.8",
-              "Sv.9",
-              "Sv.10",
-              "Sv.11",
-              "Sv.12",
-              "Sv.13"
-            ]
-          },
-          {
-            "key": "Basma Beceri Hasarı",
-            "values": [
-              "139%",
-              "150%",
-              "160%",
-              "174%",
-              "184%",
-              "195%",
-              "209%",
-              "223%",
-              "237%",
-              "251%",
-              "264%",
-              "278%",
-              "296%"
-            ]
-          },
-          {
-            "key": "Basılı Tutma Beceri Hasarı",
-            "values": [
-              "188.8%",
-              "203.0%",
-              "217.1%",
-              "236.0%",
-              "250.2%",
-              "264.3%",
-              "283.2%",
-              "302.1%",
-              "321.0%",
-              "339.8%",
-              "358.7%",
-              "377.6%",
-              "401.2%"
-            ]
-          },
-          {
-            "key": "Hasar Bonusu",
-            "values": [
-              "45.7% Saldırı",
-              "49.1% Saldırı",
-              "52.5% Saldırı",
-              "57.1% Saldırı",
-              "60.5% Saldırı",
-              "63.9% Saldırı",
-              "68.5% Saldırı",
-              "73.0% Saldırı",
-              "77.6% Saldırı",
-              "82.2% Saldırı",
-              "86.7% Saldırı",
-              "91.3% Saldırı",
-              "97.0% Saldırı"
-            ]
-          },
-          {
-            "key": "Basma/Basılı Tutma Süresi",
-            "values": [
-              "10.0sn/15.0sn",
-              "10.0sn/15.0sn",
-              "10.0sn/15.0sn",
-              "10.0sn/15.0sn",
-              "10.0sn/15.0sn",
-              "10.0sn/15.0sn",
-              "10.0sn/15.0sn",
-              "10.0sn/15.0sn",
-              "10.0sn/15.0sn",
-              "10.0sn/15.0sn",
-              "10.0sn/15.0sn",
-              "10.0sn/15.0sn",
-              "10.0sn/15.0sn"
-            ]
-          },
-          {
-            "key": "Basma/Basılı Tutma Tetiklenme Sınırı",
-            "values": [
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7"
-            ]
-          },
-          {
-            "key": "Tıklama BS",
-            "values": [
-              "10.0sn",
-              "10.0sn",
-              "10.0sn",
-              "10.0sn",
-              "10.0sn",
-              "10.0sn",
-              "10.0sn",
-              "10.0sn",
-              "10.0sn",
-              "10.0sn",
-              "10.0sn",
-              "10.0sn",
-              "10.0sn"
-            ]
-          },
-          {
-            "key": "Basılı Tutma BS ",
-            "values": [
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_1/battle_talent_1.gif"
+        ]
       },
       {
-        "key": "Kutsal Kadının Hükmü",
-        "title": "Kutsal Kadının Hükmü",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_2/battle_talent_2.png",
+        "title": "Karakter Hikayesi 2",
         "desc": [
           {
             "type": "RichText",
-            "text": "Tılsım Ruhunun gücünü açığa çıkarır. Ruhun bu dünyada özgürce gezmesini sağlayarak <color=#99ffff>Buz Alan Hasarı</color> verir.\nSonrasında tılsım ruhu bir alan oluşturur. Alandaki düşmanların <color=#ffffff>Fiziksel Direnci</color> ve <color=#99ffff>Buz Direnci</color> düşer.\nAyrıca bu alandaki düşmanlar belirli aralıklarla <color=#99ffff>Buz Hasarı</color> alır.\nAdeptuslar sadece gizeme ve hayallere göre yaşamaz. Adeptusların doğası sadece gökteki ve yerdeki değişiklikleri gözlemleyip bu dünyada sebebin ve sonucun işleyişini kavrayarak anlaşılabilir."
+            "text": "Shenhe, büyük ihtimalle Adeptus görünümlüler arasında ölümlülerin hayatına dair en az bilgiye sahip olandır.\nKüçüklüğünden itibaren dağlarda tek başına yaşadığından yeterli deneyime ve sağduyuya sahip değil. Bu da insanlarla normal bir ilişki kurmasını güçleştiriyor.\nSıradan insanlar için bir sorun birçok farklı yoldan çözülebilecekken Shenhe, en basit ve doğrudan çözümün dışında kalan seçenekleri aklına bile getirmez.\nÖrneğin, başkalarıyla yaşanan anlaşmazlıkları çözmek için gerekli olabilecek \"uzlaşma\" düşüncesini neredeyse hiç dikkate almayıp genelde \"tehditlere\" başvurmayı tercih eder. Sonuçta en basit ve etkili yol budur. O halde iyi bir çözümdür, öyle değil mi?\nAyrıca zamanını çok tuhaf sorunları düşünmekle geçirir. Örneğin: Neden yemek için para ödememiz gerekiyor?\nSıradan vatandaşlarla eşkıyaları tehdit etmek arasında bir fark var mı?\nHatta ustası Bulutlar Hakimi'nin sohbet etmek için mükemmel birisi olduğuna inanır. Bir bakıma saf olduğu da düşünülebilir.\nTıpkı bir çocuk gibi, hayatına yön verirken, alakasız da olsa düz mantığına ve sezgilerine güvenir. Dağkesen bir keresinde onun hakkında şöyle söyledi: \"Küçük Shenhe çoğundan kuvvetli olmakla kalmaz, aynı zamanda özgün bir kişiliğe sahiptir.\"\n\"Ne dünyadan haberi var ne de herhangi bir sağduyuya sahip. Onun için her yemeğin tadı aynı.\nAyrıca hiçbir hiyerarşiyi tanımaz.\"\n\"Bulutlar Hakimi için Shenhe'yi eğitmek kolay bir iş olmasa gerek.\""
           }
-        ],
-        "attributes": [
-          {
-            "key": "Seviye",
-            "values": [
-              "Sv.1",
-              "Sv.2",
-              "Sv.3",
-              "Sv.4",
-              "Sv.5",
-              "Sv.6",
-              "Sv.7",
-              "Sv.8",
-              "Sv.9",
-              "Sv.10",
-              "Sv.11",
-              "Sv.12",
-              "Sv.13"
-            ]
-          },
-          {
-            "key": "Beceri Hasarı",
-            "values": [
-              "101%",
-              "108%",
-              "116%",
-              "126%",
-              "134%",
-              "141%",
-              "151%",
-              "161%",
-              "171%",
-              "181%",
-              "192%",
-              "202%",
-              "214%"
-            ]
-          },
-          {
-            "key": "Direnç Azalması",
-            "values": [
-              "6.0%",
-              "7.0%",
-              "8.0%",
-              "9.0%",
-              "10.0%",
-              "11.0%",
-              "12.0%",
-              "13.0%",
-              "14.0%",
-              "15.0%",
-              "15.0%",
-              "15.0%",
-              "15.0%"
-            ]
-          },
-          {
-            "key": "Süreli Hasar",
-            "values": [
-              "33.1%",
-              "35.6%",
-              "38.1%",
-              "41.4%",
-              "43.9%",
-              "46.4%",
-              "49.7%",
-              "53.0%",
-              "56.3%",
-              "59.6%",
-              "62.9%",
-              "66.2%",
-              "70.4%"
-            ]
-          },
-          {
-            "key": "Süre",
-            "values": [
-              "12.0sn",
-              "12.0sn",
-              "12.0sn",
-              "12.0sn",
-              "12.0sn",
-              "12.0sn",
-              "12.0sn",
-              "12.0sn",
-              "12.0sn",
-              "12.0sn",
-              "12.0sn",
-              "12.0sn",
-              "12.0sn"
-            ]
-          },
-          {
-            "key": "BS",
-            "values": [
-              "20.0sn",
-              "20.0sn",
-              "20.0sn",
-              "20.0sn",
-              "20.0sn",
-              "20.0sn",
-              "20.0sn",
-              "20.0sn",
-              "20.0sn",
-              "20.0sn",
-              "20.0sn",
-              "20.0sn",
-              "20.0sn"
-            ]
-          },
-          {
-            "key": "Enerji Maliyeti",
-            "values": [
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_2/battle_talent_2.gif"
+        ]
       },
       {
-        "key": "Kutsal Kaide",
-        "title": "Kutsal Kaide",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/const_talent_0.png",
+        "title": "Karakter Hikayesi 3",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>Kutsal Kadının Hükmü</color> becerisinin oluşturduğu alan içindeki aktif karakter %15 <color=#99ffff>Buz Hasar Bonusu</color> kazanır."
+            "text": "Liyue'de Adeptuslarla olan karşılaşmalar hakkında birçok halk masalı anlatılır. Bunların çoğu, başta pek tanınmayan ancak bir Adeptusun himayesi altına girdikten sonra konumunu büyük ölçüde yükselten kişilerle ilgilidir.\nBununla beraber, Shenhe'nin kaderini Adeptuslarla bir araya getiren şey bu tarz bir hikaye değildi. Aksine keder ve ızdırap dolu bir hadisenin sonucunda gerçekleşti.\nShenhe beş yaşındayken annesi vefat etti; ancak eşini çok seven babası bu acıya katlanamadı. Zamanla acısı kine dönüştü ve bu kin de saplantıyı doğurdu. Aklını kaçırmış bir adam gibi sokaklarda başıboş dolaşmaya başladı.\nYaklaşık bir yıl boyunca durmaksızın, rahat bir uyku yüzü görmeden eşini tekrar hayata döndürmenin yollarını aradı.\nSonunda, bu yıl bitmeden hemen önce coşkulu bir çılgınlık içinde evine döndü.\nShenhe'nin babası \"Kader Aktarımı\" olarak bilinen gizli bir büyüyü yanında getirmişti. Bu büyü sayesinde, çağırdığı periye kurbanlık ayin gerçekleştirerek ölü birinin hayatıyla yaşayan birinin bedenini takas edebilecekti. O sırada Shenhe başına gelecek felaketten tamamen habersizdi. Sonuçta sıradan bir çocuktu ve uzun zamandır ortadan kaybolmuş babası eve döndüğü için çok mutluydu.\nBabası dağlardaki bir mağarada onu bir sürprizin beklediğini ve hemen mağaraya gidebileceklerini söyledi.\nBunu duyan Shenhe'nin yüreği sevinçle doldu...\nArdından gördükleri hayatının sonuna kadar aklına kazınacaktı. Babası o mağaraya iğrenç, korkunç bir kara \"peri\" çağırmıştı. Kan kırmızısı gözleri\nShenhe'nin cezbedici yaşam gücünü tatmak için can atıyordu. Şaşkına dönen Shenhe perinin nereden geldiğini veya ne istediğini bilmiyordu.\nKrizler genelde insanları sersemletir ama küçük Shenhe'nin aklından sadece tek bir düşünce geçti.\nBu yaratık onu yemek istiyordu ama o ölmek istemiyordu.\nYaşamak istiyordu! Annesinin hatırası olan kötü ruh kovma hançerini kavrayarak dehşet içinde, yine de kararlılıkla o kara \"peri\" ile yüzleşti.\nBirkaç gün sonra, büyük bir kötülüğün izini süren bir Adeptus mağarayı inceledi.\nMağaranın içinde küçük kızı yere yığılmış bir şekilde buldu.\nBitkinlik, açlık ve susuzluk içindeki kızın hayatı pamuk ipliğine bağlıydı.\nKızın acıklı kaderinė üzülen ve tek başına korkunç bir gücü defederek gösterdiği yüksek potansiyeli gören Adeptus, onu alıp iyileştirdi ve ermiş olmaya giden yolda eğitti.\nBu olay olmasa, Shenhe bugün bambaşka biri olacaktı."
           }
-        ],
-        "attributes": null
+        ]
       },
       {
-        "key": "Ruh Birliği Mührü",
-        "title": "Ruh Birliği Mührü",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/const_talent_1.png",
+        "title": "Karakter Hikayesi 4",
         "desc": [
           {
             "type": "RichText",
-            "text": "Shenhe <color=#ffd780>Ruha Çağrı</color> becerisini kullandığında yakındaki tüm grup üyelerine aşağıdaki etkileri verir:\n· Bas: 10 saniyeliğine Element Becerisi ve Element Patlaması Hasarı %15 artar.\n· Basılı Tut: 15 saniyeliğine Normal, Yüklü ve Havadan Saldırı Hasarı %15 artar."
+            "text": "Yıllar boyunca dağlarda yaşayıp eğitim almanın sonucunda donuklaşan en duygusuz kalp bile bazen garip dalgalanmalar yaşayabilir.\nShenhe için de durum böyle oldu. Bir gece aniden dağlardan inip eskiden evi olarak gördüğü yere döndü.\nEvi veya ailesi hakkında ne düşündüğünü bilmiyordu. Onu buraya sürükleyen şey nereden kaynaklandığını bilmediği bir arzuydu:\nBir zamanlar kendisine ait olan evde yaşamak ve aklını kaçıran babasına ne olduğunu öğrenmek.\nKomşularından babasının birkaç yıl önce vefat ettiğini öğrendi.\nÇoçukluk evi tefeciler tarafından yıkılmış ve böylece burada geçirdiği çocukluk anılarından hiçbir iz kalmamıştı.\nNe kadar dikkat çektiği umurunda değildi.\nEtrafındakilerden gelen hiçbir soruyu yanıtlamadı.\nOrada öylece durup kalbinin derinliklerinde yankılanan iniltileri dinledi.\nBunun sebebi nefret miydi?\nDelilik mi? Yoksa rahatlama mı?\nBu duyguların hepsini yaşıyordu ama hiçbiri bir an bile olsa egemen olmadı. Sanki kalbi dalgaların olmadığı eski bir kuyu gibiydi.\nHayır, aslında dalgayı oluşturacak suyun bile olmadığı boş bir kuyu gibiydi.\nUzun bir süre bekledikten sonra herkesin şaşkın bakışları arasında tekrar yola koyuldu.\nHer adımının ağırlığını hissetmesine rağmen bir an bile olsa arkasına bakmadı."
           }
-        ],
-        "attributes": null
+        ]
       },
       {
-        "key": "Vakitli Yolculuklar",
-        "title": "Vakitli Yolculuklar",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/const_talent_2.png",
+        "title": "Karakter Hikayesi 5",
         "desc": [
           {
             "type": "RichText",
-            "text": "20 saatliğine bir Liyue Keşfine gönderildiğinde %25 daha fazla ödül kazanır."
-          }
-        ],
-        "attributes": null
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "İsim",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Shenhe"
+            "text": "Liyue'nin astrolojiye benzer şekilde kendi fal bakma veya kehanette bulunma yöntemleri bulunur.\nBunlar arasında insanlar en çok iki kaderden kaçınır.\nBirincisi \"yalnız yıldız\"dır. Bu kader, kişinin aile ve arkadaşlarından ayrılıp hayatını tek başına geçireceğini gösterir.\nİkincisiyse \"büyük kötülük\"tür ve kişinin birçok zorluk ve tehlikeyle karşı karşıya kalacağı anlamına gelir.\nAdeptuslar Shenhe'yi kurtardığında Ay Oymacısı onun falına bakmıştı.\nFalında hem \"yalnız yıldız\" hem de \"büyük kötülük\" göründü.\nAyrıca yüreğini şiddetli öldürme arzusu kaplamıştı. Bu nedenle hem kendisine hem de başkalarına zarar vermeye mahkum, son derece uğursuz bir kadere sahipti.\nGüvenli bir şekilde büyüyebilmesi ve masumlara zarar vermemesi için Adeptuslar ruhunu kızıl iplerle bağladı.\nBu bağ, Shenhe'nin kötü kaderini ve şiddete olan eğilimlerini kısıtlamakla kalmadı, sıradan bir insanın hissedeceği doğal duyguların ortaya çıkmasını da engelledi.\nO andan itibaren gitgide küçük meselelerden etkilenmemeye başladı. Çoğunun önemli kabul ettiği hususlar bile onun için değersizdi.\nGittikçe insanlığını kaybetti ve güzel ama soğuk bir heykele dönüştü.\nFakat uzak diyarlardan gelen Gezgin ile karşılaştığında şaşırtıcı bir şekilde içinde bir şeyler uyandı.\nUzun süredir hareketsiz yatan artık kendisi için yabancı olan duygular bir anda kaderin derinliklerinden yüzeye çıktı.\nBelki de gerçekten Ay Oymacısı'nın bir zamanlar dediği gibiydi: Kaderi gökler belirleyebilir ama kaderin hikayesini ölümlüler yazar.\nShenhe'nin ve ölümlü dünyanın hikayesi henüz sona ermedi..."
           }
         ]
       },
       {
-        "key": "Doğum Günü",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "10/3"
-          }
-        ]
-      },
-      {
-        "key": "Takımyıldız",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Acının Doruğu"
-          }
-        ]
-      },
-      {
-        "key": "Künye",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Yalnızlığın Ötesi"
-          }
-        ]
-      },
-      {
-        "key": "Önsezi",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Buz"
-          }
-        ]
-      },
-      {
-        "key": "İlişki",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Bulutlar Hakimi'nin Evi"
-          }
-        ]
-      },
-      {
-        "key": "Çince Ses.",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "秦紫翼"
-          }
-        ]
-      },
-      {
-        "key": "İngilizce Ses.",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Chelsea Kwoka"
-          }
-        ]
-      },
-      {
-        "key": "Japonca Ses.",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "川澄綾子"
-          }
-        ]
-      },
-      {
-        "key": "Korece Ses.",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Lee Hyeon-jin"
-          }
-        ]
-      },
-      {
-        "key": "Özel Tarif",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 1638,
-            "name": "Gönüllerin Eriştesi",
-            "desc": "Shenhe's specialty. Perhaps this comes from her desire to recreate a flavor that lives only in her memories, but Shenhe has poured much time and effort into both making and plating this dish. The smooth noodles and delectable soup make a great impression indeed, but the most indelible aspects are the dedication and heart put into this dish...",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Heartstring Noodles_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "İlk Çıkış Tarihi",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "2.4"
-          }
-        ]
-      },
-      {
-        "key": "Dehanın Yakarışı Kart Oyunu Karakter Kartı",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3832,
-            "name": "Shenhe",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.85)\">\"Yalnızlığın Ötesi\" Shenhe</span></p><p><span style=\"color: rgba(255, 255, 255, 0.45)\">Ölümlüler diyarı, tıpkı kaybolup giden bir duman gibidir.</span></p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/25/145542732/9d4755dfcf7b10e16ef5cd965065bd8f_7123835737476161410.png",
-            "amount": 1
-          }
-        ],
-        "isMaterial": true
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_1.png",
-        "name": "Duru Kalp",
+        "title": "Beyaz Yeşim Tarak",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>Ruha Çağrı</color> 1 defa daha kullanılabilir."
+            "text": "Bir zamanlar Shenhe'nin saçları simsiyahtı.\nAdeptus onu ilk defa Hula Dağı'na getirdiğinde Shenhe'nin ağzından hiçbir kelime çıkmadı. Dağa tırmanıp bulutlar denizini izlemekle yetindi.\nYorulduğunda uyudu, susadığında dağlardaki çiyi içti ve acıktığında Qingxin saplarını çiğnedi.\nBulutlar Hakimi onu rahatsız etmeden izledi. Kutsal taştan beyaz bir yeşim tarak yaptı ve Shenhe'ye verdi.\nAdeptus ona ölümlü dünyayla bağlarını koparıp Adeptusların vesayeti altına girmek isterse saçlarını bu tarakla üç kere taraması gerektiğini söyledi. Böylece çıraklık ayini yerine getirilmiş sayılacaktı.\nShenhe hiç tereddüt etmeden Adeptusun söylediğini harfiyen yaptı. O anda garip bir şey oldu. Yeşim tarakla saçlarını ilk taradığında siyah saçlarından bazıları kökünden ucuna kadar buz gümüşü rengine büründü.. İkinci tarayışında saçının yalnızca yarısı siyah renkteydi. Ayin tamamlandığında saçlarına\nkar yağmış gibiydi.\n...\nBugün Shenhe bu tarağı Adeptuslarla bağlantısının sembolü olarak taşıyor. Yıllar süren eğitimi sonunda o tarakla saçlarını üç defa tarayışının anlamını çözdü: İlkinin amacı gereksiz endişelerini ortadan kaldırmaktı. İkincisi sevinç ve kederi arkasında bırakması ve üçüncüsü de yaşlanana kadar bu yolda pişmanlık duymadan yürüyebilmesi içindi."
           }
         ]
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_2.png",
-        "name": "Dengeli Ruh",
+        "title": "Önsezi",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>Kutsal Kadının Hükmü</color> 6 saniye daha uzun sürer. Beceri alanında bulunan aktif karakterlerin <color=#99ffff>Buz Kritik Hasarı</color> %15 artar."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_3.png",
-        "name": "İnziva",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Ruha Çağrı</color> seviyesini 3 artırır.\nMaksimum yükseltme seviyesi 15'tir."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_4.png",
-        "name": "Sezgi",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Shenhe'nin <color=#ffd780>Buzdan Tüy</color> becerisinin etkisi altında olan karakterler becerinin Hasar Bonusunu tetiklediğinde Shenhe bir Buzul Mantra kademesi kazanır.\n· Shenhe, <color=#ffd780>Ruha Çağrı</color> becerisini geri kullandığında Buzul Mantra'nın tüm kademeleri tükenir. Tükenen her kademe ile Ruha Çağrı becerisinin verdiği Hasar %5 artar.\n· 50 kademeye kadar birikir. Kademeler 60 saniye sürer."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_5.png",
-        "name": "Kutsallığa Ulaşmak",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Kutsal Kadının Hükmü</color> seviyesini 3 artırır.\nMaksimum yükseltme seviyesi 15'tir."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_6.png",
-        "name": "Unutulmuş Gizem",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Karakterler Normal veya Yüklü Saldırı Hasarı vererek <color=#ffd780>Buzdan Tüy</color> becerisinin etkilerini tetiklerse bu, Tetiklenme Sınırına dahil olmaz."
+            "text": "Babasının kurban etmeyi planladığı mağaradaki küçük kızın tek başına günler ve geceler boyunca canavara nasıl karşı koyabildiğini çok az kişi bilir.\nShenhe kötü ruh kovucu bir aileden gelmesine rağmen aklını kaçırmış babası ona kötü ruh kovma konusunda hiçbir şey öğretmemişti.\nAyrıca o masum yaştaki birçok çocuk gibi hayatın tehlikeleriyle tek başına yüzleşme konusunda hiç deneyimi yoktu.\nAncak o ışıksız mağarada anne babasının korumasından yoksun, hatta ailesinin ihanetine uğramış olan Shenhe bir dönüşüm geçirdi.\nAy Oymacısı'nın falında gördüğü gibi içinde yatan kötülük, şiddetli arzular ve yenilmez ruh aynı anda zincirlerini kopardı.\nBunlar kızın narin bedenini sararak görülmez bir kalkan ve bıçak işlevi gördü.\nOna güç verdiler, önündeki sefil yaratığa saldırabilmesi için pençe ve sivri diş verdiler.\nShenhe, yaratığı paramparça etmeye ve böylece karanlığın arkasında yatan en amansız kötülüğün yaratık değil kendisi olduğunu kanıtlamaya yemin etti.\nSonraki günlerde verdikleri yaşam ve ölüm mücadelesinin sonu gelmek bilmedi. Avcıyla av birçok defa yer değiştirirken çatışma çıkmaza girdi.\nÖlüm an meselesiyken tanrılar bu olağanüstü kıza lütufta bulundu.\nParlak, kristal bir nesne Shenhe'nin ellerine düştüğünde çatışmadaki denge geri dönülemez bir şekilde onun lehine döndü ve mücadelenin galibi belirlendi.\nBuz gibi parlak bir ışık karanlığı delerek geleceğe giden yolu gösterdi.\nGeçmişte Shenhe'yi acınası kaderinden kurtarmıştı.\nGelecekte de ölümlüler diyarına dönüşünde ona rehber olacaktı."
           }
         ]
       }
