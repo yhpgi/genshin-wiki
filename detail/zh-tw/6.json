@@ -5,16 +5,772 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Eula_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/优菈/avatar.png",
   "filterValues": {
-    "characterVision": "冰元素",
-    "characterProperty": "暴擊傷害",
-    "characterWeapon": "雙手劍",
+    "characterRegion": "蒙德城",
     "characterRarity": "五星",
-    "characterRegion": "蒙德城"
+    "characterWeapon": "雙手劍",
+    "characterProperty": "暴擊傷害",
+    "characterVision": "冰元素"
   },
   "menuId": 2,
   "menuName": "角色圖鑑",
   "version": 1746249441,
   "components": {
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/优菈/constellation_1.png",
+        "name": "光潮的幻象",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "消耗 <color=#ffd780>冰潮的渦漩</color> 的冷酷之心效果後，優菈的物理傷害加成提高30%，持續6秒。\n每消耗一層冷酷之心，都會使這個效果的持續時間延長6秒，最多不超過18秒。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/优菈/constellation_2.png",
+        "name": "海沫的少女",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "縮短 <color=#ffd780>冰潮的渦漩</color> 長按的冷卻時間，使其降低至與點按的冷卻時間相同。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/优菈/constellation_3.png",
+        "name": "勞倫斯的血脈",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>凝浪之光劍</color> 的技能等級提高3級。\n至多提升至15級。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/优菈/constellation_4.png",
+        "name": "自卑者的逞強",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "對生命值低於50%的敵人，光降之劍造成的傷害提高25%。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/优菈/constellation_5.png",
+        "name": "騎士的素質",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>冰潮的渦漩</color> 的技能等級提高3級。\n至多提升至15級。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/优菈/constellation_6.png",
+        "name": "高貴者的義務",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>凝浪之光劍</color> 創造的光降之劍立即獲得五層能量。普通攻擊、元素戰技或元素爆發造成傷害使其積蓄能量層數時，有50%的機率額外獲得一層。"
+          }
+        ]
+      }
+    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header&lang=zh-tw#/map/2?shown_types=37,55,181&center=-111.96,-200.87&zoom=-1.00",
+    "baseInfo": [
+      {
+        "key": "名字",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "優菈"
+          }
+        ]
+      },
+      {
+        "key": "生日",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "10月25日"
+          }
+        ]
+      },
+      {
+        "key": "命之座",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "浪沫座"
+          }
+        ]
+      },
+      {
+        "key": "稱號",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "浪沫的旋舞"
+          }
+        ]
+      },
+      {
+        "key": "神之眼",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "冰"
+          }
+        ]
+      },
+      {
+        "key": "所屬",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "西風騎士團"
+          }
+        ]
+      },
+      {
+        "key": "華語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "子音"
+          }
+        ]
+      },
+      {
+        "key": "英語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "素汐·楊"
+          }
+        ]
+      },
+      {
+        "key": "日語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "佐藤利奈"
+          }
+        ]
+      },
+      {
+        "key": "韓語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "金炫志"
+          }
+        ]
+      },
+      {
+        "key": "特色料理",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 1874,
+            "name": "駭浪派",
+            "desc": "優菈的特色料理。不同於圓月的造型不知是在反抗傳統，還是表達她「以牙還牙」的行事作風。金黃外皮之下，鹹鮮的煙燻風味飽滿濃郁，全蒙德也難找到第二個能做出如此美味的人…但要是這樣說出口的話，恐怕又會被她「記仇」了吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stormcrest Pie_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "實裝版本",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.5版本「玉扉繞塵歌」"
+          }
+        ]
+      },
+      {
+        "key": "七聖召喚",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3604,
+            "name": "優菈",
+            "desc": "<p><span style=\"color: #FFFFFF\">浪沫的旋舞·優菈</span></p><p>這只是一場遊戲，無論是取勝或落敗，妳/你都不會因此被冠上罪名。</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/25/84496276/6d68e14ae4fbc1799d2d64b671905f01_6471800346027047765.png"
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
+    "ascension": [
+      {
+        "key": "Lv.1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "-",
+              "1030"
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "-",
+              "27"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "-",
+              "58"
+            ]
+          },
+          {
+            "key": "暴擊傷害",
+            "values": [
+              "-",
+              "0%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Lv.20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "2671",
+              "3554"
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "69",
+              "92"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "152",
+              "202"
+            ]
+          },
+          {
+            "key": "暴擊傷害",
+            "values": [
+              "0%",
+              "0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 411,
+            "name": "哀敘冰玉碎屑",
+            "desc": "角色突破素材。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1543,
+            "name": "蒲公英籽",
+            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1247,
+            "name": "破損的面具",
+            "desc": "破碎的骨質面具，曾經屬於某個丘丘人。<br/>破損的部分比完整的部分更多，已經失去了假面應有的功能。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "Lv.40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "5317",
+              "5944"
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "138",
+              "154"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "302",
+              "337"
+            ]
+          },
+          {
+            "key": "暴擊傷害",
+            "values": [
+              "0%",
+              "9.6%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 410,
+            "name": "哀敘冰玉斷片",
+            "desc": "角色突破素材。<br/>「…抱歉…」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 897,
+            "name": "晶凝之華",
+            "desc": "無相之冰綻開的極寒瞬間，凝結而出的至純冰晶。<br/>冰霜的結晶永遠依憑著冰冷的定則生長、盛放，最終開出凍結一切的凜冬之花。或許滯頓的時間，無法解凍的幽懷，才應當是永存不滅之花的真諦。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystalline Bloom_icon.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1543,
+            "name": "蒲公英籽",
+            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1247,
+            "name": "破損的面具",
+            "desc": "破碎的骨質面具，曾經屬於某個丘丘人。<br/>破損的部分比完整的部分更多，已經失去了假面應有的功能。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "Lv.50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "6839",
+              "7675"
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "177",
+              "198"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "388",
+              "436"
+            ]
+          },
+          {
+            "key": "暴擊傷害",
+            "values": [
+              "9.6%",
+              "19.2%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 410,
+            "name": "哀敘冰玉斷片",
+            "desc": "角色突破素材。<br/>「…抱歉…」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 897,
+            "name": "晶凝之華",
+            "desc": "無相之冰綻開的極寒瞬間，凝結而出的至純冰晶。<br/>冰霜的結晶永遠依憑著冰冷的定則生長、盛放，最終開出凍結一切的凜冬之花。或許滯頓的時間，無法解凍的幽懷，才應當是永存不滅之花的真諦。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystalline Bloom_icon.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1543,
+            "name": "蒲公英籽",
+            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 983,
+            "name": "汙穢的面具",
+            "desc": "沾滿了難以辨認的污漬，散發著微妙氣味的骨質面具。<br/>即使這樣也要戴在臉上，這就是丘丘人的執著。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "8579",
+              "9207 "
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "222",
+              "238"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "487",
+              "523"
+            ]
+          },
+          {
+            "key": "暴擊傷害",
+            "values": [
+              "19.2%",
+              "19.2%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 409,
+            "name": "哀敘冰玉塊",
+            "desc": "角色突破素材。<br/>「…抱歉…」<br/>「讓你們一起和我背負了整個世界的哀思。」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 897,
+            "name": "晶凝之華",
+            "desc": "無相之冰綻開的極寒瞬間，凝結而出的至純冰晶。<br/>冰霜的結晶永遠依憑著冰冷的定則生長、盛放，最終開出凍結一切的凜冬之花。或許滯頓的時間，無法解凍的幽懷，才應當是永存不滅之花的真諦。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystalline Bloom_icon.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1543,
+            "name": "蒲公英籽",
+            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 983,
+            "name": "汙穢的面具",
+            "desc": "沾滿了難以辨認的污漬，散發著微妙氣味的骨質面具。<br/>即使這樣也要戴在臉上，這就是丘丘人的執著。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Lv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "10119",
+              "10746 "
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "262",
+              "278"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "574",
+              "610"
+            ]
+          },
+          {
+            "key": "暴擊傷害",
+            "values": [
+              "19.2%",
+              "28.8%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 409,
+            "name": "哀敘冰玉塊",
+            "desc": "角色突破素材。<br/>「…抱歉…」<br/>「讓你們一起和我背負了整個世界的哀思。」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 897,
+            "name": "晶凝之華",
+            "desc": "無相之冰綻開的極寒瞬間，凝結而出的至純冰晶。<br/>冰霜的結晶永遠依憑著冰冷的定則生長、盛放，最終開出凍結一切的凜冬之花。或許滯頓的時間，無法解凍的幽懷，才應當是永存不滅之花的真諦。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystalline Bloom_icon.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1543,
+            "name": "蒲公英籽",
+            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 220,
+            "name": "不祥的面具",
+            "desc": "光亮的骨質面具，上面塗繪著意在恐嚇敵人的油彩。<br/>丘丘人對面具的執著緣起為何，至今無人能解。一說認為是不願看見自己在水中的倒影。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "11669",
+              "12296 "
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "302",
+              "318"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "662",
+              "698"
+            ]
+          },
+          {
+            "key": "暴擊傷害",
+            "values": [
+              "28.8%",
+              "38.4%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "摩拉",
+            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 408,
+            "name": "哀敘冰玉",
+            "desc": "角色突破素材。<br/>「…抱歉讓你們一起和我背負了整個世界的哀思。」<br/>「你們既然能忍受我的苦寒，那心中一定都有熾烈的欲望吧？」<br/>「那麼，替我燃燒舊世界吧。」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 897,
+            "name": "晶凝之華",
+            "desc": "無相之冰綻開的極寒瞬間，凝結而出的至純冰晶。<br/>冰霜的結晶永遠依憑著冰冷的定則生長、盛放，最終開出凍結一切的凜冬之花。或許滯頓的時間，無法解凍的幽懷，才應當是永存不滅之花的真諦。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystalline Bloom_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1543,
+            "name": "蒲公英籽",
+            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 220,
+            "name": "不祥的面具",
+            "desc": "光亮的骨質面具，上面塗繪著意在恐嚇敵人的油彩。<br/>丘丘人對面具的執著緣起為何，至今無人能解。一說認為是不願看見自己在水中的倒影。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "Lv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎生命值",
+            "values": [
+              "13226",
+              "-"
+            ]
+          },
+          {
+            "key": "基礎攻擊力",
+            "values": [
+              "342",
+              "-"
+            ]
+          },
+          {
+            "key": "基礎防禦力",
+            "values": [
+              "751",
+              "-"
+            ]
+          },
+          {
+            "key": "暴擊傷害",
+            "values": [
+              "38.4%",
+              "-"
+            ]
+          }
+        ]
+      }
+    ],
     "talent": [
       {
         "key": "普通攻擊·西風劍術·宗室",
@@ -920,635 +1676,52 @@
         "attributes": null
       }
     ],
-    "ascension": [
+    "galleryCharacter": [
       {
-        "key": "Lv.1",
-        "combatStats": [
+        "key": "Character Card",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/优菈/avatar_header_cnt.png"
+      },
+      {
+        "key": "原畫",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/优菈/avatar.png",
+        "imgDesc": [
           {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "-",
-              "1030"
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "-",
-              "27"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "-",
-              "58"
-            ]
-          },
-          {
-            "key": "暴擊傷害",
-            "values": [
-              "-",
-              "0%"
-            ]
+            "type": "RichText",
+            "text": "衣裝 - 浪尖之舞\n優菈的裝扮款式。俐落且能突顯典雅風範的騎士裝束。"
           }
         ]
       },
       {
-        "key": "Lv.20",
-        "combatStats": [
+        "key": "閒置動作 1",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/875d2a7e187335adc9d29cabe7ee8c86_3008037550518200269.gif",
+        "imgDesc": [
           {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "2671",
-              "3554"
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "69",
-              "92"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "152",
-              "202"
-            ]
-          },
-          {
-            "key": "暴擊傷害",
-            "values": [
-              "0%",
-              "0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 411,
-            "name": "哀敘冰玉碎屑",
-            "desc": "角色突破素材。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1543,
-            "name": "蒲公英籽",
-            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1247,
-            "name": "破損的面具",
-            "desc": "破碎的骨質面具，曾經屬於某個丘丘人。<br/>破損的部分比完整的部分更多，已經失去了假面應有的功能。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
-            "amount": 3
+            "type": "RichText",
+            "text": "衣裝 - 浪尖之舞"
           }
         ]
       },
       {
-        "key": "Lv.40",
-        "combatStats": [
+        "key": "閒置動作 2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/e05c4683d3917df1b4d0a22fd9bfa623_7456488988164285407.gif",
+        "imgDesc": [
           {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "5317",
-              "5944"
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "138",
-              "154"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "302",
-              "337"
-            ]
-          },
-          {
-            "key": "暴擊傷害",
-            "values": [
-              "0%",
-              "9.6%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 410,
-            "name": "哀敘冰玉斷片",
-            "desc": "角色突破素材。<br/>「…抱歉…」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 897,
-            "name": "晶凝之華",
-            "desc": "無相之冰綻開的極寒瞬間，凝結而出的至純冰晶。<br/>冰霜的結晶永遠依憑著冰冷的定則生長、盛放，最終開出凍結一切的凜冬之花。或許滯頓的時間，無法解凍的幽懷，才應當是永存不滅之花的真諦。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystalline Bloom_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1543,
-            "name": "蒲公英籽",
-            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1247,
-            "name": "破損的面具",
-            "desc": "破碎的骨質面具，曾經屬於某個丘丘人。<br/>破損的部分比完整的部分更多，已經失去了假面應有的功能。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
-            "amount": 15
+            "type": "RichText",
+            "text": "衣裝 - 浪尖之舞"
           }
         ]
       },
       {
-        "key": "Lv.50",
-        "combatStats": [
+        "key": "命之座",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/06/7998136/432f1a4b61b624004b49a97d477475af_3826135938728620871.png",
+        "imgDesc": [
           {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "6839",
-              "7675"
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "177",
-              "198"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "388",
-              "436"
-            ]
-          },
-          {
-            "key": "暴擊傷害",
-            "values": [
-              "9.6%",
-              "19.2%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 410,
-            "name": "哀敘冰玉斷片",
-            "desc": "角色突破素材。<br/>「…抱歉…」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 897,
-            "name": "晶凝之華",
-            "desc": "無相之冰綻開的極寒瞬間，凝結而出的至純冰晶。<br/>冰霜的結晶永遠依憑著冰冷的定則生長、盛放，最終開出凍結一切的凜冬之花。或許滯頓的時間，無法解凍的幽懷，才應當是永存不滅之花的真諦。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystalline Bloom_icon.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1543,
-            "name": "蒲公英籽",
-            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 983,
-            "name": "汙穢的面具",
-            "desc": "沾滿了難以辨認的污漬，散發著微妙氣味的骨質面具。<br/>即使這樣也要戴在臉上，這就是丘丘人的執著。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "8579",
-              "9207 "
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "222",
-              "238"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "487",
-              "523"
-            ]
-          },
-          {
-            "key": "暴擊傷害",
-            "values": [
-              "19.2%",
-              "19.2%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 409,
-            "name": "哀敘冰玉塊",
-            "desc": "角色突破素材。<br/>「…抱歉…」<br/>「讓你們一起和我背負了整個世界的哀思。」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 897,
-            "name": "晶凝之華",
-            "desc": "無相之冰綻開的極寒瞬間，凝結而出的至純冰晶。<br/>冰霜的結晶永遠依憑著冰冷的定則生長、盛放，最終開出凍結一切的凜冬之花。或許滯頓的時間，無法解凍的幽懷，才應當是永存不滅之花的真諦。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystalline Bloom_icon.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1543,
-            "name": "蒲公英籽",
-            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 983,
-            "name": "汙穢的面具",
-            "desc": "沾滿了難以辨認的污漬，散發著微妙氣味的骨質面具。<br/>即使這樣也要戴在臉上，這就是丘丘人的執著。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Lv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "10119",
-              "10746 "
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "262",
-              "278"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "574",
-              "610"
-            ]
-          },
-          {
-            "key": "暴擊傷害",
-            "values": [
-              "19.2%",
-              "28.8%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 409,
-            "name": "哀敘冰玉塊",
-            "desc": "角色突破素材。<br/>「…抱歉…」<br/>「讓你們一起和我背負了整個世界的哀思。」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 897,
-            "name": "晶凝之華",
-            "desc": "無相之冰綻開的極寒瞬間，凝結而出的至純冰晶。<br/>冰霜的結晶永遠依憑著冰冷的定則生長、盛放，最終開出凍結一切的凜冬之花。或許滯頓的時間，無法解凍的幽懷，才應當是永存不滅之花的真諦。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystalline Bloom_icon.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1543,
-            "name": "蒲公英籽",
-            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 220,
-            "name": "不祥的面具",
-            "desc": "光亮的骨質面具，上面塗繪著意在恐嚇敵人的油彩。<br/>丘丘人對面具的執著緣起為何，至今無人能解。一說認為是不願看見自己在水中的倒影。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "11669",
-              "12296 "
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "302",
-              "318"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "662",
-              "698"
-            ]
-          },
-          {
-            "key": "暴擊傷害",
-            "values": [
-              "28.8%",
-              "38.4%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "摩拉",
-            "desc": "通行大陸的貨幣。世界通用的共同語言，誰人都能理解的貴金屬。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 408,
-            "name": "哀敘冰玉",
-            "desc": "角色突破素材。<br/>「…抱歉讓你們一起和我背負了整個世界的哀思。」<br/>「你們既然能忍受我的苦寒，那心中一定都有熾烈的欲望吧？」<br/>「那麼，替我燃燒舊世界吧。」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 897,
-            "name": "晶凝之華",
-            "desc": "無相之冰綻開的極寒瞬間，凝結而出的至純冰晶。<br/>冰霜的結晶永遠依憑著冰冷的定則生長、盛放，最終開出凍結一切的凜冬之花。或許滯頓的時間，無法解凍的幽懷，才應當是永存不滅之花的真諦。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystalline Bloom_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1543,
-            "name": "蒲公英籽",
-            "desc": "隨風而行的細小種子。即使拔去了旅行的羽絮，其中也寄宿著遠方的希望吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dandelion Seed_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 220,
-            "name": "不祥的面具",
-            "desc": "光亮的骨質面具，上面塗繪著意在恐嚇敵人的油彩。<br/>丘丘人對面具的執著緣起為何，至今無人能解。一說認為是不願看見自己在水中的倒影。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Lv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎生命值",
-            "values": [
-              "13226",
-              "-"
-            ]
-          },
-          {
-            "key": "基礎攻擊力",
-            "values": [
-              "342",
-              "-"
-            ]
-          },
-          {
-            "key": "基礎防禦力",
-            "values": [
-              "751",
-              "-"
-            ]
-          },
-          {
-            "key": "暴擊傷害",
-            "values": [
-              "38.4%",
-              "-"
-            ]
+            "type": "RichText",
+            "text": "<color=#ffffffa6>浪沫座</color>"
           }
         ]
       }
     ],
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/优菈/constellation_1.png",
-        "name": "光潮的幻象",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "消耗 <color=#ffd780>冰潮的渦漩</color> 的冷酷之心效果後，優菈的物理傷害加成提高30%，持續6秒。\n每消耗一層冷酷之心，都會使這個效果的持續時間延長6秒，最多不超過18秒。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/优菈/constellation_2.png",
-        "name": "海沫的少女",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "縮短 <color=#ffd780>冰潮的渦漩</color> 長按的冷卻時間，使其降低至與點按的冷卻時間相同。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/优菈/constellation_3.png",
-        "name": "勞倫斯的血脈",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>凝浪之光劍</color> 的技能等級提高3級。\n至多提升至15級。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/优菈/constellation_4.png",
-        "name": "自卑者的逞強",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "對生命值低於50%的敵人，光降之劍造成的傷害提高25%。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/优菈/constellation_5.png",
-        "name": "騎士的素質",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>冰潮的渦漩</color> 的技能等級提高3級。\n至多提升至15級。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/优菈/constellation_6.png",
-        "name": "高貴者的義務",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>凝浪之光劍</color> 創造的光降之劍立即獲得五層能量。普通攻擊、元素戰技或元素爆發造成傷害使其積蓄能量層數時，有50%的機率額外獲得一層。"
-          }
-        ]
-      }
-    ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header&lang=zh-tw#/map/2?shown_types=37,55,181&center=-111.96,-200.87&zoom=-1.00",
     "story": [
       {
         "title": "角色詳細",
@@ -3359,135 +3532,6 @@
         ]
       }
     ],
-    "textualResearch": [
-      {
-        "title": "於旋舞之時，斬斷罪人的枷鎖",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "身為西風騎士團「游擊小隊」的隊長兼聲顯赫的「浪花騎士」，優菈長期率部在外巡邏，斬獲過諸多功勳。駐紮在高山深澗中的騎士們時常成為魔物的突襲目標，優菈能以最迅速的支援排除險情，化解危機。她也屢次率隊主動進攻，搗毀深淵教團的據點，將陰謀扼殺於萌芽中。\n然而，優菈的身世尤為特殊，諸多矛盾盤根錯節——她是勞倫斯家族的末裔，被蒙德民眾視為罪人之血的具象。這樣的她卻在多年前與家族決裂，加入了西風騎士團。礙於難以消除的偏見，優菈並未得到公正的對待。在蒙德民眾眼裡，她始終是「外人」，甚至是「危險人物」。\n多年來的經歷促使優菈塑起無形之盾，保護自己免受無妄之災。「復仇」一詞，或許是這面盾牌最為外顯的一角。唯有拋去流言蜚語，試著接受她待人處世的邏輯，才能認識到這位少女複雜外殼下的真實面貌吧。\nHoYoLAB網址：https:/www.hoyolab.com/article/362370"
-          }
-        ]
-      },
-      {
-        "title": "【生日訊息】信件（2021）",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "信件標題：生日…\n寄件者：優菈\n按照傳統，勞倫斯家的後裔慶祝生日需要遵循諸多規矩和禮儀。在挑選受邀對象方面，也有嚴格要求。論麻煩程度，已經大到讓人此生都不會想過生日的地步。\n但我不會被這些事物束縛。所以，我忽略了它們。現在，只邀請你一人。\n忘掉亂七八糟的雜事，忘掉你我二人的身分。唯有今天，把我當作「優菈」就好。\n一起去雪山滑雪吧。寒風刺骨，卻能讓人清醒。\n記得多穿一點。不然，我就得把自己的披風圍到你身上。\n…那樣的話，這個仇，我得記一輩子了。"
-          }
-        ]
-      },
-      {
-        "title": "【生日訊息】SNS 1（2021）",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "如果舞都跳不好的話，可就別想學會我的「西風劍術」了。\n所以——這段時間教你的舞步，練習得如何了？\n喔？很有自信嘛。那接下來就是驗收的時間了。\n小心不要跳錯步子踩到我喔，不然，我可是會記仇的。\n感謝畫師：Csyday 繪製賀圖\nHoYoLAB網址：https:/www.hoyolab.com/article/1287836"
-          }
-        ]
-      },
-      {
-        "title": "【生日訊息】SNS 2（2021）",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "「居然這樣嚇唬我！安柏，這個仇……」\n「嘿嘿，我和旅行者帶來了妳喜歡的飲品哦！一起來嚐嚐吧？」\nHoYoLAB網址：https:/www.hoyolab.com/article/1287824"
-          }
-        ]
-      },
-      {
-        "title": "【生日訊息】信件（2022）",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "信件標題：放鬆時刻…\n寄件者：優菈\n按照貴族禮儀，過生日時，可以為重要的朋友獻上一支慶祝的舞，如此一來，雙方都將得到前人的護佑。\n我對勞倫斯家的護佑毫無興趣，也不想講究貴族這套迂腐的規矩，因此，我從未向你提過這項傳統。\n但如今想想，或許我也不該固守己見，將其形式與內在一併捨棄…既然舞蹈對我而言永遠高潔，那只要我用自己的方式表達，獻出的，就應該算作「我」對你的護佑。\n總之…別讓我等太久。"
-          }
-        ]
-      },
-      {
-        "title": "【生日訊息】SNS 1（2022）",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "你看，這裡視野很好，能清楚地望見蒙德的街巷。\n我通常在城外巡查，偶爾會來這裡放鬆一下，好好看看城裡的風景。\n前一陣隊員們忙了許多節日的工作，所以今天的任務一結束我就把他們都趕回家了。\n好了，閒話就說到這裡，要隨我去吃頓便飯嗎？\n感謝畫師：にゅむ 繪製賀圖\nHoYoLAB網址：https:/www.hoyolab.com/article/13031323"
-          }
-        ]
-      },
-      {
-        "title": "【生日訊息】SNS 2（2022）",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "「啊！真是舒爽呀！居然還有冰鎮後的飲料，謝謝妳呀，安柏！」\nHoYoLAB網址：https:/www.hoyolab.com/article/13031325"
-          }
-        ]
-      },
-      {
-        "title": "【生日訊息】信件（2023）",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "信件標題：代理隊長…\n寄件者：優菈\n最近，游擊小隊正在高強度執勤，以至於休息時間...不太充裕。\n我倒是習慣了，這代表荊夫港的商隊正將貨物源源不絕地輸入蒙德，值得慶祝。\n不過，有隊員提議說是時候找一位代理隊長來替我分擔壓力了。\n雖然他的話恐怕是玩笑，但這也提醒了我，我心中的確有個最佳人選——那就是你。\n有空的話，來游擊小隊的營地玩玩吧。我準備了一頓還算豐盛的戰地餐...\n我會和你分享游擊小隊的指揮要領，還有隊長需要注意的事項。\n對於你這位獨特的榮譽騎士，一定會有派上用場的一天..."
-          }
-        ]
-      },
-      {
-        "title": "【生日訊息】信件（2024）",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "信件標題：浪花洗禮…\n寄件者：優菈\n不久前，游擊小隊遭遇了一場棘手的戰鬥，所幸全員安全凱旋。呼…否則這封信件恐怕很難跟往年一樣如期寄出…\n這次的魔物強度明顯高於以往，招式戰策也更加狡猾，詳細情報我已傳回西風騎士團，提醒各個小隊提高警覺。\n而對於你這位還在異國奮戰的榮譽騎士，我希望能跟你當面聊聊…如果你心中某處已對戰事感到疲憊，不妨來聽聽骨哨的響聲，試著閉上眼，感受浪花的洗禮。\n哼，說不定等你再睜開眼時，就能夠充滿力量………在我對你復仇之前，我會支持你先完成對那些橫行頑敵的復仇。"
-          }
-        ]
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/优菈/avatar_header_cnt.png"
-      },
-      {
-        "key": "原畫",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/优菈/avatar.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "衣裝 - 浪尖之舞\n優菈的裝扮款式。俐落且能突顯典雅風範的騎士裝束。"
-          }
-        ]
-      },
-      {
-        "key": "閒置動作 1",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/875d2a7e187335adc9d29cabe7ee8c86_3008037550518200269.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "衣裝 - 浪尖之舞"
-          }
-        ]
-      },
-      {
-        "key": "閒置動作 2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/7998136/e05c4683d3917df1b4d0a22fd9bfa623_7456488988164285407.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "衣裝 - 浪尖之舞"
-          }
-        ]
-      },
-      {
-        "key": "命之座",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/06/7998136/432f1a4b61b624004b49a97d477475af_3826135938728620871.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>浪沫座</color>"
-          }
-        ]
-      }
-    ],
     "customize": [
       {
         "type": "Heading",
@@ -3760,131 +3804,87 @@
         "text": "<color=#ffffff>聖遺物說明：</color>\n染血的騎士道：造成的 <color=#ffd780>物理傷害</color> 提高25%。\n蒼白之火：造成的 <color=#ffd780>物理傷害</color> 提高25%。\n物理傷害加成可提高優菈的 輸出"
       }
     ],
-    "baseInfo": [
+    "textualResearch": [
       {
-        "key": "名字",
-        "value": [
+        "title": "於旋舞之時，斬斷罪人的枷鎖",
+        "desc": [
           {
             "type": "RichText",
-            "text": "優菈"
+            "text": "身為西風騎士團「游擊小隊」的隊長兼聲顯赫的「浪花騎士」，優菈長期率部在外巡邏，斬獲過諸多功勳。駐紮在高山深澗中的騎士們時常成為魔物的突襲目標，優菈能以最迅速的支援排除險情，化解危機。她也屢次率隊主動進攻，搗毀深淵教團的據點，將陰謀扼殺於萌芽中。\n然而，優菈的身世尤為特殊，諸多矛盾盤根錯節——她是勞倫斯家族的末裔，被蒙德民眾視為罪人之血的具象。這樣的她卻在多年前與家族決裂，加入了西風騎士團。礙於難以消除的偏見，優菈並未得到公正的對待。在蒙德民眾眼裡，她始終是「外人」，甚至是「危險人物」。\n多年來的經歷促使優菈塑起無形之盾，保護自己免受無妄之災。「復仇」一詞，或許是這面盾牌最為外顯的一角。唯有拋去流言蜚語，試著接受她待人處世的邏輯，才能認識到這位少女複雜外殼下的真實面貌吧。\nHoYoLAB網址：https:/www.hoyolab.com/article/362370"
           }
         ]
       },
       {
-        "key": "生日",
-        "value": [
+        "title": "【生日訊息】信件（2021）",
+        "desc": [
           {
             "type": "RichText",
-            "text": "10月25日"
+            "text": "信件標題：生日…\n寄件者：優菈\n按照傳統，勞倫斯家的後裔慶祝生日需要遵循諸多規矩和禮儀。在挑選受邀對象方面，也有嚴格要求。論麻煩程度，已經大到讓人此生都不會想過生日的地步。\n但我不會被這些事物束縛。所以，我忽略了它們。現在，只邀請你一人。\n忘掉亂七八糟的雜事，忘掉你我二人的身分。唯有今天，把我當作「優菈」就好。\n一起去雪山滑雪吧。寒風刺骨，卻能讓人清醒。\n記得多穿一點。不然，我就得把自己的披風圍到你身上。\n…那樣的話，這個仇，我得記一輩子了。"
           }
         ]
       },
       {
-        "key": "命之座",
-        "value": [
+        "title": "【生日訊息】SNS 1（2021）",
+        "desc": [
           {
             "type": "RichText",
-            "text": "浪沫座"
+            "text": "如果舞都跳不好的話，可就別想學會我的「西風劍術」了。\n所以——這段時間教你的舞步，練習得如何了？\n喔？很有自信嘛。那接下來就是驗收的時間了。\n小心不要跳錯步子踩到我喔，不然，我可是會記仇的。\n感謝畫師：Csyday 繪製賀圖\nHoYoLAB網址：https:/www.hoyolab.com/article/1287836"
           }
         ]
       },
       {
-        "key": "稱號",
-        "value": [
+        "title": "【生日訊息】SNS 2（2021）",
+        "desc": [
           {
             "type": "RichText",
-            "text": "浪沫的旋舞"
+            "text": "「居然這樣嚇唬我！安柏，這個仇……」\n「嘿嘿，我和旅行者帶來了妳喜歡的飲品哦！一起來嚐嚐吧？」\nHoYoLAB網址：https:/www.hoyolab.com/article/1287824"
           }
         ]
       },
       {
-        "key": "神之眼",
-        "value": [
+        "title": "【生日訊息】信件（2022）",
+        "desc": [
           {
             "type": "RichText",
-            "text": "冰"
+            "text": "信件標題：放鬆時刻…\n寄件者：優菈\n按照貴族禮儀，過生日時，可以為重要的朋友獻上一支慶祝的舞，如此一來，雙方都將得到前人的護佑。\n我對勞倫斯家的護佑毫無興趣，也不想講究貴族這套迂腐的規矩，因此，我從未向你提過這項傳統。\n但如今想想，或許我也不該固守己見，將其形式與內在一併捨棄…既然舞蹈對我而言永遠高潔，那只要我用自己的方式表達，獻出的，就應該算作「我」對你的護佑。\n總之…別讓我等太久。"
           }
         ]
       },
       {
-        "key": "所屬",
-        "value": [
+        "title": "【生日訊息】SNS 1（2022）",
+        "desc": [
           {
             "type": "RichText",
-            "text": "西風騎士團"
+            "text": "你看，這裡視野很好，能清楚地望見蒙德的街巷。\n我通常在城外巡查，偶爾會來這裡放鬆一下，好好看看城裡的風景。\n前一陣隊員們忙了許多節日的工作，所以今天的任務一結束我就把他們都趕回家了。\n好了，閒話就說到這裡，要隨我去吃頓便飯嗎？\n感謝畫師：にゅむ 繪製賀圖\nHoYoLAB網址：https:/www.hoyolab.com/article/13031323"
           }
         ]
       },
       {
-        "key": "華語 CV",
-        "value": [
+        "title": "【生日訊息】SNS 2（2022）",
+        "desc": [
           {
             "type": "RichText",
-            "text": "子音"
+            "text": "「啊！真是舒爽呀！居然還有冰鎮後的飲料，謝謝妳呀，安柏！」\nHoYoLAB網址：https:/www.hoyolab.com/article/13031325"
           }
         ]
       },
       {
-        "key": "英語 CV",
-        "value": [
+        "title": "【生日訊息】信件（2023）",
+        "desc": [
           {
             "type": "RichText",
-            "text": "素汐·楊"
+            "text": "信件標題：代理隊長…\n寄件者：優菈\n最近，游擊小隊正在高強度執勤，以至於休息時間...不太充裕。\n我倒是習慣了，這代表荊夫港的商隊正將貨物源源不絕地輸入蒙德，值得慶祝。\n不過，有隊員提議說是時候找一位代理隊長來替我分擔壓力了。\n雖然他的話恐怕是玩笑，但這也提醒了我，我心中的確有個最佳人選——那就是你。\n有空的話，來游擊小隊的營地玩玩吧。我準備了一頓還算豐盛的戰地餐...\n我會和你分享游擊小隊的指揮要領，還有隊長需要注意的事項。\n對於你這位獨特的榮譽騎士，一定會有派上用場的一天..."
           }
         ]
       },
       {
-        "key": "日語 CV",
-        "value": [
+        "title": "【生日訊息】信件（2024）",
+        "desc": [
           {
             "type": "RichText",
-            "text": "佐藤利奈"
+            "text": "信件標題：浪花洗禮…\n寄件者：優菈\n不久前，游擊小隊遭遇了一場棘手的戰鬥，所幸全員安全凱旋。呼…否則這封信件恐怕很難跟往年一樣如期寄出…\n這次的魔物強度明顯高於以往，招式戰策也更加狡猾，詳細情報我已傳回西風騎士團，提醒各個小隊提高警覺。\n而對於你這位還在異國奮戰的榮譽騎士，我希望能跟你當面聊聊…如果你心中某處已對戰事感到疲憊，不妨來聽聽骨哨的響聲，試著閉上眼，感受浪花的洗禮。\n哼，說不定等你再睜開眼時，就能夠充滿力量………在我對你復仇之前，我會支持你先完成對那些橫行頑敵的復仇。"
           }
         ]
-      },
-      {
-        "key": "韓語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "金炫志"
-          }
-        ]
-      },
-      {
-        "key": "特色料理",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 1874,
-            "name": "駭浪派",
-            "desc": "優菈的特色料理。不同於圓月的造型不知是在反抗傳統，還是表達她「以牙還牙」的行事作風。金黃外皮之下，鹹鮮的煙燻風味飽滿濃郁，全蒙德也難找到第二個能做出如此美味的人…但要是這樣說出口的話，恐怕又會被她「記仇」了吧。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stormcrest Pie_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "實裝版本",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.5版本「玉扉繞塵歌」"
-          }
-        ]
-      },
-      {
-        "key": "七聖召喚",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3604,
-            "name": "優菈",
-            "desc": "<p><span style=\"color: #FFFFFF\">浪沫的旋舞·優菈</span></p><p>這只是一場遊戲，無論是取勝或落敗，妳/你都不會因此被冠上罪名。</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/25/84496276/6d68e14ae4fbc1799d2d64b671905f01_6471800346027047765.png"
-          }
-        ],
-        "isMaterial": true
       }
     ]
   }
