@@ -5,18 +5,105 @@
   "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2023/12/15/7cf60c81302c7ec463bac6b7773633a7_142395059905665820.png",
   "filterValues": {
     "cardCharacterElement": "Пиро",
+    "cardCharacterWeaponType": "Стрелковое",
+    "cardCharacterObtainingMethod": "Приглашение персонажа",
+    "cardCharacterChargingPoint": "Энергия: 2",
     "cardCharacterCamp": [
       "Фатуи",
       "Фонтейн"
-    ],
-    "cardCharacterWeaponType": "Стрелковое",
-    "cardCharacterChargingPoint": "Энергия: 2",
-    "cardCharacterObtainingMethod": "Приглашение персонажа"
+    ]
   },
   "menuId": 17,
   "menuName": "Карты персонажей",
   "version": 1705843769,
   "components": {
+    "talent": [
+      {
+        "key": "Форсирование карты с подменой",
+        "title": "Форсирование карты с подменой",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/18/70239714/f0d674be287c96be7066ab5e4e75b0fb_4412404807292561390.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Обычная атака</color>\nНаносит <color=#ffffff>Физический урон</color> , 2 ед."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Стрела-реквизит",
+        "title": "Стрела-реквизит",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/18/70239714/67d6f9d70e695a791caa42953d11e1e3_6451494464769886709.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Обычная атака</color>\nНаносит <color=#ff9999>Пиро урон</color> , 2 ед., призывает помощника <color=#ffffff>«Хохочущий котошляп»</color> , накапливается <color=#ffffff>Избыточный реквизит</color> (1 уровень).\nЕсли у этого персонажа не менее 6 HP, он получает <color=#ffffff>Проникающий урон</color> , 1 ед.\n<color=#ece5d8>Избыточный реквизит</color>\n<color=#ffd780>Статус</color>\n<color=#ffffff>Избыточный реквизит</color> складывается до 3 раз. <color=#ffffff>Когда персонаж использует Ошеломляющие огни:</color> за каждый <color=#ffffff>Избыточный реквизит</color> урон увеличивается на 1 ед. После подсчёта навыка <color=#ffffff>Избыточный реквизит</color> расходуется, восстанавливая 1 HP за каждый уровень."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Ошеломляющие огни",
+        "title": "Ошеломляющие огни",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/18/70239714/053697dd2072f984e7e9b4e118b3dec9_5053981705333700509.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Элементальный навык</color>\nНаносит <color=#ff9999>Пиро урон</color> , 3 ед."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Великий фокус: Парад чудес",
+        "title": "Великий фокус: Парад чудес",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/18/70239714/1f6d82b825fc55a454fe56d6bb68239e_6524577885220547117.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Взрыв стихии</color>\nНаносит <color=#ff9999>Пиро урон</color> , 3 ед., призывается <color=#ffffff>Хохочущий котошляп</color> , накапливается <color=#ffffff>Избыточный реквизит</color> (1 уровень)."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Хохочущий котошляп",
+        "title": "Хохочущий котошляп",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/18/70239714/db13288db6b90ec33f8adc2656d2019f_8286305319410184175.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Помощник</color>\n<color=#ffffff>Финальная фаза:</color> наносит <color=#ff9999>Пиро урон</color> , 1 ед.\n<color=#ffffff>Кол-во применений: 1</color>\n<color=#ffffff73>(складывается до 2 раз).</color>"
+          }
+        ],
+        "attributes": [],
+        "talentImg": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/18/70239714/0ed08f29bee33744061b306f8acdaf20_2221075664126475880.png"
+      },
+      {
+        "key": "Пиро урон",
+        "title": "Пиро урон",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/18/70239714/d714b3b669cc08d1d8e34464fd7a3630_8623028206291782168.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Создаёт эффект <color=#ff9999>Пиро</color> и может вызвать следующие реакции:\n<color=#ffffff>[</color> <color=#ff9999>Пиро</color> <color=#ffffff>+</color> <color=#99ffff>Крио</color> <color=#ffffff>] Таяние:</color> урон +2 (в этот раз)\n<color=#ffffff>[</color> <color=#ff9999>Пиро</color> <color=#ffffff>+</color> <color=#80c0ff>Гидро</color> <color=#ffffff>] Пар:</color> урон +2 (в этот раз)\n<color=#ffffff>[</color> <color=#ff9999>Пиро</color> <color=#ffffff>+</color> <color=#ffacff>Электро</color> <color=#ffffff>] Перегрузка:</color> урон +2 (в этот раз), делает активным следующего персонажа противника\n<color=#ffffff>[</color> <color=#ff9999>Пиро</color> <color=#ffffff>+</color> <color=#99ff88>Дендро</color> <color=#ffffff>] Горение:</color> урон +1 (в этот раз), создаёт <color=#ffffff>яркое пламя</color> , которое наносит 1 ед. Пиро урона в конце раунда (применения: 1, складывается до 2 раз)"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Подробные правила",
+        "title": "Подробные правила",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/01/21/124137736/245c229cf6f7364c7c9a7aea3db1a1ad_3326952488662472737.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ece5d8>Физический урон</color>\nФизический урон не создаёт элементальных эффектов и не вступает в реакции.\n<color=#ece5d8>Кол-во применений</color>\nКогда срабатывает эффект этой карты, расходуется 1 <color=#ffffff>применение</color> .\nКогда <color=#ffffff>применения</color> кончаются, карта исчезает.\n<color=#ece5d8>Проникающий урон</color>\nПроникающий урон нельзя усилить бонусами, зато от него нельзя защититься щитом, иммунитетом и другими способами."
+          }
+        ],
+        "attributes": []
+      }
+    ],
     "tcg": {
       "headerImgs": [
         {
@@ -160,93 +247,6 @@
           }
         ],
         "isMaterial": true
-      }
-    ],
-    "talent": [
-      {
-        "key": "Форсирование карты с подменой",
-        "title": "Форсирование карты с подменой",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/18/70239714/f0d674be287c96be7066ab5e4e75b0fb_4412404807292561390.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Обычная атака</color>\nНаносит <color=#ffffff>Физический урон</color> , 2 ед."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Стрела-реквизит",
-        "title": "Стрела-реквизит",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/18/70239714/67d6f9d70e695a791caa42953d11e1e3_6451494464769886709.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Обычная атака</color>\nНаносит <color=#ff9999>Пиро урон</color> , 2 ед., призывает помощника <color=#ffffff>«Хохочущий котошляп»</color> , накапливается <color=#ffffff>Избыточный реквизит</color> (1 уровень).\nЕсли у этого персонажа не менее 6 HP, он получает <color=#ffffff>Проникающий урон</color> , 1 ед.\n<color=#ece5d8>Избыточный реквизит</color>\n<color=#ffd780>Статус</color>\n<color=#ffffff>Избыточный реквизит</color> складывается до 3 раз. <color=#ffffff>Когда персонаж использует Ошеломляющие огни:</color> за каждый <color=#ffffff>Избыточный реквизит</color> урон увеличивается на 1 ед. После подсчёта навыка <color=#ffffff>Избыточный реквизит</color> расходуется, восстанавливая 1 HP за каждый уровень."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Ошеломляющие огни",
-        "title": "Ошеломляющие огни",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/18/70239714/053697dd2072f984e7e9b4e118b3dec9_5053981705333700509.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Элементальный навык</color>\nНаносит <color=#ff9999>Пиро урон</color> , 3 ед."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Великий фокус: Парад чудес",
-        "title": "Великий фокус: Парад чудес",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/18/70239714/1f6d82b825fc55a454fe56d6bb68239e_6524577885220547117.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Взрыв стихии</color>\nНаносит <color=#ff9999>Пиро урон</color> , 3 ед., призывается <color=#ffffff>Хохочущий котошляп</color> , накапливается <color=#ffffff>Избыточный реквизит</color> (1 уровень)."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Хохочущий котошляп",
-        "title": "Хохочущий котошляп",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/18/70239714/db13288db6b90ec33f8adc2656d2019f_8286305319410184175.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Помощник</color>\n<color=#ffffff>Финальная фаза:</color> наносит <color=#ff9999>Пиро урон</color> , 1 ед.\n<color=#ffffff>Кол-во применений: 1</color>\n<color=#ffffff73>(складывается до 2 раз).</color>"
-          }
-        ],
-        "attributes": [],
-        "talentImg": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/18/70239714/0ed08f29bee33744061b306f8acdaf20_2221075664126475880.png"
-      },
-      {
-        "key": "Пиро урон",
-        "title": "Пиро урон",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/18/70239714/d714b3b669cc08d1d8e34464fd7a3630_8623028206291782168.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Создаёт эффект <color=#ff9999>Пиро</color> и может вызвать следующие реакции:\n<color=#ffffff>[</color> <color=#ff9999>Пиро</color> <color=#ffffff>+</color> <color=#99ffff>Крио</color> <color=#ffffff>] Таяние:</color> урон +2 (в этот раз)\n<color=#ffffff>[</color> <color=#ff9999>Пиро</color> <color=#ffffff>+</color> <color=#80c0ff>Гидро</color> <color=#ffffff>] Пар:</color> урон +2 (в этот раз)\n<color=#ffffff>[</color> <color=#ff9999>Пиро</color> <color=#ffffff>+</color> <color=#ffacff>Электро</color> <color=#ffffff>] Перегрузка:</color> урон +2 (в этот раз), делает активным следующего персонажа противника\n<color=#ffffff>[</color> <color=#ff9999>Пиро</color> <color=#ffffff>+</color> <color=#99ff88>Дендро</color> <color=#ffffff>] Горение:</color> урон +1 (в этот раз), создаёт <color=#ffffff>яркое пламя</color> , которое наносит 1 ед. Пиро урона в конце раунда (применения: 1, складывается до 2 раз)"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Подробные правила",
-        "title": "Подробные правила",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/01/21/124137736/245c229cf6f7364c7c9a7aea3db1a1ad_3326952488662472737.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ece5d8>Физический урон</color>\nФизический урон не создаёт элементальных эффектов и не вступает в реакции.\n<color=#ece5d8>Кол-во применений</color>\nКогда срабатывает эффект этой карты, расходуется 1 <color=#ffffff>применение</color> .\nКогда <color=#ffffff>применения</color> кончаются, карта исчезает.\n<color=#ece5d8>Проникающий урон</color>\nПроникающий урон нельзя усилить бонусами, зато от него нельзя защититься щитом, иммунитетом и другими способами."
-          }
-        ],
-        "attributes": []
       }
     ]
   }
