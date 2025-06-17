@@ -5,16 +5,645 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Thoma_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/托马/avatar.png",
   "filterValues": {
+    "characterRarity": 4,
     "characterWeapon": "Древковое",
-    "characterVision": "Пиро",
-    "characterRegion": "Инадзума",
     "characterProperty": "Сила атаки",
-    "characterRarity": 4
+    "characterRegion": "Инадзума",
+    "characterVision": "Пиро"
   },
   "menuId": 2,
   "menuName": "Галерея персонажей",
   "version": 1749215237,
   "components": {
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=266&center=8514.00,1810.00&zoom=-1.00",
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/托马/constellation_1.png",
+        "name": "Долг друга",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Когда персонаж под защитой <color=#ffd780>Пылающего щита</color> Томы, но кроме него самого, получает удар, время отката <color=#ffd780>Пылающего покрова</color> и <color=#ffd780>Багрового оёроя</color> Томы уменьшается на 3 сек.\nЭтот эффект может возникнуть раз в 20 сек."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/托马/constellation_2.png",
+        "name": "Проницательность слуги",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Длительность <color=#ffd780>Багрового оёроя</color> увеличивается на 3 сек."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/托马/constellation_3.png",
+        "name": "Твёрдая решимость",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Увеличивает уровень навыка <color=#ffd780>Пылающий покров</color> на 3.\nМакс. уровень: 15"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/托马/constellation_4.png",
+        "name": "Долгосрочный план",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Использование навыка <color=#ffd780>Багровый оёрой</color> восстанавливает 15 ед. энергии Томы."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/托马/constellation_5.png",
+        "name": "Бушующий пожар",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Увеличивает уровень навыка <color=#ffd780>Багровый оёрой</color> на 3.\nМакс. уровень: 15"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/托马/constellation_6.png",
+        "name": "Горячее сердце",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "При получении или обновлении <color=#ffd780>Пылающего щита</color> урон обычных атак, заряженных атак и атак в падении всех членов отряда на 6 сек. повышается на 15%."
+          }
+        ]
+      }
+    ],
+    "ascension": [
+      {
+        "key": "Ур. 1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "До возвышения",
+              "После возвышения"
+            ]
+          },
+          {
+            "key": "Базовое HP",
+            "values": [
+              "-",
+              "866"
+            ]
+          },
+          {
+            "key": "Базовая атака",
+            "values": [
+              "-",
+              "17"
+            ]
+          },
+          {
+            "key": "Базовая защита",
+            "values": [
+              "-",
+              "63"
+            ]
+          },
+          {
+            "key": "Сила атаки",
+            "values": [
+              "-",
+              "0%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Ур. 20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "До возвышения",
+              "После возвышения"
+            ]
+          },
+          {
+            "key": "Базовое HP ",
+            "values": [
+              "2225",
+              "2872"
+            ]
+          },
+          {
+            "key": "Базовая атака",
+            "values": [
+              "43",
+              "56"
+            ]
+          },
+          {
+            "key": "Базовая защита ",
+            "values": [
+              "162",
+              "209"
+            ]
+          },
+          {
+            "key": "Сила атаки ",
+            "values": [
+              "0%",
+              "0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Мора",
+            "desc": "Повсеместная валюта. Международный язык общения.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1100,
+            "name": "Осколок агата Агнидус",
+            "desc": "Материал возвышения персонажа.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 697,
+            "name": "Светящийся гриб",
+            "desc": "Гриб, который светится как ночник. В нём скрыта непостижимая сила.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fluorescent Fungus_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 629,
+            "name": "Печать Похитителей сокровищ",
+            "desc": "Печать Похитителей сокровищ, определяющая положение владельца в банде. Стремление за сокровищами не имеет границ, но стоит ли гордиться тем, что ты вор...?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "Ур. 40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "До возвышения",
+              "После возвышения"
+            ]
+          },
+          {
+            "key": "Базовое HP ",
+            "values": [
+              "4302",
+              "4762"
+            ]
+          },
+          {
+            "key": "Базовая атака",
+            "values": [
+              "84",
+              "93"
+            ]
+          },
+          {
+            "key": "Базовая защита ",
+            "values": [
+              "313",
+              "346"
+            ]
+          },
+          {
+            "key": "Сила атаки ",
+            "values": [
+              "0%",
+              "6%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Мора",
+            "desc": "Повсеместная валюта. Международный язык общения.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1099,
+            "name": "Фрагмент агата Агнидус",
+            "desc": "Материал возвышения персонажа.<br/>«Паломничество за желанием, битва за имя...»",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1692,
+            "name": "Тлеющая жемчужина",
+            "desc": "Кристаллизовавшийся Пиро гипостазис, который излучает тепло.<br/>Однажды даже ревущее пламя остынет, и даже сгоревшие дрова зажгут себя вновь. Должно быть, это воля мира беспрестанно охлаждает и поджигает Пиро гипостазис подобно нескончаемой жизни всего сущего во вселенной... пока однажды не снизойдёт судьбоносная тьма, и всё не поглотит пустота.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Smoldering Pearl_icon.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 697,
+            "name": "Светящийся гриб",
+            "desc": "Гриб, который светится как ночник. В нём скрыта непостижимая сила.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fluorescent Fungus_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 629,
+            "name": "Печать Похитителей сокровищ",
+            "desc": "Печать Похитителей сокровищ, определяющая положение владельца в банде. Стремление за сокровищами не имеет границ, но стоит ли гордиться тем, что ты вор...?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "Ур. 50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "До возвышения",
+              "После возвышения"
+            ]
+          },
+          {
+            "key": "Базовое HP ",
+            "values": [
+              "5478",
+              "6091"
+            ]
+          },
+          {
+            "key": "Базовая атака",
+            "values": [
+              "107",
+              "119 "
+            ]
+          },
+          {
+            "key": "Базовая защита ",
+            "values": [
+              "398",
+              "443"
+            ]
+          },
+          {
+            "key": "Сила атаки ",
+            "values": [
+              "6%",
+              "12%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Мора",
+            "desc": "Повсеместная валюта. Международный язык общения.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1099,
+            "name": "Фрагмент агата Агнидус",
+            "desc": "Материал возвышения персонажа.<br/>«Паломничество за желанием, битва за имя...»",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1692,
+            "name": "Тлеющая жемчужина",
+            "desc": "Кристаллизовавшийся Пиро гипостазис, который излучает тепло.<br/>Однажды даже ревущее пламя остынет, и даже сгоревшие дрова зажгут себя вновь. Должно быть, это воля мира беспрестанно охлаждает и поджигает Пиро гипостазис подобно нескончаемой жизни всего сущего во вселенной... пока однажды не снизойдёт судьбоносная тьма, и всё не поглотит пустота.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Smoldering Pearl_icon.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 697,
+            "name": "Светящийся гриб",
+            "desc": "Гриб, который светится как ночник. В нём скрыта непостижимая сила.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fluorescent Fungus_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1553,
+            "name": "Печать серебряного ворона",
+            "desc": "Символ ворона, используемый членами банды Похитителей сокровищ для идентификации друг друга. Похитители сокровищ не спрашивают резюме. Любой, у кого есть непреодолимая жажда сокровищ, подкреплённая не меньшим количеством храбрости, может стать достойным членом банды.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Ур. 60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "До возвышения",
+              "После возвышения"
+            ]
+          },
+          {
+            "key": "Базовое HP ",
+            "values": [
+              "6806",
+              "7266"
+            ]
+          },
+          {
+            "key": "Базовая атака",
+            "values": [
+              "133",
+              "142"
+            ]
+          },
+          {
+            "key": "Базовая защита ",
+            "values": [
+              "495",
+              "528"
+            ]
+          },
+          {
+            "key": "Сила атаки ",
+            "values": [
+              "12%",
+              "12%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Мора",
+            "desc": "Повсеместная валюта. Международный язык общения.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1098,
+            "name": "Кусок агата Агнидус",
+            "desc": "Материал возвышения персонажа.<br/>«Паломничество за желанием, битва за имя...<br/>Сгоревшие дотла за мечту».",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1692,
+            "name": "Тлеющая жемчужина",
+            "desc": "Кристаллизовавшийся Пиро гипостазис, который излучает тепло.<br/>Однажды даже ревущее пламя остынет, и даже сгоревшие дрова зажгут себя вновь. Должно быть, это воля мира беспрестанно охлаждает и поджигает Пиро гипостазис подобно нескончаемой жизни всего сущего во вселенной... пока однажды не снизойдёт судьбоносная тьма, и всё не поглотит пустота.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Smoldering Pearl_icon.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 697,
+            "name": "Светящийся гриб",
+            "desc": "Гриб, который светится как ночник. В нём скрыта непостижимая сила.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fluorescent Fungus_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1553,
+            "name": "Печать серебряного ворона",
+            "desc": "Символ ворона, используемый членами банды Похитителей сокровищ для идентификации друг друга. Похитители сокровищ не спрашивают резюме. Любой, у кого есть непреодолимая жажда сокровищ, подкреплённая не меньшим количеством храбрости, может стать достойным членом банды.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Ур. 70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "До возвышения",
+              "После возвышения"
+            ]
+          },
+          {
+            "key": "Базовое HP ",
+            "values": [
+              "7981",
+              "8440"
+            ]
+          },
+          {
+            "key": "Базовая атака",
+            "values": [
+              "156",
+              "165"
+            ]
+          },
+          {
+            "key": "Базовая защита ",
+            "values": [
+              "580",
+              "613 "
+            ]
+          },
+          {
+            "key": "Сила атаки ",
+            "values": [
+              "12%",
+              "18%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Мора",
+            "desc": "Повсеместная валюта. Международный язык общения.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1098,
+            "name": "Кусок агата Агнидус",
+            "desc": "Материал возвышения персонажа.<br/>«Паломничество за желанием, битва за имя...<br/>Сгоревшие дотла за мечту».",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1692,
+            "name": "Тлеющая жемчужина",
+            "desc": "Кристаллизовавшийся Пиро гипостазис, который излучает тепло.<br/>Однажды даже ревущее пламя остынет, и даже сгоревшие дрова зажгут себя вновь. Должно быть, это воля мира беспрестанно охлаждает и поджигает Пиро гипостазис подобно нескончаемой жизни всего сущего во вселенной... пока однажды не снизойдёт судьбоносная тьма, и всё не поглотит пустота.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Smoldering Pearl_icon.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 697,
+            "name": "Светящийся гриб",
+            "desc": "Гриб, который светится как ночник. В нём скрыта непостижимая сила.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fluorescent Fungus_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 760,
+            "name": "Печать золотого ворона",
+            "desc": "Печать ворона, символизирующая гордость и руководящий принцип Похитителей сокровищ. Если где-нибудь есть сокровище, которое можно похитить, неважно, скрыто ли оно среди земных просторов или же в морских глубинах, дух Похитителей сокровищ, которые не остановятся ни перед чем, чтобы их найти, не умрёт никогда.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Ур. 80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "До возвышения",
+              "После возвышения"
+            ]
+          },
+          {
+            "key": "Базовое HP ",
+            "values": [
+              "9156",
+              "9616"
+            ]
+          },
+          {
+            "key": "Базовая атака",
+            "values": [
+              "179",
+              "188"
+            ]
+          },
+          {
+            "key": "Базовая защита ",
+            "values": [
+              "665",
+              "699"
+            ]
+          },
+          {
+            "key": "Сила атаки ",
+            "values": [
+              "18%",
+              "24%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Мора",
+            "desc": "Повсеместная валюта. Международный язык общения.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1097,
+            "name": "Драгоценный агат Агнидус",
+            "desc": "Материал возвышения персонажа.<br/>«Паломничество за желанием, битва за имя...<br/>Сгоревшие дотла за мечту.<br/>Намерения никуда не делись, и он добился истины ██».",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1692,
+            "name": "Тлеющая жемчужина",
+            "desc": "Кристаллизовавшийся Пиро гипостазис, который излучает тепло.<br/>Однажды даже ревущее пламя остынет, и даже сгоревшие дрова зажгут себя вновь. Должно быть, это воля мира беспрестанно охлаждает и поджигает Пиро гипостазис подобно нескончаемой жизни всего сущего во вселенной... пока однажды не снизойдёт судьбоносная тьма, и всё не поглотит пустота.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Smoldering Pearl_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 697,
+            "name": "Светящийся гриб",
+            "desc": "Гриб, который светится как ночник. В нём скрыта непостижимая сила.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fluorescent Fungus_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 760,
+            "name": "Печать золотого ворона",
+            "desc": "Печать ворона, символизирующая гордость и руководящий принцип Похитителей сокровищ. Если где-нибудь есть сокровище, которое можно похитить, неважно, скрыто ли оно среди земных просторов или же в морских глубинах, дух Похитителей сокровищ, которые не остановятся ни перед чем, чтобы их найти, не умрёт никогда.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "Ур. 90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "До возвышения",
+              "После возвышения"
+            ]
+          },
+          {
+            "key": "Базовое HP ",
+            "values": [
+              "10331",
+              "-"
+            ]
+          },
+          {
+            "key": "Базовая атака",
+            "values": [
+              "202",
+              "-"
+            ]
+          },
+          {
+            "key": "Базовая защита ",
+            "values": [
+              "751",
+              "-"
+            ]
+          },
+          {
+            "key": "Сила атаки ",
+            "values": [
+              "24%",
+              "-"
+            ]
+          }
+        ]
+      }
+    ],
     "voice": [
       {
         "title": "Привет...",
@@ -2785,635 +3414,6 @@
           {
             "type": "RichText",
             "text": "Красный Щит"
-          }
-        ]
-      }
-    ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=266&center=8514.00,1810.00&zoom=-1.00",
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/托马/constellation_1.png",
-        "name": "Долг друга",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Когда персонаж под защитой <color=#ffd780>Пылающего щита</color> Томы, но кроме него самого, получает удар, время отката <color=#ffd780>Пылающего покрова</color> и <color=#ffd780>Багрового оёроя</color> Томы уменьшается на 3 сек.\nЭтот эффект может возникнуть раз в 20 сек."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/托马/constellation_2.png",
-        "name": "Проницательность слуги",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Длительность <color=#ffd780>Багрового оёроя</color> увеличивается на 3 сек."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/托马/constellation_3.png",
-        "name": "Твёрдая решимость",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Увеличивает уровень навыка <color=#ffd780>Пылающий покров</color> на 3.\nМакс. уровень: 15"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/托马/constellation_4.png",
-        "name": "Долгосрочный план",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Использование навыка <color=#ffd780>Багровый оёрой</color> восстанавливает 15 ед. энергии Томы."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/托马/constellation_5.png",
-        "name": "Бушующий пожар",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Увеличивает уровень навыка <color=#ffd780>Багровый оёрой</color> на 3.\nМакс. уровень: 15"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/托马/constellation_6.png",
-        "name": "Горячее сердце",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "При получении или обновлении <color=#ffd780>Пылающего щита</color> урон обычных атак, заряженных атак и атак в падении всех членов отряда на 6 сек. повышается на 15%."
-          }
-        ]
-      }
-    ],
-    "ascension": [
-      {
-        "key": "Ур. 1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "До возвышения",
-              "После возвышения"
-            ]
-          },
-          {
-            "key": "Базовое HP",
-            "values": [
-              "-",
-              "866"
-            ]
-          },
-          {
-            "key": "Базовая атака",
-            "values": [
-              "-",
-              "17"
-            ]
-          },
-          {
-            "key": "Базовая защита",
-            "values": [
-              "-",
-              "63"
-            ]
-          },
-          {
-            "key": "Сила атаки",
-            "values": [
-              "-",
-              "0%"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Ур. 20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "До возвышения",
-              "После возвышения"
-            ]
-          },
-          {
-            "key": "Базовое HP ",
-            "values": [
-              "2225",
-              "2872"
-            ]
-          },
-          {
-            "key": "Базовая атака",
-            "values": [
-              "43",
-              "56"
-            ]
-          },
-          {
-            "key": "Базовая защита ",
-            "values": [
-              "162",
-              "209"
-            ]
-          },
-          {
-            "key": "Сила атаки ",
-            "values": [
-              "0%",
-              "0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Мора",
-            "desc": "Повсеместная валюта. Международный язык общения.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1100,
-            "name": "Осколок агата Агнидус",
-            "desc": "Материал возвышения персонажа.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 697,
-            "name": "Светящийся гриб",
-            "desc": "Гриб, который светится как ночник. В нём скрыта непостижимая сила.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fluorescent Fungus_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 629,
-            "name": "Печать Похитителей сокровищ",
-            "desc": "Печать Похитителей сокровищ, определяющая положение владельца в банде. Стремление за сокровищами не имеет границ, но стоит ли гордиться тем, что ты вор...?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "key": "Ур. 40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "До возвышения",
-              "После возвышения"
-            ]
-          },
-          {
-            "key": "Базовое HP ",
-            "values": [
-              "4302",
-              "4762"
-            ]
-          },
-          {
-            "key": "Базовая атака",
-            "values": [
-              "84",
-              "93"
-            ]
-          },
-          {
-            "key": "Базовая защита ",
-            "values": [
-              "313",
-              "346"
-            ]
-          },
-          {
-            "key": "Сила атаки ",
-            "values": [
-              "0%",
-              "6%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Мора",
-            "desc": "Повсеместная валюта. Международный язык общения.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1099,
-            "name": "Фрагмент агата Агнидус",
-            "desc": "Материал возвышения персонажа.<br/>«Паломничество за желанием, битва за имя...»",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1692,
-            "name": "Тлеющая жемчужина",
-            "desc": "Кристаллизовавшийся Пиро гипостазис, который излучает тепло.<br/>Однажды даже ревущее пламя остынет, и даже сгоревшие дрова зажгут себя вновь. Должно быть, это воля мира беспрестанно охлаждает и поджигает Пиро гипостазис подобно нескончаемой жизни всего сущего во вселенной... пока однажды не снизойдёт судьбоносная тьма, и всё не поглотит пустота.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Smoldering Pearl_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 697,
-            "name": "Светящийся гриб",
-            "desc": "Гриб, который светится как ночник. В нём скрыта непостижимая сила.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fluorescent Fungus_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 629,
-            "name": "Печать Похитителей сокровищ",
-            "desc": "Печать Похитителей сокровищ, определяющая положение владельца в банде. Стремление за сокровищами не имеет границ, но стоит ли гордиться тем, что ты вор...?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
-            "amount": 15
-          }
-        ]
-      },
-      {
-        "key": "Ур. 50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "До возвышения",
-              "После возвышения"
-            ]
-          },
-          {
-            "key": "Базовое HP ",
-            "values": [
-              "5478",
-              "6091"
-            ]
-          },
-          {
-            "key": "Базовая атака",
-            "values": [
-              "107",
-              "119 "
-            ]
-          },
-          {
-            "key": "Базовая защита ",
-            "values": [
-              "398",
-              "443"
-            ]
-          },
-          {
-            "key": "Сила атаки ",
-            "values": [
-              "6%",
-              "12%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Мора",
-            "desc": "Повсеместная валюта. Международный язык общения.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1099,
-            "name": "Фрагмент агата Агнидус",
-            "desc": "Материал возвышения персонажа.<br/>«Паломничество за желанием, битва за имя...»",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1692,
-            "name": "Тлеющая жемчужина",
-            "desc": "Кристаллизовавшийся Пиро гипостазис, который излучает тепло.<br/>Однажды даже ревущее пламя остынет, и даже сгоревшие дрова зажгут себя вновь. Должно быть, это воля мира беспрестанно охлаждает и поджигает Пиро гипостазис подобно нескончаемой жизни всего сущего во вселенной... пока однажды не снизойдёт судьбоносная тьма, и всё не поглотит пустота.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Smoldering Pearl_icon.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 697,
-            "name": "Светящийся гриб",
-            "desc": "Гриб, который светится как ночник. В нём скрыта непостижимая сила.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fluorescent Fungus_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1553,
-            "name": "Печать серебряного ворона",
-            "desc": "Символ ворона, используемый членами банды Похитителей сокровищ для идентификации друг друга. Похитители сокровищ не спрашивают резюме. Любой, у кого есть непреодолимая жажда сокровищ, подкреплённая не меньшим количеством храбрости, может стать достойным членом банды.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Ур. 60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "До возвышения",
-              "После возвышения"
-            ]
-          },
-          {
-            "key": "Базовое HP ",
-            "values": [
-              "6806",
-              "7266"
-            ]
-          },
-          {
-            "key": "Базовая атака",
-            "values": [
-              "133",
-              "142"
-            ]
-          },
-          {
-            "key": "Базовая защита ",
-            "values": [
-              "495",
-              "528"
-            ]
-          },
-          {
-            "key": "Сила атаки ",
-            "values": [
-              "12%",
-              "12%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Мора",
-            "desc": "Повсеместная валюта. Международный язык общения.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1098,
-            "name": "Кусок агата Агнидус",
-            "desc": "Материал возвышения персонажа.<br/>«Паломничество за желанием, битва за имя...<br/>Сгоревшие дотла за мечту».",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1692,
-            "name": "Тлеющая жемчужина",
-            "desc": "Кристаллизовавшийся Пиро гипостазис, который излучает тепло.<br/>Однажды даже ревущее пламя остынет, и даже сгоревшие дрова зажгут себя вновь. Должно быть, это воля мира беспрестанно охлаждает и поджигает Пиро гипостазис подобно нескончаемой жизни всего сущего во вселенной... пока однажды не снизойдёт судьбоносная тьма, и всё не поглотит пустота.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Smoldering Pearl_icon.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 697,
-            "name": "Светящийся гриб",
-            "desc": "Гриб, который светится как ночник. В нём скрыта непостижимая сила.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fluorescent Fungus_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1553,
-            "name": "Печать серебряного ворона",
-            "desc": "Символ ворона, используемый членами банды Похитителей сокровищ для идентификации друг друга. Похитители сокровищ не спрашивают резюме. Любой, у кого есть непреодолимая жажда сокровищ, подкреплённая не меньшим количеством храбрости, может стать достойным членом банды.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Ур. 70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "До возвышения",
-              "После возвышения"
-            ]
-          },
-          {
-            "key": "Базовое HP ",
-            "values": [
-              "7981",
-              "8440"
-            ]
-          },
-          {
-            "key": "Базовая атака",
-            "values": [
-              "156",
-              "165"
-            ]
-          },
-          {
-            "key": "Базовая защита ",
-            "values": [
-              "580",
-              "613 "
-            ]
-          },
-          {
-            "key": "Сила атаки ",
-            "values": [
-              "12%",
-              "18%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Мора",
-            "desc": "Повсеместная валюта. Международный язык общения.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1098,
-            "name": "Кусок агата Агнидус",
-            "desc": "Материал возвышения персонажа.<br/>«Паломничество за желанием, битва за имя...<br/>Сгоревшие дотла за мечту».",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1692,
-            "name": "Тлеющая жемчужина",
-            "desc": "Кристаллизовавшийся Пиро гипостазис, который излучает тепло.<br/>Однажды даже ревущее пламя остынет, и даже сгоревшие дрова зажгут себя вновь. Должно быть, это воля мира беспрестанно охлаждает и поджигает Пиро гипостазис подобно нескончаемой жизни всего сущего во вселенной... пока однажды не снизойдёт судьбоносная тьма, и всё не поглотит пустота.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Smoldering Pearl_icon.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 697,
-            "name": "Светящийся гриб",
-            "desc": "Гриб, который светится как ночник. В нём скрыта непостижимая сила.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fluorescent Fungus_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 760,
-            "name": "Печать золотого ворона",
-            "desc": "Печать ворона, символизирующая гордость и руководящий принцип Похитителей сокровищ. Если где-нибудь есть сокровище, которое можно похитить, неважно, скрыто ли оно среди земных просторов или же в морских глубинах, дух Похитителей сокровищ, которые не остановятся ни перед чем, чтобы их найти, не умрёт никогда.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Ур. 80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "До возвышения",
-              "После возвышения"
-            ]
-          },
-          {
-            "key": "Базовое HP ",
-            "values": [
-              "9156",
-              "9616"
-            ]
-          },
-          {
-            "key": "Базовая атака",
-            "values": [
-              "179",
-              "188"
-            ]
-          },
-          {
-            "key": "Базовая защита ",
-            "values": [
-              "665",
-              "699"
-            ]
-          },
-          {
-            "key": "Сила атаки ",
-            "values": [
-              "18%",
-              "24%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Мора",
-            "desc": "Повсеместная валюта. Международный язык общения.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1097,
-            "name": "Драгоценный агат Агнидус",
-            "desc": "Материал возвышения персонажа.<br/>«Паломничество за желанием, битва за имя...<br/>Сгоревшие дотла за мечту.<br/>Намерения никуда не делись, и он добился истины ██».",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1692,
-            "name": "Тлеющая жемчужина",
-            "desc": "Кристаллизовавшийся Пиро гипостазис, который излучает тепло.<br/>Однажды даже ревущее пламя остынет, и даже сгоревшие дрова зажгут себя вновь. Должно быть, это воля мира беспрестанно охлаждает и поджигает Пиро гипостазис подобно нескончаемой жизни всего сущего во вселенной... пока однажды не снизойдёт судьбоносная тьма, и всё не поглотит пустота.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Smoldering Pearl_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 697,
-            "name": "Светящийся гриб",
-            "desc": "Гриб, который светится как ночник. В нём скрыта непостижимая сила.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fluorescent Fungus_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 760,
-            "name": "Печать золотого ворона",
-            "desc": "Печать ворона, символизирующая гордость и руководящий принцип Похитителей сокровищ. Если где-нибудь есть сокровище, которое можно похитить, неважно, скрыто ли оно среди земных просторов или же в морских глубинах, дух Похитителей сокровищ, которые не остановятся ни перед чем, чтобы их найти, не умрёт никогда.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Ур. 90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "До возвышения",
-              "После возвышения"
-            ]
-          },
-          {
-            "key": "Базовое HP ",
-            "values": [
-              "10331",
-              "-"
-            ]
-          },
-          {
-            "key": "Базовая атака",
-            "values": [
-              "202",
-              "-"
-            ]
-          },
-          {
-            "key": "Базовая защита ",
-            "values": [
-              "751",
-              "-"
-            ]
-          },
-          {
-            "key": "Сила атаки ",
-            "values": [
-              "24%",
-              "-"
-            ]
           }
         ]
       }
