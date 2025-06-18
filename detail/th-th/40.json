@@ -5,16 +5,863 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Noelle_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/avatar.png",
   "filterValues": {
-    "characterRarity": 4,
-    "characterProperty": "พลังป้องกัน",
     "characterRegion": "Mondstadt",
     "characterWeapon": "ดาบใหญ่",
+    "characterRarity": 4,
+    "characterProperty": "พลังป้องกัน",
     "characterVision": "หิน"
   },
   "menuId": 2,
   "menuName": "คู่มือตัวละคร",
   "version": 1694888056,
   "components": {
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/avatar_header.jpg"
+      },
+      {
+        "key": "ภาพตัวละคร",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/avatar.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "คอสตูมดั้งเดิม - กุหลาบงามใต้คมเหล็ก\nชุดที่มีเสื้อเกราะและผ้ากำมะหยี่เย็บต่อกันจนกลายเป็นกระโปรงที่หนักอึ้ง"
+          }
+        ]
+      },
+      {
+        "key": "อนิเมชั่นยามว่าง 1",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/10122356/f01eacabf5840679b51ba911c2093c4d_4417486545171838170.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "คอสตูมดั้งเดิม - กุหลาบงามใต้คมเหล็ก\nชุดที่มีเสื้อเกราะและผ้ากำมะหยี่เย็บต่อกันจนกลายเป็นกระโปรงที่หนักอึ้ง"
+          }
+        ]
+      },
+      {
+        "key": "อนิเมชั่นยามว่าง 2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/10122356/5bc82ae62fe23bccb1d88a509b22d1fa_4146250105309589289.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "คอสตูมดั้งเดิม - กุหลาบงามใต้คมเหล็ก\nชุดที่มีเสื้อเกราะและผ้ากำมะหยี่เย็บต่อกันจนกลายเป็นกระโปรงที่หนักอึ้ง"
+          }
+        ]
+      },
+      {
+        "key": "กลุ่มดาว",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/14/144837601/c696a6f9c81aa6ee18205b90dd968354_3116183980407632221.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Parma Cordis"
+          }
+        ]
+      },
+      {
+        "key": "นามบัตร",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/21/144837601/5b3a1681fe19f1479132707cbd492d8a_8107402310574134858.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Noelle - Protector\nNoelle ค่อนข้างจะพิเศษ เธอจะไม่ยอมให้คุณบาดเจ็บเด็ดขาด"
+          }
+        ]
+      }
+    ],
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/constellation_1.png",
+        "name": "I Got Your Back",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "ในขณะที่อยู่ในสภาวะของ <color=#ffd780>Sweeping Time</color> และ <color=#ffd780>Breastplate</color> เอฟเฟกต์การคืนพลังชีวิตของ Breastplate จะมีโอกาสเกิด 100%"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/constellation_2.png",
+        "name": "Combat Maid",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "ลดการใช้พลังงานการชาร์จ โจมตีของ Noelle ลง 20% และเพิ่มความเสียหายขึ้น 15%"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/constellation_3.png",
+        "name": "Invulnerable Maid",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "เพิ่มเลเวลสกิลของ <color=#ffd780>Breastplate</color> ขึ้น 3 ระดับ\nเพิ่มได้มากสุด 15 ระดับ"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/constellation_4.png",
+        "name": "To Be Cleaned",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "เมื่อเอฟเฟกต์ของ <color=#ffd780>Breastplate</color> จบลงหรือได้รับความเสียหาย จนสลายไป จะสร้าง <color=#ffe699>ความเสียหายหิน</color> เป็น 400% ของพลังโจมตี กับศัตรูโดยรอบ"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/constellation_5.png",
+        "name": "Favonius Sweeper Master",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "เพิ่มเลเวลสกิลของ <color=#ffd780>Sweeping Time</color> ขึ้น 3 ระดับ\nเพิ่มได้มากสุด 15 ระดับ"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/constellation_6.png",
+        "name": "Must Be Spotless",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Sweeping Time</color> จะเสริมพลังโจมตีให้ Noelle เป็น 50% ของพลังป้องกัน;\nนอกจากนี้ในช่วงเวลาที่สกิลคงอยู่ ทุกครั้งที่โค่นศัตรูลงได้ 1 ตัว การคงอยู่จะนานขึ้น 1 วินาที โดยสูงสุดไม่เกิน 10 วินาที"
+          }
+        ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "รายละเอียดตัวละคร",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "การประกาศตัวละคร"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>16/03/20</color>\nดอกไม้ที่หาญกล้า ‧ Noelle\nเมดสาวแห่งกองอัศวิน\nชาวเมือง Mondstadts ต่างก็เห็นตรงกันว่า สาวใช้ Noelle ควรได้รับสมญานามว่า \"ผู้วิเศษ\" เธออยู่ทุกหนแห่ง และทำได้ทุกอย่าง\nไม่ว่าจะเป็นงานเลี้ยงดินเนอร์ของเหล่าอัศวิน, งานจัดเลี้ยงธุรกิจของอุตสาหกรรมไวน์ หรืองานเลี้ยงบาร์บีคิวธรรมดา ที่ใดที่มีปัญหา Noelle จะปรากฏกายราวกับพายุพัด และแก้ไขปัญหาได้อย่างเรียบร้อย\nด้วยเหตุนี้ บางคนถึงกับเรียกเธอว่า \"สาวใช้มหัศจรรย์\"\nแต่ในความเห็นของ Noelle เธอคิดว่าเธอไม่ใช่ผู้วิเศษในตำนานอะไรหรอก เธอเพียงแค่ใฝ่หาความประณีต และรักษามาตรฐานการทำงานไว้ไม่ให้บกพร่องเท่านั้นเอง\n\"ไม่มากเกินไป ไม่น้อยเกินไป ของควรมีต้องมีให้ครบ ของไม่ควรมีก็อย่าให้พบ\"\n<color=#80c0ff>Facebook:</color>\n<color=#37ffff>https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1289995301390593/</color>"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/03/21/144837601/f6864f27d223e247ed862aeac3563ef3_1180221062702142389.jpg",
+        "alignment": "left"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "ประกาศรายชื่อผู้พากย์เสียง"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>07/11/20</color>\nนักเดินทางทั้งหลาย นักพากย์ของ Noelle ได้รับการเปิดเผยอย่างเป็นทางการแล้ว ไปดูกันเลยยย!\nนักพากย์\n<color=#ffd780>EN CV: Laura Faye Smith</color>\n<color=#ffd780>JP CV: TAKAO Kanon</color>\n<color=#80c0ff>Facebook:</color>\n<color=#37ffff>https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1508186096238178/</color>"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/03/21/144837601/f299adfb7a03dae1fd2334c3936c8e55_8449264201247821881.png",
+        "alignment": "left"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "การปรากฏตัวอื่น ๆ",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "ตัวอย่างเวอร์ชัน 1.4: \"เสียงกระซิบจากดอกไม้\""
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>06/03/21</color>\nเสียงบทเพลงแห่งการเฉลิมฉลองลอยล่องไปตามสายลม\nในดอกไม้นั้นมีบทกวีโบราณซ่อนอยู่\nบางทีคุณควรไปสำรวจในเมืองเพื่อค้นหาความหมายที่แท้จริงของงานเทศกาลนี้\nแต่อย่าลืมสำรวจสิ่งที่ซ่อนอยู่ภายในจิตใจของคุณด้วย\n<color=#ffacff>HoYoLAB:</color>\n<color=#37ffff>https:/www.hoyolab.com/article/228979</color>"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/03/21/144837601/0e5e28bcab853f1d7046b62034e7bf4a_8553232907526215120.png",
+        "alignment": "left"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "แอนิเมชันปิดกิจกรรมเทศกาล Windblume - \"มวลดอกไม้ในสายลม\""
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>05/04/21</color>\nสายลมท่ามกลางหมู่เมฆ ท่ามกลางสายฝน ท่ามกลางความฝันและมวลดอกไม้ เธออยู่ข้างกายฉัน อยู่ในสายตาของฉัน อยู่ในหัวใจที่สั่นไหวไม่หยุดเพราะความรักของฉัน\n<color=#ff9999>YouTube:</color>"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=HRksKER0Ies"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/03/21/144837601/3aa778b4c1ed5ca90f511974cb9cdec8_8108175836303870002.jpg",
+        "alignment": "left"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "ตัวอย่างเวอร์ชัน 1.5: \"อาณาจักรแดนเนรมิต\""
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>16/04/21</color>\nจันทร์ทอแสงตกกระทบกิ่งไม้ มังกรกู่ร้องคำรามดังขึ้นจากส่วนลึก ประกายแสงแดดสาดส่อง ไม่อาจกระทบถึงกลางใจหินผา\nผนึกสัญญาแห่งไฟ ธารน้ำแข็งที่กลั่นตัวเป็นเกลียวคลื่น แต่ ณ อาณาจักรแห่งจิตวิญญาณ คือที่ซึ่งเสมือนบทเพลงที่เต็มไปด้วยท่วงทำนองอันอ่อนโยน\n<color=#ffacff>HoYoLAB:</color>\n<color=#37ffff>https:/www.hoyolab.com/article/300618</color>"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/03/21/144837601/65c7dcb2830078f68b11396249e16810_7102185098369165025.jpg",
+        "alignment": "left"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "ภาพรวมพรสวรรค์"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>สกิลธาตุ</color> เป็นการเรียกเกราะหินออกมาเพื่อสร้าง <color=#ffe699>ความเสียหายหิน</color> แก่ศัตรูโดยรอบ\n<color=#ffd780>ท่าไม้ตาย</color> เป็นการกวัดแกว่งดาบขนาดใหญ่โจมตีวงกว้างหนึ่งครั้งเพื่อสร้าง <color=#ffe699>ความเสียหายหิน</color>\nหลังจากนั้นจะได้รับเอฟเฟกต์ดังนี้:\n· เพิ่มอาณาเขตการโจมตีของ Noelle\n· เปลี่ยนความเสียหายของการโจมตีเป็น <color=#ffe699>ความเสียหายหิน</color> โดยที่ไม่สามารถซ้อนทับธาตุอื่นได้;\n· เพิ่มพลังโจมตีตามพลังป้องกันของ Noelle\nหากตัวละครที่เข้าต่อสู้ในขณะนั้นมีพลังชีวิตต่ำกว่า 30% สกิลต่อไปนี้จะถูกปล่อยออกมาโดยอัตโนมัติ:\nสร้างโล่ป้องกันให้ตัวละครของตนเองที่เข้าต่อสู้ในขณะนั้น โดยโล่จะดูดซับความเสียหายได้เท่ากับ 400% ของพลังป้องกันของ Noelle\nเมื่อการ <color=#ffd780>โจมตีปกติ</color> หรือการ <color=#ffd780>ชาร์จโจมตี</color> ของ Noelle ถูกศัตรูทุก ๆ 4 ครั้ง จะเป็นการลดเวลาคูลดาวน์ของ <color=#ffd780>สกิลธาตุ</color> ลง 1 วินาที"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "อาวุธแนะนำ"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "อาวุธ 3-ดาว"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2047,
+        "name": "Skyrider Greatsword",
+        "desc": "ดาบเหล็กกล้าที่ดูพึ่งพาได้ ครั้งหนึ่ง Skyrider ผู้โด่งดังในตำนานพยายามขี่มันเพื่อทะยานสู่ฟ้า",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/飞天大御剑.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Skyrider Greatsword</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ece5d8>โบนัสความเสียหายกายภาพ</color>\nสกิลติดตัว: เมื่อ <color=#ffd780>โจมตีปกติหรือชาร์จโจมตี</color> ถูกเป้าหมาย <color=#ffd780>พลังโจมตี</color> จะเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nแม้จะให้ค่าสถานะรองเป็น <color=#ffd780>โบนัสความเสียหายกายภาพ</color> แต่อย่างไรก็ดี ในช่วงเริ่มต้นเกมที่ยังมีตัวเลือกไม่มากนัก\nอาวุธชิ้นนี้เองก็ถือว่าเป็นหนึ่งในตัวเลือกที่ดีเช่นกัน\n<color=#ffffff>หาได้จาก:</color>\nรางวัลจากหีบสมบัติใน Liyue ที่มีคุณภาพตั้งแต่ Exquisite หรือสูงกว่า"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "อาวุธ 4-ดาว"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2015,
+        "name": "Serpent Spine",
+        "desc": "อาวุธหายากจากทะเลโบราณ เสียงของระบำดาบนั้นเป็นเหมือนดั่งเสียงของคลื่นยักษ์ในอดีตกาล",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/螭骨剑.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Serpent Spine</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>อัตราคริ</color>\nสกิลติดตัว: เมื่อตัวละครเข้าสู่การต่อสู้ จะเพิ่ม <color=#ffd780>ความเสียหาย</color> ที่สร้างและเพิ่มความเสียหายที่ได้รับ\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่า <color=#ffd780>อัตราคริ</color> เหมาะกับตำแหน่งตัวทำความเสียหายหลักของทีมอย่าง Noelle\n<color=#ffffff>หาได้จาก:</color>\nซื้อ Gnostic Hymn (Battle Pass)"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2056,
+        "name": "Blackcliff Slasher",
+        "desc": "ดาบยักษ์ของ Blackcliff Forge นั้นแข็งแกร่งไม่มีใครเทียบ ตัวดาบสีดำแดง",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/黑岩斩刀.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Blackcliff Slasher</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>ความแรงคริ</color>\nสกิลติดตัว: หลังจากกำจัดศัตรูได้ <color=#ffd780>พลังโจมตี</color> จะเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nBlackcliff Slasher ให้ค่า <color=#ffd780>ความแรงคริ</color> แก่ Noelle เพื่อเพิ่มความเสียหายของเฉพาะตัวเธอเอง\nอาวุธนี้เหมาะที่สุดเมื่อมีศัตรูหลายตัวเพื่อใช้สกิลติดตัวของอาวุธ\n<color=#ffffff>หาได้จาก:</color>\nซื้อจากร้านค้า Paimon"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1995,
+        "name": "Whiteblind",
+        "desc": "ดาบใหญ่ที่ด้านหนึ่งของตัวดาบยังไม่ถูกลับเพื่อเปิดคมมีดซึ่งมาพร้อมกับผู้ทำการค้าจากต่างถิ่นที่เดินทางมาถึง Liyue มีพลังที่เหลือเชื่อเมื่ออยู่ในมือของคนที่รู้วิธีใช้มัน",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/白影剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Whiteblind</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>พลังป้องกัน</color>\nสกิลติดตัว: หลัง <color=#ffd780>โจมตีปกติ</color> หรือ <color=#ffd780>ชาร์จโจมตี</color> ถูกเป้าหมาย <color=#ffd780>พลังโจมตี</color> และ <color=#ffd780>พลังป้องกัน</color> จะเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nWhiteblind ให้ค่า <color=#ffd780>พลังโจมตี</color> และ <color=#ffd780>พลังป้องกัน</color> แก่ Noelle เพื่อเพิ่มความเสียหายของเฉพาะตัวเธอเอง\n<color=#ffffff>หาได้จาก:</color>\nสามารถหลอมได้ที่ช่างตีเหล็ก"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2025,
+        "name": "Prototype Archaic",
+        "desc": "ดาบยักษ์โบราณที่ถูกซ่อนไว้ใน Blackcliff Forge ตอนที่ชูขึ้น ราวกับว่าสามารถลงดาบหั่นอากาศออกเป็นสองท่อน",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/试作古华.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Prototype Archaic</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>พลังโจมตี</color>\nสกิลติดตัว: เมื่อ <color=#ffd780>โจมตีปกติหรือชาร์จโจมตี</color> ถูกเป้าหมายจะมีโอกาส 50% ที่จะสร้าง <color=#ffd780>ความเสียหายเพิ่มเติม</color> โดยขึ้นอยู่กับพลังโจมตีสูงสุด แก่ศัตรูที่อยู่ในพื้นที่วงแคบ\n<color=#ffffff>หมายเหตุ:</color>\nสร้างความเสียหายเพิ่มเติมแก่การโจมตีปกติของ Noelle\n<color=#ffffff>หาได้จาก:</color>\nสามารถหลอมได้ที่ช่างตีเหล็ก"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "อาวุธ 5-ดาว"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2031,
+        "name": "Redhorn Stonethresher",
+        "desc": "ตามที่เจ้าของคนก่อนบอก ดาบนี้คือ \"ลอร์ดสิงโตเขาแดงเคลือบทองทะลวงหินทลายศิลา\" ที่สามารถขับไล่เหล่าปีศาจและมอนสเตอร์ให้หนีกระเจิงได้",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/赤角石溃杵.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Redhorn Stonethresher</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>ความแรงคริ</color>\nสกิลติดตัว: เพิ่ม <color=#ffd780>พลังป้องกัน</color> การ <color=#ffd780>โจมตีปกติ</color> และ <color=#ffd780>ชาร์จโจมตี</color> สร้างความเสียหายเพิ่มขึ้น โดยปริมาณที่เพิ่มจะคำนวณจาก <color=#ffd780>พลังป้องกัน</color>\n<color=#ffffff>หมายเหตุ:</color>\nนอกจากค่า <color=#ffd780>ความแรงคริ</color> ที่สูงแล้ว ยังช่วยเพิ่มความเสียหายจากการ <color=#ffd780>โจมตีปกติ</color> และ <color=#ffd780>ชาร์จโจมตี</color> ของ Noelle\nนอกจากนี้ยังให้ <color=#ffd780>ค่าพลังป้องกัน</color> ซึ่งช่วยเพิ่มความเสียหายโดยรวมให้แก่ Noelle ได้เป็นอย่างมาก\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1978,
+        "name": "The Unforged",
+        "desc": "ดาบใหญ่ที่สามารถกำจัดอสูร ได้ราวกับมีพลังเทพเจ้าอันน่าเกรงขาม",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/无工之剑.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>The Unforged</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>พลังโจมตี</color>\nสกิลติดตัว: เพิ่มประสิทธิภาพ <color=#ffd780>โล่ป้องกัน</color> หลังจากโจมตีถูกเป้าหมาย จะเพิ่ม <color=#ffd780>พลังโจมตี</color> เมื่อได้รับการป้องกันจากโล่ พลังโจมตีของเอฟเฟกต์นี้จะเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่า <color=#ffd780>พลังโจมตี</color> ทำให้ Noelle สามารถสร้าง <color=#ffd780>ความเสียหาย</color> ได้มากขึ้น\nเนื่องจาก Noelle สามารถสร้าง <color=#ffd780>โล่</color> เองได้ จึงทำให้สามารถใช้อาวุธชิ้นนี้ได้เป็นอย่างดี\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1992,
+        "name": "Wolf's Gravestone",
+        "desc": "ดาบยาวที่ใช้โดยอัศวินหมาป่า แต่เดิมแล้วมันเป็นเพียงแผ่นเหล็กที่ทำขึ้นโดยช่างเหล็กในเมือง แต่กระนั้นมันก็ให้พลังแห่งตำนานให้กับมิตรภาพที่มีต่อเหล่าหมาป่า",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/狼的末路.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Wolf's Gravestone</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>พลังโจมตี</color>\nสกิลติดตัว: เพิ่ม <color=#ffd780>พลังโจมตี</color> เมื่อโจมตีถูกศัตรูที่มี <color=#ffd780>พลังชีวิต</color> ต่ำกว่า 30% <color=#ffd780>พลังโจมตี</color> ของสมาชิกทั้งหมดในทีมจะเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่า <color=#ffd780>พลังโจมตี</color> ทำให้ Noelle สามารถสร้าง <color=#ffd780>ความเสียหาย</color> ได้มากขึ้น\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3615,
+        "name": "Beacon of the Reed Sea",
+        "desc": "<p><span>ดาบใหญ่ปลายตัดรูปทรงโบราณ ดูเหมือนจะเคยเป็นอาวุธของราชวงศ์ และถูกใช้ในพิธีกรรมบางอย่าง</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/28/176148810/374cad27eb39f01436d6f52446804e6b_282901883429977632.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Beacon of the Reed Sea</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>อัตราคริ</color>\nสกิลติดตัว: หลังจากที่ <color=#ffd780>สกิลธาตุ</color> ถูกศัตรู <color=#ffd780>พลังโจมตี</color> จะเพิ่มขึ้น หลังจากได้รับ <color=#ffd780>ความเสียหาย</color> <color=#ffd780>พลังโจมตี</color> จะเพิ่มขึ้นโดยที่เอฟเฟกต์ทั้ง 2 ชนิด ข้างต้นจะยังคงเกิดขึ้นได้ แม้ตัวละครอยู่ในทีม แต่ไม่ได้เข้าร่วมการต่อสู้ นอกจากนี้ ในขณะที่ไม่ได้รับการป้องกันจาก <color=#ffd780>โล่</color> <color=#ffd780>พลังชีวิต</color> สูงสุดจะเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่า <color=#ffd780>อัตราคริ</color> เหมาะกับตำแหน่งตัวทำความเสียหายหลักของทีมอย่าง Noelle\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1953,
+        "name": "Skyward Pride",
+        "desc": "ดาบใหญ่ที่เป็นสัญลักษณ์แห่งความทรนงของ Dvalin ผ่านฟากฟ้า เมื่อเหวี่ยงมัน จะมีคลื่นเสียงต่ำที่เกิดจากพลังของฟ้าและพลังแห่งลมที่ซ่อนอยู่ภายใน",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之傲.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Skyward Pride</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>การฟื้นฟูพลังงาน</color>\nสกิลติดตัว: เพิ่ม <color=#ffd780>ความเสียหาย</color> ที่สร้างขึ้น; หลังจากที่ปล่อย <color=#ffd780>ท่าไม้ตาย</color> : เมื่อ <color=#ffd780>การโจมตีปกติ</color> หรือ <color=#ffd780>ชาร์จโจมตี</color> โดนเป้าหมายจะสร้างใบมีดสุญญากาศขึ้นมาและสร้างความเสียหาย โดยขึ้นอยู่กับพลังโจมตีสูงสุดให้แก่ศัตรูที่อยู่ในเส้นทางเป็นเวลา 20 วินาที หรือจนกว่าจะปล่อยใบมีดสุญญากาศ\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่า <color=#ffd780>ฟื้นฟูพลังงาน</color> ทำให้ Noelle สามารถใช้ท่าไม้ตายได้ง่ายขึ้น\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "อาร์ติแฟกต์แนะนำ"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "ค่าสถานะอาร์ติแฟกต์"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/1387f1512524772db99ae30b6303f939_5072609172935942900.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>พลังโจมตี / พลังป้องกัน</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/56451470fe75f710b812ac28e226273b_5774236690802856497.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffe699>โบนัสความเสียหายหิน</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/8bc07934c9290b83751c7fa183a43ab7_32021027934025390.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>อัตราคริ / ความแรงคริ</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เซ็ต 4 อัน"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2065,
+        "name": "Husk of Opulent Dreams",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Husk of Opulent Dreams/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Husk of Opulent Dreams</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\nเซ็ต 2 อัน: เพิ่ม <color=#ffd780>พลังป้องกัน</color> 30%\nเซ็ต 4 อัน: ตัวละครที่สวมใส่เซ็ตอาร์ติแฟกต์นี้จะได้รับเอฟเฟกต์ Curiosity ภายใต้สถานการณ์ต่อไปนี้: ในขณะที่อยู่ในการต่อสู้ จะได้รับหนึ่งชั้นหลังจากโจมตีถูกศัตรูด้วย <color=#ffe699>ธาตุหิน</color> โดยจะเกิดขึ้นได้มากสุดหนึ่งครั้ง ในทุก 0.3 วินาที; เมื่ออยู่ในทีมแต่ไม่ได้อยู่ในการต่อสู้ ในทุก 3 วินาที จะได้รับหนึ่งชั้น โดยที่ Curiosity จะสามารถซ้อนทับได้มากสุด 4 ชั้น ซึ่งแต่ละชั้นจะมอบโบนัส <color=#ffd780>พลังป้องกัน</color> 6% และ <color=#ffe699>โบนัสความเสียหายธาตุหิน</color> 6% และในทุก 6 วินาที หากไม่ได้รับเอฟเฟกต์ Curiosity จะสูญเสียหนึ่งชั้น\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่า <color=#ffd780>พลังป้องกัน</color> และ <color=#ffe699>โบนัสความเสียหายธาตุหิน</color> ที่สอดคล้องกับที่มาของความเสียหายหลักของ Noelle"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2099,
+        "name": "Retracing Bolide",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Retracing Bolide/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Retracing Bolide</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\nเซ็ต 2 อัน: เพิ่มประสิทธิภาพ <color=#ffd780>โล่ป้องกัน</color> 35%\nเซ็ต 4 อัน: เมื่อได้รับการป้องกันจาก <color=#ffd780>โล่</color> การ <color=#ffd780>โจมตีปกติ</color> และ <color=#ffd780>ชาร์จโจมตี</color> สร้างความเสียหายเพิ่มขึ้น 40%\n<color=#ffffff>หมายเหตุ:</color>\nช่วยเพิ่มประสิทธิภาพ <color=#ffd780>โล่</color> ของ Noelle และนอกจากนี้ยังช่วยเพิ่มความเสียหายจากการ <color=#ffd780>โจมตีปกติ</color> และ <color=#ffd780>ชาร์จโจมตี</color> ของ Noelle"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2095,
+        "name": "Gladiator's Finale",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Gladiator's Finale</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\nเซ็ต 2 อัน: เพิ่ม <color=#ffd780>พลังโจมตี</color> 18%\nเซ็ต 4 อัน: เมื่อตัวละครที่สวมเซ็ตอาร์ติแฟกต์นี้ใช้ดาบ, ดาบใหญ่, หอก ตัวละครจะสร้างความเสียหายจากการ <color=#ffd780>โจมตีปกติ</color> เพิ่มขึ้น 35%\n<color=#ffffff>หมายเหตุ:</color>\nช่วยเพิ่ม <color=#ffd780>พลังโจมตี</color> ของ Noelle และนอกจากนี้ยังช่วยเพิ่มความเสียหายจากการ <color=#ffd780>โจมตีปกติ</color> ของ Noelle"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เซ็ต 2 อัน / เซ็ต 2 อัน"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2072,
+        "name": "Archaic Petra",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Archaic Petra/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2065,
+        "name": "Husk of Opulent Dreams",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Husk of Opulent Dreams/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Archaic Petra + Husk of Opulent Dreams</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Archaic Petra] เซ็ต 2 อัน: ได้รับ <color=#ffe699>โบนัสความเสียหายหิน</color> 15%\n[Husk of Opulent Dreams] เซ็ต 2 อัน: เพิ่ม <color=#ffd780>พลังป้องกัน</color> 30%\n<color=#ffffff>หมายเหตุ:</color>\nเนื่องจาก Noelle สามารถใช้ได้ทั้ง <color=#ffe699>โบนัสความเสียหายหิน</color> และ <color=#ffd780>พลังป้องกัน</color> จึงทำให้สามารถใช้เซ็ต 2 ทั้งคู่นี้ได้อย่างมีประสิทธิภาพ"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2065,
+        "name": "Husk of Opulent Dreams",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Husk of Opulent Dreams/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2095,
+        "name": "Gladiator's Finale",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Husk of Opulent Dreams + Gladiator's Finale</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Husk of Opulent Dreams] เซ็ต 2 อัน: เพิ่ม <color=#ffd780>พลังป้องกัน</color> 30%\n[Gladiator's Finale] เซ็ต 2 อัน: เพิ่ม <color=#ffd780>พลังโจมตี</color> 18%\n<color=#ffffff>หมายเหตุ:</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2095,
+        "name": "Gladiator's Finale",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "สามารถใช้"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2097,
+        "name": "Vermillion Hereafter",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Vermillion Hereafter/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "/"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2076,
+        "name": "Echoes of an Offering",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "/"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2098,
+        "name": "Shimenawa's Reminiscence",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "ทดแทนได้"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "แนะนำตัวละคร",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "ในสายตาของทุกคน Noelle สาวใช้ของ \"กองอัศวินแห่ง Favonius\" นั้น ทั้งอ่อนโยนและพึ่งพาได้ เวลาเจอเรื่องลำบากก็ขอให้เธอช่วยได้เสมอ\nNoelle จะดีใจเป็นอย่างมากในทุกครั้งที่ได้รับมอบหมายภารกิจสำคัญ หรือทุกครั้งที่ถูกมองว่าเป็นผู้ช่วยสำคัญในยามเจอปัญหารับมือยาก\nในใจของเธอนั้น การได้ช่วยเหลือคนที่ตกระกำลำบาก และได้ใช้กำลังของตัวเองเพื่อผู้อื่นนั้น ต่างเป็นการกระทำที่วิถีอัศวินพึงมีทั้งนั้น\nใช่แล้ว Noelle ใฝ่ฝันอยากเป็นอัศวินอย่างเป็นทางการ เธอเฝ้าพยายามมาโดยตลอด เพื่อสานฝันให้เป็นจริง",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "ความสัมพันธ์ของตัวละคร",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 14,
+        "name": "Amber",
+        "desc": "<p>เด็กสาวผู้เปี่ยมไปด้วยพลังและมีชีวิตชีวาอยู่เสมอ ยอดฝีมือแห่งกองอัศวิน และเป็นอัศวินลาดตระเวนคนสุดท้าย</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Amber_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "โดยสังเขป"
+      },
+      {
+        "type": "RichText",
+        "text": "Amber และ Noelle เป็นเพื่อนร่วมงานและรุ่นพี่รุ่นน้องที่ดีต่อกัน"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เสียงพากย์"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>Amber:</color>\nNoelle งั้นเหรอ? ความแข็งแรงของเธอน่ะสุด ๆ ไปเลยล่ะนะ ในฐานะรุ่นพี่แล้ว เธอเองก็ต้องดูแล Noelle ให้มาก ๆ หน่อยล่ะ\n<color=#ffd780>Noelle:</color>\nฉันนับถือ Amber มาก ๆ เลย เธอเป็นคนเข้มแข็งมาก แล้วยังใจดีอีกต่างหาก เธอสอนฉันทำ Baron Bunny ด้วย คุณดูสิ ฉันห้อยติดตัวไว้ตลอดเลย สวยดีใช่มั้ยล่ะ?"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 12,
+        "name": "Klee",
+        "desc": "แขกประจำห้องขังของกองอัศวินแห่ง Favonius ผู้เชี่ยวชาญด้านการระเบิดแห่ง Mondstadt ผู้คนเรียกเธอว่า &#34;ดวงอาทิตย์ที่หลบหนี&#34;",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "โดยสังเขป"
+      },
+      {
+        "type": "RichText",
+        "text": "Noelle มักจะสงสัยว่าทำไม Klee ที่อายุยังน้อยอยู่ถึงสามารถเป็นอัศวินเต็มตัวได้กันนะ"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เสียงพากย์"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>Noelle:</color>\nฉันสงสัยมาตลอด ว่าเธอเป็นอัศวินเต็มตัวตั้งแต่อายุ ยังน้อยได้ยังไงกัน มีครั้งหนึ่งฉันไปถามเธอเพื่อหาความรู้ เธอฟังสิ่งที่ฉันพูดยังไม่จบ เธอก็ลากฉันไปเล่นระเบิดนอก ศูนย์บัญชาการกองอัศวิน... ตอนแรกฉันคิดว่ามันเป็นการฝึกฝนบางอย่าง แต่ Jean มาเจอพวกเราเข้า แล้วเราก็โดนขังทั้งคู่เลย"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 27,
+        "name": "Jean",
+        "desc": "<p>อัศวิน Dandelion ผู้ยึดมั่นในความถูกต้อง และเป็นรักษาการผู้บัญชาการ ของกองอัศวินแห่ง Favonius</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Jean_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "โดยสังเขป"
+      },
+      {
+        "type": "RichText",
+        "text": "Jean มองว่า Noelle ยังไม่พร้อมที่จะออกไปเผชิญอันตราย ในขณะเดียวกัน Noelle เองก็เชิดชู Jean มากเช่นกัน"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เสียงพากย์"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>Jean:</color>\nNoelle... อา สาวน้อยผู้มุ่งมั่นที่จะเข้าร่วม กองอัศวินแห่ง Favonius จิตใจของเธอยังอ่อนแออยู่ ในตอนนี้คงไม่เหมาะที่จะให้เธอ ออกไปเผชิญอันตรายนอก กำแพงเมือง\n<color=#ffd780>Noelle:</color>\nหัวหน้า Jean เป็นไอดอลของฉันมาตลอด ความแข็งแกร่งและความจริงจัง ของฉันนั้นยังด้อยกว่าเธอมาก เธอเข้มงวดกับคนอื่นเหมือนกับตัว เธอเอง ดังนั้นถ้าวันหนึ่งฉันได้รับการ ยอมรับจากเธอ มันจะเป็นสิ่งยืนยันที่ยิ่งใหญ่ที่สุด ในการทำงานหนักของฉัน จนกว่าจะถึงตอนนั้น ฉันจะไม่ล้อเล่นเด็ดขาด!"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Varka</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "โดยสังเขป"
+      },
+      {
+        "type": "RichText",
+        "text": "Noelle พบว่า Varka มักจะคอยหยอดคำชมแก่คนอื่นเสมอ แต่อย่างไรก็ดี Noelle เองก็รู้สึกดีใจที่ได้รับคำชมอยู่ดี"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เสียงพากย์"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>Noelle:</color>\nตอนแรกฉันว่าจะเข้าร่วมทีมผจญภัยของท่านผู้บัญชาการในฐานะ สาวใช้ แต่ผู้บัญชาการบอกว่าให้ฉันอยู่ดูแลความเรียบร้อยในเมือง Mondstadt ท่านถึงจะวางใจ... ผู้บัญชาการเชื่อมั่นในตัวฉันขนาดนี้ ฉันดีใจสุด ๆ เลย! ถึงแม้ตอนหลังฉันถึงรู้ว่าผู้บัญชาการ ไม่ได้พูดอย่างงี้กับฉัน แค่คนเดียว แต่ว่า... ยังไงคำชมก็เป็นคำชมล่ะน่า"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9,
+        "name": "Kaeya",
+        "desc": "<p>นักดาบผู้มีกลิ่นอายของคนจากต่างแดน มันสมองของกองอัศวินแห่ง Favonius</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kaeya_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "โดยสังเขป"
+      },
+      {
+        "type": "RichText",
+        "text": "Kaeya มองว่า Noelle นั้นไม่จำเป็นต้องให้คอยดูแลเลย และมักจะคอยให้ Noelle ช่วยงานเล็ก ๆ น้อย ๆ เสมอ"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เสียงพากย์"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>Kaeya:</color>\nฉันได้รับความไว้วางใจจากรักษา การผู้บัญชาการ ให้คอยดูแลรุ่นน้องคนนี้อย่างลับ ๆ แต่ว่า Noelle น่ะเป็นงานมาก ไม่จำเป็นต้องให้ฉันดูแลเลย สุดยอดไปเลยนะ\n<color=#ffd780>Noelle:</color>\nเขาเป็นคนลึกลับมาก มาเหมือนเงา ไปเหมือนสายลม และมีงานสำคัญที่ต้องจัดการทุกวัน เขามักจะหางานเล็ก ๆ ให้ฉันทำ ราวกับว่าฉันเป็นสมาชิกของทีมคนหนึ่ง... หืม? เด็กส่งของ? ไม่ไม่ ถึงจะเป็นแค่เด็กส่งของจริง ๆ แต่ฉันก็เห็นคุณค่านะ!"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 26,
+        "name": "Bennett",
+        "desc": "เด็กหนุ่มนักผจญภัยแห่ง Mondstadt มีความซวยซึ่งไม่เข้ากันกับ ความใจดีมีเมตตาของเขาเลย",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Bennett_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "โดยสังเขป"
+      },
+      {
+        "type": "RichText",
+        "text": "Bennett มักจะคอยเชิญชวนให้ Noelle มาเป็นนักผจญภัย แต่อย่างไรก็ตาม Noelle เองก็ยังคงยึดมั่นในเป้าหมายการเป็นอัศวินอยู่เสมอ"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เสียงพากย์"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>Bennett:</color>\nเธอน่ะเหรอ จริง ๆ ฉันแอบสังเกตเธอมานานแล้วล่ะ เธอมีทั้งพรสวรรค์และมีความ พยายามแต่กลับเป็นได้แค่สาวรับใช้ ในกองอัศวิน ไม่ได้เป็นอัศวินกะ เค้าสักที เธอว่านี่ไม่น่าเสียดายหรอกเหรอ? เอ่อ ถ้าเธอมากิลด์นักผจญภัย คงเป็นนักผจญภัยที่เก่งกาจไปนานแล้ว\n<color=#ffd780>Noelle:</color>\nเขาเชิญฉันเข้าร่วมกิลด์นักผจญภัยตั้งหลายครั้งแล้ว บอกว่างานของกิลด์เหมาะกับฉันมากกว่ากองอัศวิน... ถึงฉันจะสามารถช่วยเขาดูแลคุณพ่อทั้งหลายได้เช่นเดียวกับนักผจญภัย แต่ว่า... สำหรับฉันแล้วกองอัศวิน Favonius มีความหมายพิเศษอยู่ อีกอย่างฉันจะไม่ยอมแพ้เด็ดขาด... อืม สุดท้ายเลยปฏิเสธข้อเสนอของเขาไป"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 38,
+        "name": "Fischl",
+        "desc": "<p>หญิงสาวลึกลับผู้เรียกตนเองว่า &#34;เจ้าหญิงแห่งการลงทัณฑ์&#34; ผู้ร่วมเดินทางไปพร้อมกับเรเวนนามว่า Oz</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Fischl_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "โดยสังเขป"
+      },
+      {
+        "type": "RichText",
+        "text": "Noelle มักจะพบ Fischl อยู่ในห้องสมุดของกองอัศวิน"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เสียงพากย์"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>Noelle:</color>\nเธอดูเหมือนจะมาจากอีกโลกหนึ่ง ฉันก็ไม่รู้รายละเอียดมากนัก... แต่ดูเหมือนว่าเธอจะชอบห้องสมุดของกองอัศวินมาก และชอบไปอ่านหนังสืออยู่ที่นั่นเสมอ ตอนฉันทำความสะอาดฉันมักจะนำเครื่องดื่มอุ่น ๆ ไปให้เธอ เธอจะขอบคุณฉันทุกครั้งและพูดอะไรที่ฉันไม่เข้าใจหลายอย่าง แต่คำพูดพวกนั้นมักจะเกินจริงมาก...\nมีครั้งหนึ่งตอนที่ฉันทำความสะอาดห้องสมุด ฉันจำได้ว่าเคยเห็นหนังสือเล่มหนึ่งชื่อ \"Fischl เจ้าหญิงแห่งความมืด\" เธอจะต้องเก่งมากแน่ ๆ ถึงได้มีหนังสือชีวประวัติเป็นของ ตัวเองเลย"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 35,
+        "name": "Barbara",
+        "desc": "<p>ชาวเมือง Mondstadt ทุกคนต่างก็เอ็นดู Barbara</p><p>เธอเรียนรู้คำว่า &#34;ไอดอล&#34; มาจากนิตยสาร</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Barbara_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "โดยสังเขป"
+      },
+      {
+        "type": "RichText",
+        "text": "Barbara และ Noelle เป็นเพื่อนที่ดีต่อกัน"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เสียงพากย์"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>Barbara:</color>\nNoelle จะน่ารักเกินไปแล้ว! ทั้งอ่อนโยนและก็ใจเย็น เวลาอยู่กับเธอน่ะสบายใจมากเลยล่ะ... อ๊ะ จริงสิ อาหารที่เธอทำก็เยี่ยมไปเลยล่ะ ทั้งหอม ทั้งหวาน แล้วก็ดีต่อสุขภาพด้วย หึหึ\n<color=#ffd780>Noelle:</color>\nเรามักจะดื่มชาด้วยกัน และบางครั้งเธอก็ฮัมเพลงเบา ๆ เธอบอกฉันว่าเกิดแรงบันดาลใจขึ้นมา แม้ว่าฉันจะไม่สามารถให้คำแนะนำที่เป็นประโยชน์เกี่ยวกับดนตรีได้... แต่ฉันมีความสุขมากที่ได้ใช้เวลาร่วมกับ Barbara!"
+      }
+    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=29&center=-337.50,484.00&zoom=0.00",
     "ascension": [
       {
         "key": "Lv.1",
@@ -579,825 +1426,6 @@
             ]
           }
         ]
-      }
-    ],
-    "talent": [
-      {
-        "key": "โจมตีปกติ - Favonius Bladework · Maid",
-        "title": "โจมตีปกติ - Favonius Bladework · Maid",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/battle_talent_0/battle_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>โจมตีปกติ</color>\nฟาดฟันต่อเนื่องมากสุดสี่ครั้ง\n<color=#ffd780>ชาร์จโจมตี</color>\nใช้พลังกายอย่างต่อเนื่องเพื่อหมุนโจมตีศัตรูรอบตัวด้วยดาบขนาดใหญ่\nเมื่อหยุดหมุนจะทำการฟันเพิ่มอย่างรุนแรงอีกหนึ่งครั้ง\n<color=#ffd780>โจมตีพุ่งลงจากอากาศ</color>\nกระโจนจากกลางอากาศลงมายังพื้นดิน เพื่อโจมตีศัตรูที่อยู่ในเส้นทางการโจมตี โดยจะสร้างความเสียหายวงกว้างเมื่อลงถึงพื้น"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11"
-            ]
-          },
-          {
-            "key": "ความเสียหายขั้น 1",
-            "values": [
-              "79.1%",
-              "85.6%",
-              "92%",
-              "101%",
-              "108%",
-              "115%",
-              "125%",
-              "135%",
-              "145%",
-              "156%",
-              "167%"
-            ]
-          },
-          {
-            "key": "ความเสียหายขั้น 2",
-            "values": [
-              "73.4%",
-              "79.3%",
-              "85.3%",
-              "93.8%",
-              "99.8%",
-              "107%",
-              "116%",
-              "125%",
-              "135%",
-              "145%",
-              "155%"
-            ]
-          },
-          {
-            "key": "ความเสียหายขั้น 3",
-            "values": [
-              "86.3%",
-              "93.3%",
-              "100%",
-              "110%",
-              "117%",
-              "125%",
-              "136%",
-              "147%",
-              "158%",
-              "171%",
-              "183%"
-            ]
-          },
-          {
-            "key": "ความเสียหายขั้น 4",
-            "values": [
-              "113%",
-              "123%",
-              "132%",
-              "145%",
-              "154%",
-              "165%",
-              "179%",
-              "194%",
-              "208%",
-              "224%",
-              "240%"
-            ]
-          },
-          {
-            "key": "ความเสียหายขณะชาร์จโจมตี",
-            "values": [
-              "50.7%",
-              "54.9%",
-              "59%",
-              "64.9%",
-              "69%",
-              "73.8%",
-              "80.2%",
-              "86.7%",
-              "93.2%",
-              "100.3%",
-              "107.4%"
-            ]
-          },
-          {
-            "key": "ความเสียหายชาร์จโจมตีครั้งสุดท้าย",
-            "values": [
-              "90.5%",
-              "97.8%",
-              "105%",
-              "116%",
-              "123%",
-              "132%",
-              "143%",
-              "155%",
-              "166%",
-              "179%",
-              "192%"
-            ]
-          },
-          {
-            "key": "ชาร์จโจมตีใช้พลังกาย",
-            "values": [
-              "40 หน่วย/วิ",
-              "40 หน่วย/วิ",
-              "40 หน่วย/วิ",
-              "40 หน่วย/วิ",
-              "40 หน่วย/วิ",
-              "40 หน่วย/วิ",
-              "40 หน่วย/วิ",
-              "40 หน่วย/วิ",
-              "40 หน่วย/วิ",
-              "40 หน่วย/วิ",
-              "40 หน่วย/วิ"
-            ]
-          },
-          {
-            "key": "ระยะเวลาต่อเนื่องสูงสุด",
-            "values": [
-              "5 วิ",
-              "5 วิ",
-              "5 วิ",
-              "5 วิ",
-              "5 วิ",
-              "5 วิ",
-              "5 วิ",
-              "5 วิ",
-              "5 วิ",
-              "5 วิ",
-              "5 วิ"
-            ]
-          },
-          {
-            "key": "ความเสียหายพุ่งลง",
-            "values": [
-              "74.6%",
-              "80.7%",
-              "86.7%",
-              "95.4%",
-              "101%",
-              "108%",
-              "118%",
-              "127%",
-              "137%",
-              "147%",
-              "158%"
-            ]
-          },
-          {
-            "key": "ความเสียหายพุ่งถึงพื้นจากที่ต่ำ/สูง",
-            "values": [
-              "149%/186%",
-              "161%/201%",
-              "173%/217%",
-              "191%/238%",
-              "203%/253%",
-              "217%/271%",
-              "236%/295%",
-              "255%/318%",
-              "274%/342%",
-              "295%/368%",
-              "316%/394%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 111,
-              "name": "Teachings of Resistance",
-              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของ ประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้น คือประวัติศาสตร์แห่งการป้องกัน เพื่อที่จะกันไม่ให้ข้อพิพาทต่างๆ ในอดีตนั้นถูกลืมเลือน เฉกเช่นดอกหญ้าที่ขึ้นผ่านผืนทราย เฉกเช่นลมที่แทรกผ่านช่องของ กำแพงหิน",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Resistance_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1247,
-              "name": "Damaged Mask",
-              "desc": "หน้ากากที่ทำจากกระดูกชิ้นนี้ เดิมทีเป็นของพวก Hilichurl <br/>แต่เนื่องจากได้รับความเสียหาย จำนวนมาก เลยทำให้ไม่สามารถใช้งานตามหน้าที่ของมันได้อีก",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 110,
-              "name": "Guide to Resistance",
-              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้นคือประวัติศาสตร์แห่งการป้องกัน ป้องกันเพื่อให้ผู้คนของ Mondstadt ในทุกวันนี้นั้นมีอิสรภาพ เฉกเช่นเทพแห่งลมที่ปัดเป่าหิมะให้ กระจาย เฉกเช่น Vennessa ที่ลุกขึ้นต่อสู้",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Resistance_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 983,
-              "name": "Stained Mask",
-              "desc": "หน้ากากที่เต็มไปด้วยคราบต่างๆ จนดูไม่ออกเลยว่ามันคือหน้ากากที่ทำมาจากกระดูก มีกลิ่นหอมอ่อนๆ ออกมาด้วย<br/>ต้องยอมสวมมัน เพราะพวก Hilichurl เคร่งครัดเรื่องหน้ากากมาก",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 110,
-              "name": "Guide to Resistance",
-              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้นคือประวัติศาสตร์แห่งการป้องกัน ป้องกันเพื่อให้ผู้คนของ Mondstadt ในทุกวันนี้นั้นมีอิสรภาพ เฉกเช่นเทพแห่งลมที่ปัดเป่าหิมะให้ กระจาย เฉกเช่น Vennessa ที่ลุกขึ้นต่อสู้",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Resistance_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 983,
-              "name": "Stained Mask",
-              "desc": "หน้ากากที่เต็มไปด้วยคราบต่างๆ จนดูไม่ออกเลยว่ามันคือหน้ากากที่ทำมาจากกระดูก มีกลิ่นหอมอ่อนๆ ออกมาด้วย<br/>ต้องยอมสวมมัน เพราะพวก Hilichurl เคร่งครัดเรื่องหน้ากากมาก",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 110,
-              "name": "Guide to Resistance",
-              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้นคือประวัติศาสตร์แห่งการป้องกัน ป้องกันเพื่อให้ผู้คนของ Mondstadt ในทุกวันนี้นั้นมีอิสรภาพ เฉกเช่นเทพแห่งลมที่ปัดเป่าหิมะให้ กระจาย เฉกเช่น Vennessa ที่ลุกขึ้นต่อสู้",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Resistance_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 983,
-              "name": "Stained Mask",
-              "desc": "หน้ากากที่เต็มไปด้วยคราบต่างๆ จนดูไม่ออกเลยว่ามันคือหน้ากากที่ทำมาจากกระดูก มีกลิ่นหอมอ่อนๆ ออกมาด้วย<br/>ต้องยอมสวมมัน เพราะพวก Hilichurl เคร่งครัดเรื่องหน้ากากมาก",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 110,
-              "name": "Guide to Resistance",
-              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้นคือประวัติศาสตร์แห่งการป้องกัน ป้องกันเพื่อให้ผู้คนของ Mondstadt ในทุกวันนี้นั้นมีอิสรภาพ เฉกเช่นเทพแห่งลมที่ปัดเป่าหิมะให้ กระจาย เฉกเช่น Vennessa ที่ลุกขึ้นต่อสู้",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Resistance_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 983,
-              "name": "Stained Mask",
-              "desc": "หน้ากากที่เต็มไปด้วยคราบต่างๆ จนดูไม่ออกเลยว่ามันคือหน้ากากที่ทำมาจากกระดูก มีกลิ่นหอมอ่อนๆ ออกมาด้วย<br/>ต้องยอมสวมมัน เพราะพวก Hilichurl เคร่งครัดเรื่องหน้ากากมาก",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 109,
-              "name": "Philosophies of Resistance",
-              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของ ประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้น คือประวัติศาสตร์แห่งการป้องกัน ป้องกันบทกวีในอนาคตของชาว Mondstadt เพื่อให้ล่องลอยไปกับ สายลมไปยังที่ที่แสนไกล",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Resistance_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 220,
-              "name": "Ominous Mask",
-              "desc": "หน้ากากที่เคลือบด้วยสีน้ำมัน มีความหมายถึงการข่มขู่ศัตรู<br/>ไม่มีใครทราบถึงความสัมพันธ์ที่แท้จริงระหว่างพวก Hilichurl กับหน้ากาก แต่มีคนเคยบอกไว้ว่าที่เป็นเช่นนี้ ก็เพราะว่าพวกมันไม่ต้องการเห็นเงาของตัวเองในแม่น้ำ",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 237,
-              "name": "Dvalin's Claw",
-              "desc": "กรงเล็บที่ได้มาจากมังกรแห่งลมตะวันออกแห่ง Mund<br/>และเพราะในอดีตเคยใช้กรงเล็บนี้ฉีกปีศาจมังกร [Durin] เป็นชิ้นๆ ทำให้ได้รับพิษเล็กน้อย แต่หลังจากการรักษาพิษในอดีตก็ค่อยๆลดลง",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Claw_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 109,
-              "name": "Philosophies of Resistance",
-              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของ ประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้น คือประวัติศาสตร์แห่งการป้องกัน ป้องกันบทกวีในอนาคตของชาว Mondstadt เพื่อให้ล่องลอยไปกับ สายลมไปยังที่ที่แสนไกล",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Resistance_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 220,
-              "name": "Ominous Mask",
-              "desc": "หน้ากากที่เคลือบด้วยสีน้ำมัน มีความหมายถึงการข่มขู่ศัตรู<br/>ไม่มีใครทราบถึงความสัมพันธ์ที่แท้จริงระหว่างพวก Hilichurl กับหน้ากาก แต่มีคนเคยบอกไว้ว่าที่เป็นเช่นนี้ ก็เพราะว่าพวกมันไม่ต้องการเห็นเงาของตัวเองในแม่น้ำ",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 237,
-              "name": "Dvalin's Claw",
-              "desc": "กรงเล็บที่ได้มาจากมังกรแห่งลมตะวันออกแห่ง Mund<br/>และเพราะในอดีตเคยใช้กรงเล็บนี้ฉีกปีศาจมังกร [Durin] เป็นชิ้นๆ ทำให้ได้รับพิษเล็กน้อย แต่หลังจากการรักษาพิษในอดีตก็ค่อยๆลดลง",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Claw_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 109,
-              "name": "Philosophies of Resistance",
-              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของ ประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้น คือประวัติศาสตร์แห่งการป้องกัน ป้องกันบทกวีในอนาคตของชาว Mondstadt เพื่อให้ล่องลอยไปกับ สายลมไปยังที่ที่แสนไกล",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Resistance_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 220,
-              "name": "Ominous Mask",
-              "desc": "หน้ากากที่เคลือบด้วยสีน้ำมัน มีความหมายถึงการข่มขู่ศัตรู<br/>ไม่มีใครทราบถึงความสัมพันธ์ที่แท้จริงระหว่างพวก Hilichurl กับหน้ากาก แต่มีคนเคยบอกไว้ว่าที่เป็นเช่นนี้ ก็เพราะว่าพวกมันไม่ต้องการเห็นเงาของตัวเองในแม่น้ำ",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 237,
-              "name": "Dvalin's Claw",
-              "desc": "กรงเล็บที่ได้มาจากมังกรแห่งลมตะวันออกแห่ง Mund<br/>และเพราะในอดีตเคยใช้กรงเล็บนี้ฉีกปีศาจมังกร [Durin] เป็นชิ้นๆ ทำให้ได้รับพิษเล็กน้อย แต่หลังจากการรักษาพิษในอดีตก็ค่อยๆลดลง",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Claw_icon.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 109,
-              "name": "Philosophies of Resistance",
-              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของ ประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้น คือประวัติศาสตร์แห่งการป้องกัน ป้องกันบทกวีในอนาคตของชาว Mondstadt เพื่อให้ล่องลอยไปกับ สายลมไปยังที่ที่แสนไกล",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Resistance_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 220,
-              "name": "Ominous Mask",
-              "desc": "หน้ากากที่เคลือบด้วยสีน้ำมัน มีความหมายถึงการข่มขู่ศัตรู<br/>ไม่มีใครทราบถึงความสัมพันธ์ที่แท้จริงระหว่างพวก Hilichurl กับหน้ากาก แต่มีคนเคยบอกไว้ว่าที่เป็นเช่นนี้ ก็เพราะว่าพวกมันไม่ต้องการเห็นเงาของตัวเองในแม่น้ำ",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 237,
-              "name": "Dvalin's Claw",
-              "desc": "กรงเล็บที่ได้มาจากมังกรแห่งลมตะวันออกแห่ง Mund<br/>และเพราะในอดีตเคยใช้กรงเล็บนี้ฉีกปีศาจมังกร [Durin] เป็นชิ้นๆ ทำให้ได้รับพิษเล็กน้อย แต่หลังจากการรักษาพิษในอดีตก็ค่อยๆลดลง",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Claw_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "Crown of Insight",
-              "desc": "วัสดุล้ำค่าที่ใช้ในการยกระดับพรสวรรค์<br/>ในสมัยโบราณจะใช้ของประกอบพิธีในการถ่ายทอดวิชาความรู้ ส่วนทุกวันนี้ภูมิปัญญานั้นอาศัยคำพูดและตำรา แต่พลังและภูมิปัญญาที่ยังหลงเหลืออยู่ใน \"มงกุฎแห่งความรู้\" ยังสามารถนำความก้าวหน้าที่ยิ่งใหญ่มาสู่ผู้คนในปัจจุบันได้",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/battle_talent_0/battle_talent_0.gif"
-      },
-      {
-        "key": "Breastplate",
-        "title": "Breastplate",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/battle_talent_1/battle_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "เรียกเกราะหินออกมาเพื่อสร้าง <color=#ffe699>ความเสียหายหิน</color> แก่ศัตรูโดยรอบ และสร้างโล่ขึ้นมา เพื่อดูดซับความเสียหาย เท่ากับพลังป้องกันของ Noelle\nโล่ป้องกันจะมีเอฟเฟกต์ดังนี้:\n·เมื่อการโจมตีปกติหรือชาร์จโจมตีของ Noelle โดนเป้าหมาย จะทำให้มีโอกาสฟื้นฟูพลังชีวิต ให้แก่ตัวละครทั้งหมดในทีม\n·มีเอฟเฟกต์การดูดซับความเสียหายธาตุทุกประเภทและความเสียหายกายภาพ 150%\nเมื่อเกิดเอฟเฟกต์การรักษา ปริมาณการรักษาจะขึ้นอยู่กับพลังป้องกันของ Noelle\n.\nNoelle นั้นไม่เพียงจะเป็นสาวใช้ แต่เธอยังเป็นอัศวินผู้มีความพยายาม อีกด้วย"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13",
-              "Lv.14"
-            ]
-          },
-          {
-            "key": "ความเสียหายสกิล",
-            "values": [
-              "120% ของพลังป้องกัน",
-              "129% ของพลังป้องกัน",
-              "138% ของพลังป้องกัน",
-              "150% ของพลังป้องกัน",
-              "159% ของพลังป้องกัน",
-              "168% ของพลังป้องกัน",
-              "180% ของพลังป้องกัน",
-              "192% ของพลังป้องกัน",
-              "204% ของพลังป้องกัน",
-              "216% ของพลังป้องกัน",
-              "228% ของพลังป้องกัน",
-              "240% ของพลังป้องกัน",
-              "255% ของพลังป้องกัน"
-            ]
-          },
-          {
-            "key": "ปริมาณการดูดซับ",
-            "values": [
-              "160% ของพลังป้องกัน+770",
-              "172% ของพลังป้องกัน+847",
-              "184% ของพลังป้องกัน+930",
-              "200% ของพลังป้องกัน+1020",
-              "212% ของพลังป้องกัน+1116",
-              "224% ของพลังป้องกัน+1219",
-              "240% ของพลังป้องกัน+1328",
-              "256% ของพลังป้องกัน+1443",
-              "272% ของพลังป้องกัน+1565",
-              "288% ของพลังป้องกัน+1694",
-              "304% ของพลังป้องกัน+1828",
-              "320% ของพลังป้องกัน+1970",
-              "340% ของพลังป้องกัน+2117"
-            ]
-          },
-          {
-            "key": "ปริมาณการรักษา",
-            "values": [
-              "21.3% ของพลังป้องกัน+103",
-              "22.9% ของพลังป้องกัน+113",
-              "24.5% ของพลังป้องกัน+124",
-              "26.6% ของพลังป้องกัน+136",
-              "28.2% ของพลังป้องกัน+149",
-              "29.8% ของพลังป้องกัน+163",
-              "31.9% ของพลังป้องกัน+177",
-              "34.0% ของพลังป้องกัน+193",
-              "36.2% ของพลังป้องกัน+209",
-              "38.3% ของพลังป้องกัน+226",
-              "40.4% ของพลังป้องกัน+244",
-              "42.6% ของพลังป้องกัน+263",
-              "45.2% ของพลังป้องกัน+282"
-            ]
-          },
-          {
-            "key": "โอกาสเกิดการรักษา",
-            "values": [
-              "50%",
-              "51%",
-              "52%",
-              "53%",
-              "54%",
-              "55%",
-              "56%",
-              "57%",
-              "58%",
-              "59%",
-              "59%",
-              "60%",
-              "60%"
-            ]
-          },
-          {
-            "key": "ระยะเวลาต่อเนื่อง",
-            "values": [
-              "12 วิ",
-              "12 วิ",
-              "12 วิ",
-              "12 วิ",
-              "12 วิ",
-              "12 วิ",
-              "12 วิ",
-              "12 วิ",
-              "12 วิ",
-              "12 วิ",
-              "12 วิ",
-              "12 วิ",
-              "12 วิ"
-            ]
-          },
-          {
-            "key": "เวลาคูลดาวน์",
-            "values": [
-              "24 วินาที",
-              "24 วินาที",
-              "24 วินาที",
-              "24 วินาที",
-              "24 วินาที",
-              "24 วินาที",
-              "24 วินาที",
-              "24 วินาที",
-              "24 วินาที",
-              "24 วินาที",
-              "24 วินาที",
-              "24 วินาที",
-              "24 วินาที"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/battle_talent_1/battle_talent_1.gif"
-      },
-      {
-        "key": "Sweeping Time",
-        "title": "Sweeping Time",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/battle_talent_2/battle_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "รวบรวมพลังแห่งหินไว้บนอาวุธและระเบิดพลังใส่ศัตรูทั้งหมดที่อยู่รอบ ๆ กลายเป็นการโจมตีวงกว้างหนึ่งครั้งเพื่อสร้าง <color=#ffe699>ความเสียหายหิน</color>\nหลังจากนั้นจะได้รับเอฟเฟกต์ดังนี้:\n·เพิ่มอาณาเขตการโจมตีของ Noelle\n·เปลี่ยนความเสียหายของการโจมตีเป็น <color=#ffe699>ความเสียหายหิน</color> โดยที่ไม่สามารถแทนที่ด้วยการแปลงของธาตุอื่นได้;\n·เพิ่มพลังโจมตีตามพลังป้องกันของ Noelle\n.\nสิ่งที่จำเป็นต้องปัดกวาด บางครั้งก็ไม่ได้มีแค่ฝุ่นเท่านั้น..."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13",
-              "Lv.14"
-            ]
-          },
-          {
-            "key": "ความเสียหายท่าไม้ตาย",
-            "values": [
-              "67.2%",
-              "72.2%",
-              "77.3%",
-              "84%",
-              "89%",
-              "94.1%",
-              "101%",
-              "108%",
-              "114%",
-              "121%",
-              "128%",
-              "134%",
-              "143%"
-            ]
-          },
-          {
-            "key": "ความเสียหายสกิล",
-            "values": [
-              "92.8%",
-              "99.8%",
-              "107%",
-              "116%",
-              "123%",
-              "130%",
-              "139%",
-              "148%",
-              "158%",
-              "167%",
-              "176%",
-              "186%",
-              "197%"
-            ]
-          },
-          {
-            "key": "เพิ่มพลังโจมตี",
-            "values": [
-              "40% ของพลังป้องกัน",
-              "43% ของพลังป้องกัน",
-              "46% ของพลังป้องกัน",
-              "50% ของพลังป้องกัน",
-              "53% ของพลังป้องกัน",
-              "56% ของพลังป้องกัน",
-              "60% ของพลังป้องกัน",
-              "64% ของพลังป้องกัน",
-              "68% ของพลังป้องกัน",
-              "72% ของพลังป้องกัน",
-              "76% ของพลังป้องกัน",
-              "80% ของพลังป้องกัน",
-              "85% ของพลังป้องกัน"
-            ]
-          },
-          {
-            "key": "ระยะเวลาต่อเนื่อง",
-            "values": [
-              "15 วิ",
-              "15 วิ",
-              "15 วิ",
-              "15 วิ",
-              "15 วิ",
-              "15 วิ",
-              "15 วิ",
-              "15 วิ",
-              "15 วิ",
-              "15 วิ",
-              "15 วิ",
-              "15 วิ",
-              "15 วิ"
-            ]
-          },
-          {
-            "key": "เวลาคูลดาวน์",
-            "values": [
-              "15 วินาที",
-              "15 วินาที",
-              "15 วินาที",
-              "15 วินาที",
-              "15 วินาที",
-              "15 วินาที",
-              "15 วินาที",
-              "15 วินาที",
-              "15 วินาที",
-              "15 วินาที",
-              "15 วินาที",
-              "15 วินาที",
-              "15 วินาที"
-            ]
-          },
-          {
-            "key": "พลังงานธาตุ",
-            "values": [
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/battle_talent_2/battle_talent_2.gif"
-      },
-      {
-        "key": "Devotion",
-        "title": "Devotion",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/const_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "เมื่อ Noelle อยู่ในแนวหลังของทีม และตัวละครของตนเองที่เข้าต่อสู้ในขณะนั้นมีพลังชีวิตต่ำกว่า 30% สกิลต่อไปนี้จะถูกปล่อยออกมาโดยอัตโนมัติ:\nสร้างโล่ป้องกันให้ตัวละครของตนเองที่เข้าต่อสู้ในขณะนั้น โดยโล่จะดูดซับความเสียหายได้เท่ากับ 400% ของพลังป้องกันของ Noelle ซึ่งจะคงอยู่ได้ 20 วินาที\nมีเอฟเฟกต์การดูดซับความเสียหายธาตุทุกประเภทและความเสียหายกายภาพ 150%\nเอฟเฟกต์นี้เกิดขึ้นได้เพียงหนึ่งครั้ง ในทุก 60 วินาที"
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Nice and Clean",
-        "title": "Nice and Clean",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/const_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "เมื่อการโจมตีปกติหรือการชาร์จโจมตีของ Noelle ถูกศัตรูทุก ๆ 4 ครั้ง จะเป็นการลดเวลาคูลดาวน์ของ <color=#ffd780>Breastplate</color> ลง 1 วินาที\nซึ่งเอฟเฟกต์นี้จะเกิดขึ้นมากสุดหนึ่งครั้ง ในทุก 0.1 วินาที"
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Maid's Knighthood",
-        "title": "Maid's Knighthood",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/const_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "เมื่อปรุงอาหารประเภทป้องกันได้ระดับ สมบูรณ์ จะมีโอกาส 12% ที่จะได้รับผลผลิตเพิ่มเป็น 2 เท่า"
-          }
-        ],
-        "attributes": null
       }
     ],
     "voice": [
@@ -2920,68 +2948,6 @@
         ]
       }
     ],
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/constellation_1.png",
-        "name": "I Got Your Back",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "ในขณะที่อยู่ในสภาวะของ <color=#ffd780>Sweeping Time</color> และ <color=#ffd780>Breastplate</color> เอฟเฟกต์การคืนพลังชีวิตของ Breastplate จะมีโอกาสเกิด 100%"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/constellation_2.png",
-        "name": "Combat Maid",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "ลดการใช้พลังงานการชาร์จ โจมตีของ Noelle ลง 20% และเพิ่มความเสียหายขึ้น 15%"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/constellation_3.png",
-        "name": "Invulnerable Maid",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "เพิ่มเลเวลสกิลของ <color=#ffd780>Breastplate</color> ขึ้น 3 ระดับ\nเพิ่มได้มากสุด 15 ระดับ"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/constellation_4.png",
-        "name": "To Be Cleaned",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "เมื่อเอฟเฟกต์ของ <color=#ffd780>Breastplate</color> จบลงหรือได้รับความเสียหาย จนสลายไป จะสร้าง <color=#ffe699>ความเสียหายหิน</color> เป็น 400% ของพลังโจมตี กับศัตรูโดยรอบ"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/constellation_5.png",
-        "name": "Favonius Sweeper Master",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "เพิ่มเลเวลสกิลของ <color=#ffd780>Sweeping Time</color> ขึ้น 3 ระดับ\nเพิ่มได้มากสุด 15 ระดับ"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/constellation_6.png",
-        "name": "Must Be Spotless",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Sweeping Time</color> จะเสริมพลังโจมตีให้ Noelle เป็น 50% ของพลังป้องกัน;\nนอกจากนี้ในช่วงเวลาที่สกิลคงอยู่ ทุกครั้งที่โค่นศัตรูลงได้ 1 ตัว การคงอยู่จะนานขึ้น 1 วินาที โดยสูงสุดไม่เกิน 10 วินาที"
-          }
-        ]
-      }
-    ],
     "baseInfo": [
       {
         "key": "ชื่อ",
@@ -3109,6 +3075,890 @@
         ]
       }
     ],
+    "talent": [
+      {
+        "key": "โจมตีปกติ - Favonius Bladework · Maid",
+        "title": "โจมตีปกติ - Favonius Bladework · Maid",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/battle_talent_0/battle_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>โจมตีปกติ</color>\nฟาดฟันต่อเนื่องมากสุดสี่ครั้ง\n<color=#ffd780>ชาร์จโจมตี</color>\nใช้พลังกายอย่างต่อเนื่องเพื่อหมุนโจมตีศัตรูรอบตัวด้วยดาบขนาดใหญ่\nเมื่อหยุดหมุนจะทำการฟันเพิ่มอย่างรุนแรงอีกหนึ่งครั้ง\n<color=#ffd780>โจมตีพุ่งลงจากอากาศ</color>\nกระโจนจากกลางอากาศลงมายังพื้นดิน เพื่อโจมตีศัตรูที่อยู่ในเส้นทางการโจมตี โดยจะสร้างความเสียหายวงกว้างเมื่อลงถึงพื้น"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11"
+            ]
+          },
+          {
+            "key": "ความเสียหายขั้น 1",
+            "values": [
+              "79.1%",
+              "85.6%",
+              "92%",
+              "101%",
+              "108%",
+              "115%",
+              "125%",
+              "135%",
+              "145%",
+              "156%",
+              "167%"
+            ]
+          },
+          {
+            "key": "ความเสียหายขั้น 2",
+            "values": [
+              "73.4%",
+              "79.3%",
+              "85.3%",
+              "93.8%",
+              "99.8%",
+              "107%",
+              "116%",
+              "125%",
+              "135%",
+              "145%",
+              "155%"
+            ]
+          },
+          {
+            "key": "ความเสียหายขั้น 3",
+            "values": [
+              "86.3%",
+              "93.3%",
+              "100%",
+              "110%",
+              "117%",
+              "125%",
+              "136%",
+              "147%",
+              "158%",
+              "171%",
+              "183%"
+            ]
+          },
+          {
+            "key": "ความเสียหายขั้น 4",
+            "values": [
+              "113%",
+              "123%",
+              "132%",
+              "145%",
+              "154%",
+              "165%",
+              "179%",
+              "194%",
+              "208%",
+              "224%",
+              "240%"
+            ]
+          },
+          {
+            "key": "ความเสียหายขณะชาร์จโจมตี",
+            "values": [
+              "50.7%",
+              "54.9%",
+              "59%",
+              "64.9%",
+              "69%",
+              "73.8%",
+              "80.2%",
+              "86.7%",
+              "93.2%",
+              "100.3%",
+              "107.4%"
+            ]
+          },
+          {
+            "key": "ความเสียหายชาร์จโจมตีครั้งสุดท้าย",
+            "values": [
+              "90.5%",
+              "97.8%",
+              "105%",
+              "116%",
+              "123%",
+              "132%",
+              "143%",
+              "155%",
+              "166%",
+              "179%",
+              "192%"
+            ]
+          },
+          {
+            "key": "ชาร์จโจมตีใช้พลังกาย",
+            "values": [
+              "40 หน่วย/วิ",
+              "40 หน่วย/วิ",
+              "40 หน่วย/วิ",
+              "40 หน่วย/วิ",
+              "40 หน่วย/วิ",
+              "40 หน่วย/วิ",
+              "40 หน่วย/วิ",
+              "40 หน่วย/วิ",
+              "40 หน่วย/วิ",
+              "40 หน่วย/วิ",
+              "40 หน่วย/วิ"
+            ]
+          },
+          {
+            "key": "ระยะเวลาต่อเนื่องสูงสุด",
+            "values": [
+              "5 วิ",
+              "5 วิ",
+              "5 วิ",
+              "5 วิ",
+              "5 วิ",
+              "5 วิ",
+              "5 วิ",
+              "5 วิ",
+              "5 วิ",
+              "5 วิ",
+              "5 วิ"
+            ]
+          },
+          {
+            "key": "ความเสียหายพุ่งลง",
+            "values": [
+              "74.6%",
+              "80.7%",
+              "86.7%",
+              "95.4%",
+              "101%",
+              "108%",
+              "118%",
+              "127%",
+              "137%",
+              "147%",
+              "158%"
+            ]
+          },
+          {
+            "key": "ความเสียหายพุ่งถึงพื้นจากที่ต่ำ/สูง",
+            "values": [
+              "149%/186%",
+              "161%/201%",
+              "173%/217%",
+              "191%/238%",
+              "203%/253%",
+              "217%/271%",
+              "236%/295%",
+              "255%/318%",
+              "274%/342%",
+              "295%/368%",
+              "316%/394%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 111,
+              "name": "Teachings of Resistance",
+              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของ ประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้น คือประวัติศาสตร์แห่งการป้องกัน เพื่อที่จะกันไม่ให้ข้อพิพาทต่างๆ ในอดีตนั้นถูกลืมเลือน เฉกเช่นดอกหญ้าที่ขึ้นผ่านผืนทราย เฉกเช่นลมที่แทรกผ่านช่องของ กำแพงหิน",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Resistance_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1247,
+              "name": "Damaged Mask",
+              "desc": "หน้ากากที่ทำจากกระดูกชิ้นนี้ เดิมทีเป็นของพวก Hilichurl <br/>แต่เนื่องจากได้รับความเสียหาย จำนวนมาก เลยทำให้ไม่สามารถใช้งานตามหน้าที่ของมันได้อีก",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 110,
+              "name": "Guide to Resistance",
+              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้นคือประวัติศาสตร์แห่งการป้องกัน ป้องกันเพื่อให้ผู้คนของ Mondstadt ในทุกวันนี้นั้นมีอิสรภาพ เฉกเช่นเทพแห่งลมที่ปัดเป่าหิมะให้ กระจาย เฉกเช่น Vennessa ที่ลุกขึ้นต่อสู้",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Resistance_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 983,
+              "name": "Stained Mask",
+              "desc": "หน้ากากที่เต็มไปด้วยคราบต่างๆ จนดูไม่ออกเลยว่ามันคือหน้ากากที่ทำมาจากกระดูก มีกลิ่นหอมอ่อนๆ ออกมาด้วย<br/>ต้องยอมสวมมัน เพราะพวก Hilichurl เคร่งครัดเรื่องหน้ากากมาก",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 110,
+              "name": "Guide to Resistance",
+              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้นคือประวัติศาสตร์แห่งการป้องกัน ป้องกันเพื่อให้ผู้คนของ Mondstadt ในทุกวันนี้นั้นมีอิสรภาพ เฉกเช่นเทพแห่งลมที่ปัดเป่าหิมะให้ กระจาย เฉกเช่น Vennessa ที่ลุกขึ้นต่อสู้",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Resistance_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 983,
+              "name": "Stained Mask",
+              "desc": "หน้ากากที่เต็มไปด้วยคราบต่างๆ จนดูไม่ออกเลยว่ามันคือหน้ากากที่ทำมาจากกระดูก มีกลิ่นหอมอ่อนๆ ออกมาด้วย<br/>ต้องยอมสวมมัน เพราะพวก Hilichurl เคร่งครัดเรื่องหน้ากากมาก",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 110,
+              "name": "Guide to Resistance",
+              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้นคือประวัติศาสตร์แห่งการป้องกัน ป้องกันเพื่อให้ผู้คนของ Mondstadt ในทุกวันนี้นั้นมีอิสรภาพ เฉกเช่นเทพแห่งลมที่ปัดเป่าหิมะให้ กระจาย เฉกเช่น Vennessa ที่ลุกขึ้นต่อสู้",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Resistance_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 983,
+              "name": "Stained Mask",
+              "desc": "หน้ากากที่เต็มไปด้วยคราบต่างๆ จนดูไม่ออกเลยว่ามันคือหน้ากากที่ทำมาจากกระดูก มีกลิ่นหอมอ่อนๆ ออกมาด้วย<br/>ต้องยอมสวมมัน เพราะพวก Hilichurl เคร่งครัดเรื่องหน้ากากมาก",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 110,
+              "name": "Guide to Resistance",
+              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้นคือประวัติศาสตร์แห่งการป้องกัน ป้องกันเพื่อให้ผู้คนของ Mondstadt ในทุกวันนี้นั้นมีอิสรภาพ เฉกเช่นเทพแห่งลมที่ปัดเป่าหิมะให้ กระจาย เฉกเช่น Vennessa ที่ลุกขึ้นต่อสู้",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Resistance_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 983,
+              "name": "Stained Mask",
+              "desc": "หน้ากากที่เต็มไปด้วยคราบต่างๆ จนดูไม่ออกเลยว่ามันคือหน้ากากที่ทำมาจากกระดูก มีกลิ่นหอมอ่อนๆ ออกมาด้วย<br/>ต้องยอมสวมมัน เพราะพวก Hilichurl เคร่งครัดเรื่องหน้ากากมาก",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 109,
+              "name": "Philosophies of Resistance",
+              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของ ประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้น คือประวัติศาสตร์แห่งการป้องกัน ป้องกันบทกวีในอนาคตของชาว Mondstadt เพื่อให้ล่องลอยไปกับ สายลมไปยังที่ที่แสนไกล",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Resistance_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 220,
+              "name": "Ominous Mask",
+              "desc": "หน้ากากที่เคลือบด้วยสีน้ำมัน มีความหมายถึงการข่มขู่ศัตรู<br/>ไม่มีใครทราบถึงความสัมพันธ์ที่แท้จริงระหว่างพวก Hilichurl กับหน้ากาก แต่มีคนเคยบอกไว้ว่าที่เป็นเช่นนี้ ก็เพราะว่าพวกมันไม่ต้องการเห็นเงาของตัวเองในแม่น้ำ",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 237,
+              "name": "Dvalin's Claw",
+              "desc": "กรงเล็บที่ได้มาจากมังกรแห่งลมตะวันออกแห่ง Mund<br/>และเพราะในอดีตเคยใช้กรงเล็บนี้ฉีกปีศาจมังกร [Durin] เป็นชิ้นๆ ทำให้ได้รับพิษเล็กน้อย แต่หลังจากการรักษาพิษในอดีตก็ค่อยๆลดลง",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Claw_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 109,
+              "name": "Philosophies of Resistance",
+              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของ ประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้น คือประวัติศาสตร์แห่งการป้องกัน ป้องกันบทกวีในอนาคตของชาว Mondstadt เพื่อให้ล่องลอยไปกับ สายลมไปยังที่ที่แสนไกล",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Resistance_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 220,
+              "name": "Ominous Mask",
+              "desc": "หน้ากากที่เคลือบด้วยสีน้ำมัน มีความหมายถึงการข่มขู่ศัตรู<br/>ไม่มีใครทราบถึงความสัมพันธ์ที่แท้จริงระหว่างพวก Hilichurl กับหน้ากาก แต่มีคนเคยบอกไว้ว่าที่เป็นเช่นนี้ ก็เพราะว่าพวกมันไม่ต้องการเห็นเงาของตัวเองในแม่น้ำ",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 237,
+              "name": "Dvalin's Claw",
+              "desc": "กรงเล็บที่ได้มาจากมังกรแห่งลมตะวันออกแห่ง Mund<br/>และเพราะในอดีตเคยใช้กรงเล็บนี้ฉีกปีศาจมังกร [Durin] เป็นชิ้นๆ ทำให้ได้รับพิษเล็กน้อย แต่หลังจากการรักษาพิษในอดีตก็ค่อยๆลดลง",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Claw_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 109,
+              "name": "Philosophies of Resistance",
+              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของ ประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้น คือประวัติศาสตร์แห่งการป้องกัน ป้องกันบทกวีในอนาคตของชาว Mondstadt เพื่อให้ล่องลอยไปกับ สายลมไปยังที่ที่แสนไกล",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Resistance_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 220,
+              "name": "Ominous Mask",
+              "desc": "หน้ากากที่เคลือบด้วยสีน้ำมัน มีความหมายถึงการข่มขู่ศัตรู<br/>ไม่มีใครทราบถึงความสัมพันธ์ที่แท้จริงระหว่างพวก Hilichurl กับหน้ากาก แต่มีคนเคยบอกไว้ว่าที่เป็นเช่นนี้ ก็เพราะว่าพวกมันไม่ต้องการเห็นเงาของตัวเองในแม่น้ำ",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 237,
+              "name": "Dvalin's Claw",
+              "desc": "กรงเล็บที่ได้มาจากมังกรแห่งลมตะวันออกแห่ง Mund<br/>และเพราะในอดีตเคยใช้กรงเล็บนี้ฉีกปีศาจมังกร [Durin] เป็นชิ้นๆ ทำให้ได้รับพิษเล็กน้อย แต่หลังจากการรักษาพิษในอดีตก็ค่อยๆลดลง",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Claw_icon.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 109,
+              "name": "Philosophies of Resistance",
+              "desc": "วัสดุยกระดับพรสวรรค์<br/>การป้องกันคือกระดูกสันหลังของ ประเทศแห่งสายลม<br/>ประวัติศาสตร์ของ Mondstadt นั้น คือประวัติศาสตร์แห่งการป้องกัน ป้องกันบทกวีในอนาคตของชาว Mondstadt เพื่อให้ล่องลอยไปกับ สายลมไปยังที่ที่แสนไกล",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Resistance_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 220,
+              "name": "Ominous Mask",
+              "desc": "หน้ากากที่เคลือบด้วยสีน้ำมัน มีความหมายถึงการข่มขู่ศัตรู<br/>ไม่มีใครทราบถึงความสัมพันธ์ที่แท้จริงระหว่างพวก Hilichurl กับหน้ากาก แต่มีคนเคยบอกไว้ว่าที่เป็นเช่นนี้ ก็เพราะว่าพวกมันไม่ต้องการเห็นเงาของตัวเองในแม่น้ำ",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 237,
+              "name": "Dvalin's Claw",
+              "desc": "กรงเล็บที่ได้มาจากมังกรแห่งลมตะวันออกแห่ง Mund<br/>และเพราะในอดีตเคยใช้กรงเล็บนี้ฉีกปีศาจมังกร [Durin] เป็นชิ้นๆ ทำให้ได้รับพิษเล็กน้อย แต่หลังจากการรักษาพิษในอดีตก็ค่อยๆลดลง",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Claw_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "Crown of Insight",
+              "desc": "วัสดุล้ำค่าที่ใช้ในการยกระดับพรสวรรค์<br/>ในสมัยโบราณจะใช้ของประกอบพิธีในการถ่ายทอดวิชาความรู้ ส่วนทุกวันนี้ภูมิปัญญานั้นอาศัยคำพูดและตำรา แต่พลังและภูมิปัญญาที่ยังหลงเหลืออยู่ใน \"มงกุฎแห่งความรู้\" ยังสามารถนำความก้าวหน้าที่ยิ่งใหญ่มาสู่ผู้คนในปัจจุบันได้",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/battle_talent_0/battle_talent_0.gif"
+      },
+      {
+        "key": "Breastplate",
+        "title": "Breastplate",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/battle_talent_1/battle_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "เรียกเกราะหินออกมาเพื่อสร้าง <color=#ffe699>ความเสียหายหิน</color> แก่ศัตรูโดยรอบ และสร้างโล่ขึ้นมา เพื่อดูดซับความเสียหาย เท่ากับพลังป้องกันของ Noelle\nโล่ป้องกันจะมีเอฟเฟกต์ดังนี้:\n·เมื่อการโจมตีปกติหรือชาร์จโจมตีของ Noelle โดนเป้าหมาย จะทำให้มีโอกาสฟื้นฟูพลังชีวิต ให้แก่ตัวละครทั้งหมดในทีม\n·มีเอฟเฟกต์การดูดซับความเสียหายธาตุทุกประเภทและความเสียหายกายภาพ 150%\nเมื่อเกิดเอฟเฟกต์การรักษา ปริมาณการรักษาจะขึ้นอยู่กับพลังป้องกันของ Noelle\n.\nNoelle นั้นไม่เพียงจะเป็นสาวใช้ แต่เธอยังเป็นอัศวินผู้มีความพยายาม อีกด้วย"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13",
+              "Lv.14"
+            ]
+          },
+          {
+            "key": "ความเสียหายสกิล",
+            "values": [
+              "120% ของพลังป้องกัน",
+              "129% ของพลังป้องกัน",
+              "138% ของพลังป้องกัน",
+              "150% ของพลังป้องกัน",
+              "159% ของพลังป้องกัน",
+              "168% ของพลังป้องกัน",
+              "180% ของพลังป้องกัน",
+              "192% ของพลังป้องกัน",
+              "204% ของพลังป้องกัน",
+              "216% ของพลังป้องกัน",
+              "228% ของพลังป้องกัน",
+              "240% ของพลังป้องกัน",
+              "255% ของพลังป้องกัน"
+            ]
+          },
+          {
+            "key": "ปริมาณการดูดซับ",
+            "values": [
+              "160% ของพลังป้องกัน+770",
+              "172% ของพลังป้องกัน+847",
+              "184% ของพลังป้องกัน+930",
+              "200% ของพลังป้องกัน+1020",
+              "212% ของพลังป้องกัน+1116",
+              "224% ของพลังป้องกัน+1219",
+              "240% ของพลังป้องกัน+1328",
+              "256% ของพลังป้องกัน+1443",
+              "272% ของพลังป้องกัน+1565",
+              "288% ของพลังป้องกัน+1694",
+              "304% ของพลังป้องกัน+1828",
+              "320% ของพลังป้องกัน+1970",
+              "340% ของพลังป้องกัน+2117"
+            ]
+          },
+          {
+            "key": "ปริมาณการรักษา",
+            "values": [
+              "21.3% ของพลังป้องกัน+103",
+              "22.9% ของพลังป้องกัน+113",
+              "24.5% ของพลังป้องกัน+124",
+              "26.6% ของพลังป้องกัน+136",
+              "28.2% ของพลังป้องกัน+149",
+              "29.8% ของพลังป้องกัน+163",
+              "31.9% ของพลังป้องกัน+177",
+              "34.0% ของพลังป้องกัน+193",
+              "36.2% ของพลังป้องกัน+209",
+              "38.3% ของพลังป้องกัน+226",
+              "40.4% ของพลังป้องกัน+244",
+              "42.6% ของพลังป้องกัน+263",
+              "45.2% ของพลังป้องกัน+282"
+            ]
+          },
+          {
+            "key": "โอกาสเกิดการรักษา",
+            "values": [
+              "50%",
+              "51%",
+              "52%",
+              "53%",
+              "54%",
+              "55%",
+              "56%",
+              "57%",
+              "58%",
+              "59%",
+              "59%",
+              "60%",
+              "60%"
+            ]
+          },
+          {
+            "key": "ระยะเวลาต่อเนื่อง",
+            "values": [
+              "12 วิ",
+              "12 วิ",
+              "12 วิ",
+              "12 วิ",
+              "12 วิ",
+              "12 วิ",
+              "12 วิ",
+              "12 วิ",
+              "12 วิ",
+              "12 วิ",
+              "12 วิ",
+              "12 วิ",
+              "12 วิ"
+            ]
+          },
+          {
+            "key": "เวลาคูลดาวน์",
+            "values": [
+              "24 วินาที",
+              "24 วินาที",
+              "24 วินาที",
+              "24 วินาที",
+              "24 วินาที",
+              "24 วินาที",
+              "24 วินาที",
+              "24 วินาที",
+              "24 วินาที",
+              "24 วินาที",
+              "24 วินาที",
+              "24 วินาที",
+              "24 วินาที"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/battle_talent_1/battle_talent_1.gif"
+      },
+      {
+        "key": "Sweeping Time",
+        "title": "Sweeping Time",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/battle_talent_2/battle_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "รวบรวมพลังแห่งหินไว้บนอาวุธและระเบิดพลังใส่ศัตรูทั้งหมดที่อยู่รอบ ๆ กลายเป็นการโจมตีวงกว้างหนึ่งครั้งเพื่อสร้าง <color=#ffe699>ความเสียหายหิน</color>\nหลังจากนั้นจะได้รับเอฟเฟกต์ดังนี้:\n·เพิ่มอาณาเขตการโจมตีของ Noelle\n·เปลี่ยนความเสียหายของการโจมตีเป็น <color=#ffe699>ความเสียหายหิน</color> โดยที่ไม่สามารถแทนที่ด้วยการแปลงของธาตุอื่นได้;\n·เพิ่มพลังโจมตีตามพลังป้องกันของ Noelle\n.\nสิ่งที่จำเป็นต้องปัดกวาด บางครั้งก็ไม่ได้มีแค่ฝุ่นเท่านั้น..."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13",
+              "Lv.14"
+            ]
+          },
+          {
+            "key": "ความเสียหายท่าไม้ตาย",
+            "values": [
+              "67.2%",
+              "72.2%",
+              "77.3%",
+              "84%",
+              "89%",
+              "94.1%",
+              "101%",
+              "108%",
+              "114%",
+              "121%",
+              "128%",
+              "134%",
+              "143%"
+            ]
+          },
+          {
+            "key": "ความเสียหายสกิล",
+            "values": [
+              "92.8%",
+              "99.8%",
+              "107%",
+              "116%",
+              "123%",
+              "130%",
+              "139%",
+              "148%",
+              "158%",
+              "167%",
+              "176%",
+              "186%",
+              "197%"
+            ]
+          },
+          {
+            "key": "เพิ่มพลังโจมตี",
+            "values": [
+              "40% ของพลังป้องกัน",
+              "43% ของพลังป้องกัน",
+              "46% ของพลังป้องกัน",
+              "50% ของพลังป้องกัน",
+              "53% ของพลังป้องกัน",
+              "56% ของพลังป้องกัน",
+              "60% ของพลังป้องกัน",
+              "64% ของพลังป้องกัน",
+              "68% ของพลังป้องกัน",
+              "72% ของพลังป้องกัน",
+              "76% ของพลังป้องกัน",
+              "80% ของพลังป้องกัน",
+              "85% ของพลังป้องกัน"
+            ]
+          },
+          {
+            "key": "ระยะเวลาต่อเนื่อง",
+            "values": [
+              "15 วิ",
+              "15 วิ",
+              "15 วิ",
+              "15 วิ",
+              "15 วิ",
+              "15 วิ",
+              "15 วิ",
+              "15 วิ",
+              "15 วิ",
+              "15 วิ",
+              "15 วิ",
+              "15 วิ",
+              "15 วิ"
+            ]
+          },
+          {
+            "key": "เวลาคูลดาวน์",
+            "values": [
+              "15 วินาที",
+              "15 วินาที",
+              "15 วินาที",
+              "15 วินาที",
+              "15 วินาที",
+              "15 วินาที",
+              "15 วินาที",
+              "15 วินาที",
+              "15 วินาที",
+              "15 วินาที",
+              "15 วินาที",
+              "15 วินาที",
+              "15 วินาที"
+            ]
+          },
+          {
+            "key": "พลังงานธาตุ",
+            "values": [
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/battle_talent_2/battle_talent_2.gif"
+      },
+      {
+        "key": "Devotion",
+        "title": "Devotion",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/const_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "เมื่อ Noelle อยู่ในแนวหลังของทีม และตัวละครของตนเองที่เข้าต่อสู้ในขณะนั้นมีพลังชีวิตต่ำกว่า 30% สกิลต่อไปนี้จะถูกปล่อยออกมาโดยอัตโนมัติ:\nสร้างโล่ป้องกันให้ตัวละครของตนเองที่เข้าต่อสู้ในขณะนั้น โดยโล่จะดูดซับความเสียหายได้เท่ากับ 400% ของพลังป้องกันของ Noelle ซึ่งจะคงอยู่ได้ 20 วินาที\nมีเอฟเฟกต์การดูดซับความเสียหายธาตุทุกประเภทและความเสียหายกายภาพ 150%\nเอฟเฟกต์นี้เกิดขึ้นได้เพียงหนึ่งครั้ง ในทุก 60 วินาที"
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Nice and Clean",
+        "title": "Nice and Clean",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/const_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "เมื่อการโจมตีปกติหรือการชาร์จโจมตีของ Noelle ถูกศัตรูทุก ๆ 4 ครั้ง จะเป็นการลดเวลาคูลดาวน์ของ <color=#ffd780>Breastplate</color> ลง 1 วินาที\nซึ่งเอฟเฟกต์นี้จะเกิดขึ้นมากสุดหนึ่งครั้ง ในทุก 0.1 วินาที"
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Maid's Knighthood",
+        "title": "Maid's Knighthood",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/const_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "เมื่อปรุงอาหารประเภทป้องกันได้ระดับ สมบูรณ์ จะมีโอกาส 12% ที่จะได้รับผลผลิตเพิ่มเป็น 2 เท่า"
+          }
+        ],
+        "attributes": null
+      }
+    ],
+    "textualResearch": [
+      {
+        "title": "[ข้อความวันเกิด] SNS & illust 1 (2020)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "พอได้ยินเสียงเรียกของคุณแล้ว ฉันก็รีบมาทันทีเลย ไม่ทราบว่ามีอะไรให้ฉันรับใช้เหรอคะ?\nเอ๋? ส-สุขสันต์วันเกิดงั้นเหรอ? นี่คุณจำวันเกิดของฉันได้ด้วยเหรอเนี่ย!... ขอบคุณมาก ๆ เลยนะ ฉันดีใจมาก ๆ เลยล่ะ!\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1295059760884147/"
+          }
+        ]
+      },
+      {
+        "title": "[ข้อความวันเกิด] SNS & illust 1 (2021)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "เดี๋ยวสิ...รออีกแป๊บนึงนะ ถ้าฉันเตรียมตัวพร้อมแล้ว ก็จะตามคุณออกไปเลยล่ะ\nรู้สึกว่าจังหวะหัวใจของฉันมันเร็วไปน่ะ... เอ่อ ไม่ใช่เพราะฉันทำงานอย่างเร่งรีบหรอกนะ\nแต่เมื่อนึกถึงตอนที่จะได้ใช้เวลาอยู่กับคุณทีไร หัวใจของฉัน.... ก็เต็มไปด้วยความคาดหวังน่ะสิ\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1612812685775518/"
+          }
+        ]
+      },
+      {
+        "title": "[ข้อความวันเกิด] SNS & illust 2 (2021)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "\"ขอบคุณนะ พี่สาว\"\nดอกไม้สด แล้วก็มงกุฎดอกไม้ที่เต็มไปด้วยความขอบคุณ สิ่งเหล่านี้เป็นสิ่งยืนยันความสุขที่ดีที่สุดที่ Noelle เคยได้รับ\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1612812955775491"
+          }
+        ]
+      },
+      {
+        "title": "[ข้อความวันเกิด] SNS & illust 1 (2022)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "สุขสันต์วันเกิด Noelle!\nงานทำความสะอาด, ดอกไม้, ของว่าง... เตรียมทั้งหมดเรียบร้อย! ขาดก็แค่...\nอ๊ะ นักเดินทาง คุณมาเมื่อไหร่กัน ฉันคงไม่ได้ละเลยคุณใช่มั๊ย...\n\"เครื่องดื่มที่ทำขึ้นเป็นพิเศษสำหรับวันเกิด\" นี่ให้ฉันเหรอ?\nอื้อ... ขอบคุณมากเลยนะ! ยะ...ยังไงก็นั่งลงก่อนเถอะ พวกเรา... ค่อย ๆ คุยกันดีกว่า\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1881358482254269/"
+          }
+        ]
+      },
+      {
+        "title": "[ข้อความวันเกิด] SNS & illust 1 (2023)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "สุขสันต์วันเกิด Noelle!\nฟู่ว...งานเก็บกวาดหลังจบเทศกาล Windblume นี่ยุ่งวุ่นวายเหมือนเคยเลย ขอบคุณคุณมากนะคะที่ช่วย!\nเพื่อเป็นการตอบแทน เรื่องของว่างกับน้ำชาช่วงพักก็ปล่อยให้เป็นหน้าที่ฉันเองแล้วกัน นี่เป็น Lighter-than-air Pancake ที่ฉันถนัดที่สุด หวังว่าคุณจะชอบนะ\nว่ากันว่านิสัยการกินของหวานของแต่ละคนนั้นไม่เหมือนกัน ไม่ทราบว่าคุณชอบทานแพนเค้กก่อน หรือว่ากินผลไม้ก่อนเหรอ?\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/2177540032636111/"
+          }
+        ]
+      },
+      {
+        "title": "[ข้อความวันเกิด] SNS & illust 2 (2023)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "สุขสันต์วันเกิด Noelle!\n\"ไปกันเถอะ Noelle! วันนี้อย่ามัวแต่ทำงานเลยน่า!\"\n\"แต่ว่า... ฉันยังเก็บกวาดไม่เสร็จเลยนะ\"\n\"ฮี่ฮี่ ก็คิดซะว่าฉันขอให้เธอมาช่วยสิ!\"\n\"เข้าใจแล้ว ถ้าแบบนี้มันช่วยเธอได้ละก็ งั้นเราก็ไปกันเถอะ\"\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/2177540042636110/"
+          }
+        ]
+      },
+      {
+        "title": "Noelle Valentine 2022",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "คุณเองเหรอ Paimon สวัสดี!\nเอ๋? คุณถามว่านี่คือกล่องของขวัญอะไรเหรอ...ชู่ว! ข้างในเป็นช็อกโกแลตที่ฉันเพิ่งทำเสร็จใหม่ ๆ เลย...\nรบกวน Paimon ให้คำแนะนำฉันหน่อยได้มั้ย?\nฉันอยากนำของขวัญนี้มอบให้กับนักเดินทางน่ะ\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1856829891373795/"
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "title": "ข้อมูลตัวละคร",
@@ -3181,856 +4031,6 @@
             "text": "เมื่อนานมาแล้ว Noelle เคยคิดที่จะทำปรารถนาให้เป็นจริง หลังจากนั้นไม่กี่ปีผ่านมา เธอได้เข้าร่วมการคัดเลือกที่แม้รู้ว่าต้องพ่ายแพ้ เธอเริ่มหมดกำลังใจขึ้นเรื่อย ๆ\nมารยาท วิชาดาบ ศิลปะการเจรจาที่พยายามเรียนมา...ทั้งหมดนี้ต้องเสียแรงเปล่าหรอ? เธอจำจุดเด่นของอัศวินทุกคนได้ แต่ใครจำความพยายามของผู้แพ้ล่ะ?\nแต่เธอไม่เคยหยุดที่จะไปสู่กอง อัศวินแห่ง Favonius เพียงแต่ร่างกายอันเหน็ดเหนื่อยนี้ ไม่สามารถยินได้เหมือนก่อน และสิ่งนี้เป็นสิ่งที่อันตรายเป็นอย่างมาก เหมือนดั่งเดินทางทั้งวันทั้งคืนบน น้ำแข็งท่ามกลางอากาศที่หนาว เหน็บและเริ่มเกิดอาการง่วงนอน\nในขณะนี้...ประตูของกองอัศวินเริ่ม เปิดกว้าง ผู้ที่รับผิดชอบคัดเลือกอัศวิน รักษาการณ์ผู้บัญชาการ Jean ได้เดินออกมา\nNoelle ไม่รู้ควรจะแสดงสีหน้าแบบไหนจึง ทำความเคารพของอัศวินอย่าง มาตรฐานแบบไม่ได้ตั้งใจ\nเธอเริ่มรู้สึกได้ว่าตัวเอง พรวดพราด เพราะเธอไม่รู้ว่าผู้ที่ไม่ได้รับเลือก ควรจะแสดงกิริยาอย่างไร จะให้ Jean คิดแบบไหน\nแต่ในขณะที่เธอไม่รู้จะทำตัวอย่างไรและเตรียมที่จะวิ่งหนี Jean กลับหยุดอยู่ตรงหน้าเธอและ ทำความเคารพกลับ\nNoelle ตกใจและยิ้มดีใจใหญ่ กิริยาดูบื้อและไร้เดียงสา\nวันนี้เป็น lucky day ที่ลืมยากสำหรับเธอ เธอได้รับการยอมรับสองอย่างที่ สำคัญเป็นอย่างมาก อย่างที่หนึ่งมาจาก Jean อีกอย่างมาจาก \"เทพ\"\nแท้จริงแล้วความพยายามที่เธอ ทุ่มเทนั้นก็ได้รับการจดจำ\nหลังจากวันนั้น เธอที่ถือ \"วิชั่น\" ในมือมีความมั่นใจมากขึ้นว่าสักวัน ต้องสวมชุดเกราะนั้น มีความน่าเชื่อถือ อ่อนโยน และอยู่ทุกหนแห่งอย่างแท้จริง"
           }
         ]
-      }
-    ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=29&center=-337.50,484.00&zoom=0.00",
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/avatar_header.jpg"
-      },
-      {
-        "key": "ภาพตัวละคร",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/诺艾尔/avatar.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "คอสตูมดั้งเดิม - กุหลาบงามใต้คมเหล็ก\nชุดที่มีเสื้อเกราะและผ้ากำมะหยี่เย็บต่อกันจนกลายเป็นกระโปรงที่หนักอึ้ง"
-          }
-        ]
-      },
-      {
-        "key": "อนิเมชั่นยามว่าง 1",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/10122356/f01eacabf5840679b51ba911c2093c4d_4417486545171838170.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "คอสตูมดั้งเดิม - กุหลาบงามใต้คมเหล็ก\nชุดที่มีเสื้อเกราะและผ้ากำมะหยี่เย็บต่อกันจนกลายเป็นกระโปรงที่หนักอึ้ง"
-          }
-        ]
-      },
-      {
-        "key": "อนิเมชั่นยามว่าง 2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/10122356/5bc82ae62fe23bccb1d88a509b22d1fa_4146250105309589289.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "คอสตูมดั้งเดิม - กุหลาบงามใต้คมเหล็ก\nชุดที่มีเสื้อเกราะและผ้ากำมะหยี่เย็บต่อกันจนกลายเป็นกระโปรงที่หนักอึ้ง"
-          }
-        ]
-      },
-      {
-        "key": "กลุ่มดาว",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/14/144837601/c696a6f9c81aa6ee18205b90dd968354_3116183980407632221.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Parma Cordis"
-          }
-        ]
-      },
-      {
-        "key": "นามบัตร",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/21/144837601/5b3a1681fe19f1479132707cbd492d8a_8107402310574134858.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Noelle - Protector\nNoelle ค่อนข้างจะพิเศษ เธอจะไม่ยอมให้คุณบาดเจ็บเด็ดขาด"
-          }
-        ]
-      }
-    ],
-    "textualResearch": [
-      {
-        "title": "[ข้อความวันเกิด] SNS & illust 1 (2020)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "พอได้ยินเสียงเรียกของคุณแล้ว ฉันก็รีบมาทันทีเลย ไม่ทราบว่ามีอะไรให้ฉันรับใช้เหรอคะ?\nเอ๋? ส-สุขสันต์วันเกิดงั้นเหรอ? นี่คุณจำวันเกิดของฉันได้ด้วยเหรอเนี่ย!... ขอบคุณมาก ๆ เลยนะ ฉันดีใจมาก ๆ เลยล่ะ!\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1295059760884147/"
-          }
-        ]
-      },
-      {
-        "title": "[ข้อความวันเกิด] SNS & illust 1 (2021)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "เดี๋ยวสิ...รออีกแป๊บนึงนะ ถ้าฉันเตรียมตัวพร้อมแล้ว ก็จะตามคุณออกไปเลยล่ะ\nรู้สึกว่าจังหวะหัวใจของฉันมันเร็วไปน่ะ... เอ่อ ไม่ใช่เพราะฉันทำงานอย่างเร่งรีบหรอกนะ\nแต่เมื่อนึกถึงตอนที่จะได้ใช้เวลาอยู่กับคุณทีไร หัวใจของฉัน.... ก็เต็มไปด้วยความคาดหวังน่ะสิ\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1612812685775518/"
-          }
-        ]
-      },
-      {
-        "title": "[ข้อความวันเกิด] SNS & illust 2 (2021)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "\"ขอบคุณนะ พี่สาว\"\nดอกไม้สด แล้วก็มงกุฎดอกไม้ที่เต็มไปด้วยความขอบคุณ สิ่งเหล่านี้เป็นสิ่งยืนยันความสุขที่ดีที่สุดที่ Noelle เคยได้รับ\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1612812955775491"
-          }
-        ]
-      },
-      {
-        "title": "[ข้อความวันเกิด] SNS & illust 1 (2022)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "สุขสันต์วันเกิด Noelle!\nงานทำความสะอาด, ดอกไม้, ของว่าง... เตรียมทั้งหมดเรียบร้อย! ขาดก็แค่...\nอ๊ะ นักเดินทาง คุณมาเมื่อไหร่กัน ฉันคงไม่ได้ละเลยคุณใช่มั๊ย...\n\"เครื่องดื่มที่ทำขึ้นเป็นพิเศษสำหรับวันเกิด\" นี่ให้ฉันเหรอ?\nอื้อ... ขอบคุณมากเลยนะ! ยะ...ยังไงก็นั่งลงก่อนเถอะ พวกเรา... ค่อย ๆ คุยกันดีกว่า\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1881358482254269/"
-          }
-        ]
-      },
-      {
-        "title": "[ข้อความวันเกิด] SNS & illust 1 (2023)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "สุขสันต์วันเกิด Noelle!\nฟู่ว...งานเก็บกวาดหลังจบเทศกาล Windblume นี่ยุ่งวุ่นวายเหมือนเคยเลย ขอบคุณคุณมากนะคะที่ช่วย!\nเพื่อเป็นการตอบแทน เรื่องของว่างกับน้ำชาช่วงพักก็ปล่อยให้เป็นหน้าที่ฉันเองแล้วกัน นี่เป็น Lighter-than-air Pancake ที่ฉันถนัดที่สุด หวังว่าคุณจะชอบนะ\nว่ากันว่านิสัยการกินของหวานของแต่ละคนนั้นไม่เหมือนกัน ไม่ทราบว่าคุณชอบทานแพนเค้กก่อน หรือว่ากินผลไม้ก่อนเหรอ?\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/2177540032636111/"
-          }
-        ]
-      },
-      {
-        "title": "[ข้อความวันเกิด] SNS & illust 2 (2023)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "สุขสันต์วันเกิด Noelle!\n\"ไปกันเถอะ Noelle! วันนี้อย่ามัวแต่ทำงานเลยน่า!\"\n\"แต่ว่า... ฉันยังเก็บกวาดไม่เสร็จเลยนะ\"\n\"ฮี่ฮี่ ก็คิดซะว่าฉันขอให้เธอมาช่วยสิ!\"\n\"เข้าใจแล้ว ถ้าแบบนี้มันช่วยเธอได้ละก็ งั้นเราก็ไปกันเถอะ\"\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/2177540042636110/"
-          }
-        ]
-      },
-      {
-        "title": "Noelle Valentine 2022",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "คุณเองเหรอ Paimon สวัสดี!\nเอ๋? คุณถามว่านี่คือกล่องของขวัญอะไรเหรอ...ชู่ว! ข้างในเป็นช็อกโกแลตที่ฉันเพิ่งทำเสร็จใหม่ ๆ เลย...\nรบกวน Paimon ให้คำแนะนำฉันหน่อยได้มั้ย?\nฉันอยากนำของขวัญนี้มอบให้กับนักเดินทางน่ะ\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1856829891373795/"
-          }
-        ]
-      }
-    ],
-    "customize": [
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "รายละเอียดตัวละคร",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "การประกาศตัวละคร"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>16/03/20</color>\nดอกไม้ที่หาญกล้า ‧ Noelle\nเมดสาวแห่งกองอัศวิน\nชาวเมือง Mondstadts ต่างก็เห็นตรงกันว่า สาวใช้ Noelle ควรได้รับสมญานามว่า \"ผู้วิเศษ\" เธออยู่ทุกหนแห่ง และทำได้ทุกอย่าง\nไม่ว่าจะเป็นงานเลี้ยงดินเนอร์ของเหล่าอัศวิน, งานจัดเลี้ยงธุรกิจของอุตสาหกรรมไวน์ หรืองานเลี้ยงบาร์บีคิวธรรมดา ที่ใดที่มีปัญหา Noelle จะปรากฏกายราวกับพายุพัด และแก้ไขปัญหาได้อย่างเรียบร้อย\nด้วยเหตุนี้ บางคนถึงกับเรียกเธอว่า \"สาวใช้มหัศจรรย์\"\nแต่ในความเห็นของ Noelle เธอคิดว่าเธอไม่ใช่ผู้วิเศษในตำนานอะไรหรอก เธอเพียงแค่ใฝ่หาความประณีต และรักษามาตรฐานการทำงานไว้ไม่ให้บกพร่องเท่านั้นเอง\n\"ไม่มากเกินไป ไม่น้อยเกินไป ของควรมีต้องมีให้ครบ ของไม่ควรมีก็อย่าให้พบ\"\n<color=#80c0ff>Facebook:</color>\n<color=#37ffff>https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1289995301390593/</color>"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/03/21/144837601/f6864f27d223e247ed862aeac3563ef3_1180221062702142389.jpg",
-        "alignment": "left"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "ประกาศรายชื่อผู้พากย์เสียง"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>07/11/20</color>\nนักเดินทางทั้งหลาย นักพากย์ของ Noelle ได้รับการเปิดเผยอย่างเป็นทางการแล้ว ไปดูกันเลยยย!\nนักพากย์\n<color=#ffd780>EN CV: Laura Faye Smith</color>\n<color=#ffd780>JP CV: TAKAO Kanon</color>\n<color=#80c0ff>Facebook:</color>\n<color=#37ffff>https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1508186096238178/</color>"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/03/21/144837601/f299adfb7a03dae1fd2334c3936c8e55_8449264201247821881.png",
-        "alignment": "left"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "การปรากฏตัวอื่น ๆ",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "ตัวอย่างเวอร์ชัน 1.4: \"เสียงกระซิบจากดอกไม้\""
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>06/03/21</color>\nเสียงบทเพลงแห่งการเฉลิมฉลองลอยล่องไปตามสายลม\nในดอกไม้นั้นมีบทกวีโบราณซ่อนอยู่\nบางทีคุณควรไปสำรวจในเมืองเพื่อค้นหาความหมายที่แท้จริงของงานเทศกาลนี้\nแต่อย่าลืมสำรวจสิ่งที่ซ่อนอยู่ภายในจิตใจของคุณด้วย\n<color=#ffacff>HoYoLAB:</color>\n<color=#37ffff>https:/www.hoyolab.com/article/228979</color>"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/03/21/144837601/0e5e28bcab853f1d7046b62034e7bf4a_8553232907526215120.png",
-        "alignment": "left"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "แอนิเมชันปิดกิจกรรมเทศกาล Windblume - \"มวลดอกไม้ในสายลม\""
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>05/04/21</color>\nสายลมท่ามกลางหมู่เมฆ ท่ามกลางสายฝน ท่ามกลางความฝันและมวลดอกไม้ เธออยู่ข้างกายฉัน อยู่ในสายตาของฉัน อยู่ในหัวใจที่สั่นไหวไม่หยุดเพราะความรักของฉัน\n<color=#ff9999>YouTube:</color>"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=HRksKER0Ies"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/03/21/144837601/3aa778b4c1ed5ca90f511974cb9cdec8_8108175836303870002.jpg",
-        "alignment": "left"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "ตัวอย่างเวอร์ชัน 1.5: \"อาณาจักรแดนเนรมิต\""
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>16/04/21</color>\nจันทร์ทอแสงตกกระทบกิ่งไม้ มังกรกู่ร้องคำรามดังขึ้นจากส่วนลึก ประกายแสงแดดสาดส่อง ไม่อาจกระทบถึงกลางใจหินผา\nผนึกสัญญาแห่งไฟ ธารน้ำแข็งที่กลั่นตัวเป็นเกลียวคลื่น แต่ ณ อาณาจักรแห่งจิตวิญญาณ คือที่ซึ่งเสมือนบทเพลงที่เต็มไปด้วยท่วงทำนองอันอ่อนโยน\n<color=#ffacff>HoYoLAB:</color>\n<color=#37ffff>https:/www.hoyolab.com/article/300618</color>"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/03/21/144837601/65c7dcb2830078f68b11396249e16810_7102185098369165025.jpg",
-        "alignment": "left"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "แนะนำตัวละคร",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "ในสายตาของทุกคน Noelle สาวใช้ของ \"กองอัศวินแห่ง Favonius\" นั้น ทั้งอ่อนโยนและพึ่งพาได้ เวลาเจอเรื่องลำบากก็ขอให้เธอช่วยได้เสมอ\nNoelle จะดีใจเป็นอย่างมากในทุกครั้งที่ได้รับมอบหมายภารกิจสำคัญ หรือทุกครั้งที่ถูกมองว่าเป็นผู้ช่วยสำคัญในยามเจอปัญหารับมือยาก\nในใจของเธอนั้น การได้ช่วยเหลือคนที่ตกระกำลำบาก และได้ใช้กำลังของตัวเองเพื่อผู้อื่นนั้น ต่างเป็นการกระทำที่วิถีอัศวินพึงมีทั้งนั้น\nใช่แล้ว Noelle ใฝ่ฝันอยากเป็นอัศวินอย่างเป็นทางการ เธอเฝ้าพยายามมาโดยตลอด เพื่อสานฝันให้เป็นจริง",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "ความสัมพันธ์ของตัวละคร",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 14,
-        "name": "Amber",
-        "desc": "<p>เด็กสาวผู้เปี่ยมไปด้วยพลังและมีชีวิตชีวาอยู่เสมอ ยอดฝีมือแห่งกองอัศวิน และเป็นอัศวินลาดตระเวนคนสุดท้าย</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Amber_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "โดยสังเขป"
-      },
-      {
-        "type": "RichText",
-        "text": "Amber และ Noelle เป็นเพื่อนร่วมงานและรุ่นพี่รุ่นน้องที่ดีต่อกัน"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เสียงพากย์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>Amber:</color>\nNoelle งั้นเหรอ? ความแข็งแรงของเธอน่ะสุด ๆ ไปเลยล่ะนะ ในฐานะรุ่นพี่แล้ว เธอเองก็ต้องดูแล Noelle ให้มาก ๆ หน่อยล่ะ\n<color=#ffd780>Noelle:</color>\nฉันนับถือ Amber มาก ๆ เลย เธอเป็นคนเข้มแข็งมาก แล้วยังใจดีอีกต่างหาก เธอสอนฉันทำ Baron Bunny ด้วย คุณดูสิ ฉันห้อยติดตัวไว้ตลอดเลย สวยดีใช่มั้ยล่ะ?"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 12,
-        "name": "Klee",
-        "desc": "แขกประจำห้องขังของกองอัศวินแห่ง Favonius ผู้เชี่ยวชาญด้านการระเบิดแห่ง Mondstadt ผู้คนเรียกเธอว่า &#34;ดวงอาทิตย์ที่หลบหนี&#34;",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "โดยสังเขป"
-      },
-      {
-        "type": "RichText",
-        "text": "Noelle มักจะสงสัยว่าทำไม Klee ที่อายุยังน้อยอยู่ถึงสามารถเป็นอัศวินเต็มตัวได้กันนะ"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เสียงพากย์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>Noelle:</color>\nฉันสงสัยมาตลอด ว่าเธอเป็นอัศวินเต็มตัวตั้งแต่อายุ ยังน้อยได้ยังไงกัน มีครั้งหนึ่งฉันไปถามเธอเพื่อหาความรู้ เธอฟังสิ่งที่ฉันพูดยังไม่จบ เธอก็ลากฉันไปเล่นระเบิดนอก ศูนย์บัญชาการกองอัศวิน... ตอนแรกฉันคิดว่ามันเป็นการฝึกฝนบางอย่าง แต่ Jean มาเจอพวกเราเข้า แล้วเราก็โดนขังทั้งคู่เลย"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 27,
-        "name": "Jean",
-        "desc": "<p>อัศวิน Dandelion ผู้ยึดมั่นในความถูกต้อง และเป็นรักษาการผู้บัญชาการ ของกองอัศวินแห่ง Favonius</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Jean_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "โดยสังเขป"
-      },
-      {
-        "type": "RichText",
-        "text": "Jean มองว่า Noelle ยังไม่พร้อมที่จะออกไปเผชิญอันตราย ในขณะเดียวกัน Noelle เองก็เชิดชู Jean มากเช่นกัน"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เสียงพากย์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>Jean:</color>\nNoelle... อา สาวน้อยผู้มุ่งมั่นที่จะเข้าร่วม กองอัศวินแห่ง Favonius จิตใจของเธอยังอ่อนแออยู่ ในตอนนี้คงไม่เหมาะที่จะให้เธอ ออกไปเผชิญอันตรายนอก กำแพงเมือง\n<color=#ffd780>Noelle:</color>\nหัวหน้า Jean เป็นไอดอลของฉันมาตลอด ความแข็งแกร่งและความจริงจัง ของฉันนั้นยังด้อยกว่าเธอมาก เธอเข้มงวดกับคนอื่นเหมือนกับตัว เธอเอง ดังนั้นถ้าวันหนึ่งฉันได้รับการ ยอมรับจากเธอ มันจะเป็นสิ่งยืนยันที่ยิ่งใหญ่ที่สุด ในการทำงานหนักของฉัน จนกว่าจะถึงตอนนั้น ฉันจะไม่ล้อเล่นเด็ดขาด!"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Varka</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "โดยสังเขป"
-      },
-      {
-        "type": "RichText",
-        "text": "Noelle พบว่า Varka มักจะคอยหยอดคำชมแก่คนอื่นเสมอ แต่อย่างไรก็ดี Noelle เองก็รู้สึกดีใจที่ได้รับคำชมอยู่ดี"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เสียงพากย์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>Noelle:</color>\nตอนแรกฉันว่าจะเข้าร่วมทีมผจญภัยของท่านผู้บัญชาการในฐานะ สาวใช้ แต่ผู้บัญชาการบอกว่าให้ฉันอยู่ดูแลความเรียบร้อยในเมือง Mondstadt ท่านถึงจะวางใจ... ผู้บัญชาการเชื่อมั่นในตัวฉันขนาดนี้ ฉันดีใจสุด ๆ เลย! ถึงแม้ตอนหลังฉันถึงรู้ว่าผู้บัญชาการ ไม่ได้พูดอย่างงี้กับฉัน แค่คนเดียว แต่ว่า... ยังไงคำชมก็เป็นคำชมล่ะน่า"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 9,
-        "name": "Kaeya",
-        "desc": "<p>นักดาบผู้มีกลิ่นอายของคนจากต่างแดน มันสมองของกองอัศวินแห่ง Favonius</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kaeya_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "โดยสังเขป"
-      },
-      {
-        "type": "RichText",
-        "text": "Kaeya มองว่า Noelle นั้นไม่จำเป็นต้องให้คอยดูแลเลย และมักจะคอยให้ Noelle ช่วยงานเล็ก ๆ น้อย ๆ เสมอ"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เสียงพากย์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>Kaeya:</color>\nฉันได้รับความไว้วางใจจากรักษา การผู้บัญชาการ ให้คอยดูแลรุ่นน้องคนนี้อย่างลับ ๆ แต่ว่า Noelle น่ะเป็นงานมาก ไม่จำเป็นต้องให้ฉันดูแลเลย สุดยอดไปเลยนะ\n<color=#ffd780>Noelle:</color>\nเขาเป็นคนลึกลับมาก มาเหมือนเงา ไปเหมือนสายลม และมีงานสำคัญที่ต้องจัดการทุกวัน เขามักจะหางานเล็ก ๆ ให้ฉันทำ ราวกับว่าฉันเป็นสมาชิกของทีมคนหนึ่ง... หืม? เด็กส่งของ? ไม่ไม่ ถึงจะเป็นแค่เด็กส่งของจริง ๆ แต่ฉันก็เห็นคุณค่านะ!"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 26,
-        "name": "Bennett",
-        "desc": "เด็กหนุ่มนักผจญภัยแห่ง Mondstadt มีความซวยซึ่งไม่เข้ากันกับ ความใจดีมีเมตตาของเขาเลย",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Bennett_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "โดยสังเขป"
-      },
-      {
-        "type": "RichText",
-        "text": "Bennett มักจะคอยเชิญชวนให้ Noelle มาเป็นนักผจญภัย แต่อย่างไรก็ตาม Noelle เองก็ยังคงยึดมั่นในเป้าหมายการเป็นอัศวินอยู่เสมอ"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เสียงพากย์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>Bennett:</color>\nเธอน่ะเหรอ จริง ๆ ฉันแอบสังเกตเธอมานานแล้วล่ะ เธอมีทั้งพรสวรรค์และมีความ พยายามแต่กลับเป็นได้แค่สาวรับใช้ ในกองอัศวิน ไม่ได้เป็นอัศวินกะ เค้าสักที เธอว่านี่ไม่น่าเสียดายหรอกเหรอ? เอ่อ ถ้าเธอมากิลด์นักผจญภัย คงเป็นนักผจญภัยที่เก่งกาจไปนานแล้ว\n<color=#ffd780>Noelle:</color>\nเขาเชิญฉันเข้าร่วมกิลด์นักผจญภัยตั้งหลายครั้งแล้ว บอกว่างานของกิลด์เหมาะกับฉันมากกว่ากองอัศวิน... ถึงฉันจะสามารถช่วยเขาดูแลคุณพ่อทั้งหลายได้เช่นเดียวกับนักผจญภัย แต่ว่า... สำหรับฉันแล้วกองอัศวิน Favonius มีความหมายพิเศษอยู่ อีกอย่างฉันจะไม่ยอมแพ้เด็ดขาด... อืม สุดท้ายเลยปฏิเสธข้อเสนอของเขาไป"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 38,
-        "name": "Fischl",
-        "desc": "<p>หญิงสาวลึกลับผู้เรียกตนเองว่า &#34;เจ้าหญิงแห่งการลงทัณฑ์&#34; ผู้ร่วมเดินทางไปพร้อมกับเรเวนนามว่า Oz</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Fischl_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "โดยสังเขป"
-      },
-      {
-        "type": "RichText",
-        "text": "Noelle มักจะพบ Fischl อยู่ในห้องสมุดของกองอัศวิน"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เสียงพากย์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>Noelle:</color>\nเธอดูเหมือนจะมาจากอีกโลกหนึ่ง ฉันก็ไม่รู้รายละเอียดมากนัก... แต่ดูเหมือนว่าเธอจะชอบห้องสมุดของกองอัศวินมาก และชอบไปอ่านหนังสืออยู่ที่นั่นเสมอ ตอนฉันทำความสะอาดฉันมักจะนำเครื่องดื่มอุ่น ๆ ไปให้เธอ เธอจะขอบคุณฉันทุกครั้งและพูดอะไรที่ฉันไม่เข้าใจหลายอย่าง แต่คำพูดพวกนั้นมักจะเกินจริงมาก...\nมีครั้งหนึ่งตอนที่ฉันทำความสะอาดห้องสมุด ฉันจำได้ว่าเคยเห็นหนังสือเล่มหนึ่งชื่อ \"Fischl เจ้าหญิงแห่งความมืด\" เธอจะต้องเก่งมากแน่ ๆ ถึงได้มีหนังสือชีวประวัติเป็นของ ตัวเองเลย"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 35,
-        "name": "Barbara",
-        "desc": "<p>ชาวเมือง Mondstadt ทุกคนต่างก็เอ็นดู Barbara</p><p>เธอเรียนรู้คำว่า &#34;ไอดอล&#34; มาจากนิตยสาร</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Barbara_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "โดยสังเขป"
-      },
-      {
-        "type": "RichText",
-        "text": "Barbara และ Noelle เป็นเพื่อนที่ดีต่อกัน"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เสียงพากย์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>Barbara:</color>\nNoelle จะน่ารักเกินไปแล้ว! ทั้งอ่อนโยนและก็ใจเย็น เวลาอยู่กับเธอน่ะสบายใจมากเลยล่ะ... อ๊ะ จริงสิ อาหารที่เธอทำก็เยี่ยมไปเลยล่ะ ทั้งหอม ทั้งหวาน แล้วก็ดีต่อสุขภาพด้วย หึหึ\n<color=#ffd780>Noelle:</color>\nเรามักจะดื่มชาด้วยกัน และบางครั้งเธอก็ฮัมเพลงเบา ๆ เธอบอกฉันว่าเกิดแรงบันดาลใจขึ้นมา แม้ว่าฉันจะไม่สามารถให้คำแนะนำที่เป็นประโยชน์เกี่ยวกับดนตรีได้... แต่ฉันมีความสุขมากที่ได้ใช้เวลาร่วมกับ Barbara!"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "ภาพรวมพรสวรรค์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>สกิลธาตุ</color> เป็นการเรียกเกราะหินออกมาเพื่อสร้าง <color=#ffe699>ความเสียหายหิน</color> แก่ศัตรูโดยรอบ\n<color=#ffd780>ท่าไม้ตาย</color> เป็นการกวัดแกว่งดาบขนาดใหญ่โจมตีวงกว้างหนึ่งครั้งเพื่อสร้าง <color=#ffe699>ความเสียหายหิน</color>\nหลังจากนั้นจะได้รับเอฟเฟกต์ดังนี้:\n· เพิ่มอาณาเขตการโจมตีของ Noelle\n· เปลี่ยนความเสียหายของการโจมตีเป็น <color=#ffe699>ความเสียหายหิน</color> โดยที่ไม่สามารถซ้อนทับธาตุอื่นได้;\n· เพิ่มพลังโจมตีตามพลังป้องกันของ Noelle\nหากตัวละครที่เข้าต่อสู้ในขณะนั้นมีพลังชีวิตต่ำกว่า 30% สกิลต่อไปนี้จะถูกปล่อยออกมาโดยอัตโนมัติ:\nสร้างโล่ป้องกันให้ตัวละครของตนเองที่เข้าต่อสู้ในขณะนั้น โดยโล่จะดูดซับความเสียหายได้เท่ากับ 400% ของพลังป้องกันของ Noelle\nเมื่อการ <color=#ffd780>โจมตีปกติ</color> หรือการ <color=#ffd780>ชาร์จโจมตี</color> ของ Noelle ถูกศัตรูทุก ๆ 4 ครั้ง จะเป็นการลดเวลาคูลดาวน์ของ <color=#ffd780>สกิลธาตุ</color> ลง 1 วินาที"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "อาวุธแนะนำ"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "อาวุธ 3-ดาว"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2047,
-        "name": "Skyrider Greatsword",
-        "desc": "ดาบเหล็กกล้าที่ดูพึ่งพาได้ ครั้งหนึ่ง Skyrider ผู้โด่งดังในตำนานพยายามขี่มันเพื่อทะยานสู่ฟ้า",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/飞天大御剑.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Skyrider Greatsword</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ece5d8>โบนัสความเสียหายกายภาพ</color>\nสกิลติดตัว: เมื่อ <color=#ffd780>โจมตีปกติหรือชาร์จโจมตี</color> ถูกเป้าหมาย <color=#ffd780>พลังโจมตี</color> จะเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nแม้จะให้ค่าสถานะรองเป็น <color=#ffd780>โบนัสความเสียหายกายภาพ</color> แต่อย่างไรก็ดี ในช่วงเริ่มต้นเกมที่ยังมีตัวเลือกไม่มากนัก\nอาวุธชิ้นนี้เองก็ถือว่าเป็นหนึ่งในตัวเลือกที่ดีเช่นกัน\n<color=#ffffff>หาได้จาก:</color>\nรางวัลจากหีบสมบัติใน Liyue ที่มีคุณภาพตั้งแต่ Exquisite หรือสูงกว่า"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "อาวุธ 4-ดาว"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2015,
-        "name": "Serpent Spine",
-        "desc": "อาวุธหายากจากทะเลโบราณ เสียงของระบำดาบนั้นเป็นเหมือนดั่งเสียงของคลื่นยักษ์ในอดีตกาล",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/螭骨剑.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Serpent Spine</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>อัตราคริ</color>\nสกิลติดตัว: เมื่อตัวละครเข้าสู่การต่อสู้ จะเพิ่ม <color=#ffd780>ความเสียหาย</color> ที่สร้างและเพิ่มความเสียหายที่ได้รับ\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่า <color=#ffd780>อัตราคริ</color> เหมาะกับตำแหน่งตัวทำความเสียหายหลักของทีมอย่าง Noelle\n<color=#ffffff>หาได้จาก:</color>\nซื้อ Gnostic Hymn (Battle Pass)"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2056,
-        "name": "Blackcliff Slasher",
-        "desc": "ดาบยักษ์ของ Blackcliff Forge นั้นแข็งแกร่งไม่มีใครเทียบ ตัวดาบสีดำแดง",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/黑岩斩刀.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Blackcliff Slasher</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>ความแรงคริ</color>\nสกิลติดตัว: หลังจากกำจัดศัตรูได้ <color=#ffd780>พลังโจมตี</color> จะเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nBlackcliff Slasher ให้ค่า <color=#ffd780>ความแรงคริ</color> แก่ Noelle เพื่อเพิ่มความเสียหายของเฉพาะตัวเธอเอง\nอาวุธนี้เหมาะที่สุดเมื่อมีศัตรูหลายตัวเพื่อใช้สกิลติดตัวของอาวุธ\n<color=#ffffff>หาได้จาก:</color>\nซื้อจากร้านค้า Paimon"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1995,
-        "name": "Whiteblind",
-        "desc": "ดาบใหญ่ที่ด้านหนึ่งของตัวดาบยังไม่ถูกลับเพื่อเปิดคมมีดซึ่งมาพร้อมกับผู้ทำการค้าจากต่างถิ่นที่เดินทางมาถึง Liyue มีพลังที่เหลือเชื่อเมื่ออยู่ในมือของคนที่รู้วิธีใช้มัน",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/白影剑.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Whiteblind</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>พลังป้องกัน</color>\nสกิลติดตัว: หลัง <color=#ffd780>โจมตีปกติ</color> หรือ <color=#ffd780>ชาร์จโจมตี</color> ถูกเป้าหมาย <color=#ffd780>พลังโจมตี</color> และ <color=#ffd780>พลังป้องกัน</color> จะเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nWhiteblind ให้ค่า <color=#ffd780>พลังโจมตี</color> และ <color=#ffd780>พลังป้องกัน</color> แก่ Noelle เพื่อเพิ่มความเสียหายของเฉพาะตัวเธอเอง\n<color=#ffffff>หาได้จาก:</color>\nสามารถหลอมได้ที่ช่างตีเหล็ก"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2025,
-        "name": "Prototype Archaic",
-        "desc": "ดาบยักษ์โบราณที่ถูกซ่อนไว้ใน Blackcliff Forge ตอนที่ชูขึ้น ราวกับว่าสามารถลงดาบหั่นอากาศออกเป็นสองท่อน",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/试作古华.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Prototype Archaic</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>พลังโจมตี</color>\nสกิลติดตัว: เมื่อ <color=#ffd780>โจมตีปกติหรือชาร์จโจมตี</color> ถูกเป้าหมายจะมีโอกาส 50% ที่จะสร้าง <color=#ffd780>ความเสียหายเพิ่มเติม</color> โดยขึ้นอยู่กับพลังโจมตีสูงสุด แก่ศัตรูที่อยู่ในพื้นที่วงแคบ\n<color=#ffffff>หมายเหตุ:</color>\nสร้างความเสียหายเพิ่มเติมแก่การโจมตีปกติของ Noelle\n<color=#ffffff>หาได้จาก:</color>\nสามารถหลอมได้ที่ช่างตีเหล็ก"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "อาวุธ 5-ดาว"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2031,
-        "name": "Redhorn Stonethresher",
-        "desc": "ตามที่เจ้าของคนก่อนบอก ดาบนี้คือ \"ลอร์ดสิงโตเขาแดงเคลือบทองทะลวงหินทลายศิลา\" ที่สามารถขับไล่เหล่าปีศาจและมอนสเตอร์ให้หนีกระเจิงได้",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/赤角石溃杵.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Redhorn Stonethresher</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>ความแรงคริ</color>\nสกิลติดตัว: เพิ่ม <color=#ffd780>พลังป้องกัน</color> การ <color=#ffd780>โจมตีปกติ</color> และ <color=#ffd780>ชาร์จโจมตี</color> สร้างความเสียหายเพิ่มขึ้น โดยปริมาณที่เพิ่มจะคำนวณจาก <color=#ffd780>พลังป้องกัน</color>\n<color=#ffffff>หมายเหตุ:</color>\nนอกจากค่า <color=#ffd780>ความแรงคริ</color> ที่สูงแล้ว ยังช่วยเพิ่มความเสียหายจากการ <color=#ffd780>โจมตีปกติ</color> และ <color=#ffd780>ชาร์จโจมตี</color> ของ Noelle\nนอกจากนี้ยังให้ <color=#ffd780>ค่าพลังป้องกัน</color> ซึ่งช่วยเพิ่มความเสียหายโดยรวมให้แก่ Noelle ได้เป็นอย่างมาก\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1978,
-        "name": "The Unforged",
-        "desc": "ดาบใหญ่ที่สามารถกำจัดอสูร ได้ราวกับมีพลังเทพเจ้าอันน่าเกรงขาม",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/无工之剑.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>The Unforged</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>พลังโจมตี</color>\nสกิลติดตัว: เพิ่มประสิทธิภาพ <color=#ffd780>โล่ป้องกัน</color> หลังจากโจมตีถูกเป้าหมาย จะเพิ่ม <color=#ffd780>พลังโจมตี</color> เมื่อได้รับการป้องกันจากโล่ พลังโจมตีของเอฟเฟกต์นี้จะเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่า <color=#ffd780>พลังโจมตี</color> ทำให้ Noelle สามารถสร้าง <color=#ffd780>ความเสียหาย</color> ได้มากขึ้น\nเนื่องจาก Noelle สามารถสร้าง <color=#ffd780>โล่</color> เองได้ จึงทำให้สามารถใช้อาวุธชิ้นนี้ได้เป็นอย่างดี\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1992,
-        "name": "Wolf's Gravestone",
-        "desc": "ดาบยาวที่ใช้โดยอัศวินหมาป่า แต่เดิมแล้วมันเป็นเพียงแผ่นเหล็กที่ทำขึ้นโดยช่างเหล็กในเมือง แต่กระนั้นมันก็ให้พลังแห่งตำนานให้กับมิตรภาพที่มีต่อเหล่าหมาป่า",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/狼的末路.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Wolf's Gravestone</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>พลังโจมตี</color>\nสกิลติดตัว: เพิ่ม <color=#ffd780>พลังโจมตี</color> เมื่อโจมตีถูกศัตรูที่มี <color=#ffd780>พลังชีวิต</color> ต่ำกว่า 30% <color=#ffd780>พลังโจมตี</color> ของสมาชิกทั้งหมดในทีมจะเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่า <color=#ffd780>พลังโจมตี</color> ทำให้ Noelle สามารถสร้าง <color=#ffd780>ความเสียหาย</color> ได้มากขึ้น\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3615,
-        "name": "Beacon of the Reed Sea",
-        "desc": "<p><span>ดาบใหญ่ปลายตัดรูปทรงโบราณ ดูเหมือนจะเคยเป็นอาวุธของราชวงศ์ และถูกใช้ในพิธีกรรมบางอย่าง</span></p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/28/176148810/374cad27eb39f01436d6f52446804e6b_282901883429977632.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Beacon of the Reed Sea</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>อัตราคริ</color>\nสกิลติดตัว: หลังจากที่ <color=#ffd780>สกิลธาตุ</color> ถูกศัตรู <color=#ffd780>พลังโจมตี</color> จะเพิ่มขึ้น หลังจากได้รับ <color=#ffd780>ความเสียหาย</color> <color=#ffd780>พลังโจมตี</color> จะเพิ่มขึ้นโดยที่เอฟเฟกต์ทั้ง 2 ชนิด ข้างต้นจะยังคงเกิดขึ้นได้ แม้ตัวละครอยู่ในทีม แต่ไม่ได้เข้าร่วมการต่อสู้ นอกจากนี้ ในขณะที่ไม่ได้รับการป้องกันจาก <color=#ffd780>โล่</color> <color=#ffd780>พลังชีวิต</color> สูงสุดจะเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่า <color=#ffd780>อัตราคริ</color> เหมาะกับตำแหน่งตัวทำความเสียหายหลักของทีมอย่าง Noelle\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1953,
-        "name": "Skyward Pride",
-        "desc": "ดาบใหญ่ที่เป็นสัญลักษณ์แห่งความทรนงของ Dvalin ผ่านฟากฟ้า เมื่อเหวี่ยงมัน จะมีคลื่นเสียงต่ำที่เกิดจากพลังของฟ้าและพลังแห่งลมที่ซ่อนอยู่ภายใน",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之傲.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Skyward Pride</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>การฟื้นฟูพลังงาน</color>\nสกิลติดตัว: เพิ่ม <color=#ffd780>ความเสียหาย</color> ที่สร้างขึ้น; หลังจากที่ปล่อย <color=#ffd780>ท่าไม้ตาย</color> : เมื่อ <color=#ffd780>การโจมตีปกติ</color> หรือ <color=#ffd780>ชาร์จโจมตี</color> โดนเป้าหมายจะสร้างใบมีดสุญญากาศขึ้นมาและสร้างความเสียหาย โดยขึ้นอยู่กับพลังโจมตีสูงสุดให้แก่ศัตรูที่อยู่ในเส้นทางเป็นเวลา 20 วินาที หรือจนกว่าจะปล่อยใบมีดสุญญากาศ\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่า <color=#ffd780>ฟื้นฟูพลังงาน</color> ทำให้ Noelle สามารถใช้ท่าไม้ตายได้ง่ายขึ้น\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "อาร์ติแฟกต์แนะนำ"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "ค่าสถานะอาร์ติแฟกต์"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/1387f1512524772db99ae30b6303f939_5072609172935942900.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>พลังโจมตี / พลังป้องกัน</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/56451470fe75f710b812ac28e226273b_5774236690802856497.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffe699>โบนัสความเสียหายหิน</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/8bc07934c9290b83751c7fa183a43ab7_32021027934025390.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>อัตราคริ / ความแรงคริ</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เซ็ต 4 อัน"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2065,
-        "name": "Husk of Opulent Dreams",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Husk of Opulent Dreams/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Husk of Opulent Dreams</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\nเซ็ต 2 อัน: เพิ่ม <color=#ffd780>พลังป้องกัน</color> 30%\nเซ็ต 4 อัน: ตัวละครที่สวมใส่เซ็ตอาร์ติแฟกต์นี้จะได้รับเอฟเฟกต์ Curiosity ภายใต้สถานการณ์ต่อไปนี้: ในขณะที่อยู่ในการต่อสู้ จะได้รับหนึ่งชั้นหลังจากโจมตีถูกศัตรูด้วย <color=#ffe699>ธาตุหิน</color> โดยจะเกิดขึ้นได้มากสุดหนึ่งครั้ง ในทุก 0.3 วินาที; เมื่ออยู่ในทีมแต่ไม่ได้อยู่ในการต่อสู้ ในทุก 3 วินาที จะได้รับหนึ่งชั้น โดยที่ Curiosity จะสามารถซ้อนทับได้มากสุด 4 ชั้น ซึ่งแต่ละชั้นจะมอบโบนัส <color=#ffd780>พลังป้องกัน</color> 6% และ <color=#ffe699>โบนัสความเสียหายธาตุหิน</color> 6% และในทุก 6 วินาที หากไม่ได้รับเอฟเฟกต์ Curiosity จะสูญเสียหนึ่งชั้น\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่า <color=#ffd780>พลังป้องกัน</color> และ <color=#ffe699>โบนัสความเสียหายธาตุหิน</color> ที่สอดคล้องกับที่มาของความเสียหายหลักของ Noelle"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2099,
-        "name": "Retracing Bolide",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Retracing Bolide/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Retracing Bolide</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\nเซ็ต 2 อัน: เพิ่มประสิทธิภาพ <color=#ffd780>โล่ป้องกัน</color> 35%\nเซ็ต 4 อัน: เมื่อได้รับการป้องกันจาก <color=#ffd780>โล่</color> การ <color=#ffd780>โจมตีปกติ</color> และ <color=#ffd780>ชาร์จโจมตี</color> สร้างความเสียหายเพิ่มขึ้น 40%\n<color=#ffffff>หมายเหตุ:</color>\nช่วยเพิ่มประสิทธิภาพ <color=#ffd780>โล่</color> ของ Noelle และนอกจากนี้ยังช่วยเพิ่มความเสียหายจากการ <color=#ffd780>โจมตีปกติ</color> และ <color=#ffd780>ชาร์จโจมตี</color> ของ Noelle"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2095,
-        "name": "Gladiator's Finale",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Gladiator's Finale</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\nเซ็ต 2 อัน: เพิ่ม <color=#ffd780>พลังโจมตี</color> 18%\nเซ็ต 4 อัน: เมื่อตัวละครที่สวมเซ็ตอาร์ติแฟกต์นี้ใช้ดาบ, ดาบใหญ่, หอก ตัวละครจะสร้างความเสียหายจากการ <color=#ffd780>โจมตีปกติ</color> เพิ่มขึ้น 35%\n<color=#ffffff>หมายเหตุ:</color>\nช่วยเพิ่ม <color=#ffd780>พลังโจมตี</color> ของ Noelle และนอกจากนี้ยังช่วยเพิ่มความเสียหายจากการ <color=#ffd780>โจมตีปกติ</color> ของ Noelle"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เซ็ต 2 อัน / เซ็ต 2 อัน"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2072,
-        "name": "Archaic Petra",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Archaic Petra/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2065,
-        "name": "Husk of Opulent Dreams",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Husk of Opulent Dreams/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Archaic Petra + Husk of Opulent Dreams</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Archaic Petra] เซ็ต 2 อัน: ได้รับ <color=#ffe699>โบนัสความเสียหายหิน</color> 15%\n[Husk of Opulent Dreams] เซ็ต 2 อัน: เพิ่ม <color=#ffd780>พลังป้องกัน</color> 30%\n<color=#ffffff>หมายเหตุ:</color>\nเนื่องจาก Noelle สามารถใช้ได้ทั้ง <color=#ffe699>โบนัสความเสียหายหิน</color> และ <color=#ffd780>พลังป้องกัน</color> จึงทำให้สามารถใช้เซ็ต 2 ทั้งคู่นี้ได้อย่างมีประสิทธิภาพ"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2065,
-        "name": "Husk of Opulent Dreams",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Husk of Opulent Dreams/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2095,
-        "name": "Gladiator's Finale",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Husk of Opulent Dreams + Gladiator's Finale</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Husk of Opulent Dreams] เซ็ต 2 อัน: เพิ่ม <color=#ffd780>พลังป้องกัน</color> 30%\n[Gladiator's Finale] เซ็ต 2 อัน: เพิ่ม <color=#ffd780>พลังโจมตี</color> 18%\n<color=#ffffff>หมายเหตุ:</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2095,
-        "name": "Gladiator's Finale",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "สามารถใช้"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2097,
-        "name": "Vermillion Hereafter",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Vermillion Hereafter/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "/"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2076,
-        "name": "Echoes of an Offering",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "/"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2098,
-        "name": "Shimenawa's Reminiscence",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "ทดแทนได้"
       }
     ]
   }
