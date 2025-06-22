@@ -5,16 +5,892 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Bennett_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/avatar.png",
   "filterValues": {
-    "characterRegion": "Mondstadt",
-    "characterVision": "Pyro",
+    "characterWeapon": "Sword",
     "characterRarity": 4,
     "characterProperty": "Energy Recharge",
-    "characterWeapon": "Sword"
+    "characterRegion": "Mondstadt",
+    "characterVision": "Pyro"
   },
   "menuId": 2,
   "menuName": "Character Archive",
   "version": 1747525779,
   "components": {
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_1.png",
+        "name": "Grand Expectation",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Fantastic Voyage</color> 's ATK increase no longer has an HP restriction, and gains an additional 20% of Bennett's Base ATK."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_2.png",
+        "name": "Impasse Conqueror",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "When Bennett's HP falls below 70%, his Energy Recharge is increased by 30%."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_3.png",
+        "name": "Unstoppable Fervor",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Increases the Level of <color=#ffd780>Passion Overload</color> by 3.\nMaximum upgrade level is 15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_4.png",
+        "name": "Unexpected Odyssey",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Using a Normal Attack when executing the second attack of <color=#ffd780>Passion Overload</color> 's Charge Level 1 allows an additional attack to be performed.\nThis additional attack does 135% of the second attack's DMG."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_5.png",
+        "name": "True Explorer",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Increases the Level of <color=#ffd780>Fantastic Voyage</color> by 3.\nMaximum upgrade level is 15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_6.png",
+        "name": "Fire Ventures with Me",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Sword, Claymore, or Polearm-wielding characters inside <color=#ffd780>Fantastic Voyage</color> 's radius gain a 15% <color=#ff9999>Pyro DMG Bonus</color> and their weapons are infused with <color=#ff9999>Pyro</color> ."
+          }
+        ]
+      }
+    ],
+    "ascension": [
+      {
+        "key": "Lv.1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "-",
+              "1039"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "-",
+              "16"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "-",
+              "65"
+            ]
+          },
+          {
+            "key": "Energy Recharge",
+            "values": [
+              "-",
+              "0.0%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Lv.20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "2670",
+              "3447"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "41",
+              "53"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "166",
+              "214"
+            ]
+          },
+          {
+            "key": "Energy Recharge",
+            "values": [
+              "0.0%",
+              "0.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1100,
+            "name": "Agnidus Agate Sliver",
+            "desc": "Character Ascension Material.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Windwheel Aster",
+            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 629,
+            "name": "Treasure Hoarder Insignia",
+            "desc": "A signet that proudly represents its owner&#39;s position as member of the Treasure Hoarders. The pursuit of treasure knows no bounds. That said... Is being a thief something to be proud of?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "Lv.40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "5163",
+              "5715"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "80",
+              "88"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "321",
+              "356"
+            ]
+          },
+          {
+            "key": "Energy Recharge",
+            "values": [
+              "0.0%",
+              "6.7%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1099,
+            "name": "Agnidus Agate Fragment",
+            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Everflame Seed",
+            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Windwheel Aster",
+            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 629,
+            "name": "Treasure Hoarder Insignia",
+            "desc": "A signet that proudly represents its owner&#39;s position as member of the Treasure Hoarders. The pursuit of treasure knows no bounds. That said... Is being a thief something to be proud of?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "Lv.50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "6573",
+              "7309"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "101",
+              "113"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "409",
+              "455"
+            ]
+          },
+          {
+            "key": "Energy Recharge",
+            "values": [
+              "6.7%",
+              "13.3%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1099,
+            "name": "Agnidus Agate Fragment",
+            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Everflame Seed",
+            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Windwheel Aster",
+            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1553,
+            "name": "Silver Raven Insignia",
+            "desc": "A raven insignia used by members of the Treasure Hoarders to identify each other. The Treasure Hoarders ask for no resume. Anyone who has an insatiable desire for treasure and is backed up by an equal amount of courage can become a worthy member.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "8168",
+              "8719"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "126",
+              "134"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "508",
+              "542"
+            ]
+          },
+          {
+            "key": "Energy Recharge",
+            "values": [
+              "13.3%",
+              "13.3%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1098,
+            "name": "Agnidus Agate Chunk",
+            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Everflame Seed",
+            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Windwheel Aster",
+            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1553,
+            "name": "Silver Raven Insignia",
+            "desc": "A raven insignia used by members of the Treasure Hoarders to identify each other. The Treasure Hoarders ask for no resume. Anyone who has an insatiable desire for treasure and is backed up by an equal amount of courage can become a worthy member.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Lv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "9577",
+              "10129"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "148",
+              "156"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "596",
+              "630"
+            ]
+          },
+          {
+            "key": "Energy Recharge",
+            "values": [
+              "13.3%",
+              "20.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1098,
+            "name": "Agnidus Agate Chunk",
+            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Everflame Seed",
+            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Windwheel Aster",
+            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 760,
+            "name": "Golden Raven Insignia",
+            "desc": "A raven insignia that symbolizes the pride and the guiding principle of the Treasure Hoarders. Whether it&#39;s hidden amidst the vastness of the land or in the depths of the seas, as long as there are treasures to be hunted down, the spirit of Treasure Hoarders, who will stop at nothing to acquire them, will never die.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "10987",
+              "11539"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "169",
+              "178"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "684",
+              "718"
+            ]
+          },
+          {
+            "key": "Energy Recharge",
+            "values": [
+              "20.0%",
+              "26.7%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1097,
+            "name": "Agnidus Agate Gemstone",
+            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.<br/>If the intention yet remains, achieved ██'s truth he has.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Everflame Seed",
+            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Windwheel Aster",
+            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 760,
+            "name": "Golden Raven Insignia",
+            "desc": "A raven insignia that symbolizes the pride and the guiding principle of the Treasure Hoarders. Whether it&#39;s hidden amidst the vastness of the land or in the depths of the seas, as long as there are treasures to be hunted down, the spirit of Treasure Hoarders, who will stop at nothing to acquire them, will never die.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "Lv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "12397",
+              "-"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "191",
+              "-"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "771",
+              "-"
+            ]
+          },
+          {
+            "key": "Energy Recharge",
+            "values": [
+              "26.7%",
+              "-"
+            ]
+          }
+        ]
+      }
+    ],
+    "videoCollection": [
+      {
+        "title": "\"Floral Breeze\" - Scenes from Windblume Festival | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=HRksKER0Ies&ab_channel=GenshinImpact",
+        "coverUrl": "https://i.ytimg.com/vi/HRksKER0Ies/maxresdefault.jpg",
+        "duration": 92
+      },
+      {
+        "title": "Of Ballads and Brews Event Cutscene Animation: \"The Wind Returns for the Fairbrew\" | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=_76oCzo8sjU&ab_channel=GenshinImpact",
+        "coverUrl": "https://i.ytimg.com/vi/_76oCzo8sjU/maxresdefault.jpg",
+        "duration": 152
+      },
+      {
+        "title": "Version 1.4 \"Invitation of Windblume\" Trailer | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=vv_JnSwFp0A&ab_channel=GenshinImpact",
+        "coverUrl": "https://i.ytimg.com/vi/vv_JnSwFp0A/maxresdefault.jpg",
+        "duration": 207
+      },
+      {
+        "title": "Version 2.3 \"Shadows Amidst Snowstorms\" Trailer | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=CXYGOpcNNSQ&ab_channel=GenshinImpact",
+        "coverUrl": "https://i.ytimg.com/vi/CXYGOpcNNSQ/maxresdefault.jpg",
+        "duration": 276
+      }
+    ],
+    "textualResearch": [
+      {
+        "title": "[Of Ballads and Brews] Bennett, Fecund Hamper",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Clue\nThere is a small shoal in the Whispering Wood near Cider Lake where a small pier lies. I have placed my present in that area. (The road there is somewhat bumpy, so be careful not to fall.)\nMessage\nThanks for finding the gift that I left here!\nSolving puzzles, avoiding traps, completing challenges, collecting precious rewards... These are my favorite things! It's quite rare that I get this kind of chance, so I hid my treasure somewhere out in the wild before designing a little quest around it. I hope it didn't bring you too much trouble.\nThis treasure is yours — good luck in your future endeavors!\nBennett, Adventurer\nItem\nStorefront Furnishing: Please, Enjoy Your Meal, 20,000 Mora, Agnidus Agate Fragment ×2"
+          }
+        ]
+      },
+      {
+        "title": "[Message] Bennett, Cat's Tail Message Board",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Message\n\"I am an official member of the Adventurer's Guild! Ad astra abyssosque, towards the stars and the abyss! Isn't it a wonderful motto!\"\n\"But, I don't understand why. I've been unlucky my whole life. I wasn't like the others, I never went out there looking for an adventure, all I ever did was stay at home and do nothing, but even then, the adventure would still come for me. Ha!\"\n\"I can be annoying sometimes. All my fellow adventurers would tell me something along the lines of: \"Just being around you is dangerous, I guess it's still to early for me to go on an adventure\" and they eventually all left the guild, one by one.\"\n\"In the end. I'm the only one left to take care of the elders. It's not that I don't want to, it's just that doing everything alone can be hard sometimes...\"\nCat's Tail's reply\nIf you feel burdened by the hardships of life, why not come to Cat's Tail and try our wine? In our tavern, adventurous tales are always popular. Who knows, you might even find another adventurer like you."
+          }
+        ]
+      }
+    ],
+    "story": [
+      {
+        "title": "Character Details",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Benny's Adventure Team is an exception to the norm in the Adventurers' Guild, Mondstadt Branch.\nInitially, the team mechanism requiring at least 3 or 4 regulars in each team was set up to promote mutual support and prevent accidents.\nAs for Benny's Adventure Team, however, its only regular member has been Bennett himself.\nThe lack of team members essentially has everything to do with Bennett's infamous bad luck.\nHowever, being the passionate adventurer he is, Bennett never feels lonely.\nWell, maybe once or twice, sometimes..."
+          }
+        ]
+      },
+      {
+        "title": "Character Story 1",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 2</color>\nThe adventurer Jack was the first victim of Benny's Adventure Team.\nJust a few feet away from the treasure, an extremely rare Geo Turbulence occurred, tearing the ground apart and opening a bottomless chasm right before everyone's eyes.\n\"So close, yet so far... like love.\"\nJack only suffered minor injuries, but he was never the same as an adventurer thereafter; the event seemed to have left him with a broken heart.\nAnother member, Royce, heard someone shout \"Heyo!\" before losing consciousness in a huge explosion. The culprit, Klee, was sent to the confinement room for seven days for mistaking the cave the adventurers were still exploring in for a giant rabbit hole and blowing it up.\nHeckler suffered from a severe bout of diarrhea for a week after joining the team. Although it turned out to be food poisoning, he insisted it was because of Bennett's bad luck.\n\"They'll be back! They're just... on leave. Please don't invalidate my team's registration with the Guild...\"\nSeeing Bennett beg and plead before her eyes, Katheryne sighed and decided to spare him the truth that his \"teammates\" had long jumped ship."
+          }
+        ]
+      },
+      {
+        "title": "Character Story 2",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 3</color>\nThere was once a predicament of incomparable despair.\nA predicament that had all but swallowed an old adventurer.\nThe scorching flames scalded his skin, the deafening thunder almost ruptured his eardrums, and the hollering winds threatened to rip his soul from him.\nAt the end of his hellish journey, what awaited him was... a baby.\nThe old adventurer thought he was the first living thing to pass through this hell on earth. But how could he explain that which lay before him?\nIn that moment, it hit him, and he believed it to be true.\n\"This baby must be... a child abandoned by the world itself.\"\nThough there were no mighty artifacts, jewelry, or gold, the old man's face did not seem disappointed in the slightest, for he regarded this baby, whose life hung by a mere thread, to be his treasure.\n\"This child is what I was meant to find on this journey,\" he thought as he took the baby into his arms.\nEven if what he was about to do opposed the will of the world itself, he was unafraid."
+          }
+        ]
+      },
+      {
+        "title": "Character Story 3",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 4</color>\nThe old adventurer died from severe injuries before being able to tell this story, leaving only the child he had saved.\nOn his deathbed, he only managed four final words: \"will,\" \"adventure,\" and \"final treasure.\"\nSeveral single, childless, old adventurers in the Adventurers' Guild in Mondstadt raised the child as their own and named him Bennett.\nBeing raised by the Guild, Bennett referred to everyone as \"Dad.\"\n\"Dad, your dentures fell into the bowl!\", \"Dad, you should stop wearing that old leather armor. Where are the undergarments I bought you?\", \"Dad, it's raining, better keep your distance from me so you don't get struck by lightning!\"\nTaking care of all his aging dads who have no family has taken up most of his time outside of adventuring.\n\"The dads certainly have found a treasure, haha!\"\nCyrus, the current Guild Master, laughed, giving Bennett a pat on the back.\nThough he is unlucky himself, he can at least try to bring luck to those he cares about. At least, that's how Bennett feels.\nBennett the Unlucky still strives to find his own lucky treasure through his series of unfortunate events."
+          }
+        ]
+      },
+      {
+        "title": "Character Story 4",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 5</color>\nOz the Raven, Fischl's familiar, said Bennett is \"the most tenacious young man in the world.\"\nIndeed, Bennett's share of bad luck throughout his life can be seen from his scars, old and new.\nAttacked by monsters, buried in collapsed ruins, falling from cliffs... A wealth of \"unfortunate events\" has taught Bennett how to deal with more of them in the future.\nBarbara, the Deaconess at the Church of Favonius, was once surprised by how skilled Bennett is at treating dislocated joints.\nAnother gift from his ordeals is his jaw-dropping talent for combat.\n\"Look at his moves... Doesn't that hurt?\" Grand Master Varka of the Knights was extremely intrigued after seeing Bennett in combat.\nIt's not that Bennett doesn't feel pain — he has simply gotten used to it. He adapted to the pain as others would to pungent smells or blinding light.\nTherefore, the way Bennett dives into battles head-on without reservation has become something of a signature of his."
+          }
+        ]
+      },
+      {
+        "title": "Character Story 5",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 6</color>\nWhat does death mean, exactly? Always walking the thin line between life and death, Bennett can't help but wonder.\nBennett knows that the old adventurer who saved him has left many praiseworthy stories and legends after his death.\nHe knows that an adventurer will not have weeping at their funerals, only toasts made in their names by old comrades.\nHe knows, to the adventurers of Mondstadt, a \"good death\" comes at the end of a life given to the pursuit of treasure and the secrets of the world. Once over, their souls are brought back to their homeland by Barbatos.\nHe once feared death.\nHowever, after pondering on this matter some more, he now feels death may be something fortunate for an adventurer...\nNot that fortune has anything to do with him.\n\"Onto the next treasure!\" And with that, Bennett puts this thinking business behind him."
+          }
+        ]
+      },
+      {
+        "title": "Adhesive Bandage",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 4</color>\nWhenever he suffers severe injuries such as fractures or excessive loss of blood, Bennett will go to the Cathedral to seek treatment from Deaconess Barbara.\n\"Sorry, it's me again...\" Bennett will say, scratching the back of his head.\nBarbara, however, will just shake her head, and with a \"let's deal with those scratches as well,\" she will toss him some adhesive bandages.\nSuch displays of concern may be inadvertent, but they have a special place in Bennett's heart. He sticks those bandages on his wounds with the care of one pinning a medal to their chest, before thanking her wholeheartedly.\nBennett keeps many such bandages in his utility pouch when he goes on adventures. Ones he gets from his dads, from Barbara, from Katheryne... and from adventurers he sometimes meets by chance after getting injured.\nThese tiny tokens of goodwill form a tangible collection of fair fortune unique to Bennett.\n\"Well, since everyone's by my side, I guess I'm not that unlucky after all.\""
+          }
+        ]
+      },
+      {
+        "title": "Vision",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 6</color>\nBennett's passion for adventure is unstoppable.\nHe wants to constantly explore, challenge, sweat it out, and eventually grow old on the adventurer's path.\nBut there was once when he met with a true crisis.\nJust as that old adventurer had so long ago, Bennett was in a predicament that would cause any other person to despair.\n\"Losing this much blood... Not good.\"\nBut Bennett did not stop. \"There's no reason to turn back,\" he thought.\nSomehow, he just knew that all the agonizing misfortune he had suffered up till this point was for the sake of overcoming this precarious position.\nBut at the end of his hellish journey, what he found at the end was — nothing at all.\n\"Ha, returning empty-handed is... part of an adventure. I... don't mind...\"\nAt last, his tightly-wound emotions came loose, allowing his many injuries to rob him of his consciousness, and he collapsed.\nWhen he reawakened, he found that his wounds had been cauterized by a mysterious flame, stopping both the bleeding and the pain.\nA jewel pulsed warmly in the palm of his hand, its rhythm in time with the heartbeat in his chest — the beating heart of an adventurer.\nThis was not the mercy of the world, or that fate took pity on him. Rather, this was his \"final reward,\" one befitting a person with Bennett's burning passion."
+          }
+        ]
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "Name",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Bennett"
+          }
+        ]
+      },
+      {
+        "key": "Birthday",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "2/29"
+          }
+        ]
+      },
+      {
+        "key": "Constellation",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Rota Calamitas"
+          }
+        ]
+      },
+      {
+        "key": "Title",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Trial by Fire"
+          }
+        ]
+      },
+      {
+        "key": "Vision",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Pyro"
+          }
+        ]
+      },
+      {
+        "key": "Affiliation",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Adventurers' Guild"
+          }
+        ]
+      },
+      {
+        "key": "Chinese VA",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "穆雪婷 (Mu Xueting)"
+          }
+        ]
+      },
+      {
+        "key": "English VA",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Cristina Vee Valenzuela"
+          }
+        ]
+      },
+      {
+        "key": "Japanese VA",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "逢坂良太 (ŌSAKA Ryōta)"
+          }
+        ]
+      },
+      {
+        "key": "Korean VA",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "송하림 (Song Ha-rim)"
+          }
+        ]
+      },
+      {
+        "key": "Special Dish",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 750,
+            "name": "Teyvat Charred Egg",
+            "desc": "<p>Bennett's specialty. For some reason, every single fried egg is a little burnt around the edges. That said, the burnt crisp does lend a whole new flavor to the dish.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teyvat Charred Egg_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "TCG Character Card",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3184,
+            "name": "Bennett",
+            "desc": "<p><span style=\"color: #FFFFFF\">\"Trial by Fire\" Bennett</span></p><p>Once you know that you will certainly lose, then you must certainly know the way to win.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/35428890/9d7ad9d3cf203bf7ff1f53966709c4f1_257397517751703740.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Version Released",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.0"
+          }
+        ],
+        "isMaterial": false
+      }
+    ],
     "voice": [
       {
         "title": "Hello",
@@ -1937,142 +2813,7 @@
         "text": "<color=#ffd780>June 24, 2023</color>\n<color=#ece5d8>[Translated from Chinese]</color>\nDear travelers, \"Run! Sprint! The adventure begins!\" The Genshin Impact × Keep charity online running event is now open.\n<color=#ffacff>Miyoushe:</color> <color=#37ffff>https:/www.miyoushe.com/ys/article/40635738</color>"
       }
     ],
-    "story": [
-      {
-        "title": "Character Details",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Benny's Adventure Team is an exception to the norm in the Adventurers' Guild, Mondstadt Branch.\nInitially, the team mechanism requiring at least 3 or 4 regulars in each team was set up to promote mutual support and prevent accidents.\nAs for Benny's Adventure Team, however, its only regular member has been Bennett himself.\nThe lack of team members essentially has everything to do with Bennett's infamous bad luck.\nHowever, being the passionate adventurer he is, Bennett never feels lonely.\nWell, maybe once or twice, sometimes..."
-          }
-        ]
-      },
-      {
-        "title": "Character Story 1",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 2</color>\nThe adventurer Jack was the first victim of Benny's Adventure Team.\nJust a few feet away from the treasure, an extremely rare Geo Turbulence occurred, tearing the ground apart and opening a bottomless chasm right before everyone's eyes.\n\"So close, yet so far... like love.\"\nJack only suffered minor injuries, but he was never the same as an adventurer thereafter; the event seemed to have left him with a broken heart.\nAnother member, Royce, heard someone shout \"Heyo!\" before losing consciousness in a huge explosion. The culprit, Klee, was sent to the confinement room for seven days for mistaking the cave the adventurers were still exploring in for a giant rabbit hole and blowing it up.\nHeckler suffered from a severe bout of diarrhea for a week after joining the team. Although it turned out to be food poisoning, he insisted it was because of Bennett's bad luck.\n\"They'll be back! They're just... on leave. Please don't invalidate my team's registration with the Guild...\"\nSeeing Bennett beg and plead before her eyes, Katheryne sighed and decided to spare him the truth that his \"teammates\" had long jumped ship."
-          }
-        ]
-      },
-      {
-        "title": "Character Story 2",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 3</color>\nThere was once a predicament of incomparable despair.\nA predicament that had all but swallowed an old adventurer.\nThe scorching flames scalded his skin, the deafening thunder almost ruptured his eardrums, and the hollering winds threatened to rip his soul from him.\nAt the end of his hellish journey, what awaited him was... a baby.\nThe old adventurer thought he was the first living thing to pass through this hell on earth. But how could he explain that which lay before him?\nIn that moment, it hit him, and he believed it to be true.\n\"This baby must be... a child abandoned by the world itself.\"\nThough there were no mighty artifacts, jewelry, or gold, the old man's face did not seem disappointed in the slightest, for he regarded this baby, whose life hung by a mere thread, to be his treasure.\n\"This child is what I was meant to find on this journey,\" he thought as he took the baby into his arms.\nEven if what he was about to do opposed the will of the world itself, he was unafraid."
-          }
-        ]
-      },
-      {
-        "title": "Character Story 3",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 4</color>\nThe old adventurer died from severe injuries before being able to tell this story, leaving only the child he had saved.\nOn his deathbed, he only managed four final words: \"will,\" \"adventure,\" and \"final treasure.\"\nSeveral single, childless, old adventurers in the Adventurers' Guild in Mondstadt raised the child as their own and named him Bennett.\nBeing raised by the Guild, Bennett referred to everyone as \"Dad.\"\n\"Dad, your dentures fell into the bowl!\", \"Dad, you should stop wearing that old leather armor. Where are the undergarments I bought you?\", \"Dad, it's raining, better keep your distance from me so you don't get struck by lightning!\"\nTaking care of all his aging dads who have no family has taken up most of his time outside of adventuring.\n\"The dads certainly have found a treasure, haha!\"\nCyrus, the current Guild Master, laughed, giving Bennett a pat on the back.\nThough he is unlucky himself, he can at least try to bring luck to those he cares about. At least, that's how Bennett feels.\nBennett the Unlucky still strives to find his own lucky treasure through his series of unfortunate events."
-          }
-        ]
-      },
-      {
-        "title": "Character Story 4",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 5</color>\nOz the Raven, Fischl's familiar, said Bennett is \"the most tenacious young man in the world.\"\nIndeed, Bennett's share of bad luck throughout his life can be seen from his scars, old and new.\nAttacked by monsters, buried in collapsed ruins, falling from cliffs... A wealth of \"unfortunate events\" has taught Bennett how to deal with more of them in the future.\nBarbara, the Deaconess at the Church of Favonius, was once surprised by how skilled Bennett is at treating dislocated joints.\nAnother gift from his ordeals is his jaw-dropping talent for combat.\n\"Look at his moves... Doesn't that hurt?\" Grand Master Varka of the Knights was extremely intrigued after seeing Bennett in combat.\nIt's not that Bennett doesn't feel pain — he has simply gotten used to it. He adapted to the pain as others would to pungent smells or blinding light.\nTherefore, the way Bennett dives into battles head-on without reservation has become something of a signature of his."
-          }
-        ]
-      },
-      {
-        "title": "Character Story 5",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 6</color>\nWhat does death mean, exactly? Always walking the thin line between life and death, Bennett can't help but wonder.\nBennett knows that the old adventurer who saved him has left many praiseworthy stories and legends after his death.\nHe knows that an adventurer will not have weeping at their funerals, only toasts made in their names by old comrades.\nHe knows, to the adventurers of Mondstadt, a \"good death\" comes at the end of a life given to the pursuit of treasure and the secrets of the world. Once over, their souls are brought back to their homeland by Barbatos.\nHe once feared death.\nHowever, after pondering on this matter some more, he now feels death may be something fortunate for an adventurer...\nNot that fortune has anything to do with him.\n\"Onto the next treasure!\" And with that, Bennett puts this thinking business behind him."
-          }
-        ]
-      },
-      {
-        "title": "Adhesive Bandage",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 4</color>\nWhenever he suffers severe injuries such as fractures or excessive loss of blood, Bennett will go to the Cathedral to seek treatment from Deaconess Barbara.\n\"Sorry, it's me again...\" Bennett will say, scratching the back of his head.\nBarbara, however, will just shake her head, and with a \"let's deal with those scratches as well,\" she will toss him some adhesive bandages.\nSuch displays of concern may be inadvertent, but they have a special place in Bennett's heart. He sticks those bandages on his wounds with the care of one pinning a medal to their chest, before thanking her wholeheartedly.\nBennett keeps many such bandages in his utility pouch when he goes on adventures. Ones he gets from his dads, from Barbara, from Katheryne... and from adventurers he sometimes meets by chance after getting injured.\nThese tiny tokens of goodwill form a tangible collection of fair fortune unique to Bennett.\n\"Well, since everyone's by my side, I guess I'm not that unlucky after all.\""
-          }
-        ]
-      },
-      {
-        "title": "Vision",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 6</color>\nBennett's passion for adventure is unstoppable.\nHe wants to constantly explore, challenge, sweat it out, and eventually grow old on the adventurer's path.\nBut there was once when he met with a true crisis.\nJust as that old adventurer had so long ago, Bennett was in a predicament that would cause any other person to despair.\n\"Losing this much blood... Not good.\"\nBut Bennett did not stop. \"There's no reason to turn back,\" he thought.\nSomehow, he just knew that all the agonizing misfortune he had suffered up till this point was for the sake of overcoming this precarious position.\nBut at the end of his hellish journey, what he found at the end was — nothing at all.\n\"Ha, returning empty-handed is... part of an adventure. I... don't mind...\"\nAt last, his tightly-wound emotions came loose, allowing his many injuries to rob him of his consciousness, and he collapsed.\nWhen he reawakened, he found that his wounds had been cauterized by a mysterious flame, stopping both the bleeding and the pain.\nA jewel pulsed warmly in the palm of his hand, its rhythm in time with the heartbeat in his chest — the beating heart of an adventurer.\nThis was not the mercy of the world, or that fate took pity on him. Rather, this was his \"final reward,\" one befitting a person with Bennett's burning passion."
-          }
-        ]
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_1.png",
-        "name": "Grand Expectation",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Fantastic Voyage</color> 's ATK increase no longer has an HP restriction, and gains an additional 20% of Bennett's Base ATK."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_2.png",
-        "name": "Impasse Conqueror",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "When Bennett's HP falls below 70%, his Energy Recharge is increased by 30%."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_3.png",
-        "name": "Unstoppable Fervor",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Increases the Level of <color=#ffd780>Passion Overload</color> by 3.\nMaximum upgrade level is 15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_4.png",
-        "name": "Unexpected Odyssey",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Using a Normal Attack when executing the second attack of <color=#ffd780>Passion Overload</color> 's Charge Level 1 allows an additional attack to be performed.\nThis additional attack does 135% of the second attack's DMG."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_5.png",
-        "name": "True Explorer",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Increases the Level of <color=#ffd780>Fantastic Voyage</color> by 3.\nMaximum upgrade level is 15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_6.png",
-        "name": "Fire Ventures with Me",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Sword, Claymore, or Polearm-wielding characters inside <color=#ffd780>Fantastic Voyage</color> 's radius gain a 15% <color=#ff9999>Pyro DMG Bonus</color> and their weapons are infused with <color=#ff9999>Pyro</color> ."
-          }
-        ]
-      }
-    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=43&center=450.50,248.00&zoom=0.00",
     "talent": [
       {
         "key": "Strike of Fortune",
@@ -2854,747 +3595,6 @@
           }
         ],
         "attributes": null
-      }
-    ],
-    "ascension": [
-      {
-        "key": "Lv.1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "-",
-              "1039"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "-",
-              "16"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "-",
-              "65"
-            ]
-          },
-          {
-            "key": "Energy Recharge",
-            "values": [
-              "-",
-              "0.0%"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Lv.20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "2670",
-              "3447"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "41",
-              "53"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "166",
-              "214"
-            ]
-          },
-          {
-            "key": "Energy Recharge",
-            "values": [
-              "0.0%",
-              "0.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1100,
-            "name": "Agnidus Agate Sliver",
-            "desc": "Character Ascension Material.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Windwheel Aster",
-            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 629,
-            "name": "Treasure Hoarder Insignia",
-            "desc": "A signet that proudly represents its owner&#39;s position as member of the Treasure Hoarders. The pursuit of treasure knows no bounds. That said... Is being a thief something to be proud of?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "key": "Lv.40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "5163",
-              "5715"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "80",
-              "88"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "321",
-              "356"
-            ]
-          },
-          {
-            "key": "Energy Recharge",
-            "values": [
-              "0.0%",
-              "6.7%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1099,
-            "name": "Agnidus Agate Fragment",
-            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Everflame Seed",
-            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Windwheel Aster",
-            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 629,
-            "name": "Treasure Hoarder Insignia",
-            "desc": "A signet that proudly represents its owner&#39;s position as member of the Treasure Hoarders. The pursuit of treasure knows no bounds. That said... Is being a thief something to be proud of?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
-            "amount": 15
-          }
-        ]
-      },
-      {
-        "key": "Lv.50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "6573",
-              "7309"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "101",
-              "113"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "409",
-              "455"
-            ]
-          },
-          {
-            "key": "Energy Recharge",
-            "values": [
-              "6.7%",
-              "13.3%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1099,
-            "name": "Agnidus Agate Fragment",
-            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Everflame Seed",
-            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Windwheel Aster",
-            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1553,
-            "name": "Silver Raven Insignia",
-            "desc": "A raven insignia used by members of the Treasure Hoarders to identify each other. The Treasure Hoarders ask for no resume. Anyone who has an insatiable desire for treasure and is backed up by an equal amount of courage can become a worthy member.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "8168",
-              "8719"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "126",
-              "134"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "508",
-              "542"
-            ]
-          },
-          {
-            "key": "Energy Recharge",
-            "values": [
-              "13.3%",
-              "13.3%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1098,
-            "name": "Agnidus Agate Chunk",
-            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Everflame Seed",
-            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Windwheel Aster",
-            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1553,
-            "name": "Silver Raven Insignia",
-            "desc": "A raven insignia used by members of the Treasure Hoarders to identify each other. The Treasure Hoarders ask for no resume. Anyone who has an insatiable desire for treasure and is backed up by an equal amount of courage can become a worthy member.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Lv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "9577",
-              "10129"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "148",
-              "156"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "596",
-              "630"
-            ]
-          },
-          {
-            "key": "Energy Recharge",
-            "values": [
-              "13.3%",
-              "20.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1098,
-            "name": "Agnidus Agate Chunk",
-            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Everflame Seed",
-            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Windwheel Aster",
-            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 760,
-            "name": "Golden Raven Insignia",
-            "desc": "A raven insignia that symbolizes the pride and the guiding principle of the Treasure Hoarders. Whether it&#39;s hidden amidst the vastness of the land or in the depths of the seas, as long as there are treasures to be hunted down, the spirit of Treasure Hoarders, who will stop at nothing to acquire them, will never die.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "10987",
-              "11539"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "169",
-              "178"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "684",
-              "718"
-            ]
-          },
-          {
-            "key": "Energy Recharge",
-            "values": [
-              "20.0%",
-              "26.7%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1097,
-            "name": "Agnidus Agate Gemstone",
-            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.<br/>If the intention yet remains, achieved ██'s truth he has.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Everflame Seed",
-            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Windwheel Aster",
-            "desc": "A plant that adores the wind. To the proud children of the wind, or the citizens of Mondstadt, the Windwheel Asters are \"the visible winds.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 760,
-            "name": "Golden Raven Insignia",
-            "desc": "A raven insignia that symbolizes the pride and the guiding principle of the Treasure Hoarders. Whether it&#39;s hidden amidst the vastness of the land or in the depths of the seas, as long as there are treasures to be hunted down, the spirit of Treasure Hoarders, who will stop at nothing to acquire them, will never die.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Lv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "12397",
-              "-"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "191",
-              "-"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "771",
-              "-"
-            ]
-          },
-          {
-            "key": "Energy Recharge",
-            "values": [
-              "26.7%",
-              "-"
-            ]
-          }
-        ]
-      }
-    ],
-    "videoCollection": [
-      {
-        "title": "\"Floral Breeze\" - Scenes from Windblume Festival | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=HRksKER0Ies&ab_channel=GenshinImpact",
-        "coverUrl": "https://i.ytimg.com/vi/HRksKER0Ies/maxresdefault.jpg",
-        "duration": 92
-      },
-      {
-        "title": "Of Ballads and Brews Event Cutscene Animation: \"The Wind Returns for the Fairbrew\" | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=_76oCzo8sjU&ab_channel=GenshinImpact",
-        "coverUrl": "https://i.ytimg.com/vi/_76oCzo8sjU/maxresdefault.jpg",
-        "duration": 152
-      },
-      {
-        "title": "Version 1.4 \"Invitation of Windblume\" Trailer | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=vv_JnSwFp0A&ab_channel=GenshinImpact",
-        "coverUrl": "https://i.ytimg.com/vi/vv_JnSwFp0A/maxresdefault.jpg",
-        "duration": 207
-      },
-      {
-        "title": "Version 2.3 \"Shadows Amidst Snowstorms\" Trailer | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=CXYGOpcNNSQ&ab_channel=GenshinImpact",
-        "coverUrl": "https://i.ytimg.com/vi/CXYGOpcNNSQ/maxresdefault.jpg",
-        "duration": 276
-      }
-    ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=43&center=450.50,248.00&zoom=0.00",
-    "textualResearch": [
-      {
-        "title": "[Of Ballads and Brews] Bennett, Fecund Hamper",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Clue\nThere is a small shoal in the Whispering Wood near Cider Lake where a small pier lies. I have placed my present in that area. (The road there is somewhat bumpy, so be careful not to fall.)\nMessage\nThanks for finding the gift that I left here!\nSolving puzzles, avoiding traps, completing challenges, collecting precious rewards... These are my favorite things! It's quite rare that I get this kind of chance, so I hid my treasure somewhere out in the wild before designing a little quest around it. I hope it didn't bring you too much trouble.\nThis treasure is yours — good luck in your future endeavors!\nBennett, Adventurer\nItem\nStorefront Furnishing: Please, Enjoy Your Meal, 20,000 Mora, Agnidus Agate Fragment ×2"
-          }
-        ]
-      },
-      {
-        "title": "[Message] Bennett, Cat's Tail Message Board",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Message\n\"I am an official member of the Adventurer's Guild! Ad astra abyssosque, towards the stars and the abyss! Isn't it a wonderful motto!\"\n\"But, I don't understand why. I've been unlucky my whole life. I wasn't like the others, I never went out there looking for an adventure, all I ever did was stay at home and do nothing, but even then, the adventure would still come for me. Ha!\"\n\"I can be annoying sometimes. All my fellow adventurers would tell me something along the lines of: \"Just being around you is dangerous, I guess it's still to early for me to go on an adventure\" and they eventually all left the guild, one by one.\"\n\"In the end. I'm the only one left to take care of the elders. It's not that I don't want to, it's just that doing everything alone can be hard sometimes...\"\nCat's Tail's reply\nIf you feel burdened by the hardships of life, why not come to Cat's Tail and try our wine? In our tavern, adventurous tales are always popular. Who knows, you might even find another adventurer like you."
-          }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Name",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Bennett"
-          }
-        ]
-      },
-      {
-        "key": "Birthday",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "2/29"
-          }
-        ]
-      },
-      {
-        "key": "Constellation",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Rota Calamitas"
-          }
-        ]
-      },
-      {
-        "key": "Title",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Trial by Fire"
-          }
-        ]
-      },
-      {
-        "key": "Vision",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Pyro"
-          }
-        ]
-      },
-      {
-        "key": "Affiliation",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Adventurers' Guild"
-          }
-        ]
-      },
-      {
-        "key": "Chinese VA",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "穆雪婷 (Mu Xueting)"
-          }
-        ]
-      },
-      {
-        "key": "English VA",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Cristina Vee Valenzuela"
-          }
-        ]
-      },
-      {
-        "key": "Japanese VA",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "逢坂良太 (ŌSAKA Ryōta)"
-          }
-        ]
-      },
-      {
-        "key": "Korean VA",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "송하림 (Song Ha-rim)"
-          }
-        ]
-      },
-      {
-        "key": "Special Dish",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 750,
-            "name": "Teyvat Charred Egg",
-            "desc": "<p>Bennett's specialty. For some reason, every single fried egg is a little burnt around the edges. That said, the burnt crisp does lend a whole new flavor to the dish.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teyvat Charred Egg_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "TCG Character Card",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3184,
-            "name": "Bennett",
-            "desc": "<p><span style=\"color: #FFFFFF\">\"Trial by Fire\" Bennett</span></p><p>Once you know that you will certainly lose, then you must certainly know the way to win.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/35428890/9d7ad9d3cf203bf7ff1f53966709c4f1_257397517751703740.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Version Released",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.0"
-          }
-        ],
-        "isMaterial": false
       }
     ],
     "galleryCharacter": [

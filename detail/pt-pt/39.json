@@ -5,16 +5,1397 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xingqiu_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/avatar.png",
   "filterValues": {
-    "characterRarity": 4,
+    "characterRegion": "Porto de Liyue",
+    "characterVision": "Hydro",
     "characterProperty": "ATQ",
     "characterWeapon": "Espada",
-    "characterRegion": "Porto de Liyue",
-    "characterVision": "Hydro"
+    "characterRarity": 4
   },
   "menuId": 2,
   "menuName": "Guia de Personagens",
   "version": 1729491028,
   "components": {
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/constellation_1.png",
+        "name": "O Aroma Remanescente",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Aumenta o número máximo de Chuva das Espadas em 1."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/constellation_2.png",
+        "name": "Arco-Íris Acima do Céu Azul",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Estende a duração da <color=#ffd780>Espada de Guhua - Retalhador de Chuva</color> por 3 segundos.\nReduz a <color=#80c0ff>RES Hydro</color> dos inimigos golpeados pelos ataques do retalhador de chuva em 15% por 4 segundos."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/constellation_3.png",
+        "name": "Tecedor de Versos",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Aumenta o Nível de <color=#ffd780>Guhua: Retalhador de Chuva</color> em 3.\nPode ser elevado até Nv.15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/constellation_4.png",
+        "name": "Abrandamento do Mal",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Ao longo da duração da <color=#ffd780>Espada de Guhua - Retalhador de Chuva</color> , o Dano causado por <color=#ffd780>Espada de Guhua - Chuva Torrencial</color> é aumentado em 50%."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/constellation_5.png",
+        "name": "Abrace a Chuva",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Aumenta o Nível da <color=#ffd780>Espada de Guhua - Chuva Torrencial</color> em 3.\nPode ser elevado até Nv.15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/constellation_6.png",
+        "name": "Coleção de Poemas",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "A cada 2 golpes da <color=#ffd780>Espada de Guhua - Retalhador de Chuva</color> o ataque da chuva de espadas aumenta drasticamente o Dano do terceiro golpe, e ao atingir um inimigo, o terceiro golpe de chuva de espadas de Xingqiu regenerará 3 de Energia."
+          }
+        ]
+      }
+    ],
+    "talent": [
+      {
+        "key": "Ataque Normal: Estilo Guhua",
+        "title": "Ataque Normal: Estilo Guhua",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/battle_talent_0/battle_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Ataque Normal</color>\nRealiza até 5 golpes rápidos.\n<color=#ffd780>Ataque Carregado</color>\nConsome uma certa quantidade de Stamina para desferir 2 golpes rápidos com a espada.\n<color=#ffd780>Ataque Imersivo</color>\nMergulha em pleno ar para golpear o chão, causando dano aos inimigos ao longo do caminho e infligindo Dano em uma AdE durante o impacto."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Nível",
+            "values": [
+              "Nv.1",
+              "Nv.2",
+              "Nv.3",
+              "Nv.4",
+              "Nv.5",
+              "Nv.6",
+              "Nv.7",
+              "Nv.8",
+              "Nv.9",
+              "Nv.10",
+              "Nv.11"
+            ]
+          },
+          {
+            "key": "Dano do 1° Golpe",
+            "values": [
+              "46.6%",
+              "50.4%",
+              "54.2%",
+              "59.6%",
+              "63.4%",
+              "67.8%",
+              "73.7%",
+              "79.7%",
+              "85.6%",
+              "92.1%",
+              "99.6%"
+            ]
+          },
+          {
+            "key": "Dano do 2° Golpe",
+            "values": [
+              "47.6%",
+              "51.5%",
+              "55.4%",
+              "60.9%",
+              "64.8%",
+              "69.3%",
+              "75.3%",
+              "81.4%",
+              "87.5%",
+              "94.2%",
+              "101.8%"
+            ]
+          },
+          {
+            "key": "Dano do 3° Golpe",
+            "values": [
+              "28.6%+28.6%",
+              "30.9%+30.9%",
+              "33.2%+33.2%",
+              "36.5%+36.5%",
+              "38.8%+38.8%",
+              "41.5%+41.5%",
+              "45.2%+45.2%",
+              "48.8%+48.8%",
+              "52.5%+52.5%",
+              "56.4%+56.4%",
+              "61.0%+61.0%"
+            ]
+          },
+          {
+            "key": "Dano do 4° Golpe",
+            "values": [
+              "56%",
+              "60.5%",
+              "65.1%",
+              "71.6%",
+              "76.2%",
+              "81.4%",
+              "88.5%",
+              "95.7%",
+              "102.9%",
+              "110.7%",
+              "119.6%"
+            ]
+          },
+          {
+            "key": "Dano do 5° Golpe",
+            "values": [
+              "35.9%+35.9%",
+              "38.8%+38.8%",
+              "41.7%+41.7%",
+              "45.9%+45.9%",
+              "48.8%+48.8%",
+              "52.1%+52.1%",
+              "56.7%+56.7%",
+              "61.3%+61.3%",
+              "65.9%+65.9%",
+              "70.9%+70.9%",
+              "76.6%+76.6%"
+            ]
+          },
+          {
+            "key": "Dano de Ataque Carregado",
+            "values": [
+              "47.3%+56.2%",
+              "51.2%+60.7%",
+              "55.0%+65.3%",
+              "60.5%+71.8%",
+              "64.4%+76.4%",
+              "68.8%+81.6%",
+              "74.8%+88.8%",
+              "80.9%+96.0%",
+              "86.9%+103.2%",
+              "93.5%+111.0%",
+              "101.1%+120.0%"
+            ]
+          },
+          {
+            "key": "Consumo de Stamina de Ataque Carregado",
+            "values": [
+              "20",
+              "20",
+              "20",
+              "20",
+              "20",
+              "20",
+              "20",
+              "20",
+              "20",
+              "20",
+              "20"
+            ]
+          },
+          {
+            "key": "Dano Durante a Queda",
+            "values": [
+              "63.9%",
+              "69.1%",
+              "74.3%",
+              "81.8%",
+              "87%",
+              "92.9%",
+              "101.1%",
+              "109.3%",
+              "117.5%",
+              "126.4%",
+              "135.3%"
+            ]
+          },
+          {
+            "key": "Dano de Queda de Baixa/Alta Altitude",
+            "values": [
+              "128%/160%",
+              "138%/173%",
+              "149%/186%",
+              "164%/204%",
+              "174%/217%",
+              "186%/232%",
+              "202%/253%",
+              "219%/273%",
+              "235%/293%",
+              "253%/316%",
+              "271%/338%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 200,
+              "name": "Ensinamentos de Ouro",
+              "desc": "Material de elevação de Talento.<br/>O ouro é o símbolo da Terra.<br/>O ouro é o sangue que flui profundamente sob a terra de Liyue, são os músculos que bombeiam o coração de Liyue e os ossos que fazem Liyue se orgulhar.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Gold_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1247,
+              "name": "Máscara Danificada",
+              "desc": "Máscara de Ossos quebrada que pertencia a algum Hilichurl.<br/>Há mais partes danificadas do que intactas, perdendo totalmente a sua utilidade.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 199,
+              "name": "Guia de Ouro",
+              "desc": "Material para aprimorar o nível do Talento.<br/>O ouro é o símbolo da Terra.<br/>O ouro simboliza a conversão. Este é o entendimento tácito entre as montanhas, a terra, a cidade e o povo de Liyue. Em Liyue, diligência é convertida em ouro e ouro em prosperidade.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 983,
+              "name": "Máscara Suja",
+              "desc": "Totalmente coberta de sujeira, liberando um cheiro sutil de ossos.<br/>Contudo, ainda assim, o Hilichurl a usa em seu rosto.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 199,
+              "name": "Guia de Ouro",
+              "desc": "Material para aprimorar o nível do Talento.<br/>O ouro é o símbolo da Terra.<br/>O ouro simboliza a conversão. Este é o entendimento tácito entre as montanhas, a terra, a cidade e o povo de Liyue. Em Liyue, diligência é convertida em ouro e ouro em prosperidade.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 983,
+              "name": "Máscara Suja",
+              "desc": "Totalmente coberta de sujeira, liberando um cheiro sutil de ossos.<br/>Contudo, ainda assim, o Hilichurl a usa em seu rosto.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 199,
+              "name": "Guia de Ouro",
+              "desc": "Material para aprimorar o nível do Talento.<br/>O ouro é o símbolo da Terra.<br/>O ouro simboliza a conversão. Este é o entendimento tácito entre as montanhas, a terra, a cidade e o povo de Liyue. Em Liyue, diligência é convertida em ouro e ouro em prosperidade.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 983,
+              "name": "Máscara Suja",
+              "desc": "Totalmente coberta de sujeira, liberando um cheiro sutil de ossos.<br/>Contudo, ainda assim, o Hilichurl a usa em seu rosto.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 199,
+              "name": "Guia de Ouro",
+              "desc": "Material para aprimorar o nível do Talento.<br/>O ouro é o símbolo da Terra.<br/>O ouro simboliza a conversão. Este é o entendimento tácito entre as montanhas, a terra, a cidade e o povo de Liyue. Em Liyue, diligência é convertida em ouro e ouro em prosperidade.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 983,
+              "name": "Máscara Suja",
+              "desc": "Totalmente coberta de sujeira, liberando um cheiro sutil de ossos.<br/>Contudo, ainda assim, o Hilichurl a usa em seu rosto.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 198,
+              "name": "Filosofia de Ouro",
+              "desc": "Material para aprimorar o nível de Talento.<br/>O ouro é o Reino das Rochas.<br/>O ouro é a riqueza de Liyue, mas a verdadeira riqueza de Liyue é o coração de seu povo que brilha como ouro.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 220,
+              "name": "Máscara Ominosa",
+              "desc": "Máscara de ossos brilhante, com detalhes pintados para assustar os inimigos.<br/>Até hoje os humanos não entendem o porquê dos Hilichurls temerem as máscaras. Alguns dizem que é porque não querem ver o próprio reflexo derrubado na água.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 355,
+              "name": "Cauda do Vento do Norte",
+              "desc": "Algumas escamas vindo do Grande Dragão do Vento do Norte.<br/>O Lobo do Vento do Norte, que perdeu a sua vida e forma, ainda conta com poderes maiores que o normal. Para enfrentar os desafios, mesmo usando o gelo e a alma, não são o suficiente. Algumas almas estão presas às escamas de gelo que caem durante a batalha.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Tail of Boreas_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 198,
+              "name": "Filosofia de Ouro",
+              "desc": "Material para aprimorar o nível de Talento.<br/>O ouro é o Reino das Rochas.<br/>O ouro é a riqueza de Liyue, mas a verdadeira riqueza de Liyue é o coração de seu povo que brilha como ouro.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 220,
+              "name": "Máscara Ominosa",
+              "desc": "Máscara de ossos brilhante, com detalhes pintados para assustar os inimigos.<br/>Até hoje os humanos não entendem o porquê dos Hilichurls temerem as máscaras. Alguns dizem que é porque não querem ver o próprio reflexo derrubado na água.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 355,
+              "name": "Cauda do Vento do Norte",
+              "desc": "Algumas escamas vindo do Grande Dragão do Vento do Norte.<br/>O Lobo do Vento do Norte, que perdeu a sua vida e forma, ainda conta com poderes maiores que o normal. Para enfrentar os desafios, mesmo usando o gelo e a alma, não são o suficiente. Algumas almas estão presas às escamas de gelo que caem durante a batalha.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Tail of Boreas_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 198,
+              "name": "Filosofia de Ouro",
+              "desc": "Material para aprimorar o nível de Talento.<br/>O ouro é o Reino das Rochas.<br/>O ouro é a riqueza de Liyue, mas a verdadeira riqueza de Liyue é o coração de seu povo que brilha como ouro.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 220,
+              "name": "Máscara Ominosa",
+              "desc": "Máscara de ossos brilhante, com detalhes pintados para assustar os inimigos.<br/>Até hoje os humanos não entendem o porquê dos Hilichurls temerem as máscaras. Alguns dizem que é porque não querem ver o próprio reflexo derrubado na água.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 355,
+              "name": "Cauda do Vento do Norte",
+              "desc": "Algumas escamas vindo do Grande Dragão do Vento do Norte.<br/>O Lobo do Vento do Norte, que perdeu a sua vida e forma, ainda conta com poderes maiores que o normal. Para enfrentar os desafios, mesmo usando o gelo e a alma, não são o suficiente. Algumas almas estão presas às escamas de gelo que caem durante a batalha.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Tail of Boreas_icon.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Moeda comum. A língua que todos entendem.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 198,
+              "name": "Filosofia de Ouro",
+              "desc": "Material para aprimorar o nível de Talento.<br/>O ouro é o Reino das Rochas.<br/>O ouro é a riqueza de Liyue, mas a verdadeira riqueza de Liyue é o coração de seu povo que brilha como ouro.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 220,
+              "name": "Máscara Ominosa",
+              "desc": "Máscara de ossos brilhante, com detalhes pintados para assustar os inimigos.<br/>Até hoje os humanos não entendem o porquê dos Hilichurls temerem as máscaras. Alguns dizem que é porque não querem ver o próprio reflexo derrubado na água.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 355,
+              "name": "Cauda do Vento do Norte",
+              "desc": "Algumas escamas vindo do Grande Dragão do Vento do Norte.<br/>O Lobo do Vento do Norte, que perdeu a sua vida e forma, ainda conta com poderes maiores que o normal. Para enfrentar os desafios, mesmo usando o gelo e a alma, não são o suficiente. Algumas almas estão presas às escamas de gelo que caem durante a batalha.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Tail of Boreas_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "Coroa da Sabedoria",
+              "desc": "Um precioso material para aumento de Nível de Talento.<br/>Costumava ser um objeto de ensino de conhecimentos nos tempos antigos. Agora, a sabedoria é encontrada em textos antigos e em profundos discursos. No entanto, esta Coroa da Sabedoria ainda deve ser capaz de transmitir algum poder e sabedoria transcendente ao seu portador.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/battle_talent_0/battle_talent_0.gif"
+      },
+      {
+        "key": "Espada de Guhua: Chuva Torrencial",
+        "title": "Espada de Guhua: Chuva Torrencial",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/battle_talent_1/battle_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Xingqiu realiza ataques duplos com sua espada, causando <color=#80c0ff>Dano Hydro</color> . Ao mesmo tempo, essa habilidade cria o número máximo de Espadas de Chuva, que orbitarão o seu próprio personagem.\nAs Espadas de Chuva têm as seguintes propriedades:\nQuando um personagem recebe Dano, a Espada de Chuva se despedaça, reduzindo a quantidade de Dano recebido.\nAumenta a resistência do personagem à interrupção.\n20% do <color=#80c0ff>Dano Hydro Adicional</color> de Xingqiu será convertido em Redução de Dano adicional para as Espadas de Chuva.\nA quantidade máxima de adicional da Redução de Dano que pode ser obtida é de 24%.\nO número máximo inicial de Espadas de Chuva é 3.\nO uso dessa habilidade aplica o estado de <color=#80c0ff>Molhado</color> ao personagem.\n\"É Mais fácil matar um dragão da chuva do que cortar a chuva.\""
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Nível",
+            "values": [
+              "Nv.1",
+              "Nv.2",
+              "Nv.3",
+              "Nv.4",
+              "Nv.5",
+              "Nv.6",
+              "Nv.7",
+              "Nv.8",
+              "Nv.9",
+              "Nv.10",
+              "Nv.11",
+              "Nv.12",
+              "Nv.13",
+              "Nv.14"
+            ]
+          },
+          {
+            "key": "Dano de Habilidade",
+            "values": [
+              "168%+191%",
+              "181%+206%",
+              "193%+220%",
+              "210%+239%",
+              "223%+253%",
+              "235%+268%",
+              "252%+287%",
+              "269%+306%",
+              "286%+325%",
+              "302%+344%",
+              "319%+363%",
+              "336%+382%",
+              "357%+406%"
+            ]
+          },
+          {
+            "key": "Taxa de Redução de Dano",
+            "values": [
+              "20%",
+              "21%",
+              "22%",
+              "23%",
+              "24%",
+              "25%",
+              "26%",
+              "27%",
+              "28%",
+              "29%",
+              "29%",
+              "29%",
+              "29%"
+            ]
+          },
+          {
+            "key": "Duração",
+            "values": [
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s"
+            ]
+          },
+          {
+            "key": "Tempo de Recarga",
+            "values": [
+              "21s",
+              "21s",
+              "21s",
+              "21s",
+              "21s",
+              "21s",
+              "21s",
+              "21s",
+              "21s",
+              "21s",
+              "21s",
+              "21s",
+              "21s"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/battle_talent_1/battle_talent_1.gif"
+      },
+      {
+        "key": "Espada Guhua: Retalhador de Chuva",
+        "title": "Espada Guhua: Retalhador de Chuva",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/battle_talent_2/battle_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Inicia o Trabalho com Lâminas do Arco-íris e luta usando uma chuva de espadas ilusórias, enquanto cria um número máximo de Chuvas de Espadas.\n<color=#ffd780>Trabalho com Lâminas do Arco-íris</color>\n·Os Ataques Normais do seu próprio personagem irão desencadear ataques consecutivos da chuva de espadas, infligindo <color=#80c0ff>Dano Hydro</color> .\nChuva de Espadas irá continuar no número máximo ao longo da duração da habilidade.\nO \"Caminho do Cortador de Chuva\" é uma das técnicas esotéricas secretas da Seita Guhua."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Nível",
+            "values": [
+              "Nv.1",
+              "Nv.2",
+              "Nv.3",
+              "Nv.4",
+              "Nv.5",
+              "Nv.6",
+              "Nv.7",
+              "Nv.8",
+              "Nv.9",
+              "Nv.10",
+              "Nv.11",
+              "Nv.12",
+              "Nv.13",
+              "Nv.14"
+            ]
+          },
+          {
+            "key": "Dano de Chuva de Espadas",
+            "values": [
+              "54.3%",
+              "58.3%",
+              "62.4%",
+              "67.8%",
+              "71.9%",
+              "76%",
+              "81.4%",
+              "86.8%",
+              "92.3%",
+              "97.7%",
+              "103%",
+              "109%",
+              "115%",
+              "122%"
+            ]
+          },
+          {
+            "key": "Duração",
+            "values": [
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s"
+            ]
+          },
+          {
+            "key": "Tempo de Recarga",
+            "values": [
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s"
+            ]
+          },
+          {
+            "key": "Energia Elemental",
+            "values": [
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/battle_talent_2/battle_talent_2.gif"
+      },
+      {
+        "key": "Hidropático",
+        "title": "Hidropático",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/const_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Quando uma espada da Chuva de Espadas é quebrada ou quando sua duração acabar, regenera a Vida do personagem atual em 6% da Vida Máxima de Xingqiu."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Lâminas Entre Gotas de Chuva",
+        "title": "Lâminas Entre Gotas de Chuva",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/const_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Xingqiu ganha 20% de <color=#80c0ff>Dano Hydro Bônus</color> ."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Flash do Gênio",
+        "title": "Flash do Gênio",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/const_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Quando Xingqiu forja Materiais de Talento de Personagem, ele possui 25% de chance de retornar uma certa quantidade de materiais usados."
+          }
+        ],
+        "attributes": null
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/avatar_header.jpg"
+      },
+      {
+        "key": "Avatar",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/avatar.png"
+      },
+      {
+        "key": "Modo Inativo 01",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/25/6926027/b877b22383b01f50a8f11718618fe320_8133120759883473665.gif"
+      },
+      {
+        "key": "Modo Inativo 02",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/25/6926027/d6b1d7719a00ec7fb61c911659d82a94_1163831979064539170.gif"
+      }
+    ],
+    "ascension": [
+      {
+        "key": "Nv.1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes do avanço",
+              "Após o avanço"
+            ]
+          },
+          {
+            "key": "Vida Básica",
+            "values": [
+              "-",
+              "857"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "-",
+              "17"
+            ]
+          },
+          {
+            "key": "DEF Básica",
+            "values": [
+              "-",
+              "64"
+            ]
+          },
+          {
+            "key": "ATQ",
+            "values": [
+              "-",
+              "0%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Nv.20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes do avanço",
+              "Após o avanço"
+            ]
+          },
+          {
+            "key": "Vida Básica",
+            "values": [
+              "2202",
+              "2842"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "43",
+              "56"
+            ]
+          },
+          {
+            "key": "DEF Básica",
+            "values": [
+              "163",
+              "211"
+            ]
+          },
+          {
+            "key": "ATQ",
+            "values": [
+              "0%",
+              "0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moeda comum. A língua que todos entendem.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1037,
+            "name": "Lasca de Lazurita Varunada",
+            "desc": "Material de Ascensão de Personagem.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Varunada Lazurite Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1730,
+            "name": "Flor de Seda",
+            "desc": "Uma flor carmesim que floresce como nuvens de arco-íris em Liyue. Pode ser usada para confeccionar tecidos suaves como a seda.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silk Flower_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1247,
+            "name": "Máscara Danificada",
+            "desc": "Máscara de Ossos quebrada que pertencia a algum Hilichurl.<br/>Há mais partes danificadas do que intactas, perdendo totalmente a sua utilidade.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "Nv.40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes do avanço",
+              "Após o avanço"
+            ]
+          },
+          {
+            "key": "Vida Básica",
+            "values": [
+              "4257",
+              "4712"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "84",
+              "93"
+            ]
+          },
+          {
+            "key": "DEF Básica",
+            "values": [
+              "316",
+              "349"
+            ]
+          },
+          {
+            "key": "ATQ",
+            "values": [
+              "0%",
+              "6%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moeda comum. A língua que todos entendem.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1036,
+            "name": "Fragmento de Lazurita Varunada",
+            "desc": "Material de Ascensão de Personagem.<br/>\"Meus ideais são intocados.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Varunada Lazurite Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 321,
+            "name": "Coração Purificador",
+            "desc": "Uma concha de água eterna deixada por um Oceanid.<br/>Apesar de já ter se espalhado pelas profundezas do lago, sua pureza permanece a mesma. Mas por que uma criatura tão pura e limpa como um Oceanid deseja a aparência de plantas nascidas no solo e assume essa forma com água pura? Eles não precisam respirar nem precisam de sustento...",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cleansing Heart_icon.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1730,
+            "name": "Flor de Seda",
+            "desc": "Uma flor carmesim que floresce como nuvens de arco-íris em Liyue. Pode ser usada para confeccionar tecidos suaves como a seda.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silk Flower_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1247,
+            "name": "Máscara Danificada",
+            "desc": "Máscara de Ossos quebrada que pertencia a algum Hilichurl.<br/>Há mais partes danificadas do que intactas, perdendo totalmente a sua utilidade.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "Nv.50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes do avanço",
+              "Após o avanço"
+            ]
+          },
+          {
+            "key": "Vida Básica",
+            "values": [
+              "5420",
+              "6027"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "107",
+              "119"
+            ]
+          },
+          {
+            "key": "DEF Básica",
+            "values": [
+              "402",
+              "447"
+            ]
+          },
+          {
+            "key": "ATQ",
+            "values": [
+              "6%",
+              "12%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moeda comum. A língua que todos entendem.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1036,
+            "name": "Fragmento de Lazurita Varunada",
+            "desc": "Material de Ascensão de Personagem.<br/>\"Meus ideais são intocados.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Varunada Lazurite Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 321,
+            "name": "Coração Purificador",
+            "desc": "Uma concha de água eterna deixada por um Oceanid.<br/>Apesar de já ter se espalhado pelas profundezas do lago, sua pureza permanece a mesma. Mas por que uma criatura tão pura e limpa como um Oceanid deseja a aparência de plantas nascidas no solo e assume essa forma com água pura? Eles não precisam respirar nem precisam de sustento...",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cleansing Heart_icon.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1730,
+            "name": "Flor de Seda",
+            "desc": "Uma flor carmesim que floresce como nuvens de arco-íris em Liyue. Pode ser usada para confeccionar tecidos suaves como a seda.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silk Flower_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 983,
+            "name": "Máscara Suja",
+            "desc": "Totalmente coberta de sujeira, liberando um cheiro sutil de ossos.<br/>Contudo, ainda assim, o Hilichurl a usa em seu rosto.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Nv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes do avanço",
+              "Após o avanço"
+            ]
+          },
+          {
+            "key": "Vida Básica",
+            "values": [
+              "6735",
+              "7190"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "133",
+              "142"
+            ]
+          },
+          {
+            "key": "DEF Básica",
+            "values": [
+              "499",
+              "533 "
+            ]
+          },
+          {
+            "key": "ATQ",
+            "values": [
+              "12%",
+              "12%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moeda comum. A língua que todos entendem.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1035,
+            "name": "Pedaço de Lazurita Varunada",
+            "desc": "Material de Ascensão de Personagem.<br/>\"Meus ideais são intocados.\"<br/>\"Eu preciso corrigir você. As pessoas aqui não cometem erros diante dos olhos dos deuses...\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Varunada Lazurite Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 321,
+            "name": "Coração Purificador",
+            "desc": "Uma concha de água eterna deixada por um Oceanid.<br/>Apesar de já ter se espalhado pelas profundezas do lago, sua pureza permanece a mesma. Mas por que uma criatura tão pura e limpa como um Oceanid deseja a aparência de plantas nascidas no solo e assume essa forma com água pura? Eles não precisam respirar nem precisam de sustento...",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cleansing Heart_icon.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1730,
+            "name": "Flor de Seda",
+            "desc": "Uma flor carmesim que floresce como nuvens de arco-íris em Liyue. Pode ser usada para confeccionar tecidos suaves como a seda.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silk Flower_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 983,
+            "name": "Máscara Suja",
+            "desc": "Totalmente coberta de sujeira, liberando um cheiro sutil de ossos.<br/>Contudo, ainda assim, o Hilichurl a usa em seu rosto.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Nv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes do avanço",
+              "Após o avanço"
+            ]
+          },
+          {
+            "key": "Vida Básica",
+            "values": [
+              "7897",
+              "8352"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "156",
+              "165"
+            ]
+          },
+          {
+            "key": "DEF Básica",
+            "values": [
+              "585",
+              "619"
+            ]
+          },
+          {
+            "key": "ATQ",
+            "values": [
+              "12%",
+              "18%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moeda comum. A língua que todos entendem.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1035,
+            "name": "Pedaço de Lazurita Varunada",
+            "desc": "Material de Ascensão de Personagem.<br/>\"Meus ideais são intocados.\"<br/>\"Eu preciso corrigir você. As pessoas aqui não cometem erros diante dos olhos dos deuses...\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Varunada Lazurite Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 321,
+            "name": "Coração Purificador",
+            "desc": "Uma concha de água eterna deixada por um Oceanid.<br/>Apesar de já ter se espalhado pelas profundezas do lago, sua pureza permanece a mesma. Mas por que uma criatura tão pura e limpa como um Oceanid deseja a aparência de plantas nascidas no solo e assume essa forma com água pura? Eles não precisam respirar nem precisam de sustento...",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cleansing Heart_icon.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1730,
+            "name": "Flor de Seda",
+            "desc": "Uma flor carmesim que floresce como nuvens de arco-íris em Liyue. Pode ser usada para confeccionar tecidos suaves como a seda.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silk Flower_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 220,
+            "name": "Máscara Ominosa",
+            "desc": "Máscara de ossos brilhante, com detalhes pintados para assustar os inimigos.<br/>Até hoje os humanos não entendem o porquê dos Hilichurls temerem as máscaras. Alguns dizem que é porque não querem ver o próprio reflexo derrubado na água.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Nv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes do avanço",
+              "Após o avanço"
+            ]
+          },
+          {
+            "key": "Vida Básica",
+            "values": [
+              "9060",
+              "9514"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "179",
+              "188"
+            ]
+          },
+          {
+            "key": "DEF Básica",
+            "values": [
+              "671",
+              "705"
+            ]
+          },
+          {
+            "key": "ATQ",
+            "values": [
+              "18%",
+              "24%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Moeda comum. A língua que todos entendem.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1034,
+            "name": "Gema de Lazurita Varunada",
+            "desc": "Material de Ascensão de Personagem.<br/>\"Meus ideais são intocados.\"<br/>\"Eu preciso corrigir você. As pessoas aqui não cometem erros diante dos olhos dos deuses... Apenas a lei e o Tribunal podem julgara alguém\".<br/>\"Eles podem até mesmo me julgar. Portanto, louve minha magnificência e pureza.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Varunada Lazurite Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 321,
+            "name": "Coração Purificador",
+            "desc": "Uma concha de água eterna deixada por um Oceanid.<br/>Apesar de já ter se espalhado pelas profundezas do lago, sua pureza permanece a mesma. Mas por que uma criatura tão pura e limpa como um Oceanid deseja a aparência de plantas nascidas no solo e assume essa forma com água pura? Eles não precisam respirar nem precisam de sustento...",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cleansing Heart_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1730,
+            "name": "Flor de Seda",
+            "desc": "Uma flor carmesim que floresce como nuvens de arco-íris em Liyue. Pode ser usada para confeccionar tecidos suaves como a seda.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silk Flower_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 220,
+            "name": "Máscara Ominosa",
+            "desc": "Máscara de ossos brilhante, com detalhes pintados para assustar os inimigos.<br/>Até hoje os humanos não entendem o porquê dos Hilichurls temerem as máscaras. Alguns dizem que é porque não querem ver o próprio reflexo derrubado na água.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "Nv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Antes do avanço",
+              "Após o avanço"
+            ]
+          },
+          {
+            "key": "Vida Básica",
+            "values": [
+              "10222",
+              "-"
+            ]
+          },
+          {
+            "key": "ATQ Básico",
+            "values": [
+              "202",
+              "-"
+            ]
+          },
+          {
+            "key": "DEF Básica",
+            "values": [
+              "758",
+              "-"
+            ]
+          },
+          {
+            "key": "ATQ",
+            "values": [
+              "24%",
+              "-"
+            ]
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "title": "Detalhes do Personagem",
@@ -89,6 +1470,134 @@
         ]
       }
     ],
+    "baseInfo": [
+      {
+        "key": "Nome",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Xingqiu"
+          }
+        ]
+      },
+      {
+        "key": "Aniversário",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "9/10"
+          }
+        ]
+      },
+      {
+        "key": "Constelação",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Fabulae Textile"
+          }
+        ]
+      },
+      {
+        "key": "Título",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Galante Juvenil"
+          }
+        ]
+      },
+      {
+        "key": "Visão",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Hydro"
+          }
+        ]
+      },
+      {
+        "key": "Afiliação",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Guilda de Comerciantes de Feiyun"
+          }
+        ]
+      },
+      {
+        "key": "Chinês CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "唐雅菁"
+          }
+        ]
+      },
+      {
+        "key": "Inglês CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Cristina Vee Valenzuela"
+          }
+        ]
+      },
+      {
+        "key": "Japonês CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "皆川純子"
+          }
+        ]
+      },
+      {
+        "key": "Coreano CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Kwak Kyu-mi"
+          }
+        ]
+      },
+      {
+        "key": "Prato Especial",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 982,
+            "name": "Iguarias do Interior",
+            "desc": "A especialidade de Xingqiu. Este prato com aparência quase artesanal faz com que quase niguém tenha dó de comer. Mas uma vez que você a saboreia, seu sabor é fresco, com uma doçura no fundo que fica difícil parar de comer... Espere um momento. Por acaso você tirou as cenouras?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/All-Delicacy Parcels_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Carta de Personagem",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3179,
+            "name": "Xingqiu",
+            "desc": "<p><span style=\"color: #FFFFFF\">Galante Juvenil - Xingqiu</span></p><p><span style=\"color: #BFBFBF\">\"Sou só eu, ou os protagonistas dos romances de hoje em dia são só de alunos de escola particular...\"</span></p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/05/16791688/c37e98b53fc0f199d1c821b38717a80c_1349267417719761482.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Version Released",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.0"
+          }
+        ]
+      }
+    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=36&center=1990.78,-838.95&zoom=-1.50",
     "voice": [
       {
         "title": "Olá...",
@@ -1759,1515 +3268,6 @@
           {
             "name": "KR",
             "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2023/03/02/89220822/9c81eb289ac61a7f7c415ada1a97897e_2122126910507148285.wav"
-          }
-        ]
-      }
-    ],
-    "talent": [
-      {
-        "key": "Ataque Normal: Estilo Guhua",
-        "title": "Ataque Normal: Estilo Guhua",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/battle_talent_0/battle_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Ataque Normal</color>\nRealiza até 5 golpes rápidos.\n<color=#ffd780>Ataque Carregado</color>\nConsome uma certa quantidade de Stamina para desferir 2 golpes rápidos com a espada.\n<color=#ffd780>Ataque Imersivo</color>\nMergulha em pleno ar para golpear o chão, causando dano aos inimigos ao longo do caminho e infligindo Dano em uma AdE durante o impacto."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Nível",
-            "values": [
-              "Nv.1",
-              "Nv.2",
-              "Nv.3",
-              "Nv.4",
-              "Nv.5",
-              "Nv.6",
-              "Nv.7",
-              "Nv.8",
-              "Nv.9",
-              "Nv.10",
-              "Nv.11"
-            ]
-          },
-          {
-            "key": "Dano do 1° Golpe",
-            "values": [
-              "46.6%",
-              "50.4%",
-              "54.2%",
-              "59.6%",
-              "63.4%",
-              "67.8%",
-              "73.7%",
-              "79.7%",
-              "85.6%",
-              "92.1%",
-              "99.6%"
-            ]
-          },
-          {
-            "key": "Dano do 2° Golpe",
-            "values": [
-              "47.6%",
-              "51.5%",
-              "55.4%",
-              "60.9%",
-              "64.8%",
-              "69.3%",
-              "75.3%",
-              "81.4%",
-              "87.5%",
-              "94.2%",
-              "101.8%"
-            ]
-          },
-          {
-            "key": "Dano do 3° Golpe",
-            "values": [
-              "28.6%+28.6%",
-              "30.9%+30.9%",
-              "33.2%+33.2%",
-              "36.5%+36.5%",
-              "38.8%+38.8%",
-              "41.5%+41.5%",
-              "45.2%+45.2%",
-              "48.8%+48.8%",
-              "52.5%+52.5%",
-              "56.4%+56.4%",
-              "61.0%+61.0%"
-            ]
-          },
-          {
-            "key": "Dano do 4° Golpe",
-            "values": [
-              "56%",
-              "60.5%",
-              "65.1%",
-              "71.6%",
-              "76.2%",
-              "81.4%",
-              "88.5%",
-              "95.7%",
-              "102.9%",
-              "110.7%",
-              "119.6%"
-            ]
-          },
-          {
-            "key": "Dano do 5° Golpe",
-            "values": [
-              "35.9%+35.9%",
-              "38.8%+38.8%",
-              "41.7%+41.7%",
-              "45.9%+45.9%",
-              "48.8%+48.8%",
-              "52.1%+52.1%",
-              "56.7%+56.7%",
-              "61.3%+61.3%",
-              "65.9%+65.9%",
-              "70.9%+70.9%",
-              "76.6%+76.6%"
-            ]
-          },
-          {
-            "key": "Dano de Ataque Carregado",
-            "values": [
-              "47.3%+56.2%",
-              "51.2%+60.7%",
-              "55.0%+65.3%",
-              "60.5%+71.8%",
-              "64.4%+76.4%",
-              "68.8%+81.6%",
-              "74.8%+88.8%",
-              "80.9%+96.0%",
-              "86.9%+103.2%",
-              "93.5%+111.0%",
-              "101.1%+120.0%"
-            ]
-          },
-          {
-            "key": "Consumo de Stamina de Ataque Carregado",
-            "values": [
-              "20",
-              "20",
-              "20",
-              "20",
-              "20",
-              "20",
-              "20",
-              "20",
-              "20",
-              "20",
-              "20"
-            ]
-          },
-          {
-            "key": "Dano Durante a Queda",
-            "values": [
-              "63.9%",
-              "69.1%",
-              "74.3%",
-              "81.8%",
-              "87%",
-              "92.9%",
-              "101.1%",
-              "109.3%",
-              "117.5%",
-              "126.4%",
-              "135.3%"
-            ]
-          },
-          {
-            "key": "Dano de Queda de Baixa/Alta Altitude",
-            "values": [
-              "128%/160%",
-              "138%/173%",
-              "149%/186%",
-              "164%/204%",
-              "174%/217%",
-              "186%/232%",
-              "202%/253%",
-              "219%/273%",
-              "235%/293%",
-              "253%/316%",
-              "271%/338%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 200,
-              "name": "Ensinamentos de Ouro",
-              "desc": "Material de elevação de Talento.<br/>O ouro é o símbolo da Terra.<br/>O ouro é o sangue que flui profundamente sob a terra de Liyue, são os músculos que bombeiam o coração de Liyue e os ossos que fazem Liyue se orgulhar.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Gold_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1247,
-              "name": "Máscara Danificada",
-              "desc": "Máscara de Ossos quebrada que pertencia a algum Hilichurl.<br/>Há mais partes danificadas do que intactas, perdendo totalmente a sua utilidade.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 199,
-              "name": "Guia de Ouro",
-              "desc": "Material para aprimorar o nível do Talento.<br/>O ouro é o símbolo da Terra.<br/>O ouro simboliza a conversão. Este é o entendimento tácito entre as montanhas, a terra, a cidade e o povo de Liyue. Em Liyue, diligência é convertida em ouro e ouro em prosperidade.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 983,
-              "name": "Máscara Suja",
-              "desc": "Totalmente coberta de sujeira, liberando um cheiro sutil de ossos.<br/>Contudo, ainda assim, o Hilichurl a usa em seu rosto.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 199,
-              "name": "Guia de Ouro",
-              "desc": "Material para aprimorar o nível do Talento.<br/>O ouro é o símbolo da Terra.<br/>O ouro simboliza a conversão. Este é o entendimento tácito entre as montanhas, a terra, a cidade e o povo de Liyue. Em Liyue, diligência é convertida em ouro e ouro em prosperidade.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 983,
-              "name": "Máscara Suja",
-              "desc": "Totalmente coberta de sujeira, liberando um cheiro sutil de ossos.<br/>Contudo, ainda assim, o Hilichurl a usa em seu rosto.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 199,
-              "name": "Guia de Ouro",
-              "desc": "Material para aprimorar o nível do Talento.<br/>O ouro é o símbolo da Terra.<br/>O ouro simboliza a conversão. Este é o entendimento tácito entre as montanhas, a terra, a cidade e o povo de Liyue. Em Liyue, diligência é convertida em ouro e ouro em prosperidade.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 983,
-              "name": "Máscara Suja",
-              "desc": "Totalmente coberta de sujeira, liberando um cheiro sutil de ossos.<br/>Contudo, ainda assim, o Hilichurl a usa em seu rosto.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 199,
-              "name": "Guia de Ouro",
-              "desc": "Material para aprimorar o nível do Talento.<br/>O ouro é o símbolo da Terra.<br/>O ouro simboliza a conversão. Este é o entendimento tácito entre as montanhas, a terra, a cidade e o povo de Liyue. Em Liyue, diligência é convertida em ouro e ouro em prosperidade.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 983,
-              "name": "Máscara Suja",
-              "desc": "Totalmente coberta de sujeira, liberando um cheiro sutil de ossos.<br/>Contudo, ainda assim, o Hilichurl a usa em seu rosto.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 198,
-              "name": "Filosofia de Ouro",
-              "desc": "Material para aprimorar o nível de Talento.<br/>O ouro é o Reino das Rochas.<br/>O ouro é a riqueza de Liyue, mas a verdadeira riqueza de Liyue é o coração de seu povo que brilha como ouro.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 220,
-              "name": "Máscara Ominosa",
-              "desc": "Máscara de ossos brilhante, com detalhes pintados para assustar os inimigos.<br/>Até hoje os humanos não entendem o porquê dos Hilichurls temerem as máscaras. Alguns dizem que é porque não querem ver o próprio reflexo derrubado na água.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 355,
-              "name": "Cauda do Vento do Norte",
-              "desc": "Algumas escamas vindo do Grande Dragão do Vento do Norte.<br/>O Lobo do Vento do Norte, que perdeu a sua vida e forma, ainda conta com poderes maiores que o normal. Para enfrentar os desafios, mesmo usando o gelo e a alma, não são o suficiente. Algumas almas estão presas às escamas de gelo que caem durante a batalha.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Tail of Boreas_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 198,
-              "name": "Filosofia de Ouro",
-              "desc": "Material para aprimorar o nível de Talento.<br/>O ouro é o Reino das Rochas.<br/>O ouro é a riqueza de Liyue, mas a verdadeira riqueza de Liyue é o coração de seu povo que brilha como ouro.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 220,
-              "name": "Máscara Ominosa",
-              "desc": "Máscara de ossos brilhante, com detalhes pintados para assustar os inimigos.<br/>Até hoje os humanos não entendem o porquê dos Hilichurls temerem as máscaras. Alguns dizem que é porque não querem ver o próprio reflexo derrubado na água.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 355,
-              "name": "Cauda do Vento do Norte",
-              "desc": "Algumas escamas vindo do Grande Dragão do Vento do Norte.<br/>O Lobo do Vento do Norte, que perdeu a sua vida e forma, ainda conta com poderes maiores que o normal. Para enfrentar os desafios, mesmo usando o gelo e a alma, não são o suficiente. Algumas almas estão presas às escamas de gelo que caem durante a batalha.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Tail of Boreas_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 198,
-              "name": "Filosofia de Ouro",
-              "desc": "Material para aprimorar o nível de Talento.<br/>O ouro é o Reino das Rochas.<br/>O ouro é a riqueza de Liyue, mas a verdadeira riqueza de Liyue é o coração de seu povo que brilha como ouro.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 220,
-              "name": "Máscara Ominosa",
-              "desc": "Máscara de ossos brilhante, com detalhes pintados para assustar os inimigos.<br/>Até hoje os humanos não entendem o porquê dos Hilichurls temerem as máscaras. Alguns dizem que é porque não querem ver o próprio reflexo derrubado na água.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 355,
-              "name": "Cauda do Vento do Norte",
-              "desc": "Algumas escamas vindo do Grande Dragão do Vento do Norte.<br/>O Lobo do Vento do Norte, que perdeu a sua vida e forma, ainda conta com poderes maiores que o normal. Para enfrentar os desafios, mesmo usando o gelo e a alma, não são o suficiente. Algumas almas estão presas às escamas de gelo que caem durante a batalha.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Tail of Boreas_icon.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Moeda comum. A língua que todos entendem.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 198,
-              "name": "Filosofia de Ouro",
-              "desc": "Material para aprimorar o nível de Talento.<br/>O ouro é o Reino das Rochas.<br/>O ouro é a riqueza de Liyue, mas a verdadeira riqueza de Liyue é o coração de seu povo que brilha como ouro.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 220,
-              "name": "Máscara Ominosa",
-              "desc": "Máscara de ossos brilhante, com detalhes pintados para assustar os inimigos.<br/>Até hoje os humanos não entendem o porquê dos Hilichurls temerem as máscaras. Alguns dizem que é porque não querem ver o próprio reflexo derrubado na água.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 355,
-              "name": "Cauda do Vento do Norte",
-              "desc": "Algumas escamas vindo do Grande Dragão do Vento do Norte.<br/>O Lobo do Vento do Norte, que perdeu a sua vida e forma, ainda conta com poderes maiores que o normal. Para enfrentar os desafios, mesmo usando o gelo e a alma, não são o suficiente. Algumas almas estão presas às escamas de gelo que caem durante a batalha.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Tail of Boreas_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "Coroa da Sabedoria",
-              "desc": "Um precioso material para aumento de Nível de Talento.<br/>Costumava ser um objeto de ensino de conhecimentos nos tempos antigos. Agora, a sabedoria é encontrada em textos antigos e em profundos discursos. No entanto, esta Coroa da Sabedoria ainda deve ser capaz de transmitir algum poder e sabedoria transcendente ao seu portador.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/battle_talent_0/battle_talent_0.gif"
-      },
-      {
-        "key": "Espada de Guhua: Chuva Torrencial",
-        "title": "Espada de Guhua: Chuva Torrencial",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/battle_talent_1/battle_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Xingqiu realiza ataques duplos com sua espada, causando <color=#80c0ff>Dano Hydro</color> . Ao mesmo tempo, essa habilidade cria o número máximo de Espadas de Chuva, que orbitarão o seu próprio personagem.\nAs Espadas de Chuva têm as seguintes propriedades:\nQuando um personagem recebe Dano, a Espada de Chuva se despedaça, reduzindo a quantidade de Dano recebido.\nAumenta a resistência do personagem à interrupção.\n20% do <color=#80c0ff>Dano Hydro Adicional</color> de Xingqiu será convertido em Redução de Dano adicional para as Espadas de Chuva.\nA quantidade máxima de adicional da Redução de Dano que pode ser obtida é de 24%.\nO número máximo inicial de Espadas de Chuva é 3.\nO uso dessa habilidade aplica o estado de <color=#80c0ff>Molhado</color> ao personagem.\n\"É Mais fácil matar um dragão da chuva do que cortar a chuva.\""
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Nível",
-            "values": [
-              "Nv.1",
-              "Nv.2",
-              "Nv.3",
-              "Nv.4",
-              "Nv.5",
-              "Nv.6",
-              "Nv.7",
-              "Nv.8",
-              "Nv.9",
-              "Nv.10",
-              "Nv.11",
-              "Nv.12",
-              "Nv.13",
-              "Nv.14"
-            ]
-          },
-          {
-            "key": "Dano de Habilidade",
-            "values": [
-              "168%+191%",
-              "181%+206%",
-              "193%+220%",
-              "210%+239%",
-              "223%+253%",
-              "235%+268%",
-              "252%+287%",
-              "269%+306%",
-              "286%+325%",
-              "302%+344%",
-              "319%+363%",
-              "336%+382%",
-              "357%+406%"
-            ]
-          },
-          {
-            "key": "Taxa de Redução de Dano",
-            "values": [
-              "20%",
-              "21%",
-              "22%",
-              "23%",
-              "24%",
-              "25%",
-              "26%",
-              "27%",
-              "28%",
-              "29%",
-              "29%",
-              "29%",
-              "29%"
-            ]
-          },
-          {
-            "key": "Duração",
-            "values": [
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s"
-            ]
-          },
-          {
-            "key": "Tempo de Recarga",
-            "values": [
-              "21s",
-              "21s",
-              "21s",
-              "21s",
-              "21s",
-              "21s",
-              "21s",
-              "21s",
-              "21s",
-              "21s",
-              "21s",
-              "21s",
-              "21s"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/battle_talent_1/battle_talent_1.gif"
-      },
-      {
-        "key": "Espada Guhua: Retalhador de Chuva",
-        "title": "Espada Guhua: Retalhador de Chuva",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/battle_talent_2/battle_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Inicia o Trabalho com Lâminas do Arco-íris e luta usando uma chuva de espadas ilusórias, enquanto cria um número máximo de Chuvas de Espadas.\n<color=#ffd780>Trabalho com Lâminas do Arco-íris</color>\n·Os Ataques Normais do seu próprio personagem irão desencadear ataques consecutivos da chuva de espadas, infligindo <color=#80c0ff>Dano Hydro</color> .\nChuva de Espadas irá continuar no número máximo ao longo da duração da habilidade.\nO \"Caminho do Cortador de Chuva\" é uma das técnicas esotéricas secretas da Seita Guhua."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Nível",
-            "values": [
-              "Nv.1",
-              "Nv.2",
-              "Nv.3",
-              "Nv.4",
-              "Nv.5",
-              "Nv.6",
-              "Nv.7",
-              "Nv.8",
-              "Nv.9",
-              "Nv.10",
-              "Nv.11",
-              "Nv.12",
-              "Nv.13",
-              "Nv.14"
-            ]
-          },
-          {
-            "key": "Dano de Chuva de Espadas",
-            "values": [
-              "54.3%",
-              "58.3%",
-              "62.4%",
-              "67.8%",
-              "71.9%",
-              "76%",
-              "81.4%",
-              "86.8%",
-              "92.3%",
-              "97.7%",
-              "103%",
-              "109%",
-              "115%",
-              "122%"
-            ]
-          },
-          {
-            "key": "Duração",
-            "values": [
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s"
-            ]
-          },
-          {
-            "key": "Tempo de Recarga",
-            "values": [
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s"
-            ]
-          },
-          {
-            "key": "Energia Elemental",
-            "values": [
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/battle_talent_2/battle_talent_2.gif"
-      },
-      {
-        "key": "Hidropático",
-        "title": "Hidropático",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/const_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Quando uma espada da Chuva de Espadas é quebrada ou quando sua duração acabar, regenera a Vida do personagem atual em 6% da Vida Máxima de Xingqiu."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Lâminas Entre Gotas de Chuva",
-        "title": "Lâminas Entre Gotas de Chuva",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/const_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Xingqiu ganha 20% de <color=#80c0ff>Dano Hydro Bônus</color> ."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Flash do Gênio",
-        "title": "Flash do Gênio",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/const_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Quando Xingqiu forja Materiais de Talento de Personagem, ele possui 25% de chance de retornar uma certa quantidade de materiais usados."
-          }
-        ],
-        "attributes": null
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/avatar_header.jpg"
-      },
-      {
-        "key": "Avatar",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/avatar.png"
-      },
-      {
-        "key": "Modo Inativo 01",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/25/6926027/b877b22383b01f50a8f11718618fe320_8133120759883473665.gif"
-      },
-      {
-        "key": "Modo Inativo 02",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/25/6926027/d6b1d7719a00ec7fb61c911659d82a94_1163831979064539170.gif"
-      }
-    ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=36&center=1990.78,-838.95&zoom=-1.50",
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/constellation_1.png",
-        "name": "O Aroma Remanescente",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Aumenta o número máximo de Chuva das Espadas em 1."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/constellation_2.png",
-        "name": "Arco-Íris Acima do Céu Azul",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Estende a duração da <color=#ffd780>Espada de Guhua - Retalhador de Chuva</color> por 3 segundos.\nReduz a <color=#80c0ff>RES Hydro</color> dos inimigos golpeados pelos ataques do retalhador de chuva em 15% por 4 segundos."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/constellation_3.png",
-        "name": "Tecedor de Versos",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Aumenta o Nível de <color=#ffd780>Guhua: Retalhador de Chuva</color> em 3.\nPode ser elevado até Nv.15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/constellation_4.png",
-        "name": "Abrandamento do Mal",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Ao longo da duração da <color=#ffd780>Espada de Guhua - Retalhador de Chuva</color> , o Dano causado por <color=#ffd780>Espada de Guhua - Chuva Torrencial</color> é aumentado em 50%."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/constellation_5.png",
-        "name": "Abrace a Chuva",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Aumenta o Nível da <color=#ffd780>Espada de Guhua - Chuva Torrencial</color> em 3.\nPode ser elevado até Nv.15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/行秋/constellation_6.png",
-        "name": "Coleção de Poemas",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "A cada 2 golpes da <color=#ffd780>Espada de Guhua - Retalhador de Chuva</color> o ataque da chuva de espadas aumenta drasticamente o Dano do terceiro golpe, e ao atingir um inimigo, o terceiro golpe de chuva de espadas de Xingqiu regenerará 3 de Energia."
-          }
-        ]
-      }
-    ],
-    "ascension": [
-      {
-        "key": "Nv.1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes do avanço",
-              "Após o avanço"
-            ]
-          },
-          {
-            "key": "Vida Básica",
-            "values": [
-              "-",
-              "857"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "-",
-              "17"
-            ]
-          },
-          {
-            "key": "DEF Básica",
-            "values": [
-              "-",
-              "64"
-            ]
-          },
-          {
-            "key": "ATQ",
-            "values": [
-              "-",
-              "0%"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Nv.20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes do avanço",
-              "Após o avanço"
-            ]
-          },
-          {
-            "key": "Vida Básica",
-            "values": [
-              "2202",
-              "2842"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "43",
-              "56"
-            ]
-          },
-          {
-            "key": "DEF Básica",
-            "values": [
-              "163",
-              "211"
-            ]
-          },
-          {
-            "key": "ATQ",
-            "values": [
-              "0%",
-              "0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moeda comum. A língua que todos entendem.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1037,
-            "name": "Lasca de Lazurita Varunada",
-            "desc": "Material de Ascensão de Personagem.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Varunada Lazurite Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1730,
-            "name": "Flor de Seda",
-            "desc": "Uma flor carmesim que floresce como nuvens de arco-íris em Liyue. Pode ser usada para confeccionar tecidos suaves como a seda.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silk Flower_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1247,
-            "name": "Máscara Danificada",
-            "desc": "Máscara de Ossos quebrada que pertencia a algum Hilichurl.<br/>Há mais partes danificadas do que intactas, perdendo totalmente a sua utilidade.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "key": "Nv.40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes do avanço",
-              "Após o avanço"
-            ]
-          },
-          {
-            "key": "Vida Básica",
-            "values": [
-              "4257",
-              "4712"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "84",
-              "93"
-            ]
-          },
-          {
-            "key": "DEF Básica",
-            "values": [
-              "316",
-              "349"
-            ]
-          },
-          {
-            "key": "ATQ",
-            "values": [
-              "0%",
-              "6%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moeda comum. A língua que todos entendem.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1036,
-            "name": "Fragmento de Lazurita Varunada",
-            "desc": "Material de Ascensão de Personagem.<br/>\"Meus ideais são intocados.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Varunada Lazurite Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 321,
-            "name": "Coração Purificador",
-            "desc": "Uma concha de água eterna deixada por um Oceanid.<br/>Apesar de já ter se espalhado pelas profundezas do lago, sua pureza permanece a mesma. Mas por que uma criatura tão pura e limpa como um Oceanid deseja a aparência de plantas nascidas no solo e assume essa forma com água pura? Eles não precisam respirar nem precisam de sustento...",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cleansing Heart_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1730,
-            "name": "Flor de Seda",
-            "desc": "Uma flor carmesim que floresce como nuvens de arco-íris em Liyue. Pode ser usada para confeccionar tecidos suaves como a seda.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silk Flower_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1247,
-            "name": "Máscara Danificada",
-            "desc": "Máscara de Ossos quebrada que pertencia a algum Hilichurl.<br/>Há mais partes danificadas do que intactas, perdendo totalmente a sua utilidade.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Damaged Mask_icon.png",
-            "amount": 15
-          }
-        ]
-      },
-      {
-        "key": "Nv.50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes do avanço",
-              "Após o avanço"
-            ]
-          },
-          {
-            "key": "Vida Básica",
-            "values": [
-              "5420",
-              "6027"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "107",
-              "119"
-            ]
-          },
-          {
-            "key": "DEF Básica",
-            "values": [
-              "402",
-              "447"
-            ]
-          },
-          {
-            "key": "ATQ",
-            "values": [
-              "6%",
-              "12%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moeda comum. A língua que todos entendem.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1036,
-            "name": "Fragmento de Lazurita Varunada",
-            "desc": "Material de Ascensão de Personagem.<br/>\"Meus ideais são intocados.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Varunada Lazurite Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 321,
-            "name": "Coração Purificador",
-            "desc": "Uma concha de água eterna deixada por um Oceanid.<br/>Apesar de já ter se espalhado pelas profundezas do lago, sua pureza permanece a mesma. Mas por que uma criatura tão pura e limpa como um Oceanid deseja a aparência de plantas nascidas no solo e assume essa forma com água pura? Eles não precisam respirar nem precisam de sustento...",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cleansing Heart_icon.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1730,
-            "name": "Flor de Seda",
-            "desc": "Uma flor carmesim que floresce como nuvens de arco-íris em Liyue. Pode ser usada para confeccionar tecidos suaves como a seda.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silk Flower_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 983,
-            "name": "Máscara Suja",
-            "desc": "Totalmente coberta de sujeira, liberando um cheiro sutil de ossos.<br/>Contudo, ainda assim, o Hilichurl a usa em seu rosto.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Nv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes do avanço",
-              "Após o avanço"
-            ]
-          },
-          {
-            "key": "Vida Básica",
-            "values": [
-              "6735",
-              "7190"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "133",
-              "142"
-            ]
-          },
-          {
-            "key": "DEF Básica",
-            "values": [
-              "499",
-              "533 "
-            ]
-          },
-          {
-            "key": "ATQ",
-            "values": [
-              "12%",
-              "12%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moeda comum. A língua que todos entendem.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1035,
-            "name": "Pedaço de Lazurita Varunada",
-            "desc": "Material de Ascensão de Personagem.<br/>\"Meus ideais são intocados.\"<br/>\"Eu preciso corrigir você. As pessoas aqui não cometem erros diante dos olhos dos deuses...\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Varunada Lazurite Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 321,
-            "name": "Coração Purificador",
-            "desc": "Uma concha de água eterna deixada por um Oceanid.<br/>Apesar de já ter se espalhado pelas profundezas do lago, sua pureza permanece a mesma. Mas por que uma criatura tão pura e limpa como um Oceanid deseja a aparência de plantas nascidas no solo e assume essa forma com água pura? Eles não precisam respirar nem precisam de sustento...",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cleansing Heart_icon.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1730,
-            "name": "Flor de Seda",
-            "desc": "Uma flor carmesim que floresce como nuvens de arco-íris em Liyue. Pode ser usada para confeccionar tecidos suaves como a seda.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silk Flower_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 983,
-            "name": "Máscara Suja",
-            "desc": "Totalmente coberta de sujeira, liberando um cheiro sutil de ossos.<br/>Contudo, ainda assim, o Hilichurl a usa em seu rosto.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Stained Mask_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Nv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes do avanço",
-              "Após o avanço"
-            ]
-          },
-          {
-            "key": "Vida Básica",
-            "values": [
-              "7897",
-              "8352"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "156",
-              "165"
-            ]
-          },
-          {
-            "key": "DEF Básica",
-            "values": [
-              "585",
-              "619"
-            ]
-          },
-          {
-            "key": "ATQ",
-            "values": [
-              "12%",
-              "18%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moeda comum. A língua que todos entendem.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1035,
-            "name": "Pedaço de Lazurita Varunada",
-            "desc": "Material de Ascensão de Personagem.<br/>\"Meus ideais são intocados.\"<br/>\"Eu preciso corrigir você. As pessoas aqui não cometem erros diante dos olhos dos deuses...\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Varunada Lazurite Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 321,
-            "name": "Coração Purificador",
-            "desc": "Uma concha de água eterna deixada por um Oceanid.<br/>Apesar de já ter se espalhado pelas profundezas do lago, sua pureza permanece a mesma. Mas por que uma criatura tão pura e limpa como um Oceanid deseja a aparência de plantas nascidas no solo e assume essa forma com água pura? Eles não precisam respirar nem precisam de sustento...",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cleansing Heart_icon.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1730,
-            "name": "Flor de Seda",
-            "desc": "Uma flor carmesim que floresce como nuvens de arco-íris em Liyue. Pode ser usada para confeccionar tecidos suaves como a seda.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silk Flower_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 220,
-            "name": "Máscara Ominosa",
-            "desc": "Máscara de ossos brilhante, com detalhes pintados para assustar os inimigos.<br/>Até hoje os humanos não entendem o porquê dos Hilichurls temerem as máscaras. Alguns dizem que é porque não querem ver o próprio reflexo derrubado na água.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Nv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes do avanço",
-              "Após o avanço"
-            ]
-          },
-          {
-            "key": "Vida Básica",
-            "values": [
-              "9060",
-              "9514"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "179",
-              "188"
-            ]
-          },
-          {
-            "key": "DEF Básica",
-            "values": [
-              "671",
-              "705"
-            ]
-          },
-          {
-            "key": "ATQ",
-            "values": [
-              "18%",
-              "24%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Moeda comum. A língua que todos entendem.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1034,
-            "name": "Gema de Lazurita Varunada",
-            "desc": "Material de Ascensão de Personagem.<br/>\"Meus ideais são intocados.\"<br/>\"Eu preciso corrigir você. As pessoas aqui não cometem erros diante dos olhos dos deuses... Apenas a lei e o Tribunal podem julgara alguém\".<br/>\"Eles podem até mesmo me julgar. Portanto, louve minha magnificência e pureza.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Varunada Lazurite Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 321,
-            "name": "Coração Purificador",
-            "desc": "Uma concha de água eterna deixada por um Oceanid.<br/>Apesar de já ter se espalhado pelas profundezas do lago, sua pureza permanece a mesma. Mas por que uma criatura tão pura e limpa como um Oceanid deseja a aparência de plantas nascidas no solo e assume essa forma com água pura? Eles não precisam respirar nem precisam de sustento...",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cleansing Heart_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1730,
-            "name": "Flor de Seda",
-            "desc": "Uma flor carmesim que floresce como nuvens de arco-íris em Liyue. Pode ser usada para confeccionar tecidos suaves como a seda.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silk Flower_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 220,
-            "name": "Máscara Ominosa",
-            "desc": "Máscara de ossos brilhante, com detalhes pintados para assustar os inimigos.<br/>Até hoje os humanos não entendem o porquê dos Hilichurls temerem as máscaras. Alguns dizem que é porque não querem ver o próprio reflexo derrubado na água.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ominous Mask_icon.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Nv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Antes do avanço",
-              "Após o avanço"
-            ]
-          },
-          {
-            "key": "Vida Básica",
-            "values": [
-              "10222",
-              "-"
-            ]
-          },
-          {
-            "key": "ATQ Básico",
-            "values": [
-              "202",
-              "-"
-            ]
-          },
-          {
-            "key": "DEF Básica",
-            "values": [
-              "758",
-              "-"
-            ]
-          },
-          {
-            "key": "ATQ",
-            "values": [
-              "24%",
-              "-"
-            ]
-          }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Nome",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Xingqiu"
-          }
-        ]
-      },
-      {
-        "key": "Aniversário",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "9/10"
-          }
-        ]
-      },
-      {
-        "key": "Constelação",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Fabulae Textile"
-          }
-        ]
-      },
-      {
-        "key": "Título",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Galante Juvenil"
-          }
-        ]
-      },
-      {
-        "key": "Visão",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Hydro"
-          }
-        ]
-      },
-      {
-        "key": "Afiliação",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Guilda de Comerciantes de Feiyun"
-          }
-        ]
-      },
-      {
-        "key": "Chinês CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "唐雅菁"
-          }
-        ]
-      },
-      {
-        "key": "Inglês CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Cristina Vee Valenzuela"
-          }
-        ]
-      },
-      {
-        "key": "Japonês CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "皆川純子"
-          }
-        ]
-      },
-      {
-        "key": "Coreano CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Kwak Kyu-mi"
-          }
-        ]
-      },
-      {
-        "key": "Prato Especial",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 982,
-            "name": "Iguarias do Interior",
-            "desc": "A especialidade de Xingqiu. Este prato com aparência quase artesanal faz com que quase niguém tenha dó de comer. Mas uma vez que você a saboreia, seu sabor é fresco, com uma doçura no fundo que fica difícil parar de comer... Espere um momento. Por acaso você tirou as cenouras?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/All-Delicacy Parcels_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Carta de Personagem",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3179,
-            "name": "Xingqiu",
-            "desc": "<p><span style=\"color: #FFFFFF\">Galante Juvenil - Xingqiu</span></p><p><span style=\"color: #BFBFBF\">\"Sou só eu, ou os protagonistas dos romances de hoje em dia são só de alunos de escola particular...\"</span></p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/05/16791688/c37e98b53fc0f199d1c821b38717a80c_1349267417719761482.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Version Released",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.0"
           }
         ]
       }
