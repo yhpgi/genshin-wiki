@@ -12,6 +12,41 @@
   "menuName": "Artefak",
   "version": 1705940844,
   "components": {
+    "reliquarySetEffect": {
+      "twoSetEffect": "ATK +18%.",
+      "fourSetEffect": "Saat Normal Attack mengenai musuh, ada 36% kemungkinan akan memicu Valley Rite yang akan meningkatkan DMG Normal Attack sebesar 70% ATK. Efek akan hilang 0,05 detik setelah Normal Attack mengakibatkan DMG. Jika Normal Attack gagal memicu efek Valley Rite, maka kemungkinan Valley Rite akan terpicu pada serangan berikutnya meningkat 20%. Efek ini dapat terpicu maksimum sekali setiap 0,2 detik."
+    },
+    "baseInfo": [
+      {
+        "key": "Nama",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Echoes of an Offering"
+          }
+        ]
+      },
+      {
+        "key": "Kartu Aksi TCG",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 4746,
+            "name": "Flowing Rings",
+            "desc": "<p><span style=\"color: #FFFFFF\">Enthralling Tales Passed On: Flowing Rings</span></p><p>\"... Batu yang tenggelam di bawah air jernih itu mungkin giok, atau mungkin juga cangkir. Ada pepatah lain yang mengatakan: 'giok' dalam cerita sebenarnya adalah metafora untuk orang yang cantik.\"</p>",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2023/12/15/5b52a1b13698656ef29b20867cc326cf_4321550741785493931.png"
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4747,
+            "name": "Echoes of an Offering",
+            "desc": "<p><span style=\"color: #FFFFFF\">Everlasting Uncut Jade: Echoes of an Offering</span></p><p>\"Dalam legenda, sungai-sungai besar sering kali terbelah menjadi banyak anak sungai. Ada sebuah cerita di dalamnya yang mengatakan, sebuah giok yang indah, dulunya adalah batu giok mentah dari pegunungan suci. Diukir dengan hati-hati oleh Rex Lapis.\"</p>",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2023/12/15/9d59c503c3608111307d538f24687bc7_650335096547260971.png"
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
     "artifactList": {
       "flower_of_life": {
         "title": "Soulscent Bloom",
@@ -24,16 +59,16 @@
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/flower_of_life_icon.png"
       },
-      "plume_of_death": {
-        "title": "Jade Leaf",
-        "position": "Plume of Death",
+      "circlet_of_logos": {
+        "title": "Flowing Rings",
+        "position": "Circlet of Logos",
         "desc": [
           {
             "type": "RichText",
-            "text": "Ornamen batu giok yang berbentuk seperti daun. Tampaknya dulu benda pernah memiliki makna yang dalam di antara orang-orang."
+            "text": "Sepasang anting yang terbuat dari batu giok. Memiliki tekstur yang lembut."
           }
         ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/plume_of_death_icon.png"
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/circlet_of_logos_icon.png"
       },
       "sands_of_eon": {
         "title": "Symbol of Feliciation",
@@ -46,17 +81,6 @@
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/sands_of_eon_icon.png"
       },
-      "circlet_of_logos": {
-        "title": "Flowing Rings",
-        "position": "Circlet of Logos",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Sepasang anting yang terbuat dari batu giok. Memiliki tekstur yang lembut."
-          }
-        ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/circlet_of_logos_icon.png"
-      },
       "goblet_of_eonothem": {
         "title": "Chalice of the Font",
         "position": "Goblet of Eonothem",
@@ -67,11 +91,18 @@
           }
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/goblet_of_eonothem_icon.png"
+      },
+      "plume_of_death": {
+        "title": "Jade Leaf",
+        "position": "Plume of Death",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Ornamen batu giok yang berbentuk seperti daun. Tampaknya dulu benda pernah memiliki makna yang dalam di antara orang-orang."
+          }
+        ],
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/plume_of_death_icon.png"
       }
-    },
-    "reliquarySetEffect": {
-      "twoSetEffect": "ATK +18%.",
-      "fourSetEffect": "Saat Normal Attack mengenai musuh, ada 36% kemungkinan akan memicu Valley Rite yang akan meningkatkan DMG Normal Attack sebesar 70% ATK. Efek akan hilang 0,05 detik setelah Normal Attack mengakibatkan DMG. Jika Normal Attack gagal memicu efek Valley Rite, maka kemungkinan Valley Rite akan terpicu pada serangan berikutnya meningkat 20%. Efek ini dapat terpicu maksimum sekali setiap 0,2 detik."
     },
     "story": [
       {
@@ -118,37 +149,6 @@
             "text": "Legenda mengatakan bahwa batu mentah untuk liontin giok ini berasal dari gunung suci yang telah lama disegel.\nSama seperti keong bintang, ketika meninggalkan pantai, mereka akan sering mengingat suara deburan ombak,\nsuara air yang mengalir juga akan datang dari cincin giok ini.\nAda rumor yang sering terdengar di penginapan ....\n\"Menurut legenda, harta paling berharga dari aliran sungai gunung adalah sepotong batu giok mentah yang dapat menurunkan hujan.\"\n\"Tapi kemudian, ketika dunia berada dalam kekacauan, iblis mendambakan kekuatannya.\"\n\"Jadi penguasa gunung membaginya menjadi beberapa bagian dan membuatnya terlihat berbeda untuk membingungkan mereka.\"\n\"Beberapa bagian dia tenggelamkan di sungai, yang lain dia sembunyikan di gunung, dan yang lain dia berikan sebagai persembahan pada kuil.\"\n\"Menurut legenda Lembah Chenyu, hiasan giok ini terikat perjanjian dengan dewa.\"\n\"Hanya saja tidak ada yang bisa menemukannya setelah bertahun-tahun ....\"\nPendeta selalu mengenakan liontin giok ini dengan hati-hati.\nSebelum pergi, dia diam-diam menunjukkannya kepada temannya yang tidak sopan dan tidak tertarik.\nPendeta dengan sungguh-sungguh menceritakan asal usul ukiran tersebut, kontrak lama antara leluhur dan para dewa,\nTetapi temannya yang memegang tumbukan obat di tangannya dan mengeluarkan keringatnya dengan deras, sama sekali mengabaikannya.\n\"Setiap tahun, melakukan ritual yang sama. Aku tidak tahu sudah berapa kali aku mendengar itu darimu.\"\n\"Bukannya kamu bilang ingin undang aku untuk minum teh saat kamu balik? Kita bicarakan saja nanti.\"\nTapi apa yang keluar dari air tidak seperti yang dia pikirkan, akhirnya menghilang di dalam air ....\nPara pengrajin di Dermaga Yilong masih membuat hiasan yang mirip dengannya sampai hari ini.\nPara pedagang juga mengikuti legenda dan memakai cincin giok halus di dekat telinga mereka,\nmendengarkan suara air hujan yang jatuh di atas bebatuan"
           }
         ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Nama",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Echoes of an Offering"
-          }
-        ]
-      },
-      {
-        "key": "Kartu Aksi TCG",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 4746,
-            "name": "Flowing Rings",
-            "desc": "<p><span style=\"color: #FFFFFF\">Enthralling Tales Passed On: Flowing Rings</span></p><p>\"... Batu yang tenggelam di bawah air jernih itu mungkin giok, atau mungkin juga cangkir. Ada pepatah lain yang mengatakan: 'giok' dalam cerita sebenarnya adalah metafora untuk orang yang cantik.\"</p>",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2023/12/15/5b52a1b13698656ef29b20867cc326cf_4321550741785493931.png"
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4747,
-            "name": "Echoes of an Offering",
-            "desc": "<p><span style=\"color: #FFFFFF\">Everlasting Uncut Jade: Echoes of an Offering</span></p><p>\"Dalam legenda, sungai-sungai besar sering kali terbelah menjadi banyak anak sungai. Ada sebuah cerita di dalamnya yang mengatakan, sebuah giok yang indah, dulunya adalah batu giok mentah dari pegunungan suci. Diukir dengan hati-hati oleh Rex Lapis.\"</p>",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2023/12/15/9d59c503c3608111307d538f24687bc7_650335096547260971.png"
-          }
-        ],
-        "isMaterial": true
       }
     ]
   }
