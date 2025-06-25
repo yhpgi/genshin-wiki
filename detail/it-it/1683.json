@@ -3,15 +3,20 @@
   "name": "Punta di freccia affilata",
   "desc": "<p>Una punta di freccia di ottima fattura. E' abbastanza appuntita da penetrare un'armatura con la stessa facilità con cui una pietra attraversa la superficie dell'acqua.</p>",
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sharp Arrowhead_icon.png",
+  "filterValues": {
+    "objectType": [
+      "Materiale di potenziamento armi e personaggi"
+    ]
+  },
   "menuId": 9,
   "menuName": "Risorse di Teyvat",
-  "version": 1677158296,
+  "version": 1750798129,
   "components": {
     "customize": [
       {
         "type": "Heading",
         "level": 3,
-        "text": "Dropped By"
+        "text": "Rilasciato da:"
       },
       {
         "type": "CustomEntry",
@@ -51,16 +56,28 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffffd9>Teyvat:</color>\n<color=#ffffffd9>Enkanomiya:</color>"
+        "text": "<color=#ffffffd9>Teyvat:</color>"
+      },
+      {
+        "type": "CustomMap",
+        "url": "https:/act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header&utm_source=hoyolab&utm_medium=tools&lang=it-it&bbs_theme=light&bbs_theme_device=1#/map/2?shown_types=56&center=-894.00,-4771.50&zoom=-1.50"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Enkanomiya:</color>"
+      },
+      {
+        "type": "CustomMap",
+        "url": "https:/act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header&utm_source=hoyolab&utm_medium=tools&lang=it-it&bbs_theme=light&bbs_theme_device=1#/map/7?shown_types=56&center=299.00,191.00&zoom=-2.00"
       },
       {
         "type": "Heading",
         "level": 3,
-        "text": "Character Level-Up / Ascension"
+        "text": "Ascensione del personaggio:"
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffffd9>5-Star</color>"
+        "text": "<color=#ffffffd9>5-Stelle</color>"
       },
       {
         "type": "CustomEntry",
@@ -73,7 +90,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffffd9>4-Star</color>"
+        "text": "<color=#ffffffd9>4-Stelle</color>"
       },
       {
         "type": "CustomEntry",
@@ -112,13 +129,22 @@
         "displayStyle": "card"
       },
       {
+        "type": "CustomEntry",
+        "epId": 7707,
+        "name": "Dahlia ",
+        "desc": "Il diacono della Chiesa di Favonius e rappresentante dell'Archon di Anemo.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/255dedc5048565aec2c5af510c6f74a5_7726536808309970424.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
         "type": "Heading",
         "level": 3,
-        "text": "Weapon Ascension"
+        "text": "Ascensione dell'arma:"
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffffd9>Bow</color>"
+        "text": "<color=#ffffffd9>Arco</color>"
       },
       {
         "type": "CustomEntry",
@@ -194,7 +220,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffffd9>Catalyst</color>"
+        "text": "<color=#ffffffd9>Catalizzatore</color>"
       },
       {
         "type": "CustomEntry",
@@ -216,7 +242,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffffd9>Polearm</color>"
+        "text": "<color=#ffffffd9>Lancia</color>"
       },
       {
         "type": "CustomEntry",
@@ -269,7 +295,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffffd9>Sword</color>"
+        "text": "<color=#ffffffd9>Spada</color>"
       },
       {
         "type": "CustomEntry",
@@ -337,11 +363,11 @@
       {
         "type": "Heading",
         "level": 3,
-        "text": "Crafting"
+        "text": "Banco della creazione dell'Alchimista"
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>Product</color>\n<color=#ffffff>Recipe</color>"
+        "text": "<color=#ffffff>Prodotto</color>\n<color=#ffffff>Oggetti necessari per la creazione</color>"
       },
       {
         "type": "CustomEntry",
@@ -426,11 +452,11 @@
       {
         "type": "Heading",
         "level": 3,
-        "text": "Shop"
+        "text": "Negozio"
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>Item</color>\n<color=#ffffff>Cost</color>\n<color=#ffffff>Stock</color>\n<color=#ffffff>Vendor</color>"
+        "text": "<color=#ffffff>Oggetto</color>\n<color=#ffffff>Costo</color>\n<color=#ffffff>Quantità</color>\n<color=#ffffff>Venditore</color>"
       },
       {
         "type": "CustomEntry",
@@ -456,12 +482,12 @@
       },
       {
         "type": "RichText",
-        "text": "35 (Monthly)\nPaimon's Bargains"
+        "text": "35 (al mese)\nBazar di Paimon"
       },
       {
         "type": "Heading",
         "level": 3,
-        "text": "Related Materials"
+        "text": "Materiali correlati"
       },
       {
         "type": "CustomEntry",
@@ -484,29 +510,38 @@
     ],
     "baseInfo": [
       {
-        "key": "Name",
+        "key": "Nome",
         "value": [
           {
             "type": "RichText",
-            "text": "Sharp Arrowhead"
+            "text": "Punta di freccia affilata"
           }
         ]
       },
       {
-        "key": "Type",
+        "key": "Tipo",
         "value": [
           {
             "type": "RichText",
-            "text": "Character Level-Up Material"
+            "text": "Materiale di potenziamento armi e personaggi"
           }
         ]
       },
       {
-        "key": "Source",
+        "key": "Origine",
         "value": [
           {
             "type": "RichText",
-            "text": "Crafted\nDropped by Lv. 40+ hilichurl archers\nStardust Exchange"
+            "text": "Ottenibile dagli Hilichurl arcieri di liv. 40+\nScambio di polvere stellare"
+          }
+        ]
+      },
+      {
+        "key": "Versione di rilascio",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.0"
           }
         ]
       }
