@@ -5,16 +5,763 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sucrose_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/砂糖/avatar.png",
   "filterValues": {
-    "characterProperty": "바람 원소 피해 보너스",
-    "characterRarity": "★4",
-    "characterVision": "바람 원소",
     "characterWeapon": "법구",
-    "characterRegion": "몬드성"
+    "characterRarity": "★4",
+    "characterRegion": "몬드성",
+    "characterProperty": "바람 원소 피해 보너스",
+    "characterVision": "바람 원소"
   },
   "menuId": 2,
   "menuName": "캐릭터 도감",
   "version": 1733219018,
   "components": {
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/砂糖/constellation_1.png",
+        "name": "쌓아 올린 진공 영역",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>풍령 작성·육삼공팔</color> 의 사용 가능 횟수가 1회 증가한다"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/砂糖/constellation_2.png",
+        "name": "불속박형 베트",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>금기·풍령 작성·칠오 동구 이형</color> 의 스킬 지속 시간을 2초 연장한다"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/砂糖/constellation_3.png",
+        "name": "실수하지 않는 소녀",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>풍령 작성·육삼공팔</color> 의 스킬 레벨+3\n최대 Lv.15까지 상승"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/砂糖/constellation_4.png",
+        "name": "연금의 편집증",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "설탕의 일반 공격 혹은 강공격이 적에게 누적 7회 명중하면, <color=#ffd780>풍령 작성·육삼공팔</color> 의 재사용 대기시간이 랜덤으로 1~7초 감소한다.\n0.1초마다 최대 1회 카운트된다"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/砂糖/constellation_5.png",
+        "name": "진지한 보통병",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>금기·풍령 작성·칠오 동구 이형</color> 의 스킬 레벨+3\n최대 Lv.15까지 상승"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/砂糖/constellation_6.png",
+        "name": "혼돈의 엔트로피",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>금기·풍령 작성·칠오 동구 이형</color> 이 원소 전환이 발생하면 파티 내 모든 캐릭터는 스킬이 지속하는 동안 대응하는 원소 피해 보너스를 20% 획득한다"
+          }
+        ]
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "이름",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "설탕"
+          }
+        ]
+      },
+      {
+        "key": "생일",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "11월 26일"
+          }
+        ]
+      },
+      {
+        "key": "운명의 자리",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "플라스크자리"
+          }
+        ]
+      },
+      {
+        "key": "호칭",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "무해한 달콤함"
+          }
+        ]
+      },
+      {
+        "key": "신의 눈",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "바람"
+          }
+        ]
+      },
+      {
+        "key": "소속",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "페보니우스 기사단"
+          }
+        ]
+      },
+      {
+        "key": "中文 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "小敢"
+          }
+        ]
+      },
+      {
+        "key": "English CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Valeria Rodriguez"
+          }
+        ]
+      },
+      {
+        "key": "日本語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Fujita Akane"
+          }
+        ]
+      },
+      {
+        "key": "한국어 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "김하영"
+          }
+        ]
+      },
+      {
+        "key": "특제 요리",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 274,
+            "name": "오구삼식 보양식",
+            "desc": "설탕의 특제 요리. 언뜻 보기엔 기묘한 연금 생성물처럼 보이지만 설탕 본인은 여러 차례 실험을 통해 개발된 영양식이라고 우긴다. 「건강」한 녹색은 크림에 들어간 천연 녹즙이다. 녹즙…?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Nutritious Meal (V.593)_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "캐릭터 카드",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3193,
+            "name": "설탕",
+            "desc": "<p><strong><span style=\"color: #ECE5D8\">무해한 달콤함·설탕</span></strong><br>「실전을 거치지 않은 덱은 강한지 약한지를 평가할 수 없어!」</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/194600931/b9a4ece363d697dfb565dda772efbaf4_3404089166694049456.png"
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
+    "ascension": [
+      {
+        "key": "Lv.1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "돌파 전",
+              "돌파 후"
+            ]
+          },
+          {
+            "key": "기초 HP",
+            "values": [
+              "-",
+              "775"
+            ]
+          },
+          {
+            "key": "기초 공격력",
+            "values": [
+              "-",
+              "14"
+            ]
+          },
+          {
+            "key": "기초 방어력",
+            "values": [
+              "-",
+              "59"
+            ]
+          },
+          {
+            "key": "바람 원소 피해 보너스",
+            "values": [
+              "-",
+              "0%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Lv.20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "돌파 전",
+              "돌파 후"
+            ]
+          },
+          {
+            "key": "기초 HP",
+            "values": [
+              "1991",
+              "2570"
+            ]
+          },
+          {
+            "key": "기초 공격력",
+            "values": [
+              "37",
+              "47"
+            ]
+          },
+          {
+            "key": "기초 방어력",
+            "values": [
+              "151",
+              "195"
+            ]
+          },
+          {
+            "key": "바람 원소 피해 보너스",
+            "values": [
+              "0%",
+              "0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "모라",
+            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1496,
+            "name": "자유로운 터키석 가루",
+            "desc": "캐릭터 돌파 소재",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "풍차 국화",
+            "desc": "바람을 좋아하는 식물. 바람을 섬기고 바람처럼 호쾌하고 자유로운 몬드 사람에게 풍차 국화는 「눈에 보이는 바람」이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1876,
+            "name": "구라구라 꽃꿀",
+            "desc": "꽃술에서 추출된 꽃꿀엔 소량의 원소가 함유되어 있다.<br/>먹어보면 달콤달콤꽃과 맛이 미묘하게 비슷하다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Whopperflower Nectar_icon.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "Lv.40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "돌파 전",
+              "돌파 후"
+            ]
+          },
+          {
+            "key": "기초 HP",
+            "values": [
+              "3850",
+              "4261"
+            ]
+          },
+          {
+            "key": "기초 공격력",
+            "values": [
+              "71",
+              "78 "
+            ]
+          },
+          {
+            "key": "기초 방어력",
+            "values": [
+              "293",
+              "324"
+            ]
+          },
+          {
+            "key": "바람 원소 피해 보너스",
+            "values": [
+              "0%",
+              "6%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "모라",
+            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1495,
+            "name": "자유로운 터키석 조각",
+            "desc": "캐릭터 돌파 소재.<br/>「바람의 방향은 항상 바뀌는 거니까」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1751,
+            "name": "폭풍의 씨앗",
+            "desc": "패배한 무상의 바람이 붕괴하며 형성된 형태로, 순수한 바람의 힘을 담고 있다.<br/>가늘고 약한 나비의 체내에도 폭풍을 일으키는 힘이 숨겨져 있다고 한다. 순수한 바람으로 이루어진 나비는 다시금 폭풍을 부를 그날을 하염없이 기다리고 있다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "풍차 국화",
+            "desc": "바람을 좋아하는 식물. 바람을 섬기고 바람처럼 호쾌하고 자유로운 몬드 사람에게 풍차 국화는 「눈에 보이는 바람」이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1876,
+            "name": "구라구라 꽃꿀",
+            "desc": "꽃술에서 추출된 꽃꿀엔 소량의 원소가 함유되어 있다.<br/>먹어보면 달콤달콤꽃과 맛이 미묘하게 비슷하다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Whopperflower Nectar_icon.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "Lv.50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "돌파 전",
+              "돌파 후"
+            ]
+          },
+          {
+            "key": "기초 HP",
+            "values": [
+              "4901",
+              "5450"
+            ]
+          },
+          {
+            "key": "기초 공격력",
+            "values": [
+              "90",
+              "100"
+            ]
+          },
+          {
+            "key": "기초 방어력",
+            "values": [
+              "373",
+              "414"
+            ]
+          },
+          {
+            "key": "바람 원소 피해 보너스",
+            "values": [
+              "6%",
+              "12%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "모라",
+            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1495,
+            "name": "자유로운 터키석 조각",
+            "desc": "캐릭터 돌파 소재.<br/>「바람의 방향은 항상 바뀌는 거니까」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1751,
+            "name": "폭풍의 씨앗",
+            "desc": "패배한 무상의 바람이 붕괴하며 형성된 형태로, 순수한 바람의 힘을 담고 있다.<br/>가늘고 약한 나비의 체내에도 폭풍을 일으키는 힘이 숨겨져 있다고 한다. 순수한 바람으로 이루어진 나비는 다시금 폭풍을 부를 그날을 하염없이 기다리고 있다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "풍차 국화",
+            "desc": "바람을 좋아하는 식물. 바람을 섬기고 바람처럼 호쾌하고 자유로운 몬드 사람에게 풍차 국화는 「눈에 보이는 바람」이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 722,
+            "name": "반짝반짝 꽃꿀",
+            "desc": "원소 순도가 높은 꽃꿀.<br/>학계에선 보통 구라구라꽃을 원소 식물의 고등 생명체로 보지만, 아직까지 그들의 포식 습성을 설명하지 못한다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "돌파 전",
+              "돌파 후"
+            ]
+          },
+          {
+            "key": "기초 HP",
+            "values": [
+              "6090",
+              "6501"
+            ]
+          },
+          {
+            "key": "기초 공격력",
+            "values": [
+              "112",
+              "120"
+            ]
+          },
+          {
+            "key": "기초 방어력",
+            "values": [
+              "463",
+              "494"
+            ]
+          },
+          {
+            "key": "바람 원소 피해 보너스",
+            "values": [
+              "12%",
+              "12%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "모라",
+            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1494,
+            "name": "자유로운 터키석 덩이",
+            "desc": "캐릭터 돌파 소재.<br/>「바람의 방향은 항상 바뀌는 거니까」<br/>「언젠가는, 더 빛나는 곳으로 향할 날이 올 거야」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1751,
+            "name": "폭풍의 씨앗",
+            "desc": "패배한 무상의 바람이 붕괴하며 형성된 형태로, 순수한 바람의 힘을 담고 있다.<br/>가늘고 약한 나비의 체내에도 폭풍을 일으키는 힘이 숨겨져 있다고 한다. 순수한 바람으로 이루어진 나비는 다시금 폭풍을 부를 그날을 하염없이 기다리고 있다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "풍차 국화",
+            "desc": "바람을 좋아하는 식물. 바람을 섬기고 바람처럼 호쾌하고 자유로운 몬드 사람에게 풍차 국화는 「눈에 보이는 바람」이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 722,
+            "name": "반짝반짝 꽃꿀",
+            "desc": "원소 순도가 높은 꽃꿀.<br/>학계에선 보통 구라구라꽃을 원소 식물의 고등 생명체로 보지만, 아직까지 그들의 포식 습성을 설명하지 못한다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Lv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "돌파 전",
+              "돌파 후"
+            ]
+          },
+          {
+            "key": "기초 HP",
+            "values": [
+              "7141",
+              "7552"
+            ]
+          },
+          {
+            "key": "기초 공격력",
+            "values": [
+              "131",
+              "139"
+            ]
+          },
+          {
+            "key": "기초 방어력",
+            "values": [
+              "543",
+              "574"
+            ]
+          },
+          {
+            "key": "바람 원소 피해 보너스",
+            "values": [
+              "12%",
+              "18%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "모라",
+            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1494,
+            "name": "자유로운 터키석 덩이",
+            "desc": "캐릭터 돌파 소재.<br/>「바람의 방향은 항상 바뀌는 거니까」<br/>「언젠가는, 더 빛나는 곳으로 향할 날이 올 거야」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1751,
+            "name": "폭풍의 씨앗",
+            "desc": "패배한 무상의 바람이 붕괴하며 형성된 형태로, 순수한 바람의 힘을 담고 있다.<br/>가늘고 약한 나비의 체내에도 폭풍을 일으키는 힘이 숨겨져 있다고 한다. 순수한 바람으로 이루어진 나비는 다시금 폭풍을 부를 그날을 하염없이 기다리고 있다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "풍차 국화",
+            "desc": "바람을 좋아하는 식물. 바람을 섬기고 바람처럼 호쾌하고 자유로운 몬드 사람에게 풍차 국화는 「눈에 보이는 바람」이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 372,
+            "name": "원소 꽃꿀",
+            "desc": "에너지가 가득한 걸쭉한 꿀.<br/>구라구라꽃은 사냥감을 속여 포획하는데, 이는 더 강력하고 순수한 형태로 진화하기 위한 과정이 아닐까…",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "돌파 전",
+              "돌파 후"
+            ]
+          },
+          {
+            "key": "기초 HP",
+            "values": [
+              "8192",
+              "8604"
+            ]
+          },
+          {
+            "key": "기초 공격력",
+            "values": [
+              "151",
+              "158"
+            ]
+          },
+          {
+            "key": "기초 방어력",
+            "values": [
+              "623",
+              "654"
+            ]
+          },
+          {
+            "key": "바람 원소 피해 보너스",
+            "values": [
+              "18%",
+              "24%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "모라",
+            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1493,
+            "name": "자유로운 터키석",
+            "desc": "캐릭터 돌파 소재.<br/>「바람의 방향은 항상 바뀌는 거니까」<br/>「언젠가는, 더 빛나는 곳으로 향할 날이 올 거야」<br/>「이제부터는 내 축복과 함께 더 자유롭게 날아봐」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1751,
+            "name": "폭풍의 씨앗",
+            "desc": "패배한 무상의 바람이 붕괴하며 형성된 형태로, 순수한 바람의 힘을 담고 있다.<br/>가늘고 약한 나비의 체내에도 폭풍을 일으키는 힘이 숨겨져 있다고 한다. 순수한 바람으로 이루어진 나비는 다시금 폭풍을 부를 그날을 하염없이 기다리고 있다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "풍차 국화",
+            "desc": "바람을 좋아하는 식물. 바람을 섬기고 바람처럼 호쾌하고 자유로운 몬드 사람에게 풍차 국화는 「눈에 보이는 바람」이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 372,
+            "name": "원소 꽃꿀",
+            "desc": "에너지가 가득한 걸쭉한 꿀.<br/>구라구라꽃은 사냥감을 속여 포획하는데, 이는 더 강력하고 순수한 형태로 진화하기 위한 과정이 아닐까…",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "Lv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "돌파 전",
+              "돌파 후"
+            ]
+          },
+          {
+            "key": "기초 HP",
+            "values": [
+              "9244",
+              "-"
+            ]
+          },
+          {
+            "key": "기초 공격력",
+            "values": [
+              "170",
+              "-"
+            ]
+          },
+          {
+            "key": "기초 방어력",
+            "values": [
+              "703 ",
+              "-"
+            ]
+          },
+          {
+            "key": "바람 원소 피해 보너스",
+            "values": [
+              "24%",
+              "-"
+            ]
+          }
+        ]
+      }
+    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=43&center=450.50,248.00&zoom=0.00",
     "story": [
       {
         "title": "캐릭터 상세정보",
@@ -89,7 +836,143 @@
         ]
       }
     ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=43&center=450.50,248.00&zoom=0.00",
+    "textualResearch": [
+      {
+        "title": "[생일] 편지(2020)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "편지 제목: 어떡하죠?\n발신인: 설탕\n생일날 특별한 행운인 걸까요? 오늘 실험은 너무 순조로워서 뭔가 획기적인 진전이 있을 것만 같아요.\n근데… 그것 때문에 엄청 고민이에요.\n이성적으로 봤을 땐, 밤을 새워 실험해서라도 최대한 빨리 결론을 내는 게 좋거든요. 지금은 실험을 제쳐 두고 당신께 가더라도 신경 쓰여서 폐를 끼칠지도 몰라요.\n그래도 만약 당신께서 제 연구 성과를 지켜봐 주신다면…\n저, 전 계속 실험을 진행해 볼게요!"
+          }
+        ]
+      },
+      {
+        "title": "[생일] 편지(2021)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "편지 제목: 새로운 발견\n발신인: 설탕\n방금 엄청 중요한 실험을 진행했어요. 휴… 이제 결과만 기다리면 되는데, 좋은 성과가 있길 바라요.\n전 운 같은 미신을 믿는 사람이 아니에요. 그래도 생일이 될 때마다 실험이 아주 순조롭게 진행되는 것 같아요. 여행자님이 도와주시는 연구도 늘 새로운 성과가 있구요….\n그게, 그러니까… 혹시라도 와주신다면…\n아, 맞다! 여행자님께 물어볼 게 있어요. 최근에 실험실을 정리하다가 서랍장 깊숙한 곳에서 처음 보는 재료가 나왔어요. 다른 사람이 넣어둔 것 같은데… 여행자님은 아는 게 많으니까, 이게 뭔지 알 수 있지 않을까요?\n재료는 편지랑 함께 보냈어요. 아는 게 있다면 꼭… 꼭 저한테 알려주세요!\n감사해요!"
+          }
+        ]
+      },
+      {
+        "title": "[생일] 편지(2022)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "편지 제목: 휴가…\n발신인: 설탕\n오늘 아침… 휴가를 받게 되었어요. 모두 제가 실험실에서 나가 잊지 못할 생일을 보내길 바라더라고요.\n하지만, 하고 있던 실험을 갑자기 내려놓으니 뭘 해야 할지 모르겠어요.\n바람이 시작되는 곳에서 산책을 한다든지, 시드르 호수에서 낚시를 한다든지, 이런 단순한 오락거리 외에는 다른 신선한 게 떠오르지 않아요. 전 이런 걸 생각하는 게 실험 데이터를 분석하는 것보다 더 어려운 것 같아요…\n결국 진 단장님께서, 하고 싶은 일을 적은 다음 하나씩 해나가면 된다고 알려주셨어요.\n저는 신기한 뼈를 잔뜩 모아 연구하고 싶어요!\n다들 익숙해졌다고는 하지만… 그래도 조금 부끄럽네요.\n괜찮으시다면, 저와… 함께해 주시겠어요?"
+          }
+        ]
+      },
+      {
+        "title": "[생일] 편지(2023)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#dbdee1>제목:비밀 연구</color>\n<color=#dbdee1>발신인: 설탕</color>\n<color=#dbdee1>이번 기회에 좀 더 먼 곳으로 가서⋯ 미리 계획해 뒀던 비밀 연구를 해보려고 해요.</color>\n<color=#dbdee1>새끼 용 도마뱀이 수집하는 뼛조각이 늘 궁금했거든요. 그 뼛조각은 어떤 생물의 뼈일까요? 그 생물은 지금도 대륙에 존재할까요? 그들의 유해는 아무도 모르는 곳에서 얼마나 오래 잠들어 있었을까요? 왜 새끼 용 도마뱀은 유독 그것을 보물처럼 여기는 걸까요? 관련 데이터를 충분히 수집하면 연구 결과를 얻을 수 있을지도 몰라요!</color>\n<color=#dbdee1>다만⋯ 새끼 바위 용 도마뱀과 바위 용 도마뱀은 보통 리월의 야외에서 활동하거든요. 혼자 움직이는 건 위험할 게 분명하니까, 같이 가줬으면 좋겠어요.</color>\n<color=#dbdee1>시간을 내줄 수 있다면 정말 고마울 거예요. 다른 전리품은 다 줄 수 있어요. 전 뼛조각이랑 데이터만 얻을 수 있다면 만족해요.</color>"
+          }
+        ]
+      },
+      {
+        "title": "[생일] 편지(2024)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "편지 제목: 야외 실험···\n발신인: 설탕\n나타에는 커다란 열매를 맺는 식물이 있대요. 소문으로만 그렇게 들었었는데···\n마침 며칠 전에 여행 상인이 몬드성을 찾아온 덕분에 그 신기한 실험 재료를 손에 넣은 거 있죠? 그런데 하필 실험 결과가\n나오기도 전에 제 휴가가 와버리는 바람에···.\n일단 재료랑 시험관을 챙겨서 야외에서 실험을 계속할 생각이에요. 다만 실험실이 아닌 환경에서 작업을 진행하면 통제 불가능한 요소가 늘어나서,\n만에 하나 사고가 나지는 않을까 걱정이 되네요. 그래서 말인데··· 혹시 저랑 같이 있어 주면서 도가니 속 상황을 살펴봐 주실 수 있을까요?\n이쪽으로 와주신다면 최근에 얻은 연구 성과도 보여 드릴게요. 걱정 마세요! 지금의 10배에 달하는 결과물도 곧 만들어낼 수 있을 것 같으니까."
+          }
+        ]
+      },
+      {
+        "title": "[생일] SNS 및 일러스트(2020)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "내 생일을 기억해줘서 고…고마워요\n오늘 정말 날씨 좋네요. 식물이 「광합성」하기 딱 좋은 날씨예요.\n실험에 따르면…사람의 기분에도 유용하데요!\nhttps:/twitter.com/genshinimpactkr/status/1331810422308040707"
+          }
+        ]
+      },
+      {
+        "title": "[생일] SNS 및 일러스트 1(2021)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "윽, 실험용 재료가 부족해요. 지금 실험을 중단하고 수집하러 간다면——\n어… 당, 당신이군요! 이 재료들 전부 저한테 주시는 건가요? 정말 감사해요\nhttps:/twitter.com/genshinimpactkr/status/1464081481844858880"
+          }
+        ]
+      },
+      {
+        "title": "[생일] SNS 및 일러스트 2(2021)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "「이나즈마의 어느 섬에 거대한 뱀 뼈가 있다고 들었는데, 기회가 된다면 직접 보고 싶어요!」\nhttps:/twitter.com/genshinimpactkr/status/1464081483098988545"
+          }
+        ]
+      },
+      {
+        "title": "[생일] SNS 및 일러스트 1(2022)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "어제 실험은 아주 순조로웠어요. 심지어 원래 계획보다도 진도를 훨씬 많이 나갔죠.\n헤헤, 선물해 주신 실험 도구 덕분이에요. 정말 좋더라고요!\n음… 제가 관찰한 바에 따르면, 수… 수정 코어를 수집하는 걸 좋아하시죠?\n이 달콤달콤꽃은 수정 나비를 유인할 수 있는 특수 품종이에요. 이게 도움이 되었으면 좋겠네요!\nhttps:/www.hoyolab.com/article/13983012"
+          }
+        ]
+      },
+      {
+        "title": "[생일] SNS 및 일러스트 2(2022)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "「달콤달콤꽃꿀로 만든 각설탕! 정말 감사해요… 제 생일이라고 특별히 선물까지 준비해주시다니… 연구할 때 이게 있으면 정말 큰 도움이 될 것 같아요!」\nhttps:/www.hoyolab.com/article/13983011"
+          }
+        ]
+      },
+      {
+        "title": "[생일] SNS 및 일러스트 1(2023)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffff73>가, 같이 산책하자고 해줘서 고마워요. 날씨도 맑고 바람도 시원해서 나들이하기 딱 좋은 날씨네요.</color>\n<color=#ffffff73>다음 연구 과제에 대해 고민하느라 요 며칠 내내 실험실에만 틀어박혀 있었거든요….</color>\n<color=#ffffff73>결과적으로 과제는 아무런 진전도 없었고, 괜히 기분만——앗! 저기 좀 보세요!</color>\n<color=#ffffff73>처음 보는 식물이에요! 다음 연구 대상이 이렇게 알아서 나타나 주다니!</color>\n<color=#ffffff73>https:/twitter.com/genshinimpactkr/status/1728625090345263248?s=20</color>"
+          }
+        ]
+      },
+      {
+        "title": "[생일] SNS 및 일러스트 2(2023)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffff73>「오늘 핀 달콤달콤꽃의 특징은… 아, 안경에 먼지가 묻었네. 깨끗하게 닦아야지!」</color>\n<color=#ffffff73>https:/twitter.com/genshinimpactkr/status/1728624632230469998?s=20</color>"
+          }
+        ]
+      },
+      {
+        "title": "[생일] SNS 및 일러스트 1(2024)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "「이 비율대로 다시 한번 실험해 보자. 분명 잘될 거야…」\n「쉬잇! 여행자, 조용히 해! 기껏 설탕을 위해 엄청난 서프라이즈를 준비했는데—— 으악! 망했다!」\n「——어라? 여행자님이랑 페이몬님, 여기는 어쩐 일이세요?」\n「죄송해요, 저는 연구를 하고 있으면 주변 상황이 하나도 눈에 안 들어와서…. 혹시 도움이 필요한 일이라도 있나요?」\nhttps:/www.hoyolab.com/article/35194811"
+          }
+        ]
+      },
+      {
+        "title": "[생일] SNS 및 일러스트 2(2024)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "「혹시 이거, 제 생일 선물인가요? 이게 있으면 정말 많은 실험을 해볼 수 있겠네요!」\nhttps:/www.hoyolab.com/article/35194808"
+          }
+        ]
+      },
+      {
+        "title": "[3.5 버전] 윈드블룸의 숨결 - 캐릭터 대화",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "(이벤트 스토리 제3막 완료 후, 몬드성 숙소 앞에서)\n<color=#37ffff>엠버:</color> 콜레이! 설탕! 내가 도시락 만들어왔는데, 이따가 같이 먹자!\n<color=#37ffff>콜레이:</color> 정말? 좋지, 좋지!\n<color=#37ffff>설탕:</color> 엠, 엠버 님의 요리에 대해 할 말이 있어요! 가끔 조미료를 너무 많이 넣으시는 것 같아요…\n<color=#37ffff>엠버:</color> 아하하하, 요즘은 좀 짜게 먹어서 말이지…\n<color=#37ffff>콜레이:</color> 스트레스 때문이야? 그럼 카드 게임을 추천할게. 꽤 스트레스가 풀리거든\n<color=#37ffff>유라:</color> 재밌겠네. 설탕이랑 콜레이도 카드 게임을 잘하는 걸로 기억하는데\n<color=#37ffff>설탕:</color> 아, 네! 저흰 카드 친구예요! 며칠 전에도 그 얘길 했어요…\n<color=#37ffff>유라:</color> 나중에 나도 좀 가르쳐 줘, 카드 고수님들\n<color=#37ffff>엠버:</color> 맞아, 콜레이는 카드 게임에 엄청 재능 있다구. 우리 중에서 가장 잘할지도 몰라!\n<color=#37ffff>콜레이:</color> 어?! 나, 나?\n<color=#37ffff>유라:</color> 그래, 술집 사람들이 그러던데? 카드 게임을 엄청 잘하는 수메르 아가씨가 있는데, 한번 겨뤄보고 싶다고\n<color=#37ffff>콜레이:</color> 엥?!!\n<color=#37ffff>설탕:</color> 잘됐네, 콜레이! 카드 게임으로 유명해졌어!\n<color=#37ffff>콜레이:</color> 나… 난… 헤헤…"
+          }
+        ]
+      }
+    ],
     "talent": [
       {
         "key": "일반 공격·약식 풍령 작성",
@@ -783,634 +1666,6 @@
           }
         ],
         "attributes": null
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/砂糖/constellation_1.png",
-        "name": "쌓아 올린 진공 영역",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>풍령 작성·육삼공팔</color> 의 사용 가능 횟수가 1회 증가한다"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/砂糖/constellation_2.png",
-        "name": "불속박형 베트",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>금기·풍령 작성·칠오 동구 이형</color> 의 스킬 지속 시간을 2초 연장한다"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/砂糖/constellation_3.png",
-        "name": "실수하지 않는 소녀",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>풍령 작성·육삼공팔</color> 의 스킬 레벨+3\n최대 Lv.15까지 상승"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/砂糖/constellation_4.png",
-        "name": "연금의 편집증",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "설탕의 일반 공격 혹은 강공격이 적에게 누적 7회 명중하면, <color=#ffd780>풍령 작성·육삼공팔</color> 의 재사용 대기시간이 랜덤으로 1~7초 감소한다.\n0.1초마다 최대 1회 카운트된다"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/砂糖/constellation_5.png",
-        "name": "진지한 보통병",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>금기·풍령 작성·칠오 동구 이형</color> 의 스킬 레벨+3\n최대 Lv.15까지 상승"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/砂糖/constellation_6.png",
-        "name": "혼돈의 엔트로피",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>금기·풍령 작성·칠오 동구 이형</color> 이 원소 전환이 발생하면 파티 내 모든 캐릭터는 스킬이 지속하는 동안 대응하는 원소 피해 보너스를 20% 획득한다"
-          }
-        ]
-      }
-    ],
-    "ascension": [
-      {
-        "key": "Lv.1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "돌파 전",
-              "돌파 후"
-            ]
-          },
-          {
-            "key": "기초 HP",
-            "values": [
-              "-",
-              "775"
-            ]
-          },
-          {
-            "key": "기초 공격력",
-            "values": [
-              "-",
-              "14"
-            ]
-          },
-          {
-            "key": "기초 방어력",
-            "values": [
-              "-",
-              "59"
-            ]
-          },
-          {
-            "key": "바람 원소 피해 보너스",
-            "values": [
-              "-",
-              "0%"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Lv.20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "돌파 전",
-              "돌파 후"
-            ]
-          },
-          {
-            "key": "기초 HP",
-            "values": [
-              "1991",
-              "2570"
-            ]
-          },
-          {
-            "key": "기초 공격력",
-            "values": [
-              "37",
-              "47"
-            ]
-          },
-          {
-            "key": "기초 방어력",
-            "values": [
-              "151",
-              "195"
-            ]
-          },
-          {
-            "key": "바람 원소 피해 보너스",
-            "values": [
-              "0%",
-              "0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "모라",
-            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1496,
-            "name": "자유로운 터키석 가루",
-            "desc": "캐릭터 돌파 소재",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "풍차 국화",
-            "desc": "바람을 좋아하는 식물. 바람을 섬기고 바람처럼 호쾌하고 자유로운 몬드 사람에게 풍차 국화는 「눈에 보이는 바람」이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1876,
-            "name": "구라구라 꽃꿀",
-            "desc": "꽃술에서 추출된 꽃꿀엔 소량의 원소가 함유되어 있다.<br/>먹어보면 달콤달콤꽃과 맛이 미묘하게 비슷하다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Whopperflower Nectar_icon.png",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "key": "Lv.40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "돌파 전",
-              "돌파 후"
-            ]
-          },
-          {
-            "key": "기초 HP",
-            "values": [
-              "3850",
-              "4261"
-            ]
-          },
-          {
-            "key": "기초 공격력",
-            "values": [
-              "71",
-              "78 "
-            ]
-          },
-          {
-            "key": "기초 방어력",
-            "values": [
-              "293",
-              "324"
-            ]
-          },
-          {
-            "key": "바람 원소 피해 보너스",
-            "values": [
-              "0%",
-              "6%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "모라",
-            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1495,
-            "name": "자유로운 터키석 조각",
-            "desc": "캐릭터 돌파 소재.<br/>「바람의 방향은 항상 바뀌는 거니까」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1751,
-            "name": "폭풍의 씨앗",
-            "desc": "패배한 무상의 바람이 붕괴하며 형성된 형태로, 순수한 바람의 힘을 담고 있다.<br/>가늘고 약한 나비의 체내에도 폭풍을 일으키는 힘이 숨겨져 있다고 한다. 순수한 바람으로 이루어진 나비는 다시금 폭풍을 부를 그날을 하염없이 기다리고 있다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "풍차 국화",
-            "desc": "바람을 좋아하는 식물. 바람을 섬기고 바람처럼 호쾌하고 자유로운 몬드 사람에게 풍차 국화는 「눈에 보이는 바람」이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1876,
-            "name": "구라구라 꽃꿀",
-            "desc": "꽃술에서 추출된 꽃꿀엔 소량의 원소가 함유되어 있다.<br/>먹어보면 달콤달콤꽃과 맛이 미묘하게 비슷하다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Whopperflower Nectar_icon.png",
-            "amount": 15
-          }
-        ]
-      },
-      {
-        "key": "Lv.50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "돌파 전",
-              "돌파 후"
-            ]
-          },
-          {
-            "key": "기초 HP",
-            "values": [
-              "4901",
-              "5450"
-            ]
-          },
-          {
-            "key": "기초 공격력",
-            "values": [
-              "90",
-              "100"
-            ]
-          },
-          {
-            "key": "기초 방어력",
-            "values": [
-              "373",
-              "414"
-            ]
-          },
-          {
-            "key": "바람 원소 피해 보너스",
-            "values": [
-              "6%",
-              "12%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "모라",
-            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1495,
-            "name": "자유로운 터키석 조각",
-            "desc": "캐릭터 돌파 소재.<br/>「바람의 방향은 항상 바뀌는 거니까」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1751,
-            "name": "폭풍의 씨앗",
-            "desc": "패배한 무상의 바람이 붕괴하며 형성된 형태로, 순수한 바람의 힘을 담고 있다.<br/>가늘고 약한 나비의 체내에도 폭풍을 일으키는 힘이 숨겨져 있다고 한다. 순수한 바람으로 이루어진 나비는 다시금 폭풍을 부를 그날을 하염없이 기다리고 있다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "풍차 국화",
-            "desc": "바람을 좋아하는 식물. 바람을 섬기고 바람처럼 호쾌하고 자유로운 몬드 사람에게 풍차 국화는 「눈에 보이는 바람」이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 722,
-            "name": "반짝반짝 꽃꿀",
-            "desc": "원소 순도가 높은 꽃꿀.<br/>학계에선 보통 구라구라꽃을 원소 식물의 고등 생명체로 보지만, 아직까지 그들의 포식 습성을 설명하지 못한다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "돌파 전",
-              "돌파 후"
-            ]
-          },
-          {
-            "key": "기초 HP",
-            "values": [
-              "6090",
-              "6501"
-            ]
-          },
-          {
-            "key": "기초 공격력",
-            "values": [
-              "112",
-              "120"
-            ]
-          },
-          {
-            "key": "기초 방어력",
-            "values": [
-              "463",
-              "494"
-            ]
-          },
-          {
-            "key": "바람 원소 피해 보너스",
-            "values": [
-              "12%",
-              "12%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "모라",
-            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1494,
-            "name": "자유로운 터키석 덩이",
-            "desc": "캐릭터 돌파 소재.<br/>「바람의 방향은 항상 바뀌는 거니까」<br/>「언젠가는, 더 빛나는 곳으로 향할 날이 올 거야」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1751,
-            "name": "폭풍의 씨앗",
-            "desc": "패배한 무상의 바람이 붕괴하며 형성된 형태로, 순수한 바람의 힘을 담고 있다.<br/>가늘고 약한 나비의 체내에도 폭풍을 일으키는 힘이 숨겨져 있다고 한다. 순수한 바람으로 이루어진 나비는 다시금 폭풍을 부를 그날을 하염없이 기다리고 있다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "풍차 국화",
-            "desc": "바람을 좋아하는 식물. 바람을 섬기고 바람처럼 호쾌하고 자유로운 몬드 사람에게 풍차 국화는 「눈에 보이는 바람」이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 722,
-            "name": "반짝반짝 꽃꿀",
-            "desc": "원소 순도가 높은 꽃꿀.<br/>학계에선 보통 구라구라꽃을 원소 식물의 고등 생명체로 보지만, 아직까지 그들의 포식 습성을 설명하지 못한다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Lv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "돌파 전",
-              "돌파 후"
-            ]
-          },
-          {
-            "key": "기초 HP",
-            "values": [
-              "7141",
-              "7552"
-            ]
-          },
-          {
-            "key": "기초 공격력",
-            "values": [
-              "131",
-              "139"
-            ]
-          },
-          {
-            "key": "기초 방어력",
-            "values": [
-              "543",
-              "574"
-            ]
-          },
-          {
-            "key": "바람 원소 피해 보너스",
-            "values": [
-              "12%",
-              "18%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "모라",
-            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1494,
-            "name": "자유로운 터키석 덩이",
-            "desc": "캐릭터 돌파 소재.<br/>「바람의 방향은 항상 바뀌는 거니까」<br/>「언젠가는, 더 빛나는 곳으로 향할 날이 올 거야」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1751,
-            "name": "폭풍의 씨앗",
-            "desc": "패배한 무상의 바람이 붕괴하며 형성된 형태로, 순수한 바람의 힘을 담고 있다.<br/>가늘고 약한 나비의 체내에도 폭풍을 일으키는 힘이 숨겨져 있다고 한다. 순수한 바람으로 이루어진 나비는 다시금 폭풍을 부를 그날을 하염없이 기다리고 있다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "풍차 국화",
-            "desc": "바람을 좋아하는 식물. 바람을 섬기고 바람처럼 호쾌하고 자유로운 몬드 사람에게 풍차 국화는 「눈에 보이는 바람」이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 372,
-            "name": "원소 꽃꿀",
-            "desc": "에너지가 가득한 걸쭉한 꿀.<br/>구라구라꽃은 사냥감을 속여 포획하는데, 이는 더 강력하고 순수한 형태로 진화하기 위한 과정이 아닐까…",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "돌파 전",
-              "돌파 후"
-            ]
-          },
-          {
-            "key": "기초 HP",
-            "values": [
-              "8192",
-              "8604"
-            ]
-          },
-          {
-            "key": "기초 공격력",
-            "values": [
-              "151",
-              "158"
-            ]
-          },
-          {
-            "key": "기초 방어력",
-            "values": [
-              "623",
-              "654"
-            ]
-          },
-          {
-            "key": "바람 원소 피해 보너스",
-            "values": [
-              "18%",
-              "24%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "모라",
-            "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1493,
-            "name": "자유로운 터키석",
-            "desc": "캐릭터 돌파 소재.<br/>「바람의 방향은 항상 바뀌는 거니까」<br/>「언젠가는, 더 빛나는 곳으로 향할 날이 올 거야」<br/>「이제부터는 내 축복과 함께 더 자유롭게 날아봐」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vayuda Turquoise Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1751,
-            "name": "폭풍의 씨앗",
-            "desc": "패배한 무상의 바람이 붕괴하며 형성된 형태로, 순수한 바람의 힘을 담고 있다.<br/>가늘고 약한 나비의 체내에도 폭풍을 일으키는 힘이 숨겨져 있다고 한다. 순수한 바람으로 이루어진 나비는 다시금 폭풍을 부를 그날을 하염없이 기다리고 있다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hurricane Seed_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "풍차 국화",
-            "desc": "바람을 좋아하는 식물. 바람을 섬기고 바람처럼 호쾌하고 자유로운 몬드 사람에게 풍차 국화는 「눈에 보이는 바람」이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 372,
-            "name": "원소 꽃꿀",
-            "desc": "에너지가 가득한 걸쭉한 꿀.<br/>구라구라꽃은 사냥감을 속여 포획하는데, 이는 더 강력하고 순수한 형태로 진화하기 위한 과정이 아닐까…",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Lv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "돌파 전",
-              "돌파 후"
-            ]
-          },
-          {
-            "key": "기초 HP",
-            "values": [
-              "9244",
-              "-"
-            ]
-          },
-          {
-            "key": "기초 공격력",
-            "values": [
-              "170",
-              "-"
-            ]
-          },
-          {
-            "key": "기초 방어력",
-            "values": [
-              "703 ",
-              "-"
-            ]
-          },
-          {
-            "key": "바람 원소 피해 보너스",
-            "values": [
-              "24%",
-              "-"
-            ]
-          }
-        ]
       }
     ],
     "voice": [
@@ -3001,262 +3256,273 @@
         ]
       }
     ],
-    "baseInfo": [
-      {
-        "key": "이름",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "설탕"
-          }
-        ]
-      },
-      {
-        "key": "생일",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "11월 26일"
-          }
-        ]
-      },
-      {
-        "key": "운명의 자리",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "플라스크자리"
-          }
-        ]
-      },
-      {
-        "key": "호칭",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "무해한 달콤함"
-          }
-        ]
-      },
-      {
-        "key": "신의 눈",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "바람"
-          }
-        ]
-      },
-      {
-        "key": "소속",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "페보니우스 기사단"
-          }
-        ]
-      },
-      {
-        "key": "中文 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "小敢"
-          }
-        ]
-      },
-      {
-        "key": "English CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Valeria Rodriguez"
-          }
-        ]
-      },
-      {
-        "key": "日本語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Fujita Akane"
-          }
-        ]
-      },
-      {
-        "key": "한국어 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "김하영"
-          }
-        ]
-      },
-      {
-        "key": "특제 요리",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 274,
-            "name": "오구삼식 보양식",
-            "desc": "설탕의 특제 요리. 언뜻 보기엔 기묘한 연금 생성물처럼 보이지만 설탕 본인은 여러 차례 실험을 통해 개발된 영양식이라고 우긴다. 「건강」한 녹색은 크림에 들어간 천연 녹즙이다. 녹즙…?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Nutritious Meal (V.593)_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "캐릭터 카드",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3193,
-            "name": "설탕",
-            "desc": "<p><strong><span style=\"color: #ECE5D8\">무해한 달콤함·설탕</span></strong><br>「실전을 거치지 않은 덱은 강한지 약한지를 평가할 수 없어!」</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/194600931/b9a4ece363d697dfb565dda772efbaf4_3404089166694049456.png"
-          }
-        ],
-        "isMaterial": true
-      }
-    ],
-    "textualResearch": [
-      {
-        "title": "[생일] 편지(2020)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "편지 제목: 어떡하죠?\n발신인: 설탕\n생일날 특별한 행운인 걸까요? 오늘 실험은 너무 순조로워서 뭔가 획기적인 진전이 있을 것만 같아요.\n근데… 그것 때문에 엄청 고민이에요.\n이성적으로 봤을 땐, 밤을 새워 실험해서라도 최대한 빨리 결론을 내는 게 좋거든요. 지금은 실험을 제쳐 두고 당신께 가더라도 신경 쓰여서 폐를 끼칠지도 몰라요.\n그래도 만약 당신께서 제 연구 성과를 지켜봐 주신다면…\n저, 전 계속 실험을 진행해 볼게요!"
-          }
-        ]
-      },
-      {
-        "title": "[생일] 편지(2021)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "편지 제목: 새로운 발견\n발신인: 설탕\n방금 엄청 중요한 실험을 진행했어요. 휴… 이제 결과만 기다리면 되는데, 좋은 성과가 있길 바라요.\n전 운 같은 미신을 믿는 사람이 아니에요. 그래도 생일이 될 때마다 실험이 아주 순조롭게 진행되는 것 같아요. 여행자님이 도와주시는 연구도 늘 새로운 성과가 있구요….\n그게, 그러니까… 혹시라도 와주신다면…\n아, 맞다! 여행자님께 물어볼 게 있어요. 최근에 실험실을 정리하다가 서랍장 깊숙한 곳에서 처음 보는 재료가 나왔어요. 다른 사람이 넣어둔 것 같은데… 여행자님은 아는 게 많으니까, 이게 뭔지 알 수 있지 않을까요?\n재료는 편지랑 함께 보냈어요. 아는 게 있다면 꼭… 꼭 저한테 알려주세요!\n감사해요!"
-          }
-        ]
-      },
-      {
-        "title": "[생일] 편지(2022)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "편지 제목: 휴가…\n발신인: 설탕\n오늘 아침… 휴가를 받게 되었어요. 모두 제가 실험실에서 나가 잊지 못할 생일을 보내길 바라더라고요.\n하지만, 하고 있던 실험을 갑자기 내려놓으니 뭘 해야 할지 모르겠어요.\n바람이 시작되는 곳에서 산책을 한다든지, 시드르 호수에서 낚시를 한다든지, 이런 단순한 오락거리 외에는 다른 신선한 게 떠오르지 않아요. 전 이런 걸 생각하는 게 실험 데이터를 분석하는 것보다 더 어려운 것 같아요…\n결국 진 단장님께서, 하고 싶은 일을 적은 다음 하나씩 해나가면 된다고 알려주셨어요.\n저는 신기한 뼈를 잔뜩 모아 연구하고 싶어요!\n다들 익숙해졌다고는 하지만… 그래도 조금 부끄럽네요.\n괜찮으시다면, 저와… 함께해 주시겠어요?"
-          }
-        ]
-      },
-      {
-        "title": "[생일] 편지(2023)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#dbdee1>제목:비밀 연구</color>\n<color=#dbdee1>발신인: 설탕</color>\n<color=#dbdee1>이번 기회에 좀 더 먼 곳으로 가서⋯ 미리 계획해 뒀던 비밀 연구를 해보려고 해요.</color>\n<color=#dbdee1>새끼 용 도마뱀이 수집하는 뼛조각이 늘 궁금했거든요. 그 뼛조각은 어떤 생물의 뼈일까요? 그 생물은 지금도 대륙에 존재할까요? 그들의 유해는 아무도 모르는 곳에서 얼마나 오래 잠들어 있었을까요? 왜 새끼 용 도마뱀은 유독 그것을 보물처럼 여기는 걸까요? 관련 데이터를 충분히 수집하면 연구 결과를 얻을 수 있을지도 몰라요!</color>\n<color=#dbdee1>다만⋯ 새끼 바위 용 도마뱀과 바위 용 도마뱀은 보통 리월의 야외에서 활동하거든요. 혼자 움직이는 건 위험할 게 분명하니까, 같이 가줬으면 좋겠어요.</color>\n<color=#dbdee1>시간을 내줄 수 있다면 정말 고마울 거예요. 다른 전리품은 다 줄 수 있어요. 전 뼛조각이랑 데이터만 얻을 수 있다면 만족해요.</color>"
-          }
-        ]
-      },
-      {
-        "title": "[생일] 편지(2024)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "편지 제목: 야외 실험···\n발신인: 설탕\n나타에는 커다란 열매를 맺는 식물이 있대요. 소문으로만 그렇게 들었었는데···\n마침 며칠 전에 여행 상인이 몬드성을 찾아온 덕분에 그 신기한 실험 재료를 손에 넣은 거 있죠? 그런데 하필 실험 결과가\n나오기도 전에 제 휴가가 와버리는 바람에···.\n일단 재료랑 시험관을 챙겨서 야외에서 실험을 계속할 생각이에요. 다만 실험실이 아닌 환경에서 작업을 진행하면 통제 불가능한 요소가 늘어나서,\n만에 하나 사고가 나지는 않을까 걱정이 되네요. 그래서 말인데··· 혹시 저랑 같이 있어 주면서 도가니 속 상황을 살펴봐 주실 수 있을까요?\n이쪽으로 와주신다면 최근에 얻은 연구 성과도 보여 드릴게요. 걱정 마세요! 지금의 10배에 달하는 결과물도 곧 만들어낼 수 있을 것 같으니까."
-          }
-        ]
-      },
-      {
-        "title": "[생일] SNS 및 일러스트(2020)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "내 생일을 기억해줘서 고…고마워요\n오늘 정말 날씨 좋네요. 식물이 「광합성」하기 딱 좋은 날씨예요.\n실험에 따르면…사람의 기분에도 유용하데요!\nhttps:/twitter.com/genshinimpactkr/status/1331810422308040707"
-          }
-        ]
-      },
-      {
-        "title": "[생일] SNS 및 일러스트 1(2021)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "윽, 실험용 재료가 부족해요. 지금 실험을 중단하고 수집하러 간다면——\n어… 당, 당신이군요! 이 재료들 전부 저한테 주시는 건가요? 정말 감사해요\nhttps:/twitter.com/genshinimpactkr/status/1464081481844858880"
-          }
-        ]
-      },
-      {
-        "title": "[생일] SNS 및 일러스트 2(2021)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "「이나즈마의 어느 섬에 거대한 뱀 뼈가 있다고 들었는데, 기회가 된다면 직접 보고 싶어요!」\nhttps:/twitter.com/genshinimpactkr/status/1464081483098988545"
-          }
-        ]
-      },
-      {
-        "title": "[생일] SNS 및 일러스트 1(2022)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "어제 실험은 아주 순조로웠어요. 심지어 원래 계획보다도 진도를 훨씬 많이 나갔죠.\n헤헤, 선물해 주신 실험 도구 덕분이에요. 정말 좋더라고요!\n음… 제가 관찰한 바에 따르면, 수… 수정 코어를 수집하는 걸 좋아하시죠?\n이 달콤달콤꽃은 수정 나비를 유인할 수 있는 특수 품종이에요. 이게 도움이 되었으면 좋겠네요!\nhttps:/www.hoyolab.com/article/13983012"
-          }
-        ]
-      },
-      {
-        "title": "[생일] SNS 및 일러스트 2(2022)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "「달콤달콤꽃꿀로 만든 각설탕! 정말 감사해요… 제 생일이라고 특별히 선물까지 준비해주시다니… 연구할 때 이게 있으면 정말 큰 도움이 될 것 같아요!」\nhttps:/www.hoyolab.com/article/13983011"
-          }
-        ]
-      },
-      {
-        "title": "[생일] SNS 및 일러스트 1(2023)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffff73>가, 같이 산책하자고 해줘서 고마워요. 날씨도 맑고 바람도 시원해서 나들이하기 딱 좋은 날씨네요.</color>\n<color=#ffffff73>다음 연구 과제에 대해 고민하느라 요 며칠 내내 실험실에만 틀어박혀 있었거든요….</color>\n<color=#ffffff73>결과적으로 과제는 아무런 진전도 없었고, 괜히 기분만——앗! 저기 좀 보세요!</color>\n<color=#ffffff73>처음 보는 식물이에요! 다음 연구 대상이 이렇게 알아서 나타나 주다니!</color>\n<color=#ffffff73>https:/twitter.com/genshinimpactkr/status/1728625090345263248?s=20</color>"
-          }
-        ]
-      },
-      {
-        "title": "[생일] SNS 및 일러스트 2(2023)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffff73>「오늘 핀 달콤달콤꽃의 특징은… 아, 안경에 먼지가 묻었네. 깨끗하게 닦아야지!」</color>\n<color=#ffffff73>https:/twitter.com/genshinimpactkr/status/1728624632230469998?s=20</color>"
-          }
-        ]
-      },
-      {
-        "title": "[생일] SNS 및 일러스트 1(2024)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "「이 비율대로 다시 한번 실험해 보자. 분명 잘될 거야…」\n「쉬잇! 여행자, 조용히 해! 기껏 설탕을 위해 엄청난 서프라이즈를 준비했는데—— 으악! 망했다!」\n「——어라? 여행자님이랑 페이몬님, 여기는 어쩐 일이세요?」\n「죄송해요, 저는 연구를 하고 있으면 주변 상황이 하나도 눈에 안 들어와서…. 혹시 도움이 필요한 일이라도 있나요?」\nhttps:/www.hoyolab.com/article/35194811"
-          }
-        ]
-      },
-      {
-        "title": "[생일] SNS 및 일러스트 2(2024)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "「혹시 이거, 제 생일 선물인가요? 이게 있으면 정말 많은 실험을 해볼 수 있겠네요!」\nhttps:/www.hoyolab.com/article/35194808"
-          }
-        ]
-      },
-      {
-        "title": "[3.5 버전] 윈드블룸의 숨결 - 캐릭터 대화",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "(이벤트 스토리 제3막 완료 후, 몬드성 숙소 앞에서)\n<color=#37ffff>엠버:</color> 콜레이! 설탕! 내가 도시락 만들어왔는데, 이따가 같이 먹자!\n<color=#37ffff>콜레이:</color> 정말? 좋지, 좋지!\n<color=#37ffff>설탕:</color> 엠, 엠버 님의 요리에 대해 할 말이 있어요! 가끔 조미료를 너무 많이 넣으시는 것 같아요…\n<color=#37ffff>엠버:</color> 아하하하, 요즘은 좀 짜게 먹어서 말이지…\n<color=#37ffff>콜레이:</color> 스트레스 때문이야? 그럼 카드 게임을 추천할게. 꽤 스트레스가 풀리거든\n<color=#37ffff>유라:</color> 재밌겠네. 설탕이랑 콜레이도 카드 게임을 잘하는 걸로 기억하는데\n<color=#37ffff>설탕:</color> 아, 네! 저흰 카드 친구예요! 며칠 전에도 그 얘길 했어요…\n<color=#37ffff>유라:</color> 나중에 나도 좀 가르쳐 줘, 카드 고수님들\n<color=#37ffff>엠버:</color> 맞아, 콜레이는 카드 게임에 엄청 재능 있다구. 우리 중에서 가장 잘할지도 몰라!\n<color=#37ffff>콜레이:</color> 어?! 나, 나?\n<color=#37ffff>유라:</color> 그래, 술집 사람들이 그러던데? 카드 게임을 엄청 잘하는 수메르 아가씨가 있는데, 한번 겨뤄보고 싶다고\n<color=#37ffff>콜레이:</color> 엥?!!\n<color=#37ffff>설탕:</color> 잘됐네, 콜레이! 카드 게임으로 유명해졌어!\n<color=#37ffff>콜레이:</color> 나… 난… 헤헤…"
-          }
-        ]
-      }
-    ],
     "customize": [
+      {
+        "type": "RichText",
+        "text": "설탕은 우수한 확산 능력과 원소 마스터리 서포팅 능력으로 다양한 바람 원소가 필요한 파티에서 4성 서포터로 자주 채택되는 캐릭터이다. 증발, 융해, 빙결, 감전 등 여러 조합에 사용할 수 있기에 대표 파티는 딱히 서술하지 않는다."
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "추천 무기"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "★3"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2022,
+        "name": "드래곤 슬레이어 영웅담",
+        "desc": "드래곤을 퇴치하는 모험길에 오른 다섯 영웅의 이야기를 다룬 소설. 글솜씨가 형편없고 문장 구조가 엉망이다. 실패의 교훈은 이 책이 보유한 위대한 힘이다",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/讨龙英杰谭.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>드래곤 슬레이어 영웅담</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>추천 이유</color>\n부 옵션: <color=#ffd780>HP 백분율</color>\n무기 효과: 스스로 캐릭터를 교체 시 새로 등장한 캐릭터의 <color=#ffd780>공격력</color> 증가\n기원에서 쉽게 획득할 수 있으므로 초기 무기로 쓰기에 적합함"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2050,
+        "name": "마도 서론",
+        "desc": "제12판. 시대 발전에 따라 새로운 내용을 추가하고 제11판의 오탈자를 수정하였다",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/魔导绪论.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>마도 서론</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>추천 이유</color>\n부 옵션: <color=#ffd780>원소 마스터리</color>\n무기 효과: <color=#80c0ff>물 원소</color> / <color=#ffacff>번개 원소</color> 의 영향을 받은 적에게 가하는 피해가 증가\n모든 기원에서 획득할 수 있으므로 초기 무기로 쓰기에 적합함"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "★4"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2006,
+        "name": "제례의 악장",
+        "desc": "오랜 역사를 지닌 대본. 기재된 찬송가와 극본은 더 이상 식별이 불가능하다. 시간의 바람에 침식되어 파괴된 저주를 받았다",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/祭礼残章.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>제례의 악장</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>추천 이유</color>\n부 옵션: <color=#ffd780>원소 마스터리</color>\n무기 효과: <color=#ffd780>원소전투 스킬</color> 로 피해를 줄 때 확률적으로 해당 스킬의 재발동 시간이 초기화\n설탕의 <color=#ffd780>원소폭발</color> 을 발동하기에 효율적임"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2910,
+        "name": "방랑하는 저녁별",
+        "desc": "<p>학자가 천문 관측 및 계산에 사용했던 고대의 장치. 힘을 전달하는 능력이 있어서 법구로도 쓸 수 있다</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/12/194600931/350f5bf6ae4210be623556772c4c3836_7765467853434847828.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>방랑하는 저녁별</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>추천 이유</color>\n부 옵션: <color=#ffd780>원소 마스터리</color>\n무기 효과: 장착한 캐릭터의 <color=#ffd780>원소 마스터리</color> 에 비례하여 자신 및 파티 내 다른 캐릭터의 <color=#ffd780>공격력</color> 이 증가\n<color=#ffffff>기타 사항</color>\n픽업되어야만 얻을 수 있는 이벤트 기원 한정 무기"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2020,
+        "name": "페보니우스 비전",
+        "desc": "페보니우스 기사단 학자들 사이에서 전해 내려오는 비전. 원소와 물질의 이치와 힘을 기술하고 있다",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风秘典.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>페보니우스 비전</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>추천 이유</color>\n부 옵션: <color=#ffd780>원소 충전 효율</color>\n무기 효과: <color=#ffd780>치명타</color> 가 발생하면 일정 확률로 원소 구슬이 3개 생성됨(원소 에너지 6pt 회복)"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1931,
+        "name": "만국 항해용해도",
+        "desc": "대륙 주변의 해류 기후를 기록한 항해도, 이국에서 상로를 거쳐 리월로 전해져 온 기이한 서적이다",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/万国诸海图谱.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>만국 항해용해도</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>추천 이유</color>\n부 옵션: <color=#ffd780>원소 마스터리</color>\n무기 효과: 원소 반응 후 10초 동안 <color=#ffd780>원소 피해 보너스</color> 획득\n단조 무기로 무기의 선택 폭이 넓지 않을 경우 사용 가능"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "★5"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2966,
+        "name": "떠오르는 천일 밤의 꿈",
+        "desc": "<p>천일 밤의 꿈을 비추는 등잔. 푸른빛 속에 먼 곳의 노래가 흐르고 있다</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/01/194600931/afd146c520b3a0bd72489a3426d8f283_7758608658247886898.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>떠오르는 천일 밤의 꿈</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>추천 이유</color>\n부 옵션: <color=#ffd780>원소 마스터리</color>\n무기 효과: 장착 캐릭터와 파티 내 기타 캐릭터의 원소 타입 동일 여부에 따라 장착한 캐릭터에게 제공하는 효과가 달라짐, 같은 경우: <color=#ffd780>원소 마스터리</color> 증가, 다른 경우: 장착 캐릭터의 원소 타입의 <color=#ffd780>원소 피해 보너스</color> 증가, 파티 내 장착 캐릭터를 제외한 주변 캐릭터의 <color=#ffd780>원소 마스터리</color> 증가"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "추천 성유물"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "주 옵션 구성"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/1387f1512524772db99ae30b6303f939_5072609172935942900.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>원소 마스터리 / 원소 충전 효율</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/56451470fe75f710b812ac28e226273b_5774236690802856497.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>원소 마스터리</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/8bc07934c9290b83751c7fa183a43ab7_32021027934025390.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>원소 마스터리</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "4세트"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "청록색 그림자",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>청록색 그림자</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>세트 효과</color>\n2세트: <color=#80ffd7>바람 원소 피해 보너스</color> +15%\n4세트: <color=#ffd780>확산</color> 반응이 가하는 피해가 60% 증가, 확산되는 원소 타입에 따라 피해 범위 내 적의 해당 원소의 내성이 10초 동안 40% 감소"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2673,
+        "name": "도금된 꿈",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/25/194600931/ae8a2c6f24df66e1bd7cc2dbd83d330d_7270283489768806967.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>도금된 꿈</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>세트 효과</color>\n2세트: <color=#ffd780>원소 마스터리</color> +80\n4세트: 파티원의 원소 속성에 따라 장착한 캐릭터의 <color=#ffd780>공격력</color> 또는 <color=#ffd780>원소 마스터리</color> 가 증가\n2세트 효과\n대상 성유물\n<color=#ffd780>바람 원소 피해 보너스</color> +15%"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "청록색 그림자",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3322,
+        "name": "모래 위 누각의 역사",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/08/80830045/b86d9fd7cf57937a021c9c68c9b185ed_8559564959625388574.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>원소 마스터리</color> +80"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2081,
+        "name": "대지를 유랑하는 악단",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2673,
+        "name": "도금된 꿈",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/25/194600931/ae8a2c6f24df66e1bd7cc2dbd83d330d_7270283489768806967.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "잃어버린 낙원의 꽃",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/07/80830045/50ce09dfa5a91a33aa9cedfb15bcf2d1_3637856041128878699.png",
+        "displayStyle": "card"
+      },
       {
         "type": "Heading",
         "level": 2,
@@ -3743,272 +4009,6 @@
       {
         "type": "CustomVideo",
         "url": "https:/www.youtube.com/watch?v=5zt0CpEy_Cw"
-      },
-      {
-        "type": "RichText",
-        "text": "설탕은 우수한 확산 능력과 원소 마스터리 서포팅 능력으로 다양한 바람 원소가 필요한 파티에서 4성 서포터로 자주 채택되는 캐릭터이다. 증발, 융해, 빙결, 감전 등 여러 조합에 사용할 수 있기에 대표 파티는 딱히 서술하지 않는다."
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "추천 무기"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "★3"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2022,
-        "name": "드래곤 슬레이어 영웅담",
-        "desc": "드래곤을 퇴치하는 모험길에 오른 다섯 영웅의 이야기를 다룬 소설. 글솜씨가 형편없고 문장 구조가 엉망이다. 실패의 교훈은 이 책이 보유한 위대한 힘이다",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/讨龙英杰谭.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>드래곤 슬레이어 영웅담</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>추천 이유</color>\n부 옵션: <color=#ffd780>HP 백분율</color>\n무기 효과: 스스로 캐릭터를 교체 시 새로 등장한 캐릭터의 <color=#ffd780>공격력</color> 증가\n기원에서 쉽게 획득할 수 있으므로 초기 무기로 쓰기에 적합함"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2050,
-        "name": "마도 서론",
-        "desc": "제12판. 시대 발전에 따라 새로운 내용을 추가하고 제11판의 오탈자를 수정하였다",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/魔导绪论.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>마도 서론</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>추천 이유</color>\n부 옵션: <color=#ffd780>원소 마스터리</color>\n무기 효과: <color=#80c0ff>물 원소</color> / <color=#ffacff>번개 원소</color> 의 영향을 받은 적에게 가하는 피해가 증가\n모든 기원에서 획득할 수 있으므로 초기 무기로 쓰기에 적합함"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "★4"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2006,
-        "name": "제례의 악장",
-        "desc": "오랜 역사를 지닌 대본. 기재된 찬송가와 극본은 더 이상 식별이 불가능하다. 시간의 바람에 침식되어 파괴된 저주를 받았다",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/祭礼残章.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>제례의 악장</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>추천 이유</color>\n부 옵션: <color=#ffd780>원소 마스터리</color>\n무기 효과: <color=#ffd780>원소전투 스킬</color> 로 피해를 줄 때 확률적으로 해당 스킬의 재발동 시간이 초기화\n설탕의 <color=#ffd780>원소폭발</color> 을 발동하기에 효율적임"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2910,
-        "name": "방랑하는 저녁별",
-        "desc": "<p>학자가 천문 관측 및 계산에 사용했던 고대의 장치. 힘을 전달하는 능력이 있어서 법구로도 쓸 수 있다</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/12/194600931/350f5bf6ae4210be623556772c4c3836_7765467853434847828.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>방랑하는 저녁별</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>추천 이유</color>\n부 옵션: <color=#ffd780>원소 마스터리</color>\n무기 효과: 장착한 캐릭터의 <color=#ffd780>원소 마스터리</color> 에 비례하여 자신 및 파티 내 다른 캐릭터의 <color=#ffd780>공격력</color> 이 증가\n<color=#ffffff>기타 사항</color>\n픽업되어야만 얻을 수 있는 이벤트 기원 한정 무기"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2020,
-        "name": "페보니우스 비전",
-        "desc": "페보니우스 기사단 학자들 사이에서 전해 내려오는 비전. 원소와 물질의 이치와 힘을 기술하고 있다",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风秘典.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>페보니우스 비전</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>추천 이유</color>\n부 옵션: <color=#ffd780>원소 충전 효율</color>\n무기 효과: <color=#ffd780>치명타</color> 가 발생하면 일정 확률로 원소 구슬이 3개 생성됨(원소 에너지 6pt 회복)"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1931,
-        "name": "만국 항해용해도",
-        "desc": "대륙 주변의 해류 기후를 기록한 항해도, 이국에서 상로를 거쳐 리월로 전해져 온 기이한 서적이다",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/万国诸海图谱.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>만국 항해용해도</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>추천 이유</color>\n부 옵션: <color=#ffd780>원소 마스터리</color>\n무기 효과: 원소 반응 후 10초 동안 <color=#ffd780>원소 피해 보너스</color> 획득\n단조 무기로 무기의 선택 폭이 넓지 않을 경우 사용 가능"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "★5"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2966,
-        "name": "떠오르는 천일 밤의 꿈",
-        "desc": "<p>천일 밤의 꿈을 비추는 등잔. 푸른빛 속에 먼 곳의 노래가 흐르고 있다</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/01/194600931/afd146c520b3a0bd72489a3426d8f283_7758608658247886898.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>떠오르는 천일 밤의 꿈</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>추천 이유</color>\n부 옵션: <color=#ffd780>원소 마스터리</color>\n무기 효과: 장착 캐릭터와 파티 내 기타 캐릭터의 원소 타입 동일 여부에 따라 장착한 캐릭터에게 제공하는 효과가 달라짐, 같은 경우: <color=#ffd780>원소 마스터리</color> 증가, 다른 경우: 장착 캐릭터의 원소 타입의 <color=#ffd780>원소 피해 보너스</color> 증가, 파티 내 장착 캐릭터를 제외한 주변 캐릭터의 <color=#ffd780>원소 마스터리</color> 증가"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "추천 성유물"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "주 옵션 구성"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/1387f1512524772db99ae30b6303f939_5072609172935942900.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>원소 마스터리 / 원소 충전 효율</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/56451470fe75f710b812ac28e226273b_5774236690802856497.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>원소 마스터리</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/8bc07934c9290b83751c7fa183a43ab7_32021027934025390.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>원소 마스터리</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "4세트"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2091,
-        "name": "청록색 그림자",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>청록색 그림자</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>세트 효과</color>\n2세트: <color=#80ffd7>바람 원소 피해 보너스</color> +15%\n4세트: <color=#ffd780>확산</color> 반응이 가하는 피해가 60% 증가, 확산되는 원소 타입에 따라 피해 범위 내 적의 해당 원소의 내성이 10초 동안 40% 감소"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2673,
-        "name": "도금된 꿈",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/25/194600931/ae8a2c6f24df66e1bd7cc2dbd83d330d_7270283489768806967.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>도금된 꿈</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>세트 효과</color>\n2세트: <color=#ffd780>원소 마스터리</color> +80\n4세트: 파티원의 원소 속성에 따라 장착한 캐릭터의 <color=#ffd780>공격력</color> 또는 <color=#ffd780>원소 마스터리</color> 가 증가\n2세트 효과\n대상 성유물\n<color=#ffd780>바람 원소 피해 보너스</color> +15%"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2091,
-        "name": "청록색 그림자",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3322,
-        "name": "모래 위 누각의 역사",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/08/80830045/b86d9fd7cf57937a021c9c68c9b185ed_8559564959625388574.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>원소 마스터리</color> +80"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2081,
-        "name": "대지를 유랑하는 악단",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2673,
-        "name": "도금된 꿈",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/25/194600931/ae8a2c6f24df66e1bd7cc2dbd83d330d_7270283489768806967.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3321,
-        "name": "잃어버린 낙원의 꽃",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/07/80830045/50ce09dfa5a91a33aa9cedfb15bcf2d1_3637856041128878699.png",
-        "displayStyle": "card"
       }
     ]
   }
