@@ -6,105 +6,731 @@
   "headerImgUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/c199cc7559c343114d8dfdc075a8b253_6528018387235574538.png",
   "filterValues": {
     "characterVision": "Rüzgar",
-    "characterRarity": 5,
-    "characterProperty": "Kritik Oranı",
+    "characterRegion": "Natlan",
     "characterWeapon": "Yay",
-    "characterRegion": "Natlan"
+    "characterProperty": "Kritik Oranı",
+    "characterRarity": 5
   },
   "menuId": 2,
   "menuName": "Karakter Arşivi",
   "version": 1743768378,
   "components": {
-    "customize": [
+    "talent": [
       {
-        "type": "Heading",
-        "level": 3,
-        "text": "Yetenek Önizlemesi",
-        "alignment": "center"
+        "title": "Normal Saldırı: Hayalet Tüy Fırtınası",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/56a7afb2342c71f6d852a1470599e4e6_9122686524617582783.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Normal Saldırı</color>\nArka arkaya en fazla 4 ok atar.\n<color=#ffd780>Yüklü Saldırı</color>\nDaha isabetli ve daha yüksek Hasar veren bir <color=#ffd780>Hedefli Atış</color> yapar.\nNişan alırken okun ucunda güçlü rüzgarlar toplanır. Tam yüklü bu rüzgar oku <color=#80ffd7>Rüzgar Hasarı</color> verir.\n<color=#ffd780>Havadan Saldırı</color>\nHavadayken yaylım ok atışı yapar ve dalışa geçerek yere vurur. Yoluna çıkan düşmanlara saldırır ve yere vurduğunda Alan Hasarı verir."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Seviye",
+            "values": [
+              "Sv. 1",
+              "Sv. 2",
+              "Sv. 3",
+              "Sv. 4",
+              "Sv. 5",
+              "Sv. 6",
+              "Sv. 7",
+              "Sv. 8",
+              "Sv. 9",
+              "Sv. 10",
+              "Sv. 11"
+            ]
+          },
+          {
+            "key": "1 Vuruş Hasarı",
+            "values": [
+              "48.0%",
+              "51.9%",
+              "55.8%",
+              "61.4%",
+              "65.3%",
+              "69.8%",
+              "75.9%",
+              "82.1%",
+              "88.2%",
+              "94.9%",
+              "101.6%"
+            ]
+          },
+          {
+            "key": "2 Vuruş Hasarı",
+            "values": [
+              "44.6%",
+              "48.2%",
+              "51.8%",
+              "57.0%",
+              "60.7%",
+              "64.8%",
+              "70.5%",
+              "76.2%",
+              "81.9%",
+              "88.1%",
+              "94.4%"
+            ]
+          },
+          {
+            "key": "3 Vuruş Hasarı",
+            "values": [
+              "29.7%×2",
+              "32.1%×2",
+              "34.5%×2",
+              "38.0%×2",
+              "40.4%×2",
+              "43.2%×2",
+              "47%×2",
+              "50.8%×2",
+              "54.6%×2",
+              "58.7%×2",
+              "62.8%×2"
+            ]
+          },
+          {
+            "key": "4 Vuruş Hasarı",
+            "values": [
+              "25.5%×3",
+              "27.5%×3",
+              "29.6%×3",
+              "32.6%×3",
+              "34.6%×3",
+              "37.0%×3",
+              "40.3%×3",
+              "43.5%×3",
+              "46.8%×3",
+              "50.3%×3",
+              "53.9%×3"
+            ]
+          },
+          {
+            "key": "Hedefli Atış",
+            "values": [
+              "43.9%",
+              "47.4%",
+              "51.0%",
+              "56.1%",
+              "59.7%",
+              "63.7%",
+              "69.4%",
+              "75.0%",
+              "80.6%",
+              "86.7%",
+              "92.8%"
+            ]
+          },
+          {
+            "key": "Tam Yüklü Hedefli Atış",
+            "values": [
+              "124%",
+              "133%",
+              "143%",
+              "155%",
+              "164%",
+              "174%",
+              "186%",
+              "198%",
+              "211%",
+              "223%",
+              "236%"
+            ]
+          },
+          {
+            "key": "Havadan Saldırı Hasarı",
+            "values": [
+              "56.8%",
+              "61.5%",
+              "66.1%",
+              "72.7%",
+              "77.3%",
+              "82.6%",
+              "89.9%",
+              "97.1%",
+              "104.4%",
+              "112.3%",
+              "120.3%"
+            ]
+          },
+          {
+            "key": "Havadan Saldırı Hasarı (Alçaktan/Yüksekten)",
+            "values": [
+              "114%/142%",
+              "123%/153%",
+              "132%/165%",
+              "145%/182%",
+              "155%/193%",
+              "165%/206%",
+              "180%/224%",
+              "194%/243%",
+              "209%/261%",
+              "225%/281%",
+              "240%/300%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6636,
+              "name": "Çatışma Öğretisi",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/31e0fb8ed2120df951fe06efcd0963fb_6568355953413205343.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6641,
+              "name": "Genç Diş",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/a82d4e52935240423e3dcc08c90631b0_1942553608314934807.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6637,
+              "name": "Çatışma Rehberi",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/588ba8fccf6bdf8c389944ab2f8a9a97_4178406770150882378.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6642,
+              "name": "Tecrübeli Diş",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/ab4a7925734a4044b28c790d26ce5f5d_6697062725880564949.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6637,
+              "name": "Çatışma Rehberi",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/588ba8fccf6bdf8c389944ab2f8a9a97_4178406770150882378.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6642,
+              "name": "Tecrübeli Diş",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/ab4a7925734a4044b28c790d26ce5f5d_6697062725880564949.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6637,
+              "name": "Çatışma Rehberi",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/588ba8fccf6bdf8c389944ab2f8a9a97_4178406770150882378.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6642,
+              "name": "Tecrübeli Diş",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/ab4a7925734a4044b28c790d26ce5f5d_6697062725880564949.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6637,
+              "name": "Çatışma Rehberi",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/588ba8fccf6bdf8c389944ab2f8a9a97_4178406770150882378.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6642,
+              "name": "Tecrübeli Diş",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/ab4a7925734a4044b28c790d26ce5f5d_6697062725880564949.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6638,
+              "name": "Çatışma Felsefesi",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/e43683bca9072ec8eb5c79af1c36ae32_4685972103395859870.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6643,
+              "name": "Tiranın Dişi",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/fc94200643164906c34fc8c48f288ae9_6351191104238102456.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 5606,
+              "name": "İpek Tüy",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/24/35428890/da99b97d2e27560f02c024f9b1ff5190_3242617698599872389.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6638,
+              "name": "Çatışma Felsefesi",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/e43683bca9072ec8eb5c79af1c36ae32_4685972103395859870.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6643,
+              "name": "Tiranın Dişi",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/fc94200643164906c34fc8c48f288ae9_6351191104238102456.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 5606,
+              "name": "İpek Tüy",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/24/35428890/da99b97d2e27560f02c024f9b1ff5190_3242617698599872389.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6638,
+              "name": "Çatışma Felsefesi",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/e43683bca9072ec8eb5c79af1c36ae32_4685972103395859870.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6643,
+              "name": "Tiranın Dişi",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/fc94200643164906c34fc8c48f288ae9_6351191104238102456.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 5606,
+              "name": "İpek Tüy",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/24/35428890/da99b97d2e27560f02c024f9b1ff5190_3242617698599872389.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6638,
+              "name": "Çatışma Felsefesi",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/e43683bca9072ec8eb5c79af1c36ae32_4685972103395859870.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6643,
+              "name": "Tiranın Dişi",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/fc94200643164906c34fc8c48f288ae9_6351191104238102456.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 5606,
+              "name": "İpek Tüy",
+              "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/24/35428890/da99b97d2e27560f02c024f9b1ff5190_3242617698599872389.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "Bilgelik Tacı",
+              "desc": "A precious Talent Level-Up material.<br/>Once a medium for the storage and transfer of wisdom in ancient times. Now, wisdom is found in ancient texts and in profound speech. Nevertheless, this Crown of Insight must still be able to impart some transcendent power and wisdom to its bearer.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/6ba2d2d2d93b633f126ba84bdb554fd2_7588684814955802661.gif"
       },
       {
-        "type": "RichText",
-        "text": "Chasca; 5 yıldızlı, <color=#ffd780>Yay</color> kullanan ve <color=#80ffd7>Rüzgar</color> elementine sahip bir karakterdir. Natlan'lı olduğu için <color=#ffd780>Gece Ruhu'nun Lütfuna</color> sahiptir. Chasca, savaş alanında yüksek <color=#80ffd7>Tek Hedefli Rüzgar Hasarı</color> vermeye odaklanır ve <color=#ffd780>Atak</color> değeri ile güçlenir.\nChasca'nın <color=#ffd780>Element Becerisi</color> , takımındaki diğer karakterlerin sahip olduğu element tipine göre değişir. Takımında ne kadar fazla türden element bulundurursan Chasca'nın <color=#ffd780>Element Becerisi</color> silahına o kadar fazla ve farklı türde <color=#ffd780>Parıltılı Gölge Avı Mermileri</color> yükler. Bu mermiler <color=#80c0ff>Su</color> , <color=#ff9999>Ateş</color> , <color=#ffacff>Elektrik</color> veya <color=#99ffff>Buz</color> olabilir. <color=#ffd780>Gölge Avı Mermileri</color> ise sadece <color=#80ffd7>Rüzgar</color> olabilir. <color=#ffd780>Gölge Avı Mermileri, Parıltılı Gölge Avı Mermilerinden</color> çok daha az hasar verir, bu yüzden takımınızdaki diğer üç karakterin <color=#80ffd7>Rüzgar</color> , <color=#ffe699>Toprak</color> ve <color=#99ff88>Doğa</color> olmamasına dikkat edin. Aynı elementteki birden fazla karakterler de <color=#ffd780>Parıltılı Gölge Avı Mermi</color> sayısını azaltabileceğinden takımınıza çeşitlilik katmaya çalışın.\nChasca'nın <color=#ffd780>Element Patlaması</color> da <color=#ffd780>Element Becerisine</color> çok benzeyen ve aynı prensiplerle çalışan bir yetenektir. Bu yeteneği her rotasyonda kullanmak zorunda değilsiniz."
+        "title": "Ruh Dizginleri, Gölge Avı",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/7712585d92b184c1a74201c2f850f5d5_5823619324518461735.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Chasca, silahındaki irade ile etkileşime girerek Gece Ruhu tesirli <color=#80ffd7>Rüzgar Alan Hasarı</color> verir.\nBu Beceriyi kullandıktan sonra Chasca 80 Gece Ruhu puanı kazanır ve Gece Ruhunun Lütfu durumuna girer.\n<color=#ffd780>Gece Ruhunun Lütfu: Chasca</color>\nSürekli olarak Gece Ruhu puanı tüketir. Gece Ruhu puanları tamamen tükendiğinde veya beceri tekrar kullanıldığında Chasca'nın Gece Ruhunun Lütfu durumu sona erer. Gece Ruhunun Lütfunun şu etkileri vardır:\n·Chasca, \"Ruh Nişancısı: Ayin Asası\"na binerek Hareket Hızı ve Müdahale Direnci kazanır. Bu durumdayken Chasca havada kalmak için sürekli olarak Gece Ruhu puanı tüketir. Depar atarken veya havada yükselirken ekstra Gece Ruhu puanı tüketilir.\n·Normal veya Yüklü Saldırı yaparken \"Çoklu Hedefleme\"sini farklı şekillerde kullanmak için Dokun veya Basılı Tut.\n<color=#ffd780>Çoklu Hedefleme</color>\n<color=#ffd780>Dokun</color>\nÖnündeki düşmanlara Gece Ruhu tesirli <color=#80ffd7>Rüzgar Hasarı</color> verir. Bu Hasar, Normal Saldırı Hasarı sayılır.\n<color=#ffd780>Basılı Tut</color>\nNişan Alma Moduna girer, belirli bir menzil içindeki belirli sayıda düşmanı seçer ve ardından becerinin yüklenme süresine göre en fazla 6 tane Gölge Avı Mermisi yükler. 6 Mermi yüklendikten veya yükleme durdurulduktan sonra bu Mermiler, seçilen düşmanlara sırayla ateşlenir.\n<color=#ffd780>Gölge Avı Mermileri</color>\n·Gece Ruhu tesirli <color=#80ffd7>Rüzgar Hasarı</color> verir. Bu Hasar, Yüklü Saldırı Hasarı sayılır.\n·Silindire yüklenen 4., 5. ve 6. Mermiler, gruptaki diğer karakterlerin Element Türüne göre Element Dönüşümü geçirir. Gruptaki her <color=#ff9999>Ateş</color> , <color=#80c0ff>Su</color> , <color=#99ffff>Buz</color> veya <color=#ffacff>Elektrik</color> karakteri için bir Gölge Avı Mermisi rastgele olarak ilgili Element Türlerinden birinde \"Parıltılı Gölge Avı Mermisi\"ne dönüşür ve bu Element Türünde Gece Ruhu tesirli Hasar verir. Bu Hasar, Yüklü Saldırı Hasarı sayılır.\n·Silindire yüklenen mermiler, \"son giren ilk çıkar\" kaidesine göre son yüklenen Gölge Avı Mermisinden başlanarak ateşlenir.\nAyrıca Chasca Gece Ruhunun Lütfu durumundayken <color=#ffd780>Ruh Dizginleri, Gölge Avı</color> Element Becerisine Basılı Tutulduğunda Gece Ruhu tesirli bir Havadan Saldırı gerçekleştirir. Element Becerisi bırakıldığında bu Havadan Saldırı yarıda kesilir ve Chasca havada durmaya devam eder. Chasca, Havadan Saldırısıyla yere vurursa Gece Ruhunun Lütfu durumu sona erer.\nTeorik olarak o istediği sürece bu dizginler her şeyi kontrol altında tutabilir... Ancak devasa bir el topundan daha havalı ne olabilir ki?"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Seviye",
+            "values": [
+              "Sv. 1",
+              "Sv. 2",
+              "Sv. 3",
+              "Sv. 4",
+              "Sv. 5",
+              "Sv. 6",
+              "Sv. 7",
+              "Sv. 8",
+              "Sv. 9",
+              "Sv. 10",
+              "Sv. 11",
+              "Sv. 12",
+              "Sv. 13"
+            ]
+          },
+          {
+            "key": "Rezonans Hasarı",
+            "values": [
+              "60.0%",
+              "64.5%",
+              "69.0%",
+              "75.0%",
+              "79.5%",
+              "84.0%",
+              "90.0%",
+              "96.0%",
+              "102.0%",
+              "108.0%",
+              "114.0%",
+              "120.0%",
+              "127.5%"
+            ]
+          },
+          {
+            "key": "Çoklu Hedefleme Basma Hasarı",
+            "values": [
+              "36.0%",
+              "38.7%",
+              "41.4%",
+              "45.0%",
+              "47.7%",
+              "50.4%",
+              "54.0%",
+              "57.6%",
+              "61.2%",
+              "64.8%",
+              "68.4%",
+              "72.0%",
+              "76.5%"
+            ]
+          },
+          {
+            "key": "Gölge Avı Mermisi Hasarı",
+            "values": [
+              "48.8%",
+              "52.5%",
+              "56.1%",
+              "61.0%",
+              "64.7%",
+              "68.3%",
+              "73.2%",
+              "78.1%",
+              "83.0%",
+              "87.8%",
+              "92.7%",
+              "97.6%",
+              "103.7%"
+            ]
+          },
+          {
+            "key": "Parıltılı Gölge Avı Mermisi Hasarı",
+            "values": [
+              "166.6%",
+              "179.1%",
+              "191.6%",
+              "208.2%",
+              "220.7%",
+              "233.2%",
+              "249.9%",
+              "266.5%",
+              "283.2%",
+              "299.8%",
+              "316.5%",
+              "333.1%",
+              "354.0%"
+            ]
+          },
+          {
+            "key": "Gece Ruhu Puanı Sınırı",
+            "values": [
+              "80.0",
+              "80.0",
+              "80.0",
+              "80.0",
+              "80.0",
+              "80.0",
+              "80.0",
+              "80.0",
+              "80.0",
+              "80.0",
+              "80.0",
+              "80.0",
+              "80.0"
+            ]
+          },
+          {
+            "key": "BS",
+            "values": [
+              "6.5sn",
+              "6.5sn",
+              "6.5sn",
+              "6.5sn",
+              "6.5sn",
+              "6.5sn",
+              "6.5sn",
+              "6.5sn",
+              "6.5sn",
+              "6.5sn",
+              "6.5sn",
+              "6.5sn",
+              "6.5sn"
+            ]
+          }
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/3fd717d3ac4076d099a81b5ede540a71_3856754933843033050.gif"
       },
       {
-        "type": "CustomEntry",
-        "epId": 7080,
-        "name": "Chasca",
-        "desc": "Tüm anlaşmazlıkları sonlandıran, Tlalocan'ın Ara Bulucusu.",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/abe1192cc7aad45f6b273478dd5fa88a_4799372826012752249.png",
-        "displayStyle": "card",
-        "menuId": 2
+        "title": "Ruh Biçenin Ölümcül Darbesi",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/e952d402fc1b409949263c6e999f06c2_5480362557350700821.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Chasca, iradesini yoğunlaştırıp Gece Ruhu tesirli <color=#80ffd7>Rüzgar Alan Hasarı</color> veren bir \"Fırtına Yaran Ruh Avcısı Mermi\" ateşler. Daha sonra \"Fırtına Yaran Ruh Avcısı Mermi\" 6 Ruh Avcısı Mermiye bölünüp yakındaki düşmanlara saldırır.\n<color=#ffd780>Ruh Avcısı Mermiler</color>\n·Gece Ruhu tesirli <color=#80ffd7>Rüzgar Hasarı</color> verir.\n·Gruptaki her <color=#ff9999>Ateş</color> , <color=#80c0ff>Su</color> , <color=#99ffff>Buz</color> veya <color=#ffacff>Elektrik</color> karakteri için iki Ruh Avcısı Mermi, Element Dönüşümü geçirip \"Parlak Ruh Avcısı Mermi\"ye dönüşür. Bu Mermiler, karşılık gelen rastgele bir Element Türünde Gece Ruhu tesirli Element Hasarı verir.\nNasıl ki ay ışığından veya gecenin ardı arkası kesilmeyen fısıltılarından kimse kaçamıyorsa onun görüş alanına giren bir düşman için de artık kaçış yoktur."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Seviye",
+            "values": [
+              "Sv. 1",
+              "Sv. 2",
+              "Sv. 3",
+              "Sv. 4",
+              "Sv. 5",
+              "Sv. 6",
+              "Sv. 7",
+              "Sv. 8",
+              "Sv. 9",
+              "Sv. 10",
+              "Sv. 11",
+              "Sv. 12",
+              "Sv. 13"
+            ]
+          },
+          {
+            "key": "Fırtına Yaran Ruh Avcısı Mermi Hasarı",
+            "values": [
+              "88.0%",
+              "94.6%",
+              "101.2%",
+              "110.0%",
+              "116.6%",
+              "123.2%",
+              "132.0%",
+              "140.8%",
+              "149.6%",
+              "158.4%",
+              "167.2%",
+              "176.0%",
+              "187.0%"
+            ]
+          },
+          {
+            "key": "Ruh Avcısı Mermi Hasarı",
+            "values": [
+              "103.4%",
+              "111.2%",
+              "118.9%",
+              "129.3%",
+              "137.0%",
+              "144.8%",
+              "155.1%",
+              "165.4%",
+              "175.8%",
+              "186.1%",
+              "196.5%",
+              "206.8%",
+              "219.7%"
+            ]
+          },
+          {
+            "key": "Parlak Ruh Avcısı Mermi Hasarı",
+            "values": [
+              "206.8%",
+              "222.3%",
+              "237.8%",
+              "258.5%",
+              "274.0%",
+              "289.5%",
+              "310.2%",
+              "330.9%",
+              "351.6%",
+              "372.2%",
+              "392.9%",
+              "413.6%",
+              "439.5%"
+            ]
+          },
+          {
+            "key": "BS",
+            "values": [
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn",
+              "15.0sn"
+            ]
+          },
+          {
+            "key": "Enerji Maliyeti",
+            "values": [
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60"
+            ]
+          }
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/aa6ff388f63f4eb50130a01e7205aea8_6247357775849979776.gif"
       },
       {
-        "type": "CustomEntry",
-        "epId": 26,
-        "name": "Bennett",
-        "desc": "<p>Ne yazık ki son derece şanssız, Mondstadtlı iyi huylu bir maceracı.</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Bennett_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
+        "title": "Mermi Numarası",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/300425ce4324f341ec37647756b2a147_1856820525679803265.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Ruh Dizginleri, Gölge Avı</color> Element Becerisinin <color=#ffd780>Çoklu Hedeflemesi</color> yükleniyorken Element Dönüşümü Türü şartlarını karşılayan grup üyeleri varsa uygun Element Türü sayısına bağlı olarak şu etkiler elde edilir:\n·%33,3/%66,7/%100 ihtimalle her bir Element Türü, \"Ruh Bağlama Dönüşümü\" tetikleyebilir ve silindire yüklenen 3. <color=#ffd780>Gölge Avı Mermisinin</color> , karşılık gelen Element Türlerinden rastgele birinde <color=#ffd780>Parıltılı Gölge Avı Mermisine</color> dönüşmesini sağlayabilir.\n·Her Element Türü Chasca'ya 1 Parlak Gölge Ruhu kademesi kazandırır ve Parıltılı Gölge Avı Mermisinin Hasarı %15/%35/%65 artar. Bu etki mevcut Çoklu Hedefleme sona erene kadar sürer. 3 kademeye kadar birikir."
+          }
+        ],
+        "attributes": null
       },
       {
-        "type": "CustomEntry",
-        "epId": 7079,
-        "name": "Ororon",
-        "desc": "Gece Rüzgarının Ustalarından genç bir adam. Doğada her türden canlıyla birlikte yaşar.",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/e4830690f8b6a1ebb02cfbc8ce955671_8091252479018770784.png",
-        "displayStyle": "card",
-        "menuId": 2
+        "title": "Koruma İçgüdüsü",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/d754071314b91566cc0e966ed555ac46_906040474221749640.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Yakındaki bir grup üyesi bir Gece Ruhu Patlaması tetiklediğinde Chasca, yakındaki bir düşmana bir \"Alevli Gölge Avı Atışı\" yapar ve <color=#ffd780>Ruh Dizginleri, Gölge Avı</color> Element Becerisinin <color=#ffd780>Gölge Avı Mermisi</color> ile verilen Hasarın %150'si kadar Gece Ruhu tesirli <color=#80ffd7>Rüzgar Hasarı</color> verir. Eğer grupta <color=#ff9999>Ateş</color> , <color=#80c0ff>Su</color> , <color=#99ffff>Buz</color> veya <color=#ffacff>Elektrik</color> karakterleri varsa Alevli Gölge Avı Atışı dönüşerek <color=#ffd780>Ruh Dizginleri, Gölge Avı</color> Becerisinin <color=#ffd780>Parıltılı Gölge Avı Mermisi</color> ile verilen Hasarın %150'si kadar ilgili Element Türünde Gece Ruhu tesirli Element Hasarı verir.\nBu şekilde verilen Hasar, Yüklü Saldırı Hasarı sayılır."
+          }
+        ],
+        "attributes": null
       },
       {
-        "type": "CustomEntry",
-        "epId": 37,
-        "name": "Mona",
-        "desc": "<p>Kendisini \"Astrolog Mona Megistus\" olarak tanıtan ve bu unvana uygun yeteneklere sahip gizemli genç bir astrolog. Bilgili olmasına karşın kibirlidir.</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
+        "title": "Gece Diyarının Armağanı: Her Daim Yanan Kalp",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/6dbd63e93d8e5ddeefe8ddb94d74d31a_7497168377176291080.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Chasca, Gece Ruhu puanları tükendiğinde Filojiston harcayarak Gece Ruhunun Lütfu durumunda kalmaya devam eder.\nChasca, Natlan'da Filojiston Mekanikleri bulunan bir bölgedeyken \"Gece Ruhu Aktarımı: Chasca\" kullanabilir. Aktif karakter havadayken Chasca'ya geçildiğinde şu etkiler tetiklenir: Chasca Gece Ruhunun Lütfu durumuna girer ve 32 Gece Ruhu puanı kazanır. Gece Ruhu Aktarımı kendi takımın tarafından 10 saniyede bir tetiklenebilir."
+          }
+        ],
+        "attributes": null
       },
       {
-        "type": "RichText",
-        "text": "Bir Chasca takımı örneği. Chasca ana Hasar kaynağı olarak görev görürken diğer karakterler Chasca'yı destekler."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 7080,
-        "name": "Chasca",
-        "desc": "Tüm anlaşmazlıkları sonlandıran, Tlalocan'ın Ara Bulucusu.",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/abe1192cc7aad45f6b273478dd5fa88a_4799372826012752249.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 7299,
-        "name": "Mavuika",
-        "desc": "Natlan'ın \"Kiongozi\" Kadim Adını miras alan lideri. Savaş ulusunun geleceğini Kutsal Alev ile aydınlatmaya yemin etmiştir.",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/30/2f098b1f15854fd9dafc54998795a59e_864981592196815761.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 4376,
-        "name": "Furina",
-        "desc": "<p>Son alkış gelene dek mahkeme sahnesinin sarsılmaz odak noktası.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/138687708/263e5ea0784d182b393f67a7e24146a5_3907189629383514271.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 26,
-        "name": "Bennett",
-        "desc": "<p>Ne yazık ki son derece şanssız, Mondstadtlı iyi huylu bir maceracı.</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Bennett_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "Bir Chasca takım örneği. Burda Mavuika ve Bennett aynı elementten olsalar da takım hep birlikte Chasca'yı oldukça güçlendirdiği için sorun teşkil etmiyor."
+        "title": "Ara Buluculuğun Asıl Anlamı",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/05b6ee6214f7695afd1001f1e158650d_6567864486033460374.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Kendi grup üyelerin bir düşman yendiğinde <color=#ffd780>Filojiston</color> yenilenir. Bu etki her 12 saniyede bir tetiklenebilir.\nBu etki Zindanlarda, Ezici Zindanlarda veya Hiçlik Sarmalında tetiklenemez."
+          }
+        ],
+        "attributes": null
       }
     ],
     "voice": [
@@ -1653,7 +2279,7 @@
             "type": "CustomEntry",
             "epId": 6641,
             "name": "Genç Diş",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/a82d4e52935240423e3dcc08c90631b0_3291412708255800192.png",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/a82d4e52935240423e3dcc08c90631b0_1942553608314934807.png",
             "amount": 3
           },
           {
@@ -1732,7 +2358,7 @@
             "type": "CustomEntry",
             "epId": 6641,
             "name": "Genç Diş",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/a82d4e52935240423e3dcc08c90631b0_3291412708255800192.png",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/a82d4e52935240423e3dcc08c90631b0_1942553608314934807.png",
             "amount": 15
           },
           {
@@ -1811,7 +2437,7 @@
             "type": "CustomEntry",
             "epId": 6642,
             "name": "Tecrübeli Diş",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/ab4a7925734a4044b28c790d26ce5f5d_9207762203506691121.png",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/ab4a7925734a4044b28c790d26ce5f5d_6697062725880564949.png",
             "amount": 12
           },
           {
@@ -1890,7 +2516,7 @@
             "type": "CustomEntry",
             "epId": 6642,
             "name": "Tecrübeli Diş",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/ab4a7925734a4044b28c790d26ce5f5d_9207762203506691121.png",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/ab4a7925734a4044b28c790d26ce5f5d_6697062725880564949.png",
             "amount": 18
           },
           {
@@ -1969,7 +2595,7 @@
             "type": "CustomEntry",
             "epId": 6643,
             "name": "Tiranın Dişi",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/fc94200643164906c34fc8c48f288ae9_5175161204087445575.png",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/fc94200643164906c34fc8c48f288ae9_6351191104238102456.png",
             "amount": 12
           },
           {
@@ -2048,7 +2674,7 @@
             "type": "CustomEntry",
             "epId": 6643,
             "name": "Tiranın Dişi",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/fc94200643164906c34fc8c48f288ae9_5175161204087445575.png",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/25/35428890/fc94200643164906c34fc8c48f288ae9_6351191104238102456.png",
             "amount": 24
           },
           {
@@ -2100,838 +2726,6 @@
             ]
           }
         ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "İsim",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Chasca"
-          }
-        ]
-      },
-      {
-        "key": "Doğum Günü",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "12/10"
-          }
-        ]
-      },
-      {
-        "key": "Takımyıldızları",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Dağ Kondoru"
-          }
-        ]
-      },
-      {
-        "key": "Künye",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Göklerin Hakemi"
-          }
-        ]
-      },
-      {
-        "key": "Önsezi",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Rüzgar"
-          }
-        ]
-      },
-      {
-        "key": "İlişki",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Tlalocan"
-          }
-        ]
-      },
-      {
-        "key": "Çince Ses.",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "张若瑜"
-          }
-        ]
-      },
-      {
-        "key": "Japonca Ses.",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "甲斐田裕子"
-          }
-        ]
-      },
-      {
-        "key": "İngilizce Ses.",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Lauren Amante"
-          }
-        ]
-      },
-      {
-        "key": "Korece Ses.",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Soo-hyun"
-          }
-        ]
-      },
-      {
-        "key": "Özel Tarif",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 7184,
-            "name": "Sükunet Anı",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/19/12108544/99431787680846e9d51053b1caad979f_658580668859793430.png",
-            "amount": 1
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "İlk Çıktığı Versiyon",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "5.2"
-          }
-        ]
-      }
-    ],
-    "talent": [
-      {
-        "title": "Normal Saldırı: Hayalet Tüy Fırtınası",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/56a7afb2342c71f6d852a1470599e4e6_9122686524617582783.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Normal Saldırı</color>\nArka arkaya en fazla 4 ok atar.\n<color=#ffd780>Yüklü Saldırı</color>\nDaha isabetli ve daha yüksek Hasar veren bir <color=#ffd780>Hedefli Atış</color> yapar.\nNişan alırken okun ucunda güçlü rüzgarlar toplanır. Tam yüklü bu rüzgar oku <color=#80ffd7>Rüzgar Hasarı</color> verir.\n<color=#ffd780>Havadan Saldırı</color>\nHavadayken yaylım ok atışı yapar ve dalışa geçerek yere vurur. Yoluna çıkan düşmanlara saldırır ve yere vurduğunda Alan Hasarı verir."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Seviye",
-            "values": [
-              "Sv. 1",
-              "Sv. 2",
-              "Sv. 3",
-              "Sv. 4",
-              "Sv. 5",
-              "Sv. 6",
-              "Sv. 7",
-              "Sv. 8",
-              "Sv. 9",
-              "Sv. 10",
-              "Sv. 11"
-            ]
-          },
-          {
-            "key": "1 Vuruş Hasarı",
-            "values": [
-              "48.0%",
-              "51.9%",
-              "55.8%",
-              "61.4%",
-              "65.3%",
-              "69.8%",
-              "75.9%",
-              "82.1%",
-              "88.2%",
-              "94.9%",
-              "101.6%"
-            ]
-          },
-          {
-            "key": "2 Vuruş Hasarı",
-            "values": [
-              "44.6%",
-              "48.2%",
-              "51.8%",
-              "57.0%",
-              "60.7%",
-              "64.8%",
-              "70.5%",
-              "76.2%",
-              "81.9%",
-              "88.1%",
-              "94.4%"
-            ]
-          },
-          {
-            "key": "3 Vuruş Hasarı",
-            "values": [
-              "29.7%×2",
-              "32.1%×2",
-              "34.5%×2",
-              "38.0%×2",
-              "40.4%×2",
-              "43.2%×2",
-              "47%×2",
-              "50.8%×2",
-              "54.6%×2",
-              "58.7%×2",
-              "62.8%×2"
-            ]
-          },
-          {
-            "key": "4 Vuruş Hasarı",
-            "values": [
-              "25.5%×3",
-              "27.5%×3",
-              "29.6%×3",
-              "32.6%×3",
-              "34.6%×3",
-              "37.0%×3",
-              "40.3%×3",
-              "43.5%×3",
-              "46.8%×3",
-              "50.3%×3",
-              "53.9%×3"
-            ]
-          },
-          {
-            "key": "Hedefli Atış",
-            "values": [
-              "43.9%",
-              "47.4%",
-              "51.0%",
-              "56.1%",
-              "59.7%",
-              "63.7%",
-              "69.4%",
-              "75.0%",
-              "80.6%",
-              "86.7%",
-              "92.8%"
-            ]
-          },
-          {
-            "key": "Tam Yüklü Hedefli Atış",
-            "values": [
-              "124%",
-              "133%",
-              "143%",
-              "155%",
-              "164%",
-              "174%",
-              "186%",
-              "198%",
-              "211%",
-              "223%",
-              "236%"
-            ]
-          },
-          {
-            "key": "Havadan Saldırı Hasarı",
-            "values": [
-              "56.8%",
-              "61.5%",
-              "66.1%",
-              "72.7%",
-              "77.3%",
-              "82.6%",
-              "89.9%",
-              "97.1%",
-              "104.4%",
-              "112.3%",
-              "120.3%"
-            ]
-          },
-          {
-            "key": "Havadan Saldırı Hasarı (Alçaktan/Yüksekten)",
-            "values": [
-              "114%/142%",
-              "123%/153%",
-              "132%/165%",
-              "145%/182%",
-              "155%/193%",
-              "165%/206%",
-              "180%/224%",
-              "194%/243%",
-              "209%/261%",
-              "225%/281%",
-              "240%/300%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6636,
-              "name": "Çatışma Öğretisi",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/31e0fb8ed2120df951fe06efcd0963fb_3828897391220819844.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6641,
-              "name": "Genç Diş",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/a82d4e52935240423e3dcc08c90631b0_3291412708255800192.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6637,
-              "name": "Çatışma Rehberi",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/588ba8fccf6bdf8c389944ab2f8a9a97_1279788012203054081.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6642,
-              "name": "Tecrübeli Diş",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/ab4a7925734a4044b28c790d26ce5f5d_9207762203506691121.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6637,
-              "name": "Çatışma Rehberi",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/588ba8fccf6bdf8c389944ab2f8a9a97_1279788012203054081.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6642,
-              "name": "Tecrübeli Diş",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/ab4a7925734a4044b28c790d26ce5f5d_9207762203506691121.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6637,
-              "name": "Çatışma Rehberi",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/588ba8fccf6bdf8c389944ab2f8a9a97_1279788012203054081.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6642,
-              "name": "Tecrübeli Diş",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/ab4a7925734a4044b28c790d26ce5f5d_9207762203506691121.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6637,
-              "name": "Çatışma Rehberi",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/588ba8fccf6bdf8c389944ab2f8a9a97_1279788012203054081.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6642,
-              "name": "Tecrübeli Diş",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/ab4a7925734a4044b28c790d26ce5f5d_9207762203506691121.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6638,
-              "name": "Çatışma Felsefesi",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/e43683bca9072ec8eb5c79af1c36ae32_1258845954121638206.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6643,
-              "name": "Tiranın Dişi",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/fc94200643164906c34fc8c48f288ae9_5175161204087445575.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 5606,
-              "name": "İpek Tüy",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/23/da99b97d2e27560f02c024f9b1ff5190_9050377465685551548.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6638,
-              "name": "Çatışma Felsefesi",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/e43683bca9072ec8eb5c79af1c36ae32_1258845954121638206.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6643,
-              "name": "Tiranın Dişi",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/fc94200643164906c34fc8c48f288ae9_5175161204087445575.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 5606,
-              "name": "İpek Tüy",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/23/da99b97d2e27560f02c024f9b1ff5190_9050377465685551548.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6638,
-              "name": "Çatışma Felsefesi",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/e43683bca9072ec8eb5c79af1c36ae32_1258845954121638206.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6643,
-              "name": "Tiranın Dişi",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/fc94200643164906c34fc8c48f288ae9_5175161204087445575.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 5606,
-              "name": "İpek Tüy",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/23/da99b97d2e27560f02c024f9b1ff5190_9050377465685551548.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Genel para birimi. Herkesin anladığı dil.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6638,
-              "name": "Çatışma Felsefesi",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/e43683bca9072ec8eb5c79af1c36ae32_1258845954121638206.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6643,
-              "name": "Tiranın Dişi",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/fc94200643164906c34fc8c48f288ae9_5175161204087445575.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 5606,
-              "name": "İpek Tüy",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/04/23/da99b97d2e27560f02c024f9b1ff5190_9050377465685551548.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "Bilgelik Tacı",
-              "desc": "A precious Talent Level-Up material.<br/>Once a medium for the storage and transfer of wisdom in ancient times. Now, wisdom is found in ancient texts and in profound speech. Nevertheless, this Crown of Insight must still be able to impart some transcendent power and wisdom to its bearer.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/6ba2d2d2d93b633f126ba84bdb554fd2_7588684814955802661.gif"
-      },
-      {
-        "title": "Ruh Dizginleri, Gölge Avı",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/7712585d92b184c1a74201c2f850f5d5_5823619324518461735.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Chasca, silahındaki irade ile etkileşime girerek Gece Ruhu tesirli <color=#80ffd7>Rüzgar Alan Hasarı</color> verir.\nBu Beceriyi kullandıktan sonra Chasca 80 Gece Ruhu puanı kazanır ve Gece Ruhunun Lütfu durumuna girer.\n<color=#ffd780>Gece Ruhunun Lütfu: Chasca</color>\nSürekli olarak Gece Ruhu puanı tüketir. Gece Ruhu puanları tamamen tükendiğinde veya beceri tekrar kullanıldığında Chasca'nın Gece Ruhunun Lütfu durumu sona erer. Gece Ruhunun Lütfunun şu etkileri vardır:\n·Chasca, \"Ruh Nişancısı: Ayin Asası\"na binerek Hareket Hızı ve Müdahale Direnci kazanır. Bu durumdayken Chasca havada kalmak için sürekli olarak Gece Ruhu puanı tüketir. Depar atarken veya havada yükselirken ekstra Gece Ruhu puanı tüketilir.\n·Normal veya Yüklü Saldırı yaparken \"Çoklu Hedefleme\"sini farklı şekillerde kullanmak için Dokun veya Basılı Tut.\n<color=#ffd780>Çoklu Hedefleme</color>\n<color=#ffd780>Dokun</color>\nÖnündeki düşmanlara Gece Ruhu tesirli <color=#80ffd7>Rüzgar Hasarı</color> verir. Bu Hasar, Normal Saldırı Hasarı sayılır.\n<color=#ffd780>Basılı Tut</color>\nNişan Alma Moduna girer, belirli bir menzil içindeki belirli sayıda düşmanı seçer ve ardından becerinin yüklenme süresine göre en fazla 6 tane Gölge Avı Mermisi yükler. 6 Mermi yüklendikten veya yükleme durdurulduktan sonra bu Mermiler, seçilen düşmanlara sırayla ateşlenir.\n<color=#ffd780>Gölge Avı Mermileri</color>\n·Gece Ruhu tesirli <color=#80ffd7>Rüzgar Hasarı</color> verir. Bu Hasar, Yüklü Saldırı Hasarı sayılır.\n·Silindire yüklenen 4., 5. ve 6. Mermiler, gruptaki diğer karakterlerin Element Türüne göre Element Dönüşümü geçirir. Gruptaki her <color=#ff9999>Ateş</color> , <color=#80c0ff>Su</color> , <color=#99ffff>Buz</color> veya <color=#ffacff>Elektrik</color> karakteri için bir Gölge Avı Mermisi rastgele olarak ilgili Element Türlerinden birinde \"Parıltılı Gölge Avı Mermisi\"ne dönüşür ve bu Element Türünde Gece Ruhu tesirli Hasar verir. Bu Hasar, Yüklü Saldırı Hasarı sayılır.\n·Silindire yüklenen mermiler, \"son giren ilk çıkar\" kaidesine göre son yüklenen Gölge Avı Mermisinden başlanarak ateşlenir.\nAyrıca Chasca Gece Ruhunun Lütfu durumundayken <color=#ffd780>Ruh Dizginleri, Gölge Avı</color> Element Becerisine Basılı Tutulduğunda Gece Ruhu tesirli bir Havadan Saldırı gerçekleştirir. Element Becerisi bırakıldığında bu Havadan Saldırı yarıda kesilir ve Chasca havada durmaya devam eder. Chasca, Havadan Saldırısıyla yere vurursa Gece Ruhunun Lütfu durumu sona erer.\nTeorik olarak o istediği sürece bu dizginler her şeyi kontrol altında tutabilir... Ancak devasa bir el topundan daha havalı ne olabilir ki?"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Seviye",
-            "values": [
-              "Sv. 1",
-              "Sv. 2",
-              "Sv. 3",
-              "Sv. 4",
-              "Sv. 5",
-              "Sv. 6",
-              "Sv. 7",
-              "Sv. 8",
-              "Sv. 9",
-              "Sv. 10",
-              "Sv. 11",
-              "Sv. 12",
-              "Sv. 13"
-            ]
-          },
-          {
-            "key": "Rezonans Hasarı",
-            "values": [
-              "60.0%",
-              "64.5%",
-              "69.0%",
-              "75.0%",
-              "79.5%",
-              "84.0%",
-              "90.0%",
-              "96.0%",
-              "102.0%",
-              "108.0%",
-              "114.0%",
-              "120.0%",
-              "127.5%"
-            ]
-          },
-          {
-            "key": "Çoklu Hedefleme Basma Hasarı",
-            "values": [
-              "36.0%",
-              "38.7%",
-              "41.4%",
-              "45.0%",
-              "47.7%",
-              "50.4%",
-              "54.0%",
-              "57.6%",
-              "61.2%",
-              "64.8%",
-              "68.4%",
-              "72.0%",
-              "76.5%"
-            ]
-          },
-          {
-            "key": "Gölge Avı Mermisi Hasarı",
-            "values": [
-              "48.8%",
-              "52.5%",
-              "56.1%",
-              "61.0%",
-              "64.7%",
-              "68.3%",
-              "73.2%",
-              "78.1%",
-              "83.0%",
-              "87.8%",
-              "92.7%",
-              "97.6%",
-              "103.7%"
-            ]
-          },
-          {
-            "key": "Parıltılı Gölge Avı Mermisi Hasarı",
-            "values": [
-              "166.6%",
-              "179.1%",
-              "191.6%",
-              "208.2%",
-              "220.7%",
-              "233.2%",
-              "249.9%",
-              "266.5%",
-              "283.2%",
-              "299.8%",
-              "316.5%",
-              "333.1%",
-              "354.0%"
-            ]
-          },
-          {
-            "key": "Gece Ruhu Puanı Sınırı",
-            "values": [
-              "80.0",
-              "80.0",
-              "80.0",
-              "80.0",
-              "80.0",
-              "80.0",
-              "80.0",
-              "80.0",
-              "80.0",
-              "80.0",
-              "80.0",
-              "80.0",
-              "80.0"
-            ]
-          },
-          {
-            "key": "BS",
-            "values": [
-              "6.5sn",
-              "6.5sn",
-              "6.5sn",
-              "6.5sn",
-              "6.5sn",
-              "6.5sn",
-              "6.5sn",
-              "6.5sn",
-              "6.5sn",
-              "6.5sn",
-              "6.5sn",
-              "6.5sn",
-              "6.5sn"
-            ]
-          }
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/3fd717d3ac4076d099a81b5ede540a71_3856754933843033050.gif"
-      },
-      {
-        "title": "Ruh Biçenin Ölümcül Darbesi",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/e952d402fc1b409949263c6e999f06c2_5480362557350700821.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Chasca, iradesini yoğunlaştırıp Gece Ruhu tesirli <color=#80ffd7>Rüzgar Alan Hasarı</color> veren bir \"Fırtına Yaran Ruh Avcısı Mermi\" ateşler. Daha sonra \"Fırtına Yaran Ruh Avcısı Mermi\" 6 Ruh Avcısı Mermiye bölünüp yakındaki düşmanlara saldırır.\n<color=#ffd780>Ruh Avcısı Mermiler</color>\n·Gece Ruhu tesirli <color=#80ffd7>Rüzgar Hasarı</color> verir.\n·Gruptaki her <color=#ff9999>Ateş</color> , <color=#80c0ff>Su</color> , <color=#99ffff>Buz</color> veya <color=#ffacff>Elektrik</color> karakteri için iki Ruh Avcısı Mermi, Element Dönüşümü geçirip \"Parlak Ruh Avcısı Mermi\"ye dönüşür. Bu Mermiler, karşılık gelen rastgele bir Element Türünde Gece Ruhu tesirli Element Hasarı verir.\nNasıl ki ay ışığından veya gecenin ardı arkası kesilmeyen fısıltılarından kimse kaçamıyorsa onun görüş alanına giren bir düşman için de artık kaçış yoktur."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Seviye",
-            "values": [
-              "Sv. 1",
-              "Sv. 2",
-              "Sv. 3",
-              "Sv. 4",
-              "Sv. 5",
-              "Sv. 6",
-              "Sv. 7",
-              "Sv. 8",
-              "Sv. 9",
-              "Sv. 10",
-              "Sv. 11",
-              "Sv. 12",
-              "Sv. 13"
-            ]
-          },
-          {
-            "key": "Fırtına Yaran Ruh Avcısı Mermi Hasarı",
-            "values": [
-              "88.0%",
-              "94.6%",
-              "101.2%",
-              "110.0%",
-              "116.6%",
-              "123.2%",
-              "132.0%",
-              "140.8%",
-              "149.6%",
-              "158.4%",
-              "167.2%",
-              "176.0%",
-              "187.0%"
-            ]
-          },
-          {
-            "key": "Ruh Avcısı Mermi Hasarı",
-            "values": [
-              "103.4%",
-              "111.2%",
-              "118.9%",
-              "129.3%",
-              "137.0%",
-              "144.8%",
-              "155.1%",
-              "165.4%",
-              "175.8%",
-              "186.1%",
-              "196.5%",
-              "206.8%",
-              "219.7%"
-            ]
-          },
-          {
-            "key": "Parlak Ruh Avcısı Mermi Hasarı",
-            "values": [
-              "206.8%",
-              "222.3%",
-              "237.8%",
-              "258.5%",
-              "274.0%",
-              "289.5%",
-              "310.2%",
-              "330.9%",
-              "351.6%",
-              "372.2%",
-              "392.9%",
-              "413.6%",
-              "439.5%"
-            ]
-          },
-          {
-            "key": "BS",
-            "values": [
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn",
-              "15.0sn"
-            ]
-          },
-          {
-            "key": "Enerji Maliyeti",
-            "values": [
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60"
-            ]
-          }
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/aa6ff388f63f4eb50130a01e7205aea8_6247357775849979776.gif"
-      },
-      {
-        "title": "Mermi Numarası",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/300425ce4324f341ec37647756b2a147_1856820525679803265.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Ruh Dizginleri, Gölge Avı</color> Element Becerisinin <color=#ffd780>Çoklu Hedeflemesi</color> yükleniyorken Element Dönüşümü Türü şartlarını karşılayan grup üyeleri varsa uygun Element Türü sayısına bağlı olarak şu etkiler elde edilir:\n·%33,3/%66,7/%100 ihtimalle her bir Element Türü, \"Ruh Bağlama Dönüşümü\" tetikleyebilir ve silindire yüklenen 3. <color=#ffd780>Gölge Avı Mermisinin</color> , karşılık gelen Element Türlerinden rastgele birinde <color=#ffd780>Parıltılı Gölge Avı Mermisine</color> dönüşmesini sağlayabilir.\n·Her Element Türü Chasca'ya 1 Parlak Gölge Ruhu kademesi kazandırır ve Parıltılı Gölge Avı Mermisinin Hasarı %15/%35/%65 artar. Bu etki mevcut Çoklu Hedefleme sona erene kadar sürer. 3 kademeye kadar birikir."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "title": "Koruma İçgüdüsü",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/d754071314b91566cc0e966ed555ac46_906040474221749640.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Yakındaki bir grup üyesi bir Gece Ruhu Patlaması tetiklediğinde Chasca, yakındaki bir düşmana bir \"Alevli Gölge Avı Atışı\" yapar ve <color=#ffd780>Ruh Dizginleri, Gölge Avı</color> Element Becerisinin <color=#ffd780>Gölge Avı Mermisi</color> ile verilen Hasarın %150'si kadar Gece Ruhu tesirli <color=#80ffd7>Rüzgar Hasarı</color> verir. Eğer grupta <color=#ff9999>Ateş</color> , <color=#80c0ff>Su</color> , <color=#99ffff>Buz</color> veya <color=#ffacff>Elektrik</color> karakterleri varsa Alevli Gölge Avı Atışı dönüşerek <color=#ffd780>Ruh Dizginleri, Gölge Avı</color> Becerisinin <color=#ffd780>Parıltılı Gölge Avı Mermisi</color> ile verilen Hasarın %150'si kadar ilgili Element Türünde Gece Ruhu tesirli Element Hasarı verir.\nBu şekilde verilen Hasar, Yüklü Saldırı Hasarı sayılır."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "title": "Gece Diyarının Armağanı: Her Daim Yanan Kalp",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/6dbd63e93d8e5ddeefe8ddb94d74d31a_7497168377176291080.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Chasca, Gece Ruhu puanları tükendiğinde Filojiston harcayarak Gece Ruhunun Lütfu durumunda kalmaya devam eder.\nChasca, Natlan'da Filojiston Mekanikleri bulunan bir bölgedeyken \"Gece Ruhu Aktarımı: Chasca\" kullanabilir. Aktif karakter havadayken Chasca'ya geçildiğinde şu etkiler tetiklenir: Chasca Gece Ruhunun Lütfu durumuna girer ve 32 Gece Ruhu puanı kazanır. Gece Ruhu Aktarımı kendi takımın tarafından 10 saniyede bir tetiklenebilir."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "title": "Ara Buluculuğun Asıl Anlamı",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/05b6ee6214f7695afd1001f1e158650d_6567864486033460374.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Kendi grup üyelerin bir düşman yendiğinde <color=#ffd780>Filojiston</color> yenilenir. Bu etki her 12 saniyede bir tetiklenebilir.\nBu etki Zindanlarda, Ezici Zindanlarda veya Hiçlik Sarmalında tetiklenemez."
-          }
-        ],
-        "attributes": null
       }
     ],
     "summaryList": [
@@ -3070,6 +2864,120 @@
         ]
       }
     ],
+    "baseInfo": [
+      {
+        "key": "İsim",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Chasca"
+          }
+        ]
+      },
+      {
+        "key": "Doğum Günü",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "12/10"
+          }
+        ]
+      },
+      {
+        "key": "Takımyıldızları",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Dağ Kondoru"
+          }
+        ]
+      },
+      {
+        "key": "Künye",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Göklerin Hakemi"
+          }
+        ]
+      },
+      {
+        "key": "Önsezi",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Rüzgar"
+          }
+        ]
+      },
+      {
+        "key": "İlişki",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Tlalocan"
+          }
+        ]
+      },
+      {
+        "key": "Çince Ses.",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "张若瑜"
+          }
+        ]
+      },
+      {
+        "key": "Japonca Ses.",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "甲斐田裕子"
+          }
+        ]
+      },
+      {
+        "key": "İngilizce Ses.",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Lauren Amante"
+          }
+        ]
+      },
+      {
+        "key": "Korece Ses.",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Soo-hyun"
+          }
+        ]
+      },
+      {
+        "key": "Özel Tarif",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 7184,
+            "name": "Sükunet Anı",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/26/237301566/4f0025d5809c17a8917714fa84320afb_1782782003845848387.png",
+            "amount": 1
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "İlk Çıktığı Versiyon",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "5.2"
+          }
+        ]
+      }
+    ],
     "galleryCharacter": [
       {
         "key": "Character Card",
@@ -3102,6 +3010,98 @@
             "text": "Takımyıldızı - Dağ Kondoru"
           }
         ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Yetenek Önizlemesi",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Chasca; 5 yıldızlı, <color=#ffd780>Yay</color> kullanan ve <color=#80ffd7>Rüzgar</color> elementine sahip bir karakterdir. Natlan'lı olduğu için <color=#ffd780>Gece Ruhu'nun Lütfuna</color> sahiptir. Chasca, savaş alanında yüksek <color=#80ffd7>Tek Hedefli Rüzgar Hasarı</color> vermeye odaklanır ve <color=#ffd780>Atak</color> değeri ile güçlenir.\nChasca'nın <color=#ffd780>Element Becerisi</color> , takımındaki diğer karakterlerin sahip olduğu element tipine göre değişir. Takımında ne kadar fazla türden element bulundurursan Chasca'nın <color=#ffd780>Element Becerisi</color> silahına o kadar fazla ve farklı türde <color=#ffd780>Parıltılı Gölge Avı Mermileri</color> yükler. Bu mermiler <color=#80c0ff>Su</color> , <color=#ff9999>Ateş</color> , <color=#ffacff>Elektrik</color> veya <color=#99ffff>Buz</color> olabilir. <color=#ffd780>Gölge Avı Mermileri</color> ise sadece <color=#80ffd7>Rüzgar</color> olabilir. <color=#ffd780>Gölge Avı Mermileri, Parıltılı Gölge Avı Mermilerinden</color> çok daha az hasar verir, bu yüzden takımınızdaki diğer üç karakterin <color=#80ffd7>Rüzgar</color> , <color=#ffe699>Toprak</color> ve <color=#99ff88>Doğa</color> olmamasına dikkat edin. Aynı elementteki birden fazla karakterler de <color=#ffd780>Parıltılı Gölge Avı Mermi</color> sayısını azaltabileceğinden takımınıza çeşitlilik katmaya çalışın.\nChasca'nın <color=#ffd780>Element Patlaması</color> da <color=#ffd780>Element Becerisine</color> çok benzeyen ve aynı prensiplerle çalışan bir yetenektir. Bu yeteneği her rotasyonda kullanmak zorunda değilsiniz."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7080,
+        "name": "Chasca",
+        "desc": "Tüm anlaşmazlıkları sonlandıran, Tlalocan'ın Ara Bulucusu.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/abe1192cc7aad45f6b273478dd5fa88a_4799372826012752249.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 26,
+        "name": "Bennett",
+        "desc": "<p>Ne yazık ki son derece şanssız, Mondstadtlı iyi huylu bir maceracı.</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Bennett_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7079,
+        "name": "Ororon",
+        "desc": "Gece Rüzgarının Ustalarından genç bir adam. Doğada her türden canlıyla birlikte yaşar.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/e4830690f8b6a1ebb02cfbc8ce955671_8091252479018770784.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "Mona",
+        "desc": "<p>Kendisini \"Astrolog Mona Megistus\" olarak tanıtan ve bu unvana uygun yeteneklere sahip gizemli genç bir astrolog. Bilgili olmasına karşın kibirlidir.</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Bir Chasca takımı örneği. Chasca ana Hasar kaynağı olarak görev görürken diğer karakterler Chasca'yı destekler."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7080,
+        "name": "Chasca",
+        "desc": "Tüm anlaşmazlıkları sonlandıran, Tlalocan'ın Ara Bulucusu.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/abe1192cc7aad45f6b273478dd5fa88a_4799372826012752249.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7299,
+        "name": "Mavuika",
+        "desc": "Natlan'ın \"Kiongozi\" Kadim Adını miras alan lideri. Savaş ulusunun geleceğini Kutsal Alev ile aydınlatmaya yemin etmiştir.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/30/2f098b1f15854fd9dafc54998795a59e_864981592196815761.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4376,
+        "name": "Furina",
+        "desc": "<p>Son alkış gelene dek mahkeme sahnesinin sarsılmaz odak noktası.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/10/138687708/263e5ea0784d182b393f67a7e24146a5_3907189629383514271.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 26,
+        "name": "Bennett",
+        "desc": "<p>Ne yazık ki son derece şanssız, Mondstadtlı iyi huylu bir maceracı.</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Bennett_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Bir Chasca takım örneği. Burda Mavuika ve Bennett aynı elementten olsalar da takım hep birlikte Chasca'yı oldukça güçlendirdiği için sorun teşkil etmiyor."
       }
     ]
   }
