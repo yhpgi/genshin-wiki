@@ -4,46 +4,102 @@
   "desc": "차가운 의지가 담긴 특이한 열매가 미약하고 씁쓸한 기운을 발산하고 있다",
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/忍冬之果.png",
   "filterValues": {
-    "weaponProperty": "공격력 백분율",
+    "weaponRarity": "★4",
     "weaponType": "법구",
-    "weaponRarity": "★4"
+    "weaponProperty": "공격력 백분율"
   },
   "menuId": 4,
   "menuName": "무기",
   "version": 1672233660,
   "components": {
-    "customize": [
+    "baseInfo": [
       {
-        "type": "Heading",
-        "level": 3,
-        "text": "드래곤 스파인 단조 무기 시리즈"
+        "key": "이름",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "인동의 열매"
+          }
+        ]
       },
       {
-        "type": "CustomEntry",
-        "epId": 1969,
-        "name": "인동의 열매",
-        "desc": "차가운 의지가 담긴 특이한 열매가 미약하고 씁쓸한 기운을 발산하고 있다",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/忍冬之果.png",
-        "amount": 1,
-        "displayStyle": "card"
+        "key": "획득 경로",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "단조 획득"
+          }
+        ]
       },
       {
-        "type": "CustomEntry",
-        "epId": 2060,
-        "name": "용의 척추",
-        "desc": "드래곤의 이빨로 만든 장창. 기이한 따뜻함이 느껴진다",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/龙脊长枪.png",
-        "amount": 1,
-        "displayStyle": "card"
+        "key": "유형",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "법구"
+          }
+        ]
       },
       {
-        "type": "CustomEntry",
-        "epId": 2043,
-        "name": "설장의 성은",
-        "desc": "벽화 사이에 보존되어 있는 태고의 대검. 성은으로 주조된 이 검은 빙설도 가를 수 있는 힘을 보유하고 있다",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/雪葬的星银.png",
-        "amount": 1,
-        "displayStyle": "card"
+        "key": "부 옵션",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "공격력 백분율"
+          }
+        ]
+      },
+      {
+        "key": "서리의 매장",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "일반 공격과 강공격이 적에게 명중 시 <color=#37ffff>60%/70%/80%/90%/100%</color> 의 확률로 적의 위쪽에 영원의 얼음 결정을 생성한 후 떨궈서 공격력 <color=#37ffff>80%/95%/110%/125%/140%</color> 의 범위 피해를 준다. 적이 만약 얼음 원소의 영향을 받으면 공격력 <color=#37ffff>200%/240%/280%/320%/360%</color> 의 피해를 준다. 해당 효과는 10초마다 1회 발동한다"
+          }
+        ]
+      },
+      {
+        "key": "단조 도면",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 724,
+            "name": "인동의 나무의 기억",
+            "desc": "이 기억을 통해 법구 「인동의 열매」의 제작 방법을 습득할 수 있다",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/27/194600931/467e511bd3cd4889fc90258a7b1dfc53_5146464913490246573.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "단조 재료",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 352,
+            "name": "북대륙의 법구 원형",
+            "desc": "무기를 생산하는 원재료. 단조를 통해 ★4 법구를 만들 수 있다.<br/>철학적으로 대리석에는 아름다운 조소가 될 수 있는 가능성이 있다고 여겨진다. 이 날것의 재료에 숨겨진 무한한 가능성도 사람들을 설레게 한다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Northlander Catalyst Billet_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 976,
+            "name": "수정덩이",
+            "desc": "가공되지 않은 결정체. 세공을 해야 진정한 가치를 알 수 있다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystal Chunk_icon.png",
+            "amount": 50
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 892,
+            "name": "성은 광석",
+            "desc": "드래곤 스파인의 특수한 자연환경과 지맥에 의해 생성된 진귀한 광석이다",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Starsilver_icon.png",
+            "amount": 50
+          }
+        ],
+        "isMaterial": true
       }
     ],
     "story": [
@@ -430,94 +486,38 @@
         ]
       }
     ],
-    "baseInfo": [
+    "customize": [
       {
-        "key": "이름",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "인동의 열매"
-          }
-        ]
+        "type": "Heading",
+        "level": 3,
+        "text": "드래곤 스파인 단조 무기 시리즈"
       },
       {
-        "key": "획득 경로",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "단조 획득"
-          }
-        ]
+        "type": "CustomEntry",
+        "epId": 1969,
+        "name": "인동의 열매",
+        "desc": "차가운 의지가 담긴 특이한 열매가 미약하고 씁쓸한 기운을 발산하고 있다",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/忍冬之果.png",
+        "amount": 1,
+        "displayStyle": "card"
       },
       {
-        "key": "유형",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "법구"
-          }
-        ]
+        "type": "CustomEntry",
+        "epId": 2060,
+        "name": "용의 척추",
+        "desc": "드래곤의 이빨로 만든 장창. 기이한 따뜻함이 느껴진다",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/龙脊长枪.png",
+        "amount": 1,
+        "displayStyle": "card"
       },
       {
-        "key": "부 옵션",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "공격력 백분율"
-          }
-        ]
-      },
-      {
-        "key": "서리의 매장",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "일반 공격과 강공격이 적에게 명중 시 <color=#37ffff>60%/70%/80%/90%/100%</color> 의 확률로 적의 위쪽에 영원의 얼음 결정을 생성한 후 떨궈서 공격력 <color=#37ffff>80%/95%/110%/125%/140%</color> 의 범위 피해를 준다. 적이 만약 얼음 원소의 영향을 받으면 공격력 <color=#37ffff>200%/240%/280%/320%/360%</color> 의 피해를 준다. 해당 효과는 10초마다 1회 발동한다"
-          }
-        ]
-      },
-      {
-        "key": "단조 도면",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 724,
-            "name": "인동의 나무의 기억",
-            "desc": "이 기억을 통해 법구 「인동의 열매」의 제작 방법을 습득할 수 있다",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/27/194600931/467e511bd3cd4889fc90258a7b1dfc53_5146464913490246573.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "단조 재료",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 352,
-            "name": "북대륙의 법구 원형",
-            "desc": "무기를 생산하는 원재료. 단조를 통해 ★4 법구를 만들 수 있다.<br/>철학적으로 대리석에는 아름다운 조소가 될 수 있는 가능성이 있다고 여겨진다. 이 날것의 재료에 숨겨진 무한한 가능성도 사람들을 설레게 한다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Northlander Catalyst Billet_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 976,
-            "name": "수정덩이",
-            "desc": "가공되지 않은 결정체. 세공을 해야 진정한 가치를 알 수 있다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystal Chunk_icon.png",
-            "amount": 50
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 892,
-            "name": "성은 광석",
-            "desc": "드래곤 스파인의 특수한 자연환경과 지맥에 의해 생성된 진귀한 광석이다",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Starsilver_icon.png",
-            "amount": 50
-          }
-        ],
-        "isMaterial": true
+        "type": "CustomEntry",
+        "epId": 2043,
+        "name": "설장의 성은",
+        "desc": "벽화 사이에 보존되어 있는 태고의 대검. 성은으로 주조된 이 검은 빙설도 가를 수 있는 힘을 보유하고 있다",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/雪葬的星银.png",
+        "amount": 1,
+        "displayStyle": "card"
       }
     ]
   }
