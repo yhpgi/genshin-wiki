@@ -4,75 +4,107 @@
   "desc": "<p>Dieses Langschwert scheint noch älter zu sein, als das Zeitalter, in dem es benutzt wurde, und ist so still wie die geheimnisvollen Tiefen des Ozeans.</p>",
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/08/36893887/3139f087dee78d3856ab63fd6845ae61_8102543153219892679.png",
   "filterValues": {
+    "weaponType": "Einhänder",
     "weaponProperty": "ANG-Rate",
-    "weaponRarity": 4,
-    "weaponType": "Einhänder"
+    "weaponRarity": 4
   },
   "menuId": 4,
   "menuName": "Waffe",
   "version": 1697979910,
   "components": {
-    "customize": [
+    "baseInfo": [
       {
-        "type": "RichText",
-        "text": "Das <color=#ffd780>Finale in der Tiefe</color> ist eine schmiedbare Waffe aus Fontaine und bietet vor allem ANG und ANG%-Boni. Der Effekt <color=#ffd780>Eid des Lebens</color> wird beim Nutzen der <color=#ffd780>Elementarfähigkeit</color> aktiviert und bietet weitere Boni, wenn die Figur um den Wert des Eides <color=#37ffff>geheilt</color> wurde. Dabei berechnet sich der <color=#ffd780>Eid des Lebens</color> auf die maximalen LP der Figur. Das optimale Nutzen dieser Waffe setzt einen <color=#37ffff>Heiler</color> in der Truppe voraus.\nFür folgende Figuren ist diese Waffe zu empfehlen:"
+        "key": "Name",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Finale in der Tiefe"
+          }
+        ]
       },
       {
-        "type": "RichText",
-        "text": "Figur",
-        "alignment": "center"
+        "key": "Herkunft",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Fontaine"
+          }
+        ]
       },
       {
-        "type": "RichText",
-        "text": "Begründung"
+        "key": "Typ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Einhänder"
+          }
+        ]
       },
       {
-        "type": "CustomEntry",
-        "epId": 3962,
-        "name": "Lynette",
-        "desc": "<p>Eine wortkarge Zauberassistentin. Ihre Mimik lässt sich kaum ergründen und ihr Temperament ist so unergründlich wie das einer Katze.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/15/61142474/436e6f2b9b9006bfe511a98093259daf_834066188861128909.png",
-        "displayStyle": "card"
+        "key": "Nebenattribute",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "ANG-Rate"
+          }
+        ]
       },
       {
-        "type": "RichText",
-        "text": "Lynette's <color=#ffd780>Elementarfähigkeit</color> <color=#37ffff>heilt</color> sie selbst um genau 25%. Dies ist auch der Wert, den der <color=#ffd780>Eid des Lebens</color> immer annimmt. Damit hat sie keinerlei Probleme, diesen Effekt selbstständing zu nutzen."
+        "key": "Schmiedematerial",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 2809,
+            "name": "Unbearbeiteter Einhänder des Kernlands",
+            "desc": "<p>Rohmaterial zum Herstellen von Waffen. Kann zu einem 4-Sterne-Einhänder geschmiedet werden.</p><p>In der Philosophie spricht man davon, dass alles in der Welt der Sterblichen vier Entstehungsgründe besitzt. Das „Ziel“ dieser unbearbeiteten Waffe ist es, eine Helden begleitende Waffe zu werden.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/19/22173920/e741d6945221c8d220633bb0e0228215_5496919476023189410.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4096,
+            "name": "Kondessenz-Kristall",
+            "desc": "<p>Ein klarer und reiner Kristall mit einem Kern von hoher Härte und Formbarkeit.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/18/47685001/a06c6fbd29b5111702baf8c9271654c4_3682536115705652438.png",
+            "amount": 50
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1224,
+            "name": "Brocken weißes Eisen",
+            "desc": "Ein Klumpen weißes Eisenerz, der in den Händen eines begabten Schmieds zu glanzvollen Dingen reifen kann.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
+            "amount": 50
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 500
+          }
+        ],
+        "isMaterial": true
       },
       {
-        "type": "CustomEntry",
-        "epId": 32,
-        "name": "Kamisato Ayaka",
-        "desc": "Die Tochter des Kamisato-Klans der Yashiro-Verwaltung. Sie ist würdevoll und elegant, klug und stark.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kamisato Ayaka_icon.png",
-        "displayStyle": "card"
+        "key": "Erhabenheit des Endes ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Erhöht beim Auslösen der Elementarfähigkeit den ANG um <color=#37ffff>12% ~ 15% ~ 18% ~ 21% ~ 24%</color> , hält 15s. Es entsteht gleichzeitig ein Eid des Lebens mit einem Basiswert in Höhe von 25% der max. LP. 10s Abklingzeit. Wenn der Eid des Lebens entfernt wird, wird der ANG um <color=#37ffff>2,4% ~ 3% ~ 3,6% ~ 4,2% ~ 4,8%</color> der entfernten Summe, max. <color=#37ffff>150 ~ 187,5 ~ 225 ~ 262,5 ~ 300</color> Punkte, erhöht. Hält 15s. Eid des Lebens: Absorbiert die für die Figur bestimmte Heilung und wird entfernt, sobald die Heilungsmenge ihrem Basiswert entspricht."
+          }
+        ]
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Standard Form",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/08/36893887/f22d1fb8e3aea644d154681fcf97e8b0_3973411183330081728.png"
       },
       {
-        "type": "RichText",
-        "text": "Ayaka profitiert sehr viel von ANG-Boni in ihren <color=#99ffff>Gefrieren-Kompositionen</color> . Da sie in diesen Situationen oft einen <color=#37ffff>Heiler</color> in der Truppe hat, kann sie recht zuverlässig das volle Potential dieser Waffe ausnutzen."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 27,
-        "name": "Jean",
-        "desc": "Der aufrichtige und gewissenhafte Löwenzahnritter, der stellvertretender Großmeister des Ordo Favonius.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Jean_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "Jean nutzt ANG-Boni sehr gut aus, kann aber zugleich auch die Rolle der <color=#37ffff>Heilerin</color> erfüllen. Dadruch kann sie diese Waffe ganz unabhängig vom Rest ihrer Truppe nutzen."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 31,
-        "name": "Kamisato Ayato",
-        "desc": "Das junge und talentierte derzeitige Oberhaupt der Familie Kamisato der Yashiro-Verwaltung ist ein sanfter und höflicher Mann, der seine eigenen Mittel und Wege hat.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kamisato Ayato_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "Ayato profitiert selbst etwas von zusätzlichen LP (zB. <color=#80c0ff>Hydro-Resonanz</color> ) und hat damit die Möglichkeit, von einem höheren <color=#ffd780>Eid des Lebens</color> Gebrauch zu machen und einen höheren ANG-Bonus zu erhalten."
+        "key": "Aufgestiegene Form",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/08/36893887/493a4ade8775ad48ba134d90e916bc24_8017498721708891227.png"
       }
     ],
     "ascension": [
@@ -449,16 +481,6 @@
         ]
       }
     ],
-    "galleryCharacter": [
-      {
-        "key": "Standard Form",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/08/36893887/f22d1fb8e3aea644d154681fcf97e8b0_3973411183330081728.png"
-      },
-      {
-        "key": "Aufgestiegene Form",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/08/36893887/493a4ade8775ad48ba134d90e916bc24_8017498721708891227.png"
-      }
-    ],
     "story": [
       {
         "title": "Weitere Informationen",
@@ -470,89 +492,67 @@
         ]
       }
     ],
-    "baseInfo": [
+    "customize": [
       {
-        "key": "Name",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Finale in der Tiefe"
-          }
-        ]
+        "type": "RichText",
+        "text": "Das <color=#ffd780>Finale in der Tiefe</color> ist eine schmiedbare Waffe aus Fontaine und bietet vor allem ANG und ANG%-Boni. Der Effekt <color=#ffd780>Eid des Lebens</color> wird beim Nutzen der <color=#ffd780>Elementarfähigkeit</color> aktiviert und bietet weitere Boni, wenn die Figur um den Wert des Eides <color=#37ffff>geheilt</color> wurde. Dabei berechnet sich der <color=#ffd780>Eid des Lebens</color> auf die maximalen LP der Figur. Das optimale Nutzen dieser Waffe setzt einen <color=#37ffff>Heiler</color> in der Truppe voraus.\nFür folgende Figuren ist diese Waffe zu empfehlen:"
       },
       {
-        "key": "Herkunft",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Fontaine"
-          }
-        ]
+        "type": "RichText",
+        "text": "Figur",
+        "alignment": "center"
       },
       {
-        "key": "Typ",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Einhänder"
-          }
-        ]
+        "type": "RichText",
+        "text": "Begründung"
       },
       {
-        "key": "Nebenattribute",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ANG-Rate"
-          }
-        ]
+        "type": "CustomEntry",
+        "epId": 3962,
+        "name": "Lynette",
+        "desc": "<p>Eine wortkarge Zauberassistentin. Ihre Mimik lässt sich kaum ergründen und ihr Temperament ist so unergründlich wie das einer Katze.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/15/61142474/436e6f2b9b9006bfe511a98093259daf_834066188861128909.png",
+        "displayStyle": "card"
       },
       {
-        "key": "Schmiedematerial",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 2809,
-            "name": "Unbearbeiteter Einhänder des Kernlands",
-            "desc": "<p>Rohmaterial zum Herstellen von Waffen. Kann zu einem 4-Sterne-Einhänder geschmiedet werden.</p><p>In der Philosophie spricht man davon, dass alles in der Welt der Sterblichen vier Entstehungsgründe besitzt. Das „Ziel“ dieser unbearbeiteten Waffe ist es, eine Helden begleitende Waffe zu werden.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/19/22173920/e741d6945221c8d220633bb0e0228215_5496919476023189410.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4096,
-            "name": "Kondessenz-Kristall",
-            "desc": "<p>Ein klarer und reiner Kristall mit einem Kern von hoher Härte und Formbarkeit.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/18/47685001/a06c6fbd29b5111702baf8c9271654c4_3682536115705652438.png",
-            "amount": 50
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1224,
-            "name": "Brocken weißes Eisen",
-            "desc": "Ein Klumpen weißes Eisenerz, der in den Händen eines begabten Schmieds zu glanzvollen Dingen reifen kann.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
-            "amount": 50
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 500
-          }
-        ],
-        "isMaterial": true
+        "type": "RichText",
+        "text": "Lynette's <color=#ffd780>Elementarfähigkeit</color> <color=#37ffff>heilt</color> sie selbst um genau 25%. Dies ist auch der Wert, den der <color=#ffd780>Eid des Lebens</color> immer annimmt. Damit hat sie keinerlei Probleme, diesen Effekt selbstständing zu nutzen."
       },
       {
-        "key": "Erhabenheit des Endes ",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Erhöht beim Auslösen der Elementarfähigkeit den ANG um <color=#37ffff>12% ~ 15% ~ 18% ~ 21% ~ 24%</color> , hält 15s. Es entsteht gleichzeitig ein Eid des Lebens mit einem Basiswert in Höhe von 25% der max. LP. 10s Abklingzeit. Wenn der Eid des Lebens entfernt wird, wird der ANG um <color=#37ffff>2,4% ~ 3% ~ 3,6% ~ 4,2% ~ 4,8%</color> der entfernten Summe, max. <color=#37ffff>150 ~ 187,5 ~ 225 ~ 262,5 ~ 300</color> Punkte, erhöht. Hält 15s. Eid des Lebens: Absorbiert die für die Figur bestimmte Heilung und wird entfernt, sobald die Heilungsmenge ihrem Basiswert entspricht."
-          }
-        ]
+        "type": "CustomEntry",
+        "epId": 32,
+        "name": "Kamisato Ayaka",
+        "desc": "Die Tochter des Kamisato-Klans der Yashiro-Verwaltung. Sie ist würdevoll und elegant, klug und stark.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kamisato Ayaka_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Ayaka profitiert sehr viel von ANG-Boni in ihren <color=#99ffff>Gefrieren-Kompositionen</color> . Da sie in diesen Situationen oft einen <color=#37ffff>Heiler</color> in der Truppe hat, kann sie recht zuverlässig das volle Potential dieser Waffe ausnutzen."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 27,
+        "name": "Jean",
+        "desc": "Der aufrichtige und gewissenhafte Löwenzahnritter, der stellvertretender Großmeister des Ordo Favonius.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Jean_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Jean nutzt ANG-Boni sehr gut aus, kann aber zugleich auch die Rolle der <color=#37ffff>Heilerin</color> erfüllen. Dadruch kann sie diese Waffe ganz unabhängig vom Rest ihrer Truppe nutzen."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 31,
+        "name": "Kamisato Ayato",
+        "desc": "Das junge und talentierte derzeitige Oberhaupt der Familie Kamisato der Yashiro-Verwaltung ist ein sanfter und höflicher Mann, der seine eigenen Mittel und Wege hat.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kamisato Ayato_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Ayato profitiert selbst etwas von zusätzlichen LP (zB. <color=#80c0ff>Hydro-Resonanz</color> ) und hat damit die Möglichkeit, von einem höheren <color=#ffd780>Eid des Lebens</color> Gebrauch zu machen und einen höheren ANG-Bonus zu erhalten."
       }
     ]
   }
