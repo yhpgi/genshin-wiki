@@ -4,14 +4,101 @@
   "desc": "Ein Schwert, das in Tatarasuna hergestellt wurde. Schwer und zäh.",
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/桂木斩长正.png",
   "filterValues": {
-    "weaponRarity": 4,
     "weaponType": "Zweihänder",
+    "weaponRarity": 4,
     "weaponProperty": "Aufladerate"
   },
   "menuId": 4,
   "menuName": "Waffe",
   "version": 1691770879,
   "components": {
+    "baseInfo": [
+      {
+        "key": "Name",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Katsuragikiri Nagamasa"
+          }
+        ]
+      },
+      {
+        "key": "Herkunft",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Inazuma"
+          }
+        ]
+      },
+      {
+        "key": "Typ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Zweihänder"
+          }
+        ]
+      },
+      {
+        "key": "Nebenattribute",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Aufladerate"
+          }
+        ]
+      },
+      {
+        "key": "Verhalten eines Samurais",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Erhöht den mit Elementarfähigkeiten verursachten Schaden um <color=#37ffff>6% ~ 7,5% ~ 9% ~ 10,5% ~ 12%</color> . Zieht der Figur bei Treffern mit einer Elementarfähigkeit 3 Punkte Elementarenergie ab und stellt im Gegenzug 6s lang alle 2s <color=#37ffff>3 ~ 3,5 ~ 4 ~ 4,5 ~ 5</color> Punkte Elementarenergie wieder her. Dieser Effekt kann nur einmal alle 10s ausgelöst werden, auch von Figuren, die sich in deiner Truppe, aber nicht im Kampf befinden."
+          }
+        ]
+      },
+      {
+        "key": "Schmiedematerial",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 348,
+            "name": "Unbearbeiteter Zweihänder des Nordens",
+            "desc": "Rohmaterial zum Herstellen von Waffen. Kann zu einem 4-Sterne-Zweihänder geschmiedet werden.<br/>In der Philosophie spricht man dem Marmor großes Potenzial zu, weil es sich zu den schönsten Figuren machen lässt. Auch dieses Rohmaterial birgt unzählige Möglichkeiten. Was wohl einmal daraus wird?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Northlander Claymore Billet_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1330,
+            "name": "Amethyst-Brocken",
+            "desc": "Ein ungeschliffener Kristall, der nur in Inazuma gefunden werden kann. Etwas professionelle Handwerkskunst wird seinen wahren Wert zur Geltung bringen.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Amethyst Lump_icon.png",
+            "amount": 50
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1224,
+            "name": "Brocken weißes Eisen",
+            "desc": "Ein Klumpen weißes Eisenerz, der in den Händen eines begabten Schmieds zu glanzvollen Dingen reifen kann.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
+            "amount": 50
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
+    "story": [
+      {
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Die langen Rollen von Tatarasuna wurden von einem der ehemaligen Inspektoren entworfen.\nMan sagt der Stadt einen einfachen und geradlinigen Charakter nach, den die Einwohner im Allgemeinen haben.\nLange vor der Einführung der fremden Technik zur Herstellung des „Mikage-Hochofens“\nist die in Tatarasuna angewandte Schmelzmethode die traditionelle „Metallverarbeitungsmethode“.\nNachdem Mikoshi Nagamasa die Rolle des Inspektors übernommen hatte, war er eine Zeit lang von der kalten Schönheit des Stahls besessen.\nEr suchte Rat bei Miyazaki, der ebenfalls ein erfahrener Schwertkämpfer war.\nAm Ende fertigte er in Handarbeit dieses einfache und harte Schwert, „Daitatara Nagamasa“.\nObwohl er der Adoptivsohn der Familie Mikoshi war und seine Adoptivmutter dafür gesorgt hatte, dass sein Name angeschwärzt wurde,\nObwohl Mikoshis erster Sohn ihn aufgegeben hat und untergetaucht ist,\nließen seine selbsternannte Dummheit und seine wirkliche Loyalität ihn den Namen der öffentlichen Meinung hundertfach in Ehren halten.\nStrebe danach, in die Regierung einzutreten und das Stigma der Familie mit hundertfachem Fleiß und Klarheit zu tilgen.\nSelbst wenn es einen Hinweis auf ein Fehlverhalten seines eigenen Helfers Katsuragi gäbe, würde er gnadenlos abgeschossen werden.\nDanach änderte sich der Name des Schwerts wie auch sein Pseudonym für immer."
+          }
+        ]
+      }
+    ],
     "galleryCharacter": [
       {
         "key": "Standard Form",
@@ -394,93 +481,6 @@
             ]
           }
         ]
-      }
-    ],
-    "story": [
-      {
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Die langen Rollen von Tatarasuna wurden von einem der ehemaligen Inspektoren entworfen.\nMan sagt der Stadt einen einfachen und geradlinigen Charakter nach, den die Einwohner im Allgemeinen haben.\nLange vor der Einführung der fremden Technik zur Herstellung des „Mikage-Hochofens“\nist die in Tatarasuna angewandte Schmelzmethode die traditionelle „Metallverarbeitungsmethode“.\nNachdem Mikoshi Nagamasa die Rolle des Inspektors übernommen hatte, war er eine Zeit lang von der kalten Schönheit des Stahls besessen.\nEr suchte Rat bei Miyazaki, der ebenfalls ein erfahrener Schwertkämpfer war.\nAm Ende fertigte er in Handarbeit dieses einfache und harte Schwert, „Daitatara Nagamasa“.\nObwohl er der Adoptivsohn der Familie Mikoshi war und seine Adoptivmutter dafür gesorgt hatte, dass sein Name angeschwärzt wurde,\nObwohl Mikoshis erster Sohn ihn aufgegeben hat und untergetaucht ist,\nließen seine selbsternannte Dummheit und seine wirkliche Loyalität ihn den Namen der öffentlichen Meinung hundertfach in Ehren halten.\nStrebe danach, in die Regierung einzutreten und das Stigma der Familie mit hundertfachem Fleiß und Klarheit zu tilgen.\nSelbst wenn es einen Hinweis auf ein Fehlverhalten seines eigenen Helfers Katsuragi gäbe, würde er gnadenlos abgeschossen werden.\nDanach änderte sich der Name des Schwerts wie auch sein Pseudonym für immer."
-          }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Name",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Katsuragikiri Nagamasa"
-          }
-        ]
-      },
-      {
-        "key": "Herkunft",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Inazuma"
-          }
-        ]
-      },
-      {
-        "key": "Typ",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Zweihänder"
-          }
-        ]
-      },
-      {
-        "key": "Nebenattribute",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Aufladerate"
-          }
-        ]
-      },
-      {
-        "key": "Verhalten eines Samurais",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Erhöht den mit Elementarfähigkeiten verursachten Schaden um <color=#37ffff>6% ~ 7,5% ~ 9% ~ 10,5% ~ 12%</color> . Zieht der Figur bei Treffern mit einer Elementarfähigkeit 3 Punkte Elementarenergie ab und stellt im Gegenzug 6s lang alle 2s <color=#37ffff>3 ~ 3,5 ~ 4 ~ 4,5 ~ 5</color> Punkte Elementarenergie wieder her. Dieser Effekt kann nur einmal alle 10s ausgelöst werden, auch von Figuren, die sich in deiner Truppe, aber nicht im Kampf befinden."
-          }
-        ]
-      },
-      {
-        "key": "Schmiedematerial",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 348,
-            "name": "Unbearbeiteter Zweihänder des Nordens",
-            "desc": "Rohmaterial zum Herstellen von Waffen. Kann zu einem 4-Sterne-Zweihänder geschmiedet werden.<br/>In der Philosophie spricht man dem Marmor großes Potenzial zu, weil es sich zu den schönsten Figuren machen lässt. Auch dieses Rohmaterial birgt unzählige Möglichkeiten. Was wohl einmal daraus wird?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Northlander Claymore Billet_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1330,
-            "name": "Amethyst-Brocken",
-            "desc": "Ein ungeschliffener Kristall, der nur in Inazuma gefunden werden kann. Etwas professionelle Handwerkskunst wird seinen wahren Wert zur Geltung bringen.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Amethyst Lump_icon.png",
-            "amount": 50
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1224,
-            "name": "Brocken weißes Eisen",
-            "desc": "Ein Klumpen weißes Eisenerz, der in den Händen eines begabten Schmieds zu glanzvollen Dingen reifen kann.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
-            "amount": 50
-          }
-        ],
-        "isMaterial": true
       }
     ]
   }
