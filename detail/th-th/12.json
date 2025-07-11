@@ -5,16 +5,772 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/avatar.png",
   "filterValues": {
+    "characterVision": "ไฟ",
     "characterProperty": "โบนัสความเสียหายไฟ",
     "characterRegion": "Mondstadt",
-    "characterVision": "ไฟ",
-    "characterRarity": 5,
-    "characterWeapon": "สื่อเวท"
+    "characterWeapon": "สื่อเวท",
+    "characterRarity": 5
   },
   "menuId": 2,
   "menuName": "คู่มือตัวละคร",
   "version": 1713601512,
   "components": {
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/constellation_1.png",
+        "name": "Chained Reactions",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "เมื่อโจมตีและใช้สกิล จะมีโอกาสที่จะเรียกประกายไฟ เพื่อระดมโจมตีใส่ศัตรู สร้างความเสียหายเทียบเท่ากับ 120% ของความเสียหายของ <color=#ffd780>Sparks 'n' Splash</color>"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/constellation_2.png",
+        "name": "Explosive Frags",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "กับระเบิดของ <color=#ffd780>Jumpy Dumpty</color> จะทำให้พลังป้องกันของศัตรู ลดลง 23% เป็นเวลา 10 วินาที"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/constellation_3.png",
+        "name": "Exquisite Compound",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "เพิ่มเลเวลสกิลของ <color=#ffd780>Jumpy Dumpty</color> ขึ้น 3 ระดับ\nเพิ่มได้มากสุด 15 ระดับ"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/constellation_4.png",
+        "name": "Sparkly Explosion",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "หากออกจากการต่อสู้ระหว่าง ช่วงเวลาต่อเนื่องของ <color=#ffd780>Sparks 'n' Splash</color> จะทำให้เกิดการระเบิดสร้าง <color=#ff9999>ความเสียหายไฟวงกว้าง</color> เป็น 555% ของพลังโจมตี"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/constellation_5.png",
+        "name": "Nova Burst",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "เพิ่มเลเวลสกิลของ <color=#ffd780>Sparks 'n' Splash</color> ขึ้น 3 ระดับ\nเพิ่มได้มากสุด 15 ระดับ"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/constellation_6.png",
+        "name": "Blazing Delight",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "ภายใต้สภาวะของ <color=#ffd780>Sparks 'n' Splash</color> ในทุก 3 วินาที Klee จะฟื้นฟูพลังงานธาตุ 3 หน่วย ให้แก่ตัวละครทั้งหมดในทีม (ไม่รวมตัวของ Klee เอง);\nหลังจากใช้ <color=#ffd780>Sparks 'n' Splash</color> ตัวละครทั้งหมดในทีมจะได้รับ <color=#ff9999>โบนัสความเสียหายไฟ</color> 10% เป็นเวลา 25 วินาที"
+          }
+        ]
+      }
+    ],
+    "ascension": [
+      {
+        "key": "Lv.1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "ก่อนเลื่อนขั้น",
+              "หลังเลื่อนขั้น"
+            ]
+          },
+          {
+            "key": "พลังชีวิตพื้นฐาน",
+            "values": [
+              "-",
+              "801"
+            ]
+          },
+          {
+            "key": "พลังโจมตีพื้นฐาน",
+            "values": [
+              "-",
+              "24"
+            ]
+          },
+          {
+            "key": "ป้องกันพื้นฐาน",
+            "values": [
+              "-",
+              "48"
+            ]
+          },
+          {
+            "key": "โบนัสความเสียหายไฟ",
+            "values": [
+              "-",
+              "0%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Lv.20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "ก่อนเลื่อนขั้น",
+              "หลังเลื่อนขั้น"
+            ]
+          },
+          {
+            "key": "พลังชีวิตพื้นฐาน",
+            "values": [
+              "2077",
+              "2764"
+            ]
+          },
+          {
+            "key": "พลังโจมตีพื้นฐาน",
+            "values": [
+              "63",
+              "84"
+            ]
+          },
+          {
+            "key": "ป้องกันพื้นฐาน",
+            "values": [
+              "124",
+              "165"
+            ]
+          },
+          {
+            "key": "โบนัสความเสียหายไฟ",
+            "values": [
+              "0%",
+              "0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1100,
+            "name": "Agnidus Agate Sliver",
+            "desc": "วัสดุเลื่อนขั้นตัวละคร",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 735,
+            "name": "Philanemo Mushroom",
+            "desc": "เห็ดราที่เติบโตท่ามกลางสายลม อันอบอุ่น พลังชีวิตของมันนั้นราวกับลม ที่พัดมาอย่างไม่มีวันหยุดยั้ง",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 630,
+            "name": "Divining Scroll",
+            "desc": "อาจจะเพราะเวทมนตร์บางอย่างที่ยังหลงเหลืออยู่ในคัมภีร์เล่มนี้ ทำให้สัมผัสได้ถึงความอบอุ่นบาง อย่างที่แผ่ออกมาอย่างแผ่วเบา",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Divining Scroll_icon.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "Lv.40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "ก่อนเลื่อนขั้น",
+              "หลังเลื่อนขั้น"
+            ]
+          },
+          {
+            "key": "พลังชีวิตพื้นฐาน",
+            "values": [
+              "4136",
+              "4623"
+            ]
+          },
+          {
+            "key": "พลังโจมตีพื้นฐาน",
+            "values": [
+              "125",
+              "140"
+            ]
+          },
+          {
+            "key": "ป้องกันพื้นฐาน",
+            "values": [
+              "247",
+              "276"
+            ]
+          },
+          {
+            "key": "โบนัสความเสียหายไฟ",
+            "values": [
+              "0%",
+              "7.2%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1099,
+            "name": "Agnidus Agate Fragment",
+            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"เพื่อเติมเต็มความปรารถนาจึงเริ่มเดินทาง เพื่อก้าวสู่ความเป็นหนึ่งจึงเข้าต่อสู้ฟาดฟัน...\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Everflame Seed",
+            "desc": "เมล็ดพันธุ์ที่ทำให้ Pyro Regisvine นั้นลุกไหม้อยู่ตลอดเวลา ปลดปล่อยพลังงานความร้อนของธาตุไฟออกมาราวกับจะเผาโลกนี้ให้มอดไหม้<br/>ความปรารถนาอันไม่สิ้นสุด ซึ่งหลั่งไหลท่ามกลางพลังงานที่ปั่นป่วนในส่วนลึกของโลก ความปรารถนาแบบไหนกันนะ ที่กักเก็บไฟที่ร้อนแรงขนาดนั้นไว้กับต้นไม้ และกระหายที่จะแผดเผาทุกสิ่งให้ราบคาบ",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 735,
+            "name": "Philanemo Mushroom",
+            "desc": "เห็ดราที่เติบโตท่ามกลางสายลม อันอบอุ่น พลังชีวิตของมันนั้นราวกับลม ที่พัดมาอย่างไม่มีวันหยุดยั้ง",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 630,
+            "name": "Divining Scroll",
+            "desc": "อาจจะเพราะเวทมนตร์บางอย่างที่ยังหลงเหลืออยู่ในคัมภีร์เล่มนี้ ทำให้สัมผัสได้ถึงความอบอุ่นบาง อย่างที่แผ่ออกมาอย่างแผ่วเบา",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Divining Scroll_icon.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "Lv.50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "ก่อนเลื่อนขั้น",
+              "หลังเลื่อนขั้น"
+            ]
+          },
+          {
+            "key": "พลังชีวิตพื้นฐาน",
+            "values": [
+              "5319",
+              "5970"
+            ]
+          },
+          {
+            "key": "พลังโจมตีพื้นฐาน",
+            "values": [
+              "161",
+              "180"
+            ]
+          },
+          {
+            "key": "ป้องกันพื้นฐาน",
+            "values": [
+              "318",
+              "357"
+            ]
+          },
+          {
+            "key": "โบนัสความเสียหายไฟ",
+            "values": [
+              "7.2%",
+              "14.4%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1099,
+            "name": "Agnidus Agate Fragment",
+            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"เพื่อเติมเต็มความปรารถนาจึงเริ่มเดินทาง เพื่อก้าวสู่ความเป็นหนึ่งจึงเข้าต่อสู้ฟาดฟัน...\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Everflame Seed",
+            "desc": "เมล็ดพันธุ์ที่ทำให้ Pyro Regisvine นั้นลุกไหม้อยู่ตลอดเวลา ปลดปล่อยพลังงานความร้อนของธาตุไฟออกมาราวกับจะเผาโลกนี้ให้มอดไหม้<br/>ความปรารถนาอันไม่สิ้นสุด ซึ่งหลั่งไหลท่ามกลางพลังงานที่ปั่นป่วนในส่วนลึกของโลก ความปรารถนาแบบไหนกันนะ ที่กักเก็บไฟที่ร้อนแรงขนาดนั้นไว้กับต้นไม้ และกระหายที่จะแผดเผาทุกสิ่งให้ราบคาบ",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 735,
+            "name": "Philanemo Mushroom",
+            "desc": "เห็ดราที่เติบโตท่ามกลางสายลม อันอบอุ่น พลังชีวิตของมันนั้นราวกับลม ที่พัดมาอย่างไม่มีวันหยุดยั้ง",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 634,
+            "name": "Seal Scroll",
+            "desc": "คัมภีร์โบราณที่ประกอบไปด้วยภาพวาด ที่ยากจะเข้าใจ ลองเลียนแบบท่าทาง ของสัตว์ประหลาดบางตัวดูสิ แล้วจะได้พบกับปาฏิหาริย์แห่ง เวทมนตร์",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sealed Scroll_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "ก่อนเลื่อนขั้น",
+              "หลังเลื่อนขั้น"
+            ]
+          },
+          {
+            "key": "พลังชีวิตพื้นฐาน",
+            "values": [
+              "6673",
+              "7161"
+            ]
+          },
+          {
+            "key": "พลังโจมตีพื้นฐาน",
+            "values": [
+              "202",
+              "216 "
+            ]
+          },
+          {
+            "key": "ป้องกันพื้นฐาน",
+            "values": [
+              "399",
+              "428"
+            ]
+          },
+          {
+            "key": "โบนัสความเสียหายไฟ",
+            "values": [
+              "14.4%",
+              "14.4%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1098,
+            "name": "Agnidus Agate Chunk",
+            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"เพื่อเติมเต็มความปรารถนาจึงเริ่มเดินทาง เพื่อก้าวสู่ความเป็นหนึ่งจึงเข้าต่อสู้ฟาดฟัน...\"<br/>ในที่สุดก็ถูกแผดเผาทั้งหมดเพราะความฝัน",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Everflame Seed",
+            "desc": "เมล็ดพันธุ์ที่ทำให้ Pyro Regisvine นั้นลุกไหม้อยู่ตลอดเวลา ปลดปล่อยพลังงานความร้อนของธาตุไฟออกมาราวกับจะเผาโลกนี้ให้มอดไหม้<br/>ความปรารถนาอันไม่สิ้นสุด ซึ่งหลั่งไหลท่ามกลางพลังงานที่ปั่นป่วนในส่วนลึกของโลก ความปรารถนาแบบไหนกันนะ ที่กักเก็บไฟที่ร้อนแรงขนาดนั้นไว้กับต้นไม้ และกระหายที่จะแผดเผาทุกสิ่งให้ราบคาบ",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 735,
+            "name": "Philanemo Mushroom",
+            "desc": "เห็ดราที่เติบโตท่ามกลางสายลม อันอบอุ่น พลังชีวิตของมันนั้นราวกับลม ที่พัดมาอย่างไม่มีวันหยุดยั้ง",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 634,
+            "name": "Seal Scroll",
+            "desc": "คัมภีร์โบราณที่ประกอบไปด้วยภาพวาด ที่ยากจะเข้าใจ ลองเลียนแบบท่าทาง ของสัตว์ประหลาดบางตัวดูสิ แล้วจะได้พบกับปาฏิหาริย์แห่ง เวทมนตร์",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sealed Scroll_icon.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Lv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "ก่อนเลื่อนขั้น",
+              "หลังเลื่อนขั้น"
+            ]
+          },
+          {
+            "key": "พลังชีวิตพื้นฐาน",
+            "values": [
+              "7870",
+              "8358"
+            ]
+          },
+          {
+            "key": "พลังโจมตีพื้นฐาน",
+            "values": [
+              "238",
+              "253"
+            ]
+          },
+          {
+            "key": "ป้องกันพื้นฐาน",
+            "values": [
+              "470",
+              "500"
+            ]
+          },
+          {
+            "key": "โบนัสความเสียหายไฟ",
+            "values": [
+              "14.4%",
+              "21.6%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1098,
+            "name": "Agnidus Agate Chunk",
+            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"เพื่อเติมเต็มความปรารถนาจึงเริ่มเดินทาง เพื่อก้าวสู่ความเป็นหนึ่งจึงเข้าต่อสู้ฟาดฟัน...\"<br/>ในที่สุดก็ถูกแผดเผาทั้งหมดเพราะความฝัน",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Everflame Seed",
+            "desc": "เมล็ดพันธุ์ที่ทำให้ Pyro Regisvine นั้นลุกไหม้อยู่ตลอดเวลา ปลดปล่อยพลังงานความร้อนของธาตุไฟออกมาราวกับจะเผาโลกนี้ให้มอดไหม้<br/>ความปรารถนาอันไม่สิ้นสุด ซึ่งหลั่งไหลท่ามกลางพลังงานที่ปั่นป่วนในส่วนลึกของโลก ความปรารถนาแบบไหนกันนะ ที่กักเก็บไฟที่ร้อนแรงขนาดนั้นไว้กับต้นไม้ และกระหายที่จะแผดเผาทุกสิ่งให้ราบคาบ",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 735,
+            "name": "Philanemo Mushroom",
+            "desc": "เห็ดราที่เติบโตท่ามกลางสายลม อันอบอุ่น พลังชีวิตของมันนั้นราวกับลม ที่พัดมาอย่างไม่มีวันหยุดยั้ง",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1282,
+            "name": "Forbidden Curse Scroll",
+            "desc": "คัมภีร์ที่เสมือนสำเนาของหนังสือ โบราณ มีเพียงไม่กี่คนที่สามารถเข้าใจเนื้อหาของมัน และเคยได้ยินมาว่าผู้ที่สามารถตีความมันได้จะกลายเป็นคนบ้า",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Forbidden Curse Scroll_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "ก่อนเลื่อนขั้น",
+              "หลังเลื่อนขั้น"
+            ]
+          },
+          {
+            "key": "พลังชีวิตพื้นฐาน",
+            "values": [
+              "9076",
+              "9563"
+            ]
+          },
+          {
+            "key": "พลังโจมตีพื้นฐาน",
+            "values": [
+              "274",
+              "289"
+            ]
+          },
+          {
+            "key": "ป้องกันพื้นฐาน",
+            "values": [
+              "542",
+              "572"
+            ]
+          },
+          {
+            "key": "โบนัสความเสียหายไฟ",
+            "values": [
+              "21.6%",
+              "28.8%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1097,
+            "name": "Agnidus Agate Gemstone",
+            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"เพื่อเติมเต็มความปรารถนาจึงเริ่มเดินทาง เพื่อก้าวสู่ความเป็นหนึ่งจึงเข้าต่อสู้ฟาดฟัน...\"<br/>ในที่สุดก็ถูกแผดเผาทั้งหมดเพราะความฝัน<br/>หากหัวใจดั้งเดิมถูกทิ้งไว้ในกองขี้เถ้าเขาจะได้รับความจริงของ██",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Everflame Seed",
+            "desc": "เมล็ดพันธุ์ที่ทำให้ Pyro Regisvine นั้นลุกไหม้อยู่ตลอดเวลา ปลดปล่อยพลังงานความร้อนของธาตุไฟออกมาราวกับจะเผาโลกนี้ให้มอดไหม้<br/>ความปรารถนาอันไม่สิ้นสุด ซึ่งหลั่งไหลท่ามกลางพลังงานที่ปั่นป่วนในส่วนลึกของโลก ความปรารถนาแบบไหนกันนะ ที่กักเก็บไฟที่ร้อนแรงขนาดนั้นไว้กับต้นไม้ และกระหายที่จะแผดเผาทุกสิ่งให้ราบคาบ",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 735,
+            "name": "Philanemo Mushroom",
+            "desc": "เห็ดราที่เติบโตท่ามกลางสายลม อันอบอุ่น พลังชีวิตของมันนั้นราวกับลม ที่พัดมาอย่างไม่มีวันหยุดยั้ง",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1282,
+            "name": "Forbidden Curse Scroll",
+            "desc": "คัมภีร์ที่เสมือนสำเนาของหนังสือ โบราณ มีเพียงไม่กี่คนที่สามารถเข้าใจเนื้อหาของมัน และเคยได้ยินมาว่าผู้ที่สามารถตีความมันได้จะกลายเป็นคนบ้า",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Forbidden Curse Scroll_icon.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "Lv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "ก่อนเลื่อนขั้น",
+              "หลังเลื่อนขั้น"
+            ]
+          },
+          {
+            "key": "พลังชีวิตพื้นฐาน",
+            "values": [
+              "10287",
+              "-"
+            ]
+          },
+          {
+            "key": "พลังโจมตีพื้นฐาน",
+            "values": [
+              "311",
+              "-"
+            ]
+          },
+          {
+            "key": "ป้องกันพื้นฐาน",
+            "values": [
+              "615",
+              "-"
+            ]
+          },
+          {
+            "key": "โบนัสความเสียหายไฟ",
+            "values": [
+              "28.8%",
+              "-"
+            ]
+          }
+        ]
+      }
+    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=39&center=158.66,90.19&zoom=-0.50",
+    "baseInfo": [
+      {
+        "key": "ชื่อ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Klee"
+          }
+        ]
+      },
+      {
+        "key": "วันเกิด",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "27/7"
+          }
+        ]
+      },
+      {
+        "key": "กลุ่มดาว",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Trifolium"
+          }
+        ]
+      },
+      {
+        "key": "ฉายา",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "ดวงอาทิตย์ที่หลบหนี"
+          }
+        ]
+      },
+      {
+        "key": "วิชั่น",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "ไฟ"
+          }
+        ]
+      },
+      {
+        "key": "สังกัด",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "กองอัศวินแห่ง Favonius"
+          }
+        ]
+      },
+      {
+        "key": "ภาษาจีน CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "花玲"
+          }
+        ]
+      },
+      {
+        "key": "ภาษาอังกฤษ CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Poonam Basu"
+          }
+        ]
+      },
+      {
+        "key": "ภาษาญี่ปุ่น CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "久野美咲"
+          }
+        ]
+      },
+      {
+        "key": "ภาษาเกาหลี CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Bang Yeon-ji"
+          }
+        ]
+      },
+      {
+        "key": "อาหารระดับพิเศษ",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 1891,
+            "name": "Fish-Flavored Toast",
+            "desc": "เมนูพิเศษของ Klee เพราะได้ทิ้งระเบิดมั่วซั่วซะจนทำให้ ปลาตาย ภายใต้การชี้แนะของ Jean นั้น Klee ตั้งใจฝึกทำโทสต์จานนี้เพื่อให้เป็นของขวัญชดเชยแก่ชาวประมง รสชาติทั้งดีและอิ่มท้อง จากนี้ไป Klee สามารถระเบิดปลาได้ทั้งวันโดยที่ ไม่หิวเลยล่ะ",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fish-Flavored Toast_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "การ์ดตัวละครเกมกลเจ็ดอัจฉริยะ",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3457,
+            "name": "Klee",
+            "desc": "<p>ในแต่ละครั้งที่จั่วการ์ด จะมีโอกาสที่จะเกิดการ \"เซอร์ไพรส์ระเบิดระเบ้อ\" หนึ่งครั้ง</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/18/144837601/24190d55c500e2eae31705e6590b1302_779187817269600702.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "เวอร์ชันเผยแพร่",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.0"
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "title": "ข้อมูลตัวละคร",
@@ -792,622 +1548,90 @@
         "attributes": null
       }
     ],
+    "textualResearch": [
+      {
+        "title": "[ข้อความวันเกิด] SNS & illust (2020)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "\"ฮ่า... คราวนี้คงจะไม่ทำให้หลังคากองอัศวินไหม้แล้วล่ะ... ถือโอกาสตอนที่หัวหน้ากอง Jean ไม่อยู่ รีบกินปลาย่างแล้วไปดีกว่า!\"\nคำเตือนด้วยความหวังดี: โปรดอย่าเลียนแบบวิธีระเบิดปลา! (ไม่งั้นจะถูกขังนะ!><)\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1414563352267120/"
+          }
+        ]
+      },
+      {
+        "title": "[ข้อความวันเกิด] SNS & illust 1 (2021)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "สุขสันต์วันเกิด Klee\nว้าววว ของขวัญวันเกิดของ Klee ล่ะ!\nเอ๋? มีของ Dodoco ด้วยชิ้นนึงเหรอ? ดีจังเลย!\nขอบคุณมากน้า Klee กับ Dodoco ดีใจมากเลย!\nวันนี้จะไประเบิดปลาด้วยกันกับ Klee มั้ย?\nช่วงนี้ Klee เจอสถานที่ลับดี ๆ ด้วยล่ะ ต้องอย่าให้หัวหน้ากอง Jean เจอเข้า เด็ดขาด! เลยนะ! รีบไปกันเถอะ!\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1706538333069619/"
+          }
+        ]
+      },
+      {
+        "title": "[ข้อความวันเกิด] SNS & illust 2 (2021)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "สุขสันต์วันเกิด Klee\n\"(กระซิบ) พี่นักเดินทาง จุดซ่อนสมบัติที่พี่ Amber บอกมาน่าจะอยู่ข้างหน้านี้นะ? พี่ว่า ทุกคนในกองอัศวินจะเตรียมของขวัญอะไรไว้บ้างเหรอ?\"\n\"Klee... เรามาเริ่มการแข่งขันล่าสมบัติกันเถอะ ดูซิว่าใครจะหาสมบัติเจอก่อนกัน! อ๊ะ ระวังอย่าลื่นล้มซะล่ะ\"\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1706538793069573"
+          }
+        ]
+      },
+      {
+        "title": "[ข้อความวันเกิด] SNS & illust 1 (2022)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "สุขสันต์วันเกิด Klee!\nมาดูจิ มาดูจิ ระเบิดแบบใหม่ที่ Klee สร้างขึ้นแหละ!\nตอนที่มันระเบิดก็จะมีดอกไม้สวย ๆ เยอะแยะบินออกมาด้วยแหละ สวยมากเลยน้า! นี่ Klee เลือกเองกับมือเลยนะ~\nแม่ขาบอกว่า ถ้ามีอะไรดี ๆ ต้องรู้จักแบ่งปันให้เพื่อนด้วย\nเพราะพี่มักจะเล่นกับ Klee เสมอ เลยเป็นเพื่อนสนิทของ Klee เพราะงั้นอันนี้ให้พี่นะ!\nKlee ลองแล้ว แน่นอนว่าไม่มีปัญหา! ไม่อันตรายเลยซักกะติ๊ด!\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1982829898773793/"
+          }
+        ]
+      },
+      {
+        "title": "[ข้อความวันเกิด] SNS & illust 2 (2022)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "สุขสันต์วันเกิด Klee!\n\"Klee! ทุกคนกำลังรอ... รอหนูอยู่นะ...\"\n\"นักเดินทาง เธอบอกว่า Klee จะไม่ถูกกักบริเวณในวันเกิดใช่ปะ?\"\n\"อุแง้! พวกพี่ช่วย Klee หน่อยได้มั้ย? Klee ไม่อยากถูกกักบริเวณอ่าา!\"\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1982821028774680"
+          }
+        ]
+      },
+      {
+        "title": "[ข้อความวันเกิด] SNS & illust 1 (2023)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "สุขสันต์วันเกิด Klee!\n\"อัศวินผมทองเงยหน้าขึ้นมอง แม่มดเค้กสีแดงพร้อมกับ Dodoco เพื่อนที่ดีที่สุดของเธอ ร่อนลงจากฟ้ามาช่วยแล้ว!\"\nโอ้โห ที่นี่สูงจัง ลมพัดแรงจนหมวกเกือบปลิวไปซะแล้ว...\nดะ...ดีล่ะ! ต่อไป Klee จะกระโดดลงมาจากดอกไม้ที่สูงกว่านี้อีก! ฮิฮิ!\n\"ทาด๊า! แม่มดเค้กสีแดงมาแล้ว! อัศวินผู้กล้าหาญ จับหนูให้ได้นะ!\"สุขสันต์วันเกิด Klee!\nFB URL: https:/www.facebook.com/photo.php?fbid=607104754885769&id=100067587490007&set=a.580625214200390"
+          }
+        ]
+      },
+      {
+        "title": "[ข้อความวันเกิด] SNS & illust 2 (2023)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "\"Klee แบบนี้มองเห็นมั้ย?\"\n\"มองเห็นแล้ว! ขอบคุณนะพี่ Amber! Klee ไม่เคยเห็นเมือง Mondstadt แบบนี้มาก่อนเลย!\"\nFB URL: https:/www.facebook.com/photo?fbid=607103641552547&set=pb.100067587490007.-2207520000"
+          }
+        ]
+      },
+      {
+        "title": "Klee & Albedo 1",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "K...Klee?! อย่าขว้างระเบิดนะ!\n\"พี่ Albedo! กำลังทำวิจัยใหม่อยู่เหรอคะ! ดูแล้วน่าสนใจจังเลย!\"\n\"ใช่แล้วล่ะ การทดลองใหม่นี้เกี่ยวกับ... K...Klee?! อย่าขว้างระเบิดสิ!\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1795696044153847/"
+          }
+        ]
+      },
+      {
+        "title": "Klee ระเบิดปลา (2022)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "\"อยากไประเบิดปลาด้วยกันกับ Klee มั้ย?\"\nPaimon ได้ยินมาว่า วันนี้มีคนไปเดินเล่นที่ Starfell Lake แล้วจู่ ๆ ทะเลสาบก็มีเสียงระเบิด \"ตู๊มม\" ดังขึ้นมา! แล้วมีเด็กผู้หญิงตัวเล็ก ๆ ชุดสีแดง วิ่งผ่านไป จากนั้น... ท้องฟ้าก็มี \"ปลา\" ตกลงมา!\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1972041599852623/"
+          }
+        ]
+      }
+    ],
     "customize": [
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "ภาพรวมพรสวรรค์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>สกิลธาตุ</color> จะเป็นการโยน Jumpy Dumpty โดย Jumpy Dumpty จะเด้งติดต่อกันสามครั้ง โดยแต่ละครั้งล้วนสามารถทำให้เกิด การระเบิดได้ ซึ่งจะสร้าง <color=#ff9999>ความเสียหายไฟวงกว้าง</color>\n<color=#ffd780>ท่าไม้ตาย</color> จะเรียก Sparks 'n' Splash ออกมา เพื่อโจมตีศัตรูที่อยู่ในบริเวณใกล้เคียงอย่างต่อเนื่อง และทำให้เกิด <color=#ff9999>ความเสียหายไฟวงกว้าง</color>\nเมื่อ <color=#ffd780>Jumpy Dumpty</color> และการโจมตีปกติสร้างความเสียหาย จะมีโอกาส 50% ที่จะมอบ Explosive Spark ให้แก่ Klee หนึ่งดอก\nเมื่อชาร์จโจมตี Explosive Spark จะถูกใช้ ซึ่งทำให้การชาร์จโจมตีในครั้งนี้ไม่ใช้พลังกาย และสร้างความเสียหายเพิ่มขึ้น 50%\nเมื่อ <color=#ffd780>ชาร์จโจมตี</color> ของ Klee ติดคริติคอล จะฟื้นฟูพลังงานธาตุ 2 หน่วย ให้แก่ตัวละครทั้งหมดในทีม"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "อาวุธแนะนำ"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "อาวุธ 3-ดาว"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1994,
-        "name": "Twin Nephrite",
-        "desc": "จี้หยกที่นำเอาหยกทั่วไปสองชิ้นมาประกอบเข้าด้วยกัน",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/甲级宝珏.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Twin Nephrite</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>อัตราคริ</color>\nสกิลติดตัว: หลังจากกำจัดศัตรูได้ <color=#ffd780>ความเร็วเคลื่อนที่</color> และ <color=#ffd780>พลังโจมตี</color> จะเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nมีประโยชน์เมื่อต้องต่อสู้กับศัตรูจำนวนมาก\n<color=#ffffff>หาได้จาก:</color>\nรางวัลจากหีบสมบัติใน Liyue ที่มีคุณภาพตั้งแต่ Exquisite หรือสูงกว่า"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "อาวุธ 4-ดาว"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1991,
-        "name": "The Widsith",
-        "desc": "หนังสือบันทึกเนื้อเพลงเล่มหนา ๆ ซึ่งถึงแม้จะถูกแมลงและสายลมทำให้ผุกร่อนไปบ้าง แต่ลายมือที่เหลืออยู่ก็ยังคงเผยพลังงานให้เห็นอยู่ดี",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/流浪乐章.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>The Widsith</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>ความแรงคริ</color>\nสกิลติดตัว: สุ่มการเพิ่มของค่าต่อไปนี้: <color=#ffd780>พลังโจมตี/เพิ่มความเสียหายธาตุทั้งหมด/ความชำนาญธาตุ</color>\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่าความแรงคริที่เหมาะกับตัวทำความเสียหายหลักอย่าง Klee\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1950,
-        "name": "Dodoco Tales",
-        "desc": "หนังสือสำหรับเด็กที่มีหน้าปกสวยงาม เนื้อหาเป็นเรื่องสั้นที่เกี่ยวกับเด็ก ๆ ทั้งหมด มันน่าอ่านจนอดใจไม่ไหว<br/>แม้แต่นักอ่านที่เป็นผู้ใหญ่พอได้อ่านเรื่องราวผจญภัยแบบเด็ก ๆ แบบนี้แล้ว ก็อดไม่ได้ที่จะหลงใหลไปกับมัน",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/嘟嘟可故事集.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Dodoco Tales</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>พลังโจมตี</color>\nสกิลติดตัว: เพิ่ม <color=#ffd780>พลังโจมตี</color> และ <color=#ffd780>ความเสียหายชาร์จโจมตี</color>\n<color=#ffffff>หมายเหตุ:</color>\nความสวยงามเหมาะกับ Klee\nให้ค่าพลังโจมตีช่วยเพิ่มความเสียหายโดยรวมให้แก่ Klee\n<color=#ffffff>หาได้จาก:</color>\nรางวัลจากกิจกรรม 'ซัมเมอร์หรรษากับเกาะมหัศจรรย์' (เฉพาะเวอร์ชัน 1.6)"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "อาวุธ 5-ดาว"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1951,
-        "name": "Lost Prayer to the Sacred Winds",
-        "desc": "ตำราเพื่อการศึกษาที่เขียนขึ้นโดยบุคคลนิรนามผู้เลื่อมใสในเทพแห่งลม พลังแห่งความศรัทธาที่ไหลเวียนมานับพันปีได้รับการโปรดปรานจากสายลมที่เต็มไปด้วยพรและพลัง",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/四风原典.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Lost Prayer to the Sacred Winds</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>อัตราคริ</color>\nสกิลติดตัว: เพิ่ม <color=#ffd780>ความเร็วในการเคลื่อนที่</color> และให้ค่า <color=#ffd780>โบนัสความเสียหายธาตุ</color>\n<color=#ffffff>หมายเหตุ:</color>\nยิ่ง Klee อยู่ในสนามนานเท่าไร จะยิ่งได้รับ <color=#ffd780>โบนัสความเสียหายธาตุ</color> มากขึ้นเท่านั้น\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Kagura's Verity</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>ความแรงคริ</color>\nสกิลติดตัว: เมื่อใช้ <color=#ffd780>สกิลธาตุ</color> จะทำให้ <color=#ffd780>สกิลธาตุ</color> ของตัวละครที่ใช้อาวุธนี้ สร้างความเสียหายเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่าความแรงคริที่เหมาะกับตัวละครตำแหน่งความเสียหายหลักอย่าง Klee\nจำเป็นต้องกดใช้ <color=#ffd780>สกิลธาตุ</color> เพื่อใช้งานสกิลติดตัวของอาวุธ\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "อาร์ติแฟกต์แนะนำ"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "ค่าสถานะอาร์ติแฟกต์"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/1387f1512524772db99ae30b6303f939_5072609172935942900.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>พลังโจมตี</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/56451470fe75f710b812ac28e226273b_5774236690802856497.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ff9999>โบนัสความเสียหายไฟ</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/8bc07934c9290b83751c7fa183a43ab7_32021027934025390.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>อัตราคริ / ความแรงคริ</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เซ็ต 4 อัน"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2085,
-        "name": "Crimson Witch of Flames",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Crimson Witch of Flames</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\nเซ็ต 2 อัน: ได้รับโบนัส <color=#ff9999>ความเสียหายไฟ</color> 15%\nเซ็ต 4 อัน: <color=#ffd780>ความเสียหายโอเวอร์โหลด</color> , <color=#ffd780>การติดไฟ</color> เพิ่มขึ้น 40% <color=#ffd780>ความเสียหายระเหย</color> , <color=#ffd780>ละลาย</color> เพิ่มขึ้น 15% เอฟเฟกต์เซ็ต 2 ชิ้นเพิ่มขึ้น 50%\n<color=#ffffff>หมายเหตุ:</color>\nเหมาะกับทีมทำปฏิกิริยา <color=#ff9999>ธาตุไฟ</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2083,
-        "name": "Lavawalker",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Lavawalker/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Lavawalker</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\nเซ็ต 2 อัน: เพิ่ม <color=#ff9999>ความต้านทานไฟ</color> 40%\nเซ็ต 4 อัน: สร้าง <color=#ffd780>ความเสียหาย</color> เพิ่มขึ้น 35% แก่ศัตรูที่ได้รับผลกระทบต่อ <color=#ff9999>ธาตุไฟ</color>\n<color=#ffffff>หมายเหตุ:</color>\nเหมาะกับทีมที่เน้นสร้าง <color=#ff9999>ความเสียหายไฟ</color> เป็นหลัก"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2081,
-        "name": "Wanderer's Troupe",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Wanderer's Troupe</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\nเซ็ต 2 อัน: <color=#ffd780>ความชำนาญธาตุ</color> เพิ่มขึ้น 80 หน่วย\nเซ็ต 4 อัน: เมื่อตัวละครที่สวมเซ็ตอาร์ติแฟกต์เป็นผู้ใช้สื่อเวท, ธนู การชาร์จโจมตีของตัวละครจะสร้าง <color=#ffd780>ความเสียหายเพิ่มขึ้น</color> 35%\n<color=#ffffff>หมายเหตุ:</color>\nช่วยให้ <color=#ffd780>ความเสียหาย</color> ส่วนตัวของ Klee เพิ่มมากขึ้น"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เซ็ต 2 อัน / เซ็ต 2 อัน"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2085,
-        "name": "Crimson Witch of Flames",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2095,
-        "name": "Gladiator's Finale",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Crimson Witch of Flames + Gladiator's Finale</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Crimson Witch of Flames] เซ็ต 2 อัน: ได้รับโบนัส <color=#ff9999>ความเสียหายไฟ</color> 15%\n[Gladiator's Finale] เซ็ต 2 อัน: เพิ่ม <color=#ffd780>พลังโจมตี</color> 18%\n<color=#ffffff>หมายเหตุ:</color>\nอาร์ติแฟกต์เซ็ต 2+2 สามารถหาได้ง่าย และเป็นทางเลือกที่ดีหากผู้เล่นไม่สามารถหาเซ็ต 4 อัน มาใช้ได้"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2095,
-        "name": "Gladiator's Finale",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "สามารถใช้"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2097,
-        "name": "Vermillion Hereafter",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Vermillion Hereafter/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "/"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2076,
-        "name": "Echoes of an Offering",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "/"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2098,
-        "name": "Shimenawa's Reminiscence",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "/"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 4716,
-        "name": "Nighttime Whispers in the Echoing Woods",
-        "desc": "<p></p>",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/19/53372413/d9d39d9f046d5d23c3d497574be55a82_7233237865712703807.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "ทดแทนได้"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2085,
-        "name": "Crimson Witch of Flames",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2090,
-        "name": "Emblem of Severed Fate",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Crimson Witch of Flames + Emblem of Severed Fate</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Crimson Witch of Flames] เซ็ต 2 อัน: ได้รับโบนัส <color=#ff9999>ความเสียหายไฟ</color> 15%\n[Emblem of Severed Fate] เซ็ต 2 อัน: เพิ่มประสิทธิภาพ <color=#ffd780>การฟื้นฟูพลังงาน</color> ขึ้น 20%\n<color=#ffffff>หมายเหตุ:</color>\nอาร์ติแฟกต์เซ็ต 2+2 สามารถหาได้ง่าย และเป็นทางเลือกที่ดีหากผู้เล่นไม่สามารถหาเซ็ต 4 อัน มาใช้ได้"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2090,
-        "name": "Emblem of Severed Fate",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "สามารถใช้"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2068,
-        "name": "Scholar",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Scholar/flower_of_life_icon.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "/"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2080,
-        "name": "The Exile",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/The Exile/flower_of_life_icon.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "ทดแทนได้"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2085,
-        "name": "Crimson Witch of Flames",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2075,
-        "name": "Noblesse Oblige",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Crimson Witch of Flames + Noblesse Oblige</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Crimson Witch of Flames] เซ็ต 2 อัน: ได้รับโบนัส <color=#ff9999>ความเสียหายไฟ</color> 15%\n[Noblesse Oblige] เซ็ต 2 อัน: <color=#ffd780>ความเสียหายของท่าไม้ตาย</color> เพิ่มขึ้น 20%\n<color=#ffffff>หมายเหตุ:</color>\nอาร์ติแฟกต์เซ็ต 2+2 สามารถหาได้ง่าย และเป็นทางเลือกที่ดีหากผู้เล่นไม่สามารถหาเซ็ต 4 อัน มาใช้ได้"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2085,
-        "name": "Crimson Witch of Flames",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3990,
-        "name": "Marechaussee Hunter",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/15/176148810/539b03bed1057707abd643147e18abde_5208416816830639300.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Crimson Witch of Flames + Marechaussee Hunter</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Crimson Witch of Flames] เซ็ต 2 อัน: ได้รับโบนัส <color=#ff9999>ความเสียหายไฟ</color> 15%\n[Marechaussee Hunter] เซ็ต 2 อัน: เพิ่มความเสียหาย <color=#ffd780>การโจมตีปกติ</color> และ <color=#ffd780>การชาร์จโจมตี</color> 15%\n<color=#ffffff>หมายเหตุ:</color>\nอาร์ติแฟกต์เซ็ต 2+2 สามารถหาได้ง่าย และเป็นทางเลือกที่ดีหากผู้เล่นไม่สามารถหาเซ็ต 4 อัน มาใช้ได้"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2085,
-        "name": "Crimson Witch of Flames",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2081,
-        "name": "Wanderer's Troupe",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Crimson Witch of Flames + Wanderer's Troupe</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Wanderer's Troupe] เซ็ต 2 อัน: <color=#ffd780>ความชำนาญธาตุ</color> เพิ่มขึ้น 80 หน่วย\n[Crimson Witch of Flames] เซ็ต 2 อัน: ได้รับโบนัส <color=#ff9999>ความเสียหายไฟ</color> 15%\n<color=#ffffff>หมายเหตุ:</color>\nอาร์ติแฟกต์เซ็ต 2+2 สามารถหาได้ง่าย และเป็นทางเลือกที่ดีหากผู้เล่นไม่สามารถหาเซ็ต 4 อัน มาใช้ได้\nเหมาะสำหรับทีมที่เน้นทำปฏิกิริยาธาตุเป็นหลัก"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2081,
-        "name": "Wanderer's Troupe",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "สามารถใช้"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2673,
-        "name": "Gilded Dreams",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/17/176148810/ae8a2c6f24df66e1bd7cc2dbd83d330d_1785006360227521549.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "/"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3321,
-        "name": "Flower of Paradise Lost",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/176148810/50ce09dfa5a91a33aa9cedfb15bcf2d1_7795706238144586197.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "ทดแทนได้"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2081,
-        "name": "Wanderer's Troupe",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2673,
-        "name": "Gilded Dreams",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/17/176148810/ae8a2c6f24df66e1bd7cc2dbd83d330d_1785006360227521549.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Wanderer's Troupe + Gilded Dreams</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Wanderer's Troupe] เซ็ต 2 อัน: <color=#ffd780>ความชำนาญธาตุ</color> เพิ่มขึ้น 80 หน่วย\n[Gilded Dreams] เซ็ต 2 อัน: <color=#ffd780>ความชำนาญธาตุ</color> เพิ่มขึ้น 80 หน่วย\n<color=#ffffff>หมายเหตุ:</color>\nอาร์ติแฟกต์เซ็ต 2+2 สามารถหาได้ง่าย และเป็นทางเลือกที่ดีหากผู้เล่นไม่สามารถหาเซ็ต 4 อัน มาใช้ได้\nสามารถใช้"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3321,
-        "name": "Flower of Paradise Lost",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/176148810/50ce09dfa5a91a33aa9cedfb15bcf2d1_7795706238144586197.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "ทดแทนได้"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3990,
-        "name": "Marechaussee Hunter",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/15/176148810/539b03bed1057707abd643147e18abde_5208416816830639300.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2095,
-        "name": "Gladiator's Finale",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Marechaussee Hunter + Gladiator's Finale</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Marechaussee Hunter] เซ็ต 2 อัน: เพิ่มความเสียหาย <color=#ffd780>การโจมตีปกติ</color> และ <color=#ffd780>การชาร์จโจมตี</color> 15%\n[Gladiator's Finale] เซ็ต 2 อัน: เพิ่ม <color=#ffd780>พลังโจมตี</color> 18%\n<color=#ffffff>หมายเหตุ:</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2095,
-        "name": "Gladiator's Finale",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "สามารถใช้"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2097,
-        "name": "Vermillion Hereafter",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Vermillion Hereafter/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "/"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2076,
-        "name": "Echoes of an Offering",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "/"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2098,
-        "name": "Shimenawa's Reminiscence",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "/"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 4716,
-        "name": "Nighttime Whispers in the Echoing Woods",
-        "desc": "<p></p>",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/19/53372413/d9d39d9f046d5d23c3d497574be55a82_7233237865712703807.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "ทดแทนได้"
-      },
       {
         "type": "Heading",
         "level": 1,
@@ -2440,718 +2664,621 @@
       {
         "type": "RichText",
         "text": "<color=#ffd780>Klee:</color>\nหืม? เธอพูดถึงเด็กสาวใน Mondstadt ที่เก่งเรื่องการทำระเบิดน่ะเหรอ? อืม จริง ๆ แล้วระเบิดกับดอกไม้ไฟก็ไม่ได้ต่างกันเท่าไหร่นะ นั่นก็หมายความว่า เธอมีพรสวรรค์ด้านนี้ด้วยใช่มั้ย? อยากเจอเธอสักครั้งจังเลย เฮ้อ แต่ว่า... การปล่อยให้เด็กตัวเล็ก ๆ เล่นกับระเบิดมันอันตรายไม่ใช่เหรอ? ชาว Mondstadt ไม่ห่วงเรื่องนี้เลยรึไง?"
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/constellation_1.png",
-        "name": "Chained Reactions",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "เมื่อโจมตีและใช้สกิล จะมีโอกาสที่จะเรียกประกายไฟ เพื่อระดมโจมตีใส่ศัตรู สร้างความเสียหายเทียบเท่ากับ 120% ของความเสียหายของ <color=#ffd780>Sparks 'n' Splash</color>"
-          }
-        ]
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/constellation_2.png",
-        "name": "Explosive Frags",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "กับระเบิดของ <color=#ffd780>Jumpy Dumpty</color> จะทำให้พลังป้องกันของศัตรู ลดลง 23% เป็นเวลา 10 วินาที"
-          }
-        ]
+        "type": "Heading",
+        "level": 2,
+        "text": "ภาพรวมพรสวรรค์"
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/constellation_3.png",
-        "name": "Exquisite Compound",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "เพิ่มเลเวลสกิลของ <color=#ffd780>Jumpy Dumpty</color> ขึ้น 3 ระดับ\nเพิ่มได้มากสุด 15 ระดับ"
-          }
-        ]
+        "type": "RichText",
+        "text": "<color=#ffd780>สกิลธาตุ</color> จะเป็นการโยน Jumpy Dumpty โดย Jumpy Dumpty จะเด้งติดต่อกันสามครั้ง โดยแต่ละครั้งล้วนสามารถทำให้เกิด การระเบิดได้ ซึ่งจะสร้าง <color=#ff9999>ความเสียหายไฟวงกว้าง</color>\n<color=#ffd780>ท่าไม้ตาย</color> จะเรียก Sparks 'n' Splash ออกมา เพื่อโจมตีศัตรูที่อยู่ในบริเวณใกล้เคียงอย่างต่อเนื่อง และทำให้เกิด <color=#ff9999>ความเสียหายไฟวงกว้าง</color>\nเมื่อ <color=#ffd780>Jumpy Dumpty</color> และการโจมตีปกติสร้างความเสียหาย จะมีโอกาส 50% ที่จะมอบ Explosive Spark ให้แก่ Klee หนึ่งดอก\nเมื่อชาร์จโจมตี Explosive Spark จะถูกใช้ ซึ่งทำให้การชาร์จโจมตีในครั้งนี้ไม่ใช้พลังกาย และสร้างความเสียหายเพิ่มขึ้น 50%\nเมื่อ <color=#ffd780>ชาร์จโจมตี</color> ของ Klee ติดคริติคอล จะฟื้นฟูพลังงานธาตุ 2 หน่วย ให้แก่ตัวละครทั้งหมดในทีม"
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/constellation_4.png",
-        "name": "Sparkly Explosion",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "หากออกจากการต่อสู้ระหว่าง ช่วงเวลาต่อเนื่องของ <color=#ffd780>Sparks 'n' Splash</color> จะทำให้เกิดการระเบิดสร้าง <color=#ff9999>ความเสียหายไฟวงกว้าง</color> เป็น 555% ของพลังโจมตี"
-          }
-        ]
+        "type": "Heading",
+        "level": 2,
+        "text": "อาวุธแนะนำ"
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/constellation_5.png",
-        "name": "Nova Burst",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "เพิ่มเลเวลสกิลของ <color=#ffd780>Sparks 'n' Splash</color> ขึ้น 3 ระดับ\nเพิ่มได้มากสุด 15 ระดับ"
-          }
-        ]
+        "type": "Heading",
+        "level": 3,
+        "text": "อาวุธ 3-ดาว"
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/constellation_6.png",
-        "name": "Blazing Delight",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "ภายใต้สภาวะของ <color=#ffd780>Sparks 'n' Splash</color> ในทุก 3 วินาที Klee จะฟื้นฟูพลังงานธาตุ 3 หน่วย ให้แก่ตัวละครทั้งหมดในทีม (ไม่รวมตัวของ Klee เอง);\nหลังจากใช้ <color=#ffd780>Sparks 'n' Splash</color> ตัวละครทั้งหมดในทีมจะได้รับ <color=#ff9999>โบนัสความเสียหายไฟ</color> 10% เป็นเวลา 25 วินาที"
-          }
-        ]
-      }
-    ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=39&center=158.66,90.19&zoom=-0.50",
-    "ascension": [
-      {
-        "key": "Lv.1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "ก่อนเลื่อนขั้น",
-              "หลังเลื่อนขั้น"
-            ]
-          },
-          {
-            "key": "พลังชีวิตพื้นฐาน",
-            "values": [
-              "-",
-              "801"
-            ]
-          },
-          {
-            "key": "พลังโจมตีพื้นฐาน",
-            "values": [
-              "-",
-              "24"
-            ]
-          },
-          {
-            "key": "ป้องกันพื้นฐาน",
-            "values": [
-              "-",
-              "48"
-            ]
-          },
-          {
-            "key": "โบนัสความเสียหายไฟ",
-            "values": [
-              "-",
-              "0%"
-            ]
-          }
-        ]
+        "type": "CustomEntry",
+        "epId": 1994,
+        "name": "Twin Nephrite",
+        "desc": "จี้หยกที่นำเอาหยกทั่วไปสองชิ้นมาประกอบเข้าด้วยกัน",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/甲级宝珏.png",
+        "displayStyle": "card"
       },
       {
-        "key": "Lv.20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "ก่อนเลื่อนขั้น",
-              "หลังเลื่อนขั้น"
-            ]
-          },
-          {
-            "key": "พลังชีวิตพื้นฐาน",
-            "values": [
-              "2077",
-              "2764"
-            ]
-          },
-          {
-            "key": "พลังโจมตีพื้นฐาน",
-            "values": [
-              "63",
-              "84"
-            ]
-          },
-          {
-            "key": "ป้องกันพื้นฐาน",
-            "values": [
-              "124",
-              "165"
-            ]
-          },
-          {
-            "key": "โบนัสความเสียหายไฟ",
-            "values": [
-              "0%",
-              "0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1100,
-            "name": "Agnidus Agate Sliver",
-            "desc": "วัสดุเลื่อนขั้นตัวละคร",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 735,
-            "name": "Philanemo Mushroom",
-            "desc": "เห็ดราที่เติบโตท่ามกลางสายลม อันอบอุ่น พลังชีวิตของมันนั้นราวกับลม ที่พัดมาอย่างไม่มีวันหยุดยั้ง",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 630,
-            "name": "Divining Scroll",
-            "desc": "อาจจะเพราะเวทมนตร์บางอย่างที่ยังหลงเหลืออยู่ในคัมภีร์เล่มนี้ ทำให้สัมผัสได้ถึงความอบอุ่นบาง อย่างที่แผ่ออกมาอย่างแผ่วเบา",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Divining Scroll_icon.png",
-            "amount": 3
-          }
-        ]
+        "type": "RichText",
+        "text": "<color=#ffffff>Twin Nephrite</color>",
+        "alignment": "center"
       },
       {
-        "key": "Lv.40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "ก่อนเลื่อนขั้น",
-              "หลังเลื่อนขั้น"
-            ]
-          },
-          {
-            "key": "พลังชีวิตพื้นฐาน",
-            "values": [
-              "4136",
-              "4623"
-            ]
-          },
-          {
-            "key": "พลังโจมตีพื้นฐาน",
-            "values": [
-              "125",
-              "140"
-            ]
-          },
-          {
-            "key": "ป้องกันพื้นฐาน",
-            "values": [
-              "247",
-              "276"
-            ]
-          },
-          {
-            "key": "โบนัสความเสียหายไฟ",
-            "values": [
-              "0%",
-              "7.2%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1099,
-            "name": "Agnidus Agate Fragment",
-            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"เพื่อเติมเต็มความปรารถนาจึงเริ่มเดินทาง เพื่อก้าวสู่ความเป็นหนึ่งจึงเข้าต่อสู้ฟาดฟัน...\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Everflame Seed",
-            "desc": "เมล็ดพันธุ์ที่ทำให้ Pyro Regisvine นั้นลุกไหม้อยู่ตลอดเวลา ปลดปล่อยพลังงานความร้อนของธาตุไฟออกมาราวกับจะเผาโลกนี้ให้มอดไหม้<br/>ความปรารถนาอันไม่สิ้นสุด ซึ่งหลั่งไหลท่ามกลางพลังงานที่ปั่นป่วนในส่วนลึกของโลก ความปรารถนาแบบไหนกันนะ ที่กักเก็บไฟที่ร้อนแรงขนาดนั้นไว้กับต้นไม้ และกระหายที่จะแผดเผาทุกสิ่งให้ราบคาบ",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 735,
-            "name": "Philanemo Mushroom",
-            "desc": "เห็ดราที่เติบโตท่ามกลางสายลม อันอบอุ่น พลังชีวิตของมันนั้นราวกับลม ที่พัดมาอย่างไม่มีวันหยุดยั้ง",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 630,
-            "name": "Divining Scroll",
-            "desc": "อาจจะเพราะเวทมนตร์บางอย่างที่ยังหลงเหลืออยู่ในคัมภีร์เล่มนี้ ทำให้สัมผัสได้ถึงความอบอุ่นบาง อย่างที่แผ่ออกมาอย่างแผ่วเบา",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Divining Scroll_icon.png",
-            "amount": 15
-          }
-        ]
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>อัตราคริ</color>\nสกิลติดตัว: หลังจากกำจัดศัตรูได้ <color=#ffd780>ความเร็วเคลื่อนที่</color> และ <color=#ffd780>พลังโจมตี</color> จะเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nมีประโยชน์เมื่อต้องต่อสู้กับศัตรูจำนวนมาก\n<color=#ffffff>หาได้จาก:</color>\nรางวัลจากหีบสมบัติใน Liyue ที่มีคุณภาพตั้งแต่ Exquisite หรือสูงกว่า"
       },
       {
-        "key": "Lv.50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "ก่อนเลื่อนขั้น",
-              "หลังเลื่อนขั้น"
-            ]
-          },
-          {
-            "key": "พลังชีวิตพื้นฐาน",
-            "values": [
-              "5319",
-              "5970"
-            ]
-          },
-          {
-            "key": "พลังโจมตีพื้นฐาน",
-            "values": [
-              "161",
-              "180"
-            ]
-          },
-          {
-            "key": "ป้องกันพื้นฐาน",
-            "values": [
-              "318",
-              "357"
-            ]
-          },
-          {
-            "key": "โบนัสความเสียหายไฟ",
-            "values": [
-              "7.2%",
-              "14.4%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1099,
-            "name": "Agnidus Agate Fragment",
-            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"เพื่อเติมเต็มความปรารถนาจึงเริ่มเดินทาง เพื่อก้าวสู่ความเป็นหนึ่งจึงเข้าต่อสู้ฟาดฟัน...\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Everflame Seed",
-            "desc": "เมล็ดพันธุ์ที่ทำให้ Pyro Regisvine นั้นลุกไหม้อยู่ตลอดเวลา ปลดปล่อยพลังงานความร้อนของธาตุไฟออกมาราวกับจะเผาโลกนี้ให้มอดไหม้<br/>ความปรารถนาอันไม่สิ้นสุด ซึ่งหลั่งไหลท่ามกลางพลังงานที่ปั่นป่วนในส่วนลึกของโลก ความปรารถนาแบบไหนกันนะ ที่กักเก็บไฟที่ร้อนแรงขนาดนั้นไว้กับต้นไม้ และกระหายที่จะแผดเผาทุกสิ่งให้ราบคาบ",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 735,
-            "name": "Philanemo Mushroom",
-            "desc": "เห็ดราที่เติบโตท่ามกลางสายลม อันอบอุ่น พลังชีวิตของมันนั้นราวกับลม ที่พัดมาอย่างไม่มีวันหยุดยั้ง",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 634,
-            "name": "Seal Scroll",
-            "desc": "คัมภีร์โบราณที่ประกอบไปด้วยภาพวาด ที่ยากจะเข้าใจ ลองเลียนแบบท่าทาง ของสัตว์ประหลาดบางตัวดูสิ แล้วจะได้พบกับปาฏิหาริย์แห่ง เวทมนตร์",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sealed Scroll_icon.png",
-            "amount": 12
-          }
-        ]
+        "type": "Heading",
+        "level": 3,
+        "text": "อาวุธ 4-ดาว"
       },
       {
-        "key": "Lv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "ก่อนเลื่อนขั้น",
-              "หลังเลื่อนขั้น"
-            ]
-          },
-          {
-            "key": "พลังชีวิตพื้นฐาน",
-            "values": [
-              "6673",
-              "7161"
-            ]
-          },
-          {
-            "key": "พลังโจมตีพื้นฐาน",
-            "values": [
-              "202",
-              "216 "
-            ]
-          },
-          {
-            "key": "ป้องกันพื้นฐาน",
-            "values": [
-              "399",
-              "428"
-            ]
-          },
-          {
-            "key": "โบนัสความเสียหายไฟ",
-            "values": [
-              "14.4%",
-              "14.4%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1098,
-            "name": "Agnidus Agate Chunk",
-            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"เพื่อเติมเต็มความปรารถนาจึงเริ่มเดินทาง เพื่อก้าวสู่ความเป็นหนึ่งจึงเข้าต่อสู้ฟาดฟัน...\"<br/>ในที่สุดก็ถูกแผดเผาทั้งหมดเพราะความฝัน",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Everflame Seed",
-            "desc": "เมล็ดพันธุ์ที่ทำให้ Pyro Regisvine นั้นลุกไหม้อยู่ตลอดเวลา ปลดปล่อยพลังงานความร้อนของธาตุไฟออกมาราวกับจะเผาโลกนี้ให้มอดไหม้<br/>ความปรารถนาอันไม่สิ้นสุด ซึ่งหลั่งไหลท่ามกลางพลังงานที่ปั่นป่วนในส่วนลึกของโลก ความปรารถนาแบบไหนกันนะ ที่กักเก็บไฟที่ร้อนแรงขนาดนั้นไว้กับต้นไม้ และกระหายที่จะแผดเผาทุกสิ่งให้ราบคาบ",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 735,
-            "name": "Philanemo Mushroom",
-            "desc": "เห็ดราที่เติบโตท่ามกลางสายลม อันอบอุ่น พลังชีวิตของมันนั้นราวกับลม ที่พัดมาอย่างไม่มีวันหยุดยั้ง",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 634,
-            "name": "Seal Scroll",
-            "desc": "คัมภีร์โบราณที่ประกอบไปด้วยภาพวาด ที่ยากจะเข้าใจ ลองเลียนแบบท่าทาง ของสัตว์ประหลาดบางตัวดูสิ แล้วจะได้พบกับปาฏิหาริย์แห่ง เวทมนตร์",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sealed Scroll_icon.png",
-            "amount": 18
-          }
-        ]
+        "type": "CustomEntry",
+        "epId": 1991,
+        "name": "The Widsith",
+        "desc": "หนังสือบันทึกเนื้อเพลงเล่มหนา ๆ ซึ่งถึงแม้จะถูกแมลงและสายลมทำให้ผุกร่อนไปบ้าง แต่ลายมือที่เหลืออยู่ก็ยังคงเผยพลังงานให้เห็นอยู่ดี",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/流浪乐章.png",
+        "displayStyle": "card"
       },
       {
-        "key": "Lv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "ก่อนเลื่อนขั้น",
-              "หลังเลื่อนขั้น"
-            ]
-          },
-          {
-            "key": "พลังชีวิตพื้นฐาน",
-            "values": [
-              "7870",
-              "8358"
-            ]
-          },
-          {
-            "key": "พลังโจมตีพื้นฐาน",
-            "values": [
-              "238",
-              "253"
-            ]
-          },
-          {
-            "key": "ป้องกันพื้นฐาน",
-            "values": [
-              "470",
-              "500"
-            ]
-          },
-          {
-            "key": "โบนัสความเสียหายไฟ",
-            "values": [
-              "14.4%",
-              "21.6%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1098,
-            "name": "Agnidus Agate Chunk",
-            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"เพื่อเติมเต็มความปรารถนาจึงเริ่มเดินทาง เพื่อก้าวสู่ความเป็นหนึ่งจึงเข้าต่อสู้ฟาดฟัน...\"<br/>ในที่สุดก็ถูกแผดเผาทั้งหมดเพราะความฝัน",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Everflame Seed",
-            "desc": "เมล็ดพันธุ์ที่ทำให้ Pyro Regisvine นั้นลุกไหม้อยู่ตลอดเวลา ปลดปล่อยพลังงานความร้อนของธาตุไฟออกมาราวกับจะเผาโลกนี้ให้มอดไหม้<br/>ความปรารถนาอันไม่สิ้นสุด ซึ่งหลั่งไหลท่ามกลางพลังงานที่ปั่นป่วนในส่วนลึกของโลก ความปรารถนาแบบไหนกันนะ ที่กักเก็บไฟที่ร้อนแรงขนาดนั้นไว้กับต้นไม้ และกระหายที่จะแผดเผาทุกสิ่งให้ราบคาบ",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 735,
-            "name": "Philanemo Mushroom",
-            "desc": "เห็ดราที่เติบโตท่ามกลางสายลม อันอบอุ่น พลังชีวิตของมันนั้นราวกับลม ที่พัดมาอย่างไม่มีวันหยุดยั้ง",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1282,
-            "name": "Forbidden Curse Scroll",
-            "desc": "คัมภีร์ที่เสมือนสำเนาของหนังสือ โบราณ มีเพียงไม่กี่คนที่สามารถเข้าใจเนื้อหาของมัน และเคยได้ยินมาว่าผู้ที่สามารถตีความมันได้จะกลายเป็นคนบ้า",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Forbidden Curse Scroll_icon.png",
-            "amount": 12
-          }
-        ]
+        "type": "RichText",
+        "text": "<color=#ffffff>The Widsith</color>",
+        "alignment": "center"
       },
       {
-        "key": "Lv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "ก่อนเลื่อนขั้น",
-              "หลังเลื่อนขั้น"
-            ]
-          },
-          {
-            "key": "พลังชีวิตพื้นฐาน",
-            "values": [
-              "9076",
-              "9563"
-            ]
-          },
-          {
-            "key": "พลังโจมตีพื้นฐาน",
-            "values": [
-              "274",
-              "289"
-            ]
-          },
-          {
-            "key": "ป้องกันพื้นฐาน",
-            "values": [
-              "542",
-              "572"
-            ]
-          },
-          {
-            "key": "โบนัสความเสียหายไฟ",
-            "values": [
-              "21.6%",
-              "28.8%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "สกุลเงินทั่วไป ภาษาที่ไม่ว่าใครก็รู้จัก",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1097,
-            "name": "Agnidus Agate Gemstone",
-            "desc": "วัสดุเลื่อนขั้นตัวละคร<br/>\"เพื่อเติมเต็มความปรารถนาจึงเริ่มเดินทาง เพื่อก้าวสู่ความเป็นหนึ่งจึงเข้าต่อสู้ฟาดฟัน...\"<br/>ในที่สุดก็ถูกแผดเผาทั้งหมดเพราะความฝัน<br/>หากหัวใจดั้งเดิมถูกทิ้งไว้ในกองขี้เถ้าเขาจะได้รับความจริงของ██",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Everflame Seed",
-            "desc": "เมล็ดพันธุ์ที่ทำให้ Pyro Regisvine นั้นลุกไหม้อยู่ตลอดเวลา ปลดปล่อยพลังงานความร้อนของธาตุไฟออกมาราวกับจะเผาโลกนี้ให้มอดไหม้<br/>ความปรารถนาอันไม่สิ้นสุด ซึ่งหลั่งไหลท่ามกลางพลังงานที่ปั่นป่วนในส่วนลึกของโลก ความปรารถนาแบบไหนกันนะ ที่กักเก็บไฟที่ร้อนแรงขนาดนั้นไว้กับต้นไม้ และกระหายที่จะแผดเผาทุกสิ่งให้ราบคาบ",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 735,
-            "name": "Philanemo Mushroom",
-            "desc": "เห็ดราที่เติบโตท่ามกลางสายลม อันอบอุ่น พลังชีวิตของมันนั้นราวกับลม ที่พัดมาอย่างไม่มีวันหยุดยั้ง",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1282,
-            "name": "Forbidden Curse Scroll",
-            "desc": "คัมภีร์ที่เสมือนสำเนาของหนังสือ โบราณ มีเพียงไม่กี่คนที่สามารถเข้าใจเนื้อหาของมัน และเคยได้ยินมาว่าผู้ที่สามารถตีความมันได้จะกลายเป็นคนบ้า",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Forbidden Curse Scroll_icon.png",
-            "amount": 24
-          }
-        ]
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>ความแรงคริ</color>\nสกิลติดตัว: สุ่มการเพิ่มของค่าต่อไปนี้: <color=#ffd780>พลังโจมตี/เพิ่มความเสียหายธาตุทั้งหมด/ความชำนาญธาตุ</color>\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่าความแรงคริที่เหมาะกับตัวทำความเสียหายหลักอย่าง Klee\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
       },
       {
-        "key": "Lv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "ก่อนเลื่อนขั้น",
-              "หลังเลื่อนขั้น"
-            ]
-          },
-          {
-            "key": "พลังชีวิตพื้นฐาน",
-            "values": [
-              "10287",
-              "-"
-            ]
-          },
-          {
-            "key": "พลังโจมตีพื้นฐาน",
-            "values": [
-              "311",
-              "-"
-            ]
-          },
-          {
-            "key": "ป้องกันพื้นฐาน",
-            "values": [
-              "615",
-              "-"
-            ]
-          },
-          {
-            "key": "โบนัสความเสียหายไฟ",
-            "values": [
-              "28.8%",
-              "-"
-            ]
-          }
-        ]
-      }
-    ],
-    "textualResearch": [
-      {
-        "title": "[ข้อความวันเกิด] SNS & illust (2020)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "\"ฮ่า... คราวนี้คงจะไม่ทำให้หลังคากองอัศวินไหม้แล้วล่ะ... ถือโอกาสตอนที่หัวหน้ากอง Jean ไม่อยู่ รีบกินปลาย่างแล้วไปดีกว่า!\"\nคำเตือนด้วยความหวังดี: โปรดอย่าเลียนแบบวิธีระเบิดปลา! (ไม่งั้นจะถูกขังนะ!><)\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1414563352267120/"
-          }
-        ]
+        "type": "CustomEntry",
+        "epId": 1950,
+        "name": "Dodoco Tales",
+        "desc": "หนังสือสำหรับเด็กที่มีหน้าปกสวยงาม เนื้อหาเป็นเรื่องสั้นที่เกี่ยวกับเด็ก ๆ ทั้งหมด มันน่าอ่านจนอดใจไม่ไหว<br/>แม้แต่นักอ่านที่เป็นผู้ใหญ่พอได้อ่านเรื่องราวผจญภัยแบบเด็ก ๆ แบบนี้แล้ว ก็อดไม่ได้ที่จะหลงใหลไปกับมัน",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/嘟嘟可故事集.png",
+        "displayStyle": "card"
       },
       {
-        "title": "[ข้อความวันเกิด] SNS & illust 1 (2021)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "สุขสันต์วันเกิด Klee\nว้าววว ของขวัญวันเกิดของ Klee ล่ะ!\nเอ๋? มีของ Dodoco ด้วยชิ้นนึงเหรอ? ดีจังเลย!\nขอบคุณมากน้า Klee กับ Dodoco ดีใจมากเลย!\nวันนี้จะไประเบิดปลาด้วยกันกับ Klee มั้ย?\nช่วงนี้ Klee เจอสถานที่ลับดี ๆ ด้วยล่ะ ต้องอย่าให้หัวหน้ากอง Jean เจอเข้า เด็ดขาด! เลยนะ! รีบไปกันเถอะ!\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1706538333069619/"
-          }
-        ]
+        "type": "RichText",
+        "text": "<color=#ffffff>Dodoco Tales</color>",
+        "alignment": "center"
       },
       {
-        "title": "[ข้อความวันเกิด] SNS & illust 2 (2021)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "สุขสันต์วันเกิด Klee\n\"(กระซิบ) พี่นักเดินทาง จุดซ่อนสมบัติที่พี่ Amber บอกมาน่าจะอยู่ข้างหน้านี้นะ? พี่ว่า ทุกคนในกองอัศวินจะเตรียมของขวัญอะไรไว้บ้างเหรอ?\"\n\"Klee... เรามาเริ่มการแข่งขันล่าสมบัติกันเถอะ ดูซิว่าใครจะหาสมบัติเจอก่อนกัน! อ๊ะ ระวังอย่าลื่นล้มซะล่ะ\"\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1706538793069573"
-          }
-        ]
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>พลังโจมตี</color>\nสกิลติดตัว: เพิ่ม <color=#ffd780>พลังโจมตี</color> และ <color=#ffd780>ความเสียหายชาร์จโจมตี</color>\n<color=#ffffff>หมายเหตุ:</color>\nความสวยงามเหมาะกับ Klee\nให้ค่าพลังโจมตีช่วยเพิ่มความเสียหายโดยรวมให้แก่ Klee\n<color=#ffffff>หาได้จาก:</color>\nรางวัลจากกิจกรรม 'ซัมเมอร์หรรษากับเกาะมหัศจรรย์' (เฉพาะเวอร์ชัน 1.6)"
       },
       {
-        "title": "[ข้อความวันเกิด] SNS & illust 1 (2022)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "สุขสันต์วันเกิด Klee!\nมาดูจิ มาดูจิ ระเบิดแบบใหม่ที่ Klee สร้างขึ้นแหละ!\nตอนที่มันระเบิดก็จะมีดอกไม้สวย ๆ เยอะแยะบินออกมาด้วยแหละ สวยมากเลยน้า! นี่ Klee เลือกเองกับมือเลยนะ~\nแม่ขาบอกว่า ถ้ามีอะไรดี ๆ ต้องรู้จักแบ่งปันให้เพื่อนด้วย\nเพราะพี่มักจะเล่นกับ Klee เสมอ เลยเป็นเพื่อนสนิทของ Klee เพราะงั้นอันนี้ให้พี่นะ!\nKlee ลองแล้ว แน่นอนว่าไม่มีปัญหา! ไม่อันตรายเลยซักกะติ๊ด!\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1982829898773793/"
-          }
-        ]
+        "type": "Heading",
+        "level": 3,
+        "text": "อาวุธ 5-ดาว"
       },
       {
-        "title": "[ข้อความวันเกิด] SNS & illust 2 (2022)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "สุขสันต์วันเกิด Klee!\n\"Klee! ทุกคนกำลังรอ... รอหนูอยู่นะ...\"\n\"นักเดินทาง เธอบอกว่า Klee จะไม่ถูกกักบริเวณในวันเกิดใช่ปะ?\"\n\"อุแง้! พวกพี่ช่วย Klee หน่อยได้มั้ย? Klee ไม่อยากถูกกักบริเวณอ่าา!\"\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1982821028774680"
-          }
-        ]
+        "type": "CustomEntry",
+        "epId": 1951,
+        "name": "Lost Prayer to the Sacred Winds",
+        "desc": "ตำราเพื่อการศึกษาที่เขียนขึ้นโดยบุคคลนิรนามผู้เลื่อมใสในเทพแห่งลม พลังแห่งความศรัทธาที่ไหลเวียนมานับพันปีได้รับการโปรดปรานจากสายลมที่เต็มไปด้วยพรและพลัง",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/四风原典.png",
+        "displayStyle": "card"
       },
       {
-        "title": "[ข้อความวันเกิด] SNS & illust 1 (2023)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "สุขสันต์วันเกิด Klee!\n\"อัศวินผมทองเงยหน้าขึ้นมอง แม่มดเค้กสีแดงพร้อมกับ Dodoco เพื่อนที่ดีที่สุดของเธอ ร่อนลงจากฟ้ามาช่วยแล้ว!\"\nโอ้โห ที่นี่สูงจัง ลมพัดแรงจนหมวกเกือบปลิวไปซะแล้ว...\nดะ...ดีล่ะ! ต่อไป Klee จะกระโดดลงมาจากดอกไม้ที่สูงกว่านี้อีก! ฮิฮิ!\n\"ทาด๊า! แม่มดเค้กสีแดงมาแล้ว! อัศวินผู้กล้าหาญ จับหนูให้ได้นะ!\"สุขสันต์วันเกิด Klee!\nFB URL: https:/www.facebook.com/photo.php?fbid=607104754885769&id=100067587490007&set=a.580625214200390"
-          }
-        ]
+        "type": "RichText",
+        "text": "<color=#ffffff>Lost Prayer to the Sacred Winds</color>",
+        "alignment": "center"
       },
       {
-        "title": "[ข้อความวันเกิด] SNS & illust 2 (2023)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "\"Klee แบบนี้มองเห็นมั้ย?\"\n\"มองเห็นแล้ว! ขอบคุณนะพี่ Amber! Klee ไม่เคยเห็นเมือง Mondstadt แบบนี้มาก่อนเลย!\"\nFB URL: https:/www.facebook.com/photo?fbid=607103641552547&set=pb.100067587490007.-2207520000"
-          }
-        ]
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>อัตราคริ</color>\nสกิลติดตัว: เพิ่ม <color=#ffd780>ความเร็วในการเคลื่อนที่</color> และให้ค่า <color=#ffd780>โบนัสความเสียหายธาตุ</color>\n<color=#ffffff>หมายเหตุ:</color>\nยิ่ง Klee อยู่ในสนามนานเท่าไร จะยิ่งได้รับ <color=#ffd780>โบนัสความเสียหายธาตุ</color> มากขึ้นเท่านั้น\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
       },
       {
-        "title": "Klee & Albedo 1",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "K...Klee?! อย่าขว้างระเบิดนะ!\n\"พี่ Albedo! กำลังทำวิจัยใหม่อยู่เหรอคะ! ดูแล้วน่าสนใจจังเลย!\"\n\"ใช่แล้วล่ะ การทดลองใหม่นี้เกี่ยวกับ... K...Klee?! อย่าขว้างระเบิดสิ!\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1795696044153847/"
-          }
-        ]
+        "type": "RichText",
+        "text": "<color=#ffffff>Kagura's Verity</color>",
+        "alignment": "center"
       },
       {
-        "title": "Klee ระเบิดปลา (2022)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "\"อยากไประเบิดปลาด้วยกันกับ Klee มั้ย?\"\nPaimon ได้ยินมาว่า วันนี้มีคนไปเดินเล่นที่ Starfell Lake แล้วจู่ ๆ ทะเลสาบก็มีเสียงระเบิด \"ตู๊มม\" ดังขึ้นมา! แล้วมีเด็กผู้หญิงตัวเล็ก ๆ ชุดสีแดง วิ่งผ่านไป จากนั้น... ท้องฟ้าก็มี \"ปลา\" ตกลงมา!\nFB URL: https:/www.facebook.com/genshinimpact.th/photos/a.1129889414067850/1972041599852623/"
-          }
-        ]
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>ความแรงคริ</color>\nสกิลติดตัว: เมื่อใช้ <color=#ffd780>สกิลธาตุ</color> จะทำให้ <color=#ffd780>สกิลธาตุ</color> ของตัวละครที่ใช้อาวุธนี้ สร้างความเสียหายเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่าความแรงคริที่เหมาะกับตัวละครตำแหน่งความเสียหายหลักอย่าง Klee\nจำเป็นต้องกดใช้ <color=#ffd780>สกิลธาตุ</color> เพื่อใช้งานสกิลติดตัวของอาวุธ\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "อาร์ติแฟกต์แนะนำ"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "ค่าสถานะอาร์ติแฟกต์"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/1387f1512524772db99ae30b6303f939_5072609172935942900.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>พลังโจมตี</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/56451470fe75f710b812ac28e226273b_5774236690802856497.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ff9999>โบนัสความเสียหายไฟ</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/8bc07934c9290b83751c7fa183a43ab7_32021027934025390.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>อัตราคริ / ความแรงคริ</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เซ็ต 4 อัน"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "Crimson Witch of Flames",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Crimson Witch of Flames</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\nเซ็ต 2 อัน: ได้รับโบนัส <color=#ff9999>ความเสียหายไฟ</color> 15%\nเซ็ต 4 อัน: <color=#ffd780>ความเสียหายโอเวอร์โหลด</color> , <color=#ffd780>การติดไฟ</color> เพิ่มขึ้น 40% <color=#ffd780>ความเสียหายระเหย</color> , <color=#ffd780>ละลาย</color> เพิ่มขึ้น 15% เอฟเฟกต์เซ็ต 2 ชิ้นเพิ่มขึ้น 50%\n<color=#ffffff>หมายเหตุ:</color>\nเหมาะกับทีมทำปฏิกิริยา <color=#ff9999>ธาตุไฟ</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2083,
+        "name": "Lavawalker",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Lavawalker/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Lavawalker</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\nเซ็ต 2 อัน: เพิ่ม <color=#ff9999>ความต้านทานไฟ</color> 40%\nเซ็ต 4 อัน: สร้าง <color=#ffd780>ความเสียหาย</color> เพิ่มขึ้น 35% แก่ศัตรูที่ได้รับผลกระทบต่อ <color=#ff9999>ธาตุไฟ</color>\n<color=#ffffff>หมายเหตุ:</color>\nเหมาะกับทีมที่เน้นสร้าง <color=#ff9999>ความเสียหายไฟ</color> เป็นหลัก"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2081,
+        "name": "Wanderer's Troupe",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Wanderer's Troupe</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\nเซ็ต 2 อัน: <color=#ffd780>ความชำนาญธาตุ</color> เพิ่มขึ้น 80 หน่วย\nเซ็ต 4 อัน: เมื่อตัวละครที่สวมเซ็ตอาร์ติแฟกต์เป็นผู้ใช้สื่อเวท, ธนู การชาร์จโจมตีของตัวละครจะสร้าง <color=#ffd780>ความเสียหายเพิ่มขึ้น</color> 35%\n<color=#ffffff>หมายเหตุ:</color>\nช่วยให้ <color=#ffd780>ความเสียหาย</color> ส่วนตัวของ Klee เพิ่มมากขึ้น"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เซ็ต 2 อัน / เซ็ต 2 อัน"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "Crimson Witch of Flames",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2095,
+        "name": "Gladiator's Finale",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Crimson Witch of Flames + Gladiator's Finale</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Crimson Witch of Flames] เซ็ต 2 อัน: ได้รับโบนัส <color=#ff9999>ความเสียหายไฟ</color> 15%\n[Gladiator's Finale] เซ็ต 2 อัน: เพิ่ม <color=#ffd780>พลังโจมตี</color> 18%\n<color=#ffffff>หมายเหตุ:</color>\nอาร์ติแฟกต์เซ็ต 2+2 สามารถหาได้ง่าย และเป็นทางเลือกที่ดีหากผู้เล่นไม่สามารถหาเซ็ต 4 อัน มาใช้ได้"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2095,
+        "name": "Gladiator's Finale",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "สามารถใช้"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2097,
+        "name": "Vermillion Hereafter",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Vermillion Hereafter/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "/"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2076,
+        "name": "Echoes of an Offering",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "/"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2098,
+        "name": "Shimenawa's Reminiscence",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "/"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4716,
+        "name": "Nighttime Whispers in the Echoing Woods",
+        "desc": "<p></p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/19/53372413/d9d39d9f046d5d23c3d497574be55a82_7233237865712703807.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "ทดแทนได้"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "Crimson Witch of Flames",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2090,
+        "name": "Emblem of Severed Fate",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Crimson Witch of Flames + Emblem of Severed Fate</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Crimson Witch of Flames] เซ็ต 2 อัน: ได้รับโบนัส <color=#ff9999>ความเสียหายไฟ</color> 15%\n[Emblem of Severed Fate] เซ็ต 2 อัน: เพิ่มประสิทธิภาพ <color=#ffd780>การฟื้นฟูพลังงาน</color> ขึ้น 20%\n<color=#ffffff>หมายเหตุ:</color>\nอาร์ติแฟกต์เซ็ต 2+2 สามารถหาได้ง่าย และเป็นทางเลือกที่ดีหากผู้เล่นไม่สามารถหาเซ็ต 4 อัน มาใช้ได้"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2090,
+        "name": "Emblem of Severed Fate",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "สามารถใช้"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2068,
+        "name": "Scholar",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Scholar/flower_of_life_icon.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "/"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2080,
+        "name": "The Exile",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/The Exile/flower_of_life_icon.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "ทดแทนได้"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "Crimson Witch of Flames",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2075,
+        "name": "Noblesse Oblige",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Crimson Witch of Flames + Noblesse Oblige</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Crimson Witch of Flames] เซ็ต 2 อัน: ได้รับโบนัส <color=#ff9999>ความเสียหายไฟ</color> 15%\n[Noblesse Oblige] เซ็ต 2 อัน: <color=#ffd780>ความเสียหายของท่าไม้ตาย</color> เพิ่มขึ้น 20%\n<color=#ffffff>หมายเหตุ:</color>\nอาร์ติแฟกต์เซ็ต 2+2 สามารถหาได้ง่าย และเป็นทางเลือกที่ดีหากผู้เล่นไม่สามารถหาเซ็ต 4 อัน มาใช้ได้"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "Crimson Witch of Flames",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3990,
+        "name": "Marechaussee Hunter",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/15/176148810/539b03bed1057707abd643147e18abde_5208416816830639300.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Crimson Witch of Flames + Marechaussee Hunter</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Crimson Witch of Flames] เซ็ต 2 อัน: ได้รับโบนัส <color=#ff9999>ความเสียหายไฟ</color> 15%\n[Marechaussee Hunter] เซ็ต 2 อัน: เพิ่มความเสียหาย <color=#ffd780>การโจมตีปกติ</color> และ <color=#ffd780>การชาร์จโจมตี</color> 15%\n<color=#ffffff>หมายเหตุ:</color>\nอาร์ติแฟกต์เซ็ต 2+2 สามารถหาได้ง่าย และเป็นทางเลือกที่ดีหากผู้เล่นไม่สามารถหาเซ็ต 4 อัน มาใช้ได้"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "Crimson Witch of Flames",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2081,
+        "name": "Wanderer's Troupe",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Crimson Witch of Flames + Wanderer's Troupe</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Wanderer's Troupe] เซ็ต 2 อัน: <color=#ffd780>ความชำนาญธาตุ</color> เพิ่มขึ้น 80 หน่วย\n[Crimson Witch of Flames] เซ็ต 2 อัน: ได้รับโบนัส <color=#ff9999>ความเสียหายไฟ</color> 15%\n<color=#ffffff>หมายเหตุ:</color>\nอาร์ติแฟกต์เซ็ต 2+2 สามารถหาได้ง่าย และเป็นทางเลือกที่ดีหากผู้เล่นไม่สามารถหาเซ็ต 4 อัน มาใช้ได้\nเหมาะสำหรับทีมที่เน้นทำปฏิกิริยาธาตุเป็นหลัก"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2081,
+        "name": "Wanderer's Troupe",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "สามารถใช้"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2673,
+        "name": "Gilded Dreams",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/17/176148810/ae8a2c6f24df66e1bd7cc2dbd83d330d_1785006360227521549.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "/"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Flower of Paradise Lost",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/176148810/50ce09dfa5a91a33aa9cedfb15bcf2d1_7795706238144586197.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "ทดแทนได้"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2081,
+        "name": "Wanderer's Troupe",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2673,
+        "name": "Gilded Dreams",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/17/176148810/ae8a2c6f24df66e1bd7cc2dbd83d330d_1785006360227521549.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Wanderer's Troupe + Gilded Dreams</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Wanderer's Troupe] เซ็ต 2 อัน: <color=#ffd780>ความชำนาญธาตุ</color> เพิ่มขึ้น 80 หน่วย\n[Gilded Dreams] เซ็ต 2 อัน: <color=#ffd780>ความชำนาญธาตุ</color> เพิ่มขึ้น 80 หน่วย\n<color=#ffffff>หมายเหตุ:</color>\nอาร์ติแฟกต์เซ็ต 2+2 สามารถหาได้ง่าย และเป็นทางเลือกที่ดีหากผู้เล่นไม่สามารถหาเซ็ต 4 อัน มาใช้ได้\nสามารถใช้"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Flower of Paradise Lost",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/176148810/50ce09dfa5a91a33aa9cedfb15bcf2d1_7795706238144586197.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "ทดแทนได้"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3990,
+        "name": "Marechaussee Hunter",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/15/176148810/539b03bed1057707abd643147e18abde_5208416816830639300.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2095,
+        "name": "Gladiator's Finale",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Marechaussee Hunter + Gladiator's Finale</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Marechaussee Hunter] เซ็ต 2 อัน: เพิ่มความเสียหาย <color=#ffd780>การโจมตีปกติ</color> และ <color=#ffd780>การชาร์จโจมตี</color> 15%\n[Gladiator's Finale] เซ็ต 2 อัน: เพิ่ม <color=#ffd780>พลังโจมตี</color> 18%\n<color=#ffffff>หมายเหตุ:</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2095,
+        "name": "Gladiator's Finale",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "สามารถใช้"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2097,
+        "name": "Vermillion Hereafter",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Vermillion Hereafter/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "/"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2076,
+        "name": "Echoes of an Offering",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "/"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2098,
+        "name": "Shimenawa's Reminiscence",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "/"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4716,
+        "name": "Nighttime Whispers in the Echoing Woods",
+        "desc": "<p></p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/19/53372413/d9d39d9f046d5d23c3d497574be55a82_7233237865712703807.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "ทดแทนได้"
       }
     ],
     "voice": [
@@ -4714,133 +4841,6 @@
           {
             "name": "KR",
             "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2023/01/27/144837601/716f7af8903cdf1389deb38a45fdccf5_9195321667190191250.wav"
-          }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "ชื่อ",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Klee"
-          }
-        ]
-      },
-      {
-        "key": "วันเกิด",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "27/7"
-          }
-        ]
-      },
-      {
-        "key": "กลุ่มดาว",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Trifolium"
-          }
-        ]
-      },
-      {
-        "key": "ฉายา",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ดวงอาทิตย์ที่หลบหนี"
-          }
-        ]
-      },
-      {
-        "key": "วิชั่น",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ไฟ"
-          }
-        ]
-      },
-      {
-        "key": "สังกัด",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "กองอัศวินแห่ง Favonius"
-          }
-        ]
-      },
-      {
-        "key": "ภาษาจีน CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "花玲"
-          }
-        ]
-      },
-      {
-        "key": "ภาษาอังกฤษ CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Poonam Basu"
-          }
-        ]
-      },
-      {
-        "key": "ภาษาญี่ปุ่น CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "久野美咲"
-          }
-        ]
-      },
-      {
-        "key": "ภาษาเกาหลี CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Bang Yeon-ji"
-          }
-        ]
-      },
-      {
-        "key": "อาหารระดับพิเศษ",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 1891,
-            "name": "Fish-Flavored Toast",
-            "desc": "เมนูพิเศษของ Klee เพราะได้ทิ้งระเบิดมั่วซั่วซะจนทำให้ ปลาตาย ภายใต้การชี้แนะของ Jean นั้น Klee ตั้งใจฝึกทำโทสต์จานนี้เพื่อให้เป็นของขวัญชดเชยแก่ชาวประมง รสชาติทั้งดีและอิ่มท้อง จากนี้ไป Klee สามารถระเบิดปลาได้ทั้งวันโดยที่ ไม่หิวเลยล่ะ",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fish-Flavored Toast_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "การ์ดตัวละครเกมกลเจ็ดอัจฉริยะ",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3457,
-            "name": "Klee",
-            "desc": "<p>ในแต่ละครั้งที่จั่วการ์ด จะมีโอกาสที่จะเกิดการ \"เซอร์ไพรส์ระเบิดระเบ้อ\" หนึ่งครั้ง</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/18/144837601/24190d55c500e2eae31705e6590b1302_779187817269600702.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "เวอร์ชันเผยแพร่",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.0"
           }
         ]
       }

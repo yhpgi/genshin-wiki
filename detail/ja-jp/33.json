@@ -5,16 +5,1794 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Rosaria_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/avatar.png",
   "filterValues": {
-    "characterWeapon": "長柄武器",
-    "characterProperty": "攻撃力",
     "characterVision": "氷元素",
     "characterRegion": "モンド城",
-    "characterRarity": "★4"
+    "characterRarity": "★4",
+    "characterProperty": "攻撃力",
+    "characterWeapon": "長柄武器"
   },
   "menuId": 2,
   "menuName": "キャラ図鑑",
   "version": 1752005580,
   "components": {
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_1.png",
+        "name": "罪の導き",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "ロサリアの攻撃で会心が発生すると、攻撃速度+10%、通常攻撃のダメージ+10%、継続時間4秒。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_2.png",
+        "name": "無福の地",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>臨終の聖礼</color> で創られる氷槍の継続時間+4秒。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_3.png",
+        "name": "懺悔の儀",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>罪喰いの懺悔</color> のスキルLv.+3。\n最大Lv.15まで。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_4.png",
+        "name": "苦痛の恩典",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>罪喰いの懺悔</color> で会心が発生すると、ロサリア自身の元素エネルギーが5回復する。\nこの効果は、1回の罪喰いの懺悔で1度のみ発動可能。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_5.png",
+        "name": "臨終の祈り",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>臨終の聖礼</color> のスキルLv.+3。\n最大Lv.15まで。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_6.png",
+        "name": "代行裁判",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>臨終の聖礼</color> の攻撃が敵に命中すると、敵の物理耐性-20%、継続時間10秒。"
+          }
+        ]
+      }
+    ],
+    "voice": [
+      {
+        "title": "初めまして…",
+        "desc": "そこの信徒、何か困っていることがあれば私を頼るといいわ。祈祷がしたいだけなら、他のシスターに…<br/>うん？信徒じゃない？",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/f69dc7a114f2256816d1a7cc55abd3c3_8625789945327125170.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/4fd79a82ec8c7a377a5eae54fda2daf3_1366252165403309735.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/a07f9649cf2599c0c8978c703e69bd0e_5134080168778647911.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/b6474922852f83297ab7d026a8b82451_9153956075553469342.wav"
+          }
+        ]
+      },
+      {
+        "title": "世間話・退屈",
+        "desc": "まだ行かないの？",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/63e145450ab02206e8734b7f0ff6c84f_7488296831927045574.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/fde13a6bd5189f3f40afbffbbc1c3d9c_1503579710801879817.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/08f3a7bc8fb351f4377087e2fa480c1e_7808271041587303508.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/dd57f8a25fd638ada0fc321ba297ee8a_589256883226596132.wav"
+          }
+        ]
+      },
+      {
+        "title": "世間話・残業",
+        "desc": "なんでもいいわ、残業以外ならね。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d434a2878f84e67f3629b05c0f1426fb_8417974993656585780.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/6e0ca1453326b5de347ebd49fcf94427_2536102641449967699.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/f9d68164fbd601cbb82d7f9189e2c788_5851506191948345423.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/cac83ef8ae49c9648e6bb08820b8cafb_1025006900629218651.wav"
+          }
+        ]
+      },
+      {
+        "title": "世間話・モンドの生活",
+        "desc": "しっかり働いて、まじめに生きる。モンドってそういうところでしょ？",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/6eca21e3d6491301c45a89b719832c3b_6068605516732534775.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/3cb764c43f9775442e984363c5a3a8b0_6033952806113232725.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/3058bdf750e39ada3e17fcdd88834fca_2690349430141204230.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/de6a3a7bc6b20b7c177d442a254eb9c6_8692432335538350009.wav"
+          }
+        ]
+      },
+      {
+        "title": "雨の日…",
+        "desc": "仕事に響くわ。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/9b605f3629603b80b77b4e21cbf24d94_6449545737839272945.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/b3e8c1bc3eeaadeb423dd7b357ea0139_2627168254997145676.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/7d31c2b10597f5ab1f305bb7e5f733da_1555496508754504942.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/bceaef8337f0e5fed70863410d66dd18_7993776492222500828.wav"
+          }
+        ]
+      },
+      {
+        "title": "雷の日…",
+        "desc": "ちっ、面倒ね。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/71f68128aaedd084bf16ef464ba688b6_2469652682148787808.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/88f41dbc54afbf3546c262c6e6271e8a_1564998461206810350.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/c9f53c7356545c4073450beb2d0ab501_5828047933259762783.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/6f26033fc979b5919e8267c76414fa2b_4258225503898325947.wav"
+          }
+        ]
+      },
+      {
+        "title": "雪の日…",
+        "desc": "雪の中は、足元に気を付けなさい。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/b196b03b3ad74f8de138d086e69c6fe7_3476748566872539482.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d98b046f1645112c61bf1fa46ca9a51c_6431888087883180214.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d87865cb143078ef2258a501703ff0ed_6166851254916421217.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/ea90f3582befa0c9e5ba69dec17aac62_8654787218020705529.wav"
+          }
+        ]
+      },
+      {
+        "title": "暴風の日…",
+        "desc": "<p>風神ブットバースの加護か？いや待って、バルバトスか…</p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/0fa189de39f0dbfaea183e541f35e2a2_3549828926165828984.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/a7998c119a0a291869d45c8694f1ddd8_3790605758165761387.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d7baa6538c209864dfa224c90fda492b_3074293216393090569.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/77948fce0fb4a8c77346a6f59f497f31_6656828589020762865.wav"
+          }
+        ]
+      },
+      {
+        "title": "おはよう…",
+        "desc": "おはよう、ふあ～もう朝のお祈りが始まってるの？勘弁してほしいわ。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/ad9126b253b9a65cd26f0b71fad29f0a_3008018244575775176.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/bdd2fd71585ea6854ae82cc50aa69b93_3967526070316939693.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/3b779e3cd9edded150c802f78dbcd922_5336410457893884899.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/f254516bc3f7aa375505327f7dd03c17_1416256578451595684.wav"
+          }
+        ]
+      },
+      {
+        "title": "こんにちは…",
+        "desc": "午後の日光は睡眠の質を上げるの。君もためしてみたら。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/b517e06da6edc2a2af157f615a8b5d44_3821049719470950097.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/8ebc788b86f479c11ab625d18716dc12_6262399672152617178.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/011f7ee8f19db1daffb1871a8d4f5c93_8679894767889485289.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/6e35905fd9f6c1977f742cdfff9b0ada_2810202060027305110.wav"
+          }
+        ]
+      },
+      {
+        "title": "こんばんは…",
+        "desc": "こんばんは。晩祷なら参加しないわ。理由はどうだっていいでしょ。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/38efc694ec64cbf0044ceedc186ff584_239038710343307892.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/840cf541ef55a7a14cc143d00bca4f2c_4316413585963283129.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/96f9dae6902959a1e6c8eb35d9e9393c_1194751805069240479.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/eed36ed31b7e05a3483283fc2002aea2_6074494904378652326.wav"
+          }
+        ]
+      },
+      {
+        "title": "おやすみ…",
+        "desc": "もう休んでおきなさい。心配しなくても、後のことは私がやっておくから。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/85fac7dac5e6f3c09e88c6e936493a5b_8378403995367681734.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/c2428cbce98fff93a4d8e2e5ec1b1de1_5317240465111428042.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/1c13390ca11447af57746d3a29cca798_4287197385878323741.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/355536ba8be946efb12c9d5ee8ae273c_8982533835780674536.wav"
+          }
+        ]
+      },
+      {
+        "title": "ロサリア自身について・仕事",
+        "desc": "私？ただのつまらない人間よ。見ての通り、教会も仕事も好きじゃないし。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/9dc997dedb4d10e8a24b1417fc0c0796_2463599264230978983.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d30cf3cafbdddf940aec7ea31f5bcc2a_3396764505906258466.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/daf3ad4d25fd69ff34d9d22c727b63e3_564593437745384221.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/c9b78bd22125963df81b5a88980d270d_3332323480340841654.wav"
+          }
+        ]
+      },
+      {
+        "title": "ロサリア自身について・面倒",
+        "desc": "あのシスターたち本当に鬱陶しいわね。隙あらば私を捕まえてお祈りだの合唱だの…私がここにいること絶対に教えないでよ。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/dca82ba5180cdbb67f325e57ce78e6d7_239038710343307892.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/197ebabe0b1c401dfd78efd343ffa05f_8667350510006382361.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/3015df12d343dd829e8febd9bae2f8cb_4907031240159290921.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/b59ae372d2d1a0e2dacc4a23074a3454_4265287992025286118.wav"
+          }
+        ]
+      },
+      {
+        "title": "信仰について…",
+        "desc": "神は全ての人に加護を与えることができるかもしれない。けど、絶対にそれをすることはないわ。だって、そんなことしたら人の苦難なんて笑い話になるでしょ。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/9564b6b22a35111035c3dca7fd20f390_6453714082370660557.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/fafb7eb95eaa88fe0112553f95ad715d_4787352657349660335.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/01cd31c50edd7bf6554489ebdda86cb5_3574531090416685763.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/01a5953ab09aae3f1f9e07270395e06a_6768946287159251614.wav"
+          }
+        ]
+      },
+      {
+        "title": "祈りについて…",
+        "desc": "<p><span class=\"wk-shady\">祈りなさい。神や他の誰かのためでなく、自分のために。</span></p><p><strong>解放条件：好感度Lv.6</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/2b06ee3669279bd09b06ed2e665b1114_4242095978992653820.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/1a532ad9c8357cc5fb7a10090de84e4c_4499420341109781564.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/5a8b8b7a59b6ae7e7bee567bc2d8d095_4345823044925263075.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/5be4b661499e14b6f82a8dded21ec8e3_3973642673834973515.wav"
+          }
+        ]
+      },
+      {
+        "title": "戦いについて…",
+        "desc": "<p><span class=\"wk-shady\">無理しないで、困っていることがあれば私を頼るといいわ。</span></p><p><strong>解放条件：好感度Lv.6</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/1d3a4356426c94f5d16d1d7866944a85_6855252346651281874.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/8feb8d82b5fe7621bbec8b729aa4707e_8620354075597961044.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/26179c816ed7f606ff9c1c19c01c8823_4594288717384880819.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/25479d7e34f0679cc3c8d22d15bcc0db_1659750974598687395.wav"
+          }
+        ]
+      },
+      {
+        "title": "「神の目」について…",
+        "desc": "<p><span class=\"wk-shady\">「神の目」は実力を示す証であり、生き残ったことへの勲章でもある…なんてね。本当にいいものには常に裏があるの。私には「神の目」を定義することはできない。ただお互いに、証明し合う関係なだけ。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/c89d623ade9525220fa4d206317c24d2_6032928472194947493.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d34a2bf37c46f7e0463140a5d4efdec3_3744037327488504237.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/1d8dc216c4925cd76845e1abdf9d67ba_7633918464651880139.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/079c5fba940c79b7d5cc422933cbbb42_7654241806134816904.wav"
+          }
+        ]
+      },
+      {
+        "title": "シェアしたいこと…",
+        "desc": "<p><span class=\"wk-shady\">私が嬉しく感じることは何かって…もし仮に、どんなに頑張ろうと解決できない問題に君がぶつかっても、この世の終わりだなんて思わないこと。だって、他の誰かが君を助けにくるかもしれないでしょ。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/f7289cff05bec6476a96add67e18c302_4336505506209160446.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/c96d482f4ca7ea568bf868e9a152a783_1357930364589067186.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/f62a2ff99ce6a519305b56fb1cb72171_4387827360726600242.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d9bf305e2ddcc03c3744aa03cbd2ab1e_5324428576899412714.wav"
+          }
+        ]
+      },
+      {
+        "title": "興味のあること…",
+        "desc": "花にはまったく興味がないの。でも、蒲公英だけは例外。すごく美味しい蒲公英酒が造れるからね。休憩時間に一杯飲めば、朝の二度寝より気持ちいいわ。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/8c69004272f69848f832dff2e92b5dc3_7933231631409193985.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/82495a46c2b1258e698748f556f768b8_7644406284340233125.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/c5e43ff5d44e5252fa2fcd832377a276_6894239898672116825.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/90a360df672348a62abee6f1f18dc704_239751298553069000.wav"
+          }
+        ]
+      },
+      {
+        "title": "ディルックについて…",
+        "desc": "<p><span class=\"wk-shady\">一目で分かるでしょ？あのお金持ちの坊ちゃんはただ者じゃないって。慎み深い上に、自信にも満ち溢れている…それと少し、危険な香りもね。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/bcc291eefe6e614eea02e1454223fe58_1759921528517814180.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/cf37476b387e76c3bce11c58f56f71d0_5324428576899412714.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/e8a9c7df8085340231e6f09e6fe4bca9_3901465561421785589.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/5fe3362ac6d484b800fa748cc81658c0_1934313497683996174.wav"
+          }
+        ]
+      },
+      {
+        "title": "ガイアについて…",
+        "desc": "<p><span class=\"wk-shady\">人は酒に酔った時、本性を現すもの。ガイアの口がよく回るのは、その本性を隠すためよ。ふふっ、分かりやすいカモフラージュね。彼が酔っぱらった姿を君にも見せてあげたいわ。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/537eb84b5f281571871288b13edf87a7_4634870603498195951.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/4ff7474905773ac507e8511d0a994a9e_2509540473180854364.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/7d70b25430aa18b1e5dca050c0da39d5_7269503641017056695.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/784c1b8f2cbe693b03f4ddcb5b34d9aa_2218223629968074280.wav"
+          }
+        ]
+      },
+      {
+        "title": "ウェンティについて…",
+        "desc": "<p><span class=\"wk-shady\">あの吟遊詩人からはとても特別な気配がするわ…それが何なのかはまだ分からないけど、他の一般市民とは明確に違うってことだけは確かね。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/7e7cfcc37ad8b9f6c801bd872cbb13e1_2852959827792701598.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/71bc6a06243077ba0d9fee77b75ec712_1281154184086291848.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/c9cc1e8975e89b28a7cb184840b46d1b_6427524512442275479.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/9c61ce31d86b869ec12aac3a20867e4b_7939873028023441821.wav"
+          }
+        ]
+      },
+      {
+        "title": "バーバラについて…",
+        "desc": "<p><span class=\"wk-shady\">バーバラはいつも私に張り付いて、やれ礼拝だのやれ合唱だの言ってくるわ。もしかして、私がちゃんと仕事をしているか見張るために、ヴィクトリアが寄越した監視役じゃないわよね？</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/30c35b42f6e7bfb5160e1802b1a35441_3292618836881332092.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/1a3b1c3d08190eb8e35c09b443e2323b_8197555437149488644.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/5c24f6e834cac67517b91ace17a64175_418425140022510540.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/f80ddb7e0e72ec49e86001d0c0b79075_1432019214184381370.wav"
+          }
+        ]
+      },
+      {
+        "title": "ジンについて…",
+        "desc": "<p><span class=\"wk-shady\">自分の本職だけでなく、他人の後始末までする。称賛に値する女性ね。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/e8da4c8f5b185848b20fc9c001b20760_5059609426300188541.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/9a3e7fcc52b3e195fd2b9d042f21c3a7_6989211008675773062.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/b4df99965af1fa8d680c2b1662778e99_8982112593177494220.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/8f849b1a13f0f1f26a8bc8b42a252f9f_1938888982483413451.wav"
+          }
+        ]
+      },
+      {
+        "title": "アルベドについて…",
+        "desc": "<p><span class=\"wk-shady\">彼は、古びた屋敷に飾られた絵画のように…重みがあって、神秘的で、一目じゃ見透かすことのできない人物よ。人生経験が豊富な人は嫌いじゃないわ。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/8c06cc4f4fda5ee3587adef4a6cbcd06_7931555860120917952.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/59026afe3d1351e336c8da20cf62363c_5116351619720788746.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/ce1c75095ecfc976c20866a9b985b028_5585003967063506793.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/9d01e90db244121c4b1416b36566b415_3807514667780590945.wav"
+          }
+        ]
+      },
+      {
+        "title": "リサについて…",
+        "desc": "<p><span class=\"wk-shady\">仕事をさぼる人は好きじゃないけど、定時で帰りたい気持ちは、とても分かるわ。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/7817106e53533e5ad079639ffb08dcc2_1125132169291120860.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d7eed5d730cea1e3a2d6322bc226bb61_7150828353909079938.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/dd6b2cf750e208997fa197de762e91d0_8455490955643412406.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/109d449e640f544427b3c4267f93488d_2822861762073015953.wav"
+          }
+        ]
+      },
+      {
+        "title": "クレーについて…",
+        "desc": "<p><span class=\"wk-shady\">面倒くさい、とにかく面倒くさい。まあ、可愛い意味でね。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/89cbd2e663ae76028ead42df28791bc8_7763988934819027308.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/9dba35bcfaf9096ce9b569f1feb04c7d_67651581201471549.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/8b2006fd96e42498f1c1cfad07ba18a5_5116351619720788746.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/8e716b313e09a13b94eb3b5a383041c4_3746085804670266007.wav"
+          }
+        ]
+      },
+      {
+        "title": "ファルカについて…",
+        "desc": "<p><span class=\"wk-shady\">ファルカは他人の世話を焼いてばっかの、ジジ臭くて面倒な人よ。悪気はないんだろうけど。周りの人を気にかけるのが好きなのよ、あいつ。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/99d822d57073faa7df9e96d4e9f42825_7452709887548602889.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/b6c653b9ac895f43a64f4ba7da0235ca_6883826938625328673.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/5c7430d54858d980d1a3a733c72c7043_3121919007578093187.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/baa8c3d07f87d6bb89e018b477e4e692_5137906058888218798.wav"
+          }
+        ]
+      },
+      {
+        "title": "父について…",
+        "desc": "<p><span class=\"wk-shady\">父親？私には縁遠い言葉ね。私にとってはないに等しいもの、もしくはたくさんあるものとも言える。どう？おどろいたかしら？</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/1d804a9bd1accf5a842fba5df81ed492_4623021337748073754.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/18b4a9f1c40b092e6b973081aba12e85_2269931443459897648.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/997a7f609b7ac3fb4a2a75d7a35beb02_2063517296786197456.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/6beeebff0b1ae248da63bf072b5e81f2_6367214166038106057.wav"
+          }
+        ]
+      },
+      {
+        "title": "ダリアについて…",
+        "desc": "<p>自分から奢るっていうのはいい習慣よ。それに、彼は酒の席でも節度をわきまえてるわ。聞いていいことと、踏み込むべきじゃないこと、その線引きがちゃんとできてる。お互いの腹の内が分かれば、余計な警戒もしなくて済むし、賢い人と付き合うのは気楽でいいわね。</p><p><strong><span>解放条件：好感度Lv.4</span></strong></p>"
+      },
+      {
+        "title": "ロサリアを知る・1",
+        "desc": "あいさつはいらないわ。私がここに来たのは仕事を全うするため、君にできないことは私がやるわ。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/85f842dc97339a5aea946127475a041d_3949445009820720441.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/0f60415b6c122efa7921363006f306c9_2175660879319981079.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/7524e1450533f186e31aae7843bef9df_5361249405492514493.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/33ee054baa6008dfb24ea4f1059c3f25_7391145194587019139.wav"
+          }
+        ]
+      },
+      {
+        "title": "ロサリアを知る・2",
+        "desc": "<p><span class=\"wk-shady\">神を信仰しないシスターは何も珍しいものじゃないわ、肉が好きじゃない狩人もいるし、魚が嫌いな漁師だっている。何かをするのに好きになる必要はないの。かといって、嫌いなものから離れる必要もない。仕事ってそういうものよ。</span></p><p><strong>解放条件：好感度Lv.3</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/0aa1d129307834b37cdfc54150de7fa8_7223404282901163925.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/e1ab2d5044ee39de3a3fd11616885a4d_4558987260279878215.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d480d5d9a5aa6520ef6db0c9da86828f_2737741117551225486.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/f9105d5290de960a563f67dbf64f415f_2451230382342253606.wav"
+          }
+        ]
+      },
+      {
+        "title": "ロサリアを知る・3",
+        "desc": "<p><span class=\"wk-shady\">一杯どう？今年の蒲公英酒は格段に美味しいわよ。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/ead8a2a71abd44ec9dff64e64a74c17b_628926502343447545.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/4a7101676e4fb9786577d0a586f17049_4429864290259624366.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/75c70c9dd4689837ab74c49af16395ef_495892880955119066.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/ee1af6c7a58c17c28d75ee8129fbdfc7_3673071664023378996.wav"
+          }
+        ]
+      },
+      {
+        "title": "ロサリアを知る・4",
+        "desc": "<p><span class=\"wk-shady\">モンドは、人々の介護が必要なほど老いぼれているのに、独立して生存もできないほど若くて未熟。そんな矛盾を持った真っ白な獣よ。こんな場所だからこそ、私みたいな人が必要とされるの。他のシスターたちが人々を手伝うように、私もモンドを手伝っている。モンドが自由に向かって突き進んでいけるためにね。なんで白なのかって？…黒っていうのは…私みたいな人を言うからよ。</span></p><p><strong>解放条件：好感度Lv.5</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/288855626843c8c089cef70921a9d2f7_22660771620753930.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/540a97d32d37a5b51b0280542ff9fe54_3818323763279841273.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/93857ad64144f86f0244f882be8feb88_348254241828111170.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/29bb204d2cd9289942c204b97da17953_7197860588315565297.wav"
+          }
+        ]
+      },
+      {
+        "title": "ロサリアを知る・5",
+        "desc": "<p><span class=\"wk-shady\">様々な過去の自分が今の自分の隣にいて、すがる思いで何かを託してくる、たまにそんなことを感じるの。きっと君も経験があるでしょ。だから、これから君が違う道を歩んでも、昔の自分を否定しないで。昔の君は、今の君の礎。過去に怯えず、向き合うことを恐れないでね。</span></p><p><strong>解放条件：好感度Lv.6</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/189ec412c0b0b57526d38b23e3ecc1a0_182699844714354185.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d085784c275d5f1b36105097a91ecc10_4583004666813675005.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/4d10132a6dfccfd39a74b734bfe1e8f4_7283405219878391145.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/e719c791635c437772f18b35914270ca_1692646930969905827.wav"
+          }
+        ]
+      },
+      {
+        "title": "ロサリアの趣味…",
+        "desc": "一杯飲めば、嫌なことも消えてなくなるわ。とはいっても、酔ったことないけど。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/49eca582d6fa2ba7ef0db6a252cbe4f0_4794002927451770684.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/c80af16f0b3eddaf0274c4fdaa05d13e_6200906003912821694.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/b43669cdca87d1c446231e4a20d6d2ad_722753445776895253.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/7c908b41b0901469778826ba00f53974_3907521601062134641.wav"
+          }
+        ]
+      },
+      {
+        "title": "ロサリアの悩み…",
+        "desc": "はぁ…来月の合唱コンクール、参加したくなかったのにヴィクトリアに名指しで指名されたわ…",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/95f9637f111b5f5b674750e32ebb3d0b_5277051915883308110.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/10a441d1337e2e812b4d5752481905ff_1985222285618166096.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/94e6ece46aad46528ac2727de33e416f_3920200309333234749.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/64629cdea86e163e4fcc0674afdf261e_6998283563734007080.wav"
+          }
+        ]
+      },
+      {
+        "title": "好きな食べ物…",
+        "desc": "獣肉のワイン煮込みは食べたことある？お酒と大きなお肉を一つの皿でいただけるの、最高の一品よ。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a59edec69572d4fe7d6a9af0d52cb8fb_3460493597654969586.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/0931f669d36ee6f9c89c2b1d49c9c80e_248524359448019763.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a8b8f19f76b246e6446a1db36abefefb_6517005765767561074.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/ffd0124b472d5e2817c0f132e512a81c_1465402100148352400.wav"
+          }
+        ]
+      },
+      {
+        "title": "嫌いな食べ物…",
+        "desc": "ハ…ハッシュドポテトにジャム？信じられない！",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/57e4925de12bd8bd85372f63002d3bc6_5540800358131183727.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/8eba22fe23834cb2e081922c0ac4ff65_1850893056424247994.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/588246bf60a2835c6e74669bb83e0417_5971122474433948095.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/fed3aa3fd800156026951b96cfcc92bf_4562567614164873071.wav"
+          }
+        ]
+      },
+      {
+        "title": "贈り物を受け取る・1",
+        "desc": "<p>どうやら、私たちって好みが合うみたいね。</p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/006a42ee6e6db21cdf2ffc28ef235914_938299771929435280.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/cbc4c36f6a16644e8ce87fe75d4500d1_160868470474271460.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/887bb94908c1e03893799c3ff17034bc_6118893748535747171.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/9de4fdbadfcd83164b6b7c1cbe183add_7798198942473962246.wav"
+          }
+        ]
+      },
+      {
+        "title": "贈り物を受け取る・2",
+        "desc": "<p>少なくとも、お腹は満たせるわね。</p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/e69df18ede96ae94c01e9cec58d9f76a_6785884451116094438.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a0cf35b5dca313ee80aebea113ddc697_4300097355130510614.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/98b113f7ab1f053b56c7507dfacb857d_9185109781024339912.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/f4f5af405dd4bf080a3d78b01c9a668e_7172171472920591604.wav"
+          }
+        ]
+      },
+      {
+        "title": "贈り物を受け取る・3",
+        "desc": "<p>君、こういう食べ物に興味があるの？</p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/b3376e11a459a64f53662a649418828d_7798198942473962246.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/d9e0b947f706930fec8c1f6abbc969ff_4699513173853102440.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/08297e78978ccb53ff3841fcbd1f79d3_111730348087540505.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/12b5d45759ac7b62eaccb35208df8cdd_3030785154914901112.wav"
+          }
+        ]
+      },
+      {
+        "title": "誕生日…",
+        "desc": "<p><span class=\"wk-shady\">今日は君の誕生日ね、何か片付けてほしい人や用事はある？手伝ってあげてもいいわ、もちろん内緒でね。</span></p><p><strong>解放条件：ゲーム内で誕生日を迎える</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/c2673b3c8213c942ab46aa22857f9e2e_7379467441304584497.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/da8944805126cbe0dd2f06b00073a422_2877590122224095297.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/08961c52bd888b36b1f8fdd5ab0b3ff7_2814289146809027570.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/496856eddabf731f0c29849c4a04ad19_5023332747934249916.wav"
+          }
+        ]
+      },
+      {
+        "title": "突破した感想・起",
+        "desc": "<p><span class=\"wk-shady\">うん、いい感じね。</span></p><p><strong>解放条件：突破段階「1」</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/2b13a544aa5e00b21049ae3e6b94ae71_7468513862757127532.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/db59c6b8cce005941872fd65bae8e529_7288557397406943458.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/48681eb76f2569276568692208e4cea7_1014080292234157134.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/c04a3ee55b2cce23d19be0a114f7fd6c_1342632581034726970.wav"
+          }
+        ]
+      },
+      {
+        "title": "突破した感想・承",
+        "desc": "<p><span class=\"wk-shady\">何か手伝ってほしいことはある？今ちょうど手が空いてるの。</span></p><p><strong>解放条件：突破段階「2」</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/76bd657f368790e158d45b1130e07952_6671253493246375790.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/9b110cb8341c7479b2f38449eade4b38_6167782717511213678.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/3720816ae227de9f53f81e55b4692624_1192254304700903411.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/8fcd235fef58ff80f154bab8f343503c_8013930482407630297.wav"
+          }
+        ]
+      },
+      {
+        "title": "突破した感想・転",
+        "desc": "<p><span class=\"wk-shady\">能力が高くなれば、仕事の効率も上がるわね。</span></p><p><strong>解放条件：突破段階「4」</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/609c1ceb26b5bbdd96d5b641a9fc5f51_44237138284181698.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/8c008ba078f9e2520d0623bd3b3ffb26_642676367311132423.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/84a20644131f5cef032c1c951e32a33f_1428347285415460943.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/03347bc7f6babe9055594809325aa2ce_3033266348089551964.wav"
+          }
+        ]
+      },
+      {
+        "title": "突破した感想・結",
+        "desc": "<p><span class=\"wk-shady\">戦闘と殺戮に長けている私でも、これほどの力を持ったことはないわね…祝福してくれてありがとう。</span></p><p><strong>解放条件：突破段階「6」</strong></p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a305f0301419fa9fefb2ee3e91c22156_1674217835914083893.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/4a706e33c47960e288559a8b845448ff_2305688857293063200.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/2773fa4df98b1ed1e365557f9f4e1b2e_2215605230732589967.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/6d40ab1de16ac22cabaadc9218db895b_8591216625148709569.wav"
+          }
+        ]
+      },
+      {
+        "title": "元素スキル・1",
+        "desc": "はっ！",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/af02bb6dce2b8862e691d25560df83d0_6974482917277719884.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/903fc2f2118dc979167353c1c28062f4_1125510224444368593.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/76e434ffd0bd6d75d85e3a0225be8902_1935673335903153731.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/699a45bebe99a81b7046782f0b361b49_125306484625689626.wav"
+          }
+        ]
+      },
+      {
+        "title": "元素スキル・2",
+        "desc": "許さない！",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/7525251893ac60089386e798a38c65c6_9056434881808635178.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/25a782660566ab74f1ae024861770e64_3708783246668999896.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/27a1edd7fe47b93f0b675e70f32a9df6_8086485849499576703.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/aa15afd565a9943f350e82d112935e3a_2066468523039478973.wav"
+          }
+        ]
+      },
+      {
+        "title": "元素スキル・3",
+        "desc": "あきらめて！",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/03f6fd306fe055d74af3ce4b0c28304c_4672858261166878736.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/4aaa503c9479d6eb222593f8010dee97_6333089327849989755.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/dae56179ecff078abfa46e841c22e351_5780832245245387534.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/0d019e287912a675c13a2939d78e3d36_6860800381790269978.wav"
+          }
+        ]
+      },
+      {
+        "title": "元素爆発・1",
+        "desc": "ヴァーディクト！",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/6d92442d079dc89a2b6566c3dc74ff11_292053667612220856.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/f6ae26ac5fc7c1f445b28677873f9856_5242642798917269598.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a988d3fd7b16496fcbf4c7d3fa1a25ed_8730679038244985609.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/784e6fcc308d8a13417d9ac99fb99bd8_5075435263150488312.wav"
+          }
+        ]
+      },
+      {
+        "title": "元素爆発・2",
+        "desc": "震えなさい！",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/8451257acbd269ae98860c24b25e9f73_506668999274539166.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/40349d58eb0ace44be46a98bd6117948_1892288975381156734.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/fcc3e18b8e1c2d55a30965ca2ad1d510_918062528128977280.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/0af5a3af2fcc1f2a8e007f69d7c572fc_4435244248940574274.wav"
+          }
+        ]
+      },
+      {
+        "title": "元素爆発・3",
+        "desc": "眠るのよ…",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/fc2db89ff3f9e0ad885aa92b240a618b_7712713297659877999.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a86a77c4e82796aa4930fca937b44285_4572966284922390785.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/1ab646e79cee73c57f55b2114dd6e1d7_3997196912521809227.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/74ce96128ba81821f5729ba1e780dfb2_2413325783955217672.wav"
+          }
+        ]
+      },
+      {
+        "title": "宝箱を開ける・1",
+        "desc": "…悪くないんじゃない。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/d7af56b78b411db5a5e6afae66904ed0_8088029387600436678.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a9c2102d00b2bfd53ac0af79aa62c19f_2054383453277094077.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/c95b9ace947ed7be4d91ca8e74689b7e_278851857343152260.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/3e34877315a6775c7ff1633ff8c49a89_268571403540989540.wav"
+          }
+        ]
+      },
+      {
+        "title": "宝箱を開ける・2",
+        "desc": "まあまあかしら。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/5039f74eb6bee1023f4418a3dc1a45e2_1755992016608621444.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/5c1240bbed57ed16c41a1be9d9efd9c0_4713585195268898939.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/513ef080f252e3fd356e2d6061466095_5182712719761350777.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a38fd0413926a3c022957fc653cf69f7_9145614059899734433.wav"
+          }
+        ]
+      },
+      {
+        "title": "宝箱を開ける・3",
+        "desc": "いい気分ね。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/2ebbe324fc9125cc4e734c6d6b2fc344_282121156301627292.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/6fd050f631418be3877a81e12dda9ef0_5618573937279459720.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a8c3ddf2d070f3ae6a2fe64802bf65a9_4465986970547131237.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/4a9c75899347c8b675ecc0b53b95f01a_6586945404268753532.wav"
+          }
+        ]
+      },
+      {
+        "title": "HP低下・1",
+        "desc": "こいつ…ふんっ。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/99855c74720641e3dc1072f462e41d0c_7079784117296286401.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/ed9ef15b6a7d6a1dea7938eb4ff34b7f_18783411656132483.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/0128ad467f0cc38a692a1b58530bf8ab_3099308130919304315.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/231d2c08dc4a3c34663bfbdb76a7240a_7609387441347286936.wav"
+          }
+        ]
+      },
+      {
+        "title": "HP低下・2",
+        "desc": "残業ね。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/253ad514a541c300f0a8f83a9680a932_6373001132588765507.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/47a2d74dcceaa9b2ea75e345be810ce3_1048267256707068025.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/f32cdbab8446a6829fbe7faaaa2b8c76_39187200160780117.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/5aa3aad19444f3359c77a2966b9e21f1_2957625654912408389.wav"
+          }
+        ]
+      },
+      {
+        "title": "HP低下・3",
+        "desc": "やるわねっ！",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/68d848a2289b7031f7fad2c3162fe051_2466478318051625934.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a3308bcf9e0ffbc0dfb3fb68f01797ec_2117422486493313035.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/40918ad956120dbc1bd62449386d4556_4678754004645722475.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/00dc5883f7af1ce7f807ba6885d94297_519316772549621532.wav"
+          }
+        ]
+      },
+      {
+        "title": "仲間HP低下・1",
+        "desc": "<p>さがって！</p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/7815b6ce50c2558584bc7fb07862dabf_8133369439185497644.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/373f86d65c8a9220789121541f0ec0cd_4347590519649493275.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/2b69ac256d115c07683da61782ab7944_7312322193615080047.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/3f74614b474e52fe0b35df9e0bbfccd8_4822706038766918502.wav"
+          }
+        ]
+      },
+      {
+        "title": "仲間HP低下・2",
+        "desc": "<p>落ち着いて！</p>",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/5becc52628bc93ff80f611ef5451815d_6440806024646828241.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/0c47ce004678c316eba63612161a62f1_459257563323399432.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/2333dc34c349377a7133086a9e91b4c5_2535355204494082590.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/24bda1b10e8422bd3eb2839920041490_2882313525600133310.wav"
+          }
+        ]
+      },
+      {
+        "title": "戦闘不能・1",
+        "desc": "これも悪くないわ…",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/34106cb48259b4f634c182fd37883477_3294823815486525402.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/b6046c031c5f43bda0dd98e67ae6b17d_2844350701714680251.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/5ad574e2f380a8f301b24bd01ad36b8f_5316019479955700060.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/8b7fda78d8b0d46943bd915f83f97310_5400356309297302941.wav"
+          }
+        ]
+      },
+      {
+        "title": "戦闘不能・2",
+        "desc": "これも…運命なの…",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/4c28e17aa12c613e14ff313bec322350_620352391796415460.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/032114362cd2f34573e3d6c79fb920ea_7962344597859561479.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/1b2a9700af0707507fabdf7efc1f278e_6356608416914909658.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/c935bcc30df07c08a621a06ecb617596_8395502807736848924.wav"
+          }
+        ]
+      },
+      {
+        "title": "戦闘不能・3",
+        "desc": "うっ…ここまでなの…",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/4a9cd2af66efc28aa62892414ab4b716_1699315554112088076.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/aa50f8eaffa5ed925d2547410c9353d3_586529649843188457.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/ea69e37aacdad619b2e9fd40348a7bd7_7044971032324641227.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a94eda21a776a5273b686c711d90d8f9_5349102593415015046.wav"
+          }
+        ]
+      },
+      {
+        "title": "ダメージを受ける・1",
+        "desc": "なんの。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a6ccb039df55940f3616ae99863216a5_3308514738051957495.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/8d146ec38b3a3600bcabefe4a1768b41_6738908935951685146.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a1be29836aeddf7700db6f24e4d5b4cd_4458630394682258708.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/b1672f0878e7619a6e624087804735b6_6544029985947296745.wav"
+          }
+        ]
+      },
+      {
+        "title": "重ダメージを受ける・1",
+        "desc": "ちっ、面倒ね！",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/cba64841615228ddfdc6eeca23ebecc4_2293055376815963730.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/9ece7735ba8d1d84014c802bba4c56d0_3380452981530274195.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/76e96372c9dc3f875246720116ccef41_106151028207233797.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/39f1e639716672172d694a28ee8614c0_482886917131278193.wav"
+          }
+        ]
+      },
+      {
+        "title": "チーム加入・1",
+        "desc": "また新しい仕事？",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/0c2b0b68098a78a7c6b9a95e61e76ee0_448509650998114926.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/cbee91a90f3b7f580d401392fbeb96b7_8638218787517693096.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/0f3664becc1fd5b3c9fb7e40821ee394_1447569315193612651.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/973aad1028d80b47a7535a96b8bbc06c_6163356559884706346.wav"
+          }
+        ]
+      },
+      {
+        "title": "チーム加入・2",
+        "desc": "うまくいくといいわね。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/e8a160249a8d9f42ffdb1ac295a95603_5901020082138880468.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/7871086d6f697c61612543da42c8c523_2804459433360615973.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/83ce0bdb2fff44d312969f4190249ceb_1787538230632678976.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/4283436976c170c33f359bea282126dd_1860257731068476907.wav"
+          }
+        ]
+      },
+      {
+        "title": "チーム加入・3",
+        "desc": "ふぅ…さっさと片付けるわよ。",
+        "audios": [
+          {
+            "name": "中国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/7edef5008a93254d05d396f85bb64ba2_3621500673013132801.wav"
+          },
+          {
+            "name": "英語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/8db64d90cf54eae0451ca8daac7919f5_5571841879820289071.wav"
+          },
+          {
+            "name": "日本語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/4a41dbd5dca1ee0fb36b216a3a183f1c_6483421426696449861.wav"
+          },
+          {
+            "name": "韓国語",
+            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/d58c90851853994e415e067885dfc7d0_8952597807619720382.wav"
+          }
+        ]
+      }
+    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=29&center=-337.50,484.00&zoom=0.00",
+    "baseInfo": [
+      {
+        "key": "和名 / 英名",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "ロサリア / Rosaria"
+          }
+        ]
+      },
+      {
+        "key": "誕生日",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1月24日"
+          }
+        ]
+      },
+      {
+        "key": "命ノ星座",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "荊冠座"
+          }
+        ]
+      },
+      {
+        "key": "称号",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "荊冠の恩典"
+          }
+        ]
+      },
+      {
+        "key": "神の目",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "氷"
+          }
+        ]
+      },
+      {
+        "key": "所属",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "西風教会"
+          }
+        ]
+      },
+      {
+        "key": "中国語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "张安琪"
+          }
+        ]
+      },
+      {
+        "key": "英語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Elizabeth Maxwell"
+          }
+        ]
+      },
+      {
+        "key": "日本語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "加隈亜衣"
+          }
+        ]
+      },
+      {
+        "key": "韓国語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "김보나"
+          }
+        ]
+      },
+      {
+        "key": "オリジナル料理",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 625,
+            "name": "ヴァーディクトディナー",
+            "desc": "ロサリアのオリジナル料理。「暗黒」のとげが付いているため、最初はどこから食べたらいいのかわからない。周りの飾り物をやっとのことで外し、口にすると驚きの美味しさがやわらかい鳥肉から炸裂する。食す者の表情をロサリアは決して見逃さない。相手のリアクションを見た彼女はご満悦のようだ。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dinner of Judgment_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "名刺",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 6129,
+            "name": "ロサリア・苦役",
+            "desc": "名刺の飾り紋。<br>人々が醸し出す暖かさと優しさは、彼女にとって必ず返さなければいけない恩恵。同時に、彼女に一生付きまとう苦役でもある。",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/15/635e156523141d92312030094363a665_8260068889195442697.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "七聖召喚のカード",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 7222,
+            "name": "ロサリア",
+            "desc": "<p><strong>荊冠の恩典・ロサリア</strong></p><p></p><p>「影は光から生まれるが、光が影を御すことはできない。」</p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/21/346851886/bcb2da9b645d355dc7ba434056e40ddf_8291212216651959979.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "追加コスチューム",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5776,
+            "name": "教会の自由人へ",
+            "desc": "ロサリアの衣装。彼女のためだけに教会から贈られた特注品のようだ。",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/06/24/ef87a4785bacee87664d74db96e3ab01_6853987077197875351.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "実装バージョン",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.4"
+          }
+        ]
+      }
+    ],
+    "textualResearch": [
+      {
+        "title": "[誕生日メッセージ] メール (2025)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "手紙のタイトル「君に一杯」\n送信者：ロサリア\n今朝のお祈りはダリアが目をつぶってくれたわ。私への誕生日プレゼントってことなんでしょう。まあ、私が欲しかったものだし、ちょうどいいわ。\nでも、ただ静かなだけじゃ、完璧な誕生日とは言えないわね。\nモンドには美味しいお酒がたくさんある。でも、それを楽しむ場所は酒場じゃなくてもいい…例えば、清泉町の狩人は冬の狩りに出た日に秘蔵のお酒を開けたりするものよ。そうしたくなるのも分かるわ。寒い日に長時間、日陰に身を潜めていたんだから、その日の成果にかかわらず、ご褒美を楽しむべきでしょ？ちなみに狩人たちは飲みっぷりだけじゃなくて、肉を美味しく焼く腕もなかなかのものよ。\n君も来ない？君の冒険譚でも聞かせてもらえないかしら。\n私から君に一杯、捧げるわ。"
+          }
+        ]
+      },
+      {
+        "title": "[誕生日メッセージ] メール (2024)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "手紙のタイトル「珍しく…」\n送信者：ロサリア\n今日は珍しく何もすることがないの。見つからないよう隠れる必要もないし、誰かが捕まえに来てお祈りに参加するよう言われる心配もない。本質的には何も変わらないありきたりな一日に、こんな特別な待遇を受けられるなんてね。\nでも昼間から酒場に座っていても、空席ばかりでつまらないわ。だから色々と考えた末に、手紙を書いて知り合いを何人か呼ぶことにしたの。\nなにせ、人数が多いほどお酒も割引されるでしょ？この機会にたくさん飲んでおかないと。\n来るにせよ来ないにせよ、君の好きにしてちょうだい。私はあちこちで人を捕まえるような当直のシスターとは違うから。"
+          }
+        ]
+      },
+      {
+        "title": "[誕生日メッセージ] メール (2023)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "手紙のタイトル「普通の一日。」\n送信者：ロサリア\n先に言っておくわ。君は今日が何の日なのか知ってるかもしれないけど、私が手紙を書いたのは単に挨拶したかっただけで、別に、何か考えがあるってわけじゃない。\n日常って言うのは一日一日が重要なんだから、しっかり過ごすべきよ。自分がいいと思えるのなら毎日でも祝えるんだし、誕生日まで待つ必要もないわ。\nだから、誕生日をごく普通の一日にするのだって悪いことじゃない。自分さえ楽しければ、それでいいんだから。\nとにかく、もう少ししたら酒場で酒を飲んでくるつもりよ。\nここ最近、酒場には思いあがった人たちがいてね、七聖召喚で自分に勝てたら、その夜の酒代は彼らが持つっていうの。\n結構割に合いそうでしょ。"
+          }
+        ]
+      },
+      {
+        "title": "[誕生日メッセージ] メール (2022)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "手紙のタイトル「今日は…」\n送信者：ロサリア\n正直言って、誕生日なんて祝いたくないのよね。誕生日の「伝統的」な行事にも興味ないわ。だから、私が生まれた日を知っている人もそういないの。\n誕生日をほんの少し特別な日だと考えて、久しぶりに会う人たちとお酒や食事を共にするくらいなら…まだ受け入れられるけど。\nそうだ、君のために花を用意したの。花屋の…フローラだったかしら？あの子が言うには、ここ最近、一番売れている花だそうよ。\n…何だか個性的な見た目ね。しかも、花の部分が回るみたい。\n美しい物事というのは、普段と違う気持ちをもたらしてくれるわ。私には似合わないけど、君の手にかかれば別の姿を見せてくれるんじゃない？\nそれじゃあ、また。私に会いたくなったら、夜が明けた頃に来てちょうだい。"
+          }
+        ]
+      }
+    ],
     "talent": [
       {
         "key": "教会槍術",
@@ -1570,69 +3348,246 @@
         "text": "」など、上記以外の代用もある。"
       }
     ],
-    "summaryList": [
+    "story": [
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_1.png",
-        "name": "罪の導き",
+        "title": "キャラクター詳細",
         "desc": [
           {
             "type": "RichText",
-            "text": "ロサリアの攻撃で会心が発生すると、攻撃速度+10%、通常攻撃のダメージ+10%、継続時間4秒。"
+            "text": "ロサリアは、モンドの西風教会に所属するシスター。\n同じ聖職者でも、バーバラやジリアンナたちとは違った目で見られることが多い。\n服装こそは聖職者だが、普段の言葉使いや所作は聖職者とかけ離れている。\nモンドの一般市民たちよりも信仰心が低く、普段も教会の活動に参加しない。\n彼女は単独行動を好む。稀に大聖堂に姿を現すこともあるが、一番後ろの長椅子で黙々とタバコをくゆらすだけ。\n他人を頼らず、いつも一人で行動するロサリアは名ばかりのシスターである。"
           }
         ]
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_2.png",
-        "name": "無福の地",
+        "title": "キャラクターストーリー1",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>臨終の聖礼</color> で創られる氷槍の継続時間+4秒。"
+            "text": "ロサリアの規則違反は、教会に百回以上記録されている。\nしかし、彼女がそれを気に病んだことは一度もない。同僚と一緒に行動することもなければ、市民と交流する場にもめったに現れない彼女。\n変わり者で謎の多いロサリアは、まるで黒い煙が立ち上るかのように、目を離すとすぐに消えてしまう。\nさらに人付き合いをすることがほぼなく、誰とも関わり合おうとしない。\nシスターヴィクトリアによると、心優しいバーバラだけはロサリアと交流を図ろうとしているらしい。\n「教会でタバコを吸わないでください」、「時間通りに式典に出席してください…」\n「あの…話を聞いてください！」といった具合に。\nロサリアの後を追いかけては、仕事をするよういつも優しく彼女を諭すバーバラ。\nしかし、モンド城の人々が愛すアイドルであろうとも、ロサリアは無関心な態度を貫く。\n彼女は…冷酷な人間なのだろうか？\n解放条件：好感度Lv.2"
           }
         ]
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_3.png",
-        "name": "懺悔の儀",
+        "title": "キャラクターストーリー2",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>罪喰いの懺悔</color> のスキルLv.+3。\n最大Lv.15まで。"
+            "text": "ロサリアはよく姿をくらます。居場所を告げることなく姿を消しては、数日間戻ってこないことも珍しくない。\n彼女が姿を消すたび、教会のシスターたちもどこを探せばいいのか見当がつかないという。\nあるシスターが彼女を監視していた時、「拾われた野良猫だって、逃げる時に一言いうわよ！」と、ため息交じりに愚痴をこぼしたそうだ。\n姿を消した後、ロサリアは人知れぬ場所で、彼女にしかできない仕事を処理している。\n見たことのない商人、怪しげな旅人、これら人物がモンドに害をなすか否かを見定めているのだ。\n調査、追跡、必要とあらば拷問も。\nモンドにとって好ましくない人物がいれば、最後に会う人物は必ずロサリアとなるだろう。\n日の目を浴びることのない影の仕事を、ロサリアは全て担っている。\n彼女は日が沈むと同時に仕事に出て、処理すべき問題を一息に片付ける。そして、帰りが夜明け頃となれば、朝日が昇ると同時に一杯のワインを嗜む。\nモンド人は金色の日差しの下で日常を享受するが、ロサリアは銀色の月光の下で息をする。\n透き通るような凛冽なる月光は…まさしく彼女が操る氷元素と同じだ。\n「若者が知る必要のない事よ」\nロサリアにとって、太陽の下で暮らすモンド人は老若男女問わず「若者」なのだ。\n解放条件：好感度Lv.3"
           }
         ]
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_4.png",
-        "name": "苦痛の恩典",
+        "title": "キャラクターストーリー3",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>罪喰いの懺悔</color> で会心が発生すると、ロサリア自身の元素エネルギーが5回復する。\nこの効果は、1回の罪喰いの懺悔で1度のみ発動可能。"
+            "text": "あらゆる物事に対して関心を持たないロサリアは、まるで捉えどころのない煙のようだ。\nしかし、そんな彼女も仕事になると纏う空気が一変し、任務を果たすため全力を尽くす。\n普段は怠惰な態度が目立つロサリアだが、不審人物を拷問する際にはそれもなりを潜め、決して手を抜くことがない。\nまた彼女は並外れた腕力の持ち主であり、人体の急所にも精通している。人を痛めつけることに対し躊躇いがなく、殺すことも厭わない。\n怠惰で、ヘビースモーカーで、シスター…しかし、その裏の顔は優秀な処刑人なのだ。\n神の威光のもと生きる彼女だが、その背には重い使命がある。\nその手を血に染め、死刑執行人になったのはなぜなのか？なぜ神の祝福を拒絶するのか？\nましてや、ロサリアはモンド生まれではない、そんな彼女がこういった暗部を担っていることにも疑問が残る。\n「このような幸せで退屈な街には、汚い仕事をする人がいても当然」\nロサリアは紫煙をくゆらせながら、気怠げにそう言う。\n「私にとって、この種の仕事は真っ当なシスターとして過ごすよりもよほど簡単だわ。」\n解放条件：好感度Lv.4"
           }
         ]
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_5.png",
-        "name": "臨終の祈り",
+        "title": "キャラクターストーリー4",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>臨終の聖礼</color> のスキルLv.+3。\n最大Lv.15まで。"
+            "text": "祈りを捧げることのないロサリアだが、神学に対して独特の見解を持っている。\n彼女曰く、自由はモンドの人々にとって心の支えであり、彼女が今ここにいるのも自由のおかげだという。\nロサリアは人里離れた山奥にある村の出身だ。だが、彼女が生まれて間もない頃、盗賊が村を襲い、ロサリアはその盗賊に拾われることになる。\n盗賊に育てられた彼女は幼い頃より戦うすべを叩き込まれ、盗賊として活動しながら雑用係をし生きることになった。\nその生活はまさしく奴隷であり機械のよう。彼女は子供でありながら盗賊であった。\n外からの脅威と戦うだけでなく、時には仲間であった者とも戦い、飢えと寒さに苦しみながら、弱肉強食の世界で育ったのだ。\nロサリアの青春時代は、まるでモンドの夕日の如く——視界に入る全てが血の色であった。ある日、その日々を振り返ったロサリアは、手遅れであることにようやく気づいた。\nその数年後、西風騎士団の活躍によりその盗賊団は壊滅する。ロサリアは盗賊団の中で最も若く、更生の余地があると判断された。\n彼女をモンドへ連れてきたのは騎士団の大団長ファルカ。彼はロサリアがモンドに馴染むことを期待し、こう告げる——\n「教会の神の光でその身を洗え。そうすれば生まれ変わって、普通の人と同じように生きていける」\nしかし、ロサリアはファルカの期待を裏切るかのように、教会のミサや合唱を理由もなく欠席した。\n平和に過ごすシスターではなく、彼女が選んだのは外での狩り。彼女にとって、金色の太陽は眩しすぎたのだ。\nロサリアははるか昔から理解していた——月の下で生まれた自分は、いずれ闇へ帰るのだと。\n解放条件：好感度Lv.5"
           }
         ]
       },
       {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_6.png",
-        "name": "代行裁判",
+        "title": "キャラクターストーリー5",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>臨終の聖礼</color> の攻撃が敵に命中すると、敵の物理耐性-20%、継続時間10秒。"
+            "text": "怠惰さにおいて、教会内でロサリアの右に出る者はいない。修習時代からすでにその怠惰な態度は有名であった。\n「ロサリアさん、分別ある行動をお願いします！教会のシスターとして、合唱に参加しないなんて許しません！」\n「落ち着いて、シスターオルフィラ。ロサリアさん、必修科目に一つも出ていないと聞きましたが本当でしょうか？」\n「ええ、本当よ」\n「そういえばマレア婦人、こちらをご覧ください…ロサリアさんが書いた神学の論文ですが、目も当てられません！」\n「ロサリアさん、失礼ですが…この先、教会に仕える気はありますか？」\n「ないわ。仕事はもう見つかっているもの」\nあまりにも真剣味に欠けるロサリア、彼女の背景を考えれば確かに影の仕事の方が向いているのかもしれない。\nただ意外だったことに、その仕事のために教会に属すことになる。\n聖職者の身分から逃れられなかった彼女は、「見習いシスター」ロサリアから「シスター」ロサリアとなった。\nだが任務がなくとも、彼女は教会の行事を避け——酒場で酒を飲んだり、城壁の上から景色を眺めたりしていた。\n避けようがない状況でも残業を忌避し、定時になるとすぐに姿を消す。\n表の仕事でも、裏の仕事でも、彼女は「残業」をしないのだ。\n解放条件：好感度Lv.6"
+          }
+        ]
+      },
+      {
+        "title": "教会から配られたノート",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "白いカバーのノート。表紙には「西風教会」と書かれている。\nノートの中には綺麗な字が並んでいるが、内容は至極どうでもいいもの。\n「蒲公英酒はどうだい、ただいま20%オフだよ！」\n「漁師トースト、お値段以上のおいしさ！」\n「小麦の大セール！小麦粉にしたい場合は店主までお声がけを！」\n「3個買ったら1個おまけ！」\n「新鮮なイグサはどう、トイレの照明に使えるよ！お客さん見てらっしゃい…！」\n均整の取れた美しい筆跡だが、書かれているのは呼び込みの言葉やお店の広告ばかり。\nこのノートはロサリアが見習い時代に持っていた物だ。\n当時、彼女は授業を抜け出すと商店の屋上へと行き、陽の光を浴びながら下から聞こえてくる様々な声をノートにただただ書いていた。そんな風に過ごす彼女の姿は、想像に難くないだろう。\n解放条件：好感度Lv.4"
+          }
+        ]
+      },
+      {
+        "title": "神の目",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "ロサリアの「神の目」は、とある寒い日の夜に現れた。\n盗賊にとって最も厄介な季節、全員が生きていくには食料が足りなかった。\n常に空腹に苦しんでいた彼女は、寒風吹き荒ぶ中での雑用に耐えかね逃げ出した。\nしかし、盗賊の一人である老人に捕まり連れ戻されてしまう。彼こそが、過去に彼女を村で拾い、人を殺す技を教えた張本人である。\n「逃げる奴は全員裏切り者だ。裏切り者は決闘に勝たなければ自由になれない」\nそう言うと、老人は古いナイフをロサリアに投げた。「来い、俺を殺せばここから逃げられる。俺はただの年老いた獅子だ、お前はまだ若い。お前なら容易いことだろう？」\nロサリアが勝つなど、誰一人として想像していなかった。しかし、確かに老いた獅子は若き野獣の爪の前に敗れた。\nその夜、盗賊団は古株の一人を失ったが、新たなメンバーを迎え入れることにした。\n老人を殺したロサリアは盗賊たちに避けられたが、面白いことに彼女の持つ「神の目」を見た途端態度が豹変した。\n——「神の目」を持つ者なら、きっとあのジジイよりも強い。それにお前は小食だ、食料の節約にもなる。\n氷のように固く凍ったロサリアの心に、ふとある疑問が浮かんだ——\n彼はわざと私を勝たせたんじゃないかと…拾った子に対し、偽りながらも父としての気持ちが彼に生まれていたのかもしれない。\n解放条件：好感度Lv.6"
           }
         ]
       }
     ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=29&center=-337.50,484.00&zoom=0.00",
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/avatar_header_jp.png"
+      },
+      {
+        "key": "原画",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/avatar.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "初期衣装—棘の処刑\nロサリアの衣装。ロサリアによる改造を施された西風教会シスターの制服。"
+          }
+        ]
+      },
+      {
+        "key": "待機モーション1 ",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/95003234/7d37c419164750a2eb2085343dedf3df_7016354609171714919.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#e6e6e6>初期衣装</color> — <color=#e6e6e6>棘の処刑</color>"
+          }
+        ]
+      },
+      {
+        "key": "待機モーション2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/95003234/06419675499e1f0918cb93e64aab29e9_1122526807064793222.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#e6e6e6>初期衣装</color> — <color=#e6e6e6>棘の処刑</color>"
+          }
+        ]
+      },
+      {
+        "key": "コスチューム",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/costume.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "オルタ衣装—教会の自由人へ\nロサリアの衣装。彼女のためだけに教会から贈られた特注品のようだ。"
+          }
+        ]
+      },
+      {
+        "key": "待機モーション3",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/95003234/d45fe6630a126fbd890916550fc83480_4041229282972827983.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#e6e6e6>オルタ衣装</color> — <color=#e6e6e6>教会の自由人へ</color>"
+          }
+        ]
+      },
+      {
+        "key": "待機モーション4",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/95003234/76587c1d1e48b11385d489e55b6ff845_7282294170611763604.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#e6e6e6>オルタ衣装</color> — <color=#e6e6e6>教会の自由人へ</color>"
+          }
+        ]
+      },
+      {
+        "key": "【誕生日メッセージ】SNS1＆イラスト1(2022)",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/25/75248538/70c5975aa5be46b6d34a4a9118af4a4d_6041030069332222394.jpeg",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>2022/01/24</color>\n【ロサリア生誕祭】\n私？ええ、助けが必要なら手が空いてるわよ。\n…ああ、君も誕生日を祝いに来たのね。そう、ありがとう。\n先日、祝う必要はないって皆に言ったの。で、ご覧の通り、今日は一日休みってわけ。\n城外に？いいわよ、君と一緒に過ごすのは、いい気晴らしになるから。\n<color=#37ffff>掲載元：https:/x.com/Genshin_7/status/1485462402711830536</color>"
+          }
+        ]
+      },
+      {
+        "key": "【誕生日メッセージ】SNS2＆イラスト2(2022)",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/25/75248538/53f643b9da0f9f6a60d0770fe28ce75c_2367939802571785865.jpeg",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>2022/01/24</color>\n【ロサリア生誕祭】\n「しーっ…静かに！」\n「ロサリア、蒲公英酒の特製ビーフシチューをパイモンと作ったよ。あれ、パイモンは？」\n<color=#37ffff>掲載元：https:/x.com/Genshin_7/status/1485462364149338114</color>"
+          }
+        ]
+      },
+      {
+        "key": "【誕生日メッセージ】SNS1＆イラスト1(2023)",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/25/75248538/bd63b77ee718a7fa4b5eb3854de9a921_2912813380695148584.jpeg",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>2023/01/24</color>\n【ロサリア生誕祭】\n誕生日の願い事？そうね…この後、モンドの害虫を処理する予定だから、少し待っていてくれる？\n手助けは不要よ。日没までには終わらせるわ。\nその後は、自由に時間を使えるから。\n誕生日よりも、仕事を早く上がれることの方が友人と共に祝うに値するわね。\n<color=#37ffff>掲載元：https:/x.com/Genshin_7/status/1617735487598338050</color>"
+          }
+        ]
+      },
+      {
+        "key": "【誕生日メッセージ】SNS2＆イラスト2(2023)",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/25/75248538/28b134b72d05d57ce45f9162e4e50602_1210089860107145125.jpeg",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>2023/01/24</color>\n【ロサリア生誕祭】\n「ここまで辿り着くなんて、なかなかの追跡能力ね。」\n「これは…私への誕生日プレゼント？そう、ありがとう。」\n<color=#37ffff>掲載元：https:/x.com/Genshin_7/status/1617735426755674113</color>"
+          }
+        ]
+      },
+      {
+        "key": "【イラスト配布】2023/10/08",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/05/01/75248538/2e91b6e7dd0c4d2a8f9f26d51a6caa89_1248687590981168072.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>2023/10/08</color>\n『原神』Webイベント「浮世の星、旅の夢」壁紙公開・第三弾\n旅人の皆さん、こんにちは。Webイベント「浮世の星、旅の夢」のPC用とスマホ用壁紙をご用意いたしました！画像を保存して、ぜひご利用ください！さらに多くのキャラクター壁紙が追加されていく予定ですので、ぜひお楽しみに！\n<color=#37ffff>掲載元：https:/www.hoyolab.com/article/22183092</color>"
+          }
+        ]
+      },
+      {
+        "key": "【誕生日メッセージ】SNS1＆イラスト1(2024)",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/25/75248538/f0a81044378578e22682c2b8c31e1329_7905699226263122087.jpeg",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>2024/01/24</color>\n【ロサリア生誕祭】\n当直のシスターから聞いた？そう…みんなとはもう付き合いも長いし、私の習慣をよく知ってるのね。\n誕生日になると、必ず酒場に行って蒲公英酒を一杯注文するようにしてるの。\n最初は酒場に行こうとすると、私が酔っ払わないか心配して、みんなついて来ようとしたわ。けど今では、他のことは自分たちに任せて、ゆっくり休んでちょうだいって言うだけになった。\n悪くないでしょ？こういう付き合い方も結構気に入ってるの。もちろん、合唱の誘いがなければなおいいんだけどね。\n<color=#37ffff>掲載元：https:/x.com/Genshin_7/status/1750006732871680327</color>"
+          }
+        ]
+      },
+      {
+        "key": "【誕生日メッセージ】SNS2＆イラスト2(2024)",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/25/75248538/1d9a841ad4f7b50bd9c50a2aae6c874f_2805917181132472552.jpeg",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>2024/01/24</color>\n【ロサリア生誕祭】\n「鹿狩り——今日のおすすめメニューは…鳥肉のスイートフラワー漬け焼き、と。」\n<color=#37ffff>掲載元：https:/x.com/Genshin_7/status/1750006020569530738</color>"
+          }
+        ]
+      },
+      {
+        "key": "【イラスト配布】2024/10/04",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/05/30/75248538/d1d7f958e1a85315b786dab23b0a2380_8304669921721001311.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>2024/10/04</color>\n『原神』Webイベント「星々の道で思い出を拾って」壁紙公開・第一弾\n4周年おめでとうございます！\nWebイベント「星々の道で思い出を拾って」の壁紙をご用意しました！ぜひお使いください～\n<color=#37ffff>掲載元：https:/www.hoyolab.com/article/33924590</color>"
+          }
+        ]
+      },
+      {
+        "key": "【誕生日メッセージ】SNS1＆イラスト1(2025)",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/25/75248538/62709fdb166c04602bf910f69f221ee9_8427049342853013296.jpeg",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>2025/01/24</color>\n【ロサリア生誕祭2025】\n一番危険そうな場所こそ、一番安全って言うでしょう？だから今日はいっそのこと、と思って教会に「隠れ」に来たの。\nまさか、本当にみんな外に探しに行くなんてね。こんなに人の気配がしない教会なんて、かえって落ち着かないわ。\nなのに、君は固定観念にとらわれることなく、すぐに私を見つけ出した。\n──まあいいわ。君が来たんじゃ、ここもじきに見つかりそうね。私はそろそろ次の隠れ場所に移動するけど、君も来る？\n<color=#37ffff>掲載元：https:/x.com/Genshin_7/status/1882639714714255487</color>"
+          }
+        ]
+      },
+      {
+        "key": "【誕生日メッセージ】SNS2＆イラスト2(2025)",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/25/75248538/d9448e283b613636dd9a69ac46058407_7699233230790576573.jpeg",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>2025/01/24</color>\n【ロサリア生誕祭2025】\n「ふぅ～、これ飲んだら寝るわ。…朝のお祈り？ふっ、気にしなくて平気よ。当直のシスターにはちゃんと見つからないようにするから。」\n<color=#37ffff>掲載元：https:/x.com/Genshin_7/status/1882639491661209718</color>"
+          }
+        ]
+      }
+    ],
     "ascension": [
       {
         "key": "Lv.1",
@@ -2195,1961 +4150,6 @@
               "24.0%",
               "-"
             ]
-          }
-        ]
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/avatar_header_jp.png"
-      },
-      {
-        "key": "原画",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/avatar.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "初期衣装—棘の処刑\nロサリアの衣装。ロサリアによる改造を施された西風教会シスターの制服。"
-          }
-        ]
-      },
-      {
-        "key": "待機モーション1 ",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/95003234/7d37c419164750a2eb2085343dedf3df_7016354609171714919.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#e6e6e6>初期衣装</color> — <color=#e6e6e6>棘の処刑</color>"
-          }
-        ]
-      },
-      {
-        "key": "待機モーション2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/95003234/06419675499e1f0918cb93e64aab29e9_1122526807064793222.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#e6e6e6>初期衣装</color> — <color=#e6e6e6>棘の処刑</color>"
-          }
-        ]
-      },
-      {
-        "key": "コスチューム",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/costume.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "オルタ衣装—教会の自由人へ\nロサリアの衣装。彼女のためだけに教会から贈られた特注品のようだ。"
-          }
-        ]
-      },
-      {
-        "key": "待機モーション3",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/95003234/d45fe6630a126fbd890916550fc83480_4041229282972827983.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#e6e6e6>オルタ衣装</color> — <color=#e6e6e6>教会の自由人へ</color>"
-          }
-        ]
-      },
-      {
-        "key": "待機モーション4",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/31/95003234/76587c1d1e48b11385d489e55b6ff845_7282294170611763604.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#e6e6e6>オルタ衣装</color> — <color=#e6e6e6>教会の自由人へ</color>"
-          }
-        ]
-      },
-      {
-        "key": "【誕生日メッセージ】SNS1＆イラスト1(2022)",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/25/75248538/70c5975aa5be46b6d34a4a9118af4a4d_6041030069332222394.jpeg",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>2022/01/24</color>\n【ロサリア生誕祭】\n私？ええ、助けが必要なら手が空いてるわよ。\n…ああ、君も誕生日を祝いに来たのね。そう、ありがとう。\n先日、祝う必要はないって皆に言ったの。で、ご覧の通り、今日は一日休みってわけ。\n城外に？いいわよ、君と一緒に過ごすのは、いい気晴らしになるから。\n<color=#37ffff>掲載元：https:/x.com/Genshin_7/status/1485462402711830536</color>"
-          }
-        ]
-      },
-      {
-        "key": "【誕生日メッセージ】SNS2＆イラスト2(2022)",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/25/75248538/53f643b9da0f9f6a60d0770fe28ce75c_2367939802571785865.jpeg",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>2022/01/24</color>\n【ロサリア生誕祭】\n「しーっ…静かに！」\n「ロサリア、蒲公英酒の特製ビーフシチューをパイモンと作ったよ。あれ、パイモンは？」\n<color=#37ffff>掲載元：https:/x.com/Genshin_7/status/1485462364149338114</color>"
-          }
-        ]
-      },
-      {
-        "key": "【誕生日メッセージ】SNS1＆イラスト1(2023)",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/25/75248538/bd63b77ee718a7fa4b5eb3854de9a921_2912813380695148584.jpeg",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>2023/01/24</color>\n【ロサリア生誕祭】\n誕生日の願い事？そうね…この後、モンドの害虫を処理する予定だから、少し待っていてくれる？\n手助けは不要よ。日没までには終わらせるわ。\nその後は、自由に時間を使えるから。\n誕生日よりも、仕事を早く上がれることの方が友人と共に祝うに値するわね。\n<color=#37ffff>掲載元：https:/x.com/Genshin_7/status/1617735487598338050</color>"
-          }
-        ]
-      },
-      {
-        "key": "【誕生日メッセージ】SNS2＆イラスト2(2023)",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/25/75248538/28b134b72d05d57ce45f9162e4e50602_1210089860107145125.jpeg",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>2023/01/24</color>\n【ロサリア生誕祭】\n「ここまで辿り着くなんて、なかなかの追跡能力ね。」\n「これは…私への誕生日プレゼント？そう、ありがとう。」\n<color=#37ffff>掲載元：https:/x.com/Genshin_7/status/1617735426755674113</color>"
-          }
-        ]
-      },
-      {
-        "key": "【イラスト配布】2023/10/08",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/05/01/75248538/2e91b6e7dd0c4d2a8f9f26d51a6caa89_1248687590981168072.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>2023/10/08</color>\n『原神』Webイベント「浮世の星、旅の夢」壁紙公開・第三弾\n旅人の皆さん、こんにちは。Webイベント「浮世の星、旅の夢」のPC用とスマホ用壁紙をご用意いたしました！画像を保存して、ぜひご利用ください！さらに多くのキャラクター壁紙が追加されていく予定ですので、ぜひお楽しみに！\n<color=#37ffff>掲載元：https:/www.hoyolab.com/article/22183092</color>"
-          }
-        ]
-      },
-      {
-        "key": "【誕生日メッセージ】SNS1＆イラスト1(2024)",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/25/75248538/f0a81044378578e22682c2b8c31e1329_7905699226263122087.jpeg",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>2024/01/24</color>\n【ロサリア生誕祭】\n当直のシスターから聞いた？そう…みんなとはもう付き合いも長いし、私の習慣をよく知ってるのね。\n誕生日になると、必ず酒場に行って蒲公英酒を一杯注文するようにしてるの。\n最初は酒場に行こうとすると、私が酔っ払わないか心配して、みんなついて来ようとしたわ。けど今では、他のことは自分たちに任せて、ゆっくり休んでちょうだいって言うだけになった。\n悪くないでしょ？こういう付き合い方も結構気に入ってるの。もちろん、合唱の誘いがなければなおいいんだけどね。\n<color=#37ffff>掲載元：https:/x.com/Genshin_7/status/1750006732871680327</color>"
-          }
-        ]
-      },
-      {
-        "key": "【誕生日メッセージ】SNS2＆イラスト2(2024)",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/25/75248538/1d9a841ad4f7b50bd9c50a2aae6c874f_2805917181132472552.jpeg",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>2024/01/24</color>\n【ロサリア生誕祭】\n「鹿狩り——今日のおすすめメニューは…鳥肉のスイートフラワー漬け焼き、と。」\n<color=#37ffff>掲載元：https:/x.com/Genshin_7/status/1750006020569530738</color>"
-          }
-        ]
-      },
-      {
-        "key": "【イラスト配布】2024/10/04",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/05/30/75248538/d1d7f958e1a85315b786dab23b0a2380_8304669921721001311.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>2024/10/04</color>\n『原神』Webイベント「星々の道で思い出を拾って」壁紙公開・第一弾\n4周年おめでとうございます！\nWebイベント「星々の道で思い出を拾って」の壁紙をご用意しました！ぜひお使いください～\n<color=#37ffff>掲載元：https:/www.hoyolab.com/article/33924590</color>"
-          }
-        ]
-      },
-      {
-        "key": "【誕生日メッセージ】SNS1＆イラスト1(2025)",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/25/75248538/62709fdb166c04602bf910f69f221ee9_8427049342853013296.jpeg",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>2025/01/24</color>\n【ロサリア生誕祭2025】\n一番危険そうな場所こそ、一番安全って言うでしょう？だから今日はいっそのこと、と思って教会に「隠れ」に来たの。\nまさか、本当にみんな外に探しに行くなんてね。こんなに人の気配がしない教会なんて、かえって落ち着かないわ。\nなのに、君は固定観念にとらわれることなく、すぐに私を見つけ出した。\n──まあいいわ。君が来たんじゃ、ここもじきに見つかりそうね。私はそろそろ次の隠れ場所に移動するけど、君も来る？\n<color=#37ffff>掲載元：https:/x.com/Genshin_7/status/1882639714714255487</color>"
-          }
-        ]
-      },
-      {
-        "key": "【誕生日メッセージ】SNS2＆イラスト2(2025)",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/25/75248538/d9448e283b613636dd9a69ac46058407_7699233230790576573.jpeg",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>2025/01/24</color>\n【ロサリア生誕祭2025】\n「ふぅ～、これ飲んだら寝るわ。…朝のお祈り？ふっ、気にしなくて平気よ。当直のシスターにはちゃんと見つからないようにするから。」\n<color=#37ffff>掲載元：https:/x.com/Genshin_7/status/1882639491661209718</color>"
-          }
-        ]
-      }
-    ],
-    "textualResearch": [
-      {
-        "title": "[誕生日メッセージ] メール (2025)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "手紙のタイトル「君に一杯」\n送信者：ロサリア\n今朝のお祈りはダリアが目をつぶってくれたわ。私への誕生日プレゼントってことなんでしょう。まあ、私が欲しかったものだし、ちょうどいいわ。\nでも、ただ静かなだけじゃ、完璧な誕生日とは言えないわね。\nモンドには美味しいお酒がたくさんある。でも、それを楽しむ場所は酒場じゃなくてもいい…例えば、清泉町の狩人は冬の狩りに出た日に秘蔵のお酒を開けたりするものよ。そうしたくなるのも分かるわ。寒い日に長時間、日陰に身を潜めていたんだから、その日の成果にかかわらず、ご褒美を楽しむべきでしょ？ちなみに狩人たちは飲みっぷりだけじゃなくて、肉を美味しく焼く腕もなかなかのものよ。\n君も来ない？君の冒険譚でも聞かせてもらえないかしら。\n私から君に一杯、捧げるわ。"
-          }
-        ]
-      },
-      {
-        "title": "[誕生日メッセージ] メール (2024)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "手紙のタイトル「珍しく…」\n送信者：ロサリア\n今日は珍しく何もすることがないの。見つからないよう隠れる必要もないし、誰かが捕まえに来てお祈りに参加するよう言われる心配もない。本質的には何も変わらないありきたりな一日に、こんな特別な待遇を受けられるなんてね。\nでも昼間から酒場に座っていても、空席ばかりでつまらないわ。だから色々と考えた末に、手紙を書いて知り合いを何人か呼ぶことにしたの。\nなにせ、人数が多いほどお酒も割引されるでしょ？この機会にたくさん飲んでおかないと。\n来るにせよ来ないにせよ、君の好きにしてちょうだい。私はあちこちで人を捕まえるような当直のシスターとは違うから。"
-          }
-        ]
-      },
-      {
-        "title": "[誕生日メッセージ] メール (2023)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "手紙のタイトル「普通の一日。」\n送信者：ロサリア\n先に言っておくわ。君は今日が何の日なのか知ってるかもしれないけど、私が手紙を書いたのは単に挨拶したかっただけで、別に、何か考えがあるってわけじゃない。\n日常って言うのは一日一日が重要なんだから、しっかり過ごすべきよ。自分がいいと思えるのなら毎日でも祝えるんだし、誕生日まで待つ必要もないわ。\nだから、誕生日をごく普通の一日にするのだって悪いことじゃない。自分さえ楽しければ、それでいいんだから。\nとにかく、もう少ししたら酒場で酒を飲んでくるつもりよ。\nここ最近、酒場には思いあがった人たちがいてね、七聖召喚で自分に勝てたら、その夜の酒代は彼らが持つっていうの。\n結構割に合いそうでしょ。"
-          }
-        ]
-      },
-      {
-        "title": "[誕生日メッセージ] メール (2022)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "手紙のタイトル「今日は…」\n送信者：ロサリア\n正直言って、誕生日なんて祝いたくないのよね。誕生日の「伝統的」な行事にも興味ないわ。だから、私が生まれた日を知っている人もそういないの。\n誕生日をほんの少し特別な日だと考えて、久しぶりに会う人たちとお酒や食事を共にするくらいなら…まだ受け入れられるけど。\nそうだ、君のために花を用意したの。花屋の…フローラだったかしら？あの子が言うには、ここ最近、一番売れている花だそうよ。\n…何だか個性的な見た目ね。しかも、花の部分が回るみたい。\n美しい物事というのは、普段と違う気持ちをもたらしてくれるわ。私には似合わないけど、君の手にかかれば別の姿を見せてくれるんじゃない？\nそれじゃあ、また。私に会いたくなったら、夜が明けた頃に来てちょうだい。"
-          }
-        ]
-      }
-    ],
-    "story": [
-      {
-        "title": "キャラクター詳細",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "ロサリアは、モンドの西風教会に所属するシスター。\n同じ聖職者でも、バーバラやジリアンナたちとは違った目で見られることが多い。\n服装こそは聖職者だが、普段の言葉使いや所作は聖職者とかけ離れている。\nモンドの一般市民たちよりも信仰心が低く、普段も教会の活動に参加しない。\n彼女は単独行動を好む。稀に大聖堂に姿を現すこともあるが、一番後ろの長椅子で黙々とタバコをくゆらすだけ。\n他人を頼らず、いつも一人で行動するロサリアは名ばかりのシスターである。"
-          }
-        ]
-      },
-      {
-        "title": "キャラクターストーリー1",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "ロサリアの規則違反は、教会に百回以上記録されている。\nしかし、彼女がそれを気に病んだことは一度もない。同僚と一緒に行動することもなければ、市民と交流する場にもめったに現れない彼女。\n変わり者で謎の多いロサリアは、まるで黒い煙が立ち上るかのように、目を離すとすぐに消えてしまう。\nさらに人付き合いをすることがほぼなく、誰とも関わり合おうとしない。\nシスターヴィクトリアによると、心優しいバーバラだけはロサリアと交流を図ろうとしているらしい。\n「教会でタバコを吸わないでください」、「時間通りに式典に出席してください…」\n「あの…話を聞いてください！」といった具合に。\nロサリアの後を追いかけては、仕事をするよういつも優しく彼女を諭すバーバラ。\nしかし、モンド城の人々が愛すアイドルであろうとも、ロサリアは無関心な態度を貫く。\n彼女は…冷酷な人間なのだろうか？\n解放条件：好感度Lv.2"
-          }
-        ]
-      },
-      {
-        "title": "キャラクターストーリー2",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "ロサリアはよく姿をくらます。居場所を告げることなく姿を消しては、数日間戻ってこないことも珍しくない。\n彼女が姿を消すたび、教会のシスターたちもどこを探せばいいのか見当がつかないという。\nあるシスターが彼女を監視していた時、「拾われた野良猫だって、逃げる時に一言いうわよ！」と、ため息交じりに愚痴をこぼしたそうだ。\n姿を消した後、ロサリアは人知れぬ場所で、彼女にしかできない仕事を処理している。\n見たことのない商人、怪しげな旅人、これら人物がモンドに害をなすか否かを見定めているのだ。\n調査、追跡、必要とあらば拷問も。\nモンドにとって好ましくない人物がいれば、最後に会う人物は必ずロサリアとなるだろう。\n日の目を浴びることのない影の仕事を、ロサリアは全て担っている。\n彼女は日が沈むと同時に仕事に出て、処理すべき問題を一息に片付ける。そして、帰りが夜明け頃となれば、朝日が昇ると同時に一杯のワインを嗜む。\nモンド人は金色の日差しの下で日常を享受するが、ロサリアは銀色の月光の下で息をする。\n透き通るような凛冽なる月光は…まさしく彼女が操る氷元素と同じだ。\n「若者が知る必要のない事よ」\nロサリアにとって、太陽の下で暮らすモンド人は老若男女問わず「若者」なのだ。\n解放条件：好感度Lv.3"
-          }
-        ]
-      },
-      {
-        "title": "キャラクターストーリー3",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "あらゆる物事に対して関心を持たないロサリアは、まるで捉えどころのない煙のようだ。\nしかし、そんな彼女も仕事になると纏う空気が一変し、任務を果たすため全力を尽くす。\n普段は怠惰な態度が目立つロサリアだが、不審人物を拷問する際にはそれもなりを潜め、決して手を抜くことがない。\nまた彼女は並外れた腕力の持ち主であり、人体の急所にも精通している。人を痛めつけることに対し躊躇いがなく、殺すことも厭わない。\n怠惰で、ヘビースモーカーで、シスター…しかし、その裏の顔は優秀な処刑人なのだ。\n神の威光のもと生きる彼女だが、その背には重い使命がある。\nその手を血に染め、死刑執行人になったのはなぜなのか？なぜ神の祝福を拒絶するのか？\nましてや、ロサリアはモンド生まれではない、そんな彼女がこういった暗部を担っていることにも疑問が残る。\n「このような幸せで退屈な街には、汚い仕事をする人がいても当然」\nロサリアは紫煙をくゆらせながら、気怠げにそう言う。\n「私にとって、この種の仕事は真っ当なシスターとして過ごすよりもよほど簡単だわ。」\n解放条件：好感度Lv.4"
-          }
-        ]
-      },
-      {
-        "title": "キャラクターストーリー4",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "祈りを捧げることのないロサリアだが、神学に対して独特の見解を持っている。\n彼女曰く、自由はモンドの人々にとって心の支えであり、彼女が今ここにいるのも自由のおかげだという。\nロサリアは人里離れた山奥にある村の出身だ。だが、彼女が生まれて間もない頃、盗賊が村を襲い、ロサリアはその盗賊に拾われることになる。\n盗賊に育てられた彼女は幼い頃より戦うすべを叩き込まれ、盗賊として活動しながら雑用係をし生きることになった。\nその生活はまさしく奴隷であり機械のよう。彼女は子供でありながら盗賊であった。\n外からの脅威と戦うだけでなく、時には仲間であった者とも戦い、飢えと寒さに苦しみながら、弱肉強食の世界で育ったのだ。\nロサリアの青春時代は、まるでモンドの夕日の如く——視界に入る全てが血の色であった。ある日、その日々を振り返ったロサリアは、手遅れであることにようやく気づいた。\nその数年後、西風騎士団の活躍によりその盗賊団は壊滅する。ロサリアは盗賊団の中で最も若く、更生の余地があると判断された。\n彼女をモンドへ連れてきたのは騎士団の大団長ファルカ。彼はロサリアがモンドに馴染むことを期待し、こう告げる——\n「教会の神の光でその身を洗え。そうすれば生まれ変わって、普通の人と同じように生きていける」\nしかし、ロサリアはファルカの期待を裏切るかのように、教会のミサや合唱を理由もなく欠席した。\n平和に過ごすシスターではなく、彼女が選んだのは外での狩り。彼女にとって、金色の太陽は眩しすぎたのだ。\nロサリアははるか昔から理解していた——月の下で生まれた自分は、いずれ闇へ帰るのだと。\n解放条件：好感度Lv.5"
-          }
-        ]
-      },
-      {
-        "title": "キャラクターストーリー5",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "怠惰さにおいて、教会内でロサリアの右に出る者はいない。修習時代からすでにその怠惰な態度は有名であった。\n「ロサリアさん、分別ある行動をお願いします！教会のシスターとして、合唱に参加しないなんて許しません！」\n「落ち着いて、シスターオルフィラ。ロサリアさん、必修科目に一つも出ていないと聞きましたが本当でしょうか？」\n「ええ、本当よ」\n「そういえばマレア婦人、こちらをご覧ください…ロサリアさんが書いた神学の論文ですが、目も当てられません！」\n「ロサリアさん、失礼ですが…この先、教会に仕える気はありますか？」\n「ないわ。仕事はもう見つかっているもの」\nあまりにも真剣味に欠けるロサリア、彼女の背景を考えれば確かに影の仕事の方が向いているのかもしれない。\nただ意外だったことに、その仕事のために教会に属すことになる。\n聖職者の身分から逃れられなかった彼女は、「見習いシスター」ロサリアから「シスター」ロサリアとなった。\nだが任務がなくとも、彼女は教会の行事を避け——酒場で酒を飲んだり、城壁の上から景色を眺めたりしていた。\n避けようがない状況でも残業を忌避し、定時になるとすぐに姿を消す。\n表の仕事でも、裏の仕事でも、彼女は「残業」をしないのだ。\n解放条件：好感度Lv.6"
-          }
-        ]
-      },
-      {
-        "title": "教会から配られたノート",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "白いカバーのノート。表紙には「西風教会」と書かれている。\nノートの中には綺麗な字が並んでいるが、内容は至極どうでもいいもの。\n「蒲公英酒はどうだい、ただいま20%オフだよ！」\n「漁師トースト、お値段以上のおいしさ！」\n「小麦の大セール！小麦粉にしたい場合は店主までお声がけを！」\n「3個買ったら1個おまけ！」\n「新鮮なイグサはどう、トイレの照明に使えるよ！お客さん見てらっしゃい…！」\n均整の取れた美しい筆跡だが、書かれているのは呼び込みの言葉やお店の広告ばかり。\nこのノートはロサリアが見習い時代に持っていた物だ。\n当時、彼女は授業を抜け出すと商店の屋上へと行き、陽の光を浴びながら下から聞こえてくる様々な声をノートにただただ書いていた。そんな風に過ごす彼女の姿は、想像に難くないだろう。\n解放条件：好感度Lv.4"
-          }
-        ]
-      },
-      {
-        "title": "神の目",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "ロサリアの「神の目」は、とある寒い日の夜に現れた。\n盗賊にとって最も厄介な季節、全員が生きていくには食料が足りなかった。\n常に空腹に苦しんでいた彼女は、寒風吹き荒ぶ中での雑用に耐えかね逃げ出した。\nしかし、盗賊の一人である老人に捕まり連れ戻されてしまう。彼こそが、過去に彼女を村で拾い、人を殺す技を教えた張本人である。\n「逃げる奴は全員裏切り者だ。裏切り者は決闘に勝たなければ自由になれない」\nそう言うと、老人は古いナイフをロサリアに投げた。「来い、俺を殺せばここから逃げられる。俺はただの年老いた獅子だ、お前はまだ若い。お前なら容易いことだろう？」\nロサリアが勝つなど、誰一人として想像していなかった。しかし、確かに老いた獅子は若き野獣の爪の前に敗れた。\nその夜、盗賊団は古株の一人を失ったが、新たなメンバーを迎え入れることにした。\n老人を殺したロサリアは盗賊たちに避けられたが、面白いことに彼女の持つ「神の目」を見た途端態度が豹変した。\n——「神の目」を持つ者なら、きっとあのジジイよりも強い。それにお前は小食だ、食料の節約にもなる。\n氷のように固く凍ったロサリアの心に、ふとある疑問が浮かんだ——\n彼はわざと私を勝たせたんじゃないかと…拾った子に対し、偽りながらも父としての気持ちが彼に生まれていたのかもしれない。\n解放条件：好感度Lv.6"
-          }
-        ]
-      }
-    ],
-    "voice": [
-      {
-        "title": "初めまして…",
-        "desc": "そこの信徒、何か困っていることがあれば私を頼るといいわ。祈祷がしたいだけなら、他のシスターに…<br/>うん？信徒じゃない？",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/f69dc7a114f2256816d1a7cc55abd3c3_8625789945327125170.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/4fd79a82ec8c7a377a5eae54fda2daf3_1366252165403309735.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/a07f9649cf2599c0c8978c703e69bd0e_5134080168778647911.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/b6474922852f83297ab7d026a8b82451_9153956075553469342.wav"
-          }
-        ]
-      },
-      {
-        "title": "世間話・退屈",
-        "desc": "まだ行かないの？",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/63e145450ab02206e8734b7f0ff6c84f_7488296831927045574.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/fde13a6bd5189f3f40afbffbbc1c3d9c_1503579710801879817.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/08f3a7bc8fb351f4377087e2fa480c1e_7808271041587303508.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/dd57f8a25fd638ada0fc321ba297ee8a_589256883226596132.wav"
-          }
-        ]
-      },
-      {
-        "title": "世間話・残業",
-        "desc": "なんでもいいわ、残業以外ならね。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d434a2878f84e67f3629b05c0f1426fb_8417974993656585780.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/6e0ca1453326b5de347ebd49fcf94427_2536102641449967699.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/f9d68164fbd601cbb82d7f9189e2c788_5851506191948345423.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/cac83ef8ae49c9648e6bb08820b8cafb_1025006900629218651.wav"
-          }
-        ]
-      },
-      {
-        "title": "世間話・モンドの生活",
-        "desc": "しっかり働いて、まじめに生きる。モンドってそういうところでしょ？",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/6eca21e3d6491301c45a89b719832c3b_6068605516732534775.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/3cb764c43f9775442e984363c5a3a8b0_6033952806113232725.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/3058bdf750e39ada3e17fcdd88834fca_2690349430141204230.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/de6a3a7bc6b20b7c177d442a254eb9c6_8692432335538350009.wav"
-          }
-        ]
-      },
-      {
-        "title": "雨の日…",
-        "desc": "仕事に響くわ。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/9b605f3629603b80b77b4e21cbf24d94_6449545737839272945.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/b3e8c1bc3eeaadeb423dd7b357ea0139_2627168254997145676.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/7d31c2b10597f5ab1f305bb7e5f733da_1555496508754504942.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/bceaef8337f0e5fed70863410d66dd18_7993776492222500828.wav"
-          }
-        ]
-      },
-      {
-        "title": "雷の日…",
-        "desc": "ちっ、面倒ね。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/71f68128aaedd084bf16ef464ba688b6_2469652682148787808.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/88f41dbc54afbf3546c262c6e6271e8a_1564998461206810350.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/c9f53c7356545c4073450beb2d0ab501_5828047933259762783.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/6f26033fc979b5919e8267c76414fa2b_4258225503898325947.wav"
-          }
-        ]
-      },
-      {
-        "title": "雪の日…",
-        "desc": "雪の中は、足元に気を付けなさい。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/b196b03b3ad74f8de138d086e69c6fe7_3476748566872539482.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d98b046f1645112c61bf1fa46ca9a51c_6431888087883180214.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d87865cb143078ef2258a501703ff0ed_6166851254916421217.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/ea90f3582befa0c9e5ba69dec17aac62_8654787218020705529.wav"
-          }
-        ]
-      },
-      {
-        "title": "暴風の日…",
-        "desc": "<p>風神ブットバースの加護か？いや待って、バルバトスか…</p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/0fa189de39f0dbfaea183e541f35e2a2_3549828926165828984.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/a7998c119a0a291869d45c8694f1ddd8_3790605758165761387.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d7baa6538c209864dfa224c90fda492b_3074293216393090569.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/77948fce0fb4a8c77346a6f59f497f31_6656828589020762865.wav"
-          }
-        ]
-      },
-      {
-        "title": "おはよう…",
-        "desc": "おはよう、ふあ～もう朝のお祈りが始まってるの？勘弁してほしいわ。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/ad9126b253b9a65cd26f0b71fad29f0a_3008018244575775176.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/bdd2fd71585ea6854ae82cc50aa69b93_3967526070316939693.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/3b779e3cd9edded150c802f78dbcd922_5336410457893884899.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/f254516bc3f7aa375505327f7dd03c17_1416256578451595684.wav"
-          }
-        ]
-      },
-      {
-        "title": "こんにちは…",
-        "desc": "午後の日光は睡眠の質を上げるの。君もためしてみたら。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/b517e06da6edc2a2af157f615a8b5d44_3821049719470950097.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/8ebc788b86f479c11ab625d18716dc12_6262399672152617178.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/011f7ee8f19db1daffb1871a8d4f5c93_8679894767889485289.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/6e35905fd9f6c1977f742cdfff9b0ada_2810202060027305110.wav"
-          }
-        ]
-      },
-      {
-        "title": "こんばんは…",
-        "desc": "こんばんは。晩祷なら参加しないわ。理由はどうだっていいでしょ。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/38efc694ec64cbf0044ceedc186ff584_239038710343307892.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/840cf541ef55a7a14cc143d00bca4f2c_4316413585963283129.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/96f9dae6902959a1e6c8eb35d9e9393c_1194751805069240479.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/eed36ed31b7e05a3483283fc2002aea2_6074494904378652326.wav"
-          }
-        ]
-      },
-      {
-        "title": "おやすみ…",
-        "desc": "もう休んでおきなさい。心配しなくても、後のことは私がやっておくから。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/85fac7dac5e6f3c09e88c6e936493a5b_8378403995367681734.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/c2428cbce98fff93a4d8e2e5ec1b1de1_5317240465111428042.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/1c13390ca11447af57746d3a29cca798_4287197385878323741.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/355536ba8be946efb12c9d5ee8ae273c_8982533835780674536.wav"
-          }
-        ]
-      },
-      {
-        "title": "ロサリア自身について・仕事",
-        "desc": "私？ただのつまらない人間よ。見ての通り、教会も仕事も好きじゃないし。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/9dc997dedb4d10e8a24b1417fc0c0796_2463599264230978983.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d30cf3cafbdddf940aec7ea31f5bcc2a_3396764505906258466.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/daf3ad4d25fd69ff34d9d22c727b63e3_564593437745384221.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/c9b78bd22125963df81b5a88980d270d_3332323480340841654.wav"
-          }
-        ]
-      },
-      {
-        "title": "ロサリア自身について・面倒",
-        "desc": "あのシスターたち本当に鬱陶しいわね。隙あらば私を捕まえてお祈りだの合唱だの…私がここにいること絶対に教えないでよ。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/dca82ba5180cdbb67f325e57ce78e6d7_239038710343307892.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/197ebabe0b1c401dfd78efd343ffa05f_8667350510006382361.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/3015df12d343dd829e8febd9bae2f8cb_4907031240159290921.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/b59ae372d2d1a0e2dacc4a23074a3454_4265287992025286118.wav"
-          }
-        ]
-      },
-      {
-        "title": "信仰について…",
-        "desc": "神は全ての人に加護を与えることができるかもしれない。けど、絶対にそれをすることはないわ。だって、そんなことしたら人の苦難なんて笑い話になるでしょ。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/9564b6b22a35111035c3dca7fd20f390_6453714082370660557.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/fafb7eb95eaa88fe0112553f95ad715d_4787352657349660335.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/01cd31c50edd7bf6554489ebdda86cb5_3574531090416685763.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/01a5953ab09aae3f1f9e07270395e06a_6768946287159251614.wav"
-          }
-        ]
-      },
-      {
-        "title": "祈りについて…",
-        "desc": "<p><span class=\"wk-shady\">祈りなさい。神や他の誰かのためでなく、自分のために。</span></p><p><strong>解放条件：好感度Lv.6</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/2b06ee3669279bd09b06ed2e665b1114_4242095978992653820.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/1a532ad9c8357cc5fb7a10090de84e4c_4499420341109781564.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/5a8b8b7a59b6ae7e7bee567bc2d8d095_4345823044925263075.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/5be4b661499e14b6f82a8dded21ec8e3_3973642673834973515.wav"
-          }
-        ]
-      },
-      {
-        "title": "戦いについて…",
-        "desc": "<p><span class=\"wk-shady\">無理しないで、困っていることがあれば私を頼るといいわ。</span></p><p><strong>解放条件：好感度Lv.6</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/1d3a4356426c94f5d16d1d7866944a85_6855252346651281874.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/8feb8d82b5fe7621bbec8b729aa4707e_8620354075597961044.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/26179c816ed7f606ff9c1c19c01c8823_4594288717384880819.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/25479d7e34f0679cc3c8d22d15bcc0db_1659750974598687395.wav"
-          }
-        ]
-      },
-      {
-        "title": "「神の目」について…",
-        "desc": "<p><span class=\"wk-shady\">「神の目」は実力を示す証であり、生き残ったことへの勲章でもある…なんてね。本当にいいものには常に裏があるの。私には「神の目」を定義することはできない。ただお互いに、証明し合う関係なだけ。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/c89d623ade9525220fa4d206317c24d2_6032928472194947493.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d34a2bf37c46f7e0463140a5d4efdec3_3744037327488504237.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/1d8dc216c4925cd76845e1abdf9d67ba_7633918464651880139.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/079c5fba940c79b7d5cc422933cbbb42_7654241806134816904.wav"
-          }
-        ]
-      },
-      {
-        "title": "シェアしたいこと…",
-        "desc": "<p><span class=\"wk-shady\">私が嬉しく感じることは何かって…もし仮に、どんなに頑張ろうと解決できない問題に君がぶつかっても、この世の終わりだなんて思わないこと。だって、他の誰かが君を助けにくるかもしれないでしょ。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/f7289cff05bec6476a96add67e18c302_4336505506209160446.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/c96d482f4ca7ea568bf868e9a152a783_1357930364589067186.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/f62a2ff99ce6a519305b56fb1cb72171_4387827360726600242.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d9bf305e2ddcc03c3744aa03cbd2ab1e_5324428576899412714.wav"
-          }
-        ]
-      },
-      {
-        "title": "興味のあること…",
-        "desc": "花にはまったく興味がないの。でも、蒲公英だけは例外。すごく美味しい蒲公英酒が造れるからね。休憩時間に一杯飲めば、朝の二度寝より気持ちいいわ。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/8c69004272f69848f832dff2e92b5dc3_7933231631409193985.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/82495a46c2b1258e698748f556f768b8_7644406284340233125.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/c5e43ff5d44e5252fa2fcd832377a276_6894239898672116825.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/90a360df672348a62abee6f1f18dc704_239751298553069000.wav"
-          }
-        ]
-      },
-      {
-        "title": "ディルックについて…",
-        "desc": "<p><span class=\"wk-shady\">一目で分かるでしょ？あのお金持ちの坊ちゃんはただ者じゃないって。慎み深い上に、自信にも満ち溢れている…それと少し、危険な香りもね。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/bcc291eefe6e614eea02e1454223fe58_1759921528517814180.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/cf37476b387e76c3bce11c58f56f71d0_5324428576899412714.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/e8a9c7df8085340231e6f09e6fe4bca9_3901465561421785589.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/5fe3362ac6d484b800fa748cc81658c0_1934313497683996174.wav"
-          }
-        ]
-      },
-      {
-        "title": "ガイアについて…",
-        "desc": "<p><span class=\"wk-shady\">人は酒に酔った時、本性を現すもの。ガイアの口がよく回るのは、その本性を隠すためよ。ふふっ、分かりやすいカモフラージュね。彼が酔っぱらった姿を君にも見せてあげたいわ。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/537eb84b5f281571871288b13edf87a7_4634870603498195951.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/4ff7474905773ac507e8511d0a994a9e_2509540473180854364.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/7d70b25430aa18b1e5dca050c0da39d5_7269503641017056695.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/784c1b8f2cbe693b03f4ddcb5b34d9aa_2218223629968074280.wav"
-          }
-        ]
-      },
-      {
-        "title": "ウェンティについて…",
-        "desc": "<p><span class=\"wk-shady\">あの吟遊詩人からはとても特別な気配がするわ…それが何なのかはまだ分からないけど、他の一般市民とは明確に違うってことだけは確かね。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/7e7cfcc37ad8b9f6c801bd872cbb13e1_2852959827792701598.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/71bc6a06243077ba0d9fee77b75ec712_1281154184086291848.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/c9cc1e8975e89b28a7cb184840b46d1b_6427524512442275479.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/9c61ce31d86b869ec12aac3a20867e4b_7939873028023441821.wav"
-          }
-        ]
-      },
-      {
-        "title": "バーバラについて…",
-        "desc": "<p><span class=\"wk-shady\">バーバラはいつも私に張り付いて、やれ礼拝だのやれ合唱だの言ってくるわ。もしかして、私がちゃんと仕事をしているか見張るために、ヴィクトリアが寄越した監視役じゃないわよね？</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/30c35b42f6e7bfb5160e1802b1a35441_3292618836881332092.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/1a3b1c3d08190eb8e35c09b443e2323b_8197555437149488644.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/5c24f6e834cac67517b91ace17a64175_418425140022510540.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/f80ddb7e0e72ec49e86001d0c0b79075_1432019214184381370.wav"
-          }
-        ]
-      },
-      {
-        "title": "ジンについて…",
-        "desc": "<p><span class=\"wk-shady\">自分の本職だけでなく、他人の後始末までする。称賛に値する女性ね。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/e8da4c8f5b185848b20fc9c001b20760_5059609426300188541.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/9a3e7fcc52b3e195fd2b9d042f21c3a7_6989211008675773062.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/b4df99965af1fa8d680c2b1662778e99_8982112593177494220.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/8f849b1a13f0f1f26a8bc8b42a252f9f_1938888982483413451.wav"
-          }
-        ]
-      },
-      {
-        "title": "アルベドについて…",
-        "desc": "<p><span class=\"wk-shady\">彼は、古びた屋敷に飾られた絵画のように…重みがあって、神秘的で、一目じゃ見透かすことのできない人物よ。人生経験が豊富な人は嫌いじゃないわ。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/8c06cc4f4fda5ee3587adef4a6cbcd06_7931555860120917952.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/59026afe3d1351e336c8da20cf62363c_5116351619720788746.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/ce1c75095ecfc976c20866a9b985b028_5585003967063506793.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/9d01e90db244121c4b1416b36566b415_3807514667780590945.wav"
-          }
-        ]
-      },
-      {
-        "title": "リサについて…",
-        "desc": "<p><span class=\"wk-shady\">仕事をさぼる人は好きじゃないけど、定時で帰りたい気持ちは、とても分かるわ。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/7817106e53533e5ad079639ffb08dcc2_1125132169291120860.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d7eed5d730cea1e3a2d6322bc226bb61_7150828353909079938.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/dd6b2cf750e208997fa197de762e91d0_8455490955643412406.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/109d449e640f544427b3c4267f93488d_2822861762073015953.wav"
-          }
-        ]
-      },
-      {
-        "title": "クレーについて…",
-        "desc": "<p><span class=\"wk-shady\">面倒くさい、とにかく面倒くさい。まあ、可愛い意味でね。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/89cbd2e663ae76028ead42df28791bc8_7763988934819027308.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/9dba35bcfaf9096ce9b569f1feb04c7d_67651581201471549.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/8b2006fd96e42498f1c1cfad07ba18a5_5116351619720788746.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/8e716b313e09a13b94eb3b5a383041c4_3746085804670266007.wav"
-          }
-        ]
-      },
-      {
-        "title": "ファルカについて…",
-        "desc": "<p><span class=\"wk-shady\">ファルカは他人の世話を焼いてばっかの、ジジ臭くて面倒な人よ。悪気はないんだろうけど。周りの人を気にかけるのが好きなのよ、あいつ。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/99d822d57073faa7df9e96d4e9f42825_7452709887548602889.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/b6c653b9ac895f43a64f4ba7da0235ca_6883826938625328673.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/5c7430d54858d980d1a3a733c72c7043_3121919007578093187.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/baa8c3d07f87d6bb89e018b477e4e692_5137906058888218798.wav"
-          }
-        ]
-      },
-      {
-        "title": "父について…",
-        "desc": "<p><span class=\"wk-shady\">父親？私には縁遠い言葉ね。私にとってはないに等しいもの、もしくはたくさんあるものとも言える。どう？おどろいたかしら？</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/1d804a9bd1accf5a842fba5df81ed492_4623021337748073754.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/18b4a9f1c40b092e6b973081aba12e85_2269931443459897648.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/997a7f609b7ac3fb4a2a75d7a35beb02_2063517296786197456.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/6beeebff0b1ae248da63bf072b5e81f2_6367214166038106057.wav"
-          }
-        ]
-      },
-      {
-        "title": "ダリアについて…",
-        "desc": "<p>自分から奢るっていうのはいい習慣よ。それに、彼は酒の席でも節度をわきまえてるわ。聞いていいことと、踏み込むべきじゃないこと、その線引きがちゃんとできてる。お互いの腹の内が分かれば、余計な警戒もしなくて済むし、賢い人と付き合うのは気楽でいいわね。</p><p><strong><span>解放条件：好感度Lv.4</span></strong></p>"
-      },
-      {
-        "title": "ロサリアを知る・1",
-        "desc": "あいさつはいらないわ。私がここに来たのは仕事を全うするため、君にできないことは私がやるわ。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/85f842dc97339a5aea946127475a041d_3949445009820720441.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/0f60415b6c122efa7921363006f306c9_2175660879319981079.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/7524e1450533f186e31aae7843bef9df_5361249405492514493.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/33ee054baa6008dfb24ea4f1059c3f25_7391145194587019139.wav"
-          }
-        ]
-      },
-      {
-        "title": "ロサリアを知る・2",
-        "desc": "<p><span class=\"wk-shady\">神を信仰しないシスターは何も珍しいものじゃないわ、肉が好きじゃない狩人もいるし、魚が嫌いな漁師だっている。何かをするのに好きになる必要はないの。かといって、嫌いなものから離れる必要もない。仕事ってそういうものよ。</span></p><p><strong>解放条件：好感度Lv.3</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/0aa1d129307834b37cdfc54150de7fa8_7223404282901163925.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/e1ab2d5044ee39de3a3fd11616885a4d_4558987260279878215.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d480d5d9a5aa6520ef6db0c9da86828f_2737741117551225486.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/f9105d5290de960a563f67dbf64f415f_2451230382342253606.wav"
-          }
-        ]
-      },
-      {
-        "title": "ロサリアを知る・3",
-        "desc": "<p><span class=\"wk-shady\">一杯どう？今年の蒲公英酒は格段に美味しいわよ。</span></p><p><strong>解放条件：好感度Lv.4</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/ead8a2a71abd44ec9dff64e64a74c17b_628926502343447545.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/4a7101676e4fb9786577d0a586f17049_4429864290259624366.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/75c70c9dd4689837ab74c49af16395ef_495892880955119066.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/ee1af6c7a58c17c28d75ee8129fbdfc7_3673071664023378996.wav"
-          }
-        ]
-      },
-      {
-        "title": "ロサリアを知る・4",
-        "desc": "<p><span class=\"wk-shady\">モンドは、人々の介護が必要なほど老いぼれているのに、独立して生存もできないほど若くて未熟。そんな矛盾を持った真っ白な獣よ。こんな場所だからこそ、私みたいな人が必要とされるの。他のシスターたちが人々を手伝うように、私もモンドを手伝っている。モンドが自由に向かって突き進んでいけるためにね。なんで白なのかって？…黒っていうのは…私みたいな人を言うからよ。</span></p><p><strong>解放条件：好感度Lv.5</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/288855626843c8c089cef70921a9d2f7_22660771620753930.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/540a97d32d37a5b51b0280542ff9fe54_3818323763279841273.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/93857ad64144f86f0244f882be8feb88_348254241828111170.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/29bb204d2cd9289942c204b97da17953_7197860588315565297.wav"
-          }
-        ]
-      },
-      {
-        "title": "ロサリアを知る・5",
-        "desc": "<p><span class=\"wk-shady\">様々な過去の自分が今の自分の隣にいて、すがる思いで何かを託してくる、たまにそんなことを感じるの。きっと君も経験があるでしょ。だから、これから君が違う道を歩んでも、昔の自分を否定しないで。昔の君は、今の君の礎。過去に怯えず、向き合うことを恐れないでね。</span></p><p><strong>解放条件：好感度Lv.6</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/189ec412c0b0b57526d38b23e3ecc1a0_182699844714354185.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/d085784c275d5f1b36105097a91ecc10_4583004666813675005.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/4d10132a6dfccfd39a74b734bfe1e8f4_7283405219878391145.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/22/239200114/e719c791635c437772f18b35914270ca_1692646930969905827.wav"
-          }
-        ]
-      },
-      {
-        "title": "ロサリアの趣味…",
-        "desc": "一杯飲めば、嫌なことも消えてなくなるわ。とはいっても、酔ったことないけど。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/49eca582d6fa2ba7ef0db6a252cbe4f0_4794002927451770684.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/c80af16f0b3eddaf0274c4fdaa05d13e_6200906003912821694.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/b43669cdca87d1c446231e4a20d6d2ad_722753445776895253.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/7c908b41b0901469778826ba00f53974_3907521601062134641.wav"
-          }
-        ]
-      },
-      {
-        "title": "ロサリアの悩み…",
-        "desc": "はぁ…来月の合唱コンクール、参加したくなかったのにヴィクトリアに名指しで指名されたわ…",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/95f9637f111b5f5b674750e32ebb3d0b_5277051915883308110.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/10a441d1337e2e812b4d5752481905ff_1985222285618166096.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/94e6ece46aad46528ac2727de33e416f_3920200309333234749.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/64629cdea86e163e4fcc0674afdf261e_6998283563734007080.wav"
-          }
-        ]
-      },
-      {
-        "title": "好きな食べ物…",
-        "desc": "獣肉のワイン煮込みは食べたことある？お酒と大きなお肉を一つの皿でいただけるの、最高の一品よ。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a59edec69572d4fe7d6a9af0d52cb8fb_3460493597654969586.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/0931f669d36ee6f9c89c2b1d49c9c80e_248524359448019763.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a8b8f19f76b246e6446a1db36abefefb_6517005765767561074.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/ffd0124b472d5e2817c0f132e512a81c_1465402100148352400.wav"
-          }
-        ]
-      },
-      {
-        "title": "嫌いな食べ物…",
-        "desc": "ハ…ハッシュドポテトにジャム？信じられない！",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/57e4925de12bd8bd85372f63002d3bc6_5540800358131183727.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/8eba22fe23834cb2e081922c0ac4ff65_1850893056424247994.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/588246bf60a2835c6e74669bb83e0417_5971122474433948095.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/fed3aa3fd800156026951b96cfcc92bf_4562567614164873071.wav"
-          }
-        ]
-      },
-      {
-        "title": "贈り物を受け取る・1",
-        "desc": "<p>どうやら、私たちって好みが合うみたいね。</p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/006a42ee6e6db21cdf2ffc28ef235914_938299771929435280.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/cbc4c36f6a16644e8ce87fe75d4500d1_160868470474271460.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/887bb94908c1e03893799c3ff17034bc_6118893748535747171.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/9de4fdbadfcd83164b6b7c1cbe183add_7798198942473962246.wav"
-          }
-        ]
-      },
-      {
-        "title": "贈り物を受け取る・2",
-        "desc": "<p>少なくとも、お腹は満たせるわね。</p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/e69df18ede96ae94c01e9cec58d9f76a_6785884451116094438.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a0cf35b5dca313ee80aebea113ddc697_4300097355130510614.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/98b113f7ab1f053b56c7507dfacb857d_9185109781024339912.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/f4f5af405dd4bf080a3d78b01c9a668e_7172171472920591604.wav"
-          }
-        ]
-      },
-      {
-        "title": "贈り物を受け取る・3",
-        "desc": "<p>君、こういう食べ物に興味があるの？</p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/b3376e11a459a64f53662a649418828d_7798198942473962246.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/d9e0b947f706930fec8c1f6abbc969ff_4699513173853102440.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/08297e78978ccb53ff3841fcbd1f79d3_111730348087540505.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/12b5d45759ac7b62eaccb35208df8cdd_3030785154914901112.wav"
-          }
-        ]
-      },
-      {
-        "title": "誕生日…",
-        "desc": "<p><span class=\"wk-shady\">今日は君の誕生日ね、何か片付けてほしい人や用事はある？手伝ってあげてもいいわ、もちろん内緒でね。</span></p><p><strong>解放条件：ゲーム内で誕生日を迎える</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/c2673b3c8213c942ab46aa22857f9e2e_7379467441304584497.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/da8944805126cbe0dd2f06b00073a422_2877590122224095297.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/08961c52bd888b36b1f8fdd5ab0b3ff7_2814289146809027570.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/496856eddabf731f0c29849c4a04ad19_5023332747934249916.wav"
-          }
-        ]
-      },
-      {
-        "title": "突破した感想・起",
-        "desc": "<p><span class=\"wk-shady\">うん、いい感じね。</span></p><p><strong>解放条件：突破段階「1」</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/2b13a544aa5e00b21049ae3e6b94ae71_7468513862757127532.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/db59c6b8cce005941872fd65bae8e529_7288557397406943458.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/48681eb76f2569276568692208e4cea7_1014080292234157134.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/c04a3ee55b2cce23d19be0a114f7fd6c_1342632581034726970.wav"
-          }
-        ]
-      },
-      {
-        "title": "突破した感想・承",
-        "desc": "<p><span class=\"wk-shady\">何か手伝ってほしいことはある？今ちょうど手が空いてるの。</span></p><p><strong>解放条件：突破段階「2」</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/76bd657f368790e158d45b1130e07952_6671253493246375790.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/9b110cb8341c7479b2f38449eade4b38_6167782717511213678.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/3720816ae227de9f53f81e55b4692624_1192254304700903411.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/8fcd235fef58ff80f154bab8f343503c_8013930482407630297.wav"
-          }
-        ]
-      },
-      {
-        "title": "突破した感想・転",
-        "desc": "<p><span class=\"wk-shady\">能力が高くなれば、仕事の効率も上がるわね。</span></p><p><strong>解放条件：突破段階「4」</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/609c1ceb26b5bbdd96d5b641a9fc5f51_44237138284181698.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/8c008ba078f9e2520d0623bd3b3ffb26_642676367311132423.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/84a20644131f5cef032c1c951e32a33f_1428347285415460943.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/03347bc7f6babe9055594809325aa2ce_3033266348089551964.wav"
-          }
-        ]
-      },
-      {
-        "title": "突破した感想・結",
-        "desc": "<p><span class=\"wk-shady\">戦闘と殺戮に長けている私でも、これほどの力を持ったことはないわね…祝福してくれてありがとう。</span></p><p><strong>解放条件：突破段階「6」</strong></p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a305f0301419fa9fefb2ee3e91c22156_1674217835914083893.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/4a706e33c47960e288559a8b845448ff_2305688857293063200.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/2773fa4df98b1ed1e365557f9f4e1b2e_2215605230732589967.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/6d40ab1de16ac22cabaadc9218db895b_8591216625148709569.wav"
-          }
-        ]
-      },
-      {
-        "title": "元素スキル・1",
-        "desc": "はっ！",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/af02bb6dce2b8862e691d25560df83d0_6974482917277719884.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/903fc2f2118dc979167353c1c28062f4_1125510224444368593.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/76e434ffd0bd6d75d85e3a0225be8902_1935673335903153731.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/699a45bebe99a81b7046782f0b361b49_125306484625689626.wav"
-          }
-        ]
-      },
-      {
-        "title": "元素スキル・2",
-        "desc": "許さない！",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/7525251893ac60089386e798a38c65c6_9056434881808635178.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/25a782660566ab74f1ae024861770e64_3708783246668999896.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/27a1edd7fe47b93f0b675e70f32a9df6_8086485849499576703.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/aa15afd565a9943f350e82d112935e3a_2066468523039478973.wav"
-          }
-        ]
-      },
-      {
-        "title": "元素スキル・3",
-        "desc": "あきらめて！",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/03f6fd306fe055d74af3ce4b0c28304c_4672858261166878736.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/4aaa503c9479d6eb222593f8010dee97_6333089327849989755.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/dae56179ecff078abfa46e841c22e351_5780832245245387534.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/0d019e287912a675c13a2939d78e3d36_6860800381790269978.wav"
-          }
-        ]
-      },
-      {
-        "title": "元素爆発・1",
-        "desc": "ヴァーディクト！",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/6d92442d079dc89a2b6566c3dc74ff11_292053667612220856.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/f6ae26ac5fc7c1f445b28677873f9856_5242642798917269598.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a988d3fd7b16496fcbf4c7d3fa1a25ed_8730679038244985609.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/784e6fcc308d8a13417d9ac99fb99bd8_5075435263150488312.wav"
-          }
-        ]
-      },
-      {
-        "title": "元素爆発・2",
-        "desc": "震えなさい！",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/8451257acbd269ae98860c24b25e9f73_506668999274539166.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/40349d58eb0ace44be46a98bd6117948_1892288975381156734.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/fcc3e18b8e1c2d55a30965ca2ad1d510_918062528128977280.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/0af5a3af2fcc1f2a8e007f69d7c572fc_4435244248940574274.wav"
-          }
-        ]
-      },
-      {
-        "title": "元素爆発・3",
-        "desc": "眠るのよ…",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/fc2db89ff3f9e0ad885aa92b240a618b_7712713297659877999.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a86a77c4e82796aa4930fca937b44285_4572966284922390785.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/1ab646e79cee73c57f55b2114dd6e1d7_3997196912521809227.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/74ce96128ba81821f5729ba1e780dfb2_2413325783955217672.wav"
-          }
-        ]
-      },
-      {
-        "title": "宝箱を開ける・1",
-        "desc": "…悪くないんじゃない。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/d7af56b78b411db5a5e6afae66904ed0_8088029387600436678.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a9c2102d00b2bfd53ac0af79aa62c19f_2054383453277094077.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/c95b9ace947ed7be4d91ca8e74689b7e_278851857343152260.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/3e34877315a6775c7ff1633ff8c49a89_268571403540989540.wav"
-          }
-        ]
-      },
-      {
-        "title": "宝箱を開ける・2",
-        "desc": "まあまあかしら。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/5039f74eb6bee1023f4418a3dc1a45e2_1755992016608621444.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/5c1240bbed57ed16c41a1be9d9efd9c0_4713585195268898939.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/513ef080f252e3fd356e2d6061466095_5182712719761350777.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a38fd0413926a3c022957fc653cf69f7_9145614059899734433.wav"
-          }
-        ]
-      },
-      {
-        "title": "宝箱を開ける・3",
-        "desc": "いい気分ね。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/2ebbe324fc9125cc4e734c6d6b2fc344_282121156301627292.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/6fd050f631418be3877a81e12dda9ef0_5618573937279459720.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a8c3ddf2d070f3ae6a2fe64802bf65a9_4465986970547131237.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/4a9c75899347c8b675ecc0b53b95f01a_6586945404268753532.wav"
-          }
-        ]
-      },
-      {
-        "title": "HP低下・1",
-        "desc": "こいつ…ふんっ。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/99855c74720641e3dc1072f462e41d0c_7079784117296286401.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/ed9ef15b6a7d6a1dea7938eb4ff34b7f_18783411656132483.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/0128ad467f0cc38a692a1b58530bf8ab_3099308130919304315.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/231d2c08dc4a3c34663bfbdb76a7240a_7609387441347286936.wav"
-          }
-        ]
-      },
-      {
-        "title": "HP低下・2",
-        "desc": "残業ね。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/253ad514a541c300f0a8f83a9680a932_6373001132588765507.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/47a2d74dcceaa9b2ea75e345be810ce3_1048267256707068025.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/f32cdbab8446a6829fbe7faaaa2b8c76_39187200160780117.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/5aa3aad19444f3359c77a2966b9e21f1_2957625654912408389.wav"
-          }
-        ]
-      },
-      {
-        "title": "HP低下・3",
-        "desc": "やるわねっ！",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/68d848a2289b7031f7fad2c3162fe051_2466478318051625934.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a3308bcf9e0ffbc0dfb3fb68f01797ec_2117422486493313035.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/40918ad956120dbc1bd62449386d4556_4678754004645722475.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/00dc5883f7af1ce7f807ba6885d94297_519316772549621532.wav"
-          }
-        ]
-      },
-      {
-        "title": "仲間HP低下・1",
-        "desc": "<p>さがって！</p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/7815b6ce50c2558584bc7fb07862dabf_8133369439185497644.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/373f86d65c8a9220789121541f0ec0cd_4347590519649493275.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/2b69ac256d115c07683da61782ab7944_7312322193615080047.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/3f74614b474e52fe0b35df9e0bbfccd8_4822706038766918502.wav"
-          }
-        ]
-      },
-      {
-        "title": "仲間HP低下・2",
-        "desc": "<p>落ち着いて！</p>",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/5becc52628bc93ff80f611ef5451815d_6440806024646828241.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/0c47ce004678c316eba63612161a62f1_459257563323399432.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/2333dc34c349377a7133086a9e91b4c5_2535355204494082590.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/24bda1b10e8422bd3eb2839920041490_2882313525600133310.wav"
-          }
-        ]
-      },
-      {
-        "title": "戦闘不能・1",
-        "desc": "これも悪くないわ…",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/34106cb48259b4f634c182fd37883477_3294823815486525402.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/b6046c031c5f43bda0dd98e67ae6b17d_2844350701714680251.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/5ad574e2f380a8f301b24bd01ad36b8f_5316019479955700060.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/8b7fda78d8b0d46943bd915f83f97310_5400356309297302941.wav"
-          }
-        ]
-      },
-      {
-        "title": "戦闘不能・2",
-        "desc": "これも…運命なの…",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/4c28e17aa12c613e14ff313bec322350_620352391796415460.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/032114362cd2f34573e3d6c79fb920ea_7962344597859561479.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/1b2a9700af0707507fabdf7efc1f278e_6356608416914909658.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/c935bcc30df07c08a621a06ecb617596_8395502807736848924.wav"
-          }
-        ]
-      },
-      {
-        "title": "戦闘不能・3",
-        "desc": "うっ…ここまでなの…",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/4a9cd2af66efc28aa62892414ab4b716_1699315554112088076.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/aa50f8eaffa5ed925d2547410c9353d3_586529649843188457.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/ea69e37aacdad619b2e9fd40348a7bd7_7044971032324641227.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a94eda21a776a5273b686c711d90d8f9_5349102593415015046.wav"
-          }
-        ]
-      },
-      {
-        "title": "ダメージを受ける・1",
-        "desc": "なんの。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a6ccb039df55940f3616ae99863216a5_3308514738051957495.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/8d146ec38b3a3600bcabefe4a1768b41_6738908935951685146.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/a1be29836aeddf7700db6f24e4d5b4cd_4458630394682258708.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/b1672f0878e7619a6e624087804735b6_6544029985947296745.wav"
-          }
-        ]
-      },
-      {
-        "title": "重ダメージを受ける・1",
-        "desc": "ちっ、面倒ね！",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/cba64841615228ddfdc6eeca23ebecc4_2293055376815963730.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/9ece7735ba8d1d84014c802bba4c56d0_3380452981530274195.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/76e96372c9dc3f875246720116ccef41_106151028207233797.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/39f1e639716672172d694a28ee8614c0_482886917131278193.wav"
-          }
-        ]
-      },
-      {
-        "title": "チーム加入・1",
-        "desc": "また新しい仕事？",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/0c2b0b68098a78a7c6b9a95e61e76ee0_448509650998114926.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/cbee91a90f3b7f580d401392fbeb96b7_8638218787517693096.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/0f3664becc1fd5b3c9fb7e40821ee394_1447569315193612651.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/973aad1028d80b47a7535a96b8bbc06c_6163356559884706346.wav"
-          }
-        ]
-      },
-      {
-        "title": "チーム加入・2",
-        "desc": "うまくいくといいわね。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/e8a160249a8d9f42ffdb1ac295a95603_5901020082138880468.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/7871086d6f697c61612543da42c8c523_2804459433360615973.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/83ce0bdb2fff44d312969f4190249ceb_1787538230632678976.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/4283436976c170c33f359bea282126dd_1860257731068476907.wav"
-          }
-        ]
-      },
-      {
-        "title": "チーム加入・3",
-        "desc": "ふぅ…さっさと片付けるわよ。",
-        "audios": [
-          {
-            "name": "中国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/7edef5008a93254d05d396f85bb64ba2_3621500673013132801.wav"
-          },
-          {
-            "name": "英語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/8db64d90cf54eae0451ca8daac7919f5_5571841879820289071.wav"
-          },
-          {
-            "name": "日本語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/4a41dbd5dca1ee0fb36b216a3a183f1c_6483421426696449861.wav"
-          },
-          {
-            "name": "韓国語",
-            "url": "https://upload-static.hoyoverse.com/hoyolab-wiki-voice/2022/12/23/239200114/d58c90851853994e415e067885dfc7d0_8952597807619720382.wav"
-          }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "和名 / 英名",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ロサリア / Rosaria"
-          }
-        ]
-      },
-      {
-        "key": "誕生日",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1月24日"
-          }
-        ]
-      },
-      {
-        "key": "命ノ星座",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "荊冠座"
-          }
-        ]
-      },
-      {
-        "key": "称号",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "荊冠の恩典"
-          }
-        ]
-      },
-      {
-        "key": "神の目",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "氷"
-          }
-        ]
-      },
-      {
-        "key": "所属",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "西風教会"
-          }
-        ]
-      },
-      {
-        "key": "中国語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "张安琪"
-          }
-        ]
-      },
-      {
-        "key": "英語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Elizabeth Maxwell"
-          }
-        ]
-      },
-      {
-        "key": "日本語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "加隈亜衣"
-          }
-        ]
-      },
-      {
-        "key": "韓国語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "김보나"
-          }
-        ]
-      },
-      {
-        "key": "オリジナル料理",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 625,
-            "name": "ヴァーディクトディナー",
-            "desc": "ロサリアのオリジナル料理。「暗黒」のとげが付いているため、最初はどこから食べたらいいのかわからない。周りの飾り物をやっとのことで外し、口にすると驚きの美味しさがやわらかい鳥肉から炸裂する。食す者の表情をロサリアは決して見逃さない。相手のリアクションを見た彼女はご満悦のようだ。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dinner of Judgment_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "名刺",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 6129,
-            "name": "ロサリア・苦役",
-            "desc": "名刺の飾り紋。<br>人々が醸し出す暖かさと優しさは、彼女にとって必ず返さなければいけない恩恵。同時に、彼女に一生付きまとう苦役でもある。",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/15/635e156523141d92312030094363a665_8260068889195442697.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "七聖召喚のカード",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 7222,
-            "name": "ロサリア",
-            "desc": "<p><strong>荊冠の恩典・ロサリア</strong></p><p></p><p>「影は光から生まれるが、光が影を御すことはできない。」</p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/21/346851886/bcb2da9b645d355dc7ba434056e40ddf_8291212216651959979.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "追加コスチューム",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 5776,
-            "name": "教会の自由人へ",
-            "desc": "ロサリアの衣装。彼女のためだけに教会から贈られた特注品のようだ。",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/06/24/ef87a4785bacee87664d74db96e3ab01_6853987077197875351.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "実装バージョン",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.4"
           }
         ]
       }
