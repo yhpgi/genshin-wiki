@@ -4,14 +4,475 @@
   "desc": "Thanh kiếm được dùng trong nghi lễ, được chạm khắc cẩn thận từ ngọc bích tinh khiết, khi vung lên, âm thanh giống như tiếng thở dài trong gió.",
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/磐岩结绿.png",
   "filterValues": {
-    "weaponRarity": 5,
+    "weaponProperty": "Tỷ Lệ Bạo Kích",
     "weaponType": "Kiếm Đơn",
-    "weaponProperty": "Tỷ Lệ Bạo Kích"
+    "weaponRarity": 5
   },
   "menuId": 4,
   "menuName": "Vũ Khí",
   "version": 1721887873,
   "components": {
+    "baseInfo": [
+      {
+        "key": "Tên",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Bàn Nham Kết Lục"
+          }
+        ]
+      },
+      {
+        "key": "Khu Vực",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Liyue"
+          }
+        ]
+      },
+      {
+        "key": "Nguồn Gốc",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Sự Kiện Cầu Nguyện Độc Quyền"
+          }
+        ]
+      },
+      {
+        "key": "Loại",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Kiếm Đơn"
+          }
+        ]
+      },
+      {
+        "key": "Thuộc Tính Phụ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Tỷ Lệ Bạo Kích"
+          }
+        ]
+      },
+      {
+        "key": "Trái Tim Hộ Quốc",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "HP tăng <color=#37ffff>20%</color> . Ngoài ra, nhận được buff tấn công dựa trên <color=#37ffff>1.2%</color> giới hạn HP của nhân vật trang bị vũ khí này."
+          }
+        ]
+      },
+      {
+        "key": "Phiên Bản Phát Hành",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.3"
+          }
+        ]
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Nguyên Gốc",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/23/12108544/8257241a95eaf42a0e637a7f98293831_56141124210031094.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Trước khi đột phá lần 2"
+          }
+        ]
+      },
+      {
+        "key": "Đã Đột Phá",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/23/12108544/8fda244d78ff18d2a842a768746d9ad2_4961275607538358262.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Sau khi đột phá lần 2"
+          }
+        ]
+      }
+    ],
+    "ascension": [
+      {
+        "key": "Lv.1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Sức tấn công trước Đột Phá",
+              "Sức tấn công sau Đột Phá",
+              "Tỷ Lệ Bạo Kích"
+            ]
+          },
+          {
+            "key": "",
+            "values": [
+              "-",
+              "44",
+              "9.6%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Lv.20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Sức tấn công trước Đột Phá",
+              "Sức tấn công sau Đột Phá",
+              "Tỷ Lệ Bạo Kích"
+            ]
+          },
+          {
+            "key": "",
+            "values": [
+              "110",
+              "141",
+              "17.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 10000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1725,
+            "name": "Diên Đơn Biển Sương Mù",
+            "desc": "Nguyên liệu có sức mạnh đột phá vũ khí.<br/>Tuyệt Vân Gián là phủ đệ của tiên gia. Tương truyền tiên gia ngoài việc tinh thông tiên pháp, có thể thao túng Nguyên Tố dưới trần gian, còn có 3 thứ không truyền ra ngoài: lò luyện đơn, bùa chú và ngoại cảnh.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Veiled Lead Elixir_icon.png",
+            "amount": 5
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1727,
+            "name": "Phấn Hoa Hư Vô",
+            "desc": "Cỏ Hư Vô sẽ sản sinh ra vô số bào tử trong không gian kín, là món yêu thích của Cicin.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Grass Pollen_icon.png",
+            "amount": 5
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 629,
+            "name": "Ấn Quạ Tầm Bảo",
+            "desc": "Dấu ấn kiêu hãnh thể hiện danh tính của Đạo Bảo Đoàn, miêu tả những chuyến truy tìm kho báu vô tận của họ. Tuy nói vậy, danh tính đạo tặc có cần phải được thể hiện một cách tự hào không nhỉ...?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "Lv.40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Sức tấn công trước Đột Phá",
+              "Sức tấn công sau Đột Phá",
+              "Tỷ Lệ Bạo Kích"
+            ]
+          },
+          {
+            "key": "",
+            "values": [
+              "210",
+              "241",
+              "24.7%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1722,
+            "name": "Hống Đơn Biển Sương Mù",
+            "desc": "Nguyên liệu có sức mạnh đột phá vũ khí.<br/>Bùa chú có thể giúp lưu giữ lại sức mạnh của tiên nhân, ngoại cảnh có thể tạo ra vũ trụ trời đất. Thuật luyện đơn thì vẫn còn nằm trong bí mật. Tóm lại thử nuốt những kim đơn này thì không có hy vọng sống.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Veiled Mercury Elixir_icon.png",
+            "amount": 5
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1727,
+            "name": "Phấn Hoa Hư Vô",
+            "desc": "Cỏ Hư Vô sẽ sản sinh ra vô số bào tử trong không gian kín, là món yêu thích của Cicin.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Grass Pollen_icon.png",
+            "amount": 18
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 629,
+            "name": "Ấn Quạ Tầm Bảo",
+            "desc": "Dấu ấn kiêu hãnh thể hiện danh tính của Đạo Bảo Đoàn, miêu tả những chuyến truy tìm kho báu vô tận của họ. Tuy nói vậy, danh tính đạo tặc có cần phải được thể hiện một cách tự hào không nhỉ...?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Sức tấn công trước Đột Phá",
+              "Sức tấn công sau Đột Phá",
+              "Tỷ Lệ Bạo Kích"
+            ]
+          },
+          {
+            "key": "",
+            "values": [
+              "275",
+              "307",
+              "28.6%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 30000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1722,
+            "name": "Hống Đơn Biển Sương Mù",
+            "desc": "Nguyên liệu có sức mạnh đột phá vũ khí.<br/>Bùa chú có thể giúp lưu giữ lại sức mạnh của tiên nhân, ngoại cảnh có thể tạo ra vũ trụ trời đất. Thuật luyện đơn thì vẫn còn nằm trong bí mật. Tóm lại thử nuốt những kim đơn này thì không có hy vọng sống.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Veiled Mercury Elixir_icon.png",
+            "amount": 9
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1728,
+            "name": "Túi Cỏ Hư Vô",
+            "desc": "Cỏ Hư Vô được bảo quản hoàn hảo. Có người lợi dụng sự yêu thích Cỏ Hư Vô của Cicin để khống chế chúng.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Grass_icon.png",
+            "amount": 9
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1553,
+            "name": "Ấn Quạ Bạc Ẩn",
+            "desc": "Huân chương quạ đen được thành viên của Đạo Bảo Đoàn sử dụng để nhận biết lẫn nhau. Đạo Bảo Đoàn không hỏi xuất thân, bất kể là ai chỉ cần có lòng ham tìm bảo vật, dám mạo hiểm, đều có thể trở thành thành viên \"ưu tú\".",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+            "amount": 9
+          }
+        ]
+      },
+      {
+        "key": "Lv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Sức tấn công trước Đột Phá",
+              "Sức tấn công sau Đột Phá",
+              "Tỷ Lệ Bạo Kích"
+            ]
+          },
+          {
+            "key": "",
+            "values": [
+              "341",
+              "373",
+              "32.5%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 45000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1724,
+            "name": "Kim Đơn Biển Sương Mù",
+            "desc": "Nguyên liệu có sức mạnh đột phá vũ khí.<br/>Kim đơn, thật ra là viên kim loại. Đây là những hợp kim được tiên nhân chế tạo, có chứa sức mạnh thần thông, có thể ban cho vũ khí sức mạnh phi thường. Kẻ học võ thường cho rằng võ đạo tốt hơn tiên đạo, không tin thần tiên. Cho nên kim đơn không có cơ hội lưu truyền ra ngoài.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Veiled Gold Elixir_icon.png",
+            "amount": 5
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1728,
+            "name": "Túi Cỏ Hư Vô",
+            "desc": "Cỏ Hư Vô được bảo quản hoàn hảo. Có người lợi dụng sự yêu thích Cỏ Hư Vô của Cicin để khống chế chúng.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Grass_icon.png",
+            "amount": 18
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1553,
+            "name": "Ấn Quạ Bạc Ẩn",
+            "desc": "Huân chương quạ đen được thành viên của Đạo Bảo Đoàn sử dụng để nhận biết lẫn nhau. Đạo Bảo Đoàn không hỏi xuất thân, bất kể là ai chỉ cần có lòng ham tìm bảo vật, dám mạo hiểm, đều có thể trở thành thành viên \"ưu tú\".",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+            "amount": 14
+          }
+        ]
+      },
+      {
+        "key": "Lv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Sức tấn công trước Đột Phá",
+              "Sức tấn công sau Đột Phá",
+              "Tỷ Lệ Bạo Kích"
+            ]
+          },
+          {
+            "key": "",
+            "values": [
+              "408",
+              "439",
+              "36.3%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 55000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1724,
+            "name": "Kim Đơn Biển Sương Mù",
+            "desc": "Nguyên liệu có sức mạnh đột phá vũ khí.<br/>Kim đơn, thật ra là viên kim loại. Đây là những hợp kim được tiên nhân chế tạo, có chứa sức mạnh thần thông, có thể ban cho vũ khí sức mạnh phi thường. Kẻ học võ thường cho rằng võ đạo tốt hơn tiên đạo, không tin thần tiên. Cho nên kim đơn không có cơ hội lưu truyền ra ngoài.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Veiled Gold Elixir_icon.png",
+            "amount": 9
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1726,
+            "name": "Đuốc Hư Vô",
+            "desc": "Bó Cỏ Hư Vô quý hiếm, sẽ tạo ra ánh sáng mờ ảo, người cầm bó đuốc này sẽ gọi Cicin và xui xẻo đến.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Grass Wick_icon.png",
+            "amount": 14
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 760,
+            "name": "Ấn Quạ Trộm Vàng",
+            "desc": "Huân chương tượng trưng cho nguyên tắc và ngạo khí duy nhất của Đạo Bảo Đoàn. Chừng nào vẫn còn có những kho báu được phát hiện ở vùng đất rộng lớn, nơi vực thẳm hẻo lánh hay vùng biển vô danh, thì ngọn lửa trong tim của những kẻ trộm muốn chinh phục kho báu sẽ không bao giờ tắt.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+            "amount": 9
+          }
+        ]
+      },
+      {
+        "key": "Lv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Sức tấn công trước Đột Phá",
+              "Sức tấn công sau Đột Phá",
+              "Tỷ Lệ Bạo Kích"
+            ]
+          },
+          {
+            "key": "",
+            "values": [
+              "475",
+              "506",
+              "40.2%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 65000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1723,
+            "name": "Sự Chuyển Dời Của Biển Sương Mù",
+            "desc": "Nguyên liệu có sức mạnh đột phá vũ khí.<br/>Đây là phẩm chất cao nhất của kim đơn, nó thể hiện thời hỗn độn sơ khai, thiên địa bất phân. Nghe nói đây là bóng hình của đấng sáng thế. Đương nhiên, người đó cũng biết, sự tái hiện của thế giới không phải như vậy.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Veiled Primo Elixir_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1726,
+            "name": "Đuốc Hư Vô",
+            "desc": "Bó Cỏ Hư Vô quý hiếm, sẽ tạo ra ánh sáng mờ ảo, người cầm bó đuốc này sẽ gọi Cicin và xui xẻo đến.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Grass Wick_icon.png",
+            "amount": 27
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 760,
+            "name": "Ấn Quạ Trộm Vàng",
+            "desc": "Huân chương tượng trưng cho nguyên tắc và ngạo khí duy nhất của Đạo Bảo Đoàn. Chừng nào vẫn còn có những kho báu được phát hiện ở vùng đất rộng lớn, nơi vực thẳm hẻo lánh hay vùng biển vô danh, thì ngọn lửa trong tim của những kẻ trộm muốn chinh phục kho báu sẽ không bao giờ tắt.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Lv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Sức tấn công trước Đột Phá",
+              "Sức tấn công sau Đột Phá",
+              "Tỷ Lệ Bạo Kích"
+            ]
+          },
+          {
+            "key": "",
+            "values": [
+              "542",
+              "-",
+              "44.1%"
+            ]
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "desc": [
@@ -536,467 +997,6 @@
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/祭礼大剑.png",
         "displayStyle": "card",
         "menuId": 4
-      }
-    ],
-    "ascension": [
-      {
-        "key": "Lv.1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Sức tấn công trước Đột Phá",
-              "Sức tấn công sau Đột Phá",
-              "Tỷ Lệ Bạo Kích"
-            ]
-          },
-          {
-            "key": "",
-            "values": [
-              "-",
-              "44",
-              "9.6%"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Lv.20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Sức tấn công trước Đột Phá",
-              "Sức tấn công sau Đột Phá",
-              "Tỷ Lệ Bạo Kích"
-            ]
-          },
-          {
-            "key": "",
-            "values": [
-              "110",
-              "141",
-              "17.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 10000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1725,
-            "name": "Diên Đơn Biển Sương Mù",
-            "desc": "Nguyên liệu có sức mạnh đột phá vũ khí.<br/>Tuyệt Vân Gián là phủ đệ của tiên gia. Tương truyền tiên gia ngoài việc tinh thông tiên pháp, có thể thao túng Nguyên Tố dưới trần gian, còn có 3 thứ không truyền ra ngoài: lò luyện đơn, bùa chú và ngoại cảnh.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Veiled Lead Elixir_icon.png",
-            "amount": 5
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1727,
-            "name": "Phấn Hoa Hư Vô",
-            "desc": "Cỏ Hư Vô sẽ sản sinh ra vô số bào tử trong không gian kín, là món yêu thích của Cicin.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Grass Pollen_icon.png",
-            "amount": 5
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 629,
-            "name": "Ấn Quạ Tầm Bảo",
-            "desc": "Dấu ấn kiêu hãnh thể hiện danh tính của Đạo Bảo Đoàn, miêu tả những chuyến truy tìm kho báu vô tận của họ. Tuy nói vậy, danh tính đạo tặc có cần phải được thể hiện một cách tự hào không nhỉ...?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "key": "Lv.40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Sức tấn công trước Đột Phá",
-              "Sức tấn công sau Đột Phá",
-              "Tỷ Lệ Bạo Kích"
-            ]
-          },
-          {
-            "key": "",
-            "values": [
-              "210",
-              "241",
-              "24.7%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1722,
-            "name": "Hống Đơn Biển Sương Mù",
-            "desc": "Nguyên liệu có sức mạnh đột phá vũ khí.<br/>Bùa chú có thể giúp lưu giữ lại sức mạnh của tiên nhân, ngoại cảnh có thể tạo ra vũ trụ trời đất. Thuật luyện đơn thì vẫn còn nằm trong bí mật. Tóm lại thử nuốt những kim đơn này thì không có hy vọng sống.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Veiled Mercury Elixir_icon.png",
-            "amount": 5
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1727,
-            "name": "Phấn Hoa Hư Vô",
-            "desc": "Cỏ Hư Vô sẽ sản sinh ra vô số bào tử trong không gian kín, là món yêu thích của Cicin.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Grass Pollen_icon.png",
-            "amount": 18
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 629,
-            "name": "Ấn Quạ Tầm Bảo",
-            "desc": "Dấu ấn kiêu hãnh thể hiện danh tính của Đạo Bảo Đoàn, miêu tả những chuyến truy tìm kho báu vô tận của họ. Tuy nói vậy, danh tính đạo tặc có cần phải được thể hiện một cách tự hào không nhỉ...?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Sức tấn công trước Đột Phá",
-              "Sức tấn công sau Đột Phá",
-              "Tỷ Lệ Bạo Kích"
-            ]
-          },
-          {
-            "key": "",
-            "values": [
-              "275",
-              "307",
-              "28.6%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 30000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1722,
-            "name": "Hống Đơn Biển Sương Mù",
-            "desc": "Nguyên liệu có sức mạnh đột phá vũ khí.<br/>Bùa chú có thể giúp lưu giữ lại sức mạnh của tiên nhân, ngoại cảnh có thể tạo ra vũ trụ trời đất. Thuật luyện đơn thì vẫn còn nằm trong bí mật. Tóm lại thử nuốt những kim đơn này thì không có hy vọng sống.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Veiled Mercury Elixir_icon.png",
-            "amount": 9
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1728,
-            "name": "Túi Cỏ Hư Vô",
-            "desc": "Cỏ Hư Vô được bảo quản hoàn hảo. Có người lợi dụng sự yêu thích Cỏ Hư Vô của Cicin để khống chế chúng.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Grass_icon.png",
-            "amount": 9
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1553,
-            "name": "Ấn Quạ Bạc Ẩn",
-            "desc": "Huân chương quạ đen được thành viên của Đạo Bảo Đoàn sử dụng để nhận biết lẫn nhau. Đạo Bảo Đoàn không hỏi xuất thân, bất kể là ai chỉ cần có lòng ham tìm bảo vật, dám mạo hiểm, đều có thể trở thành thành viên \"ưu tú\".",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-            "amount": 9
-          }
-        ]
-      },
-      {
-        "key": "Lv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Sức tấn công trước Đột Phá",
-              "Sức tấn công sau Đột Phá",
-              "Tỷ Lệ Bạo Kích"
-            ]
-          },
-          {
-            "key": "",
-            "values": [
-              "341",
-              "373",
-              "32.5%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 45000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1724,
-            "name": "Kim Đơn Biển Sương Mù",
-            "desc": "Nguyên liệu có sức mạnh đột phá vũ khí.<br/>Kim đơn, thật ra là viên kim loại. Đây là những hợp kim được tiên nhân chế tạo, có chứa sức mạnh thần thông, có thể ban cho vũ khí sức mạnh phi thường. Kẻ học võ thường cho rằng võ đạo tốt hơn tiên đạo, không tin thần tiên. Cho nên kim đơn không có cơ hội lưu truyền ra ngoài.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Veiled Gold Elixir_icon.png",
-            "amount": 5
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1728,
-            "name": "Túi Cỏ Hư Vô",
-            "desc": "Cỏ Hư Vô được bảo quản hoàn hảo. Có người lợi dụng sự yêu thích Cỏ Hư Vô của Cicin để khống chế chúng.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Grass_icon.png",
-            "amount": 18
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1553,
-            "name": "Ấn Quạ Bạc Ẩn",
-            "desc": "Huân chương quạ đen được thành viên của Đạo Bảo Đoàn sử dụng để nhận biết lẫn nhau. Đạo Bảo Đoàn không hỏi xuất thân, bất kể là ai chỉ cần có lòng ham tìm bảo vật, dám mạo hiểm, đều có thể trở thành thành viên \"ưu tú\".",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-            "amount": 14
-          }
-        ]
-      },
-      {
-        "key": "Lv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Sức tấn công trước Đột Phá",
-              "Sức tấn công sau Đột Phá",
-              "Tỷ Lệ Bạo Kích"
-            ]
-          },
-          {
-            "key": "",
-            "values": [
-              "408",
-              "439",
-              "36.3%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 55000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1724,
-            "name": "Kim Đơn Biển Sương Mù",
-            "desc": "Nguyên liệu có sức mạnh đột phá vũ khí.<br/>Kim đơn, thật ra là viên kim loại. Đây là những hợp kim được tiên nhân chế tạo, có chứa sức mạnh thần thông, có thể ban cho vũ khí sức mạnh phi thường. Kẻ học võ thường cho rằng võ đạo tốt hơn tiên đạo, không tin thần tiên. Cho nên kim đơn không có cơ hội lưu truyền ra ngoài.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Veiled Gold Elixir_icon.png",
-            "amount": 9
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1726,
-            "name": "Đuốc Hư Vô",
-            "desc": "Bó Cỏ Hư Vô quý hiếm, sẽ tạo ra ánh sáng mờ ảo, người cầm bó đuốc này sẽ gọi Cicin và xui xẻo đến.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Grass Wick_icon.png",
-            "amount": 14
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 760,
-            "name": "Ấn Quạ Trộm Vàng",
-            "desc": "Huân chương tượng trưng cho nguyên tắc và ngạo khí duy nhất của Đạo Bảo Đoàn. Chừng nào vẫn còn có những kho báu được phát hiện ở vùng đất rộng lớn, nơi vực thẳm hẻo lánh hay vùng biển vô danh, thì ngọn lửa trong tim của những kẻ trộm muốn chinh phục kho báu sẽ không bao giờ tắt.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-            "amount": 9
-          }
-        ]
-      },
-      {
-        "key": "Lv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Sức tấn công trước Đột Phá",
-              "Sức tấn công sau Đột Phá",
-              "Tỷ Lệ Bạo Kích"
-            ]
-          },
-          {
-            "key": "",
-            "values": [
-              "475",
-              "506",
-              "40.2%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 65000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1723,
-            "name": "Sự Chuyển Dời Của Biển Sương Mù",
-            "desc": "Nguyên liệu có sức mạnh đột phá vũ khí.<br/>Đây là phẩm chất cao nhất của kim đơn, nó thể hiện thời hỗn độn sơ khai, thiên địa bất phân. Nghe nói đây là bóng hình của đấng sáng thế. Đương nhiên, người đó cũng biết, sự tái hiện của thế giới không phải như vậy.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Veiled Primo Elixir_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1726,
-            "name": "Đuốc Hư Vô",
-            "desc": "Bó Cỏ Hư Vô quý hiếm, sẽ tạo ra ánh sáng mờ ảo, người cầm bó đuốc này sẽ gọi Cicin và xui xẻo đến.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mist Grass Wick_icon.png",
-            "amount": 27
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 760,
-            "name": "Ấn Quạ Trộm Vàng",
-            "desc": "Huân chương tượng trưng cho nguyên tắc và ngạo khí duy nhất của Đạo Bảo Đoàn. Chừng nào vẫn còn có những kho báu được phát hiện ở vùng đất rộng lớn, nơi vực thẳm hẻo lánh hay vùng biển vô danh, thì ngọn lửa trong tim của những kẻ trộm muốn chinh phục kho báu sẽ không bao giờ tắt.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Lv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Sức tấn công trước Đột Phá",
-              "Sức tấn công sau Đột Phá",
-              "Tỷ Lệ Bạo Kích"
-            ]
-          },
-          {
-            "key": "",
-            "values": [
-              "542",
-              "-",
-              "44.1%"
-            ]
-          }
-        ]
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Nguyên Gốc",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/23/12108544/8257241a95eaf42a0e637a7f98293831_56141124210031094.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Trước khi đột phá lần 2"
-          }
-        ]
-      },
-      {
-        "key": "Đã Đột Phá",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/23/12108544/8fda244d78ff18d2a842a768746d9ad2_4961275607538358262.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Sau khi đột phá lần 2"
-          }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Tên",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Bàn Nham Kết Lục"
-          }
-        ]
-      },
-      {
-        "key": "Khu Vực",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Liyue"
-          }
-        ]
-      },
-      {
-        "key": "Nguồn Gốc",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Sự Kiện Cầu Nguyện Độc Quyền"
-          }
-        ]
-      },
-      {
-        "key": "Loại",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Kiếm Đơn"
-          }
-        ]
-      },
-      {
-        "key": "Thuộc Tính Phụ",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Tỷ Lệ Bạo Kích"
-          }
-        ]
-      },
-      {
-        "key": "Trái Tim Hộ Quốc",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "HP tăng <color=#37ffff>20%</color> . Ngoài ra, nhận được buff tấn công dựa trên <color=#37ffff>1.2%</color> giới hạn HP của nhân vật trang bị vũ khí này."
-          }
-        ]
-      },
-      {
-        "key": "Phiên Bản Phát Hành",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.3"
-          }
-        ]
       }
     ]
   }
