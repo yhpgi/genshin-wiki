@@ -4,18 +4,35 @@
   "desc": "<p><strong><span>雪融有踪 · 重云</span></strong><span> <br>「夏天啊，你还是悄悄过去吧···」</span></p>",
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/47826599/bffac6cdb7bf11846a00283924b7b617_3816166912263745211.png",
   "filterValues": {
-    "cardCharacterObtainingMethod": "角色邀约",
-    "cardCharacterWeaponType": "双手剑",
-    "cardCharacterElement": "冰元素",
     "cardCharacterCamp": [
       "璃月"
     ],
-    "cardCharacterChargingPoint": "3充能"
+    "cardCharacterWeaponType": "双手剑",
+    "cardCharacterChargingPoint": "3充能",
+    "cardCharacterObtainingMethod": "角色邀约",
+    "cardCharacterElement": "冰元素"
   },
   "menuId": 17,
   "menuName": "角色牌",
   "version": 1719042089,
   "components": {
+    "tcg": {
+      "headerImgs": [
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/47826599/bffac6cdb7bf11846a00283924b7b617_3816166912263745211.png",
+          "imgDesc": "初始牌面"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/24/47826599/2e6fd70f93eaff48086b3c32ba483ea7_7187963457367067416.gif",
+          "imgDesc": "影幻牌面"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/24/47826599/6cd0232fa00dce183328b3e7f86a6445_7153872587889935796.png",
+          "imgDesc": "璃月"
+        }
+      ],
+      "hp": 10
+    },
     "customize": [
       {
         "type": "Heading",
@@ -261,23 +278,68 @@
         "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/14/88072335/b37c85c9436dec4925ef4c72db89fb57_1481730639739721912.png"
       }
     ],
-    "tcg": {
-      "headerImgs": [
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/47826599/bffac6cdb7bf11846a00283924b7b617_3816166912263745211.png",
-          "imgDesc": "初始牌面"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/24/47826599/2e6fd70f93eaff48086b3c32ba483ea7_7187963457367067416.gif",
-          "imgDesc": "影幻牌面"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/24/47826599/6cd0232fa00dce183328b3e7f86a6445_7153872587889935796.png",
-          "imgDesc": "璃月"
-        }
-      ],
-      "hp": 10
-    },
+    "talent": [
+      {
+        "key": "灭邪四式",
+        "title": "灭邪四式",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/47826599/10316b5178d5109d597f415d6e7903dc_621066279360282563.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>普通攻击</color>\n造成2点 <color=#ffffff>物理伤害</color> 。"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "重华叠霜",
+        "title": "重华叠霜",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/47826599/f17b48b7b6d0a06e1b0ad5fa0799168b_4821752149858426899.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>元素战技</color>\n造成3点 <color=#99ffff>冰元素伤害</color> ，生成 <color=#ffffff>重华叠霜领域</color> 。"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "云开星落",
+        "title": "云开星落",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/47826599/d98d17703b86282b89569cb7c5dde12c_3510216606949857309.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>元素爆发</color>\n造成7点 <color=#99ffff>冰元素伤害</color> 。"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "冰元素伤害",
+        "title": "冰元素伤害",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/24/47826599/4bcc4b82a9d7ee22770f60afa54e9919_2796886575013942201.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "附着冰元素，可发生元素反应：\n【 <color=#99ffff>冰元素</color> + <color=#ff9999>火元素</color> 】 <color=#ffffff>融化</color> ：本伤害+2\n【 <color=#99ffff>冰元素</color> + <color=#ffacff>雷元素</color> 】 <color=#ffffff>超导</color> ：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\n【 <color=#99ffff>冰元素</color> + <color=#80c0ff>水元素</color> 】 <color=#ffffff>冻结</color> ：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "规则术语",
+        "title": "规则术语",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/24/47826599/07bae546ac7c69ef6402170b283840c5_5347758071598002652.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ece5d8>物理伤害</color>\n物理伤害不会附着元素，也不会发生元素反应。\n<color=#ece5d8>重华叠霜领域</color>\n<color=#ffd780>出战状态</color>\n我方单手剑，双手剑或长柄武器角色造成的 <color=#ffffff>物理伤害</color> 变为 <color=#99ffff>冰元素伤害</color> 。\n<color=#ffffff>持续回合：2</color>"
+          }
+        ],
+        "attributes": []
+      }
+    ],
     "baseInfo": [
       {
         "key": "名称",
@@ -385,68 +447,6 @@
             "text": "3.3"
           }
         ]
-      }
-    ],
-    "talent": [
-      {
-        "key": "灭邪四式",
-        "title": "灭邪四式",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/47826599/10316b5178d5109d597f415d6e7903dc_621066279360282563.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>普通攻击</color>\n造成2点 <color=#ffffff>物理伤害</color> 。"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "重华叠霜",
-        "title": "重华叠霜",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/47826599/f17b48b7b6d0a06e1b0ad5fa0799168b_4821752149858426899.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>元素战技</color>\n造成3点 <color=#99ffff>冰元素伤害</color> ，生成 <color=#ffffff>重华叠霜领域</color> 。"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "云开星落",
-        "title": "云开星落",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/02/47826599/d98d17703b86282b89569cb7c5dde12c_3510216606949857309.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>元素爆发</color>\n造成7点 <color=#99ffff>冰元素伤害</color> 。"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "冰元素伤害",
-        "title": "冰元素伤害",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/24/47826599/4bcc4b82a9d7ee22770f60afa54e9919_2796886575013942201.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "附着冰元素，可发生元素反应：\n【 <color=#99ffff>冰元素</color> + <color=#ff9999>火元素</color> 】 <color=#ffffff>融化</color> ：本伤害+2\n【 <color=#99ffff>冰元素</color> + <color=#ffacff>雷元素</color> 】 <color=#ffffff>超导</color> ：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\n【 <color=#99ffff>冰元素</color> + <color=#80c0ff>水元素</color> 】 <color=#ffffff>冻结</color> ：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "规则术语",
-        "title": "规则术语",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/24/47826599/07bae546ac7c69ef6402170b283840c5_5347758071598002652.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ece5d8>物理伤害</color>\n物理伤害不会附着元素，也不会发生元素反应。\n<color=#ece5d8>重华叠霜领域</color>\n<color=#ffd780>出战状态</color>\n我方单手剑，双手剑或长柄武器角色造成的 <color=#ffffff>物理伤害</color> 变为 <color=#99ffff>冰元素伤害</color> 。\n<color=#ffffff>持续回合：2</color>"
-          }
-        ],
-        "attributes": []
       }
     ]
   }
