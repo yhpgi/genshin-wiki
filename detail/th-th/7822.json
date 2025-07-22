@@ -7,15 +7,219 @@
     "cardCharacterCamp": [
       "Natlan"
     ],
-    "cardCharacterWeaponType": "ธนู",
-    "cardCharacterObtainingMethod": "เชิญตัวละคร",
     "cardCharacterElement": "ธาตุลม",
-    "cardCharacterChargingPoint": "พลังงาน: 2"
+    "cardCharacterChargingPoint": "พลังงาน: 2",
+    "cardCharacterObtainingMethod": "เชิญตัวละคร",
+    "cardCharacterWeaponType": "ธนู"
   },
   "menuId": 17,
   "menuName": "การ์ดตัวละคร",
   "version": 1751442971,
   "components": {
+    "tcg": {
+      "headerImgs": [
+        {
+          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/c53f37f670e7d1c7d6e8d01937ad5e97_7834765079884553318.png"
+        },
+        {
+          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/07/02/144837601/5ae89241b0aa7d7412121c0a26ad03b8_8636618806985091619.gif"
+        },
+        {
+          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/07/02/144837601/c0c37858a716e827ac2fd53803fed55b_8906388616950708187.png"
+        }
+      ],
+      "hp": 10
+    },
+    "talent": [
+      {
+        "key": "Phantom Feather Flurry ",
+        "title": "Phantom Feather Flurry ",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/35a7e5bab7b2ee97d79e2cc055c2922f_5014025362347548587.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>โจมตีปกติ</color>\nสร้าง <color=#ffffff>ความเสียหายกายภาพ</color> 2 หน่วย"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Spirit Reins, Shadow Hunt ",
+        "title": "Spirit Reins, Shadow Hunt ",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/84dbba16a9f825a03cc6bef79519a5c2_5076757527762673576.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>สกิลธาตุ</color>\nสร้าง <color=#80ffd7>ความเสียหายลม</color> 1 หน่วย สร้างความเสียหายทะลวง 1 หน่วย ให้แก่ตัวละครนอกสนามทั้งหมดของฝ่ายศัตรู และจั่วการ์ด 3 ใบ"
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Soul Reaper's Fatal Round ",
+        "title": "Soul Reaper's Fatal Round ",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/6c4cdcf5ee6fdc385ef2076fc3969341_3830682801169186797.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>ท่าไม้ตาย</color>\nสร้าง <color=#80ffd7>ความเสียหายลม</color> 1 หน่วย สร้างความเสียหายทะลวง 1 หน่วย ให้แก่ตัวละครนอกสนามทั้งหมดของฝ่ายศัตรู และจั่วการ์ด 3 ใบ"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "กระสุนล่าเงา",
+        "title": "กระสุนล่าเงา",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/89e1a974980bc037b39af4eafe843b35_5968371295214188671.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "กระสุนล่าเงา\n<color=#ffffff>เมื่อเพิ่มเข้าสู่มือ:</color> เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <color=#ff9999>ธาตุไฟ</color> / <color=#80c0ff>น้ำ</color> / <color=#ffacff>ไฟฟ้า</color> / <color=#99ffff>น้ำแข็ง</color> จะเปลี่ยนการ์ดใบนี้ ให้เป็นธาตุที่สอดคล้องกัน\n<color=#ffffff>เมื่อใช้หรือทิ้งการ์ดใบนี้:</color> สร้าง <color=#80ffd7>ความเสียหายลม</color> 1 หน่วย แก่ตัวละครที่เข้าต่อสู้ของฝ่ายศัตรูก่อน จากนั้นจะสุ่มเพิ่ม กระสุนล่าเงา 1 ใบลงในเด็ค"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "ความเสียหายลม",
+        "title": "ความเสียหายลม",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/c97292d96456bfe4abeca16bfce801e4_7562544092074317512.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "จะเกิดปฏิกิริยาธาตุกับสถานะธาตุที่ติดอยู่ก่อน:\n[ <color=#80ffd7>ลม</color> + <color=#99ffff>น้ำแข็ง</color> ] <color=#ffffff>กระจาย (น้ำแข็ง):</color> สร้างความเสียหายน้ำแข็ง 1 หน่วย ให้กับตัวละครทั้งหมดของฝ่ายศัตรู (ยกเว้นเป้าหมาย)\n[ <color=#80ffd7>ลม</color> + <color=#80c0ff>น้ำ</color> ] <color=#ffffff>กระจาย (น้ำ):</color> สร้างความเสียหายน้ำ 1 หน่วย ให้กับตัวละครทั้งหมดของฝ่ายศัตรู (ยกเว้นเป้าหมาย)\n[ <color=#80ffd7>ลม</color> + <color=#ff9999>ไฟ</color> ] <color=#ffffff>กระจาย (ไฟ):</color> สร้างความเสียหายไฟ 1 หน่วย ให้กับตัวละครทั้งหมดของฝ่ายศัตรู (ยกเว้นเป้าหมาย)\n[ <color=#80ffd7>ลม</color> + <color=#ffacff>ไฟฟ้า</color> ] <color=#ffffff>กระจาย (ไฟฟ้า):</color> สร้างความเสียหายไฟฟ้า 1 หน่วย ให้กับตัวละครทั้งหมดของฝ่ายศัตรู (ยกเว้นเป้าหมาย)"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "รายละเอียดกติกา",
+        "title": "รายละเอียดกติกา",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/07bae546ac7c69ef6402170b283840c5_1910633460764931850.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffff>ความเสียหายกายภาพ</color>\nความเสียหายกายภาพ จะไม่ทำให้ติดสถานะธาตุ และก็ไม่ทำให้เกิดปฏิกิริยาธาตุด้วย\n<color=#ffffff>เทคนิค</color>\nเมื่อตัวละครที่เข้าต่อสู้ติดตั้งการ์ด \"เทคนิค\" จะสามารถใช้ \"เทคนิค\" ที่เกี่ยวข้องได้\nการใช้ \"เทคนิค\" เป็นการ \"ดำเนินการต่อสู้\" อย่างหนึ่ง เมื่อตัวละครไม่สามารถใช้สกิลได้เนื่องจากสถานะแช่แข็ง, กลายเป็นหิน, มึนงง ฯลฯ จะไม่สามารถใช้ \"เทคนิค\" ได้เช่นกัน\nเมื่อตัวละครใช้ \"เทคนิค\" จะไม่นับเป็นการใช้สกิล และไม่สามารถทำให้เกิดเอฟเฟกต์ \"หลังจากใช้สกิล\" หรือ \"หลังจากที่ตัวละครทำให้เกิดปฏิกิริยาธาตุ\" ได้; นอกจากนี้ ความเสียหายที่เกิดจากการใช้ \"เทคนิค\" ของตัวละคร จะไม่ถูกนับว่าเป็นความเสียหายที่ตัวละครสร้าง"
+          }
+        ],
+        "attributes": []
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "ท่าไม้ตาย",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/e79bc66534fb4d53682e8e36e5768a8b_3420730494851001742.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Soul Reaper's Fatal Round"
+          }
+        ]
+      },
+      {
+        "key": "ไอคอนอวตาร",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/0a99a2fdf91f9c0845b3baf0617d2631_2712323886922457097.png"
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "ชื่อ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Chasca"
+          }
+        ]
+      },
+      {
+        "key": "ประเภทการ์ด",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "การ์ดตัวละคร"
+          }
+        ]
+      },
+      {
+        "key": "พลังชีวิต",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "10"
+          }
+        ]
+      },
+      {
+        "key": "พลังงาน",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "2"
+          }
+        ]
+      },
+      {
+        "key": "ประเภทธาตุ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "ธาตุลม"
+          }
+        ]
+      },
+      {
+        "key": "อาวุธ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "ธนู"
+          }
+        ]
+      },
+      {
+        "key": "ฝ่าย",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Natlan"
+          }
+        ]
+      },
+      {
+        "key": "การ์ดที่เกี่ยวข้อง",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 7825,
+            "name": "Bullet Trick",
+            "desc": "<p>\"กระหน่ำ... ยิง!\"</p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/62a883ecbcfddbd2982048454b86e325_273969009316175447.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "หาได้จาก",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "ได้รับหลังจากเชิญ Chasca ทำการดูเอลใน Cat's Tail และเอาชนะในระดับความยากฉันมิตร"
+          }
+        ]
+      },
+      {
+        "key": "ตัวละคร",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 7080,
+            "name": "Chasca",
+            "desc": "<p>\"ผู้ไกล่เกลี่ย\" แห่ง Tlalocan ผู้ยุติความขัดแย้งทั้งปวง</p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/19/10257458/544e774c35338c71949e4bf9a4483c4f_2701672252462243534.png"
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
     "customize": [
       {
         "type": "Heading",
@@ -389,210 +593,6 @@
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/22/144837601/e28c36a6abadc29472aa8c5dfcefb6fd_5316204336085303266.png",
         "amount": 1500,
         "displayStyle": "card"
-      }
-    ],
-    "talent": [
-      {
-        "key": "Phantom Feather Flurry ",
-        "title": "Phantom Feather Flurry ",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/35a7e5bab7b2ee97d79e2cc055c2922f_5014025362347548587.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>โจมตีปกติ</color>\nสร้าง <color=#ffffff>ความเสียหายกายภาพ</color> 2 หน่วย"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Spirit Reins, Shadow Hunt ",
-        "title": "Spirit Reins, Shadow Hunt ",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/84dbba16a9f825a03cc6bef79519a5c2_5076757527762673576.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>สกิลธาตุ</color>\nสร้าง <color=#80ffd7>ความเสียหายลม</color> 1 หน่วย สร้างความเสียหายทะลวง 1 หน่วย ให้แก่ตัวละครนอกสนามทั้งหมดของฝ่ายศัตรู และจั่วการ์ด 3 ใบ"
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Soul Reaper's Fatal Round ",
-        "title": "Soul Reaper's Fatal Round ",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/6c4cdcf5ee6fdc385ef2076fc3969341_3830682801169186797.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>ท่าไม้ตาย</color>\nสร้าง <color=#80ffd7>ความเสียหายลม</color> 1 หน่วย สร้างความเสียหายทะลวง 1 หน่วย ให้แก่ตัวละครนอกสนามทั้งหมดของฝ่ายศัตรู และจั่วการ์ด 3 ใบ"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "กระสุนล่าเงา",
-        "title": "กระสุนล่าเงา",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/89e1a974980bc037b39af4eafe843b35_5968371295214188671.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "กระสุนล่าเงา\n<color=#ffffff>เมื่อเพิ่มเข้าสู่มือ:</color> เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <color=#ff9999>ธาตุไฟ</color> / <color=#80c0ff>น้ำ</color> / <color=#ffacff>ไฟฟ้า</color> / <color=#99ffff>น้ำแข็ง</color> จะเปลี่ยนการ์ดใบนี้ ให้เป็นธาตุที่สอดคล้องกัน\n<color=#ffffff>เมื่อใช้หรือทิ้งการ์ดใบนี้:</color> สร้าง <color=#80ffd7>ความเสียหายลม</color> 1 หน่วย แก่ตัวละครที่เข้าต่อสู้ของฝ่ายศัตรูก่อน จากนั้นจะสุ่มเพิ่ม กระสุนล่าเงา 1 ใบลงในเด็ค"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "ความเสียหายลม",
-        "title": "ความเสียหายลม",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/c97292d96456bfe4abeca16bfce801e4_7562544092074317512.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "จะเกิดปฏิกิริยาธาตุกับสถานะธาตุที่ติดอยู่ก่อน:\n[ <color=#80ffd7>ลม</color> + <color=#99ffff>น้ำแข็ง</color> ] <color=#ffffff>กระจาย (น้ำแข็ง):</color> สร้างความเสียหายน้ำแข็ง 1 หน่วย ให้กับตัวละครทั้งหมดของฝ่ายศัตรู (ยกเว้นเป้าหมาย)\n[ <color=#80ffd7>ลม</color> + <color=#80c0ff>น้ำ</color> ] <color=#ffffff>กระจาย (น้ำ):</color> สร้างความเสียหายน้ำ 1 หน่วย ให้กับตัวละครทั้งหมดของฝ่ายศัตรู (ยกเว้นเป้าหมาย)\n[ <color=#80ffd7>ลม</color> + <color=#ff9999>ไฟ</color> ] <color=#ffffff>กระจาย (ไฟ):</color> สร้างความเสียหายไฟ 1 หน่วย ให้กับตัวละครทั้งหมดของฝ่ายศัตรู (ยกเว้นเป้าหมาย)\n[ <color=#80ffd7>ลม</color> + <color=#ffacff>ไฟฟ้า</color> ] <color=#ffffff>กระจาย (ไฟฟ้า):</color> สร้างความเสียหายไฟฟ้า 1 หน่วย ให้กับตัวละครทั้งหมดของฝ่ายศัตรู (ยกเว้นเป้าหมาย)"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "รายละเอียดกติกา",
-        "title": "รายละเอียดกติกา",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/07bae546ac7c69ef6402170b283840c5_1910633460764931850.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffff>ความเสียหายกายภาพ</color>\nความเสียหายกายภาพ จะไม่ทำให้ติดสถานะธาตุ และก็ไม่ทำให้เกิดปฏิกิริยาธาตุด้วย\n<color=#ffffff>เทคนิค</color>\nเมื่อตัวละครที่เข้าต่อสู้ติดตั้งการ์ด \"เทคนิค\" จะสามารถใช้ \"เทคนิค\" ที่เกี่ยวข้องได้\nการใช้ \"เทคนิค\" เป็นการ \"ดำเนินการต่อสู้\" อย่างหนึ่ง เมื่อตัวละครไม่สามารถใช้สกิลได้เนื่องจากสถานะแช่แข็ง, กลายเป็นหิน, มึนงง ฯลฯ จะไม่สามารถใช้ \"เทคนิค\" ได้เช่นกัน\nเมื่อตัวละครใช้ \"เทคนิค\" จะไม่นับเป็นการใช้สกิล และไม่สามารถทำให้เกิดเอฟเฟกต์ \"หลังจากใช้สกิล\" หรือ \"หลังจากที่ตัวละครทำให้เกิดปฏิกิริยาธาตุ\" ได้; นอกจากนี้ ความเสียหายที่เกิดจากการใช้ \"เทคนิค\" ของตัวละคร จะไม่ถูกนับว่าเป็นความเสียหายที่ตัวละครสร้าง"
-          }
-        ],
-        "attributes": []
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "ท่าไม้ตาย",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/e79bc66534fb4d53682e8e36e5768a8b_3420730494851001742.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Soul Reaper's Fatal Round"
-          }
-        ]
-      },
-      {
-        "key": "ไอคอนอวตาร",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/0a99a2fdf91f9c0845b3baf0617d2631_2712323886922457097.png"
-      }
-    ],
-    "tcg": {
-      "headerImgs": [
-        {
-          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/c53f37f670e7d1c7d6e8d01937ad5e97_7834765079884553318.png"
-        },
-        {
-          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/07/02/144837601/5ae89241b0aa7d7412121c0a26ad03b8_8636618806985091619.gif"
-        },
-        {
-          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/07/02/144837601/c0c37858a716e827ac2fd53803fed55b_8906388616950708187.png"
-        }
-      ],
-      "hp": 10
-    },
-    "baseInfo": [
-      {
-        "key": "ชื่อ",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Chasca"
-          }
-        ]
-      },
-      {
-        "key": "ประเภทการ์ด",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "การ์ดตัวละคร"
-          }
-        ]
-      },
-      {
-        "key": "พลังชีวิต",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "10"
-          }
-        ]
-      },
-      {
-        "key": "พลังงาน",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "2"
-          }
-        ]
-      },
-      {
-        "key": "ประเภทธาตุ",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ธาตุลม"
-          }
-        ]
-      },
-      {
-        "key": "อาวุธ",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ธนู"
-          }
-        ]
-      },
-      {
-        "key": "ฝ่าย",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Natlan"
-          }
-        ]
-      },
-      {
-        "key": "การ์ดที่เกี่ยวข้อง",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 7825,
-            "name": "Bullet Trick",
-            "desc": "<p>\"กระหน่ำ... ยิง!\"</p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/144837601/62a883ecbcfddbd2982048454b86e325_273969009316175447.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "หาได้จาก",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ได้รับหลังจากเชิญ Chasca ทำการดูเอลใน Cat's Tail และเอาชนะในระดับความยากฉันมิตร"
-          }
-        ]
-      },
-      {
-        "key": "ตัวละคร",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 7080,
-            "name": "Chasca",
-            "desc": "<p>\"ผู้ไกล่เกลี่ย\" แห่ง Tlalocan ผู้ยุติความขัดแย้งทั้งปวง</p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/19/10257458/544e774c35338c71949e4bf9a4483c4f_2701672252462243534.png"
-          }
-        ],
-        "isMaterial": true
       }
     ]
   }
