@@ -7,41 +7,450 @@
   "menuName": "Eğitim",
   "version": 1717479005,
   "components": {
-    "baseInfo": [
+    "galleryCharacter": [
       {
-        "key": "İsim",
-        "value": [
+        "key": "Elemental Patlama için gereken Enerji\n",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/02/88486163/6f620df22e14d8a20c0453c0f522029f_9035698317237230695.png",
+        "imgDesc": [
           {
             "type": "RichText",
-            "text": "Enerji"
+            "text": "Karakterinizin Elemental Patlama için ihtiyaç duyduğu sabit Enerji miktarını buradan kontrol edebilirsiniz."
           }
         ]
       },
       {
-        "key": "Tür",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Elemental Patlama için gereken kaynak"
-          }
-        ]
+        "key": "Element Patlamasını yeniden yükleme",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/02/88486163/e63d94f1592121691134844646e7212f_1610261702643432342.png"
       },
       {
-        "key": "Alakalı Girdi",
-        "value": [
+        "key": "Düz vuruş ile Enerji yenileme",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/02/88486163/2969ba0d0e8b11675aa0f828b6720f9a_7628592148575977250.png"
+      },
+      {
+        "key": "Enerji Kaybı",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/02/88486163/a633b685710246b6265f30dc0bb354ae_5597306106888710718.png",
+        "imgDesc": [
           {
-            "type": "CustomEntry",
-            "epId": 5648,
-            "name": "Enerji Yüklemesi",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.45)\">Enerji Yüklemesi (%EY), bir karakterin aynı miktarda parçacık alarak ne kadar Enerji kazandığını belirleyen yüzdelik bir istatistiktir.</span></p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/12/145542732/1ef525b101a31611b9fe2cc1b0a59aa8_6353943231834809433.png",
-            "amount": 1
+            "type": "RichText",
+            "text": "Bazı düşmanlar karakterlerinizin sahip olduğu Enerjiyi sömürebilir."
           }
-        ],
-        "isMaterial": true
+        ]
       }
     ],
     "customize": [
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Küreler ve Parçacıklar",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Elemental Enerji elde etmenin iki yolu vardır: parçacıklar ve küreler yoluyla veya doğrudan enerji olarak. Parçacıklar 1 puanlık bir Temel Enerji üretir; Küreler ise 3 puanlık bir temel enerji. Parçacıklar 7 elementten birine ait olabilir veya açık renkte olabilir. İlk kategoride, bir element parçacığı bir karakterle aynı elementten ya da farklı bir elementten olabilir. Ayrıca, parçacıklar yakalandığında karakter sahada ya da saha dışında olabilir. Bu farklı kombinasyonlar, aşağıdaki tabloda gösterilen duruma göre değişen enerji kazanımıyla sonuçlanır.\nÖrnek olarak: Parçacık/küre ve karakterin elementi aynıysa, kazanılan enerji miktarı %300'e çıkar; net olan bu değeri %200'e çıkarır; ve elementleri farklıysa, bu değer %100 taban çizgisinde kalır. Eğer karakter sahadaysa, %100'ün tamamını alır; değilse, sadece %60'ını (veya partide sırasıyla sadece 3 veya 2 üye varsa %70 veya %80'ini) alır."
+      },
+      {
+        "type": "RichText",
+        "text": "Parçacık / Küre\nFarklı bir elementle\nParçacık / Küre\nSaf\nParçacık / Küre\nAynı elementle\nAlandaki karakter\n1 puan / 3 puan\n2 puan / 6 puan\n3 puan / 9 puan\nAlan dışındaki karakter\n0.6 puan / 1.8 puan\n1.2 puan / 3.6 puan\n1.8 puan / 5.4 puan",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Bu şekilde, net bir parçacık sahadaki karaktere 2 puan Element Enerjisi kazandırıyorsa, %200 Enerji Şarjı ile 4 puan (2 x %100 x %200); %150 Enerji şarjı ile 3 puan (2 x %100 x %150) kazandıracaktır.\nParçacık üretmenin birçok yolu vardır: Element Becerileri, Favonius silah serisi pasifi, Elektrik Element Rezonansı: Yüksek Gerilim ve Düşman'lardan elde edilir."
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Elemental Becerileri",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Karakter\nElement\nOluşturulan Parçacıklar"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Favonius Silahları",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Favonius silah serisi, koşullar karşılandığında 3 net parçacık üretir: kritik bir vuruş yaparken silah sahibi sahada olmalıdır (her ikisi de silah geliştirmesine bağlı olarak ek bir olasılık ve Dahili Bekleme Süresi ile).\n<color=#ffd780>Alakalı Girdiler:</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2020,
+        "name": "Favonius Kanunları",
+        "desc": "<p>Favonius Şövalyeleri alimlerine ait gizli bir kitap. Elementlerin ve maddenin mantığını ve gücünü açıklar. </p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风秘典.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2018,
+        "name": "Favonius Büyük Kılıcı",
+        "desc": "<p>Favonius Şövalyelerinin sağlam merasim kılıcı. Elementlerin gücünü kolaylıkla kullanmayı sağlar ve son derece yıkıcıdır.</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风大剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2021,
+        "name": "Favonius Mızrağı",
+        "desc": "<p>Genelde Favonius Şövalyeleri tarafından kullanılan bir mızrak. Düz sapının ucundaki bıçak hafif bir rüzgar gibi salınır.</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风长枪.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2019,
+        "name": "Favonius Savaş Yayı",
+        "desc": "<p>Favonius Okçuları tarafından kullanılan bir yay. Bu silahın hakkını sadece en usta okçular verebilir.</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风猎弓.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2017,
+        "name": "Favonius Kılıcı",
+        "desc": "<p>Favonius Şövalyelerinin beylik silahı. Bu kıvrak ve keskin silahı kuşandığında elementlerin gücünü kullanmak çocuk oyuncağı! </p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Elektrik Elementi Rezonansı: Yüksek Gerilim",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Elektrik ile ilgili bir Element Reaksiyonunun tetiklenmesi, 5 saniyelik Bekleme Süresine sahip bir Elektrik parçacığı üretir.\n<color=#ffd780>Alakalı Girdiler:</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5559,
+        "name": "Element Rezonansı",
+        "desc": "<p>Element Rezonansı, grupta bulunan elementlere karşılık gelen ek özellikler sağlar.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/07/147527911/bfb523e3070ef60412f300e539ace643_5900561344794038630.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Düşmanlardan Düşenler",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Tüm düşmanlar yenildiğinde bir parçacık/ küre düşürür ve genellikle düşman elementine göre elemental bir parçacık düşürür. Bazı düşmanlar sabit miktarda HP kaybına ulaştıklarında parçacık düşürür. Bodurlop - Maksimum HP'lerinin %40'ını kaybettiklerinde elemental bir parçacık düşürür. Bunun yerine, daha küçük mantarlar yenildikten sonra sonuncusu dışında başka bir parçacık düşürmezler.\nHaftalık düşmanlar hariç, bu mekanizma her düşman için sabittir. Bazı düşmanlar Maksimum HP'lerinin %25, %50 ve %75'ine ulaştıklarında enerji parçacıkları düşürür, her seferinde bir parçacık (Hiçlik Büyücüleri ve Kadim Yapılar gibi), diğerleri bir küre (Harabe Muhafızları gibi), diğerleri üç küre (Dağ Reisi gibi)."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "\"Doğrudan\" Enerji",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Doğrudan kazanılan herhangi bir enerji biçimi, alıcı karakterin Enerji Yenileme özelliğinden etkilenmeyecektir. Bazı durumlarda, geri yüklenen değer doğrudan bir karakterin EY% özelliğine bağlı olabilir, ancak EY% özelliği yalnızca enerji element küreleri/parçacıkları olarak kazanıldığında geçerlidir."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Düz Vuruşlar",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Bir düşmana isabet eden her Normal Saldırı ve Yüklü Saldırı, 1 Enerji puanı üretme olasılığına sahiptir ve başarısız olursa, bu olasılık bir sonraki isabet için daha yüksek olur. Üretildiğinde, olasılık temel değerine geri döner.\nSilah Türü\nTemel Olasılık\nHata Başına Olasılık Artışı\nYay"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>0%</color>\n<color=#ffffff73>+5%</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Katalizör"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>0%</color>\n<color=#ffffff73>+10%</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Çift Elli Kılıç"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>0%</color>\n<color=#ffffff73>+10%</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Mızrak"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>0%</color>\n<color=#ffffff73>+4%</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Kılıç"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>10%</color>\n<color=#ffffff73>+5%</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Enerji Oluşumu Etkileri",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Doğrudan Enerji üretebilen bazı yetenekler (yetenekler ve takımyıldızlar) vardır. Örneğin, Elektro Gezgin Element Becerisi ve Patlaması ve bunların 4. ve 6. Takımyıldızları.\nBazı yadigar setlerinin bonusları da aynı etkiye sahiptir:"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2080,
+        "name": "Sürgün",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/The Exile/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2068,
+        "name": "Alim",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Scholar/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Bunlara ek olarak bazı silahlar da bu Enerji Oluşumu Etkilerine sahipler:"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1952,
+        "name": "Amenoma Kageuchi",
+        "desc": "<p>Ünlü bir samuray için dövülmüş özel bir kılıç. Bu samuray, inanılmaz çeviklikleriyle bilinen tengu savaşçılarını bile yere serebiliyormuş.</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天目影打刀.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4941,
+        "name": "Turnam Selam Götür",
+        "desc": "Saf yeşimden yapılmış ve etrafında Adeptus enerjisinden kadim esintiler bulunan bir yelpaze.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/01/30/7d49f94bfb8725b8c04332b11eb7df60_6820630625383555046.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5151,
+        "name": "Çöl Alimleriyle Sohbet",
+        "desc": "Simyanın şanını temsil eden bir asa. İtibarına yakışacak şekilde özel bir alaşımdan yapılmıştır. Son derece sağlam ve ağır olduğundan bir silah olarak kullanıldığında epey can yakar.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/13/cc3e6b2a6e31846dff52115554a9bedd_7197352110243179180.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1932,
+        "name": "Ebedi Mehtap",
+        "desc": "A string of lovely jasper from the deep sea. It shines with a pure radiance like that of the moon, and just as ever-distant.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/不灭月华.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3692,
+        "name": "Yeşimlerin Mağrur Işıltısı",
+        "desc": "<p>Gökyüzünün ışıltısı ve berrak suları yansıtan, yeşim taşından oyulma bir tören silahı.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/30/25073864/40bdf70b0595c028192dda3409b48c51_7867210322032862430.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1987,
+        "name": "Katsuragikiri Nagamasa",
+        "desc": "A blade that was once made in Tatarasuna. Heavy and tough.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/桂木斩长正.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1949,
+        "name": "Kitain Haç Mızrağı",
+        "desc": "A special lance that was once used by a famed warrior who guarded the Tatarigami on Yashiori Island.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/喜多院十文字.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2029,
+        "name": "Prototip: Kehribar",
+        "desc": "<p>Kara Kaya Demirci Ocağında özenle saklanan mat kaplamalı bir katalizör. Gökyüzündeki ışığın parıltısına sahip. </p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/试作金珀.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3986,
+        "name": "Meşru Mükafat",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.45)\">Ucunda taze bir kan lekesi olan keskin bir mızrak.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/18/145542732/2ed1c5a0a6ddabd62558d59dd1be64b8_20312117696531062.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4334,
+        "name": "Rıhtım",
+        "desc": "<p>Bugünlerde nadir bulunan, kullanışlı bir kesici alet. Kullandıkça körelen bıçakları değiştirebilirsin.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/27/138687708/eac5d6d4056f7b28c876e64866825e46_518257517736633870.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4339,
+        "name": "Sonsuz Akış Kitabı",
+        "desc": "<p>Su altındaki bir manastırda nesilden nesile aktarılan bir rehber. Bugün ise varlığından kimse haberdar değil.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/29/145542732/5828ed7b48c39e5d15aaf6f2495ddabc_2893519165771372875.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Enerji Sömüren Etkiler",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Element Patlamasını etkinleştirmek veya mağlup olmak, Enerjinin tüketildiği veya kaybedildiği tek yol değildir. Bu yeteneğe sahip bazı silahlar, eserler ve düşmanlar vardır; ve hatta bazı etki alanları veya meydan okumalar da buna sahiptir."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2098,
+        "name": "Shimenawa'nın Hatırası",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1987,
+        "name": "Katsuragikiri Nagamasa",
+        "desc": "A blade that was once made in Tatarasuna. Heavy and tough.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/桂木斩长正.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1949,
+        "name": "Kitain Haç Mızrağı",
+        "desc": "A special lance that was once used by a famed warrior who guarded the Tatarigami on Yashiori Island.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/喜多院十文字.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2182,
+        "name": "Hiçlik Vaizi: Mor Şimşek",
+        "desc": "A monster who serves the Abyss Order and commands lightning while singing the praises of the darkness.<br/>These are the evangelists and the scholars of the Abyss. Their violent lightning strikes the hearts of unbelievers with dark wisdom, warped by the shadowy depths of an eternal night, its violet glow proclaiming the existence of a great power that corrodes human intellect.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Abyss Lector: Violet Lightning_icon.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2178,
+        "name": "Yıldırımyutan Su Ejderi Yavrusu",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/01/1023623/270dafc1f297c792e6ea17acf1e749d2_5978947156349638548.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2174,
+        "name": "Ezeli Su Ejderi",
+        "desc": "A vishap that dwells deep beneath the oceans.<br/>They were once the dominant race in the depths — and indeed, dragons were the overlords of the whole world in an even earlier age. But their former Seven Sovereigns were defeated by a power from the heavens, withering one by one.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Primordial Bathysmal Vishap_icon.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2177,
+        "name": "Ezeli Su Ejderi Yavrusu",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/01/1023623/a031c6366098df2f5b0b1c5eb30cee8e_8834810627068905487.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2179,
+        "name": "Buzkıran Su Ejderi Yavrusu",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/01/1023623/40d4d20a77c706d64e1b2bfead43dc3a_3133870338330301310.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3443,
+        "name": "Su Ejderi Sürüsü",
+        "desc": "<p>Güçlü bir Su Ejderi grubu.</p><p>Enkanomiya halkı tarafından özel olarak üretilip seçildikleri için olağanüstü güçlüler. Tabii ki hiçbir Ejder bunun için minnettarlık duyacak değil.</p><p>Bu sürünün en kuvvetli üyeleri farklı elementleri kullanabiliyor. </p><p>Bunu nefretlerinin bir simgesi olarak kullanıyorlar.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/05/35428890/b47c21200d36f217cab2e527e85d2896_4738875560654045342.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2975,
+        "name": "Shouki no Kami",
+        "desc": "<p>Orman mağazasındaki gizli atölyenin girişi güçlü bir vuruşla ortaya çıktı. İçindeki \"üstünlük\" tohumları filizleniyor ve toprağı yarıp çıkmak üzereler...</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/03/35428890/86791657203a69e453d8e217414b3f9e_6244827810099144009.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2210,
+        "name": "Magatsu Mitake Narukami no Mikoto",
+        "desc": "This is the form that the puppet that inherited the Raiden Shogun's authority takes when she is opposing those who threaten Eternity.<br/>As the Raiden Shogun's assistant in pursuing eternity, she has never doubted, never felt fear, never given anything less than her best, never been disturbed by idle thoughts.<br/>She once heard about how Ei had shouldered a similar duty when Makoto was also present, suffering much agonizing loss in the process.<br/>When the two shadows overlapped once more, however, she could only see the countless fine fractures in what should have been \"her\" eternal will. Since fate is destined for cyclicality, she must fulfill her promise and declare war on \"her.\"<br/><br/><i>Mine is the most supreme and noble form. Power over the realm has been vested within me, and I am the essence of all that is the \"Raiden Shogun.\"</i><br/><i>\"Naturally, I have also inherited the pain of Ei's countless losses and her will to attain Eternity.</i><br/><i>\"Resolve, valor, love, hate... They will all twist in the river of time.</i><br/><i>\"But the 'rules' will never change.\"</i>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Magatsu Mitake Narukami no Mikoto_icon.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
       {
         "type": "RichText",
         "text": "Enerji Maliyeti",
@@ -836,449 +1245,40 @@
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yae Miko_icon.png",
         "displayStyle": "card",
         "menuId": 2
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Küreler ve Parçacıklar",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Elemental Enerji elde etmenin iki yolu vardır: parçacıklar ve küreler yoluyla veya doğrudan enerji olarak. Parçacıklar 1 puanlık bir Temel Enerji üretir; Küreler ise 3 puanlık bir temel enerji. Parçacıklar 7 elementten birine ait olabilir veya açık renkte olabilir. İlk kategoride, bir element parçacığı bir karakterle aynı elementten ya da farklı bir elementten olabilir. Ayrıca, parçacıklar yakalandığında karakter sahada ya da saha dışında olabilir. Bu farklı kombinasyonlar, aşağıdaki tabloda gösterilen duruma göre değişen enerji kazanımıyla sonuçlanır.\nÖrnek olarak: Parçacık/küre ve karakterin elementi aynıysa, kazanılan enerji miktarı %300'e çıkar; net olan bu değeri %200'e çıkarır; ve elementleri farklıysa, bu değer %100 taban çizgisinde kalır. Eğer karakter sahadaysa, %100'ün tamamını alır; değilse, sadece %60'ını (veya partide sırasıyla sadece 3 veya 2 üye varsa %70 veya %80'ini) alır."
-      },
-      {
-        "type": "RichText",
-        "text": "Parçacık / Küre\nFarklı bir elementle\nParçacık / Küre\nSaf\nParçacık / Küre\nAynı elementle\nAlandaki karakter\n1 puan / 3 puan\n2 puan / 6 puan\n3 puan / 9 puan\nAlan dışındaki karakter\n0.6 puan / 1.8 puan\n1.2 puan / 3.6 puan\n1.8 puan / 5.4 puan",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Bu şekilde, net bir parçacık sahadaki karaktere 2 puan Element Enerjisi kazandırıyorsa, %200 Enerji Şarjı ile 4 puan (2 x %100 x %200); %150 Enerji şarjı ile 3 puan (2 x %100 x %150) kazandıracaktır.\nParçacık üretmenin birçok yolu vardır: Element Becerileri, Favonius silah serisi pasifi, Elektrik Element Rezonansı: Yüksek Gerilim ve Düşman'lardan elde edilir."
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "Elemental Becerileri",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Karakter\nElement\nOluşturulan Parçacıklar"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "Favonius Silahları",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Favonius silah serisi, koşullar karşılandığında 3 net parçacık üretir: kritik bir vuruş yaparken silah sahibi sahada olmalıdır (her ikisi de silah geliştirmesine bağlı olarak ek bir olasılık ve Dahili Bekleme Süresi ile).\n<color=#ffd780>Alakalı Girdiler:</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2020,
-        "name": "Favonius Kanunları",
-        "desc": "<p>Favonius Şövalyeleri alimlerine ait gizli bir kitap. Elementlerin ve maddenin mantığını ve gücünü açıklar. </p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风秘典.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2018,
-        "name": "Favonius Büyük Kılıcı",
-        "desc": "<p>Favonius Şövalyelerinin sağlam merasim kılıcı. Elementlerin gücünü kolaylıkla kullanmayı sağlar ve son derece yıkıcıdır.</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风大剑.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2021,
-        "name": "Favonius Mızrağı",
-        "desc": "<p>Genelde Favonius Şövalyeleri tarafından kullanılan bir mızrak. Düz sapının ucundaki bıçak hafif bir rüzgar gibi salınır.</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风长枪.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2019,
-        "name": "Favonius Savaş Yayı",
-        "desc": "<p>Favonius Okçuları tarafından kullanılan bir yay. Bu silahın hakkını sadece en usta okçular verebilir.</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风猎弓.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2017,
-        "name": "Favonius Kılıcı",
-        "desc": "<p>Favonius Şövalyelerinin beylik silahı. Bu kıvrak ve keskin silahı kuşandığında elementlerin gücünü kullanmak çocuk oyuncağı! </p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风剑.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "Elektrik Elementi Rezonansı: Yüksek Gerilim",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Elektrik ile ilgili bir Element Reaksiyonunun tetiklenmesi, 5 saniyelik Bekleme Süresine sahip bir Elektrik parçacığı üretir.\n<color=#ffd780>Alakalı Girdiler:</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 5559,
-        "name": "Element Rezonansı",
-        "desc": "<p>Element Rezonansı, grupta bulunan elementlere karşılık gelen ek özellikler sağlar.</p>",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/07/147527911/bfb523e3070ef60412f300e539ace643_5900561344794038630.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "Düşmanlardan Düşenler",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Tüm düşmanlar yenildiğinde bir parçacık/ küre düşürür ve genellikle düşman elementine göre elemental bir parçacık düşürür. Bazı düşmanlar sabit miktarda HP kaybına ulaştıklarında parçacık düşürür. Bodurlop - Maksimum HP'lerinin %40'ını kaybettiklerinde elemental bir parçacık düşürür. Bunun yerine, daha küçük mantarlar yenildikten sonra sonuncusu dışında başka bir parçacık düşürmezler.\nHaftalık düşmanlar hariç, bu mekanizma her düşman için sabittir. Bazı düşmanlar Maksimum HP'lerinin %25, %50 ve %75'ine ulaştıklarında enerji parçacıkları düşürür, her seferinde bir parçacık (Hiçlik Büyücüleri ve Kadim Yapılar gibi), diğerleri bir küre (Harabe Muhafızları gibi), diğerleri üç küre (Dağ Reisi gibi)."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "\"Doğrudan\" Enerji",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Doğrudan kazanılan herhangi bir enerji biçimi, alıcı karakterin Enerji Yenileme özelliğinden etkilenmeyecektir. Bazı durumlarda, geri yüklenen değer doğrudan bir karakterin EY% özelliğine bağlı olabilir, ancak EY% özelliği yalnızca enerji element küreleri/parçacıkları olarak kazanıldığında geçerlidir."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Düz Vuruşlar",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Bir düşmana isabet eden her Normal Saldırı ve Yüklü Saldırı, 1 Enerji puanı üretme olasılığına sahiptir ve başarısız olursa, bu olasılık bir sonraki isabet için daha yüksek olur. Üretildiğinde, olasılık temel değerine geri döner.\nSilah Türü\nTemel Olasılık\nHata Başına Olasılık Artışı\nYay"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>0%</color>\n<color=#ffffff73>+5%</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Katalizör"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>0%</color>\n<color=#ffffff73>+10%</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Çift Elli Kılıç"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>0%</color>\n<color=#ffffff73>+10%</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Mızrak"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>0%</color>\n<color=#ffffff73>+4%</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Kılıç"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>10%</color>\n<color=#ffffff73>+5%</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "Enerji Oluşumu Etkileri",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Doğrudan Enerji üretebilen bazı yetenekler (yetenekler ve takımyıldızlar) vardır. Örneğin, Elektro Gezgin Element Becerisi ve Patlaması ve bunların 4. ve 6. Takımyıldızları.\nBazı yadigar setlerinin bonusları da aynı etkiye sahiptir:"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2080,
-        "name": "Sürgün",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/The Exile/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2068,
-        "name": "Alim",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Scholar/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "Bunlara ek olarak bazı silahlar da bu Enerji Oluşumu Etkilerine sahipler:"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1952,
-        "name": "Amenoma Kageuchi",
-        "desc": "<p>Ünlü bir samuray için dövülmüş özel bir kılıç. Bu samuray, inanılmaz çeviklikleriyle bilinen tengu savaşçılarını bile yere serebiliyormuş.</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天目影打刀.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 4941,
-        "name": "Turnam Selam Götür",
-        "desc": "Saf yeşimden yapılmış ve etrafında Adeptus enerjisinden kadim esintiler bulunan bir yelpaze.",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/01/30/7d49f94bfb8725b8c04332b11eb7df60_6820630625383555046.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 5151,
-        "name": "Çöl Alimleriyle Sohbet",
-        "desc": "Simyanın şanını temsil eden bir asa. İtibarına yakışacak şekilde özel bir alaşımdan yapılmıştır. Son derece sağlam ve ağır olduğundan bir silah olarak kullanıldığında epey can yakar.",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/13/cc3e6b2a6e31846dff52115554a9bedd_7197352110243179180.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1932,
-        "name": "Ebedi Mehtap",
-        "desc": "A string of lovely jasper from the deep sea. It shines with a pure radiance like that of the moon, and just as ever-distant.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/不灭月华.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3692,
-        "name": "Yeşimlerin Mağrur Işıltısı",
-        "desc": "<p>Gökyüzünün ışıltısı ve berrak suları yansıtan, yeşim taşından oyulma bir tören silahı.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/30/25073864/40bdf70b0595c028192dda3409b48c51_7867210322032862430.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1987,
-        "name": "Katsuragikiri Nagamasa",
-        "desc": "A blade that was once made in Tatarasuna. Heavy and tough.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/桂木斩长正.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1949,
-        "name": "Kitain Haç Mızrağı",
-        "desc": "A special lance that was once used by a famed warrior who guarded the Tatarigami on Yashiori Island.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/喜多院十文字.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2029,
-        "name": "Prototip: Kehribar",
-        "desc": "<p>Kara Kaya Demirci Ocağında özenle saklanan mat kaplamalı bir katalizör. Gökyüzündeki ışığın parıltısına sahip. </p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/试作金珀.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3986,
-        "name": "Meşru Mükafat",
-        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.45)\">Ucunda taze bir kan lekesi olan keskin bir mızrak.</span></p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/18/145542732/2ed1c5a0a6ddabd62558d59dd1be64b8_20312117696531062.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 4334,
-        "name": "Rıhtım",
-        "desc": "<p>Bugünlerde nadir bulunan, kullanışlı bir kesici alet. Kullandıkça körelen bıçakları değiştirebilirsin.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/27/138687708/eac5d6d4056f7b28c876e64866825e46_518257517736633870.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 4339,
-        "name": "Sonsuz Akış Kitabı",
-        "desc": "<p>Su altındaki bir manastırda nesilden nesile aktarılan bir rehber. Bugün ise varlığından kimse haberdar değil.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/29/145542732/5828ed7b48c39e5d15aaf6f2495ddabc_2893519165771372875.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "Enerji Sömüren Etkiler",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Element Patlamasını etkinleştirmek veya mağlup olmak, Enerjinin tüketildiği veya kaybedildiği tek yol değildir. Bu yeteneğe sahip bazı silahlar, eserler ve düşmanlar vardır; ve hatta bazı etki alanları veya meydan okumalar da buna sahiptir."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2098,
-        "name": "Shimenawa'nın Hatırası",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1987,
-        "name": "Katsuragikiri Nagamasa",
-        "desc": "A blade that was once made in Tatarasuna. Heavy and tough.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/桂木斩长正.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1949,
-        "name": "Kitain Haç Mızrağı",
-        "desc": "A special lance that was once used by a famed warrior who guarded the Tatarigami on Yashiori Island.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/喜多院十文字.png",
-        "displayStyle": "card",
-        "menuId": 4
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2182,
-        "name": "Hiçlik Vaizi: Mor Şimşek",
-        "desc": "A monster who serves the Abyss Order and commands lightning while singing the praises of the darkness.<br/>These are the evangelists and the scholars of the Abyss. Their violent lightning strikes the hearts of unbelievers with dark wisdom, warped by the shadowy depths of an eternal night, its violet glow proclaiming the existence of a great power that corrodes human intellect.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Abyss Lector: Violet Lightning_icon.png",
-        "displayStyle": "card",
-        "menuId": 7
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2178,
-        "name": "Yıldırımyutan Su Ejderi Yavrusu",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/01/1023623/270dafc1f297c792e6ea17acf1e749d2_5978947156349638548.png",
-        "displayStyle": "card",
-        "menuId": 7
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2174,
-        "name": "Ezeli Su Ejderi",
-        "desc": "A vishap that dwells deep beneath the oceans.<br/>They were once the dominant race in the depths — and indeed, dragons were the overlords of the whole world in an even earlier age. But their former Seven Sovereigns were defeated by a power from the heavens, withering one by one.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Primordial Bathysmal Vishap_icon.png",
-        "displayStyle": "card",
-        "menuId": 7
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2177,
-        "name": "Ezeli Su Ejderi Yavrusu",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/01/1023623/a031c6366098df2f5b0b1c5eb30cee8e_8834810627068905487.png",
-        "displayStyle": "card",
-        "menuId": 7
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2179,
-        "name": "Buzkıran Su Ejderi Yavrusu",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/01/1023623/40d4d20a77c706d64e1b2bfead43dc3a_3133870338330301310.png",
-        "displayStyle": "card",
-        "menuId": 7
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3443,
-        "name": "Su Ejderi Sürüsü",
-        "desc": "<p>Güçlü bir Su Ejderi grubu.</p><p>Enkanomiya halkı tarafından özel olarak üretilip seçildikleri için olağanüstü güçlüler. Tabii ki hiçbir Ejder bunun için minnettarlık duyacak değil.</p><p>Bu sürünün en kuvvetli üyeleri farklı elementleri kullanabiliyor. </p><p>Bunu nefretlerinin bir simgesi olarak kullanıyorlar.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/05/35428890/b47c21200d36f217cab2e527e85d2896_4738875560654045342.png",
-        "displayStyle": "card",
-        "menuId": 7
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2975,
-        "name": "Shouki no Kami",
-        "desc": "<p>Orman mağazasındaki gizli atölyenin girişi güçlü bir vuruşla ortaya çıktı. İçindeki \"üstünlük\" tohumları filizleniyor ve toprağı yarıp çıkmak üzereler...</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/03/35428890/86791657203a69e453d8e217414b3f9e_6244827810099144009.png",
-        "displayStyle": "card",
-        "menuId": 7
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2210,
-        "name": "Magatsu Mitake Narukami no Mikoto",
-        "desc": "This is the form that the puppet that inherited the Raiden Shogun's authority takes when she is opposing those who threaten Eternity.<br/>As the Raiden Shogun's assistant in pursuing eternity, she has never doubted, never felt fear, never given anything less than her best, never been disturbed by idle thoughts.<br/>She once heard about how Ei had shouldered a similar duty when Makoto was also present, suffering much agonizing loss in the process.<br/>When the two shadows overlapped once more, however, she could only see the countless fine fractures in what should have been \"her\" eternal will. Since fate is destined for cyclicality, she must fulfill her promise and declare war on \"her.\"<br/><br/><i>Mine is the most supreme and noble form. Power over the realm has been vested within me, and I am the essence of all that is the \"Raiden Shogun.\"</i><br/><i>\"Naturally, I have also inherited the pain of Ei's countless losses and her will to attain Eternity.</i><br/><i>\"Resolve, valor, love, hate... They will all twist in the river of time.</i><br/><i>\"But the 'rules' will never change.\"</i>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Magatsu Mitake Narukami no Mikoto_icon.png",
-        "displayStyle": "card",
-        "menuId": 7
       }
     ],
-    "galleryCharacter": [
+    "baseInfo": [
       {
-        "key": "Elemental Patlama için gereken Enerji\n",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/02/88486163/6f620df22e14d8a20c0453c0f522029f_9035698317237230695.png",
-        "imgDesc": [
+        "key": "İsim",
+        "value": [
           {
             "type": "RichText",
-            "text": "Karakterinizin Elemental Patlama için ihtiyaç duyduğu sabit Enerji miktarını buradan kontrol edebilirsiniz."
+            "text": "Enerji"
           }
         ]
       },
       {
-        "key": "Element Patlamasını yeniden yükleme",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/02/88486163/e63d94f1592121691134844646e7212f_1610261702643432342.png"
-      },
-      {
-        "key": "Düz vuruş ile Enerji yenileme",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/02/88486163/2969ba0d0e8b11675aa0f828b6720f9a_7628592148575977250.png"
-      },
-      {
-        "key": "Enerji Kaybı",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/02/88486163/a633b685710246b6265f30dc0bb354ae_5597306106888710718.png",
-        "imgDesc": [
+        "key": "Tür",
+        "value": [
           {
             "type": "RichText",
-            "text": "Bazı düşmanlar karakterlerinizin sahip olduğu Enerjiyi sömürebilir."
+            "text": "Elemental Patlama için gereken kaynak"
           }
         ]
+      },
+      {
+        "key": "Alakalı Girdi",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5648,
+            "name": "Enerji Yüklemesi",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.45)\">Enerji Yüklemesi (%EY), bir karakterin aynı miktarda parçacık alarak ne kadar Enerji kazandığını belirleyen yüzdelik bir istatistiktir.</span></p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/12/145542732/1ef525b101a31611b9fe2cc1b0a59aa8_6353943231834809433.png",
+            "amount": 1
+          }
+        ],
+        "isMaterial": true
       }
     ]
   }
