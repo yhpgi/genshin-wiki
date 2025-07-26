@@ -11,17 +11,51 @@
   "menuName": "Artefactos",
   "version": 1678894068,
   "components": {
+    "reliquarySetEffect": {
+      "twoSetEffect": "ATQ +18%.",
+      "fourSetEffect": "Al usar la Habilidad Definitiva, obtienes el efecto de “destello emergente” durante 16 s, el cual aumenta el ATQ en un 8% y, además, hace que cada vez que el personaje pierda Vida, su ATQ aumente en un 10% adicional. Este efecto solo puede aumentar el ATQ un máximo de 4 veces de esta manera y activarse una vez cada 0.8 s. Los efectos de destello emergente se disiparán si el personaje es retirado de combate. Si el personaje vuelve a usar la Habilidad Definitiva mientras dicho efecto está activo, el destello emergente original también se disipará."
+    },
+    "customize": [
+      {
+        "type": "RichText",
+        "text": "Personaje\nRazón"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 51,
+        "name": "Xiao",
+        "desc": "Un Yaksha y Adeptus que protege Liyue. También llamado el “Gran Cazador de Demonios” o “Guardián Yaksha”.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xiao_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "El conjunto de 4 piezas va excelente con su kit, ya que se activa al activar la habilidad definita y al perder vida. La jugabilidad de Xiao se basa en atacar con su habilidad definita, la cual le quita vida, por lo que aprovecha el set al completo."
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "Nombre",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Deceso del Cinabrio"
+          }
+        ]
+      }
+    ],
     "artifactList": {
-      "circlet_of_logos": {
-        "title": "Máscara Atronadora",
-        "position": "Tiara de Logos",
+      "plume_of_death": {
+        "title": "Pluma del Resplandor",
+        "position": "Pluma de la Muerte",
         "desc": [
           {
             "type": "RichText",
-            "text": "Una máscara que, se dice, los habitantes de las montañas crearon para un Yaksha. Pese a su sencillo aspecto, su exterior es realmente lustroso."
+            "text": "Una pluma de brillo tenue en la que se concentran muchos recuerdos."
           }
         ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Vermillion Hereafter/circlet_of_logos_icon.png"
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Vermillion Hereafter/plume_of_death_icon.png"
       },
       "flower_of_life": {
         "title": "Flor de la Vitalidad",
@@ -45,17 +79,6 @@
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Vermillion Hereafter/goblet_of_eonothem_icon.png"
       },
-      "plume_of_death": {
-        "title": "Pluma del Resplandor",
-        "position": "Pluma de la Muerte",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Una pluma de brillo tenue en la que se concentran muchos recuerdos."
-          }
-        ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Vermillion Hereafter/plume_of_death_icon.png"
-      },
       "sands_of_eon": {
         "title": "Reliquia Solar",
         "position": "Arenas del Eón",
@@ -66,27 +89,19 @@
           }
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Vermillion Hereafter/sands_of_eon_icon.png"
+      },
+      "circlet_of_logos": {
+        "title": "Máscara Atronadora",
+        "position": "Tiara de Logos",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Una máscara que, se dice, los habitantes de las montañas crearon para un Yaksha. Pese a su sencillo aspecto, su exterior es realmente lustroso."
+          }
+        ],
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Vermillion Hereafter/circlet_of_logos_icon.png"
       }
     },
-    "customize": [
-      {
-        "type": "RichText",
-        "text": "Personaje\nRazón"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 51,
-        "name": "Xiao",
-        "desc": "Un Yaksha y Adeptus que protege Liyue. También llamado el “Gran Cazador de Demonios” o “Guardián Yaksha”.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xiao_icon.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "El conjunto de 4 piezas va excelente con su kit, ya que se activa al activar la habilidad definita y al perder vida. La jugabilidad de Xiao se basa en atacar con su habilidad definita, la cual le quita vida, por lo que aprovecha el set al completo."
-      }
-    ],
     "story": [
       {
         "title": "Flor de la Vitalidad",
@@ -130,21 +145,6 @@
           {
             "type": "RichText",
             "text": "En la época en la que Rex Lapis aún era joven, el sol era un carruaje que viajaba por el mundo.\nEntonces, cuando las tres hermanas del cielo nocturno perecieron en la gran catástrofe, el carruaje del sol cayó en un profundo valle.\nSegún los habitantes de las montañas, por fortuna, el sol se recuperó y volvió a iluminar la oscura bóveda celeste.\nAunque las riendas solares volvieron al cielo infinito, un fragmento de ellas cayó para siempre.\nCuando los habitantes de las montañas se trasladaron a la gran ciudad portuaria, molieron el fragmento hasta convertirlo en arena cristalizada y se lo vendieron a una persona que supo reconocer su valor.\n“Oh, no me hagan reír. Esos son rumores populares sin ningún fundamento. ¿Quién se los va a creer?\nLos comerciantes del Salón Shenglu siempre han sido unos ignorantes incultos que olvidaron hace tiempo el absurdo pasado.\nAl fin y al cabo, la brillante arena cristalizada no es un buen material para hacer cerámica, ni tampoco para crear lujosos pigmentos.\nTal y como dicen los mineros, aunque esta historia no sea muy confiable, lo cierto es que tanto este reloj como alguna arena\ncristalizada provienen de los soldados de la Geoarmada de hace quinientos años”.\nIncluso para el poderoso Yaksha era difícil aguantar por mucho tiempo en el oscuro abismo donde tuvo lugar la lucha entre la luz y la oscuridad.\nY es que los mortales necesitan la luz para no perderse en el velo de la oscuridad que todo lo engulle.\nLa arena fluorescente que recogían los soldados de la Geoarmada para iluminar el camino brillaba tanto como una radiante luna blanca.\nAsí, este reloj, que pasó de soldado en soldado, constituye el testimonio del tiempo que los mortales pasaron en el abismo."
-          }
-        ]
-      }
-    ],
-    "reliquarySetEffect": {
-      "twoSetEffect": "ATQ +18%.",
-      "fourSetEffect": "Al usar la Habilidad Definitiva, obtienes el efecto de “destello emergente” durante 16 s, el cual aumenta el ATQ en un 8% y, además, hace que cada vez que el personaje pierda Vida, su ATQ aumente en un 10% adicional. Este efecto solo puede aumentar el ATQ un máximo de 4 veces de esta manera y activarse una vez cada 0.8 s. Los efectos de destello emergente se disiparán si el personaje es retirado de combate. Si el personaje vuelve a usar la Habilidad Definitiva mientras dicho efecto está activo, el destello emergente original también se disipará."
-    },
-    "baseInfo": [
-      {
-        "key": "Nombre",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Deceso del Cinabrio"
           }
         ]
       }
