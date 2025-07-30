@@ -5,11 +5,11 @@
   "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/48dba0c10560a3ef573f17d97408b5a0_2527001828446746987.png",
   "headerImgUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/c811574d08b3291a38980c2c51d2c408_2989697503942306840.png",
   "filterValues": {
-    "characterVision": "Kryo",
     "characterProperty": "KSCH",
     "characterRarity": 5,
-    "characterWeapon": "Einhänder",
-    "characterRegion": "Anderes"
+    "characterVision": "Kryo",
+    "characterRegion": "Anderes",
+    "characterWeapon": "Einhänder"
   },
   "menuId": 2,
   "menuName": "Figurenhandbuch",
@@ -376,702 +376,901 @@
         "text": "HoYoLAB:"
       }
     ],
-    "baseInfo": [
+    "talent": [
       {
-        "key": "Name",
-        "value": [
+        "title": "Verdorbene Kunst – Zerteilung",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/94aa30ae75b8c7c6a9c64ab05bd5dda7_6431676817403099979.png",
+        "desc": [
           {
             "type": "RichText",
-            "text": "Skirk"
+            "text": "<color=#ffd780>Standardangriff</color>\nFührt bis zu 5 Angriffe hintereinander aus.\n<color=#ffd780>Heftiger Schlag</color>\nVerbraucht eine gewisse Menge Ausdauer und schleudert eine wirbelnde Kristalllanze, die den Gegnern vor sich Schaden zufügt.\n<color=#ffd780>Angriff aus dem Fall</color>\nSchlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Flächenschaden."
           }
-        ]
+        ],
+        "attributes": [
+          {
+            "key": "St.",
+            "values": [
+              "St. 1",
+              "St. 2",
+              "St. 3",
+              "St. 4",
+              "St. 5",
+              "St. 6",
+              "St. 7",
+              "St. 8",
+              "St. 9",
+              "St. 10",
+              "St. 11"
+            ]
+          },
+          {
+            "key": "SCH Phase 1",
+            "values": [
+              "54.52%",
+              "58.96%",
+              "63.4%",
+              "69.74%",
+              "74.18%",
+              "79.25%",
+              "86.22%",
+              "93.2%",
+              "100.17%",
+              "107.78%",
+              "115.39%"
+            ]
+          },
+          {
+            "key": "SCH Phase 2",
+            "values": [
+              "49.79%",
+              "53.85%",
+              "57.9%",
+              "63.69%",
+              "67.74%",
+              "72.38%",
+              "78.74%",
+              "85.11%",
+              "91.48%",
+              "98.43%",
+              "105.38%"
+            ]
+          },
+          {
+            "key": "SCH Phase 3",
+            "values": [
+              "32.42% + 32.42%",
+              "35.06% + 35.06%",
+              "37.7% + 37.7%",
+              "41.47% + 41.47%",
+              "44.11% + 44.11%",
+              "47.13% + 47.13%",
+              "51.27% + 51.27%",
+              "55.42% + 55.42%",
+              "59.57% + 59.57%",
+              "64.09% + 64.09%",
+              "68.61% + 68.61%"
+            ]
+          },
+          {
+            "key": "SCH Phase 4",
+            "values": [
+              "60.8%",
+              "65.75%",
+              "70.7%",
+              "77.77%",
+              "82.72%",
+              "88.38%",
+              "96.15%",
+              "103.93%",
+              "111.71%",
+              "120.19%",
+              "128.67%"
+            ]
+          },
+          {
+            "key": "SCH Phase 5",
+            "values": [
+              "82.9%",
+              "89.65%",
+              "96.4%",
+              "106.04%",
+              "112.79%",
+              "120.5%",
+              "131.1%",
+              "141.71%",
+              "152.31%",
+              "163.88%",
+              "175.45%"
+            ]
+          },
+          {
+            "key": "SCH heftiger Schläge",
+            "values": [
+              "66.82% ×2",
+              "72.26% ×2",
+              "77.7% ×2",
+              "85.47% ×2",
+              "90.91% ×2",
+              "97.13% ×2",
+              "105.67% ×2",
+              "114.22% ×2",
+              "122.77% ×2",
+              "132.09% ×2",
+              "141.41% ×2"
+            ]
+          },
+          {
+            "key": "Ausdauerverbrauch heftiger Schläge",
+            "values": [
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte"
+            ]
+          },
+          {
+            "key": "SCH beim Fallen",
+            "values": [
+              "63.93%",
+              "69.14%",
+              "74.34%",
+              "81.77%",
+              "86.98%",
+              "92.93%",
+              "101.1%",
+              "109.28%",
+              "117.46%",
+              "126.38%",
+              "135.3%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6630,
+              "name": "Lehren des „Wettstreits“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Was definiert Stärke und was Schwäche? Nur Sieg und Niederlage. Die Ergebnisse eines Wettkampfs sind überzeugender als alle Worte.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/508cb37d6026ab3f4303857dad074fc2_1251028051522435061.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 4072,
+              "name": "Greifendes Zahnrad",
+              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Ein wichtiges Teil für das Getriebe. Wenn es fehlt, funktioniert die entsprechende Einheit nicht mehr.</p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/0d15f8ce2c281306fbc8e0c3a6315437_4415947670565014598.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6631,
+              "name": "Anleitung zum „Wettstreit“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Auch wenn Menschen nicht so schnell fliegen können wie geflügelte Tiere und nicht so geschmeidig sind wie Schleime, haben sie doch ihre Stärken. Manchmal ist das Verständnis, warum und wie sie in Wettstreit gehen, der Schlüssel zur Selbsterkenntnis.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/3ee881d376a77821d602d63a9867ac37_7019690577701605707.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 4071,
+              "name": "Mechanisches Stirnrad",
+              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Obwohl es in der Kinematik der Uhrwerk-Mecha bedeutende Durchbrüche gab, konnte die Dynamik bis heute die Fundamente und Regeln nicht erschüttern, die Alain Guillotin vor mehr als vierhundert Jahren aufgestellt hatte.</p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/8023d5d16d579656f82fd4378358a11b_8223941451665776915.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6631,
+              "name": "Anleitung zum „Wettstreit“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Auch wenn Menschen nicht so schnell fliegen können wie geflügelte Tiere und nicht so geschmeidig sind wie Schleime, haben sie doch ihre Stärken. Manchmal ist das Verständnis, warum und wie sie in Wettstreit gehen, der Schlüssel zur Selbsterkenntnis.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/3ee881d376a77821d602d63a9867ac37_7019690577701605707.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 4071,
+              "name": "Mechanisches Stirnrad",
+              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Obwohl es in der Kinematik der Uhrwerk-Mecha bedeutende Durchbrüche gab, konnte die Dynamik bis heute die Fundamente und Regeln nicht erschüttern, die Alain Guillotin vor mehr als vierhundert Jahren aufgestellt hatte.</p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/8023d5d16d579656f82fd4378358a11b_8223941451665776915.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6631,
+              "name": "Anleitung zum „Wettstreit“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Auch wenn Menschen nicht so schnell fliegen können wie geflügelte Tiere und nicht so geschmeidig sind wie Schleime, haben sie doch ihre Stärken. Manchmal ist das Verständnis, warum und wie sie in Wettstreit gehen, der Schlüssel zur Selbsterkenntnis.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/3ee881d376a77821d602d63a9867ac37_7019690577701605707.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 4071,
+              "name": "Mechanisches Stirnrad",
+              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Obwohl es in der Kinematik der Uhrwerk-Mecha bedeutende Durchbrüche gab, konnte die Dynamik bis heute die Fundamente und Regeln nicht erschüttern, die Alain Guillotin vor mehr als vierhundert Jahren aufgestellt hatte.</p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/8023d5d16d579656f82fd4378358a11b_8223941451665776915.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6631,
+              "name": "Anleitung zum „Wettstreit“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Auch wenn Menschen nicht so schnell fliegen können wie geflügelte Tiere und nicht so geschmeidig sind wie Schleime, haben sie doch ihre Stärken. Manchmal ist das Verständnis, warum und wie sie in Wettstreit gehen, der Schlüssel zur Selbsterkenntnis.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/3ee881d376a77821d602d63a9867ac37_7019690577701605707.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 4071,
+              "name": "Mechanisches Stirnrad",
+              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Obwohl es in der Kinematik der Uhrwerk-Mecha bedeutende Durchbrüche gab, konnte die Dynamik bis heute die Fundamente und Regeln nicht erschüttern, die Alain Guillotin vor mehr als vierhundert Jahren aufgestellt hatte.</p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/8023d5d16d579656f82fd4378358a11b_8223941451665776915.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6632,
+              "name": "Philosophie des „Wettstreits“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Sein Zweck ist es, sich selbst stärker zu machen. Nachdem das Ergebnis eines Wettstreits feststeht, gewinnt der Sieger das Selbstvertrauen, um sich seiner Richtung sicher zu sein, während der Verlierer Erkenntnisse darüber gewinnt, wie er stärker werden kann. Jenseits von Sieg oder Niederlage ist dies die wahre Bedeutung des Wettstreits.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/55e2e17d922ff088779e8d18bc52a592_8984028608625676046.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 4070,
+              "name": "Neuartiges Uhrwerk-Zahnrad",
+              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Die Fortschritte in der Maschinenpräzision und der Materialforschung sind der Schlüssel für den Fortschritt bei den Uhrwerk-Mecha in Fontaine. Unterstützt durch fortschrittliche Gerätschaften besitzt jeder Ingenieur die Fähigkeit, Maschinen herzustellen, die die des Zeitalters des „Herrn der wunderlichen Maschinen“ Guillotin überragen.</p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/4b604ff986feeaf150418ca94355a65a_1414415110007787420.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 7656,
+              "name": "Aufstiegsprobe – Springer",
+              "desc": "Eine seltene Probe, die bei der alchimistischen Aktivierung einer Substanz entsteht.<br>In den esoterischen Schriften ist dem bronzenen Reiter nicht klar, ob seine Aufgabe darin besteht, zu erobern oder zu schützen. Seit seiner alchimistischen Erhebung ist er lediglich auf der Suche nach Bestimmung. Das Zeitalter der Bronze war ein Zeitalter der Helden.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/7a69944ecfff83b07bf242c3a85448a1_8688621694481977765.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6632,
+              "name": "Philosophie des „Wettstreits“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Sein Zweck ist es, sich selbst stärker zu machen. Nachdem das Ergebnis eines Wettstreits feststeht, gewinnt der Sieger das Selbstvertrauen, um sich seiner Richtung sicher zu sein, während der Verlierer Erkenntnisse darüber gewinnt, wie er stärker werden kann. Jenseits von Sieg oder Niederlage ist dies die wahre Bedeutung des Wettstreits.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/55e2e17d922ff088779e8d18bc52a592_8984028608625676046.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 4070,
+              "name": "Neuartiges Uhrwerk-Zahnrad",
+              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Die Fortschritte in der Maschinenpräzision und der Materialforschung sind der Schlüssel für den Fortschritt bei den Uhrwerk-Mecha in Fontaine. Unterstützt durch fortschrittliche Gerätschaften besitzt jeder Ingenieur die Fähigkeit, Maschinen herzustellen, die die des Zeitalters des „Herrn der wunderlichen Maschinen“ Guillotin überragen.</p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/4b604ff986feeaf150418ca94355a65a_1414415110007787420.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 7656,
+              "name": "Aufstiegsprobe – Springer",
+              "desc": "Eine seltene Probe, die bei der alchimistischen Aktivierung einer Substanz entsteht.<br>In den esoterischen Schriften ist dem bronzenen Reiter nicht klar, ob seine Aufgabe darin besteht, zu erobern oder zu schützen. Seit seiner alchimistischen Erhebung ist er lediglich auf der Suche nach Bestimmung. Das Zeitalter der Bronze war ein Zeitalter der Helden.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/7a69944ecfff83b07bf242c3a85448a1_8688621694481977765.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6632,
+              "name": "Philosophie des „Wettstreits“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Sein Zweck ist es, sich selbst stärker zu machen. Nachdem das Ergebnis eines Wettstreits feststeht, gewinnt der Sieger das Selbstvertrauen, um sich seiner Richtung sicher zu sein, während der Verlierer Erkenntnisse darüber gewinnt, wie er stärker werden kann. Jenseits von Sieg oder Niederlage ist dies die wahre Bedeutung des Wettstreits.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/55e2e17d922ff088779e8d18bc52a592_8984028608625676046.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 4070,
+              "name": "Neuartiges Uhrwerk-Zahnrad",
+              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Die Fortschritte in der Maschinenpräzision und der Materialforschung sind der Schlüssel für den Fortschritt bei den Uhrwerk-Mecha in Fontaine. Unterstützt durch fortschrittliche Gerätschaften besitzt jeder Ingenieur die Fähigkeit, Maschinen herzustellen, die die des Zeitalters des „Herrn der wunderlichen Maschinen“ Guillotin überragen.</p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/4b604ff986feeaf150418ca94355a65a_1414415110007787420.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 7656,
+              "name": "Aufstiegsprobe – Springer",
+              "desc": "Eine seltene Probe, die bei der alchimistischen Aktivierung einer Substanz entsteht.<br>In den esoterischen Schriften ist dem bronzenen Reiter nicht klar, ob seine Aufgabe darin besteht, zu erobern oder zu schützen. Seit seiner alchimistischen Erhebung ist er lediglich auf der Suche nach Bestimmung. Das Zeitalter der Bronze war ein Zeitalter der Helden.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/7a69944ecfff83b07bf242c3a85448a1_8688621694481977765.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 6632,
+              "name": "Philosophie des „Wettstreits“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Sein Zweck ist es, sich selbst stärker zu machen. Nachdem das Ergebnis eines Wettstreits feststeht, gewinnt der Sieger das Selbstvertrauen, um sich seiner Richtung sicher zu sein, während der Verlierer Erkenntnisse darüber gewinnt, wie er stärker werden kann. Jenseits von Sieg oder Niederlage ist dies die wahre Bedeutung des Wettstreits.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/55e2e17d922ff088779e8d18bc52a592_8984028608625676046.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 4070,
+              "name": "Neuartiges Uhrwerk-Zahnrad",
+              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Die Fortschritte in der Maschinenpräzision und der Materialforschung sind der Schlüssel für den Fortschritt bei den Uhrwerk-Mecha in Fontaine. Unterstützt durch fortschrittliche Gerätschaften besitzt jeder Ingenieur die Fähigkeit, Maschinen herzustellen, die die des Zeitalters des „Herrn der wunderlichen Maschinen“ Guillotin überragen.</p>",
+              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/4b604ff986feeaf150418ca94355a65a_1414415110007787420.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 7656,
+              "name": "Aufstiegsprobe – Springer",
+              "desc": "Eine seltene Probe, die bei der alchimistischen Aktivierung einer Substanz entsteht.<br>In den esoterischen Schriften ist dem bronzenen Reiter nicht klar, ob seine Aufgabe darin besteht, zu erobern oder zu schützen. Seit seiner alchimistischen Erhebung ist er lediglich auf der Suche nach Bestimmung. Das Zeitalter der Bronze war ein Zeitalter der Helden.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/7a69944ecfff83b07bf242c3a85448a1_8688621694481977765.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "Krone der Weisheit",
+              "desc": "Wertvolles Material, das zum Verbessern von Talenten benötigt wird.<br/>Ein rituelles Hilfsmittel, das in alter Zeit für die Weitergabe von Wissen genutzt wurde. Heutzutage jedoch liegt Wissen in gesprochener und niedergeschriebener Sprache. Die in der Krone der Weisheit gespeicherte Kraft kann heute sicherlich immer noch auf den Menschen abfärben.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/18da1315129b630f81f5a713bbeaa628_7592447523538035475.gif"
       },
       {
-        "key": "Geburtstag",
-        "value": [
+        "title": "Verdorbene Kunst – Verzerrung",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/811afb7bc5a1abc92e16ac8d5a064318_4971204669586661473.png",
+        "desc": [
           {
             "type": "RichText",
-            "text": "5. November"
+            "text": "Imitiert den Kampfstil des „Reiters des Bösen“ und erzeugt je nachdem, ob gedrückt oder gedrückt gehalten wird, unterschiedliche Effekte.\n<color=#ffd780>Drücken</color>\nSkirk erhält 45Pkt. <color=#ffd780>„List der Schlange“</color> und wechselt in den <color=#ffd780>„Sieben-Phasen-Blitzmodus“</color> .\n<color=#ffd780>Gedrückt halten</color>\nSkirk erhält 45Pkt. „List der Schlange“ und bewegt sich fortlaufend mit hoher Geschwindigkeit. In diesem Zustand ist Skirks Unterbrechungs-WDS erhöht.\nWährenddessen kann sich Skirk auf der Wasseroberfläche bewegen sowie kontrollieren, in welche Richtung sie sich schnell bewegt. Durch erneutes Auslösen dieser Fähigkeit kann sie den Zustand des schnellen Bewegens vorzeitig beenden."
           }
-        ]
+        ],
+        "attributes": [
+          {
+            "key": "St.",
+            "values": [
+              "St. 1",
+              "St. 2",
+              "St. 3",
+              "St. 4",
+              "St. 5",
+              "St. 6",
+              "St. 7",
+              "St. 8",
+              "St. 9",
+              "St. 10",
+              "St. 11",
+              "St. 12",
+              "St. 13"
+            ]
+          },
+          {
+            "key": "SCH Phase 1",
+            "values": [
+              "132.82%",
+              "143.64%",
+              "154.45%",
+              "169.89%",
+              "180.7%",
+              "193.06%",
+              "210.05%",
+              "227.04%",
+              "244.03%",
+              "262.56%",
+              "281.09%",
+              "299.63%",
+              "318.16%"
+            ]
+          },
+          {
+            "key": "SCH Phase 2",
+            "values": [
+              "119.8%",
+              "129.55%",
+              "139.3%",
+              "153.23%",
+              "162.98%",
+              "174.13%",
+              "189.45%",
+              "204.77%",
+              "220.1%",
+              "236.81%",
+              "253.53%",
+              "270.25%",
+              "286.96%"
+            ]
+          },
+          {
+            "key": "SCH Phase 3",
+            "values": [
+              "75.72% + 75.72%",
+              "81.89% + 81.89%",
+              "88.05% + 88.05%",
+              "96.86% + 96.86%",
+              "103.02% + 103.02%",
+              "110.06% + 110.06%",
+              "119.75% + 119.75%",
+              "129.43% + 129.43%",
+              "139.12% + 139.12%",
+              "149.69% + 149.69%",
+              "160.25% + 160.25%",
+              "170.82% + 170.82%",
+              "181.38% + 181.38%"
+            ]
+          },
+          {
+            "key": "SCH Phase 4",
+            "values": [
+              "80.54% + 80.54%",
+              "87.09% + 87.09%",
+              "93.65% + 93.65%",
+              "103.02% + 103.02%",
+              "109.57% + 109.57%",
+              "117.06% + 117.06%",
+              "127.36% + 127.36%",
+              "137.67% + 137.67%",
+              "147.97% + 147.97%",
+              "159.21% + 159.21%",
+              "170.44% + 170.44%",
+              "181.68% + 181.68%",
+              "192.92% + 192.92%"
+            ]
+          },
+          {
+            "key": "SCH Phase 5",
+            "values": [
+              "196.62%",
+              "212.63%",
+              "228.63%",
+              "251.5%",
+              "267.5%",
+              "285.79%",
+              "310.94%",
+              "336.09%",
+              "361.24%",
+              "388.68%",
+              "416.11%",
+              "443.55%",
+              "470.98%"
+            ]
+          },
+          {
+            "key": "SCH heftiger Schläge",
+            "values": [
+              "44.55% ×3",
+              "48.17% ×3",
+              "51.8% ×3",
+              "56.98% ×3",
+              "60.61% ×3",
+              "64.75% ×3",
+              "70.45% ×3",
+              "76.15% ×3",
+              "81.84% ×3",
+              "88.06% ×3",
+              "94.28% ×3",
+              "100.49% ×3",
+              "106.71% ×3"
+            ]
+          },
+          {
+            "key": "Ausdauerverbrauch heftiger Schläge",
+            "values": [
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte",
+              "20 Punkte"
+            ]
+          },
+          {
+            "key": "SCH beim Fallen",
+            "values": [
+              "63.93%",
+              "69.14%",
+              "74.34%",
+              "81.77%",
+              "86.98%",
+              "92.93%",
+              "101.1%",
+              "109.28%",
+              "117.46%",
+              "126.38%",
+              "135.3%",
+              "144.22%",
+              "153.14%"
+            ]
+          },
+          {
+            "key": "SCH beim Fallen aus niedriger/großer Höhe",
+            "values": [
+              "127.84% / 159.68%",
+              "138.24% / 172.67%",
+              "148.65% / 185.67%",
+              "163.51% / 204.24%",
+              "173.92% / 217.23%",
+              "185.81% / 232.09%",
+              "202.16% / 252.51%",
+              "218.51% / 272.93%",
+              "234.86% / 293.36%",
+              "252.7% / 315.64%",
+              "270.54% / 337.92%",
+              "288.38% / 360.2%",
+              "306.22% / 382.48%"
+            ]
+          },
+          {
+            "key": "Dauer des Sieben-Phasen-Blitzmodus",
+            "values": [
+              "12.5 s",
+              "12.5 s",
+              "12.5 s",
+              "12.5 s",
+              "12.5 s",
+              "12.5 s",
+              "12.5 s",
+              "12.5 s",
+              "12.5 s",
+              "12.5 s",
+              "12.5 s",
+              "12.5 s",
+              "12.5 s"
+            ]
+          },
+          {
+            "key": "Max. List der Schlange",
+            "values": [
+              "100 Pkt.",
+              "100 Pkt.",
+              "100 Pkt.",
+              "100 Pkt.",
+              "100 Pkt.",
+              "100 Pkt.",
+              "100 Pkt.",
+              "100 Pkt.",
+              "100 Pkt.",
+              "100 Pkt.",
+              "100 Pkt.",
+              "100 Pkt.",
+              "100 Pkt."
+            ]
+          },
+          {
+            "key": "Abklingzeit",
+            "values": [
+              "8s",
+              "8s",
+              "8s",
+              "8s",
+              "8s",
+              "8s",
+              "8s",
+              "8s",
+              "8s",
+              "8s",
+              "8s",
+              "8s",
+              "8s"
+            ]
+          }
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/bab5d2a631f2db2e4f8e85c686e8d5a3_6923151076544845284.gif"
       },
       {
-        "key": "Sternbilder",
-        "value": [
+        "title": "Verdorbene Kunst – Zerstörung",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/12f068ffa4c56eda7709ace1bb716071_2007850279129108932.png",
+        "desc": [
           {
             "type": "RichText",
-            "text": "Crystallina"
+            "text": "Skirks Spezialfähigkeit ist nicht auf Elementarenergie angewiesen, sondern auf <color=#ffd780>„List der Schlange“</color> .\nWenn Skirk mindestens 50Pkt. „List der Schlange“ hat, kann sie all ihre „List der Schlange“ verbrauchen, um ihre Spezialfähigkeit auszulösen: Sie zerreißt den Raum vor ihr und führt viele schnell aufeinanderfolgende Hiebe aus, die <color=#99ffff>Kryo-Flächenschaden</color> verursachen. Gleichzeitig wird beim Auslösen der Fähigkeit der von der diesmaligen Spezialfähigkeit verursachte Schaden basierend auf jedem Punkt ihrer „List der Schlange“, der über 50Pkt. liegt, erhöht. Auf diese Weise können bis zu 12Pkt. „List der Schlange“ angerechnet werden.\nWenn sich Skirk im <color=#ffd780>Sieben-Phasen-Blitzmodus</color> befindet, wird ihre Spezialfähigkeit „Verdorbene Kunst – Zerstörung“ durch „Verdorbene Kunst – Vernichtung“ ersetzt.\n<color=#ffd780>Verdorbene Kunst – Vernichtung</color>\nEine besondere Spezialfähigkeit, die ohne den Verbrauch von „List der Schlange“ ausgelöst werden kann.\nNach dem Auslösen erhält Skirk den Effekt „Verwelkt“, der bis zum Ende des „Sieben-Phasen-Blitzmodus“ andauert. Nach dem Freischalten des passiven Talents <color=#ffd780>„Vernunft jenseits der Vernunft“</color> kann Skirk auch Leere-Risse in einem bestimmten Umkreis absorbieren.\nWährend der Wirkungsdauer des Effekts „Verwelkt“ verursachen die Standardangriffe von Skirk, die Gegner treffen, alle 0,1s erhöhten Schaden. Wenn Skirk bei der Verwendung von <color=#ffd780>„Verdorbene Kunst – Vernichtung“</color> Leere-Risse absorbiert hat, dann erhöht sich der Schaden des diesmaligen Standardangriffs basierend auf der Anzahl der absorbierten Leere-Risse.\nDieser Effekt wird entfernt, sobald er 10-mal ausgelöst wurde."
           }
-        ]
+        ],
+        "attributes": [
+          {
+            "key": "St.",
+            "values": [
+              "St. 1",
+              "St. 2",
+              "St. 3",
+              "St. 4",
+              "St. 5",
+              "St. 6",
+              "St. 7",
+              "St. 8",
+              "St. 9",
+              "St. 10",
+              "St. 11",
+              "St. 12",
+              "St. 13"
+            ]
+          },
+          {
+            "key": "Schwerthieb-SCH",
+            "values": [
+              "122.76% ×5",
+              "131.97% ×5",
+              "141.17% ×5",
+              "153.45% ×5",
+              "162.66% ×5",
+              "171.86% ×5",
+              "184.14% ×5",
+              "196.42% ×5",
+              "208.69% ×5",
+              "220.97% ×5",
+              "233.24% ×5",
+              "245.52% ×5",
+              "260.87% ×5"
+            ]
+          },
+          {
+            "key": "SCH des letzten Hiebs",
+            "values": [
+              "204.6%",
+              "219.95%",
+              "235.29%",
+              "255.75%",
+              "271.1%",
+              "286.44%",
+              "306.9%",
+              "327.36%",
+              "347.82%",
+              "368.28%",
+              "388.74%",
+              "409.2%",
+              "434.78%"
+            ]
+          },
+          {
+            "key": "SCH-Bonus von List der Schlange",
+            "values": [
+              "19.32% ANG pro Punkt",
+              "20.77% ANG pro Punkt",
+              "22.22% ANG pro Punkt",
+              "24.15% ANG pro Punkt",
+              "25.6% ANG pro Punkt",
+              "27.05% ANG pro Punkt",
+              "28.99% ANG pro Punkt",
+              "30.92% ANG pro Punkt",
+              "32.85% ANG pro Punkt",
+              "34.78% ANG pro Punkt",
+              "36.71% ANG pro Punkt",
+              "38.65% ANG pro Punkt",
+              "41.06% ANG pro Punkt"
+            ]
+          },
+          {
+            "key": "SCH-Bonus für 0/1/2/3 absorbierte(n) Leere-Riss(e)",
+            "values": [
+              "3.5% / 6.6% / 8.8% / 11%",
+              "4% / 7.2% / 9.6% / 12%",
+              "4.5% / 7.8% / 10.4% / 13%",
+              "5% / 8.4% / 11.2% / 14%",
+              "5.5% / 9% / 12% / 15%",
+              "6% / 9.6% / 12.8% / 16%",
+              "6.5% / 10.2% / 13.6% / 17%",
+              "7% / 10.8% / 14.4% / 18%",
+              "7.5% / 11.4% / 15.2% / 19%",
+              "8% / 12% / 16% / 20%",
+              "8.5% / 12.6% / 16.8% / 21%",
+              "9% / 13.2% / 17.6% / 22%",
+              "9.5% / 13.8% / 18.4% / 23%"
+            ]
+          },
+          {
+            "key": "Abklingzeit",
+            "values": [
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s"
+            ]
+          }
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/fbedab327d345eb3b21d679df04a090b_5563152839921305124.gif"
       },
       {
-        "key": "Titel",
-        "value": [
+        "title": "Vernunft jenseits der Vernunft",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/e367f99c8aba0a7cc509de04cfca0367_2303388286412966085.png",
+        "desc": [
           {
             "type": "RichText",
-            "text": "Stern der Leere"
+            "text": "Erzeugt, wenn Truppenmitglieder in der Nähe an Gegnern die Reaktionen Gefroren, Supraleiter, Kryo-Verwirbelung oder Kryo-Kristall auslösen, in der Nähe des Gegners einen Leere-Riss, 2,5s Abklingzeit. Es können gleichzeitig nur 3 von Skirk selbst erzeugte Leere-Risse auf dem Feld existieren.\nSkirk kann auf die folgenden Weisen Leere-Risse in einem bestimmten Umkreis absorbieren:\n· Wenn sie im <color=#ffd780>„Sieben-Phasen-Blitzmodus“</color> Gegner mit heftigen Schlägen trifft.\n· Wenn sie im „Sieben-Phasen-Blitzmodus“ ihre besondere Spezialfähigkeit <color=#ffd780>„Verdorbene Kunst – Vernichtung“</color> auslöst.\n· Wenn sie durch Gedrückthalten ihre Elementarfähigkeit <color=#ffd780>Verdorbene Kunst – Verzerrung</color> auslöst, um sich schnell zu bewegen.\nSkirk erhält für jeden absorbierten Riss 8Pkt. <color=#ffd780>„List der Schlange“</color> ."
           }
-        ]
+        ],
+        "attributes": null
       },
       {
-        "key": "Sieben Wandlungen der Schlange",
-        "value": [
+        "title": "Rückkehr ins Vergessen",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/53569e1ea86feaab82dd4905e35523a9_7528596756201078449.png",
+        "desc": [
           {
             "type": "RichText",
-            "text": "Kryo"
+            "text": "Verleiht Skirk jedes Mal, wenn <color=#80c0ff>Hydro</color> -Truppenmitglieder in der Nähe mit ihren <color=#80c0ff>Hydro</color> -Angriffen Gegner treffen oder andere <color=#99ffff>Kryo</color> -Truppenmitglieder außer Skirk in der Nähe mit ihren <color=#99ffff>Kryo</color> -Angriffen Gegner treffen, für 20s den Effekt „Kreuzung des Todes“. 3-fach stapelbar, Wirkungsdauer jeder Stapelung wird unabhängig voneinander berechnet.\nJede Figur kann Skirk auf diese Weise maximal 1 Stapelung „Kreuzung des Todes“ verleihen.\nFür jede Stapelung „Kreuzung des Todes“ beträgt der von Skirk in ihrem <color=#ffd780>Sieben-Phasen-Blitzmodus</color> mit Standardangriffen verursachte Schaden 110/120/170% des ursprünglichen Schadens und der durch ihre Spezialfähigkeit <color=#ffd780>Verdorbene Kunst – Zerstörung</color> verursachte Schaden 105/115/160% des ursprünglichen Schadens."
           }
-        ]
+        ],
+        "attributes": null
       },
       {
-        "key": "Zugehörigkeit",
-        "value": [
+        "title": "Mentorin aller Waffenkampfkünste",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/5cc9a67ead88139f93fb7d78370c5c62_7287115472055964503.png",
+        "desc": [
           {
             "type": "RichText",
-            "text": "Unbekannt"
+            "text": "Die Stufe der <color=#ffd780>Elementarfähigkeit</color> der eigenen Truppenmitglieder erhöht sich um 1, wenn die Truppe nur aus <color=#80c0ff>Hydro</color> - und <color=#99ffff>Kryo</color> -Figuren besteht und sich mindestens 1 Hydro- und 1 Kryo-Figur darin befinden."
           }
-        ]
-      },
-      {
-        "key": "Chinesische Stimme",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "(谢莹) Xie Ying"
-          }
-        ]
-      },
-      {
-        "key": "Englische Stimme\n",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Cat Protano"
-          }
-        ]
-      },
-      {
-        "key": "Japanische Stimme",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "(能登麻美子) Noto Mamiko"
-          }
-        ]
-      },
-      {
-        "key": "Koreanische Stimme",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "(서다혜) Seo Dahye"
-          }
-        ]
-      },
-      {
-        "key": "Spezialzubereitung",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "TBA"
-          }
-        ]
-      },
-      {
-        "key": "Version der Veröffentlichung",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "5.7"
-          }
-        ]
+        ],
+        "attributes": null
       }
     ],
-    "galleryCharacter": [
+    "summaryList": [
       {
-        "key": "Character Card",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/d7371af70f7b71f5cedaabe006dfb106_7112535273237131577.png"
-      },
-      {
-        "key": "Figurenzeichnung",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/1cb7988952bbe7666e82cfba48f88faa_1681948255315436625.png",
-        "imgDesc": [
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/7b6a0602ef52805253b2c2b1a9574c33_7845021555796921748.png",
+        "name": "Tiefer Fall",
+        "desc": [
           {
             "type": "RichText",
-            "text": "Skirks Kleidung. Sie hat die Vernichtung der Sterne miterlebt und einmal in der absoluten Dunkelheit des Universums getanzt. All diese Momente sind zu einer endlosen Reise verschmolzen."
+            "text": "Verstärkt den Effekt des passiven Talents <color=#ffd780>Vernunft jenseits der Vernunft</color> : Für jeden absorbierten Leere-Riss wird eine Kristallklinge beschworen, die Gegner in der Nähe angreift und <color=#99ffff>Kryo-Schaden</color> in Höhe von 500% von Skirks ANG verursacht. Hierdurch verursachter Schaden gilt als Schaden des heftigen Schlags.\nDas passive Talent „Vernunft jenseits der Vernunft“ muss zuerst freigeschaltet werden."
           }
         ]
       },
       {
-        "key": "Idle-Animation 1",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/4c44fe6c44ffbe00d4ba5c4b301665ec_1336500605468298277.gif"
-      },
-      {
-        "key": "Idle-Animation 2",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/cb080f281f442e451d8cfe8b86ea8e99_1966463941854332311.gif"
-      }
-    ],
-    "ascension": [
-      {
-        "key": "St. 1",
-        "combatStats": [
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/5a2dcac715c1184405fcdb208cda4a3f_7685892440898473013.png",
+        "name": "In den Abgrund",
+        "desc": [
           {
-            "key": "",
-            "values": [
-              "Vor Aufstieg",
-              "Nach Aufstieg"
-            ]
-          },
-          {
-            "key": "Basis-LP",
-            "values": [
-              "-",
-              "967"
-            ]
-          },
-          {
-            "key": "Basis-ANG",
-            "values": [
-              "-",
-              "28"
-            ]
-          },
-          {
-            "key": "Basis-VTD",
-            "values": [
-              "-",
-              "63"
-            ]
-          },
-          {
-            "key": "KSCH",
-            "values": [
-              "-",
-              "0.0%"
-            ]
+            "type": "RichText",
+            "text": "Verleiht Skirk nach dem Anwenden ihrer Elementarfähigkeit <color=#ffd780>Verdorbene Kunst – Verzerrung</color> zusätzlich 10Pkt. <color=#ffd780>„List der Schlange“</color> .\nVerstärkt beim Auslösen der Spezialfähigkeit <color=#ffd780>Verdorbene Kunst – Zerstörung</color> deren verursachten Schaden, indem bis zu 10 zusätzliche Punkte von „List der Schlange“ mit hinzugezählt werden.\nAußerdem erhöht sich Skirks ANG für 12,5s um 70%, nachdem sie im Modus <color=#ffd780>Sieben-Phasen-Blitz</color> ihre besondere Spezialfähigkeit <color=#ffd780>Verdorbene Kunst – Vernichtung</color> ausgelöst hat. Dieser Effekt wird aufgehoben, wenn Skirk den Sieben-Phasen-Blitzmodus beendet."
           }
         ]
       },
       {
-        "key": "St. 20",
-        "combatStats": [
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/3855338032f004075489ee402a115bf2_1339878340160402843.png",
+        "name": "Schicksalhafte Verderbnis",
+        "desc": [
           {
-            "key": "",
-            "values": [
-              "Vor Aufstieg",
-              "Nach Aufstieg"
-            ]
-          },
-          {
-            "key": "Basis-LP",
-            "values": [
-              "2508",
-              "3336"
-            ]
-          },
-          {
-            "key": "Basis-ANG",
-            "values": [
-              "73",
-              "97"
-            ]
-          },
-          {
-            "key": "Basis-VTD",
-            "values": [
-              "163",
-              "217"
-            ]
-          },
-          {
-            "key": "KSCH",
-            "values": [
-              "0.0%",
-              "0.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 411,
-            "name": "Shivada-Jade-Splitter",
-            "desc": "Material für den Figurenaufstieg.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 7526,
-            "name": "Wolkenfels-Spaltblatt",
-            "desc": "Eine merkwürdige Pflanze, deren äußere Blütenblätter der Textur von Stein ähneln. Wenn sie erblüht, wird der Blick auf das kristallene Innere freigegeben.",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/82902cec095daf4d3a0aad3d0e975075_2256101611360374803.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4072,
-            "name": "Greifendes Zahnrad",
-            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Ein wichtiges Teil für das Getriebe. Wenn es fehlt, funktioniert die entsprechende Einheit nicht mehr.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/0d15f8ce2c281306fbc8e0c3a6315437_4415947670565014598.png",
-            "amount": 3
+            "type": "RichText",
+            "text": "Erhöht die Stufe der Spezialfähigkeit <color=#ffd780>Verdorbene Kunst – Zerstörung</color> um 3.\nHöchststufe 15."
           }
         ]
       },
       {
-        "key": "St. 40",
-        "combatStats": [
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/633a3fa5dd8082d37c81a2d4ce2f7502_8124002263090881869.png",
+        "name": "Unterbrochener Fluss",
+        "desc": [
           {
-            "key": "",
-            "values": [
-              "Vor Aufstieg",
-              "Nach Aufstieg"
-            ]
-          },
-          {
-            "key": "Basis-LP",
-            "values": [
-              "4992",
-              "5581"
-            ]
-          },
-          {
-            "key": "Basis-ANG",
-            "values": [
-              "145",
-              "162"
-            ]
-          },
-          {
-            "key": "Basis-VTD",
-            "values": [
-              "325",
-              "363"
-            ]
-          },
-          {
-            "key": "KSCH",
-            "values": [
-              "0.0%",
-              "9.6%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 410,
-            "name": "Shivada-Jade-Bruchstück",
-            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, ...“",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 7268,
-            "name": "Fesselnder Blick",
-            "desc": "Ein Objekt, das man nach dem Besiegen eines Monsters, das als Tiefenpflanze bezeichnet wird, erhält. Es mag wie ein Stück Obst aussehen, ist es aber nicht.<br>Geformt aus Energie, die sich in einem einzigen Punkt verdichtet hat, einem „Auge“, das aus einer fernen, dunklen Welt hierherblickt.",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/ccdff500539a8fb15a054702aef656aa_3366346757500389276.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 7526,
-            "name": "Wolkenfels-Spaltblatt",
-            "desc": "Eine merkwürdige Pflanze, deren äußere Blütenblätter der Textur von Stein ähneln. Wenn sie erblüht, wird der Blick auf das kristallene Innere freigegeben.",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/82902cec095daf4d3a0aad3d0e975075_2256101611360374803.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4072,
-            "name": "Greifendes Zahnrad",
-            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Ein wichtiges Teil für das Getriebe. Wenn es fehlt, funktioniert die entsprechende Einheit nicht mehr.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/0d15f8ce2c281306fbc8e0c3a6315437_4415947670565014598.png",
-            "amount": 15
+            "type": "RichText",
+            "text": "Verstärkt den Effekt des passiven Talents <color=#ffd780>Rückkehr ins Vergessen</color> : Erhöht für jede Stapelung „Kreuzung des Todes“ den ANG von Skirk zusätzlich um 10/20/40%.\nDas passive Talent „Rückkehr ins Vergessen“ muss zuerst freigeschaltet werden."
           }
         ]
       },
       {
-        "key": "St. 50",
-        "combatStats": [
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/ebab0c8add5a6c40a7c50acaf4e5bd05_5330240204192613845.png",
+        "name": "Letzter Wunsch",
+        "desc": [
           {
-            "key": "",
-            "values": [
-              "Vor Aufstieg",
-              "Nach Aufstieg"
-            ]
-          },
-          {
-            "key": "Basis-LP",
-            "values": [
-              "6421",
-              "7206"
-            ]
-          },
-          {
-            "key": "Basis-ANG",
-            "values": [
-              "186",
-              "209"
-            ]
-          },
-          {
-            "key": "Basis-VTD",
-            "values": [
-              "417",
-              "568"
-            ]
-          },
-          {
-            "key": "KSCH",
-            "values": [
-              "9.6%",
-              "19.2%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 410,
-            "name": "Shivada-Jade-Bruchstück",
-            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, ...“",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 7268,
-            "name": "Fesselnder Blick",
-            "desc": "Ein Objekt, das man nach dem Besiegen eines Monsters, das als Tiefenpflanze bezeichnet wird, erhält. Es mag wie ein Stück Obst aussehen, ist es aber nicht.<br>Geformt aus Energie, die sich in einem einzigen Punkt verdichtet hat, einem „Auge“, das aus einer fernen, dunklen Welt hierherblickt.",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/ccdff500539a8fb15a054702aef656aa_3366346757500389276.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 7526,
-            "name": "Wolkenfels-Spaltblatt",
-            "desc": "Eine merkwürdige Pflanze, deren äußere Blütenblätter der Textur von Stein ähneln. Wenn sie erblüht, wird der Blick auf das kristallene Innere freigegeben.",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/82902cec095daf4d3a0aad3d0e975075_2256101611360374803.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4071,
-            "name": "Mechanisches Stirnrad",
-            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Obwohl es in der Kinematik der Uhrwerk-Mecha bedeutende Durchbrüche gab, konnte die Dynamik bis heute die Fundamente und Regeln nicht erschüttern, die Alain Guillotin vor mehr als vierhundert Jahren aufgestellt hatte.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/8023d5d16d579656f82fd4378358a11b_8223941451665776915.png",
-            "amount": 12
+            "type": "RichText",
+            "text": "Erhöht die Stufe der Elementarfähigkeit <color=#ffd780>Verdorbene Kunst – Verzerrung</color> um 3.\nHöchststufe 15."
           }
         ]
       },
       {
-        "key": "St. 60",
-        "combatStats": [
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/74b2c029c2696fde17d23a6d87c89544_4612613398515009141.png",
+        "name": "Zur Quelle",
+        "desc": [
           {
-            "key": "",
-            "values": [
-              "Vor Aufstieg",
-              "Nach Aufstieg"
-            ]
-          },
-          {
-            "key": "Basis-LP",
-            "values": [
-              "8055",
-              "8644"
-            ]
-          },
-          {
-            "key": "Basis-ANG",
-            "values": [
-              "233",
-              "250"
-            ]
-          },
-          {
-            "key": "Basis-VTD",
-            "values": [
-              "523",
-              "562"
-            ]
-          },
-          {
-            "key": "KSCH",
-            "values": [
-              "19.2%",
-              "19.2%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 409,
-            "name": "Shivada-Jade-Brocken",
-            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, ...“<br/>„dass ihr den Kummer der ganzen Welt auf den Schultern tragt.“",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 7268,
-            "name": "Fesselnder Blick",
-            "desc": "Ein Objekt, das man nach dem Besiegen eines Monsters, das als Tiefenpflanze bezeichnet wird, erhält. Es mag wie ein Stück Obst aussehen, ist es aber nicht.<br>Geformt aus Energie, die sich in einem einzigen Punkt verdichtet hat, einem „Auge“, das aus einer fernen, dunklen Welt hierherblickt.",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/ccdff500539a8fb15a054702aef656aa_3366346757500389276.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 7526,
-            "name": "Wolkenfels-Spaltblatt",
-            "desc": "Eine merkwürdige Pflanze, deren äußere Blütenblätter der Textur von Stein ähneln. Wenn sie erblüht, wird der Blick auf das kristallene Innere freigegeben.",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/82902cec095daf4d3a0aad3d0e975075_2256101611360374803.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4071,
-            "name": "Mechanisches Stirnrad",
-            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Obwohl es in der Kinematik der Uhrwerk-Mecha bedeutende Durchbrüche gab, konnte die Dynamik bis heute die Fundamente und Regeln nicht erschüttern, die Alain Guillotin vor mehr als vierhundert Jahren aufgestellt hatte.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/8023d5d16d579656f82fd4378358a11b_8223941451665776915.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "St. 70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Vor Aufstieg",
-              "Nach Aufstieg"
-            ]
-          },
-          {
-            "key": "Basis-LP",
-            "values": [
-              "9501",
-              "10089"
-            ]
-          },
-          {
-            "key": "Basis-ANG",
-            "values": [
-              "275",
-              "292"
-            ]
-          },
-          {
-            "key": "Basis-VTD",
-            "values": [
-              "617",
-              "656"
-            ]
-          },
-          {
-            "key": "KSCH",
-            "values": [
-              "19.2%",
-              "28.8%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 409,
-            "name": "Shivada-Jade-Brocken",
-            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, ...“<br/>„dass ihr den Kummer der ganzen Welt auf den Schultern tragt.“",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 7268,
-            "name": "Fesselnder Blick",
-            "desc": "Ein Objekt, das man nach dem Besiegen eines Monsters, das als Tiefenpflanze bezeichnet wird, erhält. Es mag wie ein Stück Obst aussehen, ist es aber nicht.<br>Geformt aus Energie, die sich in einem einzigen Punkt verdichtet hat, einem „Auge“, das aus einer fernen, dunklen Welt hierherblickt.",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/ccdff500539a8fb15a054702aef656aa_3366346757500389276.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 7526,
-            "name": "Wolkenfels-Spaltblatt",
-            "desc": "Eine merkwürdige Pflanze, deren äußere Blütenblätter der Textur von Stein ähneln. Wenn sie erblüht, wird der Blick auf das kristallene Innere freigegeben.",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/82902cec095daf4d3a0aad3d0e975075_2256101611360374803.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4070,
-            "name": "Neuartiges Uhrwerk-Zahnrad",
-            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Die Fortschritte in der Maschinenpräzision und der Materialforschung sind der Schlüssel für den Fortschritt bei den Uhrwerk-Mecha in Fontaine. Unterstützt durch fortschrittliche Gerätschaften besitzt jeder Ingenieur die Fähigkeit, Maschinen herzustellen, die die des Zeitalters des „Herrn der wunderlichen Maschinen“ Guillotin überragen.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/4b604ff986feeaf150418ca94355a65a_1414415110007787420.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "St. 80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Vor Aufstieg",
-              "Nach Aufstieg"
-            ]
-          },
-          {
-            "key": "Basis-LP",
-            "values": [
-              "10956",
-              "11544"
-            ]
-          },
-          {
-            "key": "Basis-ANG",
-            "values": [
-              "317",
-              "334"
-            ]
-          },
-          {
-            "key": "Basis-VTD",
-            "values": [
-              "712",
-              "750"
-            ]
-          },
-          {
-            "key": "KSCH",
-            "values": [
-              "28.8%",
-              "38.4%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 408,
-            "name": "Shivada-Jade",
-            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, dass ihr den Kummer der ganzen Welt auf den Schultern tragt.“<br/>„Euer Herz brennt sicher vor lauter Hoffnung, wenn ihr meine Kälte aushaltet.“<br/>„So lasst die alte Welt brennen.“",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 7268,
-            "name": "Fesselnder Blick",
-            "desc": "Ein Objekt, das man nach dem Besiegen eines Monsters, das als Tiefenpflanze bezeichnet wird, erhält. Es mag wie ein Stück Obst aussehen, ist es aber nicht.<br>Geformt aus Energie, die sich in einem einzigen Punkt verdichtet hat, einem „Auge“, das aus einer fernen, dunklen Welt hierherblickt.",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/ccdff500539a8fb15a054702aef656aa_3366346757500389276.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 7526,
-            "name": "Wolkenfels-Spaltblatt",
-            "desc": "Eine merkwürdige Pflanze, deren äußere Blütenblätter der Textur von Stein ähneln. Wenn sie erblüht, wird der Blick auf das kristallene Innere freigegeben.",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/82902cec095daf4d3a0aad3d0e975075_2256101611360374803.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4070,
-            "name": "Neuartiges Uhrwerk-Zahnrad",
-            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Die Fortschritte in der Maschinenpräzision und der Materialforschung sind der Schlüssel für den Fortschritt bei den Uhrwerk-Mecha in Fontaine. Unterstützt durch fortschrittliche Gerätschaften besitzt jeder Ingenieur die Fähigkeit, Maschinen herzustellen, die die des Zeitalters des „Herrn der wunderlichen Maschinen“ Guillotin überragen.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/4b604ff986feeaf150418ca94355a65a_1414415110007787420.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "St. 90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Vor Aufstieg",
-              "Nach Aufstieg"
-            ]
-          },
-          {
-            "key": "Basis-LP",
-            "values": [
-              "12417",
-              "-"
-            ]
-          },
-          {
-            "key": "Basis-ANG",
-            "values": [
-              "359",
-              "-"
-            ]
-          },
-          {
-            "key": "Basis-VTD",
-            "values": [
-              "807",
-              "-"
-            ]
-          },
-          {
-            "key": "KSCH",
-            "values": [
-              "38.4%",
-              "-"
-            ]
+            "type": "RichText",
+            "text": "Verleiht Skirk für jeden „Leere-Riss“, den sie durch das passive Talent <color=#ffd780>„Vernunft jenseits der Vernunft“</color> absorbiert hat, eine Stapelung des Effekts „Verdorbene Kunst – Enthauptung“. Indem sie „Verdorbene Kunst – Enthauptung“ verbraucht, kann Skirk abgestimmte Angriffe durchführen. Außerdem wird der Schaden, den sie im Modus <color=#ffd780>Sieben-Phasen-Blitz</color> erleidet, verringert. Die Stapelung des Effekts hält 15s, 3-fach stapelbar, Wirkungsdauer jeder Stapelung wird unabhängig voneinander berechnet.\nDas passive Talent „Vernunft jenseits der Vernunft“ muss zuerst freigeschaltet werden.\n<color=#ffd780>Verdorbene Kunst – Enthauptung</color>\n· Führt beim Auslösen der Spezialfähigkeit <color=#ffd780>Verdorbene Kunst – Zerstörung</color> einen abgestimmten Angriff aus, der sämtliche Stapelungen von <color=#ffd780>Verdorbene Kunst – Enthauptung</color> verbraucht und für jede verbrauchte Stapelung <color=#99ffff>Kryo-Schaden</color> in Höhe von 750% von Skirks ANG verursacht. Hierdurch verursachter Schaden gilt als Schaden der Spezialfähigkeit.\n· Skirk verbraucht beim Treffen vom Gegner mit der dritten oder fünften Phase des Standardangriffs im Sieben-Phasen-Blitzmodus eine Stapelung des Effekts <color=#ffd780>Verdorbene Kunst – Enthauptung</color> und führt 3 abgestimmte Angriffe aus, wobei jeder Angriff <color=#99ffff>Kryo-Schaden</color> in Höhe von 180% von Skirks ANG verursacht. Hierdurch verursachter Schaden gilt als Schaden des Standardangriffs.\n· Verbraucht, wenn Skirk im Sieben-Phasen-Blitzmodus Schaden erleidet, eine Stapelung <color=#ffd780>Verdorbene Kunst – Enthauptung</color> , um den diesmaligen erlittenen Schaden um 80% zu verringern und greift die Gegner in der Nähe 3-mal an, wobei jeder Angriff <color=#99ffff>Kryo-Schaden</color> in Höhe von 180% von Skirks ANG verursacht. Hierdurch verursachter Schaden gilt als Schaden des heftigen Schlags."
           }
         ]
       }
@@ -2616,6 +2815,706 @@
         ]
       }
     ],
+    "baseInfo": [
+      {
+        "key": "Name",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Skirk"
+          }
+        ]
+      },
+      {
+        "key": "Geburtstag",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "5. November"
+          }
+        ]
+      },
+      {
+        "key": "Sternbilder",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Crystallina"
+          }
+        ]
+      },
+      {
+        "key": "Titel",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Stern der Leere"
+          }
+        ]
+      },
+      {
+        "key": "Sieben Wandlungen der Schlange",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Kryo"
+          }
+        ]
+      },
+      {
+        "key": "Zugehörigkeit",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Unbekannt"
+          }
+        ]
+      },
+      {
+        "key": "Chinesische Stimme",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "(谢莹) Xie Ying"
+          }
+        ]
+      },
+      {
+        "key": "Englische Stimme\n",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Cat Protano"
+          }
+        ]
+      },
+      {
+        "key": "Japanische Stimme",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "(能登麻美子) Noto Mamiko"
+          }
+        ]
+      },
+      {
+        "key": "Koreanische Stimme",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "(서다혜) Seo Dahye"
+          }
+        ]
+      },
+      {
+        "key": "Spezialzubereitung",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "TBA"
+          }
+        ]
+      },
+      {
+        "key": "Version der Veröffentlichung",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "5.7"
+          }
+        ]
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/d7371af70f7b71f5cedaabe006dfb106_7112535273237131577.png"
+      },
+      {
+        "key": "Figurenzeichnung",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/1cb7988952bbe7666e82cfba48f88faa_1681948255315436625.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Skirks Kleidung. Sie hat die Vernichtung der Sterne miterlebt und einmal in der absoluten Dunkelheit des Universums getanzt. All diese Momente sind zu einer endlosen Reise verschmolzen."
+          }
+        ]
+      },
+      {
+        "key": "Idle-Animation 1",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/4c44fe6c44ffbe00d4ba5c4b301665ec_1336500605468298277.gif"
+      },
+      {
+        "key": "Idle-Animation 2",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/cb080f281f442e451d8cfe8b86ea8e99_1966463941854332311.gif"
+      }
+    ],
+    "ascension": [
+      {
+        "key": "St. 1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Vor Aufstieg",
+              "Nach Aufstieg"
+            ]
+          },
+          {
+            "key": "Basis-LP",
+            "values": [
+              "-",
+              "967"
+            ]
+          },
+          {
+            "key": "Basis-ANG",
+            "values": [
+              "-",
+              "28"
+            ]
+          },
+          {
+            "key": "Basis-VTD",
+            "values": [
+              "-",
+              "63"
+            ]
+          },
+          {
+            "key": "KSCH",
+            "values": [
+              "-",
+              "0.0%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "St. 20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Vor Aufstieg",
+              "Nach Aufstieg"
+            ]
+          },
+          {
+            "key": "Basis-LP",
+            "values": [
+              "2508",
+              "3336"
+            ]
+          },
+          {
+            "key": "Basis-ANG",
+            "values": [
+              "73",
+              "97"
+            ]
+          },
+          {
+            "key": "Basis-VTD",
+            "values": [
+              "163",
+              "217"
+            ]
+          },
+          {
+            "key": "KSCH",
+            "values": [
+              "0.0%",
+              "0.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 411,
+            "name": "Shivada-Jade-Splitter",
+            "desc": "Material für den Figurenaufstieg.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 7526,
+            "name": "Wolkenfels-Spaltblatt",
+            "desc": "Eine merkwürdige Pflanze, deren äußere Blütenblätter der Textur von Stein ähneln. Wenn sie erblüht, wird der Blick auf das kristallene Innere freigegeben.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/82902cec095daf4d3a0aad3d0e975075_2256101611360374803.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4072,
+            "name": "Greifendes Zahnrad",
+            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Ein wichtiges Teil für das Getriebe. Wenn es fehlt, funktioniert die entsprechende Einheit nicht mehr.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/0d15f8ce2c281306fbc8e0c3a6315437_4415947670565014598.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "St. 40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Vor Aufstieg",
+              "Nach Aufstieg"
+            ]
+          },
+          {
+            "key": "Basis-LP",
+            "values": [
+              "4992",
+              "5581"
+            ]
+          },
+          {
+            "key": "Basis-ANG",
+            "values": [
+              "145",
+              "162"
+            ]
+          },
+          {
+            "key": "Basis-VTD",
+            "values": [
+              "325",
+              "363"
+            ]
+          },
+          {
+            "key": "KSCH",
+            "values": [
+              "0.0%",
+              "9.6%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 410,
+            "name": "Shivada-Jade-Bruchstück",
+            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, ...“",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 7268,
+            "name": "Fesselnder Blick",
+            "desc": "Ein Objekt, das man nach dem Besiegen eines Monsters, das als Tiefenpflanze bezeichnet wird, erhält. Es mag wie ein Stück Obst aussehen, ist es aber nicht.<br>Geformt aus Energie, die sich in einem einzigen Punkt verdichtet hat, einem „Auge“, das aus einer fernen, dunklen Welt hierherblickt.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/ccdff500539a8fb15a054702aef656aa_3366346757500389276.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 7526,
+            "name": "Wolkenfels-Spaltblatt",
+            "desc": "Eine merkwürdige Pflanze, deren äußere Blütenblätter der Textur von Stein ähneln. Wenn sie erblüht, wird der Blick auf das kristallene Innere freigegeben.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/82902cec095daf4d3a0aad3d0e975075_2256101611360374803.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4072,
+            "name": "Greifendes Zahnrad",
+            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Ein wichtiges Teil für das Getriebe. Wenn es fehlt, funktioniert die entsprechende Einheit nicht mehr.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/0d15f8ce2c281306fbc8e0c3a6315437_4415947670565014598.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "St. 50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Vor Aufstieg",
+              "Nach Aufstieg"
+            ]
+          },
+          {
+            "key": "Basis-LP",
+            "values": [
+              "6421",
+              "7206"
+            ]
+          },
+          {
+            "key": "Basis-ANG",
+            "values": [
+              "186",
+              "209"
+            ]
+          },
+          {
+            "key": "Basis-VTD",
+            "values": [
+              "417",
+              "568"
+            ]
+          },
+          {
+            "key": "KSCH",
+            "values": [
+              "9.6%",
+              "19.2%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 410,
+            "name": "Shivada-Jade-Bruchstück",
+            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, ...“",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 7268,
+            "name": "Fesselnder Blick",
+            "desc": "Ein Objekt, das man nach dem Besiegen eines Monsters, das als Tiefenpflanze bezeichnet wird, erhält. Es mag wie ein Stück Obst aussehen, ist es aber nicht.<br>Geformt aus Energie, die sich in einem einzigen Punkt verdichtet hat, einem „Auge“, das aus einer fernen, dunklen Welt hierherblickt.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/ccdff500539a8fb15a054702aef656aa_3366346757500389276.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 7526,
+            "name": "Wolkenfels-Spaltblatt",
+            "desc": "Eine merkwürdige Pflanze, deren äußere Blütenblätter der Textur von Stein ähneln. Wenn sie erblüht, wird der Blick auf das kristallene Innere freigegeben.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/82902cec095daf4d3a0aad3d0e975075_2256101611360374803.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4071,
+            "name": "Mechanisches Stirnrad",
+            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Obwohl es in der Kinematik der Uhrwerk-Mecha bedeutende Durchbrüche gab, konnte die Dynamik bis heute die Fundamente und Regeln nicht erschüttern, die Alain Guillotin vor mehr als vierhundert Jahren aufgestellt hatte.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/8023d5d16d579656f82fd4378358a11b_8223941451665776915.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "St. 60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Vor Aufstieg",
+              "Nach Aufstieg"
+            ]
+          },
+          {
+            "key": "Basis-LP",
+            "values": [
+              "8055",
+              "8644"
+            ]
+          },
+          {
+            "key": "Basis-ANG",
+            "values": [
+              "233",
+              "250"
+            ]
+          },
+          {
+            "key": "Basis-VTD",
+            "values": [
+              "523",
+              "562"
+            ]
+          },
+          {
+            "key": "KSCH",
+            "values": [
+              "19.2%",
+              "19.2%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 409,
+            "name": "Shivada-Jade-Brocken",
+            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, ...“<br/>„dass ihr den Kummer der ganzen Welt auf den Schultern tragt.“",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 7268,
+            "name": "Fesselnder Blick",
+            "desc": "Ein Objekt, das man nach dem Besiegen eines Monsters, das als Tiefenpflanze bezeichnet wird, erhält. Es mag wie ein Stück Obst aussehen, ist es aber nicht.<br>Geformt aus Energie, die sich in einem einzigen Punkt verdichtet hat, einem „Auge“, das aus einer fernen, dunklen Welt hierherblickt.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/ccdff500539a8fb15a054702aef656aa_3366346757500389276.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 7526,
+            "name": "Wolkenfels-Spaltblatt",
+            "desc": "Eine merkwürdige Pflanze, deren äußere Blütenblätter der Textur von Stein ähneln. Wenn sie erblüht, wird der Blick auf das kristallene Innere freigegeben.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/82902cec095daf4d3a0aad3d0e975075_2256101611360374803.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4071,
+            "name": "Mechanisches Stirnrad",
+            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Obwohl es in der Kinematik der Uhrwerk-Mecha bedeutende Durchbrüche gab, konnte die Dynamik bis heute die Fundamente und Regeln nicht erschüttern, die Alain Guillotin vor mehr als vierhundert Jahren aufgestellt hatte.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/8023d5d16d579656f82fd4378358a11b_8223941451665776915.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "St. 70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Vor Aufstieg",
+              "Nach Aufstieg"
+            ]
+          },
+          {
+            "key": "Basis-LP",
+            "values": [
+              "9501",
+              "10089"
+            ]
+          },
+          {
+            "key": "Basis-ANG",
+            "values": [
+              "275",
+              "292"
+            ]
+          },
+          {
+            "key": "Basis-VTD",
+            "values": [
+              "617",
+              "656"
+            ]
+          },
+          {
+            "key": "KSCH",
+            "values": [
+              "19.2%",
+              "28.8%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 409,
+            "name": "Shivada-Jade-Brocken",
+            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, ...“<br/>„dass ihr den Kummer der ganzen Welt auf den Schultern tragt.“",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 7268,
+            "name": "Fesselnder Blick",
+            "desc": "Ein Objekt, das man nach dem Besiegen eines Monsters, das als Tiefenpflanze bezeichnet wird, erhält. Es mag wie ein Stück Obst aussehen, ist es aber nicht.<br>Geformt aus Energie, die sich in einem einzigen Punkt verdichtet hat, einem „Auge“, das aus einer fernen, dunklen Welt hierherblickt.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/ccdff500539a8fb15a054702aef656aa_3366346757500389276.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 7526,
+            "name": "Wolkenfels-Spaltblatt",
+            "desc": "Eine merkwürdige Pflanze, deren äußere Blütenblätter der Textur von Stein ähneln. Wenn sie erblüht, wird der Blick auf das kristallene Innere freigegeben.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/82902cec095daf4d3a0aad3d0e975075_2256101611360374803.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4070,
+            "name": "Neuartiges Uhrwerk-Zahnrad",
+            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Die Fortschritte in der Maschinenpräzision und der Materialforschung sind der Schlüssel für den Fortschritt bei den Uhrwerk-Mecha in Fontaine. Unterstützt durch fortschrittliche Gerätschaften besitzt jeder Ingenieur die Fähigkeit, Maschinen herzustellen, die die des Zeitalters des „Herrn der wunderlichen Maschinen“ Guillotin überragen.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/4b604ff986feeaf150418ca94355a65a_1414415110007787420.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "St. 80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Vor Aufstieg",
+              "Nach Aufstieg"
+            ]
+          },
+          {
+            "key": "Basis-LP",
+            "values": [
+              "10956",
+              "11544"
+            ]
+          },
+          {
+            "key": "Basis-ANG",
+            "values": [
+              "317",
+              "334"
+            ]
+          },
+          {
+            "key": "Basis-VTD",
+            "values": [
+              "712",
+              "750"
+            ]
+          },
+          {
+            "key": "KSCH",
+            "values": [
+              "28.8%",
+              "38.4%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 408,
+            "name": "Shivada-Jade",
+            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, dass ihr den Kummer der ganzen Welt auf den Schultern tragt.“<br/>„Euer Herz brennt sicher vor lauter Hoffnung, wenn ihr meine Kälte aushaltet.“<br/>„So lasst die alte Welt brennen.“",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 7268,
+            "name": "Fesselnder Blick",
+            "desc": "Ein Objekt, das man nach dem Besiegen eines Monsters, das als Tiefenpflanze bezeichnet wird, erhält. Es mag wie ein Stück Obst aussehen, ist es aber nicht.<br>Geformt aus Energie, die sich in einem einzigen Punkt verdichtet hat, einem „Auge“, das aus einer fernen, dunklen Welt hierherblickt.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/ccdff500539a8fb15a054702aef656aa_3366346757500389276.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 7526,
+            "name": "Wolkenfels-Spaltblatt",
+            "desc": "Eine merkwürdige Pflanze, deren äußere Blütenblätter der Textur von Stein ähneln. Wenn sie erblüht, wird der Blick auf das kristallene Innere freigegeben.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/82902cec095daf4d3a0aad3d0e975075_2256101611360374803.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4070,
+            "name": "Neuartiges Uhrwerk-Zahnrad",
+            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Die Fortschritte in der Maschinenpräzision und der Materialforschung sind der Schlüssel für den Fortschritt bei den Uhrwerk-Mecha in Fontaine. Unterstützt durch fortschrittliche Gerätschaften besitzt jeder Ingenieur die Fähigkeit, Maschinen herzustellen, die die des Zeitalters des „Herrn der wunderlichen Maschinen“ Guillotin überragen.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/4b604ff986feeaf150418ca94355a65a_1414415110007787420.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "St. 90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Vor Aufstieg",
+              "Nach Aufstieg"
+            ]
+          },
+          {
+            "key": "Basis-LP",
+            "values": [
+              "12417",
+              "-"
+            ]
+          },
+          {
+            "key": "Basis-ANG",
+            "values": [
+              "359",
+              "-"
+            ]
+          },
+          {
+            "key": "Basis-VTD",
+            "values": [
+              "807",
+              "-"
+            ]
+          },
+          {
+            "key": "KSCH",
+            "values": [
+              "38.4%",
+              "-"
+            ]
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "title": "Figurendetails",
@@ -2686,905 +3585,6 @@
           {
             "type": "RichText",
             "text": "Ab Freundschaftsstufe 6 verfügbar\nDie „Sieben Wandlungen der Schlange“ ist ein kleiner Trick, den der Reiter des Bösen einst Skirk beigebracht hatte.\nUrsprünglich von der Universitas Magistrorum Khaenri’ahs entwickelt, dient dieser kleine Zauber, früher bekannt unter dem Namen „Chaos-Permeation“, dazu, sich über Teyvats Nutzer von Elementarkräften lustig zu machen. Nutzer dieses Zaubers können die Kraft des Abgrunds verwenden, um Veränderungen zu erzielen, die denen der Elementarkräfte ähneln. Das zugrunde liegende Prinzip ähnelt der Nutzung des Abgrunds zum Durchdringen der Realität, indem spezifische Formen des Unterdrucks erzeugt werden, wodurch der Energiefluss eines bestimmten Elements ausgelöst wird.\nFür Khaenri’ah war die „Chaos-Permeation“ kaum mehr als ein Trick, den man bei Paraden und Aufführungen zur Belustigung einsetzte.\nAls Krieger hatte der Reiter des Bösen zunächst keine Ahnung von solchen Dingen. Aber als er allmählich die Kraft des Abgrunds verstand, meisterte er diesen Zauber quasi im Handumdrehen. Während gewöhnliche Menschen für das Erlernen einer einzigen elementaren Veränderung Monate brauchten und sie sich selbst dann damit nur als einfache Straßenkünstler verdingen konnten, gelang es dem Reiter des Bösen schon bei seinem ersten Versuch, alle sieben Elemente auf einmal zu beherrschen.\nEr lehrte Skirk diese Technik, aber gewiss nicht, damit sie sich bei knapper Kasse auf den Straßen Teyvats ein paar Mora dazuverdienen konnte. Schließlich war es mehr als töricht, ja masochistisch gar, in den sieben Städten die Beherrschung von Techniken des Abgrunds zur Schau zu stellen.\n„In meiner Heimat repräsentieren die sieben Elemente die natürliche Ordnung der Dinge. Wenn du also deine Kraft noch ein wenig länger verbergen möchtest, dann wende einfach diesen kleinen Trick an.“"
-          }
-        ]
-      }
-    ],
-    "talent": [
-      {
-        "title": "Verdorbene Kunst – Zerteilung",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/94aa30ae75b8c7c6a9c64ab05bd5dda7_6431676817403099979.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Standardangriff</color>\nFührt bis zu 5 Angriffe hintereinander aus.\n<color=#ffd780>Heftiger Schlag</color>\nVerbraucht eine gewisse Menge Ausdauer und schleudert eine wirbelnde Kristalllanze, die den Gegnern vor sich Schaden zufügt.\n<color=#ffd780>Angriff aus dem Fall</color>\nSchlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen Flächenschaden."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "St.",
-            "values": [
-              "St. 1",
-              "St. 2",
-              "St. 3",
-              "St. 4",
-              "St. 5",
-              "St. 6",
-              "St. 7",
-              "St. 8",
-              "St. 9",
-              "St. 10",
-              "St. 11"
-            ]
-          },
-          {
-            "key": "SCH Phase 1",
-            "values": [
-              "54.52%",
-              "58.96%",
-              "63.4%",
-              "69.74%",
-              "74.18%",
-              "79.25%",
-              "86.22%",
-              "93.2%",
-              "100.17%",
-              "107.78%",
-              "115.39%"
-            ]
-          },
-          {
-            "key": "SCH Phase 2",
-            "values": [
-              "49.79%",
-              "53.85%",
-              "57.9%",
-              "63.69%",
-              "67.74%",
-              "72.38%",
-              "78.74%",
-              "85.11%",
-              "91.48%",
-              "98.43%",
-              "105.38%"
-            ]
-          },
-          {
-            "key": "SCH Phase 3",
-            "values": [
-              "32.42% + 32.42%",
-              "35.06% + 35.06%",
-              "37.7% + 37.7%",
-              "41.47% + 41.47%",
-              "44.11% + 44.11%",
-              "47.13% + 47.13%",
-              "51.27% + 51.27%",
-              "55.42% + 55.42%",
-              "59.57% + 59.57%",
-              "64.09% + 64.09%",
-              "68.61% + 68.61%"
-            ]
-          },
-          {
-            "key": "SCH Phase 4",
-            "values": [
-              "60.8%",
-              "65.75%",
-              "70.7%",
-              "77.77%",
-              "82.72%",
-              "88.38%",
-              "96.15%",
-              "103.93%",
-              "111.71%",
-              "120.19%",
-              "128.67%"
-            ]
-          },
-          {
-            "key": "SCH Phase 5",
-            "values": [
-              "82.9%",
-              "89.65%",
-              "96.4%",
-              "106.04%",
-              "112.79%",
-              "120.5%",
-              "131.1%",
-              "141.71%",
-              "152.31%",
-              "163.88%",
-              "175.45%"
-            ]
-          },
-          {
-            "key": "SCH heftiger Schläge",
-            "values": [
-              "66.82% ×2",
-              "72.26% ×2",
-              "77.7% ×2",
-              "85.47% ×2",
-              "90.91% ×2",
-              "97.13% ×2",
-              "105.67% ×2",
-              "114.22% ×2",
-              "122.77% ×2",
-              "132.09% ×2",
-              "141.41% ×2"
-            ]
-          },
-          {
-            "key": "Ausdauerverbrauch heftiger Schläge",
-            "values": [
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte"
-            ]
-          },
-          {
-            "key": "SCH beim Fallen",
-            "values": [
-              "63.93%",
-              "69.14%",
-              "74.34%",
-              "81.77%",
-              "86.98%",
-              "92.93%",
-              "101.1%",
-              "109.28%",
-              "117.46%",
-              "126.38%",
-              "135.3%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6630,
-              "name": "Lehren des „Wettstreits“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Was definiert Stärke und was Schwäche? Nur Sieg und Niederlage. Die Ergebnisse eines Wettkampfs sind überzeugender als alle Worte.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/508cb37d6026ab3f4303857dad074fc2_1251028051522435061.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 4072,
-              "name": "Greifendes Zahnrad",
-              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Ein wichtiges Teil für das Getriebe. Wenn es fehlt, funktioniert die entsprechende Einheit nicht mehr.</p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/0d15f8ce2c281306fbc8e0c3a6315437_4415947670565014598.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6631,
-              "name": "Anleitung zum „Wettstreit“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Auch wenn Menschen nicht so schnell fliegen können wie geflügelte Tiere und nicht so geschmeidig sind wie Schleime, haben sie doch ihre Stärken. Manchmal ist das Verständnis, warum und wie sie in Wettstreit gehen, der Schlüssel zur Selbsterkenntnis.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/3ee881d376a77821d602d63a9867ac37_7019690577701605707.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 4071,
-              "name": "Mechanisches Stirnrad",
-              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Obwohl es in der Kinematik der Uhrwerk-Mecha bedeutende Durchbrüche gab, konnte die Dynamik bis heute die Fundamente und Regeln nicht erschüttern, die Alain Guillotin vor mehr als vierhundert Jahren aufgestellt hatte.</p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/8023d5d16d579656f82fd4378358a11b_8223941451665776915.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6631,
-              "name": "Anleitung zum „Wettstreit“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Auch wenn Menschen nicht so schnell fliegen können wie geflügelte Tiere und nicht so geschmeidig sind wie Schleime, haben sie doch ihre Stärken. Manchmal ist das Verständnis, warum und wie sie in Wettstreit gehen, der Schlüssel zur Selbsterkenntnis.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/3ee881d376a77821d602d63a9867ac37_7019690577701605707.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 4071,
-              "name": "Mechanisches Stirnrad",
-              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Obwohl es in der Kinematik der Uhrwerk-Mecha bedeutende Durchbrüche gab, konnte die Dynamik bis heute die Fundamente und Regeln nicht erschüttern, die Alain Guillotin vor mehr als vierhundert Jahren aufgestellt hatte.</p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/8023d5d16d579656f82fd4378358a11b_8223941451665776915.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6631,
-              "name": "Anleitung zum „Wettstreit“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Auch wenn Menschen nicht so schnell fliegen können wie geflügelte Tiere und nicht so geschmeidig sind wie Schleime, haben sie doch ihre Stärken. Manchmal ist das Verständnis, warum und wie sie in Wettstreit gehen, der Schlüssel zur Selbsterkenntnis.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/3ee881d376a77821d602d63a9867ac37_7019690577701605707.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 4071,
-              "name": "Mechanisches Stirnrad",
-              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Obwohl es in der Kinematik der Uhrwerk-Mecha bedeutende Durchbrüche gab, konnte die Dynamik bis heute die Fundamente und Regeln nicht erschüttern, die Alain Guillotin vor mehr als vierhundert Jahren aufgestellt hatte.</p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/8023d5d16d579656f82fd4378358a11b_8223941451665776915.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6631,
-              "name": "Anleitung zum „Wettstreit“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Auch wenn Menschen nicht so schnell fliegen können wie geflügelte Tiere und nicht so geschmeidig sind wie Schleime, haben sie doch ihre Stärken. Manchmal ist das Verständnis, warum und wie sie in Wettstreit gehen, der Schlüssel zur Selbsterkenntnis.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/3ee881d376a77821d602d63a9867ac37_7019690577701605707.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 4071,
-              "name": "Mechanisches Stirnrad",
-              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Obwohl es in der Kinematik der Uhrwerk-Mecha bedeutende Durchbrüche gab, konnte die Dynamik bis heute die Fundamente und Regeln nicht erschüttern, die Alain Guillotin vor mehr als vierhundert Jahren aufgestellt hatte.</p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/8023d5d16d579656f82fd4378358a11b_8223941451665776915.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6632,
-              "name": "Philosophie des „Wettstreits“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Sein Zweck ist es, sich selbst stärker zu machen. Nachdem das Ergebnis eines Wettstreits feststeht, gewinnt der Sieger das Selbstvertrauen, um sich seiner Richtung sicher zu sein, während der Verlierer Erkenntnisse darüber gewinnt, wie er stärker werden kann. Jenseits von Sieg oder Niederlage ist dies die wahre Bedeutung des Wettstreits.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/55e2e17d922ff088779e8d18bc52a592_8984028608625676046.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 4070,
-              "name": "Neuartiges Uhrwerk-Zahnrad",
-              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Die Fortschritte in der Maschinenpräzision und der Materialforschung sind der Schlüssel für den Fortschritt bei den Uhrwerk-Mecha in Fontaine. Unterstützt durch fortschrittliche Gerätschaften besitzt jeder Ingenieur die Fähigkeit, Maschinen herzustellen, die die des Zeitalters des „Herrn der wunderlichen Maschinen“ Guillotin überragen.</p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/4b604ff986feeaf150418ca94355a65a_1414415110007787420.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 7656,
-              "name": "Aufstiegsprobe – Springer",
-              "desc": "Eine seltene Probe, die bei der alchimistischen Aktivierung einer Substanz entsteht.<br>In den esoterischen Schriften ist dem bronzenen Reiter nicht klar, ob seine Aufgabe darin besteht, zu erobern oder zu schützen. Seit seiner alchimistischen Erhebung ist er lediglich auf der Suche nach Bestimmung. Das Zeitalter der Bronze war ein Zeitalter der Helden.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/7a69944ecfff83b07bf242c3a85448a1_8688621694481977765.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6632,
-              "name": "Philosophie des „Wettstreits“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Sein Zweck ist es, sich selbst stärker zu machen. Nachdem das Ergebnis eines Wettstreits feststeht, gewinnt der Sieger das Selbstvertrauen, um sich seiner Richtung sicher zu sein, während der Verlierer Erkenntnisse darüber gewinnt, wie er stärker werden kann. Jenseits von Sieg oder Niederlage ist dies die wahre Bedeutung des Wettstreits.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/55e2e17d922ff088779e8d18bc52a592_8984028608625676046.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 4070,
-              "name": "Neuartiges Uhrwerk-Zahnrad",
-              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Die Fortschritte in der Maschinenpräzision und der Materialforschung sind der Schlüssel für den Fortschritt bei den Uhrwerk-Mecha in Fontaine. Unterstützt durch fortschrittliche Gerätschaften besitzt jeder Ingenieur die Fähigkeit, Maschinen herzustellen, die die des Zeitalters des „Herrn der wunderlichen Maschinen“ Guillotin überragen.</p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/4b604ff986feeaf150418ca94355a65a_1414415110007787420.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 7656,
-              "name": "Aufstiegsprobe – Springer",
-              "desc": "Eine seltene Probe, die bei der alchimistischen Aktivierung einer Substanz entsteht.<br>In den esoterischen Schriften ist dem bronzenen Reiter nicht klar, ob seine Aufgabe darin besteht, zu erobern oder zu schützen. Seit seiner alchimistischen Erhebung ist er lediglich auf der Suche nach Bestimmung. Das Zeitalter der Bronze war ein Zeitalter der Helden.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/7a69944ecfff83b07bf242c3a85448a1_8688621694481977765.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6632,
-              "name": "Philosophie des „Wettstreits“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Sein Zweck ist es, sich selbst stärker zu machen. Nachdem das Ergebnis eines Wettstreits feststeht, gewinnt der Sieger das Selbstvertrauen, um sich seiner Richtung sicher zu sein, während der Verlierer Erkenntnisse darüber gewinnt, wie er stärker werden kann. Jenseits von Sieg oder Niederlage ist dies die wahre Bedeutung des Wettstreits.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/55e2e17d922ff088779e8d18bc52a592_8984028608625676046.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 4070,
-              "name": "Neuartiges Uhrwerk-Zahnrad",
-              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Die Fortschritte in der Maschinenpräzision und der Materialforschung sind der Schlüssel für den Fortschritt bei den Uhrwerk-Mecha in Fontaine. Unterstützt durch fortschrittliche Gerätschaften besitzt jeder Ingenieur die Fähigkeit, Maschinen herzustellen, die die des Zeitalters des „Herrn der wunderlichen Maschinen“ Guillotin überragen.</p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/4b604ff986feeaf150418ca94355a65a_1414415110007787420.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 7656,
-              "name": "Aufstiegsprobe – Springer",
-              "desc": "Eine seltene Probe, die bei der alchimistischen Aktivierung einer Substanz entsteht.<br>In den esoterischen Schriften ist dem bronzenen Reiter nicht klar, ob seine Aufgabe darin besteht, zu erobern oder zu schützen. Seit seiner alchimistischen Erhebung ist er lediglich auf der Suche nach Bestimmung. Das Zeitalter der Bronze war ein Zeitalter der Helden.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/7a69944ecfff83b07bf242c3a85448a1_8688621694481977765.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 6632,
-              "name": "Philosophie des „Wettstreits“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Wettstreit ist das Prinzip, nach dem im Reich des Feuers alles abgewogen wird.<br>Sein Zweck ist es, sich selbst stärker zu machen. Nachdem das Ergebnis eines Wettstreits feststeht, gewinnt der Sieger das Selbstvertrauen, um sich seiner Richtung sicher zu sein, während der Verlierer Erkenntnisse darüber gewinnt, wie er stärker werden kann. Jenseits von Sieg oder Niederlage ist dies die wahre Bedeutung des Wettstreits.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/55e2e17d922ff088779e8d18bc52a592_8984028608625676046.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 4070,
-              "name": "Neuartiges Uhrwerk-Zahnrad",
-              "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Die Fortschritte in der Maschinenpräzision und der Materialforschung sind der Schlüssel für den Fortschritt bei den Uhrwerk-Mecha in Fontaine. Unterstützt durch fortschrittliche Gerätschaften besitzt jeder Ingenieur die Fähigkeit, Maschinen herzustellen, die die des Zeitalters des „Herrn der wunderlichen Maschinen“ Guillotin überragen.</p>",
-              "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/4b604ff986feeaf150418ca94355a65a_1414415110007787420.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 7656,
-              "name": "Aufstiegsprobe – Springer",
-              "desc": "Eine seltene Probe, die bei der alchimistischen Aktivierung einer Substanz entsteht.<br>In den esoterischen Schriften ist dem bronzenen Reiter nicht klar, ob seine Aufgabe darin besteht, zu erobern oder zu schützen. Seit seiner alchimistischen Erhebung ist er lediglich auf der Suche nach Bestimmung. Das Zeitalter der Bronze war ein Zeitalter der Helden.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/7a69944ecfff83b07bf242c3a85448a1_8688621694481977765.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "Krone der Weisheit",
-              "desc": "Wertvolles Material, das zum Verbessern von Talenten benötigt wird.<br/>Ein rituelles Hilfsmittel, das in alter Zeit für die Weitergabe von Wissen genutzt wurde. Heutzutage jedoch liegt Wissen in gesprochener und niedergeschriebener Sprache. Die in der Krone der Weisheit gespeicherte Kraft kann heute sicherlich immer noch auf den Menschen abfärben.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/18da1315129b630f81f5a713bbeaa628_7592447523538035475.gif"
-      },
-      {
-        "title": "Verdorbene Kunst – Verzerrung",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/811afb7bc5a1abc92e16ac8d5a064318_4971204669586661473.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Imitiert den Kampfstil des „Reiters des Bösen“ und erzeugt je nachdem, ob gedrückt oder gedrückt gehalten wird, unterschiedliche Effekte.\n<color=#ffd780>Drücken</color>\nSkirk erhält 45Pkt. <color=#ffd780>„List der Schlange“</color> und wechselt in den <color=#ffd780>„Sieben-Phasen-Blitzmodus“</color> .\n<color=#ffd780>Gedrückt halten</color>\nSkirk erhält 45Pkt. „List der Schlange“ und bewegt sich fortlaufend mit hoher Geschwindigkeit. In diesem Zustand ist Skirks Unterbrechungs-WDS erhöht.\nWährenddessen kann sich Skirk auf der Wasseroberfläche bewegen sowie kontrollieren, in welche Richtung sie sich schnell bewegt. Durch erneutes Auslösen dieser Fähigkeit kann sie den Zustand des schnellen Bewegens vorzeitig beenden."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "St.",
-            "values": [
-              "St. 1",
-              "St. 2",
-              "St. 3",
-              "St. 4",
-              "St. 5",
-              "St. 6",
-              "St. 7",
-              "St. 8",
-              "St. 9",
-              "St. 10",
-              "St. 11",
-              "St. 12",
-              "St. 13"
-            ]
-          },
-          {
-            "key": "SCH Phase 1",
-            "values": [
-              "132.82%",
-              "143.64%",
-              "154.45%",
-              "169.89%",
-              "180.7%",
-              "193.06%",
-              "210.05%",
-              "227.04%",
-              "244.03%",
-              "262.56%",
-              "281.09%",
-              "299.63%",
-              "318.16%"
-            ]
-          },
-          {
-            "key": "SCH Phase 2",
-            "values": [
-              "119.8%",
-              "129.55%",
-              "139.3%",
-              "153.23%",
-              "162.98%",
-              "174.13%",
-              "189.45%",
-              "204.77%",
-              "220.1%",
-              "236.81%",
-              "253.53%",
-              "270.25%",
-              "286.96%"
-            ]
-          },
-          {
-            "key": "SCH Phase 3",
-            "values": [
-              "75.72% + 75.72%",
-              "81.89% + 81.89%",
-              "88.05% + 88.05%",
-              "96.86% + 96.86%",
-              "103.02% + 103.02%",
-              "110.06% + 110.06%",
-              "119.75% + 119.75%",
-              "129.43% + 129.43%",
-              "139.12% + 139.12%",
-              "149.69% + 149.69%",
-              "160.25% + 160.25%",
-              "170.82% + 170.82%",
-              "181.38% + 181.38%"
-            ]
-          },
-          {
-            "key": "SCH Phase 4",
-            "values": [
-              "80.54% + 80.54%",
-              "87.09% + 87.09%",
-              "93.65% + 93.65%",
-              "103.02% + 103.02%",
-              "109.57% + 109.57%",
-              "117.06% + 117.06%",
-              "127.36% + 127.36%",
-              "137.67% + 137.67%",
-              "147.97% + 147.97%",
-              "159.21% + 159.21%",
-              "170.44% + 170.44%",
-              "181.68% + 181.68%",
-              "192.92% + 192.92%"
-            ]
-          },
-          {
-            "key": "SCH Phase 5",
-            "values": [
-              "196.62%",
-              "212.63%",
-              "228.63%",
-              "251.5%",
-              "267.5%",
-              "285.79%",
-              "310.94%",
-              "336.09%",
-              "361.24%",
-              "388.68%",
-              "416.11%",
-              "443.55%",
-              "470.98%"
-            ]
-          },
-          {
-            "key": "SCH heftiger Schläge",
-            "values": [
-              "44.55% ×3",
-              "48.17% ×3",
-              "51.8% ×3",
-              "56.98% ×3",
-              "60.61% ×3",
-              "64.75% ×3",
-              "70.45% ×3",
-              "76.15% ×3",
-              "81.84% ×3",
-              "88.06% ×3",
-              "94.28% ×3",
-              "100.49% ×3",
-              "106.71% ×3"
-            ]
-          },
-          {
-            "key": "Ausdauerverbrauch heftiger Schläge",
-            "values": [
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte",
-              "20 Punkte"
-            ]
-          },
-          {
-            "key": "SCH beim Fallen",
-            "values": [
-              "63.93%",
-              "69.14%",
-              "74.34%",
-              "81.77%",
-              "86.98%",
-              "92.93%",
-              "101.1%",
-              "109.28%",
-              "117.46%",
-              "126.38%",
-              "135.3%",
-              "144.22%",
-              "153.14%"
-            ]
-          },
-          {
-            "key": "SCH beim Fallen aus niedriger/großer Höhe",
-            "values": [
-              "127.84% / 159.68%",
-              "138.24% / 172.67%",
-              "148.65% / 185.67%",
-              "163.51% / 204.24%",
-              "173.92% / 217.23%",
-              "185.81% / 232.09%",
-              "202.16% / 252.51%",
-              "218.51% / 272.93%",
-              "234.86% / 293.36%",
-              "252.7% / 315.64%",
-              "270.54% / 337.92%",
-              "288.38% / 360.2%",
-              "306.22% / 382.48%"
-            ]
-          },
-          {
-            "key": "Dauer des Sieben-Phasen-Blitzmodus",
-            "values": [
-              "12.5 s",
-              "12.5 s",
-              "12.5 s",
-              "12.5 s",
-              "12.5 s",
-              "12.5 s",
-              "12.5 s",
-              "12.5 s",
-              "12.5 s",
-              "12.5 s",
-              "12.5 s",
-              "12.5 s",
-              "12.5 s"
-            ]
-          },
-          {
-            "key": "Max. List der Schlange",
-            "values": [
-              "100 Pkt.",
-              "100 Pkt.",
-              "100 Pkt.",
-              "100 Pkt.",
-              "100 Pkt.",
-              "100 Pkt.",
-              "100 Pkt.",
-              "100 Pkt.",
-              "100 Pkt.",
-              "100 Pkt.",
-              "100 Pkt.",
-              "100 Pkt.",
-              "100 Pkt."
-            ]
-          },
-          {
-            "key": "Abklingzeit",
-            "values": [
-              "8s",
-              "8s",
-              "8s",
-              "8s",
-              "8s",
-              "8s",
-              "8s",
-              "8s",
-              "8s",
-              "8s",
-              "8s",
-              "8s",
-              "8s"
-            ]
-          }
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/bab5d2a631f2db2e4f8e85c686e8d5a3_6923151076544845284.gif"
-      },
-      {
-        "title": "Verdorbene Kunst – Zerstörung",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/12f068ffa4c56eda7709ace1bb716071_2007850279129108932.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Skirks Spezialfähigkeit ist nicht auf Elementarenergie angewiesen, sondern auf <color=#ffd780>„List der Schlange“</color> .\nWenn Skirk mindestens 50Pkt. „List der Schlange“ hat, kann sie all ihre „List der Schlange“ verbrauchen, um ihre Spezialfähigkeit auszulösen: Sie zerreißt den Raum vor ihr und führt viele schnell aufeinanderfolgende Hiebe aus, die <color=#99ffff>Kryo-Flächenschaden</color> verursachen. Gleichzeitig wird beim Auslösen der Fähigkeit der von der diesmaligen Spezialfähigkeit verursachte Schaden basierend auf jedem Punkt ihrer „List der Schlange“, der über 50Pkt. liegt, erhöht. Auf diese Weise können bis zu 12Pkt. „List der Schlange“ angerechnet werden.\nWenn sich Skirk im <color=#ffd780>Sieben-Phasen-Blitzmodus</color> befindet, wird ihre Spezialfähigkeit „Verdorbene Kunst – Zerstörung“ durch „Verdorbene Kunst – Vernichtung“ ersetzt.\n<color=#ffd780>Verdorbene Kunst – Vernichtung</color>\nEine besondere Spezialfähigkeit, die ohne den Verbrauch von „List der Schlange“ ausgelöst werden kann.\nNach dem Auslösen erhält Skirk den Effekt „Verwelkt“, der bis zum Ende des „Sieben-Phasen-Blitzmodus“ andauert. Nach dem Freischalten des passiven Talents <color=#ffd780>„Vernunft jenseits der Vernunft“</color> kann Skirk auch Leere-Risse in einem bestimmten Umkreis absorbieren.\nWährend der Wirkungsdauer des Effekts „Verwelkt“ verursachen die Standardangriffe von Skirk, die Gegner treffen, alle 0,1s erhöhten Schaden. Wenn Skirk bei der Verwendung von <color=#ffd780>„Verdorbene Kunst – Vernichtung“</color> Leere-Risse absorbiert hat, dann erhöht sich der Schaden des diesmaligen Standardangriffs basierend auf der Anzahl der absorbierten Leere-Risse.\nDieser Effekt wird entfernt, sobald er 10-mal ausgelöst wurde."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "St.",
-            "values": [
-              "St. 1",
-              "St. 2",
-              "St. 3",
-              "St. 4",
-              "St. 5",
-              "St. 6",
-              "St. 7",
-              "St. 8",
-              "St. 9",
-              "St. 10",
-              "St. 11",
-              "St. 12",
-              "St. 13"
-            ]
-          },
-          {
-            "key": "Schwerthieb-SCH",
-            "values": [
-              "122.76% ×5",
-              "131.97% ×5",
-              "141.17% ×5",
-              "153.45% ×5",
-              "162.66% ×5",
-              "171.86% ×5",
-              "184.14% ×5",
-              "196.42% ×5",
-              "208.69% ×5",
-              "220.97% ×5",
-              "233.24% ×5",
-              "245.52% ×5",
-              "260.87% ×5"
-            ]
-          },
-          {
-            "key": "SCH des letzten Hiebs",
-            "values": [
-              "204.6%",
-              "219.95%",
-              "235.29%",
-              "255.75%",
-              "271.1%",
-              "286.44%",
-              "306.9%",
-              "327.36%",
-              "347.82%",
-              "368.28%",
-              "388.74%",
-              "409.2%",
-              "434.78%"
-            ]
-          },
-          {
-            "key": "SCH-Bonus von List der Schlange",
-            "values": [
-              "19.32% ANG pro Punkt",
-              "20.77% ANG pro Punkt",
-              "22.22% ANG pro Punkt",
-              "24.15% ANG pro Punkt",
-              "25.6% ANG pro Punkt",
-              "27.05% ANG pro Punkt",
-              "28.99% ANG pro Punkt",
-              "30.92% ANG pro Punkt",
-              "32.85% ANG pro Punkt",
-              "34.78% ANG pro Punkt",
-              "36.71% ANG pro Punkt",
-              "38.65% ANG pro Punkt",
-              "41.06% ANG pro Punkt"
-            ]
-          },
-          {
-            "key": "SCH-Bonus für 0/1/2/3 absorbierte(n) Leere-Riss(e)",
-            "values": [
-              "3.5% / 6.6% / 8.8% / 11%",
-              "4% / 7.2% / 9.6% / 12%",
-              "4.5% / 7.8% / 10.4% / 13%",
-              "5% / 8.4% / 11.2% / 14%",
-              "5.5% / 9% / 12% / 15%",
-              "6% / 9.6% / 12.8% / 16%",
-              "6.5% / 10.2% / 13.6% / 17%",
-              "7% / 10.8% / 14.4% / 18%",
-              "7.5% / 11.4% / 15.2% / 19%",
-              "8% / 12% / 16% / 20%",
-              "8.5% / 12.6% / 16.8% / 21%",
-              "9% / 13.2% / 17.6% / 22%",
-              "9.5% / 13.8% / 18.4% / 23%"
-            ]
-          },
-          {
-            "key": "Abklingzeit",
-            "values": [
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s"
-            ]
-          }
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/fbedab327d345eb3b21d679df04a090b_5563152839921305124.gif"
-      },
-      {
-        "title": "Vernunft jenseits der Vernunft",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/e367f99c8aba0a7cc509de04cfca0367_2303388286412966085.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Erzeugt, wenn Truppenmitglieder in der Nähe an Gegnern die Reaktionen Gefroren, Supraleiter, Kryo-Verwirbelung oder Kryo-Kristall auslösen, in der Nähe des Gegners einen Leere-Riss, 2,5s Abklingzeit. Es können gleichzeitig nur 3 von Skirk selbst erzeugte Leere-Risse auf dem Feld existieren.\nSkirk kann auf die folgenden Weisen Leere-Risse in einem bestimmten Umkreis absorbieren:\n· Wenn sie im <color=#ffd780>„Sieben-Phasen-Blitzmodus“</color> Gegner mit heftigen Schlägen trifft.\n· Wenn sie im „Sieben-Phasen-Blitzmodus“ ihre besondere Spezialfähigkeit <color=#ffd780>„Verdorbene Kunst – Vernichtung“</color> auslöst.\n· Wenn sie durch Gedrückthalten ihre Elementarfähigkeit <color=#ffd780>Verdorbene Kunst – Verzerrung</color> auslöst, um sich schnell zu bewegen.\nSkirk erhält für jeden absorbierten Riss 8Pkt. <color=#ffd780>„List der Schlange“</color> ."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "title": "Rückkehr ins Vergessen",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/53569e1ea86feaab82dd4905e35523a9_7528596756201078449.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Verleiht Skirk jedes Mal, wenn <color=#80c0ff>Hydro</color> -Truppenmitglieder in der Nähe mit ihren <color=#80c0ff>Hydro</color> -Angriffen Gegner treffen oder andere <color=#99ffff>Kryo</color> -Truppenmitglieder außer Skirk in der Nähe mit ihren <color=#99ffff>Kryo</color> -Angriffen Gegner treffen, für 20s den Effekt „Kreuzung des Todes“. 3-fach stapelbar, Wirkungsdauer jeder Stapelung wird unabhängig voneinander berechnet.\nJede Figur kann Skirk auf diese Weise maximal 1 Stapelung „Kreuzung des Todes“ verleihen.\nFür jede Stapelung „Kreuzung des Todes“ beträgt der von Skirk in ihrem <color=#ffd780>Sieben-Phasen-Blitzmodus</color> mit Standardangriffen verursachte Schaden 110/120/170% des ursprünglichen Schadens und der durch ihre Spezialfähigkeit <color=#ffd780>Verdorbene Kunst – Zerstörung</color> verursachte Schaden 105/115/160% des ursprünglichen Schadens."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "title": "Mentorin aller Waffenkampfkünste",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/5cc9a67ead88139f93fb7d78370c5c62_7287115472055964503.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Die Stufe der <color=#ffd780>Elementarfähigkeit</color> der eigenen Truppenmitglieder erhöht sich um 1, wenn die Truppe nur aus <color=#80c0ff>Hydro</color> - und <color=#99ffff>Kryo</color> -Figuren besteht und sich mindestens 1 Hydro- und 1 Kryo-Figur darin befinden."
-          }
-        ],
-        "attributes": null
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/7b6a0602ef52805253b2c2b1a9574c33_7845021555796921748.png",
-        "name": "Tiefer Fall",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Verstärkt den Effekt des passiven Talents <color=#ffd780>Vernunft jenseits der Vernunft</color> : Für jeden absorbierten Leere-Riss wird eine Kristallklinge beschworen, die Gegner in der Nähe angreift und <color=#99ffff>Kryo-Schaden</color> in Höhe von 500% von Skirks ANG verursacht. Hierdurch verursachter Schaden gilt als Schaden des heftigen Schlags.\nDas passive Talent „Vernunft jenseits der Vernunft“ muss zuerst freigeschaltet werden."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/5a2dcac715c1184405fcdb208cda4a3f_7685892440898473013.png",
-        "name": "In den Abgrund",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Verleiht Skirk nach dem Anwenden ihrer Elementarfähigkeit <color=#ffd780>Verdorbene Kunst – Verzerrung</color> zusätzlich 10Pkt. <color=#ffd780>„List der Schlange“</color> .\nVerstärkt beim Auslösen der Spezialfähigkeit <color=#ffd780>Verdorbene Kunst – Zerstörung</color> deren verursachten Schaden, indem bis zu 10 zusätzliche Punkte von „List der Schlange“ mit hinzugezählt werden.\nAußerdem erhöht sich Skirks ANG für 12,5s um 70%, nachdem sie im Modus <color=#ffd780>Sieben-Phasen-Blitz</color> ihre besondere Spezialfähigkeit <color=#ffd780>Verdorbene Kunst – Vernichtung</color> ausgelöst hat. Dieser Effekt wird aufgehoben, wenn Skirk den Sieben-Phasen-Blitzmodus beendet."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/3855338032f004075489ee402a115bf2_1339878340160402843.png",
-        "name": "Schicksalhafte Verderbnis",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Erhöht die Stufe der Spezialfähigkeit <color=#ffd780>Verdorbene Kunst – Zerstörung</color> um 3.\nHöchststufe 15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/633a3fa5dd8082d37c81a2d4ce2f7502_8124002263090881869.png",
-        "name": "Unterbrochener Fluss",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Verstärkt den Effekt des passiven Talents <color=#ffd780>Rückkehr ins Vergessen</color> : Erhöht für jede Stapelung „Kreuzung des Todes“ den ANG von Skirk zusätzlich um 10/20/40%.\nDas passive Talent „Rückkehr ins Vergessen“ muss zuerst freigeschaltet werden."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/ebab0c8add5a6c40a7c50acaf4e5bd05_5330240204192613845.png",
-        "name": "Letzter Wunsch",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Erhöht die Stufe der Elementarfähigkeit <color=#ffd780>Verdorbene Kunst – Verzerrung</color> um 3.\nHöchststufe 15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/74b2c029c2696fde17d23a6d87c89544_4612613398515009141.png",
-        "name": "Zur Quelle",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Verleiht Skirk für jeden „Leere-Riss“, den sie durch das passive Talent <color=#ffd780>„Vernunft jenseits der Vernunft“</color> absorbiert hat, eine Stapelung des Effekts „Verdorbene Kunst – Enthauptung“. Indem sie „Verdorbene Kunst – Enthauptung“ verbraucht, kann Skirk abgestimmte Angriffe durchführen. Außerdem wird der Schaden, den sie im Modus <color=#ffd780>Sieben-Phasen-Blitz</color> erleidet, verringert. Die Stapelung des Effekts hält 15s, 3-fach stapelbar, Wirkungsdauer jeder Stapelung wird unabhängig voneinander berechnet.\nDas passive Talent „Vernunft jenseits der Vernunft“ muss zuerst freigeschaltet werden.\n<color=#ffd780>Verdorbene Kunst – Enthauptung</color>\n· Führt beim Auslösen der Spezialfähigkeit <color=#ffd780>Verdorbene Kunst – Zerstörung</color> einen abgestimmten Angriff aus, der sämtliche Stapelungen von <color=#ffd780>Verdorbene Kunst – Enthauptung</color> verbraucht und für jede verbrauchte Stapelung <color=#99ffff>Kryo-Schaden</color> in Höhe von 750% von Skirks ANG verursacht. Hierdurch verursachter Schaden gilt als Schaden der Spezialfähigkeit.\n· Skirk verbraucht beim Treffen vom Gegner mit der dritten oder fünften Phase des Standardangriffs im Sieben-Phasen-Blitzmodus eine Stapelung des Effekts <color=#ffd780>Verdorbene Kunst – Enthauptung</color> und führt 3 abgestimmte Angriffe aus, wobei jeder Angriff <color=#99ffff>Kryo-Schaden</color> in Höhe von 180% von Skirks ANG verursacht. Hierdurch verursachter Schaden gilt als Schaden des Standardangriffs.\n· Verbraucht, wenn Skirk im Sieben-Phasen-Blitzmodus Schaden erleidet, eine Stapelung <color=#ffd780>Verdorbene Kunst – Enthauptung</color> , um den diesmaligen erlittenen Schaden um 80% zu verringern und greift die Gegner in der Nähe 3-mal an, wobei jeder Angriff <color=#99ffff>Kryo-Schaden</color> in Höhe von 180% von Skirks ANG verursacht. Hierdurch verursachter Schaden gilt als Schaden des heftigen Schlags."
           }
         ]
       }
