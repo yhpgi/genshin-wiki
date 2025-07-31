@@ -5,44 +5,92 @@
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/81211fd394258d684252bc7b66079637_2345115456102592830.png",
   "filterValues": {
     "cardCharacterWeaponType": "法器",
-    "cardCharacterElement": "雷元素",
+    "cardCharacterChargingPoint": "2充能",
     "cardCharacterCamp": [
       "蒙德"
     ],
-    "cardCharacterObtainingMethod": "角色邀約",
-    "cardCharacterChargingPoint": "2充能"
+    "cardCharacterElement": "雷元素",
+    "cardCharacterObtainingMethod": "角色邀約"
   },
   "menuId": 17,
   "menuName": "角色牌",
   "version": 1693048660,
   "components": {
-    "galleryCharacter": [
+    "talent": [
       {
-        "key": "元素爆發",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/85ced3281fab110bedeefa933f6c1c4b_4885236220620777014.gif"
+        "key": "指尖雷暴",
+        "title": "指尖雷暴",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/ead1e5139681f49400a80a2ebb10fb2a_2466692965499729276.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>普通攻擊</color>\n造成1點 <color=#ffacff>雷元素傷害</color> ；\n如果此技能為 <color=#ffffff>重擊</color> ，則使敵方出戰角色附屬 <color=#ffffff>引雷</color> 。\n<color=#ffffff>引雷</color>\n<color=#ffd780>狀態</color>\n此狀態初始具有2層「引雷」；重複附屬時，疊加1層「引雷」。「引雷」最多可以疊加到4層。\n<color=#ffffff>結束階段：</color> 疊加1層「引雷」。\n<color=#ffffff>所附屬角色受到蒼雷傷害時：</color> 移除此狀態，每層「引雷」使此傷害+1。"
+          }
+        ],
+        "attributes": []
       },
       {
-        "key": "角色圖示",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/d29fe0cb24535b9f46a32bcd6e1d734f_8234479174576750612.png"
+        "key": "蒼雷",
+        "title": "蒼雷",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/af99fb6b223af8aab53e4447b06483ba_6530564617770320211.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>元素戰技</color>\n造成2點 <color=#ffacff>雷元素傷害</color> ；如果敵方出戰角色未附屬 <color=#ffffff>引雷</color> ，則使其附屬 <color=#ffffff>引雷。</color>\n<color=#ffffff>引雷</color>\n<color=#ffd780>狀態</color>\n此狀態初始具有2層「引雷」；重複附屬時，疊加1層「引雷」。「引雷」最多可以疊加到4層。\n<color=#ffffff>結束階段：</color> 疊加1層「引雷」。\n<color=#ffffff>所附屬角色受到蒼雷傷害時：</color> 移除此狀態，每層「引雷」使此傷害+1。"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "薔薇的雷光",
+        "title": "薔薇的雷光",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/e225f8fa5e9a435290d33b7b93b4e376_5019091539982815055.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>元素爆發</color>\n造成2點 <color=#ffacff>雷元素傷害</color> ，召喚 <color=#ffffff>薔薇雷光</color> 。"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "薔薇雷光",
+        "title": "薔薇雷光",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/db13288db6b90ec33f8adc2656d2019f_3503104038388720780.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>召喚物</color>\n<color=#ffffff>結束階段：</color> 造成2點 <color=#ffacff>雷元素傷害</color> 。\n<color=#ffffff>可用次數：2</color>"
+          }
+        ],
+        "attributes": [],
+        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/2b3f9718f47e31a775816000450f000e_2548078714259466370.png"
+      },
+      {
+        "key": "雷元素傷害",
+        "title": "雷元素傷害",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/11ea6117480145a30b7893f1e8bd7115_7877003626235034380.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "附著雷元素，可發生元素反應：\n【 <color=#ffacff>雷元素</color> + <color=#ff9999>火元素</color> 】 <color=#ffffff>超載</color> ：本傷害+2，目標強制切換到下一個角色\n【 <color=#ffacff>雷元素</color> + <color=#99ffff>冰元素</color> 】 <color=#ffffff>超導</color> ：本傷害+1，對目標以外的所有敵方角色造成1點穿透傷害\n【 <color=#ffacff>雷元素</color> + <color=#80c0ff>水元素</color> 】 <color=#ffffff>感電</color> ：本傷害+1，對目標以外的所有敵方角色造成1點穿透傷害\n【 <color=#ffacff>雷元素</color> + <color=#99ff88>草元素</color> 】 <color=#ffffff>原激化</color> ：本傷害+1，生成使下2次草元素或雷元素傷害+1的 <color=#ffffff>[激化領域]</color>"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "規則解釋",
+        "title": "規則解釋",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/07bae546ac7c69ef6402170b283840c5_322104926701321544.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffff>重擊</color>\n我方元素骰總數為偶數時進行的「普通攻擊」，視爲「重擊」。\n<color=#ffffff>可用次數</color>\n此牌效果觸發後，會消耗一層可用次數；\n可用次數耗盡後，立刻棄置此牌。"
+          }
+        ],
+        "attributes": []
       }
     ],
-    "tcg": {
-      "headerImgs": [
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/81211fd394258d684252bc7b66079637_2345115456102592830.png",
-          "imgDesc": "普通牌面"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/afe1fe1cd77fac3d23e52afa1171d89c_7955433915685071056.png",
-          "imgDesc": "牌背"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/06fc481327639d52139b05136166363e_2360879775067740821.gif",
-          "imgDesc": "影幻牌面"
-        }
-      ],
-      "hp": 10
-    },
     "baseInfo": [
       {
         "key": "名稱",
@@ -143,79 +191,31 @@
         "isMaterial": true
       }
     ],
-    "talent": [
+    "tcg": {
+      "headerImgs": [
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/81211fd394258d684252bc7b66079637_2345115456102592830.png",
+          "imgDesc": "普通牌面"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/afe1fe1cd77fac3d23e52afa1171d89c_7955433915685071056.png",
+          "imgDesc": "牌背"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/06fc481327639d52139b05136166363e_2360879775067740821.gif",
+          "imgDesc": "影幻牌面"
+        }
+      ],
+      "hp": 10
+    },
+    "galleryCharacter": [
       {
-        "key": "指尖雷暴",
-        "title": "指尖雷暴",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/ead1e5139681f49400a80a2ebb10fb2a_2466692965499729276.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>普通攻擊</color>\n造成1點 <color=#ffacff>雷元素傷害</color> ；\n如果此技能為 <color=#ffffff>重擊</color> ，則使敵方出戰角色附屬 <color=#ffffff>引雷</color> 。\n<color=#ffffff>引雷</color>\n<color=#ffd780>狀態</color>\n此狀態初始具有2層「引雷」；重複附屬時，疊加1層「引雷」。「引雷」最多可以疊加到4層。\n<color=#ffffff>結束階段：</color> 疊加1層「引雷」。\n<color=#ffffff>所附屬角色受到蒼雷傷害時：</color> 移除此狀態，每層「引雷」使此傷害+1。"
-          }
-        ],
-        "attributes": []
+        "key": "元素爆發",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/85ced3281fab110bedeefa933f6c1c4b_4885236220620777014.gif"
       },
       {
-        "key": "蒼雷",
-        "title": "蒼雷",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/af99fb6b223af8aab53e4447b06483ba_6530564617770320211.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>元素戰技</color>\n造成2點 <color=#ffacff>雷元素傷害</color> ；如果敵方出戰角色未附屬 <color=#ffffff>引雷</color> ，則使其附屬 <color=#ffffff>引雷。</color>\n<color=#ffffff>引雷</color>\n<color=#ffd780>狀態</color>\n此狀態初始具有2層「引雷」；重複附屬時，疊加1層「引雷」。「引雷」最多可以疊加到4層。\n<color=#ffffff>結束階段：</color> 疊加1層「引雷」。\n<color=#ffffff>所附屬角色受到蒼雷傷害時：</color> 移除此狀態，每層「引雷」使此傷害+1。"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "薔薇的雷光",
-        "title": "薔薇的雷光",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/e225f8fa5e9a435290d33b7b93b4e376_5019091539982815055.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>元素爆發</color>\n造成2點 <color=#ffacff>雷元素傷害</color> ，召喚 <color=#ffffff>薔薇雷光</color> 。"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "薔薇雷光",
-        "title": "薔薇雷光",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/db13288db6b90ec33f8adc2656d2019f_3503104038388720780.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>召喚物</color>\n<color=#ffffff>結束階段：</color> 造成2點 <color=#ffacff>雷元素傷害</color> 。\n<color=#ffffff>可用次數：2</color>"
-          }
-        ],
-        "attributes": [],
-        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/2b3f9718f47e31a775816000450f000e_2548078714259466370.png"
-      },
-      {
-        "key": "雷元素傷害",
-        "title": "雷元素傷害",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/11ea6117480145a30b7893f1e8bd7115_7877003626235034380.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "附著雷元素，可發生元素反應：\n【 <color=#ffacff>雷元素</color> + <color=#ff9999>火元素</color> 】 <color=#ffffff>超載</color> ：本傷害+2，目標強制切換到下一個角色\n【 <color=#ffacff>雷元素</color> + <color=#99ffff>冰元素</color> 】 <color=#ffffff>超導</color> ：本傷害+1，對目標以外的所有敵方角色造成1點穿透傷害\n【 <color=#ffacff>雷元素</color> + <color=#80c0ff>水元素</color> 】 <color=#ffffff>感電</color> ：本傷害+1，對目標以外的所有敵方角色造成1點穿透傷害\n【 <color=#ffacff>雷元素</color> + <color=#99ff88>草元素</color> 】 <color=#ffffff>原激化</color> ：本傷害+1，生成使下2次草元素或雷元素傷害+1的 <color=#ffffff>[激化領域]</color>"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "規則解釋",
-        "title": "規則解釋",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/07bae546ac7c69ef6402170b283840c5_322104926701321544.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffff>重擊</color>\n我方元素骰總數為偶數時進行的「普通攻擊」，視爲「重擊」。\n<color=#ffffff>可用次數</color>\n此牌效果觸發後，會消耗一層可用次數；\n可用次數耗盡後，立刻棄置此牌。"
-          }
-        ],
-        "attributes": []
+        "key": "角色圖示",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/21/125391187/d29fe0cb24535b9f46a32bcd6e1d734f_8234479174576750612.png"
       }
     ]
   }

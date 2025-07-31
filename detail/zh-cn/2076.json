@@ -12,7 +12,33 @@
   "menuName": "圣遗物",
   "version": 0,
   "components": {
+    "reliquarySetEffect": {
+      "twoSetEffect": "攻击力提高18%。",
+      "fourSetEffect": "普通攻击命中敌人时，有36%概率触发「幽谷祝祀」：普通攻击造成的伤害提高，伤害提高值为攻击力的70%，该效果将在普通攻击造成伤害后的0.05秒后清除。普通攻击未触发「幽谷祝祀」时，会使下次触发概率提升20%；0.2秒内至多判定1次触发与否。"
+    },
+    "baseInfo": [
+      {
+        "key": "名称",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "来歆余响"
+          }
+        ]
+      }
+    ],
     "artifactList": {
+      "flower_of_life": {
+        "title": "魂香之花",
+        "position": "生之花",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "花型的玉雕。魂香幽幽的气息似有似无地萦绕其中。"
+          }
+        ],
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/flower_of_life_icon.png"
+      },
       "plume_of_death": {
         "title": "垂玉之叶",
         "position": "死之羽",
@@ -23,17 +49,6 @@
           }
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/plume_of_death_icon.png"
-      },
-      "goblet_of_eonothem": {
-        "title": "涌泉之盏",
-        "position": "空之杯",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "能够源源不断涌出清泉的茶盏。或许是仙家的赠礼、遗物或是失物吧。"
-          }
-        ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/goblet_of_eonothem_icon.png"
       },
       "circlet_of_logos": {
         "title": "浮溯之珏",
@@ -46,6 +61,17 @@
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/circlet_of_logos_icon.png"
       },
+      "goblet_of_eonothem": {
+        "title": "涌泉之盏",
+        "position": "空之杯",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "能够源源不断涌出清泉的茶盏。或许是仙家的赠礼、遗物或是失物吧。"
+          }
+        ],
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/goblet_of_eonothem_icon.png"
+      },
       "sands_of_eon": {
         "title": "祝祀之凭",
         "position": "时之沙",
@@ -56,22 +82,7 @@
           }
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/sands_of_eon_icon.png"
-      },
-      "flower_of_life": {
-        "title": "魂香之花",
-        "position": "生之花",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "花型的玉雕。魂香幽幽的气息似有似无地萦绕其中。"
-          }
-        ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/flower_of_life_icon.png"
       }
-    },
-    "reliquarySetEffect": {
-      "twoSetEffect": "攻击力提高18%。",
-      "fourSetEffect": "普通攻击命中敌人时，有36%概率触发「幽谷祝祀」：普通攻击造成的伤害提高，伤害提高值为攻击力的70%，该效果将在普通攻击造成伤害后的0.05秒后清除。普通攻击未触发「幽谷祝祀」时，会使下次触发概率提升20%；0.2秒内至多判定1次触发与否。"
     },
     "story": [
       {
@@ -116,17 +127,6 @@
           {
             "type": "RichText",
             "text": "传说这枚玉佩的璞石来自尘封许久的神山。\n一如离开海滨的星螺会回想起浪涛的声响，\n玉环当中也会传来细细的、汨汨的流水声。\n在客栈中，常常能听见这样的传闻…\n「传说中啊，山涧的至宝原本是一块璞玉，能降下甘霖。」\n「但后来，在世间纷乱的时候，妖邪们便觊觎它的力量。」\n「于是山主将它分成数块，造成不同的模样，蒙蔽耳目；」\n「又将它们沉在水底、藏在山中，有的则供在神龛之上。」\n「在沉玉谷的传说里，这些玉饰是得了神明契约祝福的。」\n「只不过，这么多年过去了都没有人能够找到…」\n祭司一直小心翼翼地将这枚玉环戴在身上。\n只在某年临行前，悄悄拿给毫无雅趣的友人看过。\n祭司郑重讲着花纹来历、先祖与神明悠久的契约，\n但友人却手握药杵挥汗如雨，全然没有放在心上。\n「同样的祭祀年复一年。都听你讲了不知多少回了。」\n「不是说过回来以后要请我喝茶吗？到时候再说吧。」\n但水中来的，最终却不如她所想，最终消失在了水里…\n时至今日，遗珑埠的匠人仍会制作这种造型古朴的佩饰。\n往来的客商们也纷纷依着传说，将精巧的玉环凑近耳畔，\n倾听其中，是否果真能传来，雨水叩打山石的细细声响。"
-          }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "名称",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "来歆余响"
           }
         ]
       }
