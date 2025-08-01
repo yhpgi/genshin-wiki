@@ -5,746 +5,985 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Shenhe_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/avatar.png",
   "filterValues": {
-    "characterRarity": 5,
-    "characterWeapon": "Polearm",
     "characterVision": "Cryo",
     "characterRegion": "Liyue Harbor",
+    "characterRarity": 5,
+    "characterWeapon": "Polearm",
     "characterProperty": "ATK"
   },
   "menuId": 2,
   "menuName": "Character Archive",
   "version": 1753579913,
   "components": {
-    "baseInfo": [
+    "talent": [
       {
-        "key": "Name",
-        "value": [
+        "key": "Dawnstar Piercer",
+        "title": "Dawnstar Piercer",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_0/battle_talent_0.png",
+        "desc": [
           {
             "type": "RichText",
-            "text": "Shenhe"
+            "text": "<color=#ffd780>Normal Attack</color>\nPerforms up to five consecutive spear strikes.\n<color=#ffd780>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n<color=#ffd780>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11"
+            ]
+          },
+          {
+            "key": "1-Hit DMG",
+            "values": [
+              "43.4%",
+              "46.8%",
+              "50.3%",
+              "55.3%",
+              "58.9%",
+              "62.9%",
+              "68.4%",
+              "73.9%",
+              "79.5%",
+              "85.5%",
+              "91.5%"
+            ]
+          },
+          {
+            "key": "2-Hit DMG",
+            "values": [
+              "40.3%",
+              "43.5%",
+              "56.8%",
+              "51.5%",
+              "54.8%",
+              "58.5%",
+              "63.6%",
+              "68.8%",
+              "73.9%",
+              "79.6%",
+              "85.2%"
+            ]
+          },
+          {
+            "key": "3-Hit DMG",
+            "values": [
+              "53.3%",
+              "57.7%",
+              "62.0%",
+              "68.2%",
+              "72.5%",
+              "77.5%",
+              "84.3%",
+              "91.1%",
+              "98.0%",
+              "105.4%",
+              "112.8%"
+            ]
+          },
+          {
+            "key": "4-Hit DMG",
+            "values": [
+              "26.3%+26.3%",
+              "28.5%+28.5%",
+              "30.6%+30.6%",
+              "33.7%+33.7%",
+              "35.8%+35.8%",
+              "38.3%+38.3%",
+              "41.6%+41.6%",
+              "45.0%+45.0%",
+              "48.3%+48.3%",
+              "52.0%+52.0%",
+              "55.7%+55.7%"
+            ]
+          },
+          {
+            "key": "5-Hit DMG",
+            "values": [
+              "65.6%",
+              "71.0%",
+              "76.3%",
+              "83.9%",
+              "89.3%",
+              "95.4%",
+              "103.8%",
+              "112.2%",
+              "120.6%",
+              "129.7%",
+              "138.9%"
+            ]
+          },
+          {
+            "key": "Charged Attack DMG",
+            "values": [
+              "110.7%",
+              "119.7%",
+              "128.7%",
+              "141.6%",
+              "150.6%",
+              "160.9%",
+              "175.0%",
+              "189.2%",
+              "203.3%",
+              "218.8%",
+              "234.2%"
+            ]
+          },
+          {
+            "key": "Charged Attack Stamina Cost",
+            "values": [
+              "25.0",
+              "25.0",
+              "25.0",
+              "25.0",
+              "25.0",
+              "25.0",
+              "25.0",
+              "25.0",
+              "25.0",
+              "25.0",
+              "25.0"
+            ]
+          },
+          {
+            "key": "Plunge DMG",
+            "values": [
+              "63.9%",
+              "69.1%",
+              "74.3%",
+              "81.8%",
+              "87.0%",
+              "92.9%",
+              "101.1%",
+              "109.3%",
+              "117.5%",
+              "126.4%",
+              "135.3%"
+            ]
+          },
+          {
+            "key": "Low/High Plunge DMG",
+            "values": [
+              "128%/160%",
+              "138%/173%",
+              "149%/186%",
+              "164%/204%",
+              "174%/217%",
+              "186%/232%",
+              "202%/253%",
+              "219%/273%",
+              "235%/293%",
+              "253%/316%",
+              "271%/338%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 152,
+              "name": "Teachings of Prosperity",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the blessing of Liyue, it is the foundation of the great city built by the gods and the people of Liyue, and it is the source of the peace and safety of the land.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Prosperity_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1876,
+              "name": "Whopperflower Nectar",
+              "desc": "Nectar extracted from the stamen of a Whopperflower that contains trace amounts of elemental energy.<br/>The taste of the nectar has a hint of Sweet Flower in it.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Whopperflower Nectar_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 151,
+              "name": "Guide to Prosperity",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the promise made by Liyue to its children: To repay the hard-working laborers with enough gold to brighten up this land.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 722,
+              "name": "Shimmering Nectar",
+              "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 151,
+              "name": "Guide to Prosperity",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the promise made by Liyue to its children: To repay the hard-working laborers with enough gold to brighten up this land.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 722,
+              "name": "Shimmering Nectar",
+              "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 151,
+              "name": "Guide to Prosperity",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the promise made by Liyue to its children: To repay the hard-working laborers with enough gold to brighten up this land.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 722,
+              "name": "Shimmering Nectar",
+              "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 151,
+              "name": "Guide to Prosperity",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the promise made by Liyue to its children: To repay the hard-working laborers with enough gold to brighten up this land.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 722,
+              "name": "Shimmering Nectar",
+              "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 150,
+              "name": "Philosophies of Prosperity",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is Liyue's past, present, and future. This prosperity is unmatched and unobtainable by any other nations — it all belongs to Liyue and its inhabitants.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 372,
+              "name": "Energy Nectar",
+              "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1163,
+              "name": "Hellfire Butterfly",
+              "desc": "A warped shard that houses great might. You obtained this from defeating Signora, who unleashed her original power.<br/>The seal of ice was broken under duress, and as her former will surged forth from its pale white prison and she remembered her old name once more, the undying butterfly danced amidst burning flesh and blood. And she remembered her past, wandering the land, spreading the flame, burning away all evil — and she recalled the face of the person she could never meet again.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hellfire Butterfly_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 150,
+              "name": "Philosophies of Prosperity",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is Liyue's past, present, and future. This prosperity is unmatched and unobtainable by any other nations — it all belongs to Liyue and its inhabitants.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 372,
+              "name": "Energy Nectar",
+              "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1163,
+              "name": "Hellfire Butterfly",
+              "desc": "A warped shard that houses great might. You obtained this from defeating Signora, who unleashed her original power.<br/>The seal of ice was broken under duress, and as her former will surged forth from its pale white prison and she remembered her old name once more, the undying butterfly danced amidst burning flesh and blood. And she remembered her past, wandering the land, spreading the flame, burning away all evil — and she recalled the face of the person she could never meet again.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hellfire Butterfly_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 150,
+              "name": "Philosophies of Prosperity",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is Liyue's past, present, and future. This prosperity is unmatched and unobtainable by any other nations — it all belongs to Liyue and its inhabitants.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 372,
+              "name": "Energy Nectar",
+              "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1163,
+              "name": "Hellfire Butterfly",
+              "desc": "A warped shard that houses great might. You obtained this from defeating Signora, who unleashed her original power.<br/>The seal of ice was broken under duress, and as her former will surged forth from its pale white prison and she remembered her old name once more, the undying butterfly danced amidst burning flesh and blood. And she remembered her past, wandering the land, spreading the flame, burning away all evil — and she recalled the face of the person she could never meet again.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hellfire Butterfly_icon.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 150,
+              "name": "Philosophies of Prosperity",
+              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is Liyue's past, present, and future. This prosperity is unmatched and unobtainable by any other nations — it all belongs to Liyue and its inhabitants.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 372,
+              "name": "Energy Nectar",
+              "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1163,
+              "name": "Hellfire Butterfly",
+              "desc": "A warped shard that houses great might. You obtained this from defeating Signora, who unleashed her original power.<br/>The seal of ice was broken under duress, and as her former will surged forth from its pale white prison and she remembered her old name once more, the undying butterfly danced amidst burning flesh and blood. And she remembered her past, wandering the land, spreading the flame, burning away all evil — and she recalled the face of the person she could never meet again.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hellfire Butterfly_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "Crown of Insight",
+              "desc": "A precious Talent Level-Up material.<br/>Once a medium for the storage and transfer of wisdom in ancient times. Now, wisdom is found in ancient texts and in profound speech. Nevertheless, this Crown of Insight must still be able to impart some transcendent power and wisdom to its bearer.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_0/battle_talent_0.gif"
+      },
+      {
+        "key": "Spring Spirit Summoning",
+        "title": "Spring Spirit Summoning",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_1/battle_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "The frosted dew, silvery and dense, shall exorcise all demons.\nGrants all nearby party members the Icy Quill effect and deals <color=#99ffff>Cryo DMG</color> in different ways based on whether it is tapped or held.\n<color=#ffd780>Tap/Press</color>\nRushes forward together with a Talisman Spirit, dealing <color=#99ffff>Cryo DMG</color> to opponents along the path.\n<color=#ffd780>Hold</color>\nCommands the Talisman Spirit to deal <color=#99ffff>AoE Cryo DMG</color> .\n<color=#ffd780>Icy Quill</color>\nWhen Normal, Charged, and Plunging Attacks, Elemental Skills, and Elemental Bursts deal <color=#99ffff>Cryo DMG</color> to opponents, the DMG dealt is increased based on Shenhe's current ATK.\nThe Icy Quill's effects will be cleared once its duration ends or after being triggered a certain number of times. When held rather than tapped, the Icy Quill's effect lasts longer and can be triggered more times.\nWhen one <color=#99ffff>Cryo DMG</color> instance strikes multiple opponents, the effect is triggered multiple times based on the number of opponents hit. The number of times the effect is triggered is calculated independently for each party member with the Icy Quill.\nThe power of the spirits is no falsehood. Burdened with her orders, the divine maiden hurries on!"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13",
+              "Lv.14"
+            ]
+          },
+          {
+            "key": "Press Skill DMG",
+            "values": [
+              "139%",
+              "150%",
+              "160%",
+              "174%",
+              "184%",
+              "195%",
+              "209%",
+              "223%",
+              "237%",
+              "251%",
+              "264%",
+              "278%",
+              "296%",
+              "313%"
+            ]
+          },
+          {
+            "key": "Hold Skill DMG",
+            "values": [
+              "188.8%",
+              "203.0%",
+              "217.1%",
+              "236.0%",
+              "250.2%",
+              "264.3%",
+              "283.2%",
+              "302.1%",
+              "321.0%",
+              "339.8%",
+              "358.7%",
+              "377.6%",
+              "401.2%",
+              "424.8%"
+            ]
+          },
+          {
+            "key": "DMG Bonus",
+            "values": [
+              "45.7% ATK",
+              "49.1% ATK",
+              "52.5% ATK",
+              "57.1% ATK",
+              "60.5% ATK",
+              "63.9% ATK",
+              "68.5% ATK",
+              "73.0% ATK",
+              "77.6% ATK",
+              "82.2% ATK",
+              "86.7% ATK",
+              "91.3% ATK",
+              "97.0% ATK",
+              "102.7% ATK"
+            ]
+          },
+          {
+            "key": "Tap/Press/Hold Duration",
+            "values": [
+              "10.0s/15.0s",
+              "10.0s/15.0s",
+              "10.0s/15.0s",
+              "10.0s/15.0s",
+              "10.0s/15.0s",
+              "10.0s/15.0s",
+              "10.0s/15.0s",
+              "10.0s/15.0s",
+              "10.0s/15.0s",
+              "10.0s/15.0s",
+              "10.0s/15.0s",
+              "10.0s/15.0s",
+              "10.0s/15.0s",
+              "10.0s/15.0s"
+            ]
+          },
+          {
+            "key": "Tap/Press/Hold Trigger Quota",
+            "values": [
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7",
+              "5/7"
+            ]
+          },
+          {
+            "key": "Tap/Click CD",
+            "values": [
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s"
+            ]
+          },
+          {
+            "key": "Hold CD",
+            "values": [
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_1/battle_talent_1.gif"
+      },
+      {
+        "key": "Divine Maiden's Deliverance",
+        "title": "Divine Maiden's Deliverance",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_2/battle_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Unleashes the power of the Talisman Spirit, allowing it to roam free in this plane, dealing <color=#99ffff>AoE Cryo DMG</color> .\nThe Talisman Spirit then creates a field that decreases the <color=#99ffff>Cryo RES</color> and Physical RES of opponents within it. It also deals periodic <color=#99ffff>Cryo DMG</color> to opponents within the field.\nThe way of the adepti is not defined only by the mysterious and fantastical. Only by observing the changes in the heavens and the earth, and understanding the laws of cause and effect in this realm, may its essence be understood."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13"
+            ]
+          },
+          {
+            "key": "Skill DMG",
+            "values": [
+              "101%",
+              "108%",
+              "116%",
+              "126%",
+              "134%",
+              "141%",
+              "151%",
+              "161%",
+              "171%",
+              "181%",
+              "192%",
+              "202%",
+              "214%"
+            ]
+          },
+          {
+            "key": "RES Decrease",
+            "values": [
+              "6.0%",
+              "7.0%",
+              "8.0%",
+              "9.0%",
+              "10.0%",
+              "11.0%",
+              "12.0%",
+              "13.0%",
+              "14.0%",
+              "15.0%",
+              "15.0%",
+              "15.0%",
+              "15.0%"
+            ]
+          },
+          {
+            "key": "DoT",
+            "values": [
+              "33.1%",
+              "35.6%",
+              "38.1%",
+              "41.4%",
+              "43.9%",
+              "46.4%",
+              "49.7%",
+              "53.0%",
+              "56.3%",
+              "59.6%",
+              "62.9%",
+              "66.2%",
+              "70.4%"
+            ]
+          },
+          {
+            "key": "Duration",
+            "values": [
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s"
+            ]
+          },
+          {
+            "key": "CD",
+            "values": [
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s"
+            ]
+          },
+          {
+            "key": "Energy Cost",
+            "values": [
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_2/battle_talent_2.gif"
+      },
+      {
+        "key": "Deific Embrace",
+        "title": "Deific Embrace",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/const_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "An active character within the field created by <color=#ffd780>Divine Maiden's Deliverance</color> gains 15% <color=#99ffff>Cryo DMG Bonus</color> ."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Spirit Communion Seal",
+        "title": "Spirit Communion Seal",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/const_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "After Shenhe uses <color=#ffd780>Spring Spirit Summoning</color> , she will grant all nearby party members the following effects:\n· Press/Tap: Elemental Skill and Elemental Burst DMG increased by 15% for 10s.\n· Hold: Normal, Charged, and Plunging Attack DMG increased by 15% for 15s."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Precise Comings and Goings",
+        "title": "Precise Comings and Goings",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/const_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Gains 25% more rewards when dispatched on a Liyue Expedition for 20 hours."
+          }
+        ],
+        "attributes": null
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/avatar_header.jpg"
+      },
+      {
+        "key": "Avatar",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/avatar.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Original Outfit - The World's Shackles\nShenhe's outfit. These elegant garments have accompanied her through long years of training. The red ropes that surround her body are fetters and wards simultaneously."
           }
         ]
       },
       {
-        "key": "Birthday",
-        "value": [
+        "key": "Outfit - Frostflower Dew ",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/12/35428890/a45e421ff91f77c1623864ebf0b4c551_300826511427831427.png",
+        "imgDesc": [
           {
             "type": "RichText",
-            "text": "3/10"
+            "text": "Obtained Outfit - Frostflower Dew\nThis Lantern Rite gift that Shenhe received is a set of elegant formal attire that her master, Cloud Retainer had commissioned for her. Red ropes still adorn her arms, but the bitter cold in Shenhe's heart has faded.\n\"All children love toys.\" This was the conclusion Shenhe came to after observing Granny Shan's toy store.\nKites, Xiao Lanterns, and window decorations made from cut colored paper... Children in Liyue could not help but stare fixedly at them as they passed.\nAnd should the adults beside them cotton on to their desire and buy that toy for them, those children would smile.\nShenhe possessed no such childhood memories of the sort, so she could not understand their feelings in that moment from experience. But seeing how their eyes sparkled, she believed that these toys must be related to some wondrous emotion.\nThough she had not figured out just what this emotion might be, this beautiful possibility did soften her heart a little.\n\"Shenhe seems very interested in toys.\" This was the conclusion Xianyun came to from observing Shenhe gazing at the toy store as if in a daze.\nHer disciple, she knew, had lost her family when young, and had trained under her wing ever since, and thus opportunities to access toys had been few and far between.\nNow that Shenhe had returned to live amongst humans, and she herself had taken their form to do so, she found as she grew more accustomed to the lives of mortals that Shenhe had indeed lacked many opportunities for joy compared to human children.\nAnd was it not her responsibility as master and elder, she thought, to accompany her disciple for a jaunt at the toy store?\n\"Master seems very fond of toys,\" Shenhe reflected as she and her master Xianyun, at the latter's insistence, spoke to Granny Shan for the sixth time.\nIn truth, she did not quite understand the charm of these little window decorations or firecrackers.\nHer master would often use sigils to create various colorful birds to decorate her abode. They were more vivid and lifelike than these decorations, and lovelier by far. And as for the crackling and popping of the firecrackers, they were quite crude compared to the adeptal melodies she was used to.\nIn truth, the toys themselves had but limited appeal to her, for what she actually liked was the smiles on the children's faces as they looked upon them.\nBut her master seemed very interested indeed, asking about all manner of details regarding the toys, from the crafting methods to the tricks behind releasing firecrackers. Finally, her master asked her what sort of toys she liked.\nShe believed that her master's interest must have some meaning behind it, and so she answered honestly. Then, she looked upon her master's calm, thoughtful, but silent face.\n\"Shenhe does not, in fact, like toys,\" Xianyun realized at last, after several visits to the toy stores.\nIf not, that gentle expression she saw on Shenhe's face as she stood in front of the toy store should have appeared at least once as she spoke with Granny Shan at length about the little imperfections in the latter's use of paper in window decorations, about improvements to firecracker casings to improve child safety, to the point she had completely earned the old lady's admiration.\nWhat her disciple needed was perhaps not toys themselves.\nA human's childhood and youth pass by in but the blink of an eye, and those who pass on shall never return. What, then, should she do as an elder?\nLantern Rite was fast approaching, and human custom dictated that festivals were a good opportunity to accept gifts. After all, had she not accepted just such from the Qixing in years prior...?\nA gift... Yes, that might do.\nShenhe did not realize her master's intent until she and Ganyu had received their Lantern Rite gifts from her.\nShe had felt no sense of regret about standing in front of the toy store, but her master's kindness was surprising all the same.\nIt was at that moment, when she took the long dress from the gift box her master handed to her and caressed its smooth hem that she understood how those children felt upon seeing those toys.\nBoth she and her master had changed much upon coming to the mortal realm — perhaps the future held still more pleasant surprises of this sort.\nHer future would be full of opportunities to make up for all the laughter lost and joy she had missed out on in the past. She would keep all the warmth she received in her heart, to melt the ice within her bones."
+          }
+        ]
+      },
+      {
+        "key": "Idle Animation 1",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/12/35428890/72806492e828d8ab0625d72bf7d663ee_5246731815660867572.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Original Outfit - The World's Shackles"
+          }
+        ]
+      },
+      {
+        "key": "Idle Animation 2",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/12/35428890/7dc68a94618b6f45a87aead6720b98aa_6651670924533152909.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Original Outfit - The World's Shackles"
+          }
+        ]
+      },
+      {
+        "key": "Idle Animation 3",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/12/35428890/7d290ce6dca0a985ece348acebba18cc_6276141879610332955.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Obtained Outfit - Frostflower Dew"
+          }
+        ]
+      },
+      {
+        "key": "Idle Animation 4",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/12/35428890/8b9bcd14b1b3311f1da7ea6e355305f8_1362860767084087540.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Obtained Outfit - Frostflower Dew"
           }
         ]
       },
       {
         "key": "Constellation",
-        "value": [
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/12/35428890/c4a9ffda20c177ebbb6d765332aa6b18_5923647054259125716.png",
+        "imgDesc": [
           {
             "type": "RichText",
             "text": "Crista Doloris"
           }
         ]
-      },
-      {
-        "key": "Title",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Lonesome Transcendence"
-          }
-        ]
-      },
-      {
-        "key": "Vision",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Cryo"
-          }
-        ]
-      },
-      {
-        "key": "Affiliation",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Cloud Retainer's Abode"
-          }
-        ]
-      },
-      {
-        "key": "Chinese VA",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "秦紫翼 (Qin Ziyi)"
-          }
-        ]
-      },
-      {
-        "key": "English VA",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Chelsea Kwoka"
-          }
-        ]
-      },
-      {
-        "key": "Japanese VA",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "川澄綾子 (KAWASUMI Ayako)"
-          }
-        ]
-      },
-      {
-        "key": "Korean VA",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "이현진 (Lee Hyeon-jin)"
-          }
-        ]
-      },
-      {
-        "key": "Namecard",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 6173,
-            "name": "Shenhe: Comb",
-            "desc": "Namecard style.<br>The early onset of white hair is often correlated to one's sorrows. Since \"comb\" and \"scatter\" are similarly read in Liyue's language, they believe that combing one's hair is the same as scattering one's misfortunes.",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/15/1954b668b183f7ddd2371a362055a790_6413903768817542091.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Outfit",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 5783,
-            "name": "Frostflower Dew",
-            "desc": "This Lantern Rite gift that Shenhe received is a set of elegant formal attire that her master, Cloud Retainer had commissioned for her. Red ropes still adorn her arms, but the bitter cold in Shenhe's heart has faded.",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/06/24/2b29ff6c70c1edbb5a6dec7d8e3873c3_524757654613643543.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Echo",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 7788,
-            "name": "Echo: Lonesome Transcendence",
-            "desc": "Shenhe's Envisaged Echo. \"From the world she seems apart, but there are those who know her heart.\"",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/12/fee9cd2c7e6713795ced232521b4b7c8_8235382218941324118.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Special Dish",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 1638,
-            "name": "Heartstring Noodles",
-            "desc": "Shenhe's specialty. Perhaps this comes from her desire to recreate a flavor that lives only in her memories, but Shenhe has poured much time and effort into both making and plating this dish. The smooth noodles and delectable soup make a great impression indeed, but the most indelible aspects are the dedication and heart put into this dish...",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Heartstring Noodles_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "TCG Character Card",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3832,
-            "name": "Shenhe",
-            "desc": "<p><span style=\"color: #FFFFFF\">\"Lonesome Transcendence\" Shenhe</span></p><p>The mortal realm briefly gracing, like a wisp of smoke vanishing.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/20/35428890/9d4755dfcf7b10e16ef5cd965065bd8f_1018116693472307793.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Version Released",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "2.4"
-          }
-        ]
       }
     ],
-    "ascension": [
+    "videoCollection": [
       {
-        "key": "Lv.1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "-",
-              "1011"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "-",
-              "24"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "-",
-              "65"
-            ]
-          },
-          {
-            "key": "ATK",
-            "values": [
-              "-",
-              "0.0%"
-            ]
-          }
-        ]
+        "title": "Character Demo - \"Shenhe: Crane in the Wild\" | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=piiSGbsxMRQ",
+        "coverUrl": "https://i.ytimg.com/vi/piiSGbsxMRQ/maxresdefault.jpg",
+        "duration": 166
       },
       {
-        "key": "Lv.20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "2624",
-              "3491"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "61",
-              "82"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "168",
-              "223"
-            ]
-          },
-          {
-            "key": "ATK",
-            "values": [
-              "0.0%",
-              "0.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 411,
-            "name": "Shivada Jade Sliver",
-            "desc": "Character Ascension Material.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1048,
-            "name": "Qingxin",
-            "desc": "A translucent white flower that only grows on the highest stone peaks. It eschews the warmth and moisture of the plains to gaze out afar from the solitary mountaintops.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Qingxin_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1876,
-            "name": "Whopperflower Nectar",
-            "desc": "Nectar extracted from the stamen of a Whopperflower that contains trace amounts of elemental energy.<br/>The taste of the nectar has a hint of Sweet Flower in it.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Whopperflower Nectar_icon.png",
-            "amount": 3
-          }
-        ]
+        "title": "Character Teaser - \"Shenhe: Lonesome Dream\" | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=jvGnekdMOhI",
+        "coverUrl": "https://i.ytimg.com/vi/jvGnekdMOhI/maxresdefault.jpg",
+        "duration": 99
       },
       {
-        "key": "Lv.40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "5224",
-              "5840"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "122",
-              "137"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "334",
-              "373"
-            ]
-          },
-          {
-            "key": "ATK",
-            "values": [
-              "0.0%",
-              "7.2%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 410,
-            "name": "Shivada Jade Fragment",
-            "desc": "Character Ascension material.<br/>\"Sorry...\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1926,
-            "name": "Dragonheir's False Fin",
-            "desc": "A piece of biological tissue that you found after defeating the Bathysmal Vishaps.<br/>Although it looks like a fin of some kind, it does not actually have any function at all.<br/>The people of Byakuyakoku once investigated the Bathysmal Vishaps quite deeply. Their most distinctive feature was the ability to choose what traits it wished to pass on to its offspring. Because of their great hatred for humanity, these vishaps will lose any visual acuity by the time they reach maturity. At the same time, they have also evolved a certain degree of elemental polymorphism for combat purposes.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dragonheir's False Fin_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1048,
-            "name": "Qingxin",
-            "desc": "A translucent white flower that only grows on the highest stone peaks. It eschews the warmth and moisture of the plains to gaze out afar from the solitary mountaintops.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Qingxin_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1876,
-            "name": "Whopperflower Nectar",
-            "desc": "Nectar extracted from the stamen of a Whopperflower that contains trace amounts of elemental energy.<br/>The taste of the nectar has a hint of Sweet Flower in it.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Whopperflower Nectar_icon.png",
-            "amount": 15
-          }
-        ]
+        "title": "Collected Miscellany - \"Shenhe: Fluttering of Frosty Feathers\" | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=2ERPBlS-0Is",
+        "coverUrl": "https://i.ytimg.com/vi/2ERPBlS-0Is/maxresdefault.jpg",
+        "duration": 343
       },
       {
-        "key": "Lv.50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "6719",
-              "7540"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "157",
-              "176"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "429",
-              "482"
-            ]
-          },
-          {
-            "key": "ATK",
-            "values": [
-              "7.2%",
-              "14.4%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 410,
-            "name": "Shivada Jade Fragment",
-            "desc": "Character Ascension material.<br/>\"Sorry...\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1926,
-            "name": "Dragonheir's False Fin",
-            "desc": "A piece of biological tissue that you found after defeating the Bathysmal Vishaps.<br/>Although it looks like a fin of some kind, it does not actually have any function at all.<br/>The people of Byakuyakoku once investigated the Bathysmal Vishaps quite deeply. Their most distinctive feature was the ability to choose what traits it wished to pass on to its offspring. Because of their great hatred for humanity, these vishaps will lose any visual acuity by the time they reach maturity. At the same time, they have also evolved a certain degree of elemental polymorphism for combat purposes.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dragonheir's False Fin_icon.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1048,
-            "name": "Qingxin",
-            "desc": "A translucent white flower that only grows on the highest stone peaks. It eschews the warmth and moisture of the plains to gaze out afar from the solitary mountaintops.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Qingxin_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 722,
-            "name": "Shimmering Nectar",
-            "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
-            "amount": 12
-          }
-        ]
+        "title": "Days Free of Anguish",
+        "url": "https://www.youtube.com/watch?v=V7cSucveUiQ",
+        "coverUrl": "https://i.ytimg.com/vi/V7cSucveUiQ/maxresdefault.jpg",
+        "duration": 87
       },
       {
-        "key": "Lv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "8429",
-              "9045"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "197",
-              "211"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "538",
-              "578"
-            ]
-          },
-          {
-            "key": "ATK",
-            "values": [
-              "14.4%",
-              "14.4%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 409,
-            "name": "Shivada Jade Chunk",
-            "desc": "Character Ascension material.<br/>\"Sorry...\"<br/>\"...to also have you shoulder the grievances of the world.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1926,
-            "name": "Dragonheir's False Fin",
-            "desc": "A piece of biological tissue that you found after defeating the Bathysmal Vishaps.<br/>Although it looks like a fin of some kind, it does not actually have any function at all.<br/>The people of Byakuyakoku once investigated the Bathysmal Vishaps quite deeply. Their most distinctive feature was the ability to choose what traits it wished to pass on to its offspring. Because of their great hatred for humanity, these vishaps will lose any visual acuity by the time they reach maturity. At the same time, they have also evolved a certain degree of elemental polymorphism for combat purposes.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dragonheir's False Fin_icon.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1048,
-            "name": "Qingxin",
-            "desc": "A translucent white flower that only grows on the highest stone peaks. It eschews the warmth and moisture of the plains to gaze out afar from the solitary mountaintops.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Qingxin_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 722,
-            "name": "Shimmering Nectar",
-            "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
-            "amount": 18
-          }
-        ]
+        "title": "Drifting Clouds, Wafting Snow",
+        "url": "https://www.youtube.com/watch?v=E43rmRSYHuc",
+        "coverUrl": "https://i.ytimg.com/vi/E43rmRSYHuc/maxresdefault.jpg",
+        "duration": 87
       },
       {
-        "key": "Lv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "9941",
-              "10557"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "232",
-              "247"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "635",
-              "674"
-            ]
-          },
-          {
-            "key": "ATK",
-            "values": [
-              "14.4%",
-              "21.6%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 409,
-            "name": "Shivada Jade Chunk",
-            "desc": "Character Ascension material.<br/>\"Sorry...\"<br/>\"...to also have you shoulder the grievances of the world.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1926,
-            "name": "Dragonheir's False Fin",
-            "desc": "A piece of biological tissue that you found after defeating the Bathysmal Vishaps.<br/>Although it looks like a fin of some kind, it does not actually have any function at all.<br/>The people of Byakuyakoku once investigated the Bathysmal Vishaps quite deeply. Their most distinctive feature was the ability to choose what traits it wished to pass on to its offspring. Because of their great hatred for humanity, these vishaps will lose any visual acuity by the time they reach maturity. At the same time, they have also evolved a certain degree of elemental polymorphism for combat purposes.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dragonheir's False Fin_icon.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1048,
-            "name": "Qingxin",
-            "desc": "A translucent white flower that only grows on the highest stone peaks. It eschews the warmth and moisture of the plains to gaze out afar from the solitary mountaintops.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Qingxin_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 372,
-            "name": "Energy Nectar",
-            "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
-            "amount": 12
-          }
-        ]
+        "title": "Fleeting Colors in Flight Event Cutscene Animation: \"Age of Flowing Hues\" | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=GJiO22r9418",
+        "coverUrl": "https://i.ytimg.com/vi/GJiO22r9418/maxresdefault.jpg",
+        "duration": 258
       },
       {
-        "key": "Lv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "11463",
-              "12080"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "268",
-              "282"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "732",
-              "772"
-            ]
-          },
-          {
-            "key": "ATK",
-            "values": [
-              "21.6%",
-              "28.8%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 408,
-            "name": "Shivada Jade Gemstone",
-            "desc": "Character Ascension material.<br/>\"Sorry... to also have you shoulder the grievances of the world.<br/>\"Since you could endure my bitter cold, you must have the desire to burn?<br/>\"Then, burn away the old world for me.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1926,
-            "name": "Dragonheir's False Fin",
-            "desc": "A piece of biological tissue that you found after defeating the Bathysmal Vishaps.<br/>Although it looks like a fin of some kind, it does not actually have any function at all.<br/>The people of Byakuyakoku once investigated the Bathysmal Vishaps quite deeply. Their most distinctive feature was the ability to choose what traits it wished to pass on to its offspring. Because of their great hatred for humanity, these vishaps will lose any visual acuity by the time they reach maturity. At the same time, they have also evolved a certain degree of elemental polymorphism for combat purposes.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dragonheir's False Fin_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1048,
-            "name": "Qingxin",
-            "desc": "A translucent white flower that only grows on the highest stone peaks. It eschews the warmth and moisture of the plains to gaze out afar from the solitary mountaintops.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Qingxin_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 372,
-            "name": "Energy Nectar",
-            "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
-            "amount": 24
-          }
-        ]
+        "title": "Genshin Impact EP - A Scattered Rainbow Over Spring Dew",
+        "url": "https://www.youtube.com/watch?v=7KU-tPtZkuc",
+        "coverUrl": "https://i.ytimg.com/vi/7KU-tPtZkuc/maxresdefault.jpg",
+        "duration": 170
       },
       {
-        "key": "Lv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "12993 ",
-              "-"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "304",
-              "-"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "830",
-              "-"
-            ]
-          },
-          {
-            "key": "ATK",
-            "values": [
-              "28.8%",
-              "-"
-            ]
-          }
-        ]
+        "title": "Outfit Teaser: Teyvat Style – Bathed in Heavenly Moonlight | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=bOL1rZ5nzh0",
+        "coverUrl": "https://i.ytimg.com/vi/bOL1rZ5nzh0/maxresdefault.jpg",
+        "duration": 95
+      },
+      {
+        "title": "Story Teaser: The Divine Damsel of Devastation | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=EiAhMr6IJTQ",
+        "coverUrl": "https://i.ytimg.com/vi/EiAhMr6IJTQ/maxresdefault.jpg",
+        "duration": 171
+      },
+      {
+        "title": "The Crane Cries",
+        "url": "https://www.youtube.com/watch?v=vNMNGwbXajE",
+        "coverUrl": "https://i.ytimg.com/vi/vNMNGwbXajE/maxresdefault.jpg",
+        "duration": 157
+      },
+      {
+        "title": "Version 2.4 \"Fleeting Colors in Flight\" Trailer | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=2Rjxp4bBu6s",
+        "coverUrl": "https://i.ytimg.com/vi/2Rjxp4bBu6s/maxresdefault.jpg",
+        "duration": 288
       }
     ],
     "voice": [
@@ -2355,6 +2594,875 @@
         ]
       }
     ],
+    "ascension": [
+      {
+        "key": "Lv.1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "-",
+              "1011"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "-",
+              "24"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "-",
+              "65"
+            ]
+          },
+          {
+            "key": "ATK",
+            "values": [
+              "-",
+              "0.0%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Lv.20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "2624",
+              "3491"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "61",
+              "82"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "168",
+              "223"
+            ]
+          },
+          {
+            "key": "ATK",
+            "values": [
+              "0.0%",
+              "0.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 411,
+            "name": "Shivada Jade Sliver",
+            "desc": "Character Ascension Material.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1048,
+            "name": "Qingxin",
+            "desc": "A translucent white flower that only grows on the highest stone peaks. It eschews the warmth and moisture of the plains to gaze out afar from the solitary mountaintops.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Qingxin_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1876,
+            "name": "Whopperflower Nectar",
+            "desc": "Nectar extracted from the stamen of a Whopperflower that contains trace amounts of elemental energy.<br/>The taste of the nectar has a hint of Sweet Flower in it.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Whopperflower Nectar_icon.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "Lv.40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "5224",
+              "5840"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "122",
+              "137"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "334",
+              "373"
+            ]
+          },
+          {
+            "key": "ATK",
+            "values": [
+              "0.0%",
+              "7.2%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 410,
+            "name": "Shivada Jade Fragment",
+            "desc": "Character Ascension material.<br/>\"Sorry...\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1926,
+            "name": "Dragonheir's False Fin",
+            "desc": "A piece of biological tissue that you found after defeating the Bathysmal Vishaps.<br/>Although it looks like a fin of some kind, it does not actually have any function at all.<br/>The people of Byakuyakoku once investigated the Bathysmal Vishaps quite deeply. Their most distinctive feature was the ability to choose what traits it wished to pass on to its offspring. Because of their great hatred for humanity, these vishaps will lose any visual acuity by the time they reach maturity. At the same time, they have also evolved a certain degree of elemental polymorphism for combat purposes.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dragonheir's False Fin_icon.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1048,
+            "name": "Qingxin",
+            "desc": "A translucent white flower that only grows on the highest stone peaks. It eschews the warmth and moisture of the plains to gaze out afar from the solitary mountaintops.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Qingxin_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1876,
+            "name": "Whopperflower Nectar",
+            "desc": "Nectar extracted from the stamen of a Whopperflower that contains trace amounts of elemental energy.<br/>The taste of the nectar has a hint of Sweet Flower in it.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Whopperflower Nectar_icon.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "Lv.50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "6719",
+              "7540"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "157",
+              "176"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "429",
+              "482"
+            ]
+          },
+          {
+            "key": "ATK",
+            "values": [
+              "7.2%",
+              "14.4%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 410,
+            "name": "Shivada Jade Fragment",
+            "desc": "Character Ascension material.<br/>\"Sorry...\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1926,
+            "name": "Dragonheir's False Fin",
+            "desc": "A piece of biological tissue that you found after defeating the Bathysmal Vishaps.<br/>Although it looks like a fin of some kind, it does not actually have any function at all.<br/>The people of Byakuyakoku once investigated the Bathysmal Vishaps quite deeply. Their most distinctive feature was the ability to choose what traits it wished to pass on to its offspring. Because of their great hatred for humanity, these vishaps will lose any visual acuity by the time they reach maturity. At the same time, they have also evolved a certain degree of elemental polymorphism for combat purposes.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dragonheir's False Fin_icon.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1048,
+            "name": "Qingxin",
+            "desc": "A translucent white flower that only grows on the highest stone peaks. It eschews the warmth and moisture of the plains to gaze out afar from the solitary mountaintops.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Qingxin_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 722,
+            "name": "Shimmering Nectar",
+            "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "8429",
+              "9045"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "197",
+              "211"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "538",
+              "578"
+            ]
+          },
+          {
+            "key": "ATK",
+            "values": [
+              "14.4%",
+              "14.4%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 409,
+            "name": "Shivada Jade Chunk",
+            "desc": "Character Ascension material.<br/>\"Sorry...\"<br/>\"...to also have you shoulder the grievances of the world.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1926,
+            "name": "Dragonheir's False Fin",
+            "desc": "A piece of biological tissue that you found after defeating the Bathysmal Vishaps.<br/>Although it looks like a fin of some kind, it does not actually have any function at all.<br/>The people of Byakuyakoku once investigated the Bathysmal Vishaps quite deeply. Their most distinctive feature was the ability to choose what traits it wished to pass on to its offspring. Because of their great hatred for humanity, these vishaps will lose any visual acuity by the time they reach maturity. At the same time, they have also evolved a certain degree of elemental polymorphism for combat purposes.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dragonheir's False Fin_icon.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1048,
+            "name": "Qingxin",
+            "desc": "A translucent white flower that only grows on the highest stone peaks. It eschews the warmth and moisture of the plains to gaze out afar from the solitary mountaintops.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Qingxin_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 722,
+            "name": "Shimmering Nectar",
+            "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Lv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "9941",
+              "10557"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "232",
+              "247"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "635",
+              "674"
+            ]
+          },
+          {
+            "key": "ATK",
+            "values": [
+              "14.4%",
+              "21.6%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 409,
+            "name": "Shivada Jade Chunk",
+            "desc": "Character Ascension material.<br/>\"Sorry...\"<br/>\"...to also have you shoulder the grievances of the world.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1926,
+            "name": "Dragonheir's False Fin",
+            "desc": "A piece of biological tissue that you found after defeating the Bathysmal Vishaps.<br/>Although it looks like a fin of some kind, it does not actually have any function at all.<br/>The people of Byakuyakoku once investigated the Bathysmal Vishaps quite deeply. Their most distinctive feature was the ability to choose what traits it wished to pass on to its offspring. Because of their great hatred for humanity, these vishaps will lose any visual acuity by the time they reach maturity. At the same time, they have also evolved a certain degree of elemental polymorphism for combat purposes.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dragonheir's False Fin_icon.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1048,
+            "name": "Qingxin",
+            "desc": "A translucent white flower that only grows on the highest stone peaks. It eschews the warmth and moisture of the plains to gaze out afar from the solitary mountaintops.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Qingxin_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 372,
+            "name": "Energy Nectar",
+            "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "11463",
+              "12080"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "268",
+              "282"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "732",
+              "772"
+            ]
+          },
+          {
+            "key": "ATK",
+            "values": [
+              "21.6%",
+              "28.8%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 408,
+            "name": "Shivada Jade Gemstone",
+            "desc": "Character Ascension material.<br/>\"Sorry... to also have you shoulder the grievances of the world.<br/>\"Since you could endure my bitter cold, you must have the desire to burn?<br/>\"Then, burn away the old world for me.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1926,
+            "name": "Dragonheir's False Fin",
+            "desc": "A piece of biological tissue that you found after defeating the Bathysmal Vishaps.<br/>Although it looks like a fin of some kind, it does not actually have any function at all.<br/>The people of Byakuyakoku once investigated the Bathysmal Vishaps quite deeply. Their most distinctive feature was the ability to choose what traits it wished to pass on to its offspring. Because of their great hatred for humanity, these vishaps will lose any visual acuity by the time they reach maturity. At the same time, they have also evolved a certain degree of elemental polymorphism for combat purposes.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dragonheir's False Fin_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1048,
+            "name": "Qingxin",
+            "desc": "A translucent white flower that only grows on the highest stone peaks. It eschews the warmth and moisture of the plains to gaze out afar from the solitary mountaintops.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Qingxin_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 372,
+            "name": "Energy Nectar",
+            "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "Lv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "12993 ",
+              "-"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "304",
+              "-"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "830",
+              "-"
+            ]
+          },
+          {
+            "key": "ATK",
+            "values": [
+              "28.8%",
+              "-"
+            ]
+          }
+        ]
+      }
+    ],
+    "story": [
+      {
+        "title": "Character Details",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Shenhe was originally from a branch family of exorcists, but due to a series of coincidences, she became the disciple of an adeptus.\nShe is a student solely of Cloud Retainer in name, but her impressive constitution and intelligence quickly won several other adepti over.\nShe would go on to learn from them all, eventually becoming a master of adeptal arts in her own right as a mortal.\nShe very much looks the part as well in her unique temperament and manner of carrying herself — indeed, it would be no understatement to name her a true adeptus upon meeting her for the first time.\nHowever, it is precisely due to the long years of tutelage that she has lacked company save for the adepti and odd passing illuminated beast.\nThis isolation has caused her to grow distant and indifferent."
+          }
+        ]
+      },
+      {
+        "title": "Character Story 1",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 2</color>\nSometimes, a few rumors will escape from Liyue's small community of pilgrims to make the rounds in the city's back streets.\nThese tales often depict someone being in a hopeless situation in some desperate place, when suddenly—\nA wandering white-haired adeptus comes to their rescue in the nick of time...\nMost such stories are a collection of lovely, intoxicating clichés, little different from the oft-told street-tales of fated marriages and the like.\nBut if one were to ask that white-haired adeptus to tell the story, it would take a vastly different shape:\n\"Some annoying creatures worm their way into the mountains from time to time. I simply get rid of them to prevent them from disturbing my master's meditations.\"\n\"If some people did wind up getting caught in the crossfire and injured... Well, it was their decision to come here. There isn't much I can do about that.\""
+          }
+        ]
+      },
+      {
+        "title": "Character Story 2",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 3</color>\nShenhe is in all likelihood the least accustomed to mortal life amongst those who take on an adeptal appearance.\nHaving been sequestered in the mountains since a young age, she lacks experience and common sense, which makes it difficult for her to relate to people normally.\nTo ordinary people, there are many solutions to any given problem. But to Shenhe, any solution that is not the simplest and most direct one may as well not exist.\nFor example, she almost never considers \"negotiation\" as a solution to being at cross-purposes with others, mostly resorting to \"threats\" instead. After all, it is simple and efficacious. A good solution, no?\nShe has also spent much time ruminating on problems that are truly esoteric.\nFor example: Why do we need to pay for food?\nIs there any difference between intimidating civilians and intimidating bandits?\nShe even truly believes that her master, Cloud Retainer, is a most brilliant and eloquent conversationalist.\nIn a certain sense, she can be considered very pure.\nMuch like a child, she relies on her chaotic yet straightforward intuition and logic to get her through life.\nMountain Shaper once had this to say about her:\n\"Little Shenhe is not only stronger than most — she also possesses a unique character.\"\n\"She knows not the world, understands not common sense, distinguishes few cuisines, and acknowledges no hierarchies.\"\n\"It may not be such an easy thing for Cloud Retainer to tutor her.\""
+          }
+        ]
+      },
+      {
+        "title": "Character Story 3",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 4</color>\n<color=#ffd780>Complete \"The Crane Returns on the Wind\"</color>\nLiyue has no lack of folktales about meetings with the adepti, and many of these concern relative nobodies whom an adeptus took under their wing, thus elevating them greatly.\nHowever, the circumstances under which Shenhe's fate became tied to the adeptal abodes was no such glorious thing. If anything, it was an experience characterized by anguish.\nWhen she was five, her mother passed away, and her father, having loved his wife dearly, found that agony hard to bear.\nOver time, this agony turned into resentment, and this resentment birthed obsession, by which he was driven wandering throughout the land like a man gone mad.\nHe left for close to a year, never stopping, never able to sleep soundly, ever searching for some technique that might bring his wife back.\nAt last, when the year was almost out, he returned in joyous frenzy.\nHer father had brought with him a secret art known as \"Fate Transference\"—\nBy making a ritual sacrifice to the seelie summoned by this art, a living person's body could be exchanged for a dead one's life.\nAt that time, Shenhe was yet utterly unaware of the disaster that would befall. She was only an ordinary child, overjoyed at her long-absent father's return.\nHe claimed that he had a surprise awaiting her in a cave in the mountains behind and that he would take her there immediately. She was ecstatic...\nBut the scene that followed would be burned into her mind forever.\nHer father summoned that hideous, horrifying black \"seelie\" into that cave, its blood-red eyes craving her delectable life-force.\nStupefied, Shenhe knew not from whence it had come, nor what it wanted from this place.\nCrises often paralyze people. One thought only, however, crept into the young Shenhe's mind.\nThis creature wanted to eat her, but she did not want to die. She wanted to live!\nGripping her mother's keepsake, an exorcism dagger, she faced that dark \"seelie,\" trembling yet resolute...\nSeveral days later, an adeptus following the trail of great evil would investigate the cave, only to find the little girl collapsed inside — spent, famished, parched, her life hanging by a thread.\nTaking pity on the lass' ruinous fate, and seeing that she possessed great talent, having repelled some terrifying force on her own, the adeptus would bring her back, heal her, and instruct her in the adeptal path.\nIf not for that, Shenhe would not be as she is today."
+          }
+        ]
+      },
+      {
+        "title": "Character Story 4",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 5</color>\n<color=#ffd780>Complete \"The Crane Returns on the Wind\"</color>\nEven the most diffident heart, cooled from living and training in the mountains for over a decade, might sometimes experience strange surges.\nSo it was with Shenhe. On impulse, she came down from the mountains one night to return to what was once her home.\nShe did not know how she felt about her home or her family. She was merely driven by some nebulous desire:\nTo live in the house that was once hers, and to see what became of her father, lost in his obsession.\nShe learned from neighbors that he had passed away several years prior only when she got there.\nHer childhood home had also been demolished by pawnbrokers — and thus had all the traces of her memory dissipated.\nShe did not care about the attention she was attracting, and did not answer a single one of the questions asked by those in the vicinity.\nShe simply stood there, listening to the howls that swept through the depths of her heart.\nWas it hatred? Mania? Relief?\nThey were all there, and yet none tarried for even an instant. It was as if her heart were an old well without ripples.\nNo, like a barren well with no water upon which there might be ripples.\nShe stood there for a long time, before departing again before the astonished eyes of all.\nEach step was slow indeed, but she never once turned back."
+          }
+        ]
+      },
+      {
+        "title": "Character Story 5",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 6</color>\n<color=#ffd780>Complete \"The Crane Returns on the Wind\"</color>\nLiyue has its own fortune-telling, destiny-reading methods, similar to astrology.\nOf these, there are two fates that people seek to avoid at all costs.\nOne is that of the \"solitary star,\" which dictates that one will be separated from friends and family, living alone all one's days.\nThe other is \"disastrous evil,\" which means that one will face many hardships and perils.\nWhen the adepti rescued Shenhe, Moon Carver did once read her fortune.\nThe signs showed that she was marked by both the \"solitary star\" and \"disastrous evil,\" and that she was also plagued by intense homicidal urges — she was thus a person of supremely ominous destiny, doomed to harm both herself and others.\nTo ensure that she could grow up safely and not harm any innocents, the adepti bound her soul using red ropes.\nThis binding had the effect of restraining both her evil fate and her violent tendencies, but also shackled many emotions that should have originally belonged to a human.\nFrom then on, she became more and more disaffected by trivial matters, and even things most might consider important were but dust to her.\nShe became ever less human, and ever more like a lovely yet cold statue.\nBut surprisingly, she felt something stir within her when she encountered that Traveler from a distant land:\nLong-dormant emotions, now strangers to her, came loose all at once from the depths of fate's tableau.\nPerhaps it really was as Moon Carver once said: that heaven might dictate fates, but destiny's tale is written by mortals. The tale of Shenhe and the mortal world had not yet ended..."
+          }
+        ]
+      },
+      {
+        "title": "White Jade Comb",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 4</color>\n<color=#ffd780>Complete \"The Crane Returns on the Wind\"</color>\nOnce upon a time, Shenhe had a full head of black hair.\nWhen she was first brought to Mt. Hulao, she would not say a word. The only thing she proved willing to do was to climb the mountain and watch the sea of clouds.\nIt was well, however, that she would sleep when tired, drink the dew of the mountains when thirsty, and would chew on a few stalks of Qingxin when hungry.\nCloud Retainer took this all in, but did not disturb the girl, instead making this comb of white jade from a sacred stone and giving it to her.\nThe adeptus said that if she ever wished to sever her ties with the mortal world and enter adeptal tutelage, she should brush her hair thrice with this comb, and it would be counted as a rite of apprenticeship.\nShenhe did exactly as the adeptus said without any hesitation. And something strange happened then — for as the jade comb brushed through Shenhe's hair once, a layer of her black locks turned a frosty silver from root to tip.\nOn the second brush, but half her hair remained dark.\nWhen the process was complete, only a flowing curtain of snow remained.\n...\nToday, Shenhe still keeps this comb on her person as a symbol of her connection to the adepti.\nThrough her years of training, she has long since come to understand the meaning behind those three brush strokes:\nThe first to uproot useless anxiety, the second to forsake joy and sorrow, and the third to walk this path into old age without regret."
+          }
+        ]
+      },
+      {
+        "title": "Vision",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 6</color>\n<color=#ffd780>Complete \"The Crane Returns on the Wind\"</color>\nFew people know how the young girl in the cave, intended as a sacrifice by her own father, had been able to stand against the monster for days and nights on end by herself.\nThough Shenhe was born into an exorcist family, her maddened father had not taught her a single thing about exorcism.\nAnd like many at that innocent age, she was also wholly unused to facing life's perils alone.\nBut in that aphotic cave, bereft of parental protection — indeed, betrayed by kin — Shenhe underwent a metamorphosis.\nJust as Moon Carver's readings had shown, the sleeping calamitous fates, violent urges, and unyielding spirit within her burst their bonds all at once.\nThose things served as an unseen shield and invisible blade, arming the girl's frail form.\nThey gave her strength, gave her claws and fangs, allowing her to attack that wretched creature before her, to swear to tear it to shreds — to prove that she, and not it, was the cruelest evil that stalked the darkness.\nTheir life-and-death battle across the next few days was one without end. Hunter and hunted switched places many times, the conflict locked in stalemate...\nAs the shadow of death loomed large, the gods looked upon the extraordinary girl with favor.\nWith the bright, crystalline object falling into Shenhe's hands, the balance tipped irrevocably in her favor and the victor was decided.\nThe vivid icy light pierced through the dark like skyglow, showing the path to the future.\nIn the past, it had guided Shenhe from her miserable fate. In the future, it would also lead her back to the mortal realm."
+          }
+        ]
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "Name",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Shenhe"
+          }
+        ]
+      },
+      {
+        "key": "Birthday",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "3/10"
+          }
+        ]
+      },
+      {
+        "key": "Constellation",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Crista Doloris"
+          }
+        ]
+      },
+      {
+        "key": "Title",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Lonesome Transcendence"
+          }
+        ]
+      },
+      {
+        "key": "Vision",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Cryo"
+          }
+        ]
+      },
+      {
+        "key": "Affiliation",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Cloud Retainer's Abode"
+          }
+        ]
+      },
+      {
+        "key": "Chinese VA",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "秦紫翼 (Qin Ziyi)"
+          }
+        ]
+      },
+      {
+        "key": "English VA",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Chelsea Kwoka"
+          }
+        ]
+      },
+      {
+        "key": "Japanese VA",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "川澄綾子 (KAWASUMI Ayako)"
+          }
+        ]
+      },
+      {
+        "key": "Korean VA",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "이현진 (Lee Hyeon-jin)"
+          }
+        ]
+      },
+      {
+        "key": "Namecard",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 6173,
+            "name": "Shenhe: Comb",
+            "desc": "Namecard style.<br>The early onset of white hair is often correlated to one's sorrows. Since \"comb\" and \"scatter\" are similarly read in Liyue's language, they believe that combing one's hair is the same as scattering one's misfortunes.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/15/1954b668b183f7ddd2371a362055a790_6413903768817542091.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Outfit",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5783,
+            "name": "Frostflower Dew",
+            "desc": "This Lantern Rite gift that Shenhe received is a set of elegant formal attire that her master, Cloud Retainer had commissioned for her. Red ropes still adorn her arms, but the bitter cold in Shenhe's heart has faded.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/06/24/2b29ff6c70c1edbb5a6dec7d8e3873c3_524757654613643543.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Echo",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 7788,
+            "name": "Echo: Lonesome Transcendence",
+            "desc": "Shenhe's Envisaged Echo. \"From the world she seems apart, but there are those who know her heart.\"",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/12/fee9cd2c7e6713795ced232521b4b7c8_8235382218941324118.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Special Dish",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 1638,
+            "name": "Heartstring Noodles",
+            "desc": "Shenhe's specialty. Perhaps this comes from her desire to recreate a flavor that lives only in her memories, but Shenhe has poured much time and effort into both making and plating this dish. The smooth noodles and delectable soup make a great impression indeed, but the most indelible aspects are the dedication and heart put into this dish...",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Heartstring Noodles_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "TCG Character Card",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3832,
+            "name": "Shenhe",
+            "desc": "<p><span style=\"color: #FFFFFF\">\"Lonesome Transcendence\" Shenhe</span></p><p>The mortal realm briefly gracing, like a wisp of smoke vanishing.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/20/35428890/9d4755dfcf7b10e16ef5cd965065bd8f_1018116693472307793.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Version Released",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "2.4"
+          }
+        ]
+      }
+    ],
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_1.png",
+        "name": "Clarity of Heart",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Spring Spirit Summoning</color> can be used 1 more time."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_2.png",
+        "name": "Centered Spirit",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Divine Maiden's Deliverance</color> lasts for 6 seconds longer. Active characters within the skill's field deal 15% increased <color=#99ffff>Cryo</color> CRIT DMG."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_3.png",
+        "name": "Seclusion",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Increases the Level of <color=#ffd780>Spring Spirit Summoning</color> by 3.\nMaximum upgrade level is 15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_4.png",
+        "name": "Insight",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "When characters under the effect of <color=#ffd780>Icy Quill</color> applied by Shenhe trigger its DMG Bonus effects, Shenhe will gain a Skyfrost Mantra stack:\n· When Shenhe uses <color=#ffd780>Spring Spirit Summoning</color> , she will consume all stacks of Skyfrost Mantra, increasing the DMG of that Spring Spirit Summoning by 5% for each stack consumed.\n· Max 50 stacks. Stacks last for 60s."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_5.png",
+        "name": "Divine Attainment",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Increases the Level of <color=#ffd780>Divine Maiden's Deliverance</color> by 3.\nMaximum upgrade level is 15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_6.png",
+        "name": "Mystical Abandon",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "When characters trigger <color=#ffd780>Icy Quill</color> 's effects using Normal and Charged Attack DMG, it does not count toward the Trigger Quota."
+          }
+        ]
+      }
+    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=32&center=1935.62,-52.64&zoom=-2.50",
     "customize": [
       {
         "type": "Heading",
@@ -3829,1114 +4937,6 @@
       {
         "type": "RichText",
         "text": "<color=#ffffff>Set Bonus</color>\nCryo DMG +15%\nElemental Burst DMG +20%\nEnergy Recharge +20%\nATK +18%\nUse any of these 2-piece/2-piece combinations to maximize Shenhe's <color=#ffd780>ATK</color> , <color=#ffd780>Energy Recharge</color> , and <color=#ffd780>Cryo DMG</color> ."
-      }
-    ],
-    "videoCollection": [
-      {
-        "title": "Character Demo - \"Shenhe: Crane in the Wild\" | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=piiSGbsxMRQ",
-        "coverUrl": "https://i.ytimg.com/vi/piiSGbsxMRQ/maxresdefault.jpg",
-        "duration": 166
-      },
-      {
-        "title": "Character Teaser - \"Shenhe: Lonesome Dream\" | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=jvGnekdMOhI",
-        "coverUrl": "https://i.ytimg.com/vi/jvGnekdMOhI/maxresdefault.jpg",
-        "duration": 99
-      },
-      {
-        "title": "Collected Miscellany - \"Shenhe: Fluttering of Frosty Feathers\" | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=2ERPBlS-0Is",
-        "coverUrl": "https://i.ytimg.com/vi/2ERPBlS-0Is/maxresdefault.jpg",
-        "duration": 343
-      },
-      {
-        "title": "Days Free of Anguish",
-        "url": "https://www.youtube.com/watch?v=V7cSucveUiQ",
-        "coverUrl": "https://i.ytimg.com/vi/V7cSucveUiQ/maxresdefault.jpg",
-        "duration": 87
-      },
-      {
-        "title": "Drifting Clouds, Wafting Snow",
-        "url": "https://www.youtube.com/watch?v=E43rmRSYHuc",
-        "coverUrl": "https://i.ytimg.com/vi/E43rmRSYHuc/maxresdefault.jpg",
-        "duration": 87
-      },
-      {
-        "title": "Fleeting Colors in Flight Event Cutscene Animation: \"Age of Flowing Hues\" | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=GJiO22r9418",
-        "coverUrl": "https://i.ytimg.com/vi/GJiO22r9418/maxresdefault.jpg",
-        "duration": 258
-      },
-      {
-        "title": "Genshin Impact EP - A Scattered Rainbow Over Spring Dew",
-        "url": "https://www.youtube.com/watch?v=7KU-tPtZkuc",
-        "coverUrl": "https://i.ytimg.com/vi/7KU-tPtZkuc/maxresdefault.jpg",
-        "duration": 170
-      },
-      {
-        "title": "Outfit Teaser: Teyvat Style – Bathed in Heavenly Moonlight | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=bOL1rZ5nzh0",
-        "coverUrl": "https://i.ytimg.com/vi/bOL1rZ5nzh0/maxresdefault.jpg",
-        "duration": 95
-      },
-      {
-        "title": "Story Teaser: The Divine Damsel of Devastation | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=EiAhMr6IJTQ",
-        "coverUrl": "https://i.ytimg.com/vi/EiAhMr6IJTQ/maxresdefault.jpg",
-        "duration": 171
-      },
-      {
-        "title": "The Crane Cries",
-        "url": "https://www.youtube.com/watch?v=vNMNGwbXajE",
-        "coverUrl": "https://i.ytimg.com/vi/vNMNGwbXajE/maxresdefault.jpg",
-        "duration": 157
-      },
-      {
-        "title": "Version 2.4 \"Fleeting Colors in Flight\" Trailer | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=2Rjxp4bBu6s",
-        "coverUrl": "https://i.ytimg.com/vi/2Rjxp4bBu6s/maxresdefault.jpg",
-        "duration": 288
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_1.png",
-        "name": "Clarity of Heart",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Spring Spirit Summoning</color> can be used 1 more time."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_2.png",
-        "name": "Centered Spirit",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Divine Maiden's Deliverance</color> lasts for 6 seconds longer. Active characters within the skill's field deal 15% increased <color=#99ffff>Cryo</color> CRIT DMG."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_3.png",
-        "name": "Seclusion",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Increases the Level of <color=#ffd780>Spring Spirit Summoning</color> by 3.\nMaximum upgrade level is 15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_4.png",
-        "name": "Insight",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "When characters under the effect of <color=#ffd780>Icy Quill</color> applied by Shenhe trigger its DMG Bonus effects, Shenhe will gain a Skyfrost Mantra stack:\n· When Shenhe uses <color=#ffd780>Spring Spirit Summoning</color> , she will consume all stacks of Skyfrost Mantra, increasing the DMG of that Spring Spirit Summoning by 5% for each stack consumed.\n· Max 50 stacks. Stacks last for 60s."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_5.png",
-        "name": "Divine Attainment",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Increases the Level of <color=#ffd780>Divine Maiden's Deliverance</color> by 3.\nMaximum upgrade level is 15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/constellation_6.png",
-        "name": "Mystical Abandon",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "When characters trigger <color=#ffd780>Icy Quill</color> 's effects using Normal and Charged Attack DMG, it does not count toward the Trigger Quota."
-          }
-        ]
-      }
-    ],
-    "talent": [
-      {
-        "key": "Dawnstar Piercer",
-        "title": "Dawnstar Piercer",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_0/battle_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Normal Attack</color>\nPerforms up to five consecutive spear strikes.\n<color=#ffd780>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n<color=#ffd780>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11"
-            ]
-          },
-          {
-            "key": "1-Hit DMG",
-            "values": [
-              "43.4%",
-              "46.8%",
-              "50.3%",
-              "55.3%",
-              "58.9%",
-              "62.9%",
-              "68.4%",
-              "73.9%",
-              "79.5%",
-              "85.5%",
-              "91.5%"
-            ]
-          },
-          {
-            "key": "2-Hit DMG",
-            "values": [
-              "40.3%",
-              "43.5%",
-              "56.8%",
-              "51.5%",
-              "54.8%",
-              "58.5%",
-              "63.6%",
-              "68.8%",
-              "73.9%",
-              "79.6%",
-              "85.2%"
-            ]
-          },
-          {
-            "key": "3-Hit DMG",
-            "values": [
-              "53.3%",
-              "57.7%",
-              "62.0%",
-              "68.2%",
-              "72.5%",
-              "77.5%",
-              "84.3%",
-              "91.1%",
-              "98.0%",
-              "105.4%",
-              "112.8%"
-            ]
-          },
-          {
-            "key": "4-Hit DMG",
-            "values": [
-              "26.3%+26.3%",
-              "28.5%+28.5%",
-              "30.6%+30.6%",
-              "33.7%+33.7%",
-              "35.8%+35.8%",
-              "38.3%+38.3%",
-              "41.6%+41.6%",
-              "45.0%+45.0%",
-              "48.3%+48.3%",
-              "52.0%+52.0%",
-              "55.7%+55.7%"
-            ]
-          },
-          {
-            "key": "5-Hit DMG",
-            "values": [
-              "65.6%",
-              "71.0%",
-              "76.3%",
-              "83.9%",
-              "89.3%",
-              "95.4%",
-              "103.8%",
-              "112.2%",
-              "120.6%",
-              "129.7%",
-              "138.9%"
-            ]
-          },
-          {
-            "key": "Charged Attack DMG",
-            "values": [
-              "110.7%",
-              "119.7%",
-              "128.7%",
-              "141.6%",
-              "150.6%",
-              "160.9%",
-              "175.0%",
-              "189.2%",
-              "203.3%",
-              "218.8%",
-              "234.2%"
-            ]
-          },
-          {
-            "key": "Charged Attack Stamina Cost",
-            "values": [
-              "25.0",
-              "25.0",
-              "25.0",
-              "25.0",
-              "25.0",
-              "25.0",
-              "25.0",
-              "25.0",
-              "25.0",
-              "25.0",
-              "25.0"
-            ]
-          },
-          {
-            "key": "Plunge DMG",
-            "values": [
-              "63.9%",
-              "69.1%",
-              "74.3%",
-              "81.8%",
-              "87.0%",
-              "92.9%",
-              "101.1%",
-              "109.3%",
-              "117.5%",
-              "126.4%",
-              "135.3%"
-            ]
-          },
-          {
-            "key": "Low/High Plunge DMG",
-            "values": [
-              "128%/160%",
-              "138%/173%",
-              "149%/186%",
-              "164%/204%",
-              "174%/217%",
-              "186%/232%",
-              "202%/253%",
-              "219%/273%",
-              "235%/293%",
-              "253%/316%",
-              "271%/338%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 152,
-              "name": "Teachings of Prosperity",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the blessing of Liyue, it is the foundation of the great city built by the gods and the people of Liyue, and it is the source of the peace and safety of the land.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Prosperity_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1876,
-              "name": "Whopperflower Nectar",
-              "desc": "Nectar extracted from the stamen of a Whopperflower that contains trace amounts of elemental energy.<br/>The taste of the nectar has a hint of Sweet Flower in it.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Whopperflower Nectar_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 151,
-              "name": "Guide to Prosperity",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the promise made by Liyue to its children: To repay the hard-working laborers with enough gold to brighten up this land.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 722,
-              "name": "Shimmering Nectar",
-              "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 151,
-              "name": "Guide to Prosperity",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the promise made by Liyue to its children: To repay the hard-working laborers with enough gold to brighten up this land.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 722,
-              "name": "Shimmering Nectar",
-              "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 151,
-              "name": "Guide to Prosperity",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the promise made by Liyue to its children: To repay the hard-working laborers with enough gold to brighten up this land.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 722,
-              "name": "Shimmering Nectar",
-              "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 151,
-              "name": "Guide to Prosperity",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is the promise made by Liyue to its children: To repay the hard-working laborers with enough gold to brighten up this land.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 722,
-              "name": "Shimmering Nectar",
-              "desc": "Nectar that is full of pure elemental energy.<br/>Scholars generally concur that Whopperflowers are advanced life forms among the elemental plants, but there has yet to be a satisfactory explanation regarding their predatory habits.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 150,
-              "name": "Philosophies of Prosperity",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is Liyue's past, present, and future. This prosperity is unmatched and unobtainable by any other nations — it all belongs to Liyue and its inhabitants.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 372,
-              "name": "Energy Nectar",
-              "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1163,
-              "name": "Hellfire Butterfly",
-              "desc": "A warped shard that houses great might. You obtained this from defeating Signora, who unleashed her original power.<br/>The seal of ice was broken under duress, and as her former will surged forth from its pale white prison and she remembered her old name once more, the undying butterfly danced amidst burning flesh and blood. And she remembered her past, wandering the land, spreading the flame, burning away all evil — and she recalled the face of the person she could never meet again.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hellfire Butterfly_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 150,
-              "name": "Philosophies of Prosperity",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is Liyue's past, present, and future. This prosperity is unmatched and unobtainable by any other nations — it all belongs to Liyue and its inhabitants.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 372,
-              "name": "Energy Nectar",
-              "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1163,
-              "name": "Hellfire Butterfly",
-              "desc": "A warped shard that houses great might. You obtained this from defeating Signora, who unleashed her original power.<br/>The seal of ice was broken under duress, and as her former will surged forth from its pale white prison and she remembered her old name once more, the undying butterfly danced amidst burning flesh and blood. And she remembered her past, wandering the land, spreading the flame, burning away all evil — and she recalled the face of the person she could never meet again.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hellfire Butterfly_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 150,
-              "name": "Philosophies of Prosperity",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is Liyue's past, present, and future. This prosperity is unmatched and unobtainable by any other nations — it all belongs to Liyue and its inhabitants.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 372,
-              "name": "Energy Nectar",
-              "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1163,
-              "name": "Hellfire Butterfly",
-              "desc": "A warped shard that houses great might. You obtained this from defeating Signora, who unleashed her original power.<br/>The seal of ice was broken under duress, and as her former will surged forth from its pale white prison and she remembered her old name once more, the undying butterfly danced amidst burning flesh and blood. And she remembered her past, wandering the land, spreading the flame, burning away all evil — and she recalled the face of the person she could never meet again.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hellfire Butterfly_icon.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 150,
-              "name": "Philosophies of Prosperity",
-              "desc": "Talent Level-Up material.<br/>Prosperity is the people's pursuit in the land of Geo.<br/>Prosperity is Liyue's past, present, and future. This prosperity is unmatched and unobtainable by any other nations — it all belongs to Liyue and its inhabitants.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 372,
-              "name": "Energy Nectar",
-              "desc": "A thick and sticky honey that is full of energy.<br/>The Whopperflower hunts by tricking its prey, a process it uses to possibly evolve into a more powerful and pure form.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1163,
-              "name": "Hellfire Butterfly",
-              "desc": "A warped shard that houses great might. You obtained this from defeating Signora, who unleashed her original power.<br/>The seal of ice was broken under duress, and as her former will surged forth from its pale white prison and she remembered her old name once more, the undying butterfly danced amidst burning flesh and blood. And she remembered her past, wandering the land, spreading the flame, burning away all evil — and she recalled the face of the person she could never meet again.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hellfire Butterfly_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "Crown of Insight",
-              "desc": "A precious Talent Level-Up material.<br/>Once a medium for the storage and transfer of wisdom in ancient times. Now, wisdom is found in ancient texts and in profound speech. Nevertheless, this Crown of Insight must still be able to impart some transcendent power and wisdom to its bearer.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_0/battle_talent_0.gif"
-      },
-      {
-        "key": "Spring Spirit Summoning",
-        "title": "Spring Spirit Summoning",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_1/battle_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "The frosted dew, silvery and dense, shall exorcise all demons.\nGrants all nearby party members the Icy Quill effect and deals <color=#99ffff>Cryo DMG</color> in different ways based on whether it is tapped or held.\n<color=#ffd780>Tap/Press</color>\nRushes forward together with a Talisman Spirit, dealing <color=#99ffff>Cryo DMG</color> to opponents along the path.\n<color=#ffd780>Hold</color>\nCommands the Talisman Spirit to deal <color=#99ffff>AoE Cryo DMG</color> .\n<color=#ffd780>Icy Quill</color>\nWhen Normal, Charged, and Plunging Attacks, Elemental Skills, and Elemental Bursts deal <color=#99ffff>Cryo DMG</color> to opponents, the DMG dealt is increased based on Shenhe's current ATK.\nThe Icy Quill's effects will be cleared once its duration ends or after being triggered a certain number of times. When held rather than tapped, the Icy Quill's effect lasts longer and can be triggered more times.\nWhen one <color=#99ffff>Cryo DMG</color> instance strikes multiple opponents, the effect is triggered multiple times based on the number of opponents hit. The number of times the effect is triggered is calculated independently for each party member with the Icy Quill.\nThe power of the spirits is no falsehood. Burdened with her orders, the divine maiden hurries on!"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13",
-              "Lv.14"
-            ]
-          },
-          {
-            "key": "Press Skill DMG",
-            "values": [
-              "139%",
-              "150%",
-              "160%",
-              "174%",
-              "184%",
-              "195%",
-              "209%",
-              "223%",
-              "237%",
-              "251%",
-              "264%",
-              "278%",
-              "296%",
-              "313%"
-            ]
-          },
-          {
-            "key": "Hold Skill DMG",
-            "values": [
-              "188.8%",
-              "203.0%",
-              "217.1%",
-              "236.0%",
-              "250.2%",
-              "264.3%",
-              "283.2%",
-              "302.1%",
-              "321.0%",
-              "339.8%",
-              "358.7%",
-              "377.6%",
-              "401.2%",
-              "424.8%"
-            ]
-          },
-          {
-            "key": "DMG Bonus",
-            "values": [
-              "45.7% ATK",
-              "49.1% ATK",
-              "52.5% ATK",
-              "57.1% ATK",
-              "60.5% ATK",
-              "63.9% ATK",
-              "68.5% ATK",
-              "73.0% ATK",
-              "77.6% ATK",
-              "82.2% ATK",
-              "86.7% ATK",
-              "91.3% ATK",
-              "97.0% ATK",
-              "102.7% ATK"
-            ]
-          },
-          {
-            "key": "Tap/Press/Hold Duration",
-            "values": [
-              "10.0s/15.0s",
-              "10.0s/15.0s",
-              "10.0s/15.0s",
-              "10.0s/15.0s",
-              "10.0s/15.0s",
-              "10.0s/15.0s",
-              "10.0s/15.0s",
-              "10.0s/15.0s",
-              "10.0s/15.0s",
-              "10.0s/15.0s",
-              "10.0s/15.0s",
-              "10.0s/15.0s",
-              "10.0s/15.0s",
-              "10.0s/15.0s"
-            ]
-          },
-          {
-            "key": "Tap/Press/Hold Trigger Quota",
-            "values": [
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7",
-              "5/7"
-            ]
-          },
-          {
-            "key": "Tap/Click CD",
-            "values": [
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s"
-            ]
-          },
-          {
-            "key": "Hold CD",
-            "values": [
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_1/battle_talent_1.gif"
-      },
-      {
-        "key": "Divine Maiden's Deliverance",
-        "title": "Divine Maiden's Deliverance",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_2/battle_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Unleashes the power of the Talisman Spirit, allowing it to roam free in this plane, dealing <color=#99ffff>AoE Cryo DMG</color> .\nThe Talisman Spirit then creates a field that decreases the <color=#99ffff>Cryo RES</color> and Physical RES of opponents within it. It also deals periodic <color=#99ffff>Cryo DMG</color> to opponents within the field.\nThe way of the adepti is not defined only by the mysterious and fantastical. Only by observing the changes in the heavens and the earth, and understanding the laws of cause and effect in this realm, may its essence be understood."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13"
-            ]
-          },
-          {
-            "key": "Skill DMG",
-            "values": [
-              "101%",
-              "108%",
-              "116%",
-              "126%",
-              "134%",
-              "141%",
-              "151%",
-              "161%",
-              "171%",
-              "181%",
-              "192%",
-              "202%",
-              "214%"
-            ]
-          },
-          {
-            "key": "RES Decrease",
-            "values": [
-              "6.0%",
-              "7.0%",
-              "8.0%",
-              "9.0%",
-              "10.0%",
-              "11.0%",
-              "12.0%",
-              "13.0%",
-              "14.0%",
-              "15.0%",
-              "15.0%",
-              "15.0%",
-              "15.0%"
-            ]
-          },
-          {
-            "key": "DoT",
-            "values": [
-              "33.1%",
-              "35.6%",
-              "38.1%",
-              "41.4%",
-              "43.9%",
-              "46.4%",
-              "49.7%",
-              "53.0%",
-              "56.3%",
-              "59.6%",
-              "62.9%",
-              "66.2%",
-              "70.4%"
-            ]
-          },
-          {
-            "key": "Duration",
-            "values": [
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s"
-            ]
-          },
-          {
-            "key": "CD",
-            "values": [
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s"
-            ]
-          },
-          {
-            "key": "Energy Cost",
-            "values": [
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/battle_talent_2/battle_talent_2.gif"
-      },
-      {
-        "key": "Deific Embrace",
-        "title": "Deific Embrace",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/const_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "An active character within the field created by <color=#ffd780>Divine Maiden's Deliverance</color> gains 15% <color=#99ffff>Cryo DMG Bonus</color> ."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Spirit Communion Seal",
-        "title": "Spirit Communion Seal",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/const_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "After Shenhe uses <color=#ffd780>Spring Spirit Summoning</color> , she will grant all nearby party members the following effects:\n· Press/Tap: Elemental Skill and Elemental Burst DMG increased by 15% for 10s.\n· Hold: Normal, Charged, and Plunging Attack DMG increased by 15% for 15s."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Precise Comings and Goings",
-        "title": "Precise Comings and Goings",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/const_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Gains 25% more rewards when dispatched on a Liyue Expedition for 20 hours."
-          }
-        ],
-        "attributes": null
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/avatar_header.jpg"
-      },
-      {
-        "key": "Avatar",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/申鹤/avatar.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Original Outfit - The World's Shackles\nShenhe's outfit. These elegant garments have accompanied her through long years of training. The red ropes that surround her body are fetters and wards simultaneously."
-          }
-        ]
-      },
-      {
-        "key": "Outfit - Frostflower Dew ",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/12/35428890/a45e421ff91f77c1623864ebf0b4c551_300826511427831427.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Obtained Outfit - Frostflower Dew\nThis Lantern Rite gift that Shenhe received is a set of elegant formal attire that her master, Cloud Retainer had commissioned for her. Red ropes still adorn her arms, but the bitter cold in Shenhe's heart has faded.\n\"All children love toys.\" This was the conclusion Shenhe came to after observing Granny Shan's toy store.\nKites, Xiao Lanterns, and window decorations made from cut colored paper... Children in Liyue could not help but stare fixedly at them as they passed.\nAnd should the adults beside them cotton on to their desire and buy that toy for them, those children would smile.\nShenhe possessed no such childhood memories of the sort, so she could not understand their feelings in that moment from experience. But seeing how their eyes sparkled, she believed that these toys must be related to some wondrous emotion.\nThough she had not figured out just what this emotion might be, this beautiful possibility did soften her heart a little.\n\"Shenhe seems very interested in toys.\" This was the conclusion Xianyun came to from observing Shenhe gazing at the toy store as if in a daze.\nHer disciple, she knew, had lost her family when young, and had trained under her wing ever since, and thus opportunities to access toys had been few and far between.\nNow that Shenhe had returned to live amongst humans, and she herself had taken their form to do so, she found as she grew more accustomed to the lives of mortals that Shenhe had indeed lacked many opportunities for joy compared to human children.\nAnd was it not her responsibility as master and elder, she thought, to accompany her disciple for a jaunt at the toy store?\n\"Master seems very fond of toys,\" Shenhe reflected as she and her master Xianyun, at the latter's insistence, spoke to Granny Shan for the sixth time.\nIn truth, she did not quite understand the charm of these little window decorations or firecrackers.\nHer master would often use sigils to create various colorful birds to decorate her abode. They were more vivid and lifelike than these decorations, and lovelier by far. And as for the crackling and popping of the firecrackers, they were quite crude compared to the adeptal melodies she was used to.\nIn truth, the toys themselves had but limited appeal to her, for what she actually liked was the smiles on the children's faces as they looked upon them.\nBut her master seemed very interested indeed, asking about all manner of details regarding the toys, from the crafting methods to the tricks behind releasing firecrackers. Finally, her master asked her what sort of toys she liked.\nShe believed that her master's interest must have some meaning behind it, and so she answered honestly. Then, she looked upon her master's calm, thoughtful, but silent face.\n\"Shenhe does not, in fact, like toys,\" Xianyun realized at last, after several visits to the toy stores.\nIf not, that gentle expression she saw on Shenhe's face as she stood in front of the toy store should have appeared at least once as she spoke with Granny Shan at length about the little imperfections in the latter's use of paper in window decorations, about improvements to firecracker casings to improve child safety, to the point she had completely earned the old lady's admiration.\nWhat her disciple needed was perhaps not toys themselves.\nA human's childhood and youth pass by in but the blink of an eye, and those who pass on shall never return. What, then, should she do as an elder?\nLantern Rite was fast approaching, and human custom dictated that festivals were a good opportunity to accept gifts. After all, had she not accepted just such from the Qixing in years prior...?\nA gift... Yes, that might do.\nShenhe did not realize her master's intent until she and Ganyu had received their Lantern Rite gifts from her.\nShe had felt no sense of regret about standing in front of the toy store, but her master's kindness was surprising all the same.\nIt was at that moment, when she took the long dress from the gift box her master handed to her and caressed its smooth hem that she understood how those children felt upon seeing those toys.\nBoth she and her master had changed much upon coming to the mortal realm — perhaps the future held still more pleasant surprises of this sort.\nHer future would be full of opportunities to make up for all the laughter lost and joy she had missed out on in the past. She would keep all the warmth she received in her heart, to melt the ice within her bones."
-          }
-        ]
-      },
-      {
-        "key": "Idle Animation 1",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/12/35428890/72806492e828d8ab0625d72bf7d663ee_5246731815660867572.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Original Outfit - The World's Shackles"
-          }
-        ]
-      },
-      {
-        "key": "Idle Animation 2",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/12/35428890/7dc68a94618b6f45a87aead6720b98aa_6651670924533152909.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Original Outfit - The World's Shackles"
-          }
-        ]
-      },
-      {
-        "key": "Idle Animation 3",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/12/35428890/7d290ce6dca0a985ece348acebba18cc_6276141879610332955.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Obtained Outfit - Frostflower Dew"
-          }
-        ]
-      },
-      {
-        "key": "Idle Animation 4",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/12/35428890/8b9bcd14b1b3311f1da7ea6e355305f8_1362860767084087540.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Obtained Outfit - Frostflower Dew"
-          }
-        ]
-      },
-      {
-        "key": "Constellation",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/12/35428890/c4a9ffda20c177ebbb6d765332aa6b18_5923647054259125716.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Crista Doloris"
-          }
-        ]
-      }
-    ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=32&center=1935.62,-52.64&zoom=-2.50",
-    "story": [
-      {
-        "title": "Character Details",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Shenhe was originally from a branch family of exorcists, but due to a series of coincidences, she became the disciple of an adeptus.\nShe is a student solely of Cloud Retainer in name, but her impressive constitution and intelligence quickly won several other adepti over.\nShe would go on to learn from them all, eventually becoming a master of adeptal arts in her own right as a mortal.\nShe very much looks the part as well in her unique temperament and manner of carrying herself — indeed, it would be no understatement to name her a true adeptus upon meeting her for the first time.\nHowever, it is precisely due to the long years of tutelage that she has lacked company save for the adepti and odd passing illuminated beast.\nThis isolation has caused her to grow distant and indifferent."
-          }
-        ]
-      },
-      {
-        "title": "Character Story 1",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 2</color>\nSometimes, a few rumors will escape from Liyue's small community of pilgrims to make the rounds in the city's back streets.\nThese tales often depict someone being in a hopeless situation in some desperate place, when suddenly—\nA wandering white-haired adeptus comes to their rescue in the nick of time...\nMost such stories are a collection of lovely, intoxicating clichés, little different from the oft-told street-tales of fated marriages and the like.\nBut if one were to ask that white-haired adeptus to tell the story, it would take a vastly different shape:\n\"Some annoying creatures worm their way into the mountains from time to time. I simply get rid of them to prevent them from disturbing my master's meditations.\"\n\"If some people did wind up getting caught in the crossfire and injured... Well, it was their decision to come here. There isn't much I can do about that.\""
-          }
-        ]
-      },
-      {
-        "title": "Character Story 2",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 3</color>\nShenhe is in all likelihood the least accustomed to mortal life amongst those who take on an adeptal appearance.\nHaving been sequestered in the mountains since a young age, she lacks experience and common sense, which makes it difficult for her to relate to people normally.\nTo ordinary people, there are many solutions to any given problem. But to Shenhe, any solution that is not the simplest and most direct one may as well not exist.\nFor example, she almost never considers \"negotiation\" as a solution to being at cross-purposes with others, mostly resorting to \"threats\" instead. After all, it is simple and efficacious. A good solution, no?\nShe has also spent much time ruminating on problems that are truly esoteric.\nFor example: Why do we need to pay for food?\nIs there any difference between intimidating civilians and intimidating bandits?\nShe even truly believes that her master, Cloud Retainer, is a most brilliant and eloquent conversationalist.\nIn a certain sense, she can be considered very pure.\nMuch like a child, she relies on her chaotic yet straightforward intuition and logic to get her through life.\nMountain Shaper once had this to say about her:\n\"Little Shenhe is not only stronger than most — she also possesses a unique character.\"\n\"She knows not the world, understands not common sense, distinguishes few cuisines, and acknowledges no hierarchies.\"\n\"It may not be such an easy thing for Cloud Retainer to tutor her.\""
-          }
-        ]
-      },
-      {
-        "title": "Character Story 3",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 4</color>\n<color=#ffd780>Complete \"The Crane Returns on the Wind\"</color>\nLiyue has no lack of folktales about meetings with the adepti, and many of these concern relative nobodies whom an adeptus took under their wing, thus elevating them greatly.\nHowever, the circumstances under which Shenhe's fate became tied to the adeptal abodes was no such glorious thing. If anything, it was an experience characterized by anguish.\nWhen she was five, her mother passed away, and her father, having loved his wife dearly, found that agony hard to bear.\nOver time, this agony turned into resentment, and this resentment birthed obsession, by which he was driven wandering throughout the land like a man gone mad.\nHe left for close to a year, never stopping, never able to sleep soundly, ever searching for some technique that might bring his wife back.\nAt last, when the year was almost out, he returned in joyous frenzy.\nHer father had brought with him a secret art known as \"Fate Transference\"—\nBy making a ritual sacrifice to the seelie summoned by this art, a living person's body could be exchanged for a dead one's life.\nAt that time, Shenhe was yet utterly unaware of the disaster that would befall. She was only an ordinary child, overjoyed at her long-absent father's return.\nHe claimed that he had a surprise awaiting her in a cave in the mountains behind and that he would take her there immediately. She was ecstatic...\nBut the scene that followed would be burned into her mind forever.\nHer father summoned that hideous, horrifying black \"seelie\" into that cave, its blood-red eyes craving her delectable life-force.\nStupefied, Shenhe knew not from whence it had come, nor what it wanted from this place.\nCrises often paralyze people. One thought only, however, crept into the young Shenhe's mind.\nThis creature wanted to eat her, but she did not want to die. She wanted to live!\nGripping her mother's keepsake, an exorcism dagger, she faced that dark \"seelie,\" trembling yet resolute...\nSeveral days later, an adeptus following the trail of great evil would investigate the cave, only to find the little girl collapsed inside — spent, famished, parched, her life hanging by a thread.\nTaking pity on the lass' ruinous fate, and seeing that she possessed great talent, having repelled some terrifying force on her own, the adeptus would bring her back, heal her, and instruct her in the adeptal path.\nIf not for that, Shenhe would not be as she is today."
-          }
-        ]
-      },
-      {
-        "title": "Character Story 4",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 5</color>\n<color=#ffd780>Complete \"The Crane Returns on the Wind\"</color>\nEven the most diffident heart, cooled from living and training in the mountains for over a decade, might sometimes experience strange surges.\nSo it was with Shenhe. On impulse, she came down from the mountains one night to return to what was once her home.\nShe did not know how she felt about her home or her family. She was merely driven by some nebulous desire:\nTo live in the house that was once hers, and to see what became of her father, lost in his obsession.\nShe learned from neighbors that he had passed away several years prior only when she got there.\nHer childhood home had also been demolished by pawnbrokers — and thus had all the traces of her memory dissipated.\nShe did not care about the attention she was attracting, and did not answer a single one of the questions asked by those in the vicinity.\nShe simply stood there, listening to the howls that swept through the depths of her heart.\nWas it hatred? Mania? Relief?\nThey were all there, and yet none tarried for even an instant. It was as if her heart were an old well without ripples.\nNo, like a barren well with no water upon which there might be ripples.\nShe stood there for a long time, before departing again before the astonished eyes of all.\nEach step was slow indeed, but she never once turned back."
-          }
-        ]
-      },
-      {
-        "title": "Character Story 5",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 6</color>\n<color=#ffd780>Complete \"The Crane Returns on the Wind\"</color>\nLiyue has its own fortune-telling, destiny-reading methods, similar to astrology.\nOf these, there are two fates that people seek to avoid at all costs.\nOne is that of the \"solitary star,\" which dictates that one will be separated from friends and family, living alone all one's days.\nThe other is \"disastrous evil,\" which means that one will face many hardships and perils.\nWhen the adepti rescued Shenhe, Moon Carver did once read her fortune.\nThe signs showed that she was marked by both the \"solitary star\" and \"disastrous evil,\" and that she was also plagued by intense homicidal urges — she was thus a person of supremely ominous destiny, doomed to harm both herself and others.\nTo ensure that she could grow up safely and not harm any innocents, the adepti bound her soul using red ropes.\nThis binding had the effect of restraining both her evil fate and her violent tendencies, but also shackled many emotions that should have originally belonged to a human.\nFrom then on, she became more and more disaffected by trivial matters, and even things most might consider important were but dust to her.\nShe became ever less human, and ever more like a lovely yet cold statue.\nBut surprisingly, she felt something stir within her when she encountered that Traveler from a distant land:\nLong-dormant emotions, now strangers to her, came loose all at once from the depths of fate's tableau.\nPerhaps it really was as Moon Carver once said: that heaven might dictate fates, but destiny's tale is written by mortals. The tale of Shenhe and the mortal world had not yet ended..."
-          }
-        ]
-      },
-      {
-        "title": "White Jade Comb",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 4</color>\n<color=#ffd780>Complete \"The Crane Returns on the Wind\"</color>\nOnce upon a time, Shenhe had a full head of black hair.\nWhen she was first brought to Mt. Hulao, she would not say a word. The only thing she proved willing to do was to climb the mountain and watch the sea of clouds.\nIt was well, however, that she would sleep when tired, drink the dew of the mountains when thirsty, and would chew on a few stalks of Qingxin when hungry.\nCloud Retainer took this all in, but did not disturb the girl, instead making this comb of white jade from a sacred stone and giving it to her.\nThe adeptus said that if she ever wished to sever her ties with the mortal world and enter adeptal tutelage, she should brush her hair thrice with this comb, and it would be counted as a rite of apprenticeship.\nShenhe did exactly as the adeptus said without any hesitation. And something strange happened then — for as the jade comb brushed through Shenhe's hair once, a layer of her black locks turned a frosty silver from root to tip.\nOn the second brush, but half her hair remained dark.\nWhen the process was complete, only a flowing curtain of snow remained.\n...\nToday, Shenhe still keeps this comb on her person as a symbol of her connection to the adepti.\nThrough her years of training, she has long since come to understand the meaning behind those three brush strokes:\nThe first to uproot useless anxiety, the second to forsake joy and sorrow, and the third to walk this path into old age without regret."
-          }
-        ]
-      },
-      {
-        "title": "Vision",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 6</color>\n<color=#ffd780>Complete \"The Crane Returns on the Wind\"</color>\nFew people know how the young girl in the cave, intended as a sacrifice by her own father, had been able to stand against the monster for days and nights on end by herself.\nThough Shenhe was born into an exorcist family, her maddened father had not taught her a single thing about exorcism.\nAnd like many at that innocent age, she was also wholly unused to facing life's perils alone.\nBut in that aphotic cave, bereft of parental protection — indeed, betrayed by kin — Shenhe underwent a metamorphosis.\nJust as Moon Carver's readings had shown, the sleeping calamitous fates, violent urges, and unyielding spirit within her burst their bonds all at once.\nThose things served as an unseen shield and invisible blade, arming the girl's frail form.\nThey gave her strength, gave her claws and fangs, allowing her to attack that wretched creature before her, to swear to tear it to shreds — to prove that she, and not it, was the cruelest evil that stalked the darkness.\nTheir life-and-death battle across the next few days was one without end. Hunter and hunted switched places many times, the conflict locked in stalemate...\nAs the shadow of death loomed large, the gods looked upon the extraordinary girl with favor.\nWith the bright, crystalline object falling into Shenhe's hands, the balance tipped irrevocably in her favor and the victor was decided.\nThe vivid icy light pierced through the dark like skyglow, showing the path to the future.\nIn the past, it had guided Shenhe from her miserable fate. In the future, it would also lead her back to the mortal realm."
-          }
-        ]
       }
     ]
   }
