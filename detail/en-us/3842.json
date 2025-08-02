@@ -4,31 +4,93 @@
   "desc": "<p><span style=\"color: #FFFFFF\">\"Cicin of the Hollow Mist\" Cryo Cicin Mage</span></p><p>And so long as the Mist Grass yet lingers, the Cryo Cicins will not abandon her.</p>",
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/21/35428890/cbcfb53b8523957d330a6f9396f03167_6553006868301593753.png",
   "filterValues": {
-    "cardCharacterWeaponType": "Other Weapons",
-    "cardCharacterElement": "Cryo",
-    "cardCharacterObtainingMethod": "Tavern Challenges",
     "cardCharacterChargingPoint": "3 Energy",
+    "cardCharacterObtainingMethod": "Tavern Challenges",
+    "cardCharacterWeaponType": "Other Weapons",
     "cardCharacterCamp": [
       "Fatui"
-    ]
+    ],
+    "cardCharacterElement": "Cryo"
   },
   "menuId": 17,
   "menuName": "Character Cards",
   "version": 1723662777,
   "components": {
-    "tcg": {
-      "headerImgs": [
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/21/35428890/cbcfb53b8523957d330a6f9396f03167_6553006868301593753.png",
-          "imgDesc": "Normal Skin"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/25/35428890/a53a3fc00981fd526e18fb4cb7fcc1ff_6975250796754090137.gif",
-          "imgDesc": "Dynamic Skin"
-        }
-      ],
-      "hp": 10
-    },
+    "talent": [
+      {
+        "key": "Cicin Icicle",
+        "title": "Cicin Icicle",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/21/35428890/1ce09211f025bf5470682189e0837732_8477632232918351020.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Normal Attack</color>\nDeals 1 <color=#99ffff>Cryo DMG</color> ."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Misty Summons",
+        "title": "Misty Summons",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/21/35428890/1a979041a9881649ba69332b20dd5820_4769566871087296685.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Elemental Skill</color>\nDeals 1 <color=#99ffff>Cryo DMG</color> , summons <color=#ffffff>Cryo Cicins</color> ."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Blizzard, Branch, Blossom",
+        "title": "Blizzard, Branch, Blossom",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/21/35428890/8d60085e1f79ee9a2bb87006d7f2d32c_1908652300750240211.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Elemental Burst</color>\nDeals 5 <color=#99ffff>Cryo DMG</color> , grants this character <color=#99ffff>Cryo Application</color> , creates 1 <color=#ffffff>Flowing Cicin Shield</color> .\n<color=#ece5d8>Flowing Cicin Shield</color>\n<color=#ffd780>Combat Status</color>\nProvides <color=#ffffff>1 Shield point</color> for your active character.\n<color=#ffffff>When created</color> : If you have <color=#ffffff>Cryo Cicins</color> on the field, additionally increase <color=#ffffff>Shield</color> by the amount of Usage(s) it has. (Adds a maximum of 3 additional <color=#ffffff>Shield</color> )"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Cryo Cicins",
+        "title": "Cryo Cicins",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/21/35428890/db13288db6b90ec33f8adc2656d2019f_771206739104048301.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Summon</color>\n<color=#ffffff>End Phase</color> : Deal 1 <color=#99ffff>Cryo DMG</color>\n<color=#ffffff>Usage(s): 2</color> (Can stack, max 3 stacks)\n<color=#ffffff>After Fatui Cryo Cicin Mage performs a Normal Attack</color> : This card gains 1 <color=#ffffff>Usage(s)</color> .\n<color=#ffffff>After Fatui Cryo Cicin Mage takes Elemental Reaction DMG</color> :This card loses 1 <color=#ffffff>Usage(s)</color> ."
+          }
+        ],
+        "attributes": [],
+        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/25/35428890/1467dd7dd3fec80047e77cc996621508_8658085116606653871.png"
+      },
+      {
+        "key": "Cryo DMG",
+        "title": "Cryo DMG",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/21/35428890/4bcc4b82a9d7ee22770f60afa54e9919_437254943583064410.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Applies Cryo and can trigger the following Elemental Reactions:\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#ff9999>Pyro</color> <color=#ffffff>]</color> <color=#ffffff>Melt</color> : DMG +2 for this instance\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#ffacff>Electro</color> <color=#ffffff>]</color> <color=#ffffff>Superconduct</color> : DMG+1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#80c0ff>Hydro</color> <color=#ffffff>]</color> <color=#ffffff>Frozen</color> : DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Detailed Rules",
+        "title": "Detailed Rules",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/21/35428890/245c229cf6f7364c7c9a7aea3db1a1ad_5400960070547252978.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ece5d8>Usage(s)</color>\nAfter this card's effect is triggered, 1 <color=#ffffff>Usage</color> of it will be consumed.\nThis card will be discarded immediately once it has 0 <color=#ffffff>Usages</color> remaining.\n<color=#ece5d8>Shield</color>\nThis Shield will be consumed to protect the character who equips it from DMG.\n<color=#99ffff>Cryo Application</color>\nWhen Cryo is applied without dealing any DMG, the Elemental Reaction triggered will ignore DMG-dealing effects:\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#ff9999>Pyro</color> <color=#ffffff>]</color> <color=#ffffff>Melt</color> : No effect\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#ffacff>Electro</color> <color=#ffffff>]</color> <color=#ffffff>Superconduct</color> : No effect\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#80c0ff>Hydro</color> <color=#ffffff>]</color> <color=#ffffff>Frozen</color> : The target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+          }
+        ],
+        "attributes": []
+      }
+    ],
     "galleryCharacter": [
       {
         "key": "Elemental Burst",
@@ -377,80 +439,18 @@
         ]
       }
     ],
-    "talent": [
-      {
-        "key": "Cicin Icicle",
-        "title": "Cicin Icicle",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/21/35428890/1ce09211f025bf5470682189e0837732_8477632232918351020.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Normal Attack</color>\nDeals 1 <color=#99ffff>Cryo DMG</color> ."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Misty Summons",
-        "title": "Misty Summons",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/21/35428890/1a979041a9881649ba69332b20dd5820_4769566871087296685.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Elemental Skill</color>\nDeals 1 <color=#99ffff>Cryo DMG</color> , summons <color=#ffffff>Cryo Cicins</color> ."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Blizzard, Branch, Blossom",
-        "title": "Blizzard, Branch, Blossom",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/21/35428890/8d60085e1f79ee9a2bb87006d7f2d32c_1908652300750240211.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Elemental Burst</color>\nDeals 5 <color=#99ffff>Cryo DMG</color> , grants this character <color=#99ffff>Cryo Application</color> , creates 1 <color=#ffffff>Flowing Cicin Shield</color> .\n<color=#ece5d8>Flowing Cicin Shield</color>\n<color=#ffd780>Combat Status</color>\nProvides <color=#ffffff>1 Shield point</color> for your active character.\n<color=#ffffff>When created</color> : If you have <color=#ffffff>Cryo Cicins</color> on the field, additionally increase <color=#ffffff>Shield</color> by the amount of Usage(s) it has. (Adds a maximum of 3 additional <color=#ffffff>Shield</color> )"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Cryo Cicins",
-        "title": "Cryo Cicins",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/21/35428890/db13288db6b90ec33f8adc2656d2019f_771206739104048301.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Summon</color>\n<color=#ffffff>End Phase</color> : Deal 1 <color=#99ffff>Cryo DMG</color>\n<color=#ffffff>Usage(s): 2</color> (Can stack, max 3 stacks)\n<color=#ffffff>After Fatui Cryo Cicin Mage performs a Normal Attack</color> : This card gains 1 <color=#ffffff>Usage(s)</color> .\n<color=#ffffff>After Fatui Cryo Cicin Mage takes Elemental Reaction DMG</color> :This card loses 1 <color=#ffffff>Usage(s)</color> ."
-          }
-        ],
-        "attributes": [],
-        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/25/35428890/1467dd7dd3fec80047e77cc996621508_8658085116606653871.png"
-      },
-      {
-        "key": "Cryo DMG",
-        "title": "Cryo DMG",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/21/35428890/4bcc4b82a9d7ee22770f60afa54e9919_437254943583064410.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Applies Cryo and can trigger the following Elemental Reactions:\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#ff9999>Pyro</color> <color=#ffffff>]</color> <color=#ffffff>Melt</color> : DMG +2 for this instance\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#ffacff>Electro</color> <color=#ffffff>]</color> <color=#ffffff>Superconduct</color> : DMG+1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#80c0ff>Hydro</color> <color=#ffffff>]</color> <color=#ffffff>Frozen</color> : DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Detailed Rules",
-        "title": "Detailed Rules",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/21/35428890/245c229cf6f7364c7c9a7aea3db1a1ad_5400960070547252978.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ece5d8>Usage(s)</color>\nAfter this card's effect is triggered, 1 <color=#ffffff>Usage</color> of it will be consumed.\nThis card will be discarded immediately once it has 0 <color=#ffffff>Usages</color> remaining.\n<color=#ece5d8>Shield</color>\nThis Shield will be consumed to protect the character who equips it from DMG.\n<color=#99ffff>Cryo Application</color>\nWhen Cryo is applied without dealing any DMG, the Elemental Reaction triggered will ignore DMG-dealing effects:\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#ff9999>Pyro</color> <color=#ffffff>]</color> <color=#ffffff>Melt</color> : No effect\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#ffacff>Electro</color> <color=#ffffff>]</color> <color=#ffffff>Superconduct</color> : No effect\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#80c0ff>Hydro</color> <color=#ffffff>]</color> <color=#ffffff>Frozen</color> : The target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
-          }
-        ],
-        "attributes": []
-      }
-    ]
+    "tcg": {
+      "headerImgs": [
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/21/35428890/cbcfb53b8523957d330a6f9396f03167_6553006868301593753.png",
+          "imgDesc": "Normal Skin"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/25/35428890/a53a3fc00981fd526e18fb4cb7fcc1ff_6975250796754090137.gif",
+          "imgDesc": "Dynamic Skin"
+        }
+      ],
+      "hp": 10
+    }
   }
 }

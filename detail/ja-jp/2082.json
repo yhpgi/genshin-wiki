@@ -11,6 +11,77 @@
   "menuName": "聖遺物",
   "version": 1730300439,
   "components": {
+    "reliquarySetEffect": {
+      "twoSetEffect": "与える治療効果+15%。",
+      "fourSetEffect": "<p>この聖遺物セットを装備したキャラクターがチーム内のキャラクターに治療を行うと、治療によるHP回復量（HP上限を超えた回復量も含む）を記録する海染の泡を生成する。海染の泡は3秒継続する。継続時間終了時、海染の泡は破裂し、周囲の敵に記録した回復量の90%分のダメージを与える（このダメージは感電や超電導などの元素反応と同じように計算されるが、元素熟知、キャラクターLv、または元素反応のダメージアップ効果の影響は受けない）。海染の泡は3.5秒毎に1回のみ生成可能。海染の泡が記録できる回復量は最大30000までとなり、HP上限超過分の回復量を含む。自身のチーム内に、海染の泡は1つのみ存在可能。この聖遺物セットを装備したキャラクターは待機中でも、この効果を発動できる。</p>"
+    },
+    "baseInfo": [
+      {
+        "key": "和名 / 英名",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "海染硨磲 / Ocean-Hued Clam"
+          }
+        ]
+      },
+      {
+        "key": "入手方法",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "祈聖秘境「熟眠ノ庭」にて確率で入手可能\n聖遺物廻聖にて入手可能(Ver.4.0-)"
+          }
+        ]
+      },
+      {
+        "key": "同様の2セット効果を持つ聖遺物",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 2094,
+            "name": "愛される少女",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Maiden Beloved/flower_of_life_icon.png"
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4717,
+            "name": "在りし日の歌",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/15/346015596/7789fb5e684cf95a7011657d0fa8a971_1661706928795676810.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "七聖召喚のカード",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 4371,
+            "name": "海祇の冠",
+            "desc": "<p><strong>真珠の玉冠・海祇の冠</strong></p><p></p><p>「海の民が歌う島唄の中で、真珠と珊瑚で作られた絢爛たる冠が汚れることは決してない。」</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/25/94675339/a04a0f35b7ef6bde824f14df69d1eab1_1638355848222460479.png"
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4565,
+            "name": "海染硨磲",
+            "desc": "<p><strong>海淵の記憶・海染硨磲</strong></p><p></p><p>「海淵からの希望と記憶を胸に抱き、失われて久しい文明と歴史は染みていった。これらの精巧で優雅な冠は、その主と共に忘却の裂け目へと滑り落ちてゆく。」</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/07/94675339/9c56b60d4edc42a62d0a67b5c7bb38ca_4480058633235185217.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "実装バージョン",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "2.3"
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "title": "海染の花",
@@ -81,6 +152,17 @@
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Ocean-Hued Clam/sands_of_eon_icon.png"
       },
+      "flower_of_life": {
+        "title": "海染の花",
+        "position": "生の花",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "多様に変化する海の色を帯びた、しなやかな花。月明かりに照らされると、不思議な色彩を反射する。"
+          }
+        ],
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Ocean-Hued Clam/flower_of_life_icon.png"
+      },
       "circlet_of_logos": {
         "title": "海祇の冠",
         "position": "理の冠",
@@ -102,89 +184,7 @@
           }
         ],
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Ocean-Hued Clam/plume_of_death_icon.png"
-      },
-      "flower_of_life": {
-        "title": "海染の花",
-        "position": "生の花",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "多様に変化する海の色を帯びた、しなやかな花。月明かりに照らされると、不思議な色彩を反射する。"
-          }
-        ],
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Ocean-Hued Clam/flower_of_life_icon.png"
       }
-    },
-    "baseInfo": [
-      {
-        "key": "和名 / 英名",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "海染硨磲 / Ocean-Hued Clam"
-          }
-        ]
-      },
-      {
-        "key": "入手方法",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "祈聖秘境「熟眠ノ庭」にて確率で入手可能\n聖遺物廻聖にて入手可能(Ver.4.0-)"
-          }
-        ]
-      },
-      {
-        "key": "同様の2セット効果を持つ聖遺物",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 2094,
-            "name": "愛される少女",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Maiden Beloved/flower_of_life_icon.png"
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4717,
-            "name": "在りし日の歌",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/15/346015596/7789fb5e684cf95a7011657d0fa8a971_1661706928795676810.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "七聖召喚のカード",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 4371,
-            "name": "海祇の冠",
-            "desc": "<p><strong>真珠の玉冠・海祇の冠</strong></p><p></p><p>「海の民が歌う島唄の中で、真珠と珊瑚で作られた絢爛たる冠が汚れることは決してない。」</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/25/94675339/a04a0f35b7ef6bde824f14df69d1eab1_1638355848222460479.png"
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4565,
-            "name": "海染硨磲",
-            "desc": "<p><strong>海淵の記憶・海染硨磲</strong></p><p></p><p>「海淵からの希望と記憶を胸に抱き、失われて久しい文明と歴史は染みていった。これらの精巧で優雅な冠は、その主と共に忘却の裂け目へと滑り落ちてゆく。」</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/07/94675339/9c56b60d4edc42a62d0a67b5c7bb38ca_4480058633235185217.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "実装バージョン",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "2.3"
-          }
-        ]
-      }
-    ],
-    "reliquarySetEffect": {
-      "twoSetEffect": "与える治療効果+15%。",
-      "fourSetEffect": "<p>この聖遺物セットを装備したキャラクターがチーム内のキャラクターに治療を行うと、治療によるHP回復量（HP上限を超えた回復量も含む）を記録する海染の泡を生成する。海染の泡は3秒継続する。継続時間終了時、海染の泡は破裂し、周囲の敵に記録した回復量の90%分のダメージを与える（このダメージは感電や超電導などの元素反応と同じように計算されるが、元素熟知、キャラクターLv、または元素反応のダメージアップ効果の影響は受けない）。海染の泡は3.5秒毎に1回のみ生成可能。海染の泡が記録できる回復量は最大30000までとなり、HP上限超過分の回復量を含む。自身のチーム内に、海染の泡は1つのみ存在可能。この聖遺物セットを装備したキャラクターは待機中でも、この効果を発動できる。</p>"
     }
   }
 }
