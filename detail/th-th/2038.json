@@ -4,14 +4,91 @@
   "desc": "ดาบสำหรับแทงรูปร่างเรียวบางที่หาได้ยาก ซึ่งจะพบได้จากเหล่าผู้ค้าจากต่างแดนที่เดินทางมาถึง Liyue มันทั้งเบา คล่องแคล่ว และคม",
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/铁蜂刺.png",
   "filterValues": {
-    "weaponType": "ดาบ",
+    "weaponRarity": 4,
     "weaponProperty": "ความชำนาญธาตุ",
-    "weaponRarity": 4
+    "weaponType": "ดาบ"
   },
   "menuId": 4,
   "menuName": "อาวุธ",
   "version": 1691065536,
   "components": {
+    "baseInfo": [
+      {
+        "key": "ชื่อ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Iron Sting"
+          }
+        ]
+      },
+      {
+        "key": "หาได้จาก",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Liyue"
+          }
+        ]
+      },
+      {
+        "key": "ประเภท",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "ดาบ"
+          }
+        ]
+      },
+      {
+        "key": "ค่าสถานะรอง",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "ความชำนาญธาตุ"
+          }
+        ]
+      },
+      {
+        "key": "Infusion Stinger",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "ภายใน 6 วินาทีหลังจากสร้างความเสียหายธาตุ ความเสียหายที่ตัวละครสร้างจะเพิ่มขึ้น 6%/7.5%/9%/10.5%/12% ซึ่งเอฟเฟกต์นี้จะเกิดขึ้นมากสุด 2 ชั้นและสามารถปล่อยได้หนึ่งครั้งในทุก 1 วินาที"
+          }
+        ]
+      },
+      {
+        "key": "วัสดุสำหรับหลอม",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 346,
+            "name": "Northlander Sword Billet",
+            "desc": "วัสดุสำหรับสร้างอาวุธ สามารถใช้เพื่อสร้างดาบระดับ 4 ดาวได้<br/>ในทางปรัชญานั้นคิดว่าหินอ่อนแฝง ไปด้วยศักยภาพของประติมากรรม ที่สวยงาม ซึ่งต้นแบบเหล่านี้ ยังมีความเป็นไปได้อีกมากมาย ไม่สิ้นสุด ช่างน่าสนใจจริง ๆ",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Northlander Sword Billet_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 976,
+            "name": "Crystal Chunk",
+            "desc": "ก้อนคริสตัลที่ยังไม่ผ่านการเจียระไน ช่างฝีมือที่ชำนาญแล้วเท่านั้นที่จะดึงเอาคุณค่าที่แท้จริงของมันออกมาได้",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystal Chunk_icon.png",
+            "amount": 50
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1224,
+            "name": "White Iron Chunk",
+            "desc": "ช่างเหล็กที่มีความสามารถ จะเปลี่ยนสิ่งนี้ให้เป็นสิ่งมหัศจรรย์ได้",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
+            "amount": 50
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
     "customize": [
       {
         "type": "Heading",
@@ -387,83 +464,6 @@
             ]
           }
         ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "ชื่อ",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Iron Sting"
-          }
-        ]
-      },
-      {
-        "key": "หาได้จาก",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Liyue"
-          }
-        ]
-      },
-      {
-        "key": "ประเภท",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ดาบ"
-          }
-        ]
-      },
-      {
-        "key": "ค่าสถานะรอง",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ความชำนาญธาตุ"
-          }
-        ]
-      },
-      {
-        "key": "Infusion Stinger",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ภายใน 6 วินาทีหลังจากสร้างความเสียหายธาตุ ความเสียหายที่ตัวละครสร้างจะเพิ่มขึ้น 6%/7.5%/9%/10.5%/12% ซึ่งเอฟเฟกต์นี้จะเกิดขึ้นมากสุด 2 ชั้นและสามารถปล่อยได้หนึ่งครั้งในทุก 1 วินาที"
-          }
-        ]
-      },
-      {
-        "key": "วัสดุสำหรับหลอม",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 346,
-            "name": "Northlander Sword Billet",
-            "desc": "วัสดุสำหรับสร้างอาวุธ สามารถใช้เพื่อสร้างดาบระดับ 4 ดาวได้<br/>ในทางปรัชญานั้นคิดว่าหินอ่อนแฝง ไปด้วยศักยภาพของประติมากรรม ที่สวยงาม ซึ่งต้นแบบเหล่านี้ ยังมีความเป็นไปได้อีกมากมาย ไม่สิ้นสุด ช่างน่าสนใจจริง ๆ",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Northlander Sword Billet_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 976,
-            "name": "Crystal Chunk",
-            "desc": "ก้อนคริสตัลที่ยังไม่ผ่านการเจียระไน ช่างฝีมือที่ชำนาญแล้วเท่านั้นที่จะดึงเอาคุณค่าที่แท้จริงของมันออกมาได้",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystal Chunk_icon.png",
-            "amount": 50
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1224,
-            "name": "White Iron Chunk",
-            "desc": "ช่างเหล็กที่มีความสามารถ จะเปลี่ยนสิ่งนี้ให้เป็นสิ่งมหัศจรรย์ได้",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
-            "amount": 50
-          }
-        ],
-        "isMaterial": true
       }
     ],
     "story": [
