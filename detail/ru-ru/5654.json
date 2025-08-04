@@ -7,225 +7,7 @@
   "menuName": "Обучение",
   "version": 1744745573,
   "components": {
-    "baseInfo": [
-      {
-        "key": "Имя:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Формула расчёта урона"
-          }
-        ]
-      },
-      {
-        "key": "Связанная статья:",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 5206,
-            "name": "Элементальные реакции",
-            "desc": "<p></p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/15/237301566/1ef525b101a31611b9fe2cc1b0a59aa8_5022398934870387668.png"
-          }
-        ],
-        "isMaterial": true
-      }
-    ],
     "customize": [
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Формула урона трансформирующих реакций",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Трансформирующие реакции: Бутонизация, Вегетация, Цветение, Горение, Перегрузка, Заряжен, Сверхпроводник, Разбит и Рассеивание. Трансформирующие реакции игнорируют защиту противника, но учитывают сопротивление противника. Они не могут наносить крит. урон (за исключением 2 созвездия Нахиды, которое позволяет Бутонизации, Вегетации, Цветению и Горению наносить крит. урон с фиксированным значением 20% шанса крит. попадания и 100% крит. урона). В данных реакциях учитывается только уровень и мастерство стихий персонажа, вызвавшего реакцию.</color>\n<color=#ffffff73>Пример: если Бутонизация вызывается Дендро персонажем (применяя Дендро к Гидро), учитываются уровень и мастерство стихий Дендро персонажа, а также Дендро сопротивление противника.</color>\nТаким образом, трансформирующие реакции рассчитываются по следующей формуле:"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>множитель сопротивления противника × множитель реакции × множитель ур. персонажа ×</color>\n<color=#ffffff>(100% + множитель МС + бонус реакции)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Множитель реакции",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Реакция</color>\n<color=#ffffff>Множитель реакции</color>\n<color=#ff9999>Цветение</color> , <color=#ffacff>Вегетация</color> <color=#ffffff73>,</color> <color=#ffffff>Разбит</color>\n300%\n<color=#ff9999>Перегрузка</color>\n276%\n<color=#ffacff>Заряжен</color> , <color=#99ff88>Бутонизация</color>\n200%\n<color=#80ffd7>Рассеивание</color>\n60%\n<color=#ff9999>Горение</color>\n25%",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Множитель уровня персонажа",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Уровень</color>\n<color=#ffffff>Множитель</color>\n60\n<color=#ffffff73>492.88</color>\n70\n<color=#ffffff73>765.64</color>\n80\n<color=#ffffff73>1077.44</color>\n85\n<color=#ffffff73>1253.84</color>\n90\n<color=#ffffff73>1446.85</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Множитель мастерства стихий",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Для множителя мастерства стихий учитывается только мастерство стихий персонажа, вызвавшего реакцию:</color>"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>МС × 16 / (МС + 2000)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Бонус реакции",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "Персонажи",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 37,
-        "name": "Мона",
-        "desc": "Таинственный молодой астролог, которая представляется как «великий астролог Мона Мегистус» и на самом деле достойна этого звания. Эрудирована и горделива.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Пророчество потопа</color> <color=#ffffffd9>(созвездие 1)</color>\nПопадания персонажа из вашего отряда по противнику со статусом Омен на 8 сек. увеличивает <color=#ffd780>урон</color> реакций <color=#ffacff>Заряжен</color> , <color=#ff9999>Пар</color> и <color=#80c0ff>Гидро рассеивание</color> на 15%."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2812,
-        "name": "Нилу",
-        "desc": "<p>Знаменитая танцовщица Театра Зубаира. Изящная красавица с чистой и открытой душой.</p><p></p><p><em>«И что в том театришке хорошего? Если бы она отправилась вместе со мной в гастроли по Тейвату, то заработала бы столько моры, сколько бы ей захотелось... Вот только она, наивная душа, понятия не имеет о собственной ценности»</em>, - Дори.</p>",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/24/237301566/586d726f9ebda3506c78beaaa41f13b6_2370206591499918355.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Сон танцующих веков</color> <color=#ffffffd9>(пассивный талант)</color>\nЗа каждые 1000 ед. <color=#ffd780>HP</color> выше 30 000 ед. макс. <color=#ffd780>HP</color> Нилу повышает <color=#ffd780>урон</color> Ядер изобилия, созданных персонажами под действием Изобилия золотого кубка, на 9%.\nМаксимальное увеличение урона Ядер изобилия, полученное таким образом, не может превышать 400%."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3609,
-        "name": "Бай Чжу",
-        "desc": "<p>Владелец хижины «Бубу» в Ли Юэ. На его плечах всегда возлежит белая змея по имени Чан Шэн. Искусный лекарь со своими скрытыми намерениями.</p><p></p><p><em>«Господин Бай Чжу... Его что-то беспокоит, но он не говорит мне. Ненавидит смерть, но всё время исследует её... Я не понимаю... Неважно, Ци Ци знает - господин Бай Чжу хороший».</em></p><p>Вырванная кем-то страница из записной книжки Ци Ци.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/29/70239714/05599650d7f42e1c4adde373de6b297d_8680928179289073723.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Всё рождено землёй</color> <color=#ffffffd9>(пассивный талант)</color>\nПерсонажи, получившие <color=#ffd780>лечение Бесшовного щита</color> , наделяются эффектом Год зелёного благодеяния: каждые 1000 ед. макс. <color=#ffd780>HP</color> Бай Чжу (до 50 000 ед. макс.) увеличивают на 6 сек. <color=#ffd780>урон</color> вызываемых этими персонажами реакций <color=#ff9999>Горение</color> , <color=#99ff88>Бутонизация</color> , <color=#ffacff>Вегетация</color> и <color=#ff9999>Цветение</color> на 2%, а реакций <color=#ffacff>Обострение</color> и <color=#ffacff>Разрастание</color> на 0,8%"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3608,
-        "name": "Кавех",
-        "desc": "<p>Знаменитый архитектор из Сумеру, поглощённый заботами. Эстет, обеспокоенный реальностью.</p><p><br><em>«Сумерские учёные в большинстве своём скрывают, что для кого-то талант порой может стать бременем. Впрочем, не исключено, что эта точка зрения всего лишь отговорка - в действительности судьбу в первую очередь определяет характер. Подобные рассуждения относятся к числу теорий, которые Кавех упорно пытается опровергнуть».</em></p><p>Аль-Хайтам</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/29/70239714/2270aba02b92034d7d76b4426be8f53b_7723091064904344247.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Расписной купол</color> <color=#ffffffd9>(взрыв стихии)</color>\nПовышает <color=#ffd780>урон</color> взрыва <color=#99ff88>Дендро ядер</color> , создаваемых персонажами вашего отряда с помощью реакции <color=#99ff88>Бутонизация</color> .\n<color=#ffffffd9>Пиршество Ападаны</color> <color=#ffffffd9>(созвездие 4)</color>\nУрон взрыва <color=#99ff88>Дендро ядер</color> , которые создаются вызванной Кавехом реакцией <color=#99ff88>Бутонизация</color> , повышается на 60%."
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "Артефакты",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2067,
-        "name": "Громогласный рёв ярости",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Громогласный рёв ярости</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "2 предмета: <color=#ffffff73>Увеличивает</color> <color=#ffacff>бонус Электро урона</color> <color=#ffffff73>на 15%.</color>\n<color=#ffffff73>4 предмета: Увеличивает урон реакций</color> <color=#ff9999>Перегрузка</color> <color=#ffffff73>,</color> <color=#ffacff>Заряжен</color> <color=#ffffff73>,</color> <color=#ffacff>Сверхпроводник</color> <color=#ffffff73>и</color> <color=#ffacff>Вегетация</color> <color=#ffffff73>на 40%.</color> <color=#ffd780>Урон</color> <color=#ffffff73>от реакции</color> <color=#ffacff>Обострение</color> <color=#ffffff73>увеличивается на 20%.</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2085,
-        "name": "Горящая алая ведьма",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Горящая алая ведьма</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "2 предмета: Увеличивает <color=#ff9999>бонус Пиро урона</color> на 15%.\n4 предмета: Увеличивает <color=#ffd780>урон</color> статусов <color=#ff9999>Перегрузка</color> <color=#ffffff73>,</color> <color=#ff9999>Горение</color> <color=#ffffff73>и</color> <color=#ff9999>Цветение</color> на 40%, а урон статусов <color=#ff9999>Пар</color> и <color=#ff9999>Таяние</color> - на 15%. Использование <color=#ffd780>элементального навыка</color> увеличивает эффекты набора из двух вещей на 50% в течение 10 сек."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2091,
-        "name": "Изумрудная тень",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Изумрудная тень</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "2 предмета: Увеличивает <color=#80ffd7>бонус Анемо урона</color> на 15%\n4 предмета: Увеличивает <color=#ffd780>урон</color> <color=#80ffd7>Рассеивания</color> на 60%."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3321,
-        "name": "Цветок потерянного рая",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/10/51635400/50ce09dfa5a91a33aa9cedfb15bcf2d1_1695233090043066555.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Цветок потерянного рая</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "2 предмета: <color=#ffffff73>Увеличивает</color> <color=#ffd780>мастерство стихий</color> <color=#ffffff73>на 80 ед.</color>\n<color=#ffffff73>4 предмета: Увеличивает урон реакций</color> <color=#99ff88>Бутонизация</color> <color=#ffffff73>,</color> <color=#ffacff>Вегетация</color> <color=#ffffff73>и</color> <color=#ff9999>Цветение</color> <color=#ffffff73>экипированного этим набором персонажа на 40%. Кроме того, активация реакций</color> <color=#99ff88>Бутонизация</color> <color=#ffffff73>,</color> <color=#ffacff>Вегетация</color> <color=#ffffff73>и</color> <color=#ff9999>Цветение</color> экипированным этим набором персонажем усилит этот эффект на <color=#ffffff73>25%</color> ."
-      },
       {
         "type": "Heading",
         "level": 1,
@@ -5089,6 +4871,224 @@
         "type": "RichText",
         "text": "<color=#ffffff>100% + крит. урон</color>",
         "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Формула урона трансформирующих реакций",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Трансформирующие реакции: Бутонизация, Вегетация, Цветение, Горение, Перегрузка, Заряжен, Сверхпроводник, Разбит и Рассеивание. Трансформирующие реакции игнорируют защиту противника, но учитывают сопротивление противника. Они не могут наносить крит. урон (за исключением 2 созвездия Нахиды, которое позволяет Бутонизации, Вегетации, Цветению и Горению наносить крит. урон с фиксированным значением 20% шанса крит. попадания и 100% крит. урона). В данных реакциях учитывается только уровень и мастерство стихий персонажа, вызвавшего реакцию.</color>\n<color=#ffffff73>Пример: если Бутонизация вызывается Дендро персонажем (применяя Дендро к Гидро), учитываются уровень и мастерство стихий Дендро персонажа, а также Дендро сопротивление противника.</color>\nТаким образом, трансформирующие реакции рассчитываются по следующей формуле:"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>множитель сопротивления противника × множитель реакции × множитель ур. персонажа ×</color>\n<color=#ffffff>(100% + множитель МС + бонус реакции)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Множитель реакции",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Реакция</color>\n<color=#ffffff>Множитель реакции</color>\n<color=#ff9999>Цветение</color> , <color=#ffacff>Вегетация</color> <color=#ffffff73>,</color> <color=#ffffff>Разбит</color>\n300%\n<color=#ff9999>Перегрузка</color>\n276%\n<color=#ffacff>Заряжен</color> , <color=#99ff88>Бутонизация</color>\n200%\n<color=#80ffd7>Рассеивание</color>\n60%\n<color=#ff9999>Горение</color>\n25%",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Множитель уровня персонажа",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Уровень</color>\n<color=#ffffff>Множитель</color>\n60\n<color=#ffffff73>492.88</color>\n70\n<color=#ffffff73>765.64</color>\n80\n<color=#ffffff73>1077.44</color>\n85\n<color=#ffffff73>1253.84</color>\n90\n<color=#ffffff73>1446.85</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Множитель мастерства стихий",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Для множителя мастерства стихий учитывается только мастерство стихий персонажа, вызвавшего реакцию:</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>МС × 16 / (МС + 2000)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Бонус реакции",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Персонажи",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "Мона",
+        "desc": "Таинственный молодой астролог, которая представляется как «великий астролог Мона Мегистус» и на самом деле достойна этого звания. Эрудирована и горделива.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Пророчество потопа</color> <color=#ffffffd9>(созвездие 1)</color>\nПопадания персонажа из вашего отряда по противнику со статусом Омен на 8 сек. увеличивает <color=#ffd780>урон</color> реакций <color=#ffacff>Заряжен</color> , <color=#ff9999>Пар</color> и <color=#80c0ff>Гидро рассеивание</color> на 15%."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "Нилу",
+        "desc": "<p>Знаменитая танцовщица Театра Зубаира. Изящная красавица с чистой и открытой душой.</p><p></p><p><em>«И что в том театришке хорошего? Если бы она отправилась вместе со мной в гастроли по Тейвату, то заработала бы столько моры, сколько бы ей захотелось... Вот только она, наивная душа, понятия не имеет о собственной ценности»</em>, - Дори.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/24/237301566/586d726f9ebda3506c78beaaa41f13b6_2370206591499918355.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Сон танцующих веков</color> <color=#ffffffd9>(пассивный талант)</color>\nЗа каждые 1000 ед. <color=#ffd780>HP</color> выше 30 000 ед. макс. <color=#ffd780>HP</color> Нилу повышает <color=#ffd780>урон</color> Ядер изобилия, созданных персонажами под действием Изобилия золотого кубка, на 9%.\nМаксимальное увеличение урона Ядер изобилия, полученное таким образом, не может превышать 400%."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "Бай Чжу",
+        "desc": "<p>Владелец хижины «Бубу» в Ли Юэ. На его плечах всегда возлежит белая змея по имени Чан Шэн. Искусный лекарь со своими скрытыми намерениями.</p><p></p><p><em>«Господин Бай Чжу... Его что-то беспокоит, но он не говорит мне. Ненавидит смерть, но всё время исследует её... Я не понимаю... Неважно, Ци Ци знает - господин Бай Чжу хороший».</em></p><p>Вырванная кем-то страница из записной книжки Ци Ци.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/29/70239714/05599650d7f42e1c4adde373de6b297d_8680928179289073723.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Всё рождено землёй</color> <color=#ffffffd9>(пассивный талант)</color>\nПерсонажи, получившие <color=#ffd780>лечение Бесшовного щита</color> , наделяются эффектом Год зелёного благодеяния: каждые 1000 ед. макс. <color=#ffd780>HP</color> Бай Чжу (до 50 000 ед. макс.) увеличивают на 6 сек. <color=#ffd780>урон</color> вызываемых этими персонажами реакций <color=#ff9999>Горение</color> , <color=#99ff88>Бутонизация</color> , <color=#ffacff>Вегетация</color> и <color=#ff9999>Цветение</color> на 2%, а реакций <color=#ffacff>Обострение</color> и <color=#ffacff>Разрастание</color> на 0,8%"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "Кавех",
+        "desc": "<p>Знаменитый архитектор из Сумеру, поглощённый заботами. Эстет, обеспокоенный реальностью.</p><p><br><em>«Сумерские учёные в большинстве своём скрывают, что для кого-то талант порой может стать бременем. Впрочем, не исключено, что эта точка зрения всего лишь отговорка - в действительности судьбу в первую очередь определяет характер. Подобные рассуждения относятся к числу теорий, которые Кавех упорно пытается опровергнуть».</em></p><p>Аль-Хайтам</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/29/70239714/2270aba02b92034d7d76b4426be8f53b_7723091064904344247.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Расписной купол</color> <color=#ffffffd9>(взрыв стихии)</color>\nПовышает <color=#ffd780>урон</color> взрыва <color=#99ff88>Дендро ядер</color> , создаваемых персонажами вашего отряда с помощью реакции <color=#99ff88>Бутонизация</color> .\n<color=#ffffffd9>Пиршество Ападаны</color> <color=#ffffffd9>(созвездие 4)</color>\nУрон взрыва <color=#99ff88>Дендро ядер</color> , которые создаются вызванной Кавехом реакцией <color=#99ff88>Бутонизация</color> , повышается на 60%."
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Артефакты",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "Громогласный рёв ярости",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Громогласный рёв ярости</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "2 предмета: <color=#ffffff73>Увеличивает</color> <color=#ffacff>бонус Электро урона</color> <color=#ffffff73>на 15%.</color>\n<color=#ffffff73>4 предмета: Увеличивает урон реакций</color> <color=#ff9999>Перегрузка</color> <color=#ffffff73>,</color> <color=#ffacff>Заряжен</color> <color=#ffffff73>,</color> <color=#ffacff>Сверхпроводник</color> <color=#ffffff73>и</color> <color=#ffacff>Вегетация</color> <color=#ffffff73>на 40%.</color> <color=#ffd780>Урон</color> <color=#ffffff73>от реакции</color> <color=#ffacff>Обострение</color> <color=#ffffff73>увеличивается на 20%.</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "Горящая алая ведьма",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Горящая алая ведьма</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "2 предмета: Увеличивает <color=#ff9999>бонус Пиро урона</color> на 15%.\n4 предмета: Увеличивает <color=#ffd780>урон</color> статусов <color=#ff9999>Перегрузка</color> <color=#ffffff73>,</color> <color=#ff9999>Горение</color> <color=#ffffff73>и</color> <color=#ff9999>Цветение</color> на 40%, а урон статусов <color=#ff9999>Пар</color> и <color=#ff9999>Таяние</color> - на 15%. Использование <color=#ffd780>элементального навыка</color> увеличивает эффекты набора из двух вещей на 50% в течение 10 сек."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "Изумрудная тень",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Изумрудная тень</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "2 предмета: Увеличивает <color=#80ffd7>бонус Анемо урона</color> на 15%\n4 предмета: Увеличивает <color=#ffd780>урон</color> <color=#80ffd7>Рассеивания</color> на 60%."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Цветок потерянного рая",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/10/51635400/50ce09dfa5a91a33aa9cedfb15bcf2d1_1695233090043066555.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Цветок потерянного рая</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "2 предмета: <color=#ffffff73>Увеличивает</color> <color=#ffd780>мастерство стихий</color> <color=#ffffff73>на 80 ед.</color>\n<color=#ffffff73>4 предмета: Увеличивает урон реакций</color> <color=#99ff88>Бутонизация</color> <color=#ffffff73>,</color> <color=#ffacff>Вегетация</color> <color=#ffffff73>и</color> <color=#ff9999>Цветение</color> <color=#ffffff73>экипированного этим набором персонажа на 40%. Кроме того, активация реакций</color> <color=#99ff88>Бутонизация</color> <color=#ffffff73>,</color> <color=#ffacff>Вегетация</color> <color=#ffffff73>и</color> <color=#ff9999>Цветение</color> экипированным этим набором персонажем усилит этот эффект на <color=#ffffff73>25%</color> ."
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "Имя:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Формула расчёта урона"
+          }
+        ]
+      },
+      {
+        "key": "Связанная статья:",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5206,
+            "name": "Элементальные реакции",
+            "desc": "<p></p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/15/237301566/1ef525b101a31611b9fe2cc1b0a59aa8_5022398934870387668.png"
+          }
+        ],
+        "isMaterial": true
       }
     ],
     "galleryCharacter": [

@@ -5,16 +5,644 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Bennett_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/avatar.png",
   "filterValues": {
+    "characterVision": "Hỏa",
     "characterWeapon": "Kiếm Đơn",
     "characterRarity": 4,
-    "characterVision": "Hỏa",
-    "characterRegion": "Thành Mondstadt",
-    "characterProperty": "Hiệu Quả Nạp Nguyên Tố"
+    "characterProperty": "Hiệu Quả Nạp Nguyên Tố",
+    "characterRegion": "Thành Mondstadt"
   },
   "menuId": 2,
   "menuName": "Thư Viện Nhân Vật",
   "version": 1729254383,
   "components": {
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_1.png",
+        "name": "Tầm Nhìn Phiêu Lưu",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Buff hiệu quả tấn công của <color=#ffd780>Hành Trình Kỳ Diệu</color> sẽ không bị giới hạn bởi HP, tăng thêm 20% tấn công cơ bản của Bennett vào chỉ số."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_2.png",
+        "name": "Vượt Qua Nghịch Cảnh",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Khi HP của Bennett dưới 70%, tăng 30% hiệu quả nạp Nguyên Tố."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_3.png",
+        "name": "Đam Mê Rực Cháy",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Cấp kỹ năng <color=#ffd780>Nhiệt Tình Quá Độ</color> +3.\nTăng tối đa đến cấp 15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_4.png",
+        "name": "Nhiệt Huyết Bất Diệt",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Khi thi triển <color=#ffd780>Nhiệt Tình Quá Độ</color> tụ lực lần 1, sẽ tấn công thường trong lúc tấn công kỹ năng lần 2, kèm theo truy kích.\nSát thương truy kích bằng 135% của tấn công lần 2."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_5.png",
+        "name": "Mở Rộng Tâm Hồn",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Cấp kỹ năng <color=#ffd780>Hành Trình Kỳ Diệu</color> +3.\nTăng tối đa đến cấp 15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_6.png",
+        "name": "Lửa Và Can Đảm",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Nhân vật sử dụng kiếm đơn, trọng kiếm, vũ khí cán dài trong đội hiện đang trong trận ở khu vực <color=#ffd780>Hành Trình Kỳ Diệu</color> được nhận 15% <color=#ff9999>tăng sát thương Nguyên Tố Hỏa</color> và nhận <color=#ff9999>Nguyên Tố Hỏa đính kèm</color> ."
+          }
+        ]
+      }
+    ],
+    "ascension": [
+      {
+        "key": "Lv.1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Trước Đột Phá",
+              "Sau Đột Phá"
+            ]
+          },
+          {
+            "key": "HP Căn Bản",
+            "values": [
+              "-",
+              "1039"
+            ]
+          },
+          {
+            "key": "Tấn Công Căn Bản",
+            "values": [
+              "-",
+              "16"
+            ]
+          },
+          {
+            "key": "P.Ngự Căn Bản",
+            "values": [
+              "-",
+              "65"
+            ]
+          },
+          {
+            "key": "Hiệu Quả Nạp Nguyên Tố",
+            "values": [
+              "-",
+              "0%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Lv.20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Trước Đột Phá",
+              "Sau Đột Phá"
+            ]
+          },
+          {
+            "key": "HP Căn Bản",
+            "values": [
+              "2670",
+              "3447"
+            ]
+          },
+          {
+            "key": "Tấn Công Căn Bản",
+            "values": [
+              "41",
+              "53"
+            ]
+          },
+          {
+            "key": "P.Ngự Căn Bản",
+            "values": [
+              "166",
+              "214"
+            ]
+          },
+          {
+            "key": "Hiệu Quả Nạp Nguyên Tố",
+            "values": [
+              "0%",
+              "0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1100,
+            "name": "Vụn Mã Não Cháy",
+            "desc": "Nguyên Liệu Đột Phá Nhân Vật",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Cúc Cánh Quạt",
+            "desc": "<p>Loại thực vật thích gió. Đối với người dân Mondstadt sùng bái gió và bản thân cũng hào sảng như gió mà nói, cúc cánh quạt giống như \"Ngọn gió có thể nhìn thấy được\"</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 629,
+            "name": "Ấn Quạ Tầm Bảo",
+            "desc": "Dấu ấn kiêu hãnh thể hiện danh tính của Đạo Bảo Đoàn, miêu tả những chuyến truy tìm kho báu vô tận của họ. Tuy nói vậy, danh tính đạo tặc có cần phải được thể hiện một cách tự hào không nhỉ...?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "Lv.40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Trước Đột Phá",
+              "Sau Đột Phá"
+            ]
+          },
+          {
+            "key": "HP Căn Bản",
+            "values": [
+              "5163",
+              "5715"
+            ]
+          },
+          {
+            "key": "Tấn Công Căn Bản",
+            "values": [
+              "80",
+              "88 "
+            ]
+          },
+          {
+            "key": "P.Ngự Căn Bản",
+            "values": [
+              "321",
+              "356"
+            ]
+          },
+          {
+            "key": "Hiệu Quả Nạp Nguyên Tố",
+            "values": [
+              "0%",
+              "6.7%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1099,
+            "name": "Mảnh Mã Não Cháy",
+            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Ngọn Lửa Vĩnh Hằng",
+            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Cúc Cánh Quạt",
+            "desc": "<p>Loại thực vật thích gió. Đối với người dân Mondstadt sùng bái gió và bản thân cũng hào sảng như gió mà nói, cúc cánh quạt giống như \"Ngọn gió có thể nhìn thấy được\"</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 629,
+            "name": "Ấn Quạ Tầm Bảo",
+            "desc": "Dấu ấn kiêu hãnh thể hiện danh tính của Đạo Bảo Đoàn, miêu tả những chuyến truy tìm kho báu vô tận của họ. Tuy nói vậy, danh tính đạo tặc có cần phải được thể hiện một cách tự hào không nhỉ...?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "Lv.50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Trước Đột Phá",
+              "Sau Đột Phá"
+            ]
+          },
+          {
+            "key": "HP Căn Bản",
+            "values": [
+              "6573",
+              "7309"
+            ]
+          },
+          {
+            "key": "Tấn Công Căn Bản",
+            "values": [
+              "101",
+              "113"
+            ]
+          },
+          {
+            "key": "P.Ngự Căn Bản",
+            "values": [
+              "409",
+              "455"
+            ]
+          },
+          {
+            "key": "Hiệu Quả Nạp Nguyên Tố",
+            "values": [
+              "6.7%",
+              "13.3%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1099,
+            "name": "Mảnh Mã Não Cháy",
+            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Ngọn Lửa Vĩnh Hằng",
+            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Cúc Cánh Quạt",
+            "desc": "<p>Loại thực vật thích gió. Đối với người dân Mondstadt sùng bái gió và bản thân cũng hào sảng như gió mà nói, cúc cánh quạt giống như \"Ngọn gió có thể nhìn thấy được\"</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1553,
+            "name": "Ấn Quạ Bạc Ẩn",
+            "desc": "Huân chương quạ đen được thành viên của Đạo Bảo Đoàn sử dụng để nhận biết lẫn nhau. Đạo Bảo Đoàn không hỏi xuất thân, bất kể là ai chỉ cần có lòng ham tìm bảo vật, dám mạo hiểm, đều có thể trở thành thành viên \"ưu tú\".",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Trước Đột Phá",
+              "Sau Đột Phá"
+            ]
+          },
+          {
+            "key": "HP Căn Bản",
+            "values": [
+              "8168",
+              "8719"
+            ]
+          },
+          {
+            "key": "Tấn Công Căn Bản",
+            "values": [
+              "126",
+              "134"
+            ]
+          },
+          {
+            "key": "P.Ngự Căn Bản",
+            "values": [
+              "508",
+              "542"
+            ]
+          },
+          {
+            "key": "Hiệu Quả Nạp Nguyên Tố",
+            "values": [
+              "13.3%",
+              "13.3%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1098,
+            "name": "Miếng Mã Não Cháy",
+            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"<br/>\"Cuối cùng thiêu cháy tất cả vì giấc mơ.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Ngọn Lửa Vĩnh Hằng",
+            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Cúc Cánh Quạt",
+            "desc": "<p>Loại thực vật thích gió. Đối với người dân Mondstadt sùng bái gió và bản thân cũng hào sảng như gió mà nói, cúc cánh quạt giống như \"Ngọn gió có thể nhìn thấy được\"</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1553,
+            "name": "Ấn Quạ Bạc Ẩn",
+            "desc": "Huân chương quạ đen được thành viên của Đạo Bảo Đoàn sử dụng để nhận biết lẫn nhau. Đạo Bảo Đoàn không hỏi xuất thân, bất kể là ai chỉ cần có lòng ham tìm bảo vật, dám mạo hiểm, đều có thể trở thành thành viên \"ưu tú\".",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Lv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Trước Đột Phá",
+              "Sau Đột Phá"
+            ]
+          },
+          {
+            "key": "HP Căn Bản",
+            "values": [
+              "9577",
+              "10129"
+            ]
+          },
+          {
+            "key": "Tấn Công Căn Bản",
+            "values": [
+              "148",
+              "156"
+            ]
+          },
+          {
+            "key": "P.Ngự Căn Bản",
+            "values": [
+              "596",
+              "630"
+            ]
+          },
+          {
+            "key": "Hiệu Quả Nạp Nguyên Tố",
+            "values": [
+              "13.3%",
+              "20%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1098,
+            "name": "Miếng Mã Não Cháy",
+            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"<br/>\"Cuối cùng thiêu cháy tất cả vì giấc mơ.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Ngọn Lửa Vĩnh Hằng",
+            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Cúc Cánh Quạt",
+            "desc": "<p>Loại thực vật thích gió. Đối với người dân Mondstadt sùng bái gió và bản thân cũng hào sảng như gió mà nói, cúc cánh quạt giống như \"Ngọn gió có thể nhìn thấy được\"</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 760,
+            "name": "Ấn Quạ Trộm Vàng",
+            "desc": "Huân chương tượng trưng cho nguyên tắc và ngạo khí duy nhất của Đạo Bảo Đoàn. Chừng nào vẫn còn có những kho báu được phát hiện ở vùng đất rộng lớn, nơi vực thẳm hẻo lánh hay vùng biển vô danh, thì ngọn lửa trong tim của những kẻ trộm muốn chinh phục kho báu sẽ không bao giờ tắt.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Trước Đột Phá",
+              "Sau Đột Phá"
+            ]
+          },
+          {
+            "key": "HP Căn Bản",
+            "values": [
+              "10987",
+              "11539 "
+            ]
+          },
+          {
+            "key": "Tấn Công Căn Bản",
+            "values": [
+              "169",
+              "178"
+            ]
+          },
+          {
+            "key": "P.Ngự Căn Bản",
+            "values": [
+              "684",
+              "718 "
+            ]
+          },
+          {
+            "key": "Hiệu Quả Nạp Nguyên Tố",
+            "values": [
+              "20%",
+              "26.7%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1097,
+            "name": "Mã Não Cháy",
+            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"<br/>\"Cuối cùng thiêu cháy tất cả vì giấc mơ.\"<br/>\"Trong tro tàn nếu còn sót lại trái tim như ban đầu, vậy thì hắn sẽ đạt được ██ thật sự.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Ngọn Lửa Vĩnh Hằng",
+            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1750,
+            "name": "Cúc Cánh Quạt",
+            "desc": "<p>Loại thực vật thích gió. Đối với người dân Mondstadt sùng bái gió và bản thân cũng hào sảng như gió mà nói, cúc cánh quạt giống như \"Ngọn gió có thể nhìn thấy được\"</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 760,
+            "name": "Ấn Quạ Trộm Vàng",
+            "desc": "Huân chương tượng trưng cho nguyên tắc và ngạo khí duy nhất của Đạo Bảo Đoàn. Chừng nào vẫn còn có những kho báu được phát hiện ở vùng đất rộng lớn, nơi vực thẳm hẻo lánh hay vùng biển vô danh, thì ngọn lửa trong tim của những kẻ trộm muốn chinh phục kho báu sẽ không bao giờ tắt.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "Lv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Trước Đột Phá",
+              "Sau Đột Phá"
+            ]
+          },
+          {
+            "key": "HP Căn Bản",
+            "values": [
+              "12397",
+              "-"
+            ]
+          },
+          {
+            "key": "Tấn Công Căn Bản",
+            "values": [
+              "191",
+              "-"
+            ]
+          },
+          {
+            "key": "P.Ngự Căn Bản",
+            "values": [
+              "771",
+              "-"
+            ]
+          },
+          {
+            "key": "Hiệu Quả Nạp Nguyên Tố",
+            "values": [
+              "26.7%",
+              "-"
+            ]
+          }
+        ]
+      }
+    ],
     "baseInfo": [
       {
         "key": "Tên",
@@ -933,6 +1561,115 @@
         "attributes": null
       }
     ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=43&center=450.50,248.00&zoom=0.00",
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/avatar_header.jpg"
+      },
+      {
+        "key": "Ảnh Gốc",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/avatar.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Trang Ohục Mặc Định - Vận Đen Đeo Bám\nPhong cách của Bennett. Trang phục cũ của nhà mạo hiểm được chắp vá."
+          }
+        ]
+      },
+      {
+        "key": "Hoạt Cảnh Nhàn Rỗi 1",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/07/148664880/253d4d0f543836ac1d5c4dd28684c5c3_8614683978212659748.gif"
+      },
+      {
+        "key": "Hoạt Cảnh Nhàn Rỗi 2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/07/148664880/ead150a81a57c6c117778e553960d1d4_293952941122201832.gif"
+      },
+      {
+        "key": "Cung Mệnh",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/07/148664880/0a4c5c29b24e64b08a24ca95faec62c7_6353071625775895425.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Cung Hiểm Lộ"
+          }
+        ]
+      }
+    ],
+    "story": [
+      {
+        "title": "Miêu Tả Nhân Vật",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "\"Đoàn mạo hiểm Benny\" là một ví dụ đặc biệt của phân hội Hiệp Hội Nhà Mạo Hiểm Mondstadt.\nĐể hỗ trợ lẫn nhau và giảm tỷ lệ tai nạn của cơ chế \"đội mạo hiểm\", yêu cầu có ít nhất ba đến bốn nhà mạo hiểm thường trú trong đội.\nCòn \"Đoàn mạo hiểm Benny\" mà Bennett là người đứng đầu, thì chỉ có mỗi một mình đội trưởng, việc này đã kéo dài từ rất lâu rồi.\nCác thành viên bị thất lạc, có quan hệ mật thiết đến số phận \"đen đủi\" của Bennett.\nNhưng đối với người thích mạo hiểm như Bennett lại chẳng hề cảm thấy cô đơn vì điều này…\nĐôi khi, trong thâm tâm cũng chỉ xuất hiện cảm giác ấy một hai lần. Có lẽ là vậy."
+          }
+        ]
+      },
+      {
+        "title": "Câu Chuyện Nhân Vật 1",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Nhà Mạo Hiểm Jack từng là người bị hại đầu tiên của \"Đoàn mạo hiểm Benny\".\nTrong thời khắc chỉ cách báu vật vài bước chân, dòng chảy hỗn loạn của Nguyên Tố Nham trăm năm mới xuất hiện đột nhiên xảy ra, trận động đất khủng khiếp tạo ra một hố vực sâu vạn trượng ngay trước mặt mọi người.\n\"Cảm giác lúc ấy giống như tình yêu gần ngay trước mắt xa tít chân trời vậy.\"\nTuy là lúc đó núi lở chỉ khiến Jack bị thương nhẹ, nhưng đó lại là cú đả kích lớn vào cuộc đời Nhà Mạo Hiểm của anh ấy, giống như là thất tình vậy.\nThành viên Royce trong một lần thám hiểm Bí Cảnh đã nghe được âm thanh \"rắc rắc\", sau đó thì mất đi ý thức trong tiếng nổ kinh hoàng.\nKẻ đứng đầu của vụ nổ ấy - Klee bị giam vào ngục 7 ngày, vì cho rằng Bí Cảnh mà các Nhà Mạo Hiểm đang thám hiểm là một cái hang thỏ rồi làm nó nổ tung.\nHeckler từ khi tham gia vào \"Đoàn mạo hiểm Benny\" lại mắc phải bệnh tiêu chảy với tần suất một tuần một lần. Tuy nguyên nhân dẫn đến tình trạng này được xác định là do ăn phải thức ăn có độc, thế nhưng anh nhất quyết quy trách nhiệm cho sự xui xẻo của đội trưởng.\n\"Họ sẽ quay lại, chỉ là xin nghỉ phép mà thôi ha ha... Xin bạn đừng hủy đăng ký của Đoàn mạo hiểm Benny...\"\nThấy bộ dạng thành khẩn cầu xin của Bennett, tiểu thư Katheryne thở dài và không nỡ vạch trần sự thật rằng mọi người đã chuyển vào đội khác làm việc."
+          }
+        ]
+      },
+      {
+        "title": "Câu Chuyện Nhân Vật 2",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Từng có một Bí Cảnh khiến người ta vô cùng tuyệt vọng.\nXưa kia, một Nhà Mạo Hiểm già đã đi sâu vào thám hiểm.\nNgọn lửa ác liệt thiêu rụi làn da ông, sấm sét ầm ĩ như xuyên qua mặt trống và những cơn cuồng phong muốn xé toạc tâm hồn.\nKết thúc cuộc hành trình giống như đi vào địa ngục, phía cuối con đường lại là... một đứa bé.\nNhà mạo hiểm già ban đầu nghĩ ông là người đầu tiên đặt chân vào nơi \"tuyệt vọng\" này. Nhưng dù thế nào, cũng không thể giải thích được cảnh tượng trước mắt.\nVào lúc này, một ý tưởng đã xuất hiện và ông tin rằng đó là sự thật.\n\"Đứa bé này... bị thế giới bỏ rơi.\"\nKhông tìm được vũ khí thần thánh hay vàng bạc châu báu, nhưng khuôn mặt của ông không hề lộ vẻ thất vọng, dường như trong mắt ông, sinh mệnh của đứa bé này chính là kho báu.\n\"Cuộc phiêu lưu này phải có ý nghĩa của nó\", ông lão nghĩ vậy và giấu đứa bé vào lòng.\nCho dù việc ông đang làm là trái với ý muốn của thế giới."
+          }
+        ]
+      },
+      {
+        "title": "Câu Chuyện Nhân Vật 3",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Ông lão chưa kịp kể lại cuộc phiêu lưu cho mọi người, thì đã qua đời bởi những vết thương quá nặng, chỉ để lại đứa trẻ được giải cứu khỏi \"tuyệt vọng\".\nTrước khi ra đi, ông thốt ra những từ như thế này: \"ý chí\", \"phiêu lưu\" và \"kho báu cuối cùng\".\nTrong phân hội Mondstadt của Hiệp Hội Nhà Mạo Hiểm, có vài Nhà Mạo Hiểm già không vợ không con. Họ đã nuôi nấng cậu bé và đặt tên là Bennett. Coi cậu như là con mình, chăm sóc cẩn thận.\nBennett từ nhỏ đã vô cùng hiểu chuyện, vô cùng thân thiết gọi họ là \"bố\".\n\"Bố à, răng giả rơi vào bát rồi kìa!\", \"Bố ơi đừng mặc cái áo giáp da đó nữa, con mua sơ mi cho nhé\", \"Trời mưa đừng đứng gần con quá, sẽ bị sét đánh trúng đó!\".\nĐến nay, việc chăm sóc những người \"bố\" không nơi nương tựa này đã chiếm toàn bộ thời gian còn lại của Bennett sau mỗi lần mạo hiểm.\n\"Những người bố này đúng là nhặt được báu vật rồi ha ha\". Hội trưởng đương nhiệm Cyrus vừa cười vừa vỗ vai Bennett.\nNếu bản thân đã không được may mắn thì chí ít cũng phải cố gắng mang đến may mắn cho những người mà anh yêu thương - Bennett đã nghĩ như thế.\nBennett đen đủi đang trên đường đi tìm một báu vật gọi là \"sự may mắn\"."
+          }
+        ]
+      },
+      {
+        "title": "Câu Chuyện Nhân Vật 4",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Thuộc hạ của Fischl, quạ đen Oz gọi Bennett là \"thiếu niên kiên cường nhất thế giới\".\nTừ các vết thương trên người của Bennett có thể nhận ra anh đã trải qua vô vàn khó khăn.\nQuái vật tấn công, di tích sụp đổ, rơi xuống vực sâu... Bennett với kinh nghiệm vô cùng phong phú khi đối mặt với những thứ \"xui xẻo\" luôn tìm được cách ứng phó với chúng.\nBarbara - mục sư tế lễ của giáo đường đã rất ngạc nhiên bởi sự điêu luyện trong việc điều trị trật khớp của anh.\nSự xui xẻo còn mang đến một món quà, đó là tinh thần chiến đấu với \"bệnh tật\".\n\"Động tác của đứa trẻ đó, lẽ nào...nó không cảm thấy đau sao?\" Đại Đội Trưởng Varka của đội kỵ sĩ đã vô cùng tò mò khi nhìn thấy cảnh Bennett chiến đấu.\nKhông phải không cảm thấy đau, mà là đã sớm thích nghi và biến chúng thành một phần giác quan thường ngày.\nNỗi đau tột cùng đối với Bennett mà nói, cũng chỉ như mùi vị khiến anh sặc mũi, như ánh sáng làm anh chói mắt mà thôi.\nVì vậy, với phương thức chiến đấu vượt qua giới hạn và động tác tấn công không màng đến bản thân đã trở thành tiêu chí của Nhà Mạo Hiểm Fischl."
+          }
+        ]
+      },
+      {
+        "title": "Câu Chuyện Nhân Vật 5",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Cái chết rốt cuộc là gì? Bennett - người luôn mon men gần ranh giới cái chết tự hỏi.\nBennett biết rằng, người \"bố\" - Nhà Mạo Hiểm đã cứu vớt anh sau khi chết đã được rất nhiều người ca tụng.\nBennett biết Nhà Mạo Hiểm trong đám tang của chính mình chả có mấy ai khóc than, phần lớn chỉ là những người bạn già uống với nhau chén rượu rồi đưa ông đến nơi chôn cất.\nBennett biết rằng nơi trở về tốt nhất cho Nhà Mạo Hiểm Mondstadt đó là hiến thân cho việc truy tìm Bí Cảnh có chứa báu vật và vùng đất lớn, rồi từ đó sẽ được Phong Thần đem linh hồn về quê hương.\nAnh từng rất sợ cái chết.\nThế nhưng sau đó Bennett cho rằng, cái chết có lẽ sẽ là một việc hạnh phúc với Nhà Mạo Hiểm.\nNhưng điều may mắn lại chẳng liên quan đến mình mà?\n\"Khởi hành thôi, đi tìm kho báu!\" Thế là Bennett bỏ mặc những suy nghĩ ngổn ngang đó."
+          }
+        ]
+      },
+      {
+        "title": "Băng gạc",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Khi bị thương nghiêm trọng như gãy xương hoặc mất máu quá nhiều, Bennett sẽ chạy đến giáo đường nhờ mục sư Barbara chữa trị.\n\"Lại là tôi đây... thật xin lỗi.\" Bennett gãi gãi đầu.\nBarbara chỉ biết lắc đầu, \"những vết trầy này cũng xử lý nốt\", sau đó đưa đến miếng băng gạc.\nSự quan tâm vô tư, nhưng Bennett lại coi như báu vật. Anh dán miếng băng gạc lên vết thương trông giống như đeo huân chương rồi cảm ơn một cách nồng nhiệt.\nBennett giữ rất nhiều băng gạc trong ngăn túi nhỏ, và mang theo trong suốt hành trình mạo hiểm. Của các bố, của tiểu thư Barbara, của tiểu thư Katheryne... còn có từ các Nhà Mạo Hiểm mà anh tình cờ gặp phải khi bị thương.\nNhững lòng tốt nhỏ bé được gom lại, là sự may mắn hữu hình chỉ thuộc về Bennett.\n\"Ít nhất thì mọi người đều ở đây, xem ra tôi cũng không quá xui xẻo\"."
+          }
+        ]
+      },
+      {
+        "title": "Vision",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Không có gì có thể ngăn cản được lòng nhiệt huyết với những cuộc mạo hiểm của Bennett.\nAnh muốn được như những ông \"bố\" của mình, không ngừng khám phá, thử thách, đổ máu và dần dần già đi trên con đường mạo hiểm.\nNhưng lần này, Bennett đã gặp phải nguy hiểm thực sự.\nĐúng như những gì ông lão đã gặp phải năm đó, là một tình huống nguy hiểm khiến người ta vô cùng tuyệt vọng.\n\"Mất máu như thế này... không hay rồi\".\nNhưng Bennett không dừng lại, anh nghĩ \"không có lý do gì để quay lại\".\nKhông biết vì lý do gì, anh cảm thấy rằng tất cả những điều không may mà anh phải chịu đựng trong quá khứ, là để vượt qua sự hiểm nguy trong thời điểm này.\nNhưng thứ chờ đợi anh ở cuối hành trình giống như địa ngục này lại là... không gì cả.\n\"Không thu hoạch được gì cũng là một phần... của mạo hiểm mà, đừng... để ý...\"\nDây thần kinh buông lỏng, những vết thương, kèm theo sự mệt mỏi đã lấy đi ý thức của Bennett, anh ngã lăn ra đất.\nKhi tỉnh lại lần nữa, anh phát hiện ra vết thương dường như đang bị đốt cháy bởi ngọn lửa thần kỳ, cầm máu lại không có cảm giác đau đớn.\nMột viên ngọc ấm áp khẽ lay động trong lòng bàn tay anh, hoà theo nhịp đập của trái tim trong lồng ngực Nhà Mạo Hiểm.\nĐây không phải là sự nhân từ của thế giới, cũng không phải là sự thương sót của số phận, mà là \"kho báu cuối cùng\" thực sự xứng đáng với ý chí như ngọn lửa của anh ấy."
+          }
+        ]
+      }
+    ],
     "voice": [
       {
         "title": "Lần đầu gặp mặt...",
@@ -1217,743 +1954,6 @@
       {
         "title": "Nhận Được Quà III",
         "desc": "Không ổn rồi... bụng bắt đầu đau..."
-      }
-    ],
-    "ascension": [
-      {
-        "key": "Lv.1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Trước Đột Phá",
-              "Sau Đột Phá"
-            ]
-          },
-          {
-            "key": "HP Căn Bản",
-            "values": [
-              "-",
-              "1039"
-            ]
-          },
-          {
-            "key": "Tấn Công Căn Bản",
-            "values": [
-              "-",
-              "16"
-            ]
-          },
-          {
-            "key": "P.Ngự Căn Bản",
-            "values": [
-              "-",
-              "65"
-            ]
-          },
-          {
-            "key": "Hiệu Quả Nạp Nguyên Tố",
-            "values": [
-              "-",
-              "0%"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Lv.20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Trước Đột Phá",
-              "Sau Đột Phá"
-            ]
-          },
-          {
-            "key": "HP Căn Bản",
-            "values": [
-              "2670",
-              "3447"
-            ]
-          },
-          {
-            "key": "Tấn Công Căn Bản",
-            "values": [
-              "41",
-              "53"
-            ]
-          },
-          {
-            "key": "P.Ngự Căn Bản",
-            "values": [
-              "166",
-              "214"
-            ]
-          },
-          {
-            "key": "Hiệu Quả Nạp Nguyên Tố",
-            "values": [
-              "0%",
-              "0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1100,
-            "name": "Vụn Mã Não Cháy",
-            "desc": "Nguyên Liệu Đột Phá Nhân Vật",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Cúc Cánh Quạt",
-            "desc": "<p>Loại thực vật thích gió. Đối với người dân Mondstadt sùng bái gió và bản thân cũng hào sảng như gió mà nói, cúc cánh quạt giống như \"Ngọn gió có thể nhìn thấy được\"</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 629,
-            "name": "Ấn Quạ Tầm Bảo",
-            "desc": "Dấu ấn kiêu hãnh thể hiện danh tính của Đạo Bảo Đoàn, miêu tả những chuyến truy tìm kho báu vô tận của họ. Tuy nói vậy, danh tính đạo tặc có cần phải được thể hiện một cách tự hào không nhỉ...?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "key": "Lv.40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Trước Đột Phá",
-              "Sau Đột Phá"
-            ]
-          },
-          {
-            "key": "HP Căn Bản",
-            "values": [
-              "5163",
-              "5715"
-            ]
-          },
-          {
-            "key": "Tấn Công Căn Bản",
-            "values": [
-              "80",
-              "88 "
-            ]
-          },
-          {
-            "key": "P.Ngự Căn Bản",
-            "values": [
-              "321",
-              "356"
-            ]
-          },
-          {
-            "key": "Hiệu Quả Nạp Nguyên Tố",
-            "values": [
-              "0%",
-              "6.7%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1099,
-            "name": "Mảnh Mã Não Cháy",
-            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Ngọn Lửa Vĩnh Hằng",
-            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Cúc Cánh Quạt",
-            "desc": "<p>Loại thực vật thích gió. Đối với người dân Mondstadt sùng bái gió và bản thân cũng hào sảng như gió mà nói, cúc cánh quạt giống như \"Ngọn gió có thể nhìn thấy được\"</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 629,
-            "name": "Ấn Quạ Tầm Bảo",
-            "desc": "Dấu ấn kiêu hãnh thể hiện danh tính của Đạo Bảo Đoàn, miêu tả những chuyến truy tìm kho báu vô tận của họ. Tuy nói vậy, danh tính đạo tặc có cần phải được thể hiện một cách tự hào không nhỉ...?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Treasure Hoarder Insignia_icon.png",
-            "amount": 15
-          }
-        ]
-      },
-      {
-        "key": "Lv.50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Trước Đột Phá",
-              "Sau Đột Phá"
-            ]
-          },
-          {
-            "key": "HP Căn Bản",
-            "values": [
-              "6573",
-              "7309"
-            ]
-          },
-          {
-            "key": "Tấn Công Căn Bản",
-            "values": [
-              "101",
-              "113"
-            ]
-          },
-          {
-            "key": "P.Ngự Căn Bản",
-            "values": [
-              "409",
-              "455"
-            ]
-          },
-          {
-            "key": "Hiệu Quả Nạp Nguyên Tố",
-            "values": [
-              "6.7%",
-              "13.3%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1099,
-            "name": "Mảnh Mã Não Cháy",
-            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Ngọn Lửa Vĩnh Hằng",
-            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Cúc Cánh Quạt",
-            "desc": "<p>Loại thực vật thích gió. Đối với người dân Mondstadt sùng bái gió và bản thân cũng hào sảng như gió mà nói, cúc cánh quạt giống như \"Ngọn gió có thể nhìn thấy được\"</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1553,
-            "name": "Ấn Quạ Bạc Ẩn",
-            "desc": "Huân chương quạ đen được thành viên của Đạo Bảo Đoàn sử dụng để nhận biết lẫn nhau. Đạo Bảo Đoàn không hỏi xuất thân, bất kể là ai chỉ cần có lòng ham tìm bảo vật, dám mạo hiểm, đều có thể trở thành thành viên \"ưu tú\".",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Trước Đột Phá",
-              "Sau Đột Phá"
-            ]
-          },
-          {
-            "key": "HP Căn Bản",
-            "values": [
-              "8168",
-              "8719"
-            ]
-          },
-          {
-            "key": "Tấn Công Căn Bản",
-            "values": [
-              "126",
-              "134"
-            ]
-          },
-          {
-            "key": "P.Ngự Căn Bản",
-            "values": [
-              "508",
-              "542"
-            ]
-          },
-          {
-            "key": "Hiệu Quả Nạp Nguyên Tố",
-            "values": [
-              "13.3%",
-              "13.3%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1098,
-            "name": "Miếng Mã Não Cháy",
-            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"<br/>\"Cuối cùng thiêu cháy tất cả vì giấc mơ.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Ngọn Lửa Vĩnh Hằng",
-            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Cúc Cánh Quạt",
-            "desc": "<p>Loại thực vật thích gió. Đối với người dân Mondstadt sùng bái gió và bản thân cũng hào sảng như gió mà nói, cúc cánh quạt giống như \"Ngọn gió có thể nhìn thấy được\"</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1553,
-            "name": "Ấn Quạ Bạc Ẩn",
-            "desc": "Huân chương quạ đen được thành viên của Đạo Bảo Đoàn sử dụng để nhận biết lẫn nhau. Đạo Bảo Đoàn không hỏi xuất thân, bất kể là ai chỉ cần có lòng ham tìm bảo vật, dám mạo hiểm, đều có thể trở thành thành viên \"ưu tú\".",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Silver Raven Insignia_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Lv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Trước Đột Phá",
-              "Sau Đột Phá"
-            ]
-          },
-          {
-            "key": "HP Căn Bản",
-            "values": [
-              "9577",
-              "10129"
-            ]
-          },
-          {
-            "key": "Tấn Công Căn Bản",
-            "values": [
-              "148",
-              "156"
-            ]
-          },
-          {
-            "key": "P.Ngự Căn Bản",
-            "values": [
-              "596",
-              "630"
-            ]
-          },
-          {
-            "key": "Hiệu Quả Nạp Nguyên Tố",
-            "values": [
-              "13.3%",
-              "20%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1098,
-            "name": "Miếng Mã Não Cháy",
-            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"<br/>\"Cuối cùng thiêu cháy tất cả vì giấc mơ.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Ngọn Lửa Vĩnh Hằng",
-            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Cúc Cánh Quạt",
-            "desc": "<p>Loại thực vật thích gió. Đối với người dân Mondstadt sùng bái gió và bản thân cũng hào sảng như gió mà nói, cúc cánh quạt giống như \"Ngọn gió có thể nhìn thấy được\"</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 760,
-            "name": "Ấn Quạ Trộm Vàng",
-            "desc": "Huân chương tượng trưng cho nguyên tắc và ngạo khí duy nhất của Đạo Bảo Đoàn. Chừng nào vẫn còn có những kho báu được phát hiện ở vùng đất rộng lớn, nơi vực thẳm hẻo lánh hay vùng biển vô danh, thì ngọn lửa trong tim của những kẻ trộm muốn chinh phục kho báu sẽ không bao giờ tắt.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Trước Đột Phá",
-              "Sau Đột Phá"
-            ]
-          },
-          {
-            "key": "HP Căn Bản",
-            "values": [
-              "10987",
-              "11539 "
-            ]
-          },
-          {
-            "key": "Tấn Công Căn Bản",
-            "values": [
-              "169",
-              "178"
-            ]
-          },
-          {
-            "key": "P.Ngự Căn Bản",
-            "values": [
-              "684",
-              "718 "
-            ]
-          },
-          {
-            "key": "Hiệu Quả Nạp Nguyên Tố",
-            "values": [
-              "20%",
-              "26.7%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1097,
-            "name": "Mã Não Cháy",
-            "desc": "Nguyên liệu đột phá nhân vật.<br/>\"Vì nguyện vọng mà bước vào con đường lữ hành, vì danh hiệu mạnh nhất mà cố gắng chiến đấu...\"<br/>\"Cuối cùng thiêu cháy tất cả vì giấc mơ.\"<br/>\"Trong tro tàn nếu còn sót lại trái tim như ban đầu, vậy thì hắn sẽ đạt được ██ thật sự.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Ngọn Lửa Vĩnh Hằng",
-            "desc": "Hạt giống âm ỉ bùng cháy của Cây Nổ, tỏa ra nguồn nhiệt lượng của Nguyên Tố Hỏa cứ như muốn thiêu đốt tất cả cây cỏ trên thế gian.<br/>Dòng chảy năng lượng lưu chuyển sâu trong đại địa mang theo nguyện vọng vô tận, nương theo ngọn lửa thấm vào thực vật, khiến nó lúc nào cũng cháy rực và khao khát dùng hoa lửa tẩy sạch mọi thứ, đây là thứ nguyện vọng gì nhỉ.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1750,
-            "name": "Cúc Cánh Quạt",
-            "desc": "<p>Loại thực vật thích gió. Đối với người dân Mondstadt sùng bái gió và bản thân cũng hào sảng như gió mà nói, cúc cánh quạt giống như \"Ngọn gió có thể nhìn thấy được\"</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Windwheel Aster_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 760,
-            "name": "Ấn Quạ Trộm Vàng",
-            "desc": "Huân chương tượng trưng cho nguyên tắc và ngạo khí duy nhất của Đạo Bảo Đoàn. Chừng nào vẫn còn có những kho báu được phát hiện ở vùng đất rộng lớn, nơi vực thẳm hẻo lánh hay vùng biển vô danh, thì ngọn lửa trong tim của những kẻ trộm muốn chinh phục kho báu sẽ không bao giờ tắt.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Golden Raven Insignia_icon.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Lv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Trước Đột Phá",
-              "Sau Đột Phá"
-            ]
-          },
-          {
-            "key": "HP Căn Bản",
-            "values": [
-              "12397",
-              "-"
-            ]
-          },
-          {
-            "key": "Tấn Công Căn Bản",
-            "values": [
-              "191",
-              "-"
-            ]
-          },
-          {
-            "key": "P.Ngự Căn Bản",
-            "values": [
-              "771",
-              "-"
-            ]
-          },
-          {
-            "key": "Hiệu Quả Nạp Nguyên Tố",
-            "values": [
-              "26.7%",
-              "-"
-            ]
-          }
-        ]
-      }
-    ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=43&center=450.50,248.00&zoom=0.00",
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_1.png",
-        "name": "Tầm Nhìn Phiêu Lưu",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Buff hiệu quả tấn công của <color=#ffd780>Hành Trình Kỳ Diệu</color> sẽ không bị giới hạn bởi HP, tăng thêm 20% tấn công cơ bản của Bennett vào chỉ số."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_2.png",
-        "name": "Vượt Qua Nghịch Cảnh",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Khi HP của Bennett dưới 70%, tăng 30% hiệu quả nạp Nguyên Tố."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_3.png",
-        "name": "Đam Mê Rực Cháy",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Cấp kỹ năng <color=#ffd780>Nhiệt Tình Quá Độ</color> +3.\nTăng tối đa đến cấp 15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_4.png",
-        "name": "Nhiệt Huyết Bất Diệt",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Khi thi triển <color=#ffd780>Nhiệt Tình Quá Độ</color> tụ lực lần 1, sẽ tấn công thường trong lúc tấn công kỹ năng lần 2, kèm theo truy kích.\nSát thương truy kích bằng 135% của tấn công lần 2."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_5.png",
-        "name": "Mở Rộng Tâm Hồn",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Cấp kỹ năng <color=#ffd780>Hành Trình Kỳ Diệu</color> +3.\nTăng tối đa đến cấp 15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/constellation_6.png",
-        "name": "Lửa Và Can Đảm",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Nhân vật sử dụng kiếm đơn, trọng kiếm, vũ khí cán dài trong đội hiện đang trong trận ở khu vực <color=#ffd780>Hành Trình Kỳ Diệu</color> được nhận 15% <color=#ff9999>tăng sát thương Nguyên Tố Hỏa</color> và nhận <color=#ff9999>Nguyên Tố Hỏa đính kèm</color> ."
-          }
-        ]
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/avatar_header.jpg"
-      },
-      {
-        "key": "Ảnh Gốc",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/班尼特/avatar.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Trang Ohục Mặc Định - Vận Đen Đeo Bám\nPhong cách của Bennett. Trang phục cũ của nhà mạo hiểm được chắp vá."
-          }
-        ]
-      },
-      {
-        "key": "Hoạt Cảnh Nhàn Rỗi 1",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/07/148664880/253d4d0f543836ac1d5c4dd28684c5c3_8614683978212659748.gif"
-      },
-      {
-        "key": "Hoạt Cảnh Nhàn Rỗi 2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/07/148664880/ead150a81a57c6c117778e553960d1d4_293952941122201832.gif"
-      },
-      {
-        "key": "Cung Mệnh",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/07/148664880/0a4c5c29b24e64b08a24ca95faec62c7_6353071625775895425.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Cung Hiểm Lộ"
-          }
-        ]
-      }
-    ],
-    "story": [
-      {
-        "title": "Miêu Tả Nhân Vật",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "\"Đoàn mạo hiểm Benny\" là một ví dụ đặc biệt của phân hội Hiệp Hội Nhà Mạo Hiểm Mondstadt.\nĐể hỗ trợ lẫn nhau và giảm tỷ lệ tai nạn của cơ chế \"đội mạo hiểm\", yêu cầu có ít nhất ba đến bốn nhà mạo hiểm thường trú trong đội.\nCòn \"Đoàn mạo hiểm Benny\" mà Bennett là người đứng đầu, thì chỉ có mỗi một mình đội trưởng, việc này đã kéo dài từ rất lâu rồi.\nCác thành viên bị thất lạc, có quan hệ mật thiết đến số phận \"đen đủi\" của Bennett.\nNhưng đối với người thích mạo hiểm như Bennett lại chẳng hề cảm thấy cô đơn vì điều này…\nĐôi khi, trong thâm tâm cũng chỉ xuất hiện cảm giác ấy một hai lần. Có lẽ là vậy."
-          }
-        ]
-      },
-      {
-        "title": "Câu Chuyện Nhân Vật 1",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Nhà Mạo Hiểm Jack từng là người bị hại đầu tiên của \"Đoàn mạo hiểm Benny\".\nTrong thời khắc chỉ cách báu vật vài bước chân, dòng chảy hỗn loạn của Nguyên Tố Nham trăm năm mới xuất hiện đột nhiên xảy ra, trận động đất khủng khiếp tạo ra một hố vực sâu vạn trượng ngay trước mặt mọi người.\n\"Cảm giác lúc ấy giống như tình yêu gần ngay trước mắt xa tít chân trời vậy.\"\nTuy là lúc đó núi lở chỉ khiến Jack bị thương nhẹ, nhưng đó lại là cú đả kích lớn vào cuộc đời Nhà Mạo Hiểm của anh ấy, giống như là thất tình vậy.\nThành viên Royce trong một lần thám hiểm Bí Cảnh đã nghe được âm thanh \"rắc rắc\", sau đó thì mất đi ý thức trong tiếng nổ kinh hoàng.\nKẻ đứng đầu của vụ nổ ấy - Klee bị giam vào ngục 7 ngày, vì cho rằng Bí Cảnh mà các Nhà Mạo Hiểm đang thám hiểm là một cái hang thỏ rồi làm nó nổ tung.\nHeckler từ khi tham gia vào \"Đoàn mạo hiểm Benny\" lại mắc phải bệnh tiêu chảy với tần suất một tuần một lần. Tuy nguyên nhân dẫn đến tình trạng này được xác định là do ăn phải thức ăn có độc, thế nhưng anh nhất quyết quy trách nhiệm cho sự xui xẻo của đội trưởng.\n\"Họ sẽ quay lại, chỉ là xin nghỉ phép mà thôi ha ha... Xin bạn đừng hủy đăng ký của Đoàn mạo hiểm Benny...\"\nThấy bộ dạng thành khẩn cầu xin của Bennett, tiểu thư Katheryne thở dài và không nỡ vạch trần sự thật rằng mọi người đã chuyển vào đội khác làm việc."
-          }
-        ]
-      },
-      {
-        "title": "Câu Chuyện Nhân Vật 2",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Từng có một Bí Cảnh khiến người ta vô cùng tuyệt vọng.\nXưa kia, một Nhà Mạo Hiểm già đã đi sâu vào thám hiểm.\nNgọn lửa ác liệt thiêu rụi làn da ông, sấm sét ầm ĩ như xuyên qua mặt trống và những cơn cuồng phong muốn xé toạc tâm hồn.\nKết thúc cuộc hành trình giống như đi vào địa ngục, phía cuối con đường lại là... một đứa bé.\nNhà mạo hiểm già ban đầu nghĩ ông là người đầu tiên đặt chân vào nơi \"tuyệt vọng\" này. Nhưng dù thế nào, cũng không thể giải thích được cảnh tượng trước mắt.\nVào lúc này, một ý tưởng đã xuất hiện và ông tin rằng đó là sự thật.\n\"Đứa bé này... bị thế giới bỏ rơi.\"\nKhông tìm được vũ khí thần thánh hay vàng bạc châu báu, nhưng khuôn mặt của ông không hề lộ vẻ thất vọng, dường như trong mắt ông, sinh mệnh của đứa bé này chính là kho báu.\n\"Cuộc phiêu lưu này phải có ý nghĩa của nó\", ông lão nghĩ vậy và giấu đứa bé vào lòng.\nCho dù việc ông đang làm là trái với ý muốn của thế giới."
-          }
-        ]
-      },
-      {
-        "title": "Câu Chuyện Nhân Vật 3",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Ông lão chưa kịp kể lại cuộc phiêu lưu cho mọi người, thì đã qua đời bởi những vết thương quá nặng, chỉ để lại đứa trẻ được giải cứu khỏi \"tuyệt vọng\".\nTrước khi ra đi, ông thốt ra những từ như thế này: \"ý chí\", \"phiêu lưu\" và \"kho báu cuối cùng\".\nTrong phân hội Mondstadt của Hiệp Hội Nhà Mạo Hiểm, có vài Nhà Mạo Hiểm già không vợ không con. Họ đã nuôi nấng cậu bé và đặt tên là Bennett. Coi cậu như là con mình, chăm sóc cẩn thận.\nBennett từ nhỏ đã vô cùng hiểu chuyện, vô cùng thân thiết gọi họ là \"bố\".\n\"Bố à, răng giả rơi vào bát rồi kìa!\", \"Bố ơi đừng mặc cái áo giáp da đó nữa, con mua sơ mi cho nhé\", \"Trời mưa đừng đứng gần con quá, sẽ bị sét đánh trúng đó!\".\nĐến nay, việc chăm sóc những người \"bố\" không nơi nương tựa này đã chiếm toàn bộ thời gian còn lại của Bennett sau mỗi lần mạo hiểm.\n\"Những người bố này đúng là nhặt được báu vật rồi ha ha\". Hội trưởng đương nhiệm Cyrus vừa cười vừa vỗ vai Bennett.\nNếu bản thân đã không được may mắn thì chí ít cũng phải cố gắng mang đến may mắn cho những người mà anh yêu thương - Bennett đã nghĩ như thế.\nBennett đen đủi đang trên đường đi tìm một báu vật gọi là \"sự may mắn\"."
-          }
-        ]
-      },
-      {
-        "title": "Câu Chuyện Nhân Vật 4",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Thuộc hạ của Fischl, quạ đen Oz gọi Bennett là \"thiếu niên kiên cường nhất thế giới\".\nTừ các vết thương trên người của Bennett có thể nhận ra anh đã trải qua vô vàn khó khăn.\nQuái vật tấn công, di tích sụp đổ, rơi xuống vực sâu... Bennett với kinh nghiệm vô cùng phong phú khi đối mặt với những thứ \"xui xẻo\" luôn tìm được cách ứng phó với chúng.\nBarbara - mục sư tế lễ của giáo đường đã rất ngạc nhiên bởi sự điêu luyện trong việc điều trị trật khớp của anh.\nSự xui xẻo còn mang đến một món quà, đó là tinh thần chiến đấu với \"bệnh tật\".\n\"Động tác của đứa trẻ đó, lẽ nào...nó không cảm thấy đau sao?\" Đại Đội Trưởng Varka của đội kỵ sĩ đã vô cùng tò mò khi nhìn thấy cảnh Bennett chiến đấu.\nKhông phải không cảm thấy đau, mà là đã sớm thích nghi và biến chúng thành một phần giác quan thường ngày.\nNỗi đau tột cùng đối với Bennett mà nói, cũng chỉ như mùi vị khiến anh sặc mũi, như ánh sáng làm anh chói mắt mà thôi.\nVì vậy, với phương thức chiến đấu vượt qua giới hạn và động tác tấn công không màng đến bản thân đã trở thành tiêu chí của Nhà Mạo Hiểm Fischl."
-          }
-        ]
-      },
-      {
-        "title": "Câu Chuyện Nhân Vật 5",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Cái chết rốt cuộc là gì? Bennett - người luôn mon men gần ranh giới cái chết tự hỏi.\nBennett biết rằng, người \"bố\" - Nhà Mạo Hiểm đã cứu vớt anh sau khi chết đã được rất nhiều người ca tụng.\nBennett biết Nhà Mạo Hiểm trong đám tang của chính mình chả có mấy ai khóc than, phần lớn chỉ là những người bạn già uống với nhau chén rượu rồi đưa ông đến nơi chôn cất.\nBennett biết rằng nơi trở về tốt nhất cho Nhà Mạo Hiểm Mondstadt đó là hiến thân cho việc truy tìm Bí Cảnh có chứa báu vật và vùng đất lớn, rồi từ đó sẽ được Phong Thần đem linh hồn về quê hương.\nAnh từng rất sợ cái chết.\nThế nhưng sau đó Bennett cho rằng, cái chết có lẽ sẽ là một việc hạnh phúc với Nhà Mạo Hiểm.\nNhưng điều may mắn lại chẳng liên quan đến mình mà?\n\"Khởi hành thôi, đi tìm kho báu!\" Thế là Bennett bỏ mặc những suy nghĩ ngổn ngang đó."
-          }
-        ]
-      },
-      {
-        "title": "Băng gạc",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Khi bị thương nghiêm trọng như gãy xương hoặc mất máu quá nhiều, Bennett sẽ chạy đến giáo đường nhờ mục sư Barbara chữa trị.\n\"Lại là tôi đây... thật xin lỗi.\" Bennett gãi gãi đầu.\nBarbara chỉ biết lắc đầu, \"những vết trầy này cũng xử lý nốt\", sau đó đưa đến miếng băng gạc.\nSự quan tâm vô tư, nhưng Bennett lại coi như báu vật. Anh dán miếng băng gạc lên vết thương trông giống như đeo huân chương rồi cảm ơn một cách nồng nhiệt.\nBennett giữ rất nhiều băng gạc trong ngăn túi nhỏ, và mang theo trong suốt hành trình mạo hiểm. Của các bố, của tiểu thư Barbara, của tiểu thư Katheryne... còn có từ các Nhà Mạo Hiểm mà anh tình cờ gặp phải khi bị thương.\nNhững lòng tốt nhỏ bé được gom lại, là sự may mắn hữu hình chỉ thuộc về Bennett.\n\"Ít nhất thì mọi người đều ở đây, xem ra tôi cũng không quá xui xẻo\"."
-          }
-        ]
-      },
-      {
-        "title": "Vision",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Không có gì có thể ngăn cản được lòng nhiệt huyết với những cuộc mạo hiểm của Bennett.\nAnh muốn được như những ông \"bố\" của mình, không ngừng khám phá, thử thách, đổ máu và dần dần già đi trên con đường mạo hiểm.\nNhưng lần này, Bennett đã gặp phải nguy hiểm thực sự.\nĐúng như những gì ông lão đã gặp phải năm đó, là một tình huống nguy hiểm khiến người ta vô cùng tuyệt vọng.\n\"Mất máu như thế này... không hay rồi\".\nNhưng Bennett không dừng lại, anh nghĩ \"không có lý do gì để quay lại\".\nKhông biết vì lý do gì, anh cảm thấy rằng tất cả những điều không may mà anh phải chịu đựng trong quá khứ, là để vượt qua sự hiểm nguy trong thời điểm này.\nNhưng thứ chờ đợi anh ở cuối hành trình giống như địa ngục này lại là... không gì cả.\n\"Không thu hoạch được gì cũng là một phần... của mạo hiểm mà, đừng... để ý...\"\nDây thần kinh buông lỏng, những vết thương, kèm theo sự mệt mỏi đã lấy đi ý thức của Bennett, anh ngã lăn ra đất.\nKhi tỉnh lại lần nữa, anh phát hiện ra vết thương dường như đang bị đốt cháy bởi ngọn lửa thần kỳ, cầm máu lại không có cảm giác đau đớn.\nMột viên ngọc ấm áp khẽ lay động trong lòng bàn tay anh, hoà theo nhịp đập của trái tim trong lồng ngực Nhà Mạo Hiểm.\nĐây không phải là sự nhân từ của thế giới, cũng không phải là sự thương sót của số phận, mà là \"kho báu cuối cùng\" thực sự xứng đáng với ý chí như ngọn lửa của anh ấy."
-          }
-        ]
       }
     ]
   }
