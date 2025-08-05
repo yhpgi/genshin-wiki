@@ -5,16 +5,773 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Rosaria_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/avatar.png",
   "filterValues": {
-    "characterRarity": "★4",
     "characterWeapon": "長柄武器",
-    "characterVision": "氷元素",
+    "characterRarity": "★4",
+    "characterRegion": "モンド城",
     "characterProperty": "攻撃力",
-    "characterRegion": "モンド城"
+    "characterVision": "氷元素"
   },
   "menuId": 2,
   "menuName": "キャラ図鑑",
   "version": 1754232715,
   "components": {
+    "ascension": [
+      {
+        "key": "Lv.1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎HP",
+            "values": [
+              "-",
+              "1,030"
+            ]
+          },
+          {
+            "key": "基礎攻撃力",
+            "values": [
+              "-",
+              "20"
+            ]
+          },
+          {
+            "key": "基礎防御力",
+            "values": [
+              "-",
+              "60"
+            ]
+          },
+          {
+            "key": "攻撃力",
+            "values": [
+              "-",
+              "0.0%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Lv.20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎HP",
+            "values": [
+              "2,647",
+              "3,417"
+            ]
+          },
+          {
+            "key": "基礎攻撃力",
+            "values": [
+              "52",
+              "67"
+            ]
+          },
+          {
+            "key": "基礎防御力",
+            "values": [
+              "153",
+              "197"
+            ]
+          },
+          {
+            "key": "攻撃力",
+            "values": [
+              "0.0%",
+              "0.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "モラ",
+            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 411,
+            "name": "哀切なアイスクリスタル・砕屑",
+            "desc": "キャラクターの突破用アイテム。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1525,
+            "name": "ヴァルベリー",
+            "desc": "透き通るベリー類。食べると口の中は微かな花の香りに満たされる。かつて嵐を見張る人にとって唯一の労わりはヴァルベリーの甘さと城の安全に対する希望だけである。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Valberry_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 778,
+            "name": "新兵の記章",
+            "desc": "新兵の身分を記した記章。かつてこれをつけた人は、どんな気持ちでファデュイの戦争兵器になったのだろうか。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Recruit's Insignia_icon.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "Lv.40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎HP",
+            "values": [
+              "5,118",
+              "5,665"
+            ]
+          },
+          {
+            "key": "基礎攻撃力",
+            "values": [
+              "100",
+              "111"
+            ]
+          },
+          {
+            "key": "基礎防御力",
+            "values": [
+              "296",
+              "327"
+            ]
+          },
+          {
+            "key": "攻撃力",
+            "values": [
+              "0.0%",
+              "6.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "モラ",
+            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 410,
+            "name": "哀切なアイスクリスタル・欠片",
+            "desc": "キャラクターの突破用アイテム。<br/>「…すみません…」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 938,
+            "name": "極寒のコア",
+            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1525,
+            "name": "ヴァルベリー",
+            "desc": "透き通るベリー類。食べると口の中は微かな花の香りに満たされる。かつて嵐を見張る人にとって唯一の労わりはヴァルベリーの甘さと城の安全に対する希望だけである。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Valberry_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 778,
+            "name": "新兵の記章",
+            "desc": "新兵の身分を記した記章。かつてこれをつけた人は、どんな気持ちでファデュイの戦争兵器になったのだろうか。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Recruit's Insignia_icon.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "Lv.50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎HP",
+            "values": [
+              "6,516",
+              "7,245"
+            ]
+          },
+          {
+            "key": "基礎攻撃力",
+            "values": [
+              "127",
+              "141"
+            ]
+          },
+          {
+            "key": "基礎防御力",
+            "values": [
+              "376",
+              "418"
+            ]
+          },
+          {
+            "key": "攻撃力",
+            "values": [
+              "6.0%",
+              "12.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "モラ",
+            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 410,
+            "name": "哀切なアイスクリスタル・欠片",
+            "desc": "キャラクターの突破用アイテム。<br/>「…すみません…」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 938,
+            "name": "極寒のコア",
+            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1525,
+            "name": "ヴァルベリー",
+            "desc": "透き通るベリー類。食べると口の中は微かな花の香りに満たされる。かつて嵐を見張る人にとって唯一の労わりはヴァルベリーの甘さと城の安全に対する希望だけである。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Valberry_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 466,
+            "name": "士官の記章",
+            "desc": "士官の身分を記した記章、一般兵士とは異なる独特なデザインがあるのは、その複雑な気持ちが含まれたからだろうか。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎HP",
+            "values": [
+              "8,096",
+              "8,643"
+            ]
+          },
+          {
+            "key": "基礎攻撃力",
+            "values": [
+              "158",
+              "169"
+            ]
+          },
+          {
+            "key": "基礎防御力",
+            "values": [
+              "468",
+              "499"
+            ]
+          },
+          {
+            "key": "攻撃力",
+            "values": [
+              "12.0%",
+              "12.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "モラ",
+            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 409,
+            "name": "哀切なアイスクリスタル・塊",
+            "desc": "キャラクターの突破用アイテム。<br/>「…すみません…」<br/>「あなた達まで、わたしと一緒にこの世界の悲しみを背負わせるなんて…」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 938,
+            "name": "極寒のコア",
+            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1525,
+            "name": "ヴァルベリー",
+            "desc": "透き通るベリー類。食べると口の中は微かな花の香りに満たされる。かつて嵐を見張る人にとって唯一の労わりはヴァルベリーの甘さと城の安全に対する希望だけである。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Valberry_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 466,
+            "name": "士官の記章",
+            "desc": "士官の身分を記した記章、一般兵士とは異なる独特なデザインがあるのは、その複雑な気持ちが含まれたからだろうか。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Lv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎HP",
+            "values": [
+              "9,493",
+              "10,040"
+            ]
+          },
+          {
+            "key": "基礎攻撃力",
+            "values": [
+              "185",
+              "196"
+            ]
+          },
+          {
+            "key": "基礎防御力",
+            "values": [
+              "548",
+              "580"
+            ]
+          },
+          {
+            "key": "攻撃力",
+            "values": [
+              "12.0%",
+              "18.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "モラ",
+            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 409,
+            "name": "哀切なアイスクリスタル・塊",
+            "desc": "キャラクターの突破用アイテム。<br/>「…すみません…」<br/>「あなた達まで、わたしと一緒にこの世界の悲しみを背負わせるなんて…」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 938,
+            "name": "極寒のコア",
+            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1525,
+            "name": "ヴァルベリー",
+            "desc": "透き通るベリー類。食べると口の中は微かな花の香りに満たされる。かつて嵐を見張る人にとって唯一の労わりはヴァルベリーの甘さと城の安全に対する希望だけである。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Valberry_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 636,
+            "name": "尉官の記章",
+            "desc": "尉官の身分を記した記章。ファデュイには膨大な軍隊があり、その中で尉官になれる人はきっと優れた能力があるだろう。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎HP",
+            "values": [
+              "10,891",
+              "11,438"
+            ]
+          },
+          {
+            "key": "基礎攻撃力",
+            "values": [
+              "213",
+              "223"
+            ]
+          },
+          {
+            "key": "基礎防御力",
+            "values": [
+              "629",
+              "661"
+            ]
+          },
+          {
+            "key": "攻撃力",
+            "values": [
+              "18.0%",
+              "24.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "モラ",
+            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 408,
+            "name": "哀切なアイスクリスタル",
+            "desc": "キャラクターの突破用アイテム。<br/>「…すみません、あなた達まで、わたしと一緒にこの世界の悲しみを背負わせるなんて…」<br/>「わたしの寒さを耐えられる者は、きっと心の中に熱い欲望を持っているだろう？」<br/>「なら、わたしの代わりに、旧世界を焼き尽くそう。」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 938,
+            "name": "極寒のコア",
+            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1525,
+            "name": "ヴァルベリー",
+            "desc": "透き通るベリー類。食べると口の中は微かな花の香りに満たされる。かつて嵐を見張る人にとって唯一の労わりはヴァルベリーの甘さと城の安全に対する希望だけである。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Valberry_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 636,
+            "name": "尉官の記章",
+            "desc": "尉官の身分を記した記章。ファデュイには膨大な軍隊があり、その中で尉官になれる人はきっと優れた能力があるだろう。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "Lv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "突破前",
+              "突破後"
+            ]
+          },
+          {
+            "key": "基礎HP",
+            "values": [
+              "12,289",
+              "-"
+            ]
+          },
+          {
+            "key": "基礎攻撃力",
+            "values": [
+              "240",
+              "-"
+            ]
+          },
+          {
+            "key": "基礎防御力",
+            "values": [
+              "710",
+              "-"
+            ]
+          },
+          {
+            "key": "攻撃力",
+            "values": [
+              "24.0%",
+              "-"
+            ]
+          }
+        ]
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "和名 / 英名",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "ロサリア / Rosaria"
+          }
+        ]
+      },
+      {
+        "key": "誕生日",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1月24日"
+          }
+        ]
+      },
+      {
+        "key": "命ノ星座",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "荊冠座"
+          }
+        ]
+      },
+      {
+        "key": "称号",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "荊冠の恩典"
+          }
+        ]
+      },
+      {
+        "key": "神の目",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "氷"
+          }
+        ]
+      },
+      {
+        "key": "所属",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "西風教会"
+          }
+        ]
+      },
+      {
+        "key": "中国語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "张安琪"
+          }
+        ]
+      },
+      {
+        "key": "英語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Elizabeth Maxwell"
+          }
+        ]
+      },
+      {
+        "key": "日本語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "加隈亜衣"
+          }
+        ]
+      },
+      {
+        "key": "韓国語 CV",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "김보나"
+          }
+        ]
+      },
+      {
+        "key": "オリジナル料理",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 625,
+            "name": "ヴァーディクトディナー",
+            "desc": "ロサリアのオリジナル料理。「暗黒」のとげが付いているため、最初はどこから食べたらいいのかわからない。周りの飾り物をやっとのことで外し、口にすると驚きの美味しさがやわらかい鳥肉から炸裂する。食す者の表情をロサリアは決して見逃さない。相手のリアクションを見た彼女はご満悦のようだ。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dinner of Judgment_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "名刺",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 6129,
+            "name": "ロサリア・苦役",
+            "desc": "名刺の飾り紋。<br>人々が醸し出す暖かさと優しさは、彼女にとって必ず返さなければいけない恩恵。同時に、彼女に一生付きまとう苦役でもある。",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/15/635e156523141d92312030094363a665_8260068889195442697.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "七聖召喚のカード",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 7222,
+            "name": "ロサリア",
+            "desc": "<p><strong>荊冠の恩典・ロサリア</strong></p><p></p><p>「影は光から生まれるが、光が影を御すことはできない。」</p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/21/346851886/bcb2da9b645d355dc7ba434056e40ddf_8291212216651959979.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "追加コスチューム",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5776,
+            "name": "教会の自由人へ",
+            "desc": "ロサリアの衣装。彼女のためだけに教会から贈られた特注品のようだ。",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/06/24/ef87a4785bacee87664d74db96e3ab01_6853987077197875351.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "実装バージョン",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.4"
+          }
+        ]
+      }
+    ],
+    "textualResearch": [
+      {
+        "title": "[誕生日メッセージ] メール (2025)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "手紙のタイトル「君に一杯」\n送信者：ロサリア\n今朝のお祈りはダリアが目をつぶってくれたわ。私への誕生日プレゼントってことなんでしょう。まあ、私が欲しかったものだし、ちょうどいいわ。\nでも、ただ静かなだけじゃ、完璧な誕生日とは言えないわね。\nモンドには美味しいお酒がたくさんある。でも、それを楽しむ場所は酒場じゃなくてもいい…例えば、清泉町の狩人は冬の狩りに出た日に秘蔵のお酒を開けたりするものよ。そうしたくなるのも分かるわ。寒い日に長時間、日陰に身を潜めていたんだから、その日の成果にかかわらず、ご褒美を楽しむべきでしょ？ちなみに狩人たちは飲みっぷりだけじゃなくて、肉を美味しく焼く腕もなかなかのものよ。\n君も来ない？君の冒険譚でも聞かせてもらえないかしら。\n私から君に一杯、捧げるわ。"
+          }
+        ]
+      },
+      {
+        "title": "[誕生日メッセージ] メール (2024)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "手紙のタイトル「珍しく…」\n送信者：ロサリア\n今日は珍しく何もすることがないの。見つからないよう隠れる必要もないし、誰かが捕まえに来てお祈りに参加するよう言われる心配もない。本質的には何も変わらないありきたりな一日に、こんな特別な待遇を受けられるなんてね。\nでも昼間から酒場に座っていても、空席ばかりでつまらないわ。だから色々と考えた末に、手紙を書いて知り合いを何人か呼ぶことにしたの。\nなにせ、人数が多いほどお酒も割引されるでしょ？この機会にたくさん飲んでおかないと。\n来るにせよ来ないにせよ、君の好きにしてちょうだい。私はあちこちで人を捕まえるような当直のシスターとは違うから。"
+          }
+        ]
+      },
+      {
+        "title": "[誕生日メッセージ] メール (2023)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "手紙のタイトル「普通の一日。」\n送信者：ロサリア\n先に言っておくわ。君は今日が何の日なのか知ってるかもしれないけど、私が手紙を書いたのは単に挨拶したかっただけで、別に、何か考えがあるってわけじゃない。\n日常って言うのは一日一日が重要なんだから、しっかり過ごすべきよ。自分がいいと思えるのなら毎日でも祝えるんだし、誕生日まで待つ必要もないわ。\nだから、誕生日をごく普通の一日にするのだって悪いことじゃない。自分さえ楽しければ、それでいいんだから。\nとにかく、もう少ししたら酒場で酒を飲んでくるつもりよ。\nここ最近、酒場には思いあがった人たちがいてね、七聖召喚で自分に勝てたら、その夜の酒代は彼らが持つっていうの。\n結構割に合いそうでしょ。"
+          }
+        ]
+      },
+      {
+        "title": "[誕生日メッセージ] メール (2022)",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "手紙のタイトル「今日は…」\n送信者：ロサリア\n正直言って、誕生日なんて祝いたくないのよね。誕生日の「伝統的」な行事にも興味ないわ。だから、私が生まれた日を知っている人もそういないの。\n誕生日をほんの少し特別な日だと考えて、久しぶりに会う人たちとお酒や食事を共にするくらいなら…まだ受け入れられるけど。\nそうだ、君のために花を用意したの。花屋の…フローラだったかしら？あの子が言うには、ここ最近、一番売れている花だそうよ。\n…何だか個性的な見た目ね。しかも、花の部分が回るみたい。\n美しい物事というのは、普段と違う気持ちをもたらしてくれるわ。私には似合わないけど、君の手にかかれば別の姿を見せてくれるんじゃない？\nそれじゃあ、また。私に会いたくなったら、夜が明けた頃に来てちょうだい。"
+          }
+        ]
+      }
+    ],
     "customize": [
       {
         "type": "Heading",
@@ -851,6 +1608,68 @@
       }
     ],
     "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=29&center=-337.50,484.00&zoom=0.00",
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_1.png",
+        "name": "罪の導き",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "ロサリアの攻撃で会心が発生すると、攻撃速度+10%、通常攻撃のダメージ+10%、継続時間4秒。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_2.png",
+        "name": "無福の地",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>臨終の聖礼</color> で創られる氷槍の継続時間+4秒。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_3.png",
+        "name": "懺悔の儀",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>罪喰いの懺悔</color> のスキルLv.+3。\n最大Lv.15まで。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_4.png",
+        "name": "苦痛の恩典",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>罪喰いの懺悔</color> で会心が発生すると、ロサリア自身の元素エネルギーが5回復する。\nこの効果は、1回の罪喰いの懺悔で1度のみ発動可能。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_5.png",
+        "name": "臨終の祈り",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>臨終の聖礼</color> のスキルLv.+3。\n最大Lv.15まで。"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_6.png",
+        "name": "代行裁判",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>臨終の聖礼</color> の攻撃が敵に命中すると、敵の物理耐性-20%、継続時間10秒。"
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "title": "キャラクター詳細",
@@ -921,44 +1740,6 @@
           {
             "type": "RichText",
             "text": "ロサリアの「神の目」は、とある寒い日の夜に現れた。\n盗賊にとって最も厄介な季節、全員が生きていくには食料が足りなかった。\n常に空腹に苦しんでいた彼女は、寒風吹き荒ぶ中での雑用に耐えかね逃げ出した。\nしかし、盗賊の一人である老人に捕まり連れ戻されてしまう。彼こそが、過去に彼女を村で拾い、人を殺す技を教えた張本人である。\n「逃げる奴は全員裏切り者だ。裏切り者は決闘に勝たなければ自由になれない」\nそう言うと、老人は古いナイフをロサリアに投げた。「来い、俺を殺せばここから逃げられる。俺はただの年老いた獅子だ、お前はまだ若い。お前なら容易いことだろう？」\nロサリアが勝つなど、誰一人として想像していなかった。しかし、確かに老いた獅子は若き野獣の爪の前に敗れた。\nその夜、盗賊団は古株の一人を失ったが、新たなメンバーを迎え入れることにした。\n老人を殺したロサリアは盗賊たちに避けられたが、面白いことに彼女の持つ「神の目」を見た途端態度が豹変した。\n——「神の目」を持つ者なら、きっとあのジジイよりも強い。それにお前は小食だ、食料の節約にもなる。\n氷のように固く凍ったロサリアの心に、ふとある疑問が浮かんだ——\n彼はわざと私を勝たせたんじゃないかと…拾った子に対し、偽りながらも父としての気持ちが彼に生まれていたのかもしれない。\n解放条件：好感度Lv.6"
-          }
-        ]
-      }
-    ],
-    "textualResearch": [
-      {
-        "title": "[誕生日メッセージ] メール (2025)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "手紙のタイトル「君に一杯」\n送信者：ロサリア\n今朝のお祈りはダリアが目をつぶってくれたわ。私への誕生日プレゼントってことなんでしょう。まあ、私が欲しかったものだし、ちょうどいいわ。\nでも、ただ静かなだけじゃ、完璧な誕生日とは言えないわね。\nモンドには美味しいお酒がたくさんある。でも、それを楽しむ場所は酒場じゃなくてもいい…例えば、清泉町の狩人は冬の狩りに出た日に秘蔵のお酒を開けたりするものよ。そうしたくなるのも分かるわ。寒い日に長時間、日陰に身を潜めていたんだから、その日の成果にかかわらず、ご褒美を楽しむべきでしょ？ちなみに狩人たちは飲みっぷりだけじゃなくて、肉を美味しく焼く腕もなかなかのものよ。\n君も来ない？君の冒険譚でも聞かせてもらえないかしら。\n私から君に一杯、捧げるわ。"
-          }
-        ]
-      },
-      {
-        "title": "[誕生日メッセージ] メール (2024)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "手紙のタイトル「珍しく…」\n送信者：ロサリア\n今日は珍しく何もすることがないの。見つからないよう隠れる必要もないし、誰かが捕まえに来てお祈りに参加するよう言われる心配もない。本質的には何も変わらないありきたりな一日に、こんな特別な待遇を受けられるなんてね。\nでも昼間から酒場に座っていても、空席ばかりでつまらないわ。だから色々と考えた末に、手紙を書いて知り合いを何人か呼ぶことにしたの。\nなにせ、人数が多いほどお酒も割引されるでしょ？この機会にたくさん飲んでおかないと。\n来るにせよ来ないにせよ、君の好きにしてちょうだい。私はあちこちで人を捕まえるような当直のシスターとは違うから。"
-          }
-        ]
-      },
-      {
-        "title": "[誕生日メッセージ] メール (2023)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "手紙のタイトル「普通の一日。」\n送信者：ロサリア\n先に言っておくわ。君は今日が何の日なのか知ってるかもしれないけど、私が手紙を書いたのは単に挨拶したかっただけで、別に、何か考えがあるってわけじゃない。\n日常って言うのは一日一日が重要なんだから、しっかり過ごすべきよ。自分がいいと思えるのなら毎日でも祝えるんだし、誕生日まで待つ必要もないわ。\nだから、誕生日をごく普通の一日にするのだって悪いことじゃない。自分さえ楽しければ、それでいいんだから。\nとにかく、もう少ししたら酒場で酒を飲んでくるつもりよ。\nここ最近、酒場には思いあがった人たちがいてね、七聖召喚で自分に勝てたら、その夜の酒代は彼らが持つっていうの。\n結構割に合いそうでしょ。"
-          }
-        ]
-      },
-      {
-        "title": "[誕生日メッセージ] メール (2022)",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "手紙のタイトル「今日は…」\n送信者：ロサリア\n正直言って、誕生日なんて祝いたくないのよね。誕生日の「伝統的」な行事にも興味ないわ。だから、私が生まれた日を知っている人もそういないの。\n誕生日をほんの少し特別な日だと考えて、久しぶりに会う人たちとお酒や食事を共にするくらいなら…まだ受け入れられるけど。\nそうだ、君のために花を用意したの。花屋の…フローラだったかしら？あの子が言うには、ここ最近、一番売れている花だそうよ。\n…何だか個性的な見た目ね。しかも、花の部分が回るみたい。\n美しい物事というのは、普段と違う気持ちをもたらしてくれるわ。私には似合わないけど、君の手にかかれば別の姿を見せてくれるんじゃない？\nそれじゃあ、また。私に会いたくなったら、夜が明けた頃に来てちょうだい。"
           }
         ]
       }
@@ -1125,787 +1906,6 @@
           {
             "type": "RichText",
             "text": "<color=#ffd780>2025/01/24</color>\n【ロサリア生誕祭2025】\n「ふぅ～、これ飲んだら寝るわ。…朝のお祈り？ふっ、気にしなくて平気よ。当直のシスターにはちゃんと見つからないようにするから。」\n<color=#37ffff>掲載元：https:/x.com/Genshin_7/status/1882639491661209718</color>"
-          }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "和名 / 英名",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ロサリア / Rosaria"
-          }
-        ]
-      },
-      {
-        "key": "誕生日",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1月24日"
-          }
-        ]
-      },
-      {
-        "key": "命ノ星座",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "荊冠座"
-          }
-        ]
-      },
-      {
-        "key": "称号",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "荊冠の恩典"
-          }
-        ]
-      },
-      {
-        "key": "神の目",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "氷"
-          }
-        ]
-      },
-      {
-        "key": "所属",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "西風教会"
-          }
-        ]
-      },
-      {
-        "key": "中国語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "张安琪"
-          }
-        ]
-      },
-      {
-        "key": "英語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Elizabeth Maxwell"
-          }
-        ]
-      },
-      {
-        "key": "日本語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "加隈亜衣"
-          }
-        ]
-      },
-      {
-        "key": "韓国語 CV",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "김보나"
-          }
-        ]
-      },
-      {
-        "key": "オリジナル料理",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 625,
-            "name": "ヴァーディクトディナー",
-            "desc": "ロサリアのオリジナル料理。「暗黒」のとげが付いているため、最初はどこから食べたらいいのかわからない。周りの飾り物をやっとのことで外し、口にすると驚きの美味しさがやわらかい鳥肉から炸裂する。食す者の表情をロサリアは決して見逃さない。相手のリアクションを見た彼女はご満悦のようだ。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dinner of Judgment_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "名刺",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 6129,
-            "name": "ロサリア・苦役",
-            "desc": "名刺の飾り紋。<br>人々が醸し出す暖かさと優しさは、彼女にとって必ず返さなければいけない恩恵。同時に、彼女に一生付きまとう苦役でもある。",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/15/635e156523141d92312030094363a665_8260068889195442697.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "七聖召喚のカード",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 7222,
-            "name": "ロサリア",
-            "desc": "<p><strong>荊冠の恩典・ロサリア</strong></p><p></p><p>「影は光から生まれるが、光が影を御すことはできない。」</p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/11/21/346851886/bcb2da9b645d355dc7ba434056e40ddf_8291212216651959979.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "追加コスチューム",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 5776,
-            "name": "教会の自由人へ",
-            "desc": "ロサリアの衣装。彼女のためだけに教会から贈られた特注品のようだ。",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/06/24/ef87a4785bacee87664d74db96e3ab01_6853987077197875351.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "実装バージョン",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.4"
-          }
-        ]
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_1.png",
-        "name": "罪の導き",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "ロサリアの攻撃で会心が発生すると、攻撃速度+10%、通常攻撃のダメージ+10%、継続時間4秒。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_2.png",
-        "name": "無福の地",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>臨終の聖礼</color> で創られる氷槍の継続時間+4秒。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_3.png",
-        "name": "懺悔の儀",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>罪喰いの懺悔</color> のスキルLv.+3。\n最大Lv.15まで。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_4.png",
-        "name": "苦痛の恩典",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>罪喰いの懺悔</color> で会心が発生すると、ロサリア自身の元素エネルギーが5回復する。\nこの効果は、1回の罪喰いの懺悔で1度のみ発動可能。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_5.png",
-        "name": "臨終の祈り",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>臨終の聖礼</color> のスキルLv.+3。\n最大Lv.15まで。"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/罗莎莉亚/constellation_6.png",
-        "name": "代行裁判",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>臨終の聖礼</color> の攻撃が敵に命中すると、敵の物理耐性-20%、継続時間10秒。"
-          }
-        ]
-      }
-    ],
-    "ascension": [
-      {
-        "key": "Lv.1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎HP",
-            "values": [
-              "-",
-              "1,030"
-            ]
-          },
-          {
-            "key": "基礎攻撃力",
-            "values": [
-              "-",
-              "20"
-            ]
-          },
-          {
-            "key": "基礎防御力",
-            "values": [
-              "-",
-              "60"
-            ]
-          },
-          {
-            "key": "攻撃力",
-            "values": [
-              "-",
-              "0.0%"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Lv.20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎HP",
-            "values": [
-              "2,647",
-              "3,417"
-            ]
-          },
-          {
-            "key": "基礎攻撃力",
-            "values": [
-              "52",
-              "67"
-            ]
-          },
-          {
-            "key": "基礎防御力",
-            "values": [
-              "153",
-              "197"
-            ]
-          },
-          {
-            "key": "攻撃力",
-            "values": [
-              "0.0%",
-              "0.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "モラ",
-            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 411,
-            "name": "哀切なアイスクリスタル・砕屑",
-            "desc": "キャラクターの突破用アイテム。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1525,
-            "name": "ヴァルベリー",
-            "desc": "透き通るベリー類。食べると口の中は微かな花の香りに満たされる。かつて嵐を見張る人にとって唯一の労わりはヴァルベリーの甘さと城の安全に対する希望だけである。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Valberry_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 778,
-            "name": "新兵の記章",
-            "desc": "新兵の身分を記した記章。かつてこれをつけた人は、どんな気持ちでファデュイの戦争兵器になったのだろうか。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Recruit's Insignia_icon.png",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "key": "Lv.40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎HP",
-            "values": [
-              "5,118",
-              "5,665"
-            ]
-          },
-          {
-            "key": "基礎攻撃力",
-            "values": [
-              "100",
-              "111"
-            ]
-          },
-          {
-            "key": "基礎防御力",
-            "values": [
-              "296",
-              "327"
-            ]
-          },
-          {
-            "key": "攻撃力",
-            "values": [
-              "0.0%",
-              "6.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "モラ",
-            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 410,
-            "name": "哀切なアイスクリスタル・欠片",
-            "desc": "キャラクターの突破用アイテム。<br/>「…すみません…」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 938,
-            "name": "極寒のコア",
-            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1525,
-            "name": "ヴァルベリー",
-            "desc": "透き通るベリー類。食べると口の中は微かな花の香りに満たされる。かつて嵐を見張る人にとって唯一の労わりはヴァルベリーの甘さと城の安全に対する希望だけである。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Valberry_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 778,
-            "name": "新兵の記章",
-            "desc": "新兵の身分を記した記章。かつてこれをつけた人は、どんな気持ちでファデュイの戦争兵器になったのだろうか。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Recruit's Insignia_icon.png",
-            "amount": 15
-          }
-        ]
-      },
-      {
-        "key": "Lv.50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎HP",
-            "values": [
-              "6,516",
-              "7,245"
-            ]
-          },
-          {
-            "key": "基礎攻撃力",
-            "values": [
-              "127",
-              "141"
-            ]
-          },
-          {
-            "key": "基礎防御力",
-            "values": [
-              "376",
-              "418"
-            ]
-          },
-          {
-            "key": "攻撃力",
-            "values": [
-              "6.0%",
-              "12.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "モラ",
-            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 410,
-            "name": "哀切なアイスクリスタル・欠片",
-            "desc": "キャラクターの突破用アイテム。<br/>「…すみません…」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 938,
-            "name": "極寒のコア",
-            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1525,
-            "name": "ヴァルベリー",
-            "desc": "透き通るベリー類。食べると口の中は微かな花の香りに満たされる。かつて嵐を見張る人にとって唯一の労わりはヴァルベリーの甘さと城の安全に対する希望だけである。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Valberry_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 466,
-            "name": "士官の記章",
-            "desc": "士官の身分を記した記章、一般兵士とは異なる独特なデザインがあるのは、その複雑な気持ちが含まれたからだろうか。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎HP",
-            "values": [
-              "8,096",
-              "8,643"
-            ]
-          },
-          {
-            "key": "基礎攻撃力",
-            "values": [
-              "158",
-              "169"
-            ]
-          },
-          {
-            "key": "基礎防御力",
-            "values": [
-              "468",
-              "499"
-            ]
-          },
-          {
-            "key": "攻撃力",
-            "values": [
-              "12.0%",
-              "12.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "モラ",
-            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 409,
-            "name": "哀切なアイスクリスタル・塊",
-            "desc": "キャラクターの突破用アイテム。<br/>「…すみません…」<br/>「あなた達まで、わたしと一緒にこの世界の悲しみを背負わせるなんて…」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 938,
-            "name": "極寒のコア",
-            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1525,
-            "name": "ヴァルベリー",
-            "desc": "透き通るベリー類。食べると口の中は微かな花の香りに満たされる。かつて嵐を見張る人にとって唯一の労わりはヴァルベリーの甘さと城の安全に対する希望だけである。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Valberry_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 466,
-            "name": "士官の記章",
-            "desc": "士官の身分を記した記章、一般兵士とは異なる独特なデザインがあるのは、その複雑な気持ちが含まれたからだろうか。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Lv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎HP",
-            "values": [
-              "9,493",
-              "10,040"
-            ]
-          },
-          {
-            "key": "基礎攻撃力",
-            "values": [
-              "185",
-              "196"
-            ]
-          },
-          {
-            "key": "基礎防御力",
-            "values": [
-              "548",
-              "580"
-            ]
-          },
-          {
-            "key": "攻撃力",
-            "values": [
-              "12.0%",
-              "18.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "モラ",
-            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 409,
-            "name": "哀切なアイスクリスタル・塊",
-            "desc": "キャラクターの突破用アイテム。<br/>「…すみません…」<br/>「あなた達まで、わたしと一緒にこの世界の悲しみを背負わせるなんて…」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 938,
-            "name": "極寒のコア",
-            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1525,
-            "name": "ヴァルベリー",
-            "desc": "透き通るベリー類。食べると口の中は微かな花の香りに満たされる。かつて嵐を見張る人にとって唯一の労わりはヴァルベリーの甘さと城の安全に対する希望だけである。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Valberry_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 636,
-            "name": "尉官の記章",
-            "desc": "尉官の身分を記した記章。ファデュイには膨大な軍隊があり、その中で尉官になれる人はきっと優れた能力があるだろう。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎HP",
-            "values": [
-              "10,891",
-              "11,438"
-            ]
-          },
-          {
-            "key": "基礎攻撃力",
-            "values": [
-              "213",
-              "223"
-            ]
-          },
-          {
-            "key": "基礎防御力",
-            "values": [
-              "629",
-              "661"
-            ]
-          },
-          {
-            "key": "攻撃力",
-            "values": [
-              "18.0%",
-              "24.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "モラ",
-            "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 408,
-            "name": "哀切なアイスクリスタル",
-            "desc": "キャラクターの突破用アイテム。<br/>「…すみません、あなた達まで、わたしと一緒にこの世界の悲しみを背負わせるなんて…」<br/>「わたしの寒さを耐えられる者は、きっと心の中に熱い欲望を持っているだろう？」<br/>「なら、わたしの代わりに、旧世界を焼き尽くそう。」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 938,
-            "name": "極寒のコア",
-            "desc": "<p>急凍樹を倒した後に現れるコア。<br>今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>急凍樹のコア。純粋な氷元素が含まれている。今にも大地の深淵のエネルギーと思念が噴出しようとしている。哀悼のように静寂な氷霜もいずれ地上の生物に宿る。たとえ生き物を狩らないはずのツル植物でも、強く凶暴になるであろう。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Hoarfrost Core_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1525,
-            "name": "ヴァルベリー",
-            "desc": "透き通るベリー類。食べると口の中は微かな花の香りに満たされる。かつて嵐を見張る人にとって唯一の労わりはヴァルベリーの甘さと城の安全に対する希望だけである。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Valberry_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 636,
-            "name": "尉官の記章",
-            "desc": "尉官の身分を記した記章。ファデュイには膨大な軍隊があり、その中で尉官になれる人はきっと優れた能力があるだろう。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Lv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "突破前",
-              "突破後"
-            ]
-          },
-          {
-            "key": "基礎HP",
-            "values": [
-              "12,289",
-              "-"
-            ]
-          },
-          {
-            "key": "基礎攻撃力",
-            "values": [
-              "240",
-              "-"
-            ]
-          },
-          {
-            "key": "基礎防御力",
-            "values": [
-              "710",
-              "-"
-            ]
-          },
-          {
-            "key": "攻撃力",
-            "values": [
-              "24.0%",
-              "-"
-            ]
           }
         ]
       }

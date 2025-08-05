@@ -4,14 +4,99 @@
   "desc": "<p>Eine Frucht, die du aus einer Geschichte über die Aranara erhalten hast. Sie hat das Potenzial, jede Krise zu überwinden.</p>",
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/24/61142474/0e1cecaeba7b12c8c9adcb2f11eccd5e_2398580520132737300.png",
   "filterValues": {
-    "weaponProperty": "Aufladerate",
     "weaponRarity": 4,
-    "weaponType": "Katalysator"
+    "weaponType": "Katalysator",
+    "weaponProperty": "Aufladerate"
   },
   "menuId": 4,
   "menuName": "Waffe",
   "version": 1691770687,
   "components": {
+    "baseInfo": [
+      {
+        "key": "Name",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Vollmondfrucht"
+          }
+        ]
+      },
+      {
+        "key": "Herkunft",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Sumeru"
+          }
+        ]
+      },
+      {
+        "key": "Typ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Katalysator"
+          }
+        ]
+      },
+      {
+        "key": "Nebenattribute",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Aufladerate"
+          }
+        ]
+      },
+      {
+        "key": "Vollmondrundung",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Erhält nach dem Auslösen einer Elementarreaktion den Effekt „Mondphase“: Erhöht die Elementarkunde um <color=#37ffff>24 ~ 27 ~ 30 ~ 33 ~ 36</color> Punkte und verringert den ANG um 5%. Alle 0,3s kann nur eine Stapelung dieses Effekts erhalten werden, 5-fach stapelbar. Wenn innerhalb von 6s keine Elementarreaktion ausgelöst wird, wird eine Stapelung entfernt. Dieser Effekt tritt auch in Kraft, wenn sich die Figur inaktiv in der Truppe befindet."
+          }
+        ]
+      },
+      {
+        "key": "Schmiedematerial",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 2806,
+            "name": "Unbearbeiteter Katalysator des Kernlands",
+            "desc": "<p>Rohmaterial zum Herstellen von Waffen. Kann zu einem 4-Sterne-Katalysator geschmiedet werden.</p><p>In der Philosophie spricht man davon, dass alles in der Welt der Sterblichen vier Entstehungsgründe besitzt. Das „Ziel“ dieser unbearbeiteten Waffe ist es, eine Helden begleitende Waffe zu werden.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/19/22173920/dd1b0e3a5f1f4a59fe16b06b57a518ee_8239786929887715084.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 976,
+            "name": "Brocken Kristall",
+            "desc": "Ein ungeschliffener Kristall, der erst nach Bearbeitung durch qualifizierte Handwerker seinen wahren Wert zeigt.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystal Chunk_icon.png",
+            "amount": 50
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1224,
+            "name": "Brocken weißes Eisen",
+            "desc": "Ein Klumpen weißes Eisenerz, der in den Händen eines begabten Schmieds zu glanzvollen Dingen reifen kann.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
+            "amount": 50
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 500
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
     "ascension": [
       {
         "key": "St. 1",
@@ -394,91 +479,6 @@
       {
         "key": "Aufgestiegene Form",
         "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/08/36893887/aa10517cccb03d501cd0173e7699deef_6413084029619311600.png"
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Name",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Vollmondfrucht"
-          }
-        ]
-      },
-      {
-        "key": "Herkunft",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Sumeru"
-          }
-        ]
-      },
-      {
-        "key": "Typ",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Katalysator"
-          }
-        ]
-      },
-      {
-        "key": "Nebenattribute",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Aufladerate"
-          }
-        ]
-      },
-      {
-        "key": "Vollmondrundung",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Erhält nach dem Auslösen einer Elementarreaktion den Effekt „Mondphase“: Erhöht die Elementarkunde um <color=#37ffff>24 ~ 27 ~ 30 ~ 33 ~ 36</color> Punkte und verringert den ANG um 5%. Alle 0,3s kann nur eine Stapelung dieses Effekts erhalten werden, 5-fach stapelbar. Wenn innerhalb von 6s keine Elementarreaktion ausgelöst wird, wird eine Stapelung entfernt. Dieser Effekt tritt auch in Kraft, wenn sich die Figur inaktiv in der Truppe befindet."
-          }
-        ]
-      },
-      {
-        "key": "Schmiedematerial",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 2806,
-            "name": "Unbearbeiteter Katalysator des Kernlands",
-            "desc": "<p>Rohmaterial zum Herstellen von Waffen. Kann zu einem 4-Sterne-Katalysator geschmiedet werden.</p><p>In der Philosophie spricht man davon, dass alles in der Welt der Sterblichen vier Entstehungsgründe besitzt. Das „Ziel“ dieser unbearbeiteten Waffe ist es, eine Helden begleitende Waffe zu werden.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/19/22173920/dd1b0e3a5f1f4a59fe16b06b57a518ee_8239786929887715084.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 976,
-            "name": "Brocken Kristall",
-            "desc": "Ein ungeschliffener Kristall, der erst nach Bearbeitung durch qualifizierte Handwerker seinen wahren Wert zeigt.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystal Chunk_icon.png",
-            "amount": 50
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1224,
-            "name": "Brocken weißes Eisen",
-            "desc": "Ein Klumpen weißes Eisenerz, der in den Händen eines begabten Schmieds zu glanzvollen Dingen reifen kann.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
-            "amount": 50
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 500
-          }
-        ],
-        "isMaterial": true
       }
     ],
     "story": [
