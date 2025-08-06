@@ -7,212 +7,7 @@
   "menuName": "チュートリアル",
   "version": 1724050512,
   "components": {
-    "baseInfo": [
-      {
-        "key": "名前",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ダメージ計算式"
-          }
-        ]
-      },
-      {
-        "key": "関連項目",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 5206,
-            "name": "元素反応",
-            "desc": "<p>テイワットには7つの元素が存在し、「神の目」と呼ばれる魔力器官を授けられたキャラクターは、7つのうち1つの元素を扱うことができる。元素同士が接触すると、元素の組み合わせに応じた元素反応が発生する。</p>",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/18/e03d84da04797c0ad0d6bd99c0d6ed57_8218276776082843931.png"
-          }
-        ],
-        "isMaterial": true
-      }
-    ],
     "customize": [
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>本項目において、</color> <color=#ffffff>固定値系元素反応</color> <color=#ffffff73>とは、</color> <color=#ffffff>開花、超開花、烈開花、燃焼、過負荷、超電導、感電、氷砕き、拡散</color> <color=#ffffff73>のことを指す。</color>\n<color=#ffffff>固定値系元素反応</color> <color=#ffffff73>によるダメージは、敵の防御力を貫通する一方で、</color> <color=#ffffff>敵の元素耐性</color> <color=#ffffff73>は参照する。また、</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2850,
-        "name": "ナヒーダ",
-        "desc": "<p>スラサタンナ聖処に幽棲する籠の中の鳥。夢の中でしか世界を眺めることができない。</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/31/103265111/f29490bddc56b4a6773b6c5003bbb853_7044697335205611008.png",
-        "displayStyle": "text",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "の命ノ星座第2重の効果による開花、超開花、烈開花、燃焼の元素反応を除き、固定値系元素反応によるダメージには会心判定が存在しない。固定値系元素反応によるダメージは、 <color=#ffffff>元素反応を起こした側のキャラクターレベル</color> と <color=#ffffff>元素熟知</color> を参照する。\n<color=#ffffff73>例) 開花反応が草元素キャラクターによって引き起こされた時、生成された草原核の爆発ダメージは開花反応を引き起こした草元素キャラクターのキャラクターレベルおよび元素熟知、そして命中した敵の元素耐性のみを参照する。</color>\n<color=#ffffff73>固定値系元素反応のダメージ計算式は以下の通りとなる。</color>"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>(最終ダメージ) = 敵の元素耐性補正 × 反応係数 × キャラクターレベル補正 ×</color>\n<color=#ffffff>(100% + 元素熟知ボーナス + 元素反応ボーナス)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "反応係数",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>反応係数</color> とは、各元素反応ごとに定められている特定の倍率のことを指し、以下の表に一覧を示す。"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>反応係数</color>\n<color=#ffffff>該当する元素反応</color>\n300%\n烈開花、超開花\n200%\n過負荷、開花\n150%\n氷砕き\n120%\n感電\n60%\n拡散\n50%\n超電導\n25%\n燃焼",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "キャラクターレベル補正",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "固定値系元素反応のダメージ計算にはキャラクターレベルと対応する特定の値が計算に使用される。これを本項目ではキャラクターレベル補正と呼称する。\n主なレベルにおけるキャラクターレベル補正の一覧を以下に示す。"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>キャラクターレベル</color>\n<color=#ffffff>キャラクターレベル補正値</color>\n60\n492.88\n70\n765.64\n80\n1077.44\n85\n1253.84\n90\n1446.85",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "元素熟知ボーナス",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>元素熟知ボーナスはゲーム内ステータス画面より確認が可能である。</color>\n<color=#ffffff73>以下の式により計算される。</color>"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>(元素熟知ボーナス) = 元素熟知 × 16 / 元素熟知 + 2000</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "元素反応ボーナス",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "以下に示す一部のキャラクターの天賦は、特定の固定値系元素反応のダメージをアップさせる。"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 37,
-        "name": "モナ",
-        "desc": "<p>謎の占星術師の少女。自分のことを「偉大なる占星術師モナ」と自称するが、その肩書きに相応しい実力を持っている。博学で、高慢。</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
-        "displayStyle": "text",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>命ノ星座 第1重</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2812,
-        "name": "ニィロウ",
-        "desc": "<p>「ズバイルシアター」の噂に名高い踊り子。そのダンスはしなやかで美しく、彼女自身も優しく純粋な心で人と接する。</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/09/194600931/586d726f9ebda3506c78beaaa41f13b6_3240276268956263027.png",
-        "displayStyle": "text",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>突破段階「4」で解放される固有天賦</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3609,
-        "name": "白朮",
-        "desc": "<p>薬舗「不卜廬」の店主。「長生」という名の白蛇を体に乗せている。薬に精通しており、いつも深く考えを巡らせているが、他人が彼の思考を読み取ることは難しい。</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/28/132746206/05599650d7f42e1c4adde373de6b297d_4443391405678036890.png",
-        "displayStyle": "text",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>突破段階「4」で解放される固有天賦</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3608,
-        "name": "カーヴェ",
-        "desc": "<p>スメールの著名建築デザイナー。多くの物事に対し、行き過ぎた思いやりの心を持つ。唯美主義者だが、現実に悩まされている。</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/30/132746206/2270aba02b92034d7d76b4426be8f53b_2538508507377778329.png",
-        "displayStyle": "text",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>元素爆発、命ノ星座 第4重</color>\nまた、一部の聖遺物セットの効果によっても特定の固定値系元素反応のダメージをアップさせることができる。\n一覧を以下に示す。"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2067,
-        "name": "雷のような怒り",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>4セット効果</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2085,
-        "name": "燃え盛る炎の魔女",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>4セット効果</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2091,
-        "name": "翠緑の影",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>4セット効果</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3321,
-        "name": "楽園の絶花",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/09/132746206/50ce09dfa5a91a33aa9cedfb15bcf2d1_51617885659913013.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>4セット効果</color>\n※なお、本項目に表記されている内容の全てはmiHoYoおよびHoYoverse(運営公式)の見解を表すものではなく、プレイヤーたちが積み重ねてきた原神のダメージ計算における理解をまとめたものであることに留意が必要。"
-      },
       {
         "type": "RichText",
         "text": "注：以下の情報はすべてVer.4.7時点での情報であることに注意。"
@@ -3372,6 +3167,211 @@
       {
         "type": "RichText",
         "text": "※なお、本項目に表記されている内容の全てはmiHoYoおよびHoYoverse(運営公式)の見解を表すものではなく、プレイヤーたちが積み重ねてきた原神のダメージ計算における理解をまとめたものであることに留意が必要。"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>本項目において、</color> <color=#ffffff>固定値系元素反応</color> <color=#ffffff73>とは、</color> <color=#ffffff>開花、超開花、烈開花、燃焼、過負荷、超電導、感電、氷砕き、拡散</color> <color=#ffffff73>のことを指す。</color>\n<color=#ffffff>固定値系元素反応</color> <color=#ffffff73>によるダメージは、敵の防御力を貫通する一方で、</color> <color=#ffffff>敵の元素耐性</color> <color=#ffffff73>は参照する。また、</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2850,
+        "name": "ナヒーダ",
+        "desc": "<p>スラサタンナ聖処に幽棲する籠の中の鳥。夢の中でしか世界を眺めることができない。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/31/103265111/f29490bddc56b4a6773b6c5003bbb853_7044697335205611008.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "の命ノ星座第2重の効果による開花、超開花、烈開花、燃焼の元素反応を除き、固定値系元素反応によるダメージには会心判定が存在しない。固定値系元素反応によるダメージは、 <color=#ffffff>元素反応を起こした側のキャラクターレベル</color> と <color=#ffffff>元素熟知</color> を参照する。\n<color=#ffffff73>例) 開花反応が草元素キャラクターによって引き起こされた時、生成された草原核の爆発ダメージは開花反応を引き起こした草元素キャラクターのキャラクターレベルおよび元素熟知、そして命中した敵の元素耐性のみを参照する。</color>\n<color=#ffffff73>固定値系元素反応のダメージ計算式は以下の通りとなる。</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>(最終ダメージ) = 敵の元素耐性補正 × 反応係数 × キャラクターレベル補正 ×</color>\n<color=#ffffff>(100% + 元素熟知ボーナス + 元素反応ボーナス)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "反応係数",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>反応係数</color> とは、各元素反応ごとに定められている特定の倍率のことを指し、以下の表に一覧を示す。"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>反応係数</color>\n<color=#ffffff>該当する元素反応</color>\n300%\n烈開花、超開花\n200%\n過負荷、開花\n150%\n氷砕き\n120%\n感電\n60%\n拡散\n50%\n超電導\n25%\n燃焼",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "キャラクターレベル補正",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "固定値系元素反応のダメージ計算にはキャラクターレベルと対応する特定の値が計算に使用される。これを本項目ではキャラクターレベル補正と呼称する。\n主なレベルにおけるキャラクターレベル補正の一覧を以下に示す。"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>キャラクターレベル</color>\n<color=#ffffff>キャラクターレベル補正値</color>\n60\n492.88\n70\n765.64\n80\n1077.44\n85\n1253.84\n90\n1446.85",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "元素熟知ボーナス",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>元素熟知ボーナスはゲーム内ステータス画面より確認が可能である。</color>\n<color=#ffffff73>以下の式により計算される。</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>(元素熟知ボーナス) = 元素熟知 × 16 / 元素熟知 + 2000</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "元素反応ボーナス",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "以下に示す一部のキャラクターの天賦は、特定の固定値系元素反応のダメージをアップさせる。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "モナ",
+        "desc": "<p>謎の占星術師の少女。自分のことを「偉大なる占星術師モナ」と自称するが、その肩書きに相応しい実力を持っている。博学で、高慢。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第1重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "ニィロウ",
+        "desc": "<p>「ズバイルシアター」の噂に名高い踊り子。そのダンスはしなやかで美しく、彼女自身も優しく純粋な心で人と接する。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/09/194600931/586d726f9ebda3506c78beaaa41f13b6_3240276268956263027.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>突破段階「4」で解放される固有天賦</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "白朮",
+        "desc": "<p>薬舗「不卜廬」の店主。「長生」という名の白蛇を体に乗せている。薬に精通しており、いつも深く考えを巡らせているが、他人が彼の思考を読み取ることは難しい。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/28/132746206/05599650d7f42e1c4adde373de6b297d_4443391405678036890.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>突破段階「4」で解放される固有天賦</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "カーヴェ",
+        "desc": "<p>スメールの著名建築デザイナー。多くの物事に対し、行き過ぎた思いやりの心を持つ。唯美主義者だが、現実に悩まされている。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/30/132746206/2270aba02b92034d7d76b4426be8f53b_2538508507377778329.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆発、命ノ星座 第4重</color>\nまた、一部の聖遺物セットの効果によっても特定の固定値系元素反応のダメージをアップさせることができる。\n一覧を以下に示す。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "雷のような怒り",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4セット効果</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "燃え盛る炎の魔女",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4セット効果</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "翠緑の影",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4セット効果</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "楽園の絶花",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/09/132746206/50ce09dfa5a91a33aa9cedfb15bcf2d1_51617885659913013.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4セット効果</color>\n※なお、本項目に表記されている内容の全てはmiHoYoおよびHoYoverse(運営公式)の見解を表すものではなく、プレイヤーたちが積み重ねてきた原神のダメージ計算における理解をまとめたものであることに留意が必要。"
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "名前",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "ダメージ計算式"
+          }
+        ]
+      },
+      {
+        "key": "関連項目",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5206,
+            "name": "元素反応",
+            "desc": "<p>テイワットには7つの元素が存在し、「神の目」と呼ばれる魔力器官を授けられたキャラクターは、7つのうち1つの元素を扱うことができる。元素同士が接触すると、元素の組み合わせに応じた元素反応が発生する。</p>",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/18/e03d84da04797c0ad0d6bd99c0d6ed57_8218276776082843931.png"
+          }
+        ],
+        "isMaterial": true
       }
     ]
   }
