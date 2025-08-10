@@ -9,40 +9,6 @@
   "components": {
     "customize": [
       {
-        "type": "RichText",
-        "text": "Una Reacción Elemental ocurre cuando se aplican diferentes elementos a un objetivo que ya está afectado por un elemento.\nEn Genshin Impact, hay siete elementos, cada uno con al menos una reacción que se puede desencadenar al usarlo. Sin embargo, existen restricciones para estas reacciones ya que ciertos elementos no interactúan con otro elemento, lo cual es así: Geo, Dendro y Anemo, y Dendro y Cryo no reaccionan entre sí.\nLas reacciones elementales se pueden dividir en categorías separadas, tales como: Reacciones sin daño, Reacciones Amplificadoras, Reacciones Transformativas y Reacciones Aditivas.\nPara comprender mejor ciertos mecanismos e interacciones, resulta útil delinear y definir un par de términos y mecanismos. Estos han encontrado un uso establecido en la comunidad y han sido identificados mediante pruebas e investigaciones rigurosas por parte de jugadores más dedicados. Algunos de estos paradigmas y mecanismos son de naturaleza bastante compleja, por lo que su lista aquí no es más que un resumen condensado."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Triggers (Desencadenamiento) & Auras",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Cuando se habla de reacciones, en algunas de ellas es importante considerar cuál elemento se aplica sobre cuál, mientras que en otras es indiferente a la hora de considerar el efecto de la reacción. Por ejemplo, no importa si un enemigo se ve afectado por Electro o Cryo, en el instante en que se aplica el otro elemento respectivo, se produce la reacción del Superconductor y el efecto es el mismo. Sin embargo, hay una diferencia si es Pyro o Hydro el que desencadena la reacción de Vaporizado, ya que aquí la secuencia de aplicación tiene un impacto en el efecto de la reacción (es decir, un multiplicador x1.5 en comparación con uno x2).\nPara facilitar la comunicación sobre este asunto, la comunidad adoptó los términos <color=#ffffff>\"Aura\"</color> y <color=#ffffff>\"Trigger\"</color> . <color=#ffffff>\"Aura\"</color> se usa para describir qué elemento(s) está presente en una entidad durante un estado neutral (antes o después de una reacción), mientras que <color=#ffffff>\"Trigger\"</color> (desencadenar) se usa para describir qué elemento desencadena la(s) reacción(es)."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Elemental Gauge (Unit) Theory",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>La</color> <color=#ffffff>\"Elemental Gauge (Unit) Theory\"</color> ( Teoría de la (Unidad de) Indicador Elemental ) se refiere a la comprensión de que las auras elementales se \"consumen\" en diferentes grados dependiendo de su propia fuerza y ​​la fuerza del trigger respectivo. En este caso, la fuerza de un aura elemental o trigger no está definida por el daño que hizo un movimiento de ataque al aplicar dicho elemento, sino por un valor predefinido para ese ataque. Estos valores pueden ser modulados por factores, como el orden de aplicación (elementos fuertes o débiles) o el tiempo entre aplicaciones (\"decay\", decaimiento).\nEn esencia, ciertos ataques aplican \"más\" o \"menos\" de un elemento, lo que puede reflejarse en la fuerza del aura o del trigger. Esta fuerza se cuenta en las así llamadas unidades, v.g. 1U Cryo o 2U Pyro.\nAquí hay algunos ejemplos que pueden ayudar a demostrar esta idea:\nEl Ataque Normal Charlotte aplica 1U Cryo y el Ataque Normal de Lisa aplica 1U Electro. Ambos se cancelan entre sí y desencadenan la reacción Superconductor.\nLa Habilidad Definitiva de Xingchiu aplica 1U Hydro, mientras que el Ataque Cargado de Hu Tao aplica 1U Pyro. Sin embargo, en este caso, como Pyro es el elemento \"débil\" debido a la naturaleza de Vaporización, su fuerza se reduce a la mitad, lo cual significa que solo consume 0.5U del aura Hydro de Xingchiu. Así, después del ataque, permanece 0.5U de aura Hydro en el enemigo, y Hu Tao puede desencadenar (trigger) una segunda reacción.\nAsimismo, la Habilidad Definitiva de Bennett aplica 2U Pyro a un enemigo, después de lo cual, el Ataque Normal de Mona aplica 1U Hydro. Sin embargo, como Hydro es el elemento \"fuerte\", consume el doble, resultando en una remoción total del aura Pyro inicial.\nCabe señalar que un trigger (desencadenante), incluso si aplica más unidades elementales de lo que se puede consumir del aura de un enemigo, nunca aplicará el resto de su elemento. Un ataque puede aplicar un nuevo elemento si no hay ninguno presente y establecer un aura, o consumir un aura (total o parcialmente) y desencadenar una reacción. Un solo ataque nunca puede lograr ambas cosas."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Internal Cooldown (ICD)",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Del mismo modo en que las Habilidades Elementales y Definitivas tienen tiempos de espera (TdE, Cooldown en inglés, CD) tras el que pueden ser usados de nuevo, así también la mayoría de los ataques que aplican un elemento siguen reglas específicas. Estos tiempos de espera están, en su mayor parte, separados unos de otros y no son visibles por ningún indicador; por eso el nombre <color=#ffffff>Internal Cooldown (ICD, Tiempo de Espera interno)</color> .\nAparte de algunas excepciones que no tienen ningún ICD y aplican su elemento con cada uso/golpe, la mayoría de los ataques siguen patrones similares. De hecho, hay dos reglas que funcionan en conjunto, la regla del tiempo y la regla del golpe, teniendo prioridad la regla del tiempo.\nEn pocas palabras, cada X impactos, el mismo ataque puede aplicar su elemento nuevamente, y también cada X segundos, independientemente de los impactos.\nUn ejemplo práctico para esto es la Habilidad Definitiva de Kaeya . Mientras esta habilidad gira rápidamente y lanza golpes rápidos de Daño Cryo, no todo golpe puede desencadenar una reacción o aplicar su elemento. De hecho, aplicará Cryo cada tres golpes (es decir, el golpe 1, 4, 7, 10, 13... y así). Además, cada 2.5s, también se garantizará que el siguiente golpe aplique el elemento, sobrescribiendo la regla del golpe mencionada anteriormente y restableciéndola a 1. El mismo ejemplo que el anterior con la Definitiva de Kaeya seguiría esta secuencia:\n1, 4, 7 / 8, 11, 14 / 15, 18, …\nEn este ejemplo, el contador comienza tras el golpe 1. El golpe 7 ocurre tras 2.4s, por lo que el siguiente golpe sería tras 2.5s después de iniciado el contador. Como la regla del tiempo tiene prioridad, el golpe 8 aplica Cryo, reinicia el contador de golpes y también la regla del tiempo.\nEsta regla del 3er golpe es conocida normalmente como <color=#ffffff>\"Standard ICD\"</color> , ya que estos valores son los más comunes. Algunas excepciones no tienen regla alguna, o les falta alguna de las dos, o las tienen modificadas.\nAlgunos ejemplos de tales excepciones son la Habilidad Definitiva de Xiangling (que no tiene ICD) o los ataques del cuervo Oz de Fischl (regla de 4 golpes & regla de 5s)."
-      },
-      {
         "type": "Heading",
         "level": 1,
         "text": "Reacciones Sin Daño",
@@ -1352,6 +1318,40 @@
         "type": "RichText",
         "text": "<color=#ffffff>Conjunto de 4 piezas</color>\nAumenta en un 40% el daño que inflige el portador de este conjunto con las reacciones de Florecimiento, Sobreflorecimiento y Crepitar. Además, cuando el portador de este conjunto causa alguna de estas reacciones, el bono anterior aumenta en un 25%. Este efecto dura 10 s, puede acumularse hasta 4 veces y ocurrir una vez por segundo. Puede activarse incluso cuando el portador del conjunto está en tu equipo pero no en combate.",
         "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Una Reacción Elemental ocurre cuando se aplican diferentes elementos a un objetivo que ya está afectado por un elemento.\nEn Genshin Impact, hay siete elementos, cada uno con al menos una reacción que se puede desencadenar al usarlo. Sin embargo, existen restricciones para estas reacciones ya que ciertos elementos no interactúan con otro elemento, lo cual es así: Geo, Dendro y Anemo, y Dendro y Cryo no reaccionan entre sí.\nLas reacciones elementales se pueden dividir en categorías separadas, tales como: Reacciones sin daño, Reacciones Amplificadoras, Reacciones Transformativas y Reacciones Aditivas.\nPara comprender mejor ciertos mecanismos e interacciones, resulta útil delinear y definir un par de términos y mecanismos. Estos han encontrado un uso establecido en la comunidad y han sido identificados mediante pruebas e investigaciones rigurosas por parte de jugadores más dedicados. Algunos de estos paradigmas y mecanismos son de naturaleza bastante compleja, por lo que su lista aquí no es más que un resumen condensado."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Triggers (Desencadenamiento) & Auras",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Cuando se habla de reacciones, en algunas de ellas es importante considerar cuál elemento se aplica sobre cuál, mientras que en otras es indiferente a la hora de considerar el efecto de la reacción. Por ejemplo, no importa si un enemigo se ve afectado por Electro o Cryo, en el instante en que se aplica el otro elemento respectivo, se produce la reacción del Superconductor y el efecto es el mismo. Sin embargo, hay una diferencia si es Pyro o Hydro el que desencadena la reacción de Vaporizado, ya que aquí la secuencia de aplicación tiene un impacto en el efecto de la reacción (es decir, un multiplicador x1.5 en comparación con uno x2).\nPara facilitar la comunicación sobre este asunto, la comunidad adoptó los términos <color=#ffffff>\"Aura\"</color> y <color=#ffffff>\"Trigger\"</color> . <color=#ffffff>\"Aura\"</color> se usa para describir qué elemento(s) está presente en una entidad durante un estado neutral (antes o después de una reacción), mientras que <color=#ffffff>\"Trigger\"</color> (desencadenar) se usa para describir qué elemento desencadena la(s) reacción(es)."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Elemental Gauge (Unit) Theory",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>La</color> <color=#ffffff>\"Elemental Gauge (Unit) Theory\"</color> ( Teoría de la (Unidad de) Indicador Elemental ) se refiere a la comprensión de que las auras elementales se \"consumen\" en diferentes grados dependiendo de su propia fuerza y ​​la fuerza del trigger respectivo. En este caso, la fuerza de un aura elemental o trigger no está definida por el daño que hizo un movimiento de ataque al aplicar dicho elemento, sino por un valor predefinido para ese ataque. Estos valores pueden ser modulados por factores, como el orden de aplicación (elementos fuertes o débiles) o el tiempo entre aplicaciones (\"decay\", decaimiento).\nEn esencia, ciertos ataques aplican \"más\" o \"menos\" de un elemento, lo que puede reflejarse en la fuerza del aura o del trigger. Esta fuerza se cuenta en las así llamadas unidades, v.g. 1U Cryo o 2U Pyro.\nAquí hay algunos ejemplos que pueden ayudar a demostrar esta idea:\nEl Ataque Normal Charlotte aplica 1U Cryo y el Ataque Normal de Lisa aplica 1U Electro. Ambos se cancelan entre sí y desencadenan la reacción Superconductor.\nLa Habilidad Definitiva de Xingchiu aplica 1U Hydro, mientras que el Ataque Cargado de Hu Tao aplica 1U Pyro. Sin embargo, en este caso, como Pyro es el elemento \"débil\" debido a la naturaleza de Vaporización, su fuerza se reduce a la mitad, lo cual significa que solo consume 0.5U del aura Hydro de Xingchiu. Así, después del ataque, permanece 0.5U de aura Hydro en el enemigo, y Hu Tao puede desencadenar (trigger) una segunda reacción.\nAsimismo, la Habilidad Definitiva de Bennett aplica 2U Pyro a un enemigo, después de lo cual, el Ataque Normal de Mona aplica 1U Hydro. Sin embargo, como Hydro es el elemento \"fuerte\", consume el doble, resultando en una remoción total del aura Pyro inicial.\nCabe señalar que un trigger (desencadenante), incluso si aplica más unidades elementales de lo que se puede consumir del aura de un enemigo, nunca aplicará el resto de su elemento. Un ataque puede aplicar un nuevo elemento si no hay ninguno presente y establecer un aura, o consumir un aura (total o parcialmente) y desencadenar una reacción. Un solo ataque nunca puede lograr ambas cosas."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Internal Cooldown (ICD)",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Del mismo modo en que las Habilidades Elementales y Definitivas tienen tiempos de espera (TdE, Cooldown en inglés, CD) tras el que pueden ser usados de nuevo, así también la mayoría de los ataques que aplican un elemento siguen reglas específicas. Estos tiempos de espera están, en su mayor parte, separados unos de otros y no son visibles por ningún indicador; por eso el nombre <color=#ffffff>Internal Cooldown (ICD, Tiempo de Espera interno)</color> .\nAparte de algunas excepciones que no tienen ningún ICD y aplican su elemento con cada uso/golpe, la mayoría de los ataques siguen patrones similares. De hecho, hay dos reglas que funcionan en conjunto, la regla del tiempo y la regla del golpe, teniendo prioridad la regla del tiempo.\nEn pocas palabras, cada X impactos, el mismo ataque puede aplicar su elemento nuevamente, y también cada X segundos, independientemente de los impactos.\nUn ejemplo práctico para esto es la Habilidad Definitiva de Kaeya . Mientras esta habilidad gira rápidamente y lanza golpes rápidos de Daño Cryo, no todo golpe puede desencadenar una reacción o aplicar su elemento. De hecho, aplicará Cryo cada tres golpes (es decir, el golpe 1, 4, 7, 10, 13... y así). Además, cada 2.5s, también se garantizará que el siguiente golpe aplique el elemento, sobrescribiendo la regla del golpe mencionada anteriormente y restableciéndola a 1. El mismo ejemplo que el anterior con la Definitiva de Kaeya seguiría esta secuencia:\n1, 4, 7 / 8, 11, 14 / 15, 18, …\nEn este ejemplo, el contador comienza tras el golpe 1. El golpe 7 ocurre tras 2.4s, por lo que el siguiente golpe sería tras 2.5s después de iniciado el contador. Como la regla del tiempo tiene prioridad, el golpe 8 aplica Cryo, reinicia el contador de golpes y también la regla del tiempo.\nEsta regla del 3er golpe es conocida normalmente como <color=#ffffff>\"Standard ICD\"</color> , ya que estos valores son los más comunes. Algunas excepciones no tienen regla alguna, o les falta alguna de las dos, o las tienen modificadas.\nAlgunos ejemplos de tales excepciones son la Habilidad Definitiva de Xiangling (que no tiene ICD) o los ataques del cuervo Oz de Fischl (regla de 4 golpes & regla de 5s)."
       }
     ]
   }
