@@ -4,18 +4,31 @@
   "desc": "<p><strong><span style=\"color: #ECE5D8\">안개 소환·얼음 치친 술사</span></strong><br>적어도 안개풀이 소진되기 전까진, 얼음 치친은 그녀의 곁을 떠나지 않을 것이다.</p>",
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/20/194600931/cbcfb53b8523957d330a6f9396f03167_7442716035561871535.png",
   "filterValues": {
-    "cardCharacterObtainingMethod": "술집 도전",
     "cardCharacterWeaponType": "그 외 무기",
-    "cardCharacterElement": "얼음 원소",
     "cardCharacterCamp": [
       "우인단"
     ],
+    "cardCharacterObtainingMethod": "술집 도전",
+    "cardCharacterElement": "얼음 원소",
     "cardCharacterChargingPoint": "원소 에너지: 3"
   },
   "menuId": 17,
   "menuName": "캐릭터 카드",
   "version": 1718634942,
   "components": {
+    "tcg": {
+      "headerImgs": [
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/20/194600931/cbcfb53b8523957d330a6f9396f03167_7442716035561871535.png",
+          "imgDesc": "일반 커버"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/06/14/194600931/a53a3fc00981fd526e18fb4cb7fcc1ff_3138640425725439811.gif",
+          "imgDesc": "환영 커버"
+        }
+      ],
+      "hp": 10
+    },
     "galleryCharacter": [
       {
         "key": "얼음 가지와 눈꽃",
@@ -24,6 +37,181 @@
       {
         "key": "아이콘",
         "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/17/24090565/c34c9bdb442e902a8f5704439e7c3a57_2329077868872128900.png"
+      }
+    ],
+    "talent": [
+      {
+        "key": "얼음 치친의 고드름",
+        "title": "얼음 치친의 고드름",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/20/194600931/1ce09211f025bf5470682189e0837732_1852141083513620059.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>일반 공격</color>\n<color=#99ffff>얼음 원소 피해</color> 를 1pt 준다."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "안개의 부름",
+        "title": "안개의 부름",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/20/194600931/1a979041a9881649ba69332b20dd5820_4988485950000636764.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>원소전투 스킬</color>\n<color=#99ffff>얼음 원소 피해</color> 를 1pt 주고 <color=#ffffff>얼음 치친</color> 을 소환한다."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "얼음 가지와 눈꽃",
+        "title": "얼음 가지와 눈꽃",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/20/194600931/8d60085e1f79ee9a2bb87006d7f2d32c_7568260478625587420.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>원소폭발</color>\n<color=#99ffff>얼음 원소 피해</color> 를 5pt 주고 본 캐릭터에게 <color=#99ffff>얼음 원소 부착</color> 을 부여하며 <color=#ffffff>얼음 치친 보호막</color> 을 생성한다.\n<color=#ece5d8>얼음 원소 부착</color>\n피해를 입히지 않고 얼음 원소를 부착하여 발생한 원소 반응은 피해 효과를 무시한다.\n[ <color=#99ffff>얼음</color> + <color=#ff9999>불</color> ] <color=#ffffff>융해</color> : 효과 없음.\n[ <color=#99ffff>얼음</color> + <color=#ffacff>번개</color> ] <color=#ffffff>초전도</color> : 효과 없음.\n[ <color=#99ffff>얼음</color> + <color=#80c0ff>물</color> ] <color=#ffffff>빙결</color> : 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "얼음 치친",
+        "title": "얼음 치친",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/23/194600931/db13288db6b90ec33f8adc2656d2019f_7438721166020204694.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>소환물</color>\n<color=#ffffff>종료 단계:</color> <color=#99ffff>얼음 원소 피해</color> 를 1pt 가한다.\n<color=#ffffff>사용 가능 횟수: 2</color> (중첩 가능, 최대 중첩수: 3회)\n<color=#ffffff>우인단·얼음 치친 술사가 「일반 공격」 후:</color> 해당 카드의 <color=#ffffff>사용 가능 횟수</color> +1\n<color=#ffffff>아군 캐릭터가 원소 반응으로 발생한 피해를 받은 후:</color> 해당 카드의 <color=#ffffff>사용 가능 횟수</color> -1"
+          }
+        ],
+        "attributes": [],
+        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/23/194600931/1467dd7dd3fec80047e77cc996621508_7617617358776994794.png"
+      },
+      {
+        "key": "얼음 원소 피해",
+        "title": "얼음 원소 피해",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/23/194600931/4bcc4b82a9d7ee22770f60afa54e9919_822903881061658529.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "얼음 원소 부착 시 원소 반응이 발생할 수 있다.\n[ <color=#99ffff>얼음</color> + <color=#ff9999>불</color> ] <color=#ffffff>융해</color> : 이번 피해+2pt\n[ <color=#99ffff>얼음</color> + <color=#ffacff>번개</color> ] <color=#ffffff>초전도</color> : 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\n[ <color=#99ffff>얼음</color> + <color=#80c0ff>물</color> ] <color=#ffffff>빙결</color> : 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "규칙 설명",
+        "title": "규칙 설명",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/23/194600931/245c229cf6f7364c7c9a7aea3db1a1ad_7751951247041044276.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ece5d8>사용 가능 횟수</color>\n해당 카드의 효과가 발동하면 <color=#ffffff>사용 가능 횟수</color> 가 1회 차감된다.\n<color=#ffffff>사용 가능 횟수</color> 가 전부 소진되면 즉시 해당 패를 버린다.\n<color=#ece5d8>보호막</color>\n해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+          }
+        ],
+        "attributes": []
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "카드 이름",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "우인단·얼음 치친 술사"
+          }
+        ]
+      },
+      {
+        "key": "종류",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "캐릭터 카드"
+          }
+        ]
+      },
+      {
+        "key": "HP",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "10"
+          }
+        ]
+      },
+      {
+        "key": "원소 에너지",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "3"
+          }
+        ]
+      },
+      {
+        "key": "원소 속성",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "얼음"
+          }
+        ]
+      },
+      {
+        "key": "무기",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "그 외 무기"
+          }
+        ]
+      },
+      {
+        "key": "진영",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "우인단"
+          }
+        ]
+      },
+      {
+        "key": "특성 카드",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3855,
+            "name": "얼음 치친의 서늘한 빛",
+            "desc": "<p><strong><span style=\"color: #ECE5D8\">얼음 치친 술사·얼음 치친의 서늘한 빛</span></strong></p><p>더 많은 안개풀과 더 많은 얼음 치친 친구.</p><p>…만약 안개풀이 소진되면 어떻게 될까?</p><p>그녀는 상상해 본 적 없을지도…</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/20/194600931/f040f8e7dbf5ec448bb81e259cb732fe_8583087192256622873.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "획득 경로",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "캣테일 술집의 왕자님 쪽에서 술집 도전 진행 및 친선 대전 난이도의 우인단·얼음 치친 술사에게 승리 후 획득"
+          }
+        ]
+      },
+      {
+        "key": "적 도감",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 2147,
+            "name": "우인단·얼음 치친 술사",
+            "desc": "얼음 치친을 조종해 싸운다. 어디서 왔는지, 가면 아래의 모습은 어떤지, 모두 미스터리인 우인단 소녀 술사.<br/>보통 신의 눈이 없는 인간은 그들처럼 원소를 조종할 수 없다. 하지만 그들은 안개풀을 이용해 얼음 치친을 조종하며 얼음의 힘을 거침없이 휘두른다. 겉보기엔 정처 없이 떠도는 것 같지만, 과연 어떤 사명을 안고 있을지…",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/15/163795657/810e7c1e11af1d9f6f558d4553ed28af_327555551448854908.png"
+          }
+        ],
+        "isMaterial": true
       }
     ],
     "customize": [
@@ -234,194 +422,6 @@
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/08/80830045/c85bfab46d8c95659ab6dfb2e1629a87_8090082082642936994.png",
         "amount": 1000,
         "displayStyle": "card"
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "카드 이름",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "우인단·얼음 치친 술사"
-          }
-        ]
-      },
-      {
-        "key": "종류",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "캐릭터 카드"
-          }
-        ]
-      },
-      {
-        "key": "HP",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "10"
-          }
-        ]
-      },
-      {
-        "key": "원소 에너지",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "3"
-          }
-        ]
-      },
-      {
-        "key": "원소 속성",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "얼음"
-          }
-        ]
-      },
-      {
-        "key": "무기",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "그 외 무기"
-          }
-        ]
-      },
-      {
-        "key": "진영",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "우인단"
-          }
-        ]
-      },
-      {
-        "key": "특성 카드",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3855,
-            "name": "얼음 치친의 서늘한 빛",
-            "desc": "<p><strong><span style=\"color: #ECE5D8\">얼음 치친 술사·얼음 치친의 서늘한 빛</span></strong></p><p>더 많은 안개풀과 더 많은 얼음 치친 친구.</p><p>…만약 안개풀이 소진되면 어떻게 될까?</p><p>그녀는 상상해 본 적 없을지도…</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/20/194600931/f040f8e7dbf5ec448bb81e259cb732fe_8583087192256622873.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "획득 경로",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "캣테일 술집의 왕자님 쪽에서 술집 도전 진행 및 친선 대전 난이도의 우인단·얼음 치친 술사에게 승리 후 획득"
-          }
-        ]
-      },
-      {
-        "key": "적 도감",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 2147,
-            "name": "우인단·얼음 치친 술사",
-            "desc": "얼음 치친을 조종해 싸운다. 어디서 왔는지, 가면 아래의 모습은 어떤지, 모두 미스터리인 우인단 소녀 술사.<br/>보통 신의 눈이 없는 인간은 그들처럼 원소를 조종할 수 없다. 하지만 그들은 안개풀을 이용해 얼음 치친을 조종하며 얼음의 힘을 거침없이 휘두른다. 겉보기엔 정처 없이 떠도는 것 같지만, 과연 어떤 사명을 안고 있을지…",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/15/163795657/810e7c1e11af1d9f6f558d4553ed28af_327555551448854908.png"
-          }
-        ],
-        "isMaterial": true
-      }
-    ],
-    "tcg": {
-      "headerImgs": [
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/20/194600931/cbcfb53b8523957d330a6f9396f03167_7442716035561871535.png",
-          "imgDesc": "일반 커버"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/06/14/194600931/a53a3fc00981fd526e18fb4cb7fcc1ff_3138640425725439811.gif",
-          "imgDesc": "환영 커버"
-        }
-      ],
-      "hp": 10
-    },
-    "talent": [
-      {
-        "key": "얼음 치친의 고드름",
-        "title": "얼음 치친의 고드름",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/20/194600931/1ce09211f025bf5470682189e0837732_1852141083513620059.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>일반 공격</color>\n<color=#99ffff>얼음 원소 피해</color> 를 1pt 준다."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "안개의 부름",
-        "title": "안개의 부름",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/20/194600931/1a979041a9881649ba69332b20dd5820_4988485950000636764.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>원소전투 스킬</color>\n<color=#99ffff>얼음 원소 피해</color> 를 1pt 주고 <color=#ffffff>얼음 치친</color> 을 소환한다."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "얼음 가지와 눈꽃",
-        "title": "얼음 가지와 눈꽃",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/20/194600931/8d60085e1f79ee9a2bb87006d7f2d32c_7568260478625587420.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>원소폭발</color>\n<color=#99ffff>얼음 원소 피해</color> 를 5pt 주고 본 캐릭터에게 <color=#99ffff>얼음 원소 부착</color> 을 부여하며 <color=#ffffff>얼음 치친 보호막</color> 을 생성한다.\n<color=#ece5d8>얼음 원소 부착</color>\n피해를 입히지 않고 얼음 원소를 부착하여 발생한 원소 반응은 피해 효과를 무시한다.\n[ <color=#99ffff>얼음</color> + <color=#ff9999>불</color> ] <color=#ffffff>융해</color> : 효과 없음.\n[ <color=#99ffff>얼음</color> + <color=#ffacff>번개</color> ] <color=#ffffff>초전도</color> : 효과 없음.\n[ <color=#99ffff>얼음</color> + <color=#80c0ff>물</color> ] <color=#ffffff>빙결</color> : 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "얼음 치친",
-        "title": "얼음 치친",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/23/194600931/db13288db6b90ec33f8adc2656d2019f_7438721166020204694.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>소환물</color>\n<color=#ffffff>종료 단계:</color> <color=#99ffff>얼음 원소 피해</color> 를 1pt 가한다.\n<color=#ffffff>사용 가능 횟수: 2</color> (중첩 가능, 최대 중첩수: 3회)\n<color=#ffffff>우인단·얼음 치친 술사가 「일반 공격」 후:</color> 해당 카드의 <color=#ffffff>사용 가능 횟수</color> +1\n<color=#ffffff>아군 캐릭터가 원소 반응으로 발생한 피해를 받은 후:</color> 해당 카드의 <color=#ffffff>사용 가능 횟수</color> -1"
-          }
-        ],
-        "attributes": [],
-        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/23/194600931/1467dd7dd3fec80047e77cc996621508_7617617358776994794.png"
-      },
-      {
-        "key": "얼음 원소 피해",
-        "title": "얼음 원소 피해",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/23/194600931/4bcc4b82a9d7ee22770f60afa54e9919_822903881061658529.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "얼음 원소 부착 시 원소 반응이 발생할 수 있다.\n[ <color=#99ffff>얼음</color> + <color=#ff9999>불</color> ] <color=#ffffff>융해</color> : 이번 피해+2pt\n[ <color=#99ffff>얼음</color> + <color=#ffacff>번개</color> ] <color=#ffffff>초전도</color> : 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\n[ <color=#99ffff>얼음</color> + <color=#80c0ff>물</color> ] <color=#ffffff>빙결</color> : 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "규칙 설명",
-        "title": "규칙 설명",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/23/194600931/245c229cf6f7364c7c9a7aea3db1a1ad_7751951247041044276.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ece5d8>사용 가능 횟수</color>\n해당 카드의 효과가 발동하면 <color=#ffffff>사용 가능 횟수</color> 가 1회 차감된다.\n<color=#ffffff>사용 가능 횟수</color> 가 전부 소진되면 즉시 해당 패를 버린다.\n<color=#ece5d8>보호막</color>\n해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
-          }
-        ],
-        "attributes": []
       }
     ]
   }
