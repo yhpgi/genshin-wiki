@@ -4,14 +4,117 @@
   "desc": "Экзотичный меч с тупой секцией на лезвии, который оказался в Ли Юэ благодаря иностранным торговцам. Невероятно мощный в руках того, кто знает, как им пользоваться.",
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/白影剑.png",
   "filterValues": {
-    "weaponRarity": 4,
     "weaponProperty": "Процент от защиты",
+    "weaponRarity": 4,
     "weaponType": "Двуручное"
   },
   "menuId": 4,
   "menuName": "Оружие",
   "version": 1708038797,
   "components": {
+    "baseInfo": [
+      {
+        "key": "Имя:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Белая тень"
+          }
+        ]
+      },
+      {
+        "key": "Где найти:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Кузница"
+          }
+        ]
+      },
+      {
+        "key": "Тип:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Двуручное"
+          }
+        ]
+      },
+      {
+        "key": "Дополнительные характеристики:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Процент от защиты"
+          }
+        ]
+      },
+      {
+        "key": "Заряженное лезвие:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "При попадании обычной или заряженной атакой сила атаки и защита увеличиваются на <color=#80c0ff>6%</color> / <color=#80c0ff>7,5%</color> / <color=#80c0ff>9%</color> / <color=#80c0ff>10,5%</color> / <color=#80c0ff>12%</color> в течение 6 сек. Эффект может складываться до 4 раз. Может возникнуть не чаще 1 раза за 0,5 сек."
+          }
+        ]
+      },
+      {
+        "key": "Материалы ковки:",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 348,
+            "name": "Заготовка двуручного меча северянина",
+            "desc": "Материал для ковки оружия. Может быть использован для создания двуручного оружия 4★.<br/>Философы говорят, что любой кусок мрамора потенциально является прекрасной статуей. У этих заготовок тоже безграничный потенциал.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Northlander Claymore Billet_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 976,
+            "name": "Обломок кристалла",
+            "desc": "Необработанные кристаллы. Только профессиональный ремесленник может выявить его истинную ценность.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystal Chunk_icon.png",
+            "amount": 50
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1224,
+            "name": "Обломок белого железа",
+            "desc": "Опытные руки могут превратить это во что-то прекрасное.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
+            "amount": 50
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Мора",
+            "desc": "Повсеместная валюта. Международный язык общения.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 500
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Регион:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Ли Юэ"
+          }
+        ]
+      },
+      {
+        "key": "Версия выхода оружия:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.0"
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "desc": [
@@ -396,28 +499,6 @@
         ]
       }
     ],
-    "galleryCharacter": [
-      {
-        "key": "Оригинальное",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/07/31/237301566/e86e42be20b1dc7a7c1572ee31a2ffa1_7959290647441208105.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "До второго возвышения"
-          }
-        ]
-      },
-      {
-        "key": "Возвышенное",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/07/31/237301566/b4d46e854269ffb0871e0608bd6a8112_3112864017750804344.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "После второго возвышения"
-          }
-        ]
-      }
-    ],
     "customize": [
       {
         "type": "CustomEntry",
@@ -459,105 +540,24 @@
         "alignment": "center"
       }
     ],
-    "baseInfo": [
+    "galleryCharacter": [
       {
-        "key": "Имя:",
-        "value": [
+        "key": "Оригинальное",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/07/31/237301566/e86e42be20b1dc7a7c1572ee31a2ffa1_7959290647441208105.png",
+        "imgDesc": [
           {
             "type": "RichText",
-            "text": "Белая тень"
+            "text": "До второго возвышения"
           }
         ]
       },
       {
-        "key": "Где найти:",
-        "value": [
+        "key": "Возвышенное",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/07/31/237301566/b4d46e854269ffb0871e0608bd6a8112_3112864017750804344.png",
+        "imgDesc": [
           {
             "type": "RichText",
-            "text": "Кузница"
-          }
-        ]
-      },
-      {
-        "key": "Тип:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Двуручное"
-          }
-        ]
-      },
-      {
-        "key": "Дополнительные характеристики:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Процент от защиты"
-          }
-        ]
-      },
-      {
-        "key": "Заряженное лезвие:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "При попадании обычной или заряженной атакой сила атаки и защита увеличиваются на <color=#80c0ff>6%</color> / <color=#80c0ff>7,5%</color> / <color=#80c0ff>9%</color> / <color=#80c0ff>10,5%</color> / <color=#80c0ff>12%</color> в течение 6 сек. Эффект может складываться до 4 раз. Может возникнуть не чаще 1 раза за 0,5 сек."
-          }
-        ]
-      },
-      {
-        "key": "Материалы ковки:",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 348,
-            "name": "Заготовка двуручного меча северянина",
-            "desc": "Материал для ковки оружия. Может быть использован для создания двуручного оружия 4★.<br/>Философы говорят, что любой кусок мрамора потенциально является прекрасной статуей. У этих заготовок тоже безграничный потенциал.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Northlander Claymore Billet_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 976,
-            "name": "Обломок кристалла",
-            "desc": "Необработанные кристаллы. Только профессиональный ремесленник может выявить его истинную ценность.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crystal Chunk_icon.png",
-            "amount": 50
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1224,
-            "name": "Обломок белого железа",
-            "desc": "Опытные руки могут превратить это во что-то прекрасное.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
-            "amount": 50
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Мора",
-            "desc": "Повсеместная валюта. Международный язык общения.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 500
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Регион:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Ли Юэ"
-          }
-        ]
-      },
-      {
-        "key": "Версия выхода оружия:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.0"
+            "text": "После второго возвышения"
           }
         ]
       }
