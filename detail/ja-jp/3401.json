@@ -6,7 +6,167 @@
   "menuName": "NPC図鑑",
   "version": 1713239013,
   "components": {
+    "galleryCharacter": [
+      {
+        "key": "写真",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/02/14/224893084/05acd3bb7a35f0335a5bac37ce16a39d_3476477498208786660.png"
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "名前",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "秋月"
+          }
+        ]
+      },
+      {
+        "key": "国",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "稲妻\n璃月"
+          }
+        ]
+      },
+      {
+        "key": "所属",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "楚瑜商行"
+          }
+        ]
+      },
+      {
+        "key": "肩書き",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "「楚瑜商行」支店長"
+          }
+        ]
+      },
+      {
+        "key": "会話報酬",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 446,
+            "name": "堅牢なトパーズ・欠片",
+            "desc": "キャラクターの突破用アイテム。<br/>「この大陸の全ての金銭は俺の血肉。」",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
+            "amount": 1
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
     "customize": [
+      {
+        "type": "RichText",
+        "text": "※このショップを利用するためには"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1647,
+        "name": "通行証",
+        "desc": "天領奉行が特別に発行した稲妻全域の「通行証」。これがあれば、離島へ自由に行き来することができる…",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/28/86506456/d44d345f6ac0d29f63a83701ee4ee3da_3506026577317998592.png",
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "が必要となる。\n※特にアイテムの個数を表記しない場合は1個とする。\n※1日あたり5個まで購入可能である場合、5個/1日と表記する。"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "素材"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "アイテム",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "値段",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1679,
+        "name": "鉄の塊",
+        "desc": "<p>鉄の鉱石。相応の技術を持った職人の手にかかれば、輝きを放つでしょう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>鉄の鉱石。相応の技術を持った職人の手にかかれば、輝きを放つでしょう。通常、地表上の鉱石は、付近の地下には豊富な鉱脈があることを意味する。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Iron Chunk_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "10個/3日",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "モラ",
+        "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 120,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1224,
+        "name": "白鉄の塊",
+        "desc": "<p>白鉄の鉱石。相応の技術を持った職人の手にかかれば、異彩を放つでしょう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>白鉄の鉱石。相応の技術を持った職人の手にかかれば、異彩を放つでしょう。大地に流れる戦いの記憶が宿っている鉱石、その記憶の故に上質な素材として武器の製造によく使われている。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "10個/3日",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "モラ",
+        "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 400,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1206,
+        "name": "電気水晶",
+        "desc": "<p>電気を含んだ晶石。大気と大地に散逸している電気の塊。触るとビリビリしびれる。</p><p></p><p>（以下は図鑑より抜粋）</p><p>電気を含んだ晶石。大気と大地に散逸している電気の塊。触るとビリビリしびれる。相応の施設があれば、その中にある雷元素を使って何かできることがあるかもしれない…？</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Electro Crystal_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "5個/3日",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "モラ",
+        "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 1000,
+        "displayStyle": "card"
+      },
       {
         "type": "Heading",
         "level": 2,
@@ -125,166 +285,6 @@
       {
         "type": "RichText",
         "text": "×500"
-      },
-      {
-        "type": "RichText",
-        "text": "※このショップを利用するためには"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1647,
-        "name": "通行証",
-        "desc": "天領奉行が特別に発行した稲妻全域の「通行証」。これがあれば、離島へ自由に行き来することができる…",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/28/86506456/d44d345f6ac0d29f63a83701ee4ee3da_3506026577317998592.png",
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "が必要となる。\n※特にアイテムの個数を表記しない場合は1個とする。\n※1日あたり5個まで購入可能である場合、5個/1日と表記する。"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "素材"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "アイテム",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "値段",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1679,
-        "name": "鉄の塊",
-        "desc": "<p>鉄の鉱石。相応の技術を持った職人の手にかかれば、輝きを放つでしょう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>鉄の鉱石。相応の技術を持った職人の手にかかれば、輝きを放つでしょう。通常、地表上の鉱石は、付近の地下には豊富な鉱脈があることを意味する。</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Iron Chunk_icon.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "10個/3日",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 757,
-        "name": "モラ",
-        "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-        "amount": 120,
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1224,
-        "name": "白鉄の塊",
-        "desc": "<p>白鉄の鉱石。相応の技術を持った職人の手にかかれば、異彩を放つでしょう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>白鉄の鉱石。相応の技術を持った職人の手にかかれば、異彩を放つでしょう。大地に流れる戦いの記憶が宿っている鉱石、その記憶の故に上質な素材として武器の製造によく使われている。</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "10個/3日",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 757,
-        "name": "モラ",
-        "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-        "amount": 400,
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1206,
-        "name": "電気水晶",
-        "desc": "<p>電気を含んだ晶石。大気と大地に散逸している電気の塊。触るとビリビリしびれる。</p><p></p><p>（以下は図鑑より抜粋）</p><p>電気を含んだ晶石。大気と大地に散逸している電気の塊。触るとビリビリしびれる。相応の施設があれば、その中にある雷元素を使って何かできることがあるかもしれない…？</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Electro Crystal_icon.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "5個/3日",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 757,
-        "name": "モラ",
-        "desc": "大陸で流通しているお金。世界で通用する共通言語、誰でも理解できる貴金属。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-        "amount": 1000,
-        "displayStyle": "card"
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "名前",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "秋月"
-          }
-        ]
-      },
-      {
-        "key": "国",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "稲妻\n璃月"
-          }
-        ]
-      },
-      {
-        "key": "所属",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "楚瑜商行"
-          }
-        ]
-      },
-      {
-        "key": "肩書き",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "「楚瑜商行」支店長"
-          }
-        ]
-      },
-      {
-        "key": "会話報酬",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 446,
-            "name": "堅牢なトパーズ・欠片",
-            "desc": "キャラクターの突破用アイテム。<br/>「この大陸の全ての金銭は俺の血肉。」",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
-            "amount": 1
-          }
-        ],
-        "isMaterial": true
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "写真",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/02/14/224893084/05acd3bb7a35f0335a5bac37ce16a39d_3476477498208786660.png"
       }
     ]
   }
