@@ -6,97 +6,694 @@
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/avatar.png",
   "filterValues": {
     "characterProperty": "Bonus DAN da Geo",
-    "characterVision": "Geo",
-    "characterRarity": 4,
     "characterWeapon": "Catalizzatore",
-    "characterRegion": "Porto di Liyue"
+    "characterVision": "Geo",
+    "characterRegion": "Porto di Liyue",
+    "characterRarity": 4
   },
   "menuId": 2,
   "menuName": "Archivio personaggi",
   "version": 1750798862,
   "components": {
-    "galleryCharacter": [
+    "talent": [
       {
-        "key": "Character Card",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/avatar_header.jpg"
-      },
-      {
-        "key": "Avatar",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/avatar.png",
-        "imgDesc": [
+        "key": "Attacco normale: Dispersione scintillante",
+        "title": "Attacco normale: Dispersione scintillante",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/battle_talent_0/battle_talent_0.png",
+        "desc": [
           {
             "type": "RichText",
-            "text": "Completo originale - Giada dorata\nIl completo di Ningguang. Un grazioso vestito impreziosito da ricami elaborati."
+            "text": "<color=#ffd780>Attacco normale</color>\nScaglia gemme che infliggono <color=#ffd780>DAN da Geo</color> .\nQuando il colpo va a segno, Ningguang ottiene 1 Giada stellare.\n<color=#ffd780>Attacco caricato</color>\nConsuma una determinata quantità di vigore per scagliare una gemma gigante che infligge <color=#ffd780>DAN da Geo</color> .\nSe Ningguang ha delle pietre di Giada stellare a disposizione, rilasciando un attacco caricato le scaglierà tutte verso il nemico, infliggendo DAN aggiuntivi.\n<color=#ffd780>Attacco in picchiata</color>\nConvogliando la forza di Geo, Ningguang si scaglia contro il suolo da mezz'aria, danneggiando tutti gli avversari lungo la sua traiettoria. Infligge <color=#ffd780>DAN da Geo ad area</color> all'impatto col suolo."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Livello",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11"
+            ]
+          },
+          {
+            "key": "DAN da ATT normale",
+            "values": [
+              "28.0%",
+              "30.1%",
+              "32.2%",
+              "35.0%",
+              "37.1%",
+              "39.2%",
+              "42.0%",
+              "44.8%",
+              "47.6%",
+              "50.4%",
+              "53.3%"
+            ]
+          },
+          {
+            "key": "DAN da ATT caricato",
+            "values": [
+              "174%",
+              "187%",
+              "200%",
+              "218%",
+              "231%",
+              "244%",
+              "261%",
+              "279%",
+              "296%",
+              "313%",
+              "331%"
+            ]
+          },
+          {
+            "key": "DAN per Giada stellare",
+            "values": [
+              "49.6%",
+              "53.3%",
+              "57.0%",
+              "62.0%",
+              "65.7%",
+              "69.4%",
+              "74.4%",
+              "79.4%",
+              "84.3%",
+              "89.3%",
+              "94.4%"
+            ]
+          },
+          {
+            "key": "Costo vigore ATT caricato\t",
+            "values": [
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0"
+            ]
+          },
+          {
+            "key": "DAN da ATT in picchiata\t",
+            "values": [
+              "56.8%",
+              "61.5%",
+              "66.1%",
+              "72.7%",
+              "77.3%",
+              "82.6%",
+              "89.9%",
+              "97.1%",
+              "104.4%",
+              "112.3%",
+              "120.3%"
+            ]
+          },
+          {
+            "key": "DAN da ATT in picchiata basso/alto",
+            "values": [
+              "114%/142%",
+              "123%/153%",
+              "132%/165%",
+              "145%/182%",
+              "155%/193%",
+              "165%/206%",
+              "180%/224%",
+              "194%/243%",
+              "209%/261%",
+              "225%/281%",
+              "240%/300%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 152,
+              "name": "Insegnamenti della prosperità",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è la benedizione di Liyue, è il fondamento della grande città costruita dagli dèi e dalla sua gente, ed è la fonte della pace e della sicurezza della terra.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Prosperity_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 778,
+              "name": "Emblema della recluta",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare le reclute. Viene da chiedersi cosa avessero in testa coloro che si sono uniti alla macchina da guerra dei Fatui.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Recruit's Insignia_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 151,
+              "name": "Guida alla prosperità",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è la promessa che Liyue ha fatto ai suoi figli: quella di premiare il duro lavoro con così tanto oro da illuminare la terra.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 466,
+              "name": "Emblema del sergente",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema con una forma differente per distinguere i sergenti dalle nuove reclute. Forse ci sono delle emozioni complesse dietro.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 151,
+              "name": "Guida alla prosperità",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è la promessa che Liyue ha fatto ai suoi figli: quella di premiare il duro lavoro con così tanto oro da illuminare la terra.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 466,
+              "name": "Emblema del sergente",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema con una forma differente per distinguere i sergenti dalle nuove reclute. Forse ci sono delle emozioni complesse dietro.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 151,
+              "name": "Guida alla prosperità",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è la promessa che Liyue ha fatto ai suoi figli: quella di premiare il duro lavoro con così tanto oro da illuminare la terra.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 466,
+              "name": "Emblema del sergente",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema con una forma differente per distinguere i sergenti dalle nuove reclute. Forse ci sono delle emozioni complesse dietro.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 151,
+              "name": "Guida alla prosperità",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è la promessa che Liyue ha fatto ai suoi figli: quella di premiare il duro lavoro con così tanto oro da illuminare la terra.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 466,
+              "name": "Emblema del sergente",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema con una forma differente per distinguere i sergenti dalle nuove reclute. Forse ci sono delle emozioni complesse dietro.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 150,
+              "name": "Filosofie della prosperità",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è il passato, il presente e il futuro di Liyue. Questa prosperità non ha eguali e non è raggiungibile da nessun'altra nazione: appartiene solo a Liyue e ai suoi abitanti.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 636,
+              "name": "Emblema del tenente",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare gli ufficiali. I Fatui hanno un esercito di dimensioni colossali, quindi chi ha raggiunto questo grado all'interno del gruppo dev'essere qualcuno di veramente speciale.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 357,
+              "name": "Spirito di Boreas",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una parte del potere del Grande Re Lupo del Nord estratto dalla sua anima.<br>Questa terra una volta era il regno delle gelide bufere di neve e delle tempeste di ghiaccio piene di schegge affilate come rasoi, tutte sotto il comando di Boreas. Nei suoi ultimi istanti, si rese finalmente conto che il gelido vento del nord poteva solo estinguere la vita, non nutrirla. Pertanto, Boreas lasciò che i suoi poteri fluissero liberamente nella terra per proteggerla, e i suoi abitanti con essa.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spirit Locket of Boreas_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 150,
+              "name": "Filosofie della prosperità",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è il passato, il presente e il futuro di Liyue. Questa prosperità non ha eguali e non è raggiungibile da nessun'altra nazione: appartiene solo a Liyue e ai suoi abitanti.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 636,
+              "name": "Emblema del tenente",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare gli ufficiali. I Fatui hanno un esercito di dimensioni colossali, quindi chi ha raggiunto questo grado all'interno del gruppo dev'essere qualcuno di veramente speciale.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 357,
+              "name": "Spirito di Boreas",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una parte del potere del Grande Re Lupo del Nord estratto dalla sua anima.<br>Questa terra una volta era il regno delle gelide bufere di neve e delle tempeste di ghiaccio piene di schegge affilate come rasoi, tutte sotto il comando di Boreas. Nei suoi ultimi istanti, si rese finalmente conto che il gelido vento del nord poteva solo estinguere la vita, non nutrirla. Pertanto, Boreas lasciò che i suoi poteri fluissero liberamente nella terra per proteggerla, e i suoi abitanti con essa.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spirit Locket of Boreas_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 150,
+              "name": "Filosofie della prosperità",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è il passato, il presente e il futuro di Liyue. Questa prosperità non ha eguali e non è raggiungibile da nessun'altra nazione: appartiene solo a Liyue e ai suoi abitanti.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 636,
+              "name": "Emblema del tenente",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare gli ufficiali. I Fatui hanno un esercito di dimensioni colossali, quindi chi ha raggiunto questo grado all'interno del gruppo dev'essere qualcuno di veramente speciale.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 357,
+              "name": "Spirito di Boreas",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una parte del potere del Grande Re Lupo del Nord estratto dalla sua anima.<br>Questa terra una volta era il regno delle gelide bufere di neve e delle tempeste di ghiaccio piene di schegge affilate come rasoi, tutte sotto il comando di Boreas. Nei suoi ultimi istanti, si rese finalmente conto che il gelido vento del nord poteva solo estinguere la vita, non nutrirla. Pertanto, Boreas lasciò che i suoi poteri fluissero liberamente nella terra per proteggerla, e i suoi abitanti con essa.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spirit Locket of Boreas_icon.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 150,
+              "name": "Filosofie della prosperità",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è il passato, il presente e il futuro di Liyue. Questa prosperità non ha eguali e non è raggiungibile da nessun'altra nazione: appartiene solo a Liyue e ai suoi abitanti.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 636,
+              "name": "Emblema del tenente",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare gli ufficiali. I Fatui hanno un esercito di dimensioni colossali, quindi chi ha raggiunto questo grado all'interno del gruppo dev'essere qualcuno di veramente speciale.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 357,
+              "name": "Spirito di Boreas",
+              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una parte del potere del Grande Re Lupo del Nord estratto dalla sua anima.<br>Questa terra una volta era il regno delle gelide bufere di neve e delle tempeste di ghiaccio piene di schegge affilate come rasoi, tutte sotto il comando di Boreas. Nei suoi ultimi istanti, si rese finalmente conto che il gelido vento del nord poteva solo estinguere la vita, non nutrirla. Pertanto, Boreas lasciò che i suoi poteri fluissero liberamente nella terra per proteggerla, e i suoi abitanti con essa.</span></p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spirit Locket of Boreas_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "Corona della saggezza",
+              "desc": "<p>Prezioso materiale per l'aumento di livello dei talenti.</p><p>Nei tempi antichi, era un oggetto che serviva a conservare e trasmettere la conoscenza. Ora, la conoscenza si trova nei testi antichi e nelle profonde riflessioni. Tuttavia, questa Corona della saggezza è ancora in grado di trasmettere parte del suo potere e della sua conoscenza a chi la indossa.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/battle_talent_0/battle_talent_0.gif"
+      },
+      {
+        "key": "Paravento di giada",
+        "title": "Paravento di giada",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/battle_talent_1/battle_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Ningguang crea un Paravento di giada usando oro, ossidiana e la sua grande ricchezza, infliggendo <color=#ffd780>DAN da Geo ad area</color> .\n<color=#ffd780>Paravento di giada</color>\n· Blocca i proiettili degli avversari.\n· La resistenza varia in base ai PS max di Ningguang.\nIl Paravento di giada è considerato un costrutto di Geo ed è utilizzabile per bloccare alcuni attacchi, ma non può essere scalato. Può esistere solo un Paravento di giada alla volta.\nSu questo Paravento di giada è stata dipinta la tela delle stelle."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Livello",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13"
+            ]
+          },
+          {
+            "key": "PS ereditati",
+            "values": [
+              "50.1%",
+              "53.1%",
+              "56.1%",
+              "60.0%",
+              "63.0%",
+              "66.0%",
+              "69.9%",
+              "73.8%",
+              "77.7%",
+              "81.6%",
+              "85.5%",
+              "89.4%",
+              "93.3%"
+            ]
+          },
+          {
+            "key": "DAN da abilità",
+            "values": [
+              "230%",
+              "248%",
+              "265%",
+              "288%",
+              "305%",
+              "323%",
+              "346%",
+              "369%",
+              "392%",
+              "415%",
+              "438%",
+              "461%",
+              "490%"
+            ]
+          },
+          {
+            "key": "TdR",
+            "values": [
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/battle_talent_1/battle_talent_1.gif"
+      },
+      {
+        "key": "Spaccastelle",
+        "title": "Spaccastelle",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/battle_talent_2/battle_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Ningguang accumula un gran numero di gemme e le disperde tutte in una volta, scagliando proiettili a ricerca che infliggono ingenti <color=#ffd780>DAN da Geo</color> agli avversari.\nSe Spaccastelle viene usato quando un Paravento di giada è nelle vicinanze, il Paravento di giada scaglierà proiettili di gemme aggiuntivi nello stesso momento.\nLe stelle si sgretolano. Il silenzio cade."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Livello",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13"
+            ]
+          },
+          {
+            "key": "DAN per gemma",
+            "values": [
+              "87.0%",
+              "93.5%",
+              "100%",
+              "109%",
+              "115%",
+              "122%",
+              "130%",
+              "139%",
+              "148%",
+              "157%",
+              "165%",
+              "174%",
+              "185%"
+            ]
+          },
+          {
+            "key": "TdR",
+            "values": [
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s",
+              "12.0s"
+            ]
+          },
+          {
+            "key": "Costo energia",
+            "values": [
+              "40",
+              "40",
+              "40",
+              "40",
+              "40",
+              "40",
+              "40",
+              "40",
+              "40",
+              "40",
+              "40",
+              "40",
+              "40"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/battle_talent_2/battle_talent_2.gif"
+      },
+      {
+        "key": "Piano B",
+        "title": "Piano B",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/const_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Quando Ningguang possiede pietre di Giada stellare, il suo attacco caricato non consuma vigore."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Riserva strategica",
+        "title": "Riserva strategica",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/const_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Un personaggio che attraversa il <color=#ffd780>Paravento di giada</color> ottiene un 12% di bonus <color=#ffd780>DAN da Geo</color> per 10 s."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Tesori inestimabili",
+        "title": "Tesori inestimabili",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/const_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Mostra sulla minimappa la posizione di <color=#ffd780>giacimenti minerari usati per la forgiatura</color> ."
+          }
+        ],
+        "attributes": null
+      }
+    ],
+    "textualResearch": [
+      {
+        "title": "2024 - [Casella di posta speciale] Te ne sarei grata...",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Alcuni giorni da, mi sono aggiudicata delle pietre di giada a un'asta. Rispetto ad altri oggetti preziosi presenti, queste pietre di giada grezza sembravano piuttosto banali e insignificanti. Tuttavia, quando si fa un investimento bisogna guardare al futuro, non al presente.\nQuesta giada, simbolo delle aspettative più pure delle persone e che mantiene la sua naturale chiarezza pur avendo il potenziale per diventare qualsiasi cosa, credo non sia adatta a essere custodita nella Dimora di giada. Si dice che gli oggetti preziosi e le persone abili si completino a vicenda, per cui vorrei darla a te. Portandola con te nei tuoi viaggi e sopravvivendo alla prova del tempo, chissà quale colore emetterà? A tempo debito, ti sarei grata se me lo potessi dire, magari mentre portiamo a termine la nostra partita di scacchi incompiuta.\nPreparerò un pasto sontuoso per accoglierti, proprio come farò oggi."
           }
         ]
       },
       {
-        "key": "Completo - Abito da sera d'orchidee",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/costume.png",
-        "imgDesc": [
+        "title": "2023 - [Casella di posta speciale] È difficile trovare qualcuno con cui giocare a scacchi...",
+        "desc": [
           {
             "type": "RichText",
-            "text": "Completo ottenibile - Abito da sera d'orchidee\nL'abito formale di Ningguang. La lunga gonna azzurra segue le sue curve eleganti, mentre le ali di farfalla poste sulle caviglie donano al completo un tocco aggraziato e leggiadro.\nNingguang, figura molto influente del settore mercantile di Liyue, sembra sfoggiare sempre un sorriso sicuro e disinvolto.\nMa neanche lei sfugge a momenti imprevisti di sconforto, riluttanza e solitudine, o ad altre preoccupazioni tipiche della gente comune di Liyue.\nQuando il Porto di Liyue era sull'orlo della crisi, Ningguang si trovò costretta a sacrificare la propria Dimora di giada, il palazzo nel cielo che aveva costruito con fatica e sudore nel corso di molti anni.\nOgni ricordo del passato, bello o brutto che fosse, precipitò nell'oceano insieme alla Dimora di giada affondando con essa. Nemmeno qualcuno del calibro di Ningguang poteva sopportare una simile perdita.\nAnche quando le acque si furono calmate e si presentò l'occasione di ricostruire la Dimora, Ningguang passò molto tempo turbata a riflettere.\nIn questo mondo accadono cose innumerevoli, chi mai sarebbe in grado di prevedere l'incombere di una grossa perdita?\nIl solo pensiero la faceva sentire scoraggiata e abbattuta.\nMentre ricominciava il banchetto nel cielo, Ningguang, con indosso un abito del colore della notte, si fece avanti e invitò gli ospiti radunati a festeggiare con lei.\nEppure, in mezzo a quella baldoria, in mezzo al mare di reliquie famose, di ninnoli preziosi, di piatti raffinati, grida di gioia e risate,\nla Tianquan di Liyue cadde nuovamente in preda alla malinconia.\nLasciò il proprio posto e, col cuore confuso, si fermò sotto il cielo stellato.\nI suoni allegri del padiglione non potevano raggiungerla da così lontano, era come se sotto quelle stelle fosse completamente sola.\nCome aveva fatto spesso in passato, abbassò lo sguardo e osservò Liyue.\nIl debole chiarore della luna era come un velo sulla superficie di Liyue. Dalla Pianura di Bishui fino a Lisha, la terraferma sembrava tinta di un bianco magnifico e delicato.\nQuel maestoso panorama era una vista molto familiare a Ningguang, che l'aveva osservato ogni notte fin dalla costruzione della Dimora di giada.\nIl tempo vola, ma le montagne e i mari restano.\n\"Il mondo dei mortali è effimero, ma alcune cose non cambieranno così facilmente.\"\nForse tra cent'anni sarà tutto diverso. La mia bellezza sarà svanita e del mio corpo non sarà rimasto altro che aride ossa.\nNon importa quanto opulento sia questo abito nei suoi tempi migliori: anch'esso si logorerà.\nMa finché vivrò, avrò a disposizione immense ricchezze e mi verrà attribuita l'autorità di Tianquan.\nVivrò la mia vita fino in fondo, senza farmi mancare né potere, né ricchezza, né amicizie.\nNon è questo ciò che avevo deciso fin dal principio? Se è così, come posso permettermi di sprofondare nel dolore, di lasciarmi andare dopo appena un momento di vuoto?\nLa vita è preziosa proprio perché è effimera...\nMa tra mille anni, se non diecimila, chi verrà si ricorderà del mio nome: Ningguang.\"\nSi incamminò di nuovo verso la festa, il cuore finalmente sereno.\nQuando si mostrò nuovamente davanti alla folla, la Tianquan Ningguang aveva nuovamente un sorriso calmo e orgoglioso sul volto."
+            "text": "<color=#ffffff73>﻿Negli ultimi tempi, Invokazione del genio è diventato piuttosto di moda e molti dei miei vecchi avversari di scacchi ne sono diventati appassionati.</color>\n<color=#ffffff73>Organizzare una partita a Mille anni a Liyue è diventato più difficile che mai. Le regole degli scacchi sono numerose e complesse. Non solo preparare il gioco richiede un certo sforzo, ma anche ideare strategie e giocarci richiede un forte impegno in termini di tempo ed energia. Molti mi hanno implorata di semplificare le regole e introdurre delle novità per dare un nuovo slancio al gioco. Ma, per come la vedo io, un mercante deve trovare la giusta clientela e il giusto settore per vendere i propri prodotti. Se semplificassimo le regole degli scacchi senza cognizione di causa, diventerebbe un gioco come gli altri.</color>\n<color=#ffffff73>Ho sentito dire che possiedi una certa maestria con i giochi e che la sai lunga sul fare compromessi e valutare i pro e i contro di una decisione.</color>\n<color=#ffffff73>Se hai tempo, che ne diresti di passare dalla Dimora di giada? Non preoccuparti, il tavolo è già pronto, vedilo come un incontro tra amici accomunati dall'amore per gli scacchi.</color>"
           }
         ]
       },
       {
-        "key": "Animazione Idle 1",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/1023623/277d14878e8faba91f8f5a427321f6b9_8658326069379976841.gif",
-        "imgDesc": [
+        "title": "2022 - [Casella di posta speciale] Incontriamoci",
+        "desc": [
           {
             "type": "RichText",
-            "text": "Completo originale - Giada dorata"
+            "text": "<color=#ffffff73>Ultimamente, le voci su qualcuno che sta intraprendendo un'avventura straordinaria in giro per il mondo hanno stuzzicato la mia curiosità. Vorrei parlarne con un viaggiatore esperto come te. Non preoccuparti. Anche se ci incontreremo alla Camera di Giada, non ci sarà bisogno di alcuna formalità. Non è necessario portare regali o vestirsi per l'occasione. Consideratelo come un normale incontro con un amico. Ho preparato qualche piccolo piatto e un assortimento di bevande, ma se avete bisogno di altro fate pure richiesta alle mie segretarie. Sembra che il tempo stasera sarà eccellente e ammirare lo scenario di Liyue di notte non invecchia mai. Vieni a trovarmi, sono sicura che faremo una fruttuosa chiacchierata. Cose interessanti che hai visto e sentito durante le tue avventure... Aspetterò di ascoltare le storie che hai da raccontare.</color>"
           }
         ]
       },
       {
-        "key": "Animazione Idle 2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/1023623/f1c4c97059aa2da43bedd23517e5834b_6960866517405036112.gif",
-        "imgDesc": [
+        "title": "2021 - [Casella di posta speciale] Fragranza di benedizione",
+        "desc": [
           {
             "type": "RichText",
-            "text": "Completo originale - Giada dorata"
-          }
-        ]
-      },
-      {
-        "key": "Animazione Idle 3",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/1023623/4647a3bff49da2ff157b56067cb5ced4_2014166697558138962.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Completo ottenibile - Abito da sera d'orchidee"
-          }
-        ]
-      },
-      {
-        "key": "Animazione Idle 4",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/1023623/b5b2310e1767b1f11d1e3dbec80cc8f4_4225503711857180336.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Completo ottenibile - Abito da sera d'orchidee"
-          }
-        ]
-      },
-      {
-        "key": "Eco: Stella dell'eclissi",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/362377527/dabe0ca1b9ac0d96520a6202b13f67ee_972517331905031614.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "L'Eco immaginario di Ningguang ha la forma di foglie dorate di ginkgo, nobili ed eleganti."
-          }
-        ]
-      },
-      {
-        "key": "Costellazione",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/12/35428890/b84d2c31e3703a63eec3a41a6632d695_8265116712177154365.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Opus Aequilibrium"
+            "text": "<color=#ffffff73>Oggi è il mio compleanno ma, come forse saprai, intrattenere gli ospiti comporta sempre molta fatica. Quindi ho pensato, forse questa volta, di mantenerlo semplice e invitare solo uno o due dei miei migliori amici. Ho preparato della carne di Qiankun Mora per farti provare. Fatemi sapere cosa ne pensate. So che sei un'ottima cuoca, quindi apprezzerei la tua intuizione. Inoltre, oggi ho sentito che i gigli glassati selvatici stanno fiorendo fuori città. Ho fatto un viaggio e ho avuto la fortuna di sceglierne uno. Proprio come dicevano le voci, questo fiore selvatico è di alta qualità e molto profumato, più raro dei fiori piantati artificialmente dalla Terrazza Yujing. Venderlo a qualcuno che conosce i propri fiori potrebbe ottenere un buon prezzo. Tuttavia Mora è preziosa, ma i buoni amici sono molto più preziosi. Questo fiore che ho scelto personalmente è per te. Spero che apprezzerai la sua bellezza e la sua fragranza.</color>"
           }
         ]
       }
@@ -175,42 +772,132 @@
         ]
       }
     ],
-    "textualResearch": [
+    "baseInfo": [
       {
-        "title": "2024 - [Casella di posta speciale] Te ne sarei grata...",
-        "desc": [
+        "key": "Nome",
+        "value": [
           {
             "type": "RichText",
-            "text": "Alcuni giorni da, mi sono aggiudicata delle pietre di giada a un'asta. Rispetto ad altri oggetti preziosi presenti, queste pietre di giada grezza sembravano piuttosto banali e insignificanti. Tuttavia, quando si fa un investimento bisogna guardare al futuro, non al presente.\nQuesta giada, simbolo delle aspettative più pure delle persone e che mantiene la sua naturale chiarezza pur avendo il potenziale per diventare qualsiasi cosa, credo non sia adatta a essere custodita nella Dimora di giada. Si dice che gli oggetti preziosi e le persone abili si completino a vicenda, per cui vorrei darla a te. Portandola con te nei tuoi viaggi e sopravvivendo alla prova del tempo, chissà quale colore emetterà? A tempo debito, ti sarei grata se me lo potessi dire, magari mentre portiamo a termine la nostra partita di scacchi incompiuta.\nPreparerò un pasto sontuoso per accoglierti, proprio come farò oggi."
+            "text": "Ningguang"
           }
         ]
       },
       {
-        "title": "2023 - [Casella di posta speciale] È difficile trovare qualcuno con cui giocare a scacchi...",
-        "desc": [
+        "key": "Compleanno",
+        "value": [
           {
             "type": "RichText",
-            "text": "<color=#ffffff73>﻿Negli ultimi tempi, Invokazione del genio è diventato piuttosto di moda e molti dei miei vecchi avversari di scacchi ne sono diventati appassionati.</color>\n<color=#ffffff73>Organizzare una partita a Mille anni a Liyue è diventato più difficile che mai. Le regole degli scacchi sono numerose e complesse. Non solo preparare il gioco richiede un certo sforzo, ma anche ideare strategie e giocarci richiede un forte impegno in termini di tempo ed energia. Molti mi hanno implorata di semplificare le regole e introdurre delle novità per dare un nuovo slancio al gioco. Ma, per come la vedo io, un mercante deve trovare la giusta clientela e il giusto settore per vendere i propri prodotti. Se semplificassimo le regole degli scacchi senza cognizione di causa, diventerebbe un gioco come gli altri.</color>\n<color=#ffffff73>Ho sentito dire che possiedi una certa maestria con i giochi e che la sai lunga sul fare compromessi e valutare i pro e i contro di una decisione.</color>\n<color=#ffffff73>Se hai tempo, che ne diresti di passare dalla Dimora di giada? Non preoccuparti, il tavolo è già pronto, vedilo come un incontro tra amici accomunati dall'amore per gli scacchi.</color>"
+            "text": "26/8"
           }
         ]
       },
       {
-        "title": "2022 - [Casella di posta speciale] Incontriamoci",
-        "desc": [
+        "key": "Costellazione",
+        "value": [
           {
             "type": "RichText",
-            "text": "<color=#ffffff73>Ultimamente, le voci su qualcuno che sta intraprendendo un'avventura straordinaria in giro per il mondo hanno stuzzicato la mia curiosità. Vorrei parlarne con un viaggiatore esperto come te. Non preoccuparti. Anche se ci incontreremo alla Camera di Giada, non ci sarà bisogno di alcuna formalità. Non è necessario portare regali o vestirsi per l'occasione. Consideratelo come un normale incontro con un amico. Ho preparato qualche piccolo piatto e un assortimento di bevande, ma se avete bisogno di altro fate pure richiesta alle mie segretarie. Sembra che il tempo stasera sarà eccellente e ammirare lo scenario di Liyue di notte non invecchia mai. Vieni a trovarmi, sono sicura che faremo una fruttuosa chiacchierata. Cose interessanti che hai visto e sentito durante le tue avventure... Aspetterò di ascoltare le storie che hai da raccontare.</color>"
+            "text": "Opus Aequilibrium"
           }
         ]
       },
       {
-        "title": "2021 - [Casella di posta speciale] Fragranza di benedizione",
-        "desc": [
+        "key": "Titolo",
+        "value": [
           {
             "type": "RichText",
-            "text": "<color=#ffffff73>Oggi è il mio compleanno ma, come forse saprai, intrattenere gli ospiti comporta sempre molta fatica. Quindi ho pensato, forse questa volta, di mantenerlo semplice e invitare solo uno o due dei miei migliori amici. Ho preparato della carne di Qiankun Mora per farti provare. Fatemi sapere cosa ne pensate. So che sei un'ottima cuoca, quindi apprezzerei la tua intuizione. Inoltre, oggi ho sentito che i gigli glassati selvatici stanno fiorendo fuori città. Ho fatto un viaggio e ho avuto la fortuna di sceglierne uno. Proprio come dicevano le voci, questo fiore selvatico è di alta qualità e molto profumato, più raro dei fiori piantati artificialmente dalla Terrazza Yujing. Venderlo a qualcuno che conosce i propri fiori potrebbe ottenere un buon prezzo. Tuttavia Mora è preziosa, ma i buoni amici sono molto più preziosi. Questo fiore che ho scelto personalmente è per te. Spero che apprezzerai la sua bellezza e la sua fragranza.</color>"
+            "text": "Stella dell'eclissi"
           }
         ]
+      },
+      {
+        "key": "Visione",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Geo"
+          }
+        ]
+      },
+      {
+        "key": "Affiliazione",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Sette Stelle di Liyue"
+          }
+        ]
+      },
+      {
+        "key": "Voce cinese",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "杜冥鸦 (Du Mingya)"
+          }
+        ]
+      },
+      {
+        "key": "Voce inglese",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Erin Ebers"
+          }
+        ]
+      },
+      {
+        "key": "Voce giapponese",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "大原さやか (ŌHARA Sayaka)"
+          }
+        ]
+      },
+      {
+        "key": "Voce coreana",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "곽규미 (Kwak Kyu-mi)"
+          }
+        ]
+      },
+      {
+        "key": "Piatto speciale",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 248,
+            "name": "Moranino Qiankun",
+            "desc": "Ningguang's specialty. The pastry is perfectly soft and waxy, as is the consistency of the meat, and the honey-like meat juices ooze out as you squeeze it. Wherever did the high and mighty Tianquan Lady Ningguang learn to make this dish?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Qiankun Mora Meat_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Carta del personaggio del TGC",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3191,
+            "name": "Ningguang",
+            "desc": "<p><span style=\"color: #FFFFFF\">\"Eclipsing Star\" Ningguang</span></p><p>The greatest secret she keeps is that she keeps a great many of Liyue's secrets.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/35428890/04f5250a14f6693d7583630bd84d1b06_7750723340574922208.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Versione di rilascio",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.0"
+          }
+        ],
+        "isMaterial": false
       }
     ],
     "customize": [
@@ -2422,1217 +3109,7 @@
         "text": "<color=#ffd780>26/08/2020</color>\n<color=#ffffffd9>Avete davvero pensato bene di scegliere questo regalo, vero?</color>\n<color=#ffffffd9>Posso facilmente dire che ha un grande valore...</color>\n<color=#ffffffd9>...anche se non certo in termini di Mora...</color>\n<color=#ffffffd9>Mi piace molto. Davvero.</color>\n<color=#80c0ff>Twitter:</color>\n<color=#37ffff>https:/twitter.com/GenshinImpact/status/1298470222882455558</color>"
       }
     ],
-    "ascension": [
-      {
-        "key": "Lv.1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Prima dell'ascensione",
-              "Dopo l'ascensione"
-            ]
-          },
-          {
-            "key": "PS di base",
-            "values": [
-              "-",
-              "821"
-            ]
-          },
-          {
-            "key": "ATT di base",
-            "values": [
-              "-",
-              "18"
-            ]
-          },
-          {
-            "key": "DIF di base",
-            "values": [
-              "-",
-              "48"
-            ]
-          },
-          {
-            "key": "Bonus DAN da Geo",
-            "values": [
-              "-",
-              "0.0%"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Lv.20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Prima dell'ascensione",
-              "Dopo l'ascensione"
-            ]
-          },
-          {
-            "key": "PS di base",
-            "values": [
-              "2108",
-              "2721"
-            ]
-          },
-          {
-            "key": "ATT di base",
-            "values": [
-              "46",
-              "59"
-            ]
-          },
-          {
-            "key": "DIF di base",
-            "values": [
-              "123",
-              "159"
-            ]
-          },
-          {
-            "key": "Bonus DAN da Geo",
-            "values": [
-              "0.0%",
-              "0.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 447,
-            "name": "Scheggia di topazio Prithiva",
-            "desc": "<p>Materiale d'scensione personaggi.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1183,
-            "name": "Splendigiglio",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un fiore antico, facilmente reperibile in tutta Liyue. Durante la fioritura, trasforma le memorie della terra nel suo profumo.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Glaze Lily_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 778,
-            "name": "Emblema della recluta",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare le reclute. Viene da chiedersi cosa avessero in testa coloro che si sono uniti alla macchina da guerra dei Fatui.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Recruit's Insignia_icon.png",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "key": "Lv.40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Prima dell'ascensione",
-              "Dopo l'ascensione"
-            ]
-          },
-          {
-            "key": "PS di base",
-            "values": [
-              "4076",
-              "4512"
-            ]
-          },
-          {
-            "key": "ATT di base",
-            "values": [
-              "88",
-              "98"
-            ]
-          },
-          {
-            "key": "DIF di base",
-            "values": [
-              "239",
-              "264"
-            ]
-          },
-          {
-            "key": "Bonus DAN da Geo",
-            "values": [
-              "0.0%",
-              "6.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 446,
-            "name": "Frammento di topazio Prithiva",
-            "desc": "<p>Materiale d'ascensione personaggi.<br>\"Tutte le monete che scorrono su questa terra sono il mio sangue e la mia carne.\"</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1169,
-            "name": "Colonna di basalto",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una colonna formata dal guscio di un'Ipostasi di Geo, composta da energia di Geo ad alta densità.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">È una testimonianza della condizione di Geo come il più pesante degli elementi. Forse il motivo per cui un'Ipostasi di Geo crea questa colonna dal suo guscio per poi innalzarsi è perché desidera avvicinarsi al cielo, non perché vuole combattere i nemici.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1183,
-            "name": "Splendigiglio",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un fiore antico, facilmente reperibile in tutta Liyue. Durante la fioritura, trasforma le memorie della terra nel suo profumo.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Glaze Lily_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 778,
-            "name": "Emblema della recluta",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare le reclute. Viene da chiedersi cosa avessero in testa coloro che si sono uniti alla macchina da guerra dei Fatui.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Recruit's Insignia_icon.png",
-            "amount": 15
-          }
-        ]
-      },
-      {
-        "key": "Lv.50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Prima dell'ascensione",
-              "Dopo l'ascensione"
-            ]
-          },
-          {
-            "key": "PS di base",
-            "values": [
-              "5189",
-              "5770"
-            ]
-          },
-          {
-            "key": "ATT di base",
-            "values": [
-              "113",
-              "125"
-            ]
-          },
-          {
-            "key": "DIF di base",
-            "values": [
-              "304",
-              "338"
-            ]
-          },
-          {
-            "key": "Bonus DAN da Geo",
-            "values": [
-              "6.0%",
-              "12.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 446,
-            "name": "Frammento di topazio Prithiva",
-            "desc": "<p>Materiale d'ascensione personaggi.<br>\"Tutte le monete che scorrono su questa terra sono il mio sangue e la mia carne.\"</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1169,
-            "name": "Colonna di basalto",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una colonna formata dal guscio di un'Ipostasi di Geo, composta da energia di Geo ad alta densità.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">È una testimonianza della condizione di Geo come il più pesante degli elementi. Forse il motivo per cui un'Ipostasi di Geo crea questa colonna dal suo guscio per poi innalzarsi è perché desidera avvicinarsi al cielo, non perché vuole combattere i nemici.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1183,
-            "name": "Splendigiglio",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un fiore antico, facilmente reperibile in tutta Liyue. Durante la fioritura, trasforma le memorie della terra nel suo profumo.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Glaze Lily_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 466,
-            "name": "Emblema del sergente",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema con una forma differente per distinguere i sergenti dalle nuove reclute. Forse ci sono delle emozioni complesse dietro.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Prima dell'ascensione",
-              "Dopo l'ascensione"
-            ]
-          },
-          {
-            "key": "PS di base",
-            "values": [
-              "6448",
-              "6884"
-            ]
-          },
-          {
-            "key": "ATT di base",
-            "values": [
-              "140",
-              "149"
-            ]
-          },
-          {
-            "key": "DIF di base",
-            "values": [
-              "378",
-              "403"
-            ]
-          },
-          {
-            "key": "Bonus DAN da Geo",
-            "values": [
-              "12.0%",
-              "12.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 445,
-            "name": "Pezzo di topazio Prithiva",
-            "desc": "<p>Materiale d'ascensione personaggi.<br>\"Tutte le monete che scorrono su questa terra sono il mio sangue e la mia carne.</p><p>Così sono diventato il garante del duro lavoro, della saggezza e del futuro della gente.\"</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1169,
-            "name": "Colonna di basalto",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una colonna formata dal guscio di un'Ipostasi di Geo, composta da energia di Geo ad alta densità.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">È una testimonianza della condizione di Geo come il più pesante degli elementi. Forse il motivo per cui un'Ipostasi di Geo crea questa colonna dal suo guscio per poi innalzarsi è perché desidera avvicinarsi al cielo, non perché vuole combattere i nemici.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1183,
-            "name": "Splendigiglio",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un fiore antico, facilmente reperibile in tutta Liyue. Durante la fioritura, trasforma le memorie della terra nel suo profumo.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Glaze Lily_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 466,
-            "name": "Emblema del sergente",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema con una forma differente per distinguere i sergenti dalle nuove reclute. Forse ci sono delle emozioni complesse dietro.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Lv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Prima dell'ascensione",
-              "Dopo l'ascensione"
-            ]
-          },
-          {
-            "key": "PS di base",
-            "values": [
-              "7561",
-              "7996"
-            ]
-          },
-          {
-            "key": "ATT di base",
-            "values": [
-              "164",
-              "174"
-            ]
-          },
-          {
-            "key": "DIF di base",
-            "values": [
-              "443",
-              "468"
-            ]
-          },
-          {
-            "key": "Bonus DAN da Geo",
-            "values": [
-              "12.0%",
-              "18.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 445,
-            "name": "Pezzo di topazio Prithiva",
-            "desc": "<p>Materiale d'ascensione personaggi.<br>\"Tutte le monete che scorrono su questa terra sono il mio sangue e la mia carne.</p><p>Così sono diventato il garante del duro lavoro, della saggezza e del futuro della gente.\"</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1169,
-            "name": "Colonna di basalto",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una colonna formata dal guscio di un'Ipostasi di Geo, composta da energia di Geo ad alta densità.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">È una testimonianza della condizione di Geo come il più pesante degli elementi. Forse il motivo per cui un'Ipostasi di Geo crea questa colonna dal suo guscio per poi innalzarsi è perché desidera avvicinarsi al cielo, non perché vuole combattere i nemici.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1183,
-            "name": "Splendigiglio",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un fiore antico, facilmente reperibile in tutta Liyue. Durante la fioritura, trasforma le memorie della terra nel suo profumo.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Glaze Lily_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 636,
-            "name": "Emblema del tenente",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare gli ufficiali. I Fatui hanno un esercito di dimensioni colossali, quindi chi ha raggiunto questo grado all'interno del gruppo dev'essere qualcuno di veramente speciale.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Prima dell'ascensione",
-              "Dopo l'ascensione"
-            ]
-          },
-          {
-            "key": "PS di base",
-            "values": [
-              "8674",
-              "9110"
-            ]
-          },
-          {
-            "key": "ATT di base",
-            "values": [
-              "188",
-              "198"
-            ]
-          },
-          {
-            "key": "DIF di base",
-            "values": [
-              "508",
-              "534"
-            ]
-          },
-          {
-            "key": "Bonus DAN da Geo",
-            "values": [
-              "18.0%",
-              "24.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 444,
-            "name": "Gemma di topazio Prithiva",
-            "desc": "<p>Materiale d'ascensione personaggi.<br>\"Tutte le monete che scorrono su questa terra sono il mio sangue e la mia carne.<br>Così sono diventato il garante del duro lavoro, della saggezza e del futuro della gente.<br>Questa è la fiducia che ho riposto in loro. Tradiscila, e sporcherai il mio sangue.\"</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1169,
-            "name": "Colonna di basalto",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una colonna formata dal guscio di un'Ipostasi di Geo, composta da energia di Geo ad alta densità.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">È una testimonianza della condizione di Geo come il più pesante degli elementi. Forse il motivo per cui un'Ipostasi di Geo crea questa colonna dal suo guscio per poi innalzarsi è perché desidera avvicinarsi al cielo, non perché vuole combattere i nemici.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1183,
-            "name": "Splendigiglio",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un fiore antico, facilmente reperibile in tutta Liyue. Durante la fioritura, trasforma le memorie della terra nel suo profumo.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Glaze Lily_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 636,
-            "name": "Emblema del tenente",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare gli ufficiali. I Fatui hanno un esercito di dimensioni colossali, quindi chi ha raggiunto questo grado all'interno del gruppo dev'essere qualcuno di veramente speciale.</span></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Lv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Prima dell'ascensione",
-              "Dopo l'ascensione"
-            ]
-          },
-          {
-            "key": "PS di base",
-            "values": [
-              "9787",
-              "-"
-            ]
-          },
-          {
-            "key": "ATT di base",
-            "values": [
-              "212",
-              "-"
-            ]
-          },
-          {
-            "key": "DIF di base",
-            "values": [
-              "573",
-              "-"
-            ]
-          },
-          {
-            "key": "Bonus DAN da Geo",
-            "values": [
-              "24.0%",
-              "-"
-            ]
-          }
-        ]
-      }
-    ],
-    "talent": [
-      {
-        "key": "Attacco normale: Dispersione scintillante",
-        "title": "Attacco normale: Dispersione scintillante",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/battle_talent_0/battle_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Attacco normale</color>\nScaglia gemme che infliggono <color=#ffd780>DAN da Geo</color> .\nQuando il colpo va a segno, Ningguang ottiene 1 Giada stellare.\n<color=#ffd780>Attacco caricato</color>\nConsuma una determinata quantità di vigore per scagliare una gemma gigante che infligge <color=#ffd780>DAN da Geo</color> .\nSe Ningguang ha delle pietre di Giada stellare a disposizione, rilasciando un attacco caricato le scaglierà tutte verso il nemico, infliggendo DAN aggiuntivi.\n<color=#ffd780>Attacco in picchiata</color>\nConvogliando la forza di Geo, Ningguang si scaglia contro il suolo da mezz'aria, danneggiando tutti gli avversari lungo la sua traiettoria. Infligge <color=#ffd780>DAN da Geo ad area</color> all'impatto col suolo."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Livello",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11"
-            ]
-          },
-          {
-            "key": "DAN da ATT normale",
-            "values": [
-              "28.0%",
-              "30.1%",
-              "32.2%",
-              "35.0%",
-              "37.1%",
-              "39.2%",
-              "42.0%",
-              "44.8%",
-              "47.6%",
-              "50.4%",
-              "53.3%"
-            ]
-          },
-          {
-            "key": "DAN da ATT caricato",
-            "values": [
-              "174%",
-              "187%",
-              "200%",
-              "218%",
-              "231%",
-              "244%",
-              "261%",
-              "279%",
-              "296%",
-              "313%",
-              "331%"
-            ]
-          },
-          {
-            "key": "DAN per Giada stellare",
-            "values": [
-              "49.6%",
-              "53.3%",
-              "57.0%",
-              "62.0%",
-              "65.7%",
-              "69.4%",
-              "74.4%",
-              "79.4%",
-              "84.3%",
-              "89.3%",
-              "94.4%"
-            ]
-          },
-          {
-            "key": "Costo vigore ATT caricato\t",
-            "values": [
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0"
-            ]
-          },
-          {
-            "key": "DAN da ATT in picchiata\t",
-            "values": [
-              "56.8%",
-              "61.5%",
-              "66.1%",
-              "72.7%",
-              "77.3%",
-              "82.6%",
-              "89.9%",
-              "97.1%",
-              "104.4%",
-              "112.3%",
-              "120.3%"
-            ]
-          },
-          {
-            "key": "DAN da ATT in picchiata basso/alto",
-            "values": [
-              "114%/142%",
-              "123%/153%",
-              "132%/165%",
-              "145%/182%",
-              "155%/193%",
-              "165%/206%",
-              "180%/224%",
-              "194%/243%",
-              "209%/261%",
-              "225%/281%",
-              "240%/300%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 152,
-              "name": "Insegnamenti della prosperità",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è la benedizione di Liyue, è il fondamento della grande città costruita dagli dèi e dalla sua gente, ed è la fonte della pace e della sicurezza della terra.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Prosperity_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 778,
-              "name": "Emblema della recluta",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare le reclute. Viene da chiedersi cosa avessero in testa coloro che si sono uniti alla macchina da guerra dei Fatui.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Recruit's Insignia_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 151,
-              "name": "Guida alla prosperità",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è la promessa che Liyue ha fatto ai suoi figli: quella di premiare il duro lavoro con così tanto oro da illuminare la terra.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 466,
-              "name": "Emblema del sergente",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema con una forma differente per distinguere i sergenti dalle nuove reclute. Forse ci sono delle emozioni complesse dietro.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 151,
-              "name": "Guida alla prosperità",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è la promessa che Liyue ha fatto ai suoi figli: quella di premiare il duro lavoro con così tanto oro da illuminare la terra.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 466,
-              "name": "Emblema del sergente",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema con una forma differente per distinguere i sergenti dalle nuove reclute. Forse ci sono delle emozioni complesse dietro.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 151,
-              "name": "Guida alla prosperità",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è la promessa che Liyue ha fatto ai suoi figli: quella di premiare il duro lavoro con così tanto oro da illuminare la terra.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 466,
-              "name": "Emblema del sergente",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema con una forma differente per distinguere i sergenti dalle nuove reclute. Forse ci sono delle emozioni complesse dietro.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 151,
-              "name": "Guida alla prosperità",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è la promessa che Liyue ha fatto ai suoi figli: quella di premiare il duro lavoro con così tanto oro da illuminare la terra.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 466,
-              "name": "Emblema del sergente",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema con una forma differente per distinguere i sergenti dalle nuove reclute. Forse ci sono delle emozioni complesse dietro.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 150,
-              "name": "Filosofie della prosperità",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è il passato, il presente e il futuro di Liyue. Questa prosperità non ha eguali e non è raggiungibile da nessun'altra nazione: appartiene solo a Liyue e ai suoi abitanti.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 636,
-              "name": "Emblema del tenente",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare gli ufficiali. I Fatui hanno un esercito di dimensioni colossali, quindi chi ha raggiunto questo grado all'interno del gruppo dev'essere qualcuno di veramente speciale.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 357,
-              "name": "Spirito di Boreas",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una parte del potere del Grande Re Lupo del Nord estratto dalla sua anima.<br>Questa terra una volta era il regno delle gelide bufere di neve e delle tempeste di ghiaccio piene di schegge affilate come rasoi, tutte sotto il comando di Boreas. Nei suoi ultimi istanti, si rese finalmente conto che il gelido vento del nord poteva solo estinguere la vita, non nutrirla. Pertanto, Boreas lasciò che i suoi poteri fluissero liberamente nella terra per proteggerla, e i suoi abitanti con essa.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spirit Locket of Boreas_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 150,
-              "name": "Filosofie della prosperità",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è il passato, il presente e il futuro di Liyue. Questa prosperità non ha eguali e non è raggiungibile da nessun'altra nazione: appartiene solo a Liyue e ai suoi abitanti.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 636,
-              "name": "Emblema del tenente",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare gli ufficiali. I Fatui hanno un esercito di dimensioni colossali, quindi chi ha raggiunto questo grado all'interno del gruppo dev'essere qualcuno di veramente speciale.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 357,
-              "name": "Spirito di Boreas",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una parte del potere del Grande Re Lupo del Nord estratto dalla sua anima.<br>Questa terra una volta era il regno delle gelide bufere di neve e delle tempeste di ghiaccio piene di schegge affilate come rasoi, tutte sotto il comando di Boreas. Nei suoi ultimi istanti, si rese finalmente conto che il gelido vento del nord poteva solo estinguere la vita, non nutrirla. Pertanto, Boreas lasciò che i suoi poteri fluissero liberamente nella terra per proteggerla, e i suoi abitanti con essa.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spirit Locket of Boreas_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 150,
-              "name": "Filosofie della prosperità",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è il passato, il presente e il futuro di Liyue. Questa prosperità non ha eguali e non è raggiungibile da nessun'altra nazione: appartiene solo a Liyue e ai suoi abitanti.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 636,
-              "name": "Emblema del tenente",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare gli ufficiali. I Fatui hanno un esercito di dimensioni colossali, quindi chi ha raggiunto questo grado all'interno del gruppo dev'essere qualcuno di veramente speciale.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 357,
-              "name": "Spirito di Boreas",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una parte del potere del Grande Re Lupo del Nord estratto dalla sua anima.<br>Questa terra una volta era il regno delle gelide bufere di neve e delle tempeste di ghiaccio piene di schegge affilate come rasoi, tutte sotto il comando di Boreas. Nei suoi ultimi istanti, si rese finalmente conto che il gelido vento del nord poteva solo estinguere la vita, non nutrirla. Pertanto, Boreas lasciò che i suoi poteri fluissero liberamente nella terra per proteggerla, e i suoi abitanti con essa.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spirit Locket of Boreas_icon.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 150,
-              "name": "Filosofie della prosperità",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Materiale per l'aumento di livello dei talenti.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è ciò che ricercano gli abitanti della Terra della Roccia.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">La prosperità è il passato, il presente e il futuro di Liyue. Questa prosperità non ha eguali e non è raggiungibile da nessun'altra nazione: appartiene solo a Liyue e ai suoi abitanti.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 636,
-              "name": "Emblema del tenente",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare gli ufficiali. I Fatui hanno un esercito di dimensioni colossali, quindi chi ha raggiunto questo grado all'interno del gruppo dev'essere qualcuno di veramente speciale.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 357,
-              "name": "Spirito di Boreas",
-              "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una parte del potere del Grande Re Lupo del Nord estratto dalla sua anima.<br>Questa terra una volta era il regno delle gelide bufere di neve e delle tempeste di ghiaccio piene di schegge affilate come rasoi, tutte sotto il comando di Boreas. Nei suoi ultimi istanti, si rese finalmente conto che il gelido vento del nord poteva solo estinguere la vita, non nutrirla. Pertanto, Boreas lasciò che i suoi poteri fluissero liberamente nella terra per proteggerla, e i suoi abitanti con essa.</span></p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Spirit Locket of Boreas_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "Corona della saggezza",
-              "desc": "<p>Prezioso materiale per l'aumento di livello dei talenti.</p><p>Nei tempi antichi, era un oggetto che serviva a conservare e trasmettere la conoscenza. Ora, la conoscenza si trova nei testi antichi e nelle profonde riflessioni. Tuttavia, questa Corona della saggezza è ancora in grado di trasmettere parte del suo potere e della sua conoscenza a chi la indossa.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/battle_talent_0/battle_talent_0.gif"
-      },
-      {
-        "key": "Paravento di giada",
-        "title": "Paravento di giada",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/battle_talent_1/battle_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Ningguang crea un Paravento di giada usando oro, ossidiana e la sua grande ricchezza, infliggendo <color=#ffd780>DAN da Geo ad area</color> .\n<color=#ffd780>Paravento di giada</color>\n· Blocca i proiettili degli avversari.\n· La resistenza varia in base ai PS max di Ningguang.\nIl Paravento di giada è considerato un costrutto di Geo ed è utilizzabile per bloccare alcuni attacchi, ma non può essere scalato. Può esistere solo un Paravento di giada alla volta.\nSu questo Paravento di giada è stata dipinta la tela delle stelle."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Livello",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13"
-            ]
-          },
-          {
-            "key": "PS ereditati",
-            "values": [
-              "50.1%",
-              "53.1%",
-              "56.1%",
-              "60.0%",
-              "63.0%",
-              "66.0%",
-              "69.9%",
-              "73.8%",
-              "77.7%",
-              "81.6%",
-              "85.5%",
-              "89.4%",
-              "93.3%"
-            ]
-          },
-          {
-            "key": "DAN da abilità",
-            "values": [
-              "230%",
-              "248%",
-              "265%",
-              "288%",
-              "305%",
-              "323%",
-              "346%",
-              "369%",
-              "392%",
-              "415%",
-              "438%",
-              "461%",
-              "490%"
-            ]
-          },
-          {
-            "key": "TdR",
-            "values": [
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/battle_talent_1/battle_talent_1.gif"
-      },
-      {
-        "key": "Spaccastelle",
-        "title": "Spaccastelle",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/battle_talent_2/battle_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Ningguang accumula un gran numero di gemme e le disperde tutte in una volta, scagliando proiettili a ricerca che infliggono ingenti <color=#ffd780>DAN da Geo</color> agli avversari.\nSe Spaccastelle viene usato quando un Paravento di giada è nelle vicinanze, il Paravento di giada scaglierà proiettili di gemme aggiuntivi nello stesso momento.\nLe stelle si sgretolano. Il silenzio cade."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Livello",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13"
-            ]
-          },
-          {
-            "key": "DAN per gemma",
-            "values": [
-              "87.0%",
-              "93.5%",
-              "100%",
-              "109%",
-              "115%",
-              "122%",
-              "130%",
-              "139%",
-              "148%",
-              "157%",
-              "165%",
-              "174%",
-              "185%"
-            ]
-          },
-          {
-            "key": "TdR",
-            "values": [
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s",
-              "12.0s"
-            ]
-          },
-          {
-            "key": "Costo energia",
-            "values": [
-              "40",
-              "40",
-              "40",
-              "40",
-              "40",
-              "40",
-              "40",
-              "40",
-              "40",
-              "40",
-              "40",
-              "40",
-              "40"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/battle_talent_2/battle_talent_2.gif"
-      },
-      {
-        "key": "Piano B",
-        "title": "Piano B",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/const_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Quando Ningguang possiede pietre di Giada stellare, il suo attacco caricato non consuma vigore."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Riserva strategica",
-        "title": "Riserva strategica",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/const_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Un personaggio che attraversa il <color=#ffd780>Paravento di giada</color> ottiene un 12% di bonus <color=#ffd780>DAN da Geo</color> per 10 s."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Tesori inestimabili",
-        "title": "Tesori inestimabili",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/const_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Mostra sulla minimappa la posizione di <color=#ffd780>giacimenti minerari usati per la forgiatura</color> ."
-          }
-        ],
-        "attributes": null
-      }
-    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=38&center=2687.98,-854.50&zoom=-0.50",
     "summaryList": [
       {
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/constellation_1.png",
@@ -3695,7 +3172,6 @@
         ]
       }
     ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=38&center=2687.98,-854.50&zoom=-0.50",
     "voice": [
       {
         "title": "Presentazione",
@@ -5326,132 +4802,656 @@
         ]
       }
     ],
-    "baseInfo": [
+    "ascension": [
       {
-        "key": "Nome",
-        "value": [
+        "key": "Lv.1",
+        "combatStats": [
           {
-            "type": "RichText",
-            "text": "Ningguang"
+            "key": "",
+            "values": [
+              "Prima dell'ascensione",
+              "Dopo l'ascensione"
+            ]
+          },
+          {
+            "key": "PS di base",
+            "values": [
+              "-",
+              "821"
+            ]
+          },
+          {
+            "key": "ATT di base",
+            "values": [
+              "-",
+              "18"
+            ]
+          },
+          {
+            "key": "DIF di base",
+            "values": [
+              "-",
+              "48"
+            ]
+          },
+          {
+            "key": "Bonus DAN da Geo",
+            "values": [
+              "-",
+              "0.0%"
+            ]
           }
         ]
       },
       {
-        "key": "Compleanno",
-        "value": [
+        "key": "Lv.20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Prima dell'ascensione",
+              "Dopo l'ascensione"
+            ]
+          },
+          {
+            "key": "PS di base",
+            "values": [
+              "2108",
+              "2721"
+            ]
+          },
+          {
+            "key": "ATT di base",
+            "values": [
+              "46",
+              "59"
+            ]
+          },
+          {
+            "key": "DIF di base",
+            "values": [
+              "123",
+              "159"
+            ]
+          },
+          {
+            "key": "Bonus DAN da Geo",
+            "values": [
+              "0.0%",
+              "0.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 447,
+            "name": "Scheggia di topazio Prithiva",
+            "desc": "<p>Materiale d'scensione personaggi.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1183,
+            "name": "Splendigiglio",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un fiore antico, facilmente reperibile in tutta Liyue. Durante la fioritura, trasforma le memorie della terra nel suo profumo.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Glaze Lily_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 778,
+            "name": "Emblema della recluta",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare le reclute. Viene da chiedersi cosa avessero in testa coloro che si sono uniti alla macchina da guerra dei Fatui.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Recruit's Insignia_icon.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "Lv.40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Prima dell'ascensione",
+              "Dopo l'ascensione"
+            ]
+          },
+          {
+            "key": "PS di base",
+            "values": [
+              "4076",
+              "4512"
+            ]
+          },
+          {
+            "key": "ATT di base",
+            "values": [
+              "88",
+              "98"
+            ]
+          },
+          {
+            "key": "DIF di base",
+            "values": [
+              "239",
+              "264"
+            ]
+          },
+          {
+            "key": "Bonus DAN da Geo",
+            "values": [
+              "0.0%",
+              "6.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 446,
+            "name": "Frammento di topazio Prithiva",
+            "desc": "<p>Materiale d'ascensione personaggi.<br>\"Tutte le monete che scorrono su questa terra sono il mio sangue e la mia carne.\"</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1169,
+            "name": "Colonna di basalto",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una colonna formata dal guscio di un'Ipostasi di Geo, composta da energia di Geo ad alta densità.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">È una testimonianza della condizione di Geo come il più pesante degli elementi. Forse il motivo per cui un'Ipostasi di Geo crea questa colonna dal suo guscio per poi innalzarsi è perché desidera avvicinarsi al cielo, non perché vuole combattere i nemici.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1183,
+            "name": "Splendigiglio",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un fiore antico, facilmente reperibile in tutta Liyue. Durante la fioritura, trasforma le memorie della terra nel suo profumo.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Glaze Lily_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 778,
+            "name": "Emblema della recluta",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare le reclute. Viene da chiedersi cosa avessero in testa coloro che si sono uniti alla macchina da guerra dei Fatui.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Recruit's Insignia_icon.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "Lv.50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Prima dell'ascensione",
+              "Dopo l'ascensione"
+            ]
+          },
+          {
+            "key": "PS di base",
+            "values": [
+              "5189",
+              "5770"
+            ]
+          },
+          {
+            "key": "ATT di base",
+            "values": [
+              "113",
+              "125"
+            ]
+          },
+          {
+            "key": "DIF di base",
+            "values": [
+              "304",
+              "338"
+            ]
+          },
+          {
+            "key": "Bonus DAN da Geo",
+            "values": [
+              "6.0%",
+              "12.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 446,
+            "name": "Frammento di topazio Prithiva",
+            "desc": "<p>Materiale d'ascensione personaggi.<br>\"Tutte le monete che scorrono su questa terra sono il mio sangue e la mia carne.\"</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1169,
+            "name": "Colonna di basalto",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una colonna formata dal guscio di un'Ipostasi di Geo, composta da energia di Geo ad alta densità.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">È una testimonianza della condizione di Geo come il più pesante degli elementi. Forse il motivo per cui un'Ipostasi di Geo crea questa colonna dal suo guscio per poi innalzarsi è perché desidera avvicinarsi al cielo, non perché vuole combattere i nemici.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1183,
+            "name": "Splendigiglio",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un fiore antico, facilmente reperibile in tutta Liyue. Durante la fioritura, trasforma le memorie della terra nel suo profumo.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Glaze Lily_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 466,
+            "name": "Emblema del sergente",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema con una forma differente per distinguere i sergenti dalle nuove reclute. Forse ci sono delle emozioni complesse dietro.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Prima dell'ascensione",
+              "Dopo l'ascensione"
+            ]
+          },
+          {
+            "key": "PS di base",
+            "values": [
+              "6448",
+              "6884"
+            ]
+          },
+          {
+            "key": "ATT di base",
+            "values": [
+              "140",
+              "149"
+            ]
+          },
+          {
+            "key": "DIF di base",
+            "values": [
+              "378",
+              "403"
+            ]
+          },
+          {
+            "key": "Bonus DAN da Geo",
+            "values": [
+              "12.0%",
+              "12.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 445,
+            "name": "Pezzo di topazio Prithiva",
+            "desc": "<p>Materiale d'ascensione personaggi.<br>\"Tutte le monete che scorrono su questa terra sono il mio sangue e la mia carne.</p><p>Così sono diventato il garante del duro lavoro, della saggezza e del futuro della gente.\"</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1169,
+            "name": "Colonna di basalto",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una colonna formata dal guscio di un'Ipostasi di Geo, composta da energia di Geo ad alta densità.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">È una testimonianza della condizione di Geo come il più pesante degli elementi. Forse il motivo per cui un'Ipostasi di Geo crea questa colonna dal suo guscio per poi innalzarsi è perché desidera avvicinarsi al cielo, non perché vuole combattere i nemici.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1183,
+            "name": "Splendigiglio",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un fiore antico, facilmente reperibile in tutta Liyue. Durante la fioritura, trasforma le memorie della terra nel suo profumo.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Glaze Lily_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 466,
+            "name": "Emblema del sergente",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema con una forma differente per distinguere i sergenti dalle nuove reclute. Forse ci sono delle emozioni complesse dietro.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sergeant's Insignia_icon.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Lv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Prima dell'ascensione",
+              "Dopo l'ascensione"
+            ]
+          },
+          {
+            "key": "PS di base",
+            "values": [
+              "7561",
+              "7996"
+            ]
+          },
+          {
+            "key": "ATT di base",
+            "values": [
+              "164",
+              "174"
+            ]
+          },
+          {
+            "key": "DIF di base",
+            "values": [
+              "443",
+              "468"
+            ]
+          },
+          {
+            "key": "Bonus DAN da Geo",
+            "values": [
+              "12.0%",
+              "18.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 445,
+            "name": "Pezzo di topazio Prithiva",
+            "desc": "<p>Materiale d'ascensione personaggi.<br>\"Tutte le monete che scorrono su questa terra sono il mio sangue e la mia carne.</p><p>Così sono diventato il garante del duro lavoro, della saggezza e del futuro della gente.\"</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1169,
+            "name": "Colonna di basalto",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una colonna formata dal guscio di un'Ipostasi di Geo, composta da energia di Geo ad alta densità.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">È una testimonianza della condizione di Geo come il più pesante degli elementi. Forse il motivo per cui un'Ipostasi di Geo crea questa colonna dal suo guscio per poi innalzarsi è perché desidera avvicinarsi al cielo, non perché vuole combattere i nemici.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1183,
+            "name": "Splendigiglio",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un fiore antico, facilmente reperibile in tutta Liyue. Durante la fioritura, trasforma le memorie della terra nel suo profumo.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Glaze Lily_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 636,
+            "name": "Emblema del tenente",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare gli ufficiali. I Fatui hanno un esercito di dimensioni colossali, quindi chi ha raggiunto questo grado all'interno del gruppo dev'essere qualcuno di veramente speciale.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Prima dell'ascensione",
+              "Dopo l'ascensione"
+            ]
+          },
+          {
+            "key": "PS di base",
+            "values": [
+              "8674",
+              "9110"
+            ]
+          },
+          {
+            "key": "ATT di base",
+            "values": [
+              "188",
+              "198"
+            ]
+          },
+          {
+            "key": "DIF di base",
+            "values": [
+              "508",
+              "534"
+            ]
+          },
+          {
+            "key": "Bonus DAN da Geo",
+            "values": [
+              "18.0%",
+              "24.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "<p>Moneta comune. La lingua compresa da tutti.</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 444,
+            "name": "Gemma di topazio Prithiva",
+            "desc": "<p>Materiale d'ascensione personaggi.<br>\"Tutte le monete che scorrono su questa terra sono il mio sangue e la mia carne.<br>Così sono diventato il garante del duro lavoro, della saggezza e del futuro della gente.<br>Questa è la fiducia che ho riposto in loro. Tradiscila, e sporcherai il mio sangue.\"</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prithiva Topaz Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1169,
+            "name": "Colonna di basalto",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una colonna formata dal guscio di un'Ipostasi di Geo, composta da energia di Geo ad alta densità.</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">È una testimonianza della condizione di Geo come il più pesante degli elementi. Forse il motivo per cui un'Ipostasi di Geo crea questa colonna dal suo guscio per poi innalzarsi è perché desidera avvicinarsi al cielo, non perché vuole combattere i nemici.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Basalt Pillar_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1183,
+            "name": "Splendigiglio",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un fiore antico, facilmente reperibile in tutta Liyue. Durante la fioritura, trasforma le memorie della terra nel suo profumo.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Glaze Lily_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 636,
+            "name": "Emblema del tenente",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un emblema per identificare gli ufficiali. I Fatui hanno un esercito di dimensioni colossali, quindi chi ha raggiunto questo grado all'interno del gruppo dev'essere qualcuno di veramente speciale.</span></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Lieutenant's Insignia_icon.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "Lv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Prima dell'ascensione",
+              "Dopo l'ascensione"
+            ]
+          },
+          {
+            "key": "PS di base",
+            "values": [
+              "9787",
+              "-"
+            ]
+          },
+          {
+            "key": "ATT di base",
+            "values": [
+              "212",
+              "-"
+            ]
+          },
+          {
+            "key": "DIF di base",
+            "values": [
+              "573",
+              "-"
+            ]
+          },
+          {
+            "key": "Bonus DAN da Geo",
+            "values": [
+              "24.0%",
+              "-"
+            ]
+          }
+        ]
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/avatar_header.jpg"
+      },
+      {
+        "key": "Avatar",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/avatar.png",
+        "imgDesc": [
           {
             "type": "RichText",
-            "text": "26/8"
+            "text": "Completo originale - Giada dorata\nIl completo di Ningguang. Un grazioso vestito impreziosito da ricami elaborati."
+          }
+        ]
+      },
+      {
+        "key": "Completo - Abito da sera d'orchidee",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/凝光/costume.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Completo ottenibile - Abito da sera d'orchidee\nL'abito formale di Ningguang. La lunga gonna azzurra segue le sue curve eleganti, mentre le ali di farfalla poste sulle caviglie donano al completo un tocco aggraziato e leggiadro.\nNingguang, figura molto influente del settore mercantile di Liyue, sembra sfoggiare sempre un sorriso sicuro e disinvolto.\nMa neanche lei sfugge a momenti imprevisti di sconforto, riluttanza e solitudine, o ad altre preoccupazioni tipiche della gente comune di Liyue.\nQuando il Porto di Liyue era sull'orlo della crisi, Ningguang si trovò costretta a sacrificare la propria Dimora di giada, il palazzo nel cielo che aveva costruito con fatica e sudore nel corso di molti anni.\nOgni ricordo del passato, bello o brutto che fosse, precipitò nell'oceano insieme alla Dimora di giada affondando con essa. Nemmeno qualcuno del calibro di Ningguang poteva sopportare una simile perdita.\nAnche quando le acque si furono calmate e si presentò l'occasione di ricostruire la Dimora, Ningguang passò molto tempo turbata a riflettere.\nIn questo mondo accadono cose innumerevoli, chi mai sarebbe in grado di prevedere l'incombere di una grossa perdita?\nIl solo pensiero la faceva sentire scoraggiata e abbattuta.\nMentre ricominciava il banchetto nel cielo, Ningguang, con indosso un abito del colore della notte, si fece avanti e invitò gli ospiti radunati a festeggiare con lei.\nEppure, in mezzo a quella baldoria, in mezzo al mare di reliquie famose, di ninnoli preziosi, di piatti raffinati, grida di gioia e risate,\nla Tianquan di Liyue cadde nuovamente in preda alla malinconia.\nLasciò il proprio posto e, col cuore confuso, si fermò sotto il cielo stellato.\nI suoni allegri del padiglione non potevano raggiungerla da così lontano, era come se sotto quelle stelle fosse completamente sola.\nCome aveva fatto spesso in passato, abbassò lo sguardo e osservò Liyue.\nIl debole chiarore della luna era come un velo sulla superficie di Liyue. Dalla Pianura di Bishui fino a Lisha, la terraferma sembrava tinta di un bianco magnifico e delicato.\nQuel maestoso panorama era una vista molto familiare a Ningguang, che l'aveva osservato ogni notte fin dalla costruzione della Dimora di giada.\nIl tempo vola, ma le montagne e i mari restano.\n\"Il mondo dei mortali è effimero, ma alcune cose non cambieranno così facilmente.\"\nForse tra cent'anni sarà tutto diverso. La mia bellezza sarà svanita e del mio corpo non sarà rimasto altro che aride ossa.\nNon importa quanto opulento sia questo abito nei suoi tempi migliori: anch'esso si logorerà.\nMa finché vivrò, avrò a disposizione immense ricchezze e mi verrà attribuita l'autorità di Tianquan.\nVivrò la mia vita fino in fondo, senza farmi mancare né potere, né ricchezza, né amicizie.\nNon è questo ciò che avevo deciso fin dal principio? Se è così, come posso permettermi di sprofondare nel dolore, di lasciarmi andare dopo appena un momento di vuoto?\nLa vita è preziosa proprio perché è effimera...\nMa tra mille anni, se non diecimila, chi verrà si ricorderà del mio nome: Ningguang.\"\nSi incamminò di nuovo verso la festa, il cuore finalmente sereno.\nQuando si mostrò nuovamente davanti alla folla, la Tianquan Ningguang aveva nuovamente un sorriso calmo e orgoglioso sul volto."
+          }
+        ]
+      },
+      {
+        "key": "Animazione Idle 1",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/1023623/277d14878e8faba91f8f5a427321f6b9_8658326069379976841.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Completo originale - Giada dorata"
+          }
+        ]
+      },
+      {
+        "key": "Animazione Idle 2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/1023623/f1c4c97059aa2da43bedd23517e5834b_6960866517405036112.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Completo originale - Giada dorata"
+          }
+        ]
+      },
+      {
+        "key": "Animazione Idle 3",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/1023623/4647a3bff49da2ff157b56067cb5ced4_2014166697558138962.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Completo ottenibile - Abito da sera d'orchidee"
+          }
+        ]
+      },
+      {
+        "key": "Animazione Idle 4",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/1023623/b5b2310e1767b1f11d1e3dbec80cc8f4_4225503711857180336.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Completo ottenibile - Abito da sera d'orchidee"
+          }
+        ]
+      },
+      {
+        "key": "Eco: Stella dell'eclissi",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/24/362377527/dabe0ca1b9ac0d96520a6202b13f67ee_972517331905031614.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "L'Eco immaginario di Ningguang ha la forma di foglie dorate di ginkgo, nobili ed eleganti."
           }
         ]
       },
       {
         "key": "Costellazione",
-        "value": [
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/12/35428890/b84d2c31e3703a63eec3a41a6632d695_8265116712177154365.png",
+        "imgDesc": [
           {
             "type": "RichText",
             "text": "Opus Aequilibrium"
           }
         ]
-      },
-      {
-        "key": "Titolo",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Stella dell'eclissi"
-          }
-        ]
-      },
-      {
-        "key": "Visione",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Geo"
-          }
-        ]
-      },
-      {
-        "key": "Affiliazione",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Sette Stelle di Liyue"
-          }
-        ]
-      },
-      {
-        "key": "Voce cinese",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "杜冥鸦 (Du Mingya)"
-          }
-        ]
-      },
-      {
-        "key": "Voce inglese",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Erin Ebers"
-          }
-        ]
-      },
-      {
-        "key": "Voce giapponese",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "大原さやか (ŌHARA Sayaka)"
-          }
-        ]
-      },
-      {
-        "key": "Voce coreana",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "곽규미 (Kwak Kyu-mi)"
-          }
-        ]
-      },
-      {
-        "key": "Piatto speciale",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 248,
-            "name": "Moranino Qiankun",
-            "desc": "Ningguang's specialty. The pastry is perfectly soft and waxy, as is the consistency of the meat, and the honey-like meat juices ooze out as you squeeze it. Wherever did the high and mighty Tianquan Lady Ningguang learn to make this dish?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Qiankun Mora Meat_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Carta del personaggio del TGC",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3191,
-            "name": "Ningguang",
-            "desc": "<p><span style=\"color: #FFFFFF\">\"Eclipsing Star\" Ningguang</span></p><p>The greatest secret she keeps is that she keeps a great many of Liyue's secrets.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/35428890/04f5250a14f6693d7583630bd84d1b06_7750723340574922208.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Versione di rilascio",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.0"
-          }
-        ],
-        "isMaterial": false
       }
     ]
   }
