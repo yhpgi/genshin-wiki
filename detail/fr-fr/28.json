@@ -5,16 +5,631 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Ganyu_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/avatar.png",
   "filterValues": {
-    "characterRegion": "Port de Liyue",
-    "characterVision": "Cryo",
-    "characterProperty": "DGT CRIT",
     "characterWeapon": "Arc",
-    "characterRarity": 5
+    "characterProperty": "DGT CRIT",
+    "characterRegion": "Port de Liyue",
+    "characterRarity": 5,
+    "characterVision": "Cryo"
   },
   "menuId": 2,
   "menuName": "Archives des personnages",
   "version": 1734030770,
   "components": {
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=32&center=1935.62,-52.64&zoom=-2.50",
+    "baseInfo": [
+      {
+        "key": "Nom",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Ganyu</color>"
+          }
+        ]
+      },
+      {
+        "key": "Anniversaire",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>2/12</color>"
+          }
+        ]
+      },
+      {
+        "key": "Constellation",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Sinae Unicornis</color>"
+          }
+        ]
+      },
+      {
+        "key": "Titre",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Défense fervente</color>"
+          }
+        ]
+      },
+      {
+        "key": "Œil divin",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Cryo</color>"
+          }
+        ]
+      },
+      {
+        "key": "Affiliation",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Pavillon Yuehai</color>"
+          }
+        ]
+      },
+      {
+        "key": "Voix chinoise",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>林簌 (Lin Su)</color>"
+          }
+        ]
+      },
+      {
+        "key": "Voix anglaise",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Jennifer Losi</color>"
+          }
+        ]
+      },
+      {
+        "key": "Voix japonaise",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>上田麗奈 (UEDA Reina)</color>"
+          }
+        ]
+      },
+      {
+        "key": "Voix coréenne",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>김선혜 (Kim Seon-hye)</color>"
+          }
+        ]
+      },
+      {
+        "key": "Plat Spécial",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 1233,
+            "name": "Paix prospère",
+            "desc": "Spécialité culinaire de Ganyu. L'image d'un Qilin au repos suffit à elle seule à calmer les esprits. Ganyu a cuisiné ce plat avec ses meilleures intentions et a également mis de côté l'une de ses fleurs de Qingxin préférées, rien que pour vous.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prosperous Peace_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Carte du Personnage",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3172,
+            "name": "Ganyu",
+            "desc": "<p><span style=\"color: #FFFFFF\">Ganyu « Défense fervente&nbsp;»</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">« Ce communiqué est attendu pour demain... Je suppose que je pourrais travailler toute la nuit et le finir. »</span></p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/158750877/e5c7d702f8033c4361f3b25a7f0b8b30_2998629243767144980.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Ajout à la version",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>1.2</color>"
+          }
+        ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Anniversaires",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "2021",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/05/29705491/7aa828511ac242b94bfe14d6c36e1614_3132441366384441583.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>« C'est une version sans sucre d'un dessert à la fleur sucrante, préparé grâce à des ingrédients spécialement récoltés par le voyageur. Vous pouvez y goûter sans crainte ! »</color>"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/05/29705491/a453aa62f08feb3569e13081e1259fa3_1299421923408008609.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Hein ? Je... je me suis assoupie ? Merci de m'avoir réveillée.</color>\n<color=#ffffff73>Il est rare de voir ces fleurs. Elles sont magnifiques, n'est-ce pas ?</color>\n<color=#ffffff73>Il suffit de se reposer un peu ici pour apaiser son esprit... Résultat ? Je me suis endormie.</color>\n<color=#ffffff73>Il y a encore du travail... Asseyons-nous un moment avant de nous y mettre.</color>\n<color=#ffffff73>Merci à hou pour sa magnifique illustration !</color>\n<color=#ffffffd9>Ce que je voudrais vous dire...</color>\n<color=#ffffff73>Mes collègues disent que chez les mortels, les anniversaires sont très importants et qu'il faut tes célébrer. Aller là où on ne va pas d'habitude, dépenser l'argent qu'on ne dépenserait pas en temps normal. Le temps est une notion qui me parait bien insipide. Chaque année lors de mon anniversaire, je suis extrêmement occupée, ce qui n'est pas vraiment différent du reste de l'année.</color>\n<color=#ffffff73>J'ai rêvé de vous cette nuit. Vous étiez en train de sourire et me vous me racontiez quelque chose...</color>\n<color=#ffffff73>Malheureusement, j'ai oublié ce dont il s'agissait à mon réveil.</color>\n<color=#ffffff73>Ou peut-être avez-vous réellement quelque chose à me dire ? Profitons de cette occasion pour nous voir...</color>\n<color=#ffffff73>J'ai préparé pour vous un cadeau selon les coutumes liyuéennes.</color>\n<color=#ffffff73>Voici une graine de fleur de Qingxin, afin que vous puissiez également profiter des joies de planter et de récolter ce que vous semez.</color>\n<color=#ffffff73>Il y a tant de choses à dire sur les plantes et leur entretien qu'il m'est impossible de tout écrire. Attendons de nous voir pour en discuter.</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "2022",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/05/29705491/98d8deed50de9f6c87f727e19b7a76d9_2726950317736452558.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>« Tiens, tu es venu avec des amis ? »</color>"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/05/29705491/422a57fb623fb69aa12b28f1b860a8df_7019444919094240254.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Ces fleurs de Qingxin sont recueillies spécialement pour moi ? Merci ! Je les accepte avec un grand plaisir. Voulez-vous en goûter ? Hmm, non ?</color>\n<color=#ffffff73>On dirait que la plupart des gens n'aiment pas la saveur des fleurs de Qingxin crues.</color>\n<color=#ffffff73>Ah, en parlant avec vous, j'en ai beaucoup mangé sans m'en rendre compte !</color>\n<color=#ffffff73>Il faut absolument éviter que Souffle-Nuages voie cela, sinon elle va encore dire des choses...</color>\n<color=#ffffffd9>Admirer la lune...</color>\n<color=#ffffff73>Ces derniers temps, les autres secrétaires du Pavillon Yuehai travaillent dur et s'occupent de beaucoup d'affaires, c'est pourquoi je suis moins occupée que d'habitude à la fin d'année. J'ai du mal à m'y habituer...</color>\n<color=#ffffff73>J'ai entendu dire qu'il était agréable d'admirer la lune et de se vider l'esprit autour d'une tasse de thé avec un ami après le travail.</color>\n<color=#ffffff73>Que diriez-vous d'essayer cela avec moi sous la brise au clair de lune de cette nuit ?</color>\n<color=#ffffff73>Ne vous en faites pas. Je serai heureuse d'avoir un moment tranquille au milieu de mon emploi du temps chargé.</color>\n<color=#ffffff73>J'ai préparé du thé que je bois souvent au Pavillon Yuehai avec quelques ingrédients apaisants. J'espère que cela vous plaira.</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "2023",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/05/29705491/125a17cac0cc650b6440cfc152755739_2618111522903507714.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>« Bon anniversaire, Ganyu. »</color>\n<color=#ffffff73>« Merci... »</color>\n<color=#ffffff73>« Chaque année, à cette époque, je me rappelle à quel point tu étais mignonne quand tu étais petite. Les gens d'aujourd'hui n'ont pas la chance de voir cela... Tu es toujours occupée au travail cette année ? Tu ferais mieux de prendre un peu de temps pour te détendre... »</color>"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/05/29705491/a275d216bbd407937c21cb53d156869f_903434728442151026.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Ah ! Je... Je me suis encore endormie ? Désolée, vraiment...</color>\n<color=#ffffff73>Je crois que j'ai fait un rêve. Euh, rien d'intéressant, juste des choses de mon enfance.</color>\n<color=#ffffff73>Ensuite... Souffle-Nuages est apparue et a commencé à raconter toutes mes histoires embarrassantes !</color>\n<color=#ffffff73>Emm... Heureusement que ce n'était qu'un rêve...</color>\n<color=#ffffffd9>Pêche...</color>\n<color=#ffffff73>Peut-être que j'ai été très occupée ces derniers temps, je me suis surprise à m'assoupir plus souvent pendant la journée...</color>\n<color=#ffffff73>Les secrétaires du Pavillon Yuehai m'ont encouragée à essayer la pêche pour me changer les idées, parce que ça fait disparaitre la fatigue selon elles. Par contre... si je reste près de l'eau pendant des heures à ne rien faire, j'ai encore plus peur de m'endormir.</color>\n<color=#ffffff73>Mais l'une de mes collègues qui sait très bien pêcher m'a assuré que j'y prendrais plus de plaisir avec des amis.</color>\n<color=#ffffff73>Nous pourrions profiter d'un moment de calme pour parler à cœur ouvert et admirer nos résultats dans des moments tendus lorsque la canne s'agite... Je pense que j'apprécierais vraiment !</color>\n<color=#ffffff73>J'ai préparé la nourriture et les appâts. Si vous êtes disponible, aimeriez-vous venir pêcher avec moi ?</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "2024",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/05/29705491/0f0603b94227c5787cf5f9c1855644b8_3229931091448307137.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>« Hmmm... Celui-ci, et celui-là aussi... Tout a l'air vraiment délicieux. »</color>"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/05/29705491/8ee7cd4be74da375f4548c65486ce943_7445660862234129409.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Non, non, je n'étais pas en train de travailler, juste plongée dans ce recueil de poèmes que je viens d'acheter.</color>\n<color=#ffffff73>Tout le monde autour de moi dit que j'en fais trop et m'a conseillé de lever le pied. Alors, j'ai pensé que la poésie serait une belle échappatoire.</color>\n<color=#ffffff73>Et comme si elle pouvait lire dans mes pensées, mon maître m'a envoyé la version améliorée de son mécanisme du moulin à vent.</color>\n<color=#ffffff73>Tant de bons souvenirs... Mais ce dernier a l'air bien plus élégant et délicat que celui de mon enfance. Enfin, ce n'est peut-être pas le mécanisme qui a changé, mais simplement moi qui ai grandi.</color>\n<color=#ffffffd9>Un instant de répit dans les montagnes</color>\n<color=#ffffff73>Ces derniers temps, j'ai séjourné au Village de Qiaoying pour des raisons professionnelles. Entre deux missions, j'ai eu l'occasion de contempler les magnifiques paysages du Vallon Chenyu, avec ses montagnes qui s'étendent à perte de vue. J'ai également pu me promener en forêt, en compagnie des oiseaux et des animaux.</color>\n<color=#ffffff73>Cette ambiance calme et paisible me rappelle mes jours d'entrainement au Karst Jueyun. Même mes siestes y sont beaucoup plus reposantes.</color>\n<color=#ffffff73>Je me demande si vous prenez le temps de faire des pauses pendant vos aventures. Si l'occasion d'un instant de répit se présente, n'hésitez pas à me rejoindre. Nous pourrions alors prendre le thé, savourer des plats végétariens, et profiter de la sérénité qu'offrent les montagnes et les rivières. Je pourrais même vous chanter des comptines locales que les enfants du coin m'ont apprises.</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Aperçu des aptitudes"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Les</color> <color=#ffd780>attaques chargées</color> <color=#ffffff73>de Ganyu infligent des</color> <color=#99ffff>DGT Cryo</color> <color=#ffffff73>aux ennemis.</color>\n<color=#ffffff73>Les attaques chargées (2 charges) créent une</color> <color=#ffd780>flèche de givre</color> <color=#ffffff73>qui inflige des</color> <color=#99ffff>DGT Cryo</color> <color=#ffffff73>et des</color> <color=#99ffff>DGT Cryo de zone</color> <color=#ffffff73>lorsque le givre se répand.</color>\n<color=#ffffff73>Après avoir tiré une</color> <color=#ffd780>flèche de givre</color> <color=#ffffff73>, le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>et le</color> <color=#ffd780>DGT CRIT</color> <color=#ffffff73>des</color> <color=#ffd780>flèches de givre</color> <color=#ffffff73>successives sont augmentés.</color>\n<color=#ffffff73>La</color> <color=#ffd780>compétence élémentaire</color> <color=#ffffff73>de Ganyu crée un</color> <color=#ffd780>Lotus de glace</color> <color=#ffffff73>qui nargue les ennemis et leur inflige des</color> <color=#99ffff>DGT Cryo de zone</color> <color=#ffffff73>quand il éclot.</color>\n<color=#ffffff73>La durée du</color> <color=#ffd780>Lotus de glace</color> <color=#ffffff73>est proportionnelle aux</color> <color=#ffd780>PV</color> <color=#ffffff73>max de Ganyu.</color>\n<color=#ffffff73>Le</color> <color=#ffd780>déchaînement élémentaire</color> <color=#ffffff73>de Ganyu (</color> <color=#ffd780>Baptême céleste</color> <color=#ffffff73>) inflige des</color> <color=#99ffff>DGT Cryo de zone</color> <color=#ffffff73>et sa</color> <color=#ffd780>durée</color> <color=#ffffff73>est égale à son</color> <color=#ffd780>TdR</color> <color=#000000>.</color>\n<color=#ffffff73>Il assure un</color> <color=#ffd780>bonus</color> <color=#ffffff73>de</color> <color=#99ffff>DGT Cryo</color> <color=#ffffff73>de</color> <color=#ffd780>20 %</color> <color=#ffffff73>aux membres de l'équipe dans la zone d'effet.</color>\n<color=#ffffff73>Note(s) : La</color> <color=#ffd780>maîtrise élémentaire</color> <color=#ffffff73>influence seulement</color> <color=#99ffff>Brise-Glace</color> <color=#ffffff73>et non la réaction de</color> <color=#99ffff>Gel</color> <color=#ffffff73>, c'est pourquoi l'augmentation de la</color> <color=#ffd780>maîtrise élémentaire</color> <color=#ffffff73>dans une équipe</color> <color=#99ffff>Gel</color> <color=#ffffff73>n'augmentera pas les</color> <color=#ffd780>DGT</color> <color=#ffffff73>infligés par Ganyu.</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Recommandations d'armes"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Arme(s) 3 étoiles"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1968,
+        "name": "Lance-pierres",
+        "desc": "C'est bien un arc ! Après de nombreuses modifications et améliorations, l'inventeur du lance-pierres ultime s'est finalement retrouvé avec un arc.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/弹弓.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Lance-pierres</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Effets :</color>\n<color=#ffffff73>L’attribut secondaire augmente le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>.</color>\n<color=#ffffff73>L’effet du passif augmente les</color> <color=#ffd780>DGT</color> <color=#ffffff73>des</color> <color=#ffd780>attaques normales ou chargées</color> <color=#ffffff73>.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>apporté par le Lance-pierres fait écho au</color> <color=#ffd780>bonus de DGT Crit</color> <color=#ffffff73>que Ganyu reçoit lors de son ascension.</color>\n<color=#ffffff>Source(s) :</color>\n<color=#ffffff73>Coffres.</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Arme(s) 4 étoiles"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2028,
+        "name": "Lune paisible (prototype)",
+        "desc": "Un prototype d'arc long découvert à la Forge de Rochenoire. Les flèches qu'il décoche sont aussi brillantes que le clair de lune.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/试作澹月.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Lune paisible (prototype)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Effets :</color>\n<color=#ffffff73>L’attribut secondaire fournit de l'</color> <color=#ffd780>ATQ</color> <color=#ffffff73>.</color>\n<color=#ffffff73>L’effet du passif garantit un bonus d'</color> <color=#ffd780>ATQ</color> <color=#ffffff73>supplémentaire si les</color> <color=#ffd780>attaques chargées</color> <color=#ffffff73>touchent un point faible de l'ennemi.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Il est important de prendre en compte le fait que tous les ennemis ne possèdent pas un point faible qui soit visible ou accessible de manière constante.</color>\n<color=#ffffff>Source(s) :</color>\n<color=#ffffff73>Forge.</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1999,
+        "name": "Arc d'exorcisme",
+        "desc": "Cet arc de guerre appartenait autrefois à une certaine prêtresse. Il a été fabriqué avec un doigté exceptionnel, et est à la fois complexe et robuste.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/破魔之弓.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Arc d'exorcisme</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Effets :</color>\n<color=#ffffff73>L’attribut secondaire fournit de l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>.</color>\n<color=#ffffff73>L’effet du passif augmente l'</color> <color=#ffd780>ATQ</color> <color=#ffffff73>des</color> <color=#ffd780>attaques normales</color> <color=#ffffff73>et</color> <color=#ffd780>chargées</color> <color=#ffffff73>lorsqu’elles touchent le point faible de l'ennemi.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Grâce à l'effet du passif de l'Arc d'exorcisme, les</color> <color=#ffd780>DGT</color> <color=#ffffff73>causés par les</color> <color=#ffd780>attaques normales</color> <color=#ffffff73>et</color> <color=#ffd780>chargées</color> <color=#ffffff73>augmentent si l'</color> <color=#ffd780>énergie</color> <color=#ffffff73>de Ganyu est à</color> <color=#ffd780>100 %</color> <color=#ffffff73>. Cette arme s'avère donc utile dans un style de jeu basé sur les</color> <color=#ffd780>attaques chargées</color> <color=#ffffff73>.</color>\n<color=#ffffff>Source(s) :</color>\n<color=#ffffff73>Forge.</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2013,
+        "name": "Arc de chasse verdoyant",
+        "desc": "Un arc noble de couleur verte qui appartenait autrefois à un chasseur.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/苍翠猎弓.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Arc de chasse verdoyant</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Effets :</color>\n<color=#ffffff73>L’attribut secondaire fournit du</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>.</color>\n<color=#ffffff73>Le passif peut générer un cyclone qui attire les ennemis et leur inflige des</color> <color=#ffd780>DGT</color> <color=#ffffff73>proportionnels à l'</color> <color=#ffd780>ATQ</color> <color=#ffffff73>.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>apporté par l'Arc de chasse verdoyant fait écho au</color> <color=#ffd780>bonus de DGT CRIT</color> <color=#ffffff73>que Ganyu reçoit lors de son ascension.</color>\n<color=#ffffff73>Le passif de cette arme a 50 % de chances de se déclencher à la suite d'</color> <color=#ffd780>attaques normales</color> <color=#ffffff73>ou</color> <color=#ffd780>chargées</color> <color=#ffffff73>seulement. Elle s'avère donc utile dans un style de jeu basé sur les</color> <color=#ffd780>attaques chargées</color> <color=#ffffff73>.</color>\n<color=#ffffff>Source(s) :</color>\n<color=#ffffff73>Obtenue au Niv.30 du Pass de bataille “Gnostique”.</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Arme(s) 5 étoiles"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2040,
+        "name": "Arc d'Amos",
+        "desc": "Un arc extrêmement ancien. Même si son maître d'origine n'est plus, on sent encore son pouvoir, drainé de tous les êtres de ce monde. Plus l'objet de vos désirs se trouve loin, et meilleure est sa puissance.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/阿莫斯之弓.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Arc d'Amos</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Effets :</color>\n<color=#ffffff73>L’attribut secondaire fournit de l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>.</color>\n<color=#ffffff73>L’effet du passif confère un bonus de</color> <color=#ffd780>DGT</color> <color=#ffffff73>lors des</color> <color=#ffd780>attaques normales</color> <color=#ffffff73>ou</color> <color=#ffd780>chargées</color> <color=#ffffff73>, qui augmente 5 fois après la première flèche d'</color> <color=#ffd780>attaque normale</color> <color=#ffffff73>ou</color> <color=#ffd780>chargée</color> <color=#ffffff73>.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>L'Arc d'Amos est l’arme signature de Ganyu.</color>\n<color=#ffffff>Source(s) :</color>\n<color=#ffffff73>Vœux événements d'arme.</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1936,
+        "name": "Étoile polaire",
+        "desc": "Un arc immaculé aussi tranchant que les glaces éternelles des hivers les plus froids.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/冬极白星.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Etoile polaire</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Effets :</color>\n<color=#ffffff73>L’attribut secondaire fournit du</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>.</color>\n<color=#ffffff73>L’effet du passif augmente les</color> <color=#ffd780>DGT</color> <color=#ffffff73>causés par la</color> <color=#ffd780>compétence</color> <color=#ffffff73>et le</color> <color=#ffd780>déchaînement élémentaires</color> <color=#ffffff73>.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Le passif de l'Etoile polaire permet d'acquérir des cumuls d'étoile cendrée à chaque fois qu'un ennemi est touché par la</color> <color=#ffd780>compétence</color> <color=#ffffff73>ou le</color> <color=#ffd780>déchaînement élémentaire</color> <color=#ffffff73>. Chaque cumul permet d'augmenter l'</color> <color=#ffd780>ATQ</color> <color=#ffffff73>.</color>\n<color=#ffffff73>Le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>apporté par l'Étoile polaire fait écho au</color> <color=#ffd780>bonus de DGT CRIT</color> <color=#ffffff73>que Ganyu reçoit lors de son ascension.</color>\n<color=#ffffff>Source(s) :</color>\n<color=#ffffff73>Vœux événements d'arme.</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1956,
+        "name": "Ailes de la Voûte d'Azur",
+        "desc": "Un grand arc qui symbolise l'affiliation de Dvalin à Barbatos. Fort de la puissance du ciel et du vent, le son qu'il produit lors de la libération de la flèche est une vraie musique aux oreilles de l'Archon Anémo.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之翼.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Ailes de la Voûte d'Azur</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Effets :</color>\n<color=#ffffff73>L’attribut secondaire fournit du</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>.</color>\n<color=#ffffff73>L’effet du passif augmente les</color> <color=#ffd780>DGT CRIT</color> <color=#ffffff73>et donne la possibilité d'infliger des</color> <color=#ffd780>DGT physiques de zone</color> <color=#ffffff73>.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Les</color> <color=#ffd780>DGT physiques de zone</color> <color=#ffffff73>infligés par le passif de l'arme sont proportionnels à l'</color> <color=#ffd780>ATQ</color> <color=#ffffff73>.</color>\n<color=#ffffff73>Le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>apporté par les Ailes de la Voûte d'Azur fait écho au</color> <color=#ffd780>bonus de DGT CRIT</color> <color=#ffffff73>que Ganyu reçoit lors de son ascension.</color>\n<color=#ffffff>Source(s) :</color>\n<color=#ffffff73>Disponible sur toutes les bannières.</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Recommandations d'artéfacts"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Statistique des artéfacts"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/1387f1512524772db99ae30b6303f939_5072609172935942900.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>ATQ / Maîtrise élémentaire</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/56451470fe75f710b812ac28e226273b_5774236690802856497.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>ATQ /</color> <color=#99ffff>Bonus de DGT Cryo</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/8bc07934c9290b83751c7fa183a43ab7_32021027934025390.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>ATQ / Taux CRIT / DGT CRIT</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Set(s) de 4 pièces"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2081,
+        "name": "Bande vagabonde",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Bande vagabonde</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Bonus de set :</color>\n<color=#ffffff73>Le set de 2 pièces augmente la</color> <color=#ffd780>maîtrise élémentaire</color> <color=#ffffff73>de</color> <color=#ffd780>80 pts</color> <color=#ffffff73>.</color>\n<color=#ffffff73>Le set de 4 pièces augmente les</color> <color=#ffd780>DGT</color> <color=#ffffff73>infligés par les</color> <color=#ffd780>attaques chargées</color> <color=#ffffff73>de</color> <color=#ffd780>35 %</color> <color=#ffffff73>.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Ce set augmente la</color> <color=#ffd780>maîtrise élémentaire</color> <color=#ffffff73>, ce qui peut être idéal dans une équipe de</color> <color=#ff9999>Fusion</color> <color=#ffffff73>.</color>\n<color=#ffffff73>Le passif du set de 4 pièces ne se déclenche que lorsque le personnage manie un arc ou un catalyseur. C'est idéal pour un style de jeu basé sur les</color> <color=#ffd780>attaques chargées</color> <color=#ffffff73>.</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2062,
+        "name": "Briseur de glace",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Blizzard Strayer/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Briseur de glace</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Bonus de set :</color>\n<color=#ffffff73>Le set de 2 pièces confère un bonus de</color> <color=#99ffff>DGT Cryo</color> <color=#ffffff73>de 15 %.</color>\n<color=#ffffff73>Le set de 4 pièces augmente le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>de 20 % lorsque le personnage attaque un ennemi affecté par l’élément</color> <color=#99ffff>Cryo</color> <color=#ffffff73>.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Ce set se focalise sur l'augmentation des</color> <color=#ffd780>DGT</color> <color=#ffffff73>personnels de Ganyu et est idéal pour une équipe</color> <color=#99ffff>Gel</color> <color=#ffffff73>car le set de 4 pièces augmente le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>de 40 % au total si l'ennemi est</color> <color=#99ffff>gelé</color> <color=#ffffff73>.</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2098,
+        "name": "Réminiscence nostalgique",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Réminiscence nostalgique</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Bonus de set :</color>\n<color=#ffffff73>Le set de 2 pièces confère un bonus d'</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de</color> <color=#ffffff73>18 %.</color>\n<color=#ffffff73>Le set de 4 pièces augmente les</color> <color=#ffd780>DGT</color> <color=#ffffff73>lors d'une</color> <color=#ffd780>attaque normale/chargée/plongeante</color> <color=#ffffff73>à la suite de l'utilisation de la</color> <color=#ffd780>compétence élémentaire</color> <color=#ffffff73>.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Ce set est idéal pour un style de jeu basé sur les</color> <color=#ffd780>attaques chargées</color> <color=#ffffff73>.</color>\n<color=#ffffff73>Cependant, l'utilisation de la</color> <color=#ffd780>compétence élémentaire</color> <color=#ffffff73>diminue la quantité d'</color> <color=#ffd780>énergie</color> <color=#ffffff73>du personnage, c'est pourquoi le</color> <color=#ffd780>déchaînement élémentaire</color> <color=#ffffff73>ne sera pas utilisable souvent.</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Set(s) de 2 pièces / 2 pièces"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2062,
+        "name": "Briseur de glace",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Blizzard Strayer/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2075,
+        "name": "Ancien rituel royal",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2095,
+        "name": "Rideau du Gladiateur",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2098,
+        "name": "Réminiscence nostalgique",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2097,
+        "name": "Au-delà cinabrin",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Vermillion Hereafter/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2076,
+        "name": "Échos d'une offrande",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/flower_of_life_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Briseur de glace / Ancien rituel royal / Rideau du gladiateur / Réminiscence nostalgique / Au-delà cinabrin / Échos d’une offrande</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Bonus de set :</color>\n<color=#ffffff73>Le set de 2 pièces “Briseur de glace” confère un</color> <color=#99ffff>bonus de DGT Cryo</color> <color=#ffffff73>de 15 %.</color>\n<color=#ffffff73>Le set de deux pièces “Ancien rituel royal” augmente les</color> <color=#ffd780>DGT</color> <color=#ffffff73>infligés par le</color> <color=#ffd780>déchaînement élémentaire</color> <color=#ffffff73>de 20 %.</color>\n<color=#ffffff73>Le set de deux pièces “Rideau du gladiateur” augmente l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de 18 %.</color>\n<color=#ffffff73>Le set de deux pièces “Réminiscence nostalgique” augmente l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de 18 %.</color>\n<color=#ffffff73>Le set de deux pièces “Au-delà cinabrin” augmente l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de 18%.</color>\n<color=#ffffff73>Le set de deux pièces “Échos d’une offrande” augmente l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de 18 %.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Utilisez n'importe quelle combinaison des sets 2 pièces / 2 pièces ci-dessus pour maximiser l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>, les</color> <color=#99ffff>DGT Cryo</color> <color=#ffffff73>, le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>et les</color> <color=#ffd780>DGT CRIT</color> <color=#ffffff73>de Ganyu. Ces combinaisons sont optimales pour des équipes</color> <color=#99ffff>gel</color> <color=#ffffff73>ou</color> <color=#99ffff>Cryo</color> <color=#ffffff73>.</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2062,
+        "name": "Briseur de glace",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Blizzard Strayer/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2081,
+        "name": "Bande vagabonde",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2673,
+        "name": "Rêve doré",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/31/152708310/ae8a2c6f24df66e1bd7cc2dbd83d330d_4344893401312889264.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Fleur du paradis perdu",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/09/152708310/50ce09dfa5a91a33aa9cedfb15bcf2d1_1550121477098472457.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2095,
+        "name": "Rideau du Gladiateur",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2098,
+        "name": "Réminiscence nostalgique",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2097,
+        "name": "Au-delà cinabrin",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Vermillion Hereafter/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2076,
+        "name": "Échos d'une offrande",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Briseur de glace / Bande vagabonde / Rêve doré / Fleur du paradis perdu / Rideau du gladiateur / Réminiscence nostalgique / Au-delà cinabrin / Échos d’une offrande</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Bonus de set :</color>\n<color=#ffffff73>Le set de 2 pièces “Briseur de glace” confère un</color> <color=#99ffff>bonus de DGT Cryo</color> <color=#ffffff73>de 15 %.</color>\n<color=#ffffff73>Le set de deux pièces “Bande vagabonde” augmente la</color> <color=#ffd780>maîtrise élémentaire</color> <color=#ffffff73>de 80 pts.</color>\n<color=#ffffff73>Le set de deux pièces \"Rêve doré\" augmente la</color> <color=#ffd780>maîtrise élémentaire</color> <color=#ffffff73>de 80 pts.</color>\n<color=#ffffff73>Le set de deux pièces \"Fleur du paradis perdu\" augmente la</color> <color=#ffd780>maîtrise élémentaire</color> <color=#ffffff73>de 80 pts.</color>\n<color=#ffffff73>Le set de deux pièces “Rideau du gladiateur” augmente l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de 18 %.</color>\n<color=#ffffff73>Le set de deux pièces “Réminiscence nostalgique” augmente l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de 18 %.</color>\n<color=#ffffff73>Le set de deux pièces “Au-delà cinabrin” augmente l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de 18%.</color>\n<color=#ffffff73>Le set de deux pièces “Échos d’une offrande” augmente l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de 18 %.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Utilisez n'importe quelle combinaison des sets 2 pièces / 2 pièces ci-dessus pour maximiser l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>, les</color> <color=#99ffff>DGT Cryo</color> <color=#ffffff73>, la</color> <color=#ffd780>maîtrise élémentaire</color> <color=#ffffff73>, le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>et les</color> <color=#ffd780>DGT CRIT</color> <color=#ffffff73>de Ganyu. Ces combinaisons sont optimales pour des équipes</color> <color=#ff9999>fusion</color> <color=#ffffff73>.</color>"
+      }
+    ],
     "summaryList": [
       {
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/constellation_1.png",
@@ -75,6 +690,819 @@
             "text": "La première flèche de givre libérée dans les 30 s suivant l'activation de <color=#ffd780>Trace de Qilin</color> ne requiert pas de charge."
           }
         ]
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/avatar_header.png"
+      },
+      {
+        "key": "Avatar",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/avatar.png"
+      },
+      {
+        "key": "Animation d'inactivité 1",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/158750877/7f7acc9bdabf6fc51b93229cc6c5c28c_1808177081077581927.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Tenue Originale - Allégorie gelée"
+          }
+        ]
+      },
+      {
+        "key": "Animation d'inactivité 2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/158750877/2304b9dfb9ef81b3c825577d4df9ebd6_8362494679724783795.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Tenue Originale - Allégorie gelée"
+          }
+        ]
+      }
+    ],
+    "talent": [
+      {
+        "key": "Attaque normale : Archerie Liutian",
+        "title": "Attaque normale : Archerie Liutian",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/battle_talent_0/battle_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Attaque normale</color>\nEnchaîne jusqu'à 6 tirs consécutifs.\n<color=#ffd780>Attaque chargée</color>\nEffectue un <color=#ffd780>tir visé</color> plus précis et infligeant davantage de DGT.\nLors du tir visé, la puissance du froid vient se concentrer sur la pointe de la flèche. Les effets varient selon le nombre de charges :\n· 1 charge : Tire une flèche glaciale qui inflige des <color=#99ffff>DGT Cryo</color> .\n· 2 charges : Tire une flèche de givre qui inflige des <color=#99ffff>DGT Cryo</color> . Le givre se répand lorsqu'il touche un ennemi, infligeant des <color=#99ffff>DGT Cryo de zone</color> .\n<color=#ffd780>Attaque plongeante</color>\nTire une pluie de flèches depuis les airs et plonge au sol, infligeant des DGT de zone à l'impact."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Niv.",
+            "values": [
+              "Niv.1",
+              "Niv.2",
+              "Niv.3",
+              "Niv.4",
+              "Niv.5",
+              "Niv.6",
+              "Niv.7",
+              "Niv.8",
+              "Niv.9",
+              "Niv.10",
+              "Niv.11"
+            ]
+          },
+          {
+            "key": "DGT 1er coup",
+            "values": [
+              "31.7%",
+              "34.3%",
+              "36.9%",
+              "40.6%",
+              "43.2%",
+              "46.1%",
+              "50.2%",
+              "54.2%",
+              "58.3%",
+              "62.7%",
+              "67.8%"
+            ]
+          },
+          {
+            "key": "DGT 2e coup",
+            "values": [
+              "35.6%",
+              "38.5%",
+              "41.4%",
+              "45.5%",
+              "48.4%",
+              "51.8%",
+              "56.3%",
+              "60.9%",
+              "65.4%",
+              "70.4%",
+              "76.1%"
+            ]
+          },
+          {
+            "key": "DGT 3e coup",
+            "values": [
+              "45.5%",
+              "49.2%",
+              "52.9%",
+              "58.2%",
+              "61.9%",
+              "66.1%",
+              "71.9%",
+              "77.8%",
+              "83.6%",
+              "89.9%",
+              "97.2%"
+            ]
+          },
+          {
+            "key": "DGT 4e coup",
+            "values": [
+              "45.5%",
+              "49.2%",
+              "52.9%",
+              "58.2%",
+              "61.9%",
+              "66.1%",
+              "71.9%",
+              "77.8%",
+              "83.6%",
+              "89.9%",
+              "97.2%"
+            ]
+          },
+          {
+            "key": "DGT 5e coup",
+            "values": [
+              "48.3%",
+              "52.2%",
+              "56.1%",
+              "61.7%",
+              "65.6%",
+              "70.1%",
+              "76.3%",
+              "82.5%",
+              "88.6%",
+              "95.4%",
+              "103.1%"
+            ]
+          },
+          {
+            "key": "DGT 6e coup",
+            "values": [
+              "57.6%",
+              "62.3%",
+              "67%",
+              "73.7%",
+              "78.4%",
+              "83.8%",
+              "91.1%",
+              "98.5%",
+              "105.9%",
+              "113.9%",
+              "123.1%"
+            ]
+          },
+          {
+            "key": "DGT tir visé",
+            "values": [
+              "43.9%",
+              "47.4%",
+              "51%",
+              "56.1%",
+              "59.7%",
+              "63.8%",
+              "69.4%",
+              "75%",
+              "80.6%",
+              "86.7%",
+              "92.8%"
+            ]
+          },
+          {
+            "key": "DGT 1e charge",
+            "values": [
+              "124%",
+              "133%",
+              "143%",
+              "155%",
+              "164%",
+              "174%",
+              "186%",
+              "198%",
+              "211%",
+              "223%",
+              "236%"
+            ]
+          },
+          {
+            "key": "DGT flèche de givre",
+            "values": [
+              "128%",
+              "138%",
+              "147%",
+              "160%",
+              "170%",
+              "179%",
+              "192%",
+              "205%",
+              "218%",
+              "230%",
+              "243%"
+            ]
+          },
+          {
+            "key": "DGT zone de givre",
+            "values": [
+              "218%",
+              "234%",
+              "250%",
+              "272%",
+              "288%",
+              "305%",
+              "326%",
+              "348%",
+              "370%",
+              "392%",
+              "413%"
+            ]
+          },
+          {
+            "key": "DGT durant la chute",
+            "values": [
+              "56.8%",
+              "61.5%",
+              "66.1%",
+              "72.7%",
+              "77.3%",
+              "82.6%",
+              "89.9%",
+              "97.1%",
+              "104.4%",
+              "112.3%",
+              "120.3%"
+            ]
+          },
+          {
+            "key": "DGT chute basse/élevée",
+            "values": [
+              "114%/142%",
+              "123%/154%",
+              "132%/165%",
+              "145%/182%",
+              "155%/193%",
+              "165%/206%",
+              "180%/225%",
+              "194%/243%",
+              "209%/261%",
+              "225%/281%",
+              "241%/300%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 76,
+              "name": "Enseignement de la Diligence",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Conquérir les montagnes et les mers, aspirer à la richesse et à la prospérité... Tout est possible lorsqu'on travaille dur pour atteindre son objectif.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Diligence_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1876,
+              "name": "Nectar de Fleur mensongère",
+              "desc": "Nectar extrait du pistil d'une Fleur mensongère. Il contient des traces d'éléments.<br/>Son goût rappelle celui de la fleur sucrante.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Whopperflower Nectar_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 75,
+              "name": "Guide de la Diligence",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Il coule dans les veines des Liyuéens, qui deviennent capables de transformer la roche en or grâce à lui. La prospérité de son port commercial n'est guère étonnante.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Diligence_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 722,
+              "name": "Nectar miroitant",
+              "desc": "Un nectar de Fleur mensongère concentré en éléments.<br/>Toute la communauté scientifique s'accorde généralement sur le fait que les Fleurs mensongères occupent une place à part parmi les plantes élémentaires, mais nombre d'interrogations demeurent quant à ses habitudes prédatrices.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 75,
+              "name": "Guide de la Diligence",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Il coule dans les veines des Liyuéens, qui deviennent capables de transformer la roche en or grâce à lui. La prospérité de son port commercial n'est guère étonnante.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Diligence_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 722,
+              "name": "Nectar miroitant",
+              "desc": "Un nectar de Fleur mensongère concentré en éléments.<br/>Toute la communauté scientifique s'accorde généralement sur le fait que les Fleurs mensongères occupent une place à part parmi les plantes élémentaires, mais nombre d'interrogations demeurent quant à ses habitudes prédatrices.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 75,
+              "name": "Guide de la Diligence",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Il coule dans les veines des Liyuéens, qui deviennent capables de transformer la roche en or grâce à lui. La prospérité de son port commercial n'est guère étonnante.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Diligence_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 722,
+              "name": "Nectar miroitant",
+              "desc": "Un nectar de Fleur mensongère concentré en éléments.<br/>Toute la communauté scientifique s'accorde généralement sur le fait que les Fleurs mensongères occupent une place à part parmi les plantes élémentaires, mais nombre d'interrogations demeurent quant à ses habitudes prédatrices.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 75,
+              "name": "Guide de la Diligence",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Il coule dans les veines des Liyuéens, qui deviennent capables de transformer la roche en or grâce à lui. La prospérité de son port commercial n'est guère étonnante.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Diligence_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 722,
+              "name": "Nectar miroitant",
+              "desc": "Un nectar de Fleur mensongère concentré en éléments.<br/>Toute la communauté scientifique s'accorde généralement sur le fait que les Fleurs mensongères occupent une place à part parmi les plantes élémentaires, mais nombre d'interrogations demeurent quant à ses habitudes prédatrices.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 74,
+              "name": "Philosophie de la Diligence",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Les Liyuéens croient que chacun peut se faire une place sur la terre des dieux grâce à sa sagesse et à sa force, mais aussi à la sueur de son front.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Diligence_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 372,
+              "name": "Nectar élémentaire",
+              "desc": "Un nectar de Fleur mensongère épais et collant, empli d'énergie.<br/>La Fleur mensongère, comme son nom l'indique, trompe sa proie pour s'alimenter – peut-être dans le but d'évoluer vers une forme plus puissante ?",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 969,
+              "name": "Ombre du guerrier",
+              "desc": "Un fragment de pouvoir que vous avez obtenu en battant Tartaglia, qui avait libéré la puissance de son œil maléfique.<br/>Cet objet est le résultat d'une volonté de combattre qui s'est aiguisée au cours d'innombrables massacres.<br/>Si le destin existe pour les hommes, alors le sien a sans nul doute été affecté par ces actions. Sinon, comment expliquer qu'il se retrouve toujours au centre de chaque conflit ?",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shadow of the Warrior_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 74,
+              "name": "Philosophie de la Diligence",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Les Liyuéens croient que chacun peut se faire une place sur la terre des dieux grâce à sa sagesse et à sa force, mais aussi à la sueur de son front.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Diligence_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 372,
+              "name": "Nectar élémentaire",
+              "desc": "Un nectar de Fleur mensongère épais et collant, empli d'énergie.<br/>La Fleur mensongère, comme son nom l'indique, trompe sa proie pour s'alimenter – peut-être dans le but d'évoluer vers une forme plus puissante ?",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 969,
+              "name": "Ombre du guerrier",
+              "desc": "Un fragment de pouvoir que vous avez obtenu en battant Tartaglia, qui avait libéré la puissance de son œil maléfique.<br/>Cet objet est le résultat d'une volonté de combattre qui s'est aiguisée au cours d'innombrables massacres.<br/>Si le destin existe pour les hommes, alors le sien a sans nul doute été affecté par ces actions. Sinon, comment expliquer qu'il se retrouve toujours au centre de chaque conflit ?",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shadow of the Warrior_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 74,
+              "name": "Philosophie de la Diligence",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Les Liyuéens croient que chacun peut se faire une place sur la terre des dieux grâce à sa sagesse et à sa force, mais aussi à la sueur de son front.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Diligence_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 372,
+              "name": "Nectar élémentaire",
+              "desc": "Un nectar de Fleur mensongère épais et collant, empli d'énergie.<br/>La Fleur mensongère, comme son nom l'indique, trompe sa proie pour s'alimenter – peut-être dans le but d'évoluer vers une forme plus puissante ?",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 969,
+              "name": "Ombre du guerrier",
+              "desc": "Un fragment de pouvoir que vous avez obtenu en battant Tartaglia, qui avait libéré la puissance de son œil maléfique.<br/>Cet objet est le résultat d'une volonté de combattre qui s'est aiguisée au cours d'innombrables massacres.<br/>Si le destin existe pour les hommes, alors le sien a sans nul doute été affecté par ces actions. Sinon, comment expliquer qu'il se retrouve toujours au centre de chaque conflit ?",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shadow of the Warrior_icon.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 74,
+              "name": "Philosophie de la Diligence",
+              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Les Liyuéens croient que chacun peut se faire une place sur la terre des dieux grâce à sa sagesse et à sa force, mais aussi à la sueur de son front.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Diligence_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 372,
+              "name": "Nectar élémentaire",
+              "desc": "Un nectar de Fleur mensongère épais et collant, empli d'énergie.<br/>La Fleur mensongère, comme son nom l'indique, trompe sa proie pour s'alimenter – peut-être dans le but d'évoluer vers une forme plus puissante ?",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 969,
+              "name": "Ombre du guerrier",
+              "desc": "Un fragment de pouvoir que vous avez obtenu en battant Tartaglia, qui avait libéré la puissance de son œil maléfique.<br/>Cet objet est le résultat d'une volonté de combattre qui s'est aiguisée au cours d'innombrables massacres.<br/>Si le destin existe pour les hommes, alors le sien a sans nul doute été affecté par ces actions. Sinon, comment expliquer qu'il se retrouve toujours au centre de chaque conflit ?",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shadow of the Warrior_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "Couronne de la sagesse",
+              "desc": "Matériau d'amélioration d'aptitude rare.<br/>Un support utilisé dans les temps anciens pour conserver et transmettre le savoir. Bien que de nos jours les connaissances se transmettent de différentes manières, autant orales qu'écrites, cet artéfact n'a pas perdu la moindre once de son pouvoir d'antan.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/battle_talent_0/battle_talent_0.gif"
+      },
+      {
+        "key": "Trace de Qilin",
+        "title": "Trace de Qilin",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/battle_talent_1/battle_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Ganyu dépose un lotus de glace qui inflige des <color=#99ffff>DGT Cryo de zone</color> puis part vite en retraite.\n<color=#ffd780>Lotus de glace</color>\n· Le lotus nargue les ennemis et concentre leurs attaques.\n· Ses PV sont proportionnels aux PV max de Ganyu.\n· Le lotus explose à la fin ou s'il est détruit entre temps, et inflige des <color=#99ffff>DGT Cryo de zone</color> .\n« Vous m'avez aperçue ? Ça doit être une erreur, je suis restée tard au travail. »"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Niv.",
+            "values": [
+              "Niv.1",
+              "Niv.2",
+              "Niv.3",
+              "Niv.4",
+              "Niv.5",
+              "Niv.6",
+              "Niv.7",
+              "Niv.8",
+              "Niv.9",
+              "Niv.10",
+              "Niv.11",
+              "Niv.12",
+              "Niv.13",
+              "Niv.14"
+            ]
+          },
+          {
+            "key": "PV hérités",
+            "values": [
+              "120%",
+              "129%",
+              "138%",
+              "150%",
+              "159%",
+              "168%",
+              "180%",
+              "192%",
+              "204%",
+              "216%",
+              "228%",
+              "240%",
+              "255%"
+            ]
+          },
+          {
+            "key": "DGT compétence",
+            "values": [
+              "132%",
+              "142%",
+              "152%",
+              "165%",
+              "175%",
+              "185%",
+              "198%",
+              "211%",
+              "224%",
+              "238%",
+              "251%",
+              "264%",
+              "281%"
+            ]
+          },
+          {
+            "key": "Durée",
+            "values": [
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s",
+              "6 s"
+            ]
+          },
+          {
+            "key": "Temps de recharge",
+            "values": [
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/battle_talent_1/battle_talent_1.gif"
+      },
+      {
+        "key": "Baptême céleste",
+        "title": "Baptême céleste",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/battle_talent_2/battle_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Condensant les particules présentes dans l'air, Ganyu invoque une perle de glace magique qui exorcise les démons.\nTant qu'elle est active, la perle libère des éclats de glace de façon continue qui infligent des <color=#99ffff>DGT Cryo</color> aux ennemis dans la zone.\nGanyu sait bien sûr comment invoquer une bruine rafraîchissante ; mais quand il s'agit de combattre, la bruine se change en tempête de neige."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Niv.",
+            "values": [
+              "Niv.1",
+              "Niv.2",
+              "Niv.3",
+              "Niv.4",
+              "Niv.5",
+              "Niv.6",
+              "Niv.7",
+              "Niv.8",
+              "Niv.9",
+              "Niv.10",
+              "Niv.11",
+              "Niv.12",
+              "Niv.13",
+              "Niv.14"
+            ]
+          },
+          {
+            "key": "DGT éclats de glace",
+            "values": [
+              "70%",
+              "76%",
+              "81%",
+              "88%",
+              "93%",
+              "98%",
+              "105%",
+              "112%",
+              "119%",
+              "126%",
+              "134%",
+              "141%",
+              "149%",
+              "158%"
+            ]
+          },
+          {
+            "key": "Durée",
+            "values": [
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s"
+            ]
+          },
+          {
+            "key": "Temps de recharge",
+            "values": [
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s"
+            ]
+          },
+          {
+            "key": "Énergie élémentaire",
+            "values": [
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/battle_talent_2/battle_talent_2.gif"
+      },
+      {
+        "key": "Cœur indivisible",
+        "title": "Cœur indivisible",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/const_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Tirer une flèche de givre confère pendant 5 s aux flèches de givre suivantes ainsi qu'aux zones de givre ainsi créées un bonus de 20 % de taux CRIT."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Harmonie du ciel et de la terre",
+        "title": "Harmonie du ciel et de la terre",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/const_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Les personnages déployés se trouvant dans la zone de <color=#ffd780>Baptême céleste</color> obtiennent un <color=#99ffff>bonus de DGT Cryo de 20 %</color> supplémentaires."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Arc de réserve",
+        "title": "Arc de réserve",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/const_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Lorsque vous forgez un arc, 15 % du minerai utilisé vous sera rendu."
+          }
+        ],
+        "attributes": null
       }
     ],
     "voice": [
@@ -1015,1434 +2443,6 @@
               "38.4%",
               "-"
             ]
-          }
-        ]
-      }
-    ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=32&center=1935.62,-52.64&zoom=-2.50",
-    "talent": [
-      {
-        "key": "Attaque normale : Archerie Liutian",
-        "title": "Attaque normale : Archerie Liutian",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/battle_talent_0/battle_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Attaque normale</color>\nEnchaîne jusqu'à 6 tirs consécutifs.\n<color=#ffd780>Attaque chargée</color>\nEffectue un <color=#ffd780>tir visé</color> plus précis et infligeant davantage de DGT.\nLors du tir visé, la puissance du froid vient se concentrer sur la pointe de la flèche. Les effets varient selon le nombre de charges :\n· 1 charge : Tire une flèche glaciale qui inflige des <color=#99ffff>DGT Cryo</color> .\n· 2 charges : Tire une flèche de givre qui inflige des <color=#99ffff>DGT Cryo</color> . Le givre se répand lorsqu'il touche un ennemi, infligeant des <color=#99ffff>DGT Cryo de zone</color> .\n<color=#ffd780>Attaque plongeante</color>\nTire une pluie de flèches depuis les airs et plonge au sol, infligeant des DGT de zone à l'impact."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Niv.",
-            "values": [
-              "Niv.1",
-              "Niv.2",
-              "Niv.3",
-              "Niv.4",
-              "Niv.5",
-              "Niv.6",
-              "Niv.7",
-              "Niv.8",
-              "Niv.9",
-              "Niv.10",
-              "Niv.11"
-            ]
-          },
-          {
-            "key": "DGT 1er coup",
-            "values": [
-              "31.7%",
-              "34.3%",
-              "36.9%",
-              "40.6%",
-              "43.2%",
-              "46.1%",
-              "50.2%",
-              "54.2%",
-              "58.3%",
-              "62.7%",
-              "67.8%"
-            ]
-          },
-          {
-            "key": "DGT 2e coup",
-            "values": [
-              "35.6%",
-              "38.5%",
-              "41.4%",
-              "45.5%",
-              "48.4%",
-              "51.8%",
-              "56.3%",
-              "60.9%",
-              "65.4%",
-              "70.4%",
-              "76.1%"
-            ]
-          },
-          {
-            "key": "DGT 3e coup",
-            "values": [
-              "45.5%",
-              "49.2%",
-              "52.9%",
-              "58.2%",
-              "61.9%",
-              "66.1%",
-              "71.9%",
-              "77.8%",
-              "83.6%",
-              "89.9%",
-              "97.2%"
-            ]
-          },
-          {
-            "key": "DGT 4e coup",
-            "values": [
-              "45.5%",
-              "49.2%",
-              "52.9%",
-              "58.2%",
-              "61.9%",
-              "66.1%",
-              "71.9%",
-              "77.8%",
-              "83.6%",
-              "89.9%",
-              "97.2%"
-            ]
-          },
-          {
-            "key": "DGT 5e coup",
-            "values": [
-              "48.3%",
-              "52.2%",
-              "56.1%",
-              "61.7%",
-              "65.6%",
-              "70.1%",
-              "76.3%",
-              "82.5%",
-              "88.6%",
-              "95.4%",
-              "103.1%"
-            ]
-          },
-          {
-            "key": "DGT 6e coup",
-            "values": [
-              "57.6%",
-              "62.3%",
-              "67%",
-              "73.7%",
-              "78.4%",
-              "83.8%",
-              "91.1%",
-              "98.5%",
-              "105.9%",
-              "113.9%",
-              "123.1%"
-            ]
-          },
-          {
-            "key": "DGT tir visé",
-            "values": [
-              "43.9%",
-              "47.4%",
-              "51%",
-              "56.1%",
-              "59.7%",
-              "63.8%",
-              "69.4%",
-              "75%",
-              "80.6%",
-              "86.7%",
-              "92.8%"
-            ]
-          },
-          {
-            "key": "DGT 1e charge",
-            "values": [
-              "124%",
-              "133%",
-              "143%",
-              "155%",
-              "164%",
-              "174%",
-              "186%",
-              "198%",
-              "211%",
-              "223%",
-              "236%"
-            ]
-          },
-          {
-            "key": "DGT flèche de givre",
-            "values": [
-              "128%",
-              "138%",
-              "147%",
-              "160%",
-              "170%",
-              "179%",
-              "192%",
-              "205%",
-              "218%",
-              "230%",
-              "243%"
-            ]
-          },
-          {
-            "key": "DGT zone de givre",
-            "values": [
-              "218%",
-              "234%",
-              "250%",
-              "272%",
-              "288%",
-              "305%",
-              "326%",
-              "348%",
-              "370%",
-              "392%",
-              "413%"
-            ]
-          },
-          {
-            "key": "DGT durant la chute",
-            "values": [
-              "56.8%",
-              "61.5%",
-              "66.1%",
-              "72.7%",
-              "77.3%",
-              "82.6%",
-              "89.9%",
-              "97.1%",
-              "104.4%",
-              "112.3%",
-              "120.3%"
-            ]
-          },
-          {
-            "key": "DGT chute basse/élevée",
-            "values": [
-              "114%/142%",
-              "123%/154%",
-              "132%/165%",
-              "145%/182%",
-              "155%/193%",
-              "165%/206%",
-              "180%/225%",
-              "194%/243%",
-              "209%/261%",
-              "225%/281%",
-              "241%/300%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 76,
-              "name": "Enseignement de la Diligence",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Conquérir les montagnes et les mers, aspirer à la richesse et à la prospérité... Tout est possible lorsqu'on travaille dur pour atteindre son objectif.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Diligence_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1876,
-              "name": "Nectar de Fleur mensongère",
-              "desc": "Nectar extrait du pistil d'une Fleur mensongère. Il contient des traces d'éléments.<br/>Son goût rappelle celui de la fleur sucrante.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Whopperflower Nectar_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 75,
-              "name": "Guide de la Diligence",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Il coule dans les veines des Liyuéens, qui deviennent capables de transformer la roche en or grâce à lui. La prospérité de son port commercial n'est guère étonnante.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Diligence_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 722,
-              "name": "Nectar miroitant",
-              "desc": "Un nectar de Fleur mensongère concentré en éléments.<br/>Toute la communauté scientifique s'accorde généralement sur le fait que les Fleurs mensongères occupent une place à part parmi les plantes élémentaires, mais nombre d'interrogations demeurent quant à ses habitudes prédatrices.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 75,
-              "name": "Guide de la Diligence",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Il coule dans les veines des Liyuéens, qui deviennent capables de transformer la roche en or grâce à lui. La prospérité de son port commercial n'est guère étonnante.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Diligence_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 722,
-              "name": "Nectar miroitant",
-              "desc": "Un nectar de Fleur mensongère concentré en éléments.<br/>Toute la communauté scientifique s'accorde généralement sur le fait que les Fleurs mensongères occupent une place à part parmi les plantes élémentaires, mais nombre d'interrogations demeurent quant à ses habitudes prédatrices.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 75,
-              "name": "Guide de la Diligence",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Il coule dans les veines des Liyuéens, qui deviennent capables de transformer la roche en or grâce à lui. La prospérité de son port commercial n'est guère étonnante.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Diligence_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 722,
-              "name": "Nectar miroitant",
-              "desc": "Un nectar de Fleur mensongère concentré en éléments.<br/>Toute la communauté scientifique s'accorde généralement sur le fait que les Fleurs mensongères occupent une place à part parmi les plantes élémentaires, mais nombre d'interrogations demeurent quant à ses habitudes prédatrices.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 75,
-              "name": "Guide de la Diligence",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Il coule dans les veines des Liyuéens, qui deviennent capables de transformer la roche en or grâce à lui. La prospérité de son port commercial n'est guère étonnante.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Diligence_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 722,
-              "name": "Nectar miroitant",
-              "desc": "Un nectar de Fleur mensongère concentré en éléments.<br/>Toute la communauté scientifique s'accorde généralement sur le fait que les Fleurs mensongères occupent une place à part parmi les plantes élémentaires, mais nombre d'interrogations demeurent quant à ses habitudes prédatrices.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shimmering Nectar_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 74,
-              "name": "Philosophie de la Diligence",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Les Liyuéens croient que chacun peut se faire une place sur la terre des dieux grâce à sa sagesse et à sa force, mais aussi à la sueur de son front.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Diligence_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 372,
-              "name": "Nectar élémentaire",
-              "desc": "Un nectar de Fleur mensongère épais et collant, empli d'énergie.<br/>La Fleur mensongère, comme son nom l'indique, trompe sa proie pour s'alimenter – peut-être dans le but d'évoluer vers une forme plus puissante ?",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 969,
-              "name": "Ombre du guerrier",
-              "desc": "Un fragment de pouvoir que vous avez obtenu en battant Tartaglia, qui avait libéré la puissance de son œil maléfique.<br/>Cet objet est le résultat d'une volonté de combattre qui s'est aiguisée au cours d'innombrables massacres.<br/>Si le destin existe pour les hommes, alors le sien a sans nul doute été affecté par ces actions. Sinon, comment expliquer qu'il se retrouve toujours au centre de chaque conflit ?",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shadow of the Warrior_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 74,
-              "name": "Philosophie de la Diligence",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Les Liyuéens croient que chacun peut se faire une place sur la terre des dieux grâce à sa sagesse et à sa force, mais aussi à la sueur de son front.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Diligence_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 372,
-              "name": "Nectar élémentaire",
-              "desc": "Un nectar de Fleur mensongère épais et collant, empli d'énergie.<br/>La Fleur mensongère, comme son nom l'indique, trompe sa proie pour s'alimenter – peut-être dans le but d'évoluer vers une forme plus puissante ?",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 969,
-              "name": "Ombre du guerrier",
-              "desc": "Un fragment de pouvoir que vous avez obtenu en battant Tartaglia, qui avait libéré la puissance de son œil maléfique.<br/>Cet objet est le résultat d'une volonté de combattre qui s'est aiguisée au cours d'innombrables massacres.<br/>Si le destin existe pour les hommes, alors le sien a sans nul doute été affecté par ces actions. Sinon, comment expliquer qu'il se retrouve toujours au centre de chaque conflit ?",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shadow of the Warrior_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 74,
-              "name": "Philosophie de la Diligence",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Les Liyuéens croient que chacun peut se faire une place sur la terre des dieux grâce à sa sagesse et à sa force, mais aussi à la sueur de son front.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Diligence_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 372,
-              "name": "Nectar élémentaire",
-              "desc": "Un nectar de Fleur mensongère épais et collant, empli d'énergie.<br/>La Fleur mensongère, comme son nom l'indique, trompe sa proie pour s'alimenter – peut-être dans le but d'évoluer vers une forme plus puissante ?",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 969,
-              "name": "Ombre du guerrier",
-              "desc": "Un fragment de pouvoir que vous avez obtenu en battant Tartaglia, qui avait libéré la puissance de son œil maléfique.<br/>Cet objet est le résultat d'une volonté de combattre qui s'est aiguisée au cours d'innombrables massacres.<br/>Si le destin existe pour les hommes, alors le sien a sans nul doute été affecté par ces actions. Sinon, comment expliquer qu'il se retrouve toujours au centre de chaque conflit ?",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shadow of the Warrior_icon.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 74,
-              "name": "Philosophie de la Diligence",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>Le goût du travail représente l'essence du Pays de la Roche.<br/>Les Liyuéens croient que chacun peut se faire une place sur la terre des dieux grâce à sa sagesse et à sa force, mais aussi à la sueur de son front.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Diligence_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 372,
-              "name": "Nectar élémentaire",
-              "desc": "Un nectar de Fleur mensongère épais et collant, empli d'énergie.<br/>La Fleur mensongère, comme son nom l'indique, trompe sa proie pour s'alimenter – peut-être dans le but d'évoluer vers une forme plus puissante ?",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Energy Nectar_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 969,
-              "name": "Ombre du guerrier",
-              "desc": "Un fragment de pouvoir que vous avez obtenu en battant Tartaglia, qui avait libéré la puissance de son œil maléfique.<br/>Cet objet est le résultat d'une volonté de combattre qui s'est aiguisée au cours d'innombrables massacres.<br/>Si le destin existe pour les hommes, alors le sien a sans nul doute été affecté par ces actions. Sinon, comment expliquer qu'il se retrouve toujours au centre de chaque conflit ?",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shadow of the Warrior_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "Couronne de la sagesse",
-              "desc": "Matériau d'amélioration d'aptitude rare.<br/>Un support utilisé dans les temps anciens pour conserver et transmettre le savoir. Bien que de nos jours les connaissances se transmettent de différentes manières, autant orales qu'écrites, cet artéfact n'a pas perdu la moindre once de son pouvoir d'antan.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/battle_talent_0/battle_talent_0.gif"
-      },
-      {
-        "key": "Trace de Qilin",
-        "title": "Trace de Qilin",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/battle_talent_1/battle_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Ganyu dépose un lotus de glace qui inflige des <color=#99ffff>DGT Cryo de zone</color> puis part vite en retraite.\n<color=#ffd780>Lotus de glace</color>\n· Le lotus nargue les ennemis et concentre leurs attaques.\n· Ses PV sont proportionnels aux PV max de Ganyu.\n· Le lotus explose à la fin ou s'il est détruit entre temps, et inflige des <color=#99ffff>DGT Cryo de zone</color> .\n« Vous m'avez aperçue ? Ça doit être une erreur, je suis restée tard au travail. »"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Niv.",
-            "values": [
-              "Niv.1",
-              "Niv.2",
-              "Niv.3",
-              "Niv.4",
-              "Niv.5",
-              "Niv.6",
-              "Niv.7",
-              "Niv.8",
-              "Niv.9",
-              "Niv.10",
-              "Niv.11",
-              "Niv.12",
-              "Niv.13",
-              "Niv.14"
-            ]
-          },
-          {
-            "key": "PV hérités",
-            "values": [
-              "120%",
-              "129%",
-              "138%",
-              "150%",
-              "159%",
-              "168%",
-              "180%",
-              "192%",
-              "204%",
-              "216%",
-              "228%",
-              "240%",
-              "255%"
-            ]
-          },
-          {
-            "key": "DGT compétence",
-            "values": [
-              "132%",
-              "142%",
-              "152%",
-              "165%",
-              "175%",
-              "185%",
-              "198%",
-              "211%",
-              "224%",
-              "238%",
-              "251%",
-              "264%",
-              "281%"
-            ]
-          },
-          {
-            "key": "Durée",
-            "values": [
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s",
-              "6 s"
-            ]
-          },
-          {
-            "key": "Temps de recharge",
-            "values": [
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/battle_talent_1/battle_talent_1.gif"
-      },
-      {
-        "key": "Baptême céleste",
-        "title": "Baptême céleste",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/battle_talent_2/battle_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Condensant les particules présentes dans l'air, Ganyu invoque une perle de glace magique qui exorcise les démons.\nTant qu'elle est active, la perle libère des éclats de glace de façon continue qui infligent des <color=#99ffff>DGT Cryo</color> aux ennemis dans la zone.\nGanyu sait bien sûr comment invoquer une bruine rafraîchissante ; mais quand il s'agit de combattre, la bruine se change en tempête de neige."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Niv.",
-            "values": [
-              "Niv.1",
-              "Niv.2",
-              "Niv.3",
-              "Niv.4",
-              "Niv.5",
-              "Niv.6",
-              "Niv.7",
-              "Niv.8",
-              "Niv.9",
-              "Niv.10",
-              "Niv.11",
-              "Niv.12",
-              "Niv.13",
-              "Niv.14"
-            ]
-          },
-          {
-            "key": "DGT éclats de glace",
-            "values": [
-              "70%",
-              "76%",
-              "81%",
-              "88%",
-              "93%",
-              "98%",
-              "105%",
-              "112%",
-              "119%",
-              "126%",
-              "134%",
-              "141%",
-              "149%",
-              "158%"
-            ]
-          },
-          {
-            "key": "Durée",
-            "values": [
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s"
-            ]
-          },
-          {
-            "key": "Temps de recharge",
-            "values": [
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s"
-            ]
-          },
-          {
-            "key": "Énergie élémentaire",
-            "values": [
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/battle_talent_2/battle_talent_2.gif"
-      },
-      {
-        "key": "Cœur indivisible",
-        "title": "Cœur indivisible",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/const_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Tirer une flèche de givre confère pendant 5 s aux flèches de givre suivantes ainsi qu'aux zones de givre ainsi créées un bonus de 20 % de taux CRIT."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Harmonie du ciel et de la terre",
-        "title": "Harmonie du ciel et de la terre",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/const_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Les personnages déployés se trouvant dans la zone de <color=#ffd780>Baptême céleste</color> obtiennent un <color=#99ffff>bonus de DGT Cryo de 20 %</color> supplémentaires."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Arc de réserve",
-        "title": "Arc de réserve",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/const_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Lorsque vous forgez un arc, 15 % du minerai utilisé vous sera rendu."
-          }
-        ],
-        "attributes": null
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Nom",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Ganyu</color>"
-          }
-        ]
-      },
-      {
-        "key": "Anniversaire",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>2/12</color>"
-          }
-        ]
-      },
-      {
-        "key": "Constellation",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Sinae Unicornis</color>"
-          }
-        ]
-      },
-      {
-        "key": "Titre",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Défense fervente</color>"
-          }
-        ]
-      },
-      {
-        "key": "Œil divin",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Cryo</color>"
-          }
-        ]
-      },
-      {
-        "key": "Affiliation",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Pavillon Yuehai</color>"
-          }
-        ]
-      },
-      {
-        "key": "Voix chinoise",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>林簌 (Lin Su)</color>"
-          }
-        ]
-      },
-      {
-        "key": "Voix anglaise",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Jennifer Losi</color>"
-          }
-        ]
-      },
-      {
-        "key": "Voix japonaise",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>上田麗奈 (UEDA Reina)</color>"
-          }
-        ]
-      },
-      {
-        "key": "Voix coréenne",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>김선혜 (Kim Seon-hye)</color>"
-          }
-        ]
-      },
-      {
-        "key": "Plat Spécial",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 1233,
-            "name": "Paix prospère",
-            "desc": "Spécialité culinaire de Ganyu. L'image d'un Qilin au repos suffit à elle seule à calmer les esprits. Ganyu a cuisiné ce plat avec ses meilleures intentions et a également mis de côté l'une de ses fleurs de Qingxin préférées, rien que pour vous.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Prosperous Peace_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Carte du Personnage",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3172,
-            "name": "Ganyu",
-            "desc": "<p><span style=\"color: #FFFFFF\">Ganyu « Défense fervente&nbsp;»</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">« Ce communiqué est attendu pour demain... Je suppose que je pourrais travailler toute la nuit et le finir. »</span></p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/158750877/e5c7d702f8033c4361f3b25a7f0b8b30_2998629243767144980.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Ajout à la version",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>1.2</color>"
-          }
-        ]
-      }
-    ],
-    "customize": [
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Anniversaires",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "2021",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/05/29705491/7aa828511ac242b94bfe14d6c36e1614_3132441366384441583.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>« C'est une version sans sucre d'un dessert à la fleur sucrante, préparé grâce à des ingrédients spécialement récoltés par le voyageur. Vous pouvez y goûter sans crainte ! »</color>"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/05/29705491/a453aa62f08feb3569e13081e1259fa3_1299421923408008609.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Hein ? Je... je me suis assoupie ? Merci de m'avoir réveillée.</color>\n<color=#ffffff73>Il est rare de voir ces fleurs. Elles sont magnifiques, n'est-ce pas ?</color>\n<color=#ffffff73>Il suffit de se reposer un peu ici pour apaiser son esprit... Résultat ? Je me suis endormie.</color>\n<color=#ffffff73>Il y a encore du travail... Asseyons-nous un moment avant de nous y mettre.</color>\n<color=#ffffff73>Merci à hou pour sa magnifique illustration !</color>\n<color=#ffffffd9>Ce que je voudrais vous dire...</color>\n<color=#ffffff73>Mes collègues disent que chez les mortels, les anniversaires sont très importants et qu'il faut tes célébrer. Aller là où on ne va pas d'habitude, dépenser l'argent qu'on ne dépenserait pas en temps normal. Le temps est une notion qui me parait bien insipide. Chaque année lors de mon anniversaire, je suis extrêmement occupée, ce qui n'est pas vraiment différent du reste de l'année.</color>\n<color=#ffffff73>J'ai rêvé de vous cette nuit. Vous étiez en train de sourire et me vous me racontiez quelque chose...</color>\n<color=#ffffff73>Malheureusement, j'ai oublié ce dont il s'agissait à mon réveil.</color>\n<color=#ffffff73>Ou peut-être avez-vous réellement quelque chose à me dire ? Profitons de cette occasion pour nous voir...</color>\n<color=#ffffff73>J'ai préparé pour vous un cadeau selon les coutumes liyuéennes.</color>\n<color=#ffffff73>Voici une graine de fleur de Qingxin, afin que vous puissiez également profiter des joies de planter et de récolter ce que vous semez.</color>\n<color=#ffffff73>Il y a tant de choses à dire sur les plantes et leur entretien qu'il m'est impossible de tout écrire. Attendons de nous voir pour en discuter.</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "2022",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/05/29705491/98d8deed50de9f6c87f727e19b7a76d9_2726950317736452558.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>« Tiens, tu es venu avec des amis ? »</color>"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/05/29705491/422a57fb623fb69aa12b28f1b860a8df_7019444919094240254.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Ces fleurs de Qingxin sont recueillies spécialement pour moi ? Merci ! Je les accepte avec un grand plaisir. Voulez-vous en goûter ? Hmm, non ?</color>\n<color=#ffffff73>On dirait que la plupart des gens n'aiment pas la saveur des fleurs de Qingxin crues.</color>\n<color=#ffffff73>Ah, en parlant avec vous, j'en ai beaucoup mangé sans m'en rendre compte !</color>\n<color=#ffffff73>Il faut absolument éviter que Souffle-Nuages voie cela, sinon elle va encore dire des choses...</color>\n<color=#ffffffd9>Admirer la lune...</color>\n<color=#ffffff73>Ces derniers temps, les autres secrétaires du Pavillon Yuehai travaillent dur et s'occupent de beaucoup d'affaires, c'est pourquoi je suis moins occupée que d'habitude à la fin d'année. J'ai du mal à m'y habituer...</color>\n<color=#ffffff73>J'ai entendu dire qu'il était agréable d'admirer la lune et de se vider l'esprit autour d'une tasse de thé avec un ami après le travail.</color>\n<color=#ffffff73>Que diriez-vous d'essayer cela avec moi sous la brise au clair de lune de cette nuit ?</color>\n<color=#ffffff73>Ne vous en faites pas. Je serai heureuse d'avoir un moment tranquille au milieu de mon emploi du temps chargé.</color>\n<color=#ffffff73>J'ai préparé du thé que je bois souvent au Pavillon Yuehai avec quelques ingrédients apaisants. J'espère que cela vous plaira.</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "2023",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/05/29705491/125a17cac0cc650b6440cfc152755739_2618111522903507714.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>« Bon anniversaire, Ganyu. »</color>\n<color=#ffffff73>« Merci... »</color>\n<color=#ffffff73>« Chaque année, à cette époque, je me rappelle à quel point tu étais mignonne quand tu étais petite. Les gens d'aujourd'hui n'ont pas la chance de voir cela... Tu es toujours occupée au travail cette année ? Tu ferais mieux de prendre un peu de temps pour te détendre... »</color>"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/05/29705491/a275d216bbd407937c21cb53d156869f_903434728442151026.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Ah ! Je... Je me suis encore endormie ? Désolée, vraiment...</color>\n<color=#ffffff73>Je crois que j'ai fait un rêve. Euh, rien d'intéressant, juste des choses de mon enfance.</color>\n<color=#ffffff73>Ensuite... Souffle-Nuages est apparue et a commencé à raconter toutes mes histoires embarrassantes !</color>\n<color=#ffffff73>Emm... Heureusement que ce n'était qu'un rêve...</color>\n<color=#ffffffd9>Pêche...</color>\n<color=#ffffff73>Peut-être que j'ai été très occupée ces derniers temps, je me suis surprise à m'assoupir plus souvent pendant la journée...</color>\n<color=#ffffff73>Les secrétaires du Pavillon Yuehai m'ont encouragée à essayer la pêche pour me changer les idées, parce que ça fait disparaitre la fatigue selon elles. Par contre... si je reste près de l'eau pendant des heures à ne rien faire, j'ai encore plus peur de m'endormir.</color>\n<color=#ffffff73>Mais l'une de mes collègues qui sait très bien pêcher m'a assuré que j'y prendrais plus de plaisir avec des amis.</color>\n<color=#ffffff73>Nous pourrions profiter d'un moment de calme pour parler à cœur ouvert et admirer nos résultats dans des moments tendus lorsque la canne s'agite... Je pense que j'apprécierais vraiment !</color>\n<color=#ffffff73>J'ai préparé la nourriture et les appâts. Si vous êtes disponible, aimeriez-vous venir pêcher avec moi ?</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "2024",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/05/29705491/0f0603b94227c5787cf5f9c1855644b8_3229931091448307137.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>« Hmmm... Celui-ci, et celui-là aussi... Tout a l'air vraiment délicieux. »</color>"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/05/29705491/8ee7cd4be74da375f4548c65486ce943_7445660862234129409.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Non, non, je n'étais pas en train de travailler, juste plongée dans ce recueil de poèmes que je viens d'acheter.</color>\n<color=#ffffff73>Tout le monde autour de moi dit que j'en fais trop et m'a conseillé de lever le pied. Alors, j'ai pensé que la poésie serait une belle échappatoire.</color>\n<color=#ffffff73>Et comme si elle pouvait lire dans mes pensées, mon maître m'a envoyé la version améliorée de son mécanisme du moulin à vent.</color>\n<color=#ffffff73>Tant de bons souvenirs... Mais ce dernier a l'air bien plus élégant et délicat que celui de mon enfance. Enfin, ce n'est peut-être pas le mécanisme qui a changé, mais simplement moi qui ai grandi.</color>\n<color=#ffffffd9>Un instant de répit dans les montagnes</color>\n<color=#ffffff73>Ces derniers temps, j'ai séjourné au Village de Qiaoying pour des raisons professionnelles. Entre deux missions, j'ai eu l'occasion de contempler les magnifiques paysages du Vallon Chenyu, avec ses montagnes qui s'étendent à perte de vue. J'ai également pu me promener en forêt, en compagnie des oiseaux et des animaux.</color>\n<color=#ffffff73>Cette ambiance calme et paisible me rappelle mes jours d'entrainement au Karst Jueyun. Même mes siestes y sont beaucoup plus reposantes.</color>\n<color=#ffffff73>Je me demande si vous prenez le temps de faire des pauses pendant vos aventures. Si l'occasion d'un instant de répit se présente, n'hésitez pas à me rejoindre. Nous pourrions alors prendre le thé, savourer des plats végétariens, et profiter de la sérénité qu'offrent les montagnes et les rivières. Je pourrais même vous chanter des comptines locales que les enfants du coin m'ont apprises.</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "Aperçu des aptitudes"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Les</color> <color=#ffd780>attaques chargées</color> <color=#ffffff73>de Ganyu infligent des</color> <color=#99ffff>DGT Cryo</color> <color=#ffffff73>aux ennemis.</color>\n<color=#ffffff73>Les attaques chargées (2 charges) créent une</color> <color=#ffd780>flèche de givre</color> <color=#ffffff73>qui inflige des</color> <color=#99ffff>DGT Cryo</color> <color=#ffffff73>et des</color> <color=#99ffff>DGT Cryo de zone</color> <color=#ffffff73>lorsque le givre se répand.</color>\n<color=#ffffff73>Après avoir tiré une</color> <color=#ffd780>flèche de givre</color> <color=#ffffff73>, le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>et le</color> <color=#ffd780>DGT CRIT</color> <color=#ffffff73>des</color> <color=#ffd780>flèches de givre</color> <color=#ffffff73>successives sont augmentés.</color>\n<color=#ffffff73>La</color> <color=#ffd780>compétence élémentaire</color> <color=#ffffff73>de Ganyu crée un</color> <color=#ffd780>Lotus de glace</color> <color=#ffffff73>qui nargue les ennemis et leur inflige des</color> <color=#99ffff>DGT Cryo de zone</color> <color=#ffffff73>quand il éclot.</color>\n<color=#ffffff73>La durée du</color> <color=#ffd780>Lotus de glace</color> <color=#ffffff73>est proportionnelle aux</color> <color=#ffd780>PV</color> <color=#ffffff73>max de Ganyu.</color>\n<color=#ffffff73>Le</color> <color=#ffd780>déchaînement élémentaire</color> <color=#ffffff73>de Ganyu (</color> <color=#ffd780>Baptême céleste</color> <color=#ffffff73>) inflige des</color> <color=#99ffff>DGT Cryo de zone</color> <color=#ffffff73>et sa</color> <color=#ffd780>durée</color> <color=#ffffff73>est égale à son</color> <color=#ffd780>TdR</color> <color=#000000>.</color>\n<color=#ffffff73>Il assure un</color> <color=#ffd780>bonus</color> <color=#ffffff73>de</color> <color=#99ffff>DGT Cryo</color> <color=#ffffff73>de</color> <color=#ffd780>20 %</color> <color=#ffffff73>aux membres de l'équipe dans la zone d'effet.</color>\n<color=#ffffff73>Note(s) : La</color> <color=#ffd780>maîtrise élémentaire</color> <color=#ffffff73>influence seulement</color> <color=#99ffff>Brise-Glace</color> <color=#ffffff73>et non la réaction de</color> <color=#99ffff>Gel</color> <color=#ffffff73>, c'est pourquoi l'augmentation de la</color> <color=#ffd780>maîtrise élémentaire</color> <color=#ffffff73>dans une équipe</color> <color=#99ffff>Gel</color> <color=#ffffff73>n'augmentera pas les</color> <color=#ffd780>DGT</color> <color=#ffffff73>infligés par Ganyu.</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "Recommandations d'armes"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Arme(s) 3 étoiles"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1968,
-        "name": "Lance-pierres",
-        "desc": "C'est bien un arc ! Après de nombreuses modifications et améliorations, l'inventeur du lance-pierres ultime s'est finalement retrouvé avec un arc.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/弹弓.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Lance-pierres</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Effets :</color>\n<color=#ffffff73>L’attribut secondaire augmente le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>.</color>\n<color=#ffffff73>L’effet du passif augmente les</color> <color=#ffd780>DGT</color> <color=#ffffff73>des</color> <color=#ffd780>attaques normales ou chargées</color> <color=#ffffff73>.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>apporté par le Lance-pierres fait écho au</color> <color=#ffd780>bonus de DGT Crit</color> <color=#ffffff73>que Ganyu reçoit lors de son ascension.</color>\n<color=#ffffff>Source(s) :</color>\n<color=#ffffff73>Coffres.</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Arme(s) 4 étoiles"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2028,
-        "name": "Lune paisible (prototype)",
-        "desc": "Un prototype d'arc long découvert à la Forge de Rochenoire. Les flèches qu'il décoche sont aussi brillantes que le clair de lune.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/试作澹月.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Lune paisible (prototype)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Effets :</color>\n<color=#ffffff73>L’attribut secondaire fournit de l'</color> <color=#ffd780>ATQ</color> <color=#ffffff73>.</color>\n<color=#ffffff73>L’effet du passif garantit un bonus d'</color> <color=#ffd780>ATQ</color> <color=#ffffff73>supplémentaire si les</color> <color=#ffd780>attaques chargées</color> <color=#ffffff73>touchent un point faible de l'ennemi.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Il est important de prendre en compte le fait que tous les ennemis ne possèdent pas un point faible qui soit visible ou accessible de manière constante.</color>\n<color=#ffffff>Source(s) :</color>\n<color=#ffffff73>Forge.</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1999,
-        "name": "Arc d'exorcisme",
-        "desc": "Cet arc de guerre appartenait autrefois à une certaine prêtresse. Il a été fabriqué avec un doigté exceptionnel, et est à la fois complexe et robuste.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/破魔之弓.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Arc d'exorcisme</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Effets :</color>\n<color=#ffffff73>L’attribut secondaire fournit de l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>.</color>\n<color=#ffffff73>L’effet du passif augmente l'</color> <color=#ffd780>ATQ</color> <color=#ffffff73>des</color> <color=#ffd780>attaques normales</color> <color=#ffffff73>et</color> <color=#ffd780>chargées</color> <color=#ffffff73>lorsqu’elles touchent le point faible de l'ennemi.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Grâce à l'effet du passif de l'Arc d'exorcisme, les</color> <color=#ffd780>DGT</color> <color=#ffffff73>causés par les</color> <color=#ffd780>attaques normales</color> <color=#ffffff73>et</color> <color=#ffd780>chargées</color> <color=#ffffff73>augmentent si l'</color> <color=#ffd780>énergie</color> <color=#ffffff73>de Ganyu est à</color> <color=#ffd780>100 %</color> <color=#ffffff73>. Cette arme s'avère donc utile dans un style de jeu basé sur les</color> <color=#ffd780>attaques chargées</color> <color=#ffffff73>.</color>\n<color=#ffffff>Source(s) :</color>\n<color=#ffffff73>Forge.</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2013,
-        "name": "Arc de chasse verdoyant",
-        "desc": "Un arc noble de couleur verte qui appartenait autrefois à un chasseur.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/苍翠猎弓.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Arc de chasse verdoyant</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Effets :</color>\n<color=#ffffff73>L’attribut secondaire fournit du</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>.</color>\n<color=#ffffff73>Le passif peut générer un cyclone qui attire les ennemis et leur inflige des</color> <color=#ffd780>DGT</color> <color=#ffffff73>proportionnels à l'</color> <color=#ffd780>ATQ</color> <color=#ffffff73>.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>apporté par l'Arc de chasse verdoyant fait écho au</color> <color=#ffd780>bonus de DGT CRIT</color> <color=#ffffff73>que Ganyu reçoit lors de son ascension.</color>\n<color=#ffffff73>Le passif de cette arme a 50 % de chances de se déclencher à la suite d'</color> <color=#ffd780>attaques normales</color> <color=#ffffff73>ou</color> <color=#ffd780>chargées</color> <color=#ffffff73>seulement. Elle s'avère donc utile dans un style de jeu basé sur les</color> <color=#ffd780>attaques chargées</color> <color=#ffffff73>.</color>\n<color=#ffffff>Source(s) :</color>\n<color=#ffffff73>Obtenue au Niv.30 du Pass de bataille “Gnostique”.</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Arme(s) 5 étoiles"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2040,
-        "name": "Arc d'Amos",
-        "desc": "Un arc extrêmement ancien. Même si son maître d'origine n'est plus, on sent encore son pouvoir, drainé de tous les êtres de ce monde. Plus l'objet de vos désirs se trouve loin, et meilleure est sa puissance.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/阿莫斯之弓.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Arc d'Amos</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Effets :</color>\n<color=#ffffff73>L’attribut secondaire fournit de l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>.</color>\n<color=#ffffff73>L’effet du passif confère un bonus de</color> <color=#ffd780>DGT</color> <color=#ffffff73>lors des</color> <color=#ffd780>attaques normales</color> <color=#ffffff73>ou</color> <color=#ffd780>chargées</color> <color=#ffffff73>, qui augmente 5 fois après la première flèche d'</color> <color=#ffd780>attaque normale</color> <color=#ffffff73>ou</color> <color=#ffd780>chargée</color> <color=#ffffff73>.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>L'Arc d'Amos est l’arme signature de Ganyu.</color>\n<color=#ffffff>Source(s) :</color>\n<color=#ffffff73>Vœux événements d'arme.</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1936,
-        "name": "Étoile polaire",
-        "desc": "Un arc immaculé aussi tranchant que les glaces éternelles des hivers les plus froids.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/冬极白星.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Etoile polaire</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Effets :</color>\n<color=#ffffff73>L’attribut secondaire fournit du</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>.</color>\n<color=#ffffff73>L’effet du passif augmente les</color> <color=#ffd780>DGT</color> <color=#ffffff73>causés par la</color> <color=#ffd780>compétence</color> <color=#ffffff73>et le</color> <color=#ffd780>déchaînement élémentaires</color> <color=#ffffff73>.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Le passif de l'Etoile polaire permet d'acquérir des cumuls d'étoile cendrée à chaque fois qu'un ennemi est touché par la</color> <color=#ffd780>compétence</color> <color=#ffffff73>ou le</color> <color=#ffd780>déchaînement élémentaire</color> <color=#ffffff73>. Chaque cumul permet d'augmenter l'</color> <color=#ffd780>ATQ</color> <color=#ffffff73>.</color>\n<color=#ffffff73>Le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>apporté par l'Étoile polaire fait écho au</color> <color=#ffd780>bonus de DGT CRIT</color> <color=#ffffff73>que Ganyu reçoit lors de son ascension.</color>\n<color=#ffffff>Source(s) :</color>\n<color=#ffffff73>Vœux événements d'arme.</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1956,
-        "name": "Ailes de la Voûte d'Azur",
-        "desc": "Un grand arc qui symbolise l'affiliation de Dvalin à Barbatos. Fort de la puissance du ciel et du vent, le son qu'il produit lors de la libération de la flèche est une vraie musique aux oreilles de l'Archon Anémo.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之翼.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Ailes de la Voûte d'Azur</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Effets :</color>\n<color=#ffffff73>L’attribut secondaire fournit du</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>.</color>\n<color=#ffffff73>L’effet du passif augmente les</color> <color=#ffd780>DGT CRIT</color> <color=#ffffff73>et donne la possibilité d'infliger des</color> <color=#ffd780>DGT physiques de zone</color> <color=#ffffff73>.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Les</color> <color=#ffd780>DGT physiques de zone</color> <color=#ffffff73>infligés par le passif de l'arme sont proportionnels à l'</color> <color=#ffd780>ATQ</color> <color=#ffffff73>.</color>\n<color=#ffffff73>Le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>apporté par les Ailes de la Voûte d'Azur fait écho au</color> <color=#ffd780>bonus de DGT CRIT</color> <color=#ffffff73>que Ganyu reçoit lors de son ascension.</color>\n<color=#ffffff>Source(s) :</color>\n<color=#ffffff73>Disponible sur toutes les bannières.</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "Recommandations d'artéfacts"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Statistique des artéfacts"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/1387f1512524772db99ae30b6303f939_5072609172935942900.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>ATQ / Maîtrise élémentaire</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/56451470fe75f710b812ac28e226273b_5774236690802856497.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>ATQ /</color> <color=#99ffff>Bonus de DGT Cryo</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/8bc07934c9290b83751c7fa183a43ab7_32021027934025390.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>ATQ / Taux CRIT / DGT CRIT</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Set(s) de 4 pièces"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2081,
-        "name": "Bande vagabonde",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Bande vagabonde</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Bonus de set :</color>\n<color=#ffffff73>Le set de 2 pièces augmente la</color> <color=#ffd780>maîtrise élémentaire</color> <color=#ffffff73>de</color> <color=#ffd780>80 pts</color> <color=#ffffff73>.</color>\n<color=#ffffff73>Le set de 4 pièces augmente les</color> <color=#ffd780>DGT</color> <color=#ffffff73>infligés par les</color> <color=#ffd780>attaques chargées</color> <color=#ffffff73>de</color> <color=#ffd780>35 %</color> <color=#ffffff73>.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Ce set augmente la</color> <color=#ffd780>maîtrise élémentaire</color> <color=#ffffff73>, ce qui peut être idéal dans une équipe de</color> <color=#ff9999>Fusion</color> <color=#ffffff73>.</color>\n<color=#ffffff73>Le passif du set de 4 pièces ne se déclenche que lorsque le personnage manie un arc ou un catalyseur. C'est idéal pour un style de jeu basé sur les</color> <color=#ffd780>attaques chargées</color> <color=#ffffff73>.</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2062,
-        "name": "Briseur de glace",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Blizzard Strayer/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Briseur de glace</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Bonus de set :</color>\n<color=#ffffff73>Le set de 2 pièces confère un bonus de</color> <color=#99ffff>DGT Cryo</color> <color=#ffffff73>de 15 %.</color>\n<color=#ffffff73>Le set de 4 pièces augmente le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>de 20 % lorsque le personnage attaque un ennemi affecté par l’élément</color> <color=#99ffff>Cryo</color> <color=#ffffff73>.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Ce set se focalise sur l'augmentation des</color> <color=#ffd780>DGT</color> <color=#ffffff73>personnels de Ganyu et est idéal pour une équipe</color> <color=#99ffff>Gel</color> <color=#ffffff73>car le set de 4 pièces augmente le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>de 40 % au total si l'ennemi est</color> <color=#99ffff>gelé</color> <color=#ffffff73>.</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2098,
-        "name": "Réminiscence nostalgique",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Réminiscence nostalgique</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Bonus de set :</color>\n<color=#ffffff73>Le set de 2 pièces confère un bonus d'</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de</color> <color=#ffffff73>18 %.</color>\n<color=#ffffff73>Le set de 4 pièces augmente les</color> <color=#ffd780>DGT</color> <color=#ffffff73>lors d'une</color> <color=#ffd780>attaque normale/chargée/plongeante</color> <color=#ffffff73>à la suite de l'utilisation de la</color> <color=#ffd780>compétence élémentaire</color> <color=#ffffff73>.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Ce set est idéal pour un style de jeu basé sur les</color> <color=#ffd780>attaques chargées</color> <color=#ffffff73>.</color>\n<color=#ffffff73>Cependant, l'utilisation de la</color> <color=#ffd780>compétence élémentaire</color> <color=#ffffff73>diminue la quantité d'</color> <color=#ffd780>énergie</color> <color=#ffffff73>du personnage, c'est pourquoi le</color> <color=#ffd780>déchaînement élémentaire</color> <color=#ffffff73>ne sera pas utilisable souvent.</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Set(s) de 2 pièces / 2 pièces"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2062,
-        "name": "Briseur de glace",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Blizzard Strayer/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2075,
-        "name": "Ancien rituel royal",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2095,
-        "name": "Rideau du Gladiateur",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2098,
-        "name": "Réminiscence nostalgique",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2097,
-        "name": "Au-delà cinabrin",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Vermillion Hereafter/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2076,
-        "name": "Échos d'une offrande",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/flower_of_life_icon.png",
-        "amount": 1,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Briseur de glace / Ancien rituel royal / Rideau du gladiateur / Réminiscence nostalgique / Au-delà cinabrin / Échos d’une offrande</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Bonus de set :</color>\n<color=#ffffff73>Le set de 2 pièces “Briseur de glace” confère un</color> <color=#99ffff>bonus de DGT Cryo</color> <color=#ffffff73>de 15 %.</color>\n<color=#ffffff73>Le set de deux pièces “Ancien rituel royal” augmente les</color> <color=#ffd780>DGT</color> <color=#ffffff73>infligés par le</color> <color=#ffd780>déchaînement élémentaire</color> <color=#ffffff73>de 20 %.</color>\n<color=#ffffff73>Le set de deux pièces “Rideau du gladiateur” augmente l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de 18 %.</color>\n<color=#ffffff73>Le set de deux pièces “Réminiscence nostalgique” augmente l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de 18 %.</color>\n<color=#ffffff73>Le set de deux pièces “Au-delà cinabrin” augmente l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de 18%.</color>\n<color=#ffffff73>Le set de deux pièces “Échos d’une offrande” augmente l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de 18 %.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Utilisez n'importe quelle combinaison des sets 2 pièces / 2 pièces ci-dessus pour maximiser l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>, les</color> <color=#99ffff>DGT Cryo</color> <color=#ffffff73>, le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>et les</color> <color=#ffd780>DGT CRIT</color> <color=#ffffff73>de Ganyu. Ces combinaisons sont optimales pour des équipes</color> <color=#99ffff>gel</color> <color=#ffffff73>ou</color> <color=#99ffff>Cryo</color> <color=#ffffff73>.</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2062,
-        "name": "Briseur de glace",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Blizzard Strayer/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2081,
-        "name": "Bande vagabonde",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2673,
-        "name": "Rêve doré",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/31/152708310/ae8a2c6f24df66e1bd7cc2dbd83d330d_4344893401312889264.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3321,
-        "name": "Fleur du paradis perdu",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/09/152708310/50ce09dfa5a91a33aa9cedfb15bcf2d1_1550121477098472457.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2095,
-        "name": "Rideau du Gladiateur",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Gladiator's Finale/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2098,
-        "name": "Réminiscence nostalgique",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Shimenawa's Reminiscence/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2097,
-        "name": "Au-delà cinabrin",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Vermillion Hereafter/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2076,
-        "name": "Échos d'une offrande",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Echoes of an Offering/flower_of_life_icon.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Briseur de glace / Bande vagabonde / Rêve doré / Fleur du paradis perdu / Rideau du gladiateur / Réminiscence nostalgique / Au-delà cinabrin / Échos d’une offrande</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Bonus de set :</color>\n<color=#ffffff73>Le set de 2 pièces “Briseur de glace” confère un</color> <color=#99ffff>bonus de DGT Cryo</color> <color=#ffffff73>de 15 %.</color>\n<color=#ffffff73>Le set de deux pièces “Bande vagabonde” augmente la</color> <color=#ffd780>maîtrise élémentaire</color> <color=#ffffff73>de 80 pts.</color>\n<color=#ffffff73>Le set de deux pièces \"Rêve doré\" augmente la</color> <color=#ffd780>maîtrise élémentaire</color> <color=#ffffff73>de 80 pts.</color>\n<color=#ffffff73>Le set de deux pièces \"Fleur du paradis perdu\" augmente la</color> <color=#ffd780>maîtrise élémentaire</color> <color=#ffffff73>de 80 pts.</color>\n<color=#ffffff73>Le set de deux pièces “Rideau du gladiateur” augmente l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de 18 %.</color>\n<color=#ffffff73>Le set de deux pièces “Réminiscence nostalgique” augmente l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de 18 %.</color>\n<color=#ffffff73>Le set de deux pièces “Au-delà cinabrin” augmente l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de 18%.</color>\n<color=#ffffff73>Le set de deux pièces “Échos d’une offrande” augmente l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>de 18 %.</color>\n<color=#ffffff>Note(s) :</color>\n<color=#ffffff73>Utilisez n'importe quelle combinaison des sets 2 pièces / 2 pièces ci-dessus pour maximiser l’</color> <color=#ffd780>ATQ</color> <color=#ffffff73>, les</color> <color=#99ffff>DGT Cryo</color> <color=#ffffff73>, la</color> <color=#ffd780>maîtrise élémentaire</color> <color=#ffffff73>, le</color> <color=#ffd780>taux CRIT</color> <color=#ffffff73>et les</color> <color=#ffd780>DGT CRIT</color> <color=#ffffff73>de Ganyu. Ces combinaisons sont optimales pour des équipes</color> <color=#ff9999>fusion</color> <color=#ffffff73>.</color>"
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/avatar_header.png"
-      },
-      {
-        "key": "Avatar",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/甘雨/avatar.png"
-      },
-      {
-        "key": "Animation d'inactivité 1",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/158750877/7f7acc9bdabf6fc51b93229cc6c5c28c_1808177081077581927.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Tenue Originale - Allégorie gelée"
-          }
-        ]
-      },
-      {
-        "key": "Animation d'inactivité 2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/158750877/2304b9dfb9ef81b3c825577d4df9ebd6_8362494679724783795.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Tenue Originale - Allégorie gelée"
           }
         ]
       }

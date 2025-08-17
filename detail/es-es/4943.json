@@ -4,18 +4,109 @@
   "desc": "<p><strong><span style=\"color: #FFFFFF\">Sayu - La Tejón Ninja</span></strong></p><p>A tu lado sin dejar rastro, como el personaje de un sueño.</p>",
   "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/01/29/6b3ba7a3bc965e6fdf30d22d77f691b6_5912831956380332113.png",
   "filterValues": {
-    "cardCharacterChargingPoint": "Energía: 2",
+    "cardCharacterWeaponType": "Mandoble",
     "cardCharacterElement": "Anemo",
-    "cardCharacterObtainingMethod": "Invitación de personaje",
     "cardCharacterCamp": [
       "Inazuma"
     ],
-    "cardCharacterWeaponType": "Mandoble"
+    "cardCharacterObtainingMethod": "Invitación de personaje",
+    "cardCharacterChargingPoint": "Energía: 2"
   },
   "menuId": 17,
   "menuName": "Cartas de personajes",
   "version": 1707705784,
   "components": {
+    "baseInfo": [
+      {
+        "key": "Nombre",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Sayu"
+          }
+        ]
+      },
+      {
+        "key": "Tipo",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Carta de personaje"
+          }
+        ]
+      },
+      {
+        "key": "Afiliación",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Inazuma"
+          }
+        ]
+      },
+      {
+        "key": "Arma",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Mandoble"
+          }
+        ]
+      },
+      {
+        "key": "Vida",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "10"
+          }
+        ]
+      },
+      {
+        "key": "Elemento",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Anemo"
+          }
+        ]
+      },
+      {
+        "key": "Talento",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5053,
+            "name": "Holgazanería innovadora",
+            "desc": "<p><strong><span style=\"color: #FFFFFF\">Sayu: Holgazanería innovadora</span></strong></p><p>“Hoy podría haberme quedado en la cama...”.</p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/08/73555894/16da595c9cab16ed84ded7d6a7088fdf_1155267225759874068.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Cómo se consigue",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Se obtiene tras retar y ganar a Sayu en un duelo amistoso en la taberna Cola de Gato</color>"
+          }
+        ]
+      },
+      {
+        "key": "Información sobre el personaje",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 21,
+            "name": "Sayu",
+            "desc": "Una ninja perteneciente a Los Ocelos. Muy bajita y siempre con aspecto de no haber dormido suficiente.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sayu_icon.png"
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
     "customize": [
       {
         "type": "RichText",
@@ -366,20 +457,6 @@
         "displayStyle": "card"
       }
     ],
-    "tcg": {
-      "headerImgs": [
-        {
-          "imgUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/01/29/6b3ba7a3bc965e6fdf30d22d77f691b6_5912831956380332113.png"
-        },
-        {
-          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/02/12/73555894/771e132d6226c3de0aefbfe3802bbb2b_3891019760183253028.gif"
-        },
-        {
-          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/02/12/73555894/7fb92f1ed9bb70cbfc9e270a12603e7e_7250341482854842610.png"
-        }
-      ],
-      "hp": 10
-    },
     "galleryCharacter": [
       {
         "key": "Habilidad Definitiva",
@@ -396,6 +473,20 @@
         "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/02/12/73555894/1c89a873a43c3ee6946551d42c62eea1_760818621355543356.png"
       }
     ],
+    "tcg": {
+      "headerImgs": [
+        {
+          "imgUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/01/29/6b3ba7a3bc965e6fdf30d22d77f691b6_5912831956380332113.png"
+        },
+        {
+          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/02/12/73555894/771e132d6226c3de0aefbfe3802bbb2b_3891019760183253028.gif"
+        },
+        {
+          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/02/12/73555894/7fb92f1ed9bb70cbfc9e270a12603e7e_7250341482854842610.png"
+        }
+      ],
+      "hp": 10
+    },
     "talent": [
       {
         "key": "Sable ninja de Los Ocelos",
@@ -432,97 +523,6 @@
           }
         ],
         "attributes": []
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Nombre",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Sayu"
-          }
-        ]
-      },
-      {
-        "key": "Tipo",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Carta de personaje"
-          }
-        ]
-      },
-      {
-        "key": "Afiliación",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Inazuma"
-          }
-        ]
-      },
-      {
-        "key": "Arma",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Mandoble"
-          }
-        ]
-      },
-      {
-        "key": "Vida",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "10"
-          }
-        ]
-      },
-      {
-        "key": "Elemento",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Anemo"
-          }
-        ]
-      },
-      {
-        "key": "Talento",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 5053,
-            "name": "Holgazanería innovadora",
-            "desc": "<p><strong><span style=\"color: #FFFFFF\">Sayu: Holgazanería innovadora</span></strong></p><p>“Hoy podría haberme quedado en la cama...”.</p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/08/73555894/16da595c9cab16ed84ded7d6a7088fdf_1155267225759874068.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Cómo se consigue",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Se obtiene tras retar y ganar a Sayu en un duelo amistoso en la taberna Cola de Gato</color>"
-          }
-        ]
-      },
-      {
-        "key": "Información sobre el personaje",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 21,
-            "name": "Sayu",
-            "desc": "Una ninja perteneciente a Los Ocelos. Muy bajita y siempre con aspecto de no haber dormido suficiente.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sayu_icon.png"
-          }
-        ],
-        "isMaterial": true
       }
     ]
   }

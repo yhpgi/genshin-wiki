@@ -6,16 +6,753 @@
   "headerImgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/06/61142474/45c552941667ceea4fabe74013738690_4343700560211542785.png",
   "filterValues": {
     "characterVision": "Kryo",
-    "characterRarity": 4,
     "characterProperty": "ANG",
     "characterRegion": "Fontaine",
-    "characterWeapon": "Katalysator"
+    "characterWeapon": "Katalysator",
+    "characterRarity": 4
   },
   "menuId": 2,
   "menuName": "Figurenhandbuch",
   "version": 1718652245,
   "components": {
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header&lang=de-de#/map/2?shown_types=539,494,500&center=-983.00,-5753.00&zoom=-2.00",
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/27/61142474/805446d2630c32562b557380f66f9c9e_1025595015981483909.png"
+      },
+      {
+        "key": "Figurenzeichnung",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/06/61142474/45c552941667ceea4fabe74013738690_7251130022254572022.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Originale Kleidung - „Durch die Linse alles erkennbar“\nCharlottes Kleidung. „Wenn der Wahrheitsgehalt eines Berichts zu wünschen übrig lässt, war man nicht nah genug dran.“ Das pflegt Charlotte zu sagen, wenn sie über Berichterstattung spricht. Gelegentlich fügt sie dem noch hinzu: „Natürlich kann es auch daran liegen, dass man eine schlechte Linse verwendet.“"
+          }
+        ]
+      },
+      {
+        "key": "Idle-Animation 1",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/07/61142474/3cc45185ee335f2ffc557bac415f6fb1_4314621509182736004.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Originale Kleidung - „Durch die Linse alles erkennbar“"
+          }
+        ]
+      },
+      {
+        "key": "Idle-Animation 2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/07/61142474/eeec01af2a374215cd65e106d9997889_2913181766078277221.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Originale Kleidung - „Durch die Linse alles erkennbar“"
+          }
+        ]
+      },
+      {
+        "key": "Sternbild",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Hualina Veritas"
+          }
+        ]
+      }
+    ],
+    "ascension": [
+      {
+        "key": "St. 1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Vor Aufstieg",
+              "Nach Aufstieg"
+            ]
+          },
+          {
+            "key": "Basis-LP",
+            "values": [
+              "-",
+              "903"
+            ]
+          },
+          {
+            "key": "Basis-ANG",
+            "values": [
+              "-",
+              "15"
+            ]
+          },
+          {
+            "key": "Basis-VTD",
+            "values": [
+              "-",
+              "46"
+            ]
+          },
+          {
+            "key": "ANG%",
+            "values": [
+              "-",
+              "0.0%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "St. 20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Vor Aufstieg",
+              "Nach Aufstieg"
+            ]
+          },
+          {
+            "key": "Basis-LP",
+            "values": [
+              "2319",
+              "2993"
+            ]
+          },
+          {
+            "key": "Basis-ANG",
+            "values": [
+              "38",
+              "48"
+            ]
+          },
+          {
+            "key": "Basis-VTD",
+            "values": [
+              "118",
+              "152"
+            ]
+          },
+          {
+            "key": "ANG%",
+            "values": [
+              "0.0%",
+              "0.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 411,
+            "name": "Shivada-Jade-Splitter",
+            "desc": "Material für den Figurenaufstieg.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4010,
+            "name": "Beryllmuschel",
+            "desc": "<p>Ein schalenartiges Gebilde, das matt schimmert. Es erscheint eher wie ein Produkt kondensierter Elementarenergie, als die Schale eines Lebewesens.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/47685001/c528fed9f65720b1d212e9b5e679ca9d_5047445994194078696.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4072,
+            "name": "Greifendes Zahnrad",
+            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Ein wichtiges Teil für das Getriebe. Wenn es fehlt, funktioniert die entsprechende Einheit nicht mehr.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/0d15f8ce2c281306fbc8e0c3a6315437_4415947670565014598.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "St. 40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Vor Aufstieg",
+              "Nach Aufstieg"
+            ]
+          },
+          {
+            "key": "Basis-LP",
+            "values": [
+              "4484",
+              "4963"
+            ]
+          },
+          {
+            "key": "Basis-ANG",
+            "values": [
+              "72",
+              "80"
+            ]
+          },
+          {
+            "key": "Basis-VTD",
+            "values": [
+              "227",
+              "252"
+            ]
+          },
+          {
+            "key": "ANG%",
+            "values": [
+              "0.0%",
+              "6.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 410,
+            "name": "Shivada-Jade-Bruchstück",
+            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, ...“",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4379,
+            "name": "„Tourbillon-Apparat“",
+            "desc": "<p>Das Herzstück des Experimentellen Feldgenerators.</p><p>Ein präzisionsgefertigtes mechanisches Teil, das in der Lage ist, der Schwerkraft entgegenzuwirken und sich dabei mit einer Geschwindigkeit zu drehen, die mit bloßem Auge praktisch nicht mehr zu erfassen ist.</p><p>In seiner langen Geschichte hat das Forschungsinstitut für kinetische Energie Fontaine schon immer nach einer Möglichkeit gesucht, einer Flut zu trotzen, die einst zahllose Leben hinfort gespült hat und eines Tages erneut die Sonne verdunkeln wird.</p><p>Und man glaubte im Arkhium den Schlüssel zur Erlösung gefunden zu haben; in ihm solle ein Energiepotential schlummern, derartig mächtig, die Fesseln der Erde sprengen zu können.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/27/36893887/589ca2a7c53e2313d971436cf8007838_40744093358651806.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4010,
+            "name": "Beryllmuschel",
+            "desc": "<p>Ein schalenartiges Gebilde, das matt schimmert. Es erscheint eher wie ein Produkt kondensierter Elementarenergie, als die Schale eines Lebewesens.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/47685001/c528fed9f65720b1d212e9b5e679ca9d_5047445994194078696.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4072,
+            "name": "Greifendes Zahnrad",
+            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Ein wichtiges Teil für das Getriebe. Wenn es fehlt, funktioniert die entsprechende Einheit nicht mehr.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/0d15f8ce2c281306fbc8e0c3a6315437_4415947670565014598.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "St. 50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Vor Aufstieg",
+              "Nach Aufstieg"
+            ]
+          },
+          {
+            "key": "Basis-LP",
+            "values": [
+              "5708",
+              "6357"
+            ]
+          },
+          {
+            "key": "Basis-ANG",
+            "values": [
+              "92",
+              "102"
+            ]
+          },
+          {
+            "key": "Basis-VTD",
+            "values": [
+              "290",
+              "322"
+            ]
+          },
+          {
+            "key": "ANG%",
+            "values": [
+              "6.0%",
+              "12.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 410,
+            "name": "Shivada-Jade-Bruchstück",
+            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, ...“",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4379,
+            "name": "„Tourbillon-Apparat“",
+            "desc": "<p>Das Herzstück des Experimentellen Feldgenerators.</p><p>Ein präzisionsgefertigtes mechanisches Teil, das in der Lage ist, der Schwerkraft entgegenzuwirken und sich dabei mit einer Geschwindigkeit zu drehen, die mit bloßem Auge praktisch nicht mehr zu erfassen ist.</p><p>In seiner langen Geschichte hat das Forschungsinstitut für kinetische Energie Fontaine schon immer nach einer Möglichkeit gesucht, einer Flut zu trotzen, die einst zahllose Leben hinfort gespült hat und eines Tages erneut die Sonne verdunkeln wird.</p><p>Und man glaubte im Arkhium den Schlüssel zur Erlösung gefunden zu haben; in ihm solle ein Energiepotential schlummern, derartig mächtig, die Fesseln der Erde sprengen zu können.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/27/36893887/589ca2a7c53e2313d971436cf8007838_40744093358651806.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4010,
+            "name": "Beryllmuschel",
+            "desc": "<p>Ein schalenartiges Gebilde, das matt schimmert. Es erscheint eher wie ein Produkt kondensierter Elementarenergie, als die Schale eines Lebewesens.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/47685001/c528fed9f65720b1d212e9b5e679ca9d_5047445994194078696.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4071,
+            "name": "Mechanisches Stirnrad",
+            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Obwohl es in der Kinematik der Uhrwerk-Mecha bedeutende Durchbrüche gab, konnte die Dynamik bis heute die Fundamente und Regeln nicht erschüttern, die Alain Guillotin vor mehr als vierhundert Jahren aufgestellt hatte.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/8023d5d16d579656f82fd4378358a11b_8223941451665776915.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "St. 60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Vor Aufstieg",
+              "Nach Aufstieg"
+            ]
+          },
+          {
+            "key": "Basis-LP",
+            "values": [
+              "7093",
+              "7572"
+            ]
+          },
+          {
+            "key": "Basis-ANG",
+            "values": [
+              "114",
+              "122"
+            ]
+          },
+          {
+            "key": "Basis-VTD",
+            "values": [
+              "360",
+              "384"
+            ]
+          },
+          {
+            "key": "ANG%",
+            "values": [
+              "12.0%",
+              "12.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 409,
+            "name": "Shivada-Jade-Brocken",
+            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, ...“<br/>„dass ihr den Kummer der ganzen Welt auf den Schultern tragt.“",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4379,
+            "name": "„Tourbillon-Apparat“",
+            "desc": "<p>Das Herzstück des Experimentellen Feldgenerators.</p><p>Ein präzisionsgefertigtes mechanisches Teil, das in der Lage ist, der Schwerkraft entgegenzuwirken und sich dabei mit einer Geschwindigkeit zu drehen, die mit bloßem Auge praktisch nicht mehr zu erfassen ist.</p><p>In seiner langen Geschichte hat das Forschungsinstitut für kinetische Energie Fontaine schon immer nach einer Möglichkeit gesucht, einer Flut zu trotzen, die einst zahllose Leben hinfort gespült hat und eines Tages erneut die Sonne verdunkeln wird.</p><p>Und man glaubte im Arkhium den Schlüssel zur Erlösung gefunden zu haben; in ihm solle ein Energiepotential schlummern, derartig mächtig, die Fesseln der Erde sprengen zu können.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/27/36893887/589ca2a7c53e2313d971436cf8007838_40744093358651806.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4010,
+            "name": "Beryllmuschel",
+            "desc": "<p>Ein schalenartiges Gebilde, das matt schimmert. Es erscheint eher wie ein Produkt kondensierter Elementarenergie, als die Schale eines Lebewesens.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/47685001/c528fed9f65720b1d212e9b5e679ca9d_5047445994194078696.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4071,
+            "name": "Mechanisches Stirnrad",
+            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Obwohl es in der Kinematik der Uhrwerk-Mecha bedeutende Durchbrüche gab, konnte die Dynamik bis heute die Fundamente und Regeln nicht erschüttern, die Alain Guillotin vor mehr als vierhundert Jahren aufgestellt hatte.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/8023d5d16d579656f82fd4378358a11b_8223941451665776915.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "St. 70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Vor Aufstieg",
+              "Nach Aufstieg"
+            ]
+          },
+          {
+            "key": "Basis-LP",
+            "values": [
+              "8317",
+              "8796"
+            ]
+          },
+          {
+            "key": "Basis-ANG",
+            "values": [
+              "134",
+              "142"
+            ]
+          },
+          {
+            "key": "Basis-VTD",
+            "values": [
+              "422",
+              "446"
+            ]
+          },
+          {
+            "key": "ANG%",
+            "values": [
+              "12.0%",
+              "18.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 409,
+            "name": "Shivada-Jade-Brocken",
+            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, ...“<br/>„dass ihr den Kummer der ganzen Welt auf den Schultern tragt.“",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4379,
+            "name": "„Tourbillon-Apparat“",
+            "desc": "<p>Das Herzstück des Experimentellen Feldgenerators.</p><p>Ein präzisionsgefertigtes mechanisches Teil, das in der Lage ist, der Schwerkraft entgegenzuwirken und sich dabei mit einer Geschwindigkeit zu drehen, die mit bloßem Auge praktisch nicht mehr zu erfassen ist.</p><p>In seiner langen Geschichte hat das Forschungsinstitut für kinetische Energie Fontaine schon immer nach einer Möglichkeit gesucht, einer Flut zu trotzen, die einst zahllose Leben hinfort gespült hat und eines Tages erneut die Sonne verdunkeln wird.</p><p>Und man glaubte im Arkhium den Schlüssel zur Erlösung gefunden zu haben; in ihm solle ein Energiepotential schlummern, derartig mächtig, die Fesseln der Erde sprengen zu können.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/27/36893887/589ca2a7c53e2313d971436cf8007838_40744093358651806.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4010,
+            "name": "Beryllmuschel",
+            "desc": "<p>Ein schalenartiges Gebilde, das matt schimmert. Es erscheint eher wie ein Produkt kondensierter Elementarenergie, als die Schale eines Lebewesens.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/47685001/c528fed9f65720b1d212e9b5e679ca9d_5047445994194078696.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4070,
+            "name": "Neuartiges Uhrwerk-Zahnrad",
+            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Die Fortschritte in der Maschinenpräzision und der Materialforschung sind der Schlüssel für den Fortschritt bei den Uhrwerk-Mecha in Fontaine. Unterstützt durch fortschrittliche Gerätschaften besitzt jeder Ingenieur die Fähigkeit, Maschinen herzustellen, die die des Zeitalters des „Herrn der wunderlichen Maschinen“ Guillotin überragen.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/4b604ff986feeaf150418ca94355a65a_1414415110007787420.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "St. 80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Vor Aufstieg",
+              "Nach Aufstieg"
+            ]
+          },
+          {
+            "key": "Basis-LP",
+            "values": [
+              "9541",
+              "10021"
+            ]
+          },
+          {
+            "key": "Basis-ANG",
+            "values": [
+              "154",
+              "161"
+            ]
+          },
+          {
+            "key": "Basis-VTD",
+            "values": [
+              "484",
+              "508"
+            ]
+          },
+          {
+            "key": "ANG%",
+            "values": [
+              "18.0%",
+              "24.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 408,
+            "name": "Shivada-Jade",
+            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, dass ihr den Kummer der ganzen Welt auf den Schultern tragt.“<br/>„Euer Herz brennt sicher vor lauter Hoffnung, wenn ihr meine Kälte aushaltet.“<br/>„So lasst die alte Welt brennen.“",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4379,
+            "name": "„Tourbillon-Apparat“",
+            "desc": "<p>Das Herzstück des Experimentellen Feldgenerators.</p><p>Ein präzisionsgefertigtes mechanisches Teil, das in der Lage ist, der Schwerkraft entgegenzuwirken und sich dabei mit einer Geschwindigkeit zu drehen, die mit bloßem Auge praktisch nicht mehr zu erfassen ist.</p><p>In seiner langen Geschichte hat das Forschungsinstitut für kinetische Energie Fontaine schon immer nach einer Möglichkeit gesucht, einer Flut zu trotzen, die einst zahllose Leben hinfort gespült hat und eines Tages erneut die Sonne verdunkeln wird.</p><p>Und man glaubte im Arkhium den Schlüssel zur Erlösung gefunden zu haben; in ihm solle ein Energiepotential schlummern, derartig mächtig, die Fesseln der Erde sprengen zu können.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/27/36893887/589ca2a7c53e2313d971436cf8007838_40744093358651806.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4010,
+            "name": "Beryllmuschel",
+            "desc": "<p>Ein schalenartiges Gebilde, das matt schimmert. Es erscheint eher wie ein Produkt kondensierter Elementarenergie, als die Schale eines Lebewesens.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/47685001/c528fed9f65720b1d212e9b5e679ca9d_5047445994194078696.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 4070,
+            "name": "Neuartiges Uhrwerk-Zahnrad",
+            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Die Fortschritte in der Maschinenpräzision und der Materialforschung sind der Schlüssel für den Fortschritt bei den Uhrwerk-Mecha in Fontaine. Unterstützt durch fortschrittliche Gerätschaften besitzt jeder Ingenieur die Fähigkeit, Maschinen herzustellen, die die des Zeitalters des „Herrn der wunderlichen Maschinen“ Guillotin überragen.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/4b604ff986feeaf150418ca94355a65a_1414415110007787420.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "St. 90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Vor Aufstieg",
+              "Nach Aufstieg"
+            ]
+          },
+          {
+            "key": "Basis-LP",
+            "values": [
+              "10766",
+              "-"
+            ]
+          },
+          {
+            "key": "Basis-ANG",
+            "values": [
+              "173",
+              "-"
+            ]
+          },
+          {
+            "key": "Basis-VTD",
+            "values": [
+              "546",
+              "-"
+            ]
+          },
+          {
+            "key": "ANG%",
+            "values": [
+              "24.0%",
+              "-"
+            ]
+          }
+        ]
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "Name",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Charlotte"
+          }
+        ]
+      },
+      {
+        "key": "Geburtstag",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "10. April"
+          }
+        ]
+      },
+      {
+        "key": "Sternbilder",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Hualina Veritas"
+          }
+        ]
+      },
+      {
+        "key": "Titel",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Linse der Wahrheit"
+          }
+        ]
+      },
+      {
+        "key": "Göttliches Auge",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Kryo"
+          }
+        ]
+      },
+      {
+        "key": "Zugehörigkeit",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Dampfvogel"
+          }
+        ]
+      },
+      {
+        "key": "Chinesische Stimme",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "阮从青 (Ruan Congqing)"
+          }
+        ]
+      },
+      {
+        "key": "Englische Stimme",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Maya Aoki Tuttle"
+          }
+        ]
+      },
+      {
+        "key": "Japanische Stimme",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "和氣あず未 (Azumi Waki)"
+          }
+        ]
+      },
+      {
+        "key": "Koreanische Stimme",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "신온유 (Shin On-yu)"
+          }
+        ]
+      },
+      {
+        "key": "Spezialzubereitung",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 4585,
+            "name": "Exklusive Geheimnisse – Gourmet-Kolumne",
+            "desc": "<p>Charlottes Spezialzubereitung. Eine kleine Knabberei, die sie dir in die Hand drückt, während du sie auf der Jagd nach der nächsten Exklusivmeldung begleitest. Während du knuspernd den gebratenen Fisch kaust, schaust du zur Seite. Charlotte flaniert fröhlichen Schrittes voran, wodurch sich der Rhythmus ihrer Schritte mit dem des Kauens allmählich überschneiden ... Und obwohl die Neuigkeiten noch nicht druckfertig sind, lassen Freude und Zufriedenheit das Herz bereits höher schlagen.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/19/47685001/ab78573b5c8b3f019c16a7037c80cac5_3688173882012766372.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Figurenkarte",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5153,
+            "name": "Charlotte",
+            "desc": "<p><strong><span style=\"color: #FFFFFF\">Linse der Wahrheit – Charlotte</span></strong></p><p>„Die ehrlichste Berichterstattung, die interessantesten Geschichten!“</p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/12/61142474/c0f6d663949ccf4203fd0005028aad7b_4783914862621860491.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Version der Veröffentlichung",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "4.2"
+          }
+        ]
+      }
+    ],
     "talent": [
       {
         "key": "Standardangriff: Erfassung der kalten Farben",
@@ -873,806 +1610,6 @@
           }
         ],
         "attributes": []
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Name",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Charlotte"
-          }
-        ]
-      },
-      {
-        "key": "Geburtstag",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "10. April"
-          }
-        ]
-      },
-      {
-        "key": "Sternbilder",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Hualina Veritas"
-          }
-        ]
-      },
-      {
-        "key": "Titel",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Linse der Wahrheit"
-          }
-        ]
-      },
-      {
-        "key": "Göttliches Auge",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Kryo"
-          }
-        ]
-      },
-      {
-        "key": "Zugehörigkeit",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Dampfvogel"
-          }
-        ]
-      },
-      {
-        "key": "Chinesische Stimme",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "阮从青 (Ruan Congqing)"
-          }
-        ]
-      },
-      {
-        "key": "Englische Stimme",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Maya Aoki Tuttle"
-          }
-        ]
-      },
-      {
-        "key": "Japanische Stimme",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "和氣あず未 (Azumi Waki)"
-          }
-        ]
-      },
-      {
-        "key": "Koreanische Stimme",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "신온유 (Shin On-yu)"
-          }
-        ]
-      },
-      {
-        "key": "Spezialzubereitung",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 4585,
-            "name": "Exklusive Geheimnisse – Gourmet-Kolumne",
-            "desc": "<p>Charlottes Spezialzubereitung. Eine kleine Knabberei, die sie dir in die Hand drückt, während du sie auf der Jagd nach der nächsten Exklusivmeldung begleitest. Während du knuspernd den gebratenen Fisch kaust, schaust du zur Seite. Charlotte flaniert fröhlichen Schrittes voran, wodurch sich der Rhythmus ihrer Schritte mit dem des Kauens allmählich überschneiden ... Und obwohl die Neuigkeiten noch nicht druckfertig sind, lassen Freude und Zufriedenheit das Herz bereits höher schlagen.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/19/47685001/ab78573b5c8b3f019c16a7037c80cac5_3688173882012766372.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Figurenkarte",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 5153,
-            "name": "Charlotte",
-            "desc": "<p><strong><span style=\"color: #FFFFFF\">Linse der Wahrheit – Charlotte</span></strong></p><p>„Die ehrlichste Berichterstattung, die interessantesten Geschichten!“</p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/12/61142474/c0f6d663949ccf4203fd0005028aad7b_4783914862621860491.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Version der Veröffentlichung",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "4.2"
-          }
-        ]
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/06/61142474/4b8212535fad0607be41250162547107_7518742363733878300.png",
-        "name": "Notwendigkeit der Überprüfung",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Verleiht der Figur das Siegel „Überprüft“, das dieser Figur alle 2s LP in Höhe von 80% von Charlottes ANG wiederherstellt, sobald die Figur durch <color=#ffd780>„Standbild – Umfassende Bestätigung“</color> geheilt wird, hält 6s."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/06/61142474/ccdd795bdba7a0d79868ddfb54499dc0_426915489181351746.png",
-        "name": "Pflicht der Wahrheitssuche",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Erhöht beim Anwenden von <color=#ffd780>Aufnahme – Gefrierpunkt-Komposition</color> , wenn Herr Vérités Angriff 1/2/3 (oder mehr) Gegner trifft, Charlottes ANG 12s lang um 10/20/30%."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/06/61142474/d1cf9afd3481f21b5ec894c5c65557fe_3068089220717337330.png",
-        "name": "Gebot der Unabhängigkeit",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Erhöht die Stufe der Fähigkeit <color=#ffd780>Standbild – Umfassende Bestätigung</color> um 3.\nHöchststufe 15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/06/61142474/b426d7c56bd8b4dce647e525f3ab292b_2155500897368472371.png",
-        "name": "Verantwortung der Ermahnung",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Wenn die Fähigkeit <color=#ffd780>Standbild – Umfassende Bestätigung</color> einen Gegner trifft, der durch „Scharfe Silhouette“ oder „Fokussierter Eindruck“ markiert ist, fügt sie 10% mehr Schaden zu und stellt Charlotte 2 Punkte Elementarenergie wieder her. Diese Wiederherstellung der Elementarenergie kann alle 20s 5-mal ausgelöst werden."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/06/61142474/54adbd6e0af44cff009737afb67b0409_3596380966875977306.png",
-        "name": "Prinzip des Gewissens",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Erhöht die Stufe der Fähigkeit <color=#ffd780>Aufnahme – Gefrierpunkt-Komposition</color> um 3.\nHöchststufe 15."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/06/61142474/ec01f16bacb407bd77f28949f33ecd5b_7787996421055586869.png",
-        "name": "Gleichgewicht von Sachlichkeit und Sensation",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Wenn der Standardangriff oder heftige Schlag der aktiven Figur einen Gegner trifft, der von „Fokussierter Eindruck“ der <color=#ffd780>Fähigkeit Aufnahme – Gefrierpunkt-Komposition</color> markiert wurde, wird Herr Vérité einen abgestimmten Angriff auslösen, der <color=#99ffff>Kryo-Flächenschaden</color> in Höhe von 180% ANG von Charlotte verursacht, und LP der aktiven Figuren in der Angriffsreichweite in Höhe von 42% des ANG von Charlotte wiederherstellen, 6s Abklingzeit. Auf diese Weise verursachter Schaden und Heilung werden als Schaden und Heilung der Spezialfähigkeit von Charlotte betrachtet."
-          }
-        ]
-      }
-    ],
-    "ascension": [
-      {
-        "key": "St. 1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Vor Aufstieg",
-              "Nach Aufstieg"
-            ]
-          },
-          {
-            "key": "Basis-LP",
-            "values": [
-              "-",
-              "903"
-            ]
-          },
-          {
-            "key": "Basis-ANG",
-            "values": [
-              "-",
-              "15"
-            ]
-          },
-          {
-            "key": "Basis-VTD",
-            "values": [
-              "-",
-              "46"
-            ]
-          },
-          {
-            "key": "ANG%",
-            "values": [
-              "-",
-              "0.0%"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "St. 20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Vor Aufstieg",
-              "Nach Aufstieg"
-            ]
-          },
-          {
-            "key": "Basis-LP",
-            "values": [
-              "2319",
-              "2993"
-            ]
-          },
-          {
-            "key": "Basis-ANG",
-            "values": [
-              "38",
-              "48"
-            ]
-          },
-          {
-            "key": "Basis-VTD",
-            "values": [
-              "118",
-              "152"
-            ]
-          },
-          {
-            "key": "ANG%",
-            "values": [
-              "0.0%",
-              "0.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 411,
-            "name": "Shivada-Jade-Splitter",
-            "desc": "Material für den Figurenaufstieg.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4010,
-            "name": "Beryllmuschel",
-            "desc": "<p>Ein schalenartiges Gebilde, das matt schimmert. Es erscheint eher wie ein Produkt kondensierter Elementarenergie, als die Schale eines Lebewesens.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/47685001/c528fed9f65720b1d212e9b5e679ca9d_5047445994194078696.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4072,
-            "name": "Greifendes Zahnrad",
-            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Ein wichtiges Teil für das Getriebe. Wenn es fehlt, funktioniert die entsprechende Einheit nicht mehr.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/0d15f8ce2c281306fbc8e0c3a6315437_4415947670565014598.png",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "key": "St. 40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Vor Aufstieg",
-              "Nach Aufstieg"
-            ]
-          },
-          {
-            "key": "Basis-LP",
-            "values": [
-              "4484",
-              "4963"
-            ]
-          },
-          {
-            "key": "Basis-ANG",
-            "values": [
-              "72",
-              "80"
-            ]
-          },
-          {
-            "key": "Basis-VTD",
-            "values": [
-              "227",
-              "252"
-            ]
-          },
-          {
-            "key": "ANG%",
-            "values": [
-              "0.0%",
-              "6.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 410,
-            "name": "Shivada-Jade-Bruchstück",
-            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, ...“",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4379,
-            "name": "„Tourbillon-Apparat“",
-            "desc": "<p>Das Herzstück des Experimentellen Feldgenerators.</p><p>Ein präzisionsgefertigtes mechanisches Teil, das in der Lage ist, der Schwerkraft entgegenzuwirken und sich dabei mit einer Geschwindigkeit zu drehen, die mit bloßem Auge praktisch nicht mehr zu erfassen ist.</p><p>In seiner langen Geschichte hat das Forschungsinstitut für kinetische Energie Fontaine schon immer nach einer Möglichkeit gesucht, einer Flut zu trotzen, die einst zahllose Leben hinfort gespült hat und eines Tages erneut die Sonne verdunkeln wird.</p><p>Und man glaubte im Arkhium den Schlüssel zur Erlösung gefunden zu haben; in ihm solle ein Energiepotential schlummern, derartig mächtig, die Fesseln der Erde sprengen zu können.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/27/36893887/589ca2a7c53e2313d971436cf8007838_40744093358651806.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4010,
-            "name": "Beryllmuschel",
-            "desc": "<p>Ein schalenartiges Gebilde, das matt schimmert. Es erscheint eher wie ein Produkt kondensierter Elementarenergie, als die Schale eines Lebewesens.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/47685001/c528fed9f65720b1d212e9b5e679ca9d_5047445994194078696.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4072,
-            "name": "Greifendes Zahnrad",
-            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Ein wichtiges Teil für das Getriebe. Wenn es fehlt, funktioniert die entsprechende Einheit nicht mehr.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/0d15f8ce2c281306fbc8e0c3a6315437_4415947670565014598.png",
-            "amount": 15
-          }
-        ]
-      },
-      {
-        "key": "St. 50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Vor Aufstieg",
-              "Nach Aufstieg"
-            ]
-          },
-          {
-            "key": "Basis-LP",
-            "values": [
-              "5708",
-              "6357"
-            ]
-          },
-          {
-            "key": "Basis-ANG",
-            "values": [
-              "92",
-              "102"
-            ]
-          },
-          {
-            "key": "Basis-VTD",
-            "values": [
-              "290",
-              "322"
-            ]
-          },
-          {
-            "key": "ANG%",
-            "values": [
-              "6.0%",
-              "12.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 410,
-            "name": "Shivada-Jade-Bruchstück",
-            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, ...“",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4379,
-            "name": "„Tourbillon-Apparat“",
-            "desc": "<p>Das Herzstück des Experimentellen Feldgenerators.</p><p>Ein präzisionsgefertigtes mechanisches Teil, das in der Lage ist, der Schwerkraft entgegenzuwirken und sich dabei mit einer Geschwindigkeit zu drehen, die mit bloßem Auge praktisch nicht mehr zu erfassen ist.</p><p>In seiner langen Geschichte hat das Forschungsinstitut für kinetische Energie Fontaine schon immer nach einer Möglichkeit gesucht, einer Flut zu trotzen, die einst zahllose Leben hinfort gespült hat und eines Tages erneut die Sonne verdunkeln wird.</p><p>Und man glaubte im Arkhium den Schlüssel zur Erlösung gefunden zu haben; in ihm solle ein Energiepotential schlummern, derartig mächtig, die Fesseln der Erde sprengen zu können.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/27/36893887/589ca2a7c53e2313d971436cf8007838_40744093358651806.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4010,
-            "name": "Beryllmuschel",
-            "desc": "<p>Ein schalenartiges Gebilde, das matt schimmert. Es erscheint eher wie ein Produkt kondensierter Elementarenergie, als die Schale eines Lebewesens.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/47685001/c528fed9f65720b1d212e9b5e679ca9d_5047445994194078696.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4071,
-            "name": "Mechanisches Stirnrad",
-            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Obwohl es in der Kinematik der Uhrwerk-Mecha bedeutende Durchbrüche gab, konnte die Dynamik bis heute die Fundamente und Regeln nicht erschüttern, die Alain Guillotin vor mehr als vierhundert Jahren aufgestellt hatte.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/8023d5d16d579656f82fd4378358a11b_8223941451665776915.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "St. 60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Vor Aufstieg",
-              "Nach Aufstieg"
-            ]
-          },
-          {
-            "key": "Basis-LP",
-            "values": [
-              "7093",
-              "7572"
-            ]
-          },
-          {
-            "key": "Basis-ANG",
-            "values": [
-              "114",
-              "122"
-            ]
-          },
-          {
-            "key": "Basis-VTD",
-            "values": [
-              "360",
-              "384"
-            ]
-          },
-          {
-            "key": "ANG%",
-            "values": [
-              "12.0%",
-              "12.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 409,
-            "name": "Shivada-Jade-Brocken",
-            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, ...“<br/>„dass ihr den Kummer der ganzen Welt auf den Schultern tragt.“",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4379,
-            "name": "„Tourbillon-Apparat“",
-            "desc": "<p>Das Herzstück des Experimentellen Feldgenerators.</p><p>Ein präzisionsgefertigtes mechanisches Teil, das in der Lage ist, der Schwerkraft entgegenzuwirken und sich dabei mit einer Geschwindigkeit zu drehen, die mit bloßem Auge praktisch nicht mehr zu erfassen ist.</p><p>In seiner langen Geschichte hat das Forschungsinstitut für kinetische Energie Fontaine schon immer nach einer Möglichkeit gesucht, einer Flut zu trotzen, die einst zahllose Leben hinfort gespült hat und eines Tages erneut die Sonne verdunkeln wird.</p><p>Und man glaubte im Arkhium den Schlüssel zur Erlösung gefunden zu haben; in ihm solle ein Energiepotential schlummern, derartig mächtig, die Fesseln der Erde sprengen zu können.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/27/36893887/589ca2a7c53e2313d971436cf8007838_40744093358651806.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4010,
-            "name": "Beryllmuschel",
-            "desc": "<p>Ein schalenartiges Gebilde, das matt schimmert. Es erscheint eher wie ein Produkt kondensierter Elementarenergie, als die Schale eines Lebewesens.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/47685001/c528fed9f65720b1d212e9b5e679ca9d_5047445994194078696.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4071,
-            "name": "Mechanisches Stirnrad",
-            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Obwohl es in der Kinematik der Uhrwerk-Mecha bedeutende Durchbrüche gab, konnte die Dynamik bis heute die Fundamente und Regeln nicht erschüttern, die Alain Guillotin vor mehr als vierhundert Jahren aufgestellt hatte.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/8023d5d16d579656f82fd4378358a11b_8223941451665776915.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "St. 70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Vor Aufstieg",
-              "Nach Aufstieg"
-            ]
-          },
-          {
-            "key": "Basis-LP",
-            "values": [
-              "8317",
-              "8796"
-            ]
-          },
-          {
-            "key": "Basis-ANG",
-            "values": [
-              "134",
-              "142"
-            ]
-          },
-          {
-            "key": "Basis-VTD",
-            "values": [
-              "422",
-              "446"
-            ]
-          },
-          {
-            "key": "ANG%",
-            "values": [
-              "12.0%",
-              "18.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 409,
-            "name": "Shivada-Jade-Brocken",
-            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, ...“<br/>„dass ihr den Kummer der ganzen Welt auf den Schultern tragt.“",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4379,
-            "name": "„Tourbillon-Apparat“",
-            "desc": "<p>Das Herzstück des Experimentellen Feldgenerators.</p><p>Ein präzisionsgefertigtes mechanisches Teil, das in der Lage ist, der Schwerkraft entgegenzuwirken und sich dabei mit einer Geschwindigkeit zu drehen, die mit bloßem Auge praktisch nicht mehr zu erfassen ist.</p><p>In seiner langen Geschichte hat das Forschungsinstitut für kinetische Energie Fontaine schon immer nach einer Möglichkeit gesucht, einer Flut zu trotzen, die einst zahllose Leben hinfort gespült hat und eines Tages erneut die Sonne verdunkeln wird.</p><p>Und man glaubte im Arkhium den Schlüssel zur Erlösung gefunden zu haben; in ihm solle ein Energiepotential schlummern, derartig mächtig, die Fesseln der Erde sprengen zu können.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/27/36893887/589ca2a7c53e2313d971436cf8007838_40744093358651806.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4010,
-            "name": "Beryllmuschel",
-            "desc": "<p>Ein schalenartiges Gebilde, das matt schimmert. Es erscheint eher wie ein Produkt kondensierter Elementarenergie, als die Schale eines Lebewesens.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/47685001/c528fed9f65720b1d212e9b5e679ca9d_5047445994194078696.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4070,
-            "name": "Neuartiges Uhrwerk-Zahnrad",
-            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Die Fortschritte in der Maschinenpräzision und der Materialforschung sind der Schlüssel für den Fortschritt bei den Uhrwerk-Mecha in Fontaine. Unterstützt durch fortschrittliche Gerätschaften besitzt jeder Ingenieur die Fähigkeit, Maschinen herzustellen, die die des Zeitalters des „Herrn der wunderlichen Maschinen“ Guillotin überragen.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/4b604ff986feeaf150418ca94355a65a_1414415110007787420.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "St. 80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Vor Aufstieg",
-              "Nach Aufstieg"
-            ]
-          },
-          {
-            "key": "Basis-LP",
-            "values": [
-              "9541",
-              "10021"
-            ]
-          },
-          {
-            "key": "Basis-ANG",
-            "values": [
-              "154",
-              "161"
-            ]
-          },
-          {
-            "key": "Basis-VTD",
-            "values": [
-              "484",
-              "508"
-            ]
-          },
-          {
-            "key": "ANG%",
-            "values": [
-              "18.0%",
-              "24.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 408,
-            "name": "Shivada-Jade",
-            "desc": "Material für den Figurenaufstieg.<br/>„Es tut mir leid, dass ihr den Kummer der ganzen Welt auf den Schultern tragt.“<br/>„Euer Herz brennt sicher vor lauter Hoffnung, wenn ihr meine Kälte aushaltet.“<br/>„So lasst die alte Welt brennen.“",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shivada Jade Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4379,
-            "name": "„Tourbillon-Apparat“",
-            "desc": "<p>Das Herzstück des Experimentellen Feldgenerators.</p><p>Ein präzisionsgefertigtes mechanisches Teil, das in der Lage ist, der Schwerkraft entgegenzuwirken und sich dabei mit einer Geschwindigkeit zu drehen, die mit bloßem Auge praktisch nicht mehr zu erfassen ist.</p><p>In seiner langen Geschichte hat das Forschungsinstitut für kinetische Energie Fontaine schon immer nach einer Möglichkeit gesucht, einer Flut zu trotzen, die einst zahllose Leben hinfort gespült hat und eines Tages erneut die Sonne verdunkeln wird.</p><p>Und man glaubte im Arkhium den Schlüssel zur Erlösung gefunden zu haben; in ihm solle ein Energiepotential schlummern, derartig mächtig, die Fesseln der Erde sprengen zu können.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/27/36893887/589ca2a7c53e2313d971436cf8007838_40744093358651806.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4010,
-            "name": "Beryllmuschel",
-            "desc": "<p>Ein schalenartiges Gebilde, das matt schimmert. Es erscheint eher wie ein Produkt kondensierter Elementarenergie, als die Schale eines Lebewesens.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/47685001/c528fed9f65720b1d212e9b5e679ca9d_5047445994194078696.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 4070,
-            "name": "Neuartiges Uhrwerk-Zahnrad",
-            "desc": "<p>Das Zahnrad eines Uhrwerk-Mecha.<br>Die Fortschritte in der Maschinenpräzision und der Materialforschung sind der Schlüssel für den Fortschritt bei den Uhrwerk-Mecha in Fontaine. Unterstützt durch fortschrittliche Gerätschaften besitzt jeder Ingenieur die Fähigkeit, Maschinen herzustellen, die die des Zeitalters des „Herrn der wunderlichen Maschinen“ Guillotin überragen.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/36893887/4b604ff986feeaf150418ca94355a65a_1414415110007787420.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "St. 90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Vor Aufstieg",
-              "Nach Aufstieg"
-            ]
-          },
-          {
-            "key": "Basis-LP",
-            "values": [
-              "10766",
-              "-"
-            ]
-          },
-          {
-            "key": "Basis-ANG",
-            "values": [
-              "173",
-              "-"
-            ]
-          },
-          {
-            "key": "Basis-VTD",
-            "values": [
-              "546",
-              "-"
-            ]
-          },
-          {
-            "key": "ANG%",
-            "values": [
-              "24.0%",
-              "-"
-            ]
-          }
-        ]
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/27/61142474/805446d2630c32562b557380f66f9c9e_1025595015981483909.png"
-      },
-      {
-        "key": "Figurenzeichnung",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/06/61142474/45c552941667ceea4fabe74013738690_7251130022254572022.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Originale Kleidung - „Durch die Linse alles erkennbar“\nCharlottes Kleidung. „Wenn der Wahrheitsgehalt eines Berichts zu wünschen übrig lässt, war man nicht nah genug dran.“ Das pflegt Charlotte zu sagen, wenn sie über Berichterstattung spricht. Gelegentlich fügt sie dem noch hinzu: „Natürlich kann es auch daran liegen, dass man eine schlechte Linse verwendet.“"
-          }
-        ]
-      },
-      {
-        "key": "Idle-Animation 1",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/07/61142474/3cc45185ee335f2ffc557bac415f6fb1_4314621509182736004.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Originale Kleidung - „Durch die Linse alles erkennbar“"
-          }
-        ]
-      },
-      {
-        "key": "Idle-Animation 2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/07/61142474/eeec01af2a374215cd65e106d9997889_2913181766078277221.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Originale Kleidung - „Durch die Linse alles erkennbar“"
-          }
-        ]
-      },
-      {
-        "key": "Sternbild",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Hualina Veritas"
-          }
-        ]
       }
     ],
     "voice": [
@@ -3175,6 +3112,169 @@
     ],
     "customize": [
       {
+        "type": "RichText",
+        "text": "Charlottes Rolle ist in erster Linie die einer <color=#37ffff>Heilerin</color> . Hierbei bietet vorallem ihre <color=#ffd780>Spezialfähigkeit</color> beim Auslösen eine sehr hohe LP-Wiederherstellung für die gesamte Truppe. Darüber hinaus können sowohl ihre <color=#ffd780>Elementar</color> -, wie auch <color=#ffd780>Spezialfähigkeit</color> etwas Kryo-SCH verursachen. Besonders ihre <color=#ffd780>Elementarfähigkeit</color> kann durch das Gedrückthalten bis zu 12s kontinuierlich <color=#99ffff>Kryo-SCH</color> verursachen und damit auch Reaktionen auslösen. Ihr Schaden sollte in Charlottes Fall allerdings nicht die erste Priorität darstellen."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Empfohlene Waffen"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "3-Sterne Waffen"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2022,
+        "name": "Von den Heldentaten der Drachenbezwinger",
+        "desc": "Eine schlecht und unorganisiert geschriebene Geschichte über fünf Helden, die gemeinsam auf Drachenjagd gehen. Der Misserfolg ist die wichtigste Lehre, die man diesem Buch entnehmen kann.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/讨龙英杰谭.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Von den Heldentaten der Drachenbezwinger",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ece5d8>Basis-ANG:</color>\n39 ~ 401\n<color=#ece5d8>Nebenattribut:</color> <color=#ffd780>LP%</color>\n7.7% ~ 35.2%\nEine vergleichsweise erschwingliche Waffe. Allerdings kann Charlotte das LP%-Nebenattribut dieser Waffe nicht verwerten, so kann sie in verschiedenen Truppen einer andere Figur einen beachtlichen ANG%-Bonus bieten. Durch den niedrigen Basis-ANG und das Fehlen sonstiger Attribute ist diese Waffe nur bedingt für Charlotte zu empfehlen."
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "4-Sterne Waffen"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2024,
+        "name": "Auge des Gelöbnisses",
+        "desc": "Ein Nationalschatz von Byakuyakoku, der im Dainichi Mikoshi aufbewahrt wird. Mit dem Erscheinen des Schlangengottes wurde dieser Gegenstand verwendet, um große Eide und Wünsche zu beglaubigen.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/证誓之明瞳.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Auge des Gelöbnisses",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ece5d8>Basis-ANG:</color>\n44 ~ 565\n<color=#ece5d8>Nebenattribut:</color> <color=#ffd780>ANG%</color>\n6.0% ~ 27.6%\nEine aktionslimitierte Waffe aus der Version 2.5. Das <color=#ffd780>Auge des Gelöbnisses</color> bietet Charlotte viele nennenswerte Attribute. Nicht nur profitiert sie vom hohen Basis-ANG und dem passenden ANG%-Nebenattribut dieser Waffe, sondern auch von der erhöhten Aufladerate, wenn sie ihre <color=#ffd780>Elementarfähigkeit</color> nutzt."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2020,
+        "name": "Favonius-Kodex",
+        "desc": "Ein Kodex, der unter den Gelehrten des Ordo Favonius weitergetragen wird. Darin werden die Prinzipien und Kräfte von Elementen und Stoffen erläutert.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风秘典.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Favonius-Kodex",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ece5d8>Basis-ANG:</color>\n42 ~ 510\n<color=#ece5d8>Nebenattribut:</color> <color=#ffd780>Aufladerate</color>\n10.0% ~ 45.9%\nDer <color=#ffd780>Favonius-Kodex</color> bietet Charlotte in erster Hinsicht ein Aufladerate-Nebenattribut. Darüberhinaus erlaubt er ihr aber auch, ihre Rolle als <color=#37ffff>Unterstützerin</color> in der Truppe zu festigen, indem sie ihren Truppenmitglieder Energiepartikel zur Verfügung stellen kann."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3988,
+        "name": "Fließende Reinheit",
+        "desc": "<p>Eine seltsam geformte Sammlung von Stücken. Enthält unter anderem alle von Coppelius verfasste Werke.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/08/36893887/0130ca8183d3daa2eddbb9200a1d776f_2032803728801003516.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Fließende Reinheit",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ece5d8>Basis-ANG:</color>\n44 ~ 565\n<color=#ece5d8>Nebenattribut:</color> <color=#ffd780>ANG%</color>\n6.0% ~ 27.6%\nAls schmiedbare Waffe ist die <color=#ffd780>Fließende Reinheit</color> eine überraschend starke Option, besonders mit Verfeinerungen. Der hohe Basis-ANG, gepaart mit dem ANG%-Nebenattribut verstärkt Charlottes <color=#37ffff>Heilung</color> und der zusätzliche SCH-Bonus sogar ihren <color=#99ffff>Kryo</color> -SCH. Um den Eid des Lebens zuverlässig auszulösen, braucht es ein gewisses Maß an <color=#37ffff>Heilung</color> . Da Charlotte aber selbst bereits sehr viel <color=#37ffff>heilt</color> , hat sie keinerlei Probleme diese Waffe zuverlässig auszulösen. Es bleibt allerdings anzumerken, dass durch ihre geringen Basis-LP, der passive Effekt nicht die maximale Kapazität erreichen kann."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Empfohlene Artefakte"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Empfehlungen für die Hauptattribute",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Aufladerate</color>\n<color=#ffffff73>ANG%</color>\n<color=#ffffff73>ANG%</color>\n<color=#ffffff73>Heilungsbonus</color>\n<color=#ffffff73>(KT wenn Favonius-Waffe)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ece5d8>Gute Nebenattribute</color>\nAufladerate, ANG(%), KT\n<color=#ece5d8>Ungefähre Aufladerate</color>\nca. 180% - 220%"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "4er Set",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ece5d8>2er Set-Bonus:</color>\n20% <color=#ffd780>Spezialfähigkeit</color> SCH-Bonus\n<color=#ece5d8>4er Set-Bonus:</color>\n20% ANG fürs Team nach Einsetzen der <color=#ffd780>Spezialfähigkeit</color>\nDurch ihren Fokus auf ihre eigene <color=#ffd780>Spezialfähigkeit</color> , liegt Charlotte viel dran, diese immer einzusetzen. Der zusätzliche SCH-Bonus und ANG% sind für sie selbst ein netter Bonus und erlaubt ihr die Truppe noch weiter zu <color=#37ffff>unterstützen</color> ."
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "4er Set",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ece5d8>2er Set-Bonus:</color>\n20% LP\n<color=#ece5d8>4er Set-Bonus:</color>\nTreffer der <color=#ffd780>Elementarfähigkeit</color> erhöhen ANG und Schildstärke der Truppe\nEin alternatives Set zum 4er"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2075,
+        "name": "Altes Hofritual",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": ". Das längere Gedrückthalten ihrer <color=#ffd780>Elementarfähigkeit</color> kann sich in einigen Situationen als schwieriger erweisen, wodurch die Handhabung dieses Sets eine gewisse Herausforderung darstellt. Die Elementarfähigkeit nur kurz zu drücken sorgt dafür, dass die <color=#ffd780>„Scharfe Silhouette“</color> -Siegel-Dauer nur 6s beträgt. Dadurch stellt dieses Set ein leichtes Downgrade zum Vorgänger da."
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "4er Set",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ece5d8>2er Set-Bonus:</color>\n15% Heilungseffekte\n<color=#ece5d8>4er Set-Bonus:</color>\nHeilung füllt eine Blase die nach 3,5s für maximal 90% von 30.000 wiederhergestellten Lebenspunkten Schaden anrichtet\nEine geringfügig offensivere Alternative für Charlotte. Da der Großteil ihrer <color=#37ffff>Heilung</color> zu Beginn ihrer <color=#ffd780>Spezialfähigkeit</color> stattfindet, kann Charlotte den 4er Set Bonus über eine längere Dauer nicht so effizient nutzen. Ihr 6. Sternbild verbesserte diese Option ein wenig."
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Jeweils 2 & 2",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ece5d8>2er Set-Bonus:</color>\n18% ANG\n15% Heilungsbonus\n20% Aufladerate.\nMögliche Mischungen aus 2er Sets mit brauchbaren Set-Boni, bei denen die Qualität der Nebenattribute im Vordergrund steht. Der Fokus liegt hierbei vor allem auf der Aufladerate und ANG(%)."
+      },
+      {
         "type": "Heading",
         "level": 1,
         "text": "Figurendetails",
@@ -3660,171 +3760,71 @@
       {
         "type": "RichText",
         "text": "<color=#37ffff>https:/www.hoyolab.com/article/22800558</color>"
-      },
-      {
-        "type": "RichText",
-        "text": "Charlottes Rolle ist in erster Linie die einer <color=#37ffff>Heilerin</color> . Hierbei bietet vorallem ihre <color=#ffd780>Spezialfähigkeit</color> beim Auslösen eine sehr hohe LP-Wiederherstellung für die gesamte Truppe. Darüber hinaus können sowohl ihre <color=#ffd780>Elementar</color> -, wie auch <color=#ffd780>Spezialfähigkeit</color> etwas Kryo-SCH verursachen. Besonders ihre <color=#ffd780>Elementarfähigkeit</color> kann durch das Gedrückthalten bis zu 12s kontinuierlich <color=#99ffff>Kryo-SCH</color> verursachen und damit auch Reaktionen auslösen. Ihr Schaden sollte in Charlottes Fall allerdings nicht die erste Priorität darstellen."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Empfohlene Waffen"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "3-Sterne Waffen"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2022,
-        "name": "Von den Heldentaten der Drachenbezwinger",
-        "desc": "Eine schlecht und unorganisiert geschriebene Geschichte über fünf Helden, die gemeinsam auf Drachenjagd gehen. Der Misserfolg ist die wichtigste Lehre, die man diesem Buch entnehmen kann.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/讨龙英杰谭.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Von den Heldentaten der Drachenbezwinger",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ece5d8>Basis-ANG:</color>\n39 ~ 401\n<color=#ece5d8>Nebenattribut:</color> <color=#ffd780>LP%</color>\n7.7% ~ 35.2%\nEine vergleichsweise erschwingliche Waffe. Allerdings kann Charlotte das LP%-Nebenattribut dieser Waffe nicht verwerten, so kann sie in verschiedenen Truppen einer andere Figur einen beachtlichen ANG%-Bonus bieten. Durch den niedrigen Basis-ANG und das Fehlen sonstiger Attribute ist diese Waffe nur bedingt für Charlotte zu empfehlen."
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "4-Sterne Waffen"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2024,
-        "name": "Auge des Gelöbnisses",
-        "desc": "Ein Nationalschatz von Byakuyakoku, der im Dainichi Mikoshi aufbewahrt wird. Mit dem Erscheinen des Schlangengottes wurde dieser Gegenstand verwendet, um große Eide und Wünsche zu beglaubigen.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/证誓之明瞳.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Auge des Gelöbnisses",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ece5d8>Basis-ANG:</color>\n44 ~ 565\n<color=#ece5d8>Nebenattribut:</color> <color=#ffd780>ANG%</color>\n6.0% ~ 27.6%\nEine aktionslimitierte Waffe aus der Version 2.5. Das <color=#ffd780>Auge des Gelöbnisses</color> bietet Charlotte viele nennenswerte Attribute. Nicht nur profitiert sie vom hohen Basis-ANG und dem passenden ANG%-Nebenattribut dieser Waffe, sondern auch von der erhöhten Aufladerate, wenn sie ihre <color=#ffd780>Elementarfähigkeit</color> nutzt."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2020,
-        "name": "Favonius-Kodex",
-        "desc": "Ein Kodex, der unter den Gelehrten des Ordo Favonius weitergetragen wird. Darin werden die Prinzipien und Kräfte von Elementen und Stoffen erläutert.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风秘典.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Favonius-Kodex",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ece5d8>Basis-ANG:</color>\n42 ~ 510\n<color=#ece5d8>Nebenattribut:</color> <color=#ffd780>Aufladerate</color>\n10.0% ~ 45.9%\nDer <color=#ffd780>Favonius-Kodex</color> bietet Charlotte in erster Hinsicht ein Aufladerate-Nebenattribut. Darüberhinaus erlaubt er ihr aber auch, ihre Rolle als <color=#37ffff>Unterstützerin</color> in der Truppe zu festigen, indem sie ihren Truppenmitglieder Energiepartikel zur Verfügung stellen kann."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3988,
-        "name": "Fließende Reinheit",
-        "desc": "<p>Eine seltsam geformte Sammlung von Stücken. Enthält unter anderem alle von Coppelius verfasste Werke.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/08/36893887/0130ca8183d3daa2eddbb9200a1d776f_2032803728801003516.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Fließende Reinheit",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ece5d8>Basis-ANG:</color>\n44 ~ 565\n<color=#ece5d8>Nebenattribut:</color> <color=#ffd780>ANG%</color>\n6.0% ~ 27.6%\nAls schmiedbare Waffe ist die <color=#ffd780>Fließende Reinheit</color> eine überraschend starke Option, besonders mit Verfeinerungen. Der hohe Basis-ANG, gepaart mit dem ANG%-Nebenattribut verstärkt Charlottes <color=#37ffff>Heilung</color> und der zusätzliche SCH-Bonus sogar ihren <color=#99ffff>Kryo</color> -SCH. Um den Eid des Lebens zuverlässig auszulösen, braucht es ein gewisses Maß an <color=#37ffff>Heilung</color> . Da Charlotte aber selbst bereits sehr viel <color=#37ffff>heilt</color> , hat sie keinerlei Probleme diese Waffe zuverlässig auszulösen. Es bleibt allerdings anzumerken, dass durch ihre geringen Basis-LP, der passive Effekt nicht die maximale Kapazität erreichen kann."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Empfohlene Artefakte"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "Empfehlungen für die Hauptattribute",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Aufladerate</color>\n<color=#ffffff73>ANG%</color>\n<color=#ffffff73>ANG%</color>\n<color=#ffffff73>Heilungsbonus</color>\n<color=#ffffff73>(KT wenn Favonius-Waffe)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ece5d8>Gute Nebenattribute</color>\nAufladerate, ANG(%), KT\n<color=#ece5d8>Ungefähre Aufladerate</color>\nca. 180% - 220%"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "4er Set",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ece5d8>2er Set-Bonus:</color>\n20% <color=#ffd780>Spezialfähigkeit</color> SCH-Bonus\n<color=#ece5d8>4er Set-Bonus:</color>\n20% ANG fürs Team nach Einsetzen der <color=#ffd780>Spezialfähigkeit</color>\nDurch ihren Fokus auf ihre eigene <color=#ffd780>Spezialfähigkeit</color> , liegt Charlotte viel dran, diese immer einzusetzen. Der zusätzliche SCH-Bonus und ANG% sind für sie selbst ein netter Bonus und erlaubt ihr die Truppe noch weiter zu <color=#37ffff>unterstützen</color> ."
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "4er Set",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ece5d8>2er Set-Bonus:</color>\n20% LP\n<color=#ece5d8>4er Set-Bonus:</color>\nTreffer der <color=#ffd780>Elementarfähigkeit</color> erhöhen ANG und Schildstärke der Truppe\nEin alternatives Set zum 4er"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2075,
-        "name": "Altes Hofritual",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Noblesse Oblige/flower_of_life_icon.png",
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": ". Das längere Gedrückthalten ihrer <color=#ffd780>Elementarfähigkeit</color> kann sich in einigen Situationen als schwieriger erweisen, wodurch die Handhabung dieses Sets eine gewisse Herausforderung darstellt. Die Elementarfähigkeit nur kurz zu drücken sorgt dafür, dass die <color=#ffd780>„Scharfe Silhouette“</color> -Siegel-Dauer nur 6s beträgt. Dadurch stellt dieses Set ein leichtes Downgrade zum Vorgänger da."
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "4er Set",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ece5d8>2er Set-Bonus:</color>\n15% Heilungseffekte\n<color=#ece5d8>4er Set-Bonus:</color>\nHeilung füllt eine Blase die nach 3,5s für maximal 90% von 30.000 wiederhergestellten Lebenspunkten Schaden anrichtet\nEine geringfügig offensivere Alternative für Charlotte. Da der Großteil ihrer <color=#37ffff>Heilung</color> zu Beginn ihrer <color=#ffd780>Spezialfähigkeit</color> stattfindet, kann Charlotte den 4er Set Bonus über eine längere Dauer nicht so effizient nutzen. Ihr 6. Sternbild verbesserte diese Option ein wenig."
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Jeweils 2 & 2",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ece5d8>2er Set-Bonus:</color>\n18% ANG\n15% Heilungsbonus\n20% Aufladerate.\nMögliche Mischungen aus 2er Sets mit brauchbaren Set-Boni, bei denen die Qualität der Nebenattribute im Vordergrund steht. Der Fokus liegt hierbei vor allem auf der Aufladerate und ANG(%)."
       }
     ],
+    "summaryList": [
+      {
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/06/61142474/4b8212535fad0607be41250162547107_7518742363733878300.png",
+        "name": "Notwendigkeit der Überprüfung",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Verleiht der Figur das Siegel „Überprüft“, das dieser Figur alle 2s LP in Höhe von 80% von Charlottes ANG wiederherstellt, sobald die Figur durch <color=#ffd780>„Standbild – Umfassende Bestätigung“</color> geheilt wird, hält 6s."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/06/61142474/ccdd795bdba7a0d79868ddfb54499dc0_426915489181351746.png",
+        "name": "Pflicht der Wahrheitssuche",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Erhöht beim Anwenden von <color=#ffd780>Aufnahme – Gefrierpunkt-Komposition</color> , wenn Herr Vérités Angriff 1/2/3 (oder mehr) Gegner trifft, Charlottes ANG 12s lang um 10/20/30%."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/06/61142474/d1cf9afd3481f21b5ec894c5c65557fe_3068089220717337330.png",
+        "name": "Gebot der Unabhängigkeit",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Erhöht die Stufe der Fähigkeit <color=#ffd780>Standbild – Umfassende Bestätigung</color> um 3.\nHöchststufe 15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/06/61142474/b426d7c56bd8b4dce647e525f3ab292b_2155500897368472371.png",
+        "name": "Verantwortung der Ermahnung",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Wenn die Fähigkeit <color=#ffd780>Standbild – Umfassende Bestätigung</color> einen Gegner trifft, der durch „Scharfe Silhouette“ oder „Fokussierter Eindruck“ markiert ist, fügt sie 10% mehr Schaden zu und stellt Charlotte 2 Punkte Elementarenergie wieder her. Diese Wiederherstellung der Elementarenergie kann alle 20s 5-mal ausgelöst werden."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/06/61142474/54adbd6e0af44cff009737afb67b0409_3596380966875977306.png",
+        "name": "Prinzip des Gewissens",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Erhöht die Stufe der Fähigkeit <color=#ffd780>Aufnahme – Gefrierpunkt-Komposition</color> um 3.\nHöchststufe 15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/06/61142474/ec01f16bacb407bd77f28949f33ecd5b_7787996421055586869.png",
+        "name": "Gleichgewicht von Sachlichkeit und Sensation",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Wenn der Standardangriff oder heftige Schlag der aktiven Figur einen Gegner trifft, der von „Fokussierter Eindruck“ der <color=#ffd780>Fähigkeit Aufnahme – Gefrierpunkt-Komposition</color> markiert wurde, wird Herr Vérité einen abgestimmten Angriff auslösen, der <color=#99ffff>Kryo-Flächenschaden</color> in Höhe von 180% ANG von Charlotte verursacht, und LP der aktiven Figuren in der Angriffsreichweite in Höhe von 42% des ANG von Charlotte wiederherstellen, 6s Abklingzeit. Auf diese Weise verursachter Schaden und Heilung werden als Schaden und Heilung der Spezialfähigkeit von Charlotte betrachtet."
+          }
+        ]
+      }
+    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header&lang=de-de#/map/2?shown_types=539,494,500&center=-983.00,-5753.00&zoom=-2.00",
     "story": [
       {
         "title": "Figurendetails",
