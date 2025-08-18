@@ -9,177 +9,6 @@
   "components": {
     "customize": [
       {
-        "type": "RichText",
-        "text": "Transformationsreaktionen sind: Sprießen, Supraspross, Flammenspross, In Flammen, Überladen, Unter Strom, Supraleiter, Eisbrecher und Verwirbelung.\nTransformationsreaktionen ignorieren gegnerische VTD, werden aber vom <color=#ffffffd9>gegnerischen WDS</color> beeinflusst. Sie können nicht kritisch treffen (mit Ausnahme von Nahidas Sternenbild 2, die Sprießen, upraspross, Flammenspross und In Flammen kritische Treffer mit einer festgelegten Menge von 20% kritische Trefferrate und 100% kritischen Schaden erlaubt). Nur die <color=#ffffffd9>Stufe und Elementarkunde der auslösenden Figur</color> spielen eine Rolle.\nBeispiel: Wenn Sprießen von einer Dendro-Figur ausgelöst wird (der Dendro auf Hydro anwendet), werden die Stufe und die Elementarkunde der Dendro-Figur und der Dendro-WDS des Gegners berücksichtigt.\nDie Transformationsreaktionen werden also nach folgender Formel berechnet:"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Gegner-WDS Multiplikator × Reaktions-Multiplikator × Figurenstufe Multiplikator ×</color>\n<color=#ffffff>(100% + Elementarkunde Bonus Multiplikator + Reaktionsbonus)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Reaktions-Multiplikator",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Jede Transformationsreaktion hat ihren eigenen Reaktionsmultiplikator, wie in der Tabelle dargestellt:\n<color=#ffffff73>Reaktions-Multiplikator</color>\n<color=#ffffff73>Reaktion</color>\n<color=#ffffff73>300%</color>\n<color=#ffffff73>Flammenspross, Supraspross</color>\n<color=#ffffff73>200%</color>\n<color=#ffffff73>Überladen, Sprießen</color>\n<color=#ffffff73>150%</color>\n<color=#ffffff73>Eisbrecher</color>\n<color=#ffffff73>120%</color>\n<color=#ffffff73>Unter Strom</color>\n<color=#ffffff73>60%</color>\n<color=#ffffff73>Verwirbelung</color>\n<color=#ffffff73>50%</color>\n<color=#ffffff73>Supraleiter</color>\n<color=#ffffff73>25%</color>\n<color=#ffffff73>In Flammen</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Figurenstufe Multiplikator",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Figuren haben Stufenmultiplikatoren, die von der aktuellen Stufe der Figur abhängen. Sie sind in der Tabelle angegeben:\n<color=#ffffff73>Figurenstufe</color>\n<color=#ffffff73>Figurenstufe Multiplikator</color>\n<color=#ffffff73>60</color>\n<color=#ffffff73>492.88</color>\n<color=#ffffff73>70</color>\n<color=#ffffff73>765.64</color>\n<color=#ffffff73>80</color>\n<color=#ffffff73>1077.44</color>\n<color=#ffffff73>85</color>\n<color=#ffffff73>1253.84</color>\n<color=#ffffff73>90</color>\n<color=#ffffff73>1446.85</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Elementarkunde Bonus Multiplikator",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Für den Elementarkunde Bonus Multiplikator wird nur die Gesamt-Elementarkunde der auslösenden Figur, wie sie auf der Statusseite angegeben ist, berücksichtigt.\nEr wird wie folgt berechnet:"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Elementarkunde × 16 / Elementarkunde + 2000</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Reaktionsbonus",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Es gibt einige Reaktionsboni für den Schaden der Transformationsreaktion:"
-      },
-      {
-        "type": "RichText",
-        "text": "Figuren",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 37,
-        "name": "Mona",
-        "desc": "Eine geheimnisvolle Astrologin, die sich selbst als „Große Astrologin Mona“ bezeichnet. Doch nicht nur ihr Name macht einiges her. Ihre Stärke und ihr Wissen sind beeindruckend.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Sternenbild 1</color>\nVerstärkt den Effekt von <color=#80c0ff>Hydro-Elementarreaktionen</color> , wenn eine eigene Figur in der Truppe Gegner im Zustand Omen trifft für 8 s lang.",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2812,
-        "name": "Nilou",
-        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.8)\">Die berühmte Tänzerin des Theaters Zubayr. Sie hat ein reines Herz und ist voller Wärme. Ihre Tänze sind elegant und anmutig.</span></p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/13/61142474/586d726f9ebda3506c78beaaa41f13b6_4521062174590153552.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Aufstiegspassive 4</color>\nErhöht je 1.000 Punkte der max. LP von Nilou über 30.000 den Schaden durch Kerne der Fülle, den die Figuren unter dem Effekt „Überfluss im goldenen Kelch“ ausgelöst haben, um 9 %.\nAuf diese Weise kann der durch Kerne der Fülle verursachte Schaden maximal um 400 % erhöht werden.",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3608,
-        "name": "Kaveh",
-        "desc": "<p>Ein renommierter Architekt aus Sumeru, der sich über viele Dinge übermäßig besorgt zeigt. Ein Ästhet, der von der Realität verwirrt wird.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/28/61142474/2270aba02b92034d7d76b4426be8f53b_2728597864757707219.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Spezialfähigkeit</color>\nWenn Kaveh's Spezialfähigkeit aktiv ist, erhöht er Kaveh's Flächenschaden von Standardangriffen, heftigen Schkägen und Angriffen aus dem Fall und wandelt seinen Angriffs-SCH in <color=#99ff88>Dendro-SCH</color> um, der nicht aufgehoben werden kann. Alle Dendro-Kerne, die von euren Truppenmitgliedern durch Sprießen-Reaktionen erzeugt werden, verursachen zusätzlichen Schaden, wenn sie platzen.\n<color=#ffffff>Sternenbild 4</color>\nErhöht den Schaden der Explosionen, der durch die von Kaveh durch die Reaktion Sprießen erschaffenen Dendro-Kerne verursacht wird, um 60%.",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3609,
-        "name": "Baizhu",
-        "desc": "<p>Der Besitzer der „Bubu-Hütte“. Er trägt eine weiße Schlange namens Changsheng auf seiner Schulter. Ein äußerst geschickter Mediziner, der allerdings als Person schwer zu durchschauen ist.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/28/61142474/05599650d7f42e1c4adde373de6b297d_722432638078852054.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Aufstiegspassive 4</color>\nFiguren, die von <color=#ffd780>makellosen Schilds</color> geheilt werden, erhalten den Effekt „Jahr der Gunst des Grüns“: Erhöht den Schaden, den die geheilten Figuren durch das Auslösen der Reaktionen „in Flammen“, „Sprießen“, „Supraspross“ sowie „Flammenspross“ verursachen, für je 1.000 LP (bis max. 50.000 LP) von Baizhu um 2 % und den Bonus für den Schaden, der durch die Reaktionen „Suprawuchs“ und „Rankenwuchs“ gewährt wird, für je 1.000 LP (bis max. 50.000 LP) von Baizhu um 0,8%. Hält 6s.\nArtefakte",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2067,
-        "name": "Donnernder Zorn",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>4er Set</color>\nErhöht den mit den Reaktionen „Überladen“, „Unter Strom“, „Supraleiter“ und „Supraspross“ verursachten Schaden um 40 %.",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2085,
-        "name": "Brennende Pyro-Hexe",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>4er Set</color>\nErhöht den mit den Reaktionen „Überladen“ und „In Flammen“ verursachten Schaden um 40 % und den von den Reaktionen „Verdampfen“ und „Schmelzen“ betroffenen Gegnern zugefügten Schaden um 15 %. Erhöht den Effekt eines 2er-Sets bei Anwendung von Elementarfähigkeiten 10 s lang um 50 %, 3-fach stapelbar.",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3321,
-        "name": "Blumen des verlorenen Paradieses",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/07/36893887/50ce09dfa5a91a33aa9cedfb15bcf2d1_1017613161904916282.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>4er Set</color>\nErhöht den durch die damit ausgerüstete Figur mit den Reaktionen Sprießen, Supraspross und Flammenspross verursachten Schaden um 40 %. Zusätzlich wird dieser Bonus nach Auslösen der Reaktionen Sprießen, Supraspross oder Flammenspross der damit ausgerüsteten Figur um 25 % erhöht, hält 10 s, 4-fach stapelbar, 1 s Abklingzeit. Dieser Effekt kann auch dann ausgelöst werden, wenn sich die damit ausgerüstete Figur inaktiv in der Truppe befindet.",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2091,
-        "name": "Grünlicher Schatten",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>4er Set</color>\nErhöht den mit Verwirbelungen verursachten Schaden um 60 %.",
-        "alignment": "center"
-      },
-      {
         "type": "Heading",
         "level": 1,
         "text": "Die Schadensberechnung",
@@ -4371,6 +4200,210 @@
         "type": "RichText",
         "text": "<color=#ffffff>100% + Kritischer Schaden</color>",
         "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Transformationsreaktionen sind: Sprießen, Supraspross, Flammenspross, In Flammen, Überladen, Unter Strom, Supraleiter, Eisbrecher und Verwirbelung.\nTransformationsreaktionen ignorieren gegnerische VTD, werden aber vom <color=#ffffffd9>gegnerischen WDS</color> beeinflusst. Sie können nicht kritisch treffen (mit Ausnahme von Nahidas Sternenbild 2, die Sprießen, upraspross, Flammenspross und In Flammen kritische Treffer mit einer festgelegten Menge von 20% kritische Trefferrate und 100% kritischen Schaden erlaubt). Nur die <color=#ffffffd9>Stufe und Elementarkunde der auslösenden Figur</color> spielen eine Rolle.\nBeispiel: Wenn Sprießen von einer Dendro-Figur ausgelöst wird (der Dendro auf Hydro anwendet), werden die Stufe und die Elementarkunde der Dendro-Figur und der Dendro-WDS des Gegners berücksichtigt.\nDie Transformationsreaktionen werden also nach folgender Formel berechnet:"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Gegner-WDS Multiplikator × Reaktions-Multiplikator × Figurenstufe Multiplikator ×</color>\n<color=#ffffff>(100% + Elementarkunde Bonus Multiplikator + Reaktionsbonus)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Reaktions-Multiplikator",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Jede Transformationsreaktion hat ihren eigenen Reaktionsmultiplikator, wie in der Tabelle dargestellt:\n<color=#ffffff73>Reaktions-Multiplikator</color>\n<color=#ffffff73>Reaktion</color>\n<color=#ffffff73>300%</color>\n<color=#ffffff73>Flammenspross, Supraspross</color>\n<color=#ffffff73>200%</color>\n<color=#ffffff73>Überladen, Sprießen</color>\n<color=#ffffff73>150%</color>\n<color=#ffffff73>Eisbrecher</color>\n<color=#ffffff73>120%</color>\n<color=#ffffff73>Unter Strom</color>\n<color=#ffffff73>60%</color>\n<color=#ffffff73>Verwirbelung</color>\n<color=#ffffff73>50%</color>\n<color=#ffffff73>Supraleiter</color>\n<color=#ffffff73>25%</color>\n<color=#ffffff73>In Flammen</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Figurenstufe Multiplikator",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Figuren haben Stufenmultiplikatoren, die von der aktuellen Stufe der Figur abhängen. Sie sind in der Tabelle angegeben:\n<color=#ffffff73>Figurenstufe</color>\n<color=#ffffff73>Figurenstufe Multiplikator</color>\n<color=#ffffff73>60</color>\n<color=#ffffff73>492.88</color>\n<color=#ffffff73>70</color>\n<color=#ffffff73>765.64</color>\n<color=#ffffff73>80</color>\n<color=#ffffff73>1077.44</color>\n<color=#ffffff73>85</color>\n<color=#ffffff73>1253.84</color>\n<color=#ffffff73>90</color>\n<color=#ffffff73>1446.85</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Elementarkunde Bonus Multiplikator",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Für den Elementarkunde Bonus Multiplikator wird nur die Gesamt-Elementarkunde der auslösenden Figur, wie sie auf der Statusseite angegeben ist, berücksichtigt.\nEr wird wie folgt berechnet:"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Elementarkunde × 16 / Elementarkunde + 2000</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Reaktionsbonus",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Es gibt einige Reaktionsboni für den Schaden der Transformationsreaktion:"
+      },
+      {
+        "type": "RichText",
+        "text": "Figuren",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "Mona",
+        "desc": "Eine geheimnisvolle Astrologin, die sich selbst als „Große Astrologin Mona“ bezeichnet. Doch nicht nur ihr Name macht einiges her. Ihre Stärke und ihr Wissen sind beeindruckend.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Sternenbild 1</color>\nVerstärkt den Effekt von <color=#80c0ff>Hydro-Elementarreaktionen</color> , wenn eine eigene Figur in der Truppe Gegner im Zustand Omen trifft für 8 s lang.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "Nilou",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.8)\">Die berühmte Tänzerin des Theaters Zubayr. Sie hat ein reines Herz und ist voller Wärme. Ihre Tänze sind elegant und anmutig.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/13/61142474/586d726f9ebda3506c78beaaa41f13b6_4521062174590153552.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Aufstiegspassive 4</color>\nErhöht je 1.000 Punkte der max. LP von Nilou über 30.000 den Schaden durch Kerne der Fülle, den die Figuren unter dem Effekt „Überfluss im goldenen Kelch“ ausgelöst haben, um 9 %.\nAuf diese Weise kann der durch Kerne der Fülle verursachte Schaden maximal um 400 % erhöht werden.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "Kaveh",
+        "desc": "<p>Ein renommierter Architekt aus Sumeru, der sich über viele Dinge übermäßig besorgt zeigt. Ein Ästhet, der von der Realität verwirrt wird.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/28/61142474/2270aba02b92034d7d76b4426be8f53b_2728597864757707219.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Spezialfähigkeit</color>\nWenn Kaveh's Spezialfähigkeit aktiv ist, erhöht er Kaveh's Flächenschaden von Standardangriffen, heftigen Schkägen und Angriffen aus dem Fall und wandelt seinen Angriffs-SCH in <color=#99ff88>Dendro-SCH</color> um, der nicht aufgehoben werden kann. Alle Dendro-Kerne, die von euren Truppenmitgliedern durch Sprießen-Reaktionen erzeugt werden, verursachen zusätzlichen Schaden, wenn sie platzen.\n<color=#ffffff>Sternenbild 4</color>\nErhöht den Schaden der Explosionen, der durch die von Kaveh durch die Reaktion Sprießen erschaffenen Dendro-Kerne verursacht wird, um 60%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "Baizhu",
+        "desc": "<p>Der Besitzer der „Bubu-Hütte“. Er trägt eine weiße Schlange namens Changsheng auf seiner Schulter. Ein äußerst geschickter Mediziner, der allerdings als Person schwer zu durchschauen ist.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/28/61142474/05599650d7f42e1c4adde373de6b297d_722432638078852054.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Aufstiegspassive 4</color>\nFiguren, die von <color=#ffd780>makellosen Schilds</color> geheilt werden, erhalten den Effekt „Jahr der Gunst des Grüns“: Erhöht den Schaden, den die geheilten Figuren durch das Auslösen der Reaktionen „in Flammen“, „Sprießen“, „Supraspross“ sowie „Flammenspross“ verursachen, für je 1.000 LP (bis max. 50.000 LP) von Baizhu um 2 % und den Bonus für den Schaden, der durch die Reaktionen „Suprawuchs“ und „Rankenwuchs“ gewährt wird, für je 1.000 LP (bis max. 50.000 LP) von Baizhu um 0,8%. Hält 6s.\nArtefakte",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "Donnernder Zorn",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4er Set</color>\nErhöht den mit den Reaktionen „Überladen“, „Unter Strom“, „Supraleiter“ und „Supraspross“ verursachten Schaden um 40 %.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "Brennende Pyro-Hexe",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4er Set</color>\nErhöht den mit den Reaktionen „Überladen“ und „In Flammen“ verursachten Schaden um 40 % und den von den Reaktionen „Verdampfen“ und „Schmelzen“ betroffenen Gegnern zugefügten Schaden um 15 %. Erhöht den Effekt eines 2er-Sets bei Anwendung von Elementarfähigkeiten 10 s lang um 50 %, 3-fach stapelbar.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Blumen des verlorenen Paradieses",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/07/36893887/50ce09dfa5a91a33aa9cedfb15bcf2d1_1017613161904916282.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4er Set</color>\nErhöht den durch die damit ausgerüstete Figur mit den Reaktionen Sprießen, Supraspross und Flammenspross verursachten Schaden um 40 %. Zusätzlich wird dieser Bonus nach Auslösen der Reaktionen Sprießen, Supraspross oder Flammenspross der damit ausgerüsteten Figur um 25 % erhöht, hält 10 s, 4-fach stapelbar, 1 s Abklingzeit. Dieser Effekt kann auch dann ausgelöst werden, wenn sich die damit ausgerüstete Figur inaktiv in der Truppe befindet.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "Grünlicher Schatten",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4er Set</color>\nErhöht den mit Verwirbelungen verursachten Schaden um 60 %.",
+        "alignment": "center"
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "Name",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Schadensberechnung"
+          }
+        ]
+      },
+      {
+        "key": "Typ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Systeminterne Berechnung"
+          }
+        ]
+      },
+      {
+        "key": "Verwandte Einträge",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5206,
+            "name": "Elementarreaktion",
+            "desc": "<p>Elementarreaktionen sind das Herzstück des Kampfsystems von Genshin Impact. Das Verständnis und die Beherrschung dieser Interaktionen können die eigenen Fähigkeiten im Kampf drastisch verbessern.</p><p>Beim Auslösen von Elementarreaktionen sind mehrere Faktoren zu berücksichtigen, wie Aura, Trigger, Decay usw. Die „Elemental Gauge“-Theorie und interne Abklingzeiten werden eine wichtige Rolle spielen, um den Spielern zu helfen, die Komplexität hinter den Elementarreaktionen zu verstehen.</p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/29/36893887/b2b6399b99a981412f3699e6a477be0f_516160955822131168.png"
+          }
+        ],
+        "isMaterial": true
       }
     ],
     "galleryCharacter": [
@@ -4407,39 +4440,6 @@
             "text": "Einige der Schadensverbesserungen zeigen ein spezielles Symbol über der LP-Leiste der Figur an."
           }
         ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Name",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Schadensberechnung"
-          }
-        ]
-      },
-      {
-        "key": "Typ",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Systeminterne Berechnung"
-          }
-        ]
-      },
-      {
-        "key": "Verwandte Einträge",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 5206,
-            "name": "Elementarreaktion",
-            "desc": "<p>Elementarreaktionen sind das Herzstück des Kampfsystems von Genshin Impact. Das Verständnis und die Beherrschung dieser Interaktionen können die eigenen Fähigkeiten im Kampf drastisch verbessern.</p><p>Beim Auslösen von Elementarreaktionen sind mehrere Faktoren zu berücksichtigen, wie Aura, Trigger, Decay usw. Die „Elemental Gauge“-Theorie und interne Abklingzeiten werden eine wichtige Rolle spielen, um den Spielern zu helfen, die Komplexität hinter den Elementarreaktionen zu verstehen.</p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/29/36893887/b2b6399b99a981412f3699e6a477be0f_516160955822131168.png"
-          }
-        ],
-        "isMaterial": true
       }
     ]
   }
