@@ -4,18 +4,35 @@
   "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Chongyun, Ardore ghiacciato</span></p><p>\"Uff, estate… Finisci il prima possibile…\"</p>",
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/35428890/bffac6cdb7bf11846a00283924b7b617_5709312977074061024.png",
   "filterValues": {
-    "cardCharacterChargingPoint": "Energia: 3",
     "cardCharacterWeaponType": "Claymore",
+    "cardCharacterChargingPoint": "Energia: 3",
     "cardCharacterCamp": [
       "Liyue"
     ],
-    "cardCharacterObtainingMethod": "Invita personaggio",
-    "cardCharacterElement": "Cryo"
+    "cardCharacterElement": "Cryo",
+    "cardCharacterObtainingMethod": "Invita personaggio"
   },
   "menuId": 17,
   "menuName": "Carte personaggio",
   "version": 1685311550,
   "components": {
+    "tcg": {
+      "headerImgs": [
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/35428890/bffac6cdb7bf11846a00283924b7b617_5709312977074061024.png",
+          "imgDesc": "Normal Skin"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/16/35428890/80fda3c04c95b0b707f15edc6212c9fa_7634604158014800099.gif",
+          "imgDesc": "Dynamic Skin"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/16/35428890/6cd0232fa00dce183328b3e7f86a6445_7589642379064544573.png",
+          "imgDesc": "Liyue"
+        }
+      ],
+      "hp": 10
+    },
     "galleryCharacter": [
       {
         "key": "Tripudio elementale",
@@ -132,23 +149,68 @@
         "isMaterial": true
       }
     ],
-    "tcg": {
-      "headerImgs": [
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/35428890/bffac6cdb7bf11846a00283924b7b617_5709312977074061024.png",
-          "imgDesc": "Normal Skin"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/16/35428890/80fda3c04c95b0b707f15edc6212c9fa_7634604158014800099.gif",
-          "imgDesc": "Dynamic Skin"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/16/35428890/6cd0232fa00dce183328b3e7f86a6445_7589642379064544573.png",
-          "imgDesc": "Liyue"
-        }
-      ],
-      "hp": 10
-    },
+    "talent": [
+      {
+        "key": "Assillo demoniaco",
+        "title": "Assillo demoniaco",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/248396191/10316b5178d5109d597f415d6e7903dc_6078469702020775404.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Attacco normale</color>\nInfligge 2 <color=#ffd780>DAN fisici.</color>"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Gelo stratificato di Chonghua",
+        "title": "Gelo stratificato di Chonghua",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/248396191/f17b48b7b6d0a06e1b0ad5fa0799168b_6291165539926219610.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Abilità elementale</color>\nInfligge 3 <color=#99ffff>DAN da Cryo</color> , genera un Campo di gelo Chonghua.\n<color=#ece5d8>Campo di gelo Chonghua</color>\n<color=#ffd780>Stato di combattimento</color>\nI <color=#ffffff>DAN fisici</color> inflitti dai tuoi personaggi che usano la spada, la claymore o la lancia sono convertiti in <color=#99ffff>DAN da Cryo</color> .\n<color=#ffffff>Durata (in turni): 2</color>"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Stella squarcianuvole",
+        "title": "Stella squarcianuvole",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/248396191/d98d17703b86282b89569cb7c5dde12c_1283510472078113299.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Tripudio elementale</color>\nInfligge 7 <color=#99ffff>DAN da Cryo</color> ."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "DAN da Cryo",
+        "title": "DAN da Cryo",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/05/35428890/4bcc4b82a9d7ee22770f60afa54e9919_1477940899353635604.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Applica Cryo e può innescare le seguenti reazioni elementali:\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#ff9999>Pyro</color> <color=#ffffff>]</color> <color=#ffffff>Fusione</color> : DAN inflitti + 2.\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#ffacff>Electro</color> <color=#ffffff>]</color> <color=#ffffff>Superconduzione</color> : DAN inflitti +1, infligge 1 DAN da perforazione a tutti i personaggi nemici tranne al bersaglio.\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#80c0ff>Hydro</color> <color=#ffffff>]</color> <color=#ffffff>Congelamento</color> : DAN inflitti +1, impedisce al bersaglio di eseguire azioni durante il turno corrente (può essere rimosso in anticipo se riceve danni fisici o da Pyro, nel caso subisce DAN +2)."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Dettagli regole",
+        "title": "Dettagli regole",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/15/35428890/245c229cf6f7364c7c9a7aea3db1a1ad_8542223584315393995.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ece5d8>DAN fisici</color>\nI DAN fisici non applicano alcun elemento né innescano reazioni elementali.\n<color=#ece5d8>Durata (in turni)</color>\nOgni volta che raggiungi la fase finale, la <color=#ffffff>durata (in turni)</color> verrà ridotta di 1.\nQuando la <color=#ffffff>durata (in turni)</color> sarà esaurita, questa carta verrà eliminata."
+          }
+        ],
+        "attributes": []
+      }
+    ],
     "customize": [
       {
         "type": "Heading",
@@ -491,68 +553,6 @@
       {
         "type": "RichText",
         "text": "*Conta il livello giocatore all'inizio del reset settimanale"
-      }
-    ],
-    "talent": [
-      {
-        "key": "Assillo demoniaco",
-        "title": "Assillo demoniaco",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/248396191/10316b5178d5109d597f415d6e7903dc_6078469702020775404.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Attacco normale</color>\nInfligge 2 <color=#ffd780>DAN fisici.</color>"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Gelo stratificato di Chonghua",
-        "title": "Gelo stratificato di Chonghua",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/248396191/f17b48b7b6d0a06e1b0ad5fa0799168b_6291165539926219610.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Abilità elementale</color>\nInfligge 3 <color=#99ffff>DAN da Cryo</color> , genera un Campo di gelo Chonghua.\n<color=#ece5d8>Campo di gelo Chonghua</color>\n<color=#ffd780>Stato di combattimento</color>\nI <color=#ffffff>DAN fisici</color> inflitti dai tuoi personaggi che usano la spada, la claymore o la lancia sono convertiti in <color=#99ffff>DAN da Cryo</color> .\n<color=#ffffff>Durata (in turni): 2</color>"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Stella squarcianuvole",
-        "title": "Stella squarcianuvole",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/03/248396191/d98d17703b86282b89569cb7c5dde12c_1283510472078113299.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Tripudio elementale</color>\nInfligge 7 <color=#99ffff>DAN da Cryo</color> ."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "DAN da Cryo",
-        "title": "DAN da Cryo",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/05/35428890/4bcc4b82a9d7ee22770f60afa54e9919_1477940899353635604.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Applica Cryo e può innescare le seguenti reazioni elementali:\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#ff9999>Pyro</color> <color=#ffffff>]</color> <color=#ffffff>Fusione</color> : DAN inflitti + 2.\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#ffacff>Electro</color> <color=#ffffff>]</color> <color=#ffffff>Superconduzione</color> : DAN inflitti +1, infligge 1 DAN da perforazione a tutti i personaggi nemici tranne al bersaglio.\n<color=#ffffff>[</color> <color=#99ffff>Cryo</color> + <color=#80c0ff>Hydro</color> <color=#ffffff>]</color> <color=#ffffff>Congelamento</color> : DAN inflitti +1, impedisce al bersaglio di eseguire azioni durante il turno corrente (può essere rimosso in anticipo se riceve danni fisici o da Pyro, nel caso subisce DAN +2)."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Dettagli regole",
-        "title": "Dettagli regole",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/15/35428890/245c229cf6f7364c7c9a7aea3db1a1ad_8542223584315393995.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ece5d8>DAN fisici</color>\nI DAN fisici non applicano alcun elemento né innescano reazioni elementali.\n<color=#ece5d8>Durata (in turni)</color>\nOgni volta che raggiungi la fase finale, la <color=#ffffff>durata (in turni)</color> verrà ridotta di 1.\nQuando la <color=#ffffff>durata (in turni)</color> sarà esaurita, questa carta verrà eliminata."
-          }
-        ],
-        "attributes": []
       }
     ]
   }
