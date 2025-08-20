@@ -5,88 +5,711 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/avatar.png",
   "filterValues": {
-    "characterRegion": "Mondstadt",
     "characterRarity": 5,
+    "characterRegion": "Mondstadt",
+    "characterWeapon": "Catalyst",
     "characterVision": "Pyro",
-    "characterProperty": "Pyro DMG Bonus",
-    "characterWeapon": "Catalyst"
+    "characterProperty": "Pyro DMG Bonus"
   },
   "menuId": 2,
   "menuName": "Character Archive",
   "version": 1753578670,
   "components": {
-    "story": [
+    "talent": [
       {
-        "title": "Character Details",
+        "key": "Kaboom!",
+        "title": "Kaboom!",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/battle_talent_0/battle_talent_0.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "When the patrons of Mondstadt's taverns are asked about the strongest knight of the Knights of Favonius, three names are likely to come up:\nThe highly reputable Acting Grand Master Jean, Cavalry Captain Kaeya, and the mysterious tycoon, Diluc.\nHowever, some claim to have witnessed, albeit through bleary, drunken eyes, a knight in red, leveling the entire Stormbearer Mountains.\nIf one wants to find this mysterious knight, then they need look no further than the solitary confinement cell inside the Knights of Favonius Headquarters.\nIf the cell is found vacant... then something explosively unfortunate is likely about to take place...\nKlee is well known for the danger she presents. As an official member of the Knights of Favonius, her strength in combat cannot be underestimated.\nAs a hyperactive child, meanwhile, her destructive capabilities cannot be overstated.\nAfter all, while other Mondstadt children her age are still playing with regular toys, Klee's favorite toys are... live explosives."
+            "text": "<color=#ffd780>Normal Attack</color>\nThrows things that go boom when they hit things! Perform up to 3 explosive attacks, dealing <color=#ff9999>AoE Pyro DMG</color> .\n<color=#ffd780>Charged Attack</color>\nConsumes a certain amount of Stamina and deals <color=#ff9999>AoE Pyro DMG</color> to opponents after a short casting time.\n<color=#ffd780>Plunging Attack</color>\nGathering the power of Pyro, Klee plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#ff9999>AoE Pyro DMG</color> upon impact with the ground."
           }
-        ]
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11"
+            ]
+          },
+          {
+            "key": "1-Hit DMG",
+            "values": [
+              "72.2%",
+              "77.6%",
+              "83.0%",
+              "90.2%",
+              "95.6%",
+              "101%",
+              "108%",
+              "115%",
+              "123%",
+              "130%",
+              "137%"
+            ]
+          },
+          {
+            "key": "2-Hit DMG",
+            "values": [
+              "62.4%",
+              "67.1%",
+              "71.8%",
+              "78.0%",
+              "82.7%",
+              "87.4%",
+              "93.6%",
+              "99.8%",
+              "106%",
+              "112%",
+              "119%"
+            ]
+          },
+          {
+            "key": "3-Hit DMG",
+            "values": [
+              "89.9%",
+              "96.7%",
+              "103%",
+              "112%",
+              "119%",
+              "126%",
+              "135%",
+              "144%",
+              "153%",
+              "162%",
+              "171%"
+            ]
+          },
+          {
+            "key": "Charged Attack DMG",
+            "values": [
+              "157%",
+              "169%",
+              "181%",
+              "197%",
+              "209%",
+              "220%",
+              "236%",
+              "252%",
+              "268%",
+              "283%",
+              "300%"
+            ]
+          },
+          {
+            "key": "Charged Attack Stamina Cost",
+            "values": [
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0"
+            ]
+          },
+          {
+            "key": "Plunge DMG",
+            "values": [
+              "56.8%",
+              "61.5%",
+              "66.1%",
+              "72.7%",
+              "77.3%",
+              "82.6%",
+              "89.9%",
+              "97.1%",
+              "104.4%",
+              "112.3%",
+              "120.3%"
+            ]
+          },
+          {
+            "key": "Low/High Plunge DMG",
+            "values": [
+              "114%/142%",
+              "123%/153%",
+              "132%/165%",
+              "145%/182%",
+              "155%/193%",
+              "165%/206%",
+              "180%/224%",
+              "194%/243%",
+              "209%/261%",
+              "225%/281%",
+              "240%/300%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 164,
+              "name": "Teachings of Freedom",
+              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>The freedom to live is one of such. It is the freedom to live freely and healthily without concerns of one's own safety.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Freedom_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 630,
+              "name": "Divining Scroll",
+              "desc": "A scroll that likely relates to some kind of magic. Exudes an inexplicable but ominous warmth.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Divining Scroll_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 163,
+              "name": "Guide to Freedom",
+              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>The freedom of travel is one of such. It is the freedom to traverse the land freely without being obstructed.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Freedom_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 634,
+              "name": "Sealed Scroll",
+              "desc": "An old scroll lacking in detail and clarity. By following the images on it, some magical creatures can recreate a small part of its magic.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sealed Scroll_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 163,
+              "name": "Guide to Freedom",
+              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>The freedom of travel is one of such. It is the freedom to traverse the land freely without being obstructed.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Freedom_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 634,
+              "name": "Sealed Scroll",
+              "desc": "An old scroll lacking in detail and clarity. By following the images on it, some magical creatures can recreate a small part of its magic.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sealed Scroll_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 163,
+              "name": "Guide to Freedom",
+              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>The freedom of travel is one of such. It is the freedom to traverse the land freely without being obstructed.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Freedom_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 634,
+              "name": "Sealed Scroll",
+              "desc": "An old scroll lacking in detail and clarity. By following the images on it, some magical creatures can recreate a small part of its magic.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sealed Scroll_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 163,
+              "name": "Guide to Freedom",
+              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>The freedom of travel is one of such. It is the freedom to traverse the land freely without being obstructed.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Freedom_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 634,
+              "name": "Sealed Scroll",
+              "desc": "An old scroll lacking in detail and clarity. By following the images on it, some magical creatures can recreate a small part of its magic.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sealed Scroll_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 162,
+              "name": "Philosophies of Freedom",
+              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>To sing is one such freedom. To sing on the land created by the Anemo Archon is to send your heart away with the song on the wind.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Freedom_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1282,
+              "name": "Forbidden Curse Scroll",
+              "desc": "A scroll inscribed with ancient images. It is said that few can decipher its meaning, and the few scholars that have all went mad.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Forbidden Curse Scroll_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 356,
+              "name": "Ring of Boreas",
+              "desc": "A bit of crystallized ice from the Great Wolf King of the North.<br/>This land was once a realm of freezing-cold blizzards and ice storms filled with razor-sharp ice shards, all at the command of Boreas. Though his power may have diminished, he could still freeze the land in an instant.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ring of Boreas_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 162,
+              "name": "Philosophies of Freedom",
+              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>To sing is one such freedom. To sing on the land created by the Anemo Archon is to send your heart away with the song on the wind.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Freedom_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1282,
+              "name": "Forbidden Curse Scroll",
+              "desc": "A scroll inscribed with ancient images. It is said that few can decipher its meaning, and the few scholars that have all went mad.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Forbidden Curse Scroll_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 356,
+              "name": "Ring of Boreas",
+              "desc": "A bit of crystallized ice from the Great Wolf King of the North.<br/>This land was once a realm of freezing-cold blizzards and ice storms filled with razor-sharp ice shards, all at the command of Boreas. Though his power may have diminished, he could still freeze the land in an instant.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ring of Boreas_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 162,
+              "name": "Philosophies of Freedom",
+              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>To sing is one such freedom. To sing on the land created by the Anemo Archon is to send your heart away with the song on the wind.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Freedom_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1282,
+              "name": "Forbidden Curse Scroll",
+              "desc": "A scroll inscribed with ancient images. It is said that few can decipher its meaning, and the few scholars that have all went mad.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Forbidden Curse Scroll_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 356,
+              "name": "Ring of Boreas",
+              "desc": "A bit of crystallized ice from the Great Wolf King of the North.<br/>This land was once a realm of freezing-cold blizzards and ice storms filled with razor-sharp ice shards, all at the command of Boreas. Though his power may have diminished, he could still freeze the land in an instant.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ring of Boreas_icon.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Common currency. The one language everybody speaks.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 162,
+              "name": "Philosophies of Freedom",
+              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>To sing is one such freedom. To sing on the land created by the Anemo Archon is to send your heart away with the song on the wind.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Freedom_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 1282,
+              "name": "Forbidden Curse Scroll",
+              "desc": "A scroll inscribed with ancient images. It is said that few can decipher its meaning, and the few scholars that have all went mad.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Forbidden Curse Scroll_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 356,
+              "name": "Ring of Boreas",
+              "desc": "A bit of crystallized ice from the Great Wolf King of the North.<br/>This land was once a realm of freezing-cold blizzards and ice storms filled with razor-sharp ice shards, all at the command of Boreas. Though his power may have diminished, he could still freeze the land in an instant.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ring of Boreas_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "Crown of Insight",
+              "desc": "A precious Talent Level-Up material.<br/>Once a medium for the storage and transfer of wisdom in ancient times. Now, wisdom is found in ancient texts and in profound speech. Nevertheless, this Crown of Insight must still be able to impart some transcendent power and wisdom to its bearer.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/battle_talent_0/battle_talent_0.gif"
       },
       {
-        "title": "Character Story 1",
+        "key": "Jumpy Dumpty",
+        "title": "Jumpy Dumpty",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/battle_talent_1/battle_talent_1.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 2</color>\nThree years ago, Klee was entrusted to the Knights of Favonius by her parents, who were famed adventurers.\nThis was how the fates of Klee and \"that boy in white\" became intertwined with their \"family\" in Mondstadt.\nKlee is curious about everything in the outside world. She has an innocent passion for explosives, and is incredibly enthusiastic in all that she does.\nUnder the protection of the Knights of Favonius, she is protected from harm and those of ill intent.\nThis young girl soon forged an unbreakable bond with everyone in the Knights of Favonius.\nBeing sent to the solitary confinement room by Jean, helping Amber improving Baron Bunny, as well as developing new bombs...\nThese parts of Klee's life are all invaluable treasures to her."
+            "text": "Jumpy Dumpty is tons of boom-bang-fun!\nWhen thrown, Jumpy Dumpty bounces thrice, igniting and dealing <color=#ff9999>AoE Pyro DMG</color> with every bounce.\nOn the third bounce, the bomb splits into many mines.\nThe mines will explode upon contact with opponents, or after a short period of time, dealing <color=#ff9999>AoE Pyro DMG</color> .\nStarts with 2 charges.\nJumpy Dumpty is Klee's good friend! She can't help but introduce him to everyone."
           }
-        ]
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13"
+            ]
+          },
+          {
+            "key": "Jumpy Dumpty DMG",
+            "values": [
+              "95.2%",
+              "102%",
+              "109%",
+              "119%",
+              "126%",
+              "133%",
+              "143%",
+              "152%",
+              "162%",
+              "171%",
+              "181%",
+              "190%",
+              "202%"
+            ]
+          },
+          {
+            "key": "Mine DMG",
+            "values": [
+              "32.8%",
+              "35.3%",
+              "37.7%",
+              "41.0%",
+              "43.5%",
+              "45.9%",
+              "49.2%",
+              "52.5%",
+              "55.8%",
+              "59.0%",
+              "62.3%",
+              "65.6%",
+              "69.7%"
+            ]
+          },
+          {
+            "key": "Mine Duration",
+            "values": [
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s"
+            ]
+          },
+          {
+            "key": "CD",
+            "values": [
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s",
+              "20.0s"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/battle_talent_1/battle_talent_1.gif"
       },
       {
-        "title": "Character Story 2",
+        "key": "Sparks 'n' Splash",
+        "title": "Sparks 'n' Splash",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/battle_talent_2/battle_talent_2.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 3</color>\n\"The apple doesn't fall far from the tree...\"\nJean sighs to herself as she sits down at her desk, head in hands, faced once again with a stack of damage reports.\nCarts blasted beyond repair, storage shacks burnt down, forest fires that the knights barely managed to contain...\nNot to mention the suspiciously high number of deaths from unnatural causes among the fish of Starfell Lake.\nThere's only one potential culprit behind all of this, and she just so happens to be one of their own...\n\"Klee!\"\nFaced with Jean's stern glare, the harmless-looking Klee surrenders all her concealed explosives.\nShe is then escorted to solitary confinement, despite her protests amidst floods of tears.\nThis occurs about once or twice a week at the Knights of Favonius."
+            "text": "Klee's Blazing Delight! For the duration of this ability, continuously summons Sparks 'n' Splash to attack nearby opponents, dealing <color=#ff9999>AoE Pyro DMG</color> .\nThe knights all believe that Klee must have a lucky star watching over her to have never been hurt by any of her own bombs..."
           }
-        ]
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13"
+            ]
+          },
+          {
+            "key": "Sparks 'n' Splash DMG",
+            "values": [
+              "42.6%",
+              "45.8%",
+              "49.0%",
+              "53.3%",
+              "56.5%",
+              "59.7%",
+              "64.0%",
+              "68.2%",
+              "72.5%",
+              "76.8%",
+              "81.0%",
+              "85.3%",
+              "90.6%"
+            ]
+          },
+          {
+            "key": "Duration",
+            "values": [
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s",
+              "10.0s"
+            ]
+          },
+          {
+            "key": "CD",
+            "values": [
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s",
+              "15.0s"
+            ]
+          },
+          {
+            "key": "Energy Cost",
+            "values": [
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/battle_talent_2/battle_talent_2.gif"
       },
       {
-        "title": "Character Story 3",
+        "key": "Pounding Surprise",
+        "title": "Pounding Surprise",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/const_talent_0.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 4</color>\nOf course, Klee always tries to help clean up the messes she's made.\nHowever, sometimes her reckless personality makes things worse still.\nFor example, she once wanted to apologize to everyone by making some BBQ fish, but ended up blowing the stove sky-high.\nThen there was the time she got into a fluster and tried to put the fire out... with wind — which obviously resulted in the whole plain going up in flames.\nKlee is not a bad kid by nature, it's just that her curious and playful nature always results in her failing to think before she acts.\nAnd every time she gets into trouble, she guiltily tries to make up for it.\nThough once Jean lets Klee out of solitary confinement, there's usually no more than a day or two before the sound of explosions return to Mondstadt.\nThe \"Spark Knight\" always manages to live up to her title in a range of unexpected ways."
+            "text": "When <color=#ffd780>Jumpy Dumpty</color> and Normal Attacks deal DMG, Klee has a 50% chance to obtain an Explosive Spark.\nThis Explosive Spark is consumed by the next Charged Attack, which costs no Stamina and deals 50% increased DMG."
           }
-        ]
+        ],
+        "attributes": null
       },
       {
-        "title": "Character Story 4",
+        "key": "Sparkling Burst",
+        "title": "Sparkling Burst",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/const_talent_1.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 5</color>\nThough Klee always ends up causing trouble for the Knights of Favonius and Mondstadt, she isn't just some rookie who drags the team down.\nOn the contrary, her skills with explosives can be quite handy if applied correctly.\nOnce, Jean was able to defeat a horde of invading hilichurls utilizing Klee's special talents alone.\nHowever, Klee also forever changed the face of Stormbearer Mountains in that same operation due to recklessly placing too many charges...\nNeedless to say, everyone was more than a little shocked, but at least no one from the Knights of Favonius was injured.\nSince then, the legend of the \"Red Knight of the Stormbearer Mountains\" began to circulate around Mondstadt.\nRumor has it that she is cloaked in red, and clutches the greatest treasure the Knights of Favonius have.\nHowever, only Klee knows what this \"treasure\" truly is."
+            "text": "When Klee's Charged Attack results in a CRIT Hit, all party members gain 2 Elemental Energy."
           }
-        ]
+        ],
+        "attributes": null
       },
       {
-        "title": "Character Story 5",
+        "key": "All Of My Treasures!",
+        "title": "All Of My Treasures!",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/const_talent_2.png",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 6</color>\nTo Klee, the Knights of Favonius are family, and she can't imagine life without them. Her biggest role model, however, is still her birth mother — the avid adventurer, Alice.\nA highly renowned adventurer and author of the popular Teyvat Travel Guide, there is nothing this incredible mother cannot do — as far as Klee is concerned, anyway.\nWhether it's the way she used to guide Klee step-by-step through the techniques for adding gunpowder and selecting fuses, or the encouragement she'd give Klee to express her creativity through ever-bolder and more beautiful fireworks...\nOr that time she taught her how to identify Starsnatch Cliff's load-bearing points, then place explosive charges accordingly to bring the whole thing down...\nOr that time they stuck their tongues out at each other awkwardly while being told off by Huffman of the Knights of Favonius...\nKlee has many treasured memories of her mother.\nThis was the way things were until her parents left to travel to somewhere dangerous and far away. They entrusted Klee to the care of Albedo and the Knights of Favonius.\nThough still small, Klee knew she would one day become just like her mother.\nOne day, her explosives would become something that her mother would be proud of."
+            "text": "Displays the location of nearby <color=#ffd780>resources unique to Mondstadt</color> on the mini-map."
           }
-        ]
-      },
-      {
-        "title": "\"Dodoco\"",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 4</color>\nDodoco is Klee's first friend, and one of her best.\nA very long time ago, her mother made this doll for her by hand.\nAlice affixed it to Klee's four-leaf clover, and hung on her big backpack.\nFrom that day forth, Klee and Dodoco became inseparable.\nHer mother said that this would ensure that Klee would never be lonely and that she would have a friend to confide in even when she was alone.\nThey would also protect each other in times of danger, just like Amber and Baron Bunny.\nThis, however, worried the Knights quite a fair bit — considering the other things Alice and her daughter had invented, perhaps this, too, might explode at any time...\n\"Dodoco\" is a name Klee picked herself.\nWhen asked what this name meant, she flushed red for a good long while before replying: \"It means... Klee's best friend!\""
-          }
-        ]
-      },
-      {
-        "title": "Vision",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Unlocks at Friendship Lv. 6</color>\nAsking Klee how she obtained a Vision will probably get you nowhere — she doesn't know, either.\nA natural-born pyromaniac, Klee had already been acknowledged by a Vision from a very young age.\nAccording to Klee herself, she had been creating a bomb that was \"even bigger than super big!\"\nThis was her very first solo project, but the results were far from expected—\nWell, she \"only\" blew her small workshop sky high, leaving a mountain of smoking ash.\nBut rather than being disappointed, Klee was pleasantly surprised to see a flaming Vision emerge from those ashes.\nHow did Klee receive this divine acknowledgment?\nWas it her talent and passion for explosives, the individualistic nature she got from her mother, or her shining innocence?\nRegardless, Klee had already obtained such a coveted item at a tender, carefree age.\nRegardless of what she faces as she grows up, she will never give this \"present\" up."
-          }
-        ]
+        ],
+        "attributes": null
       }
     ],
     "voice": [
@@ -1653,745 +2276,798 @@
         ]
       }
     ],
-    "talent": [
+    "baseInfo": [
       {
-        "key": "Kaboom!",
-        "title": "Kaboom!",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/battle_talent_0/battle_talent_0.png",
-        "desc": [
+        "key": "Name",
+        "value": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>Normal Attack</color>\nThrows things that go boom when they hit things! Perform up to 3 explosive attacks, dealing <color=#ff9999>AoE Pyro DMG</color> .\n<color=#ffd780>Charged Attack</color>\nConsumes a certain amount of Stamina and deals <color=#ff9999>AoE Pyro DMG</color> to opponents after a short casting time.\n<color=#ffd780>Plunging Attack</color>\nGathering the power of Pyro, Klee plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#ff9999>AoE Pyro DMG</color> upon impact with the ground."
+            "text": "Klee"
           }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11"
-            ]
-          },
-          {
-            "key": "1-Hit DMG",
-            "values": [
-              "72.2%",
-              "77.6%",
-              "83.0%",
-              "90.2%",
-              "95.6%",
-              "101%",
-              "108%",
-              "115%",
-              "123%",
-              "130%",
-              "137%"
-            ]
-          },
-          {
-            "key": "2-Hit DMG",
-            "values": [
-              "62.4%",
-              "67.1%",
-              "71.8%",
-              "78.0%",
-              "82.7%",
-              "87.4%",
-              "93.6%",
-              "99.8%",
-              "106%",
-              "112%",
-              "119%"
-            ]
-          },
-          {
-            "key": "3-Hit DMG",
-            "values": [
-              "89.9%",
-              "96.7%",
-              "103%",
-              "112%",
-              "119%",
-              "126%",
-              "135%",
-              "144%",
-              "153%",
-              "162%",
-              "171%"
-            ]
-          },
-          {
-            "key": "Charged Attack DMG",
-            "values": [
-              "157%",
-              "169%",
-              "181%",
-              "197%",
-              "209%",
-              "220%",
-              "236%",
-              "252%",
-              "268%",
-              "283%",
-              "300%"
-            ]
-          },
-          {
-            "key": "Charged Attack Stamina Cost",
-            "values": [
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0",
-              "50.0"
-            ]
-          },
-          {
-            "key": "Plunge DMG",
-            "values": [
-              "56.8%",
-              "61.5%",
-              "66.1%",
-              "72.7%",
-              "77.3%",
-              "82.6%",
-              "89.9%",
-              "97.1%",
-              "104.4%",
-              "112.3%",
-              "120.3%"
-            ]
-          },
-          {
-            "key": "Low/High Plunge DMG",
-            "values": [
-              "114%/142%",
-              "123%/153%",
-              "132%/165%",
-              "145%/182%",
-              "155%/193%",
-              "165%/206%",
-              "180%/224%",
-              "194%/243%",
-              "209%/261%",
-              "225%/281%",
-              "240%/300%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 164,
-              "name": "Teachings of Freedom",
-              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>The freedom to live is one of such. It is the freedom to live freely and healthily without concerns of one's own safety.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Freedom_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 630,
-              "name": "Divining Scroll",
-              "desc": "A scroll that likely relates to some kind of magic. Exudes an inexplicable but ominous warmth.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Divining Scroll_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 163,
-              "name": "Guide to Freedom",
-              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>The freedom of travel is one of such. It is the freedom to traverse the land freely without being obstructed.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Freedom_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 634,
-              "name": "Sealed Scroll",
-              "desc": "An old scroll lacking in detail and clarity. By following the images on it, some magical creatures can recreate a small part of its magic.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sealed Scroll_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 163,
-              "name": "Guide to Freedom",
-              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>The freedom of travel is one of such. It is the freedom to traverse the land freely without being obstructed.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Freedom_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 634,
-              "name": "Sealed Scroll",
-              "desc": "An old scroll lacking in detail and clarity. By following the images on it, some magical creatures can recreate a small part of its magic.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sealed Scroll_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 163,
-              "name": "Guide to Freedom",
-              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>The freedom of travel is one of such. It is the freedom to traverse the land freely without being obstructed.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Freedom_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 634,
-              "name": "Sealed Scroll",
-              "desc": "An old scroll lacking in detail and clarity. By following the images on it, some magical creatures can recreate a small part of its magic.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sealed Scroll_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 163,
-              "name": "Guide to Freedom",
-              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>The freedom of travel is one of such. It is the freedom to traverse the land freely without being obstructed.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Freedom_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 634,
-              "name": "Sealed Scroll",
-              "desc": "An old scroll lacking in detail and clarity. By following the images on it, some magical creatures can recreate a small part of its magic.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sealed Scroll_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 162,
-              "name": "Philosophies of Freedom",
-              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>To sing is one such freedom. To sing on the land created by the Anemo Archon is to send your heart away with the song on the wind.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Freedom_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1282,
-              "name": "Forbidden Curse Scroll",
-              "desc": "A scroll inscribed with ancient images. It is said that few can decipher its meaning, and the few scholars that have all went mad.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Forbidden Curse Scroll_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 356,
-              "name": "Ring of Boreas",
-              "desc": "A bit of crystallized ice from the Great Wolf King of the North.<br/>This land was once a realm of freezing-cold blizzards and ice storms filled with razor-sharp ice shards, all at the command of Boreas. Though his power may have diminished, he could still freeze the land in an instant.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ring of Boreas_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 162,
-              "name": "Philosophies of Freedom",
-              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>To sing is one such freedom. To sing on the land created by the Anemo Archon is to send your heart away with the song on the wind.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Freedom_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1282,
-              "name": "Forbidden Curse Scroll",
-              "desc": "A scroll inscribed with ancient images. It is said that few can decipher its meaning, and the few scholars that have all went mad.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Forbidden Curse Scroll_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 356,
-              "name": "Ring of Boreas",
-              "desc": "A bit of crystallized ice from the Great Wolf King of the North.<br/>This land was once a realm of freezing-cold blizzards and ice storms filled with razor-sharp ice shards, all at the command of Boreas. Though his power may have diminished, he could still freeze the land in an instant.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ring of Boreas_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 162,
-              "name": "Philosophies of Freedom",
-              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>To sing is one such freedom. To sing on the land created by the Anemo Archon is to send your heart away with the song on the wind.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Freedom_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1282,
-              "name": "Forbidden Curse Scroll",
-              "desc": "A scroll inscribed with ancient images. It is said that few can decipher its meaning, and the few scholars that have all went mad.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Forbidden Curse Scroll_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 356,
-              "name": "Ring of Boreas",
-              "desc": "A bit of crystallized ice from the Great Wolf King of the North.<br/>This land was once a realm of freezing-cold blizzards and ice storms filled with razor-sharp ice shards, all at the command of Boreas. Though his power may have diminished, he could still freeze the land in an instant.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ring of Boreas_icon.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Common currency. The one language everybody speaks.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 162,
-              "name": "Philosophies of Freedom",
-              "desc": "Talent Level-Up material.<br/>Freedom is the spirit of the land of the wind.<br/>To sing is one such freedom. To sing on the land created by the Anemo Archon is to send your heart away with the song on the wind.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Freedom_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 1282,
-              "name": "Forbidden Curse Scroll",
-              "desc": "A scroll inscribed with ancient images. It is said that few can decipher its meaning, and the few scholars that have all went mad.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Forbidden Curse Scroll_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 356,
-              "name": "Ring of Boreas",
-              "desc": "A bit of crystallized ice from the Great Wolf King of the North.<br/>This land was once a realm of freezing-cold blizzards and ice storms filled with razor-sharp ice shards, all at the command of Boreas. Though his power may have diminished, he could still freeze the land in an instant.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Ring of Boreas_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "Crown of Insight",
-              "desc": "A precious Talent Level-Up material.<br/>Once a medium for the storage and transfer of wisdom in ancient times. Now, wisdom is found in ancient texts and in profound speech. Nevertheless, this Crown of Insight must still be able to impart some transcendent power and wisdom to its bearer.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/battle_talent_0/battle_talent_0.gif"
+        ]
       },
       {
-        "key": "Jumpy Dumpty",
-        "title": "Jumpy Dumpty",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/battle_talent_1/battle_talent_1.png",
-        "desc": [
+        "key": "Birthday",
+        "value": [
           {
             "type": "RichText",
-            "text": "Jumpy Dumpty is tons of boom-bang-fun!\nWhen thrown, Jumpy Dumpty bounces thrice, igniting and dealing <color=#ff9999>AoE Pyro DMG</color> with every bounce.\nOn the third bounce, the bomb splits into many mines.\nThe mines will explode upon contact with opponents, or after a short period of time, dealing <color=#ff9999>AoE Pyro DMG</color> .\nStarts with 2 charges.\nJumpy Dumpty is Klee's good friend! She can't help but introduce him to everyone."
+            "text": "7/27"
           }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13"
-            ]
-          },
-          {
-            "key": "Jumpy Dumpty DMG",
-            "values": [
-              "95.2%",
-              "102%",
-              "109%",
-              "119%",
-              "126%",
-              "133%",
-              "143%",
-              "152%",
-              "162%",
-              "171%",
-              "181%",
-              "190%",
-              "202%"
-            ]
-          },
-          {
-            "key": "Mine DMG",
-            "values": [
-              "32.8%",
-              "35.3%",
-              "37.7%",
-              "41.0%",
-              "43.5%",
-              "45.9%",
-              "49.2%",
-              "52.5%",
-              "55.8%",
-              "59.0%",
-              "62.3%",
-              "65.6%",
-              "69.7%"
-            ]
-          },
-          {
-            "key": "Mine Duration",
-            "values": [
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s"
-            ]
-          },
-          {
-            "key": "CD",
-            "values": [
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s",
-              "20.0s"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/battle_talent_1/battle_talent_1.gif"
+        ]
       },
       {
-        "key": "Sparks 'n' Splash",
-        "title": "Sparks 'n' Splash",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/battle_talent_2/battle_talent_2.png",
-        "desc": [
+        "key": "Constellation",
+        "value": [
           {
             "type": "RichText",
-            "text": "Klee's Blazing Delight! For the duration of this ability, continuously summons Sparks 'n' Splash to attack nearby opponents, dealing <color=#ff9999>AoE Pyro DMG</color> .\nThe knights all believe that Klee must have a lucky star watching over her to have never been hurt by any of her own bombs..."
+            "text": "Trifolium"
           }
-        ],
-        "attributes": [
-          {
-            "key": "Level",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13"
-            ]
-          },
-          {
-            "key": "Sparks 'n' Splash DMG",
-            "values": [
-              "42.6%",
-              "45.8%",
-              "49.0%",
-              "53.3%",
-              "56.5%",
-              "59.7%",
-              "64.0%",
-              "68.2%",
-              "72.5%",
-              "76.8%",
-              "81.0%",
-              "85.3%",
-              "90.6%"
-            ]
-          },
-          {
-            "key": "Duration",
-            "values": [
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s",
-              "10.0s"
-            ]
-          },
-          {
-            "key": "CD",
-            "values": [
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s",
-              "15.0s"
-            ]
-          },
-          {
-            "key": "Energy Cost",
-            "values": [
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/battle_talent_2/battle_talent_2.gif"
+        ]
       },
       {
-        "key": "Pounding Surprise",
-        "title": "Pounding Surprise",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/const_talent_0.png",
-        "desc": [
+        "key": "Title",
+        "value": [
           {
             "type": "RichText",
-            "text": "When <color=#ffd780>Jumpy Dumpty</color> and Normal Attacks deal DMG, Klee has a 50% chance to obtain an Explosive Spark.\nThis Explosive Spark is consumed by the next Charged Attack, which costs no Stamina and deals 50% increased DMG."
+            "text": "Fleeing Sunlight"
           }
-        ],
-        "attributes": null
+        ]
       },
       {
-        "key": "Sparkling Burst",
-        "title": "Sparkling Burst",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/const_talent_1.png",
-        "desc": [
+        "key": "Vision",
+        "value": [
           {
             "type": "RichText",
-            "text": "When Klee's Charged Attack results in a CRIT Hit, all party members gain 2 Elemental Energy."
+            "text": "Pyro"
           }
-        ],
-        "attributes": null
+        ]
       },
       {
-        "key": "All Of My Treasures!",
-        "title": "All Of My Treasures!",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/const_talent_2.png",
-        "desc": [
+        "key": "Affiliation",
+        "value": [
           {
             "type": "RichText",
-            "text": "Displays the location of nearby <color=#ffd780>resources unique to Mondstadt</color> on the mini-map."
+            "text": "Knights of Favonius"
+          }
+        ]
+      },
+      {
+        "key": "Chinese VA",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "花玲 (Hualing)"
+          }
+        ]
+      },
+      {
+        "key": "English VA",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Poonam Basu"
+          }
+        ]
+      },
+      {
+        "key": "Japanese VA",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "久野美咲 (KUNO Misaki)"
+          }
+        ]
+      },
+      {
+        "key": "Korean VA",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "방연지 (Bang Yeon-ji)"
+          }
+        ]
+      },
+      {
+        "key": "Namecard",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 6074,
+            "name": "Klee: Explosive",
+            "desc": "Namecard style.<br>Klee's lucky explosive — can you tell if it's Jumpy Dumpty or Dodoco? (Hint: Look carefully at the tail...)",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/15/911a237581b8a0ba0c2879453226e974_9211487783354108464.png"
           }
         ],
-        "attributes": null
+        "isMaterial": true
+      },
+      {
+        "key": "Outfit",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5781,
+            "name": "Blossoming Starlight",
+            "desc": "An exquisite outfit Klee wears only for the most important performances. The colors are brilliant, like a cake adorned with cream flowers and crowned with scarlet candles. With it comes happiness and smiles that will fill your adventures.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/06/24/a301ddffa3697d64093d95c792ca02c9_7479257930193658037.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Special Dish",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 1891,
+            "name": "Fish-Flavored Toast",
+            "desc": "Klee's specialty. By way of apology for wantonly using her bombs to scare away the fish, Jean instructed Klee to make this toast for the fishermen. It's filling and tasty. Klee will never starve again, even after a whole day of blast fishing.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fish-Flavored Toast_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "TCG Character Card",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3457,
+            "name": "Klee",
+            "desc": "<p><span style=\"color: #FFFFFF\">\"Fleeing Sunlight\" Klee</span></p><p>Every card you draw may bring in an \"explosive surprise.\"</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/16/35428890/24190d55c500e2eae31705e6590b1302_8654915267348701782.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Version Released",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.0"
+          }
+        ]
       }
     ],
-    "videoCollection": [
+    "story": [
       {
-        "title": "Character Tales - \"Fleeing Sunlight in the Night\" | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=TFOeQuShLME&ab_channel=GenshinImpact",
-        "coverUrl": "https://i.ytimg.com/vi/TFOeQuShLME/maxresdefault.jpg",
-        "duration": 81
+        "title": "Character Details",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "When the patrons of Mondstadt's taverns are asked about the strongest knight of the Knights of Favonius, three names are likely to come up:\nThe highly reputable Acting Grand Master Jean, Cavalry Captain Kaeya, and the mysterious tycoon, Diluc.\nHowever, some claim to have witnessed, albeit through bleary, drunken eyes, a knight in red, leveling the entire Stormbearer Mountains.\nIf one wants to find this mysterious knight, then they need look no further than the solitary confinement cell inside the Knights of Favonius Headquarters.\nIf the cell is found vacant... then something explosively unfortunate is likely about to take place...\nKlee is well known for the danger she presents. As an official member of the Knights of Favonius, her strength in combat cannot be underestimated.\nAs a hyperactive child, meanwhile, her destructive capabilities cannot be overstated.\nAfter all, while other Mondstadt children her age are still playing with regular toys, Klee's favorite toys are... live explosives."
+          }
+        ]
       },
       {
-        "title": "Collected Miscellany - \"Klee: Jumpy Dumpty\" | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=jdq2shrprdU&ab_channel=GenshinImpact",
-        "coverUrl": "https://i.ytimg.com/vi/jdq2shrprdU/maxresdefault.jpg",
-        "duration": 305
+        "title": "Character Story 1",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 2</color>\nThree years ago, Klee was entrusted to the Knights of Favonius by her parents, who were famed adventurers.\nThis was how the fates of Klee and \"that boy in white\" became intertwined with their \"family\" in Mondstadt.\nKlee is curious about everything in the outside world. She has an innocent passion for explosives, and is incredibly enthusiastic in all that she does.\nUnder the protection of the Knights of Favonius, she is protected from harm and those of ill intent.\nThis young girl soon forged an unbreakable bond with everyone in the Knights of Favonius.\nBeing sent to the solitary confinement room by Jean, helping Amber improving Baron Bunny, as well as developing new bombs...\nThese parts of Klee's life are all invaluable treasures to her."
+          }
+        ]
       },
       {
-        "title": "Genshin Impact EP - Trail of the Scorching Summer Treasure",
-        "url": "https://www.youtube.com/watch?v=CMJ9Dhf7pig&ab_channel=GenshinImpact",
-        "coverUrl": "https://i.ytimg.com/vi/CMJ9Dhf7pig/maxresdefault.jpg",
-        "duration": 264
+        "title": "Character Story 2",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 3</color>\n\"The apple doesn't fall far from the tree...\"\nJean sighs to herself as she sits down at her desk, head in hands, faced once again with a stack of damage reports.\nCarts blasted beyond repair, storage shacks burnt down, forest fires that the knights barely managed to contain...\nNot to mention the suspiciously high number of deaths from unnatural causes among the fish of Starfell Lake.\nThere's only one potential culprit behind all of this, and she just so happens to be one of their own...\n\"Klee!\"\nFaced with Jean's stern glare, the harmless-looking Klee surrenders all her concealed explosives.\nShe is then escorted to solitary confinement, despite her protests amidst floods of tears.\nThis occurs about once or twice a week at the Knights of Favonius."
+          }
+        ]
       },
       {
-        "title": "New Character Demo - \"Klee: Da-Da Da!\" | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=C_duDk5e8yU&ab_channel=GenshinImpact",
-        "coverUrl": "https://i.ytimg.com/vi/C_duDk5e8yU/maxresdefault.jpg",
-        "duration": 103
+        "title": "Character Story 3",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 4</color>\nOf course, Klee always tries to help clean up the messes she's made.\nHowever, sometimes her reckless personality makes things worse still.\nFor example, she once wanted to apologize to everyone by making some BBQ fish, but ended up blowing the stove sky-high.\nThen there was the time she got into a fluster and tried to put the fire out... with wind — which obviously resulted in the whole plain going up in flames.\nKlee is not a bad kid by nature, it's just that her curious and playful nature always results in her failing to think before she acts.\nAnd every time she gets into trouble, she guiltily tries to make up for it.\nThough once Jean lets Klee out of solitary confinement, there's usually no more than a day or two before the sound of explosions return to Mondstadt.\nThe \"Spark Knight\" always manages to live up to her title in a range of unexpected ways."
+          }
+        ]
       },
       {
-        "title": "Of Ballads and Brews Event Cutscene Animation: \"The Wind Returns for the Fairbrew\" | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=_76oCzo8sjU&ab_channel=GenshinImpact",
-        "coverUrl": "https://i.ytimg.com/vi/_76oCzo8sjU/maxresdefault.jpg",
-        "duration": 152
+        "title": "Character Story 4",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 5</color>\nThough Klee always ends up causing trouble for the Knights of Favonius and Mondstadt, she isn't just some rookie who drags the team down.\nOn the contrary, her skills with explosives can be quite handy if applied correctly.\nOnce, Jean was able to defeat a horde of invading hilichurls utilizing Klee's special talents alone.\nHowever, Klee also forever changed the face of Stormbearer Mountains in that same operation due to recklessly placing too many charges...\nNeedless to say, everyone was more than a little shocked, but at least no one from the Knights of Favonius was injured.\nSince then, the legend of the \"Red Knight of the Stormbearer Mountains\" began to circulate around Mondstadt.\nRumor has it that she is cloaked in red, and clutches the greatest treasure the Knights of Favonius have.\nHowever, only Klee knows what this \"treasure\" truly is."
+          }
+        ]
       },
       {
-        "title": "Outfit Teaser: Teyvat Style – It's Showtime | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=KlKcxzwqG4c&ab_channel=GenshinImpact",
-        "coverUrl": "https://i.ytimg.com/vi/KlKcxzwqG4c/maxresdefault.jpg",
-        "duration": 87
+        "title": "Character Story 5",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 6</color>\nTo Klee, the Knights of Favonius are family, and she can't imagine life without them. Her biggest role model, however, is still her birth mother — the avid adventurer, Alice.\nA highly renowned adventurer and author of the popular Teyvat Travel Guide, there is nothing this incredible mother cannot do — as far as Klee is concerned, anyway.\nWhether it's the way she used to guide Klee step-by-step through the techniques for adding gunpowder and selecting fuses, or the encouragement she'd give Klee to express her creativity through ever-bolder and more beautiful fireworks...\nOr that time she taught her how to identify Starsnatch Cliff's load-bearing points, then place explosive charges accordingly to bring the whole thing down...\nOr that time they stuck their tongues out at each other awkwardly while being told off by Huffman of the Knights of Favonius...\nKlee has many treasured memories of her mother.\nThis was the way things were until her parents left to travel to somewhere dangerous and far away. They entrusted Klee to the care of Albedo and the Knights of Favonius.\nThough still small, Klee knew she would one day become just like her mother.\nOne day, her explosives would become something that her mother would be proud of."
+          }
+        ]
       },
       {
-        "title": "Version 1.6 \"Midsummer Island Adventure\" Trailer | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=OrZ8RbXwoK4&ab_channel=GenshinImpact",
-        "coverUrl": "https://i.ytimg.com/vi/OrZ8RbXwoK4/maxresdefault.jpg",
-        "duration": 266
+        "title": "\"Dodoco\"",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 4</color>\nDodoco is Klee's first friend, and one of her best.\nA very long time ago, her mother made this doll for her by hand.\nAlice affixed it to Klee's four-leaf clover, and hung on her big backpack.\nFrom that day forth, Klee and Dodoco became inseparable.\nHer mother said that this would ensure that Klee would never be lonely and that she would have a friend to confide in even when she was alone.\nThey would also protect each other in times of danger, just like Amber and Baron Bunny.\nThis, however, worried the Knights quite a fair bit — considering the other things Alice and her daughter had invented, perhaps this, too, might explode at any time...\n\"Dodoco\" is a name Klee picked herself.\nWhen asked what this name meant, she flushed red for a good long while before replying: \"It means... Klee's best friend!\""
+          }
+        ]
+      },
+      {
+        "title": "Vision",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Unlocks at Friendship Lv. 6</color>\nAsking Klee how she obtained a Vision will probably get you nowhere — she doesn't know, either.\nA natural-born pyromaniac, Klee had already been acknowledged by a Vision from a very young age.\nAccording to Klee herself, she had been creating a bomb that was \"even bigger than super big!\"\nThis was her very first solo project, but the results were far from expected—\nWell, she \"only\" blew her small workshop sky high, leaving a mountain of smoking ash.\nBut rather than being disappointed, Klee was pleasantly surprised to see a flaming Vision emerge from those ashes.\nHow did Klee receive this divine acknowledgment?\nWas it her talent and passion for explosives, the individualistic nature she got from her mother, or her shining innocence?\nRegardless, Klee had already obtained such a coveted item at a tender, carefree age.\nRegardless of what she faces as she grows up, she will never give this \"present\" up."
+          }
+        ]
+      }
+    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=39&center=158.66,90.19&zoom=-0.50",
+    "ascension": [
+      {
+        "key": "Lv.1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "-",
+              "801"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "-",
+              "24"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "-",
+              "48"
+            ]
+          },
+          {
+            "key": "Pyro DMG Bonus",
+            "values": [
+              "-",
+              "0.0%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Lv.20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "2077",
+              "2764"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "63",
+              "84"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "124",
+              "165"
+            ]
+          },
+          {
+            "key": "Pyro DMG Bonus",
+            "values": [
+              "0.0%",
+              "0.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1100,
+            "name": "Agnidus Agate Sliver",
+            "desc": "Character Ascension Material.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 735,
+            "name": "Philanemo Mushroom",
+            "desc": "A fungus that grows in the warm caress of the wind. It is as everlasting as the wind, nourishing life.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 630,
+            "name": "Divining Scroll",
+            "desc": "A scroll that likely relates to some kind of magic. Exudes an inexplicable but ominous warmth.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Divining Scroll_icon.png",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "key": "Lv.40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "4136",
+              "4623"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "125",
+              "140"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "247",
+              "276"
+            ]
+          },
+          {
+            "key": "Pyro DMG Bonus",
+            "values": [
+              "0.0%",
+              "7.2%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1099,
+            "name": "Agnidus Agate Fragment",
+            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Everflame Seed",
+            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 735,
+            "name": "Philanemo Mushroom",
+            "desc": "A fungus that grows in the warm caress of the wind. It is as everlasting as the wind, nourishing life.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 630,
+            "name": "Divining Scroll",
+            "desc": "A scroll that likely relates to some kind of magic. Exudes an inexplicable but ominous warmth.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Divining Scroll_icon.png",
+            "amount": 15
+          }
+        ]
+      },
+      {
+        "key": "Lv.50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "5319",
+              "5970"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "161",
+              "180"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "318",
+              "357"
+            ]
+          },
+          {
+            "key": "Pyro DMG Bonus",
+            "values": [
+              "7.2%",
+              "14.4%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1099,
+            "name": "Agnidus Agate Fragment",
+            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Everflame Seed",
+            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 735,
+            "name": "Philanemo Mushroom",
+            "desc": "A fungus that grows in the warm caress of the wind. It is as everlasting as the wind, nourishing life.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 634,
+            "name": "Sealed Scroll",
+            "desc": "An old scroll lacking in detail and clarity. By following the images on it, some magical creatures can recreate a small part of its magic.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sealed Scroll_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "6673",
+              "7161"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "202",
+              "216 "
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "399",
+              "428"
+            ]
+          },
+          {
+            "key": "Pyro DMG Bonus",
+            "values": [
+              "14.4%",
+              "14.4%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1098,
+            "name": "Agnidus Agate Chunk",
+            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Everflame Seed",
+            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 735,
+            "name": "Philanemo Mushroom",
+            "desc": "A fungus that grows in the warm caress of the wind. It is as everlasting as the wind, nourishing life.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 634,
+            "name": "Sealed Scroll",
+            "desc": "An old scroll lacking in detail and clarity. By following the images on it, some magical creatures can recreate a small part of its magic.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sealed Scroll_icon.png",
+            "amount": 18
+          }
+        ]
+      },
+      {
+        "key": "Lv.70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "7870",
+              "8358"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "238",
+              "253"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "470",
+              "500"
+            ]
+          },
+          {
+            "key": "Pyro DMG Bonus",
+            "values": [
+              "14.4%",
+              "21.6%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1098,
+            "name": "Agnidus Agate Chunk",
+            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Everflame Seed",
+            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 735,
+            "name": "Philanemo Mushroom",
+            "desc": "A fungus that grows in the warm caress of the wind. It is as everlasting as the wind, nourishing life.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1282,
+            "name": "Forbidden Curse Scroll",
+            "desc": "A scroll inscribed with ancient images. It is said that few can decipher its meaning, and the few scholars that have all went mad.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Forbidden Curse Scroll_icon.png",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "key": "Lv.80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "9076",
+              "9563"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "274",
+              "289"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "542",
+              "572"
+            ]
+          },
+          {
+            "key": "Pyro DMG Bonus",
+            "values": [
+              "21.6%",
+              "28.8%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Common currency. The one language everybody speaks.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1097,
+            "name": "Agnidus Agate Gemstone",
+            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.<br/>If the intention yet remains, achieved ██'s truth he has.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 689,
+            "name": "Everflame Seed",
+            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 735,
+            "name": "Philanemo Mushroom",
+            "desc": "A fungus that grows in the warm caress of the wind. It is as everlasting as the wind, nourishing life.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1282,
+            "name": "Forbidden Curse Scroll",
+            "desc": "A scroll inscribed with ancient images. It is said that few can decipher its meaning, and the few scholars that have all went mad.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Forbidden Curse Scroll_icon.png",
+            "amount": 24
+          }
+        ]
+      },
+      {
+        "key": "Lv.90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Before Ascension",
+              "After Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "10287",
+              "-"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "311",
+              "-"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "615",
+              "-"
+            ]
+          },
+          {
+            "key": "Pyro DMG Bonus",
+            "values": [
+              "28.8%",
+              "-"
+            ]
+          }
+        ]
       }
     ],
     "customize": [
@@ -4109,159 +4785,6 @@
         "text": "<color=#ffd780>About Klee</color>\nOh? Klee? She's super cheerful, and I've heard that... she's as strong as the Grand Master himself. She's invited me to go on adventures with her before, and we always had a great time together! Although she would experiment with dangerous weapons from time to time, which means I've had to revise my maps on several occasions... But I still feel it's worth it!"
       }
     ],
-    "baseInfo": [
-      {
-        "key": "Name",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Klee"
-          }
-        ]
-      },
-      {
-        "key": "Birthday",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "7/27"
-          }
-        ]
-      },
-      {
-        "key": "Constellation",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Trifolium"
-          }
-        ]
-      },
-      {
-        "key": "Title",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Fleeing Sunlight"
-          }
-        ]
-      },
-      {
-        "key": "Vision",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Pyro"
-          }
-        ]
-      },
-      {
-        "key": "Affiliation",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Knights of Favonius"
-          }
-        ]
-      },
-      {
-        "key": "Chinese VA",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "花玲 (Hualing)"
-          }
-        ]
-      },
-      {
-        "key": "English VA",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Poonam Basu"
-          }
-        ]
-      },
-      {
-        "key": "Japanese VA",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "久野美咲 (KUNO Misaki)"
-          }
-        ]
-      },
-      {
-        "key": "Korean VA",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "방연지 (Bang Yeon-ji)"
-          }
-        ]
-      },
-      {
-        "key": "Namecard",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 6074,
-            "name": "Klee: Explosive",
-            "desc": "Namecard style.<br>Klee's lucky explosive — can you tell if it's Jumpy Dumpty or Dodoco? (Hint: Look carefully at the tail...)",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/15/911a237581b8a0ba0c2879453226e974_9211487783354108464.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Outfit",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 5781,
-            "name": "Blossoming Starlight",
-            "desc": "An exquisite outfit Klee wears only for the most important performances. The colors are brilliant, like a cake adorned with cream flowers and crowned with scarlet candles. With it comes happiness and smiles that will fill your adventures.",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/06/24/a301ddffa3697d64093d95c792ca02c9_7479257930193658037.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Special Dish",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 1891,
-            "name": "Fish-Flavored Toast",
-            "desc": "Klee's specialty. By way of apology for wantonly using her bombs to scare away the fish, Jean instructed Klee to make this toast for the fishermen. It's filling and tasty. Klee will never starve again, even after a whole day of blast fishing.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fish-Flavored Toast_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "TCG Character Card",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3457,
-            "name": "Klee",
-            "desc": "<p><span style=\"color: #FFFFFF\">\"Fleeing Sunlight\" Klee</span></p><p>Every card you draw may bring in an \"explosive surprise.\"</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/16/35428890/24190d55c500e2eae31705e6590b1302_8654915267348701782.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Version Released",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.0"
-          }
-        ]
-      }
-    ],
     "summaryList": [
       {
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/可莉/constellation_1.png",
@@ -4320,573 +4843,6 @@
           {
             "type": "RichText",
             "text": "While under the effects of <color=#ffd780>Sparks 'n' Splash</color> , Klee will regenerate 3 Energy for all members of the party (excluding Klee) every 3s.\nWhen <color=#ffd780>Sparks 'n' Splash</color> is used, all party members will gain a 10% <color=#ff9999>Pyro DMG Bonus</color> for 25s."
-          }
-        ]
-      }
-    ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=39&center=158.66,90.19&zoom=-0.50",
-    "ascension": [
-      {
-        "key": "Lv.1",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "-",
-              "801"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "-",
-              "24"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "-",
-              "48"
-            ]
-          },
-          {
-            "key": "Pyro DMG Bonus",
-            "values": [
-              "-",
-              "0.0%"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Lv.20",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "2077",
-              "2764"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "63",
-              "84"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "124",
-              "165"
-            ]
-          },
-          {
-            "key": "Pyro DMG Bonus",
-            "values": [
-              "0.0%",
-              "0.0%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 20000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1100,
-            "name": "Agnidus Agate Sliver",
-            "desc": "Character Ascension Material.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Sliver_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 735,
-            "name": "Philanemo Mushroom",
-            "desc": "A fungus that grows in the warm caress of the wind. It is as everlasting as the wind, nourishing life.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 630,
-            "name": "Divining Scroll",
-            "desc": "A scroll that likely relates to some kind of magic. Exudes an inexplicable but ominous warmth.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Divining Scroll_icon.png",
-            "amount": 3
-          }
-        ]
-      },
-      {
-        "key": "Lv.40",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "4136",
-              "4623"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "125",
-              "140"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "247",
-              "276"
-            ]
-          },
-          {
-            "key": "Pyro DMG Bonus",
-            "values": [
-              "0.0%",
-              "7.2%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 40000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1099,
-            "name": "Agnidus Agate Fragment",
-            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Everflame Seed",
-            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 735,
-            "name": "Philanemo Mushroom",
-            "desc": "A fungus that grows in the warm caress of the wind. It is as everlasting as the wind, nourishing life.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
-            "amount": 10
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 630,
-            "name": "Divining Scroll",
-            "desc": "A scroll that likely relates to some kind of magic. Exudes an inexplicable but ominous warmth.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Divining Scroll_icon.png",
-            "amount": 15
-          }
-        ]
-      },
-      {
-        "key": "Lv.50",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "5319",
-              "5970"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "161",
-              "180"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "318",
-              "357"
-            ]
-          },
-          {
-            "key": "Pyro DMG Bonus",
-            "values": [
-              "7.2%",
-              "14.4%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 60000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1099,
-            "name": "Agnidus Agate Fragment",
-            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Fragment_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Everflame Seed",
-            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 4
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 735,
-            "name": "Philanemo Mushroom",
-            "desc": "A fungus that grows in the warm caress of the wind. It is as everlasting as the wind, nourishing life.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 634,
-            "name": "Sealed Scroll",
-            "desc": "An old scroll lacking in detail and clarity. By following the images on it, some magical creatures can recreate a small part of its magic.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sealed Scroll_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.60",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "6673",
-              "7161"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "202",
-              "216 "
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "399",
-              "428"
-            ]
-          },
-          {
-            "key": "Pyro DMG Bonus",
-            "values": [
-              "14.4%",
-              "14.4%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 80000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1098,
-            "name": "Agnidus Agate Chunk",
-            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Everflame Seed",
-            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 8
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 735,
-            "name": "Philanemo Mushroom",
-            "desc": "A fungus that grows in the warm caress of the wind. It is as everlasting as the wind, nourishing life.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
-            "amount": 30
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 634,
-            "name": "Sealed Scroll",
-            "desc": "An old scroll lacking in detail and clarity. By following the images on it, some magical creatures can recreate a small part of its magic.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sealed Scroll_icon.png",
-            "amount": 18
-          }
-        ]
-      },
-      {
-        "key": "Lv.70",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "7870",
-              "8358"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "238",
-              "253"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "470",
-              "500"
-            ]
-          },
-          {
-            "key": "Pyro DMG Bonus",
-            "values": [
-              "14.4%",
-              "21.6%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 100000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1098,
-            "name": "Agnidus Agate Chunk",
-            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Chunk_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Everflame Seed",
-            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 12
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 735,
-            "name": "Philanemo Mushroom",
-            "desc": "A fungus that grows in the warm caress of the wind. It is as everlasting as the wind, nourishing life.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
-            "amount": 45
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1282,
-            "name": "Forbidden Curse Scroll",
-            "desc": "A scroll inscribed with ancient images. It is said that few can decipher its meaning, and the few scholars that have all went mad.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Forbidden Curse Scroll_icon.png",
-            "amount": 12
-          }
-        ]
-      },
-      {
-        "key": "Lv.80",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "9076",
-              "9563"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "274",
-              "289"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "542",
-              "572"
-            ]
-          },
-          {
-            "key": "Pyro DMG Bonus",
-            "values": [
-              "21.6%",
-              "28.8%"
-            ]
-          }
-        ],
-        "materials": [
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Mora",
-            "desc": "Common currency. The one language everybody speaks.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 120000
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1097,
-            "name": "Agnidus Agate Gemstone",
-            "desc": "Character Ascension material.<br/>\"A pilgrimage for a wish; a battle to earn a name...<br/>Burnt to cinders for a dream.<br/>If the intention yet remains, achieved ██'s truth he has.\"",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Agnidus Agate Gemstone_icon.png",
-            "amount": 6
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 689,
-            "name": "Everflame Seed",
-            "desc": "A seed that fuels the unending flames of the Pyro Regisvine. It emits Pyro energy as if it will burn all that has ever sprouted from the ground.<br/>Endless desires flow among turbulent energy deep within the earth. What desire could steadily hold such fire to the plants and long so eagerly to bathe everything in unquenchable flames?",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Everflame Seed_icon.png",
-            "amount": 20
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 735,
-            "name": "Philanemo Mushroom",
-            "desc": "A fungus that grows in the warm caress of the wind. It is as everlasting as the wind, nourishing life.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philanemo Mushroom_icon.png",
-            "amount": 60
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1282,
-            "name": "Forbidden Curse Scroll",
-            "desc": "A scroll inscribed with ancient images. It is said that few can decipher its meaning, and the few scholars that have all went mad.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Forbidden Curse Scroll_icon.png",
-            "amount": 24
-          }
-        ]
-      },
-      {
-        "key": "Lv.90",
-        "combatStats": [
-          {
-            "key": "",
-            "values": [
-              "Before Ascension",
-              "After Ascension"
-            ]
-          },
-          {
-            "key": "Base HP",
-            "values": [
-              "10287",
-              "-"
-            ]
-          },
-          {
-            "key": "Base ATK",
-            "values": [
-              "311",
-              "-"
-            ]
-          },
-          {
-            "key": "Base DEF",
-            "values": [
-              "615",
-              "-"
-            ]
-          },
-          {
-            "key": "Pyro DMG Bonus",
-            "values": [
-              "28.8%",
-              "-"
-            ]
           }
         ]
       }
@@ -4965,6 +4921,50 @@
             "text": "Trifolium"
           }
         ]
+      }
+    ],
+    "videoCollection": [
+      {
+        "title": "Character Tales - \"Fleeing Sunlight in the Night\" | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=TFOeQuShLME&ab_channel=GenshinImpact",
+        "coverUrl": "https://i.ytimg.com/vi/TFOeQuShLME/maxresdefault.jpg",
+        "duration": 81
+      },
+      {
+        "title": "Collected Miscellany - \"Klee: Jumpy Dumpty\" | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=jdq2shrprdU&ab_channel=GenshinImpact",
+        "coverUrl": "https://i.ytimg.com/vi/jdq2shrprdU/maxresdefault.jpg",
+        "duration": 305
+      },
+      {
+        "title": "Genshin Impact EP - Trail of the Scorching Summer Treasure",
+        "url": "https://www.youtube.com/watch?v=CMJ9Dhf7pig&ab_channel=GenshinImpact",
+        "coverUrl": "https://i.ytimg.com/vi/CMJ9Dhf7pig/maxresdefault.jpg",
+        "duration": 264
+      },
+      {
+        "title": "New Character Demo - \"Klee: Da-Da Da!\" | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=C_duDk5e8yU&ab_channel=GenshinImpact",
+        "coverUrl": "https://i.ytimg.com/vi/C_duDk5e8yU/maxresdefault.jpg",
+        "duration": 103
+      },
+      {
+        "title": "Of Ballads and Brews Event Cutscene Animation: \"The Wind Returns for the Fairbrew\" | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=_76oCzo8sjU&ab_channel=GenshinImpact",
+        "coverUrl": "https://i.ytimg.com/vi/_76oCzo8sjU/maxresdefault.jpg",
+        "duration": 152
+      },
+      {
+        "title": "Outfit Teaser: Teyvat Style – It's Showtime | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=KlKcxzwqG4c&ab_channel=GenshinImpact",
+        "coverUrl": "https://i.ytimg.com/vi/KlKcxzwqG4c/maxresdefault.jpg",
+        "duration": 87
+      },
+      {
+        "title": "Version 1.6 \"Midsummer Island Adventure\" Trailer | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=OrZ8RbXwoK4&ab_channel=GenshinImpact",
+        "coverUrl": "https://i.ytimg.com/vi/OrZ8RbXwoK4/maxresdefault.jpg",
+        "duration": 266
       }
     ]
   }
