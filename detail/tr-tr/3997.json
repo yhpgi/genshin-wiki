@@ -5,66 +5,439 @@
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/f00d18b57acb4aa37bf2fc39bf67ddd0_7289056366697952072.gif",
   "headerImgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/733dfcc873d613939c633cd206a1f37f_3550761498262300285.png",
   "filterValues": {
-    "characterWeapon": "Kılıç",
-    "characterRegion": "Diğer",
-    "characterProperty": "Saldırı",
     "characterRarity": 5,
-    "characterVision": "Su"
+    "characterRegion": "Diğer",
+    "characterWeapon": "Kılıç",
+    "characterVision": "Su",
+    "characterProperty": "Saldırı"
   },
   "menuId": 2,
   "menuName": "Karakter Arşivi",
   "version": 1692349939,
   "components": {
-    "galleryCharacter": [
+    "talent": [
       {
-        "key": "Avatar",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/733dfcc873d613939c633cd206a1f37f_6519077161500091485.png",
-        "imgDesc": [
+        "key": "Normal Saldırı: Yabancı Akıntılar",
+        "title": "Normal Saldırı: Yabancı Akıntılar",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/94aa30ae75b8c7c6a9c64ab05bd5dda7_1236176396836077602.png",
+        "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffffff73>Orijinal Kıyafet - Yükselen Yıldız</color>\n<color=#ffffff73>Gezginin giysisi. Uzun yolculuklar için uygun bir kıyafet.</color>"
+            "text": "<color=#ffd780>Normal Saldırı</color>\n<color=#bfbfbf>En fazla 5 hızlı saldırı yapar.</color>\n<color=#ffd780>Yüklü Saldırı</color>\n<color=#bfbfbf>Belirli miktarda Dayanıklılık harcayarak 2 hızlı kılıç saldırısı yapar.</color>\n<color=#ffd780>Havadan Saldırı</color>\n<color=#bfbfbf>Havadayken dalışa geçerek yere vurur ve yoluna çıkan düşmanlara Alan Hasarı verir.</color>"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Seviye",
+            "values": [
+              "Sv. 1",
+              "Sv. 2",
+              "Sv. 3",
+              "Sv. 4",
+              "Sv. 5",
+              "Sv. 6",
+              "Sv. 7",
+              "Sv. 8",
+              "Sv. 9",
+              "Sv. 10"
+            ]
+          },
+          {
+            "key": "1 Vuruş Hasarı",
+            "values": [
+              "44.5%",
+              "48.1%",
+              "51.7%",
+              "56.9%",
+              "60.5%",
+              "64.6%",
+              "70.3%",
+              "76.0%",
+              "81.7%",
+              "94.1%"
+            ]
+          },
+          {
+            "key": "2 Vuruş Hasarı",
+            "values": [
+              "43.4%",
+              "47.0%",
+              "50.5%",
+              "55.6%",
+              "59.1%",
+              "63.1%",
+              "68.7%",
+              "74.2%",
+              "79.8%",
+              "91.9%"
+            ]
+          },
+          {
+            "key": "3 Vuruş Hasarı",
+            "values": [
+              "53.0%",
+              "57.3%",
+              "61.6%",
+              "67.8%",
+              "72.1%",
+              "77.0%",
+              "83.8%",
+              "90.6%",
+              "97.3%",
+              "112%"
+            ]
+          },
+          {
+            "key": "4 Vuruş Hasarı",
+            "values": [
+              "58.3%",
+              "63.1%",
+              "67.8%",
+              "74.6%",
+              "79.3%",
+              "84.8%",
+              "92.2%",
+              "99.7%",
+              "107%",
+              "123%"
+            ]
+          },
+          {
+            "key": "5 Vuruş Hasarı",
+            "values": [
+              "70.8%",
+              "76.5%",
+              "82.3%",
+              "90.5%",
+              "96.3%",
+              "103%",
+              "112%",
+              "121%",
+              "130%",
+              "150%"
+            ]
+          },
+          {
+            "key": "Yüklü Saldırı Hasarı",
+            "values": [
+              "♀: 55.9%+72.2%",
+              "♀: 60.5%+78.1%",
+              "♀: 65.0%+84.0%",
+              "♀: 71.5%+92.4%",
+              "♀: 76.1%+98.3%",
+              "♀: 81.3%+105%",
+              "♀: 88.4%+114%",
+              "♀: 95.6%+123%",
+              "♀: 103%+133%",
+              "♀: 118%+153%"
+            ]
+          },
+          {
+            "key": "Yüklü Saldırı Dayanıklılık Maliyeti",
+            "values": [
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0",
+              "20.0"
+            ]
+          },
+          {
+            "key": "Havadan Saldırı Hasarı",
+            "values": [
+              "63.9%",
+              "69.1%",
+              "74.3%",
+              "81.8%",
+              "87.0%",
+              "92.9%",
+              "101.1%",
+              "109.3%",
+              "126.4%",
+              "135.3%"
+            ]
+          },
+          {
+            "key": "Havadan Saldırı Hasarı (Alçaktan/Yüksekten)",
+            "values": [
+              "128%/160%",
+              "138%/173%",
+              "149%/186%",
+              "164%/204%",
+              "174%/217%",
+              "186%/232%",
+              "202%/253%",
+              "219%/273%",
+              "253%/316%",
+              "271%/338%"
+            ]
           }
         ]
       },
       {
-        "key": "Boş Durma Animasyonu 1",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/ccfa6241c7aa46c083decc16572a5994_2026420781393762703.gif",
-        "imgDesc": [
+        "key": "Su Oymalı Kılıç",
+        "title": "Su Oymalı Kılıç",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/a950540611cd8d7d6b000745d863d49d_6299664622162409088.png",
+        "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffffff73>Orijinal Kıyafet - Yükselen Yıldız</color>"
+            "text": "<color=#bfbfbf>Tüm dünyayı arındırabilecek bir dalga çıkarır.</color>\n<color=#ffd780>Bas</color>\n<color=#bfbfbf>Temas ettiği düşmanlara</color> <color=#80c0ff>Su Hasarı</color> <color=#bfbfbf>veren bir Şiddetli Dalgalanma gönderir.</color>\n<color=#ffd780>Basılı Tut</color>\n<color=#bfbfbf>Nişan Alma Moduna girer ve nişan aldığın yönde sürekli, isabet ettiği düşmanlara</color> <color=#80c0ff>Su Hasarı</color> <color=#bfbfbf>veren Çiy Damlaları gönderir.</color>\n<color=#bfbfbf>Beceri sona erdiğinde temas ettiği düşmanlara</color> <color=#80c0ff>Su Hasarı</color> <color=#bfbfbf>veren bir Şiddetli Dalgalanma gönderir.</color>\n<color=#bfbfbf>Yayılma: Bu Beceri Basılı Tutulurken Gezginin Canı %50'den fazlaysa Gezginin Maks. Canına bağlı olarak Çiy Damlalarının verdiği Hasar artar ve Gezgin her saniye belirli miktarda Can kaybeder.</color>\n<color=#ffd780>Arkhe: Ruh</color>\n<color=#bfbfbf>Şiddetli Dalgalanma kullandıktan sonra belirli aralıklarla bu beceri, Ruh tesirli</color> <color=#80c0ff>Su Hasarı</color> <color=#bfbfbf>veren ve düşmanları delip geçen bir Ruh Nefesi Dikeni çıkarır.</color>\n<color=#bfbfbf>Paimon ile birlikte sudaki dalgaları gözlemlediniz.</color>"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "",
+            "values": [
+              "Sv. 1",
+              "Sv. 2",
+              "Sv. 3",
+              "Sv. 4",
+              "Sv. 5",
+              "Sv. 6",
+              "Sv. 7",
+              "Sv. 8",
+              "Sv. 9",
+              "Sv. 10"
+            ]
+          },
+          {
+            "key": "Şiddetli Dalgalanma Hasarı",
+            "values": [
+              "189.3%",
+              "203.5%",
+              "217.7%",
+              "236.6%",
+              "250.8%",
+              "265%",
+              "283.9%",
+              "302.8%",
+              "321.8%",
+              "340.7%"
+            ]
+          },
+          {
+            "key": "Çiy Damlası Hasarı",
+            "values": [
+              "32.8%",
+              "35.3%",
+              "37.7%",
+              "41.0%",
+              "43.5%",
+              "45.9%",
+              "49.2%",
+              "52.5%",
+              "55.8%",
+              "59.0%"
+            ]
+          },
+          {
+            "key": "Ruh Nefesi Dikeni Hasarı",
+            "values": [
+              "32.8%",
+              "35.3%",
+              "37.7%",
+              "41.0%",
+              "43.5%",
+              "45.9%",
+              "49.2%",
+              "52.5%",
+              "55.8%",
+              "59.0%"
+            ]
+          },
+          {
+            "key": "Ruh Nefesi Dikeni Aralığı",
+            "values": [
+              "9.0sn",
+              "9.0sn",
+              "9.0sn",
+              "9.0sn",
+              "9.0sn",
+              "9.0snn",
+              "9.0sn",
+              "9.0snn",
+              "9.0sn",
+              "9.0sn"
+            ]
+          },
+          {
+            "key": "Yayılma Can Maliyeti",
+            "values": [
+              "4.00% Maks. Can",
+              "4.00% Maks. Can",
+              "4.00% Maks. Can",
+              "4.00% Maks. Can",
+              "4.00% Maks. Can",
+              "4.00% Maks. Can",
+              "4.00% Maks. Can",
+              "4.00% Maks. Can",
+              "4.00% Maks. Can",
+              "4.00% Maks. Can"
+            ]
+          },
+          {
+            "key": "Yayılma Hasar Bonusu",
+            "values": [
+              "0.64% Maks. Can",
+              "0.69% Maks. Can",
+              "0.74% Maks. Can",
+              "0.80% Maks. Can",
+              "0.85% Maks. Can",
+              "0.90% Maks. Can",
+              "0.96% Maks. Can",
+              "1.02% Maks. Can",
+              "1.09% Maks. Can",
+              "1.15% Maks. Can"
+            ]
+          },
+          {
+            "key": "Basılı Tutma Süresi",
+            "values": [
+              "Max 6.0sn",
+              "Max 6.0sn",
+              "Max 6.0sn",
+              "Max 6.0sn",
+              "Max 6.0sn",
+              "Max 6.0sn",
+              "Max 6.0sn",
+              "Max 6.0snn",
+              "Max 6.0sn",
+              "Max 6.0sn"
+            ]
+          },
+          {
+            "key": "Bekleme Süresi",
+            "values": [
+              "10.0sn",
+              "10.0sn",
+              "10.0sn",
+              "10.0sn",
+              "10.0sn",
+              "10.0sn",
+              "10.0sn",
+              "10.0snn",
+              "10.0sn",
+              "10.0sn"
+            ]
           }
         ]
       },
       {
-        "key": "Boş Durma Animasyonu 2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/352d9d639f31486eb2744d38d3e69502_2165079460940309891.gif",
-        "imgDesc": [
+        "key": "Yükselen Sular",
+        "title": "Yükselen Sular",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/1e1ef908756f3c2d7ff49d70a7df9dd4_4916373734554367610.png",
+        "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffffff73>Orijinal Kıyafet - Yükselen Yıldız</color>"
+            "text": "<color=#bfbfbf>Yakındaki düşmanlara sürekli</color> <color=#80c0ff>Su Hasarı</color> <color=#bfbfbf>veren, yavaş hareket eden bir uçan baloncuk çıkarır.</color>\n<color=#bfbfbf>Paimon ile birlikte gelgitleri gözlemlediniz.</color>"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "",
+            "values": [
+              "Sv. 1",
+              "Sv. 2",
+              "Sv. 3",
+              "Sv. 4",
+              "Sv. 5",
+              "Sv. 6",
+              "Sv. 7",
+              "Sv. 8",
+              "Sv. 9",
+              "Sv. 10"
+            ]
+          },
+          {
+            "key": "Beceri Hasarı",
+            "values": [
+              "101.9%",
+              "109.5%",
+              "117.1%",
+              "127.3%",
+              "135%",
+              "142.6%",
+              "152.8%",
+              "163%",
+              "173.2%",
+              "183.4%"
+            ]
+          },
+          {
+            "key": "Süre",
+            "values": [
+              "4.0sn",
+              "4.0sn",
+              "4.0sn",
+              "4.0sn",
+              "4.0sn",
+              "4.0sn",
+              "4.0sn",
+              "4.0sn",
+              "4.0sn",
+              "4.0sn"
+            ]
+          },
+          {
+            "key": "Bekleme Süresi",
+            "values": [
+              "20.0sn",
+              "20.0sn",
+              "20.0sn",
+              "20.0sn",
+              "20.0sn",
+              "20.0sn",
+              "20.0sn",
+              "20.0sn",
+              "20.0sn",
+              "20.0sn"
+            ]
+          },
+          {
+            "key": "Enerji Maliyeti",
+            "values": [
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80"
+            ]
           }
         ]
       },
       {
-        "key": "Takımyıldız",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/b52c223c26ffc36476ad3bb30f9f37cb_5451656267776006425.png",
-        "imgDesc": [
+        "key": "Saf Sular",
+        "title": "Saf Sular",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/416a665254b83e5db0fbe19a60bac0f1_2974825751089339481.png",
+        "desc": [
           {
             "type": "RichText",
-            "text": "Gezgin"
+            "text": "<color=#bfbfbf>Su Oymalı Kılıcın Basılı Tutma Moduyla atılan bir Çiy Damlası düşmana isabet ettiğinde Gezginin yakınlarında bir Kaynak Suyu Damlacığı oluşur. Gezgin bunu alırsa %7 Can yeniler.</color>\n<color=#bfbfbf>Bu şekilde her saniyede bir Damlacık oluşabilir. Su Oymalı Kılıcın her kullanımında en fazla 4 Damlacık oluşabilir.</color>"
           }
-        ]
+        ],
+        "attributes": []
       },
       {
-        "key": "Kart",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/3b5502dbe53a29924ba2b9bed6c84208_2226866621122308063.png",
-        "imgDesc": [
+        "key": "Berrak Sular",
+        "title": "Berrak Sular",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/2274fe5c6daf39abbfe55663d35bae95_8946216974575800036.png",
+        "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffffff73>Orijinal Kıyafet - Yükselen Yıldız</color>"
+            "text": "<color=#bfbfbf>Su Oymalı Kılıcın Basılı Tutma Modu kullanılırken Yayılma ile Can tüketilirse becerinin sonundaki Şiddetli Dalgalanma, Gezginin bu beceriyi kullanırken Yayılma ile harcadığı toplam Canın %45'i kadar Bonus Hasar verir.</color>\n<color=#bfbfbf>Bu şekilde en fazla 5.000 Hasar Bonusu kazanılabilir.</color>"
           }
-        ]
+        ],
+        "attributes": []
       }
     ],
     "summaryList": [
@@ -226,6 +599,58 @@
           {
             "type": "RichText",
             "text": "4.0"
+          }
+        ]
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Avatar",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/733dfcc873d613939c633cd206a1f37f_6519077161500091485.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffff73>Orijinal Kıyafet - Yükselen Yıldız</color>\n<color=#ffffff73>Gezginin giysisi. Uzun yolculuklar için uygun bir kıyafet.</color>"
+          }
+        ]
+      },
+      {
+        "key": "Boş Durma Animasyonu 1",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/ccfa6241c7aa46c083decc16572a5994_2026420781393762703.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffff73>Orijinal Kıyafet - Yükselen Yıldız</color>"
+          }
+        ]
+      },
+      {
+        "key": "Boş Durma Animasyonu 2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/352d9d639f31486eb2744d38d3e69502_2165079460940309891.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffff73>Orijinal Kıyafet - Yükselen Yıldız</color>"
+          }
+        ]
+      },
+      {
+        "key": "Takımyıldız",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/b52c223c26ffc36476ad3bb30f9f37cb_5451656267776006425.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Gezgin"
+          }
+        ]
+      },
+      {
+        "key": "Kart",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/3b5502dbe53a29924ba2b9bed6c84208_2226866621122308063.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffff73>Orijinal Kıyafet - Yükselen Yıldız</color>"
           }
         ]
       }
@@ -754,431 +1179,6 @@
             ]
           }
         ]
-      }
-    ],
-    "talent": [
-      {
-        "key": "Normal Saldırı: Yabancı Akıntılar",
-        "title": "Normal Saldırı: Yabancı Akıntılar",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/94aa30ae75b8c7c6a9c64ab05bd5dda7_1236176396836077602.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Normal Saldırı</color>\n<color=#bfbfbf>En fazla 5 hızlı saldırı yapar.</color>\n<color=#ffd780>Yüklü Saldırı</color>\n<color=#bfbfbf>Belirli miktarda Dayanıklılık harcayarak 2 hızlı kılıç saldırısı yapar.</color>\n<color=#ffd780>Havadan Saldırı</color>\n<color=#bfbfbf>Havadayken dalışa geçerek yere vurur ve yoluna çıkan düşmanlara Alan Hasarı verir.</color>"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Seviye",
-            "values": [
-              "Sv. 1",
-              "Sv. 2",
-              "Sv. 3",
-              "Sv. 4",
-              "Sv. 5",
-              "Sv. 6",
-              "Sv. 7",
-              "Sv. 8",
-              "Sv. 9",
-              "Sv. 10"
-            ]
-          },
-          {
-            "key": "1 Vuruş Hasarı",
-            "values": [
-              "44.5%",
-              "48.1%",
-              "51.7%",
-              "56.9%",
-              "60.5%",
-              "64.6%",
-              "70.3%",
-              "76.0%",
-              "81.7%",
-              "94.1%"
-            ]
-          },
-          {
-            "key": "2 Vuruş Hasarı",
-            "values": [
-              "43.4%",
-              "47.0%",
-              "50.5%",
-              "55.6%",
-              "59.1%",
-              "63.1%",
-              "68.7%",
-              "74.2%",
-              "79.8%",
-              "91.9%"
-            ]
-          },
-          {
-            "key": "3 Vuruş Hasarı",
-            "values": [
-              "53.0%",
-              "57.3%",
-              "61.6%",
-              "67.8%",
-              "72.1%",
-              "77.0%",
-              "83.8%",
-              "90.6%",
-              "97.3%",
-              "112%"
-            ]
-          },
-          {
-            "key": "4 Vuruş Hasarı",
-            "values": [
-              "58.3%",
-              "63.1%",
-              "67.8%",
-              "74.6%",
-              "79.3%",
-              "84.8%",
-              "92.2%",
-              "99.7%",
-              "107%",
-              "123%"
-            ]
-          },
-          {
-            "key": "5 Vuruş Hasarı",
-            "values": [
-              "70.8%",
-              "76.5%",
-              "82.3%",
-              "90.5%",
-              "96.3%",
-              "103%",
-              "112%",
-              "121%",
-              "130%",
-              "150%"
-            ]
-          },
-          {
-            "key": "Yüklü Saldırı Hasarı",
-            "values": [
-              "♀: 55.9%+72.2%",
-              "♀: 60.5%+78.1%",
-              "♀: 65.0%+84.0%",
-              "♀: 71.5%+92.4%",
-              "♀: 76.1%+98.3%",
-              "♀: 81.3%+105%",
-              "♀: 88.4%+114%",
-              "♀: 95.6%+123%",
-              "♀: 103%+133%",
-              "♀: 118%+153%"
-            ]
-          },
-          {
-            "key": "Yüklü Saldırı Dayanıklılık Maliyeti",
-            "values": [
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0",
-              "20.0"
-            ]
-          },
-          {
-            "key": "Havadan Saldırı Hasarı",
-            "values": [
-              "63.9%",
-              "69.1%",
-              "74.3%",
-              "81.8%",
-              "87.0%",
-              "92.9%",
-              "101.1%",
-              "109.3%",
-              "126.4%",
-              "135.3%"
-            ]
-          },
-          {
-            "key": "Havadan Saldırı Hasarı (Alçaktan/Yüksekten)",
-            "values": [
-              "128%/160%",
-              "138%/173%",
-              "149%/186%",
-              "164%/204%",
-              "174%/217%",
-              "186%/232%",
-              "202%/253%",
-              "219%/273%",
-              "253%/316%",
-              "271%/338%"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Su Oymalı Kılıç",
-        "title": "Su Oymalı Kılıç",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/a950540611cd8d7d6b000745d863d49d_6299664622162409088.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#bfbfbf>Tüm dünyayı arındırabilecek bir dalga çıkarır.</color>\n<color=#ffd780>Bas</color>\n<color=#bfbfbf>Temas ettiği düşmanlara</color> <color=#80c0ff>Su Hasarı</color> <color=#bfbfbf>veren bir Şiddetli Dalgalanma gönderir.</color>\n<color=#ffd780>Basılı Tut</color>\n<color=#bfbfbf>Nişan Alma Moduna girer ve nişan aldığın yönde sürekli, isabet ettiği düşmanlara</color> <color=#80c0ff>Su Hasarı</color> <color=#bfbfbf>veren Çiy Damlaları gönderir.</color>\n<color=#bfbfbf>Beceri sona erdiğinde temas ettiği düşmanlara</color> <color=#80c0ff>Su Hasarı</color> <color=#bfbfbf>veren bir Şiddetli Dalgalanma gönderir.</color>\n<color=#bfbfbf>Yayılma: Bu Beceri Basılı Tutulurken Gezginin Canı %50'den fazlaysa Gezginin Maks. Canına bağlı olarak Çiy Damlalarının verdiği Hasar artar ve Gezgin her saniye belirli miktarda Can kaybeder.</color>\n<color=#ffd780>Arkhe: Ruh</color>\n<color=#bfbfbf>Şiddetli Dalgalanma kullandıktan sonra belirli aralıklarla bu beceri, Ruh tesirli</color> <color=#80c0ff>Su Hasarı</color> <color=#bfbfbf>veren ve düşmanları delip geçen bir Ruh Nefesi Dikeni çıkarır.</color>\n<color=#bfbfbf>Paimon ile birlikte sudaki dalgaları gözlemlediniz.</color>"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "",
-            "values": [
-              "Sv. 1",
-              "Sv. 2",
-              "Sv. 3",
-              "Sv. 4",
-              "Sv. 5",
-              "Sv. 6",
-              "Sv. 7",
-              "Sv. 8",
-              "Sv. 9",
-              "Sv. 10"
-            ]
-          },
-          {
-            "key": "Şiddetli Dalgalanma Hasarı",
-            "values": [
-              "189.3%",
-              "203.5%",
-              "217.7%",
-              "236.6%",
-              "250.8%",
-              "265%",
-              "283.9%",
-              "302.8%",
-              "321.8%",
-              "340.7%"
-            ]
-          },
-          {
-            "key": "Çiy Damlası Hasarı",
-            "values": [
-              "32.8%",
-              "35.3%",
-              "37.7%",
-              "41.0%",
-              "43.5%",
-              "45.9%",
-              "49.2%",
-              "52.5%",
-              "55.8%",
-              "59.0%"
-            ]
-          },
-          {
-            "key": "Ruh Nefesi Dikeni Hasarı",
-            "values": [
-              "32.8%",
-              "35.3%",
-              "37.7%",
-              "41.0%",
-              "43.5%",
-              "45.9%",
-              "49.2%",
-              "52.5%",
-              "55.8%",
-              "59.0%"
-            ]
-          },
-          {
-            "key": "Ruh Nefesi Dikeni Aralığı",
-            "values": [
-              "9.0sn",
-              "9.0sn",
-              "9.0sn",
-              "9.0sn",
-              "9.0sn",
-              "9.0snn",
-              "9.0sn",
-              "9.0snn",
-              "9.0sn",
-              "9.0sn"
-            ]
-          },
-          {
-            "key": "Yayılma Can Maliyeti",
-            "values": [
-              "4.00% Maks. Can",
-              "4.00% Maks. Can",
-              "4.00% Maks. Can",
-              "4.00% Maks. Can",
-              "4.00% Maks. Can",
-              "4.00% Maks. Can",
-              "4.00% Maks. Can",
-              "4.00% Maks. Can",
-              "4.00% Maks. Can",
-              "4.00% Maks. Can"
-            ]
-          },
-          {
-            "key": "Yayılma Hasar Bonusu",
-            "values": [
-              "0.64% Maks. Can",
-              "0.69% Maks. Can",
-              "0.74% Maks. Can",
-              "0.80% Maks. Can",
-              "0.85% Maks. Can",
-              "0.90% Maks. Can",
-              "0.96% Maks. Can",
-              "1.02% Maks. Can",
-              "1.09% Maks. Can",
-              "1.15% Maks. Can"
-            ]
-          },
-          {
-            "key": "Basılı Tutma Süresi",
-            "values": [
-              "Max 6.0sn",
-              "Max 6.0sn",
-              "Max 6.0sn",
-              "Max 6.0sn",
-              "Max 6.0sn",
-              "Max 6.0sn",
-              "Max 6.0sn",
-              "Max 6.0snn",
-              "Max 6.0sn",
-              "Max 6.0sn"
-            ]
-          },
-          {
-            "key": "Bekleme Süresi",
-            "values": [
-              "10.0sn",
-              "10.0sn",
-              "10.0sn",
-              "10.0sn",
-              "10.0sn",
-              "10.0sn",
-              "10.0sn",
-              "10.0snn",
-              "10.0sn",
-              "10.0sn"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Yükselen Sular",
-        "title": "Yükselen Sular",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/1e1ef908756f3c2d7ff49d70a7df9dd4_4916373734554367610.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#bfbfbf>Yakındaki düşmanlara sürekli</color> <color=#80c0ff>Su Hasarı</color> <color=#bfbfbf>veren, yavaş hareket eden bir uçan baloncuk çıkarır.</color>\n<color=#bfbfbf>Paimon ile birlikte gelgitleri gözlemlediniz.</color>"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "",
-            "values": [
-              "Sv. 1",
-              "Sv. 2",
-              "Sv. 3",
-              "Sv. 4",
-              "Sv. 5",
-              "Sv. 6",
-              "Sv. 7",
-              "Sv. 8",
-              "Sv. 9",
-              "Sv. 10"
-            ]
-          },
-          {
-            "key": "Beceri Hasarı",
-            "values": [
-              "101.9%",
-              "109.5%",
-              "117.1%",
-              "127.3%",
-              "135%",
-              "142.6%",
-              "152.8%",
-              "163%",
-              "173.2%",
-              "183.4%"
-            ]
-          },
-          {
-            "key": "Süre",
-            "values": [
-              "4.0sn",
-              "4.0sn",
-              "4.0sn",
-              "4.0sn",
-              "4.0sn",
-              "4.0sn",
-              "4.0sn",
-              "4.0sn",
-              "4.0sn",
-              "4.0sn"
-            ]
-          },
-          {
-            "key": "Bekleme Süresi",
-            "values": [
-              "20.0sn",
-              "20.0sn",
-              "20.0sn",
-              "20.0sn",
-              "20.0sn",
-              "20.0sn",
-              "20.0sn",
-              "20.0sn",
-              "20.0sn",
-              "20.0sn"
-            ]
-          },
-          {
-            "key": "Enerji Maliyeti",
-            "values": [
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Saf Sular",
-        "title": "Saf Sular",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/416a665254b83e5db0fbe19a60bac0f1_2974825751089339481.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#bfbfbf>Su Oymalı Kılıcın Basılı Tutma Moduyla atılan bir Çiy Damlası düşmana isabet ettiğinde Gezginin yakınlarında bir Kaynak Suyu Damlacığı oluşur. Gezgin bunu alırsa %7 Can yeniler.</color>\n<color=#bfbfbf>Bu şekilde her saniyede bir Damlacık oluşabilir. Su Oymalı Kılıcın her kullanımında en fazla 4 Damlacık oluşabilir.</color>"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Berrak Sular",
-        "title": "Berrak Sular",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/145542732/2274fe5c6daf39abbfe55663d35bae95_8946216974575800036.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#bfbfbf>Su Oymalı Kılıcın Basılı Tutma Modu kullanılırken Yayılma ile Can tüketilirse becerinin sonundaki Şiddetli Dalgalanma, Gezginin bu beceriyi kullanırken Yayılma ile harcadığı toplam Canın %45'i kadar Bonus Hasar verir.</color>\n<color=#bfbfbf>Bu şekilde en fazla 5.000 Hasar Bonusu kazanılabilir.</color>"
-          }
-        ],
-        "attributes": []
       }
     ]
   }
