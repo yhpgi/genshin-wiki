@@ -4,18 +4,215 @@
   "desc": "<p><strong><span style=\"color: #ECE5D8\">리월의 수호자·감우</span></strong><br>「내일 아침까지 필요한 거라면 밤을 새워서 완성하면 되겠네요.」</p>",
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/30/194600931/e5c7d702f8033c4361f3b25a7f0b8b30_394795364595542353.png",
   "filterValues": {
-    "cardCharacterObtainingMethod": "캐릭터 초대",
     "cardCharacterCamp": [
       "리월"
     ],
     "cardCharacterWeaponType": "활",
     "cardCharacterChargingPoint": "원소 에너지: 3",
+    "cardCharacterObtainingMethod": "캐릭터 초대",
     "cardCharacterElement": "얼음 원소"
   },
   "menuId": 17,
   "menuName": "캐릭터 카드",
   "version": 1718636841,
   "components": {
+    "talent": [
+      {
+        "key": "유천 사격술",
+        "title": "유천 사격술",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/30/194600931/c369b96fc6417e8fc2bb607e37297ad4_5843783910420275819.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>일반 공격</color>\n<color=#ffffff>물리 피해</color> 를 2pt 준다."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "산과 강의 기린 흔적",
+        "title": "산과 강의 기린 흔적",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/30/194600931/d3562dc7ee1b952be23d991318822774_4798540468738770799.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>원소전투 스킬</color>\n<color=#99ffff>얼음 원소 피해</color> 를 1pt 주고 <color=#ffffff>얼음 연꽃</color> 을 생성한다.\n<color=#ece5d8>얼음 연꽃</color>\n<color=#ffd780>출전 상태</color>\n<color=#ffffff>아군 출전 캐릭터가 받는 피해</color> -1pt\n<color=#ffffff>사용 가능 횟수: 2</color>"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "서리꽃 화살",
+        "title": "서리꽃 화살",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/30/194600931/c369b96fc6417e8fc2bb607e37297ad4_2570131650089590057.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>일반 공격</color>\n<color=#99ffff>얼음 원소 피해</color> 를 2pt 주고 적의 모든 대기 캐릭터에게 <color=#ffffff>관통 피해</color> 를 2pt 준다."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "쏟아지는 천화",
+        "title": "쏟아지는 천화",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/30/194600931/6b78c979575a782c1625dce67992cf90_2395557020884933721.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>원소폭발</color>\n<color=#99ffff>얼음 원소 피해</color> 를 1pt 주고 적의 모든 대기 캐릭터에게 <color=#ffffff>관통 피해</color> 를 1pt 주며 <color=#ffffff>빙령주</color> 를 소환한다."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "빙령주",
+        "title": "빙령주",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/19/194600931/db13288db6b90ec33f8adc2656d2019f_2315463803679873607.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>소환물</color>\n<color=#ffffff>종료 단계:</color> <color=#99ffff>얼음 원소 피해</color> 를 1pt 가하고 적의 모든 대기 캐릭터에게 <color=#ffffff>관통 피해</color> 를 1pt 가한다.\n<color=#ffffff>사용 가능 횟수: 2</color>"
+          }
+        ],
+        "attributes": [],
+        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/19/194600931/5768b83a04afeb8e581b0f7864fd39d9_7135882990270408894.png"
+      },
+      {
+        "key": "얼음 원소 피해",
+        "title": "얼음 원소 피해",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/19/194600931/4bcc4b82a9d7ee22770f60afa54e9919_2078086686170183544.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "얼음 원소 부착 시 원소 반응이 발생할 수 있다.\n[ <color=#99ffff>얼음</color> + <color=#ff9999>불</color> ] <color=#ffffff>융해</color> : 이번 피해+2pt\n[ <color=#99ffff>얼음</color> + <color=#ffacff>번개</color> ] <color=#ffffff>초전도</color> : 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\n[ <color=#99ffff>얼음</color> + <color=#80c0ff>물</color> ] <color=#ffffff>빙결</color> : 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "규칙 설명",
+        "title": "규칙 설명",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/24/194600931/245c229cf6f7364c7c9a7aea3db1a1ad_7192615738441014844.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ece5d8>물리 피해</color>\n물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다.\n<color=#ece5d8>관통 피해</color>\n관통 피해는 피해 보너스를 획득할 수 없으나, 가하는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다.\n<color=#ece5d8>사용 가능 횟수</color>\n해당 카드의 효과가 발동하면 <color=#ffffff>사용 가능 횟수</color> 가 1회 차감된다.\n<color=#ffffff>사용 가능 횟수</color> 가 전부 소진되면 즉시 해당 패를 버린다."
+          }
+        ],
+        "attributes": []
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "카드 이름",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "감우"
+          }
+        ]
+      },
+      {
+        "key": "종류",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "캐릭터 카드"
+          }
+        ]
+      },
+      {
+        "key": "HP",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "10"
+          }
+        ]
+      },
+      {
+        "key": "원소 에너지",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "3"
+          }
+        ]
+      },
+      {
+        "key": "원소 속성",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "얼음"
+          }
+        ]
+      },
+      {
+        "key": "무기",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "활"
+          }
+        ]
+      },
+      {
+        "key": "진영",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "리월"
+          }
+        ]
+      },
+      {
+        "key": "장비 카드",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3214,
+            "name": "단 하나의 마음",
+            "desc": "<p><strong><span style=\"color: #ECE5D8\">감우·단 하나의 마음</span></strong><br>쏘아진 화살은 곧 서리가 되어 내려앉는다.</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/194600931/c8affd043b44bd6e5f90d52664247a67_7525432446386851713.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "획득 경로",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "캣테일 술집에서 감우 초대 및 친선 대전 난이도 승리 후 획득"
+          }
+        ]
+      },
+      {
+        "key": "캐릭터 도감",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 28,
+            "name": "감우",
+            "desc": "<p>월해정의 비서. 몸 안에 신수 「기린」의 피가 흐르고 있다.<br><br><em>「기린이 태평성세의 길조를 상징한다고 하지만 수많은 사람 속 인자한 신수의 외로움은 또 누가 알까?」——리월 칠성 「천추」</em></p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Ganyu_icon.png"
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "쏟아지는 천화",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/17/24090565/af514c55829f60e374c9f47387977662_8966584943739504310.gif"
+      },
+      {
+        "key": "아이콘",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/17/24090565/463a712b3a9a1f9e0d5287ddb44308b5_7742131388789495245.png"
+      }
+    ],
     "tcg": {
       "headerImgs": [
         {
@@ -33,16 +230,6 @@
       ],
       "hp": 10
     },
-    "galleryCharacter": [
-      {
-        "key": "쏟아지는 천화",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/17/24090565/af514c55829f60e374c9f47387977662_8966584943739504310.gif"
-      },
-      {
-        "key": "아이콘",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/17/24090565/463a712b3a9a1f9e0d5287ddb44308b5_7742131388789495245.png"
-      }
-    ],
     "customize": [
       {
         "type": "Heading",
@@ -268,193 +455,6 @@
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/08/80830045/c85bfab46d8c95659ab6dfb2e1629a87_8090082082642936994.png",
         "amount": 1000,
         "displayStyle": "card"
-      }
-    ],
-    "talent": [
-      {
-        "key": "유천 사격술",
-        "title": "유천 사격술",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/30/194600931/c369b96fc6417e8fc2bb607e37297ad4_5843783910420275819.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>일반 공격</color>\n<color=#ffffff>물리 피해</color> 를 2pt 준다."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "산과 강의 기린 흔적",
-        "title": "산과 강의 기린 흔적",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/30/194600931/d3562dc7ee1b952be23d991318822774_4798540468738770799.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>원소전투 스킬</color>\n<color=#99ffff>얼음 원소 피해</color> 를 1pt 주고 <color=#ffffff>얼음 연꽃</color> 을 생성한다.\n<color=#ece5d8>얼음 연꽃</color>\n<color=#ffd780>출전 상태</color>\n<color=#ffffff>아군 출전 캐릭터가 받는 피해</color> -1pt\n<color=#ffffff>사용 가능 횟수: 2</color>"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "서리꽃 화살",
-        "title": "서리꽃 화살",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/30/194600931/c369b96fc6417e8fc2bb607e37297ad4_2570131650089590057.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>일반 공격</color>\n<color=#99ffff>얼음 원소 피해</color> 를 2pt 주고 적의 모든 대기 캐릭터에게 <color=#ffffff>관통 피해</color> 를 2pt 준다."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "쏟아지는 천화",
-        "title": "쏟아지는 천화",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/11/30/194600931/6b78c979575a782c1625dce67992cf90_2395557020884933721.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>원소폭발</color>\n<color=#99ffff>얼음 원소 피해</color> 를 1pt 주고 적의 모든 대기 캐릭터에게 <color=#ffffff>관통 피해</color> 를 1pt 주며 <color=#ffffff>빙령주</color> 를 소환한다."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "빙령주",
-        "title": "빙령주",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/19/194600931/db13288db6b90ec33f8adc2656d2019f_2315463803679873607.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>소환물</color>\n<color=#ffffff>종료 단계:</color> <color=#99ffff>얼음 원소 피해</color> 를 1pt 가하고 적의 모든 대기 캐릭터에게 <color=#ffffff>관통 피해</color> 를 1pt 가한다.\n<color=#ffffff>사용 가능 횟수: 2</color>"
-          }
-        ],
-        "attributes": [],
-        "talentImg": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/19/194600931/5768b83a04afeb8e581b0f7864fd39d9_7135882990270408894.png"
-      },
-      {
-        "key": "얼음 원소 피해",
-        "title": "얼음 원소 피해",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/19/194600931/4bcc4b82a9d7ee22770f60afa54e9919_2078086686170183544.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "얼음 원소 부착 시 원소 반응이 발생할 수 있다.\n[ <color=#99ffff>얼음</color> + <color=#ff9999>불</color> ] <color=#ffffff>융해</color> : 이번 피해+2pt\n[ <color=#99ffff>얼음</color> + <color=#ffacff>번개</color> ] <color=#ffffff>초전도</color> : 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\n[ <color=#99ffff>얼음</color> + <color=#80c0ff>물</color> ] <color=#ffffff>빙결</color> : 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)"
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "규칙 설명",
-        "title": "규칙 설명",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/24/194600931/245c229cf6f7364c7c9a7aea3db1a1ad_7192615738441014844.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ece5d8>물리 피해</color>\n물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다.\n<color=#ece5d8>관통 피해</color>\n관통 피해는 피해 보너스를 획득할 수 없으나, 가하는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다.\n<color=#ece5d8>사용 가능 횟수</color>\n해당 카드의 효과가 발동하면 <color=#ffffff>사용 가능 횟수</color> 가 1회 차감된다.\n<color=#ffffff>사용 가능 횟수</color> 가 전부 소진되면 즉시 해당 패를 버린다."
-          }
-        ],
-        "attributes": []
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "카드 이름",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "감우"
-          }
-        ]
-      },
-      {
-        "key": "종류",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "캐릭터 카드"
-          }
-        ]
-      },
-      {
-        "key": "HP",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "10"
-          }
-        ]
-      },
-      {
-        "key": "원소 에너지",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "3"
-          }
-        ]
-      },
-      {
-        "key": "원소 속성",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "얼음"
-          }
-        ]
-      },
-      {
-        "key": "무기",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "활"
-          }
-        ]
-      },
-      {
-        "key": "진영",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "리월"
-          }
-        ]
-      },
-      {
-        "key": "장비 카드",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3214,
-            "name": "단 하나의 마음",
-            "desc": "<p><strong><span style=\"color: #ECE5D8\">감우·단 하나의 마음</span></strong><br>쏘아진 화살은 곧 서리가 되어 내려앉는다.</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/194600931/c8affd043b44bd6e5f90d52664247a67_7525432446386851713.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "획득 경로",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "캣테일 술집에서 감우 초대 및 친선 대전 난이도 승리 후 획득"
-          }
-        ]
-      },
-      {
-        "key": "캐릭터 도감",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 28,
-            "name": "감우",
-            "desc": "<p>월해정의 비서. 몸 안에 신수 「기린」의 피가 흐르고 있다.<br><br><em>「기린이 태평성세의 길조를 상징한다고 하지만 수많은 사람 속 인자한 신수의 외로움은 또 누가 알까?」——리월 칠성 「천추」</em></p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Ganyu_icon.png"
-          }
-        ],
-        "isMaterial": true
       }
     ]
   }
