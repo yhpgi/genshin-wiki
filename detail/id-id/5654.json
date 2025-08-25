@@ -9,172 +9,6 @@
   "components": {
     "customize": [
       {
-        "type": "RichText",
-        "text": "Reaksi Transformatif adalah: Bloom, Hyperbloom, Burgeon, Burning, Overloaded, Electro-charged, Superconduct, Shattered, Swirl.\nReaksi Transformatif mengabaikan DEF musuh tetapi terpengaruh oleh RES musuh. Mereka tidak dapat melakukan CRIT (selain Konstelasi 2 milik Nahida yang memungkinkan Bloom, Hyperbloom, Burgeon, dan Burning melakukan CRIT dengan jumlah yang ditetapkan sebesar 20% CRIT Rate dan 100% CRIT Damage). Hanya Level dan EM karakter yang dipicu yang berpengaruh.\nContoh: Jika Bloom dipicu oleh karakter Dendro (menggunakan Dendro pada Hydro), Level dan EM karakter Dendro dipertimbangkan, dan RES Dendro musuh.\nDengan demikian, Reaksi Transformatif dihitung dengan rumus berikut:"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>RES Multiplier Musuh × Reaksi Multiplier × Karakter LVL Multiplier ×</color>\n<color=#ffffff>(100% + EM Bonus Multiplier + Reaksi Bonus)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Reaksi Multiplier",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Setiap Reaksi Transformatif memiliki Reaksi Multiplier masing-masing, seperti yang ditunjukkan pada tabel:</color>\n<color=#ffffff73>Reaksi Multiplier</color>\n<color=#ffffff73>Reaksi</color>\n<color=#ffffff73>300%</color>\n<color=#ffffff73>Burgeon, Hyperbloom</color>\n<color=#ffffff73>200%</color>\n<color=#ffffff73>Overloaded, Bloom</color>\n<color=#ffffff73>150%</color>\n<color=#ffffff73>Shattered</color>\n<color=#ffffff73>120%</color>\n<color=#ffffff73>Electro-charged</color>\n<color=#ffffff73>60%</color>\n<color=#ffffff73>Swirl</color>\n<color=#ffffff73>50%</color>\n<color=#ffffff73>Superconduct</color>\n<color=#ffffff73>25%</color>\n<color=#ffffff73>Burning</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Level Multiplier pada Karakter",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Karakter memiliki Level Multiplier tergantung pada level karakter saat ini. Hal ini seperti yang ditunjukkan dalam tabel:</color>\n<color=#ffffff73>Level Karakter</color>\n<color=#ffffff73>Level Karakter Multiplier</color>\n<color=#ffffff73>60</color>\n<color=#ffffff73>492.88</color>\n<color=#ffffff73>70</color>\n<color=#ffffff73>765.64</color>\n<color=#ffffff73>80</color>\n<color=#ffffff73>1077.44</color>\n<color=#ffffff73>85</color>\n<color=#ffffff73>1253.84</color>\n<color=#ffffff73>90</color>\n<color=#ffffff73>1446.85</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "EM Bonus Multiplier",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Untuk EM Bonus Multiplier, hanya total EM karakter yang memicu seperti yang ditunjukkan di halaman Stat yang diperhitungkan.</color>\n<color=#ffffff73>Ini dapat dihitung sebagai berikut:</color>"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>EM × 16 / EM + 2000</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Reaksi Bonus",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Ada beberapa Reaksi Bonus untuk damage Reaksi Transformatif:</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2067,
-        "name": "Thundering Fury",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "4-Set Bagian\n<color=#ffffff73>(Overload, Electro-charged, Superconduct and Hyperbloom)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2091,
-        "name": "Viridescent Venerer",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "4-Set Bagian\n<color=#ffffff73>(Swirl)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2085,
-        "name": "Crimson Witch of Flames",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "4-Set Bagian\n<color=#ffffff73>(Burning, Burgeon)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3321,
-        "name": "Flower of Paradise Lost",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/8459597/50ce09dfa5a91a33aa9cedfb15bcf2d1_3879478237839990750.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "4-Set Bagian\n<color=#ffffff73>(Bloom, Hyperbloom, Burgeon)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2812,
-        "name": "Nilou",
-        "desc": "<p>Penari terkenal di Teater Zubayr. Tariannya elegan dan gemulai, pembawaannya ramah dan polos.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/11/8459597/586d726f9ebda3506c78beaaa41f13b6_2678028484223577025.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "Ascension ke-4 pasif\n<color=#ffffff73>(Bloom)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3609,
-        "name": "Baizhu",
-        "desc": "<p>Pemilik Bubu Pharmacy. Dia sering membawa ular putih bernama Changsheng di pundaknya. Dia adalah seorang dokter yang terampil dan cerdas.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/01/8459597/05599650d7f42e1c4adde373de6b297d_7459390407665800620.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Ascension ke-4 pasif</color>\n<color=#ffffff73>(Burning, Bloom, Hyperbloom, Burgeon)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3608,
-        "name": "Kaveh",
-        "desc": "<p>Seorang arsitek terkenal dari Sumeru yang memedulikan terlalu banyak hal. Pecinta estetika yang terganggu oleh realita.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/01/8459597/2270aba02b92034d7d76b4426be8f53b_777421318188369453.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Elemental Burst dan Konstelasi ke-4</color>\n<color=#ffffff73>(Bloom)</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 37,
-        "name": "Mona",
-        "desc": "Seorang astrolog yang menyebut dirinya sendiri sebagai \"Astrologist Mona Megistus\", dan memiliki kemampuan yang sesuai dengan julukannya. Kepandaiannya setara dengan keangkuhannya.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Konstelasi ke-1</color>\n<color=#ffffff73>(Electro-charged, Hydro Swirl)</color>",
-        "alignment": "center"
-      },
-      {
         "type": "Heading",
         "level": 1,
         "text": "Rumus Perhitungan Damage",
@@ -3302,6 +3136,172 @@
       {
         "type": "RichText",
         "text": "<color=#ffffff>100% + CRIT Damage</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Reaksi Transformatif adalah: Bloom, Hyperbloom, Burgeon, Burning, Overloaded, Electro-charged, Superconduct, Shattered, Swirl.\nReaksi Transformatif mengabaikan DEF musuh tetapi terpengaruh oleh RES musuh. Mereka tidak dapat melakukan CRIT (selain Konstelasi 2 milik Nahida yang memungkinkan Bloom, Hyperbloom, Burgeon, dan Burning melakukan CRIT dengan jumlah yang ditetapkan sebesar 20% CRIT Rate dan 100% CRIT Damage). Hanya Level dan EM karakter yang dipicu yang berpengaruh.\nContoh: Jika Bloom dipicu oleh karakter Dendro (menggunakan Dendro pada Hydro), Level dan EM karakter Dendro dipertimbangkan, dan RES Dendro musuh.\nDengan demikian, Reaksi Transformatif dihitung dengan rumus berikut:"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>RES Multiplier Musuh × Reaksi Multiplier × Karakter LVL Multiplier ×</color>\n<color=#ffffff>(100% + EM Bonus Multiplier + Reaksi Bonus)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Reaksi Multiplier",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Setiap Reaksi Transformatif memiliki Reaksi Multiplier masing-masing, seperti yang ditunjukkan pada tabel:</color>\n<color=#ffffff73>Reaksi Multiplier</color>\n<color=#ffffff73>Reaksi</color>\n<color=#ffffff73>300%</color>\n<color=#ffffff73>Burgeon, Hyperbloom</color>\n<color=#ffffff73>200%</color>\n<color=#ffffff73>Overloaded, Bloom</color>\n<color=#ffffff73>150%</color>\n<color=#ffffff73>Shattered</color>\n<color=#ffffff73>120%</color>\n<color=#ffffff73>Electro-charged</color>\n<color=#ffffff73>60%</color>\n<color=#ffffff73>Swirl</color>\n<color=#ffffff73>50%</color>\n<color=#ffffff73>Superconduct</color>\n<color=#ffffff73>25%</color>\n<color=#ffffff73>Burning</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Level Multiplier pada Karakter",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Karakter memiliki Level Multiplier tergantung pada level karakter saat ini. Hal ini seperti yang ditunjukkan dalam tabel:</color>\n<color=#ffffff73>Level Karakter</color>\n<color=#ffffff73>Level Karakter Multiplier</color>\n<color=#ffffff73>60</color>\n<color=#ffffff73>492.88</color>\n<color=#ffffff73>70</color>\n<color=#ffffff73>765.64</color>\n<color=#ffffff73>80</color>\n<color=#ffffff73>1077.44</color>\n<color=#ffffff73>85</color>\n<color=#ffffff73>1253.84</color>\n<color=#ffffff73>90</color>\n<color=#ffffff73>1446.85</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "EM Bonus Multiplier",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Untuk EM Bonus Multiplier, hanya total EM karakter yang memicu seperti yang ditunjukkan di halaman Stat yang diperhitungkan.</color>\n<color=#ffffff73>Ini dapat dihitung sebagai berikut:</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>EM × 16 / EM + 2000</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Reaksi Bonus",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Ada beberapa Reaksi Bonus untuk damage Reaksi Transformatif:</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "Thundering Fury",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "4-Set Bagian\n<color=#ffffff73>(Overload, Electro-charged, Superconduct and Hyperbloom)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2091,
+        "name": "Viridescent Venerer",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "4-Set Bagian\n<color=#ffffff73>(Swirl)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2085,
+        "name": "Crimson Witch of Flames",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Crimson Witch of Flames/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "4-Set Bagian\n<color=#ffffff73>(Burning, Burgeon)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Flower of Paradise Lost",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/8459597/50ce09dfa5a91a33aa9cedfb15bcf2d1_3879478237839990750.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "4-Set Bagian\n<color=#ffffff73>(Bloom, Hyperbloom, Burgeon)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2812,
+        "name": "Nilou",
+        "desc": "<p>Penari terkenal di Teater Zubayr. Tariannya elegan dan gemulai, pembawaannya ramah dan polos.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/11/8459597/586d726f9ebda3506c78beaaa41f13b6_2678028484223577025.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Ascension ke-4 pasif\n<color=#ffffff73>(Bloom)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "Baizhu",
+        "desc": "<p>Pemilik Bubu Pharmacy. Dia sering membawa ular putih bernama Changsheng di pundaknya. Dia adalah seorang dokter yang terampil dan cerdas.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/01/8459597/05599650d7f42e1c4adde373de6b297d_7459390407665800620.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Ascension ke-4 pasif</color>\n<color=#ffffff73>(Burning, Bloom, Hyperbloom, Burgeon)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3608,
+        "name": "Kaveh",
+        "desc": "<p>Seorang arsitek terkenal dari Sumeru yang memedulikan terlalu banyak hal. Pecinta estetika yang terganggu oleh realita.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/01/8459597/2270aba02b92034d7d76b4426be8f53b_777421318188369453.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Elemental Burst dan Konstelasi ke-4</color>\n<color=#ffffff73>(Bloom)</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "Mona",
+        "desc": "Seorang astrolog yang menyebut dirinya sendiri sebagai \"Astrologist Mona Megistus\", dan memiliki kemampuan yang sesuai dengan julukannya. Kepandaiannya setara dengan keangkuhannya.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Konstelasi ke-1</color>\n<color=#ffffff73>(Electro-charged, Hydro Swirl)</color>",
         "alignment": "center"
       }
     ],

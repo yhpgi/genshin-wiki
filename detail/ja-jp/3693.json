@@ -12,18 +12,52 @@
   "menuName": "聖遺物",
   "version": 1730609249,
   "components": {
-    "artifactList": {
-      "goblet_of_eonothem": {
-        "title": "勇者たちのお茶会",
-        "position": "空の杯",
-        "desc": [
+    "baseInfo": [
+      {
+        "key": "和名 / 英名",
+        "value": [
           {
             "type": "RichText",
-            "text": "精巧なティーカップ。誰かと一緒にのんびりとした午後のひと時を過ごしたのだろう。"
+            "text": "水仙の夢 / Nymph's Dream"
+          }
+        ]
+      },
+      {
+        "key": "入手方法",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "祈聖秘境「熔鉄の孤砦」にて確率で入手可能\n聖遺物廻聖にて入手可能(Ver.5.0-)"
+          }
+        ]
+      },
+      {
+        "key": "同様の2セット効果を持つ聖遺物",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 2079,
+            "name": "沈淪の心",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Heart of Depth/flower_of_life_icon.png"
           }
         ],
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/11/132746206/dbbea8a478949256621433ea777a438d_7418156731278461691.png"
+        "isMaterial": true
       },
+      {
+        "key": "実装バージョン",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "3.6"
+          }
+        ]
+      }
+    ],
+    "reliquarySetEffect": {
+      "twoSetEffect": "<p>水元素ダメージ+15%。</p>",
+      "fourSetEffect": "<p>通常攻撃、重撃、落下攻撃、元素スキル、または元素爆発が敵に命中すると、8秒間継続する「鏡中の水仙」効果を1層獲得する。1/2/3層以上の「鏡中の水仙」効果を持つ時、それぞれ攻撃力+7%/16%/25%、水元素ダメージ+4%/9%/15%。通常攻撃、重撃、落下攻撃、元素スキル、元素爆発による「鏡中の水仙」効果はそれぞれ独立してカウントされる。</p>"
+    },
+    "artifactList": {
       "flower_of_life": {
         "title": "旅中の花",
         "position": "生の花",
@@ -35,16 +69,16 @@
         ],
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/11/132746206/1bde348ad550ef356ff197b93caed6c8_5445687546716888713.png"
       },
-      "sands_of_eon": {
-        "title": "水仙の一瞬一瞬",
-        "position": "時の砂",
+      "goblet_of_eonothem": {
+        "title": "勇者たちのお茶会",
+        "position": "空の杯",
         "desc": [
           {
             "type": "RichText",
-            "text": "とうの昔に止まった懐中時計。虚しく回転しながら、長い歳月を眺めてきたらしい。"
+            "text": "精巧なティーカップ。誰かと一緒にのんびりとした午後のひと時を過ごしたのだろう。"
           }
         ],
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/11/132746206/42d75466608199483d74bf1704d4d50f_6560445723869071469.png"
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/11/132746206/dbbea8a478949256621433ea777a438d_7418156731278461691.png"
       },
       "plume_of_death": {
         "title": "悪しき魔法使いの羽杖",
@@ -56,6 +90,17 @@
           }
         ],
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/11/132746206/78ca65a64de4a2f6f25d7a537928c620_6437570010241956414.png"
+      },
+      "sands_of_eon": {
+        "title": "水仙の一瞬一瞬",
+        "position": "時の砂",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "とうの昔に止まった懐中時計。虚しく回転しながら、長い歳月を眺めてきたらしい。"
+          }
+        ],
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/11/132746206/42d75466608199483d74bf1704d4d50f_6560445723869071469.png"
       },
       "circlet_of_logos": {
         "title": "悪龍の片眼鏡",
@@ -138,51 +183,6 @@
         "menuId": 10
       }
     ],
-    "baseInfo": [
-      {
-        "key": "和名 / 英名",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "水仙の夢 / Nymph's Dream"
-          }
-        ]
-      },
-      {
-        "key": "入手方法",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "祈聖秘境「熔鉄の孤砦」にて確率で入手可能\n聖遺物廻聖にて入手可能(Ver.5.0-)"
-          }
-        ]
-      },
-      {
-        "key": "同様の2セット効果を持つ聖遺物",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 2079,
-            "name": "沈淪の心",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Heart of Depth/flower_of_life_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "実装バージョン",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "3.6"
-          }
-        ]
-      }
-    ],
-    "reliquarySetEffect": {
-      "twoSetEffect": "<p>水元素ダメージ+15%。</p>",
-      "fourSetEffect": "<p>通常攻撃、重撃、落下攻撃、元素スキル、または元素爆発が敵に命中すると、8秒間継続する「鏡中の水仙」効果を1層獲得する。1/2/3層以上の「鏡中の水仙」効果を持つ時、それぞれ攻撃力+7%/16%/25%、水元素ダメージ+4%/9%/15%。通常攻撃、重撃、落下攻撃、元素スキル、元素爆発による「鏡中の水仙」効果はそれぞれ独立してカウントされる。</p>"
-    },
     "story": [
       {
         "title": "旅中の花",
