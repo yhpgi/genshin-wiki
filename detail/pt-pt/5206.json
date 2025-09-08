@@ -9,40 +9,6 @@
   "components": {
     "customize": [
       {
-        "type": "RichText",
-        "text": "Uma Reação Elemental ocorre quando diferentes elementos são aplicados a um alvo que já está afetado por um elemento.\nEm Genshin Impact existem sete elementos, cada um com pelo menos 1 reação que pode ser desencadeada através do respetivo elemento. No entanto também existem restrições para essas reações, pois certos elementos não interagem com outro elemento, que são os seguintes: Geo, Dendro e Anemo, e Dendro e Cryo não reagem entre si.\nAs Reações Elementais podem ser divididas em categorias separadas, tais como: Reações Sem Dano, Reações Amplificantes, Reações Transformativas e Reações Aditivas.\nPara melhor compreender certos mecanismos e interações é útil delinear e definir alguns termos e mecanismos. Estes encontraram uso estabelecido na comunidade e foram identificados por meio de testes e investigações rigorosas por parte de jogadores mais dedicados. Alguns destes paradigmas e mecanismos são de natureza bastante complexa, pelo que sua listagem aqui é apenas um resumo condensado."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Ativador e Auras",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Quando se fala de reações, quanto a algumas delas é importante considerar a ordem de aplicação dos elementos (qual é o elemento que é aplicado sobre o outro), enquanto que para outras tal é desnecessário ao se considerar o efeito da reação. Por exemplo, não importa se um inimigo é afetado por Electro ou Cryo, pois no instante em que o outro elemento respetivo é aplicado ocorre a reação Supercondutor e o efeito é o mesmo. No entanto, há uma diferença se é o elemento Pyro ou o Hydro que desencadeiam a reação de Vaporização, pois aqui a sequência de aplicação tem um impacto no efeito da reação (ou seja, se se trata de um multiplicador x1,5 ou de um multiplicador x2).\nPara facilitar a comunicação sobre este assunto a comunidade adotou os termos <color=#ffffff>\"Aura\"</color> e <color=#ffffff>\"</color> <color=#ffffff>Trigger</color> <color=#ffffff>\" (Ativador)</color> . <color=#ffffff>\"Aura\"</color> é usada para descrever quais elemento(s) estão presentes em uma entidade durante um estado neutro (antes ou depois de uma reação), enquanto que <color=#ffffff>\"</color> <color=#ffffff>Trigger</color> <color=#ffffff>\" (A</color> <color=#ffffff>tivador)</color> é usado para descrever qual é o elemento específico que desencadeia a(s) reação(ões)."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Teoria dos Medidores (Unidades) Elementais",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "A <color=#ffffff>\"Elemental Gauge Theory\" (Teoria do</color> <color=#ffffff>s Medidores Elementais)</color> se refere à ocorrência em que as auras elementais são \"consumidas\" a vários níveis dependendo da sua própria força e da força do respetivo elemento ativador. Neste caso, a força de uma aura ou ativador elemental não é definida pelo dano que um certo ataque causou ao aplicar o referido elemento, mas sim por um valor predefinido para esse ataque. Estes valores podem ser modulados por fatores como a ordem de aplicação (elementos fortes ou fracos) ou tempo entre aplicações (\" decay \", decaimento).\nEm suma, certos ataques aplicam \"mais\" ou \"menos\" de um elemento, o que pode ser refletido na força da aura ou do ativador. Esta força é contada nas chamadas unidades, por exemplo 1U Cryo ou 2U Pyro.\nAqui estão alguns exemplos que podem ajudar a demonstrar esta ideia:\nO Ataque Normal de Charlotte aplica 1U Cryo e o Ataque Normal de Lisa aplica 1U Electro. Ambos se cancelam e ocorre a reação Supercondutor.\nO Supremo de Xingqiu aplica 1U Hydro, enquanto o Ataque Carregado de Hu Tao aplica 1U Pyro. No entanto, visto que neste caso Pyro é o Elemento \"fraco\" devido à natureza da Vaporização, sua força é reduzida a metade, o que significa que consome apenas 0,5U da aura Hydro de Xingqiu. Isso significa que, após o ataque, uma aura Hydro de 0,5U permanece no inimigo e Hu Tao pode desencadear uma segunda reação.\nDa mesma forma, o Supremo de Bennett aplica 2U Pyro a um inimigo, após o qual o Ataque Normal de Mona aplica 1U de Hydro. Porém, como Hydro é o elemento \"forte\", este consome o dobro, resultando na remoção completa da aura Pyro inicial.\nDeve-se notar que um ativador desencadeante, mesmo que aplique mais unidades elementais do que as que podem ser consumidas da aura de um inimigo, nunca aplicará o resto de seu elemento. Um ataque pode aplicar um novo elemento se nenhum estiver presente e estabelecer uma aura, ou consumir uma aura (total ou parcialmente) uma aura e desencadear uma reação. Um único ataque nunca pode fazer ambas as coisas."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Tempo de Recarga Interno",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Da mesma forma como as Habilidades Elementais e Supremos têm Tempos de Recarga ( Cooldown em inglês, CD ), após os quais podem ser usados ​​novamente, o mesmo se aplica também à maioria dos ataques que aplicam um elemento, e que seguem regras específicas. Estes tempos de espera são principalmente separados uns dos outros e não são visíveis por nenhum indicador, daí o nome <color=#ffffff>Internal Cooldown (ICD, Tempo de Recarga Interno)</color> .\nTirando algumas exceções que não possuem nenhum tempo de recarga interno e aplicam seu elemento a cada uso/acerto, a maioria dos ataques seguem padrões semelhantes. De fato, existem duas regras que funcionam em conjunto, a regra do tempo e a regra do acerto, tendo a regra do tempo prioridade.\nEm suma, a cada X acertos, o mesmo ataque pode aplicar seu elemento novamente, enquanto que a cada X segundos também o poderá fazer, independentemente do número de acertos.\nUm exemplo prático disso é o Supremo de Kaeya . Embora essa habilidade gire rapidamente e cause golpes rápidos de dano Cryo, nem todos os acertos podem desencadear uma reação ou aplicar seu elemento. Na verdade, cada terceiro acerto aplicará Cryo, ou seja, os acertos número 1, 4, 7, 10, 13, ... e assim por diante. Além disso, a cada 2,5 segundos o próximo acerto também irá garantidamente aplicar o elemento, substituindo a regra de acerto mencionada anteriormente e a repondo para 1. O mesmo exemplo anterior do Supremo de Kaeya seguiria esta sequência:\n1, 4, 7 / 8, 11, 14 / 15, 18, …\nNeste exemplo o contador começa após o acerto 1. O acerto 7 ocorre após 2,4s, o que significa que o próximo acerto aconteceria após 2,5 segundos após iniciado o contador. Como a regra do tempo tem prioridade, o acerto 8 aplica Cryo, reinicia o contador de golpes e também reinicia a regra do tempo.\nEsta regra de 3 acertos e a regra de tempo de 2,5s são comumente chamados de <color=#ffffff>\"</color> <color=#ffffff>Standard ICD</color> <color=#ffffff>\" (Tem</color> <color=#ffffff>po de Recarga Padrão)</color> , uma vez que esses valores são os mais comuns. Algumas exceções não têm nenhuma regra, ou só possuem uma das duas regras de tempo ou de acerto mas não a outra, ou têm versões modificadas de tais regras.\nAlguns exemplos de tais exceções são o Supremo de Xiangling (sem Tempo de Recarga Interno) ou os Ataques Oz de Fischl (regra de 4 acertos e regra de tempo de 5 segundos)."
-      },
-      {
         "type": "Heading",
         "level": 1,
         "text": "Reações Sem Dano",
@@ -976,6 +942,40 @@
         "desc": "",
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Viridescent Venerer/flower_of_life_icon.png",
         "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "Uma Reação Elemental ocorre quando diferentes elementos são aplicados a um alvo que já está afetado por um elemento.\nEm Genshin Impact existem sete elementos, cada um com pelo menos 1 reação que pode ser desencadeada através do respetivo elemento. No entanto também existem restrições para essas reações, pois certos elementos não interagem com outro elemento, que são os seguintes: Geo, Dendro e Anemo, e Dendro e Cryo não reagem entre si.\nAs Reações Elementais podem ser divididas em categorias separadas, tais como: Reações Sem Dano, Reações Amplificantes, Reações Transformativas e Reações Aditivas.\nPara melhor compreender certos mecanismos e interações é útil delinear e definir alguns termos e mecanismos. Estes encontraram uso estabelecido na comunidade e foram identificados por meio de testes e investigações rigorosas por parte de jogadores mais dedicados. Alguns destes paradigmas e mecanismos são de natureza bastante complexa, pelo que sua listagem aqui é apenas um resumo condensado."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Ativador e Auras",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Quando se fala de reações, quanto a algumas delas é importante considerar a ordem de aplicação dos elementos (qual é o elemento que é aplicado sobre o outro), enquanto que para outras tal é desnecessário ao se considerar o efeito da reação. Por exemplo, não importa se um inimigo é afetado por Electro ou Cryo, pois no instante em que o outro elemento respetivo é aplicado ocorre a reação Supercondutor e o efeito é o mesmo. No entanto, há uma diferença se é o elemento Pyro ou o Hydro que desencadeiam a reação de Vaporização, pois aqui a sequência de aplicação tem um impacto no efeito da reação (ou seja, se se trata de um multiplicador x1,5 ou de um multiplicador x2).\nPara facilitar a comunicação sobre este assunto a comunidade adotou os termos <color=#ffffff>\"Aura\"</color> e <color=#ffffff>\"</color> <color=#ffffff>Trigger</color> <color=#ffffff>\" (Ativador)</color> . <color=#ffffff>\"Aura\"</color> é usada para descrever quais elemento(s) estão presentes em uma entidade durante um estado neutro (antes ou depois de uma reação), enquanto que <color=#ffffff>\"</color> <color=#ffffff>Trigger</color> <color=#ffffff>\" (A</color> <color=#ffffff>tivador)</color> é usado para descrever qual é o elemento específico que desencadeia a(s) reação(ões)."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Teoria dos Medidores (Unidades) Elementais",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "A <color=#ffffff>\"Elemental Gauge Theory\" (Teoria do</color> <color=#ffffff>s Medidores Elementais)</color> se refere à ocorrência em que as auras elementais são \"consumidas\" a vários níveis dependendo da sua própria força e da força do respetivo elemento ativador. Neste caso, a força de uma aura ou ativador elemental não é definida pelo dano que um certo ataque causou ao aplicar o referido elemento, mas sim por um valor predefinido para esse ataque. Estes valores podem ser modulados por fatores como a ordem de aplicação (elementos fortes ou fracos) ou tempo entre aplicações (\" decay \", decaimento).\nEm suma, certos ataques aplicam \"mais\" ou \"menos\" de um elemento, o que pode ser refletido na força da aura ou do ativador. Esta força é contada nas chamadas unidades, por exemplo 1U Cryo ou 2U Pyro.\nAqui estão alguns exemplos que podem ajudar a demonstrar esta ideia:\nO Ataque Normal de Charlotte aplica 1U Cryo e o Ataque Normal de Lisa aplica 1U Electro. Ambos se cancelam e ocorre a reação Supercondutor.\nO Supremo de Xingqiu aplica 1U Hydro, enquanto o Ataque Carregado de Hu Tao aplica 1U Pyro. No entanto, visto que neste caso Pyro é o Elemento \"fraco\" devido à natureza da Vaporização, sua força é reduzida a metade, o que significa que consome apenas 0,5U da aura Hydro de Xingqiu. Isso significa que, após o ataque, uma aura Hydro de 0,5U permanece no inimigo e Hu Tao pode desencadear uma segunda reação.\nDa mesma forma, o Supremo de Bennett aplica 2U Pyro a um inimigo, após o qual o Ataque Normal de Mona aplica 1U de Hydro. Porém, como Hydro é o elemento \"forte\", este consome o dobro, resultando na remoção completa da aura Pyro inicial.\nDeve-se notar que um ativador desencadeante, mesmo que aplique mais unidades elementais do que as que podem ser consumidas da aura de um inimigo, nunca aplicará o resto de seu elemento. Um ataque pode aplicar um novo elemento se nenhum estiver presente e estabelecer uma aura, ou consumir uma aura (total ou parcialmente) uma aura e desencadear uma reação. Um único ataque nunca pode fazer ambas as coisas."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Tempo de Recarga Interno",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Da mesma forma como as Habilidades Elementais e Supremos têm Tempos de Recarga ( Cooldown em inglês, CD ), após os quais podem ser usados ​​novamente, o mesmo se aplica também à maioria dos ataques que aplicam um elemento, e que seguem regras específicas. Estes tempos de espera são principalmente separados uns dos outros e não são visíveis por nenhum indicador, daí o nome <color=#ffffff>Internal Cooldown (ICD, Tempo de Recarga Interno)</color> .\nTirando algumas exceções que não possuem nenhum tempo de recarga interno e aplicam seu elemento a cada uso/acerto, a maioria dos ataques seguem padrões semelhantes. De fato, existem duas regras que funcionam em conjunto, a regra do tempo e a regra do acerto, tendo a regra do tempo prioridade.\nEm suma, a cada X acertos, o mesmo ataque pode aplicar seu elemento novamente, enquanto que a cada X segundos também o poderá fazer, independentemente do número de acertos.\nUm exemplo prático disso é o Supremo de Kaeya . Embora essa habilidade gire rapidamente e cause golpes rápidos de dano Cryo, nem todos os acertos podem desencadear uma reação ou aplicar seu elemento. Na verdade, cada terceiro acerto aplicará Cryo, ou seja, os acertos número 1, 4, 7, 10, 13, ... e assim por diante. Além disso, a cada 2,5 segundos o próximo acerto também irá garantidamente aplicar o elemento, substituindo a regra de acerto mencionada anteriormente e a repondo para 1. O mesmo exemplo anterior do Supremo de Kaeya seguiria esta sequência:\n1, 4, 7 / 8, 11, 14 / 15, 18, …\nNeste exemplo o contador começa após o acerto 1. O acerto 7 ocorre após 2,4s, o que significa que o próximo acerto aconteceria após 2,5 segundos após iniciado o contador. Como a regra do tempo tem prioridade, o acerto 8 aplica Cryo, reinicia o contador de golpes e também reinicia a regra do tempo.\nEsta regra de 3 acertos e a regra de tempo de 2,5s são comumente chamados de <color=#ffffff>\"</color> <color=#ffffff>Standard ICD</color> <color=#ffffff>\" (Tem</color> <color=#ffffff>po de Recarga Padrão)</color> , uma vez que esses valores são os mais comuns. Algumas exceções não têm nenhuma regra, ou só possuem uma das duas regras de tempo ou de acerto mas não a outra, ou têm versões modificadas de tais regras.\nAlguns exemplos de tais exceções são o Supremo de Xiangling (sem Tempo de Recarga Interno) ou os Ataques Oz de Fischl (regra de 4 acertos e regra de tempo de 5 segundos)."
       }
     ]
   }
