@@ -1,22 +1,334 @@
 {
   "epId": 5687,
   "name": "Священный скорпион",
-  "desc": "<p><strong><span style=\"color: rgb(255, 255, 255)\">«Драконий труп»</span></strong></p><p>Ядовитый скорпион, чей облик и повадки исказились в результате поедания больших форм жизни. Теперь он может управлять опасной молнией.</p>",
+  "desc": "<p><strong><span style=\"color: rgb(255, 255, 255)\">Драконий труп: Священный скорпион</span></strong></p><p>Ядовитый скорпион, чей облик и повадки исказились в результате поедания больших форм жизни. Теперь он может управлять опасной молнией.</p>",
   "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/b95f744a2710b24cb940ab354c94b0fd_5557419187553948751.png",
   "filterValues": {
-    "cardCharacterWeaponType": "Прочее",
     "cardCharacterCamp": [
       "Монстр",
       "Священный хищник"
     ],
+    "cardCharacterElement": "Электро",
     "cardCharacterChargingPoint": "Энергия: 2",
     "cardCharacterObtainingMethod": "Испытания в таверне",
-    "cardCharacterElement": "Электро"
+    "cardCharacterWeaponType": "Прочее"
   },
   "menuId": 17,
   "menuName": "Карты персонажей",
-  "version": 1719321181,
+  "version": 1757429630,
   "components": {
+    "talent": [
+      {
+        "key": "Удар скорпиона",
+        "title": "Удар скорпиона",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/47817b4476bcd8b44c86c87debf042f2_4911765086870118649.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Обычная атака</color>\nНаносит <color=#ffffff>Физический урон</color> , 2 ед."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Шипастый хребет",
+        "title": "Шипастый хребет",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/86ad2f9a487b5e1fc7f14c6d3aebf17a_6222343204418372505.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Элементальный навык</color>\nНаносит <color=#ffacff>Электро урон</color> , 3 ед.\nСоздаёт карту <color=#ffffff>Энергетический блок Потрошителя</color> и помещает её среди первых двух карт вашей колоды."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Громогласный снаряд",
+        "title": "Громогласный снаряд",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/aebba01f5c8d920339645f679cd512aa_748556389759530126.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Взрыв стихии</color>\nНаносит <color=#ffacff>Электро урон</color> , 3 ед., происходит <color=#ffffff>Отказ</color> от максимум 3 карт <color=#ffffff>Энергетический блок Потрошителя</color> из руки, создаётся <color=#ffffff>Громоподобная западня</color> на поле противника.\n<color=#ece5d8>Громоподобная западня</color>\n<color=#ffd780>Боевой статус</color>\n<color=#ffffff>Когда персонаж в отряде использует навык:</color> активному персонажу той стороны наносится <color=#ffacff>Электро урон</color> , 2 ед.\n<color=#ffffff>Кол-во применений:</color> начальное значение соответствует кол-ву сброшенных при создании карт <color=#ffffff>Энергетический блок Потрошителя</color> (не более 3)."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Энергетический блок Потрошителя",
+        "title": "Энергетический блок Потрошителя",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/db13288db6b90ec33f8adc2656d2019f_576295234017951577.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Карты событий</color>\nПроисходит <color=#ffffff>Отказ</color> от 1 карты из вашей руки, которая имеет наивысшую изначальную стоимость, и даёт 1 дайс, соответствующий элементу вашего активного персонажа. Лишь одну такую карту можно разыграть в течение раунда."
+          }
+        ],
+        "attributes": [],
+        "talentImg": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/531ed6322b0a8f721e6080da7fcd72ce_1569221618356326391.png"
+      },
+      {
+        "key": "Бессмертные останки: Электро",
+        "title": "Бессмертные останки: Электро",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/2f5fbc2acab943dc5e598980c758f964_4245074756266460540.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Пассивный навык</color>\nВ конце раунда создаёт <color=#ffffff>Энергетический блок Потрошителя</color> ×2 и помещает их в случайные места среди верхних 10 карт вашей колоды."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Электро урон",
+        "title": "Электро урон",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/11ea6117480145a30b7893f1e8bd7115_5120340793290893305.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Создаёт эффект <color=#ffacff>Электро</color> и вызывает следующие реакции:\n<color=#ffffff>[</color> <color=#ffacff>Электро</color> <color=#ffffff>+</color> <color=#ff9999>Пиро</color> <color=#ffffff>] Перегрузка:</color> урон +2 (в этот раз), делает активным следующего персонажа противника\n<color=#ffffff>[</color> <color=#ffacff>Электро</color> <color=#ffffff>+</color> <color=#99ffff>Крио</color> <color=#ffffff>] Сверхпроводник:</color> урон +1 (в этот раз), наносит проникающий урон 1 ед. для всех персонажей противника, кроме цели\n<color=#ffffff>[</color> <color=#ffacff>Электро</color> <color=#ffffff>+</color> <color=#80c0ff>Гидро</color> <color=#ffffff>] Заряжен:</color> урон +1 (в этот раз), наносит проникающий урон 1 ед. для всех персонажей противника, кроме цели\n<color=#ffffff>[</color> <color=#ffacff>Электро</color> <color=#ffffff>+</color> <color=#99ff88>Дендро</color> <color=#ffffff>] Стимуляция:</color> урон +1 (в этот раз), создаёт <color=#ffffff>область катализа,</color> которая увеличит следующие два Дендро или Электро урона на 1 ед."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Подробные правила",
+        "title": "Подробные правила",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/09/218387610/245c229cf6f7364c7c9a7aea3db1a1ad_9017281688066378327.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ece5d8>Физический урон</color>\nФизический урон не создаёт элементальных эффектов и не вступает в реакции.\n<color=#ece5d8>Кол-во применений</color>\nКогда срабатывает эффект этой карты, расходуется 1 <color=#ffffff>применение</color> .\nКогда <color=#ffffff>применения</color> кончаются, карта исчезает.\n<color=#ece5d8>Отказ</color>\nКарта действия может быть сброшена из руки или из колоды с помощью карт действий или эффектов персонажей."
+          }
+        ],
+        "attributes": []
+      }
+    ],
+    "tcg": {
+      "headerImgs": [
+        {
+          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/b95f744a2710b24cb940ab354c94b0fd_5557419187553948751.png"
+        },
+        {
+          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/b1b00a3c7cd3d13405207e644e646139_5455033628882450114.gif"
+        }
+      ],
+      "hp": 10
+    },
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Голографический дизайн",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Покупка в Карточном магазине"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Товар</color>\n<color=#ffffff>Количество</color>\n<color=#ffffff>Стоимость</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/09/218387610/008cc52d4ab0471ed63e70dc3737d121_4624095902282329295.gif",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "1",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3333,
+        "name": "Счастливая монета",
+        "desc": "<p>Валюта, выпущенная Ассоциацией игроков. Счастливые монеты можно использовать для покупки целого ряда предметов, связанных со «Священным призывом семерых». Говорят, монеты назвали так в надежде, что они принесут удачу своим обладателям. Однако на деле получить их в своё распоряжение могут лишь настоящие счастливцы...</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/c85bfab46d8c95659ab6dfb2e1629a87_9183176432317465083.png",
+        "amount": 4000,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Также можно получить в обмен на"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3331,
+        "name": "Пустая голографическая карта",
+        "desc": "<p>Пустая голографическая карта с рисунком на рубашке. Говорят, если написать на ней название голографической карты, которую хотите получить, представитель Ассоциации игроков в таверне выдаст вам соответствующий дизайн.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/05/70239714/03b60aec345461dae970832766ebacf8_4161071100690928956.png",
+        "displayStyle": "text"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Священный призыв семерых",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Дружеская дуэль: Удар священного скорпиона"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Об уровне</color>\n«Мяу!»\n«Кошкам сложно подружиться с теми, кто покрыт шипами, а с этими огромными и свирепыми скорпионами и подавно!»\n<color=#ffd780>Особое правило: в этом раунде вы сразитесь в Дуэли, а не в Приключениях. Священный скорпион начинает с экипированной картой таланта «Смертельная молния».</color>\n<color=#ffffffd9>Отряд противника</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5687,
+        "name": "Священный скорпион",
+        "desc": "<p><strong><span style=\"color: rgb(255, 255, 255)\">Драконий труп: Священный скорпион</span></strong></p><p>Ядовитый скорпион, чей облик и повадки исказились в результате поедания больших форм жизни. Теперь он может управлять опасной молнией.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/b95f744a2710b24cb940ab354c94b0fd_5557419187553948751.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5687,
+        "name": "Священный скорпион",
+        "desc": "<p><strong><span style=\"color: rgb(255, 255, 255)\">Драконий труп: Священный скорпион</span></strong></p><p>Ядовитый скорпион, чей облик и повадки исказились в результате поедания больших форм жизни. Теперь он может управлять опасной молнией.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/b95f744a2710b24cb940ab354c94b0fd_5557419187553948751.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Требования</color>\nДостичь 8 уровня игрока"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Цели"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Награда"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Одержите победу</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5687,
+        "name": "Священный скорпион",
+        "desc": "<p><strong><span style=\"color: rgb(255, 255, 255)\">Драконий труп: Священный скорпион</span></strong></p><p>Ядовитый скорпион, чей облик и повадки исказились в результате поедания больших форм жизни. Теперь он может управлять опасной молнией.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/b95f744a2710b24cb940ab354c94b0fd_5557419187553948751.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Одержите победу за 5 раундов</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5696,
+        "name": "Смертельная молния",
+        "desc": "<p><strong><span style=\"color: rgb(255, 255, 255)\">Священный скорпион: Смертельная молния</span></strong></p><p>Развитие жизненных форм подчиняется законам эволюции, и эти законы милостивы к тем священным хищникам, кому повезло обнаружить останки могущественных существ раньше конкурентов.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/20499604aed105508c783086e5fbd6a0_4431456454046876618.png",
+        "displayStyle": "card",
+        "menuId": 18
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Одержите победу, потеряв менее двух персонажей</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5696,
+        "name": "Смертельная молния",
+        "desc": "<p><strong><span style=\"color: rgb(255, 255, 255)\">Священный скорпион: Смертельная молния</span></strong></p><p>Развитие жизненных форм подчиняется законам эволюции, и эти законы милостивы к тем священным хищникам, кому повезло обнаружить останки могущественных существ раньше конкурентов.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/20499604aed105508c783086e5fbd6a0_4431456454046876618.png",
+        "displayStyle": "card",
+        "menuId": 18
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Серьёзная схватка: Смертельная битва священного скорпиона"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Об уровне</color>\n«Мяу!»\n«Говорят, в пустыне живут огромные фиолетовые скорпионы. К счастью, пустынные кошки научились избегать их».\n<color=#ffd780>Особое правило: в этом раунде вы сразитесь в Дуэли, а не в Приключениях. Священный скорпион начинает с экипированной картой таланта «Смертельная молния», а священный летучий змей - с картой таланта «Смертельный циклон».</color>\n<color=#ffffffd9>Отряд противника</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5687,
+        "name": "Священный скорпион",
+        "desc": "<p><strong><span style=\"color: rgb(255, 255, 255)\">Драконий труп: Священный скорпион</span></strong></p><p>Ядовитый скорпион, чей облик и повадки исказились в результате поедания больших форм жизни. Теперь он может управлять опасной молнией.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/b95f744a2710b24cb940ab354c94b0fd_5557419187553948751.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5688,
+        "name": "Священный летучий змей",
+        "desc": "<p><strong><span style=\"color: rgb(255, 255, 255)\">Остатки вихря: Священный летучий змей</span></strong></p><p>Летучий змей, чей облик и повадки исказились в результате поедания больших форм жизни. Теперь он может управлять страшными ветрами.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/d1030a726925d5e63c85b62926d3a511_7786251576640906461.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5687,
+        "name": "Священный скорпион",
+        "desc": "<p><strong><span style=\"color: rgb(255, 255, 255)\">Драконий труп: Священный скорпион</span></strong></p><p>Ядовитый скорпион, чей облик и повадки исказились в результате поедания больших форм жизни. Теперь он может управлять опасной молнией.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/b95f744a2710b24cb940ab354c94b0fd_5557419187553948751.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Требования</color>\nДостичь 8 уровня игрока"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Цели"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Награда"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Одержите победу</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3333,
+        "name": "Счастливая монета",
+        "desc": "<p>Валюта, выпущенная Ассоциацией игроков. Счастливые монеты можно использовать для покупки целого ряда предметов, связанных со «Священным призывом семерых». Говорят, монеты назвали так в надежде, что они принесут удачу своим обладателям. Однако на деле получить их в своё распоряжение могут лишь настоящие счастливцы...</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/c85bfab46d8c95659ab6dfb2e1629a87_9183176432317465083.png",
+        "amount": 1000,
+        "displayStyle": "card"
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Громогласный снаряд",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/dc833e9e8f2e5152a05d0381ec5323cc_831154122507022725.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "*Наносимый урон навыка, его стоимость по энергии и некоторые другие параметры могут отличаться в текущей версии"
+          }
+        ]
+      },
+      {
+        "key": "Аватар (иконка)",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/d53decd76a980d39f31d3af51b7779f0_3457446054252383943.png"
+      }
+    ],
     "baseInfo": [
       {
         "key": "Название:",
@@ -106,7 +418,7 @@
             "type": "CustomEntry",
             "epId": 5696,
             "name": "Смертельная молния",
-            "desc": "<p>Развитие жизненных форм подчиняется законам эволюции, и эти законы милостивы к тем священным хищникам, кому повезло обнаружить останки могущественных существ раньше конкурентов.</p>",
+            "desc": "<p><strong><span style=\"color: rgb(255, 255, 255)\">Священный скорпион: Смертельная молния</span></strong></p><p>Развитие жизненных форм подчиняется законам эволюции, и эти законы милостивы к тем священным хищникам, кому повезло обнаружить останки могущественных существ раньше конкурентов.</p>",
             "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/20499604aed105508c783086e5fbd6a0_4431456454046876618.png"
           }
         ],
@@ -124,124 +436,6 @@
           }
         ],
         "isMaterial": true
-      }
-    ],
-    "talent": [
-      {
-        "key": "Удар скорпиона",
-        "title": "Удар скорпиона",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/47817b4476bcd8b44c86c87debf042f2_4911765086870118649.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Обычная атака</color>\nНаносит <color=#ffffff>Физический урон</color> , 2 ед."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Шипастый хребет",
-        "title": "Шипастый хребет",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/86ad2f9a487b5e1fc7f14c6d3aebf17a_6222343204418372505.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Элементальный навык</color>\nНаносит <color=#ffacff>Электро урон</color> , 3 ед.\nСоздаёт карту <color=#ffffff>Энергетический блок Потрошителя</color> и помещает её среди первых двух карт вашей колоды."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Громогласный снаряд",
-        "title": "Громогласный снаряд",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/aebba01f5c8d920339645f679cd512aa_748556389759530126.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Взрыв стихии</color>\nНаносит <color=#ffacff>Электро урон</color> , 3 ед., происходит <color=#ffffff>Отказ</color> от максимум 3 карт <color=#ffffff>Энергетический блок Потрошителя</color> из руки, создаётся <color=#ffffff>Громоподобная западня</color> на поле противника.\n<color=#ece5d8>Громоподобная западня</color>\n<color=#ffd780>Боевой статус</color>\n<color=#ffffff>Когда персонаж в отряде использует навык:</color> активному персонажу той стороны наносится <color=#ffacff>Электро урон</color> , 2 ед.\n<color=#ffffff>Кол-во применений:</color> начальное значение соответствует кол-ву сброшенных при создании карт <color=#ffffff>Энергетический блок Потрошителя</color> (не более 3)."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Энергетический блок Потрошителя",
-        "title": "Энергетический блок Потрошителя",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/db13288db6b90ec33f8adc2656d2019f_576295234017951577.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Карты событий</color>\nПроисходит <color=#ffffff>Отказ</color> от 1 карты из вашей руки, которая имеет наивысшую изначальную стоимость, и даёт 1 дайс, соответствующий элементу вашего активного персонажа. Если вашим активным персонажем является священный хищник, то <color=#ffffff>Энергия</color> увеличивается на 1 ед. (1 раз за раунд)."
-          }
-        ],
-        "attributes": [],
-        "talentImg": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/531ed6322b0a8f721e6080da7fcd72ce_1569221618356326391.png"
-      },
-      {
-        "key": "Бессмертные останки: Электро",
-        "title": "Бессмертные останки: Электро",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/2f5fbc2acab943dc5e598980c758f964_4245074756266460540.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Пассивный навык</color>\nВ конце раунда создаёт <color=#ffffff>Энергетический блок Потрошителя</color> ×2 и помещает их в случайные места среди верхних 10 карт вашей колоды."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Электро урон",
-        "title": "Электро урон",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/11ea6117480145a30b7893f1e8bd7115_5120340793290893305.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Создаёт эффект <color=#ffacff>Электро</color> и вызывает следующие реакции:\n<color=#ffffff>[</color> <color=#ffacff>Электро</color> <color=#ffffff>+</color> <color=#ff9999>Пиро</color> <color=#ffffff>] Перегрузка:</color> урон +2 (в этот раз), делает активным следующего персонажа противника\n<color=#ffffff>[</color> <color=#ffacff>Электро</color> <color=#ffffff>+</color> <color=#99ffff>Крио</color> <color=#ffffff>] Сверхпроводник:</color> урон +1 (в этот раз), наносит проникающий урон 1 ед. для всех персонажей противника, кроме цели\n<color=#ffffff>[</color> <color=#ffacff>Электро</color> <color=#ffffff>+</color> <color=#80c0ff>Гидро</color> <color=#ffffff>] Заряжен:</color> урон +1 (в этот раз), наносит проникающий урон 1 ед. для всех персонажей противника, кроме цели\n<color=#ffffff>[</color> <color=#ffacff>Электро</color> <color=#ffffff>+</color> <color=#99ff88>Дендро</color> <color=#ffffff>] Стимуляция:</color> урон +1 (в этот раз), создаёт <color=#ffffff>область катализа,</color> которая увеличит следующие два Дендро или Электро урона на 1 ед."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Подробные правила",
-        "title": "Подробные правила",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/07bae546ac7c69ef6402170b283840c5_3159477598978497123.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ece5d8>Физический урон</color>\nФизический урон не создаёт элементальных эффектов и не вступает в реакции.\n<color=#ece5d8>Кол-во применений</color>\nКогда срабатывает эффект этой карты, расходуется 1 <color=#ffffff>применение</color> .\nКогда <color=#ffffff>применения</color> кончаются, карта исчезает.\n<color=#ece5d8>Энергия</color>\nПерсонаж должен использовать энергию, чтобы вызывать взрыв стихии.\nЗа использование обычной атаки или элементального навыка персонаж получает 1 энергию.\n<color=#ece5d8>Отказ</color>\nКарта действия может быть сброшена из руки или из колоды с помощью карт действий или эффектов персонажей."
-          }
-        ],
-        "attributes": []
-      }
-    ],
-    "tcg": {
-      "headerImgs": [
-        {
-          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/b95f744a2710b24cb940ab354c94b0fd_5557419187553948751.png"
-        },
-        {
-          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/b1b00a3c7cd3d13405207e644e646139_5455033628882450114.gif"
-        }
-      ],
-      "hp": 10
-    },
-    "galleryCharacter": [
-      {
-        "key": "Громогласный снаряд",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/dc833e9e8f2e5152a05d0381ec5323cc_831154122507022725.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "*Наносимый урон навыка, его стоимость по энергии и некоторые другие параметры могут отличаться в текущей версии"
-          }
-        ]
-      },
-      {
-        "key": "Аватар (иконка)",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/d53decd76a980d39f31d3af51b7779f0_3457446054252383943.png"
-      },
-      {
-        "key": "Энергетический блок Потрошителя",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/24/70239714/f40b3f0765567f87b4da195ed55b972e_8165464859628657948.gif"
       }
     ]
   }
