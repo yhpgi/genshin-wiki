@@ -9,6 +9,40 @@
   "components": {
     "customize": [
       {
+        "type": "RichText",
+        "text": "An Elemental Reaction occurs when different elements are applied to a target that is already affected by an element.\nIn Genshin Impact, there are seven elements, each with at least 1 reaction that can be triggered using it. However, there are restrictions to these reactions as certain elements do not interact with another element, which is as follows: Geo, Dendro and Anemo, and Dendro and Cryo do not react with each other.\nElemental Reactions can be divided into separate categories, such as: Non Damage Reactions, Amplifying Reactions, Transformative Reactions and Additive Reactions.\nTo better understand certain mechanisms and interactions, it is helpful to outline and define a couple of terms and mechanisms. These have found an established use in the community and have been identified through rigorous testing and research from dedicated players. Some of these paradigms and mechanisms are rather complex in nature, so their listing here is but a condensed summary."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Triggers & Auras",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "When talking about reactions, some of them do care about the order of use, while others are indifferent when considering the effect of the reaction. No matter if an enemy is affected by Electro or Cryo, the instant the respective other element is applied, the Superconduct reaction occurs and the effect is the same. However, there is a difference whether it is Pyro or Hydro which triggers the Vaporize reaction, since here, the sequence of application has an impact on the effect of the reaction (i.e. x1.5 multiplier compared to x2 multiplier).\nTo facilitate communication on this matter, the community adopted the terms of <color=#ffffff>\"Aura\"</color> and <color=#ffffff>\"Trigger\"</color> . <color=#ffffff>\"Aura\"</color> being used to describe which element(s) is present on an entity during a neutral state (before or after a reaction), while <color=#ffffff>\"Trigger\"</color> is used to describe which element triggers the reaction(s)."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Elemental Gauge (Unit) Theory",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>\"Elemental Gauge (Unit) Theory\"</color> refers to the understanding that elemental auras are \"consumed\" to different degrees depending on their own strength and the strength of the respective trigger. In this case, the strength of an elemental aura or trigger is not defined by the damage an attacking move did when applying said element, but a predefined value for that attack. These values can be modulated by factors, such as order of application (strong or weak elements), or the time between applications (decay).\nIn essence, certain attacks apply \"more\" or \"less\" of an element, which can be reflected in the strength of the aura or the trigger. This strength is counted in so-called units, e.g. 1U Cryo or 2U Pyro.\nHere are some examples, that can help to demonstrate this idea:\nCharlotte's Normal Attack applies 1U Cryo and Lisa's Normal Attack applies 1U Electro. Both cancel each other out and the Superconduct reaction occurs.\nXingqiu's Burst applies 1U Hydro, while Hu Tao's Charged Attack applies 1U Pyro. However, since in this case, Pyro is the \"weak\" Element due the nature of Vaporize, its strength is halved, which means it only consumes 0.5U of Xingqiu's Hydro aura. This means, after the attack, a 0.5U Hydro aura remains on the enemy, and Hu Tao can trigger a second reaction.\nLikewise, Bennett's Burst applies 2U Pyro to an enemy, after which, Mona's Normal Attack applies 1U Hydro. However, since Hydro is the \"strong\" Element, it consumes twice as much, resulting in a full removal of the initial Pyro aura.\nIt should be noted that a trigger, even if applying more of an element than what can be consumed from an enemies aura, will never apply the rest of its element. An attack can either apply a new element, if none is present, and establish an aura OR consume (part of) an aura and trigger a reaction. A single attack can never do both."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Internal Cooldown (ICD)",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "The same way that Elemental Skills and Bursts have cooldowns, after which they can be used again, most attacks that apply an element also follow specific rules. These cooldowns are for the most part separate from another and not visible by any indicator, hence the name <color=#ffffff>Internal Cooldown (ICD)</color> .\nApart from some exceptions that do not have any internal cooldown and apply their element with each use/hit, most attacks follow similar patterns. In fact, there are two rules working in tandem, the time-rule and the hit-rule, with the time-rule taking priority.\nSimply put, every X hits, the same attack can apply its element again, while also every X seconds, regardless of hits.\nA practical example for this is Kaeya's Burst . While this ability rotates rapidly and deals quick hits of Cryo Damage, not every hit can trigger a reaction or apply its element. In fact, every third hit will apply Cryo, meaning hits number 1, 4, 7, 10, 13, .. and so forth. Also, every 2.5 seconds, the next hit will also be guaranteed to apply the element, overwriting the previously mentioned hit-rule and resetting that one back to 1. Same example as before with Kaeya's Burst, this could be a sequence:\n1, 4, 7 / 8, 11, 14 / 15, 18, …\nIn this example, the timer starts after hit 1. Hit 7 occurs after 2.4s, meaning the next hit would happen after 2.5 seconds. Since the time-rule takes priority, hit 8 applies Cryo instead, restarts the timer and also resets the time rule.\nThis 3-hit-rule and 2.5s-time-rule are commonly referred to as <color=#ffffff>\"Standard ICD\"</color> , since these values are the most common ones. Some exceptions do not have a rule at all, are missing a time- or hit-rule, or have modified time- and/or hit-rules.\nExamples for such exceptions are Xiangling's Burst (no ICD) or Fischl's Oz Attacks (4 hits hit-rule & 5 seconds time-rule)."
+      },
+      {
         "type": "Heading",
         "level": 1,
         "text": "Non Damage Reactions",
@@ -1392,40 +1426,6 @@
         "type": "RichText",
         "text": "<color=#ffffff>4-Piece Set</color>\nThe equipping character's Bloom, Hyperbloom, and Burgeon reaction DMG are increased by 40%. Additionally, after the equipping character triggers Bloom, Hyperbloom, or Burgeon, they will gain another 25% bonus to the effect mentioned prior. Each stack of this lasts 10s. Max 4 stacks simultaneously. This effect can only be triggered once per second. The character who equips this can still trigger its effects when not on the field.",
         "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "An Elemental Reaction occurs when different elements are applied to a target that is already affected by an element.\nIn Genshin Impact, there are seven elements, each with at least 1 reaction that can be triggered using it. However, there are restrictions to these reactions as certain elements do not interact with another element, which is as follows: Geo, Dendro and Anemo, and Dendro and Cryo do not react with each other.\nElemental Reactions can be divided into separate categories, such as: Non Damage Reactions, Amplifying Reactions, Transformative Reactions and Additive Reactions.\nTo better understand certain mechanisms and interactions, it is helpful to outline and define a couple of terms and mechanisms. These have found an established use in the community and have been identified through rigorous testing and research from dedicated players. Some of these paradigms and mechanisms are rather complex in nature, so their listing here is but a condensed summary."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Triggers & Auras",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "When talking about reactions, some of them do care about the order of use, while others are indifferent when considering the effect of the reaction. No matter if an enemy is affected by Electro or Cryo, the instant the respective other element is applied, the Superconduct reaction occurs and the effect is the same. However, there is a difference whether it is Pyro or Hydro which triggers the Vaporize reaction, since here, the sequence of application has an impact on the effect of the reaction (i.e. x1.5 multiplier compared to x2 multiplier).\nTo facilitate communication on this matter, the community adopted the terms of <color=#ffffff>\"Aura\"</color> and <color=#ffffff>\"Trigger\"</color> . <color=#ffffff>\"Aura\"</color> being used to describe which element(s) is present on an entity during a neutral state (before or after a reaction), while <color=#ffffff>\"Trigger\"</color> is used to describe which element triggers the reaction(s)."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Elemental Gauge (Unit) Theory",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>\"Elemental Gauge (Unit) Theory\"</color> refers to the understanding that elemental auras are \"consumed\" to different degrees depending on their own strength and the strength of the respective trigger. In this case, the strength of an elemental aura or trigger is not defined by the damage an attacking move did when applying said element, but a predefined value for that attack. These values can be modulated by factors, such as order of application (strong or weak elements), or the time between applications (decay).\nIn essence, certain attacks apply \"more\" or \"less\" of an element, which can be reflected in the strength of the aura or the trigger. This strength is counted in so-called units, e.g. 1U Cryo or 2U Pyro.\nHere are some examples, that can help to demonstrate this idea:\nCharlotte's Normal Attack applies 1U Cryo and Lisa's Normal Attack applies 1U Electro. Both cancel each other out and the Superconduct reaction occurs.\nXingqiu's Burst applies 1U Hydro, while Hu Tao's Charged Attack applies 1U Pyro. However, since in this case, Pyro is the \"weak\" Element due the nature of Vaporize, its strength is halved, which means it only consumes 0.5U of Xingqiu's Hydro aura. This means, after the attack, a 0.5U Hydro aura remains on the enemy, and Hu Tao can trigger a second reaction.\nLikewise, Bennett's Burst applies 2U Pyro to an enemy, after which, Mona's Normal Attack applies 1U Hydro. However, since Hydro is the \"strong\" Element, it consumes twice as much, resulting in a full removal of the initial Pyro aura.\nIt should be noted that a trigger, even if applying more of an element than what can be consumed from an enemies aura, will never apply the rest of its element. An attack can either apply a new element, if none is present, and establish an aura OR consume (part of) an aura and trigger a reaction. A single attack can never do both."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Internal Cooldown (ICD)",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "The same way that Elemental Skills and Bursts have cooldowns, after which they can be used again, most attacks that apply an element also follow specific rules. These cooldowns are for the most part separate from another and not visible by any indicator, hence the name <color=#ffffff>Internal Cooldown (ICD)</color> .\nApart from some exceptions that do not have any internal cooldown and apply their element with each use/hit, most attacks follow similar patterns. In fact, there are two rules working in tandem, the time-rule and the hit-rule, with the time-rule taking priority.\nSimply put, every X hits, the same attack can apply its element again, while also every X seconds, regardless of hits.\nA practical example for this is Kaeya's Burst . While this ability rotates rapidly and deals quick hits of Cryo Damage, not every hit can trigger a reaction or apply its element. In fact, every third hit will apply Cryo, meaning hits number 1, 4, 7, 10, 13, .. and so forth. Also, every 2.5 seconds, the next hit will also be guaranteed to apply the element, overwriting the previously mentioned hit-rule and resetting that one back to 1. Same example as before with Kaeya's Burst, this could be a sequence:\n1, 4, 7 / 8, 11, 14 / 15, 18, …\nIn this example, the timer starts after hit 1. Hit 7 occurs after 2.4s, meaning the next hit would happen after 2.5 seconds. Since the time-rule takes priority, hit 8 applies Cryo instead, restarts the timer and also resets the time rule.\nThis 3-hit-rule and 2.5s-time-rule are commonly referred to as <color=#ffffff>\"Standard ICD\"</color> , since these values are the most common ones. Some exceptions do not have a rule at all, are missing a time- or hit-rule, or have modified time- and/or hit-rules.\nExamples for such exceptions are Xiangling's Burst (no ICD) or Fischl's Oz Attacks (4 hits hit-rule & 5 seconds time-rule)."
       }
     ]
   }
