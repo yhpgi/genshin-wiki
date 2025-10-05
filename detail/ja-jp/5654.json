@@ -5,8 +5,68 @@
   "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/02/132746206/1ef525b101a31611b9fe2cc1b0a59aa8_3366777615762678055.png",
   "menuId": 14,
   "menuName": "チュートリアル",
-  "version": 1755550425,
+  "version": 1759645226,
   "components": {
+    "baseInfo": [
+      {
+        "key": "名前",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "ダメージ計算式"
+          }
+        ]
+      },
+      {
+        "key": "関連項目",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5206,
+            "name": "元素反応",
+            "desc": "<p>テイワットには7つの元素が存在し、「神の目」と呼ばれる魔力器官を授けられたキャラクターは、7つのうち1つの元素を扱うことができる。元素同士が接触すると、元素の組み合わせに応じた元素反応が発生する。</p>",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/18/e03d84da04797c0ad0d6bd99c0d6ed57_8218276776082843931.png"
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "物理ダメージ",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/27/317536791/6c5ed1eeb09d687c7b8c8cec217c8f63_9125764413987219642.png"
+      },
+      {
+        "key": "元素反応ダメージ1",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/27/317536791/6bb6c739a1c6f8aae3dd898604d75339_2652090475460431027.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>増幅系元素反応と加算系元素反応は特殊な計算式をもつ。</color>"
+          }
+        ]
+      },
+      {
+        "key": "元素反応ダメージ2",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/27/317536791/f68558a58bc96b9836586c2cb823d99d_610155399876147327.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>固定値系元素反応も他の2つの元素反応と同じく特殊な計算式をもつ。</color>"
+          }
+        ]
+      },
+      {
+        "key": "ダメージバフ",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/27/317536791/166446e96948e4800450695c3960b927_8368252567662668190.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>一部のダメージバフはHPバーの上に特殊なアイコンを表示させる。</color>"
+          }
+        ]
+      }
+    ],
     "customize": [
       {
         "type": "RichText",
@@ -135,7 +195,20 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>元素爆発、命ノ星座 第4重</color>\nまた、一部の聖遺物セットの効果によっても特定の固定値系元素反応のダメージをアップさせることができる。\n一覧を以下に示す。"
+        "text": "<color=#ffffff>元素爆発、命ノ星座 第4重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7627,
+        "name": "イファ",
+        "desc": "花翼の集の竜医。人や動物、その他の生き物と共に過ごす生活を心から愛している。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/30/ce693d1e36aef5936b2d2db006605fc4_9036718103340803450.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>突破段階「1」で解放される固有天賦</color>\nまた、一部の聖遺物セットの効果によっても特定の固定値系元素反応のダメージをアップさせることができる。\n一覧を以下に示す。"
       },
       {
         "type": "CustomEntry",
@@ -357,6 +430,19 @@
       {
         "type": "RichText",
         "text": "<color=#ffffff>元素スキル</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7706,
+        "name": "スカーク",
+        "desc": "かつて深淵の裂け目や原始胎海に足を踏み入れた来訪者であり、タルタリヤに武芸を仕込んだ師。孤独に戦う。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/48dba0c10560a3ef573f17d97408b5a0_2527001828446746987.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>突破段階「4」で解放される固有天賦</color>"
       },
       {
         "type": "Heading",
@@ -678,7 +764,150 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>突破段階「1」で解放される固有天賦、命ノ星座 第1重</color>\n続いて、加算ダメージバフに該当するダメージバフを持つ武器の一覧を以下に示す。"
+        "text": "<color=#ffffff>突破段階「1」で解放される固有天賦、命ノ星座 第1重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5714,
+        "name": "エミリエ",
+        "desc": "秘密を瓶の中に隠す、フォンテーヌの調香師。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第6重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6319,
+        "name": "ムアラニ",
+        "desc": "<p>ナタ中に名を馳せるガイドであり、マリングッズ店の経営者でもある、さまざまな水上スポーツに精通した波追い人。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/27/94675339/f4c75caad42923eb91ee760aa2eb473a_6951018688143347003.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>突破段階「4」で解放される固有天賦、命ノ星座 第1重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6318,
+        "name": "カチーナ",
+        "desc": "古名「ウッサビーティ」を授かったナナツカヤンの若き戦士。挫折の中で成長し続ける、善良で粘り強い少女。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/26925adb1092d29c8afdf46d92fad8bd_343637410022641529.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>突破段階「4」で解放される固有天賦</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6317,
+        "name": "キィニチ",
+        "desc": "ウィッツトランの竜狩り人。代償を量ることに長けている。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/12/0099e74b4d0c919f6feab4bade3ab748_5795733017114624391.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>突破段階「4」で解放される固有天賦</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6924,
+        "name": "シロネン",
+        "desc": "ナナツカヤンの名鋳り師。山積みの仕事と快適な暮らしのバランスを取るのが得意。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/b07074c2b9040516fd240b6b8d65c011_2487211347344319683.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第4重、命ノ星座 第6重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7299,
+        "name": "マーヴィカ",
+        "desc": "「キオンゴズィ」の古名を受け継いだナタの指導者。聖火で戦争の国を照らせることを願っている。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/30/2f098b1f15854fd9dafc54998795a59e_864981592196815761.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第2重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7300,
+        "name": "シトラリ",
+        "desc": "謎煙の主の大シャーマン。一族の誰もが敬う「黒曜石の老婆」。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/27/c4ab2530bb8bbe3c0e811684f97ec124_6688582217610741079.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>突破段階「4」で解放される固有天賦、命ノ星座 第1重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7301,
+        "name": "藍硯",
+        "desc": "沈玉の谷出身の籐編み職人。端正な面持ちがすっきりとした印象を与える、泉のように瑞々しい少女。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/01/17/02a299cec38b4ef4f21952c37a624258_5744396397316809821.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>突破段階「4」で解放される固有天賦</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7488,
+        "name": "ヴァレサ",
+        "desc": "のんびりまったりした「豊穣の邦」の戦士で、果樹園のお世話係。強い英雄に憧れており、食べることが大好き。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/a54efe1bb7e82a589b9af44683a696ca_8635138146175164187.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>突破段階「1」で解放される固有天賦、命ノ星座 第1重、命ノ星座 第4重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7624,
+        "name": "エスコフィエ",
+        "desc": "フォンテーヌに名を馳せる「元ホテル・ドゥボールのシェフ」。「カーネル・デセール」の肩書きを持つ「科学料理」の先駆者でもある。料理に関する要求が非常に高い。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/30/ddbc128157d69479f61747f0918f9e72_2470321636402108639.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第2重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7706,
+        "name": "スカーク",
+        "desc": "かつて深淵の裂け目や原始胎海に足を踏み入れた来訪者であり、タルタリヤに武芸を仕込んだ師。孤独に戦う。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/48dba0c10560a3ef573f17d97408b5a0_2527001828446746987.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆発</color>\n続いて、加算ダメージバフに該当するダメージバフを持つ武器の一覧を以下に示す。"
       },
       {
         "type": "CustomEntry",
@@ -722,6 +951,15 @@
         "name": "萃光の裁葉",
         "desc": "<p>貴重な白き枝で作られた金メッキの刃。かつては、森を浸す無数の黒い毒を切り裂いていた。</p>",
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/17/86506456/bf4ef5696afdf695a26fab9510228060_8671288312123991292.png",
+        "displayStyle": "text",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7028,
+        "name": "ストロング・ボーン",
+        "desc": "<p>幾千万回と叩き、振り回されるうちにより硬くなった骨の長剣。かつて、英傑ワンジルが使いこなした武器だと言われている。</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/9fbe8cf3da1d476d4c5a228017656cd1_114889972255186755.png",
         "displayStyle": "text",
         "menuId": 4
       },
@@ -881,7 +1119,20 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>命ノ星座 第2重</color>\nまた、天賦効果により敵の防御力を一部無視した攻撃を放つことができるキャラクターも存在する。\n防御力を(一部)無視するような効果を本項目では <color=#ffffff>敵の防御無視補正</color> と呼称する。\n敵の防御力を無視した攻撃を放てるようになる天賦の一覧を以下に示す。"
+        "text": "<color=#ffffff>命ノ星座 第2重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7299,
+        "name": "マーヴィカ",
+        "desc": "「キオンゴズィ」の古名を受け継いだナタの指導者。聖火で戦争の国を照らせることを願っている。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/30/2f098b1f15854fd9dafc54998795a59e_864981592196815761.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第2重、命ノ星座 第6重</color>\nまた、天賦効果により敵の防御力を一部無視した攻撃を放つことができるキャラクターも存在する。\n防御力を(一部)無視するような効果を本項目では <color=#ffffff>敵の防御無視補正</color> と呼称する。\n敵の防御力を無視した攻撃を放てるようになる天賦の一覧を以下に示す。"
       },
       {
         "type": "CustomEntry",
@@ -907,7 +1158,86 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>命ノ星座 第6重</color>"
+        "text": "<color=#ffffff>命ノ星座 第6重</color>\nここで、同じ武器と聖遺物を装備させたLv.20、60、80、90の"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3964,
+        "name": "フレミネ",
+        "desc": "<p>潜水の道を極めた寡黙な少年。氷のように近づきがたい外見の下に、一点の瑕もない純粋な心を秘めている。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/29/132746206/8e44111a378f4e5379b8e7444e8c2daa_2817095048838295675.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "の同じ敵に対する通常攻撃の1段ダメージを以下に示す。\n左の画像から、デバフなし、"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 48,
+        "name": "レザー",
+        "desc": "<p>人間の町から離れた、モンド地域の奔狼領で狼と暮らす少年。勘が鋭く、動きが俊敏。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Razor_icon.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "のデバフあり、レザーと"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2,
+        "name": "リサ",
+        "desc": "無気力だが博学な図書館司書。スメール教令院「200年に1人」の天才卒業生。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Lisa_icon.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "両方のデバフありの3つのパターンを示す。"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/8b3d56a808afc0d35cba5493f69382e4_8595035854653448890.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "フレミネ Lv 20",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/29cc048a9c313d16749942ada150d833_8044534170240290363.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "フレミネ Lv 60",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/54c4e5f18c6716a6cf9d47dc0005b73a_2422153234558294531.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "フレミ ネ Lv 80",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/6affd761772e1189caa421a001ce1bde_2886603267244421346.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "フレミネ Lv 90",
+        "alignment": "center"
       },
       {
         "type": "Heading",
@@ -921,12 +1251,12 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>敵の元素耐性</color>\n<color=#ffffff>敵の元素耐性補正</color>\n(敵の元素耐性) ≧ 75%\n[ 100 / { 100 + (敵の元素耐性) × 4 } ]%\n75% > (敵の元素耐性) ≧ 0%\n100% - (敵の元素耐性)\n0% > (敵の元素耐性)\n100% - { (敵の元素耐性) / 2 }",
+        "text": "<color=#ffffff>敵の元素耐性</color>\n<color=#ffffff>与ダメージ補正</color>\n(敵の元素耐性) ≧ 75%\n[ 100 / { 100 + (敵の元素耐性) × 4 } ]%\n75% > (敵の元素耐性) ≧ 0%\n100% - (敵の元素耐性)\n0% > (敵の元素耐性)\n100% - { (敵の元素耐性) / 2 }",
         "alignment": "center"
       },
       {
         "type": "RichText",
-        "text": "敵の元素耐性を下げられる天賦の一覧を以下に示す。"
+        "text": "例えば、敵の元素耐性が100％だった場合、与ダメージ補正は[ 100 / { 100 + (100) × 4 } ]%より20％、つまり与えるダメージは元の20％のダメージとなる。\n敵の元素耐性を下げられる天賦の一覧を以下に示す。"
       },
       {
         "type": "CustomEntry",
@@ -1173,7 +1503,85 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>突破段階「1」で解放される固有天賦</color>\n敵の元素耐性を下げられる聖遺物セットの一覧を以下に示す。"
+        "text": "<color=#ffffff>突破段階「1」で解放される固有天賦</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5714,
+        "name": "エミリエ",
+        "desc": "秘密を瓶の中に隠す、フォンテーヌの調香師。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第2重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6317,
+        "name": "キィニチ",
+        "desc": "ウィッツトランの竜狩り人。代償を量ることに長けている。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/12/0099e74b4d0c919f6feab4bade3ab748_5795733017114624391.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第2重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6924,
+        "name": "シロネン",
+        "desc": "ナナツカヤンの名鋳り師。山積みの仕事と快適な暮らしのバランスを取るのが得意。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/b07074c2b9040516fd240b6b8d65c011_2487211347344319683.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素スキル</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7306,
+        "name": "旅人(炎)",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">世界の外から漂流してきた旅人。肉親が見知らぬ神に連れ去られたため、七神を探す旅に出た。</span></p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/02/132746206/75bb898fe1c3b4ed29a2931829ddb845_1379429882484526221.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第2重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7300,
+        "name": "シトラリ",
+        "desc": "謎煙の主の大シャーマン。一族の誰もが敬う「黒曜石の老婆」。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/27/c4ab2530bb8bbe3c0e811684f97ec124_6688582217610741079.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>突破段階「1」で解放される固有天賦、命ノ星座 第2重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7624,
+        "name": "エスコフィエ",
+        "desc": "フォンテーヌに名を馳せる「元ホテル・ドゥボールのシェフ」。「カーネル・デセール」の肩書きを持つ「科学料理」の先駆者でもある。料理に関する要求が非常に高い。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/30/ddbc128157d69479f61747f0918f9e72_2470321636402108639.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>突破段階「4」で解放される固有天賦</color>\n敵の元素耐性を下げられる聖遺物セットの一覧を以下に示す。"
       },
       {
         "type": "CustomEntry",
@@ -1199,7 +1607,38 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>4セット効果</color>\nまた、他にも岩元素共鳴によって敵の <color=#ffe699>岩元素耐性</color> を下げることが可能である。"
+        "text": "<color=#ffffff>4セット効果</color>\nまた、他にも岩元素共鳴によって敵の <color=#ffe699>岩元素耐性</color> を下げることが可能である。\nここで、様々な状況で"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2,
+        "name": "リサ",
+        "desc": "無気力だが博学な図書館司書。スメール教令院「200年に1人」の天才卒業生。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Lisa_icon.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "が同じ敵に対して攻撃した際のダメージを以下に示す。\n左の画像から、耐性デバフなし、翠緑の影のデバフあり、翠緑の影と"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 46,
+        "name": "鍾離",
+        "desc": "<p>「<custom-ruby data-ruby=\"往|おう|生|じょう|堂|どう\"></custom-ruby>」に招かれた謎の<custom-ruby data-ruby=\"客卿|かっけい\"></custom-ruby>。博識であり、あらゆることに精通している。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Zhongli_icon.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "の玉璋シールドによるデバフ両方ありの3つのパターンを示す。"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/5d19563cbf05ce24d8d844625bb0590f_3624340874907172436.png",
+        "alignment": "center"
       },
       {
         "type": "Heading",
@@ -1315,7 +1754,72 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>元素爆発</color>\n<color=#ffffff73>与ダメージバフを獲得できる武器の一覧を以下に示す。</color>"
+        "text": "<color=#ffffff>元素爆発</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5714,
+        "name": "エミリエ",
+        "desc": "秘密を瓶の中に隠す、フォンテーヌの調香師。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>突破段階「4」で解放される固有天賦</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6924,
+        "name": "シロネン",
+        "desc": "ナナツカヤンの名鋳り師。山積みの仕事と快適な暮らしのバランスを取るのが得意。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/b07074c2b9040516fd240b6b8d65c011_2487211347344319683.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第2重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7306,
+        "name": "旅人(炎)",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">世界の外から漂流してきた旅人。肉親が見知らぬ神に連れ去られたため、七神を探す旅に出た。</span></p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/02/132746206/75bb898fe1c3b4ed29a2931829ddb845_1379429882484526221.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第1重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7299,
+        "name": "マーヴィカ",
+        "desc": "「キオンゴズィ」の古名を受け継いだナタの指導者。聖火で戦争の国を照らせることを願っている。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/30/2f098b1f15854fd9dafc54998795a59e_864981592196815761.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>突破段階「4」で解放される固有天賦、命ノ星座 第4重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7502,
+        "name": "イアンサ",
+        "desc": "「豊穣の邦」トレーニングジムのトレーナー。ナタの有名な栄養士。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/dd9a200a86b792fb1b73ef1ee7de0911_2097378734184941134.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第6重</color>\n<color=#ffffff73>与ダメージバフを獲得できる武器の一覧を以下に示す。</color>"
       },
       {
         "type": "CustomEntry",
@@ -1525,6 +2029,24 @@
         "menuId": 4
       },
       {
+        "type": "CustomEntry",
+        "epId": 5847,
+        "name": "ルミドゥースの挽歌",
+        "desc": "青い水晶があしらわれた華麗な長槍。とある伝説の決闘代理人が生涯大切にしていたが、一度も使ったことがない武器だと言われている。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/3dff07a4b024917cb63c933d2078ccc8_8401589850337226556.png",
+        "displayStyle": "text",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7366,
+        "name": "祭星者の眺め",
+        "desc": "鷹を模して彫られた彫像。謎煙の主に代々受け継がれる聖なる遺物。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/26/de225a286996965268c32027a6c484d9_2367767765928118667.png",
+        "displayStyle": "text",
+        "menuId": 4
+      },
+      {
         "type": "RichText",
         "text": "<color=#ffffff73>与ダメージバフを獲得できる聖遺物セットの一覧を以下に示す。</color>"
       },
@@ -1591,7 +2113,20 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>4セット効果</color>\nまた、他にも岩元素共鳴によって与ダメージバフを獲得することが可能である。"
+        "text": "<color=#ffffff>4セット効果</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6554,
+        "name": "黒曜の秘典",
+        "desc": "",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/27/94675339/cd11df3be5420d2c53c2da0d3298eb92_8191387678306526892.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2セット効果</color>\nまた、他にも岩元素共鳴によって与ダメージバフを獲得することが可能である。"
       },
       {
         "type": "Heading",
@@ -1756,6 +2291,15 @@
         "name": "ゴロー",
         "desc": "海祇島軍隊の大将で、部下から厚く信頼されている。",
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Gorou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6318,
+        "name": "カチーナ",
+        "desc": "古名「ウッサビーティ」を授かったナナツカヤンの若き戦士。挫折の中で成長し続ける、善良で粘り強い少女。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/26925adb1092d29c8afdf46d92fad8bd_343637410022641529.png",
         "displayStyle": "card",
         "menuId": 2
       },
@@ -1945,6 +2489,15 @@
         "menuId": 4
       },
       {
+        "type": "CustomEntry",
+        "epId": 7029,
+        "name": "岩峰を巡る歌",
+        "desc": "鋭く尖った、歌のように軽い黒曜石の長刀。ある職人の改造により、レコードを再生できる取り外し可能な燃素装置がついている。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/862200e1c8e0ee60c2396d8f4fbe7fb8_4291183729855777874.png",
+        "displayStyle": "text",
+        "menuId": 4
+      },
+      {
         "type": "RichText",
         "text": "<color=#ffffff73>元素ダメージバフを獲得できる聖遺物セットの一覧を以下に示す。</color>"
       },
@@ -2115,7 +2668,33 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>4セット効果</color>\n<color=#ffffff73>一部の天賦は、元素ダメージバフを増加させる。</color>"
+        "text": "<color=#ffffff>4セット効果</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6553,
+        "name": "灰燼の都に立つ英雄の絵巻",
+        "desc": "",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/27/94675339/6ad5095f324c2da829ecaa5e2ed13af9_2075889405521471302.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4セット効果</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7572,
+        "name": "深廊の終曲",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/bf39402f87db1168263c7c0898c8ab0c_4434336707917443666.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2セット効果</color>\n<color=#ffffff73>一部の天賦は、元素ダメージバフを増加させる。</color>"
       },
       {
         "type": "CustomEntry",
@@ -2142,6 +2721,58 @@
       {
         "type": "RichText",
         "text": "<color=#ffffff>命ノ星座 第6重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5,
+        "name": "ゴロー",
+        "desc": "海祇島軍隊の大将で、部下から厚く信頼されている。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Gorou_icon.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素スキル</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2967,
+        "name": "ファルザン",
+        "desc": "<p>「百年前」から訪れた学者。自ら好んで先輩と名乗り、各種古代文字や古典ギミックに精通している。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/194600931/38c12ab46678a4008f83a0e46c900ef5_7031784280892508005.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆発</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7300,
+        "name": "シトラリ",
+        "desc": "謎煙の主の大シャーマン。一族の誰もが敬う「黒曜石の老婆」。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/27/c4ab2530bb8bbe3c0e811684f97ec124_6688582217610741079.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第6重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7420,
+        "name": "夢見月瑞希",
+        "desc": "「秋沙銭湯」の大株主で、夢喰い獏の心理療法士。人々の悪夢を追い払って安らぎを与えるために奮闘している。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/08/11662c12fb353d88bd2b20a2726c9f1c_8013472600677983943.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第2重</color>"
       },
       {
         "type": "Heading",
@@ -2710,7 +3341,111 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>元素スキル</color>\n攻撃方法によるダメージバフを与える武器の一覧を以下に示す。"
+        "text": "<color=#ffffff>元素スキル</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5714,
+        "name": "エミリエ",
+        "desc": "秘密を瓶の中に隠す、フォンテーヌの調香師。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/31/87ad30965e0c1b45364fdccc51b3429d_6108610286145583716.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第1重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6319,
+        "name": "ムアラニ",
+        "desc": "<p>ナタ中に名を馳せるガイドであり、マリングッズ店の経営者でもある、さまざまな水上スポーツに精通した波追い人。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/27/94675339/f4c75caad42923eb91ee760aa2eb473a_6951018688143347003.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第4重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6317,
+        "name": "キィニチ",
+        "desc": "ウィッツトランの竜狩り人。代償を量ることに長けている。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/12/0099e74b4d0c919f6feab4bade3ab748_5795733017114624391.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第2重、命ノ星座 第4重</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6924,
+        "name": "シロネン",
+        "desc": "ナナツカヤンの名鋳り師。山積みの仕事と快適な暮らしのバランスを取るのが得意。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/b07074c2b9040516fd240b6b8d65c011_2487211347344319683.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>突破段階「1」で解放される固有天賦</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7080,
+        "name": "チャスカ",
+        "desc": "トラロカンの「調停者」。幾千万の争いを終結させる者。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/abe1192cc7aad45f6b273478dd5fa88a_4799372826012752249.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>突破段階「1」で解放される固有天賦</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7299,
+        "name": "マーヴィカ",
+        "desc": "「キオンゴズィ」の古名を受け継いだナタの指導者。聖火で戦争の国を照らせることを願っている。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/30/2f098b1f15854fd9dafc54998795a59e_864981592196815761.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆発</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7488,
+        "name": "ヴァレサ",
+        "desc": "のんびりまったりした「豊穣の邦」の戦士で、果樹園のお世話係。強い英雄に憧れており、食べることが大好き。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/a54efe1bb7e82a589b9af44683a696ca_8635138146175164187.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>突破段階「4」で解放される固有天賦</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7706,
+        "name": "スカーク",
+        "desc": "かつて深淵の裂け目や原始胎海に足を踏み入れた来訪者であり、タルタリヤに武芸を仕込んだ師。孤独に戦う。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/48dba0c10560a3ef573f17d97408b5a0_2527001828446746987.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆発</color>\n攻撃方法によるダメージバフを与える武器の一覧を以下に示す。"
       },
       {
         "type": "CustomEntry",
@@ -3046,6 +3781,87 @@
         "menuId": 4
       },
       {
+        "type": "CustomEntry",
+        "epId": 6551,
+        "name": "ヤシュチェの環",
+        "desc": "かつて、双子の英傑が鍛え上げた玉器。伝説によると、火山を巣くう巨龍を天穹から叩き落としたという。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/9ab70898644274ce31f91faea8216bd8_5924884446177979679.png",
+        "displayStyle": "text",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6548,
+        "name": "アースシェイカー",
+        "desc": "「盗炎者」と呼ばれる英傑が愛用していた重い剣。灰燼の都の王の烈火でさえ、それを焼き尽くすことはできなかったという。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/dc6bf4c87afe67014579743618e97371_6360663376854922140.png",
+        "displayStyle": "text",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6546,
+        "name": "サーフィンタイム",
+        "desc": "「第一回全部族サーフィントーナメント」の優勝者へ贈られる賞品。大会はまだ準備段階にあるため、賞品は「プクフグスローライフ」に一時的に預けられ、店主が保管することになった。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/6ce2e0da75fbdc19fc4b6f9e7bae9049_5151463723015160354.png",
+        "displayStyle": "text",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6545,
+        "name": "山の王の長牙",
+        "desc": "純粋なターコイズで鍛えられた巨大な剣。通常の武器よりも遥かに重いことから、「山の王」コンガマトーに因んで名付けられた。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/1fd3c498faccab68bfa5d961477a8c29_2936359463997877474.png",
+        "displayStyle": "text",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7031,
+        "name": "鎮山の釘",
+        "desc": "<p>鉱山の職人たちが力を合わせて鍛え上げた長槍。</p><p>昔、山々の霊に献上されていた。</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/201424fa6a98ffb190ae82c8ad7d0cc3_6084387639848528037.png",
+        "displayStyle": "text",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7030,
+        "name": "実りの鉤鉈",
+        "desc": "かつて、ナタで最高の品質を誇ったフレイムグレネードの実を採るために、懸木の民の戦士ブルキナが英雄テノッチの助けを借りて特別に作った武器。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/25c75653d47f882870e96d9119a17e9a_6960324287026452673.png",
+        "displayStyle": "text",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7116,
+        "name": "星鷲の紅き羽",
+        "desc": "紅い羽根で飾られた古い長弓。花翼の集に代々受け継がれるレリックの一つ。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/d3bb0f9d936379661d409644e4269ff1_2888646900955247330.png",
+        "displayStyle": "text",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7115,
+        "name": "花飾りの羽",
+        "desc": "炎のような灼熱の長弓。その装飾の羽は、古代の「暴君」ンゴウボウのものだと言われている。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/0d166f885502452188022563f5fc8797_876127194185049091.png",
+        "displayStyle": "text",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7113,
+        "name": "厄水の災い",
+        "desc": "「謎煙の主」の偉大なる祭司サンハジが作った儀式用の刃。昔話によると、サンハジはこの曲がった長い刃で儀式を行い、夜神の国と現世の境界をぼかすことができたそうだ。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/034a74a58833bc506791e2d2c8e00539_8351835749900866009.png",
+        "displayStyle": "text",
+        "menuId": 4
+      },
+      {
         "type": "RichText",
         "text": "攻撃方法によるダメージバフを与える聖遺物セットの一覧を以下に示す。"
       },
@@ -3232,6 +4048,32 @@
         "text": "<color=#ffffff>2セット効果、4セット効果</color>"
       },
       {
+        "type": "CustomEntry",
+        "epId": 7571,
+        "name": "長き夜の誓い",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/3cf2511dfb1f91696a0ee986e5f1fb22_3371878648281977517.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2セット効果、4セット効果</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7572,
+        "name": "深廊の終曲",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/bf39402f87db1168263c7c0898c8ab0c_4434336707917443666.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4セット効果</color>"
+      },
+      {
         "type": "Heading",
         "level": 2,
         "text": "被ダメージ増加デバフ",
@@ -3268,6 +4110,19 @@
         "text": "<color=#ffffff>命ノ星座 第4重</color>"
       },
       {
+        "type": "CustomEntry",
+        "epId": 7079,
+        "name": "オロルン",
+        "desc": "謎煙の主出身だが、無数の命と共に、集落の外で生きる若者。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/e4830690f8b6a1ebb02cfbc8ce955671_8091252479018770784.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命ノ星座 第1重</color>"
+      },
+      {
         "type": "Heading",
         "level": 2,
         "text": "増幅系元素反応によるバフ",
@@ -3284,7 +4139,16 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff73>本項目において、</color> <color=#ffffff>基礎倍率</color> <color=#ffffff73>とは、元素反応ごとに定められている倍率のことを指す。</color>\n<color=#ffffff>蒸発</color> <color=#ffffff73>、</color> <color=#ffffff>溶解</color> <color=#ffffff73>反応における基礎倍率は、</color> <color=#80c0ff>水元素攻撃</color> <color=#ffffff73>が起こす</color> <color=#ffffff>蒸発</color> <color=#ffffff73>反応、および</color> <color=#ff9999>炎元素攻撃</color> <color=#ffffff73>が起こす</color> <color=#ffffff>溶解</color> <color=#ffffff73>反応について200%、</color> <color=#ff9999>炎元素攻撃</color> <color=#ffffff73>が起こす</color> <color=#ffffff>蒸発</color> <color=#ffffff73>反応、および</color> <color=#99ffff>氷元素攻撃</color> <color=#ffffff73>が起こす</color> <color=#ffffff>溶解</color> <color=#ffffff73>反応について150%となっている。</color>\n<color=#ffffff>元素熟知ボーナス</color> <color=#ffffff73>とは、キャラクターのステータス画面にも書かれているものであり、下記の式で計算される。</color>"
+        "text": "<color=#ffffff73>本項目において、</color> <color=#ffffff>基礎倍率</color> <color=#ffffff73>とは、元素反応ごとに定められている倍率のことを指す。</color>\n<color=#ffffff>蒸発</color> <color=#ffffff73>、</color> <color=#ffffff>溶解</color> <color=#ffffff73>反応における基礎倍率は、</color> <color=#80c0ff>水元素攻撃</color> <color=#ffffff73>が起こす</color> <color=#ffffff>蒸発</color> <color=#ffffff73>反応、および</color> <color=#ff9999>炎元素攻撃</color> <color=#ffffff73>が起こす</color> <color=#ffffff>溶解</color> <color=#ffffff73>反応について200%、</color> <color=#ff9999>炎元素攻撃</color> <color=#ffffff73>が起こす</color> <color=#ffffff>蒸発</color> <color=#ffffff73>反応、および</color> <color=#99ffff>氷元素攻撃</color> <color=#ffffff73>が起こす</color> <color=#ffffff>溶解</color> <color=#ffffff73>反応について150%となっている。</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>200%</color>\n<color=#ffffff>150%</color>\n<color=#ff9999>炎元素</color> <color=#ffffff73>付着</color>\n<color=#80c0ff>水元素</color> <color=#ffffff73>攻撃</color>\n<color=#80c0ff>水元素</color> <color=#ffffff73>付着</color>\n<color=#ff9999>炎元素</color> <color=#ffffff73>攻撃</color>\n<color=#99ffff>氷元素</color> <color=#ffffff73>付着</color>\n<color=#ff9999>炎元素</color> <color=#ffffff73>攻撃</color>\n<color=#ff9999>炎元素</color> <color=#ffffff73>付着</color>\n<color=#99ffff>氷元素</color> <color=#ffffff73>攻撃</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素熟知ボーナス</color> <color=#ffffff73>とは、キャラクターのステータス画面にも書かれているものであり、下記の式で計算される。</color>"
       },
       {
         "type": "RichText",
@@ -3348,30 +4212,6 @@
       {
         "type": "RichText",
         "text": "※なお、本項目に表記されている内容の全てはmiHoYoおよびHoYoverse(運営公式)の見解を表すものではなく、プレイヤーたちが積み重ねてきた原神のダメージ計算における理解をまとめたものであることに留意が必要。"
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "名前",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ダメージ計算式"
-          }
-        ]
-      },
-      {
-        "key": "関連項目",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 5206,
-            "name": "元素反応",
-            "desc": "<p>テイワットには7つの元素が存在し、「神の目」と呼ばれる魔力器官を授けられたキャラクターは、7つのうち1つの元素を扱うことができる。元素同士が接触すると、元素の組み合わせに応じた元素反応が発生する。</p>",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/18/e03d84da04797c0ad0d6bd99c0d6ed57_8218276776082843931.png"
-          }
-        ],
-        "isMaterial": true
       }
     ]
   }
