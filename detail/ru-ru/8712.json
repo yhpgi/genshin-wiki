@@ -3,10 +3,51 @@
   "name": "Инвестиционный купон",
   "desc": "Купон, приобретённый в «Источнике Мимира».<br>Можно рассчитать доходы раз в неделю у Дабита, владельца книжного магазина.",
   "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/e6add76ab4f4ccd57724f78f3c4ec487_5517504593343518834.png",
+  "filterValues": {
+    "objectType": [
+      "Предмет задания"
+    ]
+  },
   "menuId": 9,
   "menuName": "Ресурсы Тейвата",
-  "version": 0,
+  "version": 1760214668,
   "components": {
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Покупка у торговцев"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Торговец</color>\n<color=#ffffff>Количество</color>\n<color=#ffffff>Стоимость</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8914,
+        "name": "Дабит",
+        "desc": "<p>Владелец книжного магазина, занимающийся инвестициями.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/19/237301566/63d4eb23296f304d6e13304dc4381eb5_3949439895841120158.png",
+        "displayStyle": "card",
+        "menuId": 10
+      },
+      {
+        "type": "RichText",
+        "text": "9",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "Мора",
+        "desc": "Повсеместная валюта. Международный язык общения.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 2000,
+        "displayStyle": "card",
+        "menuId": 9
+      }
+    ],
     "baseInfo": [
       {
         "key": "Имя:",
@@ -23,6 +64,15 @@
           {
             "type": "RichText",
             "text": "Предмет задания"
+          }
+        ]
+      },
+      {
+        "key": "Где найти:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Купить у Дабита"
           }
         ]
       }
