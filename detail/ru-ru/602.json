@@ -10,8 +10,37 @@
   },
   "menuId": 9,
   "menuName": "Ресурсы Тейвата",
-  "version": 1757473820,
+  "version": 1760220283,
   "components": {
+    "baseInfo": [
+      {
+        "key": "Имя:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Сливки"
+          }
+        ]
+      },
+      {
+        "key": "Тип:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Кухонный ингредиент"
+          }
+        ]
+      },
+      {
+        "key": "Где найти:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "• Заготовка ингредиентов\n• Покупка у торговцев"
+          }
+        ]
+      }
+    ],
     "customize": [
       {
         "type": "Heading",
@@ -66,6 +95,43 @@
         "desc": "<p>Официант «Дебор Отель»</p>",
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/27/237301566/a19a303d9d5a181e3c0396e8cddd24ae_2039773675341936951.png",
         "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "10",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "Мора",
+        "desc": "Повсеместная валюта. Международный язык общения.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 150,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "Мора",
+        "desc": "Повсеместная валюта. Международный язык общения.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 135,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "еженедельно",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8912,
+        "name": "Катя",
+        "desc": "<p>Хозяйка ресторана «Сперанца» в Нашгороде.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/19/237301566/558f7e43e121f69fc9ceed793814aae4_1438971657257727217.png",
+        "displayStyle": "card",
+        "menuId": 10
       },
       {
         "type": "RichText",
@@ -862,35 +928,380 @@
         "desc": "<p>Десерт с кремовой начинкой. Съев кусочек, невозможно удержаться, чтобы не съесть всё остальное! Так вкусно, что захочется слизать даже остатки крема с губ. Если бы каждый приём пищи сопровождался таким сладким совершенством... Ах, как прекрасна была бы жизнь искателя приключений!</p>",
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/11/11/124137736/23d950dec1143e784ed6d560ac7faca3_4360995748412838905.png",
         "displayStyle": "card"
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Имя:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Сливки"
-          }
-        ]
       },
       {
-        "key": "Тип:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Кухонный ингредиент"
-          }
-        ]
+        "type": "Heading",
+        "level": 3,
+        "text": "Фрикасе из цыплёнка"
       },
       {
-        "key": "Где найти:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "• Заготовка ингредиентов\n• Покупка у торговцев"
-          }
-        ]
+        "type": "RichText",
+        "text": "Рецепт"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6334,
+        "name": "Рецепт: Фрикасе из цыплёнка",
+        "desc": "<p>Подробный рецепт приготовления блюда «Фрикасе из цыплёнка».</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/18/124137736/955d23a38b8e91a5e5c9de7547d7a320_236789654477849830.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Ингредиенты"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1284,
+        "name": "Мясо птицы",
+        "desc": "Свежее мясо птицы. Из него можно приготовить что-нибудь вкусненькое.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fowl_icon.png",
+        "amount": 4,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4229,
+        "name": "Забродивший сок",
+        "desc": "<p>Забродивший сок с неповторимым фруктовым ароматом. Часто используется в качестве приправы к мясу.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/04/124137736/c91286c2b94742e32da072c497c0784b_5074956645854625833.png",
+        "amount": 3,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 999,
+        "name": "Лук",
+        "desc": "Шарообразный овощ. Вы пытаетесь его нарезать, и в отместку за это он заставляет вас реветь... Вне зависимости от того, насколько вы храбры.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Onion_icon.png",
+        "amount": 3,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 602,
+        "name": "Сливки",
+        "desc": "Производится из молока. Неотъемлемый ингредиент при выпечке.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cream_icon.png",
+        "amount": 2,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "Связанные блюда"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6281,
+        "name": "Странное фрикасе из цыплёнка",
+        "desc": "<p>Известное фонтейнское мясное блюдо. Стоит только попробовать, как сразу понятно, что-то не так. Даже нежная сметанка не может спасти сухое, пожелтевшее, чуть горьковатое мясо, из-за чего ещё недавний зверский аппетит мгновенно улетучивается.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/17/124137736/aad320c8287ebfeb9984f7284ec5e33e_7471279750281084952.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6282,
+        "name": "Фрикасе из цыплёнка",
+        "desc": "<p>Известное фонтейнское мясное блюдо. Мясо сначала обжаривают в масле до хрустящей корочки, затем - с луком и другими приправами, после чего добавляют немного сока ферментированных фруктов, а когда бульон загустеет, не забудьте добавить сливки. Когда блюдо готово, сливки равномерно покрывают каждый кусочек мяса, что придаёт ему тёплый, знакомый вкус, который так любят жители Фонтейна.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/17/124137736/e7c98e8da16c38d3e2f9b481b8e5707a_4557498227811920552.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6283,
+        "name": "Вкусное фрикасе из цыплёнка",
+        "desc": "<p>Известное фонтейнское мясное блюдо. Романтическая встреча сливок и курицы мгновенно создаёт глубокий, насыщенный аромат, который поднимает настроение. Говорят, это любимое блюдо фонтейнцев... Им можно наслаждаться всю жизнь и совсем не устать от его потрясающего вкуса.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/17/124137736/f4ee1b9f189ec011f5672d4256ea83ab_8379149059562594961.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6284,
+        "name": "Ароматный пир вкусов",
+        "desc": "<p>Фирменное блюдо Эмилии. Ферментированный сок с тонким цветочным ароматом радует древесными нотками, а сладкие сливки мягко дополняют его, придавая умеренный вкус и аромат. Долгое послевкусие этого богатого аромата создаёт незабываемое гастрономическое впечатление.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/07/124137736/c0dcaf8515266a7c4ccfea9c44de2922_3045424795153431474.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Мусс Фонтиналии"
+      },
+      {
+        "type": "RichText",
+        "text": "Рецепт"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4827,
+        "name": "Рецепт: Мусс Фонтиналии",
+        "desc": "<p>Подробный рецепт приготовления блюда «Мусс Фонтиналии».</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/30/124137736/60c9c277139b43907167e6452d409874_4156663003744573401.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Ингредиенты"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1898,
+        "name": "Яйцо",
+        "desc": "Универсальный ингредиент, содержащий в себе дневную дозу протеина.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Bird Egg_icon.png",
+        "amount": 3,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 602,
+        "name": "Сливки",
+        "desc": "Производится из молока. Неотъемлемый ингредиент при выпечке.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cream_icon.png",
+        "amount": 2,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1328,
+        "name": "Сахар",
+        "desc": "Добавка, получаемая из цветка-сахарка. Заряжает энергией и радостью.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sugar_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 947,
+        "name": "Варенье",
+        "desc": "Пюре из фруктов и сахара. Даже малое его количество может пробудить дремлющие вкусовые рецепторы.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Jam_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Связанные блюда"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4822,
+        "name": "Странный мусс Фонтиналии",
+        "desc": "<p>Ярко-синий десерт для фестиваля «Фонтиналия». Форма немного неудачная, напоминает Крио попрыгунью... Может быть, лилия озёрного света, которую выбрали в качестве эталона, превратилась в попрыгунью? Если подать такой десерт на фестивале «Фонтиналия», то можно попасть под суд... Лучше всё же потихоньку от него избавиться!</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/30/124137736/1f76e61e14cc9b12d59d43fcea33562f_6315166235871363837.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4823,
+        "name": "Мусс Фонтиналии",
+        "desc": "<p>Сладкое блюдо для кинофестиваля «Фонтиналия». Этот мусс имеет форму бутона лилии озёрного света. Став частью фестиваля, лакомство быстро обрело популярность среди жителей Фонтейна. Не забудьте поделиться им со всеми, кто встретится вам по пути!</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/30/124137736/4cd8fdaff7a2e8b5cc460c3fe503d90a_1495478890693813367.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4824,
+        "name": "Вкусный мусс Фонтиналии",
+        "desc": "<p>Ярко-синий десерт для фестиваля «Фонтиналия». Сверкающий, словно переливы воды, изящный, подобно свежесорванным цветам, и лёгкий на вкус, как тающая на языке снежинка. Если попробуете этот вкуснейший десерт на фестивале «Фонтиналия», то станете самым счастливым человеком!</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/30/124137736/b9b41726668159a6d9c155d86392227d_1501836762952165385.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Пухленевое мороженое"
+      },
+      {
+        "type": "RichText",
+        "text": "Рецепт"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6293,
+        "name": "Рецепт: Пухленевое мороженое",
+        "desc": "<p>Подробный рецепт приготовления блюда «Пухленевое мороженое».</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/18/124137736/955d23a38b8e91a5e5c9de7547d7a320_1855669713633611375.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Ингредиенты"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1104,
+        "name": "Молоко",
+        "desc": "Ароматное коровье молоко. Не упустите ни одной капли. Даже той, что скатывается по вашему подбородку.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Milk_icon.png",
+        "amount": 4,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1328,
+        "name": "Сахар",
+        "desc": "Добавка, получаемая из цветка-сахарка. Заряжает энергией и радостью.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sugar_icon.png",
+        "amount": 4,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1226,
+        "name": "Соль",
+        "desc": "Главная приправа. Только чётко выверенное количество может поднять вкусовые качества блюда на новый уровень.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Salt_icon.png",
+        "amount": 2,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 602,
+        "name": "Сливки",
+        "desc": "Производится из молока. Неотъемлемый ингредиент при выпечке.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cream_icon.png",
+        "amount": 2,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "Связанные блюда"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6285,
+        "name": "Странное пухленевое мороженое",
+        "desc": "<p>Мороженое голубого цвета. Большие кусочки морской соли атаковали ваши вкусовые рецепторы, заставив вас на мгновение замереть... Когда вы решились попробовать снова, десерт уже превратился в нечто похожее на молочный коктейль...</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/18/124137736/abf37c5141e3960805be4cca937245ac_5320671857257405971.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6286,
+        "name": "Пухленевое мороженое",
+        "desc": "<p>Мороженое голубого цвета. Лучший способ скоротать знойный день - насладиться освежающим мороженым. Оно охлаждает тело и душу, даря ощущение, сходное с прыжком в море, позволяя всем заботам рассеяться вместе с жаром во рту, после чего остаётся лишь чистая радость.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/18/124137736/ae9ee2f3f9afcc8cb22ec5d1daf7e418_8868848367846580696.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6287,
+        "name": "Вкусное пухленевое мороженое",
+        "desc": "<p>Мороженое голубого цвета. Изображение простодушного, милого пухленя на стаканчике вызывает улыбку, а сливочный аромат переплетается с лёгкими нотками солоноватости. Кажется, что ваши чувства приглашены в незабываемое подводное путешествие, которому, как вы надеетесь, не будет конца!</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/18/124137736/5640ebd6b6329b16890b13d6c1361b32_2913767176356977790.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Тортик «Дебор»: Особый"
+      },
+      {
+        "type": "RichText",
+        "text": "Рецепт"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7654,
+        "name": "Рецепт: Тортик «Дебор»: Особый",
+        "desc": "Подробный рецепт приготовления блюда «Тортик \"Дебор\": Особый».",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/60c9c277139b43907167e6452d409874_7668299764384701555.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "Ингредиенты"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4008,
+        "name": "Ромарин",
+        "desc": "<p>Скромный благородный цветок голубого оттенка. Гибкие бутоны очень упругие и отлично впитывают воду, используется как сырьё для множества повседневных товаров.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/14/237301566/d6429603c5f355d6722a5530c558e499_3719531279853973885.png",
+        "amount": 3,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1898,
+        "name": "Яйцо",
+        "desc": "Универсальный ингредиент, содержащий в себе дневную дозу протеина.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Bird Egg_icon.png",
+        "amount": 3,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1737,
+        "name": "Мука",
+        "desc": "Перемолотые в порошок пшеничные зёрна. Блюда из муки всегда очень сытные.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Flour_icon.png",
+        "amount": 2,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 602,
+        "name": "Сливки",
+        "desc": "Производится из молока. Неотъемлемый ингредиент при выпечке.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cream_icon.png",
+        "amount": 2,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "Связанные блюда"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7642,
+        "name": "Странный тортик «Дебор»: Особый",
+        "desc": "Миниатюрная версия знаменитого торта «Дебор». Маленький десерт похож на щепку, затерянную в бескрайнем океане, а густой шоколадный соус - на стремительную волну, накрывающую не только сам торт и половину тарелки, но и последние следы голода в вашем животе.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/05/07/25fcdf92639be3263de5128e05093bc7_7472872992646297732.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7643,
+        "name": "Тортик «Дебор»: Особый",
+        "desc": "Маленькая версия знаменитого торта «Дебор». Необыкновенные приключения, что вы пережили вместе, даже более ценны и достойны воспоминаний, чем большой тёзка тортика, которого в день готовят на продажу всего шестнадцать кусочков. Возможно, когда Эскофье записывала этот рецепт, она думала о том же...",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/05/07/9ecf1c80719458606d3edfa0341eeb37_2626311966454762548.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7644,
+        "name": "Вкусный тортик «Дебор»: Особый",
+        "desc": "Миниатюрная версия знаменитого торта «Дебор». Бархатный соус, подобный нежнейшему шёлку, тает на языке, а в воздухе звучат мягкие мелодии дневного чаепития, наполняя сердце теплом. Кто знает, может, сегодня ночью это лакомство заглянет в ваши сны...",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/05/07/6a5f6c6e458f76588181cef90dc6d81d_4443263818539574232.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7648,
+        "name": "Торт «Дебор»: Великолепие",
+        "desc": "Фирменное блюдо Эскофье. Его роскошный облик затмевает любой торт, который вы когда-либо видели. Он мгновенно привлекает внимание, а его вкус оставляет неизгладимое впечатление, словно уютное тёплое одеяло нежно обволакивает каждый рецептор, наполняя вас чувством безграничного счастья... Без сомнений, кулинарное мастерство Эскофье вышло на новый уровень.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/05/07/fbe21483d06de0607cbce0d1cc50f31c_3914028392602514567.png",
+        "displayStyle": "card"
       }
     ]
   }
