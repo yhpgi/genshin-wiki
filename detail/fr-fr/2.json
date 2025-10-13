@@ -5,16 +5,928 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Lisa_icon.png",
   "headerImgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/19/158750877/925994eb13b7d4e8a1e551cb83bc597b_5409681672631250922.png",
   "filterValues": {
-    "characterRegion": "Cité de Mondstadt",
-    "characterRarity": 4,
     "characterVision": "Électro",
     "characterProperty": "Maîtrise élémentaire",
-    "characterWeapon": "Catalyseur"
+    "characterWeapon": "Catalyseur",
+    "characterRegion": "Cité de Mondstadt",
+    "characterRarity": 4
   },
   "menuId": 2,
   "menuName": "Archives des personnages",
   "version": 1756054947,
   "components": {
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=29&center=-337.50,484.00&zoom=0.00",
+    "talent": [
+      {
+        "key": "Attaque normale : Touche d'éclair",
+        "title": "Attaque normale : Touche d'éclair",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/battle_talent_0/battle_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Attaque normale</color>\nEnchaîne jusqu'à 4 attaques électrifiées, infligeant des <color=#ffacff>DGT Électro</color> .\n<color=#ffd780>Attaque chargée</color>\nConsomme de l'endurance pour infliger des <color=#ffacff>DGT Électro de zone</color> après un court délai.\n<color=#ffd780>Attaque plongeante</color>\nPlonge depuis les airs en concentrant ses pouvoirs Électro, infligeant des DGT aux ennemis en chemin et des <color=#ffacff>DGT Électro de zone</color> à l'impact."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Niv.",
+            "values": [
+              "Niv.1",
+              "Niv.2",
+              "Niv.3",
+              "Niv.4",
+              "Niv.5",
+              "Niv.6",
+              "Niv.7",
+              "Niv.8",
+              "Niv.9",
+              "Niv.10",
+              "Niv.11"
+            ]
+          },
+          {
+            "key": "DGT 1er coup",
+            "values": [
+              "39.6%",
+              "42.6%",
+              "45.5%",
+              "49.5%",
+              "52.5%",
+              "55.4%",
+              "59.4%",
+              "63.4%",
+              "67.3%",
+              "71.3%",
+              "75.4%"
+            ]
+          },
+          {
+            "key": "DGT 2e coup",
+            "values": [
+              "35.9%",
+              "38.6%",
+              "41.3%",
+              "44.9%",
+              "47.6%",
+              "50.3%",
+              "53.9%",
+              "57.5%",
+              "61.1%",
+              "64.7%",
+              "68.4%"
+            ]
+          },
+          {
+            "key": "DGT 3e coup",
+            "values": [
+              "42.8%",
+              "46%",
+              "49.2%",
+              "53.5%",
+              "56.7%",
+              "59.9%",
+              "64.2%",
+              "68.5%",
+              "72.8%",
+              "77%",
+              "81.5%"
+            ]
+          },
+          {
+            "key": "DGT 4e coup",
+            "values": [
+              "55%",
+              "59.1%",
+              "63.2%",
+              "68.7%",
+              "72.8%",
+              "76.9%",
+              "82.4%",
+              "87.9%",
+              "93.4%",
+              "98.9%",
+              "104.6%"
+            ]
+          },
+          {
+            "key": "DGT attaque chargée",
+            "values": [
+              "177%",
+              "190%",
+              "204%",
+              "221%",
+              "235%",
+              "248%",
+              "266%",
+              "283%",
+              "301%",
+              "319%",
+              "337%"
+            ]
+          },
+          {
+            "key": "Coût d'endurance attaque chargée",
+            "values": [
+              "50 pts",
+              "50 pts",
+              "50 pts",
+              "50 pts",
+              "50 pts",
+              "50 pts",
+              "50 pts",
+              "50 pts",
+              "50 pts",
+              "50 pts",
+              "50 pts"
+            ]
+          },
+          {
+            "key": "DGT durant la chute",
+            "values": [
+              "56.8%",
+              "61.5%",
+              "66.1%",
+              "72.7%",
+              "77.3%",
+              "82.6%",
+              "89.9%",
+              "97.1%",
+              "104%",
+              "112%",
+              "120.3%"
+            ]
+          },
+          {
+            "key": "DGT chute basse/élevée",
+            "values": [
+              "114%/142%",
+              "123%/153%",
+              "132%/165%",
+              "145%/182%",
+              "155%/193%",
+              "165%/206%",
+              "180%/224%",
+              "194%/243%",
+              "209%/261%",
+              "225%/281%",
+              "240%/300%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 179,
+              "name": "Enseignement de la Poésie",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La poésie est l'âme du royaume du vent.<br>Elle existe pour exprimer la beauté. La brise transporte les mots doux lors des beaux jours. Ils touchent le cœur des gens comme elle caresse les feuilles d'un arbre.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Ballad_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 396,
+              "name": "Bave de Blob",
+              "desc": "Liquide épais que l'on trouve sur les Blobs. Il s'agit d'un matériau commun utilisé chez les forgerons élémentaires.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 178,
+              "name": "Guide de la Poésie",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La poésie est l'âme du royaume du vent.<br>Elle existe pour donner du courage à ceux qui en ont besoin. Pendant les jours sombres, les bourrasques soufflaient des mots de colère dans les rues, comme des tambours de guerre qui annoncent une tempête à venir.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 398,
+              "name": "Mucus de Blob",
+              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 178,
+              "name": "Guide de la Poésie",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La poésie est l'âme du royaume du vent.<br>Elle existe pour donner du courage à ceux qui en ont besoin. Pendant les jours sombres, les bourrasques soufflaient des mots de colère dans les rues, comme des tambours de guerre qui annoncent une tempête à venir.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 398,
+              "name": "Mucus de Blob",
+              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 178,
+              "name": "Guide de la Poésie",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La poésie est l'âme du royaume du vent.<br>Elle existe pour donner du courage à ceux qui en ont besoin. Pendant les jours sombres, les bourrasques soufflaient des mots de colère dans les rues, comme des tambours de guerre qui annoncent une tempête à venir.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 398,
+              "name": "Mucus de Blob",
+              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 178,
+              "name": "Guide de la Poésie",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La poésie est l'âme du royaume du vent.<br>Elle existe pour donner du courage à ceux qui en ont besoin. Pendant les jours sombres, les bourrasques soufflaient des mots de colère dans les rues, comme des tambours de guerre qui annoncent une tempête à venir.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 398,
+              "name": "Mucus de Blob",
+              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 177,
+              "name": "Philosophie de la Poésie",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La poésie est l'âme du royaume du vent.<br>Elle existe pour être transmise à travers les générations. Bien que rien ne soit éternel, le vent soufflera toujours ces mots doux au-delà des cieux, à travers les terres et les mers du monde entier.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 397,
+              "name": "Essence de Blob",
+              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 237,
+              "name": "Griffe de Stormterror",
+              "desc": "Une griffe provenant du Dragon de l'Est.<br/>Elle fut contaminée par le sang de Durin, le Dragon des Ténèbres, mais grâce à vos efforts, elle n'est plus empoisonnée.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Claw_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 177,
+              "name": "Philosophie de la Poésie",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La poésie est l'âme du royaume du vent.<br>Elle existe pour être transmise à travers les générations. Bien que rien ne soit éternel, le vent soufflera toujours ces mots doux au-delà des cieux, à travers les terres et les mers du monde entier.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 397,
+              "name": "Essence de Blob",
+              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 237,
+              "name": "Griffe de Stormterror",
+              "desc": "Une griffe provenant du Dragon de l'Est.<br/>Elle fut contaminée par le sang de Durin, le Dragon des Ténèbres, mais grâce à vos efforts, elle n'est plus empoisonnée.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Claw_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 177,
+              "name": "Philosophie de la Poésie",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La poésie est l'âme du royaume du vent.<br>Elle existe pour être transmise à travers les générations. Bien que rien ne soit éternel, le vent soufflera toujours ces mots doux au-delà des cieux, à travers les terres et les mers du monde entier.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 397,
+              "name": "Essence de Blob",
+              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 237,
+              "name": "Griffe de Stormterror",
+              "desc": "Une griffe provenant du Dragon de l'Est.<br/>Elle fut contaminée par le sang de Durin, le Dragon des Ténèbres, mais grâce à vos efforts, elle n'est plus empoisonnée.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Claw_icon.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 177,
+              "name": "Philosophie de la Poésie",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La poésie est l'âme du royaume du vent.<br>Elle existe pour être transmise à travers les générations. Bien que rien ne soit éternel, le vent soufflera toujours ces mots doux au-delà des cieux, à travers les terres et les mers du monde entier.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 397,
+              "name": "Essence de Blob",
+              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 237,
+              "name": "Griffe de Stormterror",
+              "desc": "Une griffe provenant du Dragon de l'Est.<br/>Elle fut contaminée par le sang de Durin, le Dragon des Ténèbres, mais grâce à vos efforts, elle n'est plus empoisonnée.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Claw_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "Couronne de la sagesse",
+              "desc": "Matériau d'amélioration d'aptitude rare.<br/>Un support utilisé dans les temps anciens pour conserver et transmettre le savoir. Bien que de nos jours les connaissances se transmettent de différentes manières, autant orales qu'écrites, cet artéfact n'a pas perdu la moindre once de son pouvoir d'antan.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/battle_talent_0/battle_talent_0.gif"
+      },
+      {
+        "key": "Arc fulminant",
+        "title": "Arc fulminant",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/battle_talent_1/battle_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Canalise le pouvoir de la foudre pour nettoyer un peu le champ de bataille.\n<color=#ffd780>Appui simple</color>\nLibère un orbe électrique à tête chercheuse.\nLorsqu'il touche une cible, l'orbe inflige des <color=#ffacff>DGT Électro</color> , ainsi que l'effet Conductivité aux ennemis proches, cumulable 3 fois maximum.\n<color=#ffd780>Appui long</color>\nAprès un court délai, des éclairs s'abattent des cieux et infligent des <color=#ffacff>DGT Électro</color> à tous les ennemis proches.\nLes ennemis affectés par Conductivité subissent des DGT supplémentaires proportionnels au nombre de cumuls.\nLa couleur de la foudre est aussi la couleur de la Sorcière à la rose."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Niv.",
+            "values": [
+              "Niv.1",
+              "Niv.2",
+              "Niv.3",
+              "Niv.4",
+              "Niv.5",
+              "Niv.6",
+              "Niv.7",
+              "Niv.8",
+              "Niv.9",
+              "Niv.10",
+              "Niv.11",
+              "Niv.12",
+              "Niv.13",
+              "Niv.14"
+            ]
+          },
+          {
+            "key": "DGT appui simple",
+            "values": [
+              "80%",
+              "86%",
+              "92%",
+              "100%",
+              "106%",
+              "112%",
+              "120%",
+              "128%",
+              "136%",
+              "144%",
+              "152%",
+              "160%",
+              "170%"
+            ]
+          },
+          {
+            "key": "TdR appui simple",
+            "values": [
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s",
+              "1 s"
+            ]
+          },
+          {
+            "key": "DGT appui long",
+            "values": [
+              "320%",
+              "344%",
+              "368%",
+              "400%",
+              "424%",
+              "448%",
+              "480%",
+              "512%",
+              "544%",
+              "576%",
+              "608%",
+              "640%",
+              "680%"
+            ]
+          },
+          {
+            "key": "DGT appui long (Conductivité : 1)",
+            "values": [
+              "368%",
+              "396%",
+              "423%",
+              "460%",
+              "488%",
+              "515%",
+              "552%",
+              "589%",
+              "626%",
+              "662%",
+              "699%",
+              "736%",
+              "782%"
+            ]
+          },
+          {
+            "key": "DGT appui long (Conductivité : 2)",
+            "values": [
+              "424%",
+              "456%",
+              "488%",
+              "530%",
+              "562%",
+              "594%",
+              "636%",
+              "678%",
+              "721%",
+              "763%",
+              "806%",
+              "848%",
+              "901%"
+            ]
+          },
+          {
+            "key": "DGT 3 cumuls de Conductivité (appui long)",
+            "values": [
+              "487%",
+              "524%",
+              "560%",
+              "609%",
+              "646%",
+              "682%",
+              "731%",
+              "780%",
+              "828%",
+              "877%",
+              "926%",
+              "974%",
+              "1035%"
+            ]
+          },
+          {
+            "key": "TdR appui long",
+            "values": [
+              "16 s",
+              "16 s",
+              "16 s",
+              "16 s",
+              "16 s",
+              "16 s",
+              "16 s",
+              "16 s",
+              "16 s",
+              "16 s",
+              "16 s",
+              "16 s",
+              "16 s"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/battle_talent_1/battle_talent_1.gif"
+      },
+      {
+        "key": "Rose de foudre",
+        "title": "Rose de foudre",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/battle_talent_2/battle_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Invoque une rose de foudre qui libère une puissante énergie électrique repoussant les ennemis proches et leur infligeant des <color=#ffacff>DGT Électro</color> .\nLa rose de foudre envoie des décharges électriques qui infligent des <color=#ffacff>DGT Électro</color> aux ennemis proches tant qu'elle est active.\nCette rose est belle, mais possède des épines mortelles."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Niv.",
+            "values": [
+              "Niv.1",
+              "Niv.2",
+              "Niv.3",
+              "Niv.4",
+              "Niv.5",
+              "Niv.6",
+              "Niv.7",
+              "Niv.8",
+              "Niv.9",
+              "Niv.10",
+              "Niv.11",
+              "Niv.12",
+              "Niv.13",
+              "Niv.14"
+            ]
+          },
+          {
+            "key": "DGT décharge",
+            "values": [
+              "36.6%",
+              "39.3%",
+              "42%",
+              "45.7%",
+              "48.4%",
+              "51.2%",
+              "54.8%",
+              "58.5%",
+              "62.2%",
+              "65.8%",
+              "69.5%",
+              "73.1%",
+              "77.7%",
+              "82.3%"
+            ]
+          },
+          {
+            "key": "Durée",
+            "values": [
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s"
+            ]
+          },
+          {
+            "key": "Temps de recharge",
+            "values": [
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s",
+              "20 s"
+            ]
+          },
+          {
+            "key": "Énergie élémentaire",
+            "values": [
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80",
+              "80"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/battle_talent_2/battle_talent_2.gif"
+      },
+      {
+        "key": "Relique d'électricité",
+        "title": "Relique d'électricité",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/const_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Les attaques chargées infligent l'effet Conductivité d' <color=#ffd780>Arc fulminant</color> aux ennemis lorsqu'elles touchent."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Champ électrostatique",
+        "title": "Champ électrostatique",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/const_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Rose de foudre</color> réduit la DÉF des ennemis qu'elle touche de 15 % pendant 10 s."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Connaissances médicinales",
+        "title": "Connaissances médicinales",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/const_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Lorsque vous fabriquez des potions, il y a 20 % de chances qu'une partie des matières premières vous soit rendue."
+          }
+        ],
+        "attributes": null
+      }
+    ],
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/constellation_1.png",
+        "name": "Circuit infini",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Lisa regagne 2 pts d'énergie par ennemi touché tant qu' <color=#ffd780>Arc fulminant</color> reste activé.\nJusqu'à 10 pts d'énergie élémentaire peuvent être restaurés de cette manière."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/constellation_2.png",
+        "name": "Champ électromagnétique",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Arc fulminant</color> confère les effets suivants tant qu'il reste activé :\n· DÉF augmentée de 25 %.\n· Augmente la RÉS à l'interruption de Lisa."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/constellation_3.png",
+        "name": "Tonnerre résonant",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Niveau d'aptitude <color=#ffd780>Rose de foudre</color> +3.\nNiveau max : 15"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/constellation_4.png",
+        "name": "Éruption de plasma",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Rose de foudre</color> libère 1 à 3 décharges supplémentaires."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/constellation_5.png",
+        "name": "Électrification",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Niveau d'aptitude <color=#ffd780>Arc fulminant</color> +3.\nNiveau max : 15"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/constellation_6.png",
+        "name": "Sorcière de pulse",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Lisa inflige 3 cumuls de l'effet Conductivité d' <color=#ffd780>Arc fulminant</color> aux ennemis proches lorsqu'elle est déployée au combat.\ncet effet peut être déclenché une fois toutes les 5 s."
+          }
+        ]
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/avatar_header.jpg"
+      },
+      {
+        "key": "Avatar",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/avatar.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Tenue Originale - Rose pourpre</color>\n<color=#ffffffa6>Tenue de Lisa. Un ensemble à motifs de roses qui met en avant l'élégance de celle qui le porte.</color>"
+          }
+        ]
+      },
+      {
+        "key": "Animation d'inaction 1",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/158750877/68d392ebb1888bc1deb6e0889de76abe_2089736110646920624.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Tenue Originale - Rose pourpre"
+          }
+        ]
+      },
+      {
+        "key": "Animation d'inaction 2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/158750877/8d7bc0aacf62efe2acba5c40120cfafd_3876241584750743125.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Tenue Originale - Rose pourpre"
+          }
+        ]
+      },
+      {
+        "key": "Tenue",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/17/43281454/eb48a388763ece5befff7b0cdb4e26ae_2311828120567891668.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Costume - Sobriquet à l'ombre</color>\n<color=#ffffffa6>Tenue que Lisa avait commandée lors d'une nouvelle visite à Sumeru. D'un équilibre parfait entre praticité et élégance, cette robe ressemble à l'uniforme qu'elle portait lorsqu'elle étudiait à l'Académie.</color>"
+          }
+        ]
+      },
+      {
+        "key": "Animation d'inaction 1",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/29/43281454/f6a77edaaa37373be02de9a26a2cb625_5565701202681298064.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Costume - Sobriquet à l'ombre</color>"
+          }
+        ]
+      },
+      {
+        "key": "Animation d'inaction 2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/29/43281454/3834ba86650cd6a48ca89caf209a9219_3512886357052345496.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Costume - Sobriquet à l'ombre</color>"
+          }
+        ]
+      },
+      {
+        "key": "Constellation",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/29/43281454/1bf35351440d1f488e18aeccf98e2bcc_4164132329910672450.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Tempus Fugit"
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "title": "Info. personnage",
@@ -85,68 +997,6 @@
           {
             "type": "RichText",
             "text": "<color=#ffd780>Débloqué au Niv. d'affinité 6</color>\nL'œil divin est un signe des dieux accordé à ceux qu'ils ont choisi pour changer le monde...\nÀ moins qu'il ne s'agisse que d'une simple note en bas de la page écrite par celui ou celle qui cherche à révéler les secrets de la magie.\nLa compréhension des énergies élémentaires est indispensable à l'étude des arcanes magiques, et même si le savoir acquis dans les livres anciens a assurément une valeur intrinsèque, rien ne saurait remplacer la pratique.\n« Hum, j'imagine qu'il me faut un œil divin dans ce cas. »\nEt il suffit à Lisa de formuler cette pensée pour qu'apparaisse soudain un œil divin au creux de sa main.\nÀ l'aide de ce dernier, la bibliothécaire acquit le savoir qu'elle recherchait ; mais elle perçut également le sombre secret caché dans l'ombre dudit savoir.\nAllez savoir pourquoi, les dieux ont accordé aux hommes un puissant artéfact capable de changer le monde ; mais ils n'ont jamais fait mention du prix à payer... Et cette idée inquiète Lisa.\nL'objet suspendu à son cou est ainsi devenu comme un sombre puits sans fond empli malgré tout de délicieuses surprises, toujours présent quelque part au fond de ses pensées.\nCeci explique entre autres que lorsqu'elle rencontre une personne qu'elle juge intéressante, elle partage avec elle sa compréhension de toutes choses, dans l'espoir sans doute qu'elle tombe un jour sur quelqu'un capable de comprendre la vérité ultime se cachant derrière l'œil divin."
-          }
-        ]
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/constellation_1.png",
-        "name": "Circuit infini",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Lisa regagne 2 pts d'énergie par ennemi touché tant qu' <color=#ffd780>Arc fulminant</color> reste activé.\nJusqu'à 10 pts d'énergie élémentaire peuvent être restaurés de cette manière."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/constellation_2.png",
-        "name": "Champ électromagnétique",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Arc fulminant</color> confère les effets suivants tant qu'il reste activé :\n· DÉF augmentée de 25 %.\n· Augmente la RÉS à l'interruption de Lisa."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/constellation_3.png",
-        "name": "Tonnerre résonant",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Niveau d'aptitude <color=#ffd780>Rose de foudre</color> +3.\nNiveau max : 15"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/constellation_4.png",
-        "name": "Éruption de plasma",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Rose de foudre</color> libère 1 à 3 décharges supplémentaires."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/constellation_5.png",
-        "name": "Électrification",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Niveau d'aptitude <color=#ffd780>Arc fulminant</color> +3.\nNiveau max : 15"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/constellation_6.png",
-        "name": "Sorcière de pulse",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Lisa inflige 3 cumuls de l'effet Conductivité d' <color=#ffd780>Arc fulminant</color> aux ennemis proches lorsqu'elle est déployée au combat.\ncet effet peut être déclenché une fois toutes les 5 s."
           }
         ]
       }
@@ -1307,856 +2157,6 @@
               "96",
               "-"
             ]
-          }
-        ]
-      }
-    ],
-    "talent": [
-      {
-        "key": "Attaque normale : Touche d'éclair",
-        "title": "Attaque normale : Touche d'éclair",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/battle_talent_0/battle_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Attaque normale</color>\nEnchaîne jusqu'à 4 attaques électrifiées, infligeant des <color=#ffacff>DGT Électro</color> .\n<color=#ffd780>Attaque chargée</color>\nConsomme de l'endurance pour infliger des <color=#ffacff>DGT Électro de zone</color> après un court délai.\n<color=#ffd780>Attaque plongeante</color>\nPlonge depuis les airs en concentrant ses pouvoirs Électro, infligeant des DGT aux ennemis en chemin et des <color=#ffacff>DGT Électro de zone</color> à l'impact."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Niv.",
-            "values": [
-              "Niv.1",
-              "Niv.2",
-              "Niv.3",
-              "Niv.4",
-              "Niv.5",
-              "Niv.6",
-              "Niv.7",
-              "Niv.8",
-              "Niv.9",
-              "Niv.10",
-              "Niv.11"
-            ]
-          },
-          {
-            "key": "DGT 1er coup",
-            "values": [
-              "39.6%",
-              "42.6%",
-              "45.5%",
-              "49.5%",
-              "52.5%",
-              "55.4%",
-              "59.4%",
-              "63.4%",
-              "67.3%",
-              "71.3%",
-              "75.4%"
-            ]
-          },
-          {
-            "key": "DGT 2e coup",
-            "values": [
-              "35.9%",
-              "38.6%",
-              "41.3%",
-              "44.9%",
-              "47.6%",
-              "50.3%",
-              "53.9%",
-              "57.5%",
-              "61.1%",
-              "64.7%",
-              "68.4%"
-            ]
-          },
-          {
-            "key": "DGT 3e coup",
-            "values": [
-              "42.8%",
-              "46%",
-              "49.2%",
-              "53.5%",
-              "56.7%",
-              "59.9%",
-              "64.2%",
-              "68.5%",
-              "72.8%",
-              "77%",
-              "81.5%"
-            ]
-          },
-          {
-            "key": "DGT 4e coup",
-            "values": [
-              "55%",
-              "59.1%",
-              "63.2%",
-              "68.7%",
-              "72.8%",
-              "76.9%",
-              "82.4%",
-              "87.9%",
-              "93.4%",
-              "98.9%",
-              "104.6%"
-            ]
-          },
-          {
-            "key": "DGT attaque chargée",
-            "values": [
-              "177%",
-              "190%",
-              "204%",
-              "221%",
-              "235%",
-              "248%",
-              "266%",
-              "283%",
-              "301%",
-              "319%",
-              "337%"
-            ]
-          },
-          {
-            "key": "Coût d'endurance attaque chargée",
-            "values": [
-              "50 pts",
-              "50 pts",
-              "50 pts",
-              "50 pts",
-              "50 pts",
-              "50 pts",
-              "50 pts",
-              "50 pts",
-              "50 pts",
-              "50 pts",
-              "50 pts"
-            ]
-          },
-          {
-            "key": "DGT durant la chute",
-            "values": [
-              "56.8%",
-              "61.5%",
-              "66.1%",
-              "72.7%",
-              "77.3%",
-              "82.6%",
-              "89.9%",
-              "97.1%",
-              "104%",
-              "112%",
-              "120.3%"
-            ]
-          },
-          {
-            "key": "DGT chute basse/élevée",
-            "values": [
-              "114%/142%",
-              "123%/153%",
-              "132%/165%",
-              "145%/182%",
-              "155%/193%",
-              "165%/206%",
-              "180%/224%",
-              "194%/243%",
-              "209%/261%",
-              "225%/281%",
-              "240%/300%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 179,
-              "name": "Enseignement de la Poésie",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'âme du Royaume du Vent réside dans la poésie.<br/>Elle existe pour exprimer la beauté. La brise transporte les mots doux lors des beaux jours. Ils touchent le cœur des gens comme elle caresse les feuilles d'un arbre.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Ballad_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 396,
-              "name": "Bave de Blob",
-              "desc": "Liquide épais que l'on trouve sur les Blobs. Il s'agit d'un matériau commun utilisé chez les forgerons élémentaires.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 178,
-              "name": "Guide de la Poésie",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'âme du Royaume du Vent réside dans la poésie.<br/>Elle existe pour donner du courage à ceux qui en ont besoin. Pendant les jours sombres, les bourrasques soufflaient des mots de colère dans les rues, comme des tambours de guerre qui annoncent une tempête à venir.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 398,
-              "name": "Mucus de Blob",
-              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 178,
-              "name": "Guide de la Poésie",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'âme du Royaume du Vent réside dans la poésie.<br/>Elle existe pour donner du courage à ceux qui en ont besoin. Pendant les jours sombres, les bourrasques soufflaient des mots de colère dans les rues, comme des tambours de guerre qui annoncent une tempête à venir.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 398,
-              "name": "Mucus de Blob",
-              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 178,
-              "name": "Guide de la Poésie",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'âme du Royaume du Vent réside dans la poésie.<br/>Elle existe pour donner du courage à ceux qui en ont besoin. Pendant les jours sombres, les bourrasques soufflaient des mots de colère dans les rues, comme des tambours de guerre qui annoncent une tempête à venir.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 398,
-              "name": "Mucus de Blob",
-              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 178,
-              "name": "Guide de la Poésie",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'âme du Royaume du Vent réside dans la poésie.<br/>Elle existe pour donner du courage à ceux qui en ont besoin. Pendant les jours sombres, les bourrasques soufflaient des mots de colère dans les rues, comme des tambours de guerre qui annoncent une tempête à venir.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Ballad_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 398,
-              "name": "Mucus de Blob",
-              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 177,
-              "name": "Philosophie de la Poésie",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'âme du Royaume du Vent réside dans la poésie.<br/>Elle existe pour être transmise à travers les générations. Bien que rien ne soit éternel, le vent soufflera toujours ces mots doux au-delà des cieux, à travers les terres et les mers du monde entier.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 397,
-              "name": "Essence de Blob",
-              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 237,
-              "name": "Griffe de Stormterror",
-              "desc": "Une griffe provenant du Dragon de l'Est.<br/>Elle fut contaminée par le sang de Durin, le Dragon des Ténèbres, mais grâce à vos efforts, elle n'est plus empoisonnée.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Claw_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 177,
-              "name": "Philosophie de la Poésie",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'âme du Royaume du Vent réside dans la poésie.<br/>Elle existe pour être transmise à travers les générations. Bien que rien ne soit éternel, le vent soufflera toujours ces mots doux au-delà des cieux, à travers les terres et les mers du monde entier.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 397,
-              "name": "Essence de Blob",
-              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 237,
-              "name": "Griffe de Stormterror",
-              "desc": "Une griffe provenant du Dragon de l'Est.<br/>Elle fut contaminée par le sang de Durin, le Dragon des Ténèbres, mais grâce à vos efforts, elle n'est plus empoisonnée.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Claw_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 177,
-              "name": "Philosophie de la Poésie",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'âme du Royaume du Vent réside dans la poésie.<br/>Elle existe pour être transmise à travers les générations. Bien que rien ne soit éternel, le vent soufflera toujours ces mots doux au-delà des cieux, à travers les terres et les mers du monde entier.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 397,
-              "name": "Essence de Blob",
-              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 237,
-              "name": "Griffe de Stormterror",
-              "desc": "Une griffe provenant du Dragon de l'Est.<br/>Elle fut contaminée par le sang de Durin, le Dragon des Ténèbres, mais grâce à vos efforts, elle n'est plus empoisonnée.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Claw_icon.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 177,
-              "name": "Philosophie de la Poésie",
-              "desc": "Matériau d'amélioration d'aptitude.<br/>L'âme du Royaume du Vent réside dans la poésie.<br/>Elle existe pour être transmise à travers les générations. Bien que rien ne soit éternel, le vent soufflera toujours ces mots doux au-delà des cieux, à travers les terres et les mers du monde entier.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Ballad_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 397,
-              "name": "Essence de Blob",
-              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 237,
-              "name": "Griffe de Stormterror",
-              "desc": "Une griffe provenant du Dragon de l'Est.<br/>Elle fut contaminée par le sang de Durin, le Dragon des Ténèbres, mais grâce à vos efforts, elle n'est plus empoisonnée.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Dvalin's Claw_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "Couronne de la sagesse",
-              "desc": "Matériau d'amélioration d'aptitude rare.<br/>Un support utilisé dans les temps anciens pour conserver et transmettre le savoir. Bien que de nos jours les connaissances se transmettent de différentes manières, autant orales qu'écrites, cet artéfact n'a pas perdu la moindre once de son pouvoir d'antan.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/battle_talent_0/battle_talent_0.gif"
-      },
-      {
-        "key": "Arc fulminant",
-        "title": "Arc fulminant",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/battle_talent_1/battle_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Canalise le pouvoir de la foudre pour nettoyer un peu le champ de bataille.\n<color=#ffd780>Appui simple</color>\nLibère un orbe électrique à tête chercheuse.\nLorsqu'il touche une cible, l'orbe inflige des <color=#ffacff>DGT Électro</color> , ainsi que l'effet Conductivité aux ennemis proches, cumulable 3 fois maximum.\n<color=#ffd780>Appui long</color>\nAprès un court délai, des éclairs s'abattent des cieux et infligent des <color=#ffacff>DGT Électro</color> à tous les ennemis proches.\nLes ennemis affectés par Conductivité subissent des DGT supplémentaires proportionnels au nombre de cumuls.\nLa couleur de la foudre est aussi la couleur de la Sorcière à la rose."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Niv.",
-            "values": [
-              "Niv.1",
-              "Niv.2",
-              "Niv.3",
-              "Niv.4",
-              "Niv.5",
-              "Niv.6",
-              "Niv.7",
-              "Niv.8",
-              "Niv.9",
-              "Niv.10",
-              "Niv.11",
-              "Niv.12",
-              "Niv.13",
-              "Niv.14"
-            ]
-          },
-          {
-            "key": "DGT appui simple",
-            "values": [
-              "80%",
-              "86%",
-              "92%",
-              "100%",
-              "106%",
-              "112%",
-              "120%",
-              "128%",
-              "136%",
-              "144%",
-              "152%",
-              "160%",
-              "170%"
-            ]
-          },
-          {
-            "key": "TdR appui simple",
-            "values": [
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s",
-              "1 s"
-            ]
-          },
-          {
-            "key": "DGT appui long",
-            "values": [
-              "320%",
-              "344%",
-              "368%",
-              "400%",
-              "424%",
-              "448%",
-              "480%",
-              "512%",
-              "544%",
-              "576%",
-              "608%",
-              "640%",
-              "680%"
-            ]
-          },
-          {
-            "key": "DGT appui long (Conductivité : 1)",
-            "values": [
-              "368%",
-              "396%",
-              "423%",
-              "460%",
-              "488%",
-              "515%",
-              "552%",
-              "589%",
-              "626%",
-              "662%",
-              "699%",
-              "736%",
-              "782%"
-            ]
-          },
-          {
-            "key": "DGT appui long (Conductivité : 2)",
-            "values": [
-              "424%",
-              "456%",
-              "488%",
-              "530%",
-              "562%",
-              "594%",
-              "636%",
-              "678%",
-              "721%",
-              "763%",
-              "806%",
-              "848%",
-              "901%"
-            ]
-          },
-          {
-            "key": "DGT 3 cumuls de Conductivité (appui long)",
-            "values": [
-              "487%",
-              "524%",
-              "560%",
-              "609%",
-              "646%",
-              "682%",
-              "731%",
-              "780%",
-              "828%",
-              "877%",
-              "926%",
-              "974%",
-              "1035%"
-            ]
-          },
-          {
-            "key": "TdR appui long",
-            "values": [
-              "16 s",
-              "16 s",
-              "16 s",
-              "16 s",
-              "16 s",
-              "16 s",
-              "16 s",
-              "16 s",
-              "16 s",
-              "16 s",
-              "16 s",
-              "16 s",
-              "16 s"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/battle_talent_1/battle_talent_1.gif"
-      },
-      {
-        "key": "Rose de foudre",
-        "title": "Rose de foudre",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/battle_talent_2/battle_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Invoque une rose de foudre qui libère une puissante énergie électrique repoussant les ennemis proches et leur infligeant des <color=#ffacff>DGT Électro</color> .\nLa rose de foudre envoie des décharges électriques qui infligent des <color=#ffacff>DGT Électro</color> aux ennemis proches tant qu'elle est active.\nCette rose est belle, mais possède des épines mortelles."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Niv.",
-            "values": [
-              "Niv.1",
-              "Niv.2",
-              "Niv.3",
-              "Niv.4",
-              "Niv.5",
-              "Niv.6",
-              "Niv.7",
-              "Niv.8",
-              "Niv.9",
-              "Niv.10",
-              "Niv.11",
-              "Niv.12",
-              "Niv.13",
-              "Niv.14"
-            ]
-          },
-          {
-            "key": "DGT décharge",
-            "values": [
-              "36.6%",
-              "39.3%",
-              "42%",
-              "45.7%",
-              "48.4%",
-              "51.2%",
-              "54.8%",
-              "58.5%",
-              "62.2%",
-              "65.8%",
-              "69.5%",
-              "73.1%",
-              "77.7%",
-              "82.3%"
-            ]
-          },
-          {
-            "key": "Durée",
-            "values": [
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s"
-            ]
-          },
-          {
-            "key": "Temps de recharge",
-            "values": [
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s",
-              "20 s"
-            ]
-          },
-          {
-            "key": "Énergie élémentaire",
-            "values": [
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80",
-              "80"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/battle_talent_2/battle_talent_2.gif"
-      },
-      {
-        "key": "Relique d'électricité",
-        "title": "Relique d'électricité",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/const_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Les attaques chargées infligent l'effet Conductivité d' <color=#ffd780>Arc fulminant</color> aux ennemis lorsqu'elles touchent."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Champ électrostatique",
-        "title": "Champ électrostatique",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/const_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Rose de foudre</color> réduit la DÉF des ennemis qu'elle touche de 15 % pendant 10 s."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Connaissances médicinales",
-        "title": "Connaissances médicinales",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/const_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Lorsque vous fabriquez des potions, il y a 20 % de chances qu'une partie des matières premières vous soit rendue."
-          }
-        ],
-        "attributes": null
-      }
-    ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=29&center=-337.50,484.00&zoom=0.00",
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/avatar_header.jpg"
-      },
-      {
-        "key": "Avatar",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/丽莎/avatar.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Tenue Originale - Rose pourpre</color>\n<color=#ffffffa6>Tenue de Lisa. Un ensemble à motifs de roses qui met en avant l'élégance de celle qui le porte.</color>"
-          }
-        ]
-      },
-      {
-        "key": "Animation d'inaction 1",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/158750877/68d392ebb1888bc1deb6e0889de76abe_2089736110646920624.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Tenue Originale - Rose pourpre"
-          }
-        ]
-      },
-      {
-        "key": "Animation d'inaction 2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/29/158750877/8d7bc0aacf62efe2acba5c40120cfafd_3876241584750743125.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Tenue Originale - Rose pourpre"
-          }
-        ]
-      },
-      {
-        "key": "Tenue",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/17/43281454/eb48a388763ece5befff7b0cdb4e26ae_2311828120567891668.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Costume - Sobriquet à l'ombre</color>\n<color=#ffffffa6>Tenue que Lisa avait commandée lors d'une nouvelle visite à Sumeru. D'un équilibre parfait entre praticité et élégance, cette robe ressemble à l'uniforme qu'elle portait lorsqu'elle étudiait à l'Académie.</color>"
-          }
-        ]
-      },
-      {
-        "key": "Animation d'inaction 1",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/29/43281454/f6a77edaaa37373be02de9a26a2cb625_5565701202681298064.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Costume - Sobriquet à l'ombre</color>"
-          }
-        ]
-      },
-      {
-        "key": "Animation d'inaction 2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/29/43281454/3834ba86650cd6a48ca89caf209a9219_3512886357052345496.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Costume - Sobriquet à l'ombre</color>"
-          }
-        ]
-      },
-      {
-        "key": "Constellation",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/29/43281454/1bf35351440d1f488e18aeccf98e2bcc_4164132329910672450.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Tempus Fugit"
           }
         ]
       }
