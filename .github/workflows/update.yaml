@@ -3,7 +3,7 @@ name: Update wiki
 on:
   workflow_dispatch:
   schedule:
-   - cron: '20 20 * * *'
+   - cron: '20 20 * * 0'
 
 jobs:
   build:
@@ -58,3 +58,4 @@ jobs:
 
           git push origin HEAD:refs/heads/"$TARGET_BRANCH"
           echo "Changes pushed successfully."
+          
