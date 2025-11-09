@@ -1,0 +1,783 @@
+{
+  "epId": 5648,
+  "name": "Recarga de Energia",
+  "desc": "<p>Recarga de Energia (RE%) é uma estatística percentual que determina o quanto de Energia um personagem ganha ao absorver o mesmo número de Partículas Elementais ou Orbes Elementais.</p>",
+  "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/10/31/13455283/4f6dcbd3635afbcbb26e181df9685df3_1003186471410082714.png",
+  "menuId": 14,
+  "menuName": "Tutorial",
+  "version": 1762576751,
+  "components": {
+    "baseInfo": [
+      {
+        "key": "Nome",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Recarga de Energia"
+          }
+        ]
+      },
+      {
+        "key": "Tipo",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Atributo de personagem (%)"
+          }
+        ]
+      },
+      {
+        "key": "Quantidade Inicial",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "100%"
+          }
+        ]
+      },
+      {
+        "key": "Entradas Relacionadas",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5652,
+            "name": "Energia",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/18/12694555/b2b6399b99a981412f3699e6a477be0f_4020272355932462074.png",
+            "amount": 1
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Recarga de Energia no menu de atributos do personagem",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/10/31/13455283/c333342659a38015fb4b7e14d5d48b9e_4889423930686753566.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Todos os personagens têm 100% como sua porcentagem de Recarga de Energia base."
+          }
+        ]
+      },
+      {
+        "key": "Recarga de Energia como atributo especial de ascensão",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/10/31/13455283/ffb8bab512191dc26166caafca7ebc47_2884994980716331955.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "O atributo especial de ascensão de alguns personagens é a Recarga de Energia, cujo valor vai aumentando conforme se ascende o personagem."
+          }
+        ]
+      },
+      {
+        "key": "Recebendo partículas",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/11/03/13455283/72805430b98eb4e47e6858b020fac4e9_861098146468954050.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "A Recarga de Energia tem uma conexão direta com as Partículas Elementais e os Orbes Elementais."
+          }
+        ]
+      },
+      {
+        "key": "Tutorial: Obter energia...",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/11/03/13455283/3501df58816d9af821867d77c93b1c8f_8408113556339097079.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "O personagem absorve Orbes Elementais e Partículas Elementais para regenerar energia... Causar Dano Elemental, derrotar inimigos ou fazer quaisquer outras ações podem gerar Orbes Elementais..."
+          }
+        ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Mecânicas de Recarga de Energia",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/10/31/13455283/fac59aa7eac38f63b4d239b477502e4d_1272311341872561658.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "As mecânicas de Recarga de Energia estão intimamente conectadas à Energia produzida pelas Partículas Elementais e pelos Orbes Elementais. Ambos são obtidos ao se causar Dano Elemental ou derrotar inimigos, sendo utilizados para regenerar a Energia Elemental dos personagens.\nAs Partículas geram um valor base de 1 ponto de Energia; os Orbes, um valor base de 3.\nAs Partículas e os Orbes podem ser de um dos 7 elementos (Pyro, Hydro, Anemo, Electro, Dendro, Cryo ou Geo) ou neutros. Dentro da primeira categoria, o elemento pode ser igual ou diferente do personagem que está sendo utilizado na equipe. Além disso, o personagem pode estar dentro ou fora de campo quando essas Partículas ou Orbes forem obtidos, e pode haver de um a quatro personagens na equipe ao mesmo tempo. A combinação de cada uma dessas variáveis resulta na obtenção de quantidades de pontos de Energia diferentes, conforme indicado na tabela abaixo:"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Personagem em campo</color>\n<color=#ffffff>Personagem fora de campo</color>\n<color=#ffffff>Partícula /</color> <color=#ffffff>Orbe</color>\n<color=#ffffff>de um elemento diferente</color>\n1 ponto / 3 pontos\n0.6 pontos / 1.8 pontos\n<color=#ffffff>Partícula /</color> <color=#ffffff>Orbe</color>\n<color=#ffffff>neutros</color>\n2 pontos / 6 pontos\n1.2 pontos / 3.6 pontos\n<color=#ffffff>Partícula /</color> <color=#ffffff>Orbe</color>\n<color=#ffffff>do mesmo elemento</color>\n3 pontos / 9 pontos\n1.8 pontos / 5.4 pontos",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Por exemplo: se o elemento da Partícula/Orbe e do personagem forem idênticos, a quantidade de Energia ganha será 300% de sua base; no caso dos neutros, 200%; e se os elementos forem diferentes, 100%. Se o personagem estiver em campo, ele receberá a totalidade de 100% dos pontos de Energia produzidos. No entanto, se o personagem estiver fora de campo, ele receberá apenas 60%/70%/80% dos pontos, com 4/3/2 membros na equipe, respectivamente .\nEsse cálculo também é influenciado pela porcentagem de Recarga de Energia individual do personagem. Por exemplo, se um personagem coletar Partículas Neutras enquanto estiver em campo (2 pontos por Partícula Neutra) e sua porcentagem de Recarga de Energia for 200%, ele irá obter 4 pontos (2 x 100% x 200%). Caso sua porcentagem de Recarga de Energia seja 150%, ele irá obter 3 pontos (2 x 100% x 150%), e assim por diante.\nA porcentagem de Recarga de Energia do personagem pode ser consultada em suas Informações Detalhadas, dentre os Atributos Avançados, conforme ilustrado abaixo:"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/10/31/13455283/c333342659a38015fb4b7e14d5d48b9e_6882279291524338581.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Nem toda regeneração de Energia é afetada pelo atributo Recarga de Energia, mas apenas a Energia produzida pelo uso de Habilidades Elementais e pelos drops de inimigos. Isso exclui outros mecanismos, como a Energia gerada pelos Ataques Normais e pela chamada geração “direta” de Energia (como aquela proveniente de alguns conjuntos de artefatos, armas, talentos, constelações, etc)."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/10/31/13455283/0b81f02282fb2ecd03afe4e0e523dd60_8535321424022445821.png",
+        "alignment": "right"
+      },
+      {
+        "type": "RichText",
+        "text": "Exemplo:\nXingqiu gera 5 partículas Hydro com sua Habilidade Elemental. Como ele é do mesmo elemento e está coletando as partículas dentro de campo (3 pontos), a princípio, ele restauraria 15 pontos de Energia (5 x 3 x 100% x 100%).\nNo entanto, se a Recarga de Energia dele for 200%, ele receberá 30 pontos de Energia (5 x 3 x 100% x 200%). E se for 265%, 40 pontos (5 x 3 x 100% x 265%), de modo que, com apenas dois usos de sua Habilidade Elemental*, ele irá recuperar toda a Energia Elemental necessária para poder ativar seu Supremo novamente (custo: 80 pontos).\n*Descartando o cálculo de outras partículas que ele possa obter."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Aumento de Recarga de Energia",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Todos os personagens têm uma base de 100% de Recarga de Energia. Essa porcentagem pode ser aumentada nos seguintes casos:\nPeças de artefato do tipo areia do tempo, cujo atributo principal é a Recarga de Energia (+ 51.8% no level 20);\nAtributos secundários de artefatos;\nEfeitos de determinados conjuntos de artefato;\nAtributo secundário de uma arma ou de sua passiva; ou\nAtributo de ascensão, talento ou constelação de um personagem."
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Artefatos",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2080,
+        "name": "O Exilado",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/The Exile/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 2 peças</color>\nRecarga de Energia +20%",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2068,
+        "name": "O Estudioso",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Scholar/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 2 peças</color>\nRecarga de Energia +20%",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2090,
+        "name": "Selo da Insulação",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 2 peças</color>\nRecarga de Energia +20%",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8521,
+        "name": "Serenata da Lua de Seda",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/b8350998129a66e67c1a7691153da68d_6559589601591776539.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Conjunto de 2 peças</color>\nRecarga de Energia +20%",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Armas que possuem Recarga de Energia como atributo secundário",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "30.6%\n( <color=#ffacff>Armas de 4 estrelas</color> )",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2021,
+        "name": "Lança de Favonius",
+        "desc": "Uma lança no estilo dos Cavaleiros de Favonius. Sua haste é reta e sua ponta flui levemente como o vento.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风长枪.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2004,
+        "name": "Espadão do Sacrifício",
+        "desc": "Um espadão decorativo que foi petrificado com o tempo. Ainda é possível ver os seus adereços. Concede ao portador o poder de suportar os ventos do tempo.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/祭礼大剑.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2005,
+        "name": "Arco do Sacrifício",
+        "desc": "Um arco de caça decorativo que foi petrificada pelo tempo. Os acessórios inseridos ainda estão visíveis. Garante um grande poder ao seu portador.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/祭礼弓.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1982,
+        "name": "Vinho e Música",
+        "desc": "Um livro de canções da época aristocrática passada, cujo compositor foi esquecido. Ele narra a história de um certo fora-da-lei heroico.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/暗巷的酒与诗.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1997,
+        "name": "Anel de Hakushin",
+        "desc": "Um catalisador que guarda a memória de Kitsune Saiguu dos tempos passados. E, ainda assim, esse dispositivo é apenas um recipiente empobrecido para toda a amplitude do seu pensamento.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/白辰之环.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2255,
+        "name": "Crepúsculo Desvanecido",
+        "desc": "Um arco precioso feito de platina, com uma gema incrustada que cintila com o brilho do crepúsculo.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/落霞.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2667,
+        "name": "Espada de Madeira",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Uma arma obtida através de uma das histórias dos Aranara. Ela tomou a forma de uma espada que é capaz de cortar os inimigos da floresta.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/27/16791688/b7dc579e8ad60147a049d14fc277629c_2259062922771922267.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2671,
+        "name": "Espada Real da Floresta",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Uma arma obtida através de uma das histórias dos Aranara. Ela tomou a forma de um espadão que é capaz de cortar os inimigos da floresta.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/26/16791688/236f42a62e034034870c2c4e44015572_7504205249259661407.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4338,
+        "name": "Canção do Vasto Azul",
+        "desc": "<p>Uma coleção de poesia requintada. Contém algumas poesias sobre os céus, Dandelions e outros tópicos amados pelas pessoas de Mondstadt.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/10/04/59559639/ab271b223abd6086b69e079af128e945_9039789205994289476.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4720,
+        "name": "Mega Ultra Espada Mágica do Soberano",
+        "desc": "<p>Uma espada mágica que só pode ser empunhada por quem comandar os mares. Como foi feita com materiais especiais à prova d'água, não ficará encharcada mesmo que seja mergulhada na água. Pode-se dizer que ela é invencível!</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2023/12/13/9eb77ebc428cc08b695d166c70d72012_8077919549792565749.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7031,
+        "name": "Prego Esmagador de Montanhas",
+        "desc": "Esta arma de haste foi feita por artesãos nas minas como um sacrifício para os espíritos das montanhas.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/201424fa6a98ffb190ae82c8ad7d0cc3_6084387639848528037.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7435,
+        "name": "Fofocas Breves do Pavilhão",
+        "desc": "No passado, existiu um Youkai que percorria Inazuma em forma de uma lanterna de fogos de artifício. Esta deve ter sido uma das lanternas em que ele habitou.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/02/07/a539c3f246fc39105fca045cb374aee8_7144935190009323615.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "36.8%\n( <color=#ffe14b>Armas de 5 estrelas</color> )",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1957,
+        "name": "Espinha Celestial",
+        "desc": "Lança que simboliza a determinação firme de Dvalin. O eixo vertical desta arma aponta para o céu, carregado a força do céu e do vento.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之脊.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1953,
+        "name": "Orgulho Celestial",
+        "desc": "Um espadão que simboliza o orgulho de Dvalin nos céus. Quando é utilizada, emite um som que representa a força de Dvalin e o poder de Anemo.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之傲.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "39.0%\n( <color=#80c0ff>Armas de 3 estrelas</color> )",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1966,
+        "name": "Histórias de Outros Mundos",
+        "desc": "Um romance de fantasia barato sem valor referencial. Os seus poderes, obviamente, também servem apenas na sua imaginação.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/异世界行记.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "45.9%\n( <color=#ffacff>Armas de 4 estrelas</color> )",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2020,
+        "name": "Codex de Favonius",
+        "desc": "Um livro secreto que pertencia aos estudiosos dos Cavaleiros de Favonius. Descreve o poder da matéria e da lógica.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风秘典.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2027,
+        "name": "Protótipo Estelar",
+        "desc": "Um rancor descoberto na Forja do Penhasco Obscuro. Os vislumbres ao longo da borda afiada são como estrelas na noite.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/试作星镰.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2011,
+        "name": "Espada Pútrida",
+        "desc": "Uma espada reta assustadora que parece ansiar pela vida. Ela verte um veneno enfraquecedor que poderia corromper até mesmo um dragão poderoso.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/腐殖之剑.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1987,
+        "name": "Espada Grande de Katsuragi",
+        "desc": "Uma espada forjada em Tatarasuna. Pesada e resistente.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/桂木斩长正.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1930,
+        "name": "\"A Fisgada\"",
+        "desc": "Num passado distante, esta era a amada lança de um famoso bandido de Inazuma.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/「渔获」.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2669,
+        "name": "Fruto da Abundância",
+        "desc": "<p>Uma fruta obtida através de uma das histórias dos Aranara. Ela tem o poder de conquistar qualquer crise.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/27/8078404/0e1cecaeba7b12c8c9adcb2f11eccd5e_1834291531123531423.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2666,
+        "name": "Águas Secas",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Parece ser um tipo de peixe extinto. Seu corpo é tão elástico, que uma corda pode ser presa a ele e fazer com que sirva como um arco.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/26/16791688/80d2c21b70f486d9d9cb90e491e5b9da_2380403589531016502.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3989,
+        "name": "Cruzamento de Fleuve Cendre",
+        "desc": "<p>Um cano de cobre abandonado que foi usado como arma. Era famoso, ou infame, dependendo de onde estivesse.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/19/59559639/920ca2fe25ca2db1796848099b59b2d8_953678508496184556.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8837,
+        "name": "Lira do Tecedor da Luz",
+        "desc": "Um alaúde de cordas douradas e radiantes como o sol. Parece ser uma relíquia antiga dos Seelie.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/139e8ec2c68957b44a0f217b3859bb82_2114353354330070345.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "51.7%\n( <color=#80c0ff>Armas de 3 estrelas</color> )",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2048,
+        "name": "Espada do Cavaleiro do Céu",
+        "desc": "Uma espada de aço confiável. Uma certa pessoa tentou usá-la como espada voadora...",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/飞天御剑.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "55.1%\n( <color=#ffe14b>Armas de 5 estrelas</color> )",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1954,
+        "name": "Espada Celestial",
+        "desc": "A espada de um cavaleiro que simboliza a honra restaurada de Dvalin. As bênçãos do Arconte Anemo repousam sobre a lâmina mais cheia, imbuindo a espada com os poderes do céu e do vento.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之刃.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2008,
+        "name": "Elegia do Suspiro Final",
+        "desc": "Um arco tão adorável quanto a lira de qualquer bardo, suas flechas perfuram o coração como um suspiro lamentável.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/终末嗟叹之诗.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2014,
+        "name": "Luz do Cortador de Grama",
+        "desc": "Uma naginata usada para \"cortar grama\". Qualquer exército que esteja diante desta arma provavelmente será igualmente cortado...",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/薙草之稻光.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "61.3%\n( <color=#ffacff>Armas de 4 estrelas</color> )",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2017,
+        "name": "Espada de Favonius",
+        "desc": "Uma espada longa comum usada pelos Cavaleiros de Favonius. Canalizar o poder dos elementos nunca foi tão fácil nesta arma ágil e afiada!",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风剑.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2018,
+        "name": "Espadão de Favonius",
+        "desc": "Uma espada pesada cerimonial dos Cavaleiros de Favonious. Canaliza poderes elementais facilmente e é altamente destrutiva.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风大剑.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2019,
+        "name": "Arco de Favonius",
+        "desc": "Um arco recurvo usado pelos Cavaleiros de Favonius. Apenas os melhores arqueiros conseguem tirar todo o seu potencial.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风猎弓.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2003,
+        "name": "Espada do Sacrifício",
+        "desc": "Uma espada decorativa que foi petrificada pelo tempo. Os acessórios inseridos ainda estão visíveis. Garante um grande poder ao seu portador.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/祭礼剑.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7114,
+        "name": "Redemoinho das Ondas",
+        "desc": "Um bumerangue feito das presas de uma gigantesca serpente do mar. Era uma arma rara que o gigante Tupac se referia como confiável.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/7d6082c11138d4e71e7cb7ce6276e8bb_8319120219748886665.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8513,
+        "name": "Chave Mestra",
+        "desc": "Um espadão afiado. O poder é a chave que pode abrir quase qualquer fechadura.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/9fca47d88e241f45ae1568ca386c9e6f_3876291412959841816.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8511,
+        "name": "Chamado da Serenidade",
+        "desc": "<p>Uma espada longa forjada de metal que emite um som de luto ao ser brandida.</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/88826bbf50b08b5f95c56c3dba17a002_3387604816719715343.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8835,
+        "name": "Gancho da Armadilha",
+        "desc": "<p>Esse arco é composto de ligas metálicas, e ainda assim é surpreendentemente leve. Mesmo quando é fortemente retesado, as flechas que dispara passam sem dificuldade.</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/794f286cd49e6beb026d4729d6a0e491_2738340196396279380.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Passivas de Armas",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2024,
+        "name": "Olho do Juramento",
+        "desc": "Um tesouro nacional do Reino de Byakuya guardado no Dainichi Mikoshi. Com a chegada do Deus Serpente, este item foi usado para autenticar grandes juramentos e desejos.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/证誓之明瞳.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Após usar a Habilidade Elemental, a Recarga de Energia aumenta em <color=#37ffff>24%/30%/36%/42%/48%</color> por 10s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2014,
+        "name": "Luz do Cortador de Grama",
+        "desc": "Uma naginata usada para \"cortar grama\". Qualquer exército que esteja diante desta arma provavelmente será igualmente cortado...",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/薙草之稻光.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Ganha <color=#37ffff>30%/35%/40%/45%/50%</color> de Recarga de Energia por 12s depois de usar um Supremo.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2909,
+        "name": "Luz Lunar de Xiphos",
+        "desc": "<p>Uma espada de dois gumes que emite um brilho semelhante ao da lua. Segundo as lendas, nela reside um Jinni que aguarda em silêncio.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/18/8078404/06be2dc5c5b80671ddf01cc9dc01bb49_1555338053897265371.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Os seguintes efeitos serão desencadeados a cada 10s: o personagem com esta arma equipada terá sua Recarga de Energia aumentada em <color=#37ffff>0.036%/0.045%/0.054%/0.063%/0.072%</color> para cada ponto de Proficiência Elemental que ele possuir, com os membros da equipe próximos ganhando 30% desse bônus, esses efeitos duram 12s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3989,
+        "name": "Cruzamento de Fleuve Cendre",
+        "desc": "<p>Um cano de cobre abandonado que foi usado como arma. Era famoso, ou infame, dependendo de onde estivesse.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/19/59559639/920ca2fe25ca2db1796848099b59b2d8_953678508496184556.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Após utilizar a Habilidade Elemental, aumenta a Recarga de Energia em <color=#37ffff>16%/20%/24%/28%/32%</color> por 5s.",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Atributo de Ascensão Especial de Personagem",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "26.7%\n( <color=#ffacff>Personagens de 4 estrelas</color> )",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 26,
+        "name": "Bennett",
+        "desc": "Um aventureiro de Mondstadt justo e bondoso, mas muito azarado.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Bennett_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9,
+        "name": "Kaeya",
+        "desc": "Um espadachim dos Cavaleiros de Favonius com uma aparência única.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Kaeya_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4,
+        "name": "Yunjin",
+        "desc": "Uma renomada cantora de ópera de Liyue, hábil tanto em dramaturgia quanto em canto. Seu estilo é único, requintado e delicado, exatamente como ela.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Yun Jin_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "32.0%\n( <color=#ffe14b>Personagens de 5 estrelas</color> )",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "Mona",
+        "desc": "Uma jovem astróloga misteriosa que proclama a si mesma como a \"Grande Astróloga Mona\" e que possui as habilidades para o título. Uma pessoa erudita, mas orgulhosa.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 23,
+        "name": "Venti",
+        "desc": "Um dos muitos bardos de Mondstadt que vagueia livremente pelas ruas e becos da cidade.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Venti_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 49,
+        "name": "Shogun Raiden",
+        "desc": "Sua Excelência, a Toda-Poderosa Narukami Ogosho, que prometeu ao povo de Inazuma uma Eternidade imutável.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Raiden Shogun_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Talentos",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 48,
+        "name": "Razor",
+        "desc": "Um garoto que vive entre os lobos no Reino dos Lobos em Mondstadt, longe da civilização. É ágil como um relâmpago.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Razor_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Talento de Ascensão Nv. 4</color>\nQuando a Energia de Razor está abaixo de 50%, aumenta a Recarga de Energia em 30%.\n<color=#ffffff>Habilidade Elemental</color>\nAo atacar um inimigo, Razor ganha um Selo Electro que aumenta sua taxa de Recarga de Energia (+20% cada, máx. 3).",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 18,
+        "name": "Viajante (Electro)",
+        "desc": "Uma/Um Viajante de outro mundo que teve seu ente querido levado e foi forçada/o a embarcar em uma jornada em busca dos Sete.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Traveler_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Habilidade Elemental</color>\nAumenta a Recarga de Energia em 20% durante a duração do Amuleto da Abundância.\n<color=#ffffff>Talento de Ascensão Nv. 4</color>\nAumenta a Recarga de Energia da <color=#ffd780>Lâmina Raikage</color> do Amuleto da Abundância em 10% com base na Recarga de Energia do Viajante.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 10,
+        "name": "Keqing",
+        "desc": "A Yuheng dos Qixing de Liyue. Tem muito a dizer sobre o Rex Lapis governando Liyue com apenas uma palavra, mas na verdade, esse deus admira muito esses céticos.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Keqing_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Talento de Ascensão Nv. 4</color>\nQuando lançado <color=#ffd780>Passeio Celestial</color> , a Recarga de Energia de Keqing é aumentada em 15%. Esse efeito dura por 8s.",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Constelações",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 19,
+        "name": "Viajante (Anemo)",
+        "desc": "Uma/Um Viajante de outro mundo que teve seu ente querido levado e foi forçada/o a embarcar em uma jornada em busca dos Sete.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Traveler_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Constelação Nv. 2</color>\nAumenta a Recarga de Energia em 16%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 26,
+        "name": "Bennett",
+        "desc": "Um aventureiro de Mondstadt justo e bondoso, mas muito azarado.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Bennett_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Constelação Nv. 2</color>\nQuando a Vida de Bennett cair abaixo de 70%, a Recarga da sua Energia é aumentada em 30%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 51,
+        "name": "Xiao",
+        "desc": "Um Yaksha, um ser imortal que protege Liyue. Também chamado de \"Conquistador de Demônios\" ou \"Guardião Yaksha\".",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xiao_icon.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Constelação Nv. 2</color>\nQuando Xiao estiver na equipe, mas não em campo, a Recarga da Energia de Xiao é aumentada em 25%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2268,
+        "name": "Collei",
+        "desc": "<p>Uma Guarda-Florestal em treinamento que patrulha a Floresta Avidya. Por trás de sua personalidade entusiasmada, encontra-se uma personalidade bastante introvertida.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/23/16791688/37a18b6b6865c59063003a9380f08225_5278866400438209057.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Constelação Nv. 1</color>\nQuando Collei está na equipe, mas não no campo de batalha, sua Recarga de Energia é aumentada em 20%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2269,
+        "name": "Dori",
+        "desc": "<p>Uma comerciante viajante imprevisível, cuja maior paixão é a Mora brilhante.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/10/8078404/6539bea71efd0f839db897cfc4094362_7060545492800233110.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Constelação Nv. 4</color>\nQuando a Energia Elemental do personagem conectado ao <color=#ffe699>Gênio da Lâmpada</color> está abaixo de 50%, ele ganha 30% de Recarga de Energia.",
+        "alignment": "center"
+      }
+    ]
+  }
+}
