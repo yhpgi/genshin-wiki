@@ -5,51 +5,14 @@
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/08/10742394/a0e320ea394996c7bc32643aa555167c_1122330600849682724.png",
   "filterValues": {
     "objectType": [
-      "Comida"
+      "Comida",
+      "Platos que regeneran Vida"
     ]
   },
   "menuId": 9,
   "menuName": "Productos de Teyvat",
-  "version": 1723510837,
+  "version": 1763063606,
   "components": {
-    "baseInfo": [
-      {
-        "key": "Nombre",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Panipuri</color>"
-          }
-        ]
-      },
-      {
-        "key": "Tipo",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Comida</color>"
-          }
-        ]
-      },
-      {
-        "key": "Utilidad",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Revive a un personaje y restaura 400 pts. de su Vida.</color>"
-          }
-        ]
-      },
-      {
-        "key": "Cómo se consigue",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Cocinar</color>"
-          }
-        ]
-      }
-    ],
     "customize": [
       {
         "type": "RichText",
@@ -66,7 +29,7 @@
       },
       {
         "type": "RichText",
-        "text": "Ingredientes\n2x"
+        "text": "Ingredientes"
       },
       {
         "type": "CustomEntry",
@@ -74,11 +37,9 @@
         "name": "Papa",
         "desc": "Un tubérculo vegetal. Un regalo de la tierra del que es imposible cansarse gracias a sus variados métodos de cocción.",
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Potato_icon.png",
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "2x"
+        "amount": 2,
+        "displayStyle": "card",
+        "menuId": 9
       },
       {
         "type": "CustomEntry",
@@ -86,12 +47,9 @@
         "name": "Legumbres peladas",
         "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Una legumbre típica en Teyvat. Tiene un olor neutro. Dado que existen muchas formas de cocinarla, su uso está muy extendido y aceptado por todos.</span></p>",
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/08/10742394/1e67f272a1c27d4771c319ff7fc6cd3a_4713956416386567424.png",
-        "displayStyle": "text",
+        "amount": 2,
+        "displayStyle": "card",
         "menuId": 9
-      },
-      {
-        "type": "RichText",
-        "text": "1x"
       },
       {
         "type": "CustomEntry",
@@ -99,7 +57,8 @@
         "name": "Especias",
         "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un condimento derivado de la fusión de distintos sabores. Está hecho a partir de frutos harra secos. Aporta toda una gama de sensaciones culinarias a los platos en los que se usa. De ahí que la gente lo llame “el multifruto”.</span></p>",
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/13/10742394/336301b0c7058a82472b758b96aa1b06_5366950934475951428.png",
-        "displayStyle": "text",
+        "amount": 1,
+        "displayStyle": "card",
         "menuId": 9
       },
       {
@@ -123,6 +82,84 @@
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/08/10742394/50967100b9ea84712e71eb22a3d4794a_8942761388940069342.png",
         "displayStyle": "card",
         "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "Platillo especial"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8894,
+        "name": "Néfer",
+        "desc": "La increíblemente ingeniosa dueña de la Cámara de Secretos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/10/21/7557acebcb72b4d9912bcb0e6c92306a_3655566527985254987.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8965,
+        "name": "Intercambio de secretos",
+        "desc": "La especialidad de Néfer. “¿Qué tal si te cambio unos cuantos relatos interesantes por esto?”. Al escucharla, en la mesa aparece una bandeja llena de deliciosas bolitas crujientes. Cuando estás a punto de abalanzarte sobre ellas, Néfer te detiene con la mano. “Por cierto, por cada bolita, me debes por lo menos una frase”... Efectivamente, hay que pagar el precio justo por degustar la cocina de Néfer.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/10/20/8835d660c5ae0dc633308fa072ff49af_7114284396069399420.png",
+        "displayStyle": "card",
+        "menuId": 9
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "Nombre:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Panipuri</color>"
+          }
+        ]
+      },
+      {
+        "key": "Tipo:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Comida</color>"
+          }
+        ]
+      },
+      {
+        "key": "Rareza:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "⭐⭐"
+          }
+        ]
+      },
+      {
+        "key": "Utilidad:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Revive a un personaje y restaura 400 pts. de su Vida.</color>"
+          }
+        ]
+      },
+      {
+        "key": "Cómo se consigue:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Cocinar</color>"
+          }
+        ]
+      },
+      {
+        "key": "Versión:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "3.0"
+          }
+        ]
       }
     ]
   }
