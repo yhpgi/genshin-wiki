@@ -6,6 +6,12 @@
   "menuName": "NPC図鑑",
   "version": 1741798054,
   "components": {
+    "galleryCharacter": [
+      {
+        "key": "写真",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/09/04/224893084/22ee14400e04a4d9ea4039a689921fb6_6231079159410244685.png"
+      }
+    ],
     "baseInfo": [
       {
         "key": "名前",
@@ -58,13 +64,29 @@
         "isMaterial": true
       }
     ],
-    "galleryCharacter": [
-      {
-        "key": "写真",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/09/04/224893084/22ee14400e04a4d9ea4039a689921fb6_6231079159410244685.png"
-      }
-    ],
     "customize": [
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "会話内容"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#37ffff>待機中：</color> 一、二…\n<color=#37ffff>アロム：</color> 2、4、5…ん、またリズムが狂ったか。\n<color=#ffd780>分岐が発生</color>\n<color=#37ffff>旅人：</color> 武器を買いたい。\n<color=#37ffff>アロム：</color> どうぞ。\nショップ画面へ\n<color=#37ffff>旅人：</color> 鍛造依頼…\n<color=#37ffff>アロム：</color> なにが欲しい？もっと丈夫なのを作ってやれないか、試してみるよ。\n鍛造画面へ\n<color=#ffffff>完了後</color>\n<color=#37ffff>アロム：</color> この前の注文は全部仕上げた。ほかに欲しい物は？\n<color=#37ffff>旅人：</color> ナタの鉱物について…\n<color=#ffd780>魔晶の塊の有無で分岐が発生</color>\n<color=#ffffff>魔晶の塊が範囲内にある場合</color>\n<color=#37ffff>アロム：</color> 近くで鉱石が採れる場所の情報を集めてるのか？常に萃凝晶が採れて、時には質感が硬めの魔晶鉱も採れる場所なら知ってるぞ。ただ今は手が離せなくてな、あんた一人で採れるといいんだが。\n<color=#37ffff>アロム：</color> とりあえずマップに印をつけてやろう、行ってみるといいさ。気を付けるんだぞ。\n鉱物が豊富な採鉱地がマップにマークされる\n<color=#ffffff>魔晶の塊が範囲内にない場合</color>\n<color=#37ffff>アロム：</color> すまない、近頃良質な採掘場所の情報はないんだ。多分どこもかしこも採り尽くされてしまったのだろう。\n<color=#37ffff>アロム：</color> しばらくしてからまた来たらどうだ？情報が入ったら共有しよう。\n<color=#37ffff>旅人：</color> 何のリズム？\n<color=#37ffff>アロム：</color> ああ、気にすんな。頭の中でエネルギッシュな音楽を流してるんだ。鉄を打つ時にぴったりのやつをな。\n<color=#37ffff>アロム：</color> あんたには聞こえないだろうな。だが俺も音痴だから、歌ってやるのは無理だ。\n<color=#37ffff>アロム：</color> そこで鉄を打つリズムを聞いててもいいぞ。音楽を聞くような感じでな。\n<color=#ffd780>会話報酬の分岐が発生</color>\n<color=#37ffff>旅人：</color> すごいリズム感だね。\n<color=#37ffff>アロム：</color> どうしてか分からんが、このリズム感が反復労働の疲労を和らげて、やる気を出させてくれるんだ。\n<color=#37ffff>アロム：</color> うーん、石も楽器にできるんだな。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4096,
+        "name": "萃凝晶",
+        "desc": "<p>透き通った鉱石。優れた耐久性と可塑性を持つ鉱石。</p><p></p><p>（以下は図鑑より抜粋）</p><p>太古の伝説によると、輝くプリズムはかつての高天の使者からの贈り物で、昼夜を照らす微かな光は、白い月の恩恵を象徴し、人々に不思議な物を鍛造する力を与えたという。伝説はすでに証明しようがないが、現代の職人たちは相変わらず、この透き通った晶石を使って様々な装飾品や武器を作っている。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/132746206/a06c6fbd29b5111702baf8c9271654c4_2760362838034077991.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×4を獲得\n<color=#37ffff>旅人：</color> 邪魔したね。\n<color=#37ffff>アロム：</color> 気をつけてな。"
+      },
       {
         "type": "RichText",
         "text": "※特にアイテムの個数を表記しない場合は1個とする。\n※1日あたり5個まで購入可能である場合、5個/1日と表記する。"
@@ -447,28 +469,6 @@
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
         "amount": 600,
         "displayStyle": "card"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "会話内容"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#37ffff>待機中：</color> 一、二…\n<color=#37ffff>アロム：</color> 2、4、5…ん、またリズムが狂ったか。\n<color=#ffd780>分岐が発生</color>\n<color=#37ffff>旅人：</color> 武器を買いたい。\n<color=#37ffff>アロム：</color> どうぞ。\nショップ画面へ\n<color=#37ffff>旅人：</color> 鍛造依頼…\n<color=#37ffff>アロム：</color> なにが欲しい？もっと丈夫なのを作ってやれないか、試してみるよ。\n鍛造画面へ\n<color=#ffffff>完了後</color>\n<color=#37ffff>アロム：</color> この前の注文は全部仕上げた。ほかに欲しい物は？\n<color=#37ffff>旅人：</color> ナタの鉱物について…\n<color=#ffd780>魔晶の塊の有無で分岐が発生</color>\n<color=#ffffff>魔晶の塊が範囲内にある場合</color>\n<color=#37ffff>アロム：</color> 近くで鉱石が採れる場所の情報を集めてるのか？常に萃凝晶が採れて、時には質感が硬めの魔晶鉱も採れる場所なら知ってるぞ。ただ今は手が離せなくてな、あんた一人で採れるといいんだが。\n<color=#37ffff>アロム：</color> とりあえずマップに印をつけてやろう、行ってみるといいさ。気を付けるんだぞ。\n鉱物が豊富な採鉱地がマップにマークされる\n<color=#ffffff>魔晶の塊が範囲内にない場合</color>\n<color=#37ffff>アロム：</color> すまない、近頃良質な採掘場所の情報はないんだ。多分どこもかしこも採り尽くされてしまったのだろう。\n<color=#37ffff>アロム：</color> しばらくしてからまた来たらどうだ？情報が入ったら共有しよう。\n<color=#37ffff>旅人：</color> 何のリズム？\n<color=#37ffff>アロム：</color> ああ、気にすんな。頭の中でエネルギッシュな音楽を流してるんだ。鉄を打つ時にぴったりのやつをな。\n<color=#37ffff>アロム：</color> あんたには聞こえないだろうな。だが俺も音痴だから、歌ってやるのは無理だ。\n<color=#37ffff>アロム：</color> そこで鉄を打つリズムを聞いててもいいぞ。音楽を聞くような感じでな。\n<color=#ffd780>会話報酬の分岐が発生</color>\n<color=#37ffff>旅人：</color> すごいリズム感だね。\n<color=#37ffff>アロム：</color> どうしてか分からんが、このリズム感が反復労働の疲労を和らげて、やる気を出させてくれるんだ。\n<color=#37ffff>アロム：</color> うーん、石も楽器にできるんだな。"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 4096,
-        "name": "萃凝晶",
-        "desc": "<p>透き通った鉱石。優れた耐久性と可塑性を持つ鉱石。</p><p></p><p>（以下は図鑑より抜粋）</p><p>太古の伝説によると、輝くプリズムはかつての高天の使者からの贈り物で、昼夜を照らす微かな光は、白い月の恩恵を象徴し、人々に不思議な物を鍛造する力を与えたという。伝説はすでに証明しようがないが、現代の職人たちは相変わらず、この透き通った晶石を使って様々な装飾品や武器を作っている。</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/17/132746206/a06c6fbd29b5111702baf8c9271654c4_2760362838034077991.png",
-        "displayStyle": "text",
-        "menuId": 9
-      },
-      {
-        "type": "RichText",
-        "text": "×4を獲得\n<color=#37ffff>旅人：</color> 邪魔したね。\n<color=#37ffff>アロム：</color> 気をつけてな。"
       }
     ]
   }
