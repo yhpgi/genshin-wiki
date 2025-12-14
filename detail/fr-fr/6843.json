@@ -10,8 +10,50 @@
   },
   "menuId": 9,
   "menuName": "Produits de Teyvat",
-  "version": 1760382844,
+  "version": 1765488172,
   "components": {
+    "baseInfo": [
+      {
+        "key": "Nom",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Plan : Trace d'arc-en-ciel"
+          }
+        ]
+      },
+      {
+        "key": "Type",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Plan de forge"
+          }
+        ]
+      },
+      {
+        "key": "Source",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Fournaise salutaire au stade du sanctifeu à Natlan"
+          }
+        ]
+      },
+      {
+        "key": "Forge",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 6549,
+            "name": "Trace d'arc-en-ciel",
+            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Une lance tranchante forgée en jade. Elle émet une lumière aux couleurs de l'arc-en-ciel lorsqu'elle est exposée au soleil.</span></p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/76706780/9d5294dc8b165585f51ec126543a5208_4339608249774298838.png"
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
     "customize": [
       {
         "type": "Heading",
@@ -20,7 +62,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>Produit</color>\n<color=#ffffff>Coût</color>\n<color=#ffffff>Quantité</color>\n<color=#ffffff>Vendeur</color>",
+        "text": "<color=#ffffff>Produit</color>\n<color=#ffffff>Coût</color>\n<color=#ffffff>Vendeur</color>",
         "alignment": "center"
       },
       {
@@ -29,11 +71,8 @@
         "name": "Plan : Trace d'arc-en-ciel",
         "desc": "<p>Un plan transmis depuis les temps anciens à Natlan. Une fois maitrisé, il vous permettra de reproduire l'arme d'hast «&nbsp;Trace d'arc-en-ciel&nbsp;».</p>",
         "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/10/11/49428089/467e511bd3cd4889fc90258a7b1dfc53_2132226683944440637.png",
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "10x"
+        "displayStyle": "card",
+        "menuId": 9
       },
       {
         "type": "CustomEntry",
@@ -41,12 +80,9 @@
         "name": "Fruit spinelle",
         "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.85)\">Les arbres cristallins qui poussent dans les zones avec du phlogistique liquide produisent ces fruits en forme de gemme après avoir absorbé le phlogistique.</span></p>",
         "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/12/10/170542231/ea1fa8120bc5443c4e7687bca0abd585_1919891502373028489.png",
-        "displayStyle": "text",
+        "amount": 10,
+        "displayStyle": "card",
         "menuId": 9
-      },
-      {
-        "type": "RichText",
-        "text": "10x"
       },
       {
         "type": "CustomEntry",
@@ -54,12 +90,9 @@
         "name": "Fleur braisée",
         "desc": "<p>Une fleur étrange que l'on trouve dans les plaines et les hauts plateaux, et dont les bourgeons mûrs fleurissent après avoir été attaqués.</p>",
         "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/09/03/170542231/ce5ca9c3c827f3b9d2e3558cad4ebf9b_3777729538834835153.png",
-        "displayStyle": "text",
+        "amount": 10,
+        "displayStyle": "card",
         "menuId": 9
-      },
-      {
-        "type": "RichText",
-        "text": "10x"
       },
       {
         "type": "CustomEntry",
@@ -67,18 +100,15 @@
         "name": "Cristal de condensat",
         "desc": "<p>Un cristal brillant et clair, dont le noyau est à la fois dur et malléable.</p>",
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/11/76706780/a06c6fbd29b5111702baf8c9271654c4_1115451233802668166.png",
-        "displayStyle": "text",
+        "amount": 10,
+        "displayStyle": "card",
         "menuId": 9
-      },
-      {
-        "type": "RichText",
-        "text": "1"
       },
       {
         "type": "CustomEntry",
         "epId": 6962,
         "desc": "",
-        "displayStyle": "text"
+        "displayStyle": "card"
       },
       {
         "type": "Heading",
@@ -129,6 +159,7 @@
         "name": "Cristal de condensat",
         "desc": "<p>Un cristal brillant et clair, dont le noyau est à la fois dur et malléable.</p>",
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/11/76706780/a06c6fbd29b5111702baf8c9271654c4_1115451233802668166.png",
+        "amount": 50,
         "displayStyle": "card",
         "menuId": 9
       },
@@ -138,6 +169,7 @@
         "name": "Morceau de fer blanc",
         "desc": "Un morceau de fer blanc que les mains expertes d'un bon forgeron peuvent transformer en objet.",
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
+        "amount": 50,
         "displayStyle": "card",
         "menuId": 9
       },
@@ -177,49 +209,6 @@
         "desc": "<p>Un plan transmis depuis les temps anciens à Natlan. Une fois maitrisé, il vous permettra de reproduire l'arc «&nbsp;Brise-chaîne&nbsp;».</p>",
         "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/10/11/49428089/467e511bd3cd4889fc90258a7b1dfc53_7190380208503160188.png",
         "displayStyle": "card"
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Nom",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Plan : Trace d'arc-en-ciel"
-          }
-        ]
-      },
-      {
-        "key": "Type",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Plan de forge"
-          }
-        ]
-      },
-      {
-        "key": "Source",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Fournaise salutaire au stade du sanctifeu à Natlan"
-          }
-        ]
-      },
-      {
-        "key": "Forge",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 6549,
-            "name": "Trace d'arc-en-ciel",
-            "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Une lance tranchante forgée en jade. Elle émet une lumière aux couleurs de l'arc-en-ciel lorsqu'elle est exposée au soleil.</span></p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/76706780/9d5294dc8b165585f51ec126543a5208_4339608249774298838.png",
-            "amount": 1
-          }
-        ],
-        "isMaterial": true
       }
     ]
   }

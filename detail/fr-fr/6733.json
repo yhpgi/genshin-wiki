@@ -10,12 +10,51 @@
   },
   "menuId": 9,
   "menuName": "Produits de Teyvat",
-  "version": 1726256024,
+  "version": 1765658177,
   "components": {
+    "baseInfo": [
+      {
+        "key": "Nom",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Chips granifruitées"
+          }
+        ]
+      },
+      {
+        "key": "Type",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Nourriture"
+          }
+        ]
+      },
+      {
+        "key": "Usage",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Restaure immédiatement 20 % des PV max, puis 390 PV toutes les 5 s pendant 30 s au personnage sélectionné."
+          }
+        ]
+      },
+      {
+        "key": "Source",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Cuisine"
+          }
+        ]
+      }
+    ],
     "customize": [
       {
         "type": "RichText",
-        "text": "<color=#ffffff>Recette</color>"
+        "text": "<color=#ffffff>Recette</color>\n<color=#ffffff>Maîtrise culinaire</color>\n<color=#ffffff>Plats similaires</color>",
+        "alignment": "center"
       },
       {
         "type": "CustomEntry",
@@ -23,49 +62,13 @@
         "name": "Recette : Chips granifruitées",
         "desc": "Étapes de préparation des chips granifruitées.",
         "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/60c9c277139b43907167e6452d409874_2394618203975894864.png",
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Ingrédients</color>\n2x"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 6930,
-        "name": "Granifruit",
-        "desc": "<p>Cette plante doit son nom aux grains géants qui poussent le long de sa tige.</p>",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/09/03/170542231/2bd05960b208cb8b61e4c26e49dfb014_2114331562426710703.png",
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "1x"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1284,
-        "name": "Volaille",
-        "desc": "Un morceau de viande fraîche qui peut être cuisiné.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fowl_icon.png",
-        "displayStyle": "text",
+        "displayStyle": "card",
         "menuId": 9
       },
       {
         "type": "RichText",
-        "text": "1x"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 603,
-        "name": "Fromage",
-        "desc": "Produit à base de lait fermenté. Il peut être utilisé de façons variées pour agrémenter vos plats.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cheese_icon.png",
-        "displayStyle": "text",
-        "menuId": 9
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Maîtrise culinaire</color>\n10\n<color=#ffffff>Plats similaires</color>"
+        "text": "10",
+        "alignment": "center"
       },
       {
         "type": "CustomEntry",
@@ -84,8 +87,68 @@
         "displayStyle": "card"
       },
       {
+        "type": "Heading",
+        "level": 3,
+        "text": "Préparation"
+      },
+      {
         "type": "RichText",
-        "text": "<color=#ffffff>Spécialité</color>"
+        "text": "<color=#ffffff>Plat</color>\n<color=#ffffff>Ingrédients</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6733,
+        "name": "Chips granifruitées",
+        "desc": "<p>Des chips triangulaires bien croustillantes. Après avoir été retirées de la marmite remplie d'huile, les chips frites sont arrosées de sauce, saupoudrées de fromage et enfin garnies de viande râpée : c'est ainsi que naît un copieux petit-déjeuner natlanois.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/170542231/7eebb852578a0f77e5cc80dd4b04edcf_5629001892883801600.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/29/35428890/f3d590cc41bcab5bcd61b9c47d7b4391_2109564590800618060.png",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6930,
+        "name": "Granifruit",
+        "desc": "<p>Cette plante doit son nom aux grains géants qui poussent le long de sa tige.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/09/03/170542231/2bd05960b208cb8b61e4c26e49dfb014_2114331562426710703.png",
+        "amount": 2,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1284,
+        "name": "Volaille",
+        "desc": "Un morceau de viande fraîche qui peut être cuisiné.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fowl_icon.png",
+        "amount": 1,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 603,
+        "name": "Fromage",
+        "desc": "Produit à base de lait fermenté. Il peut être utilisé de façons variées pour agrémenter vos plats.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cheese_icon.png",
+        "amount": 1,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Spécialité"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Personnage</color>\n<color=#ffffff>Plat</color>",
+        "alignment": "center"
       },
       {
         "type": "CustomEntry",
@@ -103,44 +166,6 @@
         "desc": "<p>Spécialité culinaire de Kachina.<br>Les chips sont disposées en rangées bien nettes, frites à la perfection. Dans leur croquant délicieux, on peut voir le sérieux et l'attention de Kachina. Serait-ce trop si vous lui disiez ce que vous pensez de son plat, en lui faisant quelques compliments ?</p>",
         "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/28/170542231/b53d19d4f59498e31c13808090facb1a_8872530520933887371.png",
         "displayStyle": "card"
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Nom",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Chips granifruitées</color>"
-          }
-        ]
-      },
-      {
-        "key": "Type",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Nourriture</color>"
-          }
-        ]
-      },
-      {
-        "key": "Usage",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Restaure immédiatement 20 % des PV max, puis 390 PV toutes les 5 s pendant 30 s au personnage sélectionné.</color>"
-          }
-        ]
-      },
-      {
-        "key": "Source",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Cuisine</color>"
-          }
-        ]
       }
     ]
   }
