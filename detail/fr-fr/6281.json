@@ -10,12 +10,51 @@
   },
   "menuId": 9,
   "menuName": "Produits de Teyvat",
-  "version": 1729847398,
+  "version": 1767809419,
   "components": {
+    "baseInfo": [
+      {
+        "key": "Nom",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Fricassée de poulet (suspecte)"
+          }
+        ]
+      },
+      {
+        "key": "Type",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Nourriture"
+          }
+        ]
+      },
+      {
+        "key": "Usage",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Augmente l'ATQ de tous les personnages de l'équipe de 160 pts pendant 300 s. Ne s'applique qu'à vos personnages en mode multijoueur."
+          }
+        ]
+      },
+      {
+        "key": "Source",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Cuisine"
+          }
+        ]
+      }
+    ],
     "customize": [
       {
         "type": "RichText",
-        "text": "<color=#ffffff>Recette</color>"
+        "text": "<color=#ffffff>Recette</color>\n<color=#ffffff>Plats similaires</color>",
+        "alignment": "center"
       },
       {
         "type": "CustomEntry",
@@ -23,62 +62,16 @@
         "name": "Recette : Fricassée de poulet",
         "desc": "<p>Étapes de préparation de la fricassée de poulet.</p>",
         "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/02/170542231/60c9c277139b43907167e6452d409874_580856294069741504.png",
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Ingrédients</color>\n4x"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1284,
-        "name": "Volaille",
-        "desc": "Un morceau de viande fraîche qui peut être cuisiné.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fowl_icon.png",
-        "displayStyle": "text",
+        "displayStyle": "card",
         "menuId": 9
       },
       {
-        "type": "RichText",
-        "text": "3x"
-      },
-      {
         "type": "CustomEntry",
-        "epId": 4229,
-        "name": "Jus fermenté",
-        "desc": "<p>Un jus fermenté au parfum fruité unique, souvent utilisé comme marinade.</p>",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/02/170542231/c91286c2b94742e32da072c497c0784b_8313293180607818285.png",
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "3x"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 999,
-        "name": "Oignon",
-        "desc": "Un légume rond qui fait pleurer tout le monde, même les durs à cuire.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Onion_icon.png",
-        "displayStyle": "text",
-        "menuId": 9
-      },
-      {
-        "type": "RichText",
-        "text": "2x"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 602,
-        "name": "Crème",
-        "desc": "Produit laitier essentiel pour la pâtisserie.",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cream_icon.png",
-        "displayStyle": "text",
-        "menuId": 9
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Plats similaires</color>"
+        "epId": 6283,
+        "name": "Fricassée de poulet (délicieuse)",
+        "desc": "<p>Un plat de viande fontainois bien connu. Le rendez-vous romantique de la crème et du poulet crée instantanément un arôme profond et riche qui remonte le moral. On dit que c'est l'un des plats favoris des Fontainois... On pourrait même se régaler de ce plat toute une vie sans se lasser de sa saveur fantastique.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/03/170542231/f4ee1b9f189ec011f5672d4256ea83ab_2234904568750455449.png",
+        "displayStyle": "card"
       },
       {
         "type": "CustomEntry",
@@ -89,51 +82,68 @@
         "displayStyle": "card"
       },
       {
+        "type": "Heading",
+        "level": 3,
+        "text": "Préparation"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Plat</color>\n<color=#ffffff>Ingrédients</color>",
+        "alignment": "center"
+      },
+      {
         "type": "CustomEntry",
-        "epId": 6283,
-        "name": "Fricassée de poulet (délicieuse)",
-        "desc": "<p>Un plat de viande fontainois bien connu. Le rendez-vous romantique de la crème et du poulet crée instantanément un arôme profond et riche qui remonte le moral. On dit que c'est l'un des plats favoris des Fontainois... On pourrait même se régaler de ce plat toute une vie sans se lasser de sa saveur fantastique.</p>",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/03/170542231/f4ee1b9f189ec011f5672d4256ea83ab_2234904568750455449.png",
+        "epId": 6282,
+        "name": "Fricassée de poulet",
+        "desc": "<p>Un plat de viande fontainois bien connu. La viande est d'abord frite dans l'huile jusqu'à ce que la peau soit croustillante et délicieusement assombrie, puis sautée avec des oignons et d'autres condiments. Vient ensuite du jus de fruit fermenté et un peu de crème une fois le mélange épaissi. Lorsque le plat est prêt, chaque morceau de viande est enveloppé uniformément dans de la crème, lui donnant cette saveur chaleureuse et familière que les Fontainois adorent.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/03/170542231/a1a4896890db8f4c03b1a2dea3b3dad0_4904383747938763284.png",
         "displayStyle": "card",
         "menuId": 9
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Nom",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Fricassée de poulet (suspecte)</color>"
-          }
-        ]
       },
       {
-        "key": "Type",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Nourriture</color>"
-          }
-        ]
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/29/35428890/f3d590cc41bcab5bcd61b9c47d7b4391_2109564590800618060.png",
+        "alignment": "center"
       },
       {
-        "key": "Usage",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Augmente l'ATQ de tous les personnages de l'équipe de 160 pts pendant 300 s. Ne s'applique qu'à vos personnages en mode multijoueur.</color>"
-          }
-        ]
+        "type": "CustomEntry",
+        "epId": 1284,
+        "name": "Volaille",
+        "desc": "Un morceau de viande fraîche qui peut être cuisiné.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fowl_icon.png",
+        "amount": 4,
+        "displayStyle": "card",
+        "menuId": 9
       },
       {
-        "key": "Source",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Cuisine</color>"
-          }
-        ]
+        "type": "CustomEntry",
+        "epId": 4229,
+        "name": "Jus fermenté",
+        "desc": "<p>Un jus fermenté au parfum fruité unique, souvent utilisé comme marinade.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/02/170542231/c91286c2b94742e32da072c497c0784b_8313293180607818285.png",
+        "amount": 3,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 999,
+        "name": "Oignon",
+        "desc": "Un légume rond qui fait pleurer tout le monde, même les durs à cuire.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Onion_icon.png",
+        "amount": 3,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 602,
+        "name": "Crème",
+        "desc": "Produit laitier essentiel pour la pâtisserie.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cream_icon.png",
+        "amount": 2,
+        "displayStyle": "card",
+        "menuId": 9
       }
     ]
   }

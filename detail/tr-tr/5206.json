@@ -9,6 +9,40 @@
   "components": {
     "customize": [
       {
+        "type": "RichText",
+        "text": "Bir Element Tepkimesi, hali hazırda bir elementten etkilenmiş olan hedefe farklı elementler uygulandığında meydana gelir.\nGenshin Impact'te her biri kullanılarak tetiklenebilen en az 1 reaksiyona sahip yedi element vardır. Bununla birlikte, bazı unsanlar başka bir unsurla etkileşime girmediğinden bu tepkimelerde bazı kısıtlamalar vardır: Toprak, Doğa ve Rüzgar ile tepkiyeme girmez. Doğa ile Buz tepkimeye girmez.\nElement Tepkimeleri, Hasar Vermeyen Tepkimeler, Güçlendirici Tepkimeler, Dönüştürücü Tepkimeler ve Katkılı Tepkimeler olarak ayrı kategorilere ayrılabilir.\nBelirli mekanizmaları ve etkileşimleri daha iyi anlamak için, birkaç terimi ve mekanizmayı ana hatlarıyla belirtmek ve tanımlamak yararlı olacaktır. Bunlar toplulukta yerleşik bir kullanım alanı bulmuş ve kendini bu işe adamış oyuncular tarafından yapılan titiz testler ve araştırmalar sonucunda belirlenmiştir. Bu mekanizmalardan bazıları karmaşıktır, bu nedenle burada listelenenlerde sadece kısa bir özettir."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Tetiklemeler ve Auralar",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Tepkimelerden bahsederken, bazıları kullanım sırasını önemserken, bazıları ise önemsememektedir. Bir düşmanın Elektrik veya Buz tarafından etkilenmesi fark etmez, ilgili diğer element uygulandığı anda ''Süper İletim'' reaksiyonu meydana gelir ve etki aynıdır. Ancak, Buharlaşma tepkimesini tetikleyenin Ateş ya da Su olması arasında bir fark vardır. Çünkü burada uygulama sırasının tepkime üzerinde bir etkisi vardır (x2 çarpanına kıyasla x1,5 çarpanı).\nBu konudaki iletişimi kolaylaştırmak için topluluk ''Aura'' ve ''Tetikleyici'' terimlerini benimsemiştir. ''Aura'' terimi, normal durumdaki hedeflerin ilk olarak hangi element tarafından etkilendiğini tanımlamak için kullanılır. ''Tetikleyici'' terimi, hangi unsurun element tepkimesini tetiklediğini tanımlamak için kullanılır."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Element Ölçme Teorisi",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Element Ölçme Teorisi, element auralarının kendi güçlerine ve ilgili tetikleyicinin gücüne bağlı olarak farklı derecelerde ''tüketildiği'' anlayışını ifade eder. Bu durumda, bir element aurasının veya tetikleyicisinin gücü, bir saldırı hareketinin söz konusu elementi uygularken verdiği hasara değil, o saldırı için önceden tanımlanmış bir değerle belirlenir. Bu değerler uygulama sırası (güçlü veya zayıf unsurlar) ya da uygulamalar arasındaki süre (gecikme) gibi faktörlerle modüle edilebilir.\nAslında, belirli saldırılar bir elementi ''daha fazla'' ya da ''daha az'' uygular, bu da auranın veya tetikleyicinin gücüne yansıyabilir. Bu güç, örneği 1U Buz veya 2U Ateş gibi birimler halinde sayılır.\nAnlamanıza yardımcı olabilecek bazı örnekler:\nCharlotte'in Normal Saldırısı 1U Buz uygular ve Lisa'nın Normal Saldırısı 1U Elektrik uygular. Her ikisi de birbirini iptal eder ve ''Süper İletken'' tepkimesi meydana gelir\nXingqiu'nun Element Patlaması 1U Su uygularken, Hu Tao'nun Yüklü Saldırısı 1U Ateş uygular. Ancak bu durumda Ateş, Buharlaşma tepkimesinin ''zayıf'' elementi olduğundan, gücü yarıya iner; yani Xingqiu'nun Su aurasının yalnızca 0,5U'sunu tüketir. Bu da, saldırıdan sonra düşmanın üzerinde 0,5U Su etkisi kalacağını ve Hu Tao'nun ikinci bir tepkime gerçekleştirebileceği anlamına gelir.\nBenzer şekilde, Bennett'in Element Patlaması bir düşmana 2U Ateş uygular, ardından Mona'nın Normal Saldırısı 1U uygular. Ancak, Buharlaşma tepkimesinin ''güçlü'' elementi Su olduğundan, iki kat daha fazla tüketir ve ilk Ateş aurasını tamamen ortadan kaldırır.\nBu tetikleyicinin, bir düşman aurasından tüketilebilecek olandan daha fazla bir element uygulasa bile, elementin geri kalanını asla uygulamayacağı unutulmamalıdır. Bir saldırı ya da yeni bir element uygulayabilir, eğer yoksa bir aura oluşturabilir, bir tepkimeyi tetikleyebilir. Tek bir saldırı asla ikisini birden yapamaz."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Dahili Bekleme Süresi (ICD)",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Element Becerileri ve Patlamalarının bekleme süreleri olduğu ve sonrasında tekrar kullanılabildikleri gibi, bir element uygulayan çoğu saldırı da belirli kurallara uyar. Bu bekleme süreleri çoğunlukla birbirinden ayrıdır ve herhangi bir ölçme tarafından ölçülemez, bu nedenle Dahili Bekleme Süresi adı verilir.\nHerhangi bir dahili bekleme süresine sahip olmayan ve elementlerini her kullanımda ya da vuruşta uygulayan bazı istisnalar dışında, çoğu saldırı benzer kalıpları tekip eder. Aslında, zaman kuralı ve vuruş kuralı olmak üzere birlikte çalışan iki kural vardır ve zaman kuralı önceliklidir.\nBasitçe söylemek gerekirse, her X vuruşta aynı saldırı elementini tekrar uygulayabilirken, vuruşlardan bağımsız olarak da X saniyede bir uygular.\nBunun kısa bir örneği Kaeya'nın Element Patlamasıdır. Bu yetenek hızla döner ve hızlı Buz Hasarı verirken, her vuruş bir tepkimeyi tetikleyemez veya elementini uygulayamaz. Yani, her üç vuruşta bir Buz elementi uygulanır bu da 1, 4, 7, 10, 13, ... gibi vuruşlara denk gelir. Ayrıca, her 2,5 saniyede bir, bir sonraki vuruşun da elementi uygulayacağı garanti edilir. Daha önce bahsedilen vuruş kuralının üzerine yazılır ve bu kural 1'e sıfırlanır. Kaeya'nın Element Patlaması ile daha önce olduğu gibi aynı örnek, bu bir dizi olabilir:\n1,4,7 / 8,11,14 / 15,18,21 ...\nBu örnekteki zamanlayıcı 1. vuruştan sonra başlar. 7. vuruş 2,5 saniye sonra gerçekleşir, yani bir sonraki vuruş 2,5 saniye sonra gerçekleşecektir. Zaman kuralı öncelikli olduğundan, 8. vuruş bunun yerine Buz elementi uygular ve zamanlayıcıyı yeniden başlatır.\nBu 3 vuruş kuralı ve 2.5 saniye zaman kuralı genellikle ''Standart Dahili Bekleme Süresi'' olarak adlandırılır, çünkü bu değerler en yaygın olanlardır. Bazı istisnaların hiç kuralı yoktur, bir zaman veya vuruş kuralı eksiktir veya bu kuralların değiştirilmiş haline sahiptir.\nBu tür istisnalara örnek olarak Xiangling'in Element Patlaması (Dahili Bekleme Süresi yok) veya Fischl'ın Oz Saldırıları (4 vuruş kuralı ve 5 saniye zaman kuralı) verilebilir."
+      },
+      {
         "type": "Heading",
         "level": 1,
         "text": "Hasar Vermeyen Tepkimeler",
@@ -223,40 +257,6 @@
         "type": "CustomImage",
         "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/3c436038857810cddd36dcbcd2a25307_2246617110877344145.png",
         "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Bir Element Tepkimesi, hali hazırda bir elementten etkilenmiş olan hedefe farklı elementler uygulandığında meydana gelir.\nGenshin Impact'te her biri kullanılarak tetiklenebilen en az 1 reaksiyona sahip yedi element vardır. Bununla birlikte, bazı unsanlar başka bir unsurla etkileşime girmediğinden bu tepkimelerde bazı kısıtlamalar vardır: Toprak, Doğa ve Rüzgar ile tepkiyeme girmez. Doğa ile Buz tepkimeye girmez.\nElement Tepkimeleri, Hasar Vermeyen Tepkimeler, Güçlendirici Tepkimeler, Dönüştürücü Tepkimeler ve Katkılı Tepkimeler olarak ayrı kategorilere ayrılabilir.\nBelirli mekanizmaları ve etkileşimleri daha iyi anlamak için, birkaç terimi ve mekanizmayı ana hatlarıyla belirtmek ve tanımlamak yararlı olacaktır. Bunlar toplulukta yerleşik bir kullanım alanı bulmuş ve kendini bu işe adamış oyuncular tarafından yapılan titiz testler ve araştırmalar sonucunda belirlenmiştir. Bu mekanizmalardan bazıları karmaşıktır, bu nedenle burada listelenenlerde sadece kısa bir özettir."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Tetiklemeler ve Auralar",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Tepkimelerden bahsederken, bazıları kullanım sırasını önemserken, bazıları ise önemsememektedir. Bir düşmanın Elektrik veya Buz tarafından etkilenmesi fark etmez, ilgili diğer element uygulandığı anda ''Süper İletim'' reaksiyonu meydana gelir ve etki aynıdır. Ancak, Buharlaşma tepkimesini tetikleyenin Ateş ya da Su olması arasında bir fark vardır. Çünkü burada uygulama sırasının tepkime üzerinde bir etkisi vardır (x2 çarpanına kıyasla x1,5 çarpanı).\nBu konudaki iletişimi kolaylaştırmak için topluluk ''Aura'' ve ''Tetikleyici'' terimlerini benimsemiştir. ''Aura'' terimi, normal durumdaki hedeflerin ilk olarak hangi element tarafından etkilendiğini tanımlamak için kullanılır. ''Tetikleyici'' terimi, hangi unsurun element tepkimesini tetiklediğini tanımlamak için kullanılır."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Element Ölçme Teorisi",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Element Ölçme Teorisi, element auralarının kendi güçlerine ve ilgili tetikleyicinin gücüne bağlı olarak farklı derecelerde ''tüketildiği'' anlayışını ifade eder. Bu durumda, bir element aurasının veya tetikleyicisinin gücü, bir saldırı hareketinin söz konusu elementi uygularken verdiği hasara değil, o saldırı için önceden tanımlanmış bir değerle belirlenir. Bu değerler uygulama sırası (güçlü veya zayıf unsurlar) ya da uygulamalar arasındaki süre (gecikme) gibi faktörlerle modüle edilebilir.\nAslında, belirli saldırılar bir elementi ''daha fazla'' ya da ''daha az'' uygular, bu da auranın veya tetikleyicinin gücüne yansıyabilir. Bu güç, örneği 1U Buz veya 2U Ateş gibi birimler halinde sayılır.\nAnlamanıza yardımcı olabilecek bazı örnekler:\nCharlotte'in Normal Saldırısı 1U Buz uygular ve Lisa'nın Normal Saldırısı 1U Elektrik uygular. Her ikisi de birbirini iptal eder ve ''Süper İletken'' tepkimesi meydana gelir\nXingqiu'nun Element Patlaması 1U Su uygularken, Hu Tao'nun Yüklü Saldırısı 1U Ateş uygular. Ancak bu durumda Ateş, Buharlaşma tepkimesinin ''zayıf'' elementi olduğundan, gücü yarıya iner; yani Xingqiu'nun Su aurasının yalnızca 0,5U'sunu tüketir. Bu da, saldırıdan sonra düşmanın üzerinde 0,5U Su etkisi kalacağını ve Hu Tao'nun ikinci bir tepkime gerçekleştirebileceği anlamına gelir.\nBenzer şekilde, Bennett'in Element Patlaması bir düşmana 2U Ateş uygular, ardından Mona'nın Normal Saldırısı 1U uygular. Ancak, Buharlaşma tepkimesinin ''güçlü'' elementi Su olduğundan, iki kat daha fazla tüketir ve ilk Ateş aurasını tamamen ortadan kaldırır.\nBu tetikleyicinin, bir düşman aurasından tüketilebilecek olandan daha fazla bir element uygulasa bile, elementin geri kalanını asla uygulamayacağı unutulmamalıdır. Bir saldırı ya da yeni bir element uygulayabilir, eğer yoksa bir aura oluşturabilir, bir tepkimeyi tetikleyebilir. Tek bir saldırı asla ikisini birden yapamaz."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Dahili Bekleme Süresi (ICD)",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Element Becerileri ve Patlamalarının bekleme süreleri olduğu ve sonrasında tekrar kullanılabildikleri gibi, bir element uygulayan çoğu saldırı da belirli kurallara uyar. Bu bekleme süreleri çoğunlukla birbirinden ayrıdır ve herhangi bir ölçme tarafından ölçülemez, bu nedenle Dahili Bekleme Süresi adı verilir.\nHerhangi bir dahili bekleme süresine sahip olmayan ve elementlerini her kullanımda ya da vuruşta uygulayan bazı istisnalar dışında, çoğu saldırı benzer kalıpları tekip eder. Aslında, zaman kuralı ve vuruş kuralı olmak üzere birlikte çalışan iki kural vardır ve zaman kuralı önceliklidir.\nBasitçe söylemek gerekirse, her X vuruşta aynı saldırı elementini tekrar uygulayabilirken, vuruşlardan bağımsız olarak da X saniyede bir uygular.\nBunun kısa bir örneği Kaeya'nın Element Patlamasıdır. Bu yetenek hızla döner ve hızlı Buz Hasarı verirken, her vuruş bir tepkimeyi tetikleyemez veya elementini uygulayamaz. Yani, her üç vuruşta bir Buz elementi uygulanır bu da 1, 4, 7, 10, 13, ... gibi vuruşlara denk gelir. Ayrıca, her 2,5 saniyede bir, bir sonraki vuruşun da elementi uygulayacağı garanti edilir. Daha önce bahsedilen vuruş kuralının üzerine yazılır ve bu kural 1'e sıfırlanır. Kaeya'nın Element Patlaması ile daha önce olduğu gibi aynı örnek, bu bir dizi olabilir:\n1,4,7 / 8,11,14 / 15,18,21 ...\nBu örnekteki zamanlayıcı 1. vuruştan sonra başlar. 7. vuruş 2,5 saniye sonra gerçekleşir, yani bir sonraki vuruş 2,5 saniye sonra gerçekleşecektir. Zaman kuralı öncelikli olduğundan, 8. vuruş bunun yerine Buz elementi uygular ve zamanlayıcıyı yeniden başlatır.\nBu 3 vuruş kuralı ve 2.5 saniye zaman kuralı genellikle ''Standart Dahili Bekleme Süresi'' olarak adlandırılır, çünkü bu değerler en yaygın olanlardır. Bazı istisnaların hiç kuralı yoktur, bir zaman veya vuruş kuralı eksiktir veya bu kuralların değiştirilmiş haline sahiptir.\nBu tür istisnalara örnek olarak Xiangling'in Element Patlaması (Dahili Bekleme Süresi yok) veya Fischl'ın Oz Saldırıları (4 vuruş kuralı ve 5 saniye zaman kuralı) verilebilir."
       }
     ]
   }

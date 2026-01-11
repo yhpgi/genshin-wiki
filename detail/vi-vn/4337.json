@@ -4,14 +4,594 @@
   "desc": "<p>Công cụ đo lường, ngày nay gần như tuyệt tích, có khả năng bắn tên.</p>",
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/4e67e6c313220ea1ca84a48d42d78806_2958322768956903626.png",
   "filterValues": {
-    "weaponType": "Cung",
     "weaponRarity": 4,
+    "weaponType": "Cung",
     "weaponProperty": "Tỷ Lệ Tấn Công"
   },
   "menuId": 4,
   "menuName": "Vũ Khí",
-  "version": 1695966553,
+  "version": 1767857681,
   "components": {
+    "story": [
+      {
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Trong quá khứ, đây là công cụ thường dùng trong xây dựng và thăm dò di tích.\nNgoài việc đo góc độ, còn có một chức năng đo khoảng cách vô cùng tiên tiến vào thời đó.\nDựa vào mũi tên đặc biệt được gia công tỉ mỉ cùng với đôi tay của chuyên gia đã được huấn luyện,\nSẽ có thể khiến mũi tên được bắn ra có đường bay thẳng tắp như ánh sáng.\nNgoài việc quy hoạch và xây dựng, thì nó cũng có công dụng trong việc thăm dò thậm chí là điều tra vụ án.\nTrong tay người thành thạo, loại công cụ đo lường khoảng cách này sẽ có thể phát huy độ chính xác cực kỳ cao.\nTrong công cuộc thăm dò di tích Remuria ngày xưa, đội thám hiểm cũng thường mang theo máy đo cự ly này,\nMục đích chủ yếu là dùng nó để định vị di tích cổ xưa đã bị hủy diệt và chôn vùi qua bao năm tháng.\nTrong tiểu thuyết Hurlock thịnh hành ở thời hậu thế,\nCũng có tình tiết lợi dụng nó để tìm kiếm mật thất.\nNgày nay trong những tiệm đồ cổ hoặc hầm của những tòa nhà vẫn có không ít máy đo cự ly nằm đóng bụi.\nTheo đà phát triển phổ biến của công cụ cùng loại, tiện lợi hơn và yêu cầu năng lực cá nhân thấp hơn,\nMũi tên đặc biệt này đã không còn được sản xuất nữa, nó cũng dần mờ nhạt trong cát bụi.\nBởi vì nó là một chiếc cung dài có thể mang theo bên người mà không bị nghi ngờ và tra hỏi,\nCho nên trong một vài thời đại đặc biệt, cũng được dùng vào những mục đích khác nằm ngoài thiết kế."
+          }
+        ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "CustomEntry",
+        "epId": 38,
+        "name": "Fischl",
+        "desc": "Tự xưng là \"Công Chúa Định Tội\", thiếu nữ thần bí đồng hành cùng chú quạ đen tên Oz.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Fischl_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Tinh Luyện",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Hạng\nHiệu Quả\nNguyên Liệu\n1",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Khi trị liệu hoặc nhận trị liệu sẽ nhận một Ký Hiệu Đoàn Kết, duy trì 30s, tối đa có được 3 Ký Hiệu. Khi thi triển Kỹ Năng Nguyên Tố hoặc Kỹ Năng Nộ sẽ tiêu hao tất cả Ký Hiệu để sản sinh hiệu quả Chống Đối trong 10s：Mỗi Ký Hiệu tiêu hao sẽ tăng <color=#37ffff>3%</color> tấn công và <color=#37ffff>7%</color> buff sát thương tất cả nguyên tố. Mỗi 15s tối đa kích hoạt một lần hiệu quả Chống Đối; Nhân vật không ra trận cũng có thể nhận được Ký Hiệu Đoàn Kết."
+      },
+      {
+        "type": "RichText",
+        "text": "2",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Khi trị liệu hoặc nhận trị liệu sẽ nhận một Ký Hiệu Đoàn Kết, duy trì 30s, tối đa có được 3 Ký Hiệu. Khi thi triển Kỹ Năng Nguyên Tố hoặc Kỹ Năng Nộ sẽ tiêu hao tất cả Ký Hiệu để sản sinh hiệu quả Chống Đối trong 10s：Mỗi Ký Hiệu tiêu hao sẽ tăng <color=#37ffff>4%</color> tấn công và <color=#37ffff>8.5%</color> buff sát thương tất cả nguyên tố. Mỗi 15s tối đa kích hoạt một lần hiệu quả Chống Đối; Nhân vật không ra trận cũng có thể nhận được Ký Hiệu Đoàn Kết."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4337,
+        "name": "Máy Đo Cự Ly",
+        "desc": "<p>Công cụ đo lường, ngày nay gần như tuyệt tích, có khả năng bắn tên.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/4e67e6c313220ea1ca84a48d42d78806_2958322768956903626.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "Mora",
+        "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 1000,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "3",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Khi trị liệu hoặc nhận trị liệu sẽ nhận một Ký Hiệu Đoàn Kết, duy trì 30s, tối đa có được 3 Ký Hiệu. Khi thi triển Kỹ Năng Nguyên Tố hoặc Kỹ Năng Nộ sẽ tiêu hao tất cả Ký Hiệu để sản sinh hiệu quả Chống Đối trong 10s：Mỗi Ký Hiệu tiêu hao sẽ tăng <color=#37ffff>5%</color> tấn công và <color=#37ffff>10%</color> buff sát thương tất cả nguyên tố. Mỗi 15s tối đa kích hoạt một lần hiệu quả Chống Đối; Nhân vật không ra trận cũng có thể nhận được Ký Hiệu Đoàn Kết."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4337,
+        "name": "Máy Đo Cự Ly",
+        "desc": "<p>Công cụ đo lường, ngày nay gần như tuyệt tích, có khả năng bắn tên.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/4e67e6c313220ea1ca84a48d42d78806_2958322768956903626.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "Mora",
+        "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 2000,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "4",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Khi trị liệu hoặc nhận trị liệu sẽ nhận một Ký Hiệu Đoàn Kết, duy trì 30s, tối đa có được 3 Ký Hiệu. Khi thi triển Kỹ Năng Nguyên Tố hoặc Kỹ Năng Nộ sẽ tiêu hao tất cả Ký Hiệu để sản sinh hiệu quả Chống Đối trong 10s：Mỗi Ký Hiệu tiêu hao sẽ tăng <color=#37ffff>6%</color> tấn công và <color=#37ffff>11.5%</color> buff sát thương tất cả nguyên tố. Mỗi 15s tối đa kích hoạt một lần hiệu quả Chống Đối; Nhân vật không ra trận cũng có thể nhận được Ký Hiệu Đoàn Kết."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4337,
+        "name": "Máy Đo Cự Ly",
+        "desc": "<p>Công cụ đo lường, ngày nay gần như tuyệt tích, có khả năng bắn tên.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/4e67e6c313220ea1ca84a48d42d78806_2958322768956903626.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "Mora",
+        "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 4000,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "5",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Khi trị liệu hoặc nhận trị liệu sẽ nhận một Ký Hiệu Đoàn Kết, duy trì 30s, tối đa có được 3 Ký Hiệu. Khi thi triển Kỹ Năng Nguyên Tố hoặc Kỹ Năng Nộ sẽ tiêu hao tất cả Ký Hiệu để sản sinh hiệu quả Chống Đối trong 10s：Mỗi Ký Hiệu tiêu hao sẽ tăng <color=#37ffff>7%</color> tấn công và <color=#37ffff>13%</color> buff sát thương tất cả nguyên tố. Mỗi 15s tối đa kích hoạt một lần hiệu quả Chống Đối; Nhân vật không ra trận cũng có thể nhận được Ký Hiệu Đoàn Kết."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4337,
+        "name": "Máy Đo Cự Ly",
+        "desc": "<p>Công cụ đo lường, ngày nay gần như tuyệt tích, có khả năng bắn tên.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/4e67e6c313220ea1ca84a48d42d78806_2958322768956903626.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "Mora",
+        "desc": "Tiền lưu hành trong đại lục. Là ngôn ngữ chung của thế giới.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 8000,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Nguồn Gốc",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Cầu Nguyện Vũ Khí"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Thân Hình Thần Đúc</color>\n<color=#37ffff>Phiên Bản 4.1 - Giai Đoạn 2</color>\n<color=#ffe14b>17/10/2023 - 7/11/2023</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>5 sao</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4340,
+        "name": "Quản Đốc Vàng Ròng",
+        "desc": "<p>Thiết bị lơ lửng, có thể giám sát hiện tượng nhất định. Sau khi bị bỏ đi đã được người nhặt cải tạo thành công dụng khác.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/6d8248633da24c16368b6570bf578874_8361014458384686248.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2008,
+        "name": "Tiếng Thở Dài Vô Tận",
+        "desc": "Cây cung đẹp hoàn mỹ như nhạc cụ của thi nhân, tên bắn ra như tiếng than ai oán xuyên thấu tâm can.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/终末嗟叹之诗.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4 sao</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1980,
+        "name": "Chiêu Tâm",
+        "desc": "Trân châu u ám, tương truyền sở hữu sức mạnh nhìn thấu tâm can.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/昭心.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4337,
+        "name": "Máy Đo Cự Ly",
+        "desc": "<p>Công cụ đo lường, ngày nay gần như tuyệt tích, có khả năng bắn tên.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/4e67e6c313220ea1ca84a48d42d78806_2958322768956903626.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2042,
+        "name": "Vũ Tài",
+        "desc": "Đại kiếm tỏa ra ánh sáng ảm đạm, chỉ dùng khí thế và sức mạnh để đàn áp kẻ địch.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/雨裁.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2017,
+        "name": "Tây Phong Kiếm",
+        "desc": "Kiếm nghi thức của Đội Kỵ Sĩ Tây Phong. Sắc bén nhẹ nhàng, cũng dễ phát ra sức mạnh Nguyên Tố.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4336,
+        "name": "Mũi Khoan Thăm Dò",
+        "desc": "<p>Máy khoan cán dài, ngày nay gần như tuyệt tích. Thường dùng trong thăm dò và chạm khắc đá.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/4bfc21303d8ff98cd546aae980b55090_5595392338032576094.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Thân Hình Thần Đúc</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/07/207831475/9db08dbbf3ed99bf9df22431bc49df41_6121273695658503034.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#37ffff>Phiên Bản 4.6 - Giai Đoạn 2</color>\n<color=#ffe14b>14/5/2024 - 4/6/2024</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>5 sao</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3320,
+        "name": "Hồi Ức Tulaytullah",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.45)\">Chiếc chuông được khắc từ bạc và lam bảo thạch, âm thanh của nó vang vọng rất xa.</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/10/148664880/8de363bf716e4538ba86014fbea827ef_126826927501179878.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3692,
+        "name": "Ngọc Bích Huy Hoàng",
+        "desc": "<p>Pháp khí nghi lễ được chạm khắc từ ngọc bích, phản chiếu ánh sáng của bầu trời và làn nước trong vắt.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/25/12108544/a6eababb266aa4ee675abf96554b08c3_2421166098204624857.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4 sao</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4337,
+        "name": "Máy Đo Cự Ly",
+        "desc": "<p>Công cụ đo lường, ngày nay gần như tuyệt tích, có khả năng bắn tên.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/4e67e6c313220ea1ca84a48d42d78806_2958322768956903626.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2042,
+        "name": "Vũ Tài",
+        "desc": "Đại kiếm tỏa ra ánh sáng ảm đạm, chỉ dùng khí thế và sức mạnh để đàn áp kẻ địch.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/雨裁.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2017,
+        "name": "Tây Phong Kiếm",
+        "desc": "Kiếm nghi thức của Đội Kỵ Sĩ Tây Phong. Sắc bén nhẹ nhàng, cũng dễ phát ra sức mạnh Nguyên Tố.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风剑.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4336,
+        "name": "Mũi Khoan Thăm Dò",
+        "desc": "<p>Máy khoan cán dài, ngày nay gần như tuyệt tích. Thường dùng trong thăm dò và chạm khắc đá.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/4bfc21303d8ff98cd546aae980b55090_5595392338032576094.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2006,
+        "name": "Mảnh Chương Tế Lễ",
+        "desc": "Cuốn kịch bản có thời gian lịch sử lâu dài, ghi lại những lời chúc phúc không còn nhận ra được nữa. Bị nguyền rủa, ăn mòn bởi gió thời gian.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/祭礼残章.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Thân Hình Thần Đúc</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/07/207831475/b1e00fe3d86fcca0d49ca36ac2d645d9_6373226124907760532.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#37ffff>Phiên Bản 5.6 - Giai Đoạn 1</color>\n<color=#ffe14b>7/5/2025 - 27/5/2025</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>5 sao</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7640,
+        "name": "Nhạc Sĩ Hương Thơm",
+        "desc": "Ngọn thương dài với tạo hình tao nhã, nghe nói từng là gậy chỉ huy của một nhạc sĩ vĩ đại nào đó sử dụng để tạo nên cây cầu nối giữa âm nhạc và vị giác.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/f1928d012621b1f03577efc4f619894a_6810995251642628479.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4719,
+        "name": "Phán Quyết",
+        "desc": "Vũ khí từng được thiếu nữ từ bỏ dòng họ của mình sử dụng, đã nhuốm qua máu của kẻ thù lẫn người yêu thương.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2023/12/13/4f35f9bf1bceead8fa216873ce321847_6475651973647579739.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4 sao</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4337,
+        "name": "Máy Đo Cự Ly",
+        "desc": "<p>Công cụ đo lường, ngày nay gần như tuyệt tích, có khả năng bắn tên.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/4e67e6c313220ea1ca84a48d42d78806_2958322768956903626.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4336,
+        "name": "Mũi Khoan Thăm Dò",
+        "desc": "<p>Máy khoan cán dài, ngày nay gần như tuyệt tích. Thường dùng trong thăm dò và chạm khắc đá.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/4bfc21303d8ff98cd546aae980b55090_5595392338032576094.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1991,
+        "name": "Chương Nhạc Lang Thang",
+        "desc": "Quyển sổ dày ghi chép nhiều bản nhạc. Tuy rằng bị mọt gặm nhấm, nhưng bút tích còn sót lại vẫn phát ra sức mạnh.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/流浪乐章.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4334,
+        "name": "Kiếm Bến Tàu",
+        "desc": "<p>Công cụ cắt gọt tiện lợi, ngày nay gần như tuyệt tích. Có thể thay thế lưỡi dao bị cùn trong quá trình sử dụng.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/eac5d6d4056f7b28c876e64866825e46_7865989018001153028.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4335,
+        "name": "Máy Cưa Cầm Tay",
+        "desc": "<p>Máy cưa kiểu cũ, ngày nay gần như tuyệt tích. Nó từng là công cụ cắt rất được các công nhân ưa dùng.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/ac81c1e26d35d3742320975fffe21ee8_2551189465465075600.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Thân Hình Thần Đúc</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/07/207831475/5fa82f0ea051b63a84c3b654ca4b551c_2776190343333382212.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#37ffff>Phiên Bản 5.6 - Giai Đoạn 1</color>\n<color=#ffe14b>7/5/2025 - 27/5/2025</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>5 sao</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7640,
+        "name": "Nhạc Sĩ Hương Thơm",
+        "desc": "Ngọn thương dài với tạo hình tao nhã, nghe nói từng là gậy chỉ huy của một nhạc sĩ vĩ đại nào đó sử dụng để tạo nên cây cầu nối giữa âm nhạc và vị giác.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/f1928d012621b1f03577efc4f619894a_6810995251642628479.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4719,
+        "name": "Phán Quyết",
+        "desc": "Vũ khí từng được thiếu nữ từ bỏ dòng họ của mình sử dụng, đã nhuốm qua máu của kẻ thù lẫn người yêu thương.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2023/12/13/4f35f9bf1bceead8fa216873ce321847_6475651973647579739.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4 sao</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4337,
+        "name": "Máy Đo Cự Ly",
+        "desc": "<p>Công cụ đo lường, ngày nay gần như tuyệt tích, có khả năng bắn tên.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/4e67e6c313220ea1ca84a48d42d78806_2958322768956903626.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4336,
+        "name": "Mũi Khoan Thăm Dò",
+        "desc": "<p>Máy khoan cán dài, ngày nay gần như tuyệt tích. Thường dùng trong thăm dò và chạm khắc đá.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/4bfc21303d8ff98cd546aae980b55090_5595392338032576094.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1991,
+        "name": "Chương Nhạc Lang Thang",
+        "desc": "Quyển sổ dày ghi chép nhiều bản nhạc. Tuy rằng bị mọt gặm nhấm, nhưng bút tích còn sót lại vẫn phát ra sức mạnh.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/流浪乐章.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4334,
+        "name": "Kiếm Bến Tàu",
+        "desc": "<p>Công cụ cắt gọt tiện lợi, ngày nay gần như tuyệt tích. Có thể thay thế lưỡi dao bị cùn trong quá trình sử dụng.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/eac5d6d4056f7b28c876e64866825e46_7865989018001153028.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4335,
+        "name": "Máy Cưa Cầm Tay",
+        "desc": "<p>Máy cưa kiểu cũ, ngày nay gần như tuyệt tích. Nó từng là công cụ cắt rất được các công nhân ưa dùng.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/ac81c1e26d35d3742320975fffe21ee8_2551189465465075600.png",
+        "displayStyle": "card",
+        "menuId": 4
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Nguyên Gốc",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/35ae5c31d7e26216f13e814c9912a3ff_7570657057642020289.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Trước khi Đột Phá lần 2"
+          }
+        ]
+      },
+      {
+        "key": "Đã Đột Phá",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/58b80f4afb5cad6c1373dcf1e198a3ab_5531913422218931831.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Sau Đột Phá lần 2"
+          }
+        ]
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "Tên",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Máy Đo Cự Ly"
+          }
+        ]
+      },
+      {
+        "key": "Khu Vực",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Fontaine"
+          }
+        ]
+      },
+      {
+        "key": "Nguồn Gốc",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Cầu Nguyện"
+          }
+        ]
+      },
+      {
+        "key": "Loại",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Cung"
+          }
+        ]
+      },
+      {
+        "key": "Thuộc Tính Phụ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Tỷ Lệ Tấn Công"
+          }
+        ]
+      },
+      {
+        "key": "Khúc Ca Thợ Đẽo Đá",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Khi trị liệu hoặc nhận trị liệu sẽ nhận một Ký Hiệu Đoàn Kết, duy trì 30s, tối đa có được 3 Ký Hiệu. Khi thi triển Kỹ Năng Nguyên Tố hoặc Kỹ Năng Nộ sẽ tiêu hao tất cả Ký Hiệu để sản sinh hiệu quả Chống Đối trong 10s：Mỗi Ký Hiệu tiêu hao sẽ tăng <color=#37ffff>3</color> || <color=#37ffff>4</color> || <color=#37ffff>5</color> || <color=#37ffff>6</color> || <color=#37ffff>7%</color> tấn công và <color=#37ffff>7</color> || <color=#37ffff>8.5</color> || <color=#37ffff>10</color> || <color=#37ffff>11.5</color> || <color=#37ffff>13%</color> buff sát thương tất cả nguyên tố. Mỗi 15s tối đa kích hoạt một lần hiệu quả Chống Đối; Nhân vật không ra trận cũng có thể nhận được Ký Hiệu Đoàn Kết."
+          }
+        ]
+      },
+      {
+        "key": "Phiên Bản Phát Hành",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "4.1"
+          }
+        ]
+      }
+    ],
     "ascension": [
       {
         "key": "Lv.1",
@@ -382,103 +962,6 @@
               "-",
               "27.6%"
             ]
-          }
-        ]
-      }
-    ],
-    "story": [
-      {
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Trong quá khứ, đây là công cụ thường dùng trong xây dựng và thăm dò di tích.\nNgoài việc đo góc độ, còn có một chức năng đo khoảng cách vô cùng tiên tiến vào thời đó.\nDựa vào mũi tên đặc biệt được gia công tỉ mỉ cùng với đôi tay của chuyên gia đã được huấn luyện,\nSẽ có thể khiến mũi tên được bắn ra có đường bay thẳng tắp như ánh sáng.\nNgoài việc quy hoạch và xây dựng, thì nó cũng có công dụng trong việc thăm dò thậm chí là điều tra vụ án.\nTrong tay người thành thạo, loại công cụ đo lường khoảng cách này sẽ có thể phát huy độ chính xác cực kỳ cao.\nTrong công cuộc thăm dò di tích Remuria ngày xưa, đội thám hiểm cũng thường mang theo máy đo cự ly này,\nMục đích chủ yếu là dùng nó để định vị di tích cổ xưa đã bị hủy diệt và chôn vùi qua bao năm tháng.\nTrong tiểu thuyết Hurlock thịnh hành ở thời hậu thế,\nCũng có tình tiết lợi dụng nó để tìm kiếm mật thất.\nNgày nay trong những tiệm đồ cổ hoặc hầm của những tòa nhà vẫn có không ít máy đo cự ly nằm đóng bụi.\nTheo đà phát triển phổ biến của công cụ cùng loại, tiện lợi hơn và yêu cầu năng lực cá nhân thấp hơn,\nMũi tên đặc biệt này đã không còn được sản xuất nữa, nó cũng dần mờ nhạt trong cát bụi.\nBởi vì nó là một chiếc cung dài có thể mang theo bên người mà không bị nghi ngờ và tra hỏi,\nCho nên trong một vài thời đại đặc biệt, cũng được dùng vào những mục đích khác nằm ngoài thiết kế."
-          }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Tên",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Máy Đo Cự Ly"
-          }
-        ]
-      },
-      {
-        "key": "Khu Vực",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Fontaine"
-          }
-        ]
-      },
-      {
-        "key": "Nguồn Gốc",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Cầu Nguyện"
-          }
-        ]
-      },
-      {
-        "key": "Loại",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Cung"
-          }
-        ]
-      },
-      {
-        "key": "Thuộc Tính Phụ",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Tỷ Lệ Tấn Công"
-          }
-        ]
-      },
-      {
-        "key": "Khúc Ca Thợ Đẽo Đá",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Khi trị liệu hoặc nhận trị liệu sẽ nhận một Ký Hiệu Đoàn Kết, duy trì 30s, tối đa có được 3 Ký Hiệu. Khi thi triển Kỹ Năng Nguyên Tố hoặc Kỹ Năng Nộ sẽ tiêu hao tất cả Ký Hiệu để sản sinh hiệu quả Chống Đối trong 10s：Mỗi Ký Hiệu tiêu hao sẽ tăng <color=#37ffff>3</color> || <color=#37ffff>4</color> || <color=#37ffff>5</color> || <color=#37ffff>6</color> || <color=#37ffff>7%</color> tấn công và <color=#37ffff>7</color> || <color=#37ffff>8.5</color> || <color=#37ffff>10</color> || <color=#37ffff>11.5</color> || <color=#37ffff>13%</color> buff sát thương tất cả nguyên tố. Mỗi 15s tối đa kích hoạt một lần hiệu quả Chống Đối; Nhân vật không ra trận cũng có thể nhận được Ký Hiệu Đoàn Kết."
-          }
-        ]
-      },
-      {
-        "key": "Phiên Bản Phát Hành",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "4.1"
-          }
-        ]
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Nguyên Gốc",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/35ae5c31d7e26216f13e814c9912a3ff_7570657057642020289.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Trước khi Đột Phá lần 2"
-          }
-        ]
-      },
-      {
-        "key": "Đã Đột Phá",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/23/12108544/58b80f4afb5cad6c1373dcf1e198a3ab_5531913422218931831.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Sau Đột Phá lần 2"
           }
         ]
       }
