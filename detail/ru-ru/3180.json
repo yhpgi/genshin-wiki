@@ -7,33 +7,527 @@
     "cardCharacterCamp": [
       "Мондштадт"
     ],
+    "cardCharacterElement": "Гидро",
     "cardCharacterObtainingMethod": "Приглашение персонажа",
     "cardCharacterWeaponType": "Катализатор",
-    "cardCharacterChargingPoint": "Энергия: 3",
-    "cardCharacterElement": "Гидро"
+    "cardCharacterChargingPoint": "Энергия: 3"
   },
   "menuId": 17,
   "menuName": "Карты персонажей",
   "version": 1714859134,
   "components": {
-    "galleryCharacter": [
+    "customize": [
       {
-        "key": "Чудесное сияние",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/14/124137736/40b17be0ac2d512144e904da799893d3_5878536094028379575.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "*Наносимый урон навыка, его стоимость по энергии и некоторые другие параметры могут отличаться в текущей версии"
-          }
-        ]
+        "type": "Heading",
+        "level": 1,
+        "text": "Голографический дизайн",
+        "alignment": "center"
       },
       {
-        "key": "Аватар (иконка)",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/14/124137736/5b4e3d846b1c5d0b0a911d5dbc140e5d_8386909762475250278.png"
+        "type": "Heading",
+        "level": 3,
+        "text": "Покупка в Карточном магазине"
       },
       {
-        "key": "Кольцо мелодии (голографический дизайн)",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/14/124137736/edb60fdb67387500adccaa4383da4647_7145295978518344185.gif"
+        "type": "RichText",
+        "text": "<color=#ffffff>Товар</color>\n<color=#ffffff>Количество</color>\n<color=#ffffff>Стоимость</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/14/124137736/ea7492a8e32b170aedbdb4e353a80a47_7769991626546439244.gif",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "1",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3333,
+        "name": "Счастливая монета",
+        "desc": "<p>Валюта, выпущенная Ассоциацией игроков. Счастливые монеты можно использовать для покупки целого ряда предметов, связанных со «Священным призывом семерых». Говорят, монеты назвали так в надежде, что они принесут удачу своим обладателям. Однако на деле получить их в своё распоряжение могут лишь настоящие счастливцы...</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/c85bfab46d8c95659ab6dfb2e1629a87_9183176432317465083.png",
+        "amount": 4000,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "Также можно получить в обмен на"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3331,
+        "name": "Пустая голографическая карта",
+        "desc": "<p>Пустая голографическая карта с рисунком на рубашке. Говорят, если написать на ней название голографической карты, которую хотите получить, представитель Ассоциации игроков в таверне выдаст вам соответствующий дизайн.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/05/70239714/03b60aec345461dae970832766ebacf8_4161071100690928956.png",
+        "displayStyle": "text"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Священный призыв семерых",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Дружеская дуэль: Барбара"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Об уровне</color>\n«Мне кажется, я плохо разбираюсь в этой игре. Но если больше практиковаться...»\nПодсказка: колода Барбары создаёт эффекты исцеления и вытягивания карт, что значительно затрудняет ходы противника.\n<color=#ffffffd9>Отряд противника</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3180,
+        "name": "Барбара",
+        "desc": "<p><strong><span style=\"color: rgba(255, 255, 255, 0.85)\">«Сияющая Звёздочка»</span></strong></p><p>Готова исцелять сердца и успокаивать души.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3178,
+        "name": "Мона",
+        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Звёздное отражение» Мона</span></strong></p><p>Победа или поражение - всё решают звёзды.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/2c2d8a83c9a5a9a97531fee1491efa85_3293537657944487120.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3175,
+        "name": "Кэйа",
+        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Зимний клинок» Кэйя</span></strong></p><p>Специализируется на пробуждении рыцарской доблести в других.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/a4641f3c8a186e2948662aa255638a9c_849205666599120506.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Требования</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3332,
+        "name": "Приглашение на дуэль",
+        "desc": "<p>Вы можете выбрать соперника из списка на Доске приглашений в таверне «Кошкин хвост», а затем отправить ему это письмо. Приглашённый соперник явится в таверну и будет ждать начала дуэли.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/8fbec79732d539893ff44c636483df50_2774662258139688666.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Цели"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Награда"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Одержите победу</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3180,
+        "name": "Барбара",
+        "desc": "<p><strong><span style=\"color: rgba(255, 255, 255, 0.85)\">«Сияющая Звёздочка»</span></strong></p><p>Готова исцелять сердца и успокаивать души.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Одержите победу за 6 раундов</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3209,
+        "name": "Урожайный сезон",
+        "desc": "<p>У меня есть для тебя песня...</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/07/51635400/aa789839f8ba60109a7e52b1b5541315_6003536399476285187.png",
+        "displayStyle": "card",
+        "menuId": 18
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Одержите победу, потеряв персонажей менее двух раз</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3209,
+        "name": "Урожайный сезон",
+        "desc": "<p>У меня есть для тебя песня...</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/07/51635400/aa789839f8ba60109a7e52b1b5541315_6003536399476285187.png",
+        "displayStyle": "card",
+        "menuId": 18
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Серьёзная схватка: Барбара"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Об уровне</color>\n«Если я буду стараться, то смогу порадовать окружающих даже через Священный призыв семерых!»\n<color=#ffd780>Особое правило: Барбара начинает с экипированной картой таланта «Урожайный сезон».</color>\n<color=#ffffffd9>Отряд противника</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3180,
+        "name": "Барбара",
+        "desc": "<p><strong><span style=\"color: rgba(255, 255, 255, 0.85)\">«Сияющая Звёздочка»</span></strong></p><p>Готова исцелять сердца и успокаивать души.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3178,
+        "name": "Мона",
+        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Звёздное отражение» Мона</span></strong></p><p>Победа или поражение - всё решают звёзды.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/2c2d8a83c9a5a9a97531fee1491efa85_3293537657944487120.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3175,
+        "name": "Кэйа",
+        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Зимний клинок» Кэйя</span></strong></p><p>Специализируется на пробуждении рыцарской доблести в других.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/a4641f3c8a186e2948662aa255638a9c_849205666599120506.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Требования</color>\n• Достичь 10 уровня игрока\n• Выполнить 3 цели в Дружеской дуэли с Барбарой"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Цели"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Награда"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Одержите победу</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3333,
+        "name": "Счастливая монета",
+        "desc": "<p>Валюта, выпущенная Ассоциацией игроков. Счастливые монеты можно использовать для покупки целого ряда предметов, связанных со «Священным призывом семерых». Говорят, монеты назвали так в надежде, что они принесут удачу своим обладателям. Однако на деле получить их в своё распоряжение могут лишь настоящие счастливцы...</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/c85bfab46d8c95659ab6dfb2e1629a87_9183176432317465083.png",
+        "amount": 1000,
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Гостевое испытание: Барбара"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Об уровне</color>\n«Мне кажется, я плохо разбираюсь в этой игре. Но если больше практиковаться...»\nПодсказка: колода Барбары создаёт эффекты исцеления и вытягивания карт, что значительно затрудняет ходы противника."
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Уровень Новичка</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Отряд противника</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3180,
+        "name": "Барбара",
+        "desc": "<p><strong><span style=\"color: rgba(255, 255, 255, 0.85)\">«Сияющая Звёздочка»</span></strong></p><p>Готова исцелять сердца и успокаивать души.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3178,
+        "name": "Мона",
+        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Звёздное отражение» Мона</span></strong></p><p>Победа или поражение - всё решают звёзды.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/2c2d8a83c9a5a9a97531fee1491efa85_3293537657944487120.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3175,
+        "name": "Кэйа",
+        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Зимний клинок» Кэйя</span></strong></p><p>Специализируется на пробуждении рыцарской доблести в других.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/a4641f3c8a186e2948662aa255638a9c_849205666599120506.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Награда</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3816,
+        "name": "Опыт игрока",
+        "desc": "<p>Приносится победой в игре «Священный призыв семерых». С каждой выигранной дуэлью соперник накапливает манёвры и приёмы, помогающие ему одержать победу. Что бы ни случилось, опытный соперник знает, как победить, и в этом заключается его главная сила.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/13/237301566/a3dfc591cecc908ea00f31c9a3de083f_1277672688273387241.png",
+        "amount": 200,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3333,
+        "name": "Счастливая монета",
+        "desc": "<p>Валюта, выпущенная Ассоциацией игроков. Счастливые монеты можно использовать для покупки целого ряда предметов, связанных со «Священным призывом семерых». Говорят, монеты назвали так в надежде, что они принесут удачу своим обладателям. Однако на деле получить их в своё распоряжение могут лишь настоящие счастливцы...</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/c85bfab46d8c95659ab6dfb2e1629a87_9183176432317465083.png",
+        "amount": 300,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Уровень Знатока</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Отряд противника</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3180,
+        "name": "Барбара",
+        "desc": "<p><strong><span style=\"color: rgba(255, 255, 255, 0.85)\">«Сияющая Звёздочка»</span></strong></p><p>Готова исцелять сердца и успокаивать души.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3178,
+        "name": "Мона",
+        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Звёздное отражение» Мона</span></strong></p><p>Победа или поражение - всё решают звёзды.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/2c2d8a83c9a5a9a97531fee1491efa85_3293537657944487120.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3175,
+        "name": "Кэйа",
+        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Зимний клинок» Кэйя</span></strong></p><p>Специализируется на пробуждении рыцарской доблести в других.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/a4641f3c8a186e2948662aa255638a9c_849205666599120506.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Награда</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3816,
+        "name": "Опыт игрока",
+        "desc": "<p>Приносится победой в игре «Священный призыв семерых». С каждой выигранной дуэлью соперник накапливает манёвры и приёмы, помогающие ему одержать победу. Что бы ни случилось, опытный соперник знает, как победить, и в этом заключается его главная сила.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/13/237301566/a3dfc591cecc908ea00f31c9a3de083f_1277672688273387241.png",
+        "amount": 200,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3333,
+        "name": "Счастливая монета",
+        "desc": "<p>Валюта, выпущенная Ассоциацией игроков. Счастливые монеты можно использовать для покупки целого ряда предметов, связанных со «Священным призывом семерых». Говорят, монеты назвали так в надежде, что они принесут удачу своим обладателям. Однако на деле получить их в своё распоряжение могут лишь настоящие счастливцы...</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/c85bfab46d8c95659ab6dfb2e1629a87_9183176432317465083.png",
+        "amount": 600,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Уровень Эксперта</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Отряд противника</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3180,
+        "name": "Барбара",
+        "desc": "<p><strong><span style=\"color: rgba(255, 255, 255, 0.85)\">«Сияющая Звёздочка»</span></strong></p><p>Готова исцелять сердца и успокаивать души.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3178,
+        "name": "Мона",
+        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Звёздное отражение» Мона</span></strong></p><p>Победа или поражение - всё решают звёзды.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/2c2d8a83c9a5a9a97531fee1491efa85_3293537657944487120.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3175,
+        "name": "Кэйа",
+        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Зимний клинок» Кэйя</span></strong></p><p>Специализируется на пробуждении рыцарской доблести в других.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/a4641f3c8a186e2948662aa255638a9c_849205666599120506.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Награда</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3816,
+        "name": "Опыт игрока",
+        "desc": "<p>Приносится победой в игре «Священный призыв семерых». С каждой выигранной дуэлью соперник накапливает манёвры и приёмы, помогающие ему одержать победу. Что бы ни случилось, опытный соперник знает, как победить, и в этом заключается его главная сила.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/13/237301566/a3dfc591cecc908ea00f31c9a3de083f_1277672688273387241.png",
+        "amount": 200,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3333,
+        "name": "Счастливая монета",
+        "desc": "<p>Валюта, выпущенная Ассоциацией игроков. Счастливые монеты можно использовать для покупки целого ряда предметов, связанных со «Священным призывом семерых». Говорят, монеты назвали так в надежде, что они принесут удачу своим обладателям. Однако на деле получить их в своё распоряжение могут лишь настоящие счастливцы...</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/c85bfab46d8c95659ab6dfb2e1629a87_9183176432317465083.png",
+        "amount": 900,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Уровень Мастера</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Отряд противника</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3180,
+        "name": "Барбара",
+        "desc": "<p><strong><span style=\"color: rgba(255, 255, 255, 0.85)\">«Сияющая Звёздочка»</span></strong></p><p>Готова исцелять сердца и успокаивать души.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3178,
+        "name": "Мона",
+        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Звёздное отражение» Мона</span></strong></p><p>Победа или поражение - всё решают звёзды.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/2c2d8a83c9a5a9a97531fee1491efa85_3293537657944487120.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3175,
+        "name": "Кэйа",
+        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Зимний клинок» Кэйя</span></strong></p><p>Специализируется на пробуждении рыцарской доблести в других.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/a4641f3c8a186e2948662aa255638a9c_849205666599120506.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Награда</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3816,
+        "name": "Опыт игрока",
+        "desc": "<p>Приносится победой в игре «Священный призыв семерых». С каждой выигранной дуэлью соперник накапливает манёвры и приёмы, помогающие ему одержать победу. Что бы ни случилось, опытный соперник знает, как победить, и в этом заключается его главная сила.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/13/237301566/a3dfc591cecc908ea00f31c9a3de083f_1277672688273387241.png",
+        "amount": 200,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3333,
+        "name": "Счастливая монета",
+        "desc": "<p>Валюта, выпущенная Ассоциацией игроков. Счастливые монеты можно использовать для покупки целого ряда предметов, связанных со «Священным призывом семерых». Говорят, монеты назвали так в надежде, что они принесут удачу своим обладателям. Однако на деле получить их в своё распоряжение могут лишь настоящие счастливцы...</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/c85bfab46d8c95659ab6dfb2e1629a87_9183176432317465083.png",
+        "amount": 1200,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Уровень Легенды</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Отряд противника</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3180,
+        "name": "Барбара",
+        "desc": "<p><strong><span style=\"color: rgba(255, 255, 255, 0.85)\">«Сияющая Звёздочка»</span></strong></p><p>Готова исцелять сердца и успокаивать души.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3178,
+        "name": "Мона",
+        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Звёздное отражение» Мона</span></strong></p><p>Победа или поражение - всё решают звёзды.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/2c2d8a83c9a5a9a97531fee1491efa85_3293537657944487120.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3175,
+        "name": "Кэйа",
+        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Зимний клинок» Кэйя</span></strong></p><p>Специализируется на пробуждении рыцарской доблести в других.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/a4641f3c8a186e2948662aa255638a9c_849205666599120506.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Награда</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3816,
+        "name": "Опыт игрока",
+        "desc": "<p>Приносится победой в игре «Священный призыв семерых». С каждой выигранной дуэлью соперник накапливает манёвры и приёмы, помогающие ему одержать победу. Что бы ни случилось, опытный соперник знает, как победить, и в этом заключается его главная сила.</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/13/237301566/a3dfc591cecc908ea00f31c9a3de083f_1277672688273387241.png",
+        "amount": 200,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3333,
+        "name": "Счастливая монета",
+        "desc": "<p>Валюта, выпущенная Ассоциацией игроков. Счастливые монеты можно использовать для покупки целого ряда предметов, связанных со «Священным призывом семерых». Говорят, монеты назвали так в надежде, что они принесут удачу своим обладателям. Однако на деле получить их в своё распоряжение могут лишь настоящие счастливцы...</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/c85bfab46d8c95659ab6dfb2e1629a87_9183176432317465083.png",
+        "amount": 1500,
+        "displayStyle": "card"
       }
     ],
     "baseInfo": [
@@ -145,534 +639,6 @@
         "isMaterial": true
       }
     ],
-    "customize": [
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Голографический дизайн",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Покупка в Карточном магазине"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Товар</color>\n<color=#ffffff>Количество</color>\n<color=#ffffff>Стоимость</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/14/124137736/ea7492a8e32b170aedbdb4e353a80a47_7769991626546439244.gif",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "1",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3333,
-        "name": "Счастливая монета",
-        "desc": "<p>Валюта, выпущенная Ассоциацией игроков. Счастливые монеты можно использовать для покупки целого ряда предметов, связанных со «Священным призывом семерых». Говорят, монеты назвали так в надежде, что они принесут удачу своим обладателям. Однако на деле получить их в своё распоряжение могут лишь настоящие счастливцы...</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/c85bfab46d8c95659ab6dfb2e1629a87_9183176432317465083.png",
-        "amount": 4000,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "Также можно получить в обмен на"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3331,
-        "name": "Пустая голографическая карта",
-        "desc": "<p>Пустая голографическая карта с рисунком на рубашке. Говорят, если написать на ней название голографической карты, которую хотите получить, представитель Ассоциации игроков в таверне выдаст вам соответствующий дизайн.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/05/70239714/03b60aec345461dae970832766ebacf8_4161071100690928956.png",
-        "displayStyle": "text"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Священный призыв семерых",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Дружеская дуэль: Барбара"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Об уровне</color>\n«Мне кажется, я плохо разбираюсь в этой игре. Но если больше практиковаться...»\nПодсказка: колода Барбары создаёт эффекты исцеления и вытягивания карт, что значительно затрудняет ходы противника.\n<color=#ffffffd9>Отряд противника</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3180,
-        "name": "Барбара",
-        "desc": "<p><strong><span style=\"color: rgba(255, 255, 255, 0.85)\">«Сияющая Звёздочка»</span></strong></p><p>Готова исцелять сердца и успокаивать души.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3178,
-        "name": "Мона",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/2c2d8a83c9a5a9a97531fee1491efa85_3293537657944487120.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3175,
-        "name": "Кэйа",
-        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Зимний клинок» Кэйя</span></strong></p><p>Специализируется на пробуждении рыцарской доблести в других.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/a4641f3c8a186e2948662aa255638a9c_849205666599120506.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Требования</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3332,
-        "name": "Приглашение на дуэль",
-        "desc": "<p>Вы можете выбрать соперника из списка на Доске приглашений в таверне «Кошкин хвост», а затем отправить ему это письмо. Приглашённый соперник явится в таверну и будет ждать начала дуэли.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/8fbec79732d539893ff44c636483df50_2774662258139688666.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Цели"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Награда"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Одержите победу</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3180,
-        "name": "Барбара",
-        "desc": "<p><strong><span style=\"color: rgba(255, 255, 255, 0.85)\">«Сияющая Звёздочка»</span></strong></p><p>Готова исцелять сердца и успокаивать души.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Одержите победу за 6 раундов</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3209,
-        "name": "Урожайный сезон",
-        "desc": "<p>У меня есть для тебя песня...</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/07/51635400/aa789839f8ba60109a7e52b1b5541315_6003536399476285187.png",
-        "displayStyle": "card",
-        "menuId": 18
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Одержите победу, потеряв персонажей менее двух раз</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3209,
-        "name": "Урожайный сезон",
-        "desc": "<p>У меня есть для тебя песня...</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/07/51635400/aa789839f8ba60109a7e52b1b5541315_6003536399476285187.png",
-        "displayStyle": "card",
-        "menuId": 18
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Серьёзная схватка: Барбара"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Об уровне</color>\n«Если я буду стараться, то смогу порадовать окружающих даже через Священный призыв семерых!»\n<color=#ffd780>Особое правило: Барбара начинает с экипированной картой таланта «Урожайный сезон».</color>\n<color=#ffffffd9>Отряд противника</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3180,
-        "name": "Барбара",
-        "desc": "<p><strong><span style=\"color: rgba(255, 255, 255, 0.85)\">«Сияющая Звёздочка»</span></strong></p><p>Готова исцелять сердца и успокаивать души.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3178,
-        "name": "Мона",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/2c2d8a83c9a5a9a97531fee1491efa85_3293537657944487120.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3175,
-        "name": "Кэйа",
-        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Зимний клинок» Кэйя</span></strong></p><p>Специализируется на пробуждении рыцарской доблести в других.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/a4641f3c8a186e2948662aa255638a9c_849205666599120506.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Требования</color>\n• Достичь 10 уровня игрока\n• Выполнить 3 цели в Дружеской дуэли с Барбарой"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Цели"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Награда"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>Одержите победу</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3333,
-        "name": "Счастливая монета",
-        "desc": "<p>Валюта, выпущенная Ассоциацией игроков. Счастливые монеты можно использовать для покупки целого ряда предметов, связанных со «Священным призывом семерых». Говорят, монеты назвали так в надежде, что они принесут удачу своим обладателям. Однако на деле получить их в своё распоряжение могут лишь настоящие счастливцы...</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/c85bfab46d8c95659ab6dfb2e1629a87_9183176432317465083.png",
-        "amount": 1000,
-        "displayStyle": "card"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Гостевое испытание: Барбара"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Об уровне</color>\n«Мне кажется, я плохо разбираюсь в этой игре. Но если больше практиковаться...»\nПодсказка: колода Барбары создаёт эффекты исцеления и вытягивания карт, что значительно затрудняет ходы противника."
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Уровень Новичка</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Отряд противника</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3180,
-        "name": "Барбара",
-        "desc": "<p><strong><span style=\"color: rgba(255, 255, 255, 0.85)\">«Сияющая Звёздочка»</span></strong></p><p>Готова исцелять сердца и успокаивать души.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3178,
-        "name": "Мона",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/2c2d8a83c9a5a9a97531fee1491efa85_3293537657944487120.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3175,
-        "name": "Кэйа",
-        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Зимний клинок» Кэйя</span></strong></p><p>Специализируется на пробуждении рыцарской доблести в других.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/a4641f3c8a186e2948662aa255638a9c_849205666599120506.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Награда</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3816,
-        "name": "Опыт игрока",
-        "desc": "<p>Приносится победой в игре «Священный призыв семерых». С каждой выигранной дуэлью соперник накапливает манёвры и приёмы, помогающие ему одержать победу. Что бы ни случилось, опытный соперник знает, как победить, и в этом заключается его главная сила.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/13/237301566/a3dfc591cecc908ea00f31c9a3de083f_1277672688273387241.png",
-        "amount": 200,
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3333,
-        "name": "Счастливая монета",
-        "desc": "<p>Валюта, выпущенная Ассоциацией игроков. Счастливые монеты можно использовать для покупки целого ряда предметов, связанных со «Священным призывом семерых». Говорят, монеты назвали так в надежде, что они принесут удачу своим обладателям. Однако на деле получить их в своё распоряжение могут лишь настоящие счастливцы...</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/c85bfab46d8c95659ab6dfb2e1629a87_9183176432317465083.png",
-        "amount": 300,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Уровень Знатока</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Отряд противника</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3180,
-        "name": "Барбара",
-        "desc": "<p><strong><span style=\"color: rgba(255, 255, 255, 0.85)\">«Сияющая Звёздочка»</span></strong></p><p>Готова исцелять сердца и успокаивать души.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3178,
-        "name": "Мона",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/2c2d8a83c9a5a9a97531fee1491efa85_3293537657944487120.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3175,
-        "name": "Кэйа",
-        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Зимний клинок» Кэйя</span></strong></p><p>Специализируется на пробуждении рыцарской доблести в других.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/a4641f3c8a186e2948662aa255638a9c_849205666599120506.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Награда</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3816,
-        "name": "Опыт игрока",
-        "desc": "<p>Приносится победой в игре «Священный призыв семерых». С каждой выигранной дуэлью соперник накапливает манёвры и приёмы, помогающие ему одержать победу. Что бы ни случилось, опытный соперник знает, как победить, и в этом заключается его главная сила.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/13/237301566/a3dfc591cecc908ea00f31c9a3de083f_1277672688273387241.png",
-        "amount": 200,
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3333,
-        "name": "Счастливая монета",
-        "desc": "<p>Валюта, выпущенная Ассоциацией игроков. Счастливые монеты можно использовать для покупки целого ряда предметов, связанных со «Священным призывом семерых». Говорят, монеты назвали так в надежде, что они принесут удачу своим обладателям. Однако на деле получить их в своё распоряжение могут лишь настоящие счастливцы...</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/c85bfab46d8c95659ab6dfb2e1629a87_9183176432317465083.png",
-        "amount": 600,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Уровень Эксперта</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Отряд противника</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3180,
-        "name": "Барбара",
-        "desc": "<p><strong><span style=\"color: rgba(255, 255, 255, 0.85)\">«Сияющая Звёздочка»</span></strong></p><p>Готова исцелять сердца и успокаивать души.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3178,
-        "name": "Мона",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/2c2d8a83c9a5a9a97531fee1491efa85_3293537657944487120.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3175,
-        "name": "Кэйа",
-        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Зимний клинок» Кэйя</span></strong></p><p>Специализируется на пробуждении рыцарской доблести в других.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/a4641f3c8a186e2948662aa255638a9c_849205666599120506.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Награда</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3816,
-        "name": "Опыт игрока",
-        "desc": "<p>Приносится победой в игре «Священный призыв семерых». С каждой выигранной дуэлью соперник накапливает манёвры и приёмы, помогающие ему одержать победу. Что бы ни случилось, опытный соперник знает, как победить, и в этом заключается его главная сила.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/13/237301566/a3dfc591cecc908ea00f31c9a3de083f_1277672688273387241.png",
-        "amount": 200,
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3333,
-        "name": "Счастливая монета",
-        "desc": "<p>Валюта, выпущенная Ассоциацией игроков. Счастливые монеты можно использовать для покупки целого ряда предметов, связанных со «Священным призывом семерых». Говорят, монеты назвали так в надежде, что они принесут удачу своим обладателям. Однако на деле получить их в своё распоряжение могут лишь настоящие счастливцы...</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/c85bfab46d8c95659ab6dfb2e1629a87_9183176432317465083.png",
-        "amount": 900,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Уровень Мастера</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Отряд противника</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3180,
-        "name": "Барбара",
-        "desc": "<p><strong><span style=\"color: rgba(255, 255, 255, 0.85)\">«Сияющая Звёздочка»</span></strong></p><p>Готова исцелять сердца и успокаивать души.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3178,
-        "name": "Мона",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/2c2d8a83c9a5a9a97531fee1491efa85_3293537657944487120.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3175,
-        "name": "Кэйа",
-        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Зимний клинок» Кэйя</span></strong></p><p>Специализируется на пробуждении рыцарской доблести в других.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/a4641f3c8a186e2948662aa255638a9c_849205666599120506.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Награда</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3816,
-        "name": "Опыт игрока",
-        "desc": "<p>Приносится победой в игре «Священный призыв семерых». С каждой выигранной дуэлью соперник накапливает манёвры и приёмы, помогающие ему одержать победу. Что бы ни случилось, опытный соперник знает, как победить, и в этом заключается его главная сила.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/13/237301566/a3dfc591cecc908ea00f31c9a3de083f_1277672688273387241.png",
-        "amount": 200,
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3333,
-        "name": "Счастливая монета",
-        "desc": "<p>Валюта, выпущенная Ассоциацией игроков. Счастливые монеты можно использовать для покупки целого ряда предметов, связанных со «Священным призывом семерых». Говорят, монеты назвали так в надежде, что они принесут удачу своим обладателям. Однако на деле получить их в своё распоряжение могут лишь настоящие счастливцы...</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/c85bfab46d8c95659ab6dfb2e1629a87_9183176432317465083.png",
-        "amount": 1200,
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Уровень Легенды</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Отряд противника</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3180,
-        "name": "Барбара",
-        "desc": "<p><strong><span style=\"color: rgba(255, 255, 255, 0.85)\">«Сияющая Звёздочка»</span></strong></p><p>Готова исцелять сердца и успокаивать души.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3178,
-        "name": "Мона",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/2c2d8a83c9a5a9a97531fee1491efa85_3293537657944487120.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3175,
-        "name": "Кэйа",
-        "desc": "<p><strong><span style=\"color: #FFFFFF\">«Зимний клинок» Кэйя</span></strong></p><p>Специализируется на пробуждении рыцарской доблести в других.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/04/248396187/a4641f3c8a186e2948662aa255638a9c_849205666599120506.png",
-        "displayStyle": "card",
-        "menuId": 17
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Награда</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3816,
-        "name": "Опыт игрока",
-        "desc": "<p>Приносится победой в игре «Священный призыв семерых». С каждой выигранной дуэлью соперник накапливает манёвры и приёмы, помогающие ему одержать победу. Что бы ни случилось, опытный соперник знает, как победить, и в этом заключается его главная сила.</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/13/237301566/a3dfc591cecc908ea00f31c9a3de083f_1277672688273387241.png",
-        "amount": 200,
-        "displayStyle": "card"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3333,
-        "name": "Счастливая монета",
-        "desc": "<p>Валюта, выпущенная Ассоциацией игроков. Счастливые монеты можно использовать для покупки целого ряда предметов, связанных со «Священным призывом семерых». Говорят, монеты назвали так в надежде, что они принесут удачу своим обладателям. Однако на деле получить их в своё распоряжение могут лишь настоящие счастливцы...</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/26/70239714/c85bfab46d8c95659ab6dfb2e1629a87_9183176432317465083.png",
-        "amount": 1500,
-        "displayStyle": "card"
-      }
-    ],
-    "tcg": {
-      "headerImgs": [
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png"
-        },
-        {
-          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/14/124137736/9493127b24fd083485c737b1ba717b14_8848014213556320134.gif"
-        },
-        {
-          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/14/124137736/afe1fe1cd77fac3d23e52afa1171d89c_402108350949325720.png"
-        }
-      ],
-      "hp": 10
-    },
     "talent": [
       {
         "key": "Шёпот воды",
@@ -747,6 +713,40 @@
         ],
         "attributes": []
       }
-    ]
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Чудесное сияние",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/14/124137736/40b17be0ac2d512144e904da799893d3_5878536094028379575.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "*Наносимый урон навыка, его стоимость по энергии и некоторые другие параметры могут отличаться в текущей версии"
+          }
+        ]
+      },
+      {
+        "key": "Аватар (иконка)",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/14/124137736/5b4e3d846b1c5d0b0a911d5dbc140e5d_8386909762475250278.png"
+      },
+      {
+        "key": "Кольцо мелодии (голографический дизайн)",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/14/124137736/edb60fdb67387500adccaa4383da4647_7145295978518344185.gif"
+      }
+    ],
+    "tcg": {
+      "headerImgs": [
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/01/70239714/c6ac0dbf3ded0fa17b5dcf1f46f20930_4934839427617997303.png"
+        },
+        {
+          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/14/124137736/9493127b24fd083485c737b1ba717b14_8848014213556320134.gif"
+        },
+        {
+          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/14/124137736/afe1fe1cd77fac3d23e52afa1171d89c_402108350949325720.png"
+        }
+      ],
+      "hp": 10
+    }
   }
 }
