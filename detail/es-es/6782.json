@@ -1,12 +1,890 @@
 {
   "epId": 6782,
   "name": "Bendición noctámbula de Natlan",
-  "desc": "<p></p>",
+  "desc": "<p>Una mecánica útil de Natlan para exploración y combate que usa los puntos de noctambulismo y el flogisto como su fuente de energía.</p>",
   "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/02/7b7f355ded0dcab7388d4b9ba6cc0215_1366644928666284488.png",
   "menuId": 14,
   "menuName": "Tutorial",
-  "version": 1743977085,
+  "version": 1772977248,
   "components": {
+    "baseInfo": [
+      {
+        "key": "Nombre",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Bendición noctámbula de Natlan"
+          }
+        ]
+      },
+      {
+        "key": "Tipo",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Conocimiento de combate y exploración"
+          }
+        ]
+      },
+      {
+        "key": "Región",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Natlan"
+          }
+        ]
+      },
+      {
+        "key": "Versión de lanzamiento",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "5.0"
+          }
+        ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Descripción general",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/27/205556113/a4b73b9845ee6e150d72adbe090c7095_6353089462067069379.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "Si en tu equipo hay un personaje de Natlan, cuando un personaje inflija Daño Elemental a un enemigo, se causará una explosión noctámbula. Aparece en la pantalla con un efecto visual.\nCuantos más personajes de Natlan tengas en tu equipo, menor será el TdE entre activaciones de explosiones noctámbulas. Por cada 1/2/3 o más personajes de Natlan que haya en tu equipo, se podrá activar una explosión noctámbula cada 18/12/9s respectivamente.\nEste mecanismo es usado para desencadenar ciertos efectos como habilidades de personaje o efectos de artefactos.\nAdemás, pueden desencadenarse efectos similares a la explosión noctámbula por otros medios.\nXilonen - Cuando Xilonen tenga el máximo de pts. de noctambulismo mientras esté en estado de bendición noctámbula, se activará un efecto similar a una explosión noctámbula, lo cual solo puede ocurrir una vez cada 14 s.\n<color=#ffd780>Tutorial:</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6780,
+        "name": "Explosión noctámbula",
+        "desc": "<p></p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/02/7b7f355ded0dcab7388d4b9ba6cc0215_1366644928666284488.png",
+        "displayStyle": "card",
+        "menuId": 14
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Habilidades relacionadas con la explosión noctámbula",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6319,
+        "name": "Mualani",
+        "desc": "Una guía de Natlan muy famosa que lleva una tienda de suministros acuáticos, así como una surfera experta en todo tipo de deportes de agua.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/f4c75caad42923eb91ee760aa2eb473a_7439123622315070718.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Cuando un personaje cercano del equipo causa una explosión noctámbula, Mualani obtiene 1 carga de “conocimiento de la marea” que dura 20 s y puede acumularse hasta 3 veces. Al usar Misil acuaexplosivo, Mualani consume todas las cargas de conocimiento de la marea para que el daño de dicha habilidad aumente según el número de cargas consumidas en una cantidad equivalente al 15/30/45% de su Vida Máx."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6318,
+        "name": "Kachina",
+        "desc": "Una joven guerrera de Nanatzcayan agraciada con el nombre antiguo de “Uthabiti”. Esta muchacha persistente y de buen corazón siempre encuentra oportunidades de crecimiento ante cualquier contratiempo.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/26925adb1092d29c8afdf46d92fad8bd_343637410022641529.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "El daño que inflige el turbogirador aumenta en una cantidad equivalente al 20% de la DEF de Kachina."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6317,
+        "name": "Kinich",
+        "desc": "Un cazasaurios de Huitztlán experto en calcular el precio de las cosas.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/12/0099e74b4d0c919f6feab4bade3ab748_5795733017114624391.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Kinich obtiene 1 carga de “pericia del cazador” que dura 15 s y puede acumularse hasta 2 veces. Cuando Kinich use el Cañón perforaescamas de Caza en suspensión: Persecución aérea, se consumirán todas las cargas de pericia del cazador y el daño infligido por dicho Cañón aumentará en una cantidad equivalente al 320% del ATQ de Kinich por cada carga consumida."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6924,
+        "name": "Xilonen",
+        "desc": "Una maestra forjanombres de Nanatzcayan experta en encontrar el equilibrio entre el ajetreo del trabajo y una vida cómoda.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/b07074c2b9040516fd240b6b8d65c011_2487211347344319683.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "La DEF de Xilonen aumenta en un 20% durante 15 s."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7080,
+        "name": "Chasca",
+        "desc": "La mediadora de Tlalocán, pacificadora de mil conflictos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/abe1192cc7aad45f6b273478dd5fa88a_4799372826012752249.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Chasca disparará una devastabala persiguesombras a un enemigo cercano, la cual inflige Daño Anemo de naturaleza noctámbula en una cantidad equivalente al 150% de la bala persiguesombras de la Habilidad Elemental, Riendas persiguesombras."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7079,
+        "name": "Ororon",
+        "desc": "Un joven de los Augures Vientonocturno que vive en la naturaleza junto a toda clase de seres vivos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/e4830690f8b6a1ebb02cfbc8ce955671_8091252479018770784.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Ororon obtiene 40pts. de noctambulismo."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7299,
+        "name": "Mavuika",
+        "desc": "La líder de Natlan que heredó el nombre antiguo de “Kiongozi”. Ella se comprometió a iluminar el futuro de la Nación de la Guerra con el Fuego Sagrado.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/30/2f098b1f15854fd9dafc54998795a59e_864981592196815761.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "El ATQ de Mavuika aumenta en un 30% durante 10 s."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7300,
+        "name": "Citlalí",
+        "desc": "La gran chamana y la abu Itztli de los Augures Vientonocturno, respetada por toda la gente de su tribu.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/27/c4ab2530bb8bbe3c0e811684f97ec124_6688582217610741079.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Citlalí recupera 4 pts. de noctambulismo.\nAl encontrarse en una zona con alguna mecánica de flogisto de Natlan, restaura 20 pts. de flogisto."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7306,
+        "name": "Viajero (Pyro)",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un/a viajero/a de otro mundo al/a la que arrebataron su única familia, y que se vio obligado/a a embarcarse en un viaje en busca de Los Siete.</span></p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/12/11/72783095/f00d18b57acb4aa37bf2fc39bf67ddd0_110067188194522876.gif",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "El/La Viajero/a recupera 4 pts. de Energía Elemental."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7488,
+        "name": "Varesa",
+        "desc": "Una horticultora y guerrera de la Comunidad de la Feracidad de carácter superrelajado. ¡Le encantan los héroes fuertes y la comida en grandes cantidades!",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/a54efe1bb7e82a589b9af44683a696ca_8635138146175164187.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "El ATQ de Varesa aumenta en un 35% durante 12 s. Este efecto puede acumularse hasta 2 veces y la duración de cada acumulación se calcula de manera independiente."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7502,
+        "name": "Iansán",
+        "desc": "La entrenadora jefa del Club de Entrenamiento de la Comunidad de la Feracidad, así como una conocida nutricionista de Natlan.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/dd9a200a86b792fb1b73ef1ee7de0911_2097378734184941134.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Iansán obtiene el efecto de “calentamiento” durante 10 s. Durante este tiempo, cuando Iansán recupere al menos 1 pt. de noctambulismo, también curará a tu personaje en uso en una cantidad equivalente al 60% del ATQ de Iansán. Este efecto solo puede activarse una vez cada 2.8 s."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7627,
+        "name": "Ifá",
+        "desc": "Un veterinario de la Tribu Plumaflora que ama la compañía de personas, animales y demás seres vivos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/30/ce693d1e36aef5936b2d2db006605fc4_9036718103340803450.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "La Maestría Elemental de Ifá aumenta en 80pts. durante 10s."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Efectos de artefacto relacionados con la explosión noctámbula",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6553,
+        "name": "Pergamino del Héroe de la Ciudad de las Cenizas",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/6ad5095f324c2da829ecaa5e2ed13af9_2791497672459683103.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 2 piezas: Cuando un personaje cercano del equipo causa una explosión noctámbula, el portador de este conjunto recupera 6 pts. de Energía Elemental."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Contramedidas combativas",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Las contramedidas combativas son una mecánica central de los Autómatas Fuentenigma. Este estado aparece en el juego como un indicador circular junto a su barra de vida que se llena cuando el enemigo es atacado por o está cerca de personajes en estado de bendición noctámbula."
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Enemigos relacionados</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6561,
+        "name": "Autómata Fuentenigma - Rastreador",
+        "desc": "Una maquinaria usada para labores de recolección en ruinas antiguas.<br>Según las leyendas, se trata de una máquina de trabajo especial para ruinas de la antigüedad que fue diseñada principalmente con fines experimentales, como atrapar o recoger muestras, y que solo cuenta con unas funciones de combate básicas.<br>Dicen los rumores que no fue creada por humanos, sino por una civilización mucho más antigua. Sin embargo, en el presente, dicha civilización ya no existe y lo único que queda de ella son estas extrañas centinelas.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/27/e9927800b8131027725d29cb61a78b27_9196782947549855132.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "RichText",
+        "text": "Cuando el indicado junto a su barra de vida se llena, el autómata libera un poderoso ataque, y también entra en un estado vulnerable con una RES significativamente reducida."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7056,
+        "name": "Autómata Fuentenigma - Máquina configuracional",
+        "desc": "Una máquina constructora hallada en ruinas antiguas. Este tipo de máquina, capaz de adoptar numerosas formas, era utilizada por los maestros de las antiguas ruinas para realizar diversas tareas de fabricación. Si aprendes a utilizarla, podrás construir una ciudad colosal más allá de la imaginación, incluso en entornos extremos como las profundidades de un volcán.<br>Además, al parecer puede utilizarse como arma. Aunque la antigua civilización ha caído hace tiempo, esta máquina, con forma de garra gigante e impulsada por los diseños dorados grabados en ella, aún puede entrar en combate siguiendo sus instrucciones preestablecidas.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/be7ef508bd73f3eeea5522c7409258b9_2512975982839589171.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "RichText",
+        "text": "Cuando el indicador junto a su barra de vida se llama, el autómata activa sus dispositivos condensadores, los cuales crean dos pilares de flogisto sólido. Los personajes deben escalar el flogisto sólido (la mejor manera es usando habilidades de los Vástagos del Eco) para destruir los dispositivos condensadores, dejando al enemigo en un estado vulnerable."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7671,
+        "name": "Autómata Fuentenigma - Máquina de control",
+        "desc": "<p>Un mecanismo de control de ruinas antiguas.</p><p>En la antigüedad, una grandiosa raza concedió una parte de su autoridad a la sabiduría creada a partir de flogisto para mantener en funcionamiento una enorme ciudad. Impulsadas por su misión y por toda clase de mecanismos, las máquinas a las que se concedió aquella sabiduría controlaban el funcionamiento de un sinfín de ciudades en la tierra. Sin embargo, la antigua civilización cayó en la guerra contra la nueva especie, de manera que en los mecanismos de control que albergaban una gran sabiduría ya no quedan más que las órdenes más sencillas.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/11/11/72783095/8b31d2c495b8e7cf526820340ba3bdb9_1151145496570275505.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "RichText",
+        "text": "Durante el modo purga, el autómata activa las contramedidas combativas cuando hay personajes en estado de bendición noctámbula cerca. Cuando el medidor está lleno y ya se ha generado algo de ímpetu torrencial, entrará en \"estado de combate\", disminuyendo notablemente sus RES y lanzando ataques Hydro continuos en la posición del personaje."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Protección de vacío",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "La protección de vacío es una mecánica de escudo única para ciertos enemigos de Natlan.\nLos enemigos protegidos por la protección de vacío no pueden recibir daño hasta que el escudo haya sido completamente destruido mediante ataques elementales. El daño de naturaleza noctámbula es especialmente efectivo para romper el escudo, contando un ataque como tres ataques de daño elemental normal.\nOtra manera para lidiar con estos escudos sin usar personajes con daño de naturaleza noctámbula es apoyándose en otras fuerntes de aplicación elemental rápida, como la reacción Quemadura.\n<color=#ffd780>Tutorial:</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6783,
+        "name": "Barrera de vacío",
+        "desc": "<p></p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/02/7b7f355ded0dcab7388d4b9ba6cc0215_1366644928666284488.png",
+        "displayStyle": "card",
+        "menuId": 14
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Enemigos relacionados</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7081,
+        "name": "Licopodio Abismático",
+        "desc": "Monstruos del Abismo con forma de planta que descienden de las profundidades de un mundo retorcido y oscuro.<br>Se dice que en los lugares corroídos por las olas oscuras crecen monstruos que se asemejan a plantas, pero cualquier parecido con estas es meramente superficial, pues la razón por la que adoptan este aspecto es para acercarse al mundo arbóreo, extraer de él los conceptos necesarios, analizarlos e imitarlos.<br>Algunos lunáticos afirman que aquellas cosas que se extienden como hojas en realidad son indicios de lo que podrían ser puertas que conducen a otros mundos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/27/2bdd8939119a34c70b5dd45a4daf426c_7371904873920349725.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7125,
+        "name": "Cepa Abismática - Tipo I",
+        "desc": "Un monstruo del Abismo con forma de planta que ha llegado a este mundo desde la más profunda oscuridad de otro retorcido mundo.<br>Estas criaturas monstruosas y malévolas son capaces de infiltrarse en las entrañas de la tierra, extrayendo recuerdos que imitar y manipular. A través de este proceso de distorsión de los recuerdos del pasado para transformarlos en algo más abstruso y sórdido, se van acercando gradualmente al corazón del Irminsul, amenazando con hacer peligrar su misma existencia.<br>Hay quien dice que estas aberraciones trabajan constantemente para corromper los múltiples colores de la luz, dejando un rastro negro como el carbón en su lugar. Tal hipótesis parece confirmarse al ver las ramas que extienden hacia fuera, que parecen querer atravesar el mismísimo vacío...",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/14/4f48bdf376d1b4597c8c54a0fe47c8b8_6380943058011605348.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7368,
+        "name": "Señor del Fuego Primigenio Corroído",
+        "desc": "Un dragón malvado formado por una concentración del poder de la oscuridad.<br>Una bestia del vacío conocida como “Aniquilador del Abismo” y Gosoythoth. Posee el poder de corromper los recuerdos de las líneas ley para darles la forma de una fuerza tangible catastrófica. De estos recuerdos que han fluido bajo la tierra desde tiempos inmemoriales, ha logrado drenar la voluntad remanente de un Rey Dragón Elemental, extrayéndola como tuétano para darle un nuevo propósito como los cimientos de una imagen propia inventada.<br>Pero ¿se trata realmente de una mera “imagen”? Retornado a manos de las mismísimas fuerzas del más allá a las que una vez se enfrentó, un dragón antaño muerto vuelve a abrir los ojos, dejándolo todo atrás como en un sueño en su breve resurrección. Atrapado eternamente en el día final de su existencia por esta oscura música, su furia sin límites ha acabado consumiendo cualquier rastro de razón. Ahora, lo único que le queda es su incansable deseo de batalla que arde sin fin en su corazón.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/26/2527765db854b6819fa964890b51fd1a_3015406644013556173.png",
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Descripción general",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "El estado de bendición noctámbula es un mecanismo que los portadores de Visión de Natlan pueden usar para aumentar su movilidad y poder de combate.\nLos puntos de noctambulismo son usados como el recurso principal para mantener este estado. Mientras se está en Natlan, también puede usarse el flogisto para prolongar más aún su duración."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Puntos de noctambulismo",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Los puntos de noctambulismo son un recurso único para los personajes de Natlan. Cuando un personaje está en estado de noctambulismo, aparecerá una barra de los puntos de noctambulismo. Los puntos de noctambulismo pueden obtenerse al cumplirse condiciones específicas para cada personaje."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Flogisto",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "El flogisto es una fuente de energía de alta temperatura especial de Natlan. Mientras se está en Natlan, aparecerá la barra de flogisto sobre la barra de vida. Mientras la barra de vida es única para cada personaje, la barra de flogisto es compartida por los personajes del equipo.\nLos personajes de Natlan pueden usar flogisto con sus talentos, principalmente para prolongar el estado de bendición noctámbula una vez que los puntos de noctambulismo se hayan acabado."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Habilidades de combate",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6319,
+        "name": "Mualani",
+        "desc": "Una guía de Natlan muy famosa que lleva una tienda de suministros acuáticos, así como una surfera experta en todo tipo de deportes de agua.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/f4c75caad42923eb91ee760aa2eb473a_7439123622315070718.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Condición de activación: usar la Habilidad Elemental\nMualani se sube a su escualotabla de surf y aumenta la Vel. Movimiento y la RES a interrupción.\nAl ejecutar un Ataque Normal, en su lugar realizará un escualomordisco que inflige Daño Hydro de naturaleza noctámbula en función de la Vida Máx. de Mualani. El escualomordisco se puede ejecutar en el aire y el daño que inflige se considera daño de Ataque Normal.\nAl entrar en contacto con un enemigo en este estado, Mualani aplicará sobre dicho enemigo una marca depredadora y obtendrá 1 carga de “energía mareal” que se puede acumular hasta 3 veces. Solo puede obtener 1 carga cada 0.7 s del mismo enemigo.\nCon 3 cargas, el escualomordisco se transforma en un “escualomordisco tsunámico” que inflige aún más daño y, tras golpear a un enemigo, elimina todas las cargas de energía mareal.\nAl golpear a un enemigo con el escualomordisco, elimina la marca de dicho enemigo y dispara escualoproyectiles a un máximo de 5 enemigos cercanos afectados por marcas depredadoras. Estos proyectiles infligen una cantidad de daño equivalente al escualomordisco y eliminan las marcas depredadoras de dichos enemigos. Si el escualomordisco o los escualoproyectiles tienen más de 1 enemigo como objetivo, el daño que infligen irá disminuyendo hasta un máximo del 72% del daño original cuando haya 3 enemigos como objetivo.\nAl golpear a un enemigo con el escualomordisco tsunámico, se crea un peciglobo en las cercanías. Al recoger un peciglobo, Mualani recupera 20 pts. de noctambulismo. Como máximo, solo se pueden crear 2 peciglobos de esta manera mientras esté activa una bendición noctámbula."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6318,
+        "name": "Kachina",
+        "desc": "Una joven guerrera de Nanatzcayan agraciada con el nombre antiguo de “Uthabiti”. Esta muchacha persistente y de buen corazón siempre encuentra oportunidades de crecimiento ante cualquier contratiempo.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/26925adb1092d29c8afdf46d92fad8bd_343637410022641529.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Condición de activación: usar la Habilidad Elemental\nKachina invoca al turbogirador:\nCuando este esté en el campo de batalla de forma independiente, impactará contra el suelo cada cierto tiempo para infligir Daño Geo en el AdE de naturaleza noctámbula en función de la DEF de Kachina.\nCuando Kachina se sube al turbogirador, podrá controlarlo para moverse y escalar a gran velocidad. Además, al ejecutar un Ataque Normal, impactará contra el suelo e infligirá Daño Geo en el AdE de naturaleza noctámbula en función de su DEF."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6317,
+        "name": "Kinich",
+        "desc": "Un cazasaurios de Huitztlán experto en calcular el precio de las cosas.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/12/0099e74b4d0c919f6feab4bade3ab748_5795733017114624391.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Condición de activación: usar la Habilidad Elemental\nCuando esté en este estado, Kinich lanzará su gancho a un enemigo cercano y cambiará su estilo de ataque:\nAl ejecutar un Ataque Normal, realizará un ataque circundante alrededor del objetivo del gancho de agarre según la dirección de movimiento actual, lo que infligirá Daño Dendro de naturaleza noctámbula y generará 3 pts. de noctambulismo. El daño del ataque circundante se considera daño de Habilidad Elemental.\nAl alcanzar el máximo de pts. de noctambulismo, Kinich podrá usar la Habilidad Elemental “Cañón perforaescamas”, lo que consumirá todos los pts. de noctambulismo para infligir Daño Dendro de naturaleza noctámbula. Al mantener pulsado “Cañón perforaescamas”, Kinich podrá apuntar a su objetivo y, tras disparar, intentará engancharse a él.\nDurante el estado de bendición noctámbula, tras haberse enganchado a un enemigo o haber disparado el Cañón perforaescamas, Kinich generará un área segura al lado del enemigo. Al entrar en dicha área, obtendrá 4 pts. de noctambulismo, tras lo que el área desaparecerá.\nSi el gancho de agarre se suelta debido al exceso de distancia u otras razones, al ejecutar un Ataque Normal, Kinich se reenganchará a otro enemigo cercano y realizará un ataque circundante.\nLos enemigos que sean golpeados por su Habilidad Elemental entrarán en estado de “desolación”, y cuando reciban daño de las reacciones de Quemadura o Crepitar, Kinich generará 7 pts. de noctambulismo. Solo se pueden obtener pts. de noctambulismo una vez cada 0.8 s de esta manera. El estado de desolación dura hasta que termine el de bendición noctámbula de Kinich."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6924,
+        "name": "Xilonen",
+        "desc": "Una maestra forjanombres de Nanatzcayan experta en encontrar el equilibrio entre el ajetreo del trabajo y una vida cómoda.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/b07074c2b9040516fd240b6b8d65c011_2487211347344319683.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Condición de activación: usar la Habilidad Elemental\nXilonen entrará en modo caza sobre ruedas:\nMientras esté en estado de bendición noctámbula, su Ataque Normal le permitirá ejecutar hasta 4 patadas usando sus patines, y no podrá realizar Ataques Cargados. Los Ataques Normales y Descendentes ejecutados en este estado infligen Daño Geo de naturaleza noctámbula en función de la DEF de Xilonen, y dicho daño no puede sustituirse imbuyéndose de otro elemento.\nXilonen posee tres sámplers que presentarán diferentes marcas musicales dependiendo del tipo elemental de los demás miembros del equipo, y que pueden activarse para reducir la RES de los enemigos cercanos a esos elementos en particular."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7080,
+        "name": "Chasca",
+        "desc": "La mediadora de Tlalocán, pacificadora de mil conflictos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/abe1192cc7aad45f6b273478dd5fa88a_4799372826012752249.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Condición de activación: usar la Habilidad Elemental\nSe sube a un riflespíritu ceremonial y aumenta la Vel. Movimiento y la RES a interrupción de Chasca. En este estado, consumirá pts. de noctambulismo continuamente para mantenerse en el aire. Al esprintar o elevarse, se consumen pts. de noctambulismo adicionales. Al realizar un Ataque Normal o Cargado, se ejecuta un “multiapuntamiento” de distintas formas dependiendo de si se pulsa una vez o se mantiene pulsado.\nMultiapuntamiento\nPulsar una vez: Inflige Daño Anemo de naturaleza noctámbula a los enemigos que tenga frente a sí misma. Este daño se considera daño de Ataque Normal.\nMantener pulsado: Apunta, escoge un determinado número de enemigos situados en cierta área y recarga hasta un máximo de 6 balas persiguesombras según el tiempo de carga. Al recargar las 6 balas o detener la carga, dichas balas se disparan consecutivamente a los enemigos escogidos. Las balas persiguesombras infligen Daño Anemo de naturaleza noctámbula. Este daño se considera daño de Ataque Cargado. La cuarta, quinta y sexta bala persiguesombras que se carguen en el rifle sufrirán un cambio elemental en función del tipo elemental de los demás personajes del equipo. Por cada personaje Pyro, Hydro, Cryo o Electro, una bala persiguesombras se transformará al azar en una brillobala persiguesombras del tipo elemental correspondiente, e infligirá daño del elemento en cuestión de naturaleza noctámbula. Este daño se considera daño de Ataque Cargado."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7079,
+        "name": "Ororon",
+        "desc": "Un joven de los Augures Vientonocturno que vive en la naturaleza junto a toda clase de seres vivos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/e4830690f8b6a1ebb02cfbc8ce955671_8091252479018770784.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Condición de activación: que los enemigos cercanos reciban daño de Electrocargado o de Electrocargado Lunar o cuando otro personaje cercano del equipo inflige daño de naturaleza noctámbula.\nSi Ororon tiene al menos 10pts. de noctambulismo, consumirá dicha cantidad para entrar en estado de bendición noctámbula y activar el efecto de “ultrapercepción”, el cual inflige Daño Electro de naturaleza noctámbula a un máximo de 4 enemigos cercanos en una cantidad equivalente al 160% del ATQ de Ororon. Este efecto solo se puede activar una vez cada 1.8s."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7299,
+        "name": "Mavuika",
+        "desc": "La líder de Natlan que heredó el nombre antiguo de “Kiongozi”. Ella se comprometió a iluminar el futuro de la Nación de la Guerra con el Fuego Sagrado.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/30/2f098b1f15854fd9dafc54998795a59e_864981592196815761.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Condición de activación: usar la Habilidad Elemental o la Habilidad Definitiva\nConsume continuamente pts. de noctambulismo dependiendo de la forma del arsenal flamígero:\nLiberación de nombre divino: El arsenal flamígero adquiere la forma de un aro incinerador, el cual sigue al personaje en uso y ataca cada cierto tiempo a los enemigos cercanos para infligirles Daño Pyro de naturaleza noctámbula.\nLiberación de nombre antiguo: El arsenal flamígero adquiere la forma de un pirociclo. En este estado, Mavuika puede manejar el pirociclo para moverse rápidamente, o activar las funciones ocultas en la parte trasera del vehículo para moverse temporalmente por toda clase de terrenos, así como para planear durante un breve periodo de tiempo. Además, el daño de los Ataques Normales, Cargados y Descendentes de Mavuika se convierte en Daño Pyro de naturaleza noctámbula, el cual no puede sustituirse imbuyéndose de otro elemento. Al esprintar, también inflige Daño Pyro de naturaleza noctámbula a los enemigos situados en su trayectoria.\nLa forma del arsenal flamígero se puede cambiar pulsando una vez la Habilidad Elemental mientras se está en estado de bendición noctámbula. El arsenal flamígero desaparecerá cuando termine la duración de dicho estado.\nLa Habilidad Definitiva de Mavuika no funciona con Energía Elemental, sino con “espíritu de lucha”, y una manera para cargarla es consumir los puntos de noctambulismo."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7300,
+        "name": "Citlalí",
+        "desc": "La gran chamana y la abu Itztli de los Augures Vientonocturno, respetada por toda la gente de su tribu.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/27/c4ab2530bb8bbe3c0e811684f97ec124_6688582217610741079.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Condición de activación: usar la Habilidad Elemental\nInvoca Itzpapa:\nItzpapa se mueve junto al personaje.\nSi Citlalí tiene al menos 50 pts. de noctambulismo, Itzpapa entrará en el estado de “fuego opalescente”, durante el cual consumirá pts. de noctambulismo de forma continua para desencadenar una tormenta de escarcha que se mueve junto al personaje y que golpea a los enemigos dentro de su AdE, infligiéndoles Daño Cryo de naturaleza noctámbula.\nCuando los pts. de noctambulismo de Citlalí se agoten, el estado de fuego opalescente de Itzpapa también terminará."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7306,
+        "name": "Viajero (Pyro)",
+        "desc": "<p><span style=\"color: rgba(255, 255, 255, 0.65)\">Un/a viajero/a de otro mundo al/a la que arrebataron su única familia, y que se vio obligado/a a embarcarse en un viaje en busca de Los Siete.</span></p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/12/11/72783095/f00d18b57acb4aa37bf2fc39bf67ddd0_110067188194522876.gif",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Condición de activación: pulsar una vez o mantener pulsada la Habilidad Elemental\nPulsar una vez: invoca un “umbral flagrante” que sigue al personaje en uso. Cuando el umbral esté cerca de un enemigo, le infligirá Daño Pyro de naturaleza noctámbula cada cierto tiempo.\nMantener pulsado: invoca un “umbral abrasador” que sigue al personaje en uso. Cuando el personaje en uso que esté bajo los efectos del umbral abrasador inflija daño a un enemigo, el umbral ejecutará un ataque coordinado que inflige Daño Pyro de naturaleza noctámbula en función del ATQ del Viajero/de la Viajera. Este efecto solo puede ocurrir una vez cada 3 s."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7488,
+        "name": "Varesa",
+        "desc": "Una horticultora y guerrera de la Comunidad de la Feracidad de carácter superrelajado. ¡Le encantan los héroes fuertes y la comida en grandes cantidades!",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/a54efe1bb7e82a589b9af44683a696ca_8635138146175164187.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Condición de activación: mantener pulsada la Habilidad Elemental (modo \"avance impetuoso\") o alcanzar la cantidad máxima de puntos de noctambulismo (estado de fervor ardiente)\nModo \"Avance Impetuoso\": la Vel. Movimiento y la RES a interrupción de Varesa aumentan.\nEstado de fervor ardiente: los Ataques Normales, la Habilidad Elemental y la Habilidad Definitiva de Varesa se fortalecen. Además, durante un breve periodo de tiempo tras realizar un Ataque Descendente, Varesa podrá ejecutar una Habilidad Definitiva especial.\nSi no está en estado de fervor ardiente, Varesa puede recuperar pts. de noctambulismo ejecutando Ataques Descendentes."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7502,
+        "name": "Iansán",
+        "desc": "La entrenadora jefa del Club de Entrenamiento de la Comunidad de la Feracidad, así como una conocida nutricionista de Natlan.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/dd9a200a86b792fb1b73ef1ee7de0911_2097378734184941134.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Condición de activación: usar la Habilidad Elemental o la Habilidad Definitiva\nEl Ataque Cargado de Iansán se transforma en un formidable “Descenso atronador”, durante el cual consume una cierta cantidad de Aguante para dar un feroz pisotón hacia delante e infligir Daño Electro en el AdE de naturaleza noctámbula.\nTras usar la Habilidad Elemental, en los 5 s siguientes, al realizar un Ataque Normal pulsando una vez, Iansán ejecutará un Descenso atronador veloz sin consumir Aguante.\nCuando usa su Habilidad Definitiva, saca su “indicador de energía cinética de edición limitada”, el cual aumenta el ATQ del personaje en uso de diferentes formas en función de los pts. de noctambulismo de Iansán."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7627,
+        "name": "Ifá",
+        "desc": "Un veterinario de la Tribu Plumaflora que ama la compañía de personas, animales y demás seres vivos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/30/ce693d1e36aef5936b2d2db006605fc4_9036718103340803450.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Condición de activación: usar la Habilidad Elemental\nIfá flota con la ayuda de Cacucu.\nAl realizar un Ataque Normal, ejecuta un disparo auxiliar de distintas formas dependiendo de si se toca una vez/pulsa una vez/pulsa una vez o se mantiene pulsado. Con el disparo auxiliar, Ifá lanza una bala medicinal que regenera Vida a todos los miembros del equipo.\nCada punto de noctambulismo del total de todo el equipo le otorgará 1 punto de fundamentos de rescate. Los fundamentos de rescate aumentan el daño de las reacciones de Torbellino, Electrocargado y Electrocargado Lunar de los personajes cercanos del equipo."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Talentos pasivos de exploración",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6319,
+        "name": "Mualani",
+        "desc": "Una guía de Natlan muy famosa que lleva una tienda de suministros acuáticos, así como una surfera experta en todo tipo de deportes de agua.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/f4c75caad42923eb91ee760aa2eb473a_7439123622315070718.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Cuando Mualani se mueva sobre el agua o el flogisto líquido mientras está en estado de bendición noctámbula, consumirá un 75% menos de pts. de noctambulismo o de flogisto si está dentro de Natlan, y un 35% menos de pts. de noctambulismo si está fuera de dicha nación.\nRestaura 15 pts. de flogisto al interactuar con algunos objetos recolectables en zonas de Natlan con mecánicas de flogisto."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6318,
+        "name": "Kachina",
+        "desc": "Una joven guerrera de Nanatzcayan agraciada con el nombre antiguo de “Uthabiti”. Esta muchacha persistente y de buen corazón siempre encuentra oportunidades de crecimiento ante cualquier contratiempo.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/26925adb1092d29c8afdf46d92fad8bd_343637410022641529.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Al estar en Natlan, el Coste de Aguante de Kachina al escalar mientras está montada en el turbogirador se reduce en un 90%."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6317,
+        "name": "Kinich",
+        "desc": "Un cazasaurios de Huitztlán experto en calcular el precio de las cosas.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/12/0099e74b4d0c919f6feab4bade3ab748_5795733017114624391.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Al interactuar con algún sigilo hojavoluta u otros objetos que puedan interactuar con Yumkasaurios, Caza en suspensión: Persecución aérea se convertirá en “Biomímesis del Yumkasaurio”, lo que hace que las interacciones con dichos objetos sigan las reglas aplicables a los Yumkasaurios y evita que Caza en suspensión: Persecución aérea entre en TdE."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6924,
+        "name": "Xilonen",
+        "desc": "Una maestra forjanombres de Nanatzcayan experta en encontrar el equilibrio entre el ajetreo del trabajo y una vida cómoda.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/b07074c2b9040516fd240b6b8d65c011_2487211347344319683.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Al estar en Natlan, mientras el estado de bendición noctámbula esté activo, Xilonen no consumirá Aguante al escalar."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7488,
+        "name": "Varesa",
+        "desc": "Una horticultora y guerrera de la Comunidad de la Feracidad de carácter superrelajado. ¡Le encantan los héroes fuertes y la comida en grandes cantidades!",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/a54efe1bb7e82a589b9af44683a696ca_8635138146175164187.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Aumenta la velocidad de esprint de Varesa, pero su Coste de Aguante también aumenta cuando no está en combate.\nAdemás, al encontrarse en una zona con alguna mecánica de flogisto de Natlan, tus personajes del equipo podrán recuperar 20 pts. de flogisto al consumir comida."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7502,
+        "name": "Iansán",
+        "desc": "La entrenadora jefa del Club de Entrenamiento de la Comunidad de la Feracidad, así como una conocida nutricionista de Natlan.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/dd9a200a86b792fb1b73ef1ee7de0911_2097378734184941134.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Al encontrarse en una zona con alguna mecánica de flogisto de Natlan, recupera 10 pts. de flogisto si los niveles de este caen por debajo del 50%. Este efecto solo puede ocurrir una vez cada 10 s."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7627,
+        "name": "Ifá",
+        "desc": "Un veterinario de la Tribu Plumaflora que ama la compañía de personas, animales y demás seres vivos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/30/ce693d1e36aef5936b2d2db006605fc4_9036718103340803450.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Al encontrarse en una zona con alguna mecánica de flogisto de Natlan, si tu personaje en uso del equipo o el saurio al que has transferido tu alma tienen menos del 40% de Vida, Ifá consumirá 10pts. de flogisto para regenerarles un 40% de Vida. Esto solo puede ocurrir una vez cada 10s."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Efectos de artefacto",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6554,
+        "name": "Códice de Obsidiana",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/cd11df3be5420d2c53c2da0d3298eb92_4238581052558034331.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 2 piezas: Cuando el portador de este conjunto está en uso y en el estado de bendición noctámbula, el daño que inflige aumenta en un 15%.\nConjunto de 4 piezas: Cuando el portador de este conjunto consume 1pt. de noctambulismo mientras está en uso, su Prob. CRIT aumenta en un 40% durante 6s. Este efecto solo se puede activar una vez cada 1s."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6553,
+        "name": "Pergamino del Héroe de la Ciudad de las Cenizas",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/6ad5095f324c2da829ecaa5e2ed13af9_2791497672459683103.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Conjunto de 4 piezas: Cuando el portador de este conjunto causa una Reacción Elemental relacionada con su tipo elemental, los Bonos de Daño Elemental relacionados con esa Reacción Elemental de todos los personajes cercanos del equipo aumentan en un 12% durante 15s. Si el portador de este conjunto está en el estado de bendición noctámbula cuando se activa este efecto, los Bonos de Daño Elemental relacionados con esa Reacción Elemental de dichos personajes aumentan en un 28% adicional durante 20s. Estos efectos se pueden activar incluso cuando el portador está en tu equipo pero no en uso. Los bonos de daño otorgados por este conjunto de artefactos no se pueden acumular con los de otro conjunto del mismo tipo."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Habilidades pasivas de arma",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7365,
+        "name": "Mil Soles Abrasadores",
+        "desc": "Una gran espada deslumbrante como el sol naciente. Ha sido testigo de la extinción y el resurgimiento de innumerables soles.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/26/da1910fbe0e825e1e3704c126720ab24_2121228058184091562.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Al estar en el estado de bendición noctámbula, los efectos de brillo abrasador aumentan en un 75%, y la duración no se contará cuando el portador de esta arma esté en tu equipo pero no en uso."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Descripción general",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "La transmisión noctámbula es un mecanismo que se activa cuando el personaje en uso está realizando una acción como esprintar, nadar, etc. Le permite al personaje cambiar fluidamente a un personaje de Natlan y entrar inmediatamente en estado de bendición noctámbula. Tiene un tiempo de espera de 10 s, que es compartido entre todos los personajes de Natlan del equipo. Dependiendo del personaje, si es necesario, también son dados una pequeña cantidad de puntos de noctambulismo para mantener este estado.\nEs un pseudo estado y es diferente del estado normal de bendición noctámbula. En cualquier momento, los jugadores pueden entrar al estado de bendición noctámbula usando la Habilidad Elemental. Sin embargo, los puntos de noctambulismo restantes de la transmisión noctámbula no se recuperarán o usarán para extender este estado.\n<color=#ffd780>Tutorial:</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6781,
+        "name": "Transmisión noctambular",
+        "desc": "<p></p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/02/7b7f355ded0dcab7388d4b9ba6cc0215_1366644928666284488.png",
+        "displayStyle": "card",
+        "menuId": 14
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Personajes",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6319,
+        "name": "Mualani",
+        "desc": "Una guía de Natlan muy famosa que lleva una tienda de suministros acuáticos, así como una surfera experta en todo tipo de deportes de agua.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/f4c75caad42923eb91ee760aa2eb473a_7439123622315070718.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Puntos de noctambulismo obtenidos: 40\nCondiciones para activar:\nEsprintar\nNadar\nEn algún movimiento causado por ciertos talentos\nEstar a cierta altura en el aire"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6318,
+        "name": "Kachina",
+        "desc": "Una joven guerrera de Nanatzcayan agraciada con el nombre antiguo de “Uthabiti”. Esta muchacha persistente y de buen corazón siempre encuentra oportunidades de crecimiento ante cualquier contratiempo.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/26925adb1092d29c8afdf46d92fad8bd_343637410022641529.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Puntos de noctambulismo obtenidos: 30\nCondiciones para activar:\nEsprintar\nEscalar\nEn algún movimiento causado por ciertos talentos\nEstar a cierta altura en el aire"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6317,
+        "name": "Kinich",
+        "desc": "Un cazasaurios de Huitztlán experto en calcular el precio de las cosas.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/12/0099e74b4d0c919f6feab4bade3ab748_5795733017114624391.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Puntos de noctambulismo obtenidos: 0\nCondiciones para activar:\nEsprintar\nEn algún movimiento causado por ciertos talentos\nEstar en el aire"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6924,
+        "name": "Xilonen",
+        "desc": "Una maestra forjanombres de Nanatzcayan experta en encontrar el equilibrio entre el ajetreo del trabajo y una vida cómoda.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/09/25/b07074c2b9040516fd240b6b8d65c011_2487211347344319683.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Puntos de noctambulismo obtenidos: 20\nPuntos de flogisto recuperados: 15\nCondiciones para activar:\nEsprintar\nEscalar\nEn algún movimiento causado por ciertos talentos\nEstar a cierta altura en el aire\nLos pts. de noctambulismo obtenidos durante la transmisión noctámbula solo durarán 4 s y, pasado ese tiempo, se agotarán.\nTras usar Mezcla de la yohual en algún momento durante esos 4 s, la duración de los pts. de noctambulismo de Xilonen aumentará en 9 s."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7080,
+        "name": "Chasca",
+        "desc": "La mediadora de Tlalocán, pacificadora de mil conflictos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/abe1192cc7aad45f6b273478dd5fa88a_4799372826012752249.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Puntos de noctambulismo obtenidos: 32\nCondiciones para activar:\nEstar en el aire"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7079,
+        "name": "Ororon",
+        "desc": "Un joven de los Augures Vientonocturno que vive en la naturaleza junto a toda clase de seres vivos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/18/e4830690f8b6a1ebb02cfbc8ce955671_8091252479018770784.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Puntos de noctambulismo obtenidos: 0\nCondiciones para activar:\nEstar en el aire"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7299,
+        "name": "Mavuika",
+        "desc": "La líder de Natlan que heredó el nombre antiguo de “Kiongozi”. Ella se comprometió a iluminar el futuro de la Nación de la Guerra con el Fuego Sagrado.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/30/2f098b1f15854fd9dafc54998795a59e_864981592196815761.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Puntos de noctambulismo obtenidos: 40\nCondiciones para activar:\nEsprintar\nNadar\nEscalar\nEn algún movimiento causado por ciertos talentos\nEstar en el aire"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7300,
+        "name": "Citlalí",
+        "desc": "La gran chamana y la abu Itztli de los Augures Vientonocturno, respetada por toda la gente de su tribu.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/27/c4ab2530bb8bbe3c0e811684f97ec124_6688582217610741079.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Puntos de noctambulismo obtenidos: 0\nCondiciones para activar:\nEstar en el aire"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7488,
+        "name": "Varesa",
+        "desc": "Una horticultora y guerrera de la Comunidad de la Feracidad de carácter superrelajado. ¡Le encantan los héroes fuertes y la comida en grandes cantidades!",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/a54efe1bb7e82a589b9af44683a696ca_8635138146175164187.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Puntos de noctambulismo obtenidos: 20\nCondiciones para activar:\nEsprintar\nEn algún movimiento causado por ciertos talentos\nEstar a cierta altura en el aire"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7502,
+        "name": "Iansán",
+        "desc": "La entrenadora jefa del Club de Entrenamiento de la Comunidad de la Feracidad, así como una conocida nutricionista de Natlan.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/dd9a200a86b792fb1b73ef1ee7de0911_2097378734184941134.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Puntos de noctambulismo obtenidos: 25\nCondiciones para activar:\nEsprintar\nEn algún movimiento causado por ciertos talentos\nEstar a cierta altura en el aire"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7627,
+        "name": "Ifá",
+        "desc": "Un veterinario de la Tribu Plumaflora que ama la compañía de personas, animales y demás seres vivos.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/30/ce693d1e36aef5936b2d2db006605fc4_9036718103340803450.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Puntos de noctambulismo obtenidos: 32\nCondiciones para activar:\nEstar en el aire"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Habilidades relacionadas con la transmisión noctámbula",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7299,
+        "name": "Mavuika",
+        "desc": "La líder de Natlan que heredó el nombre antiguo de “Kiongozi”. Ella se comprometió a iluminar el futuro de la Nación de la Guerra con el Fuego Sagrado.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/30/2f098b1f15854fd9dafc54998795a59e_864981592196815761.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "Reduce en un 20% el TdE de Transmisión noctambular del equipo.",
+        "alignment": "center"
+      }
+    ],
     "galleryCharacter": [
       {
         "key": "1/2",
@@ -25,35 +903,6 @@
           {
             "type": "RichText",
             "text": "Las bendiciones noctámbulas suelen estar estrechamente relacionadas con el recurso conocido como \"puntos de noctambulismo\". Por ejemplo, Kachina consumirá estos puntos para montar en un turbogirador o atacar con él. Cuando los puntos se agoten, el estado de bendición noctámbula terminará y el turbogirador desaparecerá."
-          }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Nombre",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Bendición noctámbula de Natlan"
-          }
-        ]
-      },
-      {
-        "key": "Tipo",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Aventura"
-          }
-        ]
-      },
-      {
-        "key": "Versión de lanzamiento",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "5.0"
           }
         ]
       }
