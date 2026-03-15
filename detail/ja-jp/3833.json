@@ -5,16 +5,16 @@
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/19/132746206/2db46f62068c4f545f787ef481fe73c8_8248538632229822886.png",
   "filterValues": {
     "cardCharacterElement": "水元素",
-    "cardCharacterWeaponType": "弓",
     "cardCharacterObtainingMethod": "キャラクター招待",
+    "cardCharacterWeaponType": "弓",
+    "cardCharacterChargingPoint": "チャージ：3",
     "cardCharacterCamp": [
       "ファデュイ"
-    ],
-    "cardCharacterChargingPoint": "チャージ：3"
+    ]
   },
   "menuId": 17,
   "menuName": "キャラカード",
-  "version": 1766081634,
+  "version": 1773573585,
   "components": {
     "galleryCharacter": [
       {
@@ -82,7 +82,7 @@
         "desc": [
           {
             "type": "RichText",
-            "text": "水元素付着では、以下の元素反応を起こすことができます。\n【 <color=#80c0ff>水</color> + <color=#ff9999>炎</color> 】 <color=#ffffff>蒸発</color> ：ダメージ+2\n【 <color=#80c0ff>水</color> + <color=#ffacff>雷</color> 】 <color=#ffffff>感電</color> ：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\n【 <color=#80c0ff>水</color> + <color=#99ffff>氷</color> 】 <color=#ffffff>凍結</color> ：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\n【 <color=#80c0ff>水</color> + <color=#99ff88>草</color> 】 <color=#ffffff>開花</color> ：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「 <color=#ffffff>草原核</color> 」を生成する"
+            "text": "水元素付着では、以下の元素反応を起こすことができます。\n【 <color=#80c0ff>水</color> + <color=#ff9999>炎</color> 】 <color=#ffffff>蒸発</color> ：ダメージ+2\n【 <color=#80c0ff>水</color> + <color=#ffacff>雷</color> 】 <color=#ffffff>感電</color> ：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\n【 <color=#80c0ff>水</color> + <color=#99ffff>氷</color> 】 <color=#ffffff>凍結</color> ：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\n【 <color=#80c0ff>水</color> + <color=#99ff88>草</color> 】 <color=#ffffff>開花</color> ：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「 <color=#ffffff>草原核</color> 」を生成する\n【 <color=#80c0ff>水</color> + <color=#ffacff>雷</color> 】 <color=#ffffff>月感電</color> ：ラウンド終了時、 <color=#ffacff>雷元素ダメージ</color> を2与える「 <color=#ffffff>雷雲</color> 」を生成する。（使用可能回数1、上限なく重ねられる。登場または使用可能回数が増える時、相手のランダムな手札1枚に「 <color=#ffffff>電撃</color> 」を付与する）\n註：Ver.Luna V更新に伴い、月感電が追加された"
           }
         ],
         "attributes": []
@@ -100,20 +100,115 @@
         "attributes": []
       }
     ],
-    "tcg": {
-      "headerImgs": [
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/19/132746206/2db46f62068c4f545f787ef481fe73c8_8248538632229822886.png"
-        },
-        {
-          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/10/132746206/b2d2b7eee240a144baffc7206f10caf6_1638762815373326285.gif"
-        },
-        {
-          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/12/18/224893084/dadcbec81bc7ab7d48a7f25ab1b1894b_674912734243960174.gif"
-        }
-      ],
-      "hp": 10
-    },
+    "baseInfo": [
+      {
+        "key": "名前",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "タルタリヤ"
+          }
+        ]
+      },
+      {
+        "key": "タイプ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "キャラカード"
+          }
+        ]
+      },
+      {
+        "key": "HP",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "10"
+          }
+        ]
+      },
+      {
+        "key": "チャージ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "3"
+          }
+        ]
+      },
+      {
+        "key": "元素属性",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "水"
+          }
+        ]
+      },
+      {
+        "key": "武器",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "弓"
+          }
+        ]
+      },
+      {
+        "key": "チーム",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "ファデュイ"
+          }
+        ]
+      },
+      {
+        "key": "天賦カード",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3846,
+            "name": "淵の災い・復水放流",
+            "desc": "<p><strong>タルタリヤ・復水放流</strong><br><br>無謀だが精確な攻撃だ。</p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/19/132746206/6aae56426c2ccedb5e7eff284f0dcc05_1673815928986877.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "入手方法",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "キャッツテールでタルタリヤを招待し、友好対戦に勝利することで獲得"
+          }
+        ]
+      },
+      {
+        "key": "関連項目",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 42,
+            "name": "タルタリヤ",
+            "desc": "<p>ファトゥス第十一位、「公子」。その戦績や名前は広く知られている。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Tartaglia_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "実装バージョン",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "3.7"
+          }
+        ]
+      }
+    ],
     "customize": [
       {
         "type": "Heading",
@@ -311,114 +406,19 @@
         "text": "×1000"
       }
     ],
-    "baseInfo": [
-      {
-        "key": "名前",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "タルタリヤ"
-          }
-        ]
-      },
-      {
-        "key": "タイプ",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "キャラカード"
-          }
-        ]
-      },
-      {
-        "key": "HP",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "10"
-          }
-        ]
-      },
-      {
-        "key": "チャージ",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "3"
-          }
-        ]
-      },
-      {
-        "key": "元素属性",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "水"
-          }
-        ]
-      },
-      {
-        "key": "武器",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "弓"
-          }
-        ]
-      },
-      {
-        "key": "チーム",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "ファデュイ"
-          }
-        ]
-      },
-      {
-        "key": "天賦カード",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3846,
-            "name": "淵の災い・復水放流",
-            "desc": "<p><strong>タルタリヤ・復水放流</strong><br><br>無謀だが精確な攻撃だ。</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/19/132746206/6aae56426c2ccedb5e7eff284f0dcc05_1673815928986877.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "入手方法",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "キャッツテールでタルタリヤを招待し、友好対戦に勝利することで獲得"
-          }
-        ]
-      },
-      {
-        "key": "関連項目",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 42,
-            "name": "タルタリヤ",
-            "desc": "<p>ファトゥス第十一位、「公子」。その戦績や名前は広く知られている。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Tartaglia_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "実装バージョン",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "3.7"
-          }
-        ]
-      }
-    ]
+    "tcg": {
+      "headerImgs": [
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/19/132746206/2db46f62068c4f545f787ef481fe73c8_8248538632229822886.png"
+        },
+        {
+          "imgUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/10/132746206/b2d2b7eee240a144baffc7206f10caf6_1638762815373326285.gif"
+        },
+        {
+          "imgUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/12/18/224893084/dadcbec81bc7ab7d48a7f25ab1b1894b_674912734243960174.gif"
+        }
+      ],
+      "hp": 10
+    }
   }
 }
