@@ -5,9 +5,744 @@
   "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/b8c1c27b62b2cfd816438e9c251958b0_8189847742526923890.png",
   "menuId": 14,
   "menuName": "Tutorial",
-  "version": 1772053752,
+  "version": 1774433163,
   "components": {
+    "galleryCharacter": [
+      {
+        "key": "Dealing Physical Damage",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/6c5ed1eeb09d687c7b8c8cec217c8f63_7405300698018376.png"
+      },
+      {
+        "key": "Elemental Reactions Damage",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/6bb6c739a1c6f8aae3dd898604d75339_8042495360120670391.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Amplifying and Additive Reactions have a special element in the Damage Formula."
+          }
+        ]
+      },
+      {
+        "key": "Elemental Reactions Damage 2",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/f68558a58bc96b9836586c2cb823d99d_5452802010627529162.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Transformative Reactions have a special Damage Formula for the calculation."
+          }
+        ]
+      },
+      {
+        "key": "Damage Bonus",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/166446e96948e4800450695c3960b927_173905872778866754.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Some of the damage buffs will show a specific icon above the character HP bar."
+          }
+        ]
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "Name",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Damage Formula"
+          }
+        ]
+      },
+      {
+        "key": "Type",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Internal system calculation"
+          }
+        ]
+      },
+      {
+        "key": "Related entries",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5206,
+            "name": "Elemental Reactions",
+            "desc": "<p>Elemental Reactions represent the centerpiece of the combat system of Genshin Impact. Understanding and mastering these interactions can drastically improve one’s proficiency in battle.</p><p>There are multiple factors to consider when triggering Elemental Reactions, such as aura, trigger, decay, etc. Elemental Gauge Theory and Internal Cooldowns will play a major role to help players understand the complexity behind Elemental Reactions.</p>",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/18/e03d84da04797c0ad0d6bd99c0d6ed57_8218276776082843931.png"
+          }
+        ],
+        "isMaterial": true
+      }
+    ],
     "customize": [
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Overview",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Lunar Reactions are: Lunar-Charged, Lunar-Crystallize, and Lunar-Bloom.</color>\n<color=#ffffff73>Lunar Reactions ignore enemy DEF but are affected by</color> <color=#ffffff>enemy RES</color> <color=#ffffff73>. Unlike Elemental Reactions, Lunar Reactions can CRIT. Because of that,</color> <color=#ffffff>triggering character's Level, CRIT, and EM</color> <color=#ffffff73>matters.</color>\n<color=#ffffff73>Ex: If Lunar-Bloom is triggered, the character's Level, CRIT, and EM are considered, and the enemy Dendro RES.</color>\n<color=#ffffff73>Each Lunar Reaction has its unique DMG formula.</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Lunar-Charged Formula",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Damage is calculated based on the stats of the characters involved — however, contributions are weighted unevenly. After calculating each individual value, the highest is taken, and half of the second, plus one-twelfth of the third and fourth, are added. A character's participation in Thundercloud damage depends on whether they have applied their element within the last 5 seconds."
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Thundercloud Final Lunar-Charged DMG =</color>\n<color=#ffffffd9>= Highest DMG + (1/2 × 2nd) + (1/12 × 3rd) + (1/12 × 4th)</color>\n<color=#ffffffd9>Individual Lunar-Charged DMG =</color>\n<color=#ffffffd9>= 180% × Character LVL Multiplier × (1 + Base Bonus %) ×</color>\n<color=#ffffffd9>× (1 + EM Bonus + Lunar-Charged Bonus %) ×</color>\n<color=#ffffffd9>× Enemy Electro RES × (100% + [CRIT DMG])</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "In addition to the Thundercloud damage, Direct Lunar-Charged DMG also exists.\nThis version has a larger Reaction Multiplier and is triggered by specific abilities that replace the Character LVL Multiplier with a predefined Property.\nFor example, in Ineffa's 1st Ascension Passive, the Property is 65% of her ATK."
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Direct Lunar-Charged DMG =</color>\n<color=#ffffffd9>= 300% × Property × (1 + Base Bonus %) ×</color>\n<color=#ffffffd9>× (1 + EM Bonus + Lunar-Charged Bonus %) ×</color>\n<color=#ffffffd9>× Enemy Electro RES × (100% + [CRIT DMG])</color>\n<color=#ffffffd9>Direct Lunar-Charged DMG Properties</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7852,
+        "name": "Ineffa",
+        "desc": "A multifunctional robot containing integrated mechanical components from various nations. The Source Core in her chest has endured the passage of countless years.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/07/28/7c221918444852e9a3c2ad609ccacea2_8687518447126752117.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>1st Ascension passive</color>\nIf there are thunderclouds created by Lunar-Charged reactions nearby when Birgitta unleashes Discharge attacks, she will initiate an additional attack, dealing AoE Electro DMG equal to <color=#ffffff73>65% of Ineffa's ATK. This</color> DMG is considered Lunar-Charged DMG.\n<color=#ffffffd9>2nd Constellation</color>\nAfter the Elemental Burst Supreme Instruction: Cyclonic Exterminator hits opponents, it will inflict the Punishment Edict status on one of those hit opponents: After a brief delay, or when this opponent is attacked, nearby opponents will take AoE Electro DMG eq <color=#ffffff73>ual to 300% of Ineffa's ATK. T</color> his DMG is considered Lunar-Charged DMG.\n<color=#ffffffd9>6th Constellation</color>\nWhen Ineffa is affected by the Carrier Flow Composite effect, she will deal AoE Electro DMG equa <color=#ffffff73>l to 135% of her ATK t</color> o opponents in the current active character's vicinity after nearby thunderclouds release bursts of lightning at opponents. This DMG is considered Lunar-Charged DMG. The aforementioned effect can trigger once every 3.5s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8398,
+        "name": "Flins",
+        "desc": "<p>A Lightkeeper of Nod-Krai, guardian of a lighthouse and graveyard on a northern isle. An enigmatic gentleman, cultured and courtly. </p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/29/35428890/f6feccecc61d2bf772461f057dfb41cd_5944664216414192017.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Elemental Burst</color>\nFlins unleashes the true power of his lamp, dealing AoE Electro DMG a <color=#ffffff73>nd, after a short delay, dealing 2 instances of middle-phase (16.24%~29.23% ATK) and 1 instance of final-phase AoE Electro DMG (116.93%~210.47% ATK), all of which are considered Lunar-Charged DMG.</color>\n<color=#ffffff73>Moonsign: Ascendant Gleam: Flins's Skill is enhanced: If there are thunderclouds nearby, Flins will deal an additional 2 instances of middle-phase Lunar-Charged AoE Electro DMG.</color>\n<color=#ffffff73>After using the special Elemental Skill Northland Spearstorm, Flins's Elemental Burst Ancient Ritual: Cometh the Night will be replaced with the special Elemental Burst Thunderous Symphony for the next 6s.</color>\n<color=#ffffff73>Thunderous Symphony</color>\n<color=#ffffff73>Consume less Elemental Energy to unleash a special Elemental Burst. Flins deals a single instance of AoE Electro DMG (71.46%~128.62% ATK) that is considered Lunar-Charged DMG.</color>\n<color=#ffffff73>Moonsign: Ascendant Gleam: Flins's Skill is enhanced: If there are thunderclouds nearby, Flins will deal an additional instance of Lunar-Charged AoE Electro DMG (103.94%~187.08% ATK).</color>\n<color=#ffffffd9>2nd Constellation</color>\nFor the next 6s after using the special Elemental Skill Northland Spearstorm, when Flins's next Normal Attack hits an opponent, it will deal an additio <color=#ffffff73>nal 50% of Flins's ATK as</color> AoE Electro DMG. This DMG is considered Lunar-Charged DMG.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9121,
+        "name": "Columbina",
+        "desc": "The Moon Maiden born in Nod-Krai, and also the welkin moon returning home.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/80fa97679c8d1828fdd96c6aa9638632_4327573591148809640.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Elemental Skill</color>\nAfter unleashing Elemental Skill Eternal Tides, Columbina will summon Gravity Ripple.\nWhile Gravity Ripple is on the field, and nearby party members trigger Lunar reactions or inflict Lunar Reaction DMG, Columbina will gain the New Moon's Omen effect for 2s, continuously accumulating Gravity. 20 Gravity can be accumulated every 2s.\nYou can have up to 60 Gravity, and it will be removed when the duration of Gravity Ripple ends.\nOnce Gravity is accumulated to its limit, a special Gravity Interference will be triggered. Different effects will be triggered depending on the Lunar reaction type that has accumulated the most Gravity for Columbina. If the Lunar reaction type that has accumula <color=#ffffff73>ted the most Gravity for Columbina is Lunar-Charged, Gravity Interference will deal a single instance of Electro AoE DMG (4.7%~8.47% Max HP). This D</color> MG is considered Lunar-Charged DMG.",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Lunar-Crystallize Formula",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Lunar-Crystallize is similar to Lunar-Charged. While the Individual Lunar-Charged DMG Formula uses a 180% multiplier, and the Direct Lunar-Charged DMG Formula uses 300%, the Lunar-Crystallize DMG Formula uses 96% and 160% respectively."
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Moondrifts Lunar-Crystallize DMG =</color>\n<color=#ffffffd9>= 96% × Character LVL Multiplier × (1 + Base Bonus %) ×</color>\n<color=#ffffffd9>× (1 + EM Bonus + Lunar-Crystallize Bonus %) ×</color>\n<color=#ffffffd9>× Enemy Geo RES × (100% + [CRIT DMG])</color>\n<color=#ffffffd9>Direct Lunar-Crystallize DMG =</color>\n<color=#ffffffd9>= 160% × Property × (1 + Base Bonus %) ×</color>\n<color=#ffffffd9>× (1 + EM Bonus + Lunar-Crystallize Bonus %) ×</color>\n<color=#ffffffd9>× Enemy Geo RES × (100% + [CRIT DMG])</color>\n<color=#ffffffd9>Direct Lunar-Crystallize DMG Properties</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9121,
+        "name": "Columbina",
+        "desc": "The Moon Maiden born in Nod-Krai, and also the welkin moon returning home.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/80fa97679c8d1828fdd96c6aa9638632_4327573591148809640.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Elemental Skill</color>\nAfter unleashing Elemental Skill Eternal Tides, Columbina will summon Gravity Ripple.\nWhile Gravity Ripple is on the field, and nearby party members trigger Lunar reactions or inflict Lunar Reaction DMG, Columbina will gain the New Moon's Omen effect for 2s, continuously accumulating Gravity. 20 Gravity can be accumulated every 2s.\nYou can have up to 60 Gravity, and it will be removed when the duration of Gravity Ripple ends.\nOnce Gravity is accumulated to its limit, a special Gravity Interference will be triggered. Different effects will be triggered depending on the Lunar reaction type that has accumulated the most Gravity for Columbina. If the Lunar reaction type that has accumulated the most Gravity for Columbina is Lunar-Crystallize, Gravity In <color=#ffffff73>terference will deal a single instance of Geo AoE DMG (8.82%~15.88% Max HP). T</color> his DMG is considered Lunar-Crystallize DMG.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9122,
+        "name": "Zibai",
+        "desc": "The White Horse Adeptus from Liyue's legends, known as Zibai. The most mysterious figure in Liyue's myths.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/72161f01ff431c9f099710f92c811454_1654176825175164246.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Elemental Skill</color>\nSummoning a shadow of her former powers, she switches to the Lunar Phase Shift mode. The Elemental Skill Heaven and Earth Made Manifest will be converted to the Elemental Skill Spirit Steed's Stride: When Zibai has at least 70 Phase Shift Radiance, she can consume 70 Phase Shift Radiance to unleash Spirit Steed's Stride and cause two instances of Geo DMG. The second instance will be <color=#ffffff73>considered Lunar-Crystallize Reaction DMG (140.97%~253.74% DEF).</color>\n<color=#ffffff73>Moonsign: Ascendant Gleam: While in the Lunar Phase Shift mode, when Zibai performs Normal Attacks, the fourth attack will deal an additional instance of Geo DMG, which is considered Lunar-Crystallize Reaction DMG (29.46%~53.02% DEF).</color>\n<color=#ffffffd9>Elemental Burst</color>\nZibai operates the Jadelight Canopy, dealing two instances of Geo DMG, with the second damage instance being considered Lunar-Crystallize Reaction DM <color=#ffffff73>G (177.74%~319.94% DEF).</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Lunar-Bloom Formula",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Lunar-Bloom DMG is a form of direct damage, distinct from Bloom and from Dendro Cores.\nJust like Direct Lunar-Charged DMG, Lunar-Bloom DMG uses a predefined Property from the triggering character.\nHowever, its Reaction Multiplier is 100%, allowing it to be effectively ignored in the formula."
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Lunar-Bloom DMG =</color>\n<color=#ffffffd9>= Property × (1 + Base Bonus %) ×</color>\n<color=#ffffffd9>× (1 + EM Bonus + Lunar-Bloom Bonus%)</color>\n<color=#ffffffd9>× Enemy Dendro RES × (100% + [CRIT DMG])</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "There's a special case regarding"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8396,
+        "name": "Lauma",
+        "desc": "A Maiden blessed by moonlight and the grove alike, hope born to the Frostmoon Scions.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/08/b06e9ff48d57de4856f1a05b1199aae1_8565150401481594895.png",
+        "displayStyle": "text",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "'s Elemental Burst, which increases the Bloom, Hyperbloom, Burgeon, and Lunar-Bloom DMG dealt by any party member based on her <color=#ffffff73>EM (222.24%~400.03% Elemental Mastery). T</color> his increase is simply added to the final calculation, but being affected by two multipliers: the enemy's Elemental RES and the CRIT DMG multiplier of the triggering character (if the hit crits)."
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Lunar-Bloom DMG Properties</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8396,
+        "name": "Lauma",
+        "desc": "A Maiden blessed by moonlight and the grove alike, hope born to the Frostmoon Scions.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/08/b06e9ff48d57de4856f1a05b1199aae1_8565150401481594895.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Elemental Skill</color>\nIf hold, can be unleashed when you have at least 1 Verdant Dew. Lauma consumes all Verdant Dew and intones a Hymn of Eternal Rest, dealing one regular instance of AoE Dendro DMG and another instance of <color=#ffffff73>AoE Dendro DMG that is considered Lunar-Bloom DMG (152%~273.6% Elemental Mastery Per Verdant Dew).</color>\n<color=#ffffffd9>6th Constellation</color>\nWhen the Frostgrove Sanctuary at <color=#ffffff73>tacks opponents, it will deal 1 additional instance of AOE Dendro DMG equal to 185% of Lauma's Elemental Mastery. This DMG is considered Lunar-Bloom DMG.</color>\n<color=#ffffff73>When Lauma uses a Normal Attack while she has Pale Hymn stacks, she will consume 1 stack to convert this to deal Dendro DMG equal to 150% of her Elemental Mastery. T</color> his DMG is considered Lunar-Bloom DMG.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8894,
+        "name": "Nefer",
+        "desc": "The remarkably resourceful owner of the Curatorium of Secrets.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/10/21/7557acebcb72b4d9912bcb0e6c92306a_3655566527985254987.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Elemental Skill</color>\nWhen in the Shadow Dance state caused by her Elemental Skill Senet Strategy: Dance of a Thousand Nights, if you have at least 1 Verdant Dew, Nefer's Charged Attacks will be replaced with the special Charged Attack Phantasm Performance, which will not consume Stamina.\nNefer summons shades of herself to perform Coordinated Attacks against enemies. Nefer and the shades will deal 2 and 3 stages of AoE Dendro DMG respec <color=#ffffff73>tively. DMG dealt by the shades is considered Lunar-Bloom DMG (96%~172.8% EM, 96%~172.8% EM, 128%~230.4% EM).</color>\n<color=#ffffffd9>6th Constellation</color>\nWhen Nefer unleashes Phantasm Performance, the second stage of DMG dealt by herself will b <color=#ffffff73>e converted to deal AoE Dendro DMG equal to 85% of her Elemental Mastery. Additionally, when the attacks from Phantasm Performance end, an extra instance of AoE Dendro DMG equal to 120% of Nefer's Elemental Mastery will be dealt. All of the aforementioned DMG is considered</color> Lunar-Bloom DMG dealt by Phantasm Performance.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9121,
+        "name": "Columbina",
+        "desc": "The Moon Maiden born in Nod-Krai, and also the welkin moon returning home.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/80fa97679c8d1828fdd96c6aa9638632_4327573591148809640.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Charged Attack</color>\nConsumes a certain amount of Stamina to deal AoE Hydro DMG after a short casting time.\nIf you have at least 1 Verdant Dew, Columbina's Charged Attacks will be replaced with the special Charged Attack Moondew Cleanse, which will not consume Stamina: Consume 1 Verdant Dew to deal 3 instances of AoE Dendro DMG to opponents in front. This <color=#ffffff73>DMG is considered Lunar-Bloom DMG (1.51%~2.72% Max HP ×3).</color>\n<color=#ffffffd9>Elemental Skill</color>\nAfter unleashing Elemental Skill Eternal Tides, Columbina will summon Gravity Ripple.\nWhile Gravity Ripple is on the field, and nearby party members trigger Lunar reactions or inflict Lunar Reaction DMG, Columbina will gain the New Moon's Omen effect for 2s, continuously accumulating Gravity. 20 Gravity can be accumulated every 2s.\nYou can have up to 60 Gravity, and it will be removed when the duration of Gravity Ripple ends.\nOnce Gravity is accumulated to its limit, a special Gravity Interference will be triggered. Different effects will be triggered depending on the Lunar reaction type that has accumulated the most Gravity for Columbina. If the Lunar reaction type that has accumulated the most Gravity for Columbina is Lunar-Bloom, Gravity Interference will fire 5 Moondew Sigils at surrounding opponents, dealing Dendro DMG. This DM <color=#ffffff73>G is considered Lunar-Bloom DMG (1.41%~2.53% Max HP ×5).</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Base Damage Multiplier",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7852,
+        "name": "Ineffa",
+        "desc": "A multifunctional robot containing integrated mechanical components from various nations. The Source Core in her chest has endured the passage of countless years.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/07/28/7c221918444852e9a3c2ad609ccacea2_8687518447126752117.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Moonsign Benediction passive</color>\nWhen a party member triggers the Electro-Charged reaction, it will be converted into the Lunar-Charged reaction, with every 100 ATK that Ineffa has increasing Lunar-Charged's Base DMG by 0.7%, up to a maximum of 14%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8398,
+        "name": "Flins",
+        "desc": "<p>A Lightkeeper of Nod-Krai, guardian of a lighthouse and graveyard on a northern isle. An enigmatic gentleman, cultured and courtly. </p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/29/35428890/f6feccecc61d2bf772461f057dfb41cd_5944664216414192017.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Moonsign Benediction passive</color>\nWhen a party member triggers an Electro-Charged reaction, it will be converted into the Lunar-Charged reaction, with every 100 ATK that Flins has increasing Lunar-Charged's Base DMG by 0.7%, up to a maximum of 14%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8396,
+        "name": "Lauma",
+        "desc": "A Maiden blessed by moonlight and the grove alike, hope born to the Frostmoon Scions.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/08/b06e9ff48d57de4856f1a05b1199aae1_8565150401481594895.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Moonsign Benediction passive</color>\nWhen a Bloom reaction is triggered by a party member, it will be converted into the Lunar-Bloom reaction, with every point of Elemental Mastery that Lauma has increasing Lunar-Bloom's Base DMG by 0.0175%, up to a maximum of 14%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8894,
+        "name": "Nefer",
+        "desc": "The remarkably resourceful owner of the Curatorium of Secrets.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/10/21/7557acebcb72b4d9912bcb0e6c92306a_3655566527985254987.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Elemental Skill</color>\nEach stack of Veil of Falsehood increases the DMG dealt by Nefer's Phantasm Performance by 8%. The initial maximum number of stacks is 3, with each stack lasting for 9s (each stack's duration is counted independently).\n<color=#ffffffd9>Moonsign Benediction passive</color>\nWhen a party member triggers a Bloom reaction, it will be converted into the Lunar-Bloom reaction, with every point of Elemental Mastery that Nefer has increasing Lunar-Bloom's Base DMG by 0.0175%, up to a maximum of 14%.\n<color=#ffffffd9>1st Constellation</color>\nThe Base DMG for Lunar-Bloom reactions caused by Nefer's Phantasm Performance is increased by 60% of her Elemental Mastery. This effect is also boosted by Veil of Falsehood.\n<color=#ffffffd9>2nd Constellation</color>\nEnhances the effects of the Ascension Talent A Wager of Moonlight: Extends Veil of Falsehood's duration by 5s, and increases its stack limit to 5, as well as causing Phantasm Performance to deal up to 140% of its original DMG.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9121,
+        "name": "Columbina",
+        "desc": "The Moon Maiden born in Nod-Krai, and also the welkin moon returning home.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/80fa97679c8d1828fdd96c6aa9638632_4327573591148809640.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Moonsign Benediction passive</color>\nWhen a party member triggers an Electro-Charged, Bloom, or Hydro-Crystallize reaction, it will be converted into a Lunar-Charged, Lunar-Bloom, or Lunar-Crystallize reaction respectively. Lunar Reaction DMG inflicted by party members gain a Base DMG increase based on Columbina's Max HP. For every 1,000 points of Max HP, the Base DMG of Lunar reactions is increased by 0.2%, up to a maximum of 7%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9122,
+        "name": "Zibai",
+        "desc": "The White Horse Adeptus from Liyue's legends, known as Zibai. The most mysterious figure in Liyue's myths.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/72161f01ff431c9f099710f92c811454_1654176825175164246.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Moonsign Benediction passive</color>\nWhen a party member triggers a Hydro Crystallize reaction, it will be converted into the Lunar-Crystallize reaction, with every 100 DEF that Zibai has increasing Lunar-Crystallize's Base DMG by 0.7%, up to a maximum of 14%.",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "EM Bonus Multiplier",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "When Moonsign: Ascendant Gleam is active, and non-Moonsign characters use their Skills or Bursts, the Elemental Mastery Bonus (EM Bonus) can be further increased by up to 36% in total.\nThe increase depends on the element of the character activating their Skill or Burst, and on the corresponding stat:\nHydro: +0.6% per 1000 Max HP\nPyro / Electro / Cryo: +0.9% per 100 ATK\nGeo: +1% per 100 DEF\nAnemo / Dendro: +2.25% per 100 EM"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>[ (6 × EM) / (EM + 2000) ] + [ 0~36%]</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Reaction Bonus Multiplier",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Characters</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7852,
+        "name": "Ineffa",
+        "desc": "A multifunctional robot containing integrated mechanical components from various nations. The Source Core in her chest has endured the passage of countless years.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/07/28/7c221918444852e9a3c2ad609ccacea2_8687518447126752117.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>1st Constellation</color>\nWhen Ineffa activates her Optical Flow Shield Barrier, all nearby party members will gain the Carrier Flow Composite effect for 20s: Increases Lunar-Charged DMG by 2.5% for every 100 ATK that Ineffa has, up to a maximum of 50%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8398,
+        "name": "Flins",
+        "desc": "<p>A Lightkeeper of Nod-Krai, guardian of a lighthouse and graveyard on a northern isle. An enigmatic gentleman, cultured and courtly. </p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/29/35428890/f6feccecc61d2bf772461f057dfb41cd_5944664216414192017.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>1st Ascension passive</color>\nMoonsign: Ascendant Gleam: Lunar-Charged reactions triggered by Flins will deal an additional 20% DMG.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8397,
+        "name": "Aino",
+        "desc": "A genius mechanic and inventor from Nod-Krai who loves interesting machines and sweet treats.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/09/4e58c851d6c947865026faa168db83bd_3944254802105067377.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>6th Constellation</color>\nFor the next 15s after using the Elemental Burst Precision Hydronic Cooler, DMG from nearby active characters' Electro-Charged, Bloom, Lunar-Charged, Lunar-Bloom, and Lunar-Crystallize reactions is increased by 15%.\nMoonsign: Ascendant Gleam: DMG from the aforementioned reactions will be further increased by 20%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "Mona",
+        "desc": "A mysterious young astrologer who proclaims herself to be \"Astrologist Mona Megistus,\" and who possesses abilities to match the title. Erudite, but prideful.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>1st Constellation</color>\nWhen any of your own party members hits an opponent affected by an Omen, Lunar-Charged DMG and Lunar-Crystallize DMG increase by 15%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "Baizhu",
+        "desc": "<p>The owner of Bubu Pharmacy, who is rarely seen without the white snake named Changsheng. His medicinal knowledge is encyclopedic, and his personal intrigues subtle. </p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/02/35428890/05599650d7f42e1c4adde373de6b297d_8001303176243726128.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>4th Ascension passive</color>\nCharacters who are healed by Seamless Shields will gain the Year of Verdant Favor effect: Each 1,000 Max HP that Baizhu possesses that does not exceed 50,000 will increase their Lunar-Bloom DMG by 0.7%. This effect lasts 6s.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7627,
+        "name": "Ifa",
+        "desc": "A vet from the Flower-Feather Clan who cherishes the life he leads alongside all manner of living things — people, animals, you name it.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/30/ce693d1e36aef5936b2d2db006605fc4_9036718103340803450.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>1st Ascension passive</color>\nWhen Ifa is in the Nightsoul's Blessing state, every 1 Nightsoul point out of the total in his entire party will grant him 1 Rescue Essentials point. Each Rescue Essentials point Ifa has will increase the Swirl and Electro-Charged DMG dealt by nearby party members by 1.5%, and their Lunar-Charged DMG dealt by 0.2%. Max 150 points. These points will be cleared when his Nightsoul's Blessing state ends.\n<color=#ffffffd9>2nd Constellation</color>\nWhen Ifa is in the Nightsoul's Blessing state, every Nightsoul point the party has above a total of 60 will grant Ifa 4 additional Rescue Essentials points. Additionally, Ifa's Rescue Essentials limit is increased by 50.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8396,
+        "name": "Lauma",
+        "desc": "A Maiden blessed by moonlight and the grove alike, hope born to the Frostmoon Scions.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/08/b06e9ff48d57de4856f1a05b1199aae1_8565150401481594895.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>2nd Constellation</color>\nMoonsign: Ascendant Gleam: All nearby party members' Lunar-Bloom DMG is increased by 40%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9121,
+        "name": "Columbina",
+        "desc": "The Moon Maiden born in Nod-Krai, and also the welkin moon returning home.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/80fa97679c8d1828fdd96c6aa9638632_4327573591148809640.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Elemental Burst</color>\nHills and tides unite under the silver light of a pristine new moon. Temporarily transforms the surrounding terrain into Lunar Domain, dealing AoE Hydro DMG. When current active characters are within the Lunar Domain, Lunar Reaction DMG inflicted by all party members will increase.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9122,
+        "name": "Zibai",
+        "desc": "The White Horse Adeptus from Liyue's legends, known as Zibai. The most mysterious figure in Liyue's myths.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/72161f01ff431c9f099710f92c811454_1654176825175164246.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>1st Constellation</color>\nEach time you switch to the Lunar Phase Shift mode, the first Spirit Steed's Stride's 2nd-hit Lunar-Crystallize Reaction DMG is increased by 220%.\n<color=#ffffffd9>2nd Constellation</color>\nWhen in the Lunar Phase Shift mode, all nearby party members' Lunar-Crystallize Reaction DMG is increased by 30%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9123,
+        "name": "Illuga",
+        "desc": "Member of the investigation squad, the Nightmare Orioles. The youngest squad leader among the Lightkeepers.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/d585407867aa47b4d925613cea9f00c2_5864597966579326880.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Elemental Burst</color>\nLight the lamp, dealing AoE Geo DMG, and gain Haunted Night's Oriole-Song effect for 20s. When this effect is active, Illuga gains 21 stacks of Nightingale's Song. When Normal Attacks, Charged Attacks, Plunging Attacks, Elemental Skills, and Elemental Bursts of nearby active party members deal Geo DMG to opponents, 1 stack of Nightingale's Song is consumed to increase the DMG dealt. Increase in DMG is based on Illuga's Elemental Mastery. If DMG is inflicted by Lunar-Crystallize, DMG dealt will increase further.\n<color=#ffffffd9>4th Ascension passive</color>\nNightingale's Song's effects are enhanced: When there are 1/2/3 Hydro or Geo characters in the party, Nightingale's Song will further increase DMG. Increase in DMG is equal to 7%/14%/24% of Illuga's Elemental Mastery. If this aforementioned DMG is inflicted by a Lunar-Crystallize reaction, increase in DMG is equal to 48%/96%/160% of Illuga's Elemental Mastery.\n<color=#ffffffd9>Weapons</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8299,
+        "name": "Fractured Halo",
+        "desc": "A spinning mechanical blade produced by the Clink-Clank Krumkake Craftshop that seems to hide secrets from a bygone era...",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/07/21/6f0271a3d35033b8ec7260faa56b8cc1_2090404062568539078.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "If the equipping character creates a Shield while this effect is active, they will gain the Electrifying Edict effect for 20s: All nearby party members deal <color=#37ffff>40%/50%/60%/70%/80%</color> more Lunar-Charged DMG.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8517,
+        "name": "Blackmarrow Lantern",
+        "desc": "A lantern that emits a faint, ghostly glow, contained by a midnight-black alloy that resembles interlocking bones. It is said to have once been revered as a precious treasure by a certain secret organization.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/fca1d073841a27aa921fb0cdadcc1814_4456705496709264629.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Lunar-Bloom DMG is increased by <color=#37ffff>12%/15%/18%/21%/24%</color> . Moonsign: Ascendant Gleam: Lunar-Bloom DMG is increased by an additional <color=#37ffff>12%/15%/18%/21%/24%</color> .",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8514,
+        "name": "Prospector's Shovel",
+        "desc": "A polearm that appears to have been crafted from a metal agricultural tool. At first glance, it could not look more ordinary, yet its discreet design hides fittings that are both lavish and undeniably exquisite.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/02b62205aa9b8bbf8db3f7dfd81c2722_4251757494889514703.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "Lunar-Charged DMG is increased by <color=#37ffff>12%/15%/18%/21%/24%</color> . Moonsign: Ascendant Gleam: Lunar-Charged DMG is increased by an additional <color=#37ffff>12%/15%/18%/21%/24%</color> .",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8838,
+        "name": "Bloodsoaked Ruins",
+        "desc": "A long spear tainted black by unrelenting battle, it shines with an ethereal glow beneath the ghostly blue light of lantern-fire.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/f842bb3bf454987301dd1bedd3be0c06_372682473601768051.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "For 3.5s after using an Elemental Burst, the equipping character's Lunar-Charged DMG dealt to opponents is increased by <color=#37ffff>36%/48%/60%/72%/84%</color> .",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8836,
+        "name": "Nightweaver's Looking Glass",
+        "desc": "A mirror crafted from flawless silver that is said to have witnessed the birth of the Moon Maiden. It is seen as a relic of unrivalled provenance by the Frostmoon Scions.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/d28b849e0abef976114ea7ecef92960e_4616051474368823347.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "When the equipping character's Elemental Skill deals Hydro or Dendro DMG, they will gain Prayer of the Far North. When nearby party members trigger Lunar-Bloom reactions, the equipping character gains New Moon Verse. When both Prayer of the Far North and New Moon Verse are in effect, all nearby party members' Lunar-Bloom DMG is increased by <color=#37ffff>40%/50%/60%/70%/80%</color> . This effect cannot stack. The aforementioned effects can be triggered even if the equipping character is off-field.\n<color=#ffffffd9>Artifacts</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "Thundering Fury",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>4-Piece Set</color>\nIncreases the DMG caused by Lunar-Charged by 20%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Flower of Paradise Lost",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/05/35428890/50ce09dfa5a91a33aa9cedfb15bcf2d1_864016614991586234.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>4-Piece Set</color>\nThe equipping character's Lunar-Bloom reaction DMG is increased by 10%. Additionally, after the equipping character triggers Bloom, Hyperbloom, Lunar-Bloom, or Burgeon, they will gain another 25% bonus to the effect mentioned prior. Each stack of this lasts 10s. Max 4 stacks simultaneously. This effect can only be triggered once per second. The character who equips this can still trigger its effects when not on the field.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8520,
+        "name": "Night of the Sky's Unveiling",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/25c4512875bad223765a5a32c82b09a4_7122872897984003318.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>4-Piece Set</color>\nWhen nearby party members trigger Lunar Reactions, if the equipping character is on the field, gain the Gleaming Moon: Intent effect for 4s. All party members' Lunar Reaction DMG is increased by 10% for each different Gleaming Moon effect that party members have. Effects from Gleaming Moon cannot stack.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8521,
+        "name": "Silken Moon's Serenade",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/b8350998129a66e67c1a7691153da68d_6559589601591776539.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>4-Piece Set</color>\nWhen dealing Elemental DMG, gain the Gleaming Moon: Devotion effect for 8s. The equipping character can trigger this effect while off-field. All party members' Lunar Reaction DMG is increased by 10% for each different Gleaming Moon effect that party members have. Effects from Gleaming Moon cannot stack.",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Elevation Multiplier",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Special DMG Boost effect. It is calculated independently of other DMG Boost effects."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8398,
+        "name": "Flins",
+        "desc": "<p>A Lightkeeper of Nod-Krai, guardian of a lighthouse and graveyard on a northern isle. An enigmatic gentleman, cultured and courtly. </p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/29/35428890/f6feccecc61d2bf772461f057dfb41cd_5944664216414192017.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>6th Constellation</color>\nThe DMG dealt to opponents by Flins's Lunar-Charged reactions is elevated by 35%.\nMoonsign: Ascendant Gleam: All nearby party members' Lunar-Charged DMG is elevated by 10%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8396,
+        "name": "Lauma",
+        "desc": "A Maiden blessed by moonlight and the grove alike, hope born to the Frostmoon Scions.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/08/b06e9ff48d57de4856f1a05b1199aae1_8565150401481594895.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>6th Constellation</color>\nMoonsign: Ascendant Gleam: All nearby party members' Lunar-Bloom DMG is elevated by 25%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8894,
+        "name": "Nefer",
+        "desc": "The remarkably resourceful owner of the Curatorium of Secrets.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/10/21/7557acebcb72b4d9912bcb0e6c92306a_3655566527985254987.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>6th Constellation</color>\nMoonsign: Ascendant Gleam: Nefer's Lunar-Bloom DMG is elevated by 15%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9121,
+        "name": "Columbina",
+        "desc": "The Moon Maiden born in Nod-Krai, and also the welkin moon returning home.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/80fa97679c8d1828fdd96c6aa9638632_4327573591148809640.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>1st Constellation</color>\nAll nearby party members' Lunar Reaction DMG is elevated by 1.5%.\n<color=#ffffffd9>2nd Constellation</color>\nAll nearby party members' Lunar Reaction DMG is elevated by 7%.\n<color=#ffffffd9>3rd Constellation</color>\nAll nearby party members' Lunar Reaction DMG is elevated by 1.5%.\n<color=#ffffffd9>4th Constellation</color>\nAll nearby party members' Lunar Reaction DMG is elevated by 1.5%.\n<color=#ffffffd9>5th Constellation</color>\nAll nearby party members' Lunar Reaction DMG is elevated by 1.5%.\n<color=#ffffffd9>6th Constellation</color>\nAll nearby party members' Lunar Reaction DMG is elevated by 7%.",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9122,
+        "name": "Zibai",
+        "desc": "The White Horse Adeptus from Liyue's legends, known as Zibai. The most mysterious figure in Liyue's myths.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/72161f01ff431c9f099710f92c811454_1654176825175164246.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>6th Constellation</color>\nSpirit Steed's Stride will change such that it will consume all Phase Shift Radiance. This will elevate the DMG dealt by this instance of Spirit Steed's Stride and the Lunar-Crystallize Reaction DMG dealt by Zibai within the next 3s by 1.6% for every point consumed above 70. This effect cannot <color=#ffffff73>stack</color> .",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Overview",
+        "alignment": "center"
+      },
       {
         "type": "RichText",
         "text": "<color=#ffffff73>Transformative Reactions are: Bloom, Hyperbloom, Burgeon, Burning, Overloaded, Electro-charged, Superconduct, Shatter, Swirl.</color>\n<color=#ffffff73>Transformative Reactions ignore enemy DEF but are affected by</color> <color=#ffffff>enemy RES</color> <color=#ffffff73>. They cannot CRIT (besides Nahida's Constellation 2 which allows Bloom, Hyperbloom, Burgeon and Burning to CRIT with a set amount of 20% CRIT Rate and 100% CRIT Damage).</color> O <color=#ffffff73>nly the</color> <color=#ffffff>triggering character's Level and EM</color> <color=#ffffff73>matters.</color>\n<color=#ffffff73>Ex: If Bloom is triggered by a Dendro character (applying Dendro on Hydro), the Dendro character's Level and EM are considered, and the enemy Dendro RES.</color>\n<color=#ffffff73>Thus Transformative Reactions are calculated by the following formula:</color>"
@@ -25,7 +760,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff73>Each Transformative Reaction has its own Reaction Multiplier, as shown in the table:</color>\n<color=#ffffff>Reaction Multiplier</color>\n<color=#ffffff>Reaction</color>\n<color=#ffffff73>300%</color>\n<color=#ffffff73>Burgeon, Hyperbloom, Shatter</color>\n275%\nOverloaded\n<color=#ffffff73>200%</color>\n<color=#ffffff73>Bloom, Electro-charged</color>\n<color=#ffffff73>60%</color>\n<color=#ffffff73>Swirl</color>\n<color=#ffffff73>25%</color>\n<color=#ffffff73>Burning</color>"
+        "text": "<color=#ffffff73>Each Transformative Reaction has its own Reaction Multiplier, as shown in the table:</color>\n<color=#ffffff>Reaction</color>\n<color=#ffffff>Multiplier</color>\n<color=#ffffff73>Burgeon, Hyperbloom, Shatter</color>\n<color=#ffffff73>300%</color>\nOverloaded\n275%\n<color=#ffffff73>Bloom, Electro-charged</color>\n<color=#ffffff73>200%</color>\nSuperconduct\n150%\n<color=#ffffff73>Swirl</color>\n<color=#ffffff73>60%</color>\n<color=#ffffff73>Burning</color>\n<color=#ffffff73>25%</color>"
       },
       {
         "type": "Heading",
@@ -35,7 +770,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff73>Characters have Level Multipliers depending on the character's current level. It is as shown in the table:</color>\n<color=#ffffff>Character Level</color>\n<color=#ffffff>Character Level Multiplier</color>\n<color=#ffffff73>60</color>\n<color=#ffffff73>492.88</color>\n<color=#ffffff73>70</color>\n<color=#ffffff73>765.64</color>\n<color=#ffffff73>80</color>\n<color=#ffffff73>1077.44</color>\n<color=#ffffff73>85</color>\n<color=#ffffff73>1253.84</color>\n<color=#ffffff73>90</color>\n<color=#ffffff73>1446.85</color>"
+        "text": "<color=#ffffff73>Characters have Level Multipliers depending on the character's current level. It is as shown in the table:</color>\n<color=#ffffff>Character Level</color>\n<color=#ffffff>Multiplier</color>\n60\n<color=#ffffff73>492.88</color>\n70\n<color=#ffffff73>765.64</color>\n80\n<color=#ffffff73>1077.44</color>\n85\n<color=#ffffff73>1253.84</color>\n90\n<color=#ffffff73>1446.85</color>"
       },
       {
         "type": "Heading",
@@ -257,7 +992,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>Elemental Skill</color>\nDuring the duration of Yoimiya's skill, her normal attack DMG will be increased.",
+        "text": "<color=#ffffff>Elemental Skill</color>\nDuring the duration of Yoimiya's Skill, her normal attack DMG will be increased.",
         "alignment": "center"
       },
       {
@@ -299,7 +1034,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>Elemental Skill</color>\nDuring Wanderer's skill, when he uses Normal and Charged Attacks, the DMG they deal and their AoE will be increased.",
+        "text": "<color=#ffffff>Elemental Skill</color>\nDuring Wanderer's Skill, when he uses Normal and Charged Attacks, the DMG they deal and their AoE will be increased.",
         "alignment": "center"
       },
       {
@@ -313,7 +1048,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>Elemental Skill</color>\nDuring Wriothesley's skill, when his HP is above 50%, it will enhance the Repelling Fists of his Normal Attack and increase its DMG.",
+        "text": "<color=#ffffff>Elemental Skill</color>\nDuring Wriothesley's Skill, when his HP is above 50%, it will enhance the Repelling Fists of his Normal Attack and increase its DMG.",
         "alignment": "center"
       },
       {
@@ -341,7 +1076,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>Elemental Skill</color>\nDuring Furina's Ousia-aligned skill, she summons 3 Salon Members. When they attack, if character(s) with more than 50% HP are nearby, they will increase their current attack's power based on the number of such characters, and consume said characters' HP. If the characters who meet these requirements are 1/2/3/4 (or more), the Members' attacks will deal 110%/120%/130%/140% of their original DMG.",
+        "text": "<color=#ffffff>Elemental Skill</color>\nDuring Furina's Ousia-aligned Skill, she summons 3 Salon Members. When they attack, if character(s) with more than 50% HP are nearby, they will increase their current attack's power based on the number of such characters, and consume said characters' HP. If the characters who meet these requirements are 1/2/3/4 (or more), the Members' attacks will deal 110%/120%/130%/140% of their original DMG.",
         "alignment": "center"
       },
       {
@@ -355,7 +1090,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>Elemental Skill</color>\nWhen Crystal Shrapnels are consumed, Navia's next elemental skill will have Rosula Shardshots added based on the number of Crystal Shrapnels. When all 11 Rosula Shardshots strike, 200% of the original amount of DMG is dealt.\nIn addition, when more than 3 stacks of Crystal Shrapnel are consumed, every stack consumed beyond those 3 will increase the DMG dealt by this elemental skill by an additional 15%.",
+        "text": "<color=#ffffff>Elemental Skill</color>\nWhen Crystal Shrapnels are consumed, Navia's next elemental Skill will have Rosula Shardshots added based on the number of Crystal Shrapnels. When all 11 Rosula Shardshots strike, 200% of the original amount of DMG is dealt.\nIn addition, when more than 3 stacks of Crystal Shrapnel are consumed, every stack consumed beyond those 3 will increase the DMG dealt by this Elemental Skill by an additional 15%.",
         "alignment": "center"
       },
       {
@@ -561,7 +1296,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>Elemental Skill</color>\nDuring Shenhe's skill effect, when Normal, Charged, and Plunging Attacks, Elemental Skills, and Elemental Bursts deal Cryo DMG to opponents, the DMG dealt is increased based on Shenhe's current ATK.",
+        "text": "<color=#ffffff>Elemental Skill</color>\nDuring Shenhe's Skill effect, when Normal, Charged, and Plunging Attacks, Elemental Skills, and Elemental Bursts deal Cryo DMG to opponents, the DMG dealt is increased based on Shenhe's current ATK.",
         "alignment": "center"
       },
       {
@@ -617,7 +1352,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>2nd Constellation</color>\nTransient Blossoms generated by Albedo's skill grant him Fatal Reckoning for 30s:\n· Unleashing his Burst consumes all stacks of Fatal Reckoning. Each stack of Fatal Reckoning consumed increases the DMG dealt by Fatal Blossoms and Albedo's burst DMG by 30% of Albedo's DEF.",
+        "text": "<color=#ffffff>2nd Constellation</color>\nTransient Blossoms generated by Albedo's Skill grant him Fatal Reckoning for 30s:\n· Unleashing his Burst consumes all stacks of Fatal Reckoning. Each stack of Fatal Reckoning consumed increases the DMG dealt by Fatal Blossoms and Albedo's burst DMG by 30% of Albedo's DEF.",
         "alignment": "center"
       },
       {
@@ -631,7 +1366,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>4th Ascension passive</color>\nShinobu's skill abilities will be boosted based on her Elemental Mastery:\n· Healing amount will be increased by 75% of Elemental Mastery.\n· DMG dealt is increased by 25% of Elemental Mastery.",
+        "text": "<color=#ffffff>4th Ascension passive</color>\nShinobu's Skill abilities will be boosted based on her Elemental Mastery:\n· Healing amount will be increased by 75% of Elemental Mastery.\n· DMG dealt is increased by 25% of Elemental Mastery.",
         "alignment": "center"
       },
       {
@@ -659,7 +1394,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>4th Ascension passive</color>\nThe DMG dealt by the Shooting Stars fired by Layla's skill is increased by 1.5% of Layla's Max HP.\n<color=#ffffff>4th Constellation</color>\nWhen Layla's skill starts to fire off Shooting Stars, it will grant all nearby party members the Dawn Star effect, causing their Normal and Charged Attack DMG to increase based on 5% of Layla's Max HP.",
+        "text": "<color=#ffffff>4th Ascension passive</color>\nThe DMG dealt by the Shooting Stars fired by Layla's Skill is increased by 1.5% of Layla's Max HP.\n<color=#ffffff>4th Constellation</color>\nWhen Layla's Skill starts to fire off Shooting Stars, it will grant all nearby party members the Dawn Star effect, causing their Normal and Charged Attack DMG to increase based on 5% of Layla's Max HP.",
         "alignment": "center"
       },
       {
@@ -687,7 +1422,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>1st Constellation</color>\nDuring Wanderer's skill, the wind arrows fired by the Passive Talent \"Gales of Reverie\" will deal an additional 25% of his ATK as DMG.",
+        "text": "<color=#ffffff>1st Constellation</color>\nDuring Wanderer's Skill, the wind arrows fired by the Passive Talent \"Gales of Reverie\" will deal an additional 25% of his ATK as DMG.",
         "alignment": "center"
       },
       {
@@ -743,7 +1478,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>4th Ascension passive</color>\nIf HP has been consumed via Suffusion while using the Hold Mode Skill, the Torrent Surge at the skill's end will deal Bonus DMG equal to 45% of the total HP the Traveler has consumed in this skill use via Suffusion. The maximum DMG Bonus that can be gained this way is 5,000.",
+        "text": "<color=#ffffff>4th Ascension passive</color>\nIf HP has been consumed via Suffusion while using the Hold Mode Skill, the Torrent Surge at the Skill's end will deal Bonus DMG equal to 45% of the total HP the Traveler has consumed in this Skill use via Suffusion. The maximum DMG Bonus that can be gained this way is 5,000.",
         "alignment": "center"
       },
       {
@@ -1591,7 +2326,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>4th Constellation</color>\nXinyan's skill's swing DMG decreases the opponent's Physical RES by 15% for 12s.",
+        "text": "<color=#ffffff>4th Constellation</color>\nXinyan's Skill's swing DMG decreases the opponent's Physical RES by 15% for 12s.",
         "alignment": "center"
       },
       {
@@ -1619,7 +2354,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>Elemental Skill</color>\nCharacters protected by Zhongli's shield created by his held skill will decrease the Elemental RES and Physical RES of opponents in a small AoE by 20%.",
+        "text": "<color=#ffffff>Elemental Skill</color>\nCharacters protected by Zhongli's shield created by his held Skill will decrease the Elemental RES and Physical RES of opponents in a small AoE by 20%.",
         "alignment": "center"
       },
       {
@@ -1960,7 +2695,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>1st Ascension passive</color>\nTransient Blossoms generated by Albedo's skill deal 25% more DMG to opponents whose HP is below 50%.\n<color=#ffffff>6th Constellation</color>\nActive party members within the Solar Isotoma field who are protected by a shield created by Crystallize have their DMG increased by 17%.",
+        "text": "<color=#ffffff>1st Ascension passive</color>\nTransient Blossoms generated by Albedo's Skill deal 25% more DMG to opponents whose HP is below 50%.\n<color=#ffffff>6th Constellation</color>\nActive party members within the Solar Isotoma field who are protected by a shield created by Crystallize have their DMG increased by 17%.",
         "alignment": "center"
       },
       {
@@ -3705,7 +4440,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>2nd Constellation</color>\nWhen in the <color=#ffd780>Windfavored</color> state, <color=#ffd780>Kyougen: Five Ceremonial Plays</color> will see its DMG increased by 4% per point of difference between the max amount of Kuugoryoku Points contrasted with Kuugoryoku's present capacity when using this skill.\nThrough this method, you can increase Kyougen: Five Ceremonial Plays's DMG by a maximum of 200%.",
+        "text": "<color=#ffffff>2nd Constellation</color>\nWhen in the <color=#ffd780>Windfavored</color> state, <color=#ffd780>Kyougen: Five Ceremonial Plays</color> will see its DMG increased by 4% per point of difference between the max amount of Kuugoryoku Points contrasted with Kuugoryoku's present capacity when using this Skill.\nThrough this method, you can increase Kyougen: Five Ceremonial Plays's DMG by a maximum of 200%.",
         "alignment": "center"
       },
       {
@@ -3845,7 +4580,7 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>Elemental Skill</color>\nThe <color=#ffd780>Bolstering Bubblebalm</color> will grow bigger the longer the skill is Held, until it grows up to two tiers in size. Each tier it grows increases its DMG by 5%.",
+        "text": "<color=#ffffff>Elemental Skill</color>\nThe <color=#ffd780>Bolstering Bubblebalm</color> will grow bigger the longer the Skill is Held, until it grows up to two tiers in size. Each tier it grows increases its DMG by 5%.",
         "alignment": "center"
       },
       {
@@ -5107,75 +5842,6 @@
         "type": "RichText",
         "text": "<color=#ffffff>100% + CRIT Damage</color>",
         "alignment": "center"
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Dealing Physical Damage",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/6c5ed1eeb09d687c7b8c8cec217c8f63_7405300698018376.png"
-      },
-      {
-        "key": "Elemental Reactions Damage",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/6bb6c739a1c6f8aae3dd898604d75339_8042495360120670391.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Amplifying and Additive Reactions have a special element in the Damage Formula."
-          }
-        ]
-      },
-      {
-        "key": "Elemental Reactions Damage 2",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/f68558a58bc96b9836586c2cb823d99d_5452802010627529162.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Transformative Reactions have a special Damage Formula for the calculation."
-          }
-        ]
-      },
-      {
-        "key": "Damage Bonus",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/11/205556113/166446e96948e4800450695c3960b927_173905872778866754.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Some of the damage buffs will show a specific icon above the character HP bar."
-          }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Name",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Damage Formula"
-          }
-        ]
-      },
-      {
-        "key": "Type",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Internal system calculation"
-          }
-        ]
-      },
-      {
-        "key": "Related entries",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 5206,
-            "name": "Elemental Reactions",
-            "desc": "<p>Elemental Reactions represent the centerpiece of the combat system of Genshin Impact. Understanding and mastering these interactions can drastically improve one’s proficiency in battle.</p><p>There are multiple factors to consider when triggering Elemental Reactions, such as aura, trigger, decay, etc. Elemental Gauge Theory and Internal Cooldowns will play a major role to help players understand the complexity behind Elemental Reactions.</p>",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/03/18/e03d84da04797c0ad0d6bd99c0d6ed57_8218276776082843931.png"
-          }
-        ],
-        "isMaterial": true
       }
     ]
   }
