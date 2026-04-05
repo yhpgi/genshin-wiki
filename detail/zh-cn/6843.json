@@ -5,7 +5,7 @@
   "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/d0b60ce3aa47ed62966266b27ed1f386_8199767582529545387.png",
   "menuId": 9,
   "menuName": "提瓦特物产",
-  "version": 1739716945,
+  "version": 1774931861,
   "components": {
     "baseInfo": [
       {
@@ -27,16 +27,35 @@
         ]
       },
       {
-        "key": "来源",
+        "key": "国家",
         "value": [
           {
             "type": "RichText",
-            "text": "纳塔皈礼熔炉购买获得"
+            "text": "纳塔"
           }
         ]
       },
       {
-        "key": "武器",
+        "key": "用途",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "用于学习锻造虹的行迹"
+          }
+        ],
+        "isMaterial": false
+      },
+      {
+        "key": "来源",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "在圣火竞技场「皈礼熔炉」与阿隆购买"
+          }
+        ]
+      },
+      {
+        "key": "相关武器",
         "value": [
           {
             "type": "CustomEntry",
@@ -49,17 +68,166 @@
         "isMaterial": true
       },
       {
-        "key": "商人",
+        "key": "上线版本",
         "value": [
           {
-            "type": "CustomEntry",
-            "epId": 6962,
-            "name": "阿隆",
-            "desc": "<p>纳塔的锻造师，「皈礼熔炉」老板。</p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/13/59155606/6c99c3ee0481084be3af65595f4ed90b_1059096800385605579.png"
+            "type": "RichText",
+            "text": "5.0"
           }
-        ],
-        "isMaterial": true
+        ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "商店"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>商人</color>\n<color=#ffffff>花费</color>\n<color=#ffffff>库存</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6962,
+        "name": "阿隆",
+        "desc": "<p>纳塔的锻造师，「皈礼熔炉」老板。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/13/59155606/6c99c3ee0481084be3af65595f4ed90b_1059096800385605579.png",
+        "displayStyle": "card",
+        "menuId": 10
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6925,
+        "name": "澄晶实",
+        "desc": "广泛生长于液态燃素环境之中的澄晶果树，在汲取燃素后结出的形如宝石的果实。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/63ac239fa330bbbf578d5e0052a58b99_2812766303223260056.png",
+        "amount": 10,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6679,
+        "name": "烬芯花",
+        "desc": "散布在平原与高土的奇特花朵。成熟的花苞会在受到冲击后绽放开来。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/27/3976d3238a631a0b45a4f96b07985294_749681402037316612.png",
+        "amount": 10,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4096,
+        "name": "萃凝晶",
+        "desc": "<p>澄澈明净的晶石，矿芯具备良好的韧性与塑性。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/16/157749474/406fdf840ff41c77bef3fb004baf4f41_7120347401466463164.png",
+        "amount": 10,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "1",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "锻造"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>产物</color>\n<color=#ffffff>锻造材料</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6549,
+        "name": "虹的行迹",
+        "desc": "以玉石锻成的锋锐长枪，在日耀中能隐隐映出虹色的光芒。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/9d5294dc8b165585f51ec126543a5208_1314604610170565721.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/08/28/35428890/38e08585c7d0ce883befb28cb8bccd5b_4419009820295181032.png",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6677,
+        "name": "垠土长柄武器原胚",
+        "desc": "生产武器的原材料。通过锻造，可以生产出4星的长柄武器。<br>原胚所能打造而出的诸多武器的「事态」，其结果的「可能」虽然早已包含在了原物之中，但是最终能被制成怎样的形制，仍是现在无人知晓之事…",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/05974da59389a880d43bc11e3ea02568_3262235422908156378.png",
+        "amount": 1,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4096,
+        "name": "萃凝晶",
+        "desc": "<p>澄澈明净的晶石，矿芯具备良好的韧性与塑性。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2023/12/16/157749474/406fdf840ff41c77bef3fb004baf4f41_7120347401466463164.png",
+        "amount": 50,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1224,
+        "name": "白铁块",
+        "desc": "白铁的矿石，在拥有相应技能的工匠手中能大放异彩吧。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
+        "amount": 50,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "摩拉",
+        "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 500,
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "相关锻造图纸"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6841,
+        "name": "图谱：息燧之笛",
+        "desc": "纳塔自古流传至今的武器锻造图谱。掌握后，能复刻出单手剑「息燧之笛」。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/d0b60ce3aa47ed62966266b27ed1f386_8199767582529545387.png",
+        "displayStyle": "text"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6842,
+        "name": "图谱：撼地者",
+        "desc": "纳塔自古流传至今的武器锻造图谱。掌握后，能复刻出双手剑「撼地者」。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/d0b60ce3aa47ed62966266b27ed1f386_8199767582529545387.png",
+        "displayStyle": "text"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6844,
+        "name": "图谱：木棉之环",
+        "desc": "纳塔自古流传至今的武器锻造图谱。掌握后，能复刻出法器「木棉之环」。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/d0b60ce3aa47ed62966266b27ed1f386_8199767582529545387.png",
+        "displayStyle": "text"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6845,
+        "name": "图谱：碎链",
+        "desc": "纳塔自古流传至今的武器锻造图谱。掌握后，能复刻出弓「碎链」。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/d0b60ce3aa47ed62966266b27ed1f386_8199767582529545387.png",
+        "displayStyle": "text"
       }
     ]
   }

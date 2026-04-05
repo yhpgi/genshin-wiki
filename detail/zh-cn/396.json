@@ -3,15 +3,644 @@
   "name": "史莱姆凝液",
   "desc": "覆于史莱姆体表的浓稠流体，各地元素工坊中最常见的原料。",
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
-  "filterValues": {
-    "objectType": [
-      "角色与武器培养素材"
-    ]
-  },
   "menuId": 9,
   "menuName": "提瓦特物产",
-  "version": 0,
+  "version": 1775058121,
   "components": {
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "来源",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "掉落"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2183,
+        "name": "火史莱姆",
+        "desc": "逸散在自然之中的火元素沉积形成的小小魔物。<br/>具有非常基础的智能水平，但似乎具有很广泛的用途。对丘丘人而言。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Pyro Slime_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2129,
+        "name": "大型火史莱姆",
+        "desc": "逸散在自然之中的火元素沉积形成的魔物。<br/>虽然智能水平并没有随着体型的成长而提高，但真的很热。在干燥的季节，可能会引发野火。愤怒的时候会喷吐炽热的火球，情绪低落的时候会变暗，是表达能力很强的史莱姆。",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/16/36540823/629ff248133db49d140e9bec1f3a5bb9_5818008054888333535.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2167,
+        "name": "水史莱姆",
+        "desc": "逸散在自然之中的水元素沉积形成的小小魔物。<br/>传说中，有的人会将水史莱姆当作应急用水，在去往水源难寻的干旱地带、深邃的秘境之前储备好水史莱姆。但因为浓厚的水元素，直饮史莱姆其实对人体有害。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Hydro Slime_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2128,
+        "name": "大型水史莱姆",
+        "desc": "逸散在自然之中的水元素沉积形成的魔物。<br/>力量更强大、体型更大的水史莱姆，可以产生水泡禁锢敌人。据说在某些力量充沛的地方，尺寸可以成长到非常夸张的程度。在奔狼领就曾有人目击过有一座小土丘那么大的水史莱姆。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Large Hydro Slime_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2241,
+        "name": "风史莱姆",
+        "desc": "逸散在自然之中的风元素凝聚形成的小小魔物。<br/>因为风元素的力量，所以具有一定程度的飘浮能力。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Anemo Slime_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2132,
+        "name": "大型风史莱姆",
+        "desc": "逸散在自然之中的风元素凝聚形成的魔物。<br/>相比风史莱姆，因为含有更浓厚的风元素，所以漂浮能力也更强。常年生活在荒野中的丘丘人似乎也会利用这种特性，制作特殊的、以大型风史莱姆为动力的载具，运输不知从何而来的物资。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Large Anemo Slime_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2231,
+        "name": "雷史莱姆",
+        "desc": "逸散在自然之中的雷元素凝聚形成的小小魔物，能够放出微弱的电力。<br/>根据分析，雷史莱姆蹦蹦跳跳的运动方式能反映地面上的电势差。在雷元素极其丰沛的地方，可以通过观察雷史莱姆的异常运动，避开危险。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Electro Slime_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2131,
+        "name": "大型雷史莱姆",
+        "desc": "逸散在自然之中的雷元素凝聚形成的魔物。<br/>因为体内充沛的雷元素，会间歇性向周围放电。目前，已经有人开始尝试利用这种能量去进行有益的生产活动了，新的学科或许不日也将应运而生…？",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Large Electro Slime_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2120,
+        "name": "变异雷史莱姆",
+        "desc": "逸散在自然之中的雷元素凝聚形成的魔物。<br/>雷史莱姆异变产生的，明黄色的史莱姆。因为体内充沛的雷元素，会间歇性向周围放电，并能向附近的雷史莱姆放出电弧；但紫色的雷史莱姆之间并不会通电。由此看来，雷史莱姆似乎具有两极。<br/>以此为基点，或许能成为某种伟大学科的开端…",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Mutant Electro Slime_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2214,
+        "name": "草史莱姆",
+        "desc": "因为充沛的草元素，而发生了生态上的质变的史莱姆。<br/>从生态而言，也获得了草元素的弱点。一旦遇上明火，就会剧烈地燃烧。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Dendro Slime_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2130,
+        "name": "大型草史莱姆",
+        "desc": "因为充沛的草元素，而发生了生态上的质变的史莱姆。<br/>但也有人认为，从热衷于通过欺骗性的伪装来偷袭猎物，类似骗骗花的捕猎行为来看，或许是被特殊的植物寄生的史莱姆。从这个角度来看，草史莱姆在某些文化当中，或许被认为具有特别的药用价值…？",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Large Dendro Slime_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2107,
+        "name": "冰史莱姆",
+        "desc": "逸散在自然之中的冰元素凝聚形成的小小魔物。<br/>过去曾经有竞争对手恶意谣传说，「晨曦酒庄」会利用冰史莱姆来调控酒窖的温度，以此保证酒品的质量。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Cryo Slime_icon.png",
+        "amount": 1,
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2126,
+        "name": "大型冰史莱姆",
+        "desc": "逸散在自然之中的冰元素凝聚形成的魔物。<br/>会利用体内凝聚的丰沛的冰元素，将大气中的水汽凝结成具有保护性的外壳；也会利用同样的原理，将周围的水面冻结。某种意义上是最自由的史莱姆，可以轻松自在地渡过汪洋大海。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Large Cryo Slime_icon.png",
+        "amount": 1,
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2137,
+        "name": "岩史莱姆",
+        "desc": "大地之中的岩元素凝聚形成的小小魔物。<br/>广义而言，地壳之中蕴含着丰富的岩元素。由此产生的岩史莱姆也让人有着脚踏实地的感觉。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Geo Slime_icon.png",
+        "amount": 1,
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2127,
+        "name": "大型岩史莱姆",
+        "desc": "大地之中的岩元素凝聚形成的魔物。<br/>能将体内的力量凝结成岩壳，保护自己不受伤害。过去在盗宝团中一度流传着「大黄金岩史莱姆王」的说法，认为既然不少宝石与矿物中蕴含岩元素，那蕴含岩元素的史莱姆同样很可能是宝石与矿物。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Large Geo Slime_icon.png",
+        "amount": 1,
+        "displayStyle": "card",
+        "menuId": 7
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "互动地图"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>提瓦特：</color>"
+      },
+      {
+        "type": "CustomMap",
+        "url": "https:/act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header&utm_source=hoyolab&utm_medium=tools&lang=zh-cn&bbs_theme=light&bbs_theme_device=1#/map/2?shown_types=59&center=2008.50,-1084.00&zoom=-3.00"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>渊下宫：</color>"
+      },
+      {
+        "type": "CustomMap",
+        "url": "https:/act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header&utm_source=hoyolab&utm_medium=tools&lang=zh-cn&bbs_theme=light&bbs_theme_device=1#/map/7?shown_types=59&center=117.50,3.50&zoom=-0.50"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>层岩巨渊·地下矿区：</color>"
+      },
+      {
+        "type": "CustomMap",
+        "url": "https:/act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header&utm_source=hoyolab&utm_medium=tools&lang=zh-cn&bbs_theme=dark&bbs_theme_device=0#/map/9?shown_types=59&center=31.99,-172.00&zoom=-1.00"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "星尘兑换"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>物品</color>\n<color=#ffffff>价格</color>\n<color=#ffffff>库存</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 396,
+        "name": "史莱姆凝液",
+        "desc": "覆于史莱姆体表的浓稠流体，各地元素工坊中最常见的原料。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
+        "amount": 3,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 872,
+        "name": "无主的星尘",
+        "desc": "可以在商城兑换珍稀资源的货币。<br/>过剩的命运星之晶尘。累积起来，或许可以创造新的命运。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Masterless Stardust_icon.png",
+        "amount": 5,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "30\n（每月刷新）",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "用途",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "角色升级 / 突破"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>5★</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9121,
+        "name": "哥伦比娅",
+        "desc": "于挪德卡莱诞生的「月之少女」，亦是归乡的空月。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/80fa97679c8d1828fdd96c6aa9638632_4327573591148809640.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 36,
+        "name": "荒泷一斗",
+        "desc": "活跃在稻妻城花见坂的「荒泷派」初代目头领。什么，从没听说过荒泷派？你是想找茬吗？",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/22/327628065/831b304c0992a329a48f133c1318a3a8_4924365661986227971.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 51,
+        "name": "魈",
+        "desc": "<p><em>守护璃月的仙人，「夜叉」。美号「降魔大圣」，妙称「护法夜叉大将」。</em></p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/22/327628065/94d2d8d0ed1cecf7f5159fef61bf3901_6927296500238988271.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 46,
+        "name": "钟离",
+        "desc": "被「往生堂」请来的神秘客人，知识渊博，对各种事物都颇有见地。",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/22/327628065/95b4b908502d2ab048428734f37ad3a2_212527091962952135.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 23,
+        "name": "温迪",
+        "desc": "蒙德城诸多吟游诗人中的一位，自由自在地穿行在街头巷尾。",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/22/327628065/8f6e853d69006df2390197dc04958dc6_7124842681498186358.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4★</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4775,
+        "name": "嘉明",
+        "desc": "<p>剑匣镖局的镖师，威水舞兽队的话事人。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/01/30/157749474/b041ad23a9d6245efac952a9379c5114_6463987289993541938.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3335,
+        "name": "瑶瑶",
+        "desc": "<p>歌尘浪市真君膝下最年幼的弟子，温柔体贴的「小大人」。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/18/47826599/5bc9df1fb67391e4c8080da3d855de53_1068083666965189960.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 50,
+        "name": "香菱",
+        "desc": "<p>来自璃月，名声在外的少女厨师，对料理之道极具热情，拿手麻辣菜肴堪称一绝。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/22/327628065/df3327f02795e541b17b6a2d91a6b51d_6188115182942203289.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2,
+        "name": "丽莎",
+        "desc": "慵懒而博学的图书管理员，须弥教令院「两百年一见」的天才毕业生。",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/22/327628065/736998dd647ad5eb9aa6b8f9a831950d_7134371114525998574.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "武器突破"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>弓</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2040,
+        "name": "阿莫斯之弓",
+        "desc": "极为古老的弓。即使原主不复存在，其中蕴藏之力依旧——那种力量无主，却在万物当中。距离心系之物越是遥远，那种力量愈是剧烈。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/阿莫斯之弓.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1981,
+        "name": "暗巷猎手",
+        "desc": "外形精巧奢华的长弓，曾属于某位从未被抓获的义贼。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/暗巷猎手.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2005,
+        "name": "祭礼弓",
+        "desc": "在漫长岁月中石化的道具猎弓，上面的仪式性装饰依然清晰可见。拥有受时间之风冲刷的祝福力量。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/祭礼弓.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2002,
+        "name": "神射手之誓",
+        "desc": "据说曾属于技艺高强的射手，是一把上好的弓。因为散发出强烈的气息，难以用于狩猎。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/神射手之誓.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>法器</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1951,
+        "name": "四风原典",
+        "desc": "崇信风的无名先民所写的教典珍本。数千年流传的信仰之力得到了风的青睐，饱含祝福与力量。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/四风原典.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1931,
+        "name": "万国诸海图谱",
+        "desc": "详尽记载了大陆周边海流气候的海图，是从异国经由商路流落到璃月的奇异典籍。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/万国诸海图谱.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2050,
+        "name": "魔导绪论",
+        "desc": "第十二版。结合时代发展加注了新内容，并修订了第十一版的错别字。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/魔导绪论.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>长柄武器</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1972,
+        "name": "护摩之杖",
+        "desc": "在早已失落的古老祭仪中，使用的朱赤「柴火杖」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/护摩之杖.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2847,
+        "name": "风信之锋",
+        "desc": "<p>导示长风的标鹄。风的牧歌并不总是轻柔如初…</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/08/47826599/98f3fb9e0886b25bfd094828cc391978_4901953143942170202.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2021,
+        "name": "西风长枪",
+        "desc": "西风骑士团的制式长枪。枪杆直挺，枪尖轻风流溢。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风长枪.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>双手剑</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1953,
+        "name": "天空之傲",
+        "desc": "象征风龙的骄傲广布长空的双手剑。挥舞时的低吟是风龙的气势，蕴含苍空与长风的力量。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之傲.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4000,
+        "name": "聊聊棒",
+        "desc": "<p>一柄沉重的镶有黑曜石的大棒，有很强的说服力。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/08/16/47826599/b1773be7f0c6b80e5ca8fd4a71dbd78a_4340935892717683526.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2016,
+        "name": "衔珠海皇",
+        "desc": "海中的大王。经过风干，是称手的兵器以及应急食品。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/衔珠海皇.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2043,
+        "name": "雪葬的星银",
+        "desc": "储存在壁画之间的古老大剑。由星银铸成，似乎拥有斩开冰雪的力量。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/雪葬的星银.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1959,
+        "name": "宗室大剑",
+        "desc": "曾支配蒙德的旧日贵族的大剑。用料极佳，历久犹弥新。是贵族的战斗兵器。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/宗室大剑.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1998,
+        "name": "白铁大剑",
+        "desc": "白铁锻成的双手剑，兼顾了重量与强度。即使臂力一般的人也能舞得生风，在力量强大者手中更是威力无穷。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/白铁大剑.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1934,
+        "name": "佣兵重剑",
+        "desc": "沉重坚实的古旧大剑，饱经战火与岁月的洗练。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/佣兵重剑.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2023,
+        "name": "训练大剑",
+        "desc": "仅仅是削出了剑形的厚重铁片。在意志强韧的人手里，也有劈开磐石的力量。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/训练大剑.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>单手剑</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1954,
+        "name": "天空之刃",
+        "desc": "象征风龙的荣誉的骑士剑，如今失而复得。剑脊上吹息着风之神的赐福，蕴含苍空与长风的力量。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之刃.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2053,
+        "name": "黑剑",
+        "desc": "渴求着纷争与砍杀的漆黑长剑，据说会让人沉醉在浴血厮杀的亢奋中。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/黑剑.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2007,
+        "name": "笛剑",
+        "desc": "细剑的锈迹下透露出原本华丽的装饰，挥舞时轻若无物。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/笛剑.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2052,
+        "name": "黎明神剑",
+        "desc": "一把曾经耀若朝阳的宝剑，掌握它的人会获得「自我感觉良好」的力量加持。剑身上的发光材料已经褪去。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/黎明神剑.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "合成"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>产物</color>\n<color=#ffffff>合成材料</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 398,
+        "name": "史莱姆清",
+        "desc": "略加提纯的史莱姆分泌物，对皮肤有害，请务必避免不加防护措施的接触。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/01/04/35428890/405e199979d710b4db5c640cccabd66b_6301407142072940114.png",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "摩拉",
+        "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 25,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 396,
+        "name": "史莱姆凝液",
+        "desc": "覆于史莱姆体表的浓稠流体，各地元素工坊中最常见的原料。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
+        "amount": 3,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1573,
+        "name": "蠕虫假饵",
+        "desc": "以凝液为主料制成的蠕虫仿生饵，会随着水中的暗流扭动身姿，对好奇心旺盛的鱼儿有致命的吸引力。行家还会用融入水果的方法来丰富它的香气，简直无鱼能挡了。<br/><br/>适用鱼种：蝶鱼类。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/False Worm Bait_icon.png",
+        "amount": 10,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2023/01/04/35428890/405e199979d710b4db5c640cccabd66b_6301407142072940114.png",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 396,
+        "name": "史莱姆凝液",
+        "desc": "覆于史莱姆体表的浓稠流体，各地元素工坊中最常见的原料。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 960,
+        "name": "树莓",
+        "desc": "颜色鲜艳的果实。遍布野外的小小美好，能将路途疲惫一扫而空。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Berry_icon.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "相关素材"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 398,
+        "name": "史莱姆清",
+        "desc": "略加提纯的史莱姆分泌物，对皮肤有害，请务必避免不加防护措施的接触。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 397,
+        "name": "史莱姆原浆",
+        "desc": "浓缩的史莱姆原浆，静置时会自主进行不规则运动。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      }
+    ],
     "baseInfo": [
       {
         "key": "名称",
@@ -27,23 +656,34 @@
         "value": [
           {
             "type": "RichText",
-            "text": "角色培养素材"
+            "text": "角色与武器培养素材"
           }
         ]
       },
       {
-        "key": "用途"
+        "key": "国家",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "-"
+          }
+        ]
       },
       {
         "key": "来源",
         "value": [
           {
             "type": "RichText",
-            "text": "史莱姆掉落"
-          },
+            "text": "星尘兑换\n史莱姆掉落"
+          }
+        ]
+      },
+      {
+        "key": "上线版本",
+        "value": [
           {
             "type": "RichText",
-            "text": "星尘兑换"
+            "text": "1.0"
           }
         ]
       }

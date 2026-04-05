@@ -7,14 +7,967 @@
   "filterValues": {
     "characterRarity": "★5",
     "characterWeapon": "한손검",
-    "characterProperty": "치명타 피해",
     "characterRegion": "리월항",
+    "characterProperty": "치명타 피해",
     "characterVision": "바위 원소"
   },
   "menuId": 2,
   "menuName": "캐릭터 도감",
   "version": 1770196444,
   "components": {
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/f58bd959a0865da295519ffa1228dcfe_9110469962687464010.jpg"
+      },
+      {
+        "key": "기본 일러스트",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/79c662083a639604a842efce419e2ada_2281309650231144496.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "자백의 코스튬. 주재료는 비단과 삼베다. 수천 년 전 고대 국가 「낭간」은 정교한 방직 기술을 보유하고 있었다고 전해지는데, 그 기술은 하늘 위 사자인 자백이 인간 세상에 전해준 것이라고 한다. 오랜 세월이 흐른 뒤, 태고의 국가와 유구한 역사는 모두 시간에 흩어져 물에 비친 환영 달처럼 허상이 되어버렸고, 그 진짜 모습을 볼 수 없게 되었다. 하지만 누에고치에서 실을 뽑고 삼베를 짜는 기술은 기적적으로 전해져 내려왔고, 지금까지 리월항의 모든 물레에서 그 기술을 여전히 확인할 수 있다"
+          }
+        ]
+      },
+      {
+        "key": "대기 동작 1",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/3f9276f066c4a840e8f376e3c4f44c29_7144772731612011.gif"
+      },
+      {
+        "key": "대기 동작 2",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/16a13bce19e8c979424a736ff21d527b_1838655960764611197.gif"
+      },
+      {
+        "key": "운명의 자리",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/04/302875544/a4c11d7ce203e9b0452892de70aef5e0_6529636103679333857.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "백마자리"
+          }
+        ]
+      }
+    ],
+    "talent": [
+      {
+        "title": "금빛 가지치기",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/94aa30ae75b8c7c6a9c64ab05bd5dda7_1663304779144319360.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>일반 공격</color>\n검으로 최대 4번 공격한다.\n<color=#ffd780>강공격</color>\n일정 스태미나를 소모해 순간적으로 전방을 향해 검을 두 번 휘두른다.\n<color=#ffd780>낙하 공격</color>\n공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11"
+            ]
+          },
+          {
+            "key": "1단 공격 피해",
+            "values": [
+              "50.6%",
+              "54.7%",
+              "58.8%",
+              "64.7%",
+              "68.8%",
+              "73.5%",
+              "79.9%",
+              "86.4%",
+              "92.9%",
+              "99.9%",
+              "107.0%"
+            ]
+          },
+          {
+            "key": "2단 공격 피해",
+            "values": [
+              "46.6%",
+              "50.3%",
+              "54.1%",
+              "59.5%",
+              "63.3%",
+              "67.7%",
+              "73.6%",
+              "79.6%",
+              "85.5%",
+              "92.0%",
+              "98.5%"
+            ]
+          },
+          {
+            "key": "3단 공격 피해",
+            "values": [
+              "30.9%+30.9%",
+              "33.4%+33.4%",
+              "35.9%+35.9%",
+              "39.5%+39.5%",
+              "42.0%+42.0%",
+              "44.9%+44.9%",
+              "48.8%+48.8%",
+              "52.8%+52.8%",
+              "56.7%+56.7%",
+              "61.1%+61.1%",
+              "65.4%+65.4%"
+            ]
+          },
+          {
+            "key": "4단 공격 피해",
+            "values": [
+              "77.9%",
+              "84.2%",
+              "90.6%",
+              "99.6%",
+              "106.0%",
+              "113.2%",
+              "123.2%",
+              "133.1%",
+              "143.1%",
+              "154.0%",
+              "164.8%"
+            ]
+          },
+          {
+            "key": "강공격 피해",
+            "values": [
+              "73.7%+73.7%",
+              "79.7%+79.7%",
+              "85.7%+85.7%",
+              "94.2%+94.2%",
+              "100.2%+100.2%",
+              "107.1%+107.1%",
+              "116.5%+116.5%",
+              "125.9%+125.9%",
+              "135.3%+135.3%",
+              "145.6%+145.6%",
+              "155.9%+155.9%"
+            ]
+          },
+          {
+            "key": "강공격 스태미나 소모",
+            "values": [
+              "20.0pt",
+              "20.0pt",
+              "20.0pt",
+              "20.0pt",
+              "20.0pt",
+              "20.0pt",
+              "20.0pt",
+              "20.0pt",
+              "20.0pt",
+              "20.0pt",
+              "20.0pt"
+            ]
+          },
+          {
+            "key": "낙하 기간 피해",
+            "values": [
+              "63.9%",
+              "69.1%",
+              "74.3%",
+              "81.8%",
+              "87.0%",
+              "92.9%",
+              "101.1%",
+              "109.3%",
+              "117.5%",
+              "126.4%",
+              "135.3%"
+            ]
+          },
+          {
+            "key": "저공/고공 추락 충격 피해",
+            "values": [
+              "128%/160%",
+              "138%/173%",
+              "149%/186%",
+              "164%/204%",
+              "174%/217%",
+              "186%/232%",
+              "202%/253%",
+              "219%/273%",
+              "235%/293%",
+              "253%/316%",
+              "271%/338%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 200,
+              "name": "「황금」의 가르침",
+              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 리월 대지 깊은 곳에 흐르는 피이자 리월의 심장을 뛰게하는 근원이며 리월을 지탱하는 뼈대이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Gold_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8608,
+              "name": "마모된 표장",
+              "desc": "우인단 특수부대에게 지급되는 표장.<br>이 표장을 보유한 이는 어떤 결의로 이 부대에 합류했을까?",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/9f0e22244a7132935602433e79bef24f_5872688653273879780.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 199,
+              "name": "「황금」의 인도",
+              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 변환을 의미한다. 이는 리월의 바위산과 대지, 항구 도시, 그리고 사람들의 암묵적 약속이다. 리월에서 근면은 황금으로, 황금은 번영으로 바뀐다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8609,
+              "name": "정교한 표장",
+              "desc": "우인단 특수부대에게 지급되는 표장.<br>정교한 디자인의 이면에는 표장의 주인이 승진을 위해 치른 대가가 담겨 있을지도 모른다",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/852358094b751d2fa2c7dafcfa28d324_4616812596451196995.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 199,
+              "name": "「황금」의 인도",
+              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 변환을 의미한다. 이는 리월의 바위산과 대지, 항구 도시, 그리고 사람들의 암묵적 약속이다. 리월에서 근면은 황금으로, 황금은 번영으로 바뀐다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8609,
+              "name": "정교한 표장",
+              "desc": "우인단 특수부대에게 지급되는 표장.<br>정교한 디자인의 이면에는 표장의 주인이 승진을 위해 치른 대가가 담겨 있을지도 모른다",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/852358094b751d2fa2c7dafcfa28d324_4616812596451196995.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 199,
+              "name": "「황금」의 인도",
+              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 변환을 의미한다. 이는 리월의 바위산과 대지, 항구 도시, 그리고 사람들의 암묵적 약속이다. 리월에서 근면은 황금으로, 황금은 번영으로 바뀐다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8609,
+              "name": "정교한 표장",
+              "desc": "우인단 특수부대에게 지급되는 표장.<br>정교한 디자인의 이면에는 표장의 주인이 승진을 위해 치른 대가가 담겨 있을지도 모른다",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/852358094b751d2fa2c7dafcfa28d324_4616812596451196995.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 199,
+              "name": "「황금」의 인도",
+              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 변환을 의미한다. 이는 리월의 바위산과 대지, 항구 도시, 그리고 사람들의 암묵적 약속이다. 리월에서 근면은 황금으로, 황금은 번영으로 바뀐다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8609,
+              "name": "정교한 표장",
+              "desc": "우인단 특수부대에게 지급되는 표장.<br>정교한 디자인의 이면에는 표장의 주인이 승진을 위해 치른 대가가 담겨 있을지도 모른다",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/852358094b751d2fa2c7dafcfa28d324_4616812596451196995.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 198,
+              "name": "「황금」의 철학",
+              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 리월의 부다. 하지만 리월의 진정한 부는 바로 리월 사람들의 황금처럼 반짝 빛나는 마음이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8610,
+              "name": "서릿빛 표장",
+              "desc": "우인단 특수부대에게 지급되는 표장.<br>서리빛 결정이 박힌 표장은 영광의 상징이다. 이 표장을 가진 자는 임무에서 자신의 충성과 가치를 입증했을 것이다",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/7bd8e70d50422f25ab44ce5d6fa7ccd9_9016563996009424798.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 7658,
+              "name": "승격·퀸",
+              "desc": "연금술 활성화를 거친 물질에서 생성된 희귀한 표본.<br>체스 말 「퀸」의 원래 명칭은 「재상」이었지만, 게임의 규칙이 발전하면서 외척 세력의 강함을 상징하는 최강의 말이자 명실상부한 황금 왕족으로 거듭났다.<br>폰의 승격과 연금술의 물질 변환은 어쩌면 비슷한 점이 있을 수도 있다. 하지만 폰은 「황금」이 되어도 그저 거꾸로 뒤집힌 「룩」일 뿐이다",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/625ada17482cdd85a4e8a5bb89690d10_3645512411039793224.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 198,
+              "name": "「황금」의 철학",
+              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 리월의 부다. 하지만 리월의 진정한 부는 바로 리월 사람들의 황금처럼 반짝 빛나는 마음이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8610,
+              "name": "서릿빛 표장",
+              "desc": "우인단 특수부대에게 지급되는 표장.<br>서리빛 결정이 박힌 표장은 영광의 상징이다. 이 표장을 가진 자는 임무에서 자신의 충성과 가치를 입증했을 것이다",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/7bd8e70d50422f25ab44ce5d6fa7ccd9_9016563996009424798.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 7658,
+              "name": "승격·퀸",
+              "desc": "연금술 활성화를 거친 물질에서 생성된 희귀한 표본.<br>체스 말 「퀸」의 원래 명칭은 「재상」이었지만, 게임의 규칙이 발전하면서 외척 세력의 강함을 상징하는 최강의 말이자 명실상부한 황금 왕족으로 거듭났다.<br>폰의 승격과 연금술의 물질 변환은 어쩌면 비슷한 점이 있을 수도 있다. 하지만 폰은 「황금」이 되어도 그저 거꾸로 뒤집힌 「룩」일 뿐이다",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/625ada17482cdd85a4e8a5bb89690d10_3645512411039793224.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 198,
+              "name": "「황금」의 철학",
+              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 리월의 부다. 하지만 리월의 진정한 부는 바로 리월 사람들의 황금처럼 반짝 빛나는 마음이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8610,
+              "name": "서릿빛 표장",
+              "desc": "우인단 특수부대에게 지급되는 표장.<br>서리빛 결정이 박힌 표장은 영광의 상징이다. 이 표장을 가진 자는 임무에서 자신의 충성과 가치를 입증했을 것이다",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/7bd8e70d50422f25ab44ce5d6fa7ccd9_9016563996009424798.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 7658,
+              "name": "승격·퀸",
+              "desc": "연금술 활성화를 거친 물질에서 생성된 희귀한 표본.<br>체스 말 「퀸」의 원래 명칭은 「재상」이었지만, 게임의 규칙이 발전하면서 외척 세력의 강함을 상징하는 최강의 말이자 명실상부한 황금 왕족으로 거듭났다.<br>폰의 승격과 연금술의 물질 변환은 어쩌면 비슷한 점이 있을 수도 있다. 하지만 폰은 「황금」이 되어도 그저 거꾸로 뒤집힌 「룩」일 뿐이다",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/625ada17482cdd85a4e8a5bb89690d10_3645512411039793224.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "모라",
+              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 198,
+              "name": "「황금」의 철학",
+              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 리월의 부다. 하지만 리월의 진정한 부는 바로 리월 사람들의 황금처럼 반짝 빛나는 마음이다",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8610,
+              "name": "서릿빛 표장",
+              "desc": "우인단 특수부대에게 지급되는 표장.<br>서리빛 결정이 박힌 표장은 영광의 상징이다. 이 표장을 가진 자는 임무에서 자신의 충성과 가치를 입증했을 것이다",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/7bd8e70d50422f25ab44ce5d6fa7ccd9_9016563996009424798.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 7658,
+              "name": "승격·퀸",
+              "desc": "연금술 활성화를 거친 물질에서 생성된 희귀한 표본.<br>체스 말 「퀸」의 원래 명칭은 「재상」이었지만, 게임의 규칙이 발전하면서 외척 세력의 강함을 상징하는 최강의 말이자 명실상부한 황금 왕족으로 거듭났다.<br>폰의 승격과 연금술의 물질 변환은 어쩌면 비슷한 점이 있을 수도 있다. 하지만 폰은 「황금」이 되어도 그저 거꾸로 뒤집힌 「룩」일 뿐이다",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/625ada17482cdd85a4e8a5bb89690d10_3645512411039793224.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "지식의 왕관",
+              "desc": "<p>특성을 올리는데 필요한 진귀한 소재.<br>먼 옛날, 지식을 전수하는데 사용한 의식용 도구이다. 오늘날에는 지혜가 언어와 책에 들어있으나, 「지식의 왕관」에 남아있는 힘과 지혜는 요즘 사람들도 위대한 진전을 이룰 수 있게 해준다</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/52417caf8877df2eea483a062a954d9a_4436987898575155779.gif"
+      },
+      {
+        "title": "천지일체",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/479b9f87f1eb87215ab35d7e27cd0f68_1308878765450167004.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "옛 권능의 편린을 불러일으켜 <color=#ffd780>「세월의 틈새」</color> 모드로 전환한다.\n해당 모드에서 자백이 일반 공격과 강공격 진행 시, 다른 원소 부여 효과로 대체될 수 없는 <color=#ffe699>바위 원소 피해</color> 를 주는 것으로 전환된다. 또한, 서로 다른 방식을 통해 특수한 <color=#ffd780>「시간의 빛」</color> 을 축적할 수 있다. 자백은 「시간의 빛」을 소모해 특수한 원소전투 스킬 <color=#ffd780>백마 돌격</color> 을 발동할 수 있다.\n<color=#ffd780>달빛 징조·보름</color>\n<color=#ffd780>「세월의 틈새」</color> 모드에서 자백이 일반 공격 진행 시, 4단 공격이 추가로 <color=#ffe699>바위 원소 피해</color> 를 1회 주고, 해당 피해는 달 결정 반응 피해로 간주된다\n사람들은 세월이 백마처럼 순식간에 틈새를 지나가 버린다(백구과극)고 말한다. 백마가 뚱뚱하면 틈새를 못 지나가지 않느냐는 아이의 질문에, 그녀는 의아한 표정으로 답했다: 「그건 비유일 뿐이다. 뚱뚱한 것과 무슨 상관이 있지?」\n<color=#ffd780>세월의 틈새</color>\n원소전투 스킬 <color=#ffd780>천지일체</color> 발동 후, 자백은 해당 모드로 전환된다. 이 모드는 최대 15초 동안 지속되며, 다음과 같은 특성을 가진다:\n· 일반 공격과 강공격 시, 다른 원소 부여 효과로 대체되지 않는 <color=#ffe699>바위 원소 피해</color> 를 주는 것으로 전환된다.\n· 원소전투 스킬 <color=#ffd780>천지일체</color> 가 특수 원소전투 스킬 <color=#ffd780>백마 돌격</color> 으로 대체된다: 자백이 <color=#ffd780>「시간의 빛」</color> 70pt 이상 보유 시, 자백은 「시간의 빛」을 70pt 소모해 백마 돌격을 발동하여 2회의 <color=#ffe699>바위 원소 피해</color> 를 준다, 이 중 제2단 공격 피래는 달 결정 반응 피해로 간주된다.\n<color=#ffd780>「시간의 빛」</color> 최대치는 100pt 이며, 자백은 아래의 방법으로 「시간의 빛」을 축적할 수 있다:\n· <color=#ffd780>「세월의 틈새」</color> 모드일 때, 1초마다 「시간의 빛」을 10pt 축적한다.\n· 일반 공격이 적 명중 시, 「시간의 빛」을 5pt 축적한다, 자백은 해당 방식으로 0.5초마다 「시간의 빛」을 최대 1회 축적할 수 있다.\n<color=#ffd780>달빛 징조·보름</color>\n주변에 있는 파티 내 캐릭터가 달 결정 반응 발동 시, 자백이 <color=#ffd780>「시간의 빛」</color> 을 35pt 축적한다. 자백은 해당 방식으로 4초마다 「시간의 빛」을 최대 1회 축적할 수 있다. 특수 원소전투 스킬 <color=#ffd780>백마 돌격</color> 을 발동하면 해당 방식으로 축적한 <color=#ffd780>「시간의 빛」</color> 의 재사용 대기시간이 초기화된다.\n<color=#ffd780>백마 돌격</color> 을 4회 발동하거나 지속 시간 종료 시, 자백은 해당 모드를 종료한다"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13"
+            ]
+          },
+          {
+            "key": "세월의 틈새 1단 공격 피해",
+            "values": [
+              "방어력의 56.6%",
+              "방어력의 60.8%",
+              "방어력의 65.1%",
+              "방어력의 70.7%",
+              "방어력의 75.0%",
+              "방어력의 79.2%",
+              "방어력의 84.9%",
+              "방어력의 90.5%",
+              "방어력의 96.2%",
+              "방어력의 101.8%",
+              "방어력의 107.5%",
+              "방어력의 113.2%",
+              "방어력의 120.2%"
+            ]
+          },
+          {
+            "key": "세월의 틈새 2단 공격 피해",
+            "values": [
+              "방어력의 52.1%",
+              "방어력의 56.0%",
+              "방어력의 59.9%",
+              "방어력의 65.1%",
+              "방어력의 69.0%",
+              "방어력의 72.9%",
+              "방어력의 78.2%",
+              "방어력의 83.4%",
+              "방어력의 88.6%",
+              "방어력의 93.8%",
+              "방어력의 99.0%",
+              "방어력의 104.2%",
+              "방어력의 110.7%"
+            ]
+          },
+          {
+            "key": "세월의 틈새 3단 공격 피해",
+            "values": [
+              "방어력의 34.6%+34.6%",
+              "방어력의 37.2%+37.2%",
+              "방어력의 39.8%+39.8%",
+              "방어력의 43.2%+43.2%",
+              "방어력의 45.8%+45.8%",
+              "방어력의 48.4%+48.4%",
+              "방어력의 51.9%+51.9%",
+              "55.3%+防御力55.3%",
+              "방어력의 58.8%+58.8%",
+              "방어력의 62.2%+62.2%",
+              "방어력의 65.7%+65.7%",
+              "방어력의 69.1%+69.1%",
+              "방어력의 73.5%+73.5%"
+            ]
+          },
+          {
+            "key": "세월의 틈새 4단 공격 피해",
+            "values": [
+              "방어력의 87.2%",
+              "방어력의 93.7%",
+              "방어력의 100.3%",
+              "방어력의 109.0%",
+              "방어력의 115.5%",
+              "방어력의 122.1%",
+              "방어력의 130.8%",
+              "방어력의 139.5%",
+              "방어력의 148.2%",
+              "방어력의 156.9%",
+              "방어력의 165.6%",
+              "방어력의 174.4%",
+              "방어력의 185.3%"
+            ]
+          },
+          {
+            "key": "세월의 틈새 강공격 피해",
+            "values": [
+              "방어력의 66.0%+66.0%",
+              "방어력의 70.9%+70.9%",
+              "방어력의 75.8%+75.8%",
+              "방어력의 82.4%+82.4%",
+              "방어력의 87.4%+87.4%",
+              "방어력의 92.3%+92.3%",
+              "방어력의 98.9%+98.9%",
+              "방어력의 105.5%+105.5%",
+              "방어력의 112.1%+112.1%",
+              "방어력의 118.7%+118.7%",
+              "방어력의 125.3%+125.3%",
+              "방어력의 131.9%+131.9%",
+              "방어력의 140.1%+140.1%"
+            ]
+          },
+          {
+            "key": "백마 돌격 제1단 공격 피해",
+            "values": [
+              "방어력의 172.5%",
+              "방어력의 185.5%",
+              "방어력의 198.4%",
+              "방어력의 215.7%",
+              "방어력의 228.6%",
+              "방어력의 241.5%",
+              "방어력의 258.8%",
+              "방어력의 276.0%",
+              "방어력의 293.3%",
+              "방어력의 310.6%",
+              "방어력의 327.8%",
+              "방어력의 345.1%",
+              "방어력의 366.6%"
+            ]
+          },
+          {
+            "key": "백마 돌격 제2단 공격 피해",
+            "values": [
+              "방어력의 141.0%",
+              "방어력의 151.5%",
+              "방어력의 162.1%",
+              "방어력의 176.2%",
+              "방어력의 186.8%",
+              "방어력의 197.4%",
+              "방어력의 211.5%",
+              "방어력의 225.5%",
+              "방어력의 239.6%",
+              "방어력의 253.7%",
+              "방어력의 267.8%",
+              "방어력의 281.9%",
+              "방어력의 299.6%"
+            ]
+          },
+          {
+            "key": "세월의 틈새 제4단 공격 추가 피해",
+            "values": [
+              "방어력의 29.5%",
+              "방어력의 31.7%",
+              "방어력의 33.9%",
+              "방어력의 36.8%",
+              "방어력의 39.0%",
+              "방어력의 41.2%",
+              "방어력의 44.2%",
+              "방어력의 47.1%",
+              "방어력의 50.1%",
+              "방어력의 53.0%",
+              "방어력의 56.0%",
+              "방어력의 58.9%",
+              "방어력의 62.6%"
+            ]
+          },
+          {
+            "key": "세월의 틈새 지속 시간",
+            "values": [
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초"
+            ]
+          },
+          {
+            "key": "재사용 대기시간",
+            "values": [
+              "18.0초",
+              "18.0초",
+              "18.0초",
+              "18.0초",
+              "18.0초",
+              "18.0초",
+              "18.0초",
+              "18.0초",
+              "18.0초",
+              "18.0초",
+              "18.0초",
+              "18.0초",
+              "18.0초"
+            ]
+          }
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/fed0ad1a8065ec952bc2dcdcf349bb46_5359379672418797654.gif"
+      },
+      {
+        "title": "천상 삼원의 법칙",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/17598053eeca0bd248dc05f8be0dabc8_6155318713836399960.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "자백이 청옥 우산 지붕을 돌려 <color=#ffe699>바위 원소 피해</color> 를 2회 주고, 그중 제2단 공격 피해는 달 결정 반응 피해로 간주한다.\n발동 시, 자백이 <color=#ffd780>「세월의 틈새」</color> 모드인 경우, 이번 「세월의 틈새」 모드의 지속 시간이 1.7초 연장된다\n먼 옛날 밤하늘을 밝힐 별똥별이 다가왔고, 사람들은 그 순간 잠시나마 법보의 찬한한 빛을 엿봤다"
+          }
+        ],
+        "attributes": [
+          {
+            "key": "",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13"
+            ]
+          },
+          {
+            "key": "스킬 제1단 공격 피해",
+            "values": [
+              "방어력의 127.0%",
+              "방어력의 136.5%",
+              "방어력의 146.0%",
+              "방어력의 158.7%",
+              "방어력의 168.2%",
+              "방어력의 177.7%",
+              "방어력의 190.4%",
+              "방어력의 203.1%",
+              "防御力215.8%",
+              "방어력의 228.5%",
+              "방어력의 241.2%",
+              "방어력의 253.9%",
+              "방어력의 269.8%"
+            ]
+          },
+          {
+            "key": "스킬 제2단 공격 피해",
+            "values": [
+              "방어력의 177.7%",
+              "방어력의 191.1%",
+              "방어력의 204.4%",
+              "방어력의 222.2%",
+              "방어력의 235.5%",
+              "방어력의 248.8%",
+              "방어력의 266.6%",
+              "방어력의 284.4%",
+              "防御力302.2%",
+              "방어력의 319.9%",
+              "방어력의 337.7%",
+              "방어력의 355.5%",
+              "방어력의 377.7%"
+            ]
+          },
+          {
+            "key": "재사용 대기시간",
+            "values": [
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초",
+              "15.0초"
+            ]
+          },
+          {
+            "key": "원소 에너지",
+            "values": [
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60"
+            ]
+          }
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/25ce89c341ccec8db61fbe29792caf9a_8115467737723805531.gif"
+      },
+      {
+        "title": "달에서 강림한 선인",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/90657f6cbab9ba246a7b28fb666fb982_7275224813274328335.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "원소전투 스킬 <color=#ffd780>천지일체</color> 발동 또는 주변에 있는 파티 내 캐릭터가 달빛 조각 화음 발동 시, 자백은 4초 동안 지속되는 <color=#ffd780>「달빛 강림」</color> 효과를 획득한다: <color=#ffd780>백마 돌격</color> 의 제2단 공격으로 주는 피해가 자백 방어력의 60%만큼 증가한다"
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "title": "운해를 가르는 산맥",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/308974f7d15a53c47ee14d3be51b9ab0_2631530352242727395.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "파티에 <color=#ffe699>바위 원소</color> 타입의 다른 캐릭터가 1명 존재할 때마다 자백의 방어력이 15% 증가한다. 파티에 <color=#80c0ff>물 원소</color> 타입의 다른 캐릭터가 1명 존재할 때마다 자백의 원소 마스터리가 60pt 증가한다"
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "title": "달빛 징조의 축복·빛의 흐름",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/1d568a322e2a5ab51dd8a195c104df46_358409906106259533.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "파티 내 캐릭터가 물 원소 결정 반응 발동 시, 달 결정 반응 발동으로 전환되며, 자백의 방어력에 기반해 파티 내 캐릭터가 주는 달 결정 반응의 기본 피해가 증가한다: 방어력 100pt마다 달 결정 반응 기본 피해가 0.7% 증가하며, 해당 방식으로 피해는 최대 14% 증가한다.\n또한, 자백이 파티에 있을 경우 파티의 <color=#ffd780>달빛 징조</color> 가 1레벨 상승한다"
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "title": "꽃밭의 아지랑이",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/41a5df6174eea7e3b89ac61e37cf3b9a_4216285003318453451.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "야간(18시~6시)에 비전투 상태인 경우, 2초마다 자백의 원소 에너지가 1pt 회복된다.\n해당 효과는 비경, 영역 토벌, 나선 비경에서 적용되지 않는다"
+          }
+        ],
+        "attributes": null
+      }
+    ],
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "기원 이력"
+      },
+      {
+        "type": "RichText",
+        "text": "버전\n대상 캐릭터\n「네 번째 달」 (2차)\n2026/02/03 ~ 2026/02/24\n<color=#ffc870>★5</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9122,
+        "name": "자백",
+        "desc": "리월의 전설 속 백마 선인, 이름하여 자백. 리월의 선인 중에서도 특히 신비로운 인물이다",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/72161f01ff431c9f099710f92c811454_1654176825175164246.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#df54ff>★4</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9123,
+        "name": "일루가",
+        "desc": "「악몽의 밤꾀꼬리」 조사 분대 대원. 등지기의 최연소 분대장이기도 하다",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/d585407867aa47b4d925613cea9f00c2_5864597966579326880.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8397,
+        "name": "아이노",
+        "desc": "노드크라이의 천재 기계 발명가, 재밌는 기계와 달콤한 음식을 좋아한다",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/09/4e58c851d6c947865026faa168db83bd_3944254802105067377.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 5,
+        "name": "고로",
+        "desc": "<p>와타츠미군의 대장, 부하들의 깊은 신뢰를 받고 있다</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Gorou_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "캐릭터 소개",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "스쳐가는 속세를 달리는 말"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffe14b>2025/12/11</color>\n리월에는 예로부터 선인들에 관한 일화가 많이 전해져 내려온다.\n그 예시로는 《청재광록》에 기록된 가뭄을 물리친 비구름 위 한가한 선인이나, 《호법선중야차록》에 기록된 역병을 퇴치한 황금 날개 천붕왕이 있다.\n그들은 모두 주변 일대의 평화를 수호했던 위대한 존재로, 뭇사람들의 존경을 받았다.\n그러한 자들 중에는 백마 선인이라 불리는 이도 있었다. 그녀의 행적 역시 각종 서적과 민간 설화에 남아있다.\n혹자는 그녀가 마신 전쟁 당시 하얀 말로 변해 암왕제군이 속세의 권력을 손에 넣는 것을 도왔다고 말했다.\n혹자는 그녀의 호박빛 눈동자가 끝없이 펼쳐진 시간의 황무지를 꿰뚫어 볼 수 있다고 말했다.\n혹자는 그녀가 달을 거처로 삼으며 인간들의 소원에 귀를 기울이는 한편, 속세를 비추는 불빛을 지켜왔다 말했다.\n그러나 그 수많은 이야기나 기록 중, 그녀의 형상을 정확히 묘사하거나 그려낸 것은 없었다.\n식사 후의 한담 중에 나온 이야기든, 먹으로 얼룩진 두루마리 위의 이야기든… 전부 눈먼 자들이 어떤 커다란 동물을 더듬는 형국일 뿐이었다.\n다만 그런 이야기는 있었다. 그녀는 마치 신화 속의 말처럼 잠시 속세에 살풋 내려앉았다가, 눈 깜짝할 새에 사라져 버린다는 이야기가.\n그녀의 흔적은 속세의 먼지 위에 남아 있다. 그리고 그녀의 이야기는 언젠가, 다시 한번 세상에 모습을 드러낼 것이다."
+      },
+      {
+        "type": "RichText",
+        "text": "https:/www.hoyolab.com/article/42727048",
+        "alignment": "right"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "캐릭터 스킬 쇼케이스",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "캐릭터 스킬 쇼케이스——「샘물에 숨은 세월」·자백"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffe14b>2026/01/28</color>\n여행자, 안녕! 오늘은 자백의 캐릭터 스킬 쇼케이스 내용을 가져왔어. 함께 확인해 보자~\n「사직 의례」 이벤트 기원은 2월 3일에 오픈될 예정이야. 「샘물에 숨은 세월·자백(바위)」의 기원 획득 확률이 대폭 증가하니까 절대 놓치지 마~!\n해당 이벤트 기원 기간에는 「악몽을 불태우는 심지·일루가(바위)」, 「쾅쾅 발명가·아이노(물)」, 「견족의 전사·고로(바위)」의 획득 확률도 대폭 증가하니까 참고해 줘!"
+      },
+      {
+        "type": "RichText",
+        "text": "https:/www.hoyolab.com/article/43503640",
+        "alignment": "right"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "HoYoLAB",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "백마처럼 순식간에 지나가 버리는 세월——자백 캐릭터 일화"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffe14b>2026/01/25</color>\n지금까지의 여정에서 스쳐 갔던, 진위를 알 수 없는 전설들——어쩌면 그것은 흐릿하게나마 여행자의 마음속에 「백마 선인」의 얼개를 그려주었을지도 모릅니다. 해등절의 등불이 다시 타오르려 하는 지금, 이야기 속에서만 존재하던 선인은 과연 고향 땅에 모습을 드러낼까요?"
+      },
+      {
+        "type": "RichText",
+        "text": "https:/www.hoyolab.com/article/43463398",
+        "alignment": "right"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "캐릭터 소개——「샘물에 숨은 세월」·자백"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffe14b>2026/01/31</color>\n여행자, 안녕! 최근에 개방된 「봄을 여는 옥마차」 스토리를 통해 달에서 산다는 그 「백마 선인」과는 이미 만나 봤지? 우선 그 선인을 데려올 방법을 강구하기 전에, 자백과 그녀의 몸속 세 귀신에 대한 정보를 다시 한번 살펴보자구~"
+      },
+      {
+        "type": "RichText",
+        "text": "https:/www.hoyolab.com/article/43546314",
+        "alignment": "right"
+      }
+    ],
     "ascension": [
       {
         "key": "Lv.1",
@@ -681,68 +1634,101 @@
         ]
       }
     ],
-    "summaryList": [
+    "videoCollection": [
       {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/fa92a2bd11c58c5ec180dabeca9e17ae_5082825770741099078.png",
-        "name": "홀연한 탄생과 고요한 끝",
+        "title": "원신 | 「네 번째 달」 버전 PV: 「어느 겨울밤, 한 여행자」",
+        "url": "https://www.youtube.com/watch?v=N2QjOH8ek5c",
+        "coverUrl": "https://i.ytimg.com/vi/N2QjOH8ek5c/maxresdefault.jpg",
+        "duration": 339
+      },
+      {
+        "title": "원신 | 자백 캐릭터 PV ——「길 위의 먼지처럼」",
+        "url": "https://www.youtube.com/watch?v=l2PSQ1qCCqw",
+        "coverUrl": "https://i.ytimg.com/vi/l2PSQ1qCCqw/maxresdefault.jpg",
+        "duration": 248
+      },
+      {
+        "title": "원신 | 캐릭터 트레일러-「자백: 속세로 돌아온 몸」 #원신 #자백",
+        "url": "https://www.youtube.com/watch?v=w6m9upfyq6w",
+        "coverUrl": "https://i.ytimg.com/vi/w6m9upfyq6w/maxresdefault.jpg",
+        "duration": 178
+      }
+    ],
+    "story": [
+      {
+        "title": "캐릭터 상세정보",
         "desc": [
           {
             "type": "RichText",
-            "text": "원소전투 스킬 <color=#ffd780>천지일체</color> 발동 후, 자백이 즉시 <color=#ffd780>「시간의 빛」</color> 을 100pt 축적하고, <color=#ffd780>「세월의 틈새」</color> 모드에서 <color=#ffd780>백마 돌격</color> 의 최대 사용 가능 횟수가 5회로 증가한다.\n또한, 「세월의 틈새」 모드로 전환할 때마다 첫 번째 백마 돌격 발동 시, 제2단 공격으로 주는 달 결정 반응 피해가 220% 증가한다"
+            "text": "리월의 전설에는 신비로운 백마 선인이 한 명 등장한다.\n그녀의 흔적은 서적과 민간 설화 곳곳에 남아 있다. 하지만 서로 다른 이야기들 속에서 그녀는 모두 다른 모습을 보인다.\n혹자는 그녀가 마신 전쟁 당시 하얀 말로 변해 암왕제군이 속세의 권력을 손에 넣는 것을 도왔다고 말했다.\n혹자는 그녀의 호박빛 눈동자가 끝없이 펼쳐진 시간의 황무지를 꿰뚫어 볼 수 있다고 말했다.\n혹자는 그녀가 달을 거처로 삼으며 인간들의 소원에 귀를 기울이는 한편, 속세를 비추는 불빛을 지켜왔다 말했다.\n그러나 그 수많은 이야기나 기록 중, 그녀의 형상을 정확히 묘사하거나 그려낸 것은 없었다.\n식사 후의 한담 중에 나온 이야기든, 먹으로 얼룩진 두루마리 위의 이야기든… 전부 눈먼 자들이 어떤 커다란 동물을 더듬는 형국일 뿐이었다.\n다만 그런 이야기는 있었다. 그녀는 마치 신화 속의 말처럼 잠시 속세에 살풋 내려앉았다가, 눈 깜짝할 새에 사라져 버린다는 이야기가.\n그녀의 흔적은 속세의 먼지 위에 남아 있다. 그리고 그녀의 이야기는 언젠가 반드시 다시 세상에 모습을 드러내게 될 것이다"
           }
         ]
       },
       {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/a9e373afd363d09df7b9a7a72fa3a6fd_3062613640337560170.png",
-        "name": "생사의 섭리",
+        "title": "캐릭터 스토리1",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>「세월의 틈새」</color> 모드일 때, 주변에 있는 파티 내 모든 캐릭터의 달 결정 반응으로 주는 피해가 30% 증가한다.\n<color=#ffd780>달빛 징조·보름</color> : 돌파 특성 <color=#ffd780>달에서 강림한 선인</color> 의 효과가 강화된다: <color=#ffd780>백마 돌격</color> 의 제2단 공격으로 주는 피해가 자백 방어력의 550%만큼 추가로 증가한다. 해당 효과는 돌파 특성 달에서 강림한 선인을 해금해야 한다"
+            "text": "「봄을 여는 옥마차」 스토리 클리어\n호감도 Lv.2 달성 후 개방\n거의 알려지지 않은 사실이지만, 리월에 전해지는 백마 선인의 일화는 사실 그 선인의 몰락에서 시작되었다.\n그녀는 본래 하늘의 사자로서, 수천 년 전 인간을 인도하기 위해 현세에 강림했다.\n그녀는 수정과 보석이 풍부하던 고대 국가 낭간을 보살폈고, 사람들에게 농사와 방직을 가르쳐 오곡이 무르익고 창고가 가득 차게 했다.\n이로 인해 그녀는 고대 국가의 백성들로부터 사직신으로 섬겨졌다.\n그녀의 인도 아래, 낭간은 통일된 문명 속에서 찬란한 보석과도 같은 나라로 자리할 수 있었다.\n하지만 안타깝게도 세상에 영원한 것은 없는 법. 세계 밖에서 미처 예상치 못한 큰 재앙이 들이닥쳤고, 하늘 위에서는 처참한 전쟁이 벌어졌다.\n그 여파는 칠흑의 악의를 품은 채 낭간으로 떨어졌고, 하늘은 정화를 실행하기로 결심했다.\n신성한 의지는 천벌 같은 힘으로 찬란하던 고대 국가를 덮쳤고, 오염된 땅을 멸하려 했다.\n자신이 지켜 온 사람들에게 실낱같은 희망이라도 남겨주기 위해, 자백은 하늘의 뜻을 거역했다.\n그 대가로 그녀는 영혼이 세 개로 부서지는 치명상을 입었고, 그것은 그녀가 인간의 소원에 응답한 마지막 순간이 되었다.\n그러나 연민이었는지, 혹은 반역자에 대한 엄벌이었는지는 알 수 없지만, 자백을 주시하던 하늘의 그림자 하나가 그녀를 향해 손을 내밀었다.\n그 이후로, 세 개로 부서져 버린 자백의 영혼은 소멸 직전의, 천만 분의 일 초에서 영원히 멈춰버렸다.\n그리고 그녀의 본질은 진정한 죽음에도 삶에도 도달할 수 없는 꿈속을 영원히 방황하게 되었다"
           }
         ]
       },
       {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/479b9f87f1eb87215ab35d7e27cd0f68_4260540475968137862.png",
-        "name": "무소유",
+        "title": "캐릭터 스토리2",
         "desc": [
           {
             "type": "RichText",
-            "text": "원소전투 스킬 <color=#ffd780>천지일체</color> 의 스킬 레벨+3\n최대 Lv.15까지 상승"
+            "text": "「봄을 여는 옥마차」 스토리 클리어\n호감도 Lv.3 달성 후 개방\n옛날, 자백은 달의 사자의 신분으로 인간 세계에 내려와 신비로운 인물 한 명과 인연을 맺게 되었다.\n그는 인간의 모습을 하고 있었지만, 용모가 범상치 않았다. 구름을 타고 안개를 몰며 산을 옮기고 바다를 메우는, 바위를 흔들어 옥을 부수는 힘을 지니고 있었다.\n그토록 대단한 능력을 갖추고 있으면서도 천사 일족이 아니라는 점은 자백을 크게 놀라게 했다.\n어느 날, 두 사람은 산속에서 선법을 겨루기로 약속했다. 약속한 시간이 되었지만 그는 모습을 보이지 않았고, 대신 하늘 끝에서 굉음이 들려왔다.\n자백이 소리를 따라가자, 구름 사이에서 똑같이 생긴 세 개의 형체가 서로 맞서 싸우고 있었다.\n무기가 부딪히는 틈새로, 그녀는 구름 속에서 희미하게 울려 퍼지는 「암주천성」의 외침을 들었다.\n잠시 후 전투가 끝나고 세 형체는 다시 하나로 합쳐져 자백 앞에 내려왔다. 다름 아닌, 약속 상대였던 그 벗이었다.\n자백은 큰 호기심을 느꼈고, 그는 숨김없이 설명하며 아낌없이 가르쳐 주었다. 그것은 오래된 기술이었으며, 참삼시라 불렸다.\n삼시란, 수행자의 마음속에 깃든 혼탁한 집념과 사악한 욕망을 뜻한다. 삼시를 베어 내면, 비로소 맑고 투명한 자아를 마주할 수 있다고 했다.\n하지만 자백은 하늘과 세 달의 사자로서, 마음속에 망념을 품은 적이 없었기에, 아무리 시도해도 몸속의 세 귀신을 베어낼 수 없었다.\n그 벗은 개의치 않았다. 그저 「하늘의 뜻은 불변하는 것이 아니며, 세상일은 덧없이 바뀐다」라는 말만을 남긴 채, 덤덤하게 자리를 떠났다.\n그때의 자백은 알지 못했다. 이후 인간을 인도하는 길 위에서, 자신이 어떻게 서서히 인간의 감정에 물들게 될 것인지를.\n그리고 더 먼 미래에, 자신이 소중히 여기던 나라 위로 천벌이 떨어지는 광경을 직접 목격했을 때, 분노와 두려움, 억눌린 격정이 어떻게 뼛속에 붙은 벌레처럼 그녀의 영혼을 갉아먹게 될지 역시 알지 못했다.\n그녀는 분명 그 순간, 자신의 몸 속의 세 귀신을 베어낼 것이다. 하지만 자신의 자아를 도려내고 인간 세상에 몸을 숨기는 것은, 훗날 하늘에 맞설 마지막 수단으로 남겨두었다.\n그러나 「하늘의 뜻은 불변하는 것이 아니며, 세상일은 덧없이 바뀐다」는 말처럼, 바로 그 순간 그녀를 지켜보던 그 그림자는 연민과 단죄를 함께 담긴 감옥을 그녀에게 내렸다"
           }
         ]
       },
       {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/f7965f5b007797d5e8a20caef036046c_9006695027182918451.png",
-        "name": "혼을 따르는 육신",
+        "title": "캐릭터 스토리3",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>「세월의 틈새」</color> 모드일 때, 자백의 일반 공격 콤보수가 초기화되지 않으며, <color=#ffd780>백마 돌격</color> 이 적 명중 시 자백이 <color=#ffd780>「월화」</color> 효과를 획득한다: 다음 일반 공격 시, 4단의 추가 공격이 기존 피해의 250%에 해당하는 달 결정 반응 피해를 준다"
+            "text": "「봄을 여는 옥마차」 스토리 클리어\n호감도 Lv.4 달성 후 개방\n…삼… 오… 칠…\n시간이 멈춘 공허한 달빛 아래, 모든 것이 흐름을 멈춘 듯했다.\n…오십삼… 오십구…\n시간이 정말로 멈춘 것은 아니다. 다만 감지할 수 없을 만큼 느려졌을 뿐. 인간 세계의 하루가 이곳에서는 마치 백 년을 지나야 비로소 지나가는 듯했다.\n…백오십일… 백오십칠… 백육십칠…\n그렇다, 느려진 시간이다. 그렇지 않다면 머릿속에 새겨졌던 기억들이 무엇에 의해 닳아 없어졌는지 설명할 수 없었다.\n오백오십칠…\n자거.\n오백육십삼…\n낭간.\n오백육십구…\n사람들의 얼굴과 목소리.\n이것들은 무엇일까? 어째서인지 무엇이든 잊고 싶지 않다.\n그런데 이것들은 무엇일까? 그런데 이것들은 무엇일까?\n…천오백오십삼…\n저편의 밝은 빛은 등불일까? 여러 번 본 적이 있는 것 같다.\n누군가가 집으로 향하는 방향이라고 반복해서 얘기했던 것 같다.\n언젠가 반드시 고향으로 돌아갈 수 있다는 것. 이 사실만은 결코 잊어서는 안 된다.\n…천오백육십칠…\n집이 뭐지?\n…삼천오백오십칠…\n외롭다. 이 숫자들은 1을 제외하고는 오직 자신뿐이다.\n…삼천오백오십구…\n그렇다, 나는 지금 나 자신을 세고 있다.\n이름을 잊게 되더라도, 적어도 아직 존재하고 있다는 사실만은 잊지 않을 것이다.\n잊지 않을 것이다.\n만 육천백이십칠…\n무엇을 세고 있었지?\n…삼… 오… 칠…"
           }
         ]
       },
       {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/09018726c777b445faca48d4853feac1_5420376419344513929.png",
-        "name": "침묵으로 깨달은 도리",
+        "title": "캐릭터 스토리4",
         "desc": [
           {
             "type": "RichText",
-            "text": "원소폭발 <color=#ffd780>천상 삼원의 법칙</color> 의 스킬 레벨+3\n최대 Lv.15까지 상승"
+            "text": "「봄을 여는 옥마차」 스토리 클리어\n호감도 Lv.5 달성 후 개방\n리월의 선인 설화에 가장 많이 등장하는 백마 선인의 정체는 사실 자백이 베어낸 하체 귀신 자교였다.\n경책 산장의 노인들의 입에 오르내리는 「암왕제군의 정벌을 도운 백마」가 바로 그녀였다.\n침옥 협곡의 부족들이 말하는 「시간의 딸」도 그녀였다.\n팔기연도도에 전해지는 「금색 눈의 달빛 말」 역시 그녀였다.\n심지어 노씨 족보에 기록된 「오백 년의 시간의 틈을 뛰어넘은」 백마 선인 또한 다름 아닌 그녀였다.\n마신 전쟁 시기에 그녀는 이미 바위 신에 의해 진품 비단 그림인 「달을 삼키는 두꺼비」에서 해방되었고, 그와 함께 싸우겠다는 계약을 맺었다.\n그러나 그녀의 몸에 남아 있던 시간의 흔적은 그 고대 바위 신에게 알 수 없는 영향을 미쳤다.\n이에 마신 전쟁이 끝난 뒤, 스스로가 위협이 될 수 있음을 자각한 자교는 산속으로 모습을 감추었고, 이후로는 인간 세상에 모습을 드러내지 않았다.\n다만 그녀는 천성이 자유분방했고, 사람들 앞에서 능력을 뽐내기를 좋아했다. 인간의 수명은 기껏해야 백 년에 불과했기에 시간의 흐름은 그녀에게 세월의 흔적을 거의 남기지 못했다.\n그래서 그녀는 가끔 도움이 필요한 인간들 앞에 모습을 드러내곤 했다. 그들을 곤경에서 구해주면서도 한편으로는 하늘이 무너지고 땅이 갈라지기 전의 이야기를 전하고 싶다는 작은 마음도 함께 품고 있었다.\n그러나 훗날 그 이야기들이 책으로 엮여 자신의 뜻과 어긋난다면, 그녀는 아마 한 번 훑어본 뒤 아무렇지 않게 던져 버렸을 것이다.\n그녀는 드넓고 아무도 없는 황야를 마음껏 질주하는 야생마와 같았다. 그녀의 자유로운 발걸음을 묶어 둘 수 있는 것은 아무것도 없었다.\n그녀는 자백의 몰락에서 태어났지만, 스스로 자백이나 누군가의 고삐가 필요하다고 생각해 본 적은 단 한 번도 없다.\n그녀는 언제든,거리낌 없이 시간의 끝자락으로 뛰어들 준비가 되어 있다. 그리고 「쾅」 하는 소리와 함께, 황금빛으로 빛나는 한 줌의 먼지가 되어 흩어질 것이다"
           }
         ]
       },
       {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/e06d7e044cba9f093dc54c3a3203ce76_5407902582246446953.png",
-        "name": "천지를 스쳐가는 여정",
+        "title": "캐릭터 스토리5",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>「세월의 틈새」</color> 모드일 때, 자백의 <color=#ffd780>「시간의 빛」</color> 축적 효율이 50% 증가한다.\n또한, <color=#ffd780>백마 돌격</color> 이 모든 「시간의 빛」을 소모하도록 변경된다. 소모한 「시간의 빛」이 70pt를 초과하면 초과 소모한 「시간의 빛」 1pt마다 이번 백마 돌격과 이어지는 3초 동안 자백이 주는 달 결정 반응 피해가 1.6% <color=#ffd780>승격</color> 된다. 해당 효과는 중첩되지 않는다"
+            "text": "「봄을 여는 옥마차」 스토리 클리어\n호감도 Lv.6 달성 후 개방\n미처 예상하지 못했던 대재앙과 마찬가지로, 자백의 운명을 바꿀 계기 또한 하늘 너머에서 찾아왔다.\n금발의 여행가와 그 동료들의 협력으로, 진실의 달이 다시 티바트에 강림했고, 자백의 본질을 가두고 있던 거짓된 달도 무너지기 시작했다.\n또 다른 옛 벗의 도움으로, 자백의 마모되거나 잠들어 있거나 혹은 자유롭게 떠돌던 세 개의 영혼의 근원이 마침내 다시 인간 세상에 모습을 드러낼 때가 도래했다.\n이 모든 것이 자백을 주시하던 그 그림자의 예견이었을까? 이 모든 것이 최초의 천사가 목격한 것이 현실이 된 것일까?\n어찌 되었든, 고대 국가의 인도자는 하늘 가득 쌓인 소망의 부름 속에서 마침내 고향으로 돌아왔다.\n이곳은 이미 예전의 모습이 아니었다. 사람들은 새로운 신을 섬기고 있었으며, 불을 밝히는 의례도 완전히 달라져 있었고, 심지어 그녀에 대한 이야기마저 변해 있었다.\n그럼에도 그녀는 알고 있었다. 한때 자신이 보살피던 인간들이 찬란한 문명과 함께 끊어져 버리지 않았다는 것을. 그들은 같은 땅 위에서 가지를 뻗고 잎을 틔우며, 날로 새로워져 오늘의 모습에 이르렀다.\n옛 벗의 말처럼, 만약 옛 낭간의 미옥이 오늘날 리월항의 기반이 된 것이 아니라면, 어찌 이곳이 바위의 땅, 유리 구름과 달 사이라 불릴 수 있었겠는가.\n이제 그녀에겐 더 이상 불만이라 할 만한 것도 남아 있지 않았다. 한때 억누를 수 없었던 분노마저도 지금은 자취를 감추었다.\n그녀가 해 온 모든 일이 헛되지 않았고, 마침내 고향으로 돌아왔으니 그것만으로도 충분한 것 같았다.\n그것만으로도 그녀가 겪어야 했던 모든 고통과 시련을 상쇄하기에 충분한 것 같았다"
+          }
+        ]
+      },
+      {
+        "title": "천리 풍경화",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "「봄을 여는 옥마차」 스토리 클리어\n호감도 Lv.4 달성 후 개방\n지금의 자백에게 리월의 모든 것은 익숙하면서도 새로웠다.\n그래서 영혼이 안정된 틈을 타, 리월의 산과 강을 돌아다녔다.\n그녀는 경책 산장에 올라, 산중의 폭포가 층층이 쏟아지며 맑은 샘으로 다시 흘러드는 광경을 보았다.\n그녀는 고운각에 이르러, 하늘 높이 울부짖는 바람과 창처럼 솟은 바위 기둥들이 장엄히 버티고 선 모습을 보았다.\n그녀는 보결구에 닿아, 고대 옥고리 아래에 흩어진 어선들과 먼 곳에서 길게 이어지는 산노래를 마주했다.\n그녀는 절운간으로 향해, 일렁이는 신선의 안개가 구름 속의 큰 연못처럼 펼쳐진 광경을 보았다.\n……\n낭간 고대 국가에 비단 그림의 기예를 전수해 주었던 하늘의 사자로서, 그녀는 수천 년 동안 쓰지 않았던 솜씨를 다시금 꺼내 들었다.\n장엄한 경치에 이를 때마다, 그녀는 직접 눈으로 본 풍경의 아름다움을 선력으로 비단 위에 수놓았다.\n시간이 흐르자, 비단 그림 속의 산하는 어느새 천 리에 걸쳐 이어지며, 웅대하고도 찬란한 모습을 갖추게 되었다…\n한가할 때면 자백은 그 비단 그림을 꺼내어 흐뭇하게 감상하곤 했다. 볼수록 입가에는 웃음이 번졌고, 얼굴에는 감출 수 없는 자부심이 어려 있었다.\n임왕제군 또한 그녀의 모습을 보고 그 그림에 흥미를 품어 여러 차례 빌려 보고자 했으나, 아직 완성되지 않았다는 이유로 매번 거절당했다고 전해진다.\n훗날 이 비단 두루마리가 마침내 완성될 때, 그 장관이 얼마나 장엄하고도 길게 펼쳐질지는, 누구도 가늠할 수 없을 것이다"
+          }
+        ]
+      },
+      {
+        "title": "달의 륜",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "「봄을 여는 옥마차」 스토리 클리어\n호감도 Lv.6 달성 후 개방\n친족들과 마찬가지로, 자백은 본래 신성한 계획 속에서 태어난 존재였다.\n그리하여 그녀는 하늘의 사명을 지닌 모습으로 티바트의 하늘 아래에 모습을 드러냈다.\n하늘의 빛나는 별은 이 세계를 사랑했고, 이곳을 행복한 정원으로 빚어내고자 했다. 그 사명을 헤아린 사자는 흙을 가꾸기 시작했다.\n흙이 비옥하면 꽃과 풀은 무성해지고, 흙이 썩으면 정원은 악취를 풍긴다.\n행복한 꽃은 뜨거운 아침 햇살 아래에서 만개한다.\n그러나 악취에 물든 꽃은, 성대한 사랑을 모독하지 않기 위해 흙과 함께 제거해야 한다.\n자백의 운명은 이처럼 신성한 계획 속에서 흘러갔다. 그날이 올 때까지…\n이유는 알 수 없지만, 왕의 그림자이자 그 시간의 존재는 달의 인장이 새겨진 휘장을 자백 앞에 내려놓았다.\n이는 그녀가 더 이상 샛별의 대행자일 뿐만 아니라, 달의 사자이기도 하다는 표식이었다.\n이 또한 신성한 계획의 일부일까? 그녀는 그렇게 생각했다. 그렇다, 이 역시 세계를 빚어내는 과정의 한 부분이었다.\n그리하여 그녀는 샛별과 달, 그리고 정원 사이를 오가기 시작했다. 하지만 그녀는 그 휘장을 받아들이지 않았다.\n추가로 주어진 표식이 어떻게 계획을 더 완벽하게 만들 수 있는지 알지 못했기에, 자신의 사명에는 그것이 필요하지 않다고 여겼기 때문이다.\n하지만 시간이 흐르자, 그녀는 샛별과 달이 정원을 향해 품는 의지와 사랑이 서로 다르다는 사실을 알아차렸다.\n샛별의 빛은 언제나 정원 전체를 향해 열렬히 쏟아졌고, 어느 한 송이의 꽃에도 오래 머무르지 않았다.\n그 빛은 신성함이 부족한 꽃과 풀, 흙을 함께 태워도 개의치 않았으며, 설령 그것들이 순수한 공허로 사라진다 해도 아랑곳하지 않았다.\n달의 은빛은 달랐다. 그 빛은 흙보다는 불볕에 상처 입은 꽃과 풀 하나하나의 뿌리에 스며들기를 택했고, 내리쬐는 햇빛 뒤에서 위로를 건네고자 했다.\n자백의 마음속에 때때로 이런 의문이 떠올랐다. 과연 어느 쪽의 의지와 사랑이 더 신성한 것일까?\n답은 언제나 분명했다. 수수께끼의 답은 수수께끼 속에 있듯이, 신성한 계획은 본디 더없이 신성한 것이었다.\n그러나 어째서인지, 자백의 시선은 점점 더 자주 달빛을 따라 그녀가 직접 가꾼 작은 꽃무리 위에 머물렀다.\n꽃이 피는 모습은 웃음과 같고, 꽃이 지는 모습은 눈물과 같았다. 하지만 흙은 웃지 않으니, 흙에서 태어난 존재가 어찌 슬퍼할 수 있단 말인가?\n자백은 그렇게 생각하며, 바라보았다…\n꽃이 피고, 꽃이 지고, 열매가 맺히고, 열매가 떨어지고, 새싹이 돋고, 다시 꽃이 피고, 꽃이 지는 것을…\n훗날, 동료 하나가 맡고 있던 꽃밭이 신성을 모독했다는 이유로 모조리 뽑혀 나갔다는 소식을 들었을 때, 자백은 문득 깊은 슬픔을 느꼈다. 곧이어 불안이 뒤따랐다.\n그렇다. 하늘의 사명에는 슬픔이 포함되어 있지 않다. 그 사명에서 태어난 자신이 어찌 슬퍼할 수 있는가?\n혹시 자신은 이미 인도를 필요로 하는 꽃과 풀의 자리로 격하된 것은 아닐까? 자신이 받아들인 의지와 사랑 또한 더 이상 신성하지 않게 된 것은 아닐까?\n마치 궤도를 이탈하는 운명의 시작점 같았다. 그리고 이것은 또 다른 순간이 찾아올 때까지 이어졌다. 하늘이 붕괴하고, 거짓이 내려앉던 그 순간까지.\n정원은 폐허로 변했고, 꽃과 풀은 위태롭게 흔들렸다. 타는 듯한 열기는 그녀의 의지를 잠식해, 생각을 가다듬을 힘조차 빼앗았다.\n바로 그때, 달의 휘장이 눈물처럼 그녀의 등에 떨어졌다.\n그녀가 목격했으나 거부했던 차가운 빛이, 정원의 꽃과 풀에게 그러했듯, 그녀에게도 고요와 위로를 건넸다.\n잠시 스며든 그 차가움 속에서, 자백은 떠올렸다. 샛별의 빛 아래 타오르기 전까지, 자신은 여전히 이 꽃들을 억만년 동안 사랑할 수 있으리라는 것을"
           }
         ]
       }
     ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header&utm_id=2&utm_medium=tool&utm_source=hoyolab&bbs_theme=dark&bbs_theme_device=1&lang=ko-kr#/map/2?shown_types=38,739,769&center=1361.00,-7022.00&zoom=-3.00",
     "voice": [
       {
         "title": "첫 만남…",
@@ -2303,1030 +3289,64 @@
         ]
       }
     ],
-    "galleryCharacter": [
+    "summaryList": [
       {
-        "key": "Character Card",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/f58bd959a0865da295519ffa1228dcfe_9110469962687464010.jpg"
-      },
-      {
-        "key": "기본 일러스트",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/79c662083a639604a842efce419e2ada_2281309650231144496.png",
-        "imgDesc": [
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/fa92a2bd11c58c5ec180dabeca9e17ae_5082825770741099078.png",
+        "name": "홀연한 탄생과 고요한 끝",
+        "desc": [
           {
             "type": "RichText",
-            "text": "자백의 코스튬. 주재료는 비단과 삼베다. 수천 년 전 고대 국가 「낭간」은 정교한 방직 기술을 보유하고 있었다고 전해지는데, 그 기술은 하늘 위 사자인 자백이 인간 세상에 전해준 것이라고 한다. 오랜 세월이 흐른 뒤, 태고의 국가와 유구한 역사는 모두 시간에 흩어져 물에 비친 환영 달처럼 허상이 되어버렸고, 그 진짜 모습을 볼 수 없게 되었다. 하지만 누에고치에서 실을 뽑고 삼베를 짜는 기술은 기적적으로 전해져 내려왔고, 지금까지 리월항의 모든 물레에서 그 기술을 여전히 확인할 수 있다"
+            "text": "원소전투 스킬 <color=#ffd780>천지일체</color> 발동 후, 자백이 즉시 <color=#ffd780>「시간의 빛」</color> 을 100pt 축적하고, <color=#ffd780>「세월의 틈새」</color> 모드에서 <color=#ffd780>백마 돌격</color> 의 최대 사용 가능 횟수가 5회로 증가한다.\n또한, 「세월의 틈새」 모드로 전환할 때마다 첫 번째 백마 돌격 발동 시, 제2단 공격으로 주는 달 결정 반응 피해가 220% 증가한다"
           }
         ]
       },
       {
-        "key": "대기 동작 1",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/3f9276f066c4a840e8f376e3c4f44c29_7144772731612011.gif"
-      },
-      {
-        "key": "대기 동작 2",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/16a13bce19e8c979424a736ff21d527b_1838655960764611197.gif"
-      },
-      {
-        "key": "운명의 자리",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/04/302875544/a4c11d7ce203e9b0452892de70aef5e0_6529636103679333857.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "백마자리"
-          }
-        ]
-      }
-    ],
-    "talent": [
-      {
-        "title": "금빛 가지치기",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/94aa30ae75b8c7c6a9c64ab05bd5dda7_1663304779144319360.png",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/a9e373afd363d09df7b9a7a72fa3a6fd_3062613640337560170.png",
+        "name": "생사의 섭리",
         "desc": [
           {
             "type": "RichText",
-            "text": "<color=#ffd780>일반 공격</color>\n검으로 최대 4번 공격한다.\n<color=#ffd780>강공격</color>\n일정 스태미나를 소모해 순간적으로 전방을 향해 검을 두 번 휘두른다.\n<color=#ffd780>낙하 공격</color>\n공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11"
-            ]
-          },
-          {
-            "key": "1단 공격 피해",
-            "values": [
-              "50.6%",
-              "54.7%",
-              "58.8%",
-              "64.7%",
-              "68.8%",
-              "73.5%",
-              "79.9%",
-              "86.4%",
-              "92.9%",
-              "99.9%",
-              "107.0%"
-            ]
-          },
-          {
-            "key": "2단 공격 피해",
-            "values": [
-              "46.6%",
-              "50.3%",
-              "54.1%",
-              "59.5%",
-              "63.3%",
-              "67.7%",
-              "73.6%",
-              "79.6%",
-              "85.5%",
-              "92.0%",
-              "98.5%"
-            ]
-          },
-          {
-            "key": "3단 공격 피해",
-            "values": [
-              "30.9%+30.9%",
-              "33.4%+33.4%",
-              "35.9%+35.9%",
-              "39.5%+39.5%",
-              "42.0%+42.0%",
-              "44.9%+44.9%",
-              "48.8%+48.8%",
-              "52.8%+52.8%",
-              "56.7%+56.7%",
-              "61.1%+61.1%",
-              "65.4%+65.4%"
-            ]
-          },
-          {
-            "key": "4단 공격 피해",
-            "values": [
-              "77.9%",
-              "84.2%",
-              "90.6%",
-              "99.6%",
-              "106.0%",
-              "113.2%",
-              "123.2%",
-              "133.1%",
-              "143.1%",
-              "154.0%",
-              "164.8%"
-            ]
-          },
-          {
-            "key": "강공격 피해",
-            "values": [
-              "73.7%+73.7%",
-              "79.7%+79.7%",
-              "85.7%+85.7%",
-              "94.2%+94.2%",
-              "100.2%+100.2%",
-              "107.1%+107.1%",
-              "116.5%+116.5%",
-              "125.9%+125.9%",
-              "135.3%+135.3%",
-              "145.6%+145.6%",
-              "155.9%+155.9%"
-            ]
-          },
-          {
-            "key": "강공격 스태미나 소모",
-            "values": [
-              "20.0pt",
-              "20.0pt",
-              "20.0pt",
-              "20.0pt",
-              "20.0pt",
-              "20.0pt",
-              "20.0pt",
-              "20.0pt",
-              "20.0pt",
-              "20.0pt",
-              "20.0pt"
-            ]
-          },
-          {
-            "key": "낙하 기간 피해",
-            "values": [
-              "63.9%",
-              "69.1%",
-              "74.3%",
-              "81.8%",
-              "87.0%",
-              "92.9%",
-              "101.1%",
-              "109.3%",
-              "117.5%",
-              "126.4%",
-              "135.3%"
-            ]
-          },
-          {
-            "key": "저공/고공 추락 충격 피해",
-            "values": [
-              "128%/160%",
-              "138%/173%",
-              "149%/186%",
-              "164%/204%",
-              "174%/217%",
-              "186%/232%",
-              "202%/253%",
-              "219%/273%",
-              "235%/293%",
-              "253%/316%",
-              "271%/338%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 200,
-              "name": "「황금」의 가르침",
-              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 리월 대지 깊은 곳에 흐르는 피이자 리월의 심장을 뛰게하는 근원이며 리월을 지탱하는 뼈대이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Gold_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8608,
-              "name": "마모된 표장",
-              "desc": "우인단 특수부대에게 지급되는 표장.<br>이 표장을 보유한 이는 어떤 결의로 이 부대에 합류했을까?",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/9f0e22244a7132935602433e79bef24f_5872688653273879780.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 199,
-              "name": "「황금」의 인도",
-              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 변환을 의미한다. 이는 리월의 바위산과 대지, 항구 도시, 그리고 사람들의 암묵적 약속이다. 리월에서 근면은 황금으로, 황금은 번영으로 바뀐다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8609,
-              "name": "정교한 표장",
-              "desc": "우인단 특수부대에게 지급되는 표장.<br>정교한 디자인의 이면에는 표장의 주인이 승진을 위해 치른 대가가 담겨 있을지도 모른다",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/852358094b751d2fa2c7dafcfa28d324_4616812596451196995.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 199,
-              "name": "「황금」의 인도",
-              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 변환을 의미한다. 이는 리월의 바위산과 대지, 항구 도시, 그리고 사람들의 암묵적 약속이다. 리월에서 근면은 황금으로, 황금은 번영으로 바뀐다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8609,
-              "name": "정교한 표장",
-              "desc": "우인단 특수부대에게 지급되는 표장.<br>정교한 디자인의 이면에는 표장의 주인이 승진을 위해 치른 대가가 담겨 있을지도 모른다",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/852358094b751d2fa2c7dafcfa28d324_4616812596451196995.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 199,
-              "name": "「황금」의 인도",
-              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 변환을 의미한다. 이는 리월의 바위산과 대지, 항구 도시, 그리고 사람들의 암묵적 약속이다. 리월에서 근면은 황금으로, 황금은 번영으로 바뀐다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8609,
-              "name": "정교한 표장",
-              "desc": "우인단 특수부대에게 지급되는 표장.<br>정교한 디자인의 이면에는 표장의 주인이 승진을 위해 치른 대가가 담겨 있을지도 모른다",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/852358094b751d2fa2c7dafcfa28d324_4616812596451196995.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 199,
-              "name": "「황금」의 인도",
-              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 변환을 의미한다. 이는 리월의 바위산과 대지, 항구 도시, 그리고 사람들의 암묵적 약속이다. 리월에서 근면은 황금으로, 황금은 번영으로 바뀐다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Gold_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8609,
-              "name": "정교한 표장",
-              "desc": "우인단 특수부대에게 지급되는 표장.<br>정교한 디자인의 이면에는 표장의 주인이 승진을 위해 치른 대가가 담겨 있을지도 모른다",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/852358094b751d2fa2c7dafcfa28d324_4616812596451196995.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 198,
-              "name": "「황금」의 철학",
-              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 리월의 부다. 하지만 리월의 진정한 부는 바로 리월 사람들의 황금처럼 반짝 빛나는 마음이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8610,
-              "name": "서릿빛 표장",
-              "desc": "우인단 특수부대에게 지급되는 표장.<br>서리빛 결정이 박힌 표장은 영광의 상징이다. 이 표장을 가진 자는 임무에서 자신의 충성과 가치를 입증했을 것이다",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/7bd8e70d50422f25ab44ce5d6fa7ccd9_9016563996009424798.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 7658,
-              "name": "승격·퀸",
-              "desc": "연금술 활성화를 거친 물질에서 생성된 희귀한 표본.<br>체스 말 「퀸」의 원래 명칭은 「재상」이었지만, 게임의 규칙이 발전하면서 외척 세력의 강함을 상징하는 최강의 말이자 명실상부한 황금 왕족으로 거듭났다.<br>폰의 승격과 연금술의 물질 변환은 어쩌면 비슷한 점이 있을 수도 있다. 하지만 폰은 「황금」이 되어도 그저 거꾸로 뒤집힌 「룩」일 뿐이다",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/625ada17482cdd85a4e8a5bb89690d10_3645512411039793224.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 198,
-              "name": "「황금」의 철학",
-              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 리월의 부다. 하지만 리월의 진정한 부는 바로 리월 사람들의 황금처럼 반짝 빛나는 마음이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8610,
-              "name": "서릿빛 표장",
-              "desc": "우인단 특수부대에게 지급되는 표장.<br>서리빛 결정이 박힌 표장은 영광의 상징이다. 이 표장을 가진 자는 임무에서 자신의 충성과 가치를 입증했을 것이다",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/7bd8e70d50422f25ab44ce5d6fa7ccd9_9016563996009424798.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 7658,
-              "name": "승격·퀸",
-              "desc": "연금술 활성화를 거친 물질에서 생성된 희귀한 표본.<br>체스 말 「퀸」의 원래 명칭은 「재상」이었지만, 게임의 규칙이 발전하면서 외척 세력의 강함을 상징하는 최강의 말이자 명실상부한 황금 왕족으로 거듭났다.<br>폰의 승격과 연금술의 물질 변환은 어쩌면 비슷한 점이 있을 수도 있다. 하지만 폰은 「황금」이 되어도 그저 거꾸로 뒤집힌 「룩」일 뿐이다",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/625ada17482cdd85a4e8a5bb89690d10_3645512411039793224.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 198,
-              "name": "「황금」의 철학",
-              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 리월의 부다. 하지만 리월의 진정한 부는 바로 리월 사람들의 황금처럼 반짝 빛나는 마음이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8610,
-              "name": "서릿빛 표장",
-              "desc": "우인단 특수부대에게 지급되는 표장.<br>서리빛 결정이 박힌 표장은 영광의 상징이다. 이 표장을 가진 자는 임무에서 자신의 충성과 가치를 입증했을 것이다",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/7bd8e70d50422f25ab44ce5d6fa7ccd9_9016563996009424798.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 7658,
-              "name": "승격·퀸",
-              "desc": "연금술 활성화를 거친 물질에서 생성된 희귀한 표본.<br>체스 말 「퀸」의 원래 명칭은 「재상」이었지만, 게임의 규칙이 발전하면서 외척 세력의 강함을 상징하는 최강의 말이자 명실상부한 황금 왕족으로 거듭났다.<br>폰의 승격과 연금술의 물질 변환은 어쩌면 비슷한 점이 있을 수도 있다. 하지만 폰은 「황금」이 되어도 그저 거꾸로 뒤집힌 「룩」일 뿐이다",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/625ada17482cdd85a4e8a5bb89690d10_3645512411039793224.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "모라",
-              "desc": "티바트 대륙 공용 화폐. 세계 공용어나 마찬가지로 누구나 다 알아볼 수 있는 귀금속이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 198,
-              "name": "「황금」의 철학",
-              "desc": "특성 육성 소재.<br/>바위의 나라의 상징은 황금이다.<br/>황금은 리월의 부다. 하지만 리월의 진정한 부는 바로 리월 사람들의 황금처럼 반짝 빛나는 마음이다",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Gold_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8610,
-              "name": "서릿빛 표장",
-              "desc": "우인단 특수부대에게 지급되는 표장.<br>서리빛 결정이 박힌 표장은 영광의 상징이다. 이 표장을 가진 자는 임무에서 자신의 충성과 가치를 입증했을 것이다",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/7bd8e70d50422f25ab44ce5d6fa7ccd9_9016563996009424798.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 7658,
-              "name": "승격·퀸",
-              "desc": "연금술 활성화를 거친 물질에서 생성된 희귀한 표본.<br>체스 말 「퀸」의 원래 명칭은 「재상」이었지만, 게임의 규칙이 발전하면서 외척 세력의 강함을 상징하는 최강의 말이자 명실상부한 황금 왕족으로 거듭났다.<br>폰의 승격과 연금술의 물질 변환은 어쩌면 비슷한 점이 있을 수도 있다. 하지만 폰은 「황금」이 되어도 그저 거꾸로 뒤집힌 「룩」일 뿐이다",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/24/625ada17482cdd85a4e8a5bb89690d10_3645512411039793224.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "지식의 왕관",
-              "desc": "<p>특성을 올리는데 필요한 진귀한 소재.<br>먼 옛날, 지식을 전수하는데 사용한 의식용 도구이다. 오늘날에는 지혜가 언어와 책에 들어있으나, 「지식의 왕관」에 남아있는 힘과 지혜는 요즘 사람들도 위대한 진전을 이룰 수 있게 해준다</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/52417caf8877df2eea483a062a954d9a_4436987898575155779.gif"
-      },
-      {
-        "title": "천지일체",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/479b9f87f1eb87215ab35d7e27cd0f68_1308878765450167004.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "옛 권능의 편린을 불러일으켜 <color=#ffd780>「세월의 틈새」</color> 모드로 전환한다.\n해당 모드에서 자백이 일반 공격과 강공격 진행 시, 다른 원소 부여 효과로 대체될 수 없는 <color=#ffe699>바위 원소 피해</color> 를 주는 것으로 전환된다. 또한, 서로 다른 방식을 통해 특수한 <color=#ffd780>「시간의 빛」</color> 을 축적할 수 있다. 자백은 「시간의 빛」을 소모해 특수한 원소전투 스킬 <color=#ffd780>백마 돌격</color> 을 발동할 수 있다.\n<color=#ffd780>달빛 징조·보름</color>\n<color=#ffd780>「세월의 틈새」</color> 모드에서 자백이 일반 공격 진행 시, 4단 공격이 추가로 <color=#ffe699>바위 원소 피해</color> 를 1회 주고, 해당 피해는 달 결정 반응 피해로 간주된다\n사람들은 세월이 백마처럼 순식간에 틈새를 지나가 버린다(백구과극)고 말한다. 백마가 뚱뚱하면 틈새를 못 지나가지 않느냐는 아이의 질문에, 그녀는 의아한 표정으로 답했다: 「그건 비유일 뿐이다. 뚱뚱한 것과 무슨 상관이 있지?」\n<color=#ffd780>세월의 틈새</color>\n원소전투 스킬 <color=#ffd780>천지일체</color> 발동 후, 자백은 해당 모드로 전환된다. 이 모드는 최대 15초 동안 지속되며, 다음과 같은 특성을 가진다:\n· 일반 공격과 강공격 시, 다른 원소 부여 효과로 대체되지 않는 <color=#ffe699>바위 원소 피해</color> 를 주는 것으로 전환된다.\n· 원소전투 스킬 <color=#ffd780>천지일체</color> 가 특수 원소전투 스킬 <color=#ffd780>백마 돌격</color> 으로 대체된다: 자백이 <color=#ffd780>「시간의 빛」</color> 70pt 이상 보유 시, 자백은 「시간의 빛」을 70pt 소모해 백마 돌격을 발동하여 2회의 <color=#ffe699>바위 원소 피해</color> 를 준다, 이 중 제2단 공격 피래는 달 결정 반응 피해로 간주된다.\n<color=#ffd780>「시간의 빛」</color> 최대치는 100pt 이며, 자백은 아래의 방법으로 「시간의 빛」을 축적할 수 있다:\n· <color=#ffd780>「세월의 틈새」</color> 모드일 때, 1초마다 「시간의 빛」을 10pt 축적한다.\n· 일반 공격이 적 명중 시, 「시간의 빛」을 5pt 축적한다, 자백은 해당 방식으로 0.5초마다 「시간의 빛」을 최대 1회 축적할 수 있다.\n<color=#ffd780>달빛 징조·보름</color>\n주변에 있는 파티 내 캐릭터가 달 결정 반응 발동 시, 자백이 <color=#ffd780>「시간의 빛」</color> 을 35pt 축적한다. 자백은 해당 방식으로 4초마다 「시간의 빛」을 최대 1회 축적할 수 있다. 특수 원소전투 스킬 <color=#ffd780>백마 돌격</color> 을 발동하면 해당 방식으로 축적한 <color=#ffd780>「시간의 빛」</color> 의 재사용 대기시간이 초기화된다.\n<color=#ffd780>백마 돌격</color> 을 4회 발동하거나 지속 시간 종료 시, 자백은 해당 모드를 종료한다"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13"
-            ]
-          },
-          {
-            "key": "세월의 틈새 1단 공격 피해",
-            "values": [
-              "방어력의 56.6%",
-              "방어력의 60.8%",
-              "방어력의 65.1%",
-              "방어력의 70.7%",
-              "방어력의 75.0%",
-              "방어력의 79.2%",
-              "방어력의 84.9%",
-              "방어력의 90.5%",
-              "방어력의 96.2%",
-              "방어력의 101.8%",
-              "방어력의 107.5%",
-              "방어력의 113.2%",
-              "방어력의 120.2%"
-            ]
-          },
-          {
-            "key": "세월의 틈새 2단 공격 피해",
-            "values": [
-              "방어력의 52.1%",
-              "방어력의 56.0%",
-              "방어력의 59.9%",
-              "방어력의 65.1%",
-              "방어력의 69.0%",
-              "방어력의 72.9%",
-              "방어력의 78.2%",
-              "방어력의 83.4%",
-              "방어력의 88.6%",
-              "방어력의 93.8%",
-              "방어력의 99.0%",
-              "방어력의 104.2%",
-              "방어력의 110.7%"
-            ]
-          },
-          {
-            "key": "세월의 틈새 3단 공격 피해",
-            "values": [
-              "방어력의 34.6%+34.6%",
-              "방어력의 37.2%+37.2%",
-              "방어력의 39.8%+39.8%",
-              "방어력의 43.2%+43.2%",
-              "방어력의 45.8%+45.8%",
-              "방어력의 48.4%+48.4%",
-              "방어력의 51.9%+51.9%",
-              "55.3%+防御力55.3%",
-              "방어력의 58.8%+58.8%",
-              "방어력의 62.2%+62.2%",
-              "방어력의 65.7%+65.7%",
-              "방어력의 69.1%+69.1%",
-              "방어력의 73.5%+73.5%"
-            ]
-          },
-          {
-            "key": "세월의 틈새 4단 공격 피해",
-            "values": [
-              "방어력의 87.2%",
-              "방어력의 93.7%",
-              "방어력의 100.3%",
-              "방어력의 109.0%",
-              "방어력의 115.5%",
-              "방어력의 122.1%",
-              "방어력의 130.8%",
-              "방어력의 139.5%",
-              "방어력의 148.2%",
-              "방어력의 156.9%",
-              "방어력의 165.6%",
-              "방어력의 174.4%",
-              "방어력의 185.3%"
-            ]
-          },
-          {
-            "key": "세월의 틈새 강공격 피해",
-            "values": [
-              "방어력의 66.0%+66.0%",
-              "방어력의 70.9%+70.9%",
-              "방어력의 75.8%+75.8%",
-              "방어력의 82.4%+82.4%",
-              "방어력의 87.4%+87.4%",
-              "방어력의 92.3%+92.3%",
-              "방어력의 98.9%+98.9%",
-              "방어력의 105.5%+105.5%",
-              "방어력의 112.1%+112.1%",
-              "방어력의 118.7%+118.7%",
-              "방어력의 125.3%+125.3%",
-              "방어력의 131.9%+131.9%",
-              "방어력의 140.1%+140.1%"
-            ]
-          },
-          {
-            "key": "백마 돌격 제1단 공격 피해",
-            "values": [
-              "방어력의 172.5%",
-              "방어력의 185.5%",
-              "방어력의 198.4%",
-              "방어력의 215.7%",
-              "방어력의 228.6%",
-              "방어력의 241.5%",
-              "방어력의 258.8%",
-              "방어력의 276.0%",
-              "방어력의 293.3%",
-              "방어력의 310.6%",
-              "방어력의 327.8%",
-              "방어력의 345.1%",
-              "방어력의 366.6%"
-            ]
-          },
-          {
-            "key": "백마 돌격 제2단 공격 피해",
-            "values": [
-              "방어력의 141.0%",
-              "방어력의 151.5%",
-              "방어력의 162.1%",
-              "방어력의 176.2%",
-              "방어력의 186.8%",
-              "방어력의 197.4%",
-              "방어력의 211.5%",
-              "방어력의 225.5%",
-              "방어력의 239.6%",
-              "방어력의 253.7%",
-              "방어력의 267.8%",
-              "방어력의 281.9%",
-              "방어력의 299.6%"
-            ]
-          },
-          {
-            "key": "세월의 틈새 제4단 공격 추가 피해",
-            "values": [
-              "방어력의 29.5%",
-              "방어력의 31.7%",
-              "방어력의 33.9%",
-              "방어력의 36.8%",
-              "방어력의 39.0%",
-              "방어력의 41.2%",
-              "방어력의 44.2%",
-              "방어력의 47.1%",
-              "방어력의 50.1%",
-              "방어력의 53.0%",
-              "방어력의 56.0%",
-              "방어력의 58.9%",
-              "방어력의 62.6%"
-            ]
-          },
-          {
-            "key": "세월의 틈새 지속 시간",
-            "values": [
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초"
-            ]
-          },
-          {
-            "key": "재사용 대기시간",
-            "values": [
-              "18.0초",
-              "18.0초",
-              "18.0초",
-              "18.0초",
-              "18.0초",
-              "18.0초",
-              "18.0초",
-              "18.0초",
-              "18.0초",
-              "18.0초",
-              "18.0초",
-              "18.0초",
-              "18.0초"
-            ]
-          }
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/fed0ad1a8065ec952bc2dcdcf349bb46_5359379672418797654.gif"
-      },
-      {
-        "title": "천상 삼원의 법칙",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/17598053eeca0bd248dc05f8be0dabc8_6155318713836399960.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "자백이 청옥 우산 지붕을 돌려 <color=#ffe699>바위 원소 피해</color> 를 2회 주고, 그중 제2단 공격 피해는 달 결정 반응 피해로 간주한다.\n발동 시, 자백이 <color=#ffd780>「세월의 틈새」</color> 모드인 경우, 이번 「세월의 틈새」 모드의 지속 시간이 1.7초 연장된다\n먼 옛날 밤하늘을 밝힐 별똥별이 다가왔고, 사람들은 그 순간 잠시나마 법보의 찬한한 빛을 엿봤다"
-          }
-        ],
-        "attributes": [
-          {
-            "key": "",
-            "values": [
-              "Lv.1",
-              "Lv.2",
-              "Lv.3",
-              "Lv.4",
-              "Lv.5",
-              "Lv.6",
-              "Lv.7",
-              "Lv.8",
-              "Lv.9",
-              "Lv.10",
-              "Lv.11",
-              "Lv.12",
-              "Lv.13"
-            ]
-          },
-          {
-            "key": "스킬 제1단 공격 피해",
-            "values": [
-              "방어력의 127.0%",
-              "방어력의 136.5%",
-              "방어력의 146.0%",
-              "방어력의 158.7%",
-              "방어력의 168.2%",
-              "방어력의 177.7%",
-              "방어력의 190.4%",
-              "방어력의 203.1%",
-              "防御力215.8%",
-              "방어력의 228.5%",
-              "방어력의 241.2%",
-              "방어력의 253.9%",
-              "방어력의 269.8%"
-            ]
-          },
-          {
-            "key": "스킬 제2단 공격 피해",
-            "values": [
-              "방어력의 177.7%",
-              "방어력의 191.1%",
-              "방어력의 204.4%",
-              "방어력의 222.2%",
-              "방어력의 235.5%",
-              "방어력의 248.8%",
-              "방어력의 266.6%",
-              "방어력의 284.4%",
-              "防御力302.2%",
-              "방어력의 319.9%",
-              "방어력의 337.7%",
-              "방어력의 355.5%",
-              "방어력의 377.7%"
-            ]
-          },
-          {
-            "key": "재사용 대기시간",
-            "values": [
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초",
-              "15.0초"
-            ]
-          },
-          {
-            "key": "원소 에너지",
-            "values": [
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60"
-            ]
-          }
-        ],
-        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/25ce89c341ccec8db61fbe29792caf9a_8115467737723805531.gif"
-      },
-      {
-        "title": "달에서 강림한 선인",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/90657f6cbab9ba246a7b28fb666fb982_7275224813274328335.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "원소전투 스킬 <color=#ffd780>천지일체</color> 발동 또는 주변에 있는 파티 내 캐릭터가 달빛 조각 화음 발동 시, 자백은 4초 동안 지속되는 <color=#ffd780>「달빛 강림」</color> 효과를 획득한다: <color=#ffd780>백마 돌격</color> 의 제2단 공격으로 주는 피해가 자백 방어력의 60%만큼 증가한다"
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "title": "운해를 가르는 산맥",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/308974f7d15a53c47ee14d3be51b9ab0_2631530352242727395.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "파티에 <color=#ffe699>바위 원소</color> 타입의 다른 캐릭터가 1명 존재할 때마다 자백의 방어력이 15% 증가한다. 파티에 <color=#80c0ff>물 원소</color> 타입의 다른 캐릭터가 1명 존재할 때마다 자백의 원소 마스터리가 60pt 증가한다"
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "title": "달빛 징조의 축복·빛의 흐름",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/1d568a322e2a5ab51dd8a195c104df46_358409906106259533.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "파티 내 캐릭터가 물 원소 결정 반응 발동 시, 달 결정 반응 발동으로 전환되며, 자백의 방어력에 기반해 파티 내 캐릭터가 주는 달 결정 반응의 기본 피해가 증가한다: 방어력 100pt마다 달 결정 반응 기본 피해가 0.7% 증가하며, 해당 방식으로 피해는 최대 14% 증가한다.\n또한, 자백이 파티에 있을 경우 파티의 <color=#ffd780>달빛 징조</color> 가 1레벨 상승한다"
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "title": "꽃밭의 아지랑이",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/41a5df6174eea7e3b89ac61e37cf3b9a_4216285003318453451.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "야간(18시~6시)에 비전투 상태인 경우, 2초마다 자백의 원소 에너지가 1pt 회복된다.\n해당 효과는 비경, 영역 토벌, 나선 비경에서 적용되지 않는다"
-          }
-        ],
-        "attributes": null
-      }
-    ],
-    "customize": [
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "기원 이력"
-      },
-      {
-        "type": "RichText",
-        "text": "버전\n대상 캐릭터\n「네 번째 달」 (2차)\n2026/02/03 ~ 2026/02/24\n<color=#ffc870>★5</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 9122,
-        "name": "자백",
-        "desc": "리월의 전설 속 백마 선인, 이름하여 자백. 리월의 선인 중에서도 특히 신비로운 인물이다",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/72161f01ff431c9f099710f92c811454_1654176825175164246.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#df54ff>★4</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 9123,
-        "name": "일루가",
-        "desc": "「악몽의 밤꾀꼬리」 조사 분대 대원. 등지기의 최연소 분대장이기도 하다",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/d585407867aa47b4d925613cea9f00c2_5864597966579326880.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 8397,
-        "name": "아이노",
-        "desc": "노드크라이의 천재 기계 발명가, 재밌는 기계와 달콤한 음식을 좋아한다",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/09/4e58c851d6c947865026faa168db83bd_3944254802105067377.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 5,
-        "name": "고로",
-        "desc": "<p>와타츠미군의 대장, 부하들의 깊은 신뢰를 받고 있다</p>",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Gorou_icon.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "캐릭터 소개",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "스쳐가는 속세를 달리는 말"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffe14b>2025/12/11</color>\n리월에는 예로부터 선인들에 관한 일화가 많이 전해져 내려온다.\n그 예시로는 《청재광록》에 기록된 가뭄을 물리친 비구름 위 한가한 선인이나, 《호법선중야차록》에 기록된 역병을 퇴치한 황금 날개 천붕왕이 있다.\n그들은 모두 주변 일대의 평화를 수호했던 위대한 존재로, 뭇사람들의 존경을 받았다.\n그러한 자들 중에는 백마 선인이라 불리는 이도 있었다. 그녀의 행적 역시 각종 서적과 민간 설화에 남아있다.\n혹자는 그녀가 마신 전쟁 당시 하얀 말로 변해 암왕제군이 속세의 권력을 손에 넣는 것을 도왔다고 말했다.\n혹자는 그녀의 호박빛 눈동자가 끝없이 펼쳐진 시간의 황무지를 꿰뚫어 볼 수 있다고 말했다.\n혹자는 그녀가 달을 거처로 삼으며 인간들의 소원에 귀를 기울이는 한편, 속세를 비추는 불빛을 지켜왔다 말했다.\n그러나 그 수많은 이야기나 기록 중, 그녀의 형상을 정확히 묘사하거나 그려낸 것은 없었다.\n식사 후의 한담 중에 나온 이야기든, 먹으로 얼룩진 두루마리 위의 이야기든… 전부 눈먼 자들이 어떤 커다란 동물을 더듬는 형국일 뿐이었다.\n다만 그런 이야기는 있었다. 그녀는 마치 신화 속의 말처럼 잠시 속세에 살풋 내려앉았다가, 눈 깜짝할 새에 사라져 버린다는 이야기가.\n그녀의 흔적은 속세의 먼지 위에 남아 있다. 그리고 그녀의 이야기는 언젠가, 다시 한번 세상에 모습을 드러낼 것이다."
-      },
-      {
-        "type": "RichText",
-        "text": "https:/www.hoyolab.com/article/42727048",
-        "alignment": "right"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "캐릭터 스킬 쇼케이스",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "캐릭터 스킬 쇼케이스——「샘물에 숨은 세월」·자백"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffe14b>2026/01/28</color>\n여행자, 안녕! 오늘은 자백의 캐릭터 스킬 쇼케이스 내용을 가져왔어. 함께 확인해 보자~\n「사직 의례」 이벤트 기원은 2월 3일에 오픈될 예정이야. 「샘물에 숨은 세월·자백(바위)」의 기원 획득 확률이 대폭 증가하니까 절대 놓치지 마~!\n해당 이벤트 기원 기간에는 「악몽을 불태우는 심지·일루가(바위)」, 「쾅쾅 발명가·아이노(물)」, 「견족의 전사·고로(바위)」의 획득 확률도 대폭 증가하니까 참고해 줘!"
-      },
-      {
-        "type": "RichText",
-        "text": "https:/www.hoyolab.com/article/43503640",
-        "alignment": "right"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "HoYoLAB",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "백마처럼 순식간에 지나가 버리는 세월——자백 캐릭터 일화"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffe14b>2026/01/25</color>\n지금까지의 여정에서 스쳐 갔던, 진위를 알 수 없는 전설들——어쩌면 그것은 흐릿하게나마 여행자의 마음속에 「백마 선인」의 얼개를 그려주었을지도 모릅니다. 해등절의 등불이 다시 타오르려 하는 지금, 이야기 속에서만 존재하던 선인은 과연 고향 땅에 모습을 드러낼까요?"
-      },
-      {
-        "type": "RichText",
-        "text": "https:/www.hoyolab.com/article/43463398",
-        "alignment": "right"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "캐릭터 소개——「샘물에 숨은 세월」·자백"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffe14b>2026/01/31</color>\n여행자, 안녕! 최근에 개방된 「봄을 여는 옥마차」 스토리를 통해 달에서 산다는 그 「백마 선인」과는 이미 만나 봤지? 우선 그 선인을 데려올 방법을 강구하기 전에, 자백과 그녀의 몸속 세 귀신에 대한 정보를 다시 한번 살펴보자구~"
-      },
-      {
-        "type": "RichText",
-        "text": "https:/www.hoyolab.com/article/43546314",
-        "alignment": "right"
-      }
-    ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header&utm_id=2&utm_medium=tool&utm_source=hoyolab&bbs_theme=dark&bbs_theme_device=1&lang=ko-kr#/map/2?shown_types=38,739,769&center=1361.00,-7022.00&zoom=-3.00",
-    "story": [
-      {
-        "title": "캐릭터 상세정보",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "리월의 전설에는 신비로운 백마 선인이 한 명 등장한다.\n그녀의 흔적은 서적과 민간 설화 곳곳에 남아 있다. 하지만 서로 다른 이야기들 속에서 그녀는 모두 다른 모습을 보인다.\n혹자는 그녀가 마신 전쟁 당시 하얀 말로 변해 암왕제군이 속세의 권력을 손에 넣는 것을 도왔다고 말했다.\n혹자는 그녀의 호박빛 눈동자가 끝없이 펼쳐진 시간의 황무지를 꿰뚫어 볼 수 있다고 말했다.\n혹자는 그녀가 달을 거처로 삼으며 인간들의 소원에 귀를 기울이는 한편, 속세를 비추는 불빛을 지켜왔다 말했다.\n그러나 그 수많은 이야기나 기록 중, 그녀의 형상을 정확히 묘사하거나 그려낸 것은 없었다.\n식사 후의 한담 중에 나온 이야기든, 먹으로 얼룩진 두루마리 위의 이야기든… 전부 눈먼 자들이 어떤 커다란 동물을 더듬는 형국일 뿐이었다.\n다만 그런 이야기는 있었다. 그녀는 마치 신화 속의 말처럼 잠시 속세에 살풋 내려앉았다가, 눈 깜짝할 새에 사라져 버린다는 이야기가.\n그녀의 흔적은 속세의 먼지 위에 남아 있다. 그리고 그녀의 이야기는 언젠가 반드시 다시 세상에 모습을 드러내게 될 것이다"
+            "text": "<color=#ffd780>「세월의 틈새」</color> 모드일 때, 주변에 있는 파티 내 모든 캐릭터의 달 결정 반응으로 주는 피해가 30% 증가한다.\n<color=#ffd780>달빛 징조·보름</color> : 돌파 특성 <color=#ffd780>달에서 강림한 선인</color> 의 효과가 강화된다: <color=#ffd780>백마 돌격</color> 의 제2단 공격으로 주는 피해가 자백 방어력의 550%만큼 추가로 증가한다. 해당 효과는 돌파 특성 달에서 강림한 선인을 해금해야 한다"
           }
         ]
       },
       {
-        "title": "캐릭터 스토리1",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/479b9f87f1eb87215ab35d7e27cd0f68_4260540475968137862.png",
+        "name": "무소유",
         "desc": [
           {
             "type": "RichText",
-            "text": "「봄을 여는 옥마차」 스토리 클리어\n호감도 Lv.2 달성 후 개방\n거의 알려지지 않은 사실이지만, 리월에 전해지는 백마 선인의 일화는 사실 그 선인의 몰락에서 시작되었다.\n그녀는 본래 하늘의 사자로서, 수천 년 전 인간을 인도하기 위해 현세에 강림했다.\n그녀는 수정과 보석이 풍부하던 고대 국가 낭간을 보살폈고, 사람들에게 농사와 방직을 가르쳐 오곡이 무르익고 창고가 가득 차게 했다.\n이로 인해 그녀는 고대 국가의 백성들로부터 사직신으로 섬겨졌다.\n그녀의 인도 아래, 낭간은 통일된 문명 속에서 찬란한 보석과도 같은 나라로 자리할 수 있었다.\n하지만 안타깝게도 세상에 영원한 것은 없는 법. 세계 밖에서 미처 예상치 못한 큰 재앙이 들이닥쳤고, 하늘 위에서는 처참한 전쟁이 벌어졌다.\n그 여파는 칠흑의 악의를 품은 채 낭간으로 떨어졌고, 하늘은 정화를 실행하기로 결심했다.\n신성한 의지는 천벌 같은 힘으로 찬란하던 고대 국가를 덮쳤고, 오염된 땅을 멸하려 했다.\n자신이 지켜 온 사람들에게 실낱같은 희망이라도 남겨주기 위해, 자백은 하늘의 뜻을 거역했다.\n그 대가로 그녀는 영혼이 세 개로 부서지는 치명상을 입었고, 그것은 그녀가 인간의 소원에 응답한 마지막 순간이 되었다.\n그러나 연민이었는지, 혹은 반역자에 대한 엄벌이었는지는 알 수 없지만, 자백을 주시하던 하늘의 그림자 하나가 그녀를 향해 손을 내밀었다.\n그 이후로, 세 개로 부서져 버린 자백의 영혼은 소멸 직전의, 천만 분의 일 초에서 영원히 멈춰버렸다.\n그리고 그녀의 본질은 진정한 죽음에도 삶에도 도달할 수 없는 꿈속을 영원히 방황하게 되었다"
+            "text": "원소전투 스킬 <color=#ffd780>천지일체</color> 의 스킬 레벨+3\n최대 Lv.15까지 상승"
           }
         ]
       },
       {
-        "title": "캐릭터 스토리2",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/f7965f5b007797d5e8a20caef036046c_9006695027182918451.png",
+        "name": "혼을 따르는 육신",
         "desc": [
           {
             "type": "RichText",
-            "text": "「봄을 여는 옥마차」 스토리 클리어\n호감도 Lv.3 달성 후 개방\n옛날, 자백은 달의 사자의 신분으로 인간 세계에 내려와 신비로운 인물 한 명과 인연을 맺게 되었다.\n그는 인간의 모습을 하고 있었지만, 용모가 범상치 않았다. 구름을 타고 안개를 몰며 산을 옮기고 바다를 메우는, 바위를 흔들어 옥을 부수는 힘을 지니고 있었다.\n그토록 대단한 능력을 갖추고 있으면서도 천사 일족이 아니라는 점은 자백을 크게 놀라게 했다.\n어느 날, 두 사람은 산속에서 선법을 겨루기로 약속했다. 약속한 시간이 되었지만 그는 모습을 보이지 않았고, 대신 하늘 끝에서 굉음이 들려왔다.\n자백이 소리를 따라가자, 구름 사이에서 똑같이 생긴 세 개의 형체가 서로 맞서 싸우고 있었다.\n무기가 부딪히는 틈새로, 그녀는 구름 속에서 희미하게 울려 퍼지는 「암주천성」의 외침을 들었다.\n잠시 후 전투가 끝나고 세 형체는 다시 하나로 합쳐져 자백 앞에 내려왔다. 다름 아닌, 약속 상대였던 그 벗이었다.\n자백은 큰 호기심을 느꼈고, 그는 숨김없이 설명하며 아낌없이 가르쳐 주었다. 그것은 오래된 기술이었으며, 참삼시라 불렸다.\n삼시란, 수행자의 마음속에 깃든 혼탁한 집념과 사악한 욕망을 뜻한다. 삼시를 베어 내면, 비로소 맑고 투명한 자아를 마주할 수 있다고 했다.\n하지만 자백은 하늘과 세 달의 사자로서, 마음속에 망념을 품은 적이 없었기에, 아무리 시도해도 몸속의 세 귀신을 베어낼 수 없었다.\n그 벗은 개의치 않았다. 그저 「하늘의 뜻은 불변하는 것이 아니며, 세상일은 덧없이 바뀐다」라는 말만을 남긴 채, 덤덤하게 자리를 떠났다.\n그때의 자백은 알지 못했다. 이후 인간을 인도하는 길 위에서, 자신이 어떻게 서서히 인간의 감정에 물들게 될 것인지를.\n그리고 더 먼 미래에, 자신이 소중히 여기던 나라 위로 천벌이 떨어지는 광경을 직접 목격했을 때, 분노와 두려움, 억눌린 격정이 어떻게 뼛속에 붙은 벌레처럼 그녀의 영혼을 갉아먹게 될지 역시 알지 못했다.\n그녀는 분명 그 순간, 자신의 몸 속의 세 귀신을 베어낼 것이다. 하지만 자신의 자아를 도려내고 인간 세상에 몸을 숨기는 것은, 훗날 하늘에 맞설 마지막 수단으로 남겨두었다.\n그러나 「하늘의 뜻은 불변하는 것이 아니며, 세상일은 덧없이 바뀐다」는 말처럼, 바로 그 순간 그녀를 지켜보던 그 그림자는 연민과 단죄를 함께 담긴 감옥을 그녀에게 내렸다"
+            "text": "<color=#ffd780>「세월의 틈새」</color> 모드일 때, 자백의 일반 공격 콤보수가 초기화되지 않으며, <color=#ffd780>백마 돌격</color> 이 적 명중 시 자백이 <color=#ffd780>「월화」</color> 효과를 획득한다: 다음 일반 공격 시, 4단의 추가 공격이 기존 피해의 250%에 해당하는 달 결정 반응 피해를 준다"
           }
         ]
       },
       {
-        "title": "캐릭터 스토리3",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/09018726c777b445faca48d4853feac1_5420376419344513929.png",
+        "name": "침묵으로 깨달은 도리",
         "desc": [
           {
             "type": "RichText",
-            "text": "「봄을 여는 옥마차」 스토리 클리어\n호감도 Lv.4 달성 후 개방\n…삼… 오… 칠…\n시간이 멈춘 공허한 달빛 아래, 모든 것이 흐름을 멈춘 듯했다.\n…오십삼… 오십구…\n시간이 정말로 멈춘 것은 아니다. 다만 감지할 수 없을 만큼 느려졌을 뿐. 인간 세계의 하루가 이곳에서는 마치 백 년을 지나야 비로소 지나가는 듯했다.\n…백오십일… 백오십칠… 백육십칠…\n그렇다, 느려진 시간이다. 그렇지 않다면 머릿속에 새겨졌던 기억들이 무엇에 의해 닳아 없어졌는지 설명할 수 없었다.\n오백오십칠…\n자거.\n오백육십삼…\n낭간.\n오백육십구…\n사람들의 얼굴과 목소리.\n이것들은 무엇일까? 어째서인지 무엇이든 잊고 싶지 않다.\n그런데 이것들은 무엇일까? 그런데 이것들은 무엇일까?\n…천오백오십삼…\n저편의 밝은 빛은 등불일까? 여러 번 본 적이 있는 것 같다.\n누군가가 집으로 향하는 방향이라고 반복해서 얘기했던 것 같다.\n언젠가 반드시 고향으로 돌아갈 수 있다는 것. 이 사실만은 결코 잊어서는 안 된다.\n…천오백육십칠…\n집이 뭐지?\n…삼천오백오십칠…\n외롭다. 이 숫자들은 1을 제외하고는 오직 자신뿐이다.\n…삼천오백오십구…\n그렇다, 나는 지금 나 자신을 세고 있다.\n이름을 잊게 되더라도, 적어도 아직 존재하고 있다는 사실만은 잊지 않을 것이다.\n잊지 않을 것이다.\n만 육천백이십칠…\n무엇을 세고 있었지?\n…삼… 오… 칠…"
+            "text": "원소폭발 <color=#ffd780>천상 삼원의 법칙</color> 의 스킬 레벨+3\n최대 Lv.15까지 상승"
           }
         ]
       },
       {
-        "title": "캐릭터 스토리4",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/e06d7e044cba9f093dc54c3a3203ce76_5407902582246446953.png",
+        "name": "천지를 스쳐가는 여정",
         "desc": [
           {
             "type": "RichText",
-            "text": "「봄을 여는 옥마차」 스토리 클리어\n호감도 Lv.5 달성 후 개방\n리월의 선인 설화에 가장 많이 등장하는 백마 선인의 정체는 사실 자백이 베어낸 하체 귀신 자교였다.\n경책 산장의 노인들의 입에 오르내리는 「암왕제군의 정벌을 도운 백마」가 바로 그녀였다.\n침옥 협곡의 부족들이 말하는 「시간의 딸」도 그녀였다.\n팔기연도도에 전해지는 「금색 눈의 달빛 말」 역시 그녀였다.\n심지어 노씨 족보에 기록된 「오백 년의 시간의 틈을 뛰어넘은」 백마 선인 또한 다름 아닌 그녀였다.\n마신 전쟁 시기에 그녀는 이미 바위 신에 의해 진품 비단 그림인 「달을 삼키는 두꺼비」에서 해방되었고, 그와 함께 싸우겠다는 계약을 맺었다.\n그러나 그녀의 몸에 남아 있던 시간의 흔적은 그 고대 바위 신에게 알 수 없는 영향을 미쳤다.\n이에 마신 전쟁이 끝난 뒤, 스스로가 위협이 될 수 있음을 자각한 자교는 산속으로 모습을 감추었고, 이후로는 인간 세상에 모습을 드러내지 않았다.\n다만 그녀는 천성이 자유분방했고, 사람들 앞에서 능력을 뽐내기를 좋아했다. 인간의 수명은 기껏해야 백 년에 불과했기에 시간의 흐름은 그녀에게 세월의 흔적을 거의 남기지 못했다.\n그래서 그녀는 가끔 도움이 필요한 인간들 앞에 모습을 드러내곤 했다. 그들을 곤경에서 구해주면서도 한편으로는 하늘이 무너지고 땅이 갈라지기 전의 이야기를 전하고 싶다는 작은 마음도 함께 품고 있었다.\n그러나 훗날 그 이야기들이 책으로 엮여 자신의 뜻과 어긋난다면, 그녀는 아마 한 번 훑어본 뒤 아무렇지 않게 던져 버렸을 것이다.\n그녀는 드넓고 아무도 없는 황야를 마음껏 질주하는 야생마와 같았다. 그녀의 자유로운 발걸음을 묶어 둘 수 있는 것은 아무것도 없었다.\n그녀는 자백의 몰락에서 태어났지만, 스스로 자백이나 누군가의 고삐가 필요하다고 생각해 본 적은 단 한 번도 없다.\n그녀는 언제든,거리낌 없이 시간의 끝자락으로 뛰어들 준비가 되어 있다. 그리고 「쾅」 하는 소리와 함께, 황금빛으로 빛나는 한 줌의 먼지가 되어 흩어질 것이다"
-          }
-        ]
-      },
-      {
-        "title": "캐릭터 스토리5",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "「봄을 여는 옥마차」 스토리 클리어\n호감도 Lv.6 달성 후 개방\n미처 예상하지 못했던 대재앙과 마찬가지로, 자백의 운명을 바꿀 계기 또한 하늘 너머에서 찾아왔다.\n금발의 여행가와 그 동료들의 협력으로, 진실의 달이 다시 티바트에 강림했고, 자백의 본질을 가두고 있던 거짓된 달도 무너지기 시작했다.\n또 다른 옛 벗의 도움으로, 자백의 마모되거나 잠들어 있거나 혹은 자유롭게 떠돌던 세 개의 영혼의 근원이 마침내 다시 인간 세상에 모습을 드러낼 때가 도래했다.\n이 모든 것이 자백을 주시하던 그 그림자의 예견이었을까? 이 모든 것이 최초의 천사가 목격한 것이 현실이 된 것일까?\n어찌 되었든, 고대 국가의 인도자는 하늘 가득 쌓인 소망의 부름 속에서 마침내 고향으로 돌아왔다.\n이곳은 이미 예전의 모습이 아니었다. 사람들은 새로운 신을 섬기고 있었으며, 불을 밝히는 의례도 완전히 달라져 있었고, 심지어 그녀에 대한 이야기마저 변해 있었다.\n그럼에도 그녀는 알고 있었다. 한때 자신이 보살피던 인간들이 찬란한 문명과 함께 끊어져 버리지 않았다는 것을. 그들은 같은 땅 위에서 가지를 뻗고 잎을 틔우며, 날로 새로워져 오늘의 모습에 이르렀다.\n옛 벗의 말처럼, 만약 옛 낭간의 미옥이 오늘날 리월항의 기반이 된 것이 아니라면, 어찌 이곳이 바위의 땅, 유리 구름과 달 사이라 불릴 수 있었겠는가.\n이제 그녀에겐 더 이상 불만이라 할 만한 것도 남아 있지 않았다. 한때 억누를 수 없었던 분노마저도 지금은 자취를 감추었다.\n그녀가 해 온 모든 일이 헛되지 않았고, 마침내 고향으로 돌아왔으니 그것만으로도 충분한 것 같았다.\n그것만으로도 그녀가 겪어야 했던 모든 고통과 시련을 상쇄하기에 충분한 것 같았다"
-          }
-        ]
-      },
-      {
-        "title": "천리 풍경화",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "「봄을 여는 옥마차」 스토리 클리어\n호감도 Lv.4 달성 후 개방\n지금의 자백에게 리월의 모든 것은 익숙하면서도 새로웠다.\n그래서 영혼이 안정된 틈을 타, 리월의 산과 강을 돌아다녔다.\n그녀는 경책 산장에 올라, 산중의 폭포가 층층이 쏟아지며 맑은 샘으로 다시 흘러드는 광경을 보았다.\n그녀는 고운각에 이르러, 하늘 높이 울부짖는 바람과 창처럼 솟은 바위 기둥들이 장엄히 버티고 선 모습을 보았다.\n그녀는 보결구에 닿아, 고대 옥고리 아래에 흩어진 어선들과 먼 곳에서 길게 이어지는 산노래를 마주했다.\n그녀는 절운간으로 향해, 일렁이는 신선의 안개가 구름 속의 큰 연못처럼 펼쳐진 광경을 보았다.\n……\n낭간 고대 국가에 비단 그림의 기예를 전수해 주었던 하늘의 사자로서, 그녀는 수천 년 동안 쓰지 않았던 솜씨를 다시금 꺼내 들었다.\n장엄한 경치에 이를 때마다, 그녀는 직접 눈으로 본 풍경의 아름다움을 선력으로 비단 위에 수놓았다.\n시간이 흐르자, 비단 그림 속의 산하는 어느새 천 리에 걸쳐 이어지며, 웅대하고도 찬란한 모습을 갖추게 되었다…\n한가할 때면 자백은 그 비단 그림을 꺼내어 흐뭇하게 감상하곤 했다. 볼수록 입가에는 웃음이 번졌고, 얼굴에는 감출 수 없는 자부심이 어려 있었다.\n임왕제군 또한 그녀의 모습을 보고 그 그림에 흥미를 품어 여러 차례 빌려 보고자 했으나, 아직 완성되지 않았다는 이유로 매번 거절당했다고 전해진다.\n훗날 이 비단 두루마리가 마침내 완성될 때, 그 장관이 얼마나 장엄하고도 길게 펼쳐질지는, 누구도 가늠할 수 없을 것이다"
-          }
-        ]
-      },
-      {
-        "title": "달의 륜",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "「봄을 여는 옥마차」 스토리 클리어\n호감도 Lv.6 달성 후 개방\n친족들과 마찬가지로, 자백은 본래 신성한 계획 속에서 태어난 존재였다.\n그리하여 그녀는 하늘의 사명을 지닌 모습으로 티바트의 하늘 아래에 모습을 드러냈다.\n하늘의 빛나는 별은 이 세계를 사랑했고, 이곳을 행복한 정원으로 빚어내고자 했다. 그 사명을 헤아린 사자는 흙을 가꾸기 시작했다.\n흙이 비옥하면 꽃과 풀은 무성해지고, 흙이 썩으면 정원은 악취를 풍긴다.\n행복한 꽃은 뜨거운 아침 햇살 아래에서 만개한다.\n그러나 악취에 물든 꽃은, 성대한 사랑을 모독하지 않기 위해 흙과 함께 제거해야 한다.\n자백의 운명은 이처럼 신성한 계획 속에서 흘러갔다. 그날이 올 때까지…\n이유는 알 수 없지만, 왕의 그림자이자 그 시간의 존재는 달의 인장이 새겨진 휘장을 자백 앞에 내려놓았다.\n이는 그녀가 더 이상 샛별의 대행자일 뿐만 아니라, 달의 사자이기도 하다는 표식이었다.\n이 또한 신성한 계획의 일부일까? 그녀는 그렇게 생각했다. 그렇다, 이 역시 세계를 빚어내는 과정의 한 부분이었다.\n그리하여 그녀는 샛별과 달, 그리고 정원 사이를 오가기 시작했다. 하지만 그녀는 그 휘장을 받아들이지 않았다.\n추가로 주어진 표식이 어떻게 계획을 더 완벽하게 만들 수 있는지 알지 못했기에, 자신의 사명에는 그것이 필요하지 않다고 여겼기 때문이다.\n하지만 시간이 흐르자, 그녀는 샛별과 달이 정원을 향해 품는 의지와 사랑이 서로 다르다는 사실을 알아차렸다.\n샛별의 빛은 언제나 정원 전체를 향해 열렬히 쏟아졌고, 어느 한 송이의 꽃에도 오래 머무르지 않았다.\n그 빛은 신성함이 부족한 꽃과 풀, 흙을 함께 태워도 개의치 않았으며, 설령 그것들이 순수한 공허로 사라진다 해도 아랑곳하지 않았다.\n달의 은빛은 달랐다. 그 빛은 흙보다는 불볕에 상처 입은 꽃과 풀 하나하나의 뿌리에 스며들기를 택했고, 내리쬐는 햇빛 뒤에서 위로를 건네고자 했다.\n자백의 마음속에 때때로 이런 의문이 떠올랐다. 과연 어느 쪽의 의지와 사랑이 더 신성한 것일까?\n답은 언제나 분명했다. 수수께끼의 답은 수수께끼 속에 있듯이, 신성한 계획은 본디 더없이 신성한 것이었다.\n그러나 어째서인지, 자백의 시선은 점점 더 자주 달빛을 따라 그녀가 직접 가꾼 작은 꽃무리 위에 머물렀다.\n꽃이 피는 모습은 웃음과 같고, 꽃이 지는 모습은 눈물과 같았다. 하지만 흙은 웃지 않으니, 흙에서 태어난 존재가 어찌 슬퍼할 수 있단 말인가?\n자백은 그렇게 생각하며, 바라보았다…\n꽃이 피고, 꽃이 지고, 열매가 맺히고, 열매가 떨어지고, 새싹이 돋고, 다시 꽃이 피고, 꽃이 지는 것을…\n훗날, 동료 하나가 맡고 있던 꽃밭이 신성을 모독했다는 이유로 모조리 뽑혀 나갔다는 소식을 들었을 때, 자백은 문득 깊은 슬픔을 느꼈다. 곧이어 불안이 뒤따랐다.\n그렇다. 하늘의 사명에는 슬픔이 포함되어 있지 않다. 그 사명에서 태어난 자신이 어찌 슬퍼할 수 있는가?\n혹시 자신은 이미 인도를 필요로 하는 꽃과 풀의 자리로 격하된 것은 아닐까? 자신이 받아들인 의지와 사랑 또한 더 이상 신성하지 않게 된 것은 아닐까?\n마치 궤도를 이탈하는 운명의 시작점 같았다. 그리고 이것은 또 다른 순간이 찾아올 때까지 이어졌다. 하늘이 붕괴하고, 거짓이 내려앉던 그 순간까지.\n정원은 폐허로 변했고, 꽃과 풀은 위태롭게 흔들렸다. 타는 듯한 열기는 그녀의 의지를 잠식해, 생각을 가다듬을 힘조차 빼앗았다.\n바로 그때, 달의 휘장이 눈물처럼 그녀의 등에 떨어졌다.\n그녀가 목격했으나 거부했던 차가운 빛이, 정원의 꽃과 풀에게 그러했듯, 그녀에게도 고요와 위로를 건넸다.\n잠시 스며든 그 차가움 속에서, 자백은 떠올렸다. 샛별의 빛 아래 타오르기 전까지, 자신은 여전히 이 꽃들을 억만년 동안 사랑할 수 있으리라는 것을"
+            "text": "<color=#ffd780>「세월의 틈새」</color> 모드일 때, 자백의 <color=#ffd780>「시간의 빛」</color> 축적 효율이 50% 증가한다.\n또한, <color=#ffd780>백마 돌격</color> 이 모든 「시간의 빛」을 소모하도록 변경된다. 소모한 「시간의 빛」이 70pt를 초과하면 초과 소모한 「시간의 빛」 1pt마다 이번 백마 돌격과 이어지는 3초 동안 자백이 주는 달 결정 반응 피해가 1.6% <color=#ffd780>승격</color> 된다. 해당 효과는 중첩되지 않는다"
           }
         ]
       }
@@ -3434,26 +3454,6 @@
           }
         ],
         "isMaterial": true
-      }
-    ],
-    "videoCollection": [
-      {
-        "title": "원신 | 「네 번째 달」 버전 PV: 「어느 겨울밤, 한 여행자」",
-        "url": "https://www.youtube.com/watch?v=N2QjOH8ek5c",
-        "coverUrl": "https://i.ytimg.com/vi/N2QjOH8ek5c/maxresdefault.jpg",
-        "duration": 339
-      },
-      {
-        "title": "원신 | 자백 캐릭터 PV ——「길 위의 먼지처럼」",
-        "url": "https://www.youtube.com/watch?v=l2PSQ1qCCqw",
-        "coverUrl": "https://i.ytimg.com/vi/l2PSQ1qCCqw/maxresdefault.jpg",
-        "duration": 248
-      },
-      {
-        "title": "원신 | 캐릭터 트레일러-「자백: 속세로 돌아온 몸」 #원신 #자백",
-        "url": "https://www.youtube.com/watch?v=w6m9upfyq6w",
-        "coverUrl": "https://i.ytimg.com/vi/w6m9upfyq6w/maxresdefault.jpg",
-        "duration": 178
       }
     ]
   }
