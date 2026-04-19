@@ -3,15 +3,83 @@
   "name": "Выделения слайма",
   "desc": "Неочищенные выделения слайма. Пожалуйста, избегайте прямого контакта. При попадании на кожу смойте водой (выделения гидро слайма просто высушите на солнце).",
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-  "filterValues": {
-    "objectType": [
-      "Улучшение персонажей/оружия"
-    ]
-  },
   "menuId": 9,
   "menuName": "Ресурсы Тейвата",
-  "version": 1758550988,
+  "version": 1776235112,
   "components": {
+    "baseInfo": [
+      {
+        "key": "Имя:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Выделения слайма"
+          }
+        ]
+      },
+      {
+        "key": "Тип:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Улучшение персонажей/оружия"
+          }
+        ]
+      },
+      {
+        "key": "Где найти:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "• Слаймы Ур. 40+\n• Алхимия\n• Покупается за Звёздную пыль"
+          }
+        ]
+      },
+      {
+        "key": "Компоненты:",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 396,
+            "name": "Слизь слайма",
+            "desc": "Толстый слой слизи, покрывающий слайма. Обычно используется в элементальных мастерских.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Мора",
+            "desc": "Повсеместная валюта. Международный язык общения.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 25
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Компонент для:",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 397,
+            "name": "Концентрат слайма",
+            "desc": "Концентрированная эссенция слайма. Будучи оставленной надолго без присмотра, начинает двигаться сама по себе.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Версия выхода:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.0"
+          }
+        ]
+      }
+    ],
     "customize": [
       {
         "type": "Heading",
@@ -211,6 +279,15 @@
         "menuId": 2
       },
       {
+        "type": "CustomEntry",
+        "epId": 9121,
+        "name": "Коломбина",
+        "desc": "<p>Дева Луны, рождённая в Нод-Крае, она же небесная луна, что вернулась домой.<br><br><em>«Зимняя ночь не знает милосердия. Она бросила своё гнездо среди инея и снега, и никто не должен пытаться восполнить её утрату»</em>, - Анастасия Фёдоровна Снежная.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/14/70239714/9b62e4c23488804e0aacca88f827c8f5_265845923498834659.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
         "type": "Heading",
         "level": 3,
         "text": "Возвышение талантов"
@@ -294,6 +371,15 @@
         "name": "Итто",
         "desc": "Первый и величайший предводитель банды Аратаки, прославленной по всей Ханамидзаке города Инадзумы. Что, вы никогда о ней не слышали? Нарываетесь?",
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Arataki Itto_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9121,
+        "name": "Коломбина",
+        "desc": "<p>Дева Луны, рождённая в Нод-Крае, она же небесная луна, что вернулась домой.<br><br><em>«Зимняя ночь не знает милосердия. Она бросила своё гнездо среди инея и снега, и никто не должен пытаться восполнить её утрату»</em>, - Анастасия Фёдоровна Снежная.</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/14/70239714/9b62e4c23488804e0aacca88f827c8f5_265845923498834659.png",
         "displayStyle": "card",
         "menuId": 2
       },
@@ -439,6 +525,15 @@
         "menuId": 4
       },
       {
+        "type": "CustomEntry",
+        "epId": 1931,
+        "name": "Морской атлас",
+        "desc": "Привезённая иностранными торговцами в Ли Юэ карта морских течений и ветров.",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/万国诸海图谱.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
         "type": "RichText",
         "text": "<color=#ffe14b>5★</color>",
         "alignment": "center"
@@ -542,70 +637,6 @@
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
         "displayStyle": "card",
         "menuId": 9
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Имя:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Выделения слайма"
-          }
-        ]
-      },
-      {
-        "key": "Тип:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Улучшение персонажей/оружия"
-          }
-        ]
-      },
-      {
-        "key": "Где найти:",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "• Слаймы Ур. 40+\n• Алхимия\n• Покупается за Звёздную пыль"
-          }
-        ]
-      },
-      {
-        "key": "Компоненты:",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 396,
-            "name": "Слизь слайма",
-            "desc": "Толстый слой слизи, покрывающий слайма. Обычно используется в элементальных мастерских.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 757,
-            "name": "Мора",
-            "desc": "Повсеместная валюта. Международный язык общения.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-            "amount": 25
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Компонент для:",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 397,
-            "name": "Концентрат слайма",
-            "desc": "Концентрированная эссенция слайма. Будучи оставленной надолго без присмотра, начинает двигаться сама по себе.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png"
-          }
-        ],
-        "isMaterial": true
       }
     ]
   }

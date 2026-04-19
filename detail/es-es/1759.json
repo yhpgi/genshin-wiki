@@ -3,19 +3,61 @@
   "name": "Receta: Brochetas de tres sabores",
   "desc": "<p>Receta paso a paso para hacer Brochetas de tres sabores.</p>",
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/06/20/157514942/cdf4ff89d1a21f5fa979a4d1b1b4dc72_1571556127340181332.png",
-  "filterValues": {
-    "objectType": [
-      "Receta"
-    ]
-  },
   "menuId": 9,
   "menuName": "Productos de Teyvat",
-  "version": 1710555937,
+  "version": 1776093424,
   "components": {
+    "baseInfo": [
+      {
+        "key": "Nombre:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Receta: Brochetas de tres sabores"
+          }
+        ]
+      },
+      {
+        "key": "Tipo:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Receta"
+          }
+        ]
+      },
+      {
+        "key": "Utilidad:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Aumenta el ATQ de todos los miembros del equipo en</color> <color=#36ffff>160 – 228</color> <color=#ffffffa6>pts. durante 300 s.</color>\n<color=#ffffffa6>En modo multijugador, solo tendrá efecto en tus propios personajes.</color>"
+          }
+        ]
+      },
+      {
+        "key": "Cómo se consigue:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Comprándosela a Kiminami Anna, en el restaurante Kiminami - Inazuma"
+          }
+        ]
+      },
+      {
+        "key": "Versión:",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "2.0"
+          }
+        ]
+      }
+    ],
     "customize": [
       {
         "type": "RichText",
-        "text": "Ingredientes\n4x"
+        "text": "Ingredientes"
       },
       {
         "type": "CustomEntry",
@@ -23,11 +65,9 @@
         "name": "Carne cruda",
         "desc": "Un trozo de carne fresca. Si se prepara correctamente, se puede utilizar para preparar alimentos deliciosos.",
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Raw Meat_icon.png",
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "2x"
+        "amount": 4,
+        "displayStyle": "card",
+        "menuId": 9
       },
       {
         "type": "CustomEntry",
@@ -35,11 +75,9 @@
         "name": "Huevo de pájaro",
         "desc": "Este huevo ofrece un sinfín de posibilidades culinarias. Puede aportar la dosis diaria de proteínas para una persona adulta.",
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Bird Egg_icon.png",
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "2x"
+        "amount": 2,
+        "displayStyle": "card",
+        "menuId": 9
       },
       {
         "type": "CustomEntry",
@@ -47,11 +85,9 @@
         "name": "Harina",
         "desc": "Polvo resultante al moler trigo. Se haga lo que se haga con él, siempre causa una sensación de satisfacción al comensal.",
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Flour_icon.png",
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "1x"
+        "amount": 2,
+        "displayStyle": "card",
+        "menuId": 9
       },
       {
         "type": "CustomEntry",
@@ -59,11 +95,13 @@
         "name": "Flor dorada",
         "desc": "Se puede comer una vez cocinada. Como especia, puede aportar un sabor maravilloso a los platos.",
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Snapdragon_icon.png",
-        "displayStyle": "text"
+        "amount": 1,
+        "displayStyle": "card",
+        "menuId": 9
       },
       {
         "type": "RichText",
-        "text": "Plato"
+        "text": "Platos relacionados"
       },
       {
         "type": "CustomEntry",
@@ -88,35 +126,19 @@
         "desc": "Unas brochetas compuestas por varios ingredientes. En ellas, ahora carbonizadas, hay ingredientes de un color oscuro cuyo olor no sabes ni cómo describir. Ten cuidado si lo comes en el campo, podrías atraer a algún Hilichurl...",
         "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/16/89013731/59afc49211b18648c83f515064bd1994_7135345214376713476.png",
         "displayStyle": "card"
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "Nombre",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Receta: Brochetas de tres sabores"
-          }
-        ]
       },
       {
-        "key": "Tipo",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Receta"
-          }
-        ]
+        "type": "RichText",
+        "text": "Obtención"
       },
       {
-        "key": "Cómo se consigue",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Se puede obtener de Kiminami Anna, en la Ciudad de Inazuma - Inazuma.</color>"
-          }
-        ]
+        "type": "CustomEntry",
+        "epId": 2498,
+        "name": "Kiminami Anna",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/npc/Kiminami Anna_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
       }
     ]
   }

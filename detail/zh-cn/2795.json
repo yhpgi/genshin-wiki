@@ -3,19 +3,26 @@
   "name": "秃秃豆",
   "desc": "<p>提瓦特常见的豆类作物。带有淡淡的香气，因食用方法多样而被各地民众广泛接受。</p>",
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/26/88072335/1e67f272a1c27d4771c319ff7fc6cd3a_819004033186907061.png",
-  "filterValues": {
-    "objectType": [
-      "食材"
-    ]
-  },
   "menuId": 9,
   "menuName": "提瓦特物产",
-  "version": 1677591965,
+  "version": 1776585422,
   "components": {
     "customize": [
       {
+        "type": "Heading",
+        "level": 1,
+        "text": "来源",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "商店"
+      },
+      {
         "type": "RichText",
-        "text": "<color=#ffffff>NPC</color>\n<color=#ffffff>地点</color>\n<color=#ffffff>商品</color>\n<color=#ffffff>限购</color>\n<color=#ffffff>单价</color>"
+        "text": "<color=#ffffff>商人</color>\n<color=#ffffff>价格（折扣前）</color>\n<color=#ffffff>价格（折扣后）</color>\n<color=#ffffff>库存</color>",
+        "alignment": "center"
       },
       {
         "type": "CustomEntry",
@@ -23,25 +30,8 @@
         "name": "兰巴德",
         "desc": "",
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/07/20/47826599/54b0b0b40412a05b9c79708c42e1fe28_7168429565903281314.png",
-        "amount": 1,
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "须弥城 - 兰巴德酒馆"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2795,
-        "name": "秃秃豆",
-        "desc": "<p>提瓦特常见的豆类作物。带有淡淡的香气，因食用方法多样而被各地民众广泛接受。</p>",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/26/88072335/1e67f272a1c27d4771c319ff7fc6cd3a_819004033186907061.png",
-        "amount": 1,
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "100"
+        "displayStyle": "card",
+        "menuId": 10
       },
       {
         "type": "CustomEntry",
@@ -49,12 +39,24 @@
         "name": "摩拉",
         "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
         "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-        "amount": 1,
-        "displayStyle": "text"
+        "amount": 100,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "摩拉",
+        "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 90,
+        "displayStyle": "card",
+        "menuId": 9
       },
       {
         "type": "RichText",
-        "text": "x 90"
+        "text": "100\n（每日刷新）",
+        "alignment": "center"
       },
       {
         "type": "CustomEntry",
@@ -62,12 +64,578 @@
         "name": "阿扎莱",
         "desc": "",
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/07/20/47826599/41c8825802f7dbe0c5c17673841c2333_7678426500843467412.png",
-        "amount": 1,
-        "displayStyle": "text"
+        "displayStyle": "card",
+        "menuId": 10
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "摩拉",
+        "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 120,
+        "displayStyle": "card",
+        "menuId": 9
       },
       {
         "type": "RichText",
-        "text": "阿如村"
+        "text": "-\n100\n（每日刷新）",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4142,
+        "desc": "",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "摩拉",
+        "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 100,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "摩拉",
+        "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 90,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "100\n（每日刷新）",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6959,
+        "name": "布纳马",
+        "desc": "<p>圣火竞技场的商人，出售的多是寄售在摩尔石屋的杂货。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/13/59155606/50268eb9d7a6d7c6f774587c3de19bae_7236102904749388011.png",
+        "displayStyle": "card",
+        "menuId": 10
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "摩拉",
+        "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 100,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 757,
+        "name": "摩拉",
+        "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "amount": 90,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "100\n（每日刷新）",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "烹饪",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "1★食物"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "薄荷豆汤"
+      },
+      {
+        "type": "RichText",
+        "text": "相关食谱"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2741,
+        "name": "食谱：薄荷豆汤",
+        "desc": "<p>步骤详实的食谱，记载着「薄荷豆汤」的制作方法。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/26/88072335/60c9c277139b43907167e6452d409874_3131468015205041697.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "需要食材"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2795,
+        "name": "秃秃豆",
+        "desc": "<p>提瓦特常见的豆类作物。带有淡淡的香气，因食用方法多样而被各地民众广泛接受。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/26/88072335/1e67f272a1c27d4771c319ff7fc6cd3a_819004033186907061.png",
+        "amount": 2,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1547,
+        "name": "薄荷",
+        "desc": "饱含清凉成分的植物叶子。清爽冰凉的滋味能将暑气荡涤一空。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mint_icon.png",
+        "amount": 2,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "相关料理"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2767,
+        "name": "薄荷豆汤",
+        "desc": "<p>用料简单的浓汤。薄荷与豆子下锅煮熟后打碎至顺滑，小火慢煮收稠出锅，最后缀以豆粒与薄荷叶。成品清新可口，热饮冷食两相宜。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/26/88072335/2abfd008d61dea1e8527de76458cfcb3_4056107661818130451.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2766,
+        "name": "奇怪的薄荷豆汤",
+        "desc": "<p>用料简单的浓汤。加入了过量的水导致汤汁变得很稀薄，比起菜肴更像是饮料。要不再加点冰块，改造成「薄荷豆水」吧...</p><p></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/26/88072335/67ccb6d10aa0209ea91d9199b65718e9_791800892490978306.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2765,
+        "name": "美味的薄荷豆汤",
+        "desc": "<p>用料简单的浓汤。浓厚的稠汤，带着淡淡的豆香迎面而来；丝滑的口感，夹杂有薄荷清爽的气息。味道朴实但不失可圈可点之处，让人仿佛在凉爽的树荫下漫步，享受着淳朴的快乐。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/26/88072335/cd6635fbd46b8781772f8d19361f208e_7933538099652337880.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "2★食物"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "绿汁脆球"
+      },
+      {
+        "type": "RichText",
+        "text": "相关食谱"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2742,
+        "name": "食谱：绿汁脆球",
+        "desc": "<p>步骤详实的食谱，记载着「绿汁脆球」的制作方法。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/27/88072335/60c9c277139b43907167e6452d409874_3258818831949255353.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "需要食材"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 435,
+        "name": "土豆",
+        "desc": "块状的草本植物。来自大地的馈赠，是不管怎样加工都永远吃不腻的一味神奇食材。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Potato_icon.png",
+        "amount": 2,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2795,
+        "name": "秃秃豆",
+        "desc": "<p>提瓦特常见的豆类作物。带有淡淡的香气，因食用方法多样而被各地民众广泛接受。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/26/88072335/1e67f272a1c27d4771c319ff7fc6cd3a_819004033186907061.png",
+        "amount": 2,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2756,
+        "name": "香辛料",
+        "desc": "<p>复合口味的调味剂。由千燥的香辛果加工而成。能为料理赋予多层次的风味，因而坊间有着「万物皆可香辛料」的说法。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/23/88072335/7c682e6b10e3bf9552a998c449b67ba5_8251746662651069129.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "相关料理"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2770,
+        "name": "绿汁脆球",
+        "desc": "<p>蘸汁食用的小吃。用热油先炸好脆球，戳个洞塞入配料，搭配绿汁一起食用。大小适中，一口一个，是须弥街头常见的特色小吃。</p><p></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/27/88072335/9bd070535c53fb42d6d86288248d1abc_3081051800121387763.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2769,
+        "name": "奇怪的绿汁脆球",
+        "desc": "<p>蘸汁食用的小吃。调配出的绿汁散发着些许不同寻常的微妙气味，颜色似乎也不太对劲…或许放弃掉蘸汁，直接吃脆球会比较好。</p><p></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/27/88072335/c6e73e93365934f46e3352f1eef0fd00_2044902482639565951.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2768,
+        "name": "美味的绿汁脆球",
+        "desc": "<p>蘸汁食用的小吃。如同史莱姆一般圆滚滚的脆球，盛着鲜艳神秘的汁水。刚一入口，清凉、刺激、酸爽等多重口味，瞬间在舌尖炸开，带给人如梦似幻般的冲击感。难怪有的须弥人会对此如痴如醉…</p><p></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/27/88072335/e71e7408570d9b96f0abb055b135e79c_3985812934362948748.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8965,
+        "name": "「秘闻交易」",
+        "desc": "奈芙尔的特色料理。「用这个来交换你知道的奇闻轶事，如何？」随着她的声音响起，桌面上出现了一碟香气扑鼻的脆球，正想一口答应，不料却被她按下了握起餐具的手。「对了，一个脆球至少要换一句话哦。」…果然想吃到奈芙尔亲手做的食物，没那么简单…",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/10/20/8835d660c5ae0dc633308fa072ff49af_7114284396069399420.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "脆饼珐提"
+      },
+      {
+        "type": "RichText",
+        "text": "相关食谱"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3752,
+        "name": "食谱：脆饼珐提",
+        "desc": "<p>步骤详实的食谱，记载着「脆饼珐提」的制作方法。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/16/88072335/60c9c277139b43907167e6452d409874_1389585340137695578.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "需要食材"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1737,
+        "name": "面粉",
+        "desc": "由小麦磨成的粉末。无论做成怎样的主食，都能给食客的胃带来片刻充实。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Flour_icon.png",
+        "amount": 3,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2795,
+        "name": "秃秃豆",
+        "desc": "<p>提瓦特常见的豆类作物。带有淡淡的香气，因食用方法多样而被各地民众广泛接受。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/26/88072335/1e67f272a1c27d4771c319ff7fc6cd3a_819004033186907061.png",
+        "amount": 2,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1104,
+        "name": "牛奶",
+        "desc": "奶牛的乳汁。香香甜甜，嘴角的那滴也不想放过。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Milk_icon.png",
+        "amount": 2,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1547,
+        "name": "薄荷",
+        "desc": "饱含清凉成分的植物叶子。清爽冰凉的滋味能将暑气荡涤一空。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mint_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "相关料理"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3784,
+        "name": "脆饼珐提",
+        "desc": "<p>古老的须弥菜肴。将烘烤过的面饼掰碎，搭配煮熟的秃秃豆，与调制好的酸奶酱混合，即可食用。流传至今有多种不同的做法，但共同点是既简单又美味。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/16/88072335/5e654453d73720b73c5ad6007f9f68a0_6464360779870709876.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3783,
+        "name": "奇怪的脆饼珐提",
+        "desc": "<p>古老的须弥菜肴。如果有耐心把半生不熟的秃秃豆和焦黑的脆饼全都挑出去的话，那么剩下的酸奶酱还是勉强可以作为甜点入口的···</p><p></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/16/88072335/c48c021893fc584ce3bac34e30e3ee28_3237826257245907397.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3785,
+        "name": "美味的脆饼珐提",
+        "desc": "<p>古老的须弥菜肴。绵软的酸奶酱包裹着香糯的秃秃豆，仿佛能将人带向如丝绢一般的美梦中。梦醒时分，齿间还留有烤饼的满满麦香。</p><p></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/04/16/88072335/8f27d682b8483c15a74fd325a72a7c23_8146127861639916905.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3808,
+        "name": "悉心一作",
+        "desc": "<p>卡维的特色料理。金黄烤饼被摆放成精美的卡萨扎莱宫模样，巍然矗立在洁白酸奶酱之上。制作者费了许多心思，但他好像没意识到这道菜食用时需要敲碎所有烤饼。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/31/88072335/8144d35356c1c1d348411209df7aae45_6268772007482822997.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "阿如拌饭"
+      },
+      {
+        "type": "RichText",
+        "text": "相关食谱"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2883,
+        "name": "食谱：阿如拌饭",
+        "desc": "<p>步骤详实的食谱，记载着「阿如拌饭」的制作方法。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/18/47826599/60c9c277139b43907167e6452d409874_8393889243129779071.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "需要食材"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1307,
+        "name": "稻米",
+        "desc": "提瓦特常见的禾本作物。无论是什么样的人，都能欣赏这种颗粒分明的饱满口感，正所谓「一样米养百样人」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Rice_icon.png",
+        "amount": 3,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1737,
+        "name": "面粉",
+        "desc": "由小麦磨成的粉末。无论做成怎样的主食，都能给食客的胃带来片刻充实。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Flour_icon.png",
+        "amount": 2,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2795,
+        "name": "秃秃豆",
+        "desc": "<p>提瓦特常见的豆类作物。带有淡淡的香气，因食用方法多样而被各地民众广泛接受。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/26/88072335/1e67f272a1c27d4771c319ff7fc6cd3a_819004033186907061.png",
+        "amount": 2,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1212,
+        "name": "番茄",
+        "desc": "外皮鲜红的草本植物。色泽艳丽，酸甜多汁。关于它到底属于水果还是蔬菜的争论自古有之。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Tomato_icon.png",
+        "amount": 2,
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "相关料理"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2882,
+        "name": "阿如拌饭",
+        "desc": "<p>量大管饱的主食。集米、面、豆于一体的食物，好吃的秘诀来源于番茄酸甜的味道。因为用料常见，价格低廉，是充饥的好选择，这种做法也渐渐从阿如村传遍了整个须弥。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/18/47826599/b6d880596994fee98c1370d51628e910_1525908495681998442.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2881,
+        "name": "奇怪的阿如拌饭",
+        "desc": "<p>量大管饱的主食。由于心急，在食用前并没有搅拌均匀，导致部分米饭上的番茄味过浓，但另一部分的米饭又平淡无味···还是再拌一拌吧。</p><p></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/08/88072335/339bfe77e88269e6d1f4ed0ff593cfc8_4276866961854563493.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2880,
+        "name": "美味的阿如拌饭",
+        "desc": "<p>量大管饱的主食。米饭粒粒分明，被浓郁的酱汁包裹着入口中，明明没有加入油荤却比肉香更加诱人。如随处可见的沙丘般堆叠着的美味，带来非同寻常的满足感。</p><p></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/08/88072335/8a3e98c6e39dc4f66dc12c19a03e7a9e_5649041189110188808.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2888,
+        "name": "关怀备至",
+        "desc": "<p>坎蒂丝的特色料理。在端上来之前先已闻道扑鼻的香气，看来坎蒂丝在守护「胃口」方面也颇有心得…只是这分量比寻常的阿如拌饭还要来得更多一些，该、该如何才能将这一份「备至到过量的关怀」全部吃完呢？</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/10/18/47826599/1e6609648f043bbbaf29a0a0b735b8fb_3116411684683571163.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "3★食物"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "火焰炖肉"
+      },
+      {
+        "type": "RichText",
+        "text": "相关食谱"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6766,
+        "name": "食谱：火焰炖肉",
+        "desc": "步骤详实的食谱，记载着「火焰炖肉」的制作方法。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/60c9c277139b43907167e6452d409874_2394618203975894864.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "需要食材"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 300,
+        "name": "兽肉",
+        "desc": "兽类的新鲜肉块。经过适当处理可以制成让人元气满满的美食。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Raw Meat_icon.png",
+        "amount": 4,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2795,
+        "name": "秃秃豆",
+        "desc": "<p>提瓦特常见的豆类作物。带有淡淡的香气，因食用方法多样而被各地民众广泛接受。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/26/88072335/1e67f272a1c27d4771c319ff7fc6cd3a_819004033186907061.png",
+        "amount": 3,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1212,
+        "name": "番茄",
+        "desc": "外皮鲜红的草本植物。色泽艳丽，酸甜多汁。关于它到底属于水果还是蔬菜的争论自古有之。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Tomato_icon.png",
+        "amount": 3,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 999,
+        "name": "洋葱",
+        "desc": "球状的草本植物。为了报复切碎它的人，不管人的心情好坏都会让他落泪。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Onion_icon.png",
+        "amount": 2,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "相关料理"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6738,
+        "desc": "",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6739,
+        "desc": "",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6740,
+        "desc": "",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6741,
+        "name": "猎龙者的犒赏",
+        "desc": "",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/09/18/144837601/6921ce0098ba3715e0ee38a99317675b_1184702629570116714.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "卡苏莱砂锅"
+      },
+      {
+        "type": "RichText",
+        "text": "相关食谱"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4429,
+        "name": "食谱：卡苏莱砂锅",
+        "desc": "<p><span>步骤详实的食谱，记载着「卡苏莱砂锅」的制作方法。</span></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/10/23/88072335/955d23a38b8e91a5e5c9de7547d7a320_2115340046713331769.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "需要食材"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1871,
+        "name": "香肠",
+        "desc": "灌入肠衣后制成的条状兽肉。便于储存的特性，极大地满足了肉食爱好者的日常需要。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sausage_icon.png",
+        "amount": 2,
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1284,
+        "name": "禽肉",
+        "desc": "禽类的新鲜肉块。经过适当处理可以制成让人精神一振的佳肴。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fowl_icon.png",
+        "amount": 1,
+        "displayStyle": "card"
       },
       {
         "type": "CustomEntry",
@@ -76,24 +644,134 @@
         "desc": "<p>提瓦特常见的豆类作物。带有淡淡的香气，因食用方法多样而被各地民众广泛接受。</p>",
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/26/88072335/1e67f272a1c27d4771c319ff7fc6cd3a_819004033186907061.png",
         "amount": 1,
-        "displayStyle": "text"
-      },
-      {
-        "type": "RichText",
-        "text": "100"
+        "displayStyle": "card"
       },
       {
         "type": "CustomEntry",
-        "epId": 757,
-        "name": "摩拉",
-        "desc": "通行大陆的钱。世界通用的共同语言，谁人都能理解的贵金属。",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+        "epId": 4006,
+        "name": "茉洁草",
+        "desc": "<p>华润而温莹的桃色花朵。拥有不同层次的芬芳，是用来调香的主要原料之一。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/09/05/88072335/946e456e7b8f19211bdb36ab65ab0a23_9206363963951935211.png",
         "amount": 1,
-        "displayStyle": "text"
+        "displayStyle": "card"
       },
       {
         "type": "RichText",
-        "text": "x 120"
+        "text": "相关料理"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4446,
+        "name": "奇怪的卡苏莱砂锅",
+        "desc": "<p>简朴的乡土炖菜。外形看似没有问题，吃着吃着，闻到了微弱的焦味，这才发现底部的食材已经烧焦黏在砂锅上了。唔，下次要记得煮的时候要记得翻动…</p><p></p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/10/23/88072335/4664a9779884003f5594c6c7e4a1d2a6_4934676327760190819.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4447,
+        "name": "卡苏莱砂锅",
+        "desc": "<p>简朴的乡土炖菜。只需要在砂锅里混合所有食材再煮熟便可食用。值得一提的是，这道菜的全名为——用卡苏莱砂锅炖煮的秃秃豆焖油封禽肉与熏制香肠佐以茉洁草。实在太长，就简称卡苏莱砂锅了。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/10/23/88072335/6e17a864db8f28287802dc4edeab381d_3510325685851616311.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4448,
+        "name": "美味的卡苏莱砂锅",
+        "desc": "<p>简朴的乡土炖菜。时间是最能催化美味的神奇武器，长久的炖煮使得肉块吸饱了鲜美的汤汁，变得酥软，与香浓的豆粒一起，造就了最为振奋人心的温暖滋味。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/10/23/88072335/c0aa1a412c828970d5ae41445fe3b236_3852531933911537454.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "炸虾豆球"
+      },
+      {
+        "type": "RichText",
+        "text": "相关食谱"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6765,
+        "name": "食谱：炸虾豆球",
+        "desc": "步骤详实的食谱，记载着「炸虾豆球」的制作方法。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/60c9c277139b43907167e6452d409874_2394618203975894864.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "需要食材"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2795,
+        "name": "秃秃豆",
+        "desc": "<p>提瓦特常见的豆类作物。带有淡淡的香气，因食用方法多样而被各地民众广泛接受。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/26/88072335/1e67f272a1c27d4771c319ff7fc6cd3a_819004033186907061.png",
+        "amount": 4,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1737,
+        "name": "面粉",
+        "desc": "由小麦磨成的粉末。无论做成怎样的主食，都能给食客的胃带来片刻充实。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Flour_icon.png",
+        "amount": 4,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1556,
+        "name": "虾仁",
+        "desc": "饱满的深海虾仁。拥有丰富的营养与压倒性的鲜美风味。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shrimp Meat_icon.png",
+        "amount": 3,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 999,
+        "name": "洋葱",
+        "desc": "球状的草本植物。为了报复切碎它的人，不管人的心情好坏都会让他落泪。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Onion_icon.png",
+        "amount": 3,
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "相关料理"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6735,
+        "desc": "",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6736,
+        "desc": "",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6737,
+        "desc": "",
+        "displayStyle": "card"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6742,
+        "desc": "",
+        "displayStyle": "card"
       }
     ],
     "baseInfo": [
@@ -116,20 +794,29 @@
         ]
       },
       {
-        "key": "来源",
+        "key": "国家",
         "value": [
           {
             "type": "RichText",
-            "text": "NPC商人购买"
+            "text": "须弥\n枫丹\n纳塔"
           }
         ]
       },
       {
-        "key": "用途",
+        "key": "来源",
         "value": [
           {
             "type": "RichText",
-            "text": "烹饪料理"
+            "text": "须弥餐馆购买\n枫丹杂货店购买\n纳塔杂货店购买"
+          }
+        ]
+      },
+      {
+        "key": "上线版本",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "3.0"
           }
         ]
       }
