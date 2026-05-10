@@ -5,16 +5,776 @@
   "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/d585407867aa47b4d925613cea9f00c2_5864597966579326880.png",
   "headerImgUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/ddc76c2fa098b7221c5cb7b1256cbf3b_273436282977714134.png",
   "filterValues": {
-    "characterProperty": "ความชำนาญธาตุ",
     "characterWeapon": "หอก",
     "characterVision": "หิน",
-    "characterRarity": 4,
-    "characterRegion": "Nod-Krai"
+    "characterProperty": "ความชำนาญธาตุ",
+    "characterRegion": "Nod-Krai",
+    "characterRarity": 4
   },
   "menuId": 2,
   "menuName": "คู่มือตัวละคร",
   "version": 1770842651,
   "components": {
+    "summaryList": [
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/28/7bf887b0541a1749291a4f03ec0a30c0_3557753111902903188.png",
+        "name": "Vigilant Sentinel",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "หลังจาก Illuga ทำให้เกิด <color=#ffe699>ปฏิกิริยาที่เกี่ยวข้องกับธาตุหิน</color> ในสนาม จะฟื้นฟูพลังงานธาตุให้ Illuga 12 หน่วย โดยเอฟเฟกต์นี้เกิดขึ้นได้มากสุดหนึ่งครั้ง ในทุก 15 วินาที"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/28/e06f3ded0f19aa43af72f9298a734bd4_253912610905768595.png",
+        "name": "Elk With Fanged Antlers",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "ในช่วงเวลาต่อเนื่องของเอฟเฟกต์ Haunted Night's Oriole-Song ในท่าไม้ตาย <color=#ffd780>Shadowless Reflection</color> ทุกครั้งที่ใช้ <color=#ffd780>Nightingale's Song</color> 7 ชั้น Illuga จะเรียก Aedon ออกมา สร้าง <color=#ffe699>ความเสียหายหิน</color> แก่ศัตรูหนึ่งตัวที่อยู่รอบข้าง 1 ครั้ง โดยค่าความเสียหายเท่ากับ 400% ของความชำนาญธาตุ และ 200% ของพลังป้องกันของ Illuga โดยความเสียหายนี้จะถูกมองว่าเป็นความเสียหายจากท่าไม้ตาย"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/28/5fb1cede9a496d5681f0f57f4c3d2712_7878545680385464697.png",
+        "name": "Earthshaking Maw",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "เพิ่มเลเวลสกิลของท่าไม้ตาย <color=#ffd780>Shadowless Reflection</color> ขึ้น 3 ระดับ\nเพิ่มได้สูงสุดถึงระดับ 15"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/28/8545e9ac7df96a6295e55d968decc493_9103875203104549536.png",
+        "name": "Solarhunting Wolf",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "ในช่วงเวลาต่อเนื่องของเอฟเฟกต์ Haunted Night's Oriole-Song ของท่าไม้ตาย <color=#ffd780>Shadowless Reflection</color> พลังป้องกันของตัวละครในทีมที่เข้าร่วมการต่อสู้ในขณะนั้น ที่อยู่ใกล้เคียงจะเพิ่มขึ้น 200 หน่วย"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/28/b3079d047ac1708a7658dede91d13483_3598144614793564771.png",
+        "name": "Hurricane Steed",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "เพิ่มเลเวลสกิลของสกิลธาตุ <color=#ffd780>Dawnbearing Songbird</color> ขึ้น 3 ระดับ\nเพิ่มได้สูงสุดถึงระดับ 15"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/28/bb0323798e18983ff697514089737c14_8652039880846315933.png",
+        "name": "Nightmare Orioles",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "เอฟเฟกต์ Lightkeeper's Oath ในพรสวรรค์เพิ่มเติม <color=#ffd780>Torchforger's Covenant</color> ได้รับการเสริมพลัง: <color=#ffe699>ความเสียหายหิน</color> ที่สร้างแก่ศัตรูมีอัตราคริเพิ่มขึ้น 10%, ความแรงคริเพิ่มขึ้น 30%\n<color=#ffd780>ลัคนาจันทร์ - จรัสแสง</color>\nความชำนาญธาตุของตัวละครที่อยู่ภายใต้ผลของเอฟเฟกต์ Lightkeeper's Oath เพิ่มขึ้น 80 หน่วย\nต้องปลดล็อกพรสวรรค์เพิ่มเติม <color=#ffd780>Torchforger's Covenant</color> ก่อน"
+          }
+        ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "รายละเอียดตัวละคร",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "การประกาศตัวละคร"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>11/12/25</color>\n\"Illuga รู้สึกขอบคุณกองอัศวินแห่ง Favonius มากที่ให้ความช่วยเหลือในการต่อสู้ แต่น่าเสียดายที่เขาออกไปทำภารกิจสืบสวนอีกแล้ว จึงได้แต่ฝากให้ฉันนำไวน์ขวดนี้มามอบให้คุณ เพื่อแสดงความขอบคุณ\"\n\"ฮ่า ๆ ๆ น้องชายคนนี้จะเกรงใจกันเกินไปแล้ว ทั้งที่ตัวเขาเองนั่นแหละที่ทุ่มเทมากที่สุดแท้ ๆ เฮ้อ... น่าเสียดายที่เขาไม่อยู่ที่นี่ ฉันก็เลยปฏิเสธไม่ได้... งั้นเอางี้มั้ย เปิดขวดดื่มกันที่นี่เลยละกัน ฉันจะเล่าให้นายฟังว่า Illuga น่ะ มีอนาคตไกลขนาดไหน...\"\n\"เฮอะ ดื่มเหล้าน่ะไม่มีปัญหาหรอก แต่อย่าถือโอกาสมาดึงตัวฉันไปละกัน\"\n- บทสนทนาระหว่างหัวหน้าประภาคาร Nikita และ Varka ก่อนที่ทั้งคู่จะเมามาย"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/11/144837601/3f768ef9c5d40c54b6f30c4f6083af3e_6108375500596687552.png",
+        "alignment": "left"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "แนะนำตัวละครและตัวอย่างสกิล: \"หัวใจเพลิงผลาญฝันร้าย\" - Illuga"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>26/01/26</color>\nสวัสดีนักเดินทาง! วันนี้เรานำข่าวกรองเกี่ยวกับ Illuga มาฝากทุกคนด้วยนะ\nในการผจญภัยก่อนหน้านี้ นักเดินทางอาจเคยได้ยินชื่อหนึ่งที่ Flins และ Varka เคยเอ่ยถึง นั่นคือ... Illuga เขาคือหัวหน้าหน่วยที่อายุน้อยที่สุดของกลุ่มผู้เฝ้าประภาคาร ในการต่อสู้เขาสามารถช่วยเพิ่มความเสียหายให้กับปฏิกิริยา \"ตกผลึกจันทรา\" ได้ มาดูรายละเอียดเพิ่มเติมกันเถอะ!\nกิจกรรมอธิษฐานช่วงที่ 2 จะเริ่มขึ้นในวันที่ 3 ก.พ. โดยโอกาสได้รับ Illuga จะเพิ่มขึ้นอย่างมาก!"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/11/144837601/7f4bcaa5d8c6b2e28e5b997c6a7ae6c3_5560245554935940678.png",
+        "alignment": "left"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "ตัวอย่างตัวละคร - \"Illuga: ปีกปักษาต้องแสงอรุณ\""
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>30/01/26</color>\nท้องฟ้าเหนือหน้าผา Kipumaki มักมืดสลัวอยู่เสมอ ทำให้ผู้คนนับไม่ถ้วนต้องหลงทางอยู่ในนั้น\nหากแม้แสงจันทร์ยังไม่อาจส่องไปถึง เช่นนั้นลองเหลียวมอง ประกายปีกของนกขมิ้นสีทองที่พลิ้วไหวอยู่ข้างกายนั่นสิ\n<color=#ff9999>YouTube:</color>\nภาษาจีน CV:"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=eWEjtb2dvDw"
+      },
+      {
+        "type": "RichText",
+        "text": "ภาษาอังกฤษ CV:"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=qoF5VjO0_iE&embeds_referring_euri=https%3A%2F%2Fwww.hoyolab.com%2F&source_ve_path=MjM4NTE"
+      },
+      {
+        "type": "RichText",
+        "text": "ภาษาญี่ปุ่น CV:"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=sCPfCRuInAc"
+      },
+      {
+        "type": "RichText",
+        "text": "ภาษาเกาหลี CV:"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=r8ltc8WJZ-0&pp=0gcJCZQKAYcqIYzv"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/11/144837601/434ae0ce433c41418e0df7395fa56996_4989884580257043676.png",
+        "alignment": "left"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "อิโมจิ",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "ภาพวาดของ Paimon 47"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>15/09/25</color>\nสวัสดีนักเดินทาง! แพ็กอิโมจิใหม่ล่าสุดของ \"Genshin Impact\" เปิดตัวแล้วที่ HoYoLAB!\nในภาพวาดของ Paimon ได้รวบรวมแพ็กอิโมจิแบบจิบิของตัวละครใน \"Genshin Impact\" ไว้มากมาย หวังว่าทุกคนจะชอบนะ ในอนาคต Paimon ก็จะทุ่มเทและพยายามเพื่อวาดผลงานที่ทุกคนชื่นชอบออกมาอีกนะ!"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/11/144837601/1a0a7ac6fdb0d06fafd2b3660e7af52b_1588668724517603720.png",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/11/144837601/2283536e02d268bd23366321ccd1d89e_8647976094579929375.png",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/11/144837601/cfe703ae01302d92b680f53934bb1ab7_8766646674853279631.png",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/11/144837601/50f22c26fae195b4ffa0e1d2a2a43b71_6672401111277520753.png",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "การปรากฏตัวอื่น ๆ",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "ตัวอย่างเวอร์ชัน \"บทเพลงของดวงจันทร์สุญตา: ปิดฉาก\": \"นักเดินทางคนหนึ่ง ในคืนฤดูหนาว\""
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>02/01/26</color>\nแสงจันทร์อันซีดเซียวเอ๋ย เหตุใดเจ้าจึงแผ่ซ่านออกไปอย่างเงียบงันและไร้รูปร่าง?\nเจ้าผู้เป็นดั่งพวกนอกรีตผิดแผกแต่กำเนิด ไยจึงไม่เร้นกายภายใต้เงามืดอันขมุกขมัวอีกต่อไปเล่า?\nบนโถงทางเดินยาวที่ไม่มีผู้ใดรู้จัก และท่ามกลางการเดินทางอันอ้างว้าง มีเพียงบทเพลงไร้นามเท่านั้นที่อยู่เป็นเพื่อนเธอ:\n\"หลับเถิด หลับเถิด นกพิราบน้อยของข้า...\"\n\"...\"\n\"...ขอให้เจ้าได้หลับใหลในห้วงฝันพร้อมกับดวงจันทรา\"\n<color=#ff9999>YouTube:</color>\nภาษาจีน CV:"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=m3u9w-2Z-7w"
+      },
+      {
+        "type": "RichText",
+        "text": "ภาษาอังกฤษ CV:"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=_yuHIzPJGHA&embeds_referring_euri=https%3A%2F%2Fwww.hoyolab.com%2F&source_ve_path=MjM4NTE"
+      },
+      {
+        "type": "RichText",
+        "text": "ภาษาญี่ปุ่น CV:"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=wTL5hRtmWjM"
+      },
+      {
+        "type": "RichText",
+        "text": "ภาษาเกาหลี CV:"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=N2QjOH8ek5c"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/11/144837601/79f650e099c1b1b53b230f9249cdce04_3238561485104181680.png",
+        "alignment": "left"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "แนะนำตัวละคร",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "สมาชิกหน่วยสืบสวน \"นกขมิ้นแห่งราตรีฝันร้าย\" และหัวหน้าหน่วย ที่อายุน้อยที่สุดของผู้เฝ้าประภาคาร",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "ความสัมพันธ์ของตัวละคร",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8398,
+        "name": "Flins",
+        "desc": "ทหารประภาคารแห่ง Nod-Krai",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/29/144837601/9082f59240fbd35176cd7624dbef0eb1_5563075897655913413.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "โดยสังเขป"
+      },
+      {
+        "type": "RichText",
+        "text": "Illuga กับ Flins เป็นเพื่อนร่วมงานกัน"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เสียงพากย์"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>Flins:</color>\nสมาชิก \"ผู้เฝ้าประภาคาร\" สามารถเลือกได้ว่าจะอยู่หรือจะไป หลายคนพอเข้ามาแล้วก็จากไป มีแต่คนที่มุ่งมั่นเท่านั้นถึงจะยืนหยัดอยู่ต่อ ซึ่ง Illuga ก็คือคนคนนั้น ถ้าเทียบกับ \"ความชาญฉลาด\" หรือ \"ความเจ้าเล่ห์\" ที่ผู้คนทั่วไปชอบกัน ฉันคิดว่า \"ความมุ่งมั่น\" นั้นมีค่ามากกว่า\n<color=#ffd780>Illuga:</color>\nตอนที่เพิ่งรู้จักคุณ Flins ใหม่ ๆ ฉันคิดว่าที่เขาเลือกที่จะแยกตัว มาอยู่อย่างสันโดษ ก็เพราะเข้าสังคมไม่เก่ง หรือไม่ก็มีนิสัยแปลก ๆ แต่ไม่นานหลังจากนั้น ฉันก็พบว่าเรื่องมันตรงกันข้ามกับที่คิดไว้เลย... แต่ทุกครั้งที่เราคุยกัน เขามักจะทิ้งปมที่ชวนให้ติดตามต่อไว้ตอนท้ายเรื่องเสมอ ฉันเลยคิดว่า หรือว่านี่อาจเป็นเพราะ... ที่จริงแล้วเขายินดีให้ฉันไปเยี่ยมเขาบ่อย ๆ รึเปล่า?\nเธอจะบอกว่า คุณ Flins มีความลับมากมายซ่อนอยู่งั้นเหรอ? แน่นอนว่านี่ไม่ใช่เรื่องแปลกอะไรในหมู่ทหารประภาคารหรอก เพื่อนร่วมงานของฉันต่างมีภูมิหลังแตกต่างกันไป ใครบ้างที่ไม่มีความลับที่ไม่อยากบอกใครน่ะ? แม้แต่พ่อก็แทบไม่เคยเล่าเรื่องราวในวัยหนุ่มให้ฉันฟังเลย ส่วนคุณ Flins น่ะ... ช่วงนี้มีเรื่องราวเกิดขึ้นตั้งมากมาย ยังไงเราก็เป็นเพื่อนกัน ฉันเองก็พอจะเดาความลับของเขาได้อยู่นิดหน่อย ฉันเคยลองถามเขาดู เขาไม่ได้ปฏิเสธ แต่ก็ไม่ได้ยอมรับ บางทีนั่นอาจจะเป็นท่าทีอย่างหนึ่งเหมือนกัน"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8396,
+        "name": "Lauma",
+        "desc": "นักบุญหญิงผู้ได้รับพร จากแสงจันทร์และผืนป่า ความหวังหนึ่งเดียว ที่ถือกำเนิดขึ้นในหมู่ \"ลูกหลานจันทราน้ำค้างแข็ง\"",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/08/b06e9ff48d57de4856f1a05b1199aae1_8565150401481594895.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "โดยสังเขป"
+      },
+      {
+        "type": "RichText",
+        "text": "Illuga มองว่า Lauma เป็นทูตจันทราขับขานที่อ่อนโยนและมีน้ำใจ"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เสียงพากย์"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>Illuga:</color>\nนับตั้งแต่ยุคของผู้หล่อคบไฟเริ่มต้นขึ้น พวกเราก็รักษามิตรภาพตามประเพณีกับลูกหลานจันทราน้ำค้างแข็งมาโดยตลอด ทูตจันทราขับขานรุ่นนี้เป็นหญิงสาวที่อ่อนโยนและมีน้ำใจ ทุกครั้งที่ได้พบกันฉันจะได้เรียนรู้สิ่งใหม่ ๆ จากเธอมากมาย สมัยนี้การเป็นทูตจันทราขับขานก็คงไม่ได้ง่ายไปกว่าการเป็นผู้เฝ้าประภาคารเลย การที่เธอยังรักษาทัศนคติเช่นนี้ไว้ได้ คงจะต้องแบกรับอะไรไว้มากมายเลยสินะ"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9342,
+        "name": "Varka",
+        "desc": "แกรนด์มาสเตอร์ของกองอัศวินแห่ง Favonius, อัศวินแห่ง Boreas ผู้พิทักษ์ Mondstadt",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/02/21/553feb81c3bbc5e3bc69a765e157c33f_8250978205515428490.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "โดยสังเขป"
+      },
+      {
+        "type": "RichText",
+        "text": "Illuga ชื่นชมความสามารถในการรบของ Varka มาก"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เสียงพากย์"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>Illuga:</color>\nคุณ Varka เป็นนักรบที่เก่งมาก พวกเราเคยต่อสู้เคียงบ่าเคียงไหล่กันเพื่อต้านการล่าอันบ้าคลั่ง ได้ยินมาว่ากองอัศวินแห่ง Favonius ก็เหมือนกับพวกเราผู้เฝ้าประภาคาร เป็นองค์กรที่ก่อตั้งขึ้นเพื่อปกป้องบ้านเกิด บางทีสักวันหนึ่ง เมื่อการล่าอันบ้าคลั่งใน Nod-Krai ถูกกำจัดจนหมดสิ้น พวกเราอาจจะได้เดินทางไปยังแดนไกล และต่อสู้เพื่อผู้คนที่กำลังทุกข์ทรมานมากขึ้นนะ"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8894,
+        "name": "Nefer",
+        "desc": "เจ้าของ \"เคหาสน์แห่งความลับ\" ผู้เก่งกาจและกว้างขวาง",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/10/21/7557acebcb72b4d9912bcb0e6c92306a_3655566527985254987.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "โดยสังเขป"
+      },
+      {
+        "type": "RichText",
+        "text": "บางที Illuga ก็รู้สึกปวดหัวที่ Nefer ชอบแกล้งเขาอยู่เรื่อย"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เสียงพากย์"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>Illuga:</color>\nต้องขอบคุณเคหาสน์แห่งความลับที่ช่วยดูแล ทำให้การปฏิบัติภารกิจของพวกเราในเมือง Nasha สะดวกสบายขึ้นมาก ไม่เหมือนกับเมื่อก่อน ได้ยินว่าก่อนที่คุณ Nefer จะมาที่ Nod-Krai ทหารประภาคารมักจะปะทะกับ พวกแก๊งที่ไม่เคารพกฎอยู่บ่อย ๆ จนพ่อเฒ่าถึงกับปวดหัวไปตาม ๆ กัน... ตอนนี้ดีขึ้นมากแล้ว แต่ว่าคุณ Nefer ก็ชอบแกล้งฉันเหมือนกับคุณ Flins ทำเอาฉันปวดหัวด้วยเหมือนกัน"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8397,
+        "name": "Aino",
+        "desc": "ผู้ปกครองของเวิร์กชอป Krumkake กรุ๊งกริ้ง",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/10/53372413/8c3e0addc3b29c9d4a41c0a6629367ba_4860562186676474168.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "โดยสังเขป"
+      },
+      {
+        "type": "RichText",
+        "text": "ดูเหมือนความเข้าใจในการซ่อมแซมสิ่งของของ Illuga และ Aino จะแตกต่างกันนิดหน่อย..."
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เสียงพากย์"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>Illuga:</color>\nเวลาจะซ่อมกลไกที่ซับซ้อน พวกเราผู้เฝ้าประภาคารมักจะขอให้คุณ Aino มาช่วยซ่อมให้ แต่ดูเหมือนเธอจะอยากสอนพวกเราจริง ๆ... มีอยู่ครั้งหนึ่ง หลังจากที่เธอเห็นฉันซ่อมกลไกด้วยตัวเอง เธอก็โวยวายจะลากฉันไปเรียนให้ได้... หืม? ถามว่าฉันซ่อมยังไงน่ะเหรอ? แน่นอนว่าฉันก็เรียนรู้มาจากพ่อน่ะสิ ถ้ากลไกไม่ทำงาน แค่ทุบแรง ๆ สองทีก็หายแล้ว ใครจะไปรู้ว่าเธอจะโกรธขนาดนั้น..."
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Linnea</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "โดยสังเขป"
+      },
+      {
+        "type": "RichText",
+        "text": "Illuga คิดว่า Linnea มีคาแรกเตอร์แตกต่างจากที่เขาคิดไว้ตอนแรก"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เสียงพากย์"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>Illuga:</color>\nภูตสาวอย่างคุณ Linnea นั้นหาได้ยากมาก แม้แต่ใน Nod-Krai ที่มีผู้คนสารพัดรูปแบบอยู่ก็ตาม ก่อนที่จะได้รู้จักเธอ ฉันคิดว่าเธอจะเป็นคนสุขุมกว่านี้ แต่ไม่นึกว่าครั้งแรกที่ได้พบกัน พอเธอเห็น Aedon เธอก็พุ่งเข้าหาด้วยดวงตาเป็นประกายทันที... Aedon เป็นนกสื่อสารที่ไม่เคยถอย แม้เผชิญหน้ากับการล่าอันบ้าคลั่ง แต่ตอนนี้ทุกครั้งที่ได้ยินเสียงของเธอ มันจะรีบหลบเข้าไปในตะเกียงทันที และไม่ยอมออกมาเลย..."
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9121,
+        "name": "Columbina",
+        "desc": "เทพธิดาแห่งจันทรา ที่ถือกำเนิดขึ้นใน Nod-Krai คือดวงจันทร์สุญตา ที่หวนกลับคืนสู่บ้านเกิด",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/80fa97679c8d1828fdd96c6aa9638632_4327573591148809640.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "โดยสังเขป"
+      },
+      {
+        "type": "RichText",
+        "text": "Illuga คิดว่าแทนที่จะรอแต่พึ่งพาเทพจันทรา การมีพลังปกป้องคนรอบข้างได้นั้นสบายใจกว่า"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เสียงพากย์"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>Illuga:</color>\nNod-Krai เป็นสวรรค์ของ \"มนุษย์\" เส้นทางนี้ปูลาดด้วยเลือดและกระดูกของทหารประภาคารนับร้อยนับพันตลอดหลายร้อยปีที่ผ่านมา แม้ว่าวันนี้จะมีเทพองค์ใหม่มาเยือน แต่วิถีการดำรงชีวิตของ Nod-Krai ก็คงไม่เปลี่ยนแปลงไปหรอก ไม่ใช่ว่าไม่เชื่อใจคุณ \"เทพจันทรา\" คนนั้นหรอกนะ... แค่ฉันคิดว่า แทนที่จะรอให้คนอื่นมาช่วย การมีพลังที่สามารถปกป้องคนรอบข้างได้นั้นมันสบายใจกว่า"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "ภาพรวมพรสวรรค์"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd680>สกิลธาตุ</color> เรียกนกสื่อสาร Aedon ออกมาต่อสู้\nกด: Aedon จะพุ่งเข้าหาศัตรูที่อยู่ด้านหน้า สร้างความเสียหายหินแก่ศัตรูที่สัมผัสโดน\nกดค้าง: เล็งเป้าหมาย แล้วให้ Aedon พุ่งเข้าหาศัตรูที่เล็งไว้ สร้างความเสียหายหิน\n<color=#ffd680>ท่าไม้ตาย</color> Shadowless Reflection สร้าง <color=#ffe699>ความเสียหายหิน</color> วงกว้าง จากนั้นได้รับเอฟเฟกต์ Haunted Night’s Oriole-Song\nระหว่างเอฟเฟกต์นี้การโจมตีที่สร้าง <color=#ffe699>ความเสียหายหิน</color> ของตัวละครในทีมจะสร้างความเสียหายเพิ่มขึ้น\nความเสียหายที่เพิ่มขึ้นอิงตาม <color=#ffd680>ความชำนาญธาตุ</color> ของ Illuga และจะเพิ่มมากขึ้นหากเป็นปฏิกิริยาตกผลึก"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "อาวุธแนะนำ"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "อาวุธ 3-ดาว"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>ไม่มีอาวุธ 3-ดาว ชิ้นใดเหมาะสมกับ Illuga</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "อาวุธ 4-ดาว"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2021,
+        "name": "Favonius Lance",
+        "desc": "หอกมาตรฐานที่ใช้งานโดย เหล่าอัศวินแห่ง Favonius ด้ามหอกตรงดิ่ง ปลายหอกแหลมคม และพลิ้วไหวดั่งสายลม",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风长枪.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Favonius Lance</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>การฟื้นฟูพลังงาน</color>\nสกิลติดตัว: เมื่อโจมตี <color=#ffd780>คริติคอล</color> จะมีโอกาส 100% ที่จะสร้าง <color=#ffd780>อณูธาตุ</color> ซึ่งใช้ <color=#ffd780>ฟื้นฟูพลังงานธาตุ</color> ได้ 6 หน่วย โดยเอฟเฟกต์นี้จะใช้ได้หนึ่งครั้งในทุก 6 วินาที\n<color=#ffffff>หมายเหตุ:</color>\nช่วย <color=#ffd780>ฟื้นฟูพลังงาน</color> และทำให้ Illuga สามารถใช้ท่าไม้ตายมาบัฟเพื่อนได้อย่างต่อเนื่องยิ่งขึ้น\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1940,
+        "name": "Dragon's Bane",
+        "desc": "หอกที่ตกแต่งด้วยมังกรทองพันอยู่ที่ด้าม มันทั้งเบาและคม อาวุธนี้ใช้สังหารมังกรได้อย่างดี",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/匣里灭辰.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Dragon's Bane</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>ความชำนาญธาตุ</color>\nสกิลติดตัว: เพิ่มความเสียหายแก่ศัตรูที่ได้รับผลกระทบของ <color=#80c0ff>ธาตุน้ำ</color> และ <color=#ff9999>ไฟ</color> ขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nค่าชำนาญธาตุทำให้ความสามารถในการบัฟใน <color=#ffd680>ท่าไม้ตาย</color> ของ Illuga เพิ่มขึ้น\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1949,
+        "name": "Kitain Cross Spear",
+        "desc": "หอกที่ครั้งหนึ่งนักรบผู้มีชื่อเสียงเคยใช้คุ้มครอง \"Tatarigami\" บนเกาะ Yashiori",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/喜多院十文字.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Kitain Cross Spear</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>ความชำนาญธาตุ</color>\nสกิลติดตัว: เพิ่มค่า <color=#ffd780>ความเสียหายของสกิลธาตุ</color> และฟื้นฟูค่า <color=#ffd780>พลังงาน</color> แม้ตัวละครจะไม่ได้อยู่บนสนาม\n<color=#ffffff>หมายเหตุ:</color>\nค่าชำนาญธาตุทำให้ความสามารถในการบัฟใน <color=#ffd680>ท่าไม้ตาย</color> ของ Illuga เพิ่มขึ้น\nช่วย <color=#ffd780>ฟื้นฟูพลังงาน</color> และทำให้ Illuga สามารถใช้ท่าไม้ตายมาบัฟเพื่อนได้อย่างต่อเนื่องยิ่งขึ้น\n<color=#ffffff>หาได้จาก:</color>\nสามารถหลอมได้ที่ช่างตีเหล็ก"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "อาวุธ 5-ดาว"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2014,
+        "name": "Engulfing Lightning",
+        "desc": "ง้าวนางินาตะที่ใช้ในการ \"ตัดหญ้า\" กองทัพที่เผชิญหน้ากับสิ่งนี้ ก็คงจะล้มลงราวกับต้นหญ้าเหล่านั้นล่ะนะ...",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/薙草之稻光.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Engulfing Lightning</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>การฟื้นฟูพลังงาน</color>\nสกิลติดตัว: <color=#ffd780>พลังโจมตี</color> เพิ่มขึ้น โดยที่ระดับการเพิ่มจะเท่ากับ 56% ของส่วนที่เกินมาจาก 100% ของประสิทธิภาพ <color=#ffd780>การฟื้นฟูพลังงาน</color> โดยจะสามารถเพิ่มด้วยวิธีนี้ได้มากสุดถึง 120% และภายในเวลา 12 วินาที หลังจากปล่อย <color=#ffd780>ท่าไม้ตาย</color> ประสิทธิภาพ <color=#ffd780>การฟื้นฟูพลังงาน</color> จะเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nช่วย <color=#ffd780>ฟื้นฟูพลังงาน</color> และทำให้ Illuga สามารถใช้ท่าไม้ตายมาบัฟเพื่อนได้อย่างต่อเนื่องยิ่งขึ้น\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1957,
+        "name": "Skyward Spine",
+        "desc": "หอกที่เป็นสัญลักษณ์ของ ความตั้งใจของ Dvalin ด้ามหอกที่ตรงดิ่งชี้ไปยังฟากฟ้า มีพลังของฟ้าและพลังแห่งลม ซ่อนอยู่ภายใน",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之脊.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Skyward Spine</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>การฟื้นฟูพลังงาน</color>\nสกิลติดตัว: <color=#ffd780>อัตราคริ</color> เพิ่มขึ้นและเพิ่มความเร็วการ <color=#ffd780>โจมตีปกติ</color> เมื่อทำการ <color=#ffd780>โจมตีปกติ</color> หรือ <color=#ffd780>ชาร์จโจมตี</color> ถูกศัตรู มีโอกาสสร้าง ใบมีดสุญญากาศและสร้าง <color=#ffd780>ความเสียหาย</color> เพิ่มเติมในพื้นที่วงแคบของ <color=#ffd780>พลังโจมตี</color> ซึ่งเอฟเฟกต์นี้จะเกิดขึ้น หนึ่งครั้งในทุก 2 วินาที\n<color=#ffffff>หมายเหตุ:</color>\nช่วย <color=#ffd780>ฟื้นฟูพลังงาน</color> และทำให้ Illuga สามารถใช้ท่าไม้ตายมาบัฟเพื่อนได้อย่างต่อเนื่องยิ่งขึ้น\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "อาร์ติแฟกต์แนะนำ"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "ค่าสถานะอาร์ติแฟกต์"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/1387f1512524772db99ae30b6303f939_5072609172935942900.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>การฟื้นฟูพลังงาน / ความชำนาญธาตุ</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/56451470fe75f710b812ac28e226273b_5774236690802856497.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>ความชำนาญธาตุ</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/8bc07934c9290b83751c7fa183a43ab7_32021027934025390.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>ความชำนาญธาตุ</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เซ็ต 4 อัน"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8521,
+        "name": "Silken Moon's Serenade",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/b8350998129a66e67c1a7691153da68d_6559589601591776539.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "Silken Moon's Serenade",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\nเซ็ต 2 อัน: เพิ่มประสิทธิภาพ <color=#ffd780>การฟื้นฟูพลังงาน</color> ขึ้น 20%\nเซ็ต 4 อัน: เมื่อสร้างความเสียหายธาตุ จะได้รับเอฟเฟกต์ Gleaming Moon: Devotion เป็นเวลา 8 วินาที: เมื่อ <color=#ffd780>ลัคนาจันทร์</color> ของทีมเป็น <color=#ffd780>แย้มแสง</color> / <color=#ffd780>จรัสแสง</color> <color=#ffd780>ความชำนาญธาตุ</color> ของตัวละครทั้งหมดในทีมจะเพิ่มขึ้น 60/120 หน่วย โดยสามารถทำให้เกิดเอฟเฟกต์นี้ได้ แม้ผู้สวมใส่จะอยู่ในทีม แต่ไม่ได้เข้าร่วมการต่อสู้ ทั้งนี้ ความเสียหายของปฏิกิริยาประกายจันทร์ที่ตัวละครทั้งหมดในทีมสร้างจะเพิ่มขึ้น 10% ตามเอฟเฟกต์ Gleaming Moon แต่ละชนิดที่ตัวละครในทีมมี โดยเอฟเฟกต์ที่เกิดจาก Gleaming Moon จะไม่สามารถซ้อนทับกันได้\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่า <color=#ffd780>ความชำนาญธาตุ</color> ซึ่งช่วยเพิ่มความเสียหายให้แก่ท่าไม้ตายของ Illuga และให้ค่า <color=#ffd780>การฟื้นฟูพลังงาน</color> แก่ Illuga เพื่อให้สามารถใช้ <color=#ffd780>ท่าไม้ตาย</color> ได้ง่ายขึ้น"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "เซ็ต 2 อัน / เซ็ต 2 อัน"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2081,
+        "name": "Wanderer's Troupe",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2673,
+        "name": "Gilded Dreams",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/17/176148810/ae8a2c6f24df66e1bd7cc2dbd83d330d_1785006360227521549.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Wanderer’s Troupe + Gilded Dreams</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Wanderer’s Troupe] เซ็ต 2 อัน: <color=#ffd780>ความชำนาญธาตุ</color> เพิ่มขึ้น 80 หน่วย\n[Gilded Dreams] เซ็ต 2 อัน: <color=#ffd780>ความชำนาญธาตุ</color> เพิ่มขึ้น 80 หน่วย\n<color=#ffffff>หมายเหตุ:</color>\nสามารถใช้"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "Flower of Paradise Lost",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/176148810/50ce09dfa5a91a33aa9cedfb15bcf2d1_7795706238144586197.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "/"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9151,
+        "name": "Aubade of Morningstar and Moon",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/12/ef58ecfcb8906792c3a9b07c92586934_3343384077195352394.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "/"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8521,
+        "name": "Silken Moon's Serenade",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/b8350998129a66e67c1a7691153da68d_6559589601591776539.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "/"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8520,
+        "name": "Night of the Sky's Unveiling",
+        "desc": "",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/25c4512875bad223765a5a32c82b09a4_7122872897984003318.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "/"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2074,
+        "name": "Instructor",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Instructor/flower_of_life_icon.png",
+        "displayStyle": "text",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "ทดแทนได้"
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/4ad0e93fa728ab4574f454d3dc8c9a1a_301287379802599841.jpg"
+      },
+      {
+        "key": "ภาพตัวละคร",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/ecbfebb4da976c938b965fc05df5d232_772787388476270486.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "คอสตูมดั้งเดิม - มุ่งมั่นไม่เสื่อมคลาย\nคอสตูมของ Illuga เขาสั่งตัดชุดยูนิฟอร์มนี้ขึ้นมาเพื่อใช้ในการทำงาน แม้จะเรียกว่า \"ชุดยูนิฟอร์มสำหรับทำงาน\" แต่เนื่องจาก Illuga มีงานมากเกินไปจนแทบไม่มีโอกาสได้เปลี่ยนเสื้อผ้า ดังนั้น ชุดนี้จึงนับได้ว่าเป็น \"ชุดประจำวัน\" ของ Illuga ไปแล้ว"
+          }
+        ]
+      },
+      {
+        "key": "อนิเมชันยามว่าง 1",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/354f8d26b4c04ff88cd2d661405ce9b6_1967403252683272585.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "คอสตูมดั้งเดิม - มุ่งมั่นไม่เสื่อมคลาย\nคอสตูมของ Illuga เขาสั่งตัดชุดยูนิฟอร์มนี้ขึ้นมาเพื่อใช้ในการทำงาน แม้จะเรียกว่า \"ชุดยูนิฟอร์มสำหรับทำงาน\" แต่เนื่องจาก Illuga มีงานมากเกินไปจนแทบไม่มีโอกาสได้เปลี่ยนเสื้อผ้า ดังนั้น ชุดนี้จึงนับได้ว่าเป็น \"ชุดประจำวัน\" ของ Illuga ไปแล้ว"
+          }
+        ]
+      },
+      {
+        "key": "อนิเมชันยามว่าง 2",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/af64b6761b019eba06e670503b9d572d_310761952708820034.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "คอสตูมดั้งเดิม - มุ่งมั่นไม่เสื่อมคลาย\nคอสตูมของ Illuga เขาสั่งตัดชุดยูนิฟอร์มนี้ขึ้นมาเพื่อใช้ในการทำงาน แม้จะเรียกว่า \"ชุดยูนิฟอร์มสำหรับทำงาน\" แต่เนื่องจาก Illuga มีงานมากเกินไปจนแทบไม่มีโอกาสได้เปลี่ยนเสื้อผ้า ดังนั้น ชุดนี้จึงนับได้ว่าเป็น \"ชุดประจำวัน\" ของ Illuga ไปแล้ว"
+          }
+        ]
+      },
+      {
+        "key": "กลุ่มดาว",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/08/144837601/3691d61ac61ffaeb260eefbe264bad83_8325683221076013735.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Oriolus"
+          }
+        ]
+      },
+      {
+        "key": "นามบัตร",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/08/144837601/f91f84bbe94ef8509e9576949d75f309_442440269961384736.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Illuga - วิหคนิทราทมิฬ\nนกไนติงเกลที่ยืนหยัดผ่านพ้นความมืดมิดของค่ำคืนมาได้ จะตอบแทนโลกยามทิวาด้วยความเร่าร้อน และจะใช้ความเกรี้ยวกราดเผาผลาญฝันร้ายให้มอดไหม้จนสิ้น"
+          }
+        ]
+      }
+    ],
     "ascension": [
       {
         "key": "Lv.1",
@@ -2315,766 +3075,6 @@
           {
             "name": "KR",
             "url": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/383f8a6d338a9318d9c616c61e444fd4_3093889537105953296.mp3"
-          }
-        ]
-      }
-    ],
-    "customize": [
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "รายละเอียดตัวละคร",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "การประกาศตัวละคร"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>11/12/25</color>\n\"Illuga รู้สึกขอบคุณกองอัศวินแห่ง Favonius มากที่ให้ความช่วยเหลือในการต่อสู้ แต่น่าเสียดายที่เขาออกไปทำภารกิจสืบสวนอีกแล้ว จึงได้แต่ฝากให้ฉันนำไวน์ขวดนี้มามอบให้คุณ เพื่อแสดงความขอบคุณ\"\n\"ฮ่า ๆ ๆ น้องชายคนนี้จะเกรงใจกันเกินไปแล้ว ทั้งที่ตัวเขาเองนั่นแหละที่ทุ่มเทมากที่สุดแท้ ๆ เฮ้อ... น่าเสียดายที่เขาไม่อยู่ที่นี่ ฉันก็เลยปฏิเสธไม่ได้... งั้นเอางี้มั้ย เปิดขวดดื่มกันที่นี่เลยละกัน ฉันจะเล่าให้นายฟังว่า Illuga น่ะ มีอนาคตไกลขนาดไหน...\"\n\"เฮอะ ดื่มเหล้าน่ะไม่มีปัญหาหรอก แต่อย่าถือโอกาสมาดึงตัวฉันไปละกัน\"\n- บทสนทนาระหว่างหัวหน้าประภาคาร Nikita และ Varka ก่อนที่ทั้งคู่จะเมามาย"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/11/144837601/3f768ef9c5d40c54b6f30c4f6083af3e_6108375500596687552.png",
-        "alignment": "left"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "แนะนำตัวละครและตัวอย่างสกิล: \"หัวใจเพลิงผลาญฝันร้าย\" - Illuga"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>26/01/26</color>\nสวัสดีนักเดินทาง! วันนี้เรานำข่าวกรองเกี่ยวกับ Illuga มาฝากทุกคนด้วยนะ\nในการผจญภัยก่อนหน้านี้ นักเดินทางอาจเคยได้ยินชื่อหนึ่งที่ Flins และ Varka เคยเอ่ยถึง นั่นคือ... Illuga เขาคือหัวหน้าหน่วยที่อายุน้อยที่สุดของกลุ่มผู้เฝ้าประภาคาร ในการต่อสู้เขาสามารถช่วยเพิ่มความเสียหายให้กับปฏิกิริยา \"ตกผลึกจันทรา\" ได้ มาดูรายละเอียดเพิ่มเติมกันเถอะ!\nกิจกรรมอธิษฐานช่วงที่ 2 จะเริ่มขึ้นในวันที่ 3 ก.พ. โดยโอกาสได้รับ Illuga จะเพิ่มขึ้นอย่างมาก!"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/11/144837601/7f4bcaa5d8c6b2e28e5b997c6a7ae6c3_5560245554935940678.png",
-        "alignment": "left"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "ตัวอย่างตัวละคร - \"Illuga: ปีกปักษาต้องแสงอรุณ\""
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>30/01/26</color>\nท้องฟ้าเหนือหน้าผา Kipumaki มักมืดสลัวอยู่เสมอ ทำให้ผู้คนนับไม่ถ้วนต้องหลงทางอยู่ในนั้น\nหากแม้แสงจันทร์ยังไม่อาจส่องไปถึง เช่นนั้นลองเหลียวมอง ประกายปีกของนกขมิ้นสีทองที่พลิ้วไหวอยู่ข้างกายนั่นสิ\n<color=#ff9999>YouTube:</color>\nภาษาจีน CV:"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=eWEjtb2dvDw"
-      },
-      {
-        "type": "RichText",
-        "text": "ภาษาอังกฤษ CV:"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=qoF5VjO0_iE&embeds_referring_euri=https%3A%2F%2Fwww.hoyolab.com%2F&source_ve_path=MjM4NTE"
-      },
-      {
-        "type": "RichText",
-        "text": "ภาษาญี่ปุ่น CV:"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=sCPfCRuInAc"
-      },
-      {
-        "type": "RichText",
-        "text": "ภาษาเกาหลี CV:"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=r8ltc8WJZ-0&pp=0gcJCZQKAYcqIYzv"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/11/144837601/434ae0ce433c41418e0df7395fa56996_4989884580257043676.png",
-        "alignment": "left"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "อิโมจิ",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "ภาพวาดของ Paimon 47"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>15/09/25</color>\nสวัสดีนักเดินทาง! แพ็กอิโมจิใหม่ล่าสุดของ \"Genshin Impact\" เปิดตัวแล้วที่ HoYoLAB!\nในภาพวาดของ Paimon ได้รวบรวมแพ็กอิโมจิแบบจิบิของตัวละครใน \"Genshin Impact\" ไว้มากมาย หวังว่าทุกคนจะชอบนะ ในอนาคต Paimon ก็จะทุ่มเทและพยายามเพื่อวาดผลงานที่ทุกคนชื่นชอบออกมาอีกนะ!"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/11/144837601/1a0a7ac6fdb0d06fafd2b3660e7af52b_1588668724517603720.png",
-        "alignment": "left"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/11/144837601/2283536e02d268bd23366321ccd1d89e_8647976094579929375.png",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/11/144837601/cfe703ae01302d92b680f53934bb1ab7_8766646674853279631.png",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/11/144837601/50f22c26fae195b4ffa0e1d2a2a43b71_6672401111277520753.png",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "การปรากฏตัวอื่น ๆ",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "ตัวอย่างเวอร์ชัน \"บทเพลงของดวงจันทร์สุญตา: ปิดฉาก\": \"นักเดินทางคนหนึ่ง ในคืนฤดูหนาว\""
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>02/01/26</color>\nแสงจันทร์อันซีดเซียวเอ๋ย เหตุใดเจ้าจึงแผ่ซ่านออกไปอย่างเงียบงันและไร้รูปร่าง?\nเจ้าผู้เป็นดั่งพวกนอกรีตผิดแผกแต่กำเนิด ไยจึงไม่เร้นกายภายใต้เงามืดอันขมุกขมัวอีกต่อไปเล่า?\nบนโถงทางเดินยาวที่ไม่มีผู้ใดรู้จัก และท่ามกลางการเดินทางอันอ้างว้าง มีเพียงบทเพลงไร้นามเท่านั้นที่อยู่เป็นเพื่อนเธอ:\n\"หลับเถิด หลับเถิด นกพิราบน้อยของข้า...\"\n\"...\"\n\"...ขอให้เจ้าได้หลับใหลในห้วงฝันพร้อมกับดวงจันทรา\"\n<color=#ff9999>YouTube:</color>\nภาษาจีน CV:"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=m3u9w-2Z-7w"
-      },
-      {
-        "type": "RichText",
-        "text": "ภาษาอังกฤษ CV:"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=_yuHIzPJGHA&embeds_referring_euri=https%3A%2F%2Fwww.hoyolab.com%2F&source_ve_path=MjM4NTE"
-      },
-      {
-        "type": "RichText",
-        "text": "ภาษาญี่ปุ่น CV:"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=wTL5hRtmWjM"
-      },
-      {
-        "type": "RichText",
-        "text": "ภาษาเกาหลี CV:"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=N2QjOH8ek5c"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/11/144837601/79f650e099c1b1b53b230f9249cdce04_3238561485104181680.png",
-        "alignment": "left"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "แนะนำตัวละคร",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "สมาชิกหน่วยสืบสวน \"นกขมิ้นแห่งราตรีฝันร้าย\" และหัวหน้าหน่วย ที่อายุน้อยที่สุดของผู้เฝ้าประภาคาร",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "ความสัมพันธ์ของตัวละคร",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 8398,
-        "name": "Flins",
-        "desc": "ทหารประภาคารแห่ง Nod-Krai",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/29/144837601/9082f59240fbd35176cd7624dbef0eb1_5563075897655913413.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "โดยสังเขป"
-      },
-      {
-        "type": "RichText",
-        "text": "Illuga กับ Flins เป็นเพื่อนร่วมงานกัน"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เสียงพากย์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>Flins:</color>\nสมาชิก \"ผู้เฝ้าประภาคาร\" สามารถเลือกได้ว่าจะอยู่หรือจะไป หลายคนพอเข้ามาแล้วก็จากไป มีแต่คนที่มุ่งมั่นเท่านั้นถึงจะยืนหยัดอยู่ต่อ ซึ่ง Illuga ก็คือคนคนนั้น ถ้าเทียบกับ \"ความชาญฉลาด\" หรือ \"ความเจ้าเล่ห์\" ที่ผู้คนทั่วไปชอบกัน ฉันคิดว่า \"ความมุ่งมั่น\" นั้นมีค่ามากกว่า\n<color=#ffd780>Illuga:</color>\nตอนที่เพิ่งรู้จักคุณ Flins ใหม่ ๆ ฉันคิดว่าที่เขาเลือกที่จะแยกตัว มาอยู่อย่างสันโดษ ก็เพราะเข้าสังคมไม่เก่ง หรือไม่ก็มีนิสัยแปลก ๆ แต่ไม่นานหลังจากนั้น ฉันก็พบว่าเรื่องมันตรงกันข้ามกับที่คิดไว้เลย... แต่ทุกครั้งที่เราคุยกัน เขามักจะทิ้งปมที่ชวนให้ติดตามต่อไว้ตอนท้ายเรื่องเสมอ ฉันเลยคิดว่า หรือว่านี่อาจเป็นเพราะ... ที่จริงแล้วเขายินดีให้ฉันไปเยี่ยมเขาบ่อย ๆ รึเปล่า?\nเธอจะบอกว่า คุณ Flins มีความลับมากมายซ่อนอยู่งั้นเหรอ? แน่นอนว่านี่ไม่ใช่เรื่องแปลกอะไรในหมู่ทหารประภาคารหรอก เพื่อนร่วมงานของฉันต่างมีภูมิหลังแตกต่างกันไป ใครบ้างที่ไม่มีความลับที่ไม่อยากบอกใครน่ะ? แม้แต่พ่อก็แทบไม่เคยเล่าเรื่องราวในวัยหนุ่มให้ฉันฟังเลย ส่วนคุณ Flins น่ะ... ช่วงนี้มีเรื่องราวเกิดขึ้นตั้งมากมาย ยังไงเราก็เป็นเพื่อนกัน ฉันเองก็พอจะเดาความลับของเขาได้อยู่นิดหน่อย ฉันเคยลองถามเขาดู เขาไม่ได้ปฏิเสธ แต่ก็ไม่ได้ยอมรับ บางทีนั่นอาจจะเป็นท่าทีอย่างหนึ่งเหมือนกัน"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 8396,
-        "name": "Lauma",
-        "desc": "นักบุญหญิงผู้ได้รับพร จากแสงจันทร์และผืนป่า ความหวังหนึ่งเดียว ที่ถือกำเนิดขึ้นในหมู่ \"ลูกหลานจันทราน้ำค้างแข็ง\"",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/08/b06e9ff48d57de4856f1a05b1199aae1_8565150401481594895.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "โดยสังเขป"
-      },
-      {
-        "type": "RichText",
-        "text": "Illuga มองว่า Lauma เป็นทูตจันทราขับขานที่อ่อนโยนและมีน้ำใจ"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เสียงพากย์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>Illuga:</color>\nนับตั้งแต่ยุคของผู้หล่อคบไฟเริ่มต้นขึ้น พวกเราก็รักษามิตรภาพตามประเพณีกับลูกหลานจันทราน้ำค้างแข็งมาโดยตลอด ทูตจันทราขับขานรุ่นนี้เป็นหญิงสาวที่อ่อนโยนและมีน้ำใจ ทุกครั้งที่ได้พบกันฉันจะได้เรียนรู้สิ่งใหม่ ๆ จากเธอมากมาย สมัยนี้การเป็นทูตจันทราขับขานก็คงไม่ได้ง่ายไปกว่าการเป็นผู้เฝ้าประภาคารเลย การที่เธอยังรักษาทัศนคติเช่นนี้ไว้ได้ คงจะต้องแบกรับอะไรไว้มากมายเลยสินะ"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 9342,
-        "name": "Varka",
-        "desc": "แกรนด์มาสเตอร์ของกองอัศวินแห่ง Favonius, อัศวินแห่ง Boreas ผู้พิทักษ์ Mondstadt",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/02/21/553feb81c3bbc5e3bc69a765e157c33f_8250978205515428490.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "โดยสังเขป"
-      },
-      {
-        "type": "RichText",
-        "text": "Illuga ชื่นชมความสามารถในการรบของ Varka มาก"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เสียงพากย์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>Illuga:</color>\nคุณ Varka เป็นนักรบที่เก่งมาก พวกเราเคยต่อสู้เคียงบ่าเคียงไหล่กันเพื่อต้านการล่าอันบ้าคลั่ง ได้ยินมาว่ากองอัศวินแห่ง Favonius ก็เหมือนกับพวกเราผู้เฝ้าประภาคาร เป็นองค์กรที่ก่อตั้งขึ้นเพื่อปกป้องบ้านเกิด บางทีสักวันหนึ่ง เมื่อการล่าอันบ้าคลั่งใน Nod-Krai ถูกกำจัดจนหมดสิ้น พวกเราอาจจะได้เดินทางไปยังแดนไกล และต่อสู้เพื่อผู้คนที่กำลังทุกข์ทรมานมากขึ้นนะ"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 8894,
-        "name": "Nefer",
-        "desc": "เจ้าของ \"เคหาสน์แห่งความลับ\" ผู้เก่งกาจและกว้างขวาง",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/10/21/7557acebcb72b4d9912bcb0e6c92306a_3655566527985254987.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "โดยสังเขป"
-      },
-      {
-        "type": "RichText",
-        "text": "บางที Illuga ก็รู้สึกปวดหัวที่ Nefer ชอบแกล้งเขาอยู่เรื่อย"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เสียงพากย์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>Illuga:</color>\nต้องขอบคุณเคหาสน์แห่งความลับที่ช่วยดูแล ทำให้การปฏิบัติภารกิจของพวกเราในเมือง Nasha สะดวกสบายขึ้นมาก ไม่เหมือนกับเมื่อก่อน ได้ยินว่าก่อนที่คุณ Nefer จะมาที่ Nod-Krai ทหารประภาคารมักจะปะทะกับ พวกแก๊งที่ไม่เคารพกฎอยู่บ่อย ๆ จนพ่อเฒ่าถึงกับปวดหัวไปตาม ๆ กัน... ตอนนี้ดีขึ้นมากแล้ว แต่ว่าคุณ Nefer ก็ชอบแกล้งฉันเหมือนกับคุณ Flins ทำเอาฉันปวดหัวด้วยเหมือนกัน"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 8397,
-        "name": "Aino",
-        "desc": "ผู้ปกครองของเวิร์กชอป Krumkake กรุ๊งกริ้ง",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/10/53372413/8c3e0addc3b29c9d4a41c0a6629367ba_4860562186676474168.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "โดยสังเขป"
-      },
-      {
-        "type": "RichText",
-        "text": "ดูเหมือนความเข้าใจในการซ่อมแซมสิ่งของของ Illuga และ Aino จะแตกต่างกันนิดหน่อย..."
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เสียงพากย์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>Illuga:</color>\nเวลาจะซ่อมกลไกที่ซับซ้อน พวกเราผู้เฝ้าประภาคารมักจะขอให้คุณ Aino มาช่วยซ่อมให้ แต่ดูเหมือนเธอจะอยากสอนพวกเราจริง ๆ... มีอยู่ครั้งหนึ่ง หลังจากที่เธอเห็นฉันซ่อมกลไกด้วยตัวเอง เธอก็โวยวายจะลากฉันไปเรียนให้ได้... หืม? ถามว่าฉันซ่อมยังไงน่ะเหรอ? แน่นอนว่าฉันก็เรียนรู้มาจากพ่อน่ะสิ ถ้ากลไกไม่ทำงาน แค่ทุบแรง ๆ สองทีก็หายแล้ว ใครจะไปรู้ว่าเธอจะโกรธขนาดนั้น..."
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Linnea</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "โดยสังเขป"
-      },
-      {
-        "type": "RichText",
-        "text": "Illuga คิดว่า Linnea มีคาแรกเตอร์แตกต่างจากที่เขาคิดไว้ตอนแรก"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เสียงพากย์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>Illuga:</color>\nภูตสาวอย่างคุณ Linnea นั้นหาได้ยากมาก แม้แต่ใน Nod-Krai ที่มีผู้คนสารพัดรูปแบบอยู่ก็ตาม ก่อนที่จะได้รู้จักเธอ ฉันคิดว่าเธอจะเป็นคนสุขุมกว่านี้ แต่ไม่นึกว่าครั้งแรกที่ได้พบกัน พอเธอเห็น Aedon เธอก็พุ่งเข้าหาด้วยดวงตาเป็นประกายทันที... Aedon เป็นนกสื่อสารที่ไม่เคยถอย แม้เผชิญหน้ากับการล่าอันบ้าคลั่ง แต่ตอนนี้ทุกครั้งที่ได้ยินเสียงของเธอ มันจะรีบหลบเข้าไปในตะเกียงทันที และไม่ยอมออกมาเลย..."
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 9121,
-        "name": "Columbina",
-        "desc": "เทพธิดาแห่งจันทรา ที่ถือกำเนิดขึ้นใน Nod-Krai คือดวงจันทร์สุญตา ที่หวนกลับคืนสู่บ้านเกิด",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/80fa97679c8d1828fdd96c6aa9638632_4327573591148809640.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "โดยสังเขป"
-      },
-      {
-        "type": "RichText",
-        "text": "Illuga คิดว่าแทนที่จะรอแต่พึ่งพาเทพจันทรา การมีพลังปกป้องคนรอบข้างได้นั้นสบายใจกว่า"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เสียงพากย์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>Illuga:</color>\nNod-Krai เป็นสวรรค์ของ \"มนุษย์\" เส้นทางนี้ปูลาดด้วยเลือดและกระดูกของทหารประภาคารนับร้อยนับพันตลอดหลายร้อยปีที่ผ่านมา แม้ว่าวันนี้จะมีเทพองค์ใหม่มาเยือน แต่วิถีการดำรงชีวิตของ Nod-Krai ก็คงไม่เปลี่ยนแปลงไปหรอก ไม่ใช่ว่าไม่เชื่อใจคุณ \"เทพจันทรา\" คนนั้นหรอกนะ... แค่ฉันคิดว่า แทนที่จะรอให้คนอื่นมาช่วย การมีพลังที่สามารถปกป้องคนรอบข้างได้นั้นมันสบายใจกว่า"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "ภาพรวมพรสวรรค์"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd680>สกิลธาตุ</color> เรียกนกสื่อสาร Aedon ออกมาต่อสู้\nกด: Aedon จะพุ่งเข้าหาศัตรูที่อยู่ด้านหน้า สร้างความเสียหายหินแก่ศัตรูที่สัมผัสโดน\nกดค้าง: เล็งเป้าหมาย แล้วให้ Aedon พุ่งเข้าหาศัตรูที่เล็งไว้ สร้างความเสียหายหิน\n<color=#ffd680>ท่าไม้ตาย</color> Shadowless Reflection สร้าง <color=#ffe699>ความเสียหายหิน</color> วงกว้าง จากนั้นได้รับเอฟเฟกต์ Haunted Night’s Oriole-Song\nระหว่างเอฟเฟกต์นี้การโจมตีที่สร้าง <color=#ffe699>ความเสียหายหิน</color> ของตัวละครในทีมจะสร้างความเสียหายเพิ่มขึ้น\nความเสียหายที่เพิ่มขึ้นอิงตาม <color=#ffd680>ความชำนาญธาตุ</color> ของ Illuga และจะเพิ่มมากขึ้นหากเป็นปฏิกิริยาตกผลึก"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "อาวุธแนะนำ"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "อาวุธ 3-ดาว"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ไม่มีอาวุธ 3-ดาว ชิ้นใดเหมาะสมกับ Illuga</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "อาวุธ 4-ดาว"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2021,
-        "name": "Favonius Lance",
-        "desc": "หอกมาตรฐานที่ใช้งานโดย เหล่าอัศวินแห่ง Favonius ด้ามหอกตรงดิ่ง ปลายหอกแหลมคม และพลิ้วไหวดั่งสายลม",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/西风长枪.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Favonius Lance</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>การฟื้นฟูพลังงาน</color>\nสกิลติดตัว: เมื่อโจมตี <color=#ffd780>คริติคอล</color> จะมีโอกาส 100% ที่จะสร้าง <color=#ffd780>อณูธาตุ</color> ซึ่งใช้ <color=#ffd780>ฟื้นฟูพลังงานธาตุ</color> ได้ 6 หน่วย โดยเอฟเฟกต์นี้จะใช้ได้หนึ่งครั้งในทุก 6 วินาที\n<color=#ffffff>หมายเหตุ:</color>\nช่วย <color=#ffd780>ฟื้นฟูพลังงาน</color> และทำให้ Illuga สามารถใช้ท่าไม้ตายมาบัฟเพื่อนได้อย่างต่อเนื่องยิ่งขึ้น\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1940,
-        "name": "Dragon's Bane",
-        "desc": "หอกที่ตกแต่งด้วยมังกรทองพันอยู่ที่ด้าม มันทั้งเบาและคม อาวุธนี้ใช้สังหารมังกรได้อย่างดี",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/匣里灭辰.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Dragon's Bane</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>ความชำนาญธาตุ</color>\nสกิลติดตัว: เพิ่มความเสียหายแก่ศัตรูที่ได้รับผลกระทบของ <color=#80c0ff>ธาตุน้ำ</color> และ <color=#ff9999>ไฟ</color> ขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nค่าชำนาญธาตุทำให้ความสามารถในการบัฟใน <color=#ffd680>ท่าไม้ตาย</color> ของ Illuga เพิ่มขึ้น\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1949,
-        "name": "Kitain Cross Spear",
-        "desc": "หอกที่ครั้งหนึ่งนักรบผู้มีชื่อเสียงเคยใช้คุ้มครอง \"Tatarigami\" บนเกาะ Yashiori",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/喜多院十文字.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Kitain Cross Spear</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>ความชำนาญธาตุ</color>\nสกิลติดตัว: เพิ่มค่า <color=#ffd780>ความเสียหายของสกิลธาตุ</color> และฟื้นฟูค่า <color=#ffd780>พลังงาน</color> แม้ตัวละครจะไม่ได้อยู่บนสนาม\n<color=#ffffff>หมายเหตุ:</color>\nค่าชำนาญธาตุทำให้ความสามารถในการบัฟใน <color=#ffd680>ท่าไม้ตาย</color> ของ Illuga เพิ่มขึ้น\nช่วย <color=#ffd780>ฟื้นฟูพลังงาน</color> และทำให้ Illuga สามารถใช้ท่าไม้ตายมาบัฟเพื่อนได้อย่างต่อเนื่องยิ่งขึ้น\n<color=#ffffff>หาได้จาก:</color>\nสามารถหลอมได้ที่ช่างตีเหล็ก"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "อาวุธ 5-ดาว"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2014,
-        "name": "Engulfing Lightning",
-        "desc": "ง้าวนางินาตะที่ใช้ในการ \"ตัดหญ้า\" กองทัพที่เผชิญหน้ากับสิ่งนี้ ก็คงจะล้มลงราวกับต้นหญ้าเหล่านั้นล่ะนะ...",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/薙草之稻光.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Engulfing Lightning</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>การฟื้นฟูพลังงาน</color>\nสกิลติดตัว: <color=#ffd780>พลังโจมตี</color> เพิ่มขึ้น โดยที่ระดับการเพิ่มจะเท่ากับ 56% ของส่วนที่เกินมาจาก 100% ของประสิทธิภาพ <color=#ffd780>การฟื้นฟูพลังงาน</color> โดยจะสามารถเพิ่มด้วยวิธีนี้ได้มากสุดถึง 120% และภายในเวลา 12 วินาที หลังจากปล่อย <color=#ffd780>ท่าไม้ตาย</color> ประสิทธิภาพ <color=#ffd780>การฟื้นฟูพลังงาน</color> จะเพิ่มขึ้น\n<color=#ffffff>หมายเหตุ:</color>\nช่วย <color=#ffd780>ฟื้นฟูพลังงาน</color> และทำให้ Illuga สามารถใช้ท่าไม้ตายมาบัฟเพื่อนได้อย่างต่อเนื่องยิ่งขึ้น\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 1957,
-        "name": "Skyward Spine",
-        "desc": "หอกที่เป็นสัญลักษณ์ของ ความตั้งใจของ Dvalin ด้ามหอกที่ตรงดิ่งชี้ไปยังฟากฟ้า มีพลังของฟ้าและพลังแห่งลม ซ่อนอยู่ภายใน",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/weapon/天空之脊.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Skyward Spine</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>ความสามารถ:</color>\nค่าสถานะรอง: <color=#ffd780>การฟื้นฟูพลังงาน</color>\nสกิลติดตัว: <color=#ffd780>อัตราคริ</color> เพิ่มขึ้นและเพิ่มความเร็วการ <color=#ffd780>โจมตีปกติ</color> เมื่อทำการ <color=#ffd780>โจมตีปกติ</color> หรือ <color=#ffd780>ชาร์จโจมตี</color> ถูกศัตรู มีโอกาสสร้าง ใบมีดสุญญากาศและสร้าง <color=#ffd780>ความเสียหาย</color> เพิ่มเติมในพื้นที่วงแคบของ <color=#ffd780>พลังโจมตี</color> ซึ่งเอฟเฟกต์นี้จะเกิดขึ้น หนึ่งครั้งในทุก 2 วินาที\n<color=#ffffff>หมายเหตุ:</color>\nช่วย <color=#ffd780>ฟื้นฟูพลังงาน</color> และทำให้ Illuga สามารถใช้ท่าไม้ตายมาบัฟเพื่อนได้อย่างต่อเนื่องยิ่งขึ้น\n<color=#ffffff>หาได้จาก:</color>\nการอธิษฐาน"
-      },
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "อาร์ติแฟกต์แนะนำ"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "ค่าสถานะอาร์ติแฟกต์"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/1387f1512524772db99ae30b6303f939_5072609172935942900.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>การฟื้นฟูพลังงาน / ความชำนาญธาตุ</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/56451470fe75f710b812ac28e226273b_5774236690802856497.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>ความชำนาญธาตุ</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/upload-static.hoyoverse.com/hoyolab-wiki/2022/11/20/35428890/8bc07934c9290b83751c7fa183a43ab7_32021027934025390.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>ความชำนาญธาตุ</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เซ็ต 4 อัน"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 8521,
-        "name": "Silken Moon's Serenade",
-        "desc": "",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/b8350998129a66e67c1a7691153da68d_6559589601591776539.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "Silken Moon's Serenade",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\nเซ็ต 2 อัน: เพิ่มประสิทธิภาพ <color=#ffd780>การฟื้นฟูพลังงาน</color> ขึ้น 20%\nเซ็ต 4 อัน: เมื่อสร้างความเสียหายธาตุ จะได้รับเอฟเฟกต์ Gleaming Moon: Devotion เป็นเวลา 8 วินาที: เมื่อ <color=#ffd780>ลัคนาจันทร์</color> ของทีมเป็น <color=#ffd780>แย้มแสง</color> / <color=#ffd780>จรัสแสง</color> <color=#ffd780>ความชำนาญธาตุ</color> ของตัวละครทั้งหมดในทีมจะเพิ่มขึ้น 60/120 หน่วย โดยสามารถทำให้เกิดเอฟเฟกต์นี้ได้ แม้ผู้สวมใส่จะอยู่ในทีม แต่ไม่ได้เข้าร่วมการต่อสู้ ทั้งนี้ ความเสียหายของปฏิกิริยาประกายจันทร์ที่ตัวละครทั้งหมดในทีมสร้างจะเพิ่มขึ้น 10% ตามเอฟเฟกต์ Gleaming Moon แต่ละชนิดที่ตัวละครในทีมมี โดยเอฟเฟกต์ที่เกิดจาก Gleaming Moon จะไม่สามารถซ้อนทับกันได้\n<color=#ffffff>หมายเหตุ:</color>\nให้ค่า <color=#ffd780>ความชำนาญธาตุ</color> ซึ่งช่วยเพิ่มความเสียหายให้แก่ท่าไม้ตายของ Illuga และให้ค่า <color=#ffd780>การฟื้นฟูพลังงาน</color> แก่ Illuga เพื่อให้สามารถใช้ <color=#ffd780>ท่าไม้ตาย</color> ได้ง่ายขึ้น"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "เซ็ต 2 อัน / เซ็ต 2 อัน"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2081,
-        "name": "Wanderer's Troupe",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Wanderer's Troupe/flower_of_life_icon.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2673,
-        "name": "Gilded Dreams",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/17/176148810/ae8a2c6f24df66e1bd7cc2dbd83d330d_1785006360227521549.png",
-        "displayStyle": "card",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Wanderer’s Troupe + Gilded Dreams</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>โบนัสเซ็ต:</color>\n[Wanderer’s Troupe] เซ็ต 2 อัน: <color=#ffd780>ความชำนาญธาตุ</color> เพิ่มขึ้น 80 หน่วย\n[Gilded Dreams] เซ็ต 2 อัน: <color=#ffd780>ความชำนาญธาตุ</color> เพิ่มขึ้น 80 หน่วย\n<color=#ffffff>หมายเหตุ:</color>\nสามารถใช้"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 3321,
-        "name": "Flower of Paradise Lost",
-        "desc": "",
-        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/06/176148810/50ce09dfa5a91a33aa9cedfb15bcf2d1_7795706238144586197.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "/"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 9151,
-        "name": "Aubade of Morningstar and Moon",
-        "desc": "",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/12/ef58ecfcb8906792c3a9b07c92586934_3343384077195352394.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "/"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 8521,
-        "name": "Silken Moon's Serenade",
-        "desc": "",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/b8350998129a66e67c1a7691153da68d_6559589601591776539.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "/"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 8520,
-        "name": "Night of the Sky's Unveiling",
-        "desc": "",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/25c4512875bad223765a5a32c82b09a4_7122872897984003318.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "/"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 2074,
-        "name": "Instructor",
-        "desc": "",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Instructor/flower_of_life_icon.png",
-        "displayStyle": "text",
-        "menuId": 5
-      },
-      {
-        "type": "RichText",
-        "text": "ทดแทนได้"
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/28/7bf887b0541a1749291a4f03ec0a30c0_3557753111902903188.png",
-        "name": "Vigilant Sentinel",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "หลังจาก Illuga ทำให้เกิด <color=#ffe699>ปฏิกิริยาที่เกี่ยวข้องกับธาตุหิน</color> ในสนาม จะฟื้นฟูพลังงานธาตุให้ Illuga 12 หน่วย โดยเอฟเฟกต์นี้เกิดขึ้นได้มากสุดหนึ่งครั้ง ในทุก 15 วินาที"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/28/e06f3ded0f19aa43af72f9298a734bd4_253912610905768595.png",
-        "name": "Elk With Fanged Antlers",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "ในช่วงเวลาต่อเนื่องของเอฟเฟกต์ Haunted Night's Oriole-Song ในท่าไม้ตาย <color=#ffd780>Shadowless Reflection</color> ทุกครั้งที่ใช้ <color=#ffd780>Nightingale's Song</color> 7 ชั้น Illuga จะเรียก Aedon ออกมา สร้าง <color=#ffe699>ความเสียหายหิน</color> แก่ศัตรูหนึ่งตัวที่อยู่รอบข้าง 1 ครั้ง โดยค่าความเสียหายเท่ากับ 400% ของความชำนาญธาตุ และ 200% ของพลังป้องกันของ Illuga โดยความเสียหายนี้จะถูกมองว่าเป็นความเสียหายจากท่าไม้ตาย"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/28/5fb1cede9a496d5681f0f57f4c3d2712_7878545680385464697.png",
-        "name": "Earthshaking Maw",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "เพิ่มเลเวลสกิลของท่าไม้ตาย <color=#ffd780>Shadowless Reflection</color> ขึ้น 3 ระดับ\nเพิ่มได้สูงสุดถึงระดับ 15"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/28/8545e9ac7df96a6295e55d968decc493_9103875203104549536.png",
-        "name": "Solarhunting Wolf",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "ในช่วงเวลาต่อเนื่องของเอฟเฟกต์ Haunted Night's Oriole-Song ของท่าไม้ตาย <color=#ffd780>Shadowless Reflection</color> พลังป้องกันของตัวละครในทีมที่เข้าร่วมการต่อสู้ในขณะนั้น ที่อยู่ใกล้เคียงจะเพิ่มขึ้น 200 หน่วย"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/28/b3079d047ac1708a7658dede91d13483_3598144614793564771.png",
-        "name": "Hurricane Steed",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "เพิ่มเลเวลสกิลของสกิลธาตุ <color=#ffd780>Dawnbearing Songbird</color> ขึ้น 3 ระดับ\nเพิ่มได้สูงสุดถึงระดับ 15"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/28/bb0323798e18983ff697514089737c14_8652039880846315933.png",
-        "name": "Nightmare Orioles",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "เอฟเฟกต์ Lightkeeper's Oath ในพรสวรรค์เพิ่มเติม <color=#ffd780>Torchforger's Covenant</color> ได้รับการเสริมพลัง: <color=#ffe699>ความเสียหายหิน</color> ที่สร้างแก่ศัตรูมีอัตราคริเพิ่มขึ้น 10%, ความแรงคริเพิ่มขึ้น 30%\n<color=#ffd780>ลัคนาจันทร์ - จรัสแสง</color>\nความชำนาญธาตุของตัวละครที่อยู่ภายใต้ผลของเอฟเฟกต์ Lightkeeper's Oath เพิ่มขึ้น 80 หน่วย\nต้องปลดล็อกพรสวรรค์เพิ่มเติม <color=#ffd780>Torchforger's Covenant</color> ก่อน"
-          }
-        ]
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/4ad0e93fa728ab4574f454d3dc8c9a1a_301287379802599841.jpg"
-      },
-      {
-        "key": "ภาพตัวละคร",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/ecbfebb4da976c938b965fc05df5d232_772787388476270486.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "คอสตูมดั้งเดิม - มุ่งมั่นไม่เสื่อมคลาย\nคอสตูมของ Illuga เขาสั่งตัดชุดยูนิฟอร์มนี้ขึ้นมาเพื่อใช้ในการทำงาน แม้จะเรียกว่า \"ชุดยูนิฟอร์มสำหรับทำงาน\" แต่เนื่องจาก Illuga มีงานมากเกินไปจนแทบไม่มีโอกาสได้เปลี่ยนเสื้อผ้า ดังนั้น ชุดนี้จึงนับได้ว่าเป็น \"ชุดประจำวัน\" ของ Illuga ไปแล้ว"
-          }
-        ]
-      },
-      {
-        "key": "อนิเมชันยามว่าง 1",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/354f8d26b4c04ff88cd2d661405ce9b6_1967403252683272585.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "คอสตูมดั้งเดิม - มุ่งมั่นไม่เสื่อมคลาย\nคอสตูมของ Illuga เขาสั่งตัดชุดยูนิฟอร์มนี้ขึ้นมาเพื่อใช้ในการทำงาน แม้จะเรียกว่า \"ชุดยูนิฟอร์มสำหรับทำงาน\" แต่เนื่องจาก Illuga มีงานมากเกินไปจนแทบไม่มีโอกาสได้เปลี่ยนเสื้อผ้า ดังนั้น ชุดนี้จึงนับได้ว่าเป็น \"ชุดประจำวัน\" ของ Illuga ไปแล้ว"
-          }
-        ]
-      },
-      {
-        "key": "อนิเมชันยามว่าง 2",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/af64b6761b019eba06e670503b9d572d_310761952708820034.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "คอสตูมดั้งเดิม - มุ่งมั่นไม่เสื่อมคลาย\nคอสตูมของ Illuga เขาสั่งตัดชุดยูนิฟอร์มนี้ขึ้นมาเพื่อใช้ในการทำงาน แม้จะเรียกว่า \"ชุดยูนิฟอร์มสำหรับทำงาน\" แต่เนื่องจาก Illuga มีงานมากเกินไปจนแทบไม่มีโอกาสได้เปลี่ยนเสื้อผ้า ดังนั้น ชุดนี้จึงนับได้ว่าเป็น \"ชุดประจำวัน\" ของ Illuga ไปแล้ว"
-          }
-        ]
-      },
-      {
-        "key": "กลุ่มดาว",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/08/144837601/3691d61ac61ffaeb260eefbe264bad83_8325683221076013735.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Oriolus"
-          }
-        ]
-      },
-      {
-        "key": "นามบัตร",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/02/08/144837601/f91f84bbe94ef8509e9576949d75f309_442440269961384736.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Illuga - วิหคนิทราทมิฬ\nนกไนติงเกลที่ยืนหยัดผ่านพ้นความมืดมิดของค่ำคืนมาได้ จะตอบแทนโลกยามทิวาด้วยความเร่าร้อน และจะใช้ความเกรี้ยวกราดเผาผลาญฝันร้ายให้มอดไหม้จนสิ้น"
           }
         ]
       }

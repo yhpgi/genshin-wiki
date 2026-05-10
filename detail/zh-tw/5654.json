@@ -5,41 +5,8 @@
   "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/06/10/142453215/48a42573a047430dc750c3170811b465_6632433031499596822.png",
   "menuId": 14,
   "menuName": "教學",
-  "version": 1737868601,
+  "version": 1778404053,
   "components": {
-    "baseInfo": [
-      {
-        "key": "名稱",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "傷害計算公式"
-          }
-        ]
-      },
-      {
-        "key": "類型",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "內置計算型系統"
-          }
-        ]
-      },
-      {
-        "key": "相關詞條",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 5206,
-            "name": "元素反應",
-            "desc": "<p>元素反應是原神戰鬥系統的核心。理解和掌握這些互動可以極大地提高玩家在戰鬥中的熟練度。</p><p>觸發元素反應時需要考慮多個因素，例如元素附著、後手元素、元素衰減等。元素計量理論和內建冷卻時間將在幫助玩家理解元素反應背後的複雜性方面發揮重要作用。</p>",
-            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/17/157749474/1ef525b101a31611b9fe2cc1b0a59aa8_5091762420924568630.png"
-          }
-        ],
-        "isMaterial": true
-      }
-    ],
     "customize": [
       {
         "type": "RichText",
@@ -168,6 +135,20 @@
         "alignment": "center"
       },
       {
+        "type": "CustomEntry",
+        "epId": 7627,
+        "name": "伊法",
+        "desc": "來自花羽會的獸醫，由衷熱愛著與人、動物，以及其他生靈為伴的生活。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/30/ce693d1e36aef5936b2d2db006605fc4_9036718103340803450.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「場中醫者視野」</color>\n伊法處於夜魂加持狀態下時，將基於隊伍中所有角色目前夜魂值的總和，每1點夜魂值都將使伊法獲得1點 <color=#ffd780>「救援要義」</color> 。救援要義可以提升隊伍中附近的角色觸發的擴散反應與感電反應造成的傷害。上限為150點。基於伊法持有的救援要義, 每1點救援要義會使隊伍中附近的角色觸發的擴散反應與感電反應造成的傷害提升1.5 %,月感電反應造成的傷害提升0.2%。救援要義將在伊法的夜魂加持結束時被移除。\n<color=#ffffff>命之座 第2層「祈禱彈道的助靈」</color>\n伊法處於夜魂加持狀態下時，基於隊伍中所有角色目前夜魂值的總和超過60點的部分，每1點夜魂值都將使伊法額外獲得4點 <color=#ffd780>「救援要義」</color> 。\n此外，伊法持有「救援要義」的上限提升50點。",
+        "alignment": "center"
+      },
+      {
         "type": "Heading",
         "level": 3,
         "text": "聖遺物",
@@ -227,6 +208,738 @@
       {
         "type": "RichText",
         "text": "<color=#ffffff>4件套裝</color>\n擴散反應造成的傷害提升60%。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "概要",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "月感電、月結晶與月綻放均為月曜反應。\n月曜反應無視敵人防禦，但月曜反應傷害會受到 <color=#ffffff>敵人抗性</color> 影響。與早前的元素反應不一樣，月曜反應可以觸發暴擊。\n因此， <color=#ffffff>角色的等級</color> 、 <color=#ffffff>暴擊率</color> 與 <color=#ffffff>元素精通</color> 會影響最終的月曜反應傷害。\n（例：若觸法月綻放反應，角色的等級、暴擊率、元素精通與敵人的草元素抗性會納入傷害計算方式中。）\n每一個月曜反應都有獨立的傷害計算方式。"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "月曜反應：月感電",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffacff>雷元素</color> 觸及 <color=#80bfff>水元素</color> 時，若滿足特定條件，會引發特殊的月感電反應，形成 <color=#ffffff>雷暴雲</color> ，持續對周圍同時附著 <color=#ffacff>雷元素</color> 與 <color=#80bfff>水元素</color> 的目標進行 <color=#ffffff>雷擊</color> ，造成 <color=#ffacff>雷元素傷害</color> 。該傷害可以觸發暴擊。\n月感電傷害是取決於所有在反應中施加元素的角色，但每個角色賦予的權重不一致。參與月感電反應的角色所造成的月感電傷害個別計算出來後，最高傷害的數值會優先納入最終傷害的計算中，再加上第二高傷害的二分之一、第三高傷害的十二分之一與第四高傷害的十二分之一。造成雷暴雲傷害的角色取決於該角色能否在5秒內對敵人施加元素（ <color=#ffacff>雷元素</color> 或 <color=#80bfff>水元素</color> ）。"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>雷暴雲最終造成月感電傷害</color>\n<color=#ffffffd9>= 最高傷害 + (1/2 × 第二高傷害) + (1/12 × 第三高傷害) + (1/12 × 第四高傷害)</color>\n<color=#ffffffd9>角色造成月感電傷害</color>\n<color=#ffffffd9>= 180% × 角色等級倍率 × (1 + 基礎加成百分比)</color>\n<color=#ffffffd9>× (1 + 元素精通加成 + 月感電加成百分比)</color>\n<color=#ffffffd9>× 敵人雷元素抗性 × [100% + (暴擊傷害)]</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "除了雷暴雲造成的傷害外，也存在直接造成月感電傷害。\n直接造成月感電傷害會有更高的元素反應倍率，且由角色特定的特性觸發，計算方式中的角色等級倍率會更換成角色預先定義的特性。\n（例：伊涅芙的固有天賦「頻率超限回路」：特性為伊涅芙攻擊力65%）"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>直接造成月感電傷害</color>\n<color=#ffffffd9>= 300% × 特性 × (1 + 基礎加成百分比)</color>\n<color=#ffffffd9>× (1 + 元素精通加成 + 月感電加成百分比)</color>\n<color=#ffffffd9>× 敵人雷元素抗性 × [100% + (暴擊傷害)]</color>\n<color=#ffffffd9>直接造成月感電傷害的特性</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7852,
+        "name": "伊涅芙",
+        "desc": "集成了各國機關零件的全能型機器人，胸口處的秘源核心已歷經彌久歲月。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/07/28/7c221918444852e9a3c2ad609ccacea2_8687518447126752117.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固定天賦「頻率超限回路」</color>\n若 <color=#ffd780>「薇爾琪塔」</color> 附近存在月感電反應產生的雷暴雲，薇爾琪塔進行放電攻擊時，將額外進行一次攻擊，造成相當於伊涅芙攻擊力65%的 <color=#ffacff>雷元素範圍傷害</color> ，該傷害視為月感電反應造成的傷害。\n<color=#ffffff>命之座 第2層「輔助清理模組」</color>\n元素爆發 <color=#ffd780>至高律令·全域掃滅</color> 命中敵人後，將為其中一名敵人施加「懲戒敕諭」狀態：短暫間隔後，或該敵人被擊敗時，將對其周圍的敵人造成相當於伊涅芙攻擊力300%的 <color=#ffacff>雷元素範圍傷害</color> ，該傷害視為月感電反應造成的傷害。\n<color=#ffffff>命之座 第6層「獻予你的明晨」</color>\n伊涅芙處於「載流複合」效果影響下時，附近的雷暴雲對敵人進行雷擊後，伊涅芙將對目前場上自己的角色周圍的敵人造成相當於伊涅芙攻擊力135%的 <color=#ffacff>雷元素範圍傷害</color> ，該傷害視為月感電反應造成的傷害，上述效果每3.5秒至多觸發一次。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8398,
+        "name": "菲林斯",
+        "desc": "挪德卡萊的「執燈人」，看守著北方小島上的燈塔與墓地。一位言行舉止極富修養的神秘紳士。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/4ac47a285a0abaada08f3216bdd22b0e_7846853832529267058.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「舊儀·夜客致訪」</color>\n菲林斯解放提燈中真正的力量，造成 <color=#ffacff>雷元素範圍傷害</color> ，並在短暫間隔後，分別造成2次中間段（ <color=#ffffff73>16.24%~29.23%</color> 攻擊力）、以及一次最終段的視為月感電反應傷害的 <color=#ffacff>雷元素範圍傷害</color> （ <color=#ffffff73>116.93%~210.47%</color> 攻擊力）。\n<color=#ffd780>月兆·滿輝</color> ：技能獲得強化：若附近存在雷暴雲，還會額外造成2次中間段的視為月感電反應傷害的 <color=#ffacff>雷元素範圍傷害</color> 。\n施放特殊元素戰技 <color=#ffd780>北國槍陣</color> 後6秒內，菲林斯的元素爆發 <color=#ffd780>舊儀·夜客致訪</color> 將會被替換為特殊的元素爆發 <color=#ffd780>雷霆交響</color> 。\n<color=#ffd780>雷霆交響</color>\n消耗更少的元素能量便可以施放的特殊元素爆發。菲林斯造成一次視為月感電反應傷害的 <color=#ffacff>雷元素範圍傷害</color> （ <color=#ffffff73>71.46%~128.62%</color> 攻擊力）。\n<color=#ffd780>月兆·滿輝</color> ：技能獲得強化：若附近存在雷暴雲，還會額外造成一次視為月感電反應傷害的 <color=#ffacff>雷元素範圍傷害</color> （ <color=#ffffff73>103.94%~187.08%</color> 攻擊力）。\n<color=#ffffff>命之座 第2層「渡越魍魎之牆」</color>\n施放特殊元素戰技 <color=#ffd780>北國槍陣</color> 後的6秒內，菲林斯的下一次普通攻擊命中敵人時，還會額外造成相當於菲林斯攻擊力50%的 <color=#ffacff>雷元素範圍傷害</color> ，該傷害視為月感電反應造成的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9121,
+        "name": "哥倫比婭",
+        "desc": "於挪德卡萊誕生的「月之少女」，亦是歸鄉的空月。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/80fa97679c8d1828fdd96c6aa9638632_4327573591148809640.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「萬古潮汐」</color>\n施放元素戰技萬古潮汐後，哥倫比婭將喚出 <color=#ffd780>引力漣漪</color> 。\n<color=#ffd780>引力漣漪</color> 存在期間，隊伍中附近的角色觸發月曜反應或造成月曜反應傷害時，哥倫比婭將在接下來的2秒内獲得新月之示效果，持續累積 <color=#ffd780>引力值</color> ，每2秒可以累積20點引力值。\n引力值上限為60點，且會在引力漣漪持續時間結束時被移除。\n當引力值累積至上限時，將觸發特殊的 <color=#ffd680>引力干涉</color> ，依據為哥倫比婭累積最多引力值的月曜反應類型，分別產生不同的效果。若為哥\n倫比婭累積最多引力值的月曜反應類型為 <color=#ffd680>月感電反應</color> ，引力干涉將造成一次 <color=#ffacff>雷元素範圍傷害</color> （ <color=#ffffff73>4.7%~8.47%</color> 生命值上限），該傷害視為月感電反應傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "月曜反應：月結晶",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffe699>岩元素</color> 觸及 <color=#80bfff>水元素</color> 時，若滿足特定條件，會引發特殊的月結晶反應，在目標附近生成三枚 <color=#ffffff>月籠</color> 。每觸發三次月結晶反應，便會引發 <color=#ffffff>月籠諧奏</color> ，對附近的敵人造成 <color=#ffe699>岩元素傷害</color> 。該傷害可以觸發暴擊，且造成的傷害取決於所有在反應中施加元素的角色。\n月結晶與月感電類似，月籠造成的月結晶傷害計算的倍率為96%；直接造成的月結晶傷害計算的倍率為160%。"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>月籠造成月結晶傷害</color>\n<color=#ffffffd9>= 96% × 角色等級倍率 × (1 + 基礎加成百分比)</color>\n<color=#ffffffd9>× (1 + 元素精通加成 + 月結晶加成百分比)</color>\n<color=#ffffffd9>× 敵人岩元素抗性 × [100% + (暴擊傷害)]</color>\n<color=#ffffffd9>直接造成月結晶傷害</color>\n<color=#ffffffd9>= 160% × 特性 × (1 + 基礎加成百分比)</color>\n<color=#ffffffd9>× (1 + 元素精通加成 + 月結晶加成百分比)</color>\n<color=#ffffffd9>× 敵人岩元素抗性 × [100% + (暴擊傷害)]</color>\n<color=#ffffffd9>直接造成月結晶傷害的特性</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9121,
+        "name": "哥倫比婭",
+        "desc": "於挪德卡萊誕生的「月之少女」，亦是歸鄉的空月。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/80fa97679c8d1828fdd96c6aa9638632_4327573591148809640.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「萬古潮汐」</color>\n施放元素戰技萬古潮汐後，哥倫比婭將喚出 <color=#ffd780>引力漣漪</color> 。\n<color=#ffd780>引力漣漪</color> 存在期間，隊伍中附近的角色觸發月曜反應或造成月曜反應傷害時，哥倫比婭將在接下來的2秒内獲得新月之示效果，持續累積 <color=#ffd780>引力值</color> ，每2秒可以累積20點引力值。\n引力值上限為60點，且會在引力漣漪持續時間結束時被移除。\n當引力值累積至上限時，將觸發特殊的 <color=#ffd680>引力干涉</color> ，依據為哥倫比婭累積最多引力值的月曜反應類型，分別產生不同的效果。若為哥\n倫比婭累積最多引力值的月曜反應類型為 <color=#ffd680>月結晶反應</color> ，引力干涉將造成一次 <color=#ffe699>岩元素範圍傷害</color> （ <color=#ffffff73>8.82%~15.88%</color> 生命值上限），該傷害視為月結晶反應傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9122,
+        "name": "茲白",
+        "desc": "璃月傳說中的白馬仙人，其名為茲白，璃月仙話中最神秘的一位。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/72161f01ff431c9f099710f92c811454_1654176825175164246.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「天地忽然身」</color>\n喚起舊日權能的片影，切換至 <color=#ffd780>「月轉時隙」</color> 模式。元素戰技天地忽然身將會被替換為特殊的元素戰技靈駒飛踏：當茲白擁有至少70點「 時隙浮光」時，茲白可以消耗70點「時隙浮光」，施放靈駒飛踏，造成兩次岩元素傷害，其中的第二段傷害視為月結晶反應傷害（ <color=#ffffff73>140.97%~253.74%</color> 防禦力）。\n<color=#ffd780>月兆·滿輝</color> ：處於 <color=#ffd780>「月轉時隙」</color> 模式下時，茲白進行普通攻擊時，第四段攻擊將額外造成一次 <color=#ffe699>岩元素傷害</color> ，該傷害視為月結晶反應傷害（ <color=#ffffff73>29.46%~53.02%</color> 防禦力）。\n<color=#ffffff>元素爆發「三垣威儀法」</color>\n茲白轉起青玄乘陽華蓋，造成兩次 <color=#ffe699>岩元素傷害</color> ，其中的第二段傷害視為月結晶反應傷害（ <color=#ffffff73>177.74%~319.94%</color> 防禦力）。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 10412,
+        "name": "莉奈婭",
+        "desc": "冒險家協會挪德卡萊分會顧問，博物學家。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/04/03/b73622caa3750012312c72437295ace3_6973976776946504804.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「對策·露米呀吼吼！」</color>\n若附近存在月籠，露米使用的加力重錘會造成視為月結晶反應傷害的 <color=#ffe699>岩元素範圍傷害</color> （100.0%~180.0%防禦力）。\n連續點按元素戰技或普通攻擊，露米會使用究極厲害的百萬噸重錘，對附近的敵人造成一次格外強力的、視為月結晶反應傷害的 <color=#ffe699>岩元素範圍傷害</color> （400.0%~720.0%防禦力），並切換至普通厲害形態。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "月曜反應：月綻放",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#99ff88>草元素</color> 觸及 <color=#80bfff>水元素</color> 時，若滿足特定條件，會引發特殊的月綻放反應，在原本的綻放反應效果之上，還會為隊伍提供珍貴的 <color=#ffffff>草露</color> 資源。隊伍中的角色觸發月綻放反應後的2.5秒内，每2.5秒便會為隊伍提供一枚草露。草露上限為三枚。持續期間，再次觸發月綻放反應時，將重置上述效果的持續時間。部分角色可以透過消耗草露，或透過自身的天賦特性，對敵人造成月綻放反應傷害，該傷害可以觸發暴擊。\n月綻放傷害也是其中一種直接造成傷害，有別於綻放與草原核。\n與直接造成月感電傷害相同，觸發月綻放反應的角色預設特性會影響造成的月綻放傷害。\n月綻放造成傷害的倍率為100％，在計算公式中可以被忽略。"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>角色造成月綻放傷害</color>\n<color=#ffffffd9>= 特性 × (1 + 基礎加成百分比)</color>\n<color=#ffffffd9>× (1 + 元素精通加成 + 月綻放加成百分比)</color>\n<color=#ffffffd9>× 敵人草元素抗性 × [100% + (暴擊傷害)]</color>\n<color=#ffffffd9>造成月綻放傷害的特性</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8396,
+        "name": "菈烏瑪",
+        "desc": "被月光與森林祝福的聖女，一個誕生在「霜月之子」中的希望。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/08/b06e9ff48d57de4856f1a05b1199aae1_8565150401481594895.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「聖言述詠·終宵永眠」</color>\n擁有至少1枚 <color=#ffd780>草露</color> 時可以施放。菈烏瑪將消耗所有草露，詠唱永眠的禱歌，造成一次 <color=#99ff88>草元素範圍傷害</color> 與一次視為月綻放反應傷害的 <color=#99ff88>草元素範圍傷害</color> （每枚草露 <color=#ffffff73>152%~273.6%元素精通</color> ）。\n<color=#ffffff>命之座 第6層「『我願將這血與淚奉予月明』」</color>\n<color=#ffd780>霜林聖域</color> 攻擊敵人時，會額外造成一次視為月綻放反應傷害的 <color=#99ff88>草元素範圍傷害</color> ，該傷害基於菈烏瑪元素精通的185%。\n菈烏瑪在擁有「蒼色禱歌」的情況下進行普通攻擊時，會消耗一層「蒼色禱歌」，轉為造成相當於菈烏瑪元素精通150%的 <color=#99ff88>草元素傷害</color> ，該傷害視為月綻放反應造成的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8894,
+        "name": "奈芙爾",
+        "desc": "神通廣大的「秘聞館」之主。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/10/21/7557acebcb72b4d9912bcb0e6c92306a_3655566527985254987.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「弈術·千夜一舞」</color>\n施放元素戰技弈術·千夜一舞後，處於「影舞 」狀態下時，若擁有至少1枚 <color=#ffd780>草露</color> ，奈芙爾施放的重擊將會被替換為特殊的、不消耗體力的重擊 <color=#ffd780>幻戲</color> 。奈芙爾召喚出自身的虚影，對敵人發起協同攻擊，自身與虛影分別依次造成2/3段 <color=#99ff88>草元素範圍傷害</color> 。虚影造成的傷害視為月綻放反應傷害（ <color=#ffffff73>96%~172.8%元素精通，96%~172.8%元素精通，128%~230.4%元素精通</color> ）。\n<color=#ffffff>命之座 第6層「決勝於逆轉之時」</color>\n奈芙爾施放 <color=#ffd780>幻戲</color> 時，自身的第二段傷害將轉為造成相當於奈芙爾元素精通85%的 <color=#99ff88>草元素範圍傷害</color> 。此外，幻戲的攻擊結束時，還會造成一次相當於奈芙爾元素精通120%的 <color=#99ff88>草元素範圍傷害</color> 。上述傷害均視為由幻戲造成的月綻放反應傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9121,
+        "name": "哥倫比婭",
+        "desc": "於挪德卡萊誕生的「月之少女」，亦是歸鄉的空月。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/80fa97679c8d1828fdd96c6aa9638632_4327573591148809640.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>重擊</color>\n消耗一定體力，短暫詠唱後，造成 <color=#80c0ff>水元素範圍傷害</color> 。\n若擁有至少1枚 <color=#ffd780>草露</color> ，哥倫比婭施放的重擊將會被替換為特殊、不消耗體力的重擊 <color=#ffd780>月露滌蕩</color> ：消耗一枚草露，對前方的敵人造成3次 <color=#99ff88>草元素範圍傷害</color> ，該傷害視為月綻放反應傷害（ <color=#ffffff73>1.51%~2.72%</color> 生命值上限 <color=#ffffff73>×3</color> ）。\n<color=#ffffff>元素戰技「萬古潮汐」</color>\n施放元素戰技萬古潮汐後，哥倫比婭將喚出 <color=#ffd780>引力漣漪</color> 。\n<color=#ffd780>引力漣漪</color> 存在期間，隊伍中附近的角色觸發月曜反應或造成月曜反應傷害時，哥倫比婭將在接下來的2秒内獲得新月之示效果，持續累積 <color=#ffd780>引力值</color> ，每2秒可以累積20點引力值。\n引力值上限為60點，且會在引力漣漪持續時間結束時被移除。\n當引力值累積至上限時，將觸發特殊的 <color=#ffd680>引力干涉</color> ，依據為哥倫比婭累積最多引力值的月曜反應類型，分別產生不同的效果。若為哥\n倫比婭累積最多引力值的月曜反應類型為 <color=#ffd680>月綻放反應</color> ，引力干涉將對周圍的敵人發射5枚月露之印，造成 <color=#99ff88>草元素傷害</color> ，該傷害視為月綻放反應傷害（ <color=#ffffff73>1.41%~2.53%</color> 生命值上限 <color=#ffffff73>×5</color> ）。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "基礎傷害倍率",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7852,
+        "name": "伊涅芙",
+        "desc": "集成了各國機關零件的全能型機器人，胸口處的秘源核心已歷經彌久歲月。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/07/28/7c221918444852e9a3c2ad609ccacea2_8687518447126752117.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>「月兆祝賜·象擬中繼」</color>\n隊伍中的角色觸發感電反應時，將轉為觸發月感電反應，且基於伊涅芙的攻擊力，提升月感電反應的基礎傷害：每100點攻擊力都將提升0.7%基礎傷害，至多依此方式提升14%傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8398,
+        "name": "菲林斯",
+        "desc": "挪德卡萊的「執燈人」，看守著北方小島上的燈塔與墓地。一位言行舉止極富修養的神秘紳士。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/4ac47a285a0abaada08f3216bdd22b0e_7846853832529267058.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>「月兆祝賜·舊世潛藏」</color>\n隊伍中的角色觸發感電反應時，將轉為觸發月感電反應，且基於菲林斯的攻擊力，提升月感電反應的基礎傷害：每100點攻擊力都將提升0.7%基礎傷害，至多依此方式提升14%傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8396,
+        "name": "菈烏瑪",
+        "desc": "被月光與森林祝福的聖女，一個誕生在「霜月之子」中的希望。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/08/b06e9ff48d57de4856f1a05b1199aae1_8565150401481594895.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>「月兆祝賜·千籟恩寵」</color>\n隊伍中的角色觸發綻放反應時，將轉為觸發月綻放反應，且基於菈烏瑪的元素精通，提升隊伍中角色造成的月綻放反應的基礎傷害：每點元素精通都將提升0.0175%月綻放反應的基礎傷害，至多依此方式提升14%傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8894,
+        "name": "奈芙爾",
+        "desc": "神通廣大的「秘聞館」之主。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/10/21/7557acebcb72b4d9912bcb0e6c92306a_3655566527985254987.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「弈術·千夜一舞」</color>\n每層「偽秘之帷」都會使奈芙爾施放的幻戲造成比原本高8%的傷害，初始至多疊加3層，持續9秒，每層獨立計算持續時間。\n<color=#ffffff>「月兆祝賜·廊下暮影」</color>\n隊伍中的角色觸發綻放反應時，將轉為觸發月綻放反應，且基於奈芙爾的元素精通，提升隊伍中角色造成的月綻放反應的基礎傷害：每點元素精通都將提升0.0175%月綻放反應的基礎傷害，至多依此方式提升14%傷害。\n<color=#ffffff>命之座 第1層「謀篇乃成敗之始」</color>\n奈芙爾的 <color=#ffd780>幻戲</color> 造成的月綻放反應傷害的基礎傷害提升，提升值相當於奈芙爾的元素精通的60%。該效果同樣會受到 <color=#ffd780>「偽秘之帷」</color> 的加成。\n<color=#ffffff>命之座 第2層「明察為籌算之先」</color>\n突破天賦 <color=#ffd780>「月下的豪賭」</color> 的效果獲得強化： <color=#ffd780>「偽秘之帷」</color> 的持續時間延長5秒，上限提升至5層，且至多使 <color=#ffd780>幻戲</color> 造成原本140%的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9121,
+        "name": "哥倫比婭",
+        "desc": "於挪德卡萊誕生的「月之少女」，亦是歸鄉的空月。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/80fa97679c8d1828fdd96c6aa9638632_4327573591148809640.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>「</color> <color=#ffffff>月兆祝賜·借汝月光</color> <color=#ffffff>」</color>\n隊伍中的角色觸發感電/綻放/水元素結晶反應時，將轉為觸發月感電/月綻放/月結晶反應，且基於哥倫比婭的生命值上限，提升隊伍中角色造成的月曜反應的基礎傷害：每1000點生命值上限都將提升0.2%月曜反應的基礎傷害，至多依此方式提升7%傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9122,
+        "name": "茲白",
+        "desc": "璃月傳說中的白馬仙人，其名為茲白，璃月仙話中最神秘的一位。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/72161f01ff431c9f099710f92c811454_1654176825175164246.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>「月兆祝賜·浮明若流」</color>\n隊伍中的角色觸發水元素結晶反應時，將轉為觸發月結晶反應，且基於茲白的防禦力，提升隊伍中角色造成的月結晶反應的基礎傷害：每100點防禦力都將提升0.7%月結晶反應的基礎傷害，至多依此方式提升14%傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 10412,
+        "name": "莉奈婭",
+        "desc": "冒險家協會挪德卡萊分會顧問，博物學家。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/04/03/b73622caa3750012312c72437295ace3_6973976776946504804.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>「月兆祝賜·棲地考察」</color>\n隊伍中的角色觸發水元素結晶反應時，將轉為觸發月結晶反應，且基於莉奈婭的防禦力，提升隊伍中角色造成的月結晶反應的基礎傷害：每100點防禦力都將提升0.7%月結晶反應的基礎傷害，至多依此方式提升14%傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "元素精通加成倍率",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "當隊伍的月兆等級達到「月兆·滿輝」時，月兆角色以外的角色施放元素戰技或元素爆發後的20秒內，還會基於角色自己的元素類型，使附近所有角色造成的月曜反應傷害提升至多36%，該效果無法疊加。\n若角色的元素類型為：\n<color=#ff9999>火元素</color> 、 <color=#ffacff>雷元素</color> 、 <color=#99ffff>冰元素</color> ：每100點攻擊力使上述傷害提升0.9%。\n<color=#80bfff>水元素</color> ：每1000點生命值上限使上述傷害提升0.6%。\n<color=#ffe699>岩元素</color> ：每100點防禦力使上述傷害提升1%。\n<color=#80ffd6>風元素</color> 、 <color=#99ff88>草元素</color> ：每100點元素精通使上述傷害提升2.25%。"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>元素精通加成倍率 = [ (6 × 元素精通) / (元素精通 + 2000) ] + [0~36%]</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "元素反應加成倍率",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>角色</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7852,
+        "name": "伊涅芙",
+        "desc": "集成了各國機關零件的全能型機器人，胸口處的秘源核心已歷經彌久歲月。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/07/28/7c221918444852e9a3c2ad609ccacea2_8687518447126752117.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「循環整流引擎」</color>\n伊涅芙展開光流屏障護盾時，將為隊伍中附近的所有角色賦予持續20秒的「載流複合」效果，使月感電反應造成的傷害提升，提升值基於伊涅芙的攻擊力：每100點攻擊力都將提升2.5%傷害，至多依此方式提升50%傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8398,
+        "name": "菲林斯",
+        "desc": "挪德卡萊的「執燈人」，看守著北方小島上的燈塔與墓地。一位言行舉止極富修養的神秘紳士。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/4ac47a285a0abaada08f3216bdd22b0e_7846853832529267058.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「寒冬的交響」</color>\n<color=#ffd780>月兆·滿輝</color> ：菲林斯觸發的月感電反應造成的傷害提升20%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8397,
+        "name": "愛諾",
+        "desc": "挪德卡萊的天才機械發明家，喜歡有趣的機械和甜食。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/09/4e58c851d6c947865026faa168db83bd_3944254802105067377.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「天才之為構造之責任」</color>\n施放元素爆發 <color=#ffd780>精密水冷儀</color> 後的15秒內，附近的目前場上角色觸發的感電、綻放、月感電、月綻放造成的傷害提升15%。\n<color=#ffd780>月兆·滿輝</color> ：上述反應造成的傷害額外提升20%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "莫娜",
+        "desc": "神秘的少女占星術士，聲稱自己是「偉大的占星術士莫娜」，擁有與名號相符的不俗實力，博學而高傲。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「沉沒的預言」</color>\n隊伍中自己的角色攻擊命中處於星異狀態下的敵人後，月感電反應與月結晶反應造成的傷害提升15%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3609,
+        "name": "白朮",
+        "desc": "<p>藥廬「不卜廬」的主人，隨身懸著名為「長生」的白蛇。精於藥石，深於城府。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/01/7998136/05599650d7f42e1c4adde373de6b297d_1949970766490129649.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「在地為化」</color>\n受到 <color=#ffd780>無郤氣護盾</color> 治療的角色，將獲得「木運之歲」效果：基於白朮生命值上限不超過50000點的部分，每1000點將使該角色觸發的月綻放反應造成的傷害提升0.7%，持續6秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7627,
+        "name": "伊法",
+        "desc": "來自花羽會的獸醫，由衷熱愛著與人、動物，以及其他生靈為伴的生活。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/30/ce693d1e36aef5936b2d2db006605fc4_9036718103340803450.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「場中醫者視野」</color>\n伊法處於夜魂加持狀態下時，將基於隊伍中所有角色目前夜魂值的總和，每1點夜魂值都將使伊法獲得1點 <color=#ffd780>「救援要義」</color> 。基於伊法持有的救援要義，每1點救援要義會使隊伍中附近的角色觸發的擴散反應與感電反應造成的傷害提升1.5%，月感電反應造成的傷害提升0.2%。上限為150點。救援要義將在伊法的夜魂加持結束時被移除。\n<color=#ffffff>命之座 第2層「祈禱彈道的助靈」</color>\n伊法處於夜魂加持狀態下時，基於隊伍中所有角色目前夜魂值的總和超過60點的部分，每1點夜魂值都將使伊法額外獲得4點 <color=#ffd780>「救援要義」</color> 。\n此外，伊法持有「救援要義」的上限提升50點。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8396,
+        "name": "菈烏瑪",
+        "desc": "被月光與森林祝福的聖女，一個誕生在「霜月之子」中的希望。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/08/b06e9ff48d57de4856f1a05b1199aae1_8565150401481594895.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「『紡出那終北的告誡與述說』」</color>\n<color=#ffd780>月兆·滿輝</color> ：隊伍中附近的所有角色造成的月綻放反應傷害提升40%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9121,
+        "name": "哥倫比婭",
+        "desc": "於挪德卡萊誕生的「月之少女」，亦是歸鄉的空月。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/80fa97679c8d1828fdd96c6aa9638632_4327573591148809640.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「她的鄉愁」</color>\n以無穢的新月之名連接山與海，將身邊的大地短暫變換為 <color=#ffd780>月之領域</color> ，並造成 <color=#80c0ff>水元素範圍傷害</color> 。目前場上角色處於月之領域中時，隊伍中的所有角色造成的月曜反應傷害將會提升。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9122,
+        "name": "茲白",
+        "desc": "璃月傳說中的白馬仙人，其名為茲白，璃月仙話中最神秘的一位。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/72161f01ff431c9f099710f92c811454_1654176825175164246.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「出勃然而入寥然」</color>\n每次切換至「月轉時隙」模式後，初次施放靈駒飛踏時，第二段攻擊造成的月結晶反應傷害提升220%。\n<color=#ffffff>命之座 第2層「化於生而死於尸」</color>\n處於 <color=#ffd780>「月轉時隙」</color> 模式下時，隊伍中附近的所有角色造成的月結晶反應傷害提升30%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9123,
+        "name": "葉洛亞",
+        "desc": "調查分隊「魘夜之鶯」成員，執燈人最年輕的分隊長。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/d585407867aa47b4d925613cea9f00c2_5864597966579326880.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「鑑照無影」</color>\n點亮燈火，造成 <color=#ffe699>岩元素範圍傷害</color> ，並獲得「魘夜的鶯歌」效果，持續20秒：持續期間，葉洛亞獲得21層 <color=#ffd780>「夜鶯之歌」</color> ，隊伍中附近的目前場上角色的普通攻擊、重擊、下落攻擊、元素戰技或元素爆發對敵人造成 <color=#ffe699>岩元素傷害</color> 時，將消耗1層「夜鶯之歌」，提升造成的傷害，提升值基於葉洛亞的元素精通。若該傷害為月結晶反應造成的傷害，還會進一步提升造成的傷害。\n<color=#ffffff>固有天賦「狩魔者的黃昏」</color>\n<color=#ffd780>「夜鶯之歌」</color> 的效果獲得強化：當隊伍中存在1/2/3名 <color=#80c0ff>水元素</color> 或 <color=#ffe699>岩元素</color> 角色時，「夜鶯之歌」會進一步提升造成的傷害，提升值相當於葉洛亞元素精通的7%/14%/24%。若上述傷害為月結晶反應造成的傷害，提升值則相當於葉洛亞元素精通的48%/96%/160%。\n<color=#ffffff>武器</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8299,
+        "name": "支離輪光",
+        "desc": "由「叮鈴哐啷蛋卷工坊」出品的機關旋刃，其中似乎隱藏著什麼久遠時代的秘密…",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/07/21/6f0271a3d35033b8ec7260faa56b8cc1_2090404062568539078.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "持續期間內，若裝備者創造了護盾，則接下來的20秒內，還會獲得「流電聖敕」效果：隊伍中附近所有角色觸發的月感電反應造成的傷害提升 <color=#37ffff>40%/50%/60%/70%/80%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8517,
+        "name": "烏髓孑燈",
+        "desc": "散發著瑩瑩幽光的一盞提燈，以宛如骨節狀的烏黑合金包裹。相傳，它曾被某個秘密組織奉為至寶。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/fca1d073841a27aa921fb0cdadcc1814_4456705496709264629.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "月綻放反應傷害提升 <color=#37ffff>12%/15%/18%/21%/24%</color> 。月兆·滿輝：月綻放反應傷害額外提升 <color=#37ffff>12%/15%/18%/21%/24%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8514,
+        "name": "掘金之鍬",
+        "desc": "槍桿似乎來自一把農用鐵鍬。乍看之下毫不起眼，配飾卻極為貴重，低調之中藏著難以忽視的精巧。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/02b62205aa9b8bbf8db3f7dfd81c2722_4251757494889514703.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "月感電反應造成的傷害提升 <color=#37ffff>12%/15%/18%/21%/24%</color> 。月兆·滿輝：月感電反應造成的傷害額外提升 <color=#37ffff>12%/15%/18%/21%/24%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8838,
+        "name": "血染荒城",
+        "desc": "於漫長的戰鬥中染成漆黑的長槍，在幽藍的火光照耀下散發著別樣的光輝。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/f842bb3bf454987301dd1bedd3be0c06_372682473601768051.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "施放元素爆發後的3.5秒內，裝備者對敵人造成的月感電反應傷害提高 <color=#37ffff>36%/48%/60%/72%/84%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8836,
+        "name": "紡夜天鏡",
+        "desc": "由無瑕的白銀鑄就的明鏡，傳說見證了月之少女的誕生，因而被霜月之子視作至高的聖物。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/d28b849e0abef976114ea7ecef92960e_4616051474368823347.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "元素戰技造成水元素或草元素傷害時，裝備者獲得「終北聖言」效果。隊伍中附近的角色觸發月綻放反應時，裝備者獲得「朔月詩篇」效果。「終北聖言」效果與「朔月詩篇」效果同時存在時，月綻放反應傷害提升 <color=#37ffff>40%/50%/60%/70%/80%</color> ，該效果無法疊加。裝備者處於隊伍後臺時，依然能觸發上述效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 10547,
+        "name": "霜結的誓金枝",
+        "desc": "由古老的白木打造而成的長弓，在遙遠的過去曾屬於北境的霜精之王。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/04/03/56dfea855cb96781fc3fa4409463e523_641344848709162695.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "裝備者的元素戰技或月結晶攻擊命中敵人時，將獲得持續6秒的「霜妖精的報恩」效果：月結晶反應傷害提升 <color=#36ffff>40%/50%/60%/70%/80%</color> 。持續期間，若裝備者附近存在月籠，則隊伍中附近的所有其他角色還會獲得「霜妖精的惡戲」效果：月結晶反應傷害提升 <color=#36ffff>20%/25%/30%/35%/40%</color> 。裝備者處於隊伍後臺時，依然能觸發上述效果。\n<color=#ffffff>聖遺物</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2067,
+        "name": "如雷的盛怒",
+        "desc": "",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Thundering Fury/flower_of_life_icon.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>4件套裝</color>\n月感電反應造成的傷害提升20%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3321,
+        "name": "樂園遺落之花",
+        "desc": "",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/13/7998136/50ce09dfa5a91a33aa9cedfb15bcf2d1_3010612142959070125.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>4件套裝</color>\n裝備者造成的月綻放反應傷害提升10%。此外，裝備者觸發綻放、超綻放、烈綻放、月綻放後，上述效果帶來的加成提升25%，該效果持續10秒，至多疊加4次，每1秒至多觸發一次。裝備者處於隊伍後臺時依然能觸發該效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8520,
+        "name": "穹境示現之夜",
+        "desc": "<p>雕刻成花型的聖物，似乎是為了象徵某種如花般綻放的可怖存在。</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/25c4512875bad223765a5a32c82b09a4_7122872897984003318.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>4件套裝</color>\n隊伍中附近的角色觸發月曜反應時，若裝備者在場上，將獲得持續4秒的「月輝明光·蓄念」效果。隊伍中的角色每擁有一種不同的「月輝明光」效果，隊伍中的所有角色觸發的月曜反應造成的傷害提升10%。由「月輝明光」產生的效果無法疊加。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8521,
+        "name": "紡月的夜歌",
+        "desc": "<p>純淨無垢的花朵，傳說是因冰風而保持了永恆的美麗。</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/b8350998129a66e67c1a7691153da68d_6559589601591776539.png",
+        "displayStyle": "card",
+        "menuId": 5
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>4件套裝</color>\n造成元素傷害時，獲得持續8秒的「月輝明光·崇信」效果。裝備者處於後臺時也能觸發上述效果。隊伍中的角色每擁有一種不同的「月輝明光」效果，隊伍中的所有角色觸發的月曜反應造成的傷害提升10%。由「月輝明光」產生的效果無法疊加。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "傷害提升加成",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "部分角色技能可以提升月曜反應造成的傷害。傷害提升加成直接加入最終傷害計算中，敵人元素抗性與角色造成的暴擊傷害倍率（若觸發暴擊）會影響該加成。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8396,
+        "name": "菈烏瑪",
+        "desc": "被月光與森林祝福的聖女，一個誕生在「霜月之子」中的希望。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/08/b06e9ff48d57de4856f1a05b1199aae1_8565150401481594895.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「聖言述詠·眾心為月」</color>\n隊伍中附近的角色造成月綻放反應傷害時，將消耗一層「蒼色禱歌」，提升造成的傷害，提升值基於菈烏瑪的元素精通。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 10412,
+        "name": "莉奈婭",
+        "desc": "冒險家協會挪德卡萊分會顧問，博物學家。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/04/03/b73622caa3750012312c72437295ace3_6973976776946504804.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「未完成的分類」</color>\n隊伍中附近的角色造成月結晶反應傷害時，將消耗一層「歷覽編錄」，提升造成的傷害，提升值相當於莉奈婭防禦力的75%。\n此外，露米在 <color=#ffd780>究極厲害形態</color> 下使用 <color=#ffd780>百萬噸重錘</color> 時，莉奈婭可以消耗至多5層「歷覽編錄」，每層都會使造成的傷害提升，提升值相當於莉奈婭防禦力的150%。\n<color=#ffffff>命之座 第6層「黃金獵犬之夢」</color>\n消耗 <color=#ffd780>「歷覽編錄」</color> 時，將消耗原本2倍的層數，並使傷害提升效果提高至原本的150%。",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "擢升倍率",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "特殊的傷害提升效果，與其他的傷害提升效果分別獨立計算。"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8398,
+        "name": "菲林斯",
+        "desc": "挪德卡萊的「執燈人」，看守著北方小島上的燈塔與墓地。一位言行舉止極富修養的神秘紳士。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/4ac47a285a0abaada08f3216bdd22b0e_7846853832529267058.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「歌與亡者之舞」</color>\n菲林斯對敵人造成的月感電反應傷害 <color=#ffd780>擢升</color> 35%。\n<color=#ffd780>月兆·滿輝</color> ：隊伍中附近的所有角色造成的月感電反應傷害 <color=#ffd780>擢升</color> 10%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8396,
+        "name": "菈烏瑪",
+        "desc": "被月光與森林祝福的聖女，一個誕生在「霜月之子」中的希望。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/08/b06e9ff48d57de4856f1a05b1199aae1_8565150401481594895.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「『我願將這血與淚奉予月明』」</color>\n<color=#ffd780>月兆·滿輝</color> ：隊伍中附近的所有角色造成的月綻放反應傷害 <color=#ffd780>擢升</color> 25%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8894,
+        "name": "奈芙爾",
+        "desc": "神通廣大的「秘聞館」之主。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/10/21/7557acebcb72b4d9912bcb0e6c92306a_3655566527985254987.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「決勝於逆轉之時」</color>\n<color=#ffd780>月兆·滿輝</color> ：奈芙爾造成的月綻放反應傷害 <color=#ffd780>擢升</color> 15%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9121,
+        "name": "哥倫比婭",
+        "desc": "於挪德卡萊誕生的「月之少女」，亦是歸鄉的空月。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/80fa97679c8d1828fdd96c6aa9638632_4327573591148809640.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「遍照花海，隱入群山」</color>\n隊伍中附近的所有角色造成的月曜反應傷害 <color=#ffd780>擢升</color> 1.5%。\n<color=#ffffff>命之座 第2層「為夜增輝，與君遙伴」</color>\n隊伍中附近的所有角色造成的月曜反應傷害 <color=#ffd780>擢升</color> 7%。\n<color=#ffffff>命之座 第3層「柔光凝露，夢湖起波」</color>\n隊伍中附近的所有角色造成的月曜反應傷害 <color=#ffd780>擢升</color> 1.5%。\n<color=#ffffff>命之座 第4層「花嵐雲翳，山岩樹影」</color>\n隊伍中附近的所有角色造成的月曜反應傷害 <color=#ffd780>擢升</color> 1.5%。\n<color=#ffffff>命之座 第5層「萬籟俱寂，唯聞君唱」</color>\n隊伍中附近的所有角色造成的月曜反應傷害 <color=#ffd780>擢升</color> 1.5%。\n<color=#ffffff>命之座 第6層「夜昏且暗，且隨月光」</color>\n隊伍中附近的所有角色造成的月曜反應傷害 <color=#ffd780>擢升</color> 7%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9122,
+        "name": "茲白",
+        "desc": "璃月傳說中的白馬仙人，其名為茲白，璃月仙話中最神秘的一位。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/72161f01ff431c9f099710f92c811454_1654176825175164246.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「天地忽如一遠行」</color>\n<color=#ffd780>靈駒飛踏</color> 將轉為消耗所有的「時隙浮光」，基於消耗的「時隙浮光」超過70點的部分，每額外消耗1點「時隙浮光」，都會使本次靈駒飛踏與接下來3秒內茲白造成的月結晶反應傷害 <color=#ffd780>擢升</color> 1.6%。該效果無法疊加。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 10412,
+        "name": "莉奈婭",
+        "desc": "冒險家協會挪德卡萊分會顧問，博物學家。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/04/03/b73622caa3750012312c72437295ace3_6973976776946504804.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「黃金獵犬之夢」</color>\n<color=#ffd780>月兆·滿輝</color> ：隊伍中附近的角色造成的月結晶反應傷害 <color=#ffd780>擢升</color> 25%。",
         "alignment": "center"
       },
       {
@@ -383,6 +1096,118 @@
       {
         "type": "RichText",
         "text": "<color=#ffffff>元素戰技「典儀式晶火」</color>\n施放時，根據消耗的「裂晶彈片」數量，打出對應數量的「玫瑰晶彈」。11枚「玫瑰晶彈」全部命中時，將造成原本200%的傷害。\n此外，消耗的「裂晶彈片」超過3枚時，超過3枚的每枚「裂晶彈片」都將本次射擊造成的傷害額外提升15%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7706,
+        "name": "絲柯克",
+        "desc": "曾現身於深淵裂隙和原始胎海的來訪者，教導達達利亞武技的老師。孤身一人的女武者。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/48dba0c10560a3ef573f17d97408b5a0_2527001828446746987.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「萬流歸寂」</color>\n每層死河渡斷效果會使絲柯克在七相一閃模式下時進行的普通攻擊造成原本110%/120%/170%的傷害，且施放的元素爆發極惡技·滅造成原本105%/115%/160%的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8894,
+        "name": "奈芙爾",
+        "desc": "神通廣大的「秘聞館」之主。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/10/21/7557acebcb72b4d9912bcb0e6c92306a_3655566527985254987.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「</color> <color=#ffffff>月下的豪賭</color> <color=#ffffff>」</color>\n奈芙爾施放重擊或幻戲時，每吸收一枚誑言之核，奈芙爾便會獲得一層「偽秘之帷」效果。每層「偽秘之帷」都會使奈芙爾施放的幻戲造成比原本高8%的傷害，初始至多疊加3層，持續9秒，每層獨立計算持續時間。\n<color=#ffffff>命之座 第2層</color> <color=#ffffff>「明察為籌算之先」</color>\n「偽秘之帷」的持續時間延長5秒，上限提升至5層，且至多使幻戲造成原本140%的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9018,
+        "name": "雅珂達",
+        "desc": "十分可靠，無所不能（自稱）的「秘聞館」員工。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/12/01/19708bac6eba4779a70908bf0bee70b1_1653339605275422455.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「</color> <color=#ffffff>索酬的巧計</color> <color=#ffffff>」</color>\n當隊伍中存在至少1名元素類型為 <color=#ff9999>火元素</color> 的角色時，元素爆發 <color=#ffd780>秘器·獵人的七道具</color> 中的 <color=#ffd780>貓型家用互助協調器</color> 造成原本130%的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9017,
+        "name": "杜林",
+        "desc": "在魔女M筆下誕生的龍，最終來到了人類的世界。而他的「故事」，也仍在繼續。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/11/28/e3e2b8fcbff2f2f3cdcec6bbf04efa84_3327367670955368711.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「混沌如黑夜構成」</color>\n施放元素爆發後的20秒內，杜林將獲得「肇象熔煉」效果：持續期間，杜林將獲得10層「肇象」，白焰之龍與黑蝕之龍的間歇性攻擊造成傷害時，將消耗1層「肇象」，提升造成的傷害，每100點攻擊力都將額外造成相當於原本3%的傷害，至多依此方式額外造成相當於原本75%的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 12,
+        "name": "可莉",
+        "desc": "西風騎士團禁閉室的常客，蒙德的爆破大師。人稱「逃跑的太陽」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>魔導·秘儀</color> <color=#ffffff>「魔女的前夜禮·火花魔法」</color>\n當可莉擁有1/2/3枚「轟轟勳章」時，特殊重擊「砰砰轟擊」將會造成原本115%/130%/150%的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 37,
+        "name": "莫娜",
+        "desc": "神秘的少女占星術士，聲稱自己是「偉大的占星術士莫娜」，擁有與名號相符的不俗實力，博學而高傲。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Mona_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「厄運的修辭」</color>\n（完成魔女的課業後）對處於星異狀態下的敵人，莫娜的重擊將會造成原本200%的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 23,
+        "name": "溫迪",
+        "desc": "蒙德城諸多吟遊詩人中的一位，自由自在地穿行在街頭巷尾。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Venti_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>魔導·秘儀「魔女的前夜禮·頌時風若」</color>\n元素爆發風神之詩創造的暴風之眼存在期間，附近的目前場上角色觸發擴散反應後的4秒內，該角色造成的傷害提升50%，並使溫迪自己的暴風之眼造成原本135%的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9342,
+        "name": "法爾伽",
+        "desc": "西風騎士團大團長，守護蒙德的北風騎士。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/02/21/553feb81c3bbc5e3bc69a765e157c33f_8250978205515428490.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「曉風的行軍」</color>\n如果隊伍中存在至少2名 <color=#80ffd7>風元素</color> 角色，或存在至少2名元素類型相同的 <color=#ff9999>火元素</color> 、 <color=#80c0ff>水元素</color> 、 <color=#ffacff>雷元素</color> 或 <color=#99ffff>冰元素</color> 角色，法爾伽在 <color=#ffd780>狂飆突進</color> 模式下進行的普通攻擊、重擊、特殊重擊 <color=#ffd780>蒼噬</color> 與施放的特殊元素戰技 <color=#ffd780>四風將起</color> 將造成原本140%的傷害。若隊伍中同時存在至少2名 <color=#80ffd7>風元素</color> 角色與至少2名元素類型相同的 <color=#ff9999>火元素</color> 、 <color=#80c0ff>水元素</color> 、 <color=#ffacff>雷元素</color> 或 <color=#99ffff>冰元素</color> 角色，則會使上述效果提升至220%。",
         "alignment": "center"
       },
       {
@@ -844,6 +1669,118 @@
         "alignment": "center"
       },
       {
+        "type": "CustomEntry",
+        "epId": 7488,
+        "name": "瓦雷莎",
+        "desc": "悠悠哉哉，無比鬆弛的「沃陸之邦」戰士兼果園主，喜歡充滿力量的英雄，還有巨量美食！",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/a54efe1bb7e82a589b9af44683a696ca_8635138146175164187.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「連勢，三重騰躍！」</color>\n施放元素戰技夜虹逐躍後，瓦雷莎獲得「虹色墜擊」，持續5秒。持續期間，瓦雷莎進行下落攻擊時，墜地衝擊能額外造成50%攻擊力的傷害。若瓦雷莎處於熾熱激情狀態，則墜地衝擊改為能額外造成180%攻擊力的傷害。\n「虹色墜擊」效果將在墜地衝擊命中敵人或持續時間結束時解除。\n<color=#ffffff>命之座 第1層「終始不熄的熱誠」</color>\n固有天賦「連勢，三重騰躍！」的效果獲得強化：\n進行特殊下落攻擊·大火山狂雷怒卷時，瓦雷莎也會獲得「虹色墜擊」，持續5秒。\n「虹色墜擊」持續期間，無論瓦雷莎是否處於熾熱激情狀態，進行下落攻擊時，墜地衝擊都會改為額外造成180%攻擊力的傷害。\n<color=#ffffff>命之座 第4層「直面前路的勇氣」</color>\n不處於熾熱激情狀態或極限驅動狀態：瓦雷莎獲得「精進勇猛」效果，持續15秒，基於瓦雷莎攻擊力的500%，提升瓦雷莎進行下落攻擊時墜地衝擊造成的傷害，至多依此方式提升20000。該效果將在墜地衝擊命中敵人或持續時間結束時解除。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7624,
+        "name": "愛可菲",
+        "desc": "聞名楓丹的前德波大飯店主廚，有著「甜點大校」榮譽的「技術料理」先驅，對烹飪的要求無比嚴格。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/30/ddbc128157d69479f61747f0918f9e72_2470321636402108639.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「鮮香味腴的燉煮藝術」</color>\n愛可菲以 <color=#ffd780>低溫冷藏模式</color> 啟動廚藝機關時，將獲得「現制名餚」效果，持續15秒：持續期間，愛可菲獲得5層「冷煮」，除愛可菲以外附近的目前場上角色普通攻擊、重擊、下落攻擊、元素戰技和元素爆發對敵人造成 <color=#99ffff>冰元素傷害</color> 時，將消耗1層「冷煮」，提升造成的傷害，提升值相當於愛可菲攻擊力的240%。\n一次 <color=#99ffff>冰元素傷害</color> 同時命中多名敵人時，會依據命中敵人的數量消耗「冷煮」的層數。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7706,
+        "name": "絲柯克",
+        "desc": "曾現身於深淵裂隙和原始胎海的來訪者，教導達達利亞武技的老師。孤身一人的女武者。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/48dba0c10560a3ef573f17d97408b5a0_2527001828446746987.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「極惡技·滅」</color>\n當絲柯克擁有至少50點蛇之狡謀時，絲柯克可以消耗所有蛇之狡謀，施放元素爆發。同時，依據施放時絲柯克擁有的蛇之狡謀超過50點的部分，每1點蛇之狡謀都將提升本次元素爆發造成的傷害，至多依此方式計入12點蛇之狡謀。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8397,
+        "name": "愛諾",
+        "desc": "挪德卡萊的天才機械發明家，喜歡有趣的機械和甜食。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/09/4e58c851d6c947865026faa168db83bd_3944254802105067377.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「結構化功率提升」</color>\n愛諾元素爆發造成的傷害提升，提升值基於愛諾的元素精通的50%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9017,
+        "name": "杜林",
+        "desc": "在魔女M筆下誕生的龍，最終來到了人類的世界。而他的「故事」，也仍在繼續。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/11/28/e3e2b8fcbff2f2f3cdcec6bbf04efa84_3327367670955368711.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第1層「紅土之逆」</color>\n施放元素爆發後，依據杜林施放的元素爆發，會分別造成不同的效果：\n· <color=#ffd780>白化法·如光流變</color> ：隊伍中附近的所有其他角色獲得20層 <color=#ffd780>「輪變啟迪」</color> ，持續20秒。擁有「輪變啟迪」的目前場上角色的普通攻擊、重擊、下落攻擊、元素戰技或元素爆發造成傷害時，將消耗1層「輪變啟迪」，提升造成的傷害，提升值相當於杜林攻擊力的60%。隊伍中擁有「輪變啟迪」的角色，其生效次數單獨計算。\n· <color=#ffd780>黑度法·如星陰燃</color> ：杜林獲得20層 <color=#ffd780>「輪變啟迪」</color> ，持續20秒。杜林造成元素爆發傷害時，將消耗2層「輪變啟迪」，提升造成的傷害，提升值相當於杜林攻擊力的150%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 47,
+        "name": "阿貝多",
+        "desc": "西風騎士團首席煉金術士兼調查小隊隊長，被稱做「白堊之子」的天才。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Albedo_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「白堊色的威壓」</color>\n（完成魔女的課業後）若場上存在由阿貝多自己創造的瑰銀，還會提升本次造成的傷害，提升值相當於阿貝多防禦力的240%。\n<color=#ffffff>命之座 第6層「無垢之土」</color>\n（完成魔女的課業後）本次元素爆發將會視為清除了4層命之座 <color=#ffd780>顯生之宙</color> 中的生滅計數，並在接下來的20秒內，使生滅之花造成的傷害提升，提升值相當於阿貝多防禦力的250%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 48,
+        "name": "雷澤",
+        "desc": "住在蒙德地區奔狼領、遠離城市與人群，和狼一起生活的少年。直覺銳利，身姿迅捷。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Razor_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>魔導·秘儀「魔女的前夜禮·蒼雷奔湧」</color>\n雷狼造成的傷害提升，提升值相當於雷澤的攻擊力的70%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9122,
+        "name": "茲白",
+        "desc": "璃月傳說中的白馬仙人，其名為茲白，璃月仙話中最神秘的一位。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/72161f01ff431c9f099710f92c811454_1654176825175164246.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「月下素娥降仙」</color>\n施放元素戰技天地忽然身時，或隊伍中附近的角色觸發月籠諧奏時，茲白將獲得持續4秒的「太陰降」效果：靈駒飛踏第二段攻擊造成的傷害提升，提升值相當於茲白防禦力的60%。",
+        "alignment": "center"
+      },
+      {
         "type": "Heading",
         "level": 3,
         "text": "武器",
@@ -1121,6 +2058,20 @@
         "alignment": "center"
       },
       {
+        "type": "CustomEntry",
+        "epId": 9017,
+        "name": "杜林",
+        "desc": "在魔女M筆下誕生的龍，最終來到了人類的世界。而他的「故事」，也仍在繼續。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/11/28/e3e2b8fcbff2f2f3cdcec6bbf04efa84_3327367670955368711.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「雙重誕生」</color>\n杜林造成的元素爆發傷害將無視敵人30%的防禦力。\n此外，元素爆發 <color=#ffd780>黑度法·如星陰燃</color> 與 <color=#ffd780>「黑蝕之龍」</color> 造成的傷害將額外無視敵人40%的防禦力。",
+        "alignment": "center"
+      },
+      {
         "type": "RichText",
         "text": "可透過以下方式 <color=#ffffff>無視</color> 敵人防禦："
       },
@@ -1150,6 +2101,20 @@
       {
         "type": "RichText",
         "text": "<color=#ffffff>命之座 第6層「大殺生咒禁」</color>\n<color=#ffd780>殺生櫻</color> 在攻擊時無視敵人60%的防禦力。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9017,
+        "name": "杜林",
+        "desc": "在魔女M筆下誕生的龍，最終來到了人類的世界。而他的「故事」，也仍在繼續。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/11/28/e3e2b8fcbff2f2f3cdcec6bbf04efa84_3327367670955368711.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層「雙重誕生」</color>\n元素爆發 <color=#ffd780>白化法·如光流變</color> 與 <color=#ffd780>「白焰之龍」</color> 命中敵人時，該敵人的防禦力降低30%，持續6秒。",
         "alignment": "center"
       },
       {
@@ -1552,6 +2517,90 @@
         "alignment": "center"
       },
       {
+        "type": "CustomEntry",
+        "epId": 7624,
+        "name": "愛可菲",
+        "desc": "聞名楓丹的前德波大飯店主廚，有著「甜點大校」榮譽的「技術料理」先驅，對烹飪的要求無比嚴格。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/30/ddbc128157d69479f61747f0918f9e72_2470321636402108639.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「靈感浸入調味」</color>\n當隊伍中包含1/2/3/4名 <color=#80c0ff>水元素</color> 或 <color=#99ffff>冰元素</color> 角色時，愛可菲的元素戰技或元素爆發命中敵人時，將使該敵人的 <color=#80c0ff>水元素抗性</color> 與 <color=#99ffff>冰元素抗性</color> 降低5%/10%/15%/55%，持續12秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8396,
+        "name": "菈烏瑪",
+        "desc": "被月光與森林祝福的聖女，一個誕生在「霜月之子」中的希望。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/08/b06e9ff48d57de4856f1a05b1199aae1_8565150401481594895.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素戰技「聖言述詠·終宵永眠」</color>\n菈烏瑪的元素戰技或霜林聖域的攻擊命中敵人時，將使該敵人的 <color=#99ff88>草元素抗性</color> 與 <color=#80c0ff>水元素抗性</color> 降低，持續10秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8398,
+        "name": "菲林斯",
+        "desc": "挪德卡萊的「執燈人」，看守著北方小島上的燈塔與墓地。一位言行舉止極富修養的神秘紳士。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/4ac47a285a0abaada08f3216bdd22b0e_7846853832529267058.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第2層「渡越魍魎之牆」</color>\n<color=#ffd780>月兆·滿輝</color> ：菲林斯在場上時，菲林斯的元素類型為 <color=#ffacff>雷元素</color> 的攻擊命中敵人後，該敵人的 <color=#ffacff>雷元素抗性</color> 降低25%，持續7秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8894,
+        "name": "奈芙爾",
+        "desc": "神通廣大的「秘聞館」之主。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/10/21/7557acebcb72b4d9912bcb0e6c92306a_3655566527985254987.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「眩惑入謎局之網」</color>\n奈芙爾處於「影舞」狀態下時，還會使附近敵人的 <color=#99ff88>草元素抗性</color> 降低20%，當奈芙爾不處於「影舞」狀態或離開敵人一定距離後，該效果會在4.5秒後移除。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9017,
+        "name": "杜林",
+        "desc": "在魔女M筆下誕生的龍，最終來到了人類的世界。而他的「故事」，也仍在繼續。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/11/28/e3e2b8fcbff2f2f3cdcec6bbf04efa84_3327367670955368711.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「光靈遵神數顯現」</color>\n施放元素戰技「二元式·聚分熔煉」，杜林的力量顯現為 <color=#ffd780>白焰之龍</color> ，隊伍中附近的角色對敵人觸發燃燒、超載、火元素擴散、火元素結晶反應後，或對處於燃燒狀態下的敵人造成 <color=#ff9999>火元素傷害</color> 或 <color=#99ff88>草元素傷害</color> 時，該敵人的 <color=#ff9999>火元素抗性</color> 與參與反應的對應元素抗性降低20%，持續6秒。\n<color=#ffffff>魔導·秘儀「魔女的前夜禮·昇華讚歌」</color>\n除持續時間外，固有天賦 <color=#ffd780>「光靈遵神數顯現」</color> 中的所有效果提升75%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 10412,
+        "name": "莉奈婭",
+        "desc": "冒險家協會挪德卡萊分會顧問，博物學家。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/04/03/b73622caa3750012312c72437295ace3_6973976776946504804.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「野外觀察手記」</color>\n露米在場上時，露米附近敵人的 <color=#ffe699>岩元素抗性</color> 會降低15%。\n<color=#ffd780>月兆·滿輝</color> ：莉奈婭的元素戰技 <color=#ffd780>對策·露米呀吼吼！</color> 和元素爆發 <color=#ffd780>備忘·絕境生存指南</color> 獲得強化，呼喚露米上場後，露米附近敵人的 <color=#ffe699>岩元素抗性</color> 還會進一步降低15%。",
+        "alignment": "center"
+      },
+      {
         "type": "Heading",
         "level": 3,
         "text": "聖遺物",
@@ -1792,6 +2841,34 @@
       {
         "type": "RichText",
         "text": "<color=#ffffff>固有天賦「『基揚戈茲』」</color>\n施放元素爆發 <color=#ffd780>燔天之時</color> 後，依據施放時的戰意，每點戰意都將使目前場上角色造成的傷害提升0.2%，依此方式至多使隊伍中的目前場上角色造成的傷害提升40%，該效果持續20秒，並會在持續時間內逐漸降低為0。\n<color=#ffffff>命之座 第4層「『領袖』的覺悟」</color>\n施放元素爆發 <color=#ffd780>燔天之時</color> 後的傷害提升效果不再隨時間降低，並額外獲得10%傷害加成。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7502,
+        "name": "伊安珊",
+        "desc": "沃陸之邦健身俱樂部的總教練，聞名納塔的營養師。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/dd9a200a86b792fb1b73ef1ee7de0911_2097378734184941134.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第6層</color> <color=#ffffff>「『沃陸之邦』的訓教」</color>\n伊安珊觸發恢復夜魂值的效果時，若夜魂值恢復量溢出，將獲得「極限發力」效果，使隊伍中自己的目前場上角色造成的傷害提升25%，持續3秒。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 23,
+        "name": "溫迪",
+        "desc": "蒙德城諸多吟遊詩人中的一位，自由自在地穿行在街頭巷尾。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Venti_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>魔導·秘儀「魔女的前夜禮·頌時風若」</color>\n元素爆發風神之詩創造的暴風之眼存在期間，附近的目前場上角色觸發擴散反應後的4秒內，該角色造成的傷害提升50%。",
         "alignment": "center"
       },
       {
@@ -2148,6 +3225,20 @@
       {
         "type": "RichText",
         "text": "元素精通提升 <color=#37ffff>100/125/150/175/200</color> 點。裝備者創造護盾後的15秒內，獲得「照夜之鏡」效果：隊伍中自己的目前場上角色對附近的敵人造成的傷害提升 <color=#37ffff>28%/35%/42%/49%/56%</color> ，每14秒至多獲得一次「照夜之鏡」效果。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9456,
+        "name": "狼的武功歌",
+        "desc": "傳說中，是繼承了「北風」之名的瑞文伍德在成為騎士前親手鑄造的大劍。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/02/09/69a9c4711061f96f155bbe236d1ac188_2915183031167827788.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "普通攻擊命中敵人/施放元素戰技/開始重擊時，裝備者將分別獲得1/2/2層「四風詩系」：造成的傷害提升 <color=#36ffff>7.5%/9.5%/11.5%/13.5%/15.5%</color> ，該效果持續4秒，至多疊加4次，每0.01秒至多觸發一次。",
         "alignment": "center"
       },
       {
@@ -2695,6 +3786,20 @@
         "alignment": "center"
       },
       {
+        "type": "CustomEntry",
+        "epId": 10547,
+        "name": "霜結的誓金枝",
+        "desc": "由古老的白木打造而成的長弓，在遙遠的過去曾屬於北境的霜精之王。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/04/03/56dfea855cb96781fc3fa4409463e523_641344848709162695.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "裝備者的元素戰技或月結晶攻擊命中敵人時，將獲得持續6秒的「霜妖精的報恩」效果：裝備者造成的岩元素傷害提升 <color=#36ffff>40%/50%/60%/70%/80%</color> ，月結晶反應傷害提升 <color=#36ffff>40%/50%/60%/70%/80%</color> 。持續期間，若裝備者附近存在月籠，則隊伍中附近的所有其他角色還會獲得「霜妖精的惡戲」效果：造成的岩元素傷害提升 <color=#36ffff>20%/25%/30%/35%/40%</color> ，月結晶反應傷害提升 <color=#36ffff>20%/25%/30%/35%/40%</color> 。裝備者處於隊伍後臺時，依然能觸發上述效果。",
+        "alignment": "center"
+      },
+      {
         "type": "RichText",
         "text": "一些聖遺物提供特定元素傷害加成："
       },
@@ -2892,6 +3997,19 @@
       {
         "type": "RichText",
         "text": "<color=#ffffff>4件套裝</color>\n裝備者觸發其對應元素類型的相關反應後，隊伍中附近的所有角色的該元素反應相關的元素傷害加成提升12%，持續15秒。若觸發該效果時，裝備者處於夜魂加持狀態下，還將使隊伍中附近的所有角色的與該元素反應相關的元素傷害加成提升28%，持續20秒。裝備者處於後臺時也能觸發上述效果。同名聖遺物套裝產生的傷害加成效果無法疊加。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7572,
+        "name": "深廊終曲",
+        "desc": "<p>由北國的玉石打造而成的冰之花，花瓣已然在漫長的歲月中湮落成塵。</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/bf39402f87db1168263c7c0898c8ab0c_4434336707917443666.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n獲得15% <color=#99ffff>冰元素傷害</color> 加成。",
         "alignment": "center"
       },
       {
@@ -3583,6 +4701,132 @@
         "alignment": "center"
       },
       {
+        "type": "CustomEntry",
+        "epId": 7488,
+        "name": "瓦雷莎",
+        "desc": "悠悠哉哉，無比鬆弛的「沃陸之邦」戰士兼果園主，喜歡充滿力量的英雄，還有巨量美食！",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/25/a54efe1bb7e82a589b9af44683a696ca_8635138146175164187.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「直面前路的勇氣」</color>\n施放元素爆發 <color=#ffd780>閃烈降臨！</color> 時，處於熾熱激情狀態或極限驅動狀態：本次元素爆發 <color=#ffd780>閃烈降臨！</color> 造成的傷害提升100%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7706,
+        "name": "絲柯克",
+        "desc": "曾現身於深淵裂隙和原始胎海的來訪者，教導達達利亞武技的老師。孤身一人的女武者。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/48dba0c10560a3ef573f17d97408b5a0_2527001828446746987.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「極惡技·滅」</color>\n凋盡效果持續期間，每0.1秒，絲柯克的普通攻擊命中敵人後，將使本次普通攻擊造成的傷害提高。若施放 <color=#ffd780>極惡技·盡</color> 時，汲取了虛境裂隙，則會依據汲取的虛境裂隙枚數，使本次普通攻擊造成的傷害進一步提高。\n該效果將在觸發次數達到10次時解除。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8396,
+        "name": "菈烏瑪",
+        "desc": "被月光與森林祝福的聖女，一個誕生在「霜月之子」中的希望。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/08/b06e9ff48d57de4856f1a05b1199aae1_8565150401481594895.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「奉向甘泉的沐濯」</color>\n菈烏瑪的每點元素精通，元素戰技造成的傷害提升0.04%，依此方式至多提升32%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8894,
+        "name": "奈芙爾",
+        "desc": "神通廣大的「秘聞館」之主。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/10/21/7557acebcb72b4d9912bcb0e6c92306a_3655566527985254987.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>元素爆發「聖約·真眸幻戲」</color>\n每層「偽秘之帷」都會使奈芙爾施放的幻戲造成比原本高8%的傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9017,
+        "name": "杜林",
+        "desc": "在魔女M筆下誕生的龍，最終來到了人類的世界。而他的「故事」，也仍在繼續。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/11/28/e3e2b8fcbff2f2f3cdcec6bbf04efa84_3327367670955368711.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「流溢之原」</color>\n杜林造成的元素爆發傷害提升40%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 30,
+        "name": "砂糖",
+        "desc": "對萬物充滿好奇的煉金術士，「生物煉金」學派的研究者。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Sucrose_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>魔導·秘儀「魔女的前夜禮·七循之理」</color>\n召喚 <color=#ffd680>小型風靈</color> 後的15秒內，隊伍中附近的角色的普通攻擊、重擊、下落攻擊、元素戰技和元素爆發造成的傷害提升5.71428%。\n召喚 <color=#ffd680>大型風靈</color> 後的20秒內，隊伍中附近的魔導角色的普通攻擊、重擊、下落攻擊、元素戰技和元素爆發造成的傷害提升7.14285%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 47,
+        "name": "阿貝多",
+        "desc": "西風騎士團首席煉金術士兼調查小隊隊長，被稱做「白堊之子」的天才。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Albedo_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>魔導·秘儀「魔女的前夜禮·白芒之書」</color>\n煉成 <color=#ffd680>陽華</color> 後的20秒內，基於阿貝多的防禦力，提升隊伍中附近的角色的普通攻擊、重擊、下落攻擊、元素戰技和元素爆發造成的傷害：每1000點防禦力都將提升4%傷害，至多依此方式提升12%傷害。\n煉成 <color=#ffd680>瑰銀</color> 後的20秒內，基於阿貝多的防禦力，提升隊伍中附近的魔導角色的普通攻擊、重擊、下落攻擊、元素戰技和元素爆發造成的傷害：每1000點防禦力都將提升10%傷害，至多依此方式提升30%傷害。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 12,
+        "name": "可莉",
+        "desc": "西風騎士團禁閉室的常客，蒙德的爆破大師。人稱「逃跑的太陽」。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Klee_icon.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>命之座 第4層「一觸即發」</color>\n（完成魔女的課業後）如果在轟轟火花持續期間內退場，或轟轟火花持續時間結束，會引發爆炸，造成555%攻擊力的火元素範圍傷害；觸發上述效果時，如果可莉在場上，則造成的傷害提升100%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9342,
+        "name": "法爾伽",
+        "desc": "西風騎士團大團長，守護蒙德的北風騎士。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/02/21/553feb81c3bbc5e3bc69a765e157c33f_8250978205515428490.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「風幟的先引」</color>\n隊伍中附近的角色觸發擴散反應時，法爾伽將獲得一層 <color=#ffd780>「蒼牙之誓」</color> ，使法爾伽的普通攻擊、重擊、特殊重擊 <color=#ffd780>蒼噬</color> 與施放的特殊元素戰技 <color=#ffd780>四風將起</color> 造成的傷害提升7.5%。該效果持續8秒，至多疊加4層。",
+        "alignment": "center"
+      },
+      {
         "type": "Heading",
         "level": 3,
         "text": "武器",
@@ -4232,6 +5476,34 @@
         "alignment": "center"
       },
       {
+        "type": "CustomEntry",
+        "epId": 8512,
+        "name": "織月者的曙色",
+        "desc": "純淨無垢的鋒銳銀劍，足以如流淌的月光般穿透堅固的護甲，傳說是最初的詠月使祝福過的聖器。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/02686441b09dcc1d5029ff21a6d04ef8_297003927757836842.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "元素爆發造成的傷害提高 <color=#37ffff>20%/25%/30%/35%/40%</color> ；裝備者的元素能量上限不超過60/40點時，元素爆發造成的傷害額外提高 <color=#37ffff>16%/28% | 20%/35% | 24%/42% | 28%/49% | 32%/56%</color> 。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9047,
+        "name": "黎明破曉之史",
+        "desc": "一切抗爭的詩歌都將乘風而來，落為弦上的輕音。而其中匯聚的力量如同撕開無邊黑夜的破曉之光。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/11/25/888f15859930696bb17aeb61f35fa340_139096456278287885.png",
+        "displayStyle": "card",
+        "menuId": 4
+      },
+      {
+        "type": "RichText",
+        "text": "裝備者獲得「漸起的曉風」：脫離戰鬥狀態3秒後，普通攻擊、元素戰技和元素爆發造成的傷害提升 <color=#37ffff>60/75/90/105/120%</color> 。在戰鬥狀態下，上述傷害提升效果每秒降低 <color=#37ffff>10/12.5/15/17.5/20%</color> ，直到降低至0%。裝備者的普通攻擊、元素戰技或元素爆發命中敵人時，對應類別的傷害提升效果提升 <color=#37ffff>10/12.5/15/17.5/20%</color> ，直到提升至 <color=#37ffff>60/75/90/105/120%</color> ，上述每種類別的攻擊每0.1秒至多觸發一次該效果。裝備者處於隊伍後臺時，依然能觸發上述效果。\n此外，隊伍擁有「魔導·秘儀」效果時，裝備者的普通攻擊、元素戰技或元素爆發命中敵人時，改為使所有類別的傷害提升效果提升 <color=#37ffff>20/25/30/35/40%</color> 。",
+        "alignment": "center"
+      },
+      {
         "type": "Heading",
         "level": 3,
         "text": "聖遺物",
@@ -4434,6 +5706,32 @@
         "alignment": "center"
       },
       {
+        "type": "CustomEntry",
+        "epId": 7571,
+        "name": "長夜之誓",
+        "desc": "<p>執燈士所佩戴的鐵花，象徵著此人曾發下永世守望的重誓。</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/3cf2511dfb1f91696a0ee986e5f1fb22_3371878648281977517.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>2件套裝</color>\n下落攻擊造成的傷害提升25%。\n<color=#ffffff>4件套裝</color>\n裝備者的下落攻擊/重擊/元素戰技命中敵人後，獲得1/2/2層「永照的流輝」，由下落攻擊、重擊或元素戰技產生的該效果分別每1秒至多觸發一次。永照的流輝：下落攻擊造成的傷害提升15%，持續6秒，至多疊加5層，每層持續時間獨立計算。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7572,
+        "name": "深廊終曲",
+        "desc": "<p>由北國的玉石打造而成的冰之花，花瓣已然在漫長的歲月中湮落成塵。</p>",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/17/bf39402f87db1168263c7c0898c8ab0c_4434336707917443666.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>4件套裝</color>\n裝備者的元素能量為0時，普通攻擊造成的傷害提升60%，元素爆發造成的傷害提升60%。裝備者的普通攻擊造成傷害後，上述元素爆發傷害提升效果將失效6秒。裝備者的元素爆發造成傷害後，上述普通攻擊傷害提升效果將失效6秒。角色處於隊伍後臺也能觸發。",
+        "alignment": "center"
+      },
+      {
         "type": "Heading",
         "level": 2,
         "text": "傷害承受倍率",
@@ -4547,7 +5845,21 @@
       },
       {
         "type": "RichText",
-        "text": "<color=#ffffff>命之座 第1層「沉沒的預言」</color>\n隊伍中自己的角色攻擊命中處於「星異」狀態下的敵人後的8秒內，自己的角色所造成的 <color=#80c0ff>水元素相關反應</color> 效果提升。",
+        "text": "<color=#ffffff>命之座 第1層「沉沒的預言」</color>\n隊伍中自己的角色攻擊命中處於「星異」狀態下的敵人後的8秒內，自己的角色所造成的 <color=#80c0ff>水元素相關反應</color> 效果提升。\n<color=#ffffff>魔導·秘儀「</color> <color=#ffffff>魔女的前夜禮·天步真原</color> <color=#ffffff>」</color>\n莫娜的普通攻擊或重擊命中敵人時，將獲得一層「水星天的輝光」，該效果持續8秒，至多疊加3層。每0.1秒至多依此方式獲得一層「水星天的輝光」。隊伍中自己的其他角色對敵人觸發蒸發反應時，將消耗所有的「水星天的輝光」，每消耗一層都會使本次蒸發反應造成的傷害提升5%。",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9017,
+        "name": "杜林",
+        "desc": "在魔女M筆下誕生的龍，最終來到了人類的世界。而他的「故事」，也仍在繼續。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/11/28/e3e2b8fcbff2f2f3cdcec6bbf04efa84_3327367670955368711.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>固有天賦「光靈遵神數顯現」</color>\n依據杜林施放元素爆發顯現的力量形態，分別產生不同的強化效果。若杜林的力量顯現為 <color=#ffd780>黑蝕之龍</color> ，杜林觸發的蒸發反應造成的傷害提升40%，融化反應造成的傷害提升40%。",
         "alignment": "center"
       },
       {
@@ -4564,6 +5876,39 @@
         "type": "RichText",
         "text": "<color=#ffffff>100% + 暴擊傷害</color>",
         "alignment": "center"
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "名稱",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "傷害計算公式"
+          }
+        ]
+      },
+      {
+        "key": "類型",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "內置計算型系統"
+          }
+        ]
+      },
+      {
+        "key": "相關詞條",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 5206,
+            "name": "元素反應",
+            "desc": "<p>元素反應是原神戰鬥系統的核心。理解和掌握這些互動可以極大地提高玩家在戰鬥中的熟練度。</p><p>觸發元素反應時需要考慮多個因素，例如元素附著、後手元素、元素衰減等。元素計量理論和內建冷卻時間將在幫助玩家理解元素反應背後的複雜性方面發揮重要作用。</p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/04/17/157749474/1ef525b101a31611b9fe2cc1b0a59aa8_5091762420924568630.png"
+          }
+        ],
+        "isMaterial": true
       }
     ],
     "galleryCharacter": [

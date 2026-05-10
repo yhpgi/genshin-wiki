@@ -5,15 +5,881 @@
   "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/80fa97679c8d1828fdd96c6aa9638632_4327573591148809640.png",
   "headerImgUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/041c4d6ada7be783b6e7d3d37a4f902d_1413776735054866630.png",
   "filterValues": {
-    "characterWeapon": "Katalysator",
     "characterProperty": "KT",
-    "characterRarity": 5,
-    "characterVision": "Hydro"
+    "characterWeapon": "Katalysator",
+    "characterVision": "Hydro",
+    "characterRarity": 5
   },
   "menuId": 2,
   "menuName": "Figurenhandbuch",
   "version": 1772468285,
   "components": {
+    "talent": [
+      {
+        "key": "Mondtau-Kaskade",
+        "title": "Mondtau-Kaskade",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/0444787db3808f3753678d14b6cd1bef_4756108311742380806.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Standardangriff</color>\nRuft Gezeiten des Mondlichts herbei, führt bis zu 3 Angriffe aus und verursacht <color=#80c0ff>Hydro-SCH</color> .\n<color=#ffd780>Heftiger Schlag</color>\nVerbraucht eine gewisse Menge Ausdauer und verursacht nach kurzer Aufladezeit <color=#80c0ff>Hydro-Flächenschaden</color> .\nErsetzt, wenn du über mindestens 1 Stapelung <color=#ffd780>Grünender Tau</color> verfügst, den von Columbina angewendeten heftigen Schlag durch den besonderen heftigen Schlag <color=#ffd780>Mondtau-Reinigung</color> , der keine Ausdauer verbraucht: Verbraucht 1 Stapelung Grünender Tau und fügt den Gegnern vor sich 3-mal <color=#99ff88>Dendro-Flächenschaden</color> zu. Hierdurch verursachter Schaden gilt als Schaden durch die Reaktion Mondspross.\n<color=#ffd780>Angriff aus dem Fall</color>\nSchlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen <color=#80c0ff>Hydro-Flächenschaden</color> .\n<color=#ffd780>Grünender Tau</color>\nRessource, die der Truppe gewährt wird, nachdem die Truppenmitglieder die Reaktion Mondspross ausgelöst haben.\nVerleiht der Truppe innerhalb von 2.5s nach Auslösen der Reaktion Mondspross alle 2.5s 1 Stapelung „Grünender Tau“, insgesamt bis zu 3 Stapelungen. Wenn während der Wirkungsdauer die Reaktion Mondspross erneut ausgelöst wird, wird die Wirkungsdauer dieses Effekts aktualisiert."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "St.",
+            "values": [
+              "St. 1",
+              "St. 2",
+              "St. 3",
+              "St. 4",
+              "St. 5",
+              "St. 6",
+              "St. 7",
+              "St. 8",
+              "St. 9",
+              "St. 10",
+              "St. 11"
+            ]
+          },
+          {
+            "key": "SCH Phase 1",
+            "values": [
+              "46.8%",
+              "50.3%",
+              "53.8%",
+              "58.5%",
+              "62%",
+              "65.5%",
+              "70.2%",
+              "74.9%",
+              "79.6%",
+              "84.2%",
+              "88.9%"
+            ]
+          },
+          {
+            "key": "SCH Phase 2",
+            "values": [
+              "36.6%",
+              "39.4%",
+              "42.1%",
+              "45.8%",
+              "48.5%",
+              "51.3%",
+              "54.9%",
+              "58.6%",
+              "62.3%",
+              "65.9%",
+              "69.6%"
+            ]
+          },
+          {
+            "key": "SCH Phase 3",
+            "values": [
+              "58.5%",
+              "62.9%",
+              "67.3%",
+              "73.1%",
+              "77.5%",
+              "81.9%",
+              "87.7%",
+              "93.6%",
+              "99.4%",
+              "105.3%",
+              "111.1%"
+            ]
+          },
+          {
+            "key": "SCH heftiger Schläge",
+            "values": [
+              "116.1%",
+              "124.8%",
+              "133.5%",
+              "145.1%",
+              "153.8%",
+              "162.5%",
+              "174.1%",
+              "185.7%",
+              "197.3%",
+              "208.9%",
+              "220.6%"
+            ]
+          },
+          {
+            "key": "Ausdauerverbrauch heftiger Schläge",
+            "values": [
+              "50 Punkte",
+              "50 Punkte",
+              "50 Punkte",
+              "50 Punkte",
+              "50 Punkte",
+              "50 Punkte",
+              "50 Punkte",
+              "50 Punkte",
+              "50 Punkte",
+              "50 Punkte",
+              "50 Punkte"
+            ]
+          },
+          {
+            "key": "SCH durch „Mondtau-Reinigung“",
+            "values": [
+              "1.51% der max. LP ×3",
+              "1.62% der max. LP ×3",
+              "1.74% der max. LP ×3",
+              "1.89% der max. LP ×3",
+              "2% der max. LP ×3",
+              "2.12% der max. LP ×3",
+              "2.27% der max. LP ×3",
+              "2.42% der max. LP ×3",
+              "2.57% der max. LP ×3",
+              "2.72% der max. LP ×3",
+              "2.87% der max. LP ×3"
+            ]
+          },
+          {
+            "key": "SCH beim Fallen",
+            "values": [
+              "56.8%",
+              "61.5%",
+              "66.1%",
+              "72.7%",
+              "77.3%",
+              "82.6%",
+              "89.9%",
+              "97.1%",
+              "104.4%",
+              "112.3%",
+              "120.3%"
+            ]
+          },
+          {
+            "key": "SCH beim Fallen aus niedriger/großer Höhe",
+            "values": [
+              "114% / 142%",
+              "123% / 153%",
+              "132% / 165%",
+              "145% / 182%",
+              "155% / 193%",
+              "165% / 206%",
+              "180% / 224%",
+              "194% / 243%",
+              "209% / 261%",
+              "225% / 281%",
+              "240% / 300%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8582,
+              "name": "Lehren des „Mondlichts“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Die Dinge mögen groß oder klein sein, Menschen klug oder töricht. Doch unter dem Mondlicht sind alle gleich.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/1c4046e42dd2846556348347ce78fa55_2777181783990190104.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 396,
+              "name": "Schleimabsonderung",
+              "desc": "Die dickflüssige Ummantelung von Schleimen. Häufig in Elementwerkstädten zu finden.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8583,
+              "name": "Anleitung zum „Mondlicht“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Das Mondlicht in den Wolken ist schwach im Vergleich zur grenzenlosen Wildnis. Und doch ist es gerade dieses Licht, das die Menschen durch die lange Nacht führt.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/e9dfbaa97e0a80d6b1e921d9fc934af7_4495538276374637164.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 398,
+              "name": "Schleimkondensat",
+              "desc": "Das leicht gereinigte Sekret von Schleimen. Direkter Kontakt mit der Haut ist zu vermeiden.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8583,
+              "name": "Anleitung zum „Mondlicht“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Das Mondlicht in den Wolken ist schwach im Vergleich zur grenzenlosen Wildnis. Und doch ist es gerade dieses Licht, das die Menschen durch die lange Nacht führt.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/e9dfbaa97e0a80d6b1e921d9fc934af7_4495538276374637164.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 398,
+              "name": "Schleimkondensat",
+              "desc": "Das leicht gereinigte Sekret von Schleimen. Direkter Kontakt mit der Haut ist zu vermeiden.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8583,
+              "name": "Anleitung zum „Mondlicht“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Das Mondlicht in den Wolken ist schwach im Vergleich zur grenzenlosen Wildnis. Und doch ist es gerade dieses Licht, das die Menschen durch die lange Nacht führt.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/e9dfbaa97e0a80d6b1e921d9fc934af7_4495538276374637164.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 398,
+              "name": "Schleimkondensat",
+              "desc": "Das leicht gereinigte Sekret von Schleimen. Direkter Kontakt mit der Haut ist zu vermeiden.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8583,
+              "name": "Anleitung zum „Mondlicht“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Das Mondlicht in den Wolken ist schwach im Vergleich zur grenzenlosen Wildnis. Und doch ist es gerade dieses Licht, das die Menschen durch die lange Nacht führt.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/e9dfbaa97e0a80d6b1e921d9fc934af7_4495538276374637164.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 398,
+              "name": "Schleimkondensat",
+              "desc": "Das leicht gereinigte Sekret von Schleimen. Direkter Kontakt mit der Haut ist zu vermeiden.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8584,
+              "name": "Philosophie des „Mondlichts“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Seit der Zeit der ersten Menschen bittet man bei Neumondaufgang den Mond am Himmel um Erleuchtung und Segen. Das heutige Mondlicht scheint sich nicht von dem früherer Nächte zu unterscheiden, aber wo ist der Neumond, zu dem man einst aufsah?",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/833f7dfb03b5a705efe9c644db0fae22_3446897373668866173.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 397,
+              "name": "Schleimkonzentrat",
+              "desc": "Ein sehr zähes Schleimkonzentrat, das sich ziellos bewegt, wenn es in Ruhe gelassen wird.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 9191,
+              "name": "Maske des tugendhaften Arztes",
+              "desc": "Eine Maske, die nach dem Sieg über die falsche Gottheit, die sich den Mond angemaßt hatte, auf dem Prüfgelände der Ketzer gefunden wurde.<br>Medizin soll eigentlich die Leiden des Fleisches heilen, doch sterbliche Ärzte verschließen ihre Augen vor den wahren Ursachen des Todes. In den Händen eines weisen Heilers entkommt der gebrechliche menschliche Körper den Fesseln von Geburt, Alterung, Krankheit und Tod und enthüllt eine Kraft, die sich dem gesunden Menschenverstand entzieht.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/07/9004a7deac7ccb2e9050ef9b6013417c_3517654003715698593.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8584,
+              "name": "Philosophie des „Mondlichts“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Seit der Zeit der ersten Menschen bittet man bei Neumondaufgang den Mond am Himmel um Erleuchtung und Segen. Das heutige Mondlicht scheint sich nicht von dem früherer Nächte zu unterscheiden, aber wo ist der Neumond, zu dem man einst aufsah?",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/833f7dfb03b5a705efe9c644db0fae22_3446897373668866173.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 397,
+              "name": "Schleimkonzentrat",
+              "desc": "Ein sehr zähes Schleimkonzentrat, das sich ziellos bewegt, wenn es in Ruhe gelassen wird.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 9191,
+              "name": "Maske des tugendhaften Arztes",
+              "desc": "Eine Maske, die nach dem Sieg über die falsche Gottheit, die sich den Mond angemaßt hatte, auf dem Prüfgelände der Ketzer gefunden wurde.<br>Medizin soll eigentlich die Leiden des Fleisches heilen, doch sterbliche Ärzte verschließen ihre Augen vor den wahren Ursachen des Todes. In den Händen eines weisen Heilers entkommt der gebrechliche menschliche Körper den Fesseln von Geburt, Alterung, Krankheit und Tod und enthüllt eine Kraft, die sich dem gesunden Menschenverstand entzieht.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/07/9004a7deac7ccb2e9050ef9b6013417c_3517654003715698593.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8584,
+              "name": "Philosophie des „Mondlichts“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Seit der Zeit der ersten Menschen bittet man bei Neumondaufgang den Mond am Himmel um Erleuchtung und Segen. Das heutige Mondlicht scheint sich nicht von dem früherer Nächte zu unterscheiden, aber wo ist der Neumond, zu dem man einst aufsah?",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/833f7dfb03b5a705efe9c644db0fae22_3446897373668866173.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 397,
+              "name": "Schleimkonzentrat",
+              "desc": "Ein sehr zähes Schleimkonzentrat, das sich ziellos bewegt, wenn es in Ruhe gelassen wird.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 9191,
+              "name": "Maske des tugendhaften Arztes",
+              "desc": "Eine Maske, die nach dem Sieg über die falsche Gottheit, die sich den Mond angemaßt hatte, auf dem Prüfgelände der Ketzer gefunden wurde.<br>Medizin soll eigentlich die Leiden des Fleisches heilen, doch sterbliche Ärzte verschließen ihre Augen vor den wahren Ursachen des Todes. In den Händen eines weisen Heilers entkommt der gebrechliche menschliche Körper den Fesseln von Geburt, Alterung, Krankheit und Tod und enthüllt eine Kraft, die sich dem gesunden Menschenverstand entzieht.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/07/9004a7deac7ccb2e9050ef9b6013417c_3517654003715698593.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 8584,
+              "name": "Philosophie des „Mondlichts“",
+              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Seit der Zeit der ersten Menschen bittet man bei Neumondaufgang den Mond am Himmel um Erleuchtung und Segen. Das heutige Mondlicht scheint sich nicht von dem früherer Nächte zu unterscheiden, aber wo ist der Neumond, zu dem man einst aufsah?",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/833f7dfb03b5a705efe9c644db0fae22_3446897373668866173.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 397,
+              "name": "Schleimkonzentrat",
+              "desc": "Ein sehr zähes Schleimkonzentrat, das sich ziellos bewegt, wenn es in Ruhe gelassen wird.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 9191,
+              "name": "Maske des tugendhaften Arztes",
+              "desc": "Eine Maske, die nach dem Sieg über die falsche Gottheit, die sich den Mond angemaßt hatte, auf dem Prüfgelände der Ketzer gefunden wurde.<br>Medizin soll eigentlich die Leiden des Fleisches heilen, doch sterbliche Ärzte verschließen ihre Augen vor den wahren Ursachen des Todes. In den Händen eines weisen Heilers entkommt der gebrechliche menschliche Körper den Fesseln von Geburt, Alterung, Krankheit und Tod und enthüllt eine Kraft, die sich dem gesunden Menschenverstand entzieht.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/07/9004a7deac7ccb2e9050ef9b6013417c_3517654003715698593.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "Krone der Weisheit",
+              "desc": "Wertvolles Material, das zum Verbessern von Talenten benötigt wird.<br/>Ein rituelles Hilfsmittel, das in alter Zeit für die Weitergabe von Wissen genutzt wurde. Heutzutage jedoch liegt Wissen in gesprochener und niedergeschriebener Sprache. Die in der Krone der Weisheit gespeicherte Kraft kann heute sicherlich immer noch auf den Menschen abfärben.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ]
+      },
+      {
+        "key": "Ewige Gezeiten",
+        "title": "Ewige Gezeiten",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/c304db49efd9b44973e05626fb01a758_365021321736021862.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Ruft Gezeiten des Mondmeeres herbei, verursacht <color=#80c0ff>Hydro-Flächenschaden</color> und erschafft eine <color=#ffd780>Gravitationswelle</color> .\nDie <color=#ffd780>Gravitationswelle</color> folgt der aktuellen Figur und fügt Gegnern in der Umgebung fortlaufend <color=#80c0ff>Hydro-Flächenschaden</color> zu. Während die <color=#ffd780>Gravitationswelle</color> existiert und wenn Truppenmitglieder in der Nähe eine Mondleuchten-Reaktion auslösen oder Schaden durch eine Mondleuchten-Reaktion verursachen, wird ein bestimmter Wert von einer besonderen <color=#ffd780>Gravitation</color> für Columbina angesammelt. Fügt, wenn deren Maximalwert erreicht ist, Gegnern basierend auf der Art der Mondleuchten-Reaktion, durch die Columbina am meisten <color=#ffd780>Gravitation</color> gesammelt hat, unterschiedliche Arten von Schaden zu.\n<color=#ffd780>Mondomen – Reifer Glanz</color> : Die <color=#ffd780>Gravitationswelle</color> verursacht <color=#80c0ff>Hydro-Flächenschaden</color> mit größerer Reichweite.\n<color=#ffd780>Gravitationswelle:</color>\nNach dem Anwenden der Elementarfähigkeit <color=#ffd780>Ewige Gezeiten</color> beschwört Columbina die <color=#ffd780>Gravitationswelle</color> herauf.\nDie Gravitationswelle folgt der aktuellen Figur und fügt den Gegnern in der Umgebung fortlaufend <color=#80c0ff>Hydro-Flächenschaden</color> zu.\nVerleiht Columbina zudem 2s lang den Effekt „Offenbarung des Neumonds“, wenn Truppenmitglieder in der Nähe während der Wirkungsdauer der Gravitationswelle eine Mondleuchten-Reaktion auslösen oder Schaden durch eine Mondleuchten-Reaktion verursachen.\nDabei kann fortlaufend <color=#ffd780>Gravitation</color> angesammelt werden, alle 2s 20 Punkte.\nDer Höchstwert der Gravitation liegt bei 60 Punkten. Diese werden nach dem Ende der Wirkungsdauer der Gravitationswelle entfernt.\nWenn der Gravitations-Höchstwert erreicht wurde, wird eine spezielle <color=#ffd780>Gravitations-Interferenz</color> ausgelöst, die unterschiedliche Effekte hervorruft, abhängig davon, durch welche Art von Mondleuchten-Reaktion Columbina am meisten Gravitation angesammelt hat. Wenn die Art Mondleuchten-Reaktion, die am meisten Gravitation für Columbina gesammelt hat, folgende ist:\n<color=#ffd780>Mond unter Strom</color> : Die Gravitations-Interferenz verursacht einmal <color=#ffacff>Elektro-Flächenschaden</color> .\nHierdurch verursachter Schaden gilt als Schaden durch die Reaktion „Mond unter Strom“.\n<color=#ffd780>Mondspross</color> : Die Gravitations-Interferenz schießt 5 Mondtau-Siegel auf Gegner in der Umgebung ab, die <color=#99ff88>Dendro-Schaden</color> verursachen. Hierdurch verursachter Schaden gilt als Schaden durch die Reaktion „Mondspross“.\n<color=#ffd780>Mond-Kristallisation</color> : Die Gravitations-Interferenz verursacht einmal <color=#ffe699>Geo-Flächenschaden</color> .\nHierdurch verursachter Schaden gilt als Schaden durch die Reaktion „Mond-Kristallisation“."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "St.",
+            "values": [
+              "St. 1",
+              "St. 2",
+              "St. 3",
+              "St. 4",
+              "St. 5",
+              "St. 6",
+              "St. 7",
+              "St. 8",
+              "St. 9",
+              "St. 10",
+              "St. 11",
+              "St. 12",
+              "St. 13"
+            ]
+          },
+          {
+            "key": "Fähigkeits-SCH",
+            "values": [
+              "16.7% der max. LP",
+              "18% der max. LP",
+              "19.2% der max. LP",
+              "20.9% der max. LP",
+              "22.2% der max. LP",
+              "23.4% der max. LP",
+              "25.1% der max. LP",
+              "26.8% der max. LP",
+              "28.4% der max. LP",
+              "30.1% der max. LP",
+              "31.8% der max. LP",
+              "33.4% der max. LP",
+              "35.5% der max. LP"
+            ]
+          },
+          {
+            "key": "Gravitationswelle – Fortlaufender SCH",
+            "values": [
+              "9.4% der max. LP",
+              "10.1% der max. LP",
+              "10.8% der max. LP",
+              "11.7% der max. LP",
+              "12.4% der max. LP",
+              "13.1% der max. LP",
+              "14% der max. LP",
+              "15% der max. LP",
+              "15.9% der max. LP",
+              "16.8% der max. LP",
+              "17.8% der max. LP",
+              "18.7% der max. LP",
+              "19.9% der max. LP"
+            ]
+          },
+          {
+            "key": "Gravitations-Interferenz – SCH durch „Mond unter Strom“",
+            "values": [
+              "4.7% der max. LP",
+              "5.06% der max. LP",
+              "5.41% der max. LP",
+              "5.88% der max. LP",
+              "6.23% der max. LP",
+              "6.59% der max. LP",
+              "7.06% der max. LP",
+              "7.53% der max. LP",
+              "8% der max. LP",
+              "8.47% der max. LP",
+              "8.94% der max. LP",
+              "9.41% der max. LP",
+              "10% der max. LP"
+            ]
+          },
+          {
+            "key": "Gravitations-Interferenz – SCH durch „Mondspross“",
+            "values": [
+              "1.41% der max. LP ×5",
+              "1.51% der max. LP ×5",
+              "1.62% der max. LP ×5",
+              "1.76% der max. LP ×5",
+              "1.87% der max. LP ×5",
+              "1.97% der max. LP ×5",
+              "2.11% der max. LP ×5",
+              "2.25% der max. LP ×5",
+              "2.39% der max. LP ×5",
+              "2.53% der max. LP ×5",
+              "2.68% der max. LP ×5",
+              "2.82% der max. LP ×5",
+              "2.99% der max. LP ×5"
+            ]
+          },
+          {
+            "key": "Gravitations-Interferenz – SCH durch „Mond-Kristallisation“",
+            "values": [
+              "8.82% der max. LP",
+              "9.49% der max. LP",
+              "10.15% der max. LP",
+              "11.03% der max. LP",
+              "11.69% der max. LP",
+              "12.35% der max. LP",
+              "13.24% der max. LP",
+              "14.12% der max. LP",
+              "15% der max. LP",
+              "15.88% der max. LP",
+              "16.77% der max. LP",
+              "17.65% der max. LP",
+              "18.75% der max. LP"
+            ]
+          },
+          {
+            "key": "Gravitations-Obergrenze",
+            "values": [
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60"
+            ]
+          },
+          {
+            "key": "Gravitationswellen-Dauer",
+            "values": [
+              "25s",
+              "25s",
+              "25s",
+              "25s",
+              "25s",
+              "25s",
+              "25s",
+              "25s",
+              "25s",
+              "25s",
+              "25s",
+              "25s",
+              "25s"
+            ]
+          },
+          {
+            "key": "Abklingzeit",
+            "values": [
+              "17s",
+              "17s",
+              "17s",
+              "17s",
+              "17s",
+              "17s",
+              "17s",
+              "17s",
+              "17s",
+              "17s",
+              "17s",
+              "17s",
+              "17s"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Melancholie unterm Mond",
+        "title": "Melancholie unterm Mond",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/29dd0ea8fd0f908a624538f22efcf536_7412440002086593471.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Berge und Meer verbinden sich unter dem Namen des makellosen neuen Mondes. Verwandelt das Gelände um sich herum kurzzeitig in ein <color=#ffd780>Mondgebiet</color> und verursacht <color=#80c0ff>Hydro-Flächenschaden</color> .\n<color=#ffd780>Mondgebiet:</color>\nEin Gebiet, das Columbina nach dem Anwenden der Spezialfähigkeit <color=#ffd780>Melancholie unterm Mond</color> erschafft.\nErhöht den von allen Truppenmitgliedern verursachten Schaden der Mondleuchten-Reaktionen, wenn sich die aktuelle Figur auf dem <color=#ffd780>Mondgebiet</color> befindet."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "St.",
+            "values": [
+              "St. 1",
+              "St. 2",
+              "St. 3",
+              "St. 4",
+              "St. 5",
+              "St. 6",
+              "St. 7",
+              "St. 8",
+              "St. 9",
+              "St. 10",
+              "St. 11",
+              "St. 12",
+              "St. 13"
+            ]
+          },
+          {
+            "key": "Fähigkeits-SCH",
+            "values": [
+              "32.2% der max. LP",
+              "34.7% der max. LP",
+              "37.1% der max. LP",
+              "40.3% der max. LP",
+              "42.7% der max. LP",
+              "45.1% der max. LP",
+              "48.4% der max. LP",
+              "51.6% der max. LP",
+              "54.8% der max. LP",
+              "58% der max. LP",
+              "61.3% der max. LP",
+              "64.5% der max. LP",
+              "68.5% der max. LP"
+            ]
+          },
+          {
+            "key": "SCH-Bonus für Mondleuchten-Reaktion",
+            "values": [
+              "13%",
+              "16%",
+              "19%",
+              "22%",
+              "25%",
+              "28%",
+              "31%",
+              "34%",
+              "37%",
+              "40%",
+              "43%",
+              "46%",
+              "49%"
+            ]
+          },
+          {
+            "key": "Mondgebiets-Dauer",
+            "values": [
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s",
+              "20s"
+            ]
+          },
+          {
+            "key": "Abklingzeit",
+            "values": [
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s",
+              "15s"
+            ]
+          },
+          {
+            "key": "Elementarenergie",
+            "values": [
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Mondbedingter Wahnsinn",
+        "title": "Mondbedingter Wahnsinn",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/1509e44185e6a4c4e724b714bc789370_3321413726053079049.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Verleiht Columbina beim Auslösen der <color=#ffd780>Gravitations-Interferenz</color> den Effekt „Mond-Wahnsinn“, der die eigenen KT 10s lang um 5% erhöht, max. 3-fach stapelbar."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Gesetz des Neumonds",
+        "title": "Gesetz des Neumonds",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/24ec6edc039d46bee6a2b3bdb7190b94_4714889182391868511.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Verleiht Figuren, die sich im <color=#ffd780>Mondgebiet</color> befinden und eine Mondleuchten-Reaktion auslösen, jeweils den folgenden Effekt:\n· <color=#ffd780>Mond unter Strom</color> : Wenn Ziele, die bestimmte Bedingungen erfüllen, mit Blitzen der Gewitterwolken betroffen sind, besteht eine Wahrscheinlichkeit von 33%, dass die Gewitterwolken zusätzlich einmal auf die Ziele mit Blitzen einschlagen.\n· <color=#ffd780>Mondspross</color> : Verleiht der Truppe beim Auslösen der Reaktion „Mondspross“ 1 Stapelung besonderen <color=#ffd780>Grünenden Mondtau</color> . Auf diese Weise können alle 18s bis zu 3 Stapelungen „Grünender Mondtau“ für die Truppe generiert werden.\n· <color=#ffd780>Mond-Kristallisation</color> : Gibt beim Auslösen von „Harmonie der Mondkäfige“ jedem Mondkäfig eine Möglichkeit von 33%, zusätzlich einen Angriff auszuführen.\n<color=#ffd780>Grünender Mondtau:</color>\nEine spezielle Form des Grünenden Taus, die durch Columbinas passives Talent <color=#ffd780>Gesetz des Neumonds</color> bereitgestellt wird. Die Obergrenze und Dauer werden separat vom Grünenden Tau berechnet. Wenn der Grünende Tau der Truppe aufgebraucht ist, wird stattdessen <color=#ffd780>Grünender Mondtau</color> verbraucht. Die Obergrenze des <color=#ffd780>Grünenden Mondtaus</color> beträgt drei Stapelungen."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Mondomen-Segen – Geliehenes Mondlicht",
+        "title": "Mondomen-Segen – Geliehenes Mondlicht",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/66316dcff1b19b2de218e56f9900d9c8_5588582627610006601.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Wandelt, wenn eine Figur in der Truppe die Reaktion Unter Strom / Sprießen / Hydro-Kristallisation auslöst, diese in die Reaktion Mond unter Strom / Mondspross / Mond-Kristallisation um, wobei der Basis-SCH der Mondleuchten-Reaktion, die durch Truppenmitglieder ausgelöst wird, auf der Grundlage von Columbinas max. LP erhöht wird: Erhöht pro 1.000 Punkte der max. LP den Basis-SCH der Mondleuchten-Reaktion um 0,2%. Auf diese Weise kann der Schaden um bis zu 7% erhöht werden.\nErhöht zudem die Stufe vom <color=#ffd780>Mondomen</color> der Truppe um 1, wenn sich Columbina in der Truppe befindet."
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "Mondwache",
+        "title": "Mondwache",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/859a110c04f7c883be9ec7d67d464841_4432161800127089802.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Wenn in Nod-Krai ein Truppenmitglied ohnmächtig wird, belebt Columbina diese Figur wieder und stellt ihre LP wieder her; der Wiederherstellungswert ist abhängig von Columbinas Freundschaftsstufe; 100s Abklingzeit. Dieser Effekt gilt nicht in Sphären, Gebietssäuberungen und im Gewundenen Abgrund.\nAußerdem scheint Columbina eine besondere Verbindung zu einigen kleinen Tieren zu haben, die von Kuuvahki beeinflusst sind ..."
+          }
+        ],
+        "attributes": []
+      }
+    ],
+    "summaryList": [
+      {
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/93ef856926cb17579cfdc7485078517c_6292201986968860786.png",
+        "name": "Strahlkraft über Blüten und Gipfeln",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Löst, wenn die Elementarfähigkeit <color=#ffd780>Ewige Gezeiten</color> angewendet wird, sofort einmal einen der <color=#ffd780>Gravitations-Interferenz</color> entsprechenden Effekt aus. 15s Abklingzeit.\n<color=#ffd780>Mondomen – Reifer Glanz</color>\nWenn beim Auslösen der Gravitations-Interferenz die Art von Mondleuchten-Reaktion, die am meisten Gravitation für Columbina angesammelt hat, folgende ist:\n· <color=#ffd780>Mond unter Strom</color> : Stellt dem eigenen aktuellen Truppenmitglied 6Punkte Elementarenergie wieder her.\n· <color=#ffd780>Mondspross</color> : Erhöht den Unterbrechungs-WDS des eigenen aktuellen Truppenmitglieds 8s lang.\n· <color=#ffd780>Mond-Kristallisation</color> : Beschwört einen <color=#ffd780>Regensee-Schild</color> herauf. Die Schildstärke basiert auf 12% der max. LP von Columbina und hält bei <color=#80c0ff>Hydro-SCH</color> 250% Schaden ab, hält 8s lang.\n<color=#ffd780>Steigert</color> den von allen Truppenmitgliedern in der Nähe verursachten Schaden durch Mondleuchten-Reaktionen um 1,5%.\n<color=#ffd780>Steigern:</color>\nEin besonderer Effekt zur SCH-Erhöhung, der unabhängig von anderen SCH-Erhöhung-Effekten berechnet wird."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/1db73aacd5b07126f1f9e68a687f0967_8606679349170103822.png",
+        "name": "Nicht in einsamer Pracht",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Erhöht die Ansammlungsgeschwindigkeit der <color=#ffd780>Gravitation</color> um 34%.\nVerleiht Columbina, wenn die <color=#ffd780>Gravitations-Interferenz</color> ausgelöst wird, den Effekt <color=#ffd780>Mondstrahlung</color> , der ihre max. LP 8s lang um 40% erhöht.\n<color=#ffd780>Mondomen – Reifer Glanz</color> :\nWenn während der Wirkungsdauer von <color=#ffd780>Mondstrahlung</color> beim Auslösen dieser <color=#ffd780>Gravitations-Interferenz</color> die Art von Mondleuchten-Reaktion, die am meisten Gravitation für Columbina angesammelt hat, folgende ist:\n· <color=#ffd780>Mond unter Strom</color> : Erhöht den ANG des eigenen aktuellen Truppenmitglieds um 1% von Columbinas max. LP.\n· <color=#ffd780>Mondspross</color> : Erhöht die Elementarkunde des eigenen aktuellen Truppenmitglieds um 0,35% von Columbinas max. LP.\n· <color=#ffd780>Mond-Kristallisation</color> : Erhöht die VTD des eigenen aktuellen Truppenmitglieds um 1% von Columbinas max. LP.\n<color=#ffd780>Steigert</color> den von allen Truppenmitgliedern in der Nähe verursachten Schaden durch Mondleuchten-Reaktionen um 7%."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/c304db49efd9b44973e05626fb01a758_6925428974171667999.png",
+        "name": "Traumhafter Schein über ruhigen Gewässern",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Erhöht die Stufe der Elementarfähigkeit <color=#ffd780>Ewige Gezeiten</color> um 3.\nHöchststufe 15.\n<color=#ffd780>Steigert</color> den von allen Truppenmitgliedern in der Nähe verursachten Schaden durch Mondleuchten-Reaktionen um 1,5%."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/9d14c7f50401d48191c916f1ffe63a21_5429503408318449802.png",
+        "name": "Wolkige Berge in blumigem Nebel",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Stellt Columbina, wenn die <color=#ffd780>Gravitations-Interferenz</color> ausgelöst wird, 4Punkte Elementarenergie wieder her.\nErhöht zudem, wenn die Art Mondleuchten-Reaktion, die am meisten <color=#ffd780>Gravitation</color> für Columbina angesammelt hat, Mond unter Strom / Mondspross / Mond-Kristallisation ist, den durch diese Gravitations-Interferenz verursachten Schaden der Mondleuchten-Reaktion jeweils um 12,5% / 2,5% / 12,5% von Columbinas max. LP. 15s Abklingzeit.\n<color=#ffd780>Steigert</color> den von allen Truppenmitgliedern in der Nähe verursachten Schaden durch Mondleuchten-Reaktionen um 1,5%."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/ab3ffe3511f1df8f801b813af92f50ca_4365731368873486594.png",
+        "name": "Einsames Lied der Stille",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Erhöht die Stufe der Spezialfähigkeit <color=#ffd780>Melancholie unterm Mond</color> um 3.\nHöchststufe 15.\n<color=#ffd780>Steigert</color> den von allen Truppenmitgliedern in der Nähe verursachten Schaden durch Mondleuchten-Reaktionen um 1,5%."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/9040cccaaeffd09429043cfa5aa1976e_46011752843825033.png",
+        "name": "Durch die Dunkelheit, geführt vom Mondlicht",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Erhöht 8s, nachdem eine beliebige Figur im <color=#ffd780>Mondgebiet</color> eine Mondleuchten-Reaktion ausgelöst hat, basierend auf dem Elementartyp der Reaktion, den verursachten kritischen Schaden des entsprechenden Elements aller Truppenmitglieder um 80%. Der Verstärkungseffekt für kritischen Schaden desselben Elementartyps ist nicht stapelbar.\n<color=#ffd780>Steigert</color> den von allen Truppenmitgliedern in der Nähe verursachten Schaden durch Mondleuchten-Reaktionen um 7%."
+          }
+        ]
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/e2f1dc2738cf421c09d763d61d1f3355_412988836160487752.jpg"
+      },
+      {
+        "key": "Figurenzeichnung",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/259ea9a42d04bdbccf5dc9e0f09e4c1d_5820073355393012960.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Columbinas Kleidung. Die Kuuhenki haben aus dem Stoff, den die Nachkommen des Frostmonds geopfert haben, und ein paar sanften Mondstrahlen diese leichte und anmutige Kleidung für Columbina gewebt. Die unwissenden Nachkommen des Frostmonds verstanden dieses neue Kleid natürlich als ein weiteres Wunder von Kuutar. Kein Wunder also, dass Columbina seitdem manchmal Wünsche wie „Bitte, Kuutar, schenke mir die gleichen geschickten Hände wie du sie besitzt“ hört."
+          }
+        ]
+      },
+      {
+        "key": "Idle-Animation 1",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/b25d853b2b208d4a912aa51a6588951c_90736458959000729.gif"
+      },
+      {
+        "key": "Idle-Animation 2",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/850de395a678584c990ec11181acdca6_403676439881587357.gif"
+      }
+    ],
     "voice": [
       {
         "title": "Schön, dich kennenzulernen.",
@@ -1688,30 +2554,6 @@
         ]
       }
     ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/e2f1dc2738cf421c09d763d61d1f3355_412988836160487752.jpg"
-      },
-      {
-        "key": "Figurenzeichnung",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/259ea9a42d04bdbccf5dc9e0f09e4c1d_5820073355393012960.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Columbinas Kleidung. Die Kuuhenki haben aus dem Stoff, den die Nachkommen des Frostmonds geopfert haben, und ein paar sanften Mondstrahlen diese leichte und anmutige Kleidung für Columbina gewebt. Die unwissenden Nachkommen des Frostmonds verstanden dieses neue Kleid natürlich als ein weiteres Wunder von Kuutar. Kein Wunder also, dass Columbina seitdem manchmal Wünsche wie „Bitte, Kuutar, schenke mir die gleichen geschickten Hände wie du sie besitzt“ hört."
-          }
-        ]
-      },
-      {
-        "key": "Idle-Animation 1",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/b25d853b2b208d4a912aa51a6588951c_90736458959000729.gif"
-      },
-      {
-        "key": "Idle-Animation 2",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/13/850de395a678584c990ec11181acdca6_403676439881587357.gif"
-      }
-    ],
     "baseInfo": [
       {
         "key": "Name",
@@ -1818,68 +2660,6 @@
           {
             "type": "RichText",
             "text": "Luna IV"
-          }
-        ]
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/93ef856926cb17579cfdc7485078517c_6292201986968860786.png",
-        "name": "Strahlkraft über Blüten und Gipfeln",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Löst, wenn die Elementarfähigkeit <color=#ffd780>Ewige Gezeiten</color> angewendet wird, sofort einmal einen der <color=#ffd780>Gravitations-Interferenz</color> entsprechenden Effekt aus. 15s Abklingzeit.\n<color=#ffd780>Mondomen – Reifer Glanz</color>\nWenn beim Auslösen der Gravitations-Interferenz die Art von Mondleuchten-Reaktion, die am meisten Gravitation für Columbina angesammelt hat, folgende ist:\n· <color=#ffd780>Mond unter Strom</color> : Stellt dem eigenen aktuellen Truppenmitglied 6Punkte Elementarenergie wieder her.\n· <color=#ffd780>Mondspross</color> : Erhöht den Unterbrechungs-WDS des eigenen aktuellen Truppenmitglieds 8s lang.\n· <color=#ffd780>Mond-Kristallisation</color> : Beschwört einen <color=#ffd780>Regensee-Schild</color> herauf. Die Schildstärke basiert auf 12% der max. LP von Columbina und hält bei <color=#80c0ff>Hydro-SCH</color> 250% Schaden ab, hält 8s lang.\n<color=#ffd780>Steigert</color> den von allen Truppenmitgliedern in der Nähe verursachten Schaden durch Mondleuchten-Reaktionen um 1,5%.\n<color=#ffd780>Steigern:</color>\nEin besonderer Effekt zur SCH-Erhöhung, der unabhängig von anderen SCH-Erhöhung-Effekten berechnet wird."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/1db73aacd5b07126f1f9e68a687f0967_8606679349170103822.png",
-        "name": "Nicht in einsamer Pracht",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Erhöht die Ansammlungsgeschwindigkeit der <color=#ffd780>Gravitation</color> um 34%.\nVerleiht Columbina, wenn die <color=#ffd780>Gravitations-Interferenz</color> ausgelöst wird, den Effekt <color=#ffd780>Mondstrahlung</color> , der ihre max. LP 8s lang um 40% erhöht.\n<color=#ffd780>Mondomen – Reifer Glanz</color> :\nWenn während der Wirkungsdauer von <color=#ffd780>Mondstrahlung</color> beim Auslösen dieser <color=#ffd780>Gravitations-Interferenz</color> die Art von Mondleuchten-Reaktion, die am meisten Gravitation für Columbina angesammelt hat, folgende ist:\n· <color=#ffd780>Mond unter Strom</color> : Erhöht den ANG des eigenen aktuellen Truppenmitglieds um 1% von Columbinas max. LP.\n· <color=#ffd780>Mondspross</color> : Erhöht die Elementarkunde des eigenen aktuellen Truppenmitglieds um 0,35% von Columbinas max. LP.\n· <color=#ffd780>Mond-Kristallisation</color> : Erhöht die VTD des eigenen aktuellen Truppenmitglieds um 1% von Columbinas max. LP.\n<color=#ffd780>Steigert</color> den von allen Truppenmitgliedern in der Nähe verursachten Schaden durch Mondleuchten-Reaktionen um 7%."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/c304db49efd9b44973e05626fb01a758_6925428974171667999.png",
-        "name": "Traumhafter Schein über ruhigen Gewässern",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Erhöht die Stufe der Elementarfähigkeit <color=#ffd780>Ewige Gezeiten</color> um 3.\nHöchststufe 15.\n<color=#ffd780>Steigert</color> den von allen Truppenmitgliedern in der Nähe verursachten Schaden durch Mondleuchten-Reaktionen um 1,5%."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/9d14c7f50401d48191c916f1ffe63a21_5429503408318449802.png",
-        "name": "Wolkige Berge in blumigem Nebel",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Stellt Columbina, wenn die <color=#ffd780>Gravitations-Interferenz</color> ausgelöst wird, 4Punkte Elementarenergie wieder her.\nErhöht zudem, wenn die Art Mondleuchten-Reaktion, die am meisten <color=#ffd780>Gravitation</color> für Columbina angesammelt hat, Mond unter Strom / Mondspross / Mond-Kristallisation ist, den durch diese Gravitations-Interferenz verursachten Schaden der Mondleuchten-Reaktion jeweils um 12,5% / 2,5% / 12,5% von Columbinas max. LP. 15s Abklingzeit.\n<color=#ffd780>Steigert</color> den von allen Truppenmitgliedern in der Nähe verursachten Schaden durch Mondleuchten-Reaktionen um 1,5%."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/ab3ffe3511f1df8f801b813af92f50ca_4365731368873486594.png",
-        "name": "Einsames Lied der Stille",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Erhöht die Stufe der Spezialfähigkeit <color=#ffd780>Melancholie unterm Mond</color> um 3.\nHöchststufe 15.\n<color=#ffd780>Steigert</color> den von allen Truppenmitgliedern in der Nähe verursachten Schaden durch Mondleuchten-Reaktionen um 1,5%."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/9040cccaaeffd09429043cfa5aa1976e_46011752843825033.png",
-        "name": "Durch die Dunkelheit, geführt vom Mondlicht",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Erhöht 8s, nachdem eine beliebige Figur im <color=#ffd780>Mondgebiet</color> eine Mondleuchten-Reaktion ausgelöst hat, basierend auf dem Elementartyp der Reaktion, den verursachten kritischen Schaden des entsprechenden Elements aller Truppenmitglieder um 80%. Der Verstärkungseffekt für kritischen Schaden desselben Elementartyps ist nicht stapelbar.\n<color=#ffd780>Steigert</color> den von allen Truppenmitgliedern in der Nähe verursachten Schaden durch Mondleuchten-Reaktionen um 7%."
           }
         ]
       }
@@ -3096,786 +3876,6 @@
         "type": "Heading",
         "level": 3,
         "text": "HoYoLAB:"
-      }
-    ],
-    "talent": [
-      {
-        "key": "Mondtau-Kaskade",
-        "title": "Mondtau-Kaskade",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/0444787db3808f3753678d14b6cd1bef_4756108311742380806.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Standardangriff</color>\nRuft Gezeiten des Mondlichts herbei, führt bis zu 3 Angriffe aus und verursacht <color=#80c0ff>Hydro-SCH</color> .\n<color=#ffd780>Heftiger Schlag</color>\nVerbraucht eine gewisse Menge Ausdauer und verursacht nach kurzer Aufladezeit <color=#80c0ff>Hydro-Flächenschaden</color> .\nErsetzt, wenn du über mindestens 1 Stapelung <color=#ffd780>Grünender Tau</color> verfügst, den von Columbina angewendeten heftigen Schlag durch den besonderen heftigen Schlag <color=#ffd780>Mondtau-Reinigung</color> , der keine Ausdauer verbraucht: Verbraucht 1 Stapelung Grünender Tau und fügt den Gegnern vor sich 3-mal <color=#99ff88>Dendro-Flächenschaden</color> zu. Hierdurch verursachter Schaden gilt als Schaden durch die Reaktion Mondspross.\n<color=#ffd780>Angriff aus dem Fall</color>\nSchlägt beim Fallen aus der Luft auf den Boden, greift alle Gegner in der Bahn an und verursacht beim Aufkommen <color=#80c0ff>Hydro-Flächenschaden</color> .\n<color=#ffd780>Grünender Tau</color>\nRessource, die der Truppe gewährt wird, nachdem die Truppenmitglieder die Reaktion Mondspross ausgelöst haben.\nVerleiht der Truppe innerhalb von 2.5s nach Auslösen der Reaktion Mondspross alle 2.5s 1 Stapelung „Grünender Tau“, insgesamt bis zu 3 Stapelungen. Wenn während der Wirkungsdauer die Reaktion Mondspross erneut ausgelöst wird, wird die Wirkungsdauer dieses Effekts aktualisiert."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "St.",
-            "values": [
-              "St. 1",
-              "St. 2",
-              "St. 3",
-              "St. 4",
-              "St. 5",
-              "St. 6",
-              "St. 7",
-              "St. 8",
-              "St. 9",
-              "St. 10",
-              "St. 11"
-            ]
-          },
-          {
-            "key": "SCH Phase 1",
-            "values": [
-              "46.8%",
-              "50.3%",
-              "53.8%",
-              "58.5%",
-              "62%",
-              "65.5%",
-              "70.2%",
-              "74.9%",
-              "79.6%",
-              "84.2%",
-              "88.9%"
-            ]
-          },
-          {
-            "key": "SCH Phase 2",
-            "values": [
-              "36.6%",
-              "39.4%",
-              "42.1%",
-              "45.8%",
-              "48.5%",
-              "51.3%",
-              "54.9%",
-              "58.6%",
-              "62.3%",
-              "65.9%",
-              "69.6%"
-            ]
-          },
-          {
-            "key": "SCH Phase 3",
-            "values": [
-              "58.5%",
-              "62.9%",
-              "67.3%",
-              "73.1%",
-              "77.5%",
-              "81.9%",
-              "87.7%",
-              "93.6%",
-              "99.4%",
-              "105.3%",
-              "111.1%"
-            ]
-          },
-          {
-            "key": "SCH heftiger Schläge",
-            "values": [
-              "116.1%",
-              "124.8%",
-              "133.5%",
-              "145.1%",
-              "153.8%",
-              "162.5%",
-              "174.1%",
-              "185.7%",
-              "197.3%",
-              "208.9%",
-              "220.6%"
-            ]
-          },
-          {
-            "key": "Ausdauerverbrauch heftiger Schläge",
-            "values": [
-              "50 Punkte",
-              "50 Punkte",
-              "50 Punkte",
-              "50 Punkte",
-              "50 Punkte",
-              "50 Punkte",
-              "50 Punkte",
-              "50 Punkte",
-              "50 Punkte",
-              "50 Punkte",
-              "50 Punkte"
-            ]
-          },
-          {
-            "key": "SCH durch „Mondtau-Reinigung“",
-            "values": [
-              "1.51% der max. LP ×3",
-              "1.62% der max. LP ×3",
-              "1.74% der max. LP ×3",
-              "1.89% der max. LP ×3",
-              "2% der max. LP ×3",
-              "2.12% der max. LP ×3",
-              "2.27% der max. LP ×3",
-              "2.42% der max. LP ×3",
-              "2.57% der max. LP ×3",
-              "2.72% der max. LP ×3",
-              "2.87% der max. LP ×3"
-            ]
-          },
-          {
-            "key": "SCH beim Fallen",
-            "values": [
-              "56.8%",
-              "61.5%",
-              "66.1%",
-              "72.7%",
-              "77.3%",
-              "82.6%",
-              "89.9%",
-              "97.1%",
-              "104.4%",
-              "112.3%",
-              "120.3%"
-            ]
-          },
-          {
-            "key": "SCH beim Fallen aus niedriger/großer Höhe",
-            "values": [
-              "114% / 142%",
-              "123% / 153%",
-              "132% / 165%",
-              "145% / 182%",
-              "155% / 193%",
-              "165% / 206%",
-              "180% / 224%",
-              "194% / 243%",
-              "209% / 261%",
-              "225% / 281%",
-              "240% / 300%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8582,
-              "name": "Lehren des „Mondlichts“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Die Dinge mögen groß oder klein sein, Menschen klug oder töricht. Doch unter dem Mondlicht sind alle gleich.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/1c4046e42dd2846556348347ce78fa55_2777181783990190104.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 396,
-              "name": "Schleimabsonderung",
-              "desc": "Die dickflüssige Ummantelung von Schleimen. Häufig in Elementwerkstädten zu finden.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8583,
-              "name": "Anleitung zum „Mondlicht“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Das Mondlicht in den Wolken ist schwach im Vergleich zur grenzenlosen Wildnis. Und doch ist es gerade dieses Licht, das die Menschen durch die lange Nacht führt.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/e9dfbaa97e0a80d6b1e921d9fc934af7_4495538276374637164.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 398,
-              "name": "Schleimkondensat",
-              "desc": "Das leicht gereinigte Sekret von Schleimen. Direkter Kontakt mit der Haut ist zu vermeiden.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8583,
-              "name": "Anleitung zum „Mondlicht“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Das Mondlicht in den Wolken ist schwach im Vergleich zur grenzenlosen Wildnis. Und doch ist es gerade dieses Licht, das die Menschen durch die lange Nacht führt.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/e9dfbaa97e0a80d6b1e921d9fc934af7_4495538276374637164.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 398,
-              "name": "Schleimkondensat",
-              "desc": "Das leicht gereinigte Sekret von Schleimen. Direkter Kontakt mit der Haut ist zu vermeiden.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8583,
-              "name": "Anleitung zum „Mondlicht“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Das Mondlicht in den Wolken ist schwach im Vergleich zur grenzenlosen Wildnis. Und doch ist es gerade dieses Licht, das die Menschen durch die lange Nacht führt.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/e9dfbaa97e0a80d6b1e921d9fc934af7_4495538276374637164.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 398,
-              "name": "Schleimkondensat",
-              "desc": "Das leicht gereinigte Sekret von Schleimen. Direkter Kontakt mit der Haut ist zu vermeiden.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8583,
-              "name": "Anleitung zum „Mondlicht“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Das Mondlicht in den Wolken ist schwach im Vergleich zur grenzenlosen Wildnis. Und doch ist es gerade dieses Licht, das die Menschen durch die lange Nacht führt.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/e9dfbaa97e0a80d6b1e921d9fc934af7_4495538276374637164.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 398,
-              "name": "Schleimkondensat",
-              "desc": "Das leicht gereinigte Sekret von Schleimen. Direkter Kontakt mit der Haut ist zu vermeiden.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8584,
-              "name": "Philosophie des „Mondlichts“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Seit der Zeit der ersten Menschen bittet man bei Neumondaufgang den Mond am Himmel um Erleuchtung und Segen. Das heutige Mondlicht scheint sich nicht von dem früherer Nächte zu unterscheiden, aber wo ist der Neumond, zu dem man einst aufsah?",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/833f7dfb03b5a705efe9c644db0fae22_3446897373668866173.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 397,
-              "name": "Schleimkonzentrat",
-              "desc": "Ein sehr zähes Schleimkonzentrat, das sich ziellos bewegt, wenn es in Ruhe gelassen wird.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 9191,
-              "name": "Maske des tugendhaften Arztes",
-              "desc": "Eine Maske, die nach dem Sieg über die falsche Gottheit, die sich den Mond angemaßt hatte, auf dem Prüfgelände der Ketzer gefunden wurde.<br>Medizin soll eigentlich die Leiden des Fleisches heilen, doch sterbliche Ärzte verschließen ihre Augen vor den wahren Ursachen des Todes. In den Händen eines weisen Heilers entkommt der gebrechliche menschliche Körper den Fesseln von Geburt, Alterung, Krankheit und Tod und enthüllt eine Kraft, die sich dem gesunden Menschenverstand entzieht.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/07/9004a7deac7ccb2e9050ef9b6013417c_3517654003715698593.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8584,
-              "name": "Philosophie des „Mondlichts“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Seit der Zeit der ersten Menschen bittet man bei Neumondaufgang den Mond am Himmel um Erleuchtung und Segen. Das heutige Mondlicht scheint sich nicht von dem früherer Nächte zu unterscheiden, aber wo ist der Neumond, zu dem man einst aufsah?",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/833f7dfb03b5a705efe9c644db0fae22_3446897373668866173.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 397,
-              "name": "Schleimkonzentrat",
-              "desc": "Ein sehr zähes Schleimkonzentrat, das sich ziellos bewegt, wenn es in Ruhe gelassen wird.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 9191,
-              "name": "Maske des tugendhaften Arztes",
-              "desc": "Eine Maske, die nach dem Sieg über die falsche Gottheit, die sich den Mond angemaßt hatte, auf dem Prüfgelände der Ketzer gefunden wurde.<br>Medizin soll eigentlich die Leiden des Fleisches heilen, doch sterbliche Ärzte verschließen ihre Augen vor den wahren Ursachen des Todes. In den Händen eines weisen Heilers entkommt der gebrechliche menschliche Körper den Fesseln von Geburt, Alterung, Krankheit und Tod und enthüllt eine Kraft, die sich dem gesunden Menschenverstand entzieht.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/07/9004a7deac7ccb2e9050ef9b6013417c_3517654003715698593.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8584,
-              "name": "Philosophie des „Mondlichts“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Seit der Zeit der ersten Menschen bittet man bei Neumondaufgang den Mond am Himmel um Erleuchtung und Segen. Das heutige Mondlicht scheint sich nicht von dem früherer Nächte zu unterscheiden, aber wo ist der Neumond, zu dem man einst aufsah?",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/833f7dfb03b5a705efe9c644db0fae22_3446897373668866173.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 397,
-              "name": "Schleimkonzentrat",
-              "desc": "Ein sehr zähes Schleimkonzentrat, das sich ziellos bewegt, wenn es in Ruhe gelassen wird.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 9191,
-              "name": "Maske des tugendhaften Arztes",
-              "desc": "Eine Maske, die nach dem Sieg über die falsche Gottheit, die sich den Mond angemaßt hatte, auf dem Prüfgelände der Ketzer gefunden wurde.<br>Medizin soll eigentlich die Leiden des Fleisches heilen, doch sterbliche Ärzte verschließen ihre Augen vor den wahren Ursachen des Todes. In den Händen eines weisen Heilers entkommt der gebrechliche menschliche Körper den Fesseln von Geburt, Alterung, Krankheit und Tod und enthüllt eine Kraft, die sich dem gesunden Menschenverstand entzieht.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/07/9004a7deac7ccb2e9050ef9b6013417c_3517654003715698593.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "Überall in der Welt verwendetes Geld und damit die Sprache, die jeder unabhängig von seiner Herkunft spricht.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 8584,
-              "name": "Philosophie des „Mondlichts“",
-              "desc": "Material zur Verbesserung von Talenten.<br>Das „Mondlicht“ ist ein Segen des Landes unter dem Mond.<br>Seit der Zeit der ersten Menschen bittet man bei Neumondaufgang den Mond am Himmel um Erleuchtung und Segen. Das heutige Mondlicht scheint sich nicht von dem früherer Nächte zu unterscheiden, aber wo ist der Neumond, zu dem man einst aufsah?",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/833f7dfb03b5a705efe9c644db0fae22_3446897373668866173.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 397,
-              "name": "Schleimkonzentrat",
-              "desc": "Ein sehr zähes Schleimkonzentrat, das sich ziellos bewegt, wenn es in Ruhe gelassen wird.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 9191,
-              "name": "Maske des tugendhaften Arztes",
-              "desc": "Eine Maske, die nach dem Sieg über die falsche Gottheit, die sich den Mond angemaßt hatte, auf dem Prüfgelände der Ketzer gefunden wurde.<br>Medizin soll eigentlich die Leiden des Fleisches heilen, doch sterbliche Ärzte verschließen ihre Augen vor den wahren Ursachen des Todes. In den Händen eines weisen Heilers entkommt der gebrechliche menschliche Körper den Fesseln von Geburt, Alterung, Krankheit und Tod und enthüllt eine Kraft, die sich dem gesunden Menschenverstand entzieht.",
-              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/07/9004a7deac7ccb2e9050ef9b6013417c_3517654003715698593.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "Krone der Weisheit",
-              "desc": "Wertvolles Material, das zum Verbessern von Talenten benötigt wird.<br/>Ein rituelles Hilfsmittel, das in alter Zeit für die Weitergabe von Wissen genutzt wurde. Heutzutage jedoch liegt Wissen in gesprochener und niedergeschriebener Sprache. Die in der Krone der Weisheit gespeicherte Kraft kann heute sicherlich immer noch auf den Menschen abfärben.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ]
-      },
-      {
-        "key": "Ewige Gezeiten",
-        "title": "Ewige Gezeiten",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/c304db49efd9b44973e05626fb01a758_365021321736021862.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Ruft Gezeiten des Mondmeeres herbei, verursacht <color=#80c0ff>Hydro-Flächenschaden</color> und erschafft eine <color=#ffd780>Gravitationswelle</color> .\nDie <color=#ffd780>Gravitationswelle</color> folgt der aktuellen Figur und fügt Gegnern in der Umgebung fortlaufend <color=#80c0ff>Hydro-Flächenschaden</color> zu. Während die <color=#ffd780>Gravitationswelle</color> existiert und wenn Truppenmitglieder in der Nähe eine Mondleuchten-Reaktion auslösen oder Schaden durch eine Mondleuchten-Reaktion verursachen, wird ein bestimmter Wert von einer besonderen <color=#ffd780>Gravitation</color> für Columbina angesammelt. Fügt, wenn deren Maximalwert erreicht ist, Gegnern basierend auf der Art der Mondleuchten-Reaktion, durch die Columbina am meisten <color=#ffd780>Gravitation</color> gesammelt hat, unterschiedliche Arten von Schaden zu.\n<color=#ffd780>Mondomen – Reifer Glanz</color> : Die <color=#ffd780>Gravitationswelle</color> verursacht <color=#80c0ff>Hydro-Flächenschaden</color> mit größerer Reichweite.\n<color=#ffd780>Gravitationswelle:</color>\nNach dem Anwenden der Elementarfähigkeit <color=#ffd780>Ewige Gezeiten</color> beschwört Columbina die <color=#ffd780>Gravitationswelle</color> herauf.\nDie Gravitationswelle folgt der aktuellen Figur und fügt den Gegnern in der Umgebung fortlaufend <color=#80c0ff>Hydro-Flächenschaden</color> zu.\nVerleiht Columbina zudem 2s lang den Effekt „Offenbarung des Neumonds“, wenn Truppenmitglieder in der Nähe während der Wirkungsdauer der Gravitationswelle eine Mondleuchten-Reaktion auslösen oder Schaden durch eine Mondleuchten-Reaktion verursachen.\nDabei kann fortlaufend <color=#ffd780>Gravitation</color> angesammelt werden, alle 2s 20 Punkte.\nDer Höchstwert der Gravitation liegt bei 60 Punkten. Diese werden nach dem Ende der Wirkungsdauer der Gravitationswelle entfernt.\nWenn der Gravitations-Höchstwert erreicht wurde, wird eine spezielle <color=#ffd780>Gravitations-Interferenz</color> ausgelöst, die unterschiedliche Effekte hervorruft, abhängig davon, durch welche Art von Mondleuchten-Reaktion Columbina am meisten Gravitation angesammelt hat. Wenn die Art Mondleuchten-Reaktion, die am meisten Gravitation für Columbina gesammelt hat, folgende ist:\n<color=#ffd780>Mond unter Strom</color> : Die Gravitations-Interferenz verursacht einmal <color=#ffacff>Elektro-Flächenschaden</color> .\nHierdurch verursachter Schaden gilt als Schaden durch die Reaktion „Mond unter Strom“.\n<color=#ffd780>Mondspross</color> : Die Gravitations-Interferenz schießt 5 Mondtau-Siegel auf Gegner in der Umgebung ab, die <color=#99ff88>Dendro-Schaden</color> verursachen. Hierdurch verursachter Schaden gilt als Schaden durch die Reaktion „Mondspross“.\n<color=#ffd780>Mond-Kristallisation</color> : Die Gravitations-Interferenz verursacht einmal <color=#ffe699>Geo-Flächenschaden</color> .\nHierdurch verursachter Schaden gilt als Schaden durch die Reaktion „Mond-Kristallisation“."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "St.",
-            "values": [
-              "St. 1",
-              "St. 2",
-              "St. 3",
-              "St. 4",
-              "St. 5",
-              "St. 6",
-              "St. 7",
-              "St. 8",
-              "St. 9",
-              "St. 10",
-              "St. 11",
-              "St. 12",
-              "St. 13"
-            ]
-          },
-          {
-            "key": "Fähigkeits-SCH",
-            "values": [
-              "16.7% der max. LP",
-              "18% der max. LP",
-              "19.2% der max. LP",
-              "20.9% der max. LP",
-              "22.2% der max. LP",
-              "23.4% der max. LP",
-              "25.1% der max. LP",
-              "26.8% der max. LP",
-              "28.4% der max. LP",
-              "30.1% der max. LP",
-              "31.8% der max. LP",
-              "33.4% der max. LP",
-              "35.5% der max. LP"
-            ]
-          },
-          {
-            "key": "Gravitationswelle – Fortlaufender SCH",
-            "values": [
-              "9.4% der max. LP",
-              "10.1% der max. LP",
-              "10.8% der max. LP",
-              "11.7% der max. LP",
-              "12.4% der max. LP",
-              "13.1% der max. LP",
-              "14% der max. LP",
-              "15% der max. LP",
-              "15.9% der max. LP",
-              "16.8% der max. LP",
-              "17.8% der max. LP",
-              "18.7% der max. LP",
-              "19.9% der max. LP"
-            ]
-          },
-          {
-            "key": "Gravitations-Interferenz – SCH durch „Mond unter Strom“",
-            "values": [
-              "4.7% der max. LP",
-              "5.06% der max. LP",
-              "5.41% der max. LP",
-              "5.88% der max. LP",
-              "6.23% der max. LP",
-              "6.59% der max. LP",
-              "7.06% der max. LP",
-              "7.53% der max. LP",
-              "8% der max. LP",
-              "8.47% der max. LP",
-              "8.94% der max. LP",
-              "9.41% der max. LP",
-              "10% der max. LP"
-            ]
-          },
-          {
-            "key": "Gravitations-Interferenz – SCH durch „Mondspross“",
-            "values": [
-              "1.41% der max. LP ×5",
-              "1.51% der max. LP ×5",
-              "1.62% der max. LP ×5",
-              "1.76% der max. LP ×5",
-              "1.87% der max. LP ×5",
-              "1.97% der max. LP ×5",
-              "2.11% der max. LP ×5",
-              "2.25% der max. LP ×5",
-              "2.39% der max. LP ×5",
-              "2.53% der max. LP ×5",
-              "2.68% der max. LP ×5",
-              "2.82% der max. LP ×5",
-              "2.99% der max. LP ×5"
-            ]
-          },
-          {
-            "key": "Gravitations-Interferenz – SCH durch „Mond-Kristallisation“",
-            "values": [
-              "8.82% der max. LP",
-              "9.49% der max. LP",
-              "10.15% der max. LP",
-              "11.03% der max. LP",
-              "11.69% der max. LP",
-              "12.35% der max. LP",
-              "13.24% der max. LP",
-              "14.12% der max. LP",
-              "15% der max. LP",
-              "15.88% der max. LP",
-              "16.77% der max. LP",
-              "17.65% der max. LP",
-              "18.75% der max. LP"
-            ]
-          },
-          {
-            "key": "Gravitations-Obergrenze",
-            "values": [
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60"
-            ]
-          },
-          {
-            "key": "Gravitationswellen-Dauer",
-            "values": [
-              "25s",
-              "25s",
-              "25s",
-              "25s",
-              "25s",
-              "25s",
-              "25s",
-              "25s",
-              "25s",
-              "25s",
-              "25s",
-              "25s",
-              "25s"
-            ]
-          },
-          {
-            "key": "Abklingzeit",
-            "values": [
-              "17s",
-              "17s",
-              "17s",
-              "17s",
-              "17s",
-              "17s",
-              "17s",
-              "17s",
-              "17s",
-              "17s",
-              "17s",
-              "17s",
-              "17s"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Melancholie unterm Mond",
-        "title": "Melancholie unterm Mond",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/29dd0ea8fd0f908a624538f22efcf536_7412440002086593471.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Berge und Meer verbinden sich unter dem Namen des makellosen neuen Mondes. Verwandelt das Gelände um sich herum kurzzeitig in ein <color=#ffd780>Mondgebiet</color> und verursacht <color=#80c0ff>Hydro-Flächenschaden</color> .\n<color=#ffd780>Mondgebiet:</color>\nEin Gebiet, das Columbina nach dem Anwenden der Spezialfähigkeit <color=#ffd780>Melancholie unterm Mond</color> erschafft.\nErhöht den von allen Truppenmitgliedern verursachten Schaden der Mondleuchten-Reaktionen, wenn sich die aktuelle Figur auf dem <color=#ffd780>Mondgebiet</color> befindet."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "St.",
-            "values": [
-              "St. 1",
-              "St. 2",
-              "St. 3",
-              "St. 4",
-              "St. 5",
-              "St. 6",
-              "St. 7",
-              "St. 8",
-              "St. 9",
-              "St. 10",
-              "St. 11",
-              "St. 12",
-              "St. 13"
-            ]
-          },
-          {
-            "key": "Fähigkeits-SCH",
-            "values": [
-              "32.2% der max. LP",
-              "34.7% der max. LP",
-              "37.1% der max. LP",
-              "40.3% der max. LP",
-              "42.7% der max. LP",
-              "45.1% der max. LP",
-              "48.4% der max. LP",
-              "51.6% der max. LP",
-              "54.8% der max. LP",
-              "58% der max. LP",
-              "61.3% der max. LP",
-              "64.5% der max. LP",
-              "68.5% der max. LP"
-            ]
-          },
-          {
-            "key": "SCH-Bonus für Mondleuchten-Reaktion",
-            "values": [
-              "13%",
-              "16%",
-              "19%",
-              "22%",
-              "25%",
-              "28%",
-              "31%",
-              "34%",
-              "37%",
-              "40%",
-              "43%",
-              "46%",
-              "49%"
-            ]
-          },
-          {
-            "key": "Mondgebiets-Dauer",
-            "values": [
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s",
-              "20s"
-            ]
-          },
-          {
-            "key": "Abklingzeit",
-            "values": [
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s",
-              "15s"
-            ]
-          },
-          {
-            "key": "Elementarenergie",
-            "values": [
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60",
-              "60"
-            ]
-          }
-        ]
-      },
-      {
-        "key": "Mondbedingter Wahnsinn",
-        "title": "Mondbedingter Wahnsinn",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/1509e44185e6a4c4e724b714bc789370_3321413726053079049.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Verleiht Columbina beim Auslösen der <color=#ffd780>Gravitations-Interferenz</color> den Effekt „Mond-Wahnsinn“, der die eigenen KT 10s lang um 5% erhöht, max. 3-fach stapelbar."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Gesetz des Neumonds",
-        "title": "Gesetz des Neumonds",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/24ec6edc039d46bee6a2b3bdb7190b94_4714889182391868511.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Verleiht Figuren, die sich im <color=#ffd780>Mondgebiet</color> befinden und eine Mondleuchten-Reaktion auslösen, jeweils den folgenden Effekt:\n· <color=#ffd780>Mond unter Strom</color> : Wenn Ziele, die bestimmte Bedingungen erfüllen, mit Blitzen der Gewitterwolken betroffen sind, besteht eine Wahrscheinlichkeit von 33%, dass die Gewitterwolken zusätzlich einmal auf die Ziele mit Blitzen einschlagen.\n· <color=#ffd780>Mondspross</color> : Verleiht der Truppe beim Auslösen der Reaktion „Mondspross“ 1 Stapelung besonderen <color=#ffd780>Grünenden Mondtau</color> . Auf diese Weise können alle 18s bis zu 3 Stapelungen „Grünender Mondtau“ für die Truppe generiert werden.\n· <color=#ffd780>Mond-Kristallisation</color> : Gibt beim Auslösen von „Harmonie der Mondkäfige“ jedem Mondkäfig eine Möglichkeit von 33%, zusätzlich einen Angriff auszuführen.\n<color=#ffd780>Grünender Mondtau:</color>\nEine spezielle Form des Grünenden Taus, die durch Columbinas passives Talent <color=#ffd780>Gesetz des Neumonds</color> bereitgestellt wird. Die Obergrenze und Dauer werden separat vom Grünenden Tau berechnet. Wenn der Grünende Tau der Truppe aufgebraucht ist, wird stattdessen <color=#ffd780>Grünender Mondtau</color> verbraucht. Die Obergrenze des <color=#ffd780>Grünenden Mondtaus</color> beträgt drei Stapelungen."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Mondomen-Segen – Geliehenes Mondlicht",
-        "title": "Mondomen-Segen – Geliehenes Mondlicht",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/66316dcff1b19b2de218e56f9900d9c8_5588582627610006601.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Wandelt, wenn eine Figur in der Truppe die Reaktion Unter Strom / Sprießen / Hydro-Kristallisation auslöst, diese in die Reaktion Mond unter Strom / Mondspross / Mond-Kristallisation um, wobei der Basis-SCH der Mondleuchten-Reaktion, die durch Truppenmitglieder ausgelöst wird, auf der Grundlage von Columbinas max. LP erhöht wird: Erhöht pro 1.000 Punkte der max. LP den Basis-SCH der Mondleuchten-Reaktion um 0,2%. Auf diese Weise kann der Schaden um bis zu 7% erhöht werden.\nErhöht zudem die Stufe vom <color=#ffd780>Mondomen</color> der Truppe um 1, wenn sich Columbina in der Truppe befindet."
-          }
-        ],
-        "attributes": []
-      },
-      {
-        "key": "Mondwache",
-        "title": "Mondwache",
-        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/13/39324012/859a110c04f7c883be9ec7d67d464841_4432161800127089802.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Wenn in Nod-Krai ein Truppenmitglied ohnmächtig wird, belebt Columbina diese Figur wieder und stellt ihre LP wieder her; der Wiederherstellungswert ist abhängig von Columbinas Freundschaftsstufe; 100s Abklingzeit. Dieser Effekt gilt nicht in Sphären, Gebietssäuberungen und im Gewundenen Abgrund.\nAußerdem scheint Columbina eine besondere Verbindung zu einigen kleinen Tieren zu haben, die von Kuuvahki beeinflusst sind ..."
-          }
-        ],
-        "attributes": []
       }
     ],
     "story": [
