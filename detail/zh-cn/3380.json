@@ -5,12 +5,13 @@
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/15/47826599/57ebf6f2fb55233920f05bf4f055c381_5998461085419285463.png",
   "filterValues": {
     "objectType": [
+      "恢复类料理",
       "食物"
     ]
   },
   "menuId": 9,
   "menuName": "提瓦特物产",
-  "version": 1678653979,
+  "version": 1778736288,
   "components": {
     "baseInfo": [
       {
@@ -27,7 +28,16 @@
         "value": [
           {
             "type": "RichText",
-            "text": "恢复类食物"
+            "text": "食物\n恢复类料理"
+          }
+        ]
+      },
+      {
+        "key": "国家",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "须弥"
           }
         ]
       },
@@ -36,7 +46,7 @@
         "value": [
           {
             "type": "RichText",
-            "text": "立即为选中的角色恢复生命值上限的 <color=#37ffff>18%</color> ，并在之后的30秒内，每5秒恢复 <color=#37ffff>300</color> 点生命值。"
+            "text": "立即为选中的角色恢复生命值上限的18%，并在之后的30秒内，每5秒恢复300点生命值。"
           }
         ]
       },
@@ -45,72 +55,94 @@
         "value": [
           {
             "type": "RichText",
-            "text": "完成烹饪获得"
+            "text": "烹饪获得"
           }
         ]
       },
       {
-        "key": "食谱",
+        "key": "上线版本",
         "value": [
           {
-            "type": "CustomEntry",
-            "epId": 3047,
-            "name": "食谱：奶酱鲜鱼",
-            "desc": "<p>步骤详实的食谱，记载着「奶酱鲜鱼」的制作方法。</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/07/88072335/60c9c277139b43907167e6452d409874_3954144070579045893.png"
+            "type": "RichText",
+            "text": "3.0"
           }
-        ],
-        "isMaterial": true
+        ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>食谱</color>"
       },
       {
-        "key": "所需食材",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 1890,
-            "name": "鱼肉",
-            "desc": "鱼类的新鲜肉块。经过适当处理可以制成让人回味无穷的菜式。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fish_icon.png",
-            "amount": 3
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1104,
-            "name": "牛奶",
-            "desc": "奶牛的乳汁。香香甜甜，嘴角的那滴也不想放过。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Milk_icon.png",
-            "amount": 2
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1547,
-            "name": "薄荷",
-            "desc": "饱含清凉成分的植物叶子。清爽冰凉的滋味能将暑气荡涤一空。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mint_icon.png",
-            "amount": 1
-          }
-        ],
-        "isMaterial": true
+        "type": "CustomEntry",
+        "epId": 3047,
+        "name": "食谱：奶酱鲜鱼",
+        "desc": "<p>步骤详实的食谱，记载着「奶酱鲜鱼」的制作方法。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/07/88072335/60c9c277139b43907167e6452d409874_3954144070579045893.png",
+        "displayStyle": "text",
+        "menuId": 9
       },
       {
-        "key": "其他版本",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3382,
-            "name": "奶酱鲜鱼",
-            "desc": "<p>佐以酱汁的鱼料理。将新鲜的鱼块擦干水分后进行煎烤，皮脆肉香的鱼肉再缀以雪白奶酱和翠绿薄荷。简单的做法，带来别具一格的美味。</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/15/47826599/59ce46598b1291a17d789a69586a3439_4341622717447411551.png"
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 3377,
-            "name": "美味的奶酱鲜鱼",
-            "desc": "<p>佐以酱汁的鱼料理。莹白剔透的鱼块，橫卧于曼妙奶酱之上，只需一口就能让味蕾感受到活鱼跃水而出般的鲜美冲击。</p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/15/47826599/0033e16fac770ff44980ee044f5fe7bb_4346942647022647252.png"
-          }
-        ],
-        "isMaterial": true
+        "type": "RichText",
+        "text": "<color=#ffffff>食材</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1890,
+        "name": "鱼肉",
+        "desc": "鱼类的新鲜肉块。经过适当处理可以制成让人回味无穷的菜式。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Fish_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×3"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1104,
+        "name": "牛奶",
+        "desc": "奶牛的乳汁。香香甜甜，嘴角的那滴也不想放过。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Milk_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×2"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1547,
+        "name": "薄荷",
+        "desc": "饱含清凉成分的植物叶子。清爽冰凉的滋味能将暑气荡涤一空。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mint_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×1\n<color=#ffffff>熟练度</color>\n10\n<color=#ffffff>相关料理</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3377,
+        "name": "美味的奶酱鲜鱼",
+        "desc": "<p>佐以酱汁的鱼料理。莹白剔透的鱼块，橫卧于曼妙奶酱之上，只需一口就能让味蕾感受到活鱼跃水而出般的鲜美冲击。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/15/47826599/0033e16fac770ff44980ee044f5fe7bb_4346942647022647252.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3382,
+        "name": "奶酱鲜鱼",
+        "desc": "<p>佐以酱汁的鱼料理。将新鲜的鱼块擦干水分后进行煎烤，皮脆肉香的鱼肉再缀以雪白奶酱和翠绿薄荷。简单的做法，带来别具一格的美味。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/02/15/47826599/59ce46598b1291a17d789a69586a3439_4341622717447411551.png",
+        "displayStyle": "card",
+        "menuId": 9
       }
     ]
   }
