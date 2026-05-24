@@ -5,12 +5,13 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Soba Noodles_icon.png",
   "filterValues": {
     "objectType": [
+      "恢复类料理",
       "食物"
     ]
   },
   "menuId": 9,
   "menuName": "提瓦特物产",
-  "version": 1679236972,
+  "version": 1779250037,
   "components": {
     "baseInfo": [
       {
@@ -27,7 +28,16 @@
         "value": [
           {
             "type": "RichText",
-            "text": "恢复类食物"
+            "text": "食物\n恢复类料理"
+          }
+        ]
+      },
+      {
+        "key": "国家",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "稻妻"
           }
         ]
       },
@@ -36,7 +46,7 @@
         "value": [
           {
             "type": "RichText",
-            "text": "立即为选中的角色恢复生命值上限的 <color=#37ffff>9%</color> ，并在之后的30秒内，每5秒恢复 <color=#37ffff>260</color> 点生命值。"
+            "text": "立即为选中的角色恢复生命值上限的9%，并在之后的30秒内，每5秒恢复260点生命值。"
           }
         ]
       },
@@ -50,68 +60,76 @@
         ]
       },
       {
-        "key": "所需熟练度",
+        "key": "上线版本",
         "value": [
           {
             "type": "RichText",
-            "text": "5"
+            "text": "2.2"
           }
         ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>食谱</color>"
       },
       {
-        "key": "食谱",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 1831,
-            "name": "食谱：荞麦面",
-            "desc": "步骤详实的食谱，记载着「荞麦面」的制作方法。",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/15/88072335/60c9c277139b43907167e6452d409874_2154417102759007759.png"
-          }
-        ],
-        "isMaterial": true
+        "type": "CustomEntry",
+        "epId": 1831,
+        "name": "食谱：荞麦面",
+        "desc": "步骤详实的食谱，记载着「荞麦面」的制作方法。",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/15/88072335/60c9c277139b43907167e6452d409874_2154417102759007759.png",
+        "displayStyle": "text",
+        "menuId": 9
       },
       {
-        "key": "所需食材",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 1737,
-            "name": "面粉",
-            "desc": "由小麦磨成的粉末。无论做成怎样的主食，都能给食客的胃带来片刻充实。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Flour_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1033,
-            "name": "海草",
-            "desc": "生长在浅海中的植物，能为菜肴增添特殊的风味。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Seagrass_icon.png",
-            "amount": 1
-          }
-        ],
-        "isMaterial": true
+        "type": "RichText",
+        "text": "<color=#ffffff>食材</color>"
       },
       {
-        "key": "其他版本",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 565,
-            "name": "奇怪的荞麦面",
-            "desc": "朴素简单的面食。粗糙的口感刮过舌面，勉强咽下去后，舌根甚至微微发苦，这真的是面食吗？",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/15/88072335/6836d86667bbd32da1c6f495744546ba_3814879360908565346.png"
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1444,
-            "name": "美味的荞麦面",
-            "desc": "朴素简单的面食。荞麦独一无二的香味被发挥到了极致，柔韧的面条滑过喉间，留下淡淡的回味，仿佛素净的回廊中传来悠远的古谣。",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/15/88072335/99dc3e37bdea2197b78808d5b99ef5bb_1285788751075734364.png"
-          }
-        ],
-        "isMaterial": true
+        "type": "CustomEntry",
+        "epId": 1737,
+        "name": "面粉",
+        "desc": "由小麦磨成的粉末。无论做成怎样的主食，都能给食客的胃带来片刻充实。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Flour_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×1"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1033,
+        "name": "海草",
+        "desc": "生长在浅海中的植物，能为菜肴增添特殊的风味。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Seagrass_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×1\n<color=#ffffff>熟练度</color>\n5\n<color=#ffffff>相关料理</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1444,
+        "name": "美味的荞麦面",
+        "desc": "朴素简单的面食。荞麦独一无二的香味被发挥到了极致，柔韧的面条滑过喉间，留下淡淡的回味，仿佛素净的回廊中传来悠远的古谣。",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/15/88072335/99dc3e37bdea2197b78808d5b99ef5bb_1285788751075734364.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 565,
+        "name": "奇怪的荞麦面",
+        "desc": "朴素简单的面食。粗糙的口感刮过舌面，勉强咽下去后，舌根甚至微微发苦，这真的是面食吗？",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/15/88072335/6836d86667bbd32da1c6f495744546ba_3814879360908565346.png",
+        "displayStyle": "card",
+        "menuId": 9
       }
     ]
   }
