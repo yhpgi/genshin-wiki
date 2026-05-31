@@ -5,12 +5,13 @@
   "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/13/88072335/4527510abb4c4758e437ad4ee5aa65fd_3659176987196226934.png",
   "filterValues": {
     "objectType": [
+      "恢复类料理",
       "食物"
     ]
   },
   "menuId": 9,
   "menuName": "提瓦特物产",
-  "version": 1679428224,
+  "version": 1779952144,
   "components": {
     "baseInfo": [
       {
@@ -27,7 +28,16 @@
         "value": [
           {
             "type": "RichText",
-            "text": "恢复类食物"
+            "text": "食物\n恢复类料理"
+          }
+        ]
+      },
+      {
+        "key": "国家",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "稻妻"
           }
         ]
       },
@@ -36,7 +46,7 @@
         "value": [
           {
             "type": "RichText",
-            "text": "复苏选中的角色，为其恢复 <color=#37ffff>150</color> 点生命值。"
+            "text": "复苏选中的角色，为其恢复150点生命值。"
           }
         ]
       },
@@ -45,64 +55,103 @@
         "value": [
           {
             "type": "RichText",
-            "text": "完美烹饪获得"
+            "text": "烹饪获得"
           }
         ]
       },
       {
-        "key": "食谱",
+        "key": "上线版本",
         "value": [
           {
-            "type": "CustomEntry",
-            "epId": 1857,
-            "name": "食谱：鸟蛋烧",
-            "desc": "步骤详实的食谱，记载着「鸟蛋烧」的制作方法。",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/13/88072335/60c9c277139b43907167e6452d409874_5895224804444825392.png"
+            "type": "RichText",
+            "text": "2.0"
           }
-        ],
-        "isMaterial": true
+        ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>食谱</color>"
       },
       {
-        "key": "所需食材",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 1898,
-            "name": "鸟蛋",
-            "desc": "拥有无限可能性的禽类的卵，能带来一整天所需的蛋白质。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Bird Egg_icon.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1328,
-            "name": "糖",
-            "desc": "提炼自甜甜花的调味剂。它的甜味仿佛有着与人共鸣的力量，能够驱散内心的阴霾。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sugar_icon.png",
-            "amount": 1
-          }
-        ],
-        "isMaterial": true
+        "type": "CustomEntry",
+        "epId": 1857,
+        "name": "食谱：鸟蛋烧",
+        "desc": "步骤详实的食谱，记载着「鸟蛋烧」的制作方法。",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/13/88072335/60c9c277139b43907167e6452d409874_5895224804444825392.png",
+        "displayStyle": "text",
+        "menuId": 9
       },
       {
-        "key": "其他版本",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 591,
-            "name": "奇怪的鸟蛋烧",
-            "desc": "煎制而成的蛋料理。看起来过于软嫩，用筷子轻轻一碰就会松散开来，或许用勺子挖着吃会更方便。",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/13/88072335/bfaa8882e58acb25e16ee868e19f6861_4985111054642551539.png"
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1900,
-            "name": "鸟蛋烧",
-            "desc": "煎制而成的蛋料理。将搅拌均匀的蛋液先行调味，倒入锅中小火慢煎，卷至一边定型，再次倒入蛋液继续…重复至一定厚度，便可摆盘作为成品。是稻妻地区平凡而又亲切的美味。",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Egg Roll_icon.png"
-          }
-        ],
-        "isMaterial": true
+        "type": "RichText",
+        "text": "<color=#ffffff>食材</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1898,
+        "name": "鸟蛋",
+        "desc": "拥有无限可能性的禽类的卵，能带来一整天所需的蛋白质。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Bird Egg_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×1"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1328,
+        "name": "糖",
+        "desc": "提炼自甜甜花的调味剂。它的甜味仿佛有着与人共鸣的力量，能够驱散内心的阴霾。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sugar_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×1\n<color=#ffffff>熟练度</color>\n5\n<color=#ffffff>相关料理</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1900,
+        "name": "鸟蛋烧",
+        "desc": "煎制而成的蛋料理。将搅拌均匀的蛋液先行调味，倒入锅中小火慢煎，卷至一边定型，再次倒入蛋液继续…重复至一定厚度，便可摆盘作为成品。是稻妻地区平凡而又亲切的美味。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Egg Roll_icon.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 591,
+        "name": "奇怪的鸟蛋烧",
+        "desc": "煎制而成的蛋料理。看起来过于软嫩，用筷子轻轻一碰就会松散开来，或许用勺子挖着吃会更方便。",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/03/13/88072335/bfaa8882e58acb25e16ee868e19f6861_4985111054642551539.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>相关角色 / 特色料理</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3,
+        "name": "九条裟罗",
+        "desc": "「天领奉行」的大将，杀伐果断，骁勇善战。",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/05/22/327628065/e1306e693d2e305287a753411e638270_2251199649727903784.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 980,
+        "name": "永恒的信仰",
+        "desc": "九条裟罗的特色料理。与其说成菜肴，不如说是点心。甜蜜绵软的口味似乎与裟罗本人的喜好大不相同。等等，这上面的印记，莫非是与「那位大人」有关？",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Faith Eternal_icon.png",
+        "displayStyle": "card",
+        "menuId": 9
       }
     ]
   }
