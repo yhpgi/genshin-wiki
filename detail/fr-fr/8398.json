@@ -5,16 +5,78 @@
   "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/4ac47a285a0abaada08f3216bdd22b0e_7846853832529267058.png",
   "headerImgUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/3a9eb7782ec7d6352307057e167a0fb4_935890101287890656.png",
   "filterValues": {
+    "characterWeapon": "Arme d'hast",
     "characterRarity": 5,
     "characterProperty": "DGT CRIT",
-    "characterWeapon": "Arme d'hast",
     "characterVision": "Électro",
     "characterRegion": "Nod-Krai"
   },
   "menuId": 2,
   "menuName": "Archives des personnages",
-  "version": 1768136057,
+  "version": 1783958310,
   "components": {
+    "summaryList": [
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/08131858cce13cbdbc49392e5a3a70f0_426726506382233582.png",
+        "name": "Voile de neige écarté",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Le TdR de la compétence élémentaire spéciale <color=#ffd780>Lances du nord</color> passe à 4 s.\nDe plus, Flins récupère 8 pts d'énergie élémentaire lorsqu'un personnage de l'équipe déclenche une réaction de Sélénocution, cet effet pouvant être déclenché une fois toutes les 5,5 s."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/ab9de8c01662fcf28eeedf3027cfdc51_9042745572508565777.png",
+        "name": "Le mur des démoniaques",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Pendant 6 s après l'utilisation de sa compétence élémentaire spéciale <color=#ffd780>Lances du nord</color> , la prochaine attaque normale de Flins qui touche un ennemi inflige des <color=#ffacff>DGT Électro de zone</color> supplémentaires d'une valeur équivalant à 50 % de son ATQ, ces DGT étant considérés comme des DGT de réaction de Sélénocution.\n<color=#ffd780>Signelune « Lueur ascendante »</color> : lorsque Flins est déployé, la <color=#ffacff>RÉS Électro</color> des ennemis touchés par ses attaques <color=#ffacff>Électro</color> diminue de 25% pendant 7 s."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/d423c3eea76f3eda4e15ac8cf80404c2_5704128702634771909.png",
+        "name": "Étranger dans la nuit",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Niveau d'aptitude <color=#ffd780>Rituel ancien : Visite de la nuit</color> +3.\nNiveau max : 15"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/542e6cdeed86860e5a187b2c2262cfbe_2470430798779958846.png",
+        "name": "Nuit sur la montagne nue",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "L'ATQ de Flins augmente de 20 %.\nDe plus, son aptitude d'élévation <color=#ffd780>«Murmure de flamme »</color> est renforcée : la maîtrise élémentaire de Flins augmente d'une valeur équivalant à 10 % de son ATQ, la maîtrise élémentaire pouvant être augmentée d'un maximum de 220pts de cette manière."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/4ba6073aabc2699c427a74608cf2e72f_6073219886792008317.png",
+        "name": "Ombre de l'exilé",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Niveau d'aptitude <color=#ffd780>Rite ancien : Lumière d'arcane</color> +3.\nNiveau max : 15"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/368215deb67b7f94f9a893ce4eb9208e_5530389596627147787.png",
+        "name": "Ballets et chants de la mort",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Les DGT infligés aux ennemis par les réactions de Sélénocution de Flins bénéficient d'une <color=#ffd780>élévation</color> de 35 %.\n<color=#ffd780>Signelune « Lueur ascendante »</color> : les DGT infligés par les réactions de Sélénocution de tous les personnages de l'équipe à proximité bénéficient d'une <color=#ffd780>élévation</color> de 10 %."
+          }
+        ]
+      }
+    ],
     "baseInfo": [
       {
         "key": "Nom",
@@ -136,10 +198,13 @@
         "key": "Carte du Personnage",
         "value": [
           {
-            "type": "RichText",
-            "text": "-"
+            "type": "CustomEntry",
+            "epId": 10769,
+            "name": "Flins",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/05/30/151578876/b1400e8c1ccf818286f83a1b39319f86_3586747588264231302.png"
           }
-        ]
+        ],
+        "isMaterial": true
       },
       {
         "key": "Ajout à la version",
@@ -147,62 +212,6 @@
           {
             "type": "RichText",
             "text": "Luna I"
-          }
-        ]
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/068bdc1ff08990966b5e2e45293f7ab6_8696395245929677118.png"
-      },
-      {
-        "key": "Avatar",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/047f903cc0cfa0ec8bb4bf6ea26e849c_3829668269435948845.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Tenue Originale - Sérénade nocturne\nTenue de Flins. Un uniforme noir, orné d'une chaîne d'argent à la taille, confère à ce gentilhomme une allure digne et posée. Nuit après nuit, il lève sa lanterne azur et veille sur les mers glaciales et les îles de Nod-Krai."
-          }
-        ]
-      },
-      {
-        "key": "Animation d'inaction 1",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/20273c33a0e4e9c9973d77a557b26a95_5212381941270184196.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Tenue Originale - Sérénade nocturne"
-          }
-        ]
-      },
-      {
-        "key": "Animation d'inaction 2",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/acc787509288963cb1f9f812028dd03c_2902047872226946797.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Tenue Originale - Sérénade nocturne"
-          }
-        ]
-      },
-      {
-        "key": "Constellation",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/a342bb7d405fc7ac9c7b0bf5bfb012c0_2300245396911684460.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Laterna Vigilis"
-          }
-        ]
-      },
-      {
-        "key": "Thème",
-        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/bc955faf157ea8236cc679ea14cfeffe_5667041145794809780.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffff>Flins - Lanterne de serment</color>\n<color=#ffffff>« Les feux follets sont comme l'amour : visibles dans les marais arides, mais susceptibles de vous mettre en danger. » Évidemment, ce dicton ne parle que du phénomène naturel.</color>"
           }
         ]
       }
@@ -284,6 +293,487 @@
           }
         ],
         "attributes": null
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/068bdc1ff08990966b5e2e45293f7ab6_8696395245929677118.png"
+      },
+      {
+        "key": "Avatar",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/047f903cc0cfa0ec8bb4bf6ea26e849c_3829668269435948845.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Tenue Originale - Sérénade nocturne\nTenue de Flins. Un uniforme noir, orné d'une chaîne d'argent à la taille, confère à ce gentilhomme une allure digne et posée. Nuit après nuit, il lève sa lanterne azur et veille sur les mers glaciales et les îles de Nod-Krai."
+          }
+        ]
+      },
+      {
+        "key": "Animation d'inaction 1",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/20273c33a0e4e9c9973d77a557b26a95_5212381941270184196.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Tenue Originale - Sérénade nocturne"
+          }
+        ]
+      },
+      {
+        "key": "Animation d'inaction 2",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/acc787509288963cb1f9f812028dd03c_2902047872226946797.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Tenue Originale - Sérénade nocturne"
+          }
+        ]
+      },
+      {
+        "key": "Constellation",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/a342bb7d405fc7ac9c7b0bf5bfb012c0_2300245396911684460.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Laterna Vigilis"
+          }
+        ]
+      },
+      {
+        "key": "Thème",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/bc955faf157ea8236cc679ea14cfeffe_5667041145794809780.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffff>Flins - Lanterne de serment</color>\n<color=#ffffff>« Les feux follets sont comme l'amour : visibles dans les marais arides, mais susceptibles de vous mettre en danger. » Évidemment, ce dicton ne parle que du phénomène naturel.</color>"
+          }
+        ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "Détails du Personnage",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Annonce du Personnage"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/08/05/43281454/cc325434042bde1f91454b028c6bca2a_7757454254954353883.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>04/08/2025</color>\n<color=#ffffff73>« Monsieur Flins vit dans un phare, très loin d'ici. Il fait preuve d'une détermination sans faille et se montre particulièrement compétent sur le plan tactique... Du moins, c'est ce qu'on dit. Malheureusement, je ne peux pas l'affirmer avec certitude. Comme je ne suis encore qu'un nouvel arrivant, je n'ai encore jamais eu l'occasion de travailler directement avec lui. Tout ce que je sais à son sujet, je l'ai appris auprès de la Starshyna... Vous voulez savoir ce que je pense de lui ? Eh bien, je le vois comme un homme qui a vécu de nombreuses vies. Ne trouvez-vous pas étrange qu'un guerrier de cette trempe puisse avoir une allure aussi raffinée ? Sans parler de sa maîtrise de l'éloquence qui lui permet de toujours parvenir à ses fins. »</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>— Illuga</color>",
+        "alignment": "right"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/08/05/43281454/70274958724b8eba699983e358dd7bfc_911324753875820800.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>04/08/2025</color>\n<color=#ffffff73>Chaque saison des moissons, il arrive que des visiteurs, aussi peu familiers soient-ils, se joignent aux festivités. Au coucher du soleil, ce fut précisément ce qui arriva : un gentilhomme de passage fut invité à prendre part aux conversations des habitants curieux.</color>\n<color=#ffffff73>L'homme se présenta : Flins, guerrier des Gardiens de lumière. Il fut décoré d'une médaille d'honneur pour les efforts de son escouade à repousser les créatures de l'Abîme. Les événements remontent à bien longtemps, et bien que personne ne se soit proposé pour organiser une cérémonie, les habitants avaient spontanément décidé d'exprimer leur gratitude de cette manière. La médaille était imposante et lui avait été remise dans une boîte portant quelques traces d'usure.</color>\n<color=#ffffff73>Songeant aux camarades qu'il avait perdus au cours de cette opération, Flins se disait que même dix médailles ne suffiraient pas à rendre justice à ceux qui étaient tombés au combat. Autrefois, son escouade se composait de sept ou huit membres, mais à présent, il ne restait plus que Flins, qui veillait sur le cimetière au pied du phare.</color>\n<color=#ffffff73>Pendant un moment, la foule resta silencieuse. Son récit évoqua bien des souvenirs : la Chasse sauvage, les monstres... Mais aussi de nombreux détails douloureux qui avaient laissé une empreinte profonde. Le chagrin les laissa sans voix. Certains se posaient des questions, mais Flins ne répondit pas à leurs sollicitations. Il garda la tête baissée, comme pour mieux se remémorer le passé.</color>\n<color=#ffffff73>Par rapport aux autres Gardiens de lumière, Flins s'exprimait avec élégance. Il ne daignait pas répondre aux questions portant sur ses origines ou sa famille, mais était plutôt enclin à aborder de sujets plus vastes. Il avait une façon de raconter les faits avec une infinie mesure, comme on le ferait pour une simple conversation, mais sans jamais tomber dans l'excès. À travers ses prises de parole, les auditeurs étaient amenés à se dire : « Quel récit inoubliable ! »</color>\n<color=#ffffff73>Compte tenu du fait que la grande majorité de son public n'avait guère connu d'expérience de ce genre, la plupart de ses auditeurs étaient venus écouter Flins par simple curiosité. Or, il se trouve que ses histoires répondaient parfaitement à leurs attentes. Il avait le don de choisir des récits taillés sur mesure pour ce genre d'intervention publique.</color>"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Histoire de personnage | Flins : « Une pièce ancienne et deux yeux »"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/f17141f95f40fcaddae0a9f6714dd8a1_3815531529088195785.png",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/7c039bb674d8756c6019cbc3583352d7_7814443021959233947.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>24/09/2025</color>\nTout comme les humains, les corbeaux posent leurs yeux sur ce qui brille dans l'obscurité.\nMais là où les corbeaux sont guidés par la curiosité. Les hommes, eux, le sont par la peur.\n<color=#ff9999>YouTube:</color>"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=IVwWIc8oNQg&t=1s"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Présentation de personnage : Chant de l'astre de la nuit : « Ballade au clair de lune »"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/938e98e03b932393a8d6adeb9a6c94d8_1616909629643724430.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>22/07/2025</color>\nKyryll Chudomirovich Flins\n« Je crains que vous vous trompiez de personne. »"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Présentation de personnage - Flins · Étranges jeux d'ombres et de lumières"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/ab7dcd559fdd5c0d7a73c0b697e87903_4364100835226307291.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>24/09/2025</color>\nVous voyez cette petite île au nord ?\nSi vous vous promenez entre le phare abandonné et le cimetière silencieux, vous pourriez croiser un gardien plutôt excentrique, Kyryll Chudomirovich Flins.\nCe gentilhomme raffiné est quelque peu mystérieux. Seuls ceux qui connaissent ses secrets peuvent comprendre le véritable sens de ses paroles..."
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Présentation de personnage : « Flins : Sentinelle nocturne »"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/89c326f24501b690c7da8078ac18477b_7455883867895102658.png",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/334125617a1dcd30b0c5672a80f01729_4136726217739909385.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>29/09/2025</color>\nUne « flamme » dans le cimetière n'apporte aucune chaleur. Au contraire, elle ne fait que renforcer le froid.\nOn peut frissonner de joie après l'avoir échappé belle. Inutile pourtant de chercher d'où vient cette chance.\n<color=#ff9999>YouTube:</color>"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=bxya0iOjQMk"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Un mystérieux gentilhomme cultivé et raffiné | Anecdotes sur Flins"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/499a07fabc636c692b95024159022703_6460711449679534449.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>23/09/2025</color>\nHormis les affaires occasionnelles à régler et les quelques courses mensuelles qu'il fait, Flins se montre rarement en ville. Heureusement, cela n'a pas empêché les habitants de se souvenir de cet homme élégant.\nComme un cimetière voilé par le signal lumineux du phare, son attitude amicale pouvait-elle dissimuler des intentions obscures ?\nDécouvrons ensemble des anecdotes de Flins !"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Démo des compétences de personnage – Flins · Étranges jeux d'ombres et de lumières"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/c4cfc5c3d4fdbf0c4cf799dc3bba10d4_7214078163646912529.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>25/09/2025</color>\nBonjour, chers voyageurs ! Nous allons maintenant vous donner des informations sur le style de combat de Flins. Jetons-y un œil !"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Teasers & Trailers",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Une lanterne dans la nuit | gamescom 2025"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/9097846d83878f37fd5c379e0ffa6dfb_1807244040344341135.png",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/97a334ab428323bdf711b243831c8093_3398013121135978383.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>20/08/2025</color>\nLes ratnikis qui patrouillent la nuit recommandent généralement de ne pas s'attarder trop longtemps seul dans la nature sauvage.\nSi vous ne tenez pas à finir enseveli parmi les récifs centenaires, le plus simple, c'est de vous abstenir d'aller au-devant des marées déchaînées de la nuit.\n<color=#ff9999>YouTube:</color>"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=WVDlz6hYSNs"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Chant de l'astre de la nuit : « Ballade au clair de lune »"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/20/43281454/0795a6279cde65914f9b80051df4c376_454465777319975086.png",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/5b3d0ba85594d2b5e74a61ac6cc6bace_4668098394085685987.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>22/07/2025</color>\n<color=#ffffff73>Elle arrose chaque fleur de rosée</color>\n<color=#ffffff73>et donne au crépuscule un reflet argenté.</color>\n<color=#ffffff73>Ainsi, les ombres hurlent dans la forêt,</color>\n<color=#ffffff73>effrayant les troupeaux de cerfs et faisant fuir les oiseaux.</color>\n<color=#ffffff73>Elle fredonne un air sans nom,</color>\n<color=#ffffff73>alors qu'elle traverse la galerie déserte.</color>\n<color=#ffffff73>Pour que sa terre natale ne se transforme pas en un champ de ruines,</color>\n<color=#ffffff73>et que l'histoire ne sombre jamais dans l'oubli.</color>\n<color=#ff9999>YouTube:</color>"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=QWDyxSo-oq0"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Bande-annonce de la version Luna I : Ballet parmi marées enneigées et bosquets givrés"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/20/43281454/40be5145c3ba3912619f4b956adab40c_6074629533440225811.png",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/0fae9f4be16c05172a2a19e9f2b92b65_4427839880435339878.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>29/08/2025</color>\n<color=#ffffff73>Genshin Impact - Bande-annonce de la version « Chant de l'astre de la nuit - Enchaînement » : Ballet parmi marées enneigées et bosquets givrés</color>\n<color=#ffffff73>Voyageur qui a parcouru tous les coins du monde, c'est peut-être votre première visite ici.</color>\n<color=#ffffff73>Savourez le bon vin et les éclats de rire, ainsi que la douceur de la lune.</color>\n<color=#ffffff73>Mais prenez garde aux âmes mortes et aux mensonges, ainsi qu'au pâle clair de lune dans le silence glacé.</color>\n<color=#ff9999>YouTube:</color>"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=7ggMwb5tXJQ"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Vidéo sur l'écologie de Nod-Krai : « Cadeau de la lune »"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/20/43281454/6c701b59b0d3c39481622c0d392158de_1171676626092436607.png",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/601cb26fcf2283da9900c72e3c517d47_1668738521449221476.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>29/08/2025</color>\n<color=#ffffff73>À Nod-Krai, il ne faut pas sous-estimer le pouvoir du kuuvahki.</color>\n<color=#ffffff73>Avant votre arrivée, pourquoi ne pas vous renseigner un peu au sujet de la lune ?</color>\n<color=#ff9999>YouTube:</color>"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=-agCKpv7pXc"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Cinématique : Étincelles dans le brouillard"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/a3fcc4d2528948a89276ed65a7e99159_4093565637745733695.png",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/68d5fa3189c584bffa1b31c2b7eb8e15_2423241179998754980.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>17/09/2025</color>\nAu cœur du brouillard corrompu de la Chasse sauvage, de rares étincelles scintillent.\nPour s'emparer de cette position cruciale et découvrir la vérité, une lutte acharnée est inévitable.\n<color=#ff9999>YouTube:</color>"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=jUL3hIdyXj0"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Cinématique : À un cheveu près"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/1250096bf088a733653aaa4c7dfa4ab8_3745304540989621908.png",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/1aca8e7e6fc940bbcd246d405f16896d_8785594612608240993.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>19/09/2025</color>\nAfin d'empêcher le rächer de solnari d'atteindre son objectif, tous mettent tout en œuvre pour que le canon ne tire pas.\nFace à cette situation désespérée, il ne restait plus qu'à espérer que la chance leur sourirait...\n<color=#ff9999>YouTube:</color>"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=K3o2_efi23k"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "Cinématique : Une aide qui tombe à pic"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/b5843897971ef51361698f38d8402a47_4338616508994543311.png",
+        "alignment": "left"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/ada7938ec40d5ed52ce0f6dc2128560e_413864231749155211.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>20/09/2025</color>\nDans la foulée de l'offensive assurée de Sandrone, Pulonia parvient à peine à tenir tête au rächer de solnari.\nUne aide tombée à pic est toujours la bienvenue en cas de besoin... Du moins pour la plupart des gens.\n<color=#ff9999>YouTube:</color>"
+      },
+      {
+        "type": "CustomVideo",
+        "url": "https:/www.youtube.com/watch?v=neFxCznqEqU"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Anniversaires",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "2025",
+        "alignment": "center"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/07/10/29705491/3b6d18a668debaede47538a833f1ed79_7126420969330360730.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>« Cette pierre précieuse ancienne... Hum, on ne retrouve pas un éclat aussi délicat chez les gemmes fraîchement extraites. Elle est chaude et agréable au toucher, et dégage un charme discret, presque apaisant... Une pièce raffinée qui ferait honneur à n'importe quelle collection. »</color>"
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/07/10/29705491/b30c7fc984817f49a7834b1642cbea1b_7164938029805458464.png",
+        "alignment": "left"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>Ah, quel plaisir de vous voir ici. Ne me dites pas que vous êtes encore en train de vous promener ?</color>\n<color=#ffffff73>Ah, pas cette fois, je vois. Très bien. Si certaines missions vous obligent à errer inlassablement sous le ciel nocturne, je serais ravi de vous alléger de ce fardeau.</color>\n<color=#ffffff73>Vous avez entendu ce bruit dans l'ombre à l'instant ? Restez sur vos gardes : ignorer les détails ou s'attarder trop longtemps dans l'obscurité peut vite vous mettre dans une situation délicate.</color>\n<color=#ffffff73>Mais si vous acceptez d'arpenter ce sentier nocturne en ma compagnie, je vous garantis qu'il ne vous arrivera rien. Qu'en dites-vous ?</color>\n<color=#ffffffd9>Je vous éclairerai le chemin...</color>\n<color=#ffffff73>Récemment, quelqu'un m'a aidé à remporter quelques pièces anciennes lors d'une vente aux enchères. Leurs gravures ondulent comme une marée voilée, et le mystère qui entoure leurs origines leur confère une beauté qui dépasse leur simple valeur. Elles m'ont fait penser à vous, en fait. J'ai entendu dire que vous vous y connaissiez très bien en reliques en provenance des quatre coins du monde, et que votre perspicacité était aussi profonde et vaste que le ciel étoilé. Si vous le souhaitez, vous pourriez m'honorer de votre présence pour les admirer de plus près avec moi. Si le cœur vous en dit, restez donc également pour dîner. J'ai commandé quelques-uns des plats les plus populaires du Navire amiral. J'espère qu'ils seront à votre goût.</color>\n<color=#ffffff73>Quant à la question du « maintien de la paix avec les voisins », il n'y a pas lieu de s'inquiéter. Je parlerai aux habitants du quartier et leur demanderai de parler à voix basse tout au long de votre visite.</color>\n<color=#ffffff73>Ah, et si le doux murmure des esprits qui se joignent à nous à table ne vous dérange n'en sera que plus agréable.</color>\n<color=#ffffff73>pas, je pense que la soirée.</color>\n<color=#ffffff73>C'est un lieu calme et isolé. À votre arrivée, je me ferai un plaisir de vous éclairer le chemin.</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Personnages</color>\n<color=#ffffffd9>Lien</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8396,
+        "name": "Lauma",
+        "desc": "Dame bénie par le clair de lune et la forêt. Une lueur d'espoir née parmi les Descendants de givrelune.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/08/b06e9ff48d57de4856f1a05b1199aae1_8565150401481594895.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Résumé :</color>\nFlins admire la ténacité et le courage de Lauma.\n<color=#ffffffd9>Répliques :</color>\n<color=#ffd780>Lauma :</color> <color=#ffffff73>« Il semble très courtois, mais pour une raison qui m'échappe, les animaux ont peur de lui... Je ne baisserai pas ma garde face à lui, mais je le connais à peine, et je n'ai pas de preuve qu'il a fait quoi que ce soit de mal. De ce fait, je ne veux pas le juger trop hâtivement. Je lui offre un peu de notre récolte quotidienne quand il passe par l'Enclave de givrelune.</color>\n<color=#ffffff73>... Comment ? Son nom est trop long, mais il n'a pas de mauvaises intentions ? Vraiment ? »</color>\n<color=#ffd780>Flins :</color> <color=#ffffff73>« L'Hyperborée, le paradis doré perdu... C'est ce qu'elle m'évoque. Son sang noble et ancien est un lourd fardeau à porter, à l'instar des bois majestueux sur sa tête, mais elle continue d'avancer. J'admire sa ténacité et son courage. »</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9123,
+        "name": "Illuga",
+        "desc": "Membre de l'escouade d'enquête appelée « Orioles des nuits terrifiantes », et le plus jeune chef d'escouade des Gardiens de lumière.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/d585407867aa47b4d925613cea9f00c2_5864597966579326880.png",
+        "displayStyle": "card"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Résumé :</color>\nFlins admire la détermination d’Illuga car il est l’un des rares Gardiens de la lumière à rester longtemps dans l’organisation.\n<color=#ffffffd9>Répliques :</color>\n<color=#ffd780>Flins :</color> <color=#ffffff73>« Les Gardiens de lumière ne sont pas obligés de rester dans l'organisation. Beaucoup partent peu de temps après l'avoir rejointe. Seuls les plus déterminés persévèrent. Illuga en est l'exemple parfait. On admire l'agilité ou l'ingéniosité chez les gens, mais j'estime que la détermination est une qualité beaucoup plus précieuse. »</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8397,
+        "name": "Aino",
+        "desc": "Une inventeuse et mécanicienne de génie de Nod-Krai qui aime les machines intéressantes et les friandises.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/09/4e58c851d6c947865026faa168db83bd_3944254802105067377.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Résumé :</color>\nFlins apporte souvent des encas à AIno lorsqu’il passe la voir à l’atelier.\n<color=#ffffffd9>Répliques :</color>\n<color=#ffd780>Aino :</color> <color=#ffffff73>« C'est un homme bien classe. Ses paroles sont du miel à mes oreilles, comme les cliquetis des machines qui fonctionnent... J'exagère ? J'avoue que c'est beaucoup de compliments de ma part... mais c'est la vérité ! Et je ne suis pas biaisée parce qu'il m'apporte des encas ! »</color>\n<color=#ffd780>Flins :</color> <color=#ffffff73>« Je vous avoue que je ne suis pas doué avec les machines. C'est la plus grande différence entre moi et Aino, et non notre écart d'âge. »</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9342,
+        "name": "Varka",
+        "desc": "Le Grand Maître de l'Ordre de Favonius, le Chevalier de Borée et le protecteur de Mondstadt.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/02/21/553feb81c3bbc5e3bc69a765e157c33f_8250978205515428490.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Résumé :</color>\nFlins admira la force de Varka et le considère comme un véritable chevalier.\n<color=#ffffffd9>Répliques :</color>\n<color=#ffd780>Flins :</color> <color=#ffffff73>« Je n'affronterai jamais Varka à l'épée. Je ne ferai tout simplement pas le poids contre lui. Aucune lame n'est aussi glaciale que celle du vent du nord. Si vous pensez que j'exagère en le comparant à un des phénomènes naturels les plus féroces, détrompez-vous. C'est un véritable chevalier, tel qu'il est rare d'en rencontrer de nos jours. Si j'ai l'occasion de croiser le fer avec lui, cela voudrait dire que je ne suis pas n'importe qui. »</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 8894,
+        "name": "Nefer",
+        "desc": "La propriétaire incroyablement ingénieuse du Curatorium des secrets.",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/10/21/7557acebcb72b4d9912bcb0e6c92306a_3655566527985254987.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Résumé :</color>\nFlins se doute que Nefer peut découvrir son passé à tout instant vu qu’elle possède une intuition bien aiguisée.\n<color=#ffffffd9>Répliques :</color>\n<color=#ffd780>Nefer :</color> <color=#ffffff73>« On dit souvent que la politesse est le moyen le plus efficace de tenir les inconnus à distance. Je suppose que ça fait de monsieur Flins un maître dans l'art de la distanciation sociale. Sa bienséance est impeccable et impénétrable. Ne vous méprenez pas, j'ai beaucoup de tact, je sais sourire et jouer le jeu. Mais je me fiche que monsieur Flins soit un Gardien de lumière ou un nivéole, qu'il vienne de Nod-Krai ou de Snezhnaya. Avant toute chose, nous sommes amis, et la base de l'amitié... c'est la confiance. »</color>\n<color=#ffd780>Flins :</color> <color=#ffffff73>« L'intuition de Nefer est aussi aiguisée qu'une lame que personne ne souhaite toucher. Heureusement, je n'ai pas l'habitude de me renseigner sur le passé des autres. J'espère qu'elle non plus. »</color>"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9018,
+        "name": "Jahoda",
+        "desc": "L'employée extrêmement fiable et polyvalente du Curatorium (du moins, c'est ce qu'elle prétend).",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/12/01/19708bac6eba4779a70908bf0bee70b1_1653339605275422455.png",
+        "displayStyle": "card",
+        "menuId": 2
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Résumé :</color>\nFlins a remarqué que Jahoda sait très bien se débrouiller en survie.\n<color=#ffffffd9>Répliques :</color>\n<color=#ffd780>Jahoda :</color> <color=#ffffff73>« J'ai entendu la patronne dire que les Gardiens de lumière étaient une organisation très ancienne qui comptait un tas de membres puissants et intelligents qui connaissent plein de secrets anciens... Tu crois que Flins aurait des informations sur des trésors anciens ? Ou peut-être sur des ruines inexplorées ? Je me posais juste la question à voix haute, je n'oserais jamais lui demander ! Je n'ai pas envie que la patronne me passe à nouveau un savon... »</color>\n<color=#ffd780>Flins :</color> <color=#ffffff73>« Jahoda apparaît toujours à des endroits inattendus. Un jour, elle sera près d'un tas de matériaux abandonnés à la Knieperterie Cling-clang, puis le lendemain, vous la retrouverez sur le balcon d'une famille aisée au Village de Nasha. Elle apprend vite la philosophie de la survie... et c'est Nod-Krai qui la lui enseigne. »</color>"
+      },
+      {
+        "type": "RichText",
+        "text": "la Tsarine",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffffd9>Résumé :</color>\nLes Gardiens de la lumière ne vénèrent pas la Tsarine.\n<color=#ffffffd9>Répliques :</color>\n<color=#ffd780>Flins :</color> <color=#ffffff73>« Bien que Nod-Krai fasse techniquement partie de Snezhnaya, vous ne nous entendrez jamais dire « Sa Majesté, la Tsarine »... Qui « nous » ? Haha, les Gardiens de lumière, évidemment... Qui d'autre ? »</color>"
       }
     ],
     "voice": [
@@ -1828,509 +2318,6 @@
         ]
       }
     ],
-    "videoCollection": [
-      {
-        "title": "Character Teaser - \"Flins: An Ancient Coin and a Pair of Eyes\" | Genshin Impact #Flins",
-        "url": "https://www.youtube.com/watch?v=IVwWIc8oNQg",
-        "coverUrl": "https://i.ytimg.com/vi/IVwWIc8oNQg/maxresdefault.jpg",
-        "duration": 229
-      },
-      {
-        "title": "Character Trailer - \"Flins: Nocturne Sentinel\" | Genshin Impact #GenshinImpact #Flins",
-        "url": "https://www.youtube.com/watch?v=bxya0iOjQMk",
-        "coverUrl": "https://i.ytimg.com/vi/bxya0iOjQMk/maxresdefault.jpg",
-        "duration": 145
-      },
-      {
-        "title": "Cutscene Animation: \"A Beacon in the Fog\" | Genshin Impact #GenshinImpact #Flins",
-        "url": "https://www.youtube.com/watch?v=jUL3hIdyXj0",
-        "coverUrl": "https://i.ytimg.com/vi/jUL3hIdyXj0/maxresdefault.jpg",
-        "duration": 122
-      },
-      {
-        "title": "Cutscene Animation: \"A Much-Needed Helping Hand\" | Genshin Impact #GenshinImpact #Sandrone",
-        "url": "https://www.youtube.com/watch?v=neFxCznqEqU",
-        "coverUrl": "https://i.ytimg.com/vi/neFxCznqEqU/maxresdefault.jpg",
-        "duration": 169
-      },
-      {
-        "title": "Cutscene Animation: \"Ambush\" | Genshin Impact #GenshinImpact",
-        "url": "https://www.youtube.com/watch?v=oGOjcRp-EWI",
-        "coverUrl": "https://i.ytimg.com/vi/oGOjcRp-EWI/maxresdefault.jpg",
-        "duration": 224
-      },
-      {
-        "title": "Cutscene Animation: \"By a Hair's Breadth\" | Genshin Impact #GenshinImpact #Flins #Ineffa",
-        "url": "https://www.youtube.com/watch?v=K3o2_efi23k",
-        "coverUrl": "https://i.ytimg.com/vi/K3o2_efi23k/maxresdefault.jpg",
-        "duration": 183
-      },
-      {
-        "title": "Cutscene Animation: \"The Hunt Beneath the Silver Moon\" | Genshin Impact #GenshinImpact",
-        "url": "https://www.youtube.com/watch?v=PtuoSxQsOUg",
-        "coverUrl": "https://i.ytimg.com/vi/PtuoSxQsOUg/maxresdefault.jpg",
-        "duration": 184
-      },
-      {
-        "title": "Version \"Luna I\" \"A Dance of Snowy Tides and Hoarfrost Groves\" Trailer | Genshin Impact",
-        "url": "https://www.youtube.com/watch?v=7ggMwb5tXJQ",
-        "coverUrl": "https://i.ytimg.com/vi/7ggMwb5tXJQ/maxresdefault.jpg",
-        "duration": 345
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/08131858cce13cbdbc49392e5a3a70f0_426726506382233582.png",
-        "name": "Voile de neige écarté",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Le TdR de la compétence élémentaire spéciale <color=#ffd780>Lances du nord</color> passe à 4 s.\nDe plus, Flins récupère 8 pts d'énergie élémentaire lorsqu'un personnage de l'équipe déclenche une réaction de Sélénocution, cet effet pouvant être déclenché une fois toutes les 5,5 s."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/ab9de8c01662fcf28eeedf3027cfdc51_9042745572508565777.png",
-        "name": "Le mur des démoniaques",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Pendant 6 s après l'utilisation de sa compétence élémentaire spéciale <color=#ffd780>Lances du nord</color> , la prochaine attaque normale de Flins qui touche un ennemi inflige des <color=#ffacff>DGT Électro de zone</color> supplémentaires d'une valeur équivalant à 50 % de son ATQ, ces DGT étant considérés comme des DGT de réaction de Sélénocution.\n<color=#ffd780>Signelune « Lueur ascendante »</color> : lorsque Flins est déployé, la <color=#ffacff>RÉS Électro</color> des ennemis touchés par ses attaques <color=#ffacff>Électro</color> diminue de 25% pendant 7 s."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/d423c3eea76f3eda4e15ac8cf80404c2_5704128702634771909.png",
-        "name": "Étranger dans la nuit",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Niveau d'aptitude <color=#ffd780>Rituel ancien : Visite de la nuit</color> +3.\nNiveau max : 15"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/542e6cdeed86860e5a187b2c2262cfbe_2470430798779958846.png",
-        "name": "Nuit sur la montagne nue",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "L'ATQ de Flins augmente de 20 %.\nDe plus, son aptitude d'élévation <color=#ffd780>«Murmure de flamme »</color> est renforcée : la maîtrise élémentaire de Flins augmente d'une valeur équivalant à 10 % de son ATQ, la maîtrise élémentaire pouvant être augmentée d'un maximum de 220pts de cette manière."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/4ba6073aabc2699c427a74608cf2e72f_6073219886792008317.png",
-        "name": "Ombre de l'exilé",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Niveau d'aptitude <color=#ffd780>Rite ancien : Lumière d'arcane</color> +3.\nNiveau max : 15"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/26/368215deb67b7f94f9a893ce4eb9208e_5530389596627147787.png",
-        "name": "Ballets et chants de la mort",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Les DGT infligés aux ennemis par les réactions de Sélénocution de Flins bénéficient d'une <color=#ffd780>élévation</color> de 35 %.\n<color=#ffd780>Signelune « Lueur ascendante »</color> : les DGT infligés par les réactions de Sélénocution de tous les personnages de l'équipe à proximité bénéficient d'une <color=#ffd780>élévation</color> de 10 %."
-          }
-        ]
-      }
-    ],
-    "customize": [
-      {
-        "type": "Heading",
-        "level": 2,
-        "text": "Détails du Personnage",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Annonce du Personnage"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/08/05/43281454/cc325434042bde1f91454b028c6bca2a_7757454254954353883.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>04/08/2025</color>\n<color=#ffffff73>« Monsieur Flins vit dans un phare, très loin d'ici. Il fait preuve d'une détermination sans faille et se montre particulièrement compétent sur le plan tactique... Du moins, c'est ce qu'on dit. Malheureusement, je ne peux pas l'affirmer avec certitude. Comme je ne suis encore qu'un nouvel arrivant, je n'ai encore jamais eu l'occasion de travailler directement avec lui. Tout ce que je sais à son sujet, je l'ai appris auprès de la Starshyna... Vous voulez savoir ce que je pense de lui ? Eh bien, je le vois comme un homme qui a vécu de nombreuses vies. Ne trouvez-vous pas étrange qu'un guerrier de cette trempe puisse avoir une allure aussi raffinée ? Sans parler de sa maîtrise de l'éloquence qui lui permet de toujours parvenir à ses fins. »</color>"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>— Illuga</color>",
-        "alignment": "right"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/08/05/43281454/70274958724b8eba699983e358dd7bfc_911324753875820800.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>04/08/2025</color>\n<color=#ffffff73>Chaque saison des moissons, il arrive que des visiteurs, aussi peu familiers soient-ils, se joignent aux festivités. Au coucher du soleil, ce fut précisément ce qui arriva : un gentilhomme de passage fut invité à prendre part aux conversations des habitants curieux.</color>\n<color=#ffffff73>L'homme se présenta : Flins, guerrier des Gardiens de lumière. Il fut décoré d'une médaille d'honneur pour les efforts de son escouade à repousser les créatures de l'Abîme. Les événements remontent à bien longtemps, et bien que personne ne se soit proposé pour organiser une cérémonie, les habitants avaient spontanément décidé d'exprimer leur gratitude de cette manière. La médaille était imposante et lui avait été remise dans une boîte portant quelques traces d'usure.</color>\n<color=#ffffff73>Songeant aux camarades qu'il avait perdus au cours de cette opération, Flins se disait que même dix médailles ne suffiraient pas à rendre justice à ceux qui étaient tombés au combat. Autrefois, son escouade se composait de sept ou huit membres, mais à présent, il ne restait plus que Flins, qui veillait sur le cimetière au pied du phare.</color>\n<color=#ffffff73>Pendant un moment, la foule resta silencieuse. Son récit évoqua bien des souvenirs : la Chasse sauvage, les monstres... Mais aussi de nombreux détails douloureux qui avaient laissé une empreinte profonde. Le chagrin les laissa sans voix. Certains se posaient des questions, mais Flins ne répondit pas à leurs sollicitations. Il garda la tête baissée, comme pour mieux se remémorer le passé.</color>\n<color=#ffffff73>Par rapport aux autres Gardiens de lumière, Flins s'exprimait avec élégance. Il ne daignait pas répondre aux questions portant sur ses origines ou sa famille, mais était plutôt enclin à aborder de sujets plus vastes. Il avait une façon de raconter les faits avec une infinie mesure, comme on le ferait pour une simple conversation, mais sans jamais tomber dans l'excès. À travers ses prises de parole, les auditeurs étaient amenés à se dire : « Quel récit inoubliable ! »</color>\n<color=#ffffff73>Compte tenu du fait que la grande majorité de son public n'avait guère connu d'expérience de ce genre, la plupart de ses auditeurs étaient venus écouter Flins par simple curiosité. Or, il se trouve que ses histoires répondaient parfaitement à leurs attentes. Il avait le don de choisir des récits taillés sur mesure pour ce genre d'intervention publique.</color>"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Histoire de personnage | Flins : « Une pièce ancienne et deux yeux »"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/f17141f95f40fcaddae0a9f6714dd8a1_3815531529088195785.png",
-        "alignment": "left"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/7c039bb674d8756c6019cbc3583352d7_7814443021959233947.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>24/09/2025</color>\nTout comme les humains, les corbeaux posent leurs yeux sur ce qui brille dans l'obscurité.\nMais là où les corbeaux sont guidés par la curiosité. Les hommes, eux, le sont par la peur.\n<color=#ff9999>YouTube:</color>"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=IVwWIc8oNQg&t=1s"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Présentation de personnage : Chant de l'astre de la nuit : « Ballade au clair de lune »"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/938e98e03b932393a8d6adeb9a6c94d8_1616909629643724430.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>22/07/2025</color>\nKyryll Chudomirovich Flins\n« Je crains que vous vous trompiez de personne. »"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Présentation de personnage - Flins · Étranges jeux d'ombres et de lumières"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/ab7dcd559fdd5c0d7a73c0b697e87903_4364100835226307291.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>24/09/2025</color>\nVous voyez cette petite île au nord ?\nSi vous vous promenez entre le phare abandonné et le cimetière silencieux, vous pourriez croiser un gardien plutôt excentrique, Kyryll Chudomirovich Flins.\nCe gentilhomme raffiné est quelque peu mystérieux. Seuls ceux qui connaissent ses secrets peuvent comprendre le véritable sens de ses paroles..."
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Présentation de personnage : « Flins : Sentinelle nocturne »"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/89c326f24501b690c7da8078ac18477b_7455883867895102658.png",
-        "alignment": "left"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/334125617a1dcd30b0c5672a80f01729_4136726217739909385.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>29/09/2025</color>\nUne « flamme » dans le cimetière n'apporte aucune chaleur. Au contraire, elle ne fait que renforcer le froid.\nOn peut frissonner de joie après l'avoir échappé belle. Inutile pourtant de chercher d'où vient cette chance.\n<color=#ff9999>YouTube:</color>"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=bxya0iOjQMk"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Un mystérieux gentilhomme cultivé et raffiné | Anecdotes sur Flins"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/499a07fabc636c692b95024159022703_6460711449679534449.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>23/09/2025</color>\nHormis les affaires occasionnelles à régler et les quelques courses mensuelles qu'il fait, Flins se montre rarement en ville. Heureusement, cela n'a pas empêché les habitants de se souvenir de cet homme élégant.\nComme un cimetière voilé par le signal lumineux du phare, son attitude amicale pouvait-elle dissimuler des intentions obscures ?\nDécouvrons ensemble des anecdotes de Flins !"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Démo des compétences de personnage – Flins · Étranges jeux d'ombres et de lumières"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/c4cfc5c3d4fdbf0c4cf799dc3bba10d4_7214078163646912529.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>25/09/2025</color>\nBonjour, chers voyageurs ! Nous allons maintenant vous donner des informations sur le style de combat de Flins. Jetons-y un œil !"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Teasers & Trailers",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Une lanterne dans la nuit | gamescom 2025"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/9097846d83878f37fd5c379e0ffa6dfb_1807244040344341135.png",
-        "alignment": "left"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/97a334ab428323bdf711b243831c8093_3398013121135978383.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>20/08/2025</color>\nLes ratnikis qui patrouillent la nuit recommandent généralement de ne pas s'attarder trop longtemps seul dans la nature sauvage.\nSi vous ne tenez pas à finir enseveli parmi les récifs centenaires, le plus simple, c'est de vous abstenir d'aller au-devant des marées déchaînées de la nuit.\n<color=#ff9999>YouTube:</color>"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=WVDlz6hYSNs"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Chant de l'astre de la nuit : « Ballade au clair de lune »"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/20/43281454/0795a6279cde65914f9b80051df4c376_454465777319975086.png",
-        "alignment": "left"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/5b3d0ba85594d2b5e74a61ac6cc6bace_4668098394085685987.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>22/07/2025</color>\n<color=#ffffff73>Elle arrose chaque fleur de rosée</color>\n<color=#ffffff73>et donne au crépuscule un reflet argenté.</color>\n<color=#ffffff73>Ainsi, les ombres hurlent dans la forêt,</color>\n<color=#ffffff73>effrayant les troupeaux de cerfs et faisant fuir les oiseaux.</color>\n<color=#ffffff73>Elle fredonne un air sans nom,</color>\n<color=#ffffff73>alors qu'elle traverse la galerie déserte.</color>\n<color=#ffffff73>Pour que sa terre natale ne se transforme pas en un champ de ruines,</color>\n<color=#ffffff73>et que l'histoire ne sombre jamais dans l'oubli.</color>\n<color=#ff9999>YouTube:</color>"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=QWDyxSo-oq0"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Bande-annonce de la version Luna I : Ballet parmi marées enneigées et bosquets givrés"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/20/43281454/40be5145c3ba3912619f4b956adab40c_6074629533440225811.png",
-        "alignment": "left"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/0fae9f4be16c05172a2a19e9f2b92b65_4427839880435339878.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>29/08/2025</color>\n<color=#ffffff73>Genshin Impact - Bande-annonce de la version « Chant de l'astre de la nuit - Enchaînement » : Ballet parmi marées enneigées et bosquets givrés</color>\n<color=#ffffff73>Voyageur qui a parcouru tous les coins du monde, c'est peut-être votre première visite ici.</color>\n<color=#ffffff73>Savourez le bon vin et les éclats de rire, ainsi que la douceur de la lune.</color>\n<color=#ffffff73>Mais prenez garde aux âmes mortes et aux mensonges, ainsi qu'au pâle clair de lune dans le silence glacé.</color>\n<color=#ff9999>YouTube:</color>"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=7ggMwb5tXJQ"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Vidéo sur l'écologie de Nod-Krai : « Cadeau de la lune »"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/09/20/43281454/6c701b59b0d3c39481622c0d392158de_1171676626092436607.png",
-        "alignment": "left"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/601cb26fcf2283da9900c72e3c517d47_1668738521449221476.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>29/08/2025</color>\n<color=#ffffff73>À Nod-Krai, il ne faut pas sous-estimer le pouvoir du kuuvahki.</color>\n<color=#ffffff73>Avant votre arrivée, pourquoi ne pas vous renseigner un peu au sujet de la lune ?</color>\n<color=#ff9999>YouTube:</color>"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=-agCKpv7pXc"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Cinématique : Étincelles dans le brouillard"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/a3fcc4d2528948a89276ed65a7e99159_4093565637745733695.png",
-        "alignment": "left"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/68d5fa3189c584bffa1b31c2b7eb8e15_2423241179998754980.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>17/09/2025</color>\nAu cœur du brouillard corrompu de la Chasse sauvage, de rares étincelles scintillent.\nPour s'emparer de cette position cruciale et découvrir la vérité, une lutte acharnée est inévitable.\n<color=#ff9999>YouTube:</color>"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=jUL3hIdyXj0"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Cinématique : À un cheveu près"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/1250096bf088a733653aaa4c7dfa4ab8_3745304540989621908.png",
-        "alignment": "left"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/1aca8e7e6fc940bbcd246d405f16896d_8785594612608240993.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>19/09/2025</color>\nAfin d'empêcher le rächer de solnari d'atteindre son objectif, tous mettent tout en œuvre pour que le canon ne tire pas.\nFace à cette situation désespérée, il ne restait plus qu'à espérer que la chance leur sourirait...\n<color=#ff9999>YouTube:</color>"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=K3o2_efi23k"
-      },
-      {
-        "type": "Heading",
-        "level": 3,
-        "text": "Cinématique : Une aide qui tombe à pic"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/b5843897971ef51361698f38d8402a47_4338616508994543311.png",
-        "alignment": "left"
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/01/03/43281454/ada7938ec40d5ed52ce0f6dc2128560e_413864231749155211.png",
-        "alignment": "left"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffd780>20/09/2025</color>\nDans la foulée de l'offensive assurée de Sandrone, Pulonia parvient à peine à tenir tête au rächer de solnari.\nUne aide tombée à pic est toujours la bienvenue en cas de besoin... Du moins pour la plupart des gens.\n<color=#ff9999>YouTube:</color>"
-      },
-      {
-        "type": "CustomVideo",
-        "url": "https:/www.youtube.com/watch?v=neFxCznqEqU"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Personnages</color>\n<color=#ffffffd9>Lien</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 8396,
-        "name": "Lauma",
-        "desc": "Dame bénie par le clair de lune et la forêt. Une lueur d'espoir née parmi les Descendants de givrelune.",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/08/b06e9ff48d57de4856f1a05b1199aae1_8565150401481594895.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Résumé :</color>\nFlins admire la ténacité et le courage de Lauma.\n<color=#ffffffd9>Répliques :</color>\n<color=#ffd780>Lauma :</color> <color=#ffffff73>« Il semble très courtois, mais pour une raison qui m'échappe, les animaux ont peur de lui... Je ne baisserai pas ma garde face à lui, mais je le connais à peine, et je n'ai pas de preuve qu'il a fait quoi que ce soit de mal. De ce fait, je ne veux pas le juger trop hâtivement. Je lui offre un peu de notre récolte quotidienne quand il passe par l'Enclave de givrelune.</color>\n<color=#ffffff73>... Comment ? Son nom est trop long, mais il n'a pas de mauvaises intentions ? Vraiment ? »</color>\n<color=#ffd780>Flins :</color> <color=#ffffff73>« L'Hyperborée, le paradis doré perdu... C'est ce qu'elle m'évoque. Son sang noble et ancien est un lourd fardeau à porter, à l'instar des bois majestueux sur sa tête, mais elle continue d'avancer. J'admire sa ténacité et son courage. »</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 9123,
-        "name": "Illuga",
-        "desc": "Membre de l'escouade d'enquête appelée « Orioles des nuits terrifiantes », et le plus jeune chef d'escouade des Gardiens de lumière.",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/29/d585407867aa47b4d925613cea9f00c2_5864597966579326880.png",
-        "displayStyle": "card"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Résumé :</color>\nFlins admire la détermination d’Illuga car il est l’un des rares Gardiens de la lumière à rester longtemps dans l’organisation.\n<color=#ffffffd9>Répliques :</color>\n<color=#ffd780>Flins :</color> <color=#ffffff73>« Les Gardiens de lumière ne sont pas obligés de rester dans l'organisation. Beaucoup partent peu de temps après l'avoir rejointe. Seuls les plus déterminés persévèrent. Illuga en est l'exemple parfait. On admire l'agilité ou l'ingéniosité chez les gens, mais j'estime que la détermination est une qualité beaucoup plus précieuse. »</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 8397,
-        "name": "Aino",
-        "desc": "Une inventeuse et mécanicienne de génie de Nod-Krai qui aime les machines intéressantes et les friandises.",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/09/4e58c851d6c947865026faa168db83bd_3944254802105067377.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Résumé :</color>\nFlins apporte souvent des encas à AIno lorsqu’il passe la voir à l’atelier.\n<color=#ffffffd9>Répliques :</color>\n<color=#ffd780>Aino :</color> <color=#ffffff73>« C'est un homme bien classe. Ses paroles sont du miel à mes oreilles, comme les cliquetis des machines qui fonctionnent... J'exagère ? J'avoue que c'est beaucoup de compliments de ma part... mais c'est la vérité ! Et je ne suis pas biaisée parce qu'il m'apporte des encas ! »</color>\n<color=#ffd780>Flins :</color> <color=#ffffff73>« Je vous avoue que je ne suis pas doué avec les machines. C'est la plus grande différence entre moi et Aino, et non notre écart d'âge. »</color>"
-      },
-      {
-        "type": "RichText",
-        "text": "Varka",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Résumé :</color>\nFlins admira la force de Varka et le considère comme un véritable chevalier.\n<color=#ffffffd9>Répliques :</color>\n<color=#ffd780>Flins :</color> <color=#ffffff73>« Je n'affronterai jamais Varka à l'épée. Je ne ferai tout simplement pas le poids contre lui. Aucune lame n'est aussi glaciale que celle du vent du nord. Si vous pensez que j'exagère en le comparant à un des phénomènes naturels les plus féroces, détrompez-vous. C'est un véritable chevalier, tel qu'il est rare d'en rencontrer de nos jours. Si j'ai l'occasion de croiser le fer avec lui, cela voudrait dire que je ne suis pas n'importe qui. »</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 8894,
-        "name": "Nefer",
-        "desc": "La propriétaire incroyablement ingénieuse du Curatorium des secrets.",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/10/21/7557acebcb72b4d9912bcb0e6c92306a_3655566527985254987.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Résumé :</color>\nFlins se doute que Nefer peut découvrir son passé à tout instant vu qu’elle possède une intuition bien aiguisée.\n<color=#ffffffd9>Répliques :</color>\n<color=#ffd780>Nefer :</color> <color=#ffffff73>« On dit souvent que la politesse est le moyen le plus efficace de tenir les inconnus à distance. Je suppose que ça fait de monsieur Flins un maître dans l'art de la distanciation sociale. Sa bienséance est impeccable et impénétrable. Ne vous méprenez pas, j'ai beaucoup de tact, je sais sourire et jouer le jeu. Mais je me fiche que monsieur Flins soit un Gardien de lumière ou un nivéole, qu'il vienne de Nod-Krai ou de Snezhnaya. Avant toute chose, nous sommes amis, et la base de l'amitié... c'est la confiance. »</color>\n<color=#ffd780>Flins :</color> <color=#ffffff73>« L'intuition de Nefer est aussi aiguisée qu'une lame que personne ne souhaite toucher. Heureusement, je n'ai pas l'habitude de me renseigner sur le passé des autres. J'espère qu'elle non plus. »</color>"
-      },
-      {
-        "type": "CustomEntry",
-        "epId": 9018,
-        "name": "Jahoda",
-        "desc": "L'employée extrêmement fiable et polyvalente du Curatorium (du moins, c'est ce qu'elle prétend).",
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/12/01/19708bac6eba4779a70908bf0bee70b1_1653339605275422455.png",
-        "displayStyle": "card",
-        "menuId": 2
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Résumé :</color>\nFlins a remarqué que Jahoda sait très bien se débrouiller en survie.\n<color=#ffffffd9>Répliques :</color>\n<color=#ffd780>Jahoda :</color> <color=#ffffff73>« J'ai entendu la patronne dire que les Gardiens de lumière étaient une organisation très ancienne qui comptait un tas de membres puissants et intelligents qui connaissent plein de secrets anciens... Tu crois que Flins aurait des informations sur des trésors anciens ? Ou peut-être sur des ruines inexplorées ? Je me posais juste la question à voix haute, je n'oserais jamais lui demander ! Je n'ai pas envie que la patronne me passe à nouveau un savon... »</color>\n<color=#ffd780>Flins :</color> <color=#ffffff73>« Jahoda apparaît toujours à des endroits inattendus. Un jour, elle sera près d'un tas de matériaux abandonnés à la Knieperterie Cling-clang, puis le lendemain, vous la retrouverez sur le balcon d'une famille aisée au Village de Nasha. Elle apprend vite la philosophie de la survie... et c'est Nod-Krai qui la lui enseigne. »</color>"
-      },
-      {
-        "type": "RichText",
-        "text": "la Tsarine",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffffd9>Résumé :</color>\nLes Gardiens de la lumière ne vénèrent pas la Tsarine.\n<color=#ffffffd9>Répliques :</color>\n<color=#ffd780>Flins :</color> <color=#ffffff73>« Bien que Nod-Krai fasse techniquement partie de Snezhnaya, vous ne nous entendrez jamais dire « Sa Majesté, la Tsarine »... Qui « nous » ? Haha, les Gardiens de lumière, évidemment... Qui d'autre ? »</color>"
-      }
-    ],
     "story": [
       {
         "title": "Info. personnage",
@@ -2403,6 +2390,56 @@
             "text": "<color=#ffd780>Débloqué au Niv. d'affinité 6</color>\n<color=#ffd780>Terminez « Élégie de la poussière et des lanternes ».</color>\nLe jeune ratniki Illuga rencontra le mystérieux monsieur Flins alors qu'il exécutait les ordres du starshyna Nikita au Village de Nasha et régler des affaires. Flins avait une gemme brillante épinglée sur ses vêtements d'extérieur sombres et solennels. Cet accessoire attirait beaucoup trop l'attention dans cette minuscule boutique. Le regard d'Illuga se posa donc non pas d'abord sur son collègue, mais sur la pierre précieuse.\n« Monsieur Flins, vous devez avoir de grosses économies. Il serait difficile d'acquérir une gemme de ce calibre autrement. »\n« Ah, celle-là ? Je l'ai eue à une vente aux enchères. Elle est juste jolie. Vous vous souvenez de l'histoire que je vous ai racontée ? Certaines gemmes n'arrivent pas à se vendre à un prix élevé, car elles n'ont rien d'autre à part une belle apparence. »\n« Personne n'a surenchéri ? »\n« Disons que la plupart des gens ne savent pas reconnaître une bonne chose quand ils la voient, et je leur en suis reconnaissant. Sinon, j'imagine que je n'irai pas à des ventes aux enchères. »\n« Raison de plus pour croire que vous n'avez pas d'économies. Auriez-vous hérité d'une grosse somme d'argent d'un parent éloigné ? »\nLe visage de Flins s'assombrit. « J'espère que vous savez garder un secret, mon cher monsieur. Personne ne doit savoir, surtout pas nos collègues. »\nDe nature bienveillante, surtout devant les autres, Illuga ressentit une certaine fierté à la demande de son collègue et accepta volontiers. Cependant, quelques mois plus tard, Illuga eut l'impression de s'être fait avoir. La société des ventes aux enchères de la ville lui affirma qu'elle n'avait pas connaissance d'une telle pierre précieuse et que Flins n'avait pas participé à ses ventes depuis un certain temps.\n« Vous m'avez menti, n'est-ce pas, monsieur Flins ? La société de vente aux enchères m'a dit qu'elle n'a pas mis en vente de gemmes précieuses ces derniers temps. »\nFlins prit sa carafe d'eau. « Tout d'abord, buvez un peu d'eau pour vous calmer. Je ne m'attendais pas à ce que vous vous renseigniez sur le sujet. »\n« Je ne sais pas si vous me considérez comme un ami ou non ? Quoi qu'il en soit, tous les secrets partagés ne sont pas forcément des vérités. »\n« Vous voulez des pierres précieuses ? Peut-être que mes parents éloignés en ont encore. »\n« J'aimerais offrir un cadeau de valeur à mon père, Nikita. Il s'est bien occupé de moi depuis mon enfance », avoua Illuga.\n« Cela prendra peut-être un certain temps, mais je pense que vous recevrez tôt ou tard quelque chose d'aussi beau. Vous aussi, cela vous arrivera d'avoir des parents éloignés qui vous offrent des cadeaux... »\nCe fut ainsi que Flins raconta les véritables origines de son disque lunaire. Le récit fut accompagné d'un verre d'eau et du clair de lune, une chose rare pour lui. Ce disque lui parvint soudainement lors d'une nuit comme les autres, dans sa salle d'exposition. Au début, il crut, comme Illuga ce jour-là, qu'il s'agissait d'une pierre précieuse qu'il avait oubliée. En réalité, c'était le plus beau cadeau que le monde lui avait jamais fait.\n« Un cadeau inattendu », effectivement. Le disque lunaire était parfaitement assorti à son manteau, dissimulait très bien sa puissance réelle et ses flammes, et cela faisait un sujet de conversation avec ses collègues au coucher du soleil.\nQuant à savoir si Illuga croyait ses paroles, ou quand il obtiendrait sa propre « gemme précieuse »... Le jeune homme devait y réfléchir par lui-même, lentement."
           }
         ]
+      }
+    ],
+    "videoCollection": [
+      {
+        "title": "Character Teaser - \"Flins: An Ancient Coin and a Pair of Eyes\" | Genshin Impact #Flins",
+        "url": "https://www.youtube.com/watch?v=IVwWIc8oNQg",
+        "coverUrl": "https://i.ytimg.com/vi/IVwWIc8oNQg/maxresdefault.jpg",
+        "duration": 229
+      },
+      {
+        "title": "Character Trailer - \"Flins: Nocturne Sentinel\" | Genshin Impact #GenshinImpact #Flins",
+        "url": "https://www.youtube.com/watch?v=bxya0iOjQMk",
+        "coverUrl": "https://i.ytimg.com/vi/bxya0iOjQMk/maxresdefault.jpg",
+        "duration": 145
+      },
+      {
+        "title": "Cutscene Animation: \"A Beacon in the Fog\" | Genshin Impact #GenshinImpact #Flins",
+        "url": "https://www.youtube.com/watch?v=jUL3hIdyXj0",
+        "coverUrl": "https://i.ytimg.com/vi/jUL3hIdyXj0/maxresdefault.jpg",
+        "duration": 122
+      },
+      {
+        "title": "Cutscene Animation: \"A Much-Needed Helping Hand\" | Genshin Impact #GenshinImpact #Sandrone",
+        "url": "https://www.youtube.com/watch?v=neFxCznqEqU",
+        "coverUrl": "https://i.ytimg.com/vi/neFxCznqEqU/maxresdefault.jpg",
+        "duration": 169
+      },
+      {
+        "title": "Cutscene Animation: \"Ambush\" | Genshin Impact #GenshinImpact",
+        "url": "https://www.youtube.com/watch?v=oGOjcRp-EWI",
+        "coverUrl": "https://i.ytimg.com/vi/oGOjcRp-EWI/maxresdefault.jpg",
+        "duration": 224
+      },
+      {
+        "title": "Cutscene Animation: \"By a Hair's Breadth\" | Genshin Impact #GenshinImpact #Flins #Ineffa",
+        "url": "https://www.youtube.com/watch?v=K3o2_efi23k",
+        "coverUrl": "https://i.ytimg.com/vi/K3o2_efi23k/maxresdefault.jpg",
+        "duration": 183
+      },
+      {
+        "title": "Cutscene Animation: \"The Hunt Beneath the Silver Moon\" | Genshin Impact #GenshinImpact",
+        "url": "https://www.youtube.com/watch?v=PtuoSxQsOUg",
+        "coverUrl": "https://i.ytimg.com/vi/PtuoSxQsOUg/maxresdefault.jpg",
+        "duration": 184
+      },
+      {
+        "title": "Version \"Luna I\" \"A Dance of Snowy Tides and Hoarfrost Groves\" Trailer | Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=7ggMwb5tXJQ",
+        "coverUrl": "https://i.ytimg.com/vi/7ggMwb5tXJQ/maxresdefault.jpg",
+        "duration": 345
       }
     ],
     "ascension": [

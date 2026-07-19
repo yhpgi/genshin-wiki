@@ -11,8 +11,55 @@
   },
   "menuId": 9,
   "menuName": "テイワット物産",
-  "version": 1768297325,
+  "version": 1784136789,
   "components": {
+    "baseInfo": [
+      {
+        "key": "名称",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "リンゴ"
+          }
+        ]
+      },
+      {
+        "key": "種類",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "食べ物"
+          }
+        ]
+      },
+      {
+        "key": "効果",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "選択したキャラのHPを300回復する。"
+          }
+        ]
+      },
+      {
+        "key": "入手方法",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "野外で採集"
+          }
+        ]
+      },
+      {
+        "key": "実装バージョン",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.0"
+          }
+        ]
+      }
+    ],
     "customize": [
       {
         "type": "Heading",
@@ -66,53 +113,389 @@
         "desc": "<p></p>",
         "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/07/02/194600931/b9b38c5ba711390b829f1f3d1e5b878a_4739915711453960793.png",
         "displayStyle": "card"
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "名称",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "リンゴ"
-          }
-        ]
       },
       {
-        "key": "種類",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "食べ物"
-          }
-        ]
+        "type": "Heading",
+        "level": 3,
+        "text": "料理"
       },
       {
-        "key": "効果",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "選択したキャラのHPを300回復する。"
-          }
-        ]
+        "type": "Heading",
+        "level": 3,
+        "text": "料理"
       },
       {
-        "key": "入手方法",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "野外で採集"
-          }
-        ]
+        "type": "Heading",
+        "level": 3,
+        "text": "材料"
       },
       {
-        "key": "実装バージョン",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.0"
-          }
-        ]
+        "type": "CustomEntry",
+        "epId": 344,
+        "name": "北地のリンゴと肉の煮込み",
+        "desc": "リンゴと一緒に煮込んだ肉料理。獣肉の滑らかな食感に溢れ出す肉汁とフルーツの香り。今までなかった爽やかな一品。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Northern Apple Stew_icon.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 9049,
+        "name": "リンゴと肉の煮込み（試作品）",
+        "desc": "ドゥリンのオリジナル料理。あなたの料理を真似て、ドゥリンは人生初の料理を作った。果物の香りには、彼のこの世界の美食に対する無邪気な理解が秘められている。肉の縁に僅かについた焦げ目は、彼が自分の力をコントロールしようと努力した結果だ。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/12/01/eca652262675e2cf72b1f074f1dce5aa_2890837503977748519.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 300,
+        "name": "獣肉",
+        "desc": "ケモノ類の新鮮な肉。適切な料理をすると元気モリモリの食事になる。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Raw Meat_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×３"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1503,
+        "name": "リンゴ",
+        "desc": "<p>サッパリした酸味と甘みの果物。そのままでも酒漬けにしても美味しい。</p><p></p><p>（以下は図鑑より抜粋）</p><p>サッパリした酸味と甘みの果物。そのままでも酒漬けにしても美味しい。ノンアルコールドリンクに使っても良い。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Apple_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×３"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1915,
+        "name": "バター",
+        "desc": "牛乳から分離させた脂肪分。適量を加えると、平凡な材料でも甘い濃厚な香りを放つ。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Butter_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×１"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1487,
+        "name": "コショウ",
+        "desc": "香りと辛みを持つ調味料。油っぽさを抑え、食材の香りを引き立てる。肉料理のベストパートナー。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Pepper_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×１"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1068,
+        "name": "満足サラダ",
+        "desc": "冷たいサラダ。茹でたジャガイモ、新鮮な果物や野菜、さらに半熟の卵が添えられている。食べると満腹感を得られる。",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/08/22/103265111/dd591e878b618ca47eab4a7e5bd1d9c1_7943019677482010264.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1497,
+        "name": "最高の知恵・生活",
+        "desc": "モナのオリジナル料理。偉大なる占星術師による偉大な料理、その偉大さはこの料理は効率よく空腹を満たせるところにある。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Der Weisheit Letzter Schluss (Life)_icon.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 366,
+        "name": "キャベツ",
+        "desc": "何層にも重なった野菜。かつては鑑賞用植物だったそうだが、今では鍋に入れた姿も素晴らしいものになっている。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Cabbage_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×2"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1503,
+        "name": "リンゴ",
+        "desc": "<p>サッパリした酸味と甘みの果物。そのままでも酒漬けにしても美味しい。</p><p></p><p>（以下は図鑑より抜粋）</p><p>サッパリした酸味と甘みの果物。そのままでも酒漬けにしても美味しい。ノンアルコールドリンクに使っても良い。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Apple_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×2"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1898,
+        "name": "鳥の卵",
+        "desc": "無限の可能性を持つ鳥類の卵。一日に必要なたんぱく質を摂取できる。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Bird Egg_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×1"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 435,
+        "name": "ジャガイモ",
+        "desc": "塊状の草本植物。大地からの贈り物。どのように加工しても、永遠に食べ飽きることのない不思議な食材。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Potato_icon.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×1"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 7818,
+        "name": "フルーツネクター",
+        "desc": "沢山の果汁を混ぜたドリンク。決められた割合で投入された色んなフルーツの味が溶け合って、絶妙な甘酸っぱさを醸し出している。氷を入れて飲むとさらに美味しい。",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/16/8c93c3c9493b579e24edd73b5edb5aea_2386706363287281045.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 2797,
+        "name": "ザイトゥン桃",
+        "desc": "<p>雨林の低木に実った果実。果肉はしっかりしており、甘くて美味しい。また、食べると心を落ち着かせる効果もあると言われている。</p><p></p><p>（以下は図鑑より抜粋）</p><p>かつてザイトゥン桃は、そのかわいらしい見た目から観賞用植物として使われていた。しかし、時を経てその薬効が発見され、今ではごく一般的な商品となり、皮肉なことに、その美的価値はほとんど注目されなくなった。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/09/06/194600931/5923b5e2aabd49d986c37aa6b529ae58_6591498782038916288.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×2"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 883,
+        "name": "夕暮れの実",
+        "desc": "テイワットの自然の恩恵を受けた果実。夕暮れの色と特殊な香りが特徴。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sunsettia_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×2"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1503,
+        "name": "リンゴ",
+        "desc": "<p>サッパリした酸味と甘みの果物。そのままでも酒漬けにしても美味しい。</p><p></p><p>（以下は図鑑より抜粋）</p><p>サッパリした酸味と甘みの果物。そのままでも酒漬けにしても美味しい。ノンアルコールドリンクに使っても良い。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Apple_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×2"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 960,
+        "name": "ラズベリー",
+        "desc": "鮮やかな色をした果物。野外に広がるこの美しい果物は、旅の疲れを吹き飛ばしてくれる。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Berry_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×2"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6745,
+        "name": "ゴールデンアップルペストリー",
+        "desc": "<p>リンゴで作ったデザート。リンゴを均等に小さく切り、砂糖と他の香料を加え、とろみが出るまで煮詰める。その後、四角い生地で包んで、黄金色に膨らむまで焼く。サクッとした生地が柔らかい具材を包み込む一品。老若男女を問わず美味しく食べられる。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/09/21/75248538/da9a3f4d9e954645a1bf939ebb60a954_2061249987456674308.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1503,
+        "name": "リンゴ",
+        "desc": "<p>サッパリした酸味と甘みの果物。そのままでも酒漬けにしても美味しい。</p><p></p><p>（以下は図鑑より抜粋）</p><p>サッパリした酸味と甘みの果物。そのままでも酒漬けにしても美味しい。ノンアルコールドリンクに使っても良い。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Apple_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×4"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1737,
+        "name": "小麦粉",
+        "desc": "小麦をすりつぶした粉末。どのような主食を作っても、食べる人の胃に一時的な満足感を与えられる。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Flour_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×3"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1915,
+        "name": "バター",
+        "desc": "牛乳から分離させた脂肪分。適量を加えると、平凡な材料でも甘い濃厚な香りを放つ。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Butter_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×2"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1328,
+        "name": "砂糖",
+        "desc": "スイートフラワーから精製した調味料。その甘さは人間と共鳴する力があるかのように、心の翳りを取り払う。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Sugar_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×2"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 4444,
+        "name": "ポム・ブラック・プティング",
+        "desc": "<p>フォンテーヌの伝統料理。リンゴのスライスとブラッドソーセージをそれぞれ焼いてから盛り付け、ソースを添えて楽しむ。この料理名から、甘いデザートだと勘違いする外国人観光客は少なくない。「ブラック·プティング」とはブラッドソーセージのことである。</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/10/07/75248538/72cc51db35a028339bc73852a7be12f4_8151566150274582277.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1503,
+        "name": "リンゴ",
+        "desc": "<p>サッパリした酸味と甘みの果物。そのままでも酒漬けにしても美味しい。</p><p></p><p>（以下は図鑑より抜粋）</p><p>サッパリした酸味と甘みの果物。そのままでも酒漬けにしても美味しい。ノンアルコールドリンクに使っても良い。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Apple_icon.png",
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×2"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 300,
+        "name": "獣肉",
+        "desc": "ケモノ類の新鮮な肉。適切な料理をすると元気モリモリの食事になる。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Raw Meat_icon.png",
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×1"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1915,
+        "name": "バター",
+        "desc": "牛乳から分離させた脂肪分。適量を加えると、平凡な材料でも甘い濃厚な香りを放つ。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Butter_icon.png",
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×１"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 6694,
+        "name": "アップルシュトゥルーデル",
+        "desc": "<p>リンゴをベースにした伝統的なスイーツ。サクサクの美味しさの秘密は薄い皮。噂によると、モンドのベテランパティシエが作った皮は、本のページにかぶせても文字が透けて見えるほど薄いのだという。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/09/02/75248538/f535d6126855c0fa68b98ce9591bf1dc_7955009737058501071.png",
+        "displayStyle": "card",
+        "menuId": 9
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1503,
+        "name": "リンゴ",
+        "desc": "<p>サッパリした酸味と甘みの果物。そのままでも酒漬けにしても美味しい。</p><p></p><p>（以下は図鑑より抜粋）</p><p>サッパリした酸味と甘みの果物。そのままでも酒漬けにしても美味しい。ノンアルコールドリンクに使っても良い。</p>",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Apple_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×4"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1737,
+        "name": "小麦粉",
+        "desc": "小麦をすりつぶした粉末。どのような主食を作っても、食べる人の胃に一時的な満足感を与えられる。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Flour_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×2"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1898,
+        "name": "鳥の卵",
+        "desc": "無限の可能性を持つ鳥類の卵。一日に必要なたんぱく質を摂取できる。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Bird Egg_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×2"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 1915,
+        "name": "バター",
+        "desc": "牛乳から分離させた脂肪分。適量を加えると、平凡な材料でも甘い濃厚な香りを放つ。",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Butter_icon.png",
+        "displayStyle": "text",
+        "menuId": 9
+      },
+      {
+        "type": "RichText",
+        "text": "×1"
       }
     ]
   }
