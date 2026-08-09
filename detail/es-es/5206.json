@@ -16,6 +16,128 @@
       },
       {
         "type": "RichText",
+        "text": "Bajo la Maestría Elemental en la ventana del juego de los atributos del personaje, las Reacciones Elementales se dividen en 4 categorías, 3 de ellas son de daño por naturaleza. Estos arquetipos pueden ser clasificados como <color=#ffffff>Reacciones Amplificadoras</color> , <color=#ffffff>Reacciones Transformativas</color> , y <color=#ffffff>Reacciones Aditivas</color> .\nLas Reacciones Amplificadoras son <color=#ffffff>Vaporizado</color> y <color=#ffffff>Derretido</color> . Estas reacciones amplifican el daño del ataque desencadenante por un factor multiplicativo.\nLas Reacciones Aditivas son <color=#ffffff>Propagación</color> e <color=#ffffff>Intensificación</color> . Estas añaden un cierto valor al ataque desencadenante.\nLas Reacciones Transformativas producen un daño independiente del ataque que lo desencadena y puede tener propiedades adicionales, tales como causar muchas instancias de daño o aplica un elemento. Estas reacciones incluyen <color=#ffffff>Quemadura</color> , <color=#ffffff>Superconductor</color> , <color=#ffffff>Torbellino</color> , <color=#ffffff>Electrocargado</color> , <color=#ffffff>Rompehielo</color> , <color=#ffffff>Sobrecarga</color> , <color=#ffffff>Florecimiento</color> , <color=#ffffff>Sobreflorecimiento</color> y <color=#ffffff>Crepitar</color> .\nTodas estas reacciones toman en consideración la <color=#ffffff>Maestría Elemental</color> del personaje que desencadena la reacción y un <color=#ffffff>multiplicador específico</color> para cada reacción, así como también la <color=#ffffff>RES enemiga</color> correspondiente al elemento de la reacción. Para las Reacciones Aditivas y Transformativas, también es tomado en cuenta el <color=#ffffff>nivel del personaje</color> ."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Reacciones Amplificadoras",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Vaporizado</color> y <color=#ffffff>Derretido</color> son Reacciones Amplificadoras, las cuales multiplican el daño normal con el Bono de Maestría Elemental y un Multiplicador especial. Este es <color=#ffffff>200%</color> para Vaporizado desencadenado por Hydro y Derretido desencadenado por Pyro, y <color=#ffffff>150%</color> para Vaporizado desencadenado por Pyro y Derretido desencadenado por Cryo.\nLas reacciones que aplican el Bono de 200% son llamadas comúnmente \"fuertes\"; mientras que las de 150%, \"débiles\". Esto no tiene tanto que ver con el daño que causan, sino con la interacción de los elementos involucrados. Como tal, una reacción \"débil\" consume menos del aura elemental, asumiendo que ambos (aura y trigger) son del mismo calibre. Así, las reacciones \"débiles\" consumen del aura solamente la mitad de lo que las reacciones \"fuertes\" consumirían, lo cual permite desencadenar más reacciones."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/43af11363070a0ce522a7f88e6398eb0_2532039850847443716.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "(Arriba, el Ataque Elemental es mostrado sin más; abajo, desencadenando una reacción con 0 pts de Maestría Elemental,\nVaporizado Pyro (x1.5), Vaporizado Hydro (x2.0), Derretido Pyro (x1.5), Derretido Cryo (x2.0) respectivamente)",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Reacciones Transformativas",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Las Reacciones Transformativas son muchas, pero todas ellas comparten estas características: infligen <color=#ffffff>daño</color> independiente del ataque desencadenante (y de su daño base), <color=#ffffff>no puede infligir daño crítico</color> , no se beneficia de ningún <color=#ffffff>bono de daño genérico</color> , y no considera la <color=#ffffff>DEF enemiga</color> , sino el <color=#ffffff>nivel del personaje desencadenante</color> . El <color=#ffffff>Level Multiplier (multiplicador de nivel)</color> es específico para cada nivel, pero los más importantes son 1077 y 1446 para los niveles 80 y 90 respectivamente."
+      },
+      {
+        "type": "RichText",
+        "text": "El daño de estas reacciones se calcula de esta forma:\n<color=#ffffff>( 100% + EM Bonus ) × RES Multiplier × Level Multiplier × Reaction Multiplier</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "El <color=#ffffff>Reaction Multiplier (Multiplicador de Reacción)</color> es <color=#ffffff>25%</color> para Quemadura, <color=#ffffff>60%</color> para Torbellino, <color=#ffffff>150%</color> para Superconductor, <color=#ffffff>200%</color> para Electrocargado y Florecimiento, <color=#ffffff>275%</color> para Sobrecarga, y <color=#ffffff>300%</color> para Rompehielo, Crepitar y Sobreflorecimiento.\n<color=#ffffff>Quemadura</color> se desencadena cuando reaccionan Pyro y Dendro. Inflige Daño Pyro en el AdE y aplica un aura de Quemadura causando Daño Pyro continuo hasta que se consuma.\n<color=#ffffff>Torbellino</color> se desencadena cuando reaccionan Anemo y Pyro/Hydro/Electro/Cryo. Esto inflige Daño del elemento con que Anemo reacciona en el AdE, infligiendo su daño al enemigo afectado y a los enemigos cercanos. Simultáneamente, desencadenando Torbellino en 2+ enemigos, causa dos instancias de Daño de Torbellino a todos los enemigos golpeados (el suyo propio y el del cercano). La única excepción aquí es Hydro: el Torbellino Hydro aplica solamente el estado Mojado, y le inflige daño únicamente al enemigo en que fue desencadenado. Torbellino es considerada una interacción elemental \"débil\"; como tal, no se quita completamente el aura del enemigo, lo cual permite más reacciones.\n<color=#ffffff>Superconductor</color> se desencadena cuando reaccionan Electro y Cryo. Inflige Daño Cryo en el AdE y reduce la RES Física de todos los enemigos afectados un 40% por 12s. El Daño Cryo de la reacción no aplica el elemento.\n<color=#ffffff>Electrocargado</color> se desencadena cuando reaccionan Hydro y Electro. Inflige Daño Electro una vez por segundo al enemigo involucrado y a los enemigos cercanos que estén afectados por el estado Mojado hasta que el aura Hydro o Electro se consuma.\n<color=#ffffff>Florecimiento</color> se desencadena cuando reaccionan Dendro e Hydro. No inflige daño adicional, sino que crea un núcleo Dendro que inflige Daño Dendro en el AdE después de explotar (tras 6s, o cuando sean creados 5 nuevos núcleos Dendro). Cada enemigo no puede tomar el daño de un núcleo Dendro más de dos veces cada 0.5s. Cuando el personaje recibe daño de un núcleo Dendro, será tan solo un 5% de él. Si es Hydro quien desencadena Florecimiento, el aura Dendro será completamente quitada; pero si es Dendro, entonces solamente la mitad del aura Hydro.\n<color=#ffffff>Sobrecarga</color> se desencadena cuando reaccionan Pyro y Electro. Inflige Daño Pyro en el AdE y causa una explosión fuerte que quita el aura Pyro y Electro.\n<color=#ffffff>Rompehielo</color> se desencadena cuando un enemigo congelado es golpeado con un ataque pesado (de mandoble, o Ataques Descendentes, o explosiones, Daño Geo, etc.). Acaba con el estado de Congelado e inflige luego Daño Físico (por lo que no se aprovecha de los bonus del set de 4 piezas de Nómada del Invierno ni de la Consonancia Cryo).\n<color=#ffffff>Crepitar</color> se desencadena cuando un núcleo Dendro entra en contacto con Pyro. Inflige Daño Dendro en el AdE.\n<color=#ffffff>Sobreflorecimiento</color> se desencadena cuando un núcleo Dendro entra en contacto con Electro. No inflige ningún daño adicional, sino que transforma los núcleos en proyectiles enredadores que persiguen al enemigo más cercano y le infligen Daño Dendro al golpearlo. Tiene un AdE muy pequeño, pero puede golpear a varios enemigos a la vez si están lo suficientemente cerca entre sí."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/e9426a37463131d1d5a65bd0677b01e0_8714591292414216019.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "(Desencadenando las reacciones mencionadas con personajes del mismo nivel y 0pts de Maestría Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Reacciones Aditivas",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff>Propagación</color> e <color=#ffffff>Intensificación</color> son Reacciones Aditivas, las cuales añaden cierto valor al daño de la habilidad desencadenante. Las Reacciones Aditivas solamente pueden ser desencadenadas en quienes estén afectados por el estado de <color=#ffffff>Aceleración</color> (como se vio en la sección 2). Infligir Daño Dendro causa Propagación; mientras que Daño Electro, Intensificación. Este Bono de Daño se aplica al <color=#ffffff>Daño Base</color> del ataque desencadenante y se aprovecha de todos los bonos y factores siguientes aplicados a ese ataque (DMG%, CRIT, RES, DEF)."
+      },
+      {
+        "type": "RichText",
+        "text": "El daño añadido de estas reacciones se calcula de esta forma:\n<color=#ffffff>( 100% + EM Bonus ) × Level Multiplier × Reaction Multiplier</color>",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "El <color=#ffffff>Reaction Multiplier (Multiplicador de Reacción)</color> es <color=#ffffff>115%</color> para Intensificación y <color=#ffffff>125%</color> para Propagación."
+      },
+      {
+        "type": "CustomImage",
+        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/3c436038857810cddd36dcbcd2a25307_2246617110877344145.png",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "(Fischl y Collei desencadenando una reacción Aditiva con el mismo nivel, ATQ, porcentaje de habilidad y 0 pts de Maestría Elemental)",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Una Reacción Elemental ocurre cuando se aplican diferentes elementos a un objetivo que ya está afectado por un elemento.\nEn Genshin Impact, hay siete elementos, cada uno con al menos una reacción que se puede desencadenar al usarlo. Sin embargo, existen restricciones para estas reacciones ya que ciertos elementos no interactúan con otro elemento, lo cual es así: Geo, Dendro y Anemo, y Dendro y Cryo no reaccionan entre sí.\nLas reacciones elementales se pueden dividir en categorías separadas, tales como: Reacciones sin daño, Reacciones Amplificadoras, Reacciones Transformativas y Reacciones Aditivas.\nPara comprender mejor ciertos mecanismos e interacciones, resulta útil delinear y definir un par de términos y mecanismos. Estos han encontrado un uso establecido en la comunidad y han sido identificados mediante pruebas e investigaciones rigurosas por parte de jugadores más dedicados. Algunos de estos paradigmas y mecanismos son de naturaleza bastante compleja, por lo que su lista aquí no es más que un resumen condensado."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Triggers (Desencadenamiento) & Auras",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Cuando se habla de reacciones, en algunas de ellas es importante considerar cuál elemento se aplica sobre cuál, mientras que en otras es indiferente a la hora de considerar el efecto de la reacción. Por ejemplo, no importa si un enemigo se ve afectado por Electro o Cryo, en el instante en que se aplica el otro elemento respectivo, se produce la reacción del Superconductor y el efecto es el mismo. Sin embargo, hay una diferencia si es Pyro o Hydro el que desencadena la reacción de Vaporizado, ya que aquí la secuencia de aplicación tiene un impacto en el efecto de la reacción (es decir, un multiplicador x1.5 en comparación con uno x2).\nPara facilitar la comunicación sobre este asunto, la comunidad adoptó los términos <color=#ffffff>\"Aura\"</color> y <color=#ffffff>\"Trigger\"</color> . <color=#ffffff>\"Aura\"</color> se usa para describir qué elemento(s) está presente en una entidad durante un estado neutral (antes o después de una reacción), mientras que <color=#ffffff>\"Trigger\"</color> (desencadenar) se usa para describir qué elemento desencadena la(s) reacción(es)."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Elemental Gauge (Unit) Theory",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffffff73>La</color> <color=#ffffff>\"Elemental Gauge (Unit) Theory\"</color> ( Teoría de la (Unidad de) Indicador Elemental ) se refiere a la comprensión de que las auras elementales se \"consumen\" en diferentes grados dependiendo de su propia fuerza y ​​la fuerza del trigger respectivo. En este caso, la fuerza de un aura elemental o trigger no está definida por el daño que hizo un movimiento de ataque al aplicar dicho elemento, sino por un valor predefinido para ese ataque. Estos valores pueden ser modulados por factores, como el orden de aplicación (elementos fuertes o débiles) o el tiempo entre aplicaciones (\"decay\", decaimiento).\nEn esencia, ciertos ataques aplican \"más\" o \"menos\" de un elemento, lo que puede reflejarse en la fuerza del aura o del trigger. Esta fuerza se cuenta en las así llamadas unidades, v.g. 1U Cryo o 2U Pyro.\nAquí hay algunos ejemplos que pueden ayudar a demostrar esta idea:\nEl Ataque Normal Charlotte aplica 1U Cryo y el Ataque Normal de Lisa aplica 1U Electro. Ambos se cancelan entre sí y desencadenan la reacción Superconductor.\nLa Habilidad Definitiva de Xingchiu aplica 1U Hydro, mientras que el Ataque Cargado de Hu Tao aplica 1U Pyro. Sin embargo, en este caso, como Pyro es el elemento \"débil\" debido a la naturaleza de Vaporización, su fuerza se reduce a la mitad, lo cual significa que solo consume 0.5U del aura Hydro de Xingchiu. Así, después del ataque, permanece 0.5U de aura Hydro en el enemigo, y Hu Tao puede desencadenar (trigger) una segunda reacción.\nAsimismo, la Habilidad Definitiva de Bennett aplica 2U Pyro a un enemigo, después de lo cual, el Ataque Normal de Mona aplica 1U Hydro. Sin embargo, como Hydro es el elemento \"fuerte\", consume el doble, resultando en una remoción total del aura Pyro inicial.\nCabe señalar que un trigger (desencadenante), incluso si aplica más unidades elementales de lo que se puede consumir del aura de un enemigo, nunca aplicará el resto de su elemento. Un ataque puede aplicar un nuevo elemento si no hay ninguno presente y establecer un aura, o consumir un aura (total o parcialmente) y desencadenar una reacción. Un solo ataque nunca puede lograr ambas cosas."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Internal Cooldown (ICD)",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Del mismo modo en que las Habilidades Elementales y Definitivas tienen tiempos de espera (TdE, Cooldown en inglés, CD) tras el que pueden ser usados de nuevo, así también la mayoría de los ataques que aplican un elemento siguen reglas específicas. Estos tiempos de espera están, en su mayor parte, separados unos de otros y no son visibles por ningún indicador; por eso el nombre <color=#ffffff>Internal Cooldown (ICD, Tiempo de Espera interno)</color> .\nAparte de algunas excepciones que no tienen ningún ICD y aplican su elemento con cada uso/golpe, la mayoría de los ataques siguen patrones similares. De hecho, hay dos reglas que funcionan en conjunto, la regla del tiempo y la regla del golpe, teniendo prioridad la regla del tiempo.\nEn pocas palabras, cada X impactos, el mismo ataque puede aplicar su elemento nuevamente, y también cada X segundos, independientemente de los impactos.\nUn ejemplo práctico para esto es la Habilidad Definitiva de Kaeya . Mientras esta habilidad gira rápidamente y lanza golpes rápidos de Daño Cryo, no todo golpe puede desencadenar una reacción o aplicar su elemento. De hecho, aplicará Cryo cada tres golpes (es decir, el golpe 1, 4, 7, 10, 13... y así). Además, cada 2.5s, también se garantizará que el siguiente golpe aplique el elemento, sobrescribiendo la regla del golpe mencionada anteriormente y restableciéndola a 1. El mismo ejemplo que el anterior con la Definitiva de Kaeya seguiría esta secuencia:\n1, 4, 7 / 8, 11, 14 / 15, 18, …\nEn este ejemplo, el contador comienza tras el golpe 1. El golpe 7 ocurre tras 2.4s, por lo que el siguiente golpe sería tras 2.5s después de iniciado el contador. Como la regla del tiempo tiene prioridad, el golpe 8 aplica Cryo, reinicia el contador de golpes y también la regla del tiempo.\nEsta regla del 3er golpe es conocida normalmente como <color=#ffffff>\"Standard ICD\"</color> , ya que estos valores son los más comunes. Algunas excepciones no tienen regla alguna, o les falta alguna de las dos, o las tienen modificadas.\nAlgunos ejemplos de tales excepciones son la Habilidad Definitiva de Xiangling (que no tiene ICD) o los ataques del cuervo Oz de Fischl (regla de 4 golpes & regla de 5s)."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Descripción general",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
         "text": "Puede ser dividida en 3 secciones: <color=#ffffff>Congelado</color> , <color=#ffffff>Cristalización</color> y <color=#ffffff>Aceleración</color> . En vez de añadir daño, estas reacciones proveen otros atributos con los elementos involucrados."
       },
       {
@@ -145,94 +267,6 @@
       {
         "type": "RichText",
         "text": "(Aplicar Hydro en un objetivo con Aceleración consume las unidades Dendro y quita el estado de Aceleración en el objetivo)"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Descripción general",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Bajo la Maestría Elemental en la ventana del juego de los atributos del personaje, las Reacciones Elementales se dividen en 4 categorías, 3 de ellas son de daño por naturaleza. Estos arquetipos pueden ser clasificados como <color=#ffffff>Reacciones Amplificadoras</color> , <color=#ffffff>Reacciones Transformativas</color> , y <color=#ffffff>Reacciones Aditivas</color> .\nLas Reacciones Amplificadoras son <color=#ffffff>Vaporizado</color> y <color=#ffffff>Derretido</color> . Estas reacciones amplifican el daño del ataque desencadenante por un factor multiplicativo.\nLas Reacciones Aditivas son <color=#ffffff>Propagación</color> e <color=#ffffff>Intensificación</color> . Estas añaden un cierto valor al ataque desencadenante.\nLas Reacciones Transformativas producen un daño independiente del ataque que lo desencadena y puede tener propiedades adicionales, tales como causar muchas instancias de daño o aplica un elemento. Estas reacciones incluyen <color=#ffffff>Quemadura</color> , <color=#ffffff>Superconductor</color> , <color=#ffffff>Torbellino</color> , <color=#ffffff>Electrocargado</color> , <color=#ffffff>Rompehielo</color> , <color=#ffffff>Sobrecarga</color> , <color=#ffffff>Florecimiento</color> , <color=#ffffff>Sobreflorecimiento</color> y <color=#ffffff>Crepitar</color> .\nTodas estas reacciones toman en consideración la <color=#ffffff>Maestría Elemental</color> del personaje que desencadena la reacción y un <color=#ffffff>multiplicador específico</color> para cada reacción, así como también la <color=#ffffff>RES enemiga</color> correspondiente al elemento de la reacción. Para las Reacciones Aditivas y Transformativas, también es tomado en cuenta el <color=#ffffff>nivel del personaje</color> ."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Reacciones Amplificadoras",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Vaporizado</color> y <color=#ffffff>Derretido</color> son Reacciones Amplificadoras, las cuales multiplican el daño normal con el Bono de Maestría Elemental y un Multiplicador especial. Este es <color=#ffffff>200%</color> para Vaporizado desencadenado por Hydro y Derretido desencadenado por Pyro, y <color=#ffffff>150%</color> para Vaporizado desencadenado por Pyro y Derretido desencadenado por Cryo.\nLas reacciones que aplican el Bono de 200% son llamadas comúnmente \"fuertes\"; mientras que las de 150%, \"débiles\". Esto no tiene tanto que ver con el daño que causan, sino con la interacción de los elementos involucrados. Como tal, una reacción \"débil\" consume menos del aura elemental, asumiendo que ambos (aura y trigger) son del mismo calibre. Así, las reacciones \"débiles\" consumen del aura solamente la mitad de lo que las reacciones \"fuertes\" consumirían, lo cual permite desencadenar más reacciones."
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/43af11363070a0ce522a7f88e6398eb0_2532039850847443716.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "(Arriba, el Ataque Elemental es mostrado sin más; abajo, desencadenando una reacción con 0 pts de Maestría Elemental,\nVaporizado Pyro (x1.5), Vaporizado Hydro (x2.0), Derretido Pyro (x1.5), Derretido Cryo (x2.0) respectivamente)",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Reacciones Transformativas",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Las Reacciones Transformativas son muchas, pero todas ellas comparten estas características: infligen <color=#ffffff>daño</color> independiente del ataque desencadenante (y de su daño base), <color=#ffffff>no puede infligir daño crítico</color> , no se beneficia de ningún <color=#ffffff>bono de daño genérico</color> , y no considera la <color=#ffffff>DEF enemiga</color> , sino el <color=#ffffff>nivel del personaje desencadenante</color> . El <color=#ffffff>Level Multiplier (multiplicador de nivel)</color> es específico para cada nivel, pero los más importantes son 1077 y 1446 para los niveles 80 y 90 respectivamente."
-      },
-      {
-        "type": "RichText",
-        "text": "El daño de estas reacciones se calcula de esta forma:\n<color=#ffffff>( 100% + EM Bonus ) × RES Multiplier × Level Multiplier × Reaction Multiplier</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "El <color=#ffffff>Reaction Multiplier (Multiplicador de Reacción)</color> es <color=#ffffff>25%</color> para Quemadura, <color=#ffffff>60%</color> para Torbellino, <color=#ffffff>150%</color> para Superconductor, <color=#ffffff>200%</color> para Electrocargado y Florecimiento, <color=#ffffff>275%</color> para Sobrecarga, y <color=#ffffff>300%</color> para Rompehielo, Crepitar y Sobreflorecimiento.\n<color=#ffffff>Quemadura</color> se desencadena cuando reaccionan Pyro y Dendro. Inflige Daño Pyro en el AdE y aplica un aura de Quemadura causando Daño Pyro continuo hasta que se consuma.\n<color=#ffffff>Torbellino</color> se desencadena cuando reaccionan Anemo y Pyro/Hydro/Electro/Cryo. Esto inflige Daño del elemento con que Anemo reacciona en el AdE, infligiendo su daño al enemigo afectado y a los enemigos cercanos. Simultáneamente, desencadenando Torbellino en 2+ enemigos, causa dos instancias de Daño de Torbellino a todos los enemigos golpeados (el suyo propio y el del cercano). La única excepción aquí es Hydro: el Torbellino Hydro aplica solamente el estado Mojado, y le inflige daño únicamente al enemigo en que fue desencadenado. Torbellino es considerada una interacción elemental \"débil\"; como tal, no se quita completamente el aura del enemigo, lo cual permite más reacciones.\n<color=#ffffff>Superconductor</color> se desencadena cuando reaccionan Electro y Cryo. Inflige Daño Cryo en el AdE y reduce la RES Física de todos los enemigos afectados un 40% por 12s. El Daño Cryo de la reacción no aplica el elemento.\n<color=#ffffff>Electrocargado</color> se desencadena cuando reaccionan Hydro y Electro. Inflige Daño Electro una vez por segundo al enemigo involucrado y a los enemigos cercanos que estén afectados por el estado Mojado hasta que el aura Hydro o Electro se consuma.\n<color=#ffffff>Florecimiento</color> se desencadena cuando reaccionan Dendro e Hydro. No inflige daño adicional, sino que crea un núcleo Dendro que inflige Daño Dendro en el AdE después de explotar (tras 6s, o cuando sean creados 5 nuevos núcleos Dendro). Cada enemigo no puede tomar el daño de un núcleo Dendro más de dos veces cada 0.5s. Cuando el personaje recibe daño de un núcleo Dendro, será tan solo un 5% de él. Si es Hydro quien desencadena Florecimiento, el aura Dendro será completamente quitada; pero si es Dendro, entonces solamente la mitad del aura Hydro.\n<color=#ffffff>Sobrecarga</color> se desencadena cuando reaccionan Pyro y Electro. Inflige Daño Pyro en el AdE y causa una explosión fuerte que quita el aura Pyro y Electro.\n<color=#ffffff>Rompehielo</color> se desencadena cuando un enemigo congelado es golpeado con un ataque pesado (de mandoble, o Ataques Descendentes, o explosiones, Daño Geo, etc.). Acaba con el estado de Congelado e inflige luego Daño Físico (por lo que no se aprovecha de los bonus del set de 4 piezas de Nómada del Invierno ni de la Consonancia Cryo).\n<color=#ffffff>Crepitar</color> se desencadena cuando un núcleo Dendro entra en contacto con Pyro. Inflige Daño Dendro en el AdE.\n<color=#ffffff>Sobreflorecimiento</color> se desencadena cuando un núcleo Dendro entra en contacto con Electro. No inflige ningún daño adicional, sino que transforma los núcleos en proyectiles enredadores que persiguen al enemigo más cercano y le infligen Daño Dendro al golpearlo. Tiene un AdE muy pequeño, pero puede golpear a varios enemigos a la vez si están lo suficientemente cerca entre sí."
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/e9426a37463131d1d5a65bd0677b01e0_8714591292414216019.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "(Desencadenando las reacciones mencionadas con personajes del mismo nivel y 0pts de Maestría Elemental)",
-        "alignment": "center"
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Reacciones Aditivas",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff>Propagación</color> e <color=#ffffff>Intensificación</color> son Reacciones Aditivas, las cuales añaden cierto valor al daño de la habilidad desencadenante. Las Reacciones Aditivas solamente pueden ser desencadenadas en quienes estén afectados por el estado de <color=#ffffff>Aceleración</color> (como se vio en la sección 2). Infligir Daño Dendro causa Propagación; mientras que Daño Electro, Intensificación. Este Bono de Daño se aplica al <color=#ffffff>Daño Base</color> del ataque desencadenante y se aprovecha de todos los bonos y factores siguientes aplicados a ese ataque (DMG%, CRIT, RES, DEF)."
-      },
-      {
-        "type": "RichText",
-        "text": "El daño añadido de estas reacciones se calcula de esta forma:\n<color=#ffffff>( 100% + EM Bonus ) × Level Multiplier × Reaction Multiplier</color>",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "El <color=#ffffff>Reaction Multiplier (Multiplicador de Reacción)</color> es <color=#ffffff>115%</color> para Intensificación y <color=#ffffff>125%</color> para Propagación."
-      },
-      {
-        "type": "CustomImage",
-        "url": "https:/act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/03/19/205556113/3c436038857810cddd36dcbcd2a25307_2246617110877344145.png",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "(Fischl y Collei desencadenando una reacción Aditiva con el mismo nivel, ATQ, porcentaje de habilidad y 0 pts de Maestría Elemental)",
-        "alignment": "center"
       },
       {
         "type": "Heading",
@@ -1734,40 +1768,6 @@
         "type": "RichText",
         "text": "<color=#ffffff>Conjunto de 4 piezas</color>\nEl daño infligido por la reacción de Superconductor aumenta en un 80%.",
         "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Una Reacción Elemental ocurre cuando se aplican diferentes elementos a un objetivo que ya está afectado por un elemento.\nEn Genshin Impact, hay siete elementos, cada uno con al menos una reacción que se puede desencadenar al usarlo. Sin embargo, existen restricciones para estas reacciones ya que ciertos elementos no interactúan con otro elemento, lo cual es así: Geo, Dendro y Anemo, y Dendro y Cryo no reaccionan entre sí.\nLas reacciones elementales se pueden dividir en categorías separadas, tales como: Reacciones sin daño, Reacciones Amplificadoras, Reacciones Transformativas y Reacciones Aditivas.\nPara comprender mejor ciertos mecanismos e interacciones, resulta útil delinear y definir un par de términos y mecanismos. Estos han encontrado un uso establecido en la comunidad y han sido identificados mediante pruebas e investigaciones rigurosas por parte de jugadores más dedicados. Algunos de estos paradigmas y mecanismos son de naturaleza bastante compleja, por lo que su lista aquí no es más que un resumen condensado."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Triggers (Desencadenamiento) & Auras",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Cuando se habla de reacciones, en algunas de ellas es importante considerar cuál elemento se aplica sobre cuál, mientras que en otras es indiferente a la hora de considerar el efecto de la reacción. Por ejemplo, no importa si un enemigo se ve afectado por Electro o Cryo, en el instante en que se aplica el otro elemento respectivo, se produce la reacción del Superconductor y el efecto es el mismo. Sin embargo, hay una diferencia si es Pyro o Hydro el que desencadena la reacción de Vaporizado, ya que aquí la secuencia de aplicación tiene un impacto en el efecto de la reacción (es decir, un multiplicador x1.5 en comparación con uno x2).\nPara facilitar la comunicación sobre este asunto, la comunidad adoptó los términos <color=#ffffff>\"Aura\"</color> y <color=#ffffff>\"Trigger\"</color> . <color=#ffffff>\"Aura\"</color> se usa para describir qué elemento(s) está presente en una entidad durante un estado neutral (antes o después de una reacción), mientras que <color=#ffffff>\"Trigger\"</color> (desencadenar) se usa para describir qué elemento desencadena la(s) reacción(es)."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Elemental Gauge (Unit) Theory",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "<color=#ffffff73>La</color> <color=#ffffff>\"Elemental Gauge (Unit) Theory\"</color> ( Teoría de la (Unidad de) Indicador Elemental ) se refiere a la comprensión de que las auras elementales se \"consumen\" en diferentes grados dependiendo de su propia fuerza y ​​la fuerza del trigger respectivo. En este caso, la fuerza de un aura elemental o trigger no está definida por el daño que hizo un movimiento de ataque al aplicar dicho elemento, sino por un valor predefinido para ese ataque. Estos valores pueden ser modulados por factores, como el orden de aplicación (elementos fuertes o débiles) o el tiempo entre aplicaciones (\"decay\", decaimiento).\nEn esencia, ciertos ataques aplican \"más\" o \"menos\" de un elemento, lo que puede reflejarse en la fuerza del aura o del trigger. Esta fuerza se cuenta en las así llamadas unidades, v.g. 1U Cryo o 2U Pyro.\nAquí hay algunos ejemplos que pueden ayudar a demostrar esta idea:\nEl Ataque Normal Charlotte aplica 1U Cryo y el Ataque Normal de Lisa aplica 1U Electro. Ambos se cancelan entre sí y desencadenan la reacción Superconductor.\nLa Habilidad Definitiva de Xingchiu aplica 1U Hydro, mientras que el Ataque Cargado de Hu Tao aplica 1U Pyro. Sin embargo, en este caso, como Pyro es el elemento \"débil\" debido a la naturaleza de Vaporización, su fuerza se reduce a la mitad, lo cual significa que solo consume 0.5U del aura Hydro de Xingchiu. Así, después del ataque, permanece 0.5U de aura Hydro en el enemigo, y Hu Tao puede desencadenar (trigger) una segunda reacción.\nAsimismo, la Habilidad Definitiva de Bennett aplica 2U Pyro a un enemigo, después de lo cual, el Ataque Normal de Mona aplica 1U Hydro. Sin embargo, como Hydro es el elemento \"fuerte\", consume el doble, resultando en una remoción total del aura Pyro inicial.\nCabe señalar que un trigger (desencadenante), incluso si aplica más unidades elementales de lo que se puede consumir del aura de un enemigo, nunca aplicará el resto de su elemento. Un ataque puede aplicar un nuevo elemento si no hay ninguno presente y establecer un aura, o consumir un aura (total o parcialmente) y desencadenar una reacción. Un solo ataque nunca puede lograr ambas cosas."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Internal Cooldown (ICD)",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Del mismo modo en que las Habilidades Elementales y Definitivas tienen tiempos de espera (TdE, Cooldown en inglés, CD) tras el que pueden ser usados de nuevo, así también la mayoría de los ataques que aplican un elemento siguen reglas específicas. Estos tiempos de espera están, en su mayor parte, separados unos de otros y no son visibles por ningún indicador; por eso el nombre <color=#ffffff>Internal Cooldown (ICD, Tiempo de Espera interno)</color> .\nAparte de algunas excepciones que no tienen ningún ICD y aplican su elemento con cada uso/golpe, la mayoría de los ataques siguen patrones similares. De hecho, hay dos reglas que funcionan en conjunto, la regla del tiempo y la regla del golpe, teniendo prioridad la regla del tiempo.\nEn pocas palabras, cada X impactos, el mismo ataque puede aplicar su elemento nuevamente, y también cada X segundos, independientemente de los impactos.\nUn ejemplo práctico para esto es la Habilidad Definitiva de Kaeya . Mientras esta habilidad gira rápidamente y lanza golpes rápidos de Daño Cryo, no todo golpe puede desencadenar una reacción o aplicar su elemento. De hecho, aplicará Cryo cada tres golpes (es decir, el golpe 1, 4, 7, 10, 13... y así). Además, cada 2.5s, también se garantizará que el siguiente golpe aplique el elemento, sobrescribiendo la regla del golpe mencionada anteriormente y restableciéndola a 1. El mismo ejemplo que el anterior con la Definitiva de Kaeya seguiría esta secuencia:\n1, 4, 7 / 8, 11, 14 / 15, 18, …\nEn este ejemplo, el contador comienza tras el golpe 1. El golpe 7 ocurre tras 2.4s, por lo que el siguiente golpe sería tras 2.5s después de iniciado el contador. Como la regla del tiempo tiene prioridad, el golpe 8 aplica Cryo, reinicia el contador de golpes y también la regla del tiempo.\nEsta regla del 3er golpe es conocida normalmente como <color=#ffffff>\"Standard ICD\"</color> , ya que estos valores son los más comunes. Algunas excepciones no tienen regla alguna, o les falta alguna de las dos, o las tienen modificadas.\nAlgunos ejemplos de tales excepciones son la Habilidad Definitiva de Xiangling (que no tiene ICD) o los ataques del cuervo Oz de Fischl (regla de 4 golpes & regla de 5s)."
       }
     ]
   }

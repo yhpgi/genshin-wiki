@@ -12,6 +12,53 @@
   "menuName": "聖遺物",
   "version": 1779532236,
   "components": {
+    "baseInfo": [
+      {
+        "key": "和名 / 英名",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "天からの贈り物 / Celestial Gift"
+          }
+        ]
+      },
+      {
+        "key": "入手方法",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "祈聖秘境「花の宴」にて確率で入手可能"
+          }
+        ]
+      },
+      {
+        "key": "同様の2セット効果を持つ聖遺物",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 2090,
+            "name": "絶縁の旗印",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png"
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 8521,
+            "name": "月を紡ぐ夜の歌",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/b8350998129a66e67c1a7691153da68d_6559589601591776539.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "実装バージョン",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Luna VII"
+          }
+        ]
+      }
+    ],
     "artifactList": {
       "circlet_of_logos": {
         "title": "天より授かりし栄冠",
@@ -24,17 +71,6 @@
         ],
         "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/05/15/068c3628cf202e98800d865db61044fa_8294755309243183413.png"
       },
-      "sands_of_eon": {
-        "title": "天より授かりし命令",
-        "position": "時の砂",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "高天が御使に授けた時に逆らう日時計。越えられない禁制は怒りの集う淵藪となった。"
-          }
-        ],
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/05/15/3dca399ac764602bd9ed4203e5897f54_8932222630076743991.png"
-      },
       "plume_of_death": {
         "title": "天より授かりし終焉",
         "position": "死の羽",
@@ -45,6 +81,17 @@
           }
         ],
         "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/05/15/ab4ca8789b216de5357f3686bcea2ef2_2359084499295082871.png"
+      },
+      "flower_of_life": {
+        "title": "天より授かりし芳香",
+        "position": "生の花",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "高天が御使に授けた不凋花。終わりのない生命力は貪欲な心を生み出した。"
+          }
+        ],
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/05/15/5ff646e4e9ff8f839490360edda862a2_2352330875956559301.png"
       },
       "goblet_of_eonothem": {
         "title": "天より授かりし賞賜",
@@ -57,21 +104,17 @@
         ],
         "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/05/15/b0a4185de908e04f9aa2c7abc7fa4941_4373162066960384781.png"
       },
-      "flower_of_life": {
-        "title": "天より授かりし芳香",
-        "position": "生の花",
+      "sands_of_eon": {
+        "title": "天より授かりし命令",
+        "position": "時の砂",
         "desc": [
           {
             "type": "RichText",
-            "text": "高天が御使に授けた不凋花。終わりのない生命力は貪欲な心を生み出した。"
+            "text": "高天が御使に授けた時に逆らう日時計。越えられない禁制は怒りの集う淵藪となった。"
           }
         ],
-        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/05/15/5ff646e4e9ff8f839490360edda862a2_2352330875956559301.png"
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/05/15/3dca399ac764602bd9ed4203e5897f54_8932222630076743991.png"
       }
-    },
-    "reliquarySetEffect": {
-      "twoSetEffect": "元素チャージ効率+20%。",
-      "fourSetEffect": "装備者が「魔女の課題」をクリアしている場合、元素スキルを発動すると、「天光の導き」効果を獲得する。この効果は装備者の元素タイプに基づき、付近にいるチーム全員に当該元素ダメージ+20%のバフを付与する。継続時間20秒。装備者が待機中でも発動可能。同じ聖遺物セットによるダメージアップ効果は重ね掛けできない。<br>・チームが「魔導秘儀」効果を持っている時、「天光の導き」効果は「浮世の頌歌」に強化される。装備者の元素タイプに加え、フィールド上にいる自身のキャラクターの元素タイプに基づき、周囲のチーム全員に当該元素のダメージアップ効果を付与する。さらに、上記2種類の元素ダメージアップ効果は40%までアップする。同じ元素タイプの元素ダメージアップ効果は重ね掛けできない。"
     },
     "story": [
       {
@@ -120,52 +163,9 @@
         ]
       }
     ],
-    "baseInfo": [
-      {
-        "key": "和名 / 英名",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "天からの贈り物 / Celestial Gift"
-          }
-        ]
-      },
-      {
-        "key": "入手方法",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "祈聖秘境「花の宴」にて確率で入手可能"
-          }
-        ]
-      },
-      {
-        "key": "同様の2セット効果を持つ聖遺物",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 2090,
-            "name": "絶縁の旗印",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/reliquary/Emblem of Severed Fate/flower_of_life_icon.png"
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 8521,
-            "name": "月を紡ぐ夜の歌",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/b8350998129a66e67c1a7691153da68d_6559589601591776539.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "実装バージョン",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "Luna VII"
-          }
-        ]
-      }
-    ]
+    "reliquarySetEffect": {
+      "twoSetEffect": "元素チャージ効率+20%。",
+      "fourSetEffect": "装備者が「魔女の課題」をクリアしている場合、元素スキルを発動すると、「天光の導き」効果を獲得する。この効果は装備者の元素タイプに基づき、付近にいるチーム全員に当該元素ダメージ+20%のバフを付与する。継続時間20秒。装備者が待機中でも発動可能。同じ聖遺物セットによるダメージアップ効果は重ね掛けできない。<br>・チームが「魔導秘儀」効果を持っている時、「天光の導き」効果は「浮世の頌歌」に強化される。装備者の元素タイプに加え、フィールド上にいる自身のキャラクターの元素タイプに基づき、周囲のチーム全員に当該元素のダメージアップ効果を付与する。さらに、上記2種類の元素ダメージアップ効果は40%までアップする。同じ元素タイプの元素ダメージアップ効果は重ね掛けできない。"
+    }
   }
 }
