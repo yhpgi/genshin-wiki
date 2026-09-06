@@ -4,18 +4,345 @@
   "desc": "<p><strong>無相の水</strong></p><p></p><p>高純度の水元素生命体、コードネーム「ヒイ」。無相元素は強大な排他本能があり、探りを入れたい人を無情に追い払う。</p>",
   "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/08/13/358253410/5472ff81b00d65ffb12d1b8656d1440a_8679693252769406544.png",
   "filterValues": {
-    "cardCharacterElement": "水元素",
     "cardCharacterChargingPoint": "チャージ：2",
-    "cardCharacterWeaponType": "他の武器",
     "cardCharacterCamp": [
       "魔物"
     ],
-    "cardCharacterObtainingMethod": "酒場挑戦"
+    "cardCharacterWeaponType": "他の武器",
+    "cardCharacterObtainingMethod": "酒場挑戦",
+    "cardCharacterElement": "水元素"
   },
   "menuId": 17,
   "menuName": "キャラカード",
-  "version": 1786631026,
+  "version": 1788616781,
   "components": {
+    "talent": [
+      {
+        "key": "水珠乱射",
+        "title": "水珠乱射",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/09/03/346851886/1ce09211f025bf5470682189e0837732_1195541653034194268.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd680>通常攻撃</color>\n<color=#80bfff>水元素ダメージ</color> を 1 与える。"
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "湧き上がる激流",
+        "title": "湧き上がる激流",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/09/03/346851886/a814f52c3bc4fa25938ff03a06789a4b_8882133920445453028.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd680>元素スキル</color>\n<color=#80bfff>水元素ダメージ</color> を2与え、 <color=#ffffff>スキル準備</color> に入る： <color=#ffffff>溢流</color> 。\n<color=#ebe4d8>溢流</color>\n<color=#ffd680>元素スキル</color>\n<color=#80bfff>水元素ダメージ</color> を 1 与える。"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "災厄の潮",
+        "title": "災厄の潮",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/09/03/346851886/b35177f40b5feb57926d3c56007e3ff1_5282826033241690370.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd680>元素爆発</color>\n<color=#80bfff>水元素ダメージ</color> を 3 与え、 <color=#ffffff>水滴</color> を召喚する。"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "水晶核心",
+        "title": "水晶核心",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/09/03/346851886/9cf7d611aa6299fd132da0fa5f147d1c_260772245244373690.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd680>固有スキル</color>\n【固有】戦闘開始時、 <color=#ffffff>水晶核心</color> が付与される。フィールド上に <color=#ffffff>水滴</color> が存在する場合、 <color=#ffffff>水晶核心</color> を消費した時に再び <color=#ffffff>水晶核心</color> を付与し、 <color=#ffffff>水滴</color> の使用可能回数 -1 。"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "水元素ダメージ",
+        "title": "水元素ダメージ",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/09/03/346851886/a126c6a302d81c07e19cf9a9f1260f90_905299665934802009.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "水元素付着では、以下の元素反応を起こすことができます。\n【 <color=#80c0ff>水</color> + <color=#ff9999>炎</color> 】 <color=#ffffff>蒸発</color> ：ダメージ+2\n【 <color=#80c0ff>水</color> + <color=#ffacff>雷</color> 】 <color=#ffffff>感電</color> ：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\n【 <color=#80c0ff>水</color> + <color=#99ffff>氷</color> 】 <color=#ffffff>凍結</color> ：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\n【 <color=#80c0ff>水</color> + <color=#99ff88>草</color> 】 <color=#ffffff>開花</color> ：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「 <color=#ffffff>草原核</color> 」を生成する\n【 <color=#80c0ff>水</color> + <color=#ffacff>雷</color> 】 <color=#ffffff>月感電</color> ：ラウンド終了時、 <color=#ffacff>雷元素ダメージ</color> を2与える「 <color=#ffffff>雷雲</color> 」を生成する。（使用可能回数1、上限なく重ねられる。登場または使用可能回数が増える時、相手のランダムな手札1枚に「 <color=#ffffff>電撃</color> 」を付与する）\n【 <color=#99ff88>草</color> + <color=#80c0ff>水</color> 】 <color=#ffffff>月開花</color> ：ダメージ+1。さらに味方のランダムな手札1枚に［ <color=#ffffff>コストダウン</color> ］を付与する。\n註：Ver.Luna V更新に伴い、月感電が追加された\n註：Ver.Luna VII更新に伴い、月開花が追加された"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "水滴",
+        "title": "水滴",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/09/03/346851886/db13288db6b90ec33f8adc2656d2019f_451724501200624652.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd680>召喚物</color>\nエンドフェーズ時、無相の水に <color=#ffffff>水晶核心</color> が付与されていない場合、水晶核心を付与する。そうでない場合、 <color=#80bfff>水元素ダメージ</color> を2与える。\n<color=#ffffff>使用可能回数：2。</color>"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "key": "ルール詳細",
+        "title": "ルール詳細",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/09/03/346851886/245c229cf6f7364c7c9a7aea3db1a1ad_4520653602288527913.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ebe4d8>スキル準備</color>\nスキルの中には、直接発動のできないものもあります。発動するには、一定のターン数 <color=#ffffff>準備</color> する必要があります。\nプレイヤーがアクションするとき、もし該当プレイヤーの「出撃キャラ」がスキルを <color=#ffffff>準備</color> している場合、該当プレイヤーのアクションはスキップされます。もしスキルの <color=#ffffff>準備</color> が完了した場合、そのスキルは直ちに発動されます（このような <color=#ffffff>準備</color> を必要とするスキルは、「スキルを発動した後」、「キャラが元素反応を起こした後」に生じる効果を発動させることができません）。\nスキルを <color=#ffffff>準備</color> できるのは「出撃キャラ」のみとなります。スキルを <color=#ffffff>準備</color> している「出撃キャラ」が待機キャラにチェンジすると、スキルの <color=#ffffff>準備</color> は中断されます。\n<color=#ece5d8>元素爆発</color>\nキャラのチャージが満タンになると、すべてのチャージを消費し、高威力の「元素爆発」を発動できます。\n<color=#ece5d8>固有スキル</color>\n該当スキルは常に有効であり、発動させる必要はありません。\n<color=#ebe4d8>水晶核心</color>\n<color=#ffd680>状態</color>\n<color=#ffffff>付与されたキャラが倒された時</color> 、この効果を解除してキャラが <color=#ffffff>戦闘不能にならない</color> 。また該当キャラのHPを1まで回復する。\n<color=#ece5d8>戦闘不能にならない</color>\n一部の効果によってキャラのHPが0になる時も、 <color=#ffffff>戦闘不能にならず</color> 、該当キャラのHPを一定値まで回復する。\nこの時、キャラは <color=#ffffff>戦闘不能</color> にもカウントされない。（そのため、キャラに装備または付与されたものは破棄されず、チャージもクリアされない。）\n<color=#ece5d8>使用可能回数</color>\nこのカードの効果が発動された後、 <color=#ffffff>使用可能回数</color> が1回消費されます。\n<color=#ffffff>使用可能回数</color> が尽きてしまうと、このカードは直ちに破棄されます。"
+          }
+        ],
+        "attributes": []
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "名前",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "無相の水"
+          }
+        ]
+      },
+      {
+        "key": "タイプ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "キャラカード"
+          }
+        ]
+      },
+      {
+        "key": "HP",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "8"
+          }
+        ]
+      },
+      {
+        "key": "チャージ",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "2"
+          }
+        ]
+      },
+      {
+        "key": "元素属性",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "水"
+          }
+        ]
+      },
+      {
+        "key": "武器",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "他の武器"
+          }
+        ]
+      },
+      {
+        "key": "チーム",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "魔物"
+          }
+        ]
+      },
+      {
+        "key": "天賦カード",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 11229,
+            "name": "不気味な荒波",
+            "desc": "<p><strong>無相の水・不気味な荒波</strong></p><p></p><p>音のない不気味な水面下で、災いをもたらす荒波が静かに形成されている…</p>",
+            "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/08/13/358253410/2e7e534e04c3da5b99d3e254a1d74c51_4200002628137880559.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "入手方法",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、 無相の水 に挑戦して友好対戦に勝利することで獲得"
+          }
+        ]
+      },
+      {
+        "key": "関連項目",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 2160,
+            "name": "無相の水",
+            "desc": "高純度の水元素生命体、コードネーム「ヒイ」。<br/>無相元素は強大な排他本能があり、挑戦者を無情に追い払う。<br/>排他の対象は天然の元素まで広がっているようだ。",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/enemy/Hydro Hypostasis_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "実装バージョン",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "7.0"
+          }
+        ]
+      }
+    ],
+    "customize": [
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "酒場挑戦",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "友好対戦"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>ステージ紹介</color>\n「ニャー。」「これは稲妻の友達が教えてくれた話だニャ。西のとある島には、奇妙な姿をした元素生物がいるそうだニャ。ずっと波を集めていて、いつか荒波を起こし、自分に逆らう者を全部水に沈めようとしているらしいニャ … 」\n<color=#ccbfad>【特殊ルール】</color> <color=#ccbfad>「無相の水」は凍結、スタン、石化を無効化し、初期状態で「不気味な荒波」が付与される。</color>\n相手の編成"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 11226,
+        "name": "無相の水",
+        "desc": "<p><strong>無相の水</strong></p><p></p><p>高純度の水元素生命体、コードネーム「ヒイ」。無相元素は強大な排他本能があり、探りを入れたい人を無情に追い払う。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/08/13/358253410/5472ff81b00d65ffb12d1b8656d1440a_8679693252769406544.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "RichText",
+        "text": "追加事項\n「無相の水」が初期HP25で出現"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "挑戦目標",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "報酬",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "勝利する"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 11226,
+        "name": "無相の水",
+        "desc": "<p><strong>無相の水</strong></p><p></p><p>高純度の水元素生命体、コードネーム「ヒイ」。無相元素は強大な排他本能があり、探りを入れたい人を無情に追い払う。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/08/13/358253410/5472ff81b00d65ffb12d1b8656d1440a_8679693252769406544.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "RichText",
+        "text": "5ラウンド以内に勝利する"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 11229,
+        "name": "不気味な荒波",
+        "desc": "<p><strong>無相の水・不気味な荒波</strong></p><p></p><p>音のない不気味な水面下で、災いをもたらす荒波が静かに形成されている…</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/08/13/358253410/2e7e534e04c3da5b99d3e254a1d74c51_4200002628137880559.png",
+        "displayStyle": "card",
+        "menuId": 18
+      },
+      {
+        "type": "RichText",
+        "text": "勝利時、キャラが戦闘不能になった回数が2回未満"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 11229,
+        "name": "不気味な荒波",
+        "desc": "<p><strong>無相の水・不気味な荒波</strong></p><p></p><p>音のない不気味な水面下で、災いをもたらす荒波が静かに形成されている…</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/08/13/358253410/2e7e534e04c3da5b99d3e254a1d74c51_4200002628137880559.png",
+        "displayStyle": "card",
+        "menuId": 18
+      },
+      {
+        "type": "Heading",
+        "level": 2,
+        "text": "真剣勝負"
+      },
+      {
+        "type": "RichText",
+        "text": "<color=#ffd780>ステージ紹介</color>\n「ニャー … 」「知っての通り、『フィニック』はスイーツに溺れすぎて、すっかり動きの鈍い猫になってしまったニャ … でも、これからの対局でも、きっと大波を巻き起こせるって信じているニャ … 」\n<color=#ccbfad>【特殊ルール】</color> <color=#ccbfad>「無相の水」は凍結、スタン、石化を無効化し、初期状態で「不気味な荒波」が付与される。</color>\n相手の編成"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 11226,
+        "name": "無相の水",
+        "desc": "<p><strong>無相の水</strong></p><p></p><p>高純度の水元素生命体、コードネーム「ヒイ」。無相元素は強大な排他本能があり、探りを入れたい人を無情に追い払う。</p>",
+        "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/08/13/358253410/5472ff81b00d65ffb12d1b8656d1440a_8679693252769406544.png",
+        "displayStyle": "card",
+        "menuId": 17
+      },
+      {
+        "type": "RichText",
+        "text": "追加事項\n「無相の水」が初期HP40で出現\n開放条件\n無相の水・奔流の挑戦目標を3つクリア"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "挑戦目標",
+        "alignment": "center"
+      },
+      {
+        "type": "Heading",
+        "level": 3,
+        "text": "報酬",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "勝利する"
+      },
+      {
+        "type": "CustomEntry",
+        "epId": 3333,
+        "name": "ラッキーカードコイン",
+        "desc": "<p>プレイヤー協会が認証し使用している貨幣。「七聖召喚」に関する様々なアイテムを購入できる。ラッキーカードコインという名には、所持している人がラッキーになれますようにという願いが込められているそうだ。でも、もしかすると、そもそもラッキーな人だけがこれを所持できるというだけかもしれない…</p>",
+        "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/12/09/194600931/c85bfab46d8c95659ab6dfb2e1629a87_1509528158650931842.png",
+        "amount": 1,
+        "displayStyle": "text"
+      },
+      {
+        "type": "RichText",
+        "text": "×1000"
+      }
+    ],
     "tcg": {
       "headerImgs": [
         {
@@ -29,6 +356,16 @@
         }
       ],
       "hp": 8
-    }
+    },
+    "galleryCharacter": [
+      {
+        "key": "幻影スキンの爆発モーション",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/09/03/346851886/1de5b452275fc5ad5cb243e071e138bd_2913293178809140192.gif"
+      },
+      {
+        "key": "アイコン",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/09/03/346851886/96683b1caa7f532f557ced6b0fb73a6b_7675430512853571807.png"
+      }
+    ]
   }
 }
