@@ -5,16 +5,999 @@
   "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/Xiao_icon.png",
   "headerImgUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/avatar.png",
   "filterValues": {
+    "characterProperty": "Taux CRIT",
     "characterRegion": "Liyue",
     "characterVision": "Anémo",
-    "characterWeapon": "Arme d'hast",
-    "characterProperty": "Taux CRIT",
-    "characterRarity": 5
+    "characterRarity": 5,
+    "characterWeapon": "Arme d'hast"
   },
   "menuId": 2,
   "menuName": "Archives des personnages",
   "version": 1783958124,
   "components": {
+    "summaryList": [
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/constellation_1.png",
+        "name": "Dissolution d'éon : Destructeur de mondes",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Confère une charge supplémentaire pour <color=#ffd780>Cycle du vent lemniscatique</color> ."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/constellation_2.png",
+        "name": "Annihilation d'éon : Fleur du kaléidoscope",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "La recharge d'énergie de Xiao augmente de 25 % lorsqu'il fait partie de l'équipe mais n'est pas déployé."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/constellation_3.png",
+        "name": "Dompteur de démons : Déité de la colère",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Niveau d'aptitude <color=#ffd780>Cycle du vent lemniscatique</color> +3.\nNiveau max : 15"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/constellation_4.png",
+        "name": "Transcendance : Extinction de la souffrance",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Xiao bénéficie d'un bonus de DÉF de 100 % quand ses PV sont inférieurs à 50 %."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/constellation_5.png",
+        "name": "Évolution d'éon : Origine de l'ignorance",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Niveau d'aptitude <color=#ffd780>Fléau du mal</color> +3.\nNiveau max : 15"
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/constellation_6.png",
+        "name": "Dompteur de démons : Gardien Yaksha",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Lorsque <color=#ffd780>Fléau du mal</color> est actif, les attaques plongeantes touchant au moins 2 ennemis confèrent immédiatement une charge de <color=#ffd780>Cycle du vent lemniscatique</color> supplémentaire, qui peut être activée dans la seconde qui suit, même s'il n'est pas entièrement rechargé."
+          }
+        ]
+      }
+    ],
+    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=32&center=1935.62,-52.64&zoom=-2.50",
+    "talent": [
+      {
+        "key": "Attaque normale : Coup de tourbillon",
+        "title": "Attaque normale : Coup de tourbillon",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/battle_talent_0/battle_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Attaque normale</color>\nEnchaîne jusqu'à 6 coups de lance.\n<color=#ffd780>Attaque chargée</color>\nConsomme de l'endurance pour déclencher une attaque ascendante.\n<color=#ffd780>Attaque plongeante</color>\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact.\nXiao ne subit pas de DGT lorsqu'il exécute une attaque plongeante."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Niv.",
+            "values": [
+              "Niv.1",
+              "Niv.2",
+              "Niv.3",
+              "Niv.4",
+              "Niv.5",
+              "Niv.6",
+              "Niv.7",
+              "Niv.8",
+              "Niv.9",
+              "Niv.10",
+              "Niv.11"
+            ]
+          },
+          {
+            "key": "DGT 1er coup",
+            "values": [
+              "27.5%+27.5%",
+              "29.4%+29.4%",
+              "31.3%+31.3%",
+              "33.8%+33.8%",
+              "35.7%+35.7%",
+              "37.9%+37.9%",
+              "40.7%+40.7%",
+              "43.5%+43.5%",
+              "46.3%+46.3%",
+              "49.1%+49.1%",
+              "52.0%+52.0%"
+            ]
+          },
+          {
+            "key": "DGT 2e coup",
+            "values": [
+              "56.9%",
+              "60.8%",
+              "64.7%",
+              "69.9%",
+              "73.8%",
+              "78.3%",
+              "84.1%",
+              "89.9%",
+              "95.8%",
+              "101.6%",
+              "107.4%"
+            ]
+          },
+          {
+            "key": "DGT 3e coup",
+            "values": [
+              "68.55%",
+              "73.23%",
+              "77.9%",
+              "84.13%",
+              "88.81%",
+              "94.26%",
+              "101.27%",
+              "108.28%",
+              "115.39%",
+              "122.3%",
+              "129.31%"
+            ]
+          },
+          {
+            "key": "DGT 4e coup",
+            "values": [
+              "37.7%+37.7%",
+              "40.2%+40.2%",
+              "42.8%+42.8%",
+              "46.2%+46.2%",
+              "48.8%+48.8%",
+              "51.8%+51.8%",
+              "55.6%+55.6%",
+              "59.5%+59.5%",
+              "63.3%+63.3%",
+              "67.2%+67.2%",
+              "71.0%+71.0%"
+            ]
+          },
+          {
+            "key": "DGT 5e coup",
+            "values": [
+              "71.5%",
+              "76.4%",
+              "81.3%",
+              "87.8%",
+              "92.7%",
+              "98.4%",
+              "105.7%",
+              "113%",
+              "120.3%",
+              "127.6%",
+              "135%"
+            ]
+          },
+          {
+            "key": "DGT 6e coup",
+            "values": [
+              "95.8%",
+              "102.4%",
+              "108.9%",
+              "117.6%",
+              "124.1%",
+              "131.8%",
+              "141.6%",
+              "151.4%",
+              "161.2%",
+              "171%",
+              "180.8%"
+            ]
+          },
+          {
+            "key": "DGT attaque chargée",
+            "values": [
+              "121%",
+              "129%",
+              "138%",
+              "149%",
+              "157%",
+              "166%",
+              "179%",
+              "191%",
+              "204%",
+              "216%",
+              "228%"
+            ]
+          },
+          {
+            "key": "Coût d'endurance attaque chargée",
+            "values": [
+              "25 pts",
+              "25 pts",
+              "25 pts",
+              "25 pts",
+              "25 pts",
+              "25 pts",
+              "25 pts",
+              "25 pts",
+              "25 pts",
+              "25 pts",
+              "25 pts"
+            ]
+          },
+          {
+            "key": "DGT durant la chute",
+            "values": [
+              "81.83%",
+              "88.49%",
+              "95.16%",
+              "104.67%",
+              "111.33%",
+              "118.94%",
+              "129.41%",
+              "139.88%",
+              "150.35%",
+              "162.76%",
+              "173.18%"
+            ]
+          },
+          {
+            "key": "DGT chute basse/élevée",
+            "values": [
+              "163.63%/204.39%",
+              "176.95%/221.02%",
+              "190.27%/237.66%",
+              "209.30%/261.42%",
+              "222.62%/278.06%",
+              "237.84%/297.07%",
+              "258.77%/323.21%",
+              "279.90%/349.36%",
+              "300.63%/375.50%",
+              "323.46%/404.02%",
+              "346.29%/432.54%"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 152,
+              "name": "Enseignement de la Prospérité",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Elle assure la paix et la sécurité de Liyue, cité bâtie conjointement par les dieux et par les hommes.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Prosperity_icon.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 396,
+              "name": "Bave de Blob",
+              "desc": "Liquide épais que l'on trouve sur les Blobs. Il s'agit d'un matériau commun utilisé chez les forgerons élémentaires.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 151,
+              "name": "Guide de la Prospérité",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Récompenser le labeur avec de l'or, telle était la promesse faite aux enfants de Liyue.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 398,
+              "name": "Mucus de Blob",
+              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+              "amount": 3
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 25000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 151,
+              "name": "Guide de la Prospérité",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Récompenser le labeur avec de l'or, telle était la promesse faite aux enfants de Liyue.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 398,
+              "name": "Mucus de Blob",
+              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+              "amount": 4
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 151,
+              "name": "Guide de la Prospérité",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Récompenser le labeur avec de l'or, telle était la promesse faite aux enfants de Liyue.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 398,
+              "name": "Mucus de Blob",
+              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+              "amount": 6
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 151,
+              "name": "Guide de la Prospérité",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Récompenser le labeur avec de l'or, telle était la promesse faite aux enfants de Liyue.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 398,
+              "name": "Mucus de Blob",
+              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
+              "amount": 9
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 150,
+              "name": "Philosophie de la Prospérité",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Elle incarne le passé, le présent et le futur de Liyue. La cité possède toutes les richesses que nulle autre nation peut oser espérer obtenir.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 397,
+              "name": "Essence de Blob",
+              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 969,
+              "name": "Ombre du guerrier",
+              "desc": "Un fragment de pouvoir que vous avez obtenu en battant Tartaglia, qui avait libéré la puissance de son œil maléfique.<br/>Cet objet est le résultat d'une volonté de combattre qui s'est aiguisée au cours d'innombrables massacres.<br/>Si le destin existe pour les hommes, alors le sien a sans nul doute été affecté par ces actions. Sinon, comment expliquer qu'il se retrouve toujours au centre de chaque conflit ?",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shadow of the Warrior_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 150,
+              "name": "Philosophie de la Prospérité",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Elle incarne le passé, le présent et le futur de Liyue. La cité possède toutes les richesses que nulle autre nation peut oser espérer obtenir.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 397,
+              "name": "Essence de Blob",
+              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 969,
+              "name": "Ombre du guerrier",
+              "desc": "Un fragment de pouvoir que vous avez obtenu en battant Tartaglia, qui avait libéré la puissance de son œil maléfique.<br/>Cet objet est le résultat d'une volonté de combattre qui s'est aiguisée au cours d'innombrables massacres.<br/>Si le destin existe pour les hommes, alors le sien a sans nul doute été affecté par ces actions. Sinon, comment expliquer qu'il se retrouve toujours au centre de chaque conflit ?",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shadow of the Warrior_icon.png",
+              "amount": 1
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 150,
+              "name": "Philosophie de la Prospérité",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Elle incarne le passé, le présent et le futur de Liyue. La cité possède toutes les richesses que nulle autre nation peut oser espérer obtenir.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 397,
+              "name": "Essence de Blob",
+              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 969,
+              "name": "Ombre du guerrier",
+              "desc": "Un fragment de pouvoir que vous avez obtenu en battant Tartaglia, qui avait libéré la puissance de son œil maléfique.<br/>Cet objet est le résultat d'une volonté de combattre qui s'est aiguisée au cours d'innombrables massacres.<br/>Si le destin existe pour les hommes, alors le sien a sans nul doute été affecté par ces actions. Sinon, comment expliquer qu'il se retrouve toujours au centre de chaque conflit ?",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shadow of the Warrior_icon.png",
+              "amount": 2
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 150,
+              "name": "Philosophie de la Prospérité",
+              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Elle incarne le passé, le présent et le futur de Liyue. La cité possède toutes les richesses que nulle autre nation peut oser espérer obtenir.</p>",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 397,
+              "name": "Essence de Blob",
+              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 969,
+              "name": "Ombre du guerrier",
+              "desc": "Un fragment de pouvoir que vous avez obtenu en battant Tartaglia, qui avait libéré la puissance de son œil maléfique.<br/>Cet objet est le résultat d'une volonté de combattre qui s'est aiguisée au cours d'innombrables massacres.<br/>Si le destin existe pour les hommes, alors le sien a sans nul doute été affecté par ces actions. Sinon, comment expliquer qu'il se retrouve toujours au centre de chaque conflit ?",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shadow of the Warrior_icon.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "Couronne de la sagesse",
+              "desc": "Matériau d'amélioration d'aptitude rare.<br/>Un support utilisé dans les temps anciens pour conserver et transmettre le savoir. Bien que de nos jours les connaissances se transmettent de différentes manières, autant orales qu'écrites, cet artéfact n'a pas perdu la moindre once de son pouvoir d'antan.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            }
+          ]
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/battle_talent_0/battle_talent_0.gif"
+      },
+      {
+        "key": "Cycle du vent lemniscatique",
+        "title": "Cycle du vent lemniscatique",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/battle_talent_1/battle_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Xiao se précipite vers l'avant, infligeant des <color=#80ffd7>DGT Anémo</color> aux ennemis sur sa route.\nFonctionne aussi dans les airs.\nXiao commence avec 2 charges.\nLa légende d'un lointain pays raconte qu'un jour, le monde périra entre deux roues à aubes. La maîtrise totale de la lance permet à Xiao d'écraser ses ennemis, à l'image des roues légendaires écrasant le monde."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Niv.",
+            "values": [
+              "Niv.1",
+              "Niv.2",
+              "Niv.3",
+              "Niv.4",
+              "Niv.5",
+              "Niv.6",
+              "Niv.7",
+              "Niv.8",
+              "Niv.9",
+              "Niv.10",
+              "Niv.11",
+              "Niv.12",
+              "Niv.13",
+              "Niv.14"
+            ]
+          },
+          {
+            "key": "DGT compétence",
+            "values": [
+              "252.8%",
+              "271.76%",
+              "290.72%",
+              "316%",
+              "334.96%",
+              "353.92%",
+              "379.2%",
+              "404.48%",
+              "429.76%",
+              "455.04%",
+              "480.32%",
+              "505.6%",
+              "537.2%"
+            ]
+          },
+          {
+            "key": "Temps de recharge",
+            "values": [
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s",
+              "10 s"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/battle_talent_1/battle_talent_1.gif"
+      },
+      {
+        "key": "Fléau du mal",
+        "title": "Fléau du mal",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/battle_talent_2/battle_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Xiao revêt le Masque du Yaksha, qui, il y a bien longtemps, fit trembler dieux et démons.\n<color=#ffd780>Masque du Yaksha</color>\n· Améliore considérablement la capacité de saut de Xiao.\n· Augmente la portée et les DGT d'attaque.\n· Les DGT d'attaque sont convertis en <color=#80ffd7>DGT Anémo</color> ne pouvant pas être enchantés.\nCet effet consomme des PV de façon continue.\nL'état prend fin lorsque Xiao quitte le champ de bataille.\nEn revêtant le Masque du Yaksha, Xiao prend la forme terrifiante du Gardien Yaksha Dompteur de démons. Mais un tel pouvoir a un prix ; aussi l'appelle-t-on : le Fléau du mal."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Niv.",
+            "values": [
+              "Niv.1",
+              "Niv.2",
+              "Niv.3",
+              "Niv.4",
+              "Niv.5",
+              "Niv.6",
+              "Niv.7",
+              "Niv.8",
+              "Niv.9",
+              "Niv.10",
+              "Niv.11",
+              "Niv.12",
+              "Niv.13",
+              "Niv.14"
+            ]
+          },
+          {
+            "key": "Bonus ATQ normale/chargée/plongeante",
+            "values": [
+              "58.45%",
+              "61.95%",
+              "65.45%",
+              "70%",
+              "73.5%",
+              "77%",
+              "81.55%",
+              "86.1%",
+              "90.65%",
+              "95.2%",
+              "99.75%",
+              "104.3%",
+              "108.85%",
+              "113.4%"
+            ]
+          },
+          {
+            "key": "PV consommés",
+            "values": [
+              "3% PV actuels/s",
+              "3% PV actuels/s",
+              "3% PV actuels/s",
+              "2.5% PV actuels/s",
+              "2.5% PV actuels/s",
+              "2.5% PV actuels/s",
+              "2% PV actuels/s",
+              "2% PV actuels/s",
+              "2% PV actuels/s",
+              "2% PV actuels/s",
+              "2% PV actuels/s",
+              "2% PV actuels/s",
+              "2% PV actuels/s",
+              "2% PV actuels/s"
+            ]
+          },
+          {
+            "key": "Durée",
+            "values": [
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s",
+              "15 s"
+            ]
+          },
+          {
+            "key": "Temps de recharge",
+            "values": [
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s",
+              "18 s"
+            ]
+          },
+          {
+            "key": "Énergie élémentaire",
+            "values": [
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70",
+              "70"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/battle_talent_2/battle_talent_2.gif"
+      },
+      {
+        "key": "Dompteur de démons : Conquérant du mal",
+        "title": "Dompteur de démons : Conquérant du mal",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/const_talent_0.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Xiao inflige 5 % de DGT supplémentaires tant que <color=#ffd780>Fléau du mal</color> est actif. Un cumul de 5 % de DGT supplémentaires est ensuite appliqué toutes les 3 s tant que dure la compétence.\nCumul max : 25 % de DGT supplémentaires."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Dissolution d'éon : Chute des cieux",
+        "title": "Dissolution d'éon : Chute des cieux",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/const_talent_1.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Cycle du vent lemniscatique</color> inflige 15 % de DGT en plus lorsqu'il est relancé dans les 7 s.\nCet effet dure 7 s et peut être cumulé 3 fois au maximum. Le délai est réinitialisé à chaque nouveau cumul."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "key": "Transcendance : Contrôleur de gravité",
+        "title": "Transcendance : Contrôleur de gravité",
+        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/const_talent_2.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Réduit la consommation d'endurance de vos personnages dans l'équipe de 20 % lors de l'escalade.\nNe peut pas être cumulé avec d'autres aptitudes passives aux effets identiques."
+          }
+        ],
+        "attributes": null
+      }
+    ],
+    "galleryCharacter": [
+      {
+        "key": "Character Card",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/avatar_header.jpg"
+      },
+      {
+        "key": "Avatar",
+        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/avatar.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Tenue Originale - Passage du millénaire"
+          }
+        ]
+      },
+      {
+        "key": "Animation d'inactivité 1",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/30/158750877/35a40e9abebbb72f3cc430a591e283f9_5588362831137240640.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Tenue Originale - Passage du millénaire"
+          }
+        ]
+      },
+      {
+        "key": "Animation d'inactivité 2",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/30/158750877/160c19cb9ecfd9ccea6d55e89eb8e2db_2068448698087873607.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Tenue Originale - Passage du millénaire"
+          }
+        ]
+      },
+      {
+        "key": "Constellation",
+        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/03/158750877/17c3a3b4ec4e1440b58b2da63462c09f_7649822400933583448.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffa6>Alatus Nemeseos</color>"
+          }
+        ]
+      }
+    ],
+    "baseInfo": [
+      {
+        "key": "Nom",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Xiao</color>"
+          }
+        ]
+      },
+      {
+        "key": "Anniversaire",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>17/4</color>"
+          }
+        ]
+      },
+      {
+        "key": "Constellation",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Alatus Nemeseos</color>"
+          }
+        ]
+      },
+      {
+        "key": "Titre",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Gardien Yaksha</color>"
+          }
+        ]
+      },
+      {
+        "key": "Œil divin",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Anémo</color>"
+          }
+        ]
+      },
+      {
+        "key": "Affiliation",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Adeptes de Liyue</color>"
+          }
+        ]
+      },
+      {
+        "key": "Voix chinoise",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>金船 (Kinsen)</color>"
+          }
+        ]
+      },
+      {
+        "key": "Voix anglaise",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>Laila Berzins</color>"
+          }
+        ]
+      },
+      {
+        "key": "Voix japonaise",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>松岡禎丞 (MATSUOKA Yoshitsugu)</color>"
+          }
+        ]
+      },
+      {
+        "key": "Voix coréenne",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffffffd9>심규혁 (Shim Kyu-hyeok)</color>"
+          }
+        ]
+      },
+      {
+        "key": "Plat spécial",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 159,
+            "name": "Beau songe",
+            "desc": "Spécialité culinaire de Xiao. Les rêves de Xiao sont simples et beaux.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/\"Sweet Dream\"_icon.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Thème",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 6124,
+            "name": "Xiao - Masque",
+            "desc": "Thème.<br>Il attend avec impatience le jour où il pourra porter le masque et danser non pas pour conquérir des démons mais au son de cette fameuse flûte, dans un océan de fleurs.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/15/27af2098eefde475f478bb60148f9ef9_5422602686975680866.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Carte du Personnage",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 3839,
+            "name": "Xiao",
+            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Xiao «&nbsp;Gardien Yaksha&nbsp;»</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">Gardien Yaksha, triomphant du mal.</span></p>",
+            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/23/35653081/aa7d00c044c79bfda8713a50adac9906_7335717979569784002.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Ajout à la version",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "1.3"
+          }
+        ]
+      }
+    ],
     "story": [
       {
         "title": "Info. personnage",
@@ -1043,740 +2026,6 @@
             ]
           }
         ]
-      }
-    ],
-    "talent": [
-      {
-        "key": "Attaque normale : Coup de tourbillon",
-        "title": "Attaque normale : Coup de tourbillon",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/battle_talent_0/battle_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Attaque normale</color>\nEnchaîne jusqu'à 6 coups de lance.\n<color=#ffd780>Attaque chargée</color>\nConsomme de l'endurance pour déclencher une attaque ascendante.\n<color=#ffd780>Attaque plongeante</color>\nPlonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact.\nXiao ne subit pas de DGT lorsqu'il exécute une attaque plongeante."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Niv.",
-            "values": [
-              "Niv.1",
-              "Niv.2",
-              "Niv.3",
-              "Niv.4",
-              "Niv.5",
-              "Niv.6",
-              "Niv.7",
-              "Niv.8",
-              "Niv.9",
-              "Niv.10",
-              "Niv.11"
-            ]
-          },
-          {
-            "key": "DGT 1er coup",
-            "values": [
-              "27.5%+27.5%",
-              "29.4%+29.4%",
-              "31.3%+31.3%",
-              "33.8%+33.8%",
-              "35.7%+35.7%",
-              "37.9%+37.9%",
-              "40.7%+40.7%",
-              "43.5%+43.5%",
-              "46.3%+46.3%",
-              "49.1%+49.1%",
-              "52.0%+52.0%"
-            ]
-          },
-          {
-            "key": "DGT 2e coup",
-            "values": [
-              "56.9%",
-              "60.8%",
-              "64.7%",
-              "69.9%",
-              "73.8%",
-              "78.3%",
-              "84.1%",
-              "89.9%",
-              "95.8%",
-              "101.6%",
-              "107.4%"
-            ]
-          },
-          {
-            "key": "DGT 3e coup",
-            "values": [
-              "68.55%",
-              "73.23%",
-              "77.9%",
-              "84.13%",
-              "88.81%",
-              "94.26%",
-              "101.27%",
-              "108.28%",
-              "115.39%",
-              "122.3%",
-              "129.31%"
-            ]
-          },
-          {
-            "key": "DGT 4e coup",
-            "values": [
-              "37.7%+37.7%",
-              "40.2%+40.2%",
-              "42.8%+42.8%",
-              "46.2%+46.2%",
-              "48.8%+48.8%",
-              "51.8%+51.8%",
-              "55.6%+55.6%",
-              "59.5%+59.5%",
-              "63.3%+63.3%",
-              "67.2%+67.2%",
-              "71.0%+71.0%"
-            ]
-          },
-          {
-            "key": "DGT 5e coup",
-            "values": [
-              "71.5%",
-              "76.4%",
-              "81.3%",
-              "87.8%",
-              "92.7%",
-              "98.4%",
-              "105.7%",
-              "113%",
-              "120.3%",
-              "127.6%",
-              "135%"
-            ]
-          },
-          {
-            "key": "DGT 6e coup",
-            "values": [
-              "95.8%",
-              "102.4%",
-              "108.9%",
-              "117.6%",
-              "124.1%",
-              "131.8%",
-              "141.6%",
-              "151.4%",
-              "161.2%",
-              "171%",
-              "180.8%"
-            ]
-          },
-          {
-            "key": "DGT attaque chargée",
-            "values": [
-              "121%",
-              "129%",
-              "138%",
-              "149%",
-              "157%",
-              "166%",
-              "179%",
-              "191%",
-              "204%",
-              "216%",
-              "228%"
-            ]
-          },
-          {
-            "key": "Coût d'endurance attaque chargée",
-            "values": [
-              "25 pts",
-              "25 pts",
-              "25 pts",
-              "25 pts",
-              "25 pts",
-              "25 pts",
-              "25 pts",
-              "25 pts",
-              "25 pts",
-              "25 pts",
-              "25 pts"
-            ]
-          },
-          {
-            "key": "DGT durant la chute",
-            "values": [
-              "81.83%",
-              "88.49%",
-              "95.16%",
-              "104.67%",
-              "111.33%",
-              "118.94%",
-              "129.41%",
-              "139.88%",
-              "150.35%",
-              "162.76%",
-              "173.18%"
-            ]
-          },
-          {
-            "key": "DGT chute basse/élevée",
-            "values": [
-              "163.63%/204.39%",
-              "176.95%/221.02%",
-              "190.27%/237.66%",
-              "209.30%/261.42%",
-              "222.62%/278.06%",
-              "237.84%/297.07%",
-              "258.77%/323.21%",
-              "279.90%/349.36%",
-              "300.63%/375.50%",
-              "323.46%/404.02%",
-              "346.29%/432.54%"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 12500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 152,
-              "name": "Enseignement de la Prospérité",
-              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Elle assure la paix et la sécurité de Liyue, cité bâtie conjointement par les dieux et par les hommes.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Teachings of Prosperity_icon.png",
-              "amount": 3
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 396,
-              "name": "Bave de Blob",
-              "desc": "Liquide épais que l'on trouve sur les Blobs. Il s'agit d'un matériau commun utilisé chez les forgerons élémentaires.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Condensate_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 17500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 151,
-              "name": "Guide de la Prospérité",
-              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Récompenser le labeur avec de l'or, telle était la promesse faite aux enfants de Liyue.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 398,
-              "name": "Mucus de Blob",
-              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-              "amount": 3
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 25000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 151,
-              "name": "Guide de la Prospérité",
-              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Récompenser le labeur avec de l'or, telle était la promesse faite aux enfants de Liyue.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 398,
-              "name": "Mucus de Blob",
-              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-              "amount": 4
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 30000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 151,
-              "name": "Guide de la Prospérité",
-              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Récompenser le labeur avec de l'or, telle était la promesse faite aux enfants de Liyue.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 398,
-              "name": "Mucus de Blob",
-              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-              "amount": 6
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 37500
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 151,
-              "name": "Guide de la Prospérité",
-              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Récompenser le labeur avec de l'or, telle était la promesse faite aux enfants de Liyue.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Guide to Prosperity_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 398,
-              "name": "Mucus de Blob",
-              "desc": "Substance légèrement purifiée, sécrétée par un Blob. Éviter tout contact avec la peau.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Secretions_icon.png",
-              "amount": 9
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 120000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 150,
-              "name": "Philosophie de la Prospérité",
-              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Elle incarne le passé, le présent et le futur de Liyue. La cité possède toutes les richesses que nulle autre nation peut oser espérer obtenir.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 397,
-              "name": "Essence de Blob",
-              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-              "amount": 4
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 969,
-              "name": "Ombre du guerrier",
-              "desc": "Un fragment de pouvoir que vous avez obtenu en battant Tartaglia, qui avait libéré la puissance de son œil maléfique.<br/>Cet objet est le résultat d'une volonté de combattre qui s'est aiguisée au cours d'innombrables massacres.<br/>Si le destin existe pour les hommes, alors le sien a sans nul doute été affecté par ces actions. Sinon, comment expliquer qu'il se retrouve toujours au centre de chaque conflit ?",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shadow of the Warrior_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 260000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 150,
-              "name": "Philosophie de la Prospérité",
-              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Elle incarne le passé, le présent et le futur de Liyue. La cité possède toutes les richesses que nulle autre nation peut oser espérer obtenir.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 397,
-              "name": "Essence de Blob",
-              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-              "amount": 6
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 969,
-              "name": "Ombre du guerrier",
-              "desc": "Un fragment de pouvoir que vous avez obtenu en battant Tartaglia, qui avait libéré la puissance de son œil maléfique.<br/>Cet objet est le résultat d'une volonté de combattre qui s'est aiguisée au cours d'innombrables massacres.<br/>Si le destin existe pour les hommes, alors le sien a sans nul doute été affecté par ces actions. Sinon, comment expliquer qu'il se retrouve toujours au centre de chaque conflit ?",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shadow of the Warrior_icon.png",
-              "amount": 1
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 450000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 150,
-              "name": "Philosophie de la Prospérité",
-              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Elle incarne le passé, le présent et le futur de Liyue. La cité possède toutes les richesses que nulle autre nation peut oser espérer obtenir.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 397,
-              "name": "Essence de Blob",
-              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-              "amount": 9
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 969,
-              "name": "Ombre du guerrier",
-              "desc": "Un fragment de pouvoir que vous avez obtenu en battant Tartaglia, qui avait libéré la puissance de son œil maléfique.<br/>Cet objet est le résultat d'une volonté de combattre qui s'est aiguisée au cours d'innombrables massacres.<br/>Si le destin existe pour les hommes, alors le sien a sans nul doute été affecté par ces actions. Sinon, comment expliquer qu'il se retrouve toujours au centre de chaque conflit ?",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shadow of the Warrior_icon.png",
-              "amount": 2
-            }
-          ],
-          [
-            {
-              "type": "CustomEntry",
-              "epId": 757,
-              "name": "Mora",
-              "desc": "La devise commune de Teyvat. S'il y a bien un mot que tout le monde comprend, c'est celui-là.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
-              "amount": 700000
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 150,
-              "name": "Philosophie de la Prospérité",
-              "desc": "<p>Matériau d'amélioration d'aptitude.<br>La prospérité est l'aspiration du Pays de la Roche.<br>Elle incarne le passé, le présent et le futur de Liyue. La cité possède toutes les richesses que nulle autre nation peut oser espérer obtenir.</p>",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Philosophies of Prosperity_icon.png",
-              "amount": 16
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 397,
-              "name": "Essence de Blob",
-              "desc": "Concentré de Blob. Il peut se déplacer tout seul sans surveillance de votre part.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Slime Concentrate_icon.png",
-              "amount": 12
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 969,
-              "name": "Ombre du guerrier",
-              "desc": "Un fragment de pouvoir que vous avez obtenu en battant Tartaglia, qui avait libéré la puissance de son œil maléfique.<br/>Cet objet est le résultat d'une volonté de combattre qui s'est aiguisée au cours d'innombrables massacres.<br/>Si le destin existe pour les hommes, alors le sien a sans nul doute été affecté par ces actions. Sinon, comment expliquer qu'il se retrouve toujours au centre de chaque conflit ?",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Shadow of the Warrior_icon.png",
-              "amount": 2
-            },
-            {
-              "type": "CustomEntry",
-              "epId": 900,
-              "name": "Couronne de la sagesse",
-              "desc": "Matériau d'amélioration d'aptitude rare.<br/>Un support utilisé dans les temps anciens pour conserver et transmettre le savoir. Bien que de nos jours les connaissances se transmettent de différentes manières, autant orales qu'écrites, cet artéfact n'a pas perdu la moindre once de son pouvoir d'antan.",
-              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
-              "amount": 1
-            }
-          ]
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/battle_talent_0/battle_talent_0.gif"
-      },
-      {
-        "key": "Cycle du vent lemniscatique",
-        "title": "Cycle du vent lemniscatique",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/battle_talent_1/battle_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Xiao se précipite vers l'avant, infligeant des <color=#80ffd7>DGT Anémo</color> aux ennemis sur sa route.\nFonctionne aussi dans les airs.\nXiao commence avec 2 charges.\nLa légende d'un lointain pays raconte qu'un jour, le monde périra entre deux roues à aubes. La maîtrise totale de la lance permet à Xiao d'écraser ses ennemis, à l'image des roues légendaires écrasant le monde."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Niv.",
-            "values": [
-              "Niv.1",
-              "Niv.2",
-              "Niv.3",
-              "Niv.4",
-              "Niv.5",
-              "Niv.6",
-              "Niv.7",
-              "Niv.8",
-              "Niv.9",
-              "Niv.10",
-              "Niv.11",
-              "Niv.12",
-              "Niv.13",
-              "Niv.14"
-            ]
-          },
-          {
-            "key": "DGT compétence",
-            "values": [
-              "252.8%",
-              "271.76%",
-              "290.72%",
-              "316%",
-              "334.96%",
-              "353.92%",
-              "379.2%",
-              "404.48%",
-              "429.76%",
-              "455.04%",
-              "480.32%",
-              "505.6%",
-              "537.2%"
-            ]
-          },
-          {
-            "key": "Temps de recharge",
-            "values": [
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s",
-              "10 s"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/battle_talent_1/battle_talent_1.gif"
-      },
-      {
-        "key": "Fléau du mal",
-        "title": "Fléau du mal",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/battle_talent_2/battle_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Xiao revêt le Masque du Yaksha, qui, il y a bien longtemps, fit trembler dieux et démons.\n<color=#ffd780>Masque du Yaksha</color>\n· Améliore considérablement la capacité de saut de Xiao.\n· Augmente la portée et les DGT d'attaque.\n· Les DGT d'attaque sont convertis en <color=#80ffd7>DGT Anémo</color> ne pouvant pas être enchantés.\nCet effet consomme des PV de façon continue.\nL'état prend fin lorsque Xiao quitte le champ de bataille.\nEn revêtant le Masque du Yaksha, Xiao prend la forme terrifiante du Gardien Yaksha Dompteur de démons. Mais un tel pouvoir a un prix ; aussi l'appelle-t-on : le Fléau du mal."
-          }
-        ],
-        "attributes": [
-          {
-            "key": "Niv.",
-            "values": [
-              "Niv.1",
-              "Niv.2",
-              "Niv.3",
-              "Niv.4",
-              "Niv.5",
-              "Niv.6",
-              "Niv.7",
-              "Niv.8",
-              "Niv.9",
-              "Niv.10",
-              "Niv.11",
-              "Niv.12",
-              "Niv.13",
-              "Niv.14"
-            ]
-          },
-          {
-            "key": "Bonus ATQ normale/chargée/plongeante",
-            "values": [
-              "58.45%",
-              "61.95%",
-              "65.45%",
-              "70%",
-              "73.5%",
-              "77%",
-              "81.55%",
-              "86.1%",
-              "90.65%",
-              "95.2%",
-              "99.75%",
-              "104.3%",
-              "108.85%",
-              "113.4%"
-            ]
-          },
-          {
-            "key": "PV consommés",
-            "values": [
-              "3% PV actuels/s",
-              "3% PV actuels/s",
-              "3% PV actuels/s",
-              "2.5% PV actuels/s",
-              "2.5% PV actuels/s",
-              "2.5% PV actuels/s",
-              "2% PV actuels/s",
-              "2% PV actuels/s",
-              "2% PV actuels/s",
-              "2% PV actuels/s",
-              "2% PV actuels/s",
-              "2% PV actuels/s",
-              "2% PV actuels/s",
-              "2% PV actuels/s"
-            ]
-          },
-          {
-            "key": "Durée",
-            "values": [
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s",
-              "15 s"
-            ]
-          },
-          {
-            "key": "Temps de recharge",
-            "values": [
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s",
-              "18 s"
-            ]
-          },
-          {
-            "key": "Énergie élémentaire",
-            "values": [
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70",
-              "70"
-            ]
-          }
-        ],
-        "materials": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "talentImg": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/battle_talent_2/battle_talent_2.gif"
-      },
-      {
-        "key": "Dompteur de démons : Conquérant du mal",
-        "title": "Dompteur de démons : Conquérant du mal",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/const_talent_0.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Xiao inflige 5 % de DGT supplémentaires tant que <color=#ffd780>Fléau du mal</color> est actif. Un cumul de 5 % de DGT supplémentaires est ensuite appliqué toutes les 3 s tant que dure la compétence.\nCumul max : 25 % de DGT supplémentaires."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Dissolution d'éon : Chute des cieux",
-        "title": "Dissolution d'éon : Chute des cieux",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/const_talent_1.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffd780>Cycle du vent lemniscatique</color> inflige 15 % de DGT en plus lorsqu'il est relancé dans les 7 s.\nCet effet dure 7 s et peut être cumulé 3 fois au maximum. Le délai est réinitialisé à chaque nouveau cumul."
-          }
-        ],
-        "attributes": null
-      },
-      {
-        "key": "Transcendance : Contrôleur de gravité",
-        "title": "Transcendance : Contrôleur de gravité",
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/const_talent_2.png",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Réduit la consommation d'endurance de vos personnages dans l'équipe de 20 % lors de l'escalade.\nNe peut pas être cumulé avec d'autres aptitudes passives aux effets identiques."
-          }
-        ],
-        "attributes": null
       }
     ],
     "textualResearch": [
@@ -3340,255 +3589,6 @@
           }
         ]
       }
-    ],
-    "baseInfo": [
-      {
-        "key": "Nom",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Xiao</color>"
-          }
-        ]
-      },
-      {
-        "key": "Anniversaire",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>17/4</color>"
-          }
-        ]
-      },
-      {
-        "key": "Constellation",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Alatus Nemeseos</color>"
-          }
-        ]
-      },
-      {
-        "key": "Titre",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Gardien Yaksha</color>"
-          }
-        ]
-      },
-      {
-        "key": "Œil divin",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Anémo</color>"
-          }
-        ]
-      },
-      {
-        "key": "Affiliation",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Adeptes de Liyue</color>"
-          }
-        ]
-      },
-      {
-        "key": "Voix chinoise",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>金船 (Kinsen)</color>"
-          }
-        ]
-      },
-      {
-        "key": "Voix anglaise",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>Laila Berzins</color>"
-          }
-        ]
-      },
-      {
-        "key": "Voix japonaise",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>松岡禎丞 (MATSUOKA Yoshitsugu)</color>"
-          }
-        ]
-      },
-      {
-        "key": "Voix coréenne",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffd9>심규혁 (Shim Kyu-hyeok)</color>"
-          }
-        ]
-      },
-      {
-        "key": "Plat spécial",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 159,
-            "name": "Beau songe",
-            "desc": "Spécialité culinaire de Xiao. Les rêves de Xiao sont simples et beaux.",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/\"Sweet Dream\"_icon.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Thème",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 6124,
-            "name": "Xiao - Masque",
-            "desc": "Thème.<br>Il attend avec impatience le jour où il pourra porter le masque et danser non pas pour conquérir des démons mais au son de cette fameuse flûte, dans un océan de fleurs.",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/15/27af2098eefde475f478bb60148f9ef9_5422602686975680866.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Carte du Personnage",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 3839,
-            "name": "Xiao",
-            "desc": "<p><span style=\"color: rgb(255, 255, 255)\">Xiao «&nbsp;Gardien Yaksha&nbsp;»</span></p><p><span style=\"color: rgba(255, 255, 255, 0.65)\">Gardien Yaksha, triomphant du mal.</span></p>",
-            "iconUrl": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/05/23/35653081/aa7d00c044c79bfda8713a50adac9906_7335717979569784002.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "Ajout à la version",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "1.3"
-          }
-        ]
-      }
-    ],
-    "galleryCharacter": [
-      {
-        "key": "Character Card",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/avatar_header.jpg"
-      },
-      {
-        "key": "Avatar",
-        "img": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/avatar.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Tenue Originale - Passage du millénaire"
-          }
-        ]
-      },
-      {
-        "key": "Animation d'inactivité 1",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/30/158750877/35a40e9abebbb72f3cc430a591e283f9_5588362831137240640.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Tenue Originale - Passage du millénaire"
-          }
-        ]
-      },
-      {
-        "key": "Animation d'inactivité 2",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2022/07/30/158750877/160c19cb9ecfd9ccea6d55e89eb8e2db_2068448698087873607.gif",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "Tenue Originale - Passage du millénaire"
-          }
-        ]
-      },
-      {
-        "key": "Constellation",
-        "img": "https://upload-static.hoyoverse.com/hoyolab-wiki/2023/01/03/158750877/17c3a3b4ec4e1440b58b2da63462c09f_7649822400933583448.png",
-        "imgDesc": [
-          {
-            "type": "RichText",
-            "text": "<color=#ffffffa6>Alatus Nemeseos</color>"
-          }
-        ]
-      }
-    ],
-    "summaryList": [
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/constellation_1.png",
-        "name": "Dissolution d'éon : Destructeur de mondes",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Confère une charge supplémentaire pour <color=#ffd780>Cycle du vent lemniscatique</color> ."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/constellation_2.png",
-        "name": "Annihilation d'éon : Fleur du kaléidoscope",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "La recharge d'énergie de Xiao augmente de 25 % lorsqu'il fait partie de l'équipe mais n'est pas déployé."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/constellation_3.png",
-        "name": "Dompteur de démons : Déité de la colère",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Niveau d'aptitude <color=#ffd780>Cycle du vent lemniscatique</color> +3.\nNiveau max : 15"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/constellation_4.png",
-        "name": "Transcendance : Extinction de la souffrance",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Xiao bénéficie d'un bonus de DÉF de 100 % quand ses PV sont inférieurs à 50 %."
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/constellation_5.png",
-        "name": "Évolution d'éon : Origine de l'ignorance",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Niveau d'aptitude <color=#ffd780>Fléau du mal</color> +3.\nNiveau max : 15"
-          }
-        ]
-      },
-      {
-        "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/character/魈/constellation_6.png",
-        "name": "Dompteur de démons : Gardien Yaksha",
-        "desc": [
-          {
-            "type": "RichText",
-            "text": "Lorsque <color=#ffd780>Fléau du mal</color> est actif, les attaques plongeantes touchant au moins 2 ennemis confèrent immédiatement une charge de <color=#ffd780>Cycle du vent lemniscatique</color> supplémentaire, qui peut être activée dans la seconde qui suit, même s'il n'est pas entièrement rechargé."
-          }
-        ]
-      }
-    ],
-    "map": "https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header#/map/2?shown_types=32&center=1935.62,-52.64&zoom=-2.50"
+    ]
   }
 }
