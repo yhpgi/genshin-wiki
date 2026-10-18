@@ -4,14 +4,113 @@
   "desc": "秩序を保つべく作られた弓。氷のように冷たいその光は、まさしく公正無私な法のようである。",
   "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/71e03a3f1868a9caa8e7adac310ca6a7_6530544918250739118.png",
   "filterValues": {
-    "weaponRarity": "★4",
     "weaponProperty": "防御力パーセンテージ",
-    "weaponType": "弓"
+    "weaponType": "弓",
+    "weaponRarity": "★4"
   },
   "menuId": 4,
   "menuName": "武器",
   "version": 1789117389,
   "components": {
+    "baseInfo": [
+      {
+        "key": "和名 / 英名",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "霜雪の契 / Covenant of Frost and Snow"
+          }
+        ]
+      },
+      {
+        "key": "入手方法",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "鍛造により入手可能"
+          }
+        ]
+      },
+      {
+        "key": "種類",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "弓"
+          }
+        ]
+      },
+      {
+        "key": "サブステータス",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "防御力パーセンテージ"
+          }
+        ]
+      },
+      {
+        "key": "律法の均衡",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "装備者が元素スキルを発動した後の12秒間、元素熟知+ <color=#36ffff>120/150/180/210/240</color> 。"
+          }
+        ]
+      },
+      {
+        "key": "鍛造設計図",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 11260,
+            "name": "鍛造図：霜雪の契",
+            "desc": "クズミチェフが伝説の記録に基づいて復元した武器の鍛造図。習得後、弓「霜雪の契」を複製できる。",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/d0b60ce3aa47ed62966266b27ed1f386_8199767582529545387.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "鍛造素材",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 6674,
+            "name": "境土弓の原型",
+            "desc": "武器鍛造に必要な材料。鍛造により、★4の弓が製造できる。<br>原型には様々な武器の「状態」を造れる「可能性」が最初から有しているが、最終的にどんな形が作り出されるかは知る由もない…",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/e5885d66071fe86f0df9bcbe2fa8612e_2179345811738840481.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 8635,
+            "name": "虹結晶",
+            "desc": "虹色に輝く晶石。優れた靱性と可塑性を持ち、古来よりスネージナヤの職人たちから、最高の鍛造材料として評価されてきた。<br>伝説によると、月の車が砕け散った際、神血に染まった車輪が月下の世界に落ち、虹色の宝玉となった。それ以来、大地の人々は死せる神々に信仰を捧げなくなった。夜の君王たちがなぜ死んだのか——それを知る者たちだけが、忘れ去られた名前を歌い続けている。",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/3380d9638c3e47bca7f4184104f20a5a_114706391206993666.png",
+            "amount": 50
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 1224,
+            "name": "白鉄の塊",
+            "desc": "<p>白鉄の鉱石。相応の技術を持った職人の手にかかれば、異彩を放つでしょう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>白鉄の鉱石。相応の技術を持った職人の手にかかれば、異彩を放つでしょう。大地に流れる戦いの記憶が宿っている鉱石、その記憶の故に上質な素材として武器の製造によく使われている。</p>",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
+            "amount": 50
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "実装バージョン",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "7.0"
+          }
+        ]
+      }
+    ],
     "ascension": [
       {
         "key": "Lv.1",
@@ -67,7 +166,7 @@
             "type": "CustomEntry",
             "epId": 11353,
             "name": "蒼星軍勢の始動",
-            "desc": "武器に突破の力を付与する材料。<br>凍土全域の東方、翼の如き山より生まれし傲慢な怪物は、麦芽と鉱物を売り捌く卑劣な輩にすぎない。<br>奴の命に従う風の精は虫の羽を持つひ弱な連中であり、小さき者たちはその短い両腕で武器を持ち上げることすらできない。<br>この烏合の衆の喚き声に誰が耳を貸すというのか、奴らに獣王たちの侵攻を阻むいかなる力があるというのか？",
+            "desc": "<p>武器に突破の力を付与する材料。</p><p>「凍土全域の東方、翼の如き山より生まれし傲慢な怪物は、麦芽と鉱物を売り捌く卑劣な輩にすぎない。</p><p>奴の命に従う風の精は虫の羽を持つひ弱な連中であり、小さき者たちはその短い両腕で武器を持ち上げることすらできない。</p><p>この烏合の衆の喚き声に誰が耳を貸すというのか、奴らに獣王たちの侵攻を阻むいかなる力があるというのか？」</p>",
             "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/c5146bdba2321d948d0bb635142e224c_1254031724932718933.png",
             "amount": 3
           },
@@ -414,105 +513,6 @@
           {
             "type": "RichText",
             "text": "<color=#ffffff>Lv.40 突破後</color>"
-          }
-        ]
-      }
-    ],
-    "baseInfo": [
-      {
-        "key": "和名 / 英名",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "霜雪の契 / Covenant of Frost and Snow"
-          }
-        ]
-      },
-      {
-        "key": "入手方法",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "鍛造により入手可能"
-          }
-        ]
-      },
-      {
-        "key": "種類",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "弓"
-          }
-        ]
-      },
-      {
-        "key": "サブステータス",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "防御力パーセンテージ"
-          }
-        ]
-      },
-      {
-        "key": "律法の均衡",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "装備者が元素スキルを発動した後の12秒間、元素熟知+ <color=#36ffff>120/150/180/210/240</color> 。"
-          }
-        ]
-      },
-      {
-        "key": "鍛造設計図",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 11260,
-            "name": "鍛造図：霜雪の契",
-            "desc": "クズミチェフが伝説の記録に基づいて復元した武器の鍛造図。習得後、弓「霜雪の契」を複製できる。",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/d0b60ce3aa47ed62966266b27ed1f386_8199767582529545387.png"
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "鍛造素材",
-        "value": [
-          {
-            "type": "CustomEntry",
-            "epId": 6674,
-            "name": "境土弓の原型",
-            "desc": "武器鍛造に必要な材料。鍛造により、★4の弓が製造できる。<br>原型には様々な武器の「状態」を造れる「可能性」が最初から有しているが、最終的にどんな形が作り出されるかは知る由もない…",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/23/e5885d66071fe86f0df9bcbe2fa8612e_2179345811738840481.png",
-            "amount": 1
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 8635,
-            "name": "虹結晶",
-            "desc": "虹色に輝く晶石。優れた靱性と可塑性を持ち、古来よりスネージナヤの職人たちから、最高の鍛造材料として評価されてきた。<br>伝説によると、月の車が砕け散った際、神血に染まった車輪が月下の世界に落ち、虹色の宝玉となった。それ以来、大地の人々は死せる神々に信仰を捧げなくなった。夜の君王たちがなぜ死んだのか——それを知る者たちだけが、忘れ去られた名前を歌い続けている。",
-            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/09/01/3380d9638c3e47bca7f4184104f20a5a_114706391206993666.png",
-            "amount": 50
-          },
-          {
-            "type": "CustomEntry",
-            "epId": 1224,
-            "name": "白鉄の塊",
-            "desc": "<p>白鉄の鉱石。相応の技術を持った職人の手にかかれば、異彩を放つでしょう。</p><p></p><p>（以下は図鑑より抜粋）</p><p>白鉄の鉱石。相応の技術を持った職人の手にかかれば、異彩を放つでしょう。大地に流れる戦いの記憶が宿っている鉱石、その記憶の故に上質な素材として武器の製造によく使われている。</p>",
-            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/White Iron Chunk_icon.png",
-            "amount": 50
-          }
-        ],
-        "isMaterial": true
-      },
-      {
-        "key": "実装バージョン",
-        "value": [
-          {
-            "type": "RichText",
-            "text": "7.0"
           }
         ]
       }
