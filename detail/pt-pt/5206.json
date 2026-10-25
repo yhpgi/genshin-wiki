@@ -9,6 +9,40 @@
   "components": {
     "customize": [
       {
+        "type": "RichText",
+        "text": "Uma Reação Elemental ocorre quando diferentes elementos são aplicados a um alvo já afetado por outro elemento.\nEm Genshin Impact, há sete elementos (Pyro, Hydro, Anemo, Electro, Dendro, Cryo e Geo), cada qual com pelo menos 1 (uma) Reação Elemental que pode ser desencadeada ao ser utilizado. No entanto, algumas dessas reações apresentam restrições, pois determinados elementos não interagem entre si, como é o caso de Geo, Dendro e Anemo, bem como Dendro e Cryo.\nAs Reações Elementais podem ser divididas em diferentes categorias, tais como: Reações Sem Dano, Reações Amplificadoras (ou Reações de Amplificação), Reações Transformativas (ou Reações Radicais) e Reações Aditivas. A fim de compreender melhor esses mecanismos e interações, será necessário definir e delimitar alguns termos, como se verá na sequência."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Gatilhos e Auras",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Quanto às Reações Elementais, há aquelas em que é importante considerar a ordem de aplicação dos elementos (qual é o elemento que está sendo aplicado sobre o outro), enquanto há outras em que isso acaba sendo indiferente. Por exemplo, não importa se um inimigo está sendo afetado por Electro ou Cryo, pois no instante em que o outro elemento é aplicado, ocorre a reação Supercondutor e o efeito é o mesmo. No entanto, há uma diferença se é o elemento Pyro ou o Hydro que desencadeia a reação de Vaporização, pois aqui a sequência de aplicação tem um impacto direto no efeito da reação (ou seja, se o multiplicador aplicado é x1,5 ou x2).\nPara facilitar a explicação, a comunidade adotou os termos <color=#ffffff>\"Aura\"</color> (em inglês, \"aura\") e <color=#ffffff>\"Gatilho\"</color> (em inglês, \"trigger\"):\n<color=#ffffff>Aura</color> é o termo utilizado para descrever qual(is) elemento(s) estão presentes em uma entidade durante um estado neutro (antes ou depois de uma reação).\n<color=#ffffff>Gatilho</color> é o termo usado para descrever qual é o elemento específico que desencadeou a(s) reação(ões)."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Teoria (das Unidades) de Medidores Elementais",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "A <color=#ffffff>Teoria (das Unidades) de Medidores Elementais</color> (em inglês, \"Elemental Gauge (Unit) Theory\") consiste no entendimento de que as auras elementais são \"consumidas\" a vários níveis, dependendo de sua própria força e da força do respectivo gatilho. Neste caso, a força de uma aura ou gatilho não é definida pelo dano que um certo ataque causou ao aplicar o referido elemento, mas sim por um valor predefinido para esse ataque. Estes valores podem ser modulados por fatores como a ordem de aplicação (elementos fortes ou fracos) ou tempo entre aplicações (decaimento, em inglês, \"decay\").\nEm suma, certos ataques aplicam \"mais\" ou \"menos\" de um elemento, o que pode ser refletido na força da aura ou do gatilho. Esta força é contada nas chamadas \"unidades\" (símbolo: \"U\"), por exemplo, 1U Cryo ou 2U Pyro.\nAqui estão alguns exemplos que podem ajudar a demonstrar esta ideia:\nO Ataque Normal de Charlotte aplica 1U Cryo e o Ataque Normal de Lisa aplica 1U Electro. Ambos se cancelam mutuamente e ocorre a reação Supercondutor.\nO Supremo de Xingqiu aplica 1U de Hydro, enquanto o Ataque Carregado de Hu Tao aplica 1U Pyro. No entanto, visto que, neste caso, Pyro é o Elemento \"fraco\" devido à natureza da Vaporização, sua força é reduzida pela metade, o que significa que apenas 0,5U da aura Hydro de Xingqiu é consumida. Desse modo, após o ataque, uma aura Hydro de 0,5U permanece no inimigo e Hu Tao pode desencadear uma segunda reação.\nO Supremo de Bennett aplica 2U Pyro a um inimigo, após o qual o Ataque Normal de Mona aplica 1U de Hydro. Porém, como Hydro é o elemento \"forte\", este consome o dobro, resultando na remoção completa da aura Pyro inicial.\nÉ importante notar que um gatilho, mesmo que aplique mais unidades elementais do que as que podem ser consumidas da aura de um inimigo, nunca aplicará o resto de seu elemento. Um ataque pode tanto aplicar um novo elemento, se nenhum outro estiver presente, e estabelecer uma aura, OU consumir uma aura (total ou parcialmente) e ser o gatilho de uma reação. Um único ataque nunca pode fazer ambas as coisas."
+      },
+      {
+        "type": "Heading",
+        "level": 1,
+        "text": "Tempo de Recarga Interno",
+        "alignment": "center"
+      },
+      {
+        "type": "RichText",
+        "text": "Da mesma forma como as Habilidades Elementais e os Supremos obedecem a regra do <color=#ffffff>Tempo de Recarga</color> (em inglês, \"Cooldown\"/\"CD\"), relativa ao tempo de espera após o qual as Habilidades Elementais e os Supremos poderão ser usados ​​novamente, a maioria dos ataques que aplicam um elemento também segue regras específicas. A diferença é que esses tempos de espera, em geral, são separados uns dos outros e, mais do que isso, não são visíveis por nenhum indicador, sendo denominados <color=#ffffff>Tempo de Recarga Interno</color> (em inglês, \"Internal Cooldown\"/\"ICD\").\nSalvo algumas exceções, que não possuem nenhum Tempo de Recarga Interno e aplicam seu elemento a cada uso/acerto, a maioria dos ataques seguem padrões semelhantes. Trata-se de duas regras que funcionam em conjunto: a regra do tempo e a regra do acerto, tendo a regra do tempo prioridade sobre a regra do acerto.\nEm linhas gerais, a cada X acertos, o mesmo ataque pode aplicar seu elemento novamente, enquanto, a cada X segundos, também o poderá fazer, independentemente do número de acertos.\nUm exemplo prático disso é o Supremo de Kaeya. Embora essa habilidade gire rapidamente e cause golpes rápidos de dano Cryo, nem todos os acertos podem desencadear uma reação ou aplicar seu elemento. Na verdade, cada terceiro acerto aplicará Cryo, ou seja, os acertos número 1, 4, 7, 10, 13,... e assim por diante. Além disso, a cada 2,5 segundos, o próximo acerto também irá aplicar o elemento de modo garantido, substituindo a regra de acerto mencionada anteriormente e a resetando para 1. Nesse exemplo, o Supremo de Kaeya seguiria esta sequência: 1, 4, 7 / 8, 11, 14 / 15, 18,…\nAlém disso, o contador começa a partir do acerto de número 1. O acerto 7 ocorre após 2,4s, o que significa que, nesse ritmo, o próximo acerto deveria acontecer após 2,5 segundos do início do contador. Porém, como a regra do tempo tem prioridade, o acerto 8 aplica Cryo, reinicia o contador de golpes e também reinicia a regra do tempo.\nEsta regra de 3 acertos e a regra de tempo de 2,5s são comumente chamadas de <color=#ffffff>\"Tempo de Recarga Interno Padrão\"</color> <color=#ffffff73>(em inglês, \"Standard ICD\")</color> , uma vez que esses valores são os mais comuns. No entanto, vale lembrar que há exceções que não seguem nenhum tipo regra, ou que seguem apenas uma das duas regras de tempo ou de acerto, ou até que seguem versões modificadas de tais regras. Alguns exemplos disso seriam o Supremo de Xiangling (sem Tempo de Recarga Interno) ou os Ataques Oz de Fischl (regra de 4 acertos e regra de tempo de 5s)."
+      },
+      {
         "type": "Heading",
         "level": 1,
         "text": "Reações Sem Dano",
@@ -1392,40 +1426,6 @@
         "type": "RichText",
         "text": "<color=#ffffff>Conjunto de 4 peças</color>\nAumenta em 40% o Dano infligido pelas reações de Florescimento, Superflorescimento e Germinação de seu portador; aumenta o Dano de Florescimento Lunar em 10%. Além disto, após o personagem que está equipado com este conjunto de artefatos desencadear as reações de Florescimento, Superflorescimento, Germinação e Florescimento Lunar, o bônus descrito acima é aumentado em 25%. Este efeito dura 10s e pode ser acumulado até 4 vezes, podendo ser desencadeado 1 vez por segundo. Este efeito pode ser desencadeado também quando o seu portador está na equipe, porém fora do campo de batalha.",
         "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Uma Reação Elemental ocorre quando diferentes elementos são aplicados a um alvo já afetado por outro elemento.\nEm Genshin Impact, há sete elementos (Pyro, Hydro, Anemo, Electro, Dendro, Cryo e Geo), cada qual com pelo menos 1 (uma) Reação Elemental que pode ser desencadeada ao ser utilizado. No entanto, algumas dessas reações apresentam restrições, pois determinados elementos não interagem entre si, como é o caso de Geo, Dendro e Anemo, bem como Dendro e Cryo.\nAs Reações Elementais podem ser divididas em diferentes categorias, tais como: Reações Sem Dano, Reações Amplificadoras (ou Reações de Amplificação), Reações Transformativas (ou Reações Radicais) e Reações Aditivas. A fim de compreender melhor esses mecanismos e interações, será necessário definir e delimitar alguns termos, como se verá na sequência."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Gatilhos e Auras",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Quanto às Reações Elementais, há aquelas em que é importante considerar a ordem de aplicação dos elementos (qual é o elemento que está sendo aplicado sobre o outro), enquanto há outras em que isso acaba sendo indiferente. Por exemplo, não importa se um inimigo está sendo afetado por Electro ou Cryo, pois no instante em que o outro elemento é aplicado, ocorre a reação Supercondutor e o efeito é o mesmo. No entanto, há uma diferença se é o elemento Pyro ou o Hydro que desencadeia a reação de Vaporização, pois aqui a sequência de aplicação tem um impacto direto no efeito da reação (ou seja, se o multiplicador aplicado é x1,5 ou x2).\nPara facilitar a explicação, a comunidade adotou os termos <color=#ffffff>\"Aura\"</color> (em inglês, \"aura\") e <color=#ffffff>\"Gatilho\"</color> (em inglês, \"trigger\"):\n<color=#ffffff>Aura</color> é o termo utilizado para descrever qual(is) elemento(s) estão presentes em uma entidade durante um estado neutro (antes ou depois de uma reação).\n<color=#ffffff>Gatilho</color> é o termo usado para descrever qual é o elemento específico que desencadeou a(s) reação(ões)."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Teoria (das Unidades) de Medidores Elementais",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "A <color=#ffffff>Teoria (das Unidades) de Medidores Elementais</color> (em inglês, \"Elemental Gauge (Unit) Theory\") consiste no entendimento de que as auras elementais são \"consumidas\" a vários níveis, dependendo de sua própria força e da força do respectivo gatilho. Neste caso, a força de uma aura ou gatilho não é definida pelo dano que um certo ataque causou ao aplicar o referido elemento, mas sim por um valor predefinido para esse ataque. Estes valores podem ser modulados por fatores como a ordem de aplicação (elementos fortes ou fracos) ou tempo entre aplicações (decaimento, em inglês, \"decay\").\nEm suma, certos ataques aplicam \"mais\" ou \"menos\" de um elemento, o que pode ser refletido na força da aura ou do gatilho. Esta força é contada nas chamadas \"unidades\" (símbolo: \"U\"), por exemplo, 1U Cryo ou 2U Pyro.\nAqui estão alguns exemplos que podem ajudar a demonstrar esta ideia:\nO Ataque Normal de Charlotte aplica 1U Cryo e o Ataque Normal de Lisa aplica 1U Electro. Ambos se cancelam mutuamente e ocorre a reação Supercondutor.\nO Supremo de Xingqiu aplica 1U de Hydro, enquanto o Ataque Carregado de Hu Tao aplica 1U Pyro. No entanto, visto que, neste caso, Pyro é o Elemento \"fraco\" devido à natureza da Vaporização, sua força é reduzida pela metade, o que significa que apenas 0,5U da aura Hydro de Xingqiu é consumida. Desse modo, após o ataque, uma aura Hydro de 0,5U permanece no inimigo e Hu Tao pode desencadear uma segunda reação.\nO Supremo de Bennett aplica 2U Pyro a um inimigo, após o qual o Ataque Normal de Mona aplica 1U de Hydro. Porém, como Hydro é o elemento \"forte\", este consome o dobro, resultando na remoção completa da aura Pyro inicial.\nÉ importante notar que um gatilho, mesmo que aplique mais unidades elementais do que as que podem ser consumidas da aura de um inimigo, nunca aplicará o resto de seu elemento. Um ataque pode tanto aplicar um novo elemento, se nenhum outro estiver presente, e estabelecer uma aura, OU consumir uma aura (total ou parcialmente) e ser o gatilho de uma reação. Um único ataque nunca pode fazer ambas as coisas."
-      },
-      {
-        "type": "Heading",
-        "level": 1,
-        "text": "Tempo de Recarga Interno",
-        "alignment": "center"
-      },
-      {
-        "type": "RichText",
-        "text": "Da mesma forma como as Habilidades Elementais e os Supremos obedecem a regra do <color=#ffffff>Tempo de Recarga</color> (em inglês, \"Cooldown\"/\"CD\"), relativa ao tempo de espera após o qual as Habilidades Elementais e os Supremos poderão ser usados ​​novamente, a maioria dos ataques que aplicam um elemento também segue regras específicas. A diferença é que esses tempos de espera, em geral, são separados uns dos outros e, mais do que isso, não são visíveis por nenhum indicador, sendo denominados <color=#ffffff>Tempo de Recarga Interno</color> (em inglês, \"Internal Cooldown\"/\"ICD\").\nSalvo algumas exceções, que não possuem nenhum Tempo de Recarga Interno e aplicam seu elemento a cada uso/acerto, a maioria dos ataques seguem padrões semelhantes. Trata-se de duas regras que funcionam em conjunto: a regra do tempo e a regra do acerto, tendo a regra do tempo prioridade sobre a regra do acerto.\nEm linhas gerais, a cada X acertos, o mesmo ataque pode aplicar seu elemento novamente, enquanto, a cada X segundos, também o poderá fazer, independentemente do número de acertos.\nUm exemplo prático disso é o Supremo de Kaeya. Embora essa habilidade gire rapidamente e cause golpes rápidos de dano Cryo, nem todos os acertos podem desencadear uma reação ou aplicar seu elemento. Na verdade, cada terceiro acerto aplicará Cryo, ou seja, os acertos número 1, 4, 7, 10, 13,... e assim por diante. Além disso, a cada 2,5 segundos, o próximo acerto também irá aplicar o elemento de modo garantido, substituindo a regra de acerto mencionada anteriormente e a resetando para 1. Nesse exemplo, o Supremo de Kaeya seguiria esta sequência: 1, 4, 7 / 8, 11, 14 / 15, 18,…\nAlém disso, o contador começa a partir do acerto de número 1. O acerto 7 ocorre após 2,4s, o que significa que, nesse ritmo, o próximo acerto deveria acontecer após 2,5 segundos do início do contador. Porém, como a regra do tempo tem prioridade, o acerto 8 aplica Cryo, reinicia o contador de golpes e também reinicia a regra do tempo.\nEsta regra de 3 acertos e a regra de tempo de 2,5s são comumente chamadas de <color=#ffffff>\"Tempo de Recarga Interno Padrão\"</color> <color=#ffffff73>(em inglês, \"Standard ICD\")</color> , uma vez que esses valores são os mais comuns. No entanto, vale lembrar que há exceções que não seguem nenhum tipo regra, ou que seguem apenas uma das duas regras de tempo ou de acerto, ou até que seguem versões modificadas de tais regras. Alguns exemplos disso seriam o Supremo de Xiangling (sem Tempo de Recarga Interno) ou os Ataques Oz de Fischl (regra de 4 acertos e regra de tempo de 5s)."
       }
     ]
   }
