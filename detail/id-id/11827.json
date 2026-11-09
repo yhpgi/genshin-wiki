@@ -1,15 +1,776 @@
 {
   "epId": 11827,
-  "name": "Mitya (Segera Hadir)",
-  "desc": "Pakar \"Royal Energy Commission of Snezhnaya\"",
-  "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/09/29/2a47d99d2fa2eb30907e823a96c7d8c5_1441067958544864497.png",
+  "name": "Mitya",
+  "desc": "Seorang pakar spesialis energi yang jenius dan ahli dalam \"menghindari jadwal\".",
+  "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/2a47d99d2fa2eb30907e823a96c7d8c5_8356923139176660487.png",
+  "headerImgUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/e4dd277c67adf1dd8302838766a01224_7724550115397511679.png",
   "filterValues": {
+    "characterWeapon": "Catalyst",
+    "characterRegion": "Snezhnaya",
+    "characterProperty": "CRIT DMG",
+    "characterRarity": 5,
     "characterVision": "Electro"
   },
   "menuId": 2,
   "menuName": "Arsip Karakter",
-  "version": 1790975312,
+  "version": 1794026958,
   "components": {
+    "talent": [
+      {
+        "title": "Chain Reaction",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/eeb957f7452f06a3c22ecea53e254b4e_4038921021189471230.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Normal Attack</color>\nMelancarkan hingga 3 serangan beruntun yang mengakibatkan <color=#ffacff>Electro DMG</color> .\n<color=#ffd780>Charged Attack</color>\nMengonsumsi sejumlah Stamina dan mengakibatkan <color=#ffacff>Electro DMG Area</color> ke area di depan setelah jeda singkat.\nJika saat ini terdapat <color=#ffd780>Detection Core: Overloaded</color> yang dihasilkan Mitya sendiri di medan pertempuran dan Mitya memiliki setidaknya satu <color=#ffd780>Gradient Beacon</color> , maka akan melancarkan Charged Attack spesial <color=#ffd780>Gradient Detonation</color> yang tidak mengonsumsi Stamina: mengakibatkan satu kali <color=#ffacff>Electro DMG Area</color> ke area di depan dan akan terus mengonsumsi <color=#ffd780>Gradient Beacon</color> saat tombol ditahan. Setiap satu <color=#ffd780>Gradient Beacon</color> yang dikonsumsi akan mengakibatkan satu kali <color=#ffacff>Electro DMG Area</color> ke area di depan yang dianggap sebagai DMG reaksi Stellar-Conduct.\n<color=#ffd780>Plunging Attack</color>\nMenerjang ke tanah dari udara, menyerang musuh di jalur terjangan, dan mengakibatkan <color=#ffacff>Electro DMG Area</color> saat mendarat."
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11"
+            ]
+          },
+          {
+            "key": "DMG Tahap 1",
+            "values": [
+              "58.8%",
+              "63.2%",
+              "67.6%",
+              "73.5%",
+              "77.9%",
+              "82.3%",
+              "88.2%",
+              "94.1%",
+              "100.0%",
+              "105.8%",
+              "111.7%"
+            ]
+          },
+          {
+            "key": "DMG Tahap 2",
+            "values": [
+              "48.3%",
+              "51.9%",
+              "55.5%",
+              "60.4%",
+              "64.0%",
+              "67.6%",
+              "72.5%",
+              "77.3%",
+              "82.1%",
+              "86.9%",
+              "91.8%"
+            ]
+          },
+          {
+            "key": "DMG Tahap 3",
+            "values": [
+              "69.0%",
+              "74.2%",
+              "79.4%",
+              "86.3%",
+              "91.5%",
+              "96.6%",
+              "103.5%",
+              "110.4%",
+              "117.3%",
+              "124.2%",
+              "131.1%"
+            ]
+          },
+          {
+            "key": "DMG Charged Attack",
+            "values": [
+              "136.9%",
+              "147.1%",
+              "157.4%",
+              "171.1%",
+              "181.4%",
+              "191.6%",
+              "205.3%",
+              "219.0%",
+              "232.7%",
+              "246.4%",
+              "260.1%"
+            ]
+          },
+          {
+            "key": "Konsumsi Stamina Charged",
+            "values": [
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0",
+              "50.0"
+            ]
+          },
+          {
+            "key": "DMG Selama Plunging",
+            "values": [
+              "56.8%",
+              "61.5%",
+              "66.1%",
+              "72.7%",
+              "77.3%",
+              "82.6%",
+              "89.9%",
+              "97.1%",
+              "104.4%",
+              "112.3%",
+              "120.3%"
+            ]
+          },
+          {
+            "key": "DMG Plunging Attack Rendah/Tinggi",
+            "values": [
+              "113.6%/141.9%",
+              "122.9%/153.5%",
+              "132.1%/165%",
+              "145.3%/181.5%",
+              "154.6%/193.1%",
+              "165.2%/206.3%",
+              "179.7%/224.5%",
+              "194.2%/242.6%",
+              "208.8%/260.8%",
+              "224.6%/280.6%",
+              "240.5%/300.4%"
+            ]
+          },
+          {
+            "key": "DMG Gradient Detonation",
+            "values": [
+              "168.0%",
+              "180.6%",
+              "193.2%",
+              "210.0%",
+              "222.6%",
+              "235.2%",
+              "252.0%",
+              "268.8%",
+              "285.6%",
+              "302.4%",
+              "319.2%"
+            ]
+          },
+          {
+            "key": "DMG Stellar-Conduct Gradient Detonation",
+            "values": [
+              "224.0% Elemental Mastery",
+              "240.8% Elemental Mastery",
+              "257.6% Elemental Mastery",
+              "280.0% Elemental Mastery",
+              "296.8% Elemental Mastery",
+              "313.6% Elemental Mastery",
+              "336.0% Elemental Mastery",
+              "358.4% Elemental Mastery",
+              "380.8% Elemental Mastery",
+              "403.2% Elemental Mastery",
+              "425.6% Elemental Mastery"
+            ]
+          }
+        ],
+        "materials": [
+          null,
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 11344,
+              "name": "Teachings of Charity",
+              "desc": "Material Penguatan Talenta.<br>\"Kasih sayang\" adalah penyelamat bangsa es.<br>Kasih sayang adalah cinta dan kepedulian di antara sesama manusia. Di daratan yang luas ini, orang-orang mengandalkannya untuk menangkal dingin yang dibawa oleh embun beku dan salju, serta untuk menenangkan luka yang terukir dalam ingatan mereka.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/66828226f1b80abf11f770c7f45e5800_6339753628968579247.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 11370,
+              "name": "Chimeric Core",
+              "desc": "Inti internal yang didapatkan dari monster buatan manusia yang menyimpang.<br>Ini adalah inti paling mendasar yang tumbuh di dalam monster buatan manusia. Namun, sesederhana apa pun bentuknya, inti ini mengandung rancangan primordial untuk pertumbuhan semua ciptaan buatan manusia.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/b94b5fa73fb34960af243acac3ac1c07_3307140821949221996.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Mata uang biasa, semua orang di seluruh penjuru dunia mengakui nilai mata uang ini.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 12500
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 11345,
+              "name": "Guide to Charity",
+              "desc": "Material Penguatan Talenta.<br>\"Kasih sayang\" adalah penyelamat bangsa es.<br>Kasih sayang melahirkan kemurahan hati terhadap sesama. Di bangsa salju dan angin, siapa pun yang benar-benar bertobat dari dosa-dosa jiwanya dapat menerima pengampunan atas nama kasih sayang.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/57d96c2d797ed0d4bc87e6394d8d2e6e_7944064190315344804.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 11371,
+              "name": "Symbiotic Chimeric Nucleus",
+              "desc": "Inti internal yang didapatkan dari monster buatan manusia yang menyimpang.<br>Inti yang relatif kompleks yang dipanen dari monster buatan manusia. Inti simbiosis ini direkayasa untuk menopang siklus biologis dua bentuk kehidupan yang berbeda, menyatukannya secara mulus menjadi satu organisme.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/c87fadf67414f0136afeaf4eb426cb3e_7980414230349093139.png",
+              "amount": 3
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Mata uang biasa, semua orang di seluruh penjuru dunia mengakui nilai mata uang ini.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 17500
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 11345,
+              "name": "Guide to Charity",
+              "desc": "Material Penguatan Talenta.<br>\"Kasih sayang\" adalah penyelamat bangsa es.<br>Kasih sayang melahirkan kemurahan hati terhadap sesama. Di bangsa salju dan angin, siapa pun yang benar-benar bertobat dari dosa-dosa jiwanya dapat menerima pengampunan atas nama kasih sayang.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/57d96c2d797ed0d4bc87e6394d8d2e6e_7944064190315344804.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 11371,
+              "name": "Symbiotic Chimeric Nucleus",
+              "desc": "Inti internal yang didapatkan dari monster buatan manusia yang menyimpang.<br>Inti yang relatif kompleks yang dipanen dari monster buatan manusia. Inti simbiosis ini direkayasa untuk menopang siklus biologis dua bentuk kehidupan yang berbeda, menyatukannya secara mulus menjadi satu organisme.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/c87fadf67414f0136afeaf4eb426cb3e_7980414230349093139.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Mata uang biasa, semua orang di seluruh penjuru dunia mengakui nilai mata uang ini.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 35000
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 11345,
+              "name": "Guide to Charity",
+              "desc": "Material Penguatan Talenta.<br>\"Kasih sayang\" adalah penyelamat bangsa es.<br>Kasih sayang melahirkan kemurahan hati terhadap sesama. Di bangsa salju dan angin, siapa pun yang benar-benar bertobat dari dosa-dosa jiwanya dapat menerima pengampunan atas nama kasih sayang.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/57d96c2d797ed0d4bc87e6394d8d2e6e_7944064190315344804.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 11371,
+              "name": "Symbiotic Chimeric Nucleus",
+              "desc": "Inti internal yang didapatkan dari monster buatan manusia yang menyimpang.<br>Inti yang relatif kompleks yang dipanen dari monster buatan manusia. Inti simbiosis ini direkayasa untuk menopang siklus biologis dua bentuk kehidupan yang berbeda, menyatukannya secara mulus menjadi satu organisme.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/c87fadf67414f0136afeaf4eb426cb3e_7980414230349093139.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Mata uang biasa, semua orang di seluruh penjuru dunia mengakui nilai mata uang ini.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 30000
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 11345,
+              "name": "Guide to Charity",
+              "desc": "Material Penguatan Talenta.<br>\"Kasih sayang\" adalah penyelamat bangsa es.<br>Kasih sayang melahirkan kemurahan hati terhadap sesama. Di bangsa salju dan angin, siapa pun yang benar-benar bertobat dari dosa-dosa jiwanya dapat menerima pengampunan atas nama kasih sayang.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/57d96c2d797ed0d4bc87e6394d8d2e6e_7944064190315344804.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 11371,
+              "name": "Symbiotic Chimeric Nucleus",
+              "desc": "Inti internal yang didapatkan dari monster buatan manusia yang menyimpang.<br>Inti yang relatif kompleks yang dipanen dari monster buatan manusia. Inti simbiosis ini direkayasa untuk menopang siklus biologis dua bentuk kehidupan yang berbeda, menyatukannya secara mulus menjadi satu organisme.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/c87fadf67414f0136afeaf4eb426cb3e_7980414230349093139.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Mata uang biasa, semua orang di seluruh penjuru dunia mengakui nilai mata uang ini.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 37500
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 11346,
+              "name": "Philosophies of Charity",
+              "desc": "Material Penguatan Talenta.<br>\"Kasih sayang\" adalah penyelamat bangsa es.<br>Kasih sayang adalah kepedulian terhadap semua makhluk, yang menghapus perbedaan tinggi dan rendah, melampaui darah dan kebangsaan. Pandangan kasih sayang senantiasa tertuju pada semua orang, memberikan perlindungan bagi mereka yang malang, dan menjanjikan pembebasan abadi bagi semua.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/2582f5ab8e8105d1fd3e9139eb8a8dd1_5510844834940271709.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 11372,
+              "name": "Prime Chimeric Nexus",
+              "desc": "Inti internal yang didapatkan dari monster buatan manusia yang menyimpang.<br>Inti paling kompleks yang mungkin dapat dipertahankan oleh monster buatan manusia, berfungsi sebagai benih kehidupan yang direkayasa secara artifisial namun sempurna. Siapa pun yang menghidupkan ciptaan ini pasti telah mengungkap rahasia bagaimana kehidupan itu sendiri terbentuk.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/6b950359dfc3dbb85095d4932120e586_1697057902607906986.png",
+              "amount": 4
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 9191,
+              "name": "Mask of the Virtuous Doctor",
+              "desc": "Topeng yang ditemukan di tempat ujian sang penista, seorang dewa palsu yang berusaha merebut kekuatan bulan.<br>Obat seharusnya menyembuhkan penyakit jasmani, tapi para penyembuh duniawi menutup mata terhadap penyebab kematian yang sebenarnya. Di tangan seorang dokter yang bijaksana, tubuh manusia yang rapuh tak lagi terikat oleh kelahiran, usia, penyakit, atau kematian, bahkan bisa saja menunjukkan kekuatan yang melampaui akal sehat.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/07/9004a7deac7ccb2e9050ef9b6013417c_3517654003715698593.png",
+              "amount": 1
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Mata uang biasa, semua orang di seluruh penjuru dunia mengakui nilai mata uang ini.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 120000
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 11346,
+              "name": "Philosophies of Charity",
+              "desc": "Material Penguatan Talenta.<br>\"Kasih sayang\" adalah penyelamat bangsa es.<br>Kasih sayang adalah kepedulian terhadap semua makhluk, yang menghapus perbedaan tinggi dan rendah, melampaui darah dan kebangsaan. Pandangan kasih sayang senantiasa tertuju pada semua orang, memberikan perlindungan bagi mereka yang malang, dan menjanjikan pembebasan abadi bagi semua.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/2582f5ab8e8105d1fd3e9139eb8a8dd1_5510844834940271709.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 11372,
+              "name": "Prime Chimeric Nexus",
+              "desc": "Inti internal yang didapatkan dari monster buatan manusia yang menyimpang.<br>Inti paling kompleks yang mungkin dapat dipertahankan oleh monster buatan manusia, berfungsi sebagai benih kehidupan yang direkayasa secara artifisial namun sempurna. Siapa pun yang menghidupkan ciptaan ini pasti telah mengungkap rahasia bagaimana kehidupan itu sendiri terbentuk.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/6b950359dfc3dbb85095d4932120e586_1697057902607906986.png",
+              "amount": 6
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 9191,
+              "name": "Mask of the Virtuous Doctor",
+              "desc": "Topeng yang ditemukan di tempat ujian sang penista, seorang dewa palsu yang berusaha merebut kekuatan bulan.<br>Obat seharusnya menyembuhkan penyakit jasmani, tapi para penyembuh duniawi menutup mata terhadap penyebab kematian yang sebenarnya. Di tangan seorang dokter yang bijaksana, tubuh manusia yang rapuh tak lagi terikat oleh kelahiran, usia, penyakit, atau kematian, bahkan bisa saja menunjukkan kekuatan yang melampaui akal sehat.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/07/9004a7deac7ccb2e9050ef9b6013417c_3517654003715698593.png",
+              "amount": 1
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Mata uang biasa, semua orang di seluruh penjuru dunia mengakui nilai mata uang ini.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 260000
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 11346,
+              "name": "Philosophies of Charity",
+              "desc": "Material Penguatan Talenta.<br>\"Kasih sayang\" adalah penyelamat bangsa es.<br>Kasih sayang adalah kepedulian terhadap semua makhluk, yang menghapus perbedaan tinggi dan rendah, melampaui darah dan kebangsaan. Pandangan kasih sayang senantiasa tertuju pada semua orang, memberikan perlindungan bagi mereka yang malang, dan menjanjikan pembebasan abadi bagi semua.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/2582f5ab8e8105d1fd3e9139eb8a8dd1_5510844834940271709.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 11372,
+              "name": "Prime Chimeric Nexus",
+              "desc": "Inti internal yang didapatkan dari monster buatan manusia yang menyimpang.<br>Inti paling kompleks yang mungkin dapat dipertahankan oleh monster buatan manusia, berfungsi sebagai benih kehidupan yang direkayasa secara artifisial namun sempurna. Siapa pun yang menghidupkan ciptaan ini pasti telah mengungkap rahasia bagaimana kehidupan itu sendiri terbentuk.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/6b950359dfc3dbb85095d4932120e586_1697057902607906986.png",
+              "amount": 9
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 9191,
+              "name": "Mask of the Virtuous Doctor",
+              "desc": "Topeng yang ditemukan di tempat ujian sang penista, seorang dewa palsu yang berusaha merebut kekuatan bulan.<br>Obat seharusnya menyembuhkan penyakit jasmani, tapi para penyembuh duniawi menutup mata terhadap penyebab kematian yang sebenarnya. Di tangan seorang dokter yang bijaksana, tubuh manusia yang rapuh tak lagi terikat oleh kelahiran, usia, penyakit, atau kematian, bahkan bisa saja menunjukkan kekuatan yang melampaui akal sehat.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/07/9004a7deac7ccb2e9050ef9b6013417c_3517654003715698593.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Mata uang biasa, semua orang di seluruh penjuru dunia mengakui nilai mata uang ini.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 450000
+            }
+          ],
+          [
+            {
+              "type": "CustomEntry",
+              "epId": 11346,
+              "name": "Philosophies of Charity",
+              "desc": "Material Penguatan Talenta.<br>\"Kasih sayang\" adalah penyelamat bangsa es.<br>Kasih sayang adalah kepedulian terhadap semua makhluk, yang menghapus perbedaan tinggi dan rendah, melampaui darah dan kebangsaan. Pandangan kasih sayang senantiasa tertuju pada semua orang, memberikan perlindungan bagi mereka yang malang, dan menjanjikan pembebasan abadi bagi semua.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/2582f5ab8e8105d1fd3e9139eb8a8dd1_5510844834940271709.png",
+              "amount": 16
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 11372,
+              "name": "Prime Chimeric Nexus",
+              "desc": "Inti internal yang didapatkan dari monster buatan manusia yang menyimpang.<br>Inti paling kompleks yang mungkin dapat dipertahankan oleh monster buatan manusia, berfungsi sebagai benih kehidupan yang direkayasa secara artifisial namun sempurna. Siapa pun yang menghidupkan ciptaan ini pasti telah mengungkap rahasia bagaimana kehidupan itu sendiri terbentuk.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/6b950359dfc3dbb85095d4932120e586_1697057902607906986.png",
+              "amount": 12
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 9191,
+              "name": "Mask of the Virtuous Doctor",
+              "desc": "Topeng yang ditemukan di tempat ujian sang penista, seorang dewa palsu yang berusaha merebut kekuatan bulan.<br>Obat seharusnya menyembuhkan penyakit jasmani, tapi para penyembuh duniawi menutup mata terhadap penyebab kematian yang sebenarnya. Di tangan seorang dokter yang bijaksana, tubuh manusia yang rapuh tak lagi terikat oleh kelahiran, usia, penyakit, atau kematian, bahkan bisa saja menunjukkan kekuatan yang melampaui akal sehat.",
+              "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/01/07/9004a7deac7ccb2e9050ef9b6013417c_3517654003715698593.png",
+              "amount": 2
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 900,
+              "name": "Crown of Insight",
+              "desc": "Material Penguatan Talenta yang berharga.<br/>Di zaman kuno, pernah digunakan sebagai instrumen ritual untuk membawa dan menyebarkan ilmu pengetahuan. Sekarang, kebijaksanaan ditemukan dalam teks-teks kuno dan dalam pidato yang mendalam. Namun demikian, Mahkota Kebijaksanaan ini masih tetap dapat memberikan kekuatan dan kebijaksanaan kepada pemiliknya.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Crown of Insight_icon.png",
+              "amount": 1
+            },
+            {
+              "type": "CustomEntry",
+              "epId": 757,
+              "name": "Mora",
+              "desc": "Mata uang biasa, semua orang di seluruh penjuru dunia mengakui nilai mata uang ini.",
+              "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+              "amount": 700000
+            }
+          ]
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/3909abb8d85f9543ee8a2b00dbdb7c72_2077371767485929206.gif"
+      },
+      {
+        "title": "Principle: Variable Detection",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/d34adc921cf63459d6402449e60344da_817603623419900825.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Dengan daya ledak yang secara teori relatif aman, Mitya melakukan eksperimen dalam skala yang juga secara teori relatif aman. Mengakibatkan <color=#ffacff>Electro DMG Area</color> dan menciptakan <color=#ffd780>Detection Core</color> dengan cara yang berbeda berdasarkan Mode Tekan atau Tahan.\nMenekan Elemental Skill sekali lagi dalam kurun waktu 6 detik setelah melancarkan Elemental Skill <color=#ffd780>Principle: Variable Detection</color> akan mengganti status <color=#ffd780>Detection Core</color> . Status Detection Core hanya dapat diganti dengan cara ini sekali setiap 1,5 detik.\n\"Tenang saja, ini semua sudah merupakan dosis aman yang sudah diverifikasi berulang kali ... Hm? Kamu bilang ada yang meledak? Aduh, tadi lupa bilang, kesimpulan ini didapatkan dalam kondisi eksperimen ideal.\""
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13"
+            ]
+          },
+          {
+            "key": "DMG Skill (Mode Tekan)",
+            "values": [
+              "90.7%",
+              "97.5%",
+              "104.3%",
+              "113.4%",
+              "120.2%",
+              "127.0%",
+              "136.1%",
+              "145.2%",
+              "154.2%",
+              "163.3%",
+              "172.4%",
+              "181.4%",
+              "192.8%"
+            ]
+          },
+          {
+            "key": "DMG Skill (Mode Tahan)",
+            "values": [
+              "129.6%",
+              "139.3%",
+              "149.0%",
+              "162.0%",
+              "171.7%",
+              "181.4%",
+              "194.4%",
+              "207.4%",
+              "220.3%",
+              "233.3%",
+              "246.2%",
+              "259.2%",
+              "275.4%"
+            ]
+          },
+          {
+            "key": "DMG Core dalam Steady State",
+            "values": [
+              "72.0%",
+              "77.4%",
+              "82.8%",
+              "90.0%",
+              "95.4%",
+              "100.8%",
+              "108.0%",
+              "115.2%",
+              "122.4%",
+              "129.6%",
+              "136.8%",
+              "144.0%",
+              "153.0%"
+            ]
+          },
+          {
+            "key": "DMG Core dalam Steady State saat Mengonsumsi Gradient Beacon",
+            "values": [
+              "80% Elemental Mastery",
+              "86% Elemental Mastery",
+              "92% Elemental Mastery",
+              "100% Elemental Mastery",
+              "106% Elemental Mastery",
+              "112% Elemental Mastery",
+              "120% Elemental Mastery",
+              "128% Elemental Mastery",
+              "136% Elemental Mastery",
+              "144% Elemental Mastery",
+              "152% Elemental Mastery",
+              "160% Elemental Mastery",
+              "170% Elemental Mastery"
+            ]
+          },
+          {
+            "key": "DMG Ledakan Core dalam Steady State",
+            "values": [
+              "92.0% Elemental Mastery/Beacon",
+              "98.9% Elemental Mastery/Beacon",
+              "105.8% Elemental Mastery/Beacon",
+              "115.0% Elemental Mastery/Beacon",
+              "121.9% Elemental Mastery/Beacon",
+              "128.8% Elemental Mastery/Beacon",
+              "138.0% Elemental Mastery/Beacon",
+              "147.2% Elemental Mastery/Beacon",
+              "156.4% Elemental Mastery/Beacon",
+              "165.6% Elemental Mastery/Beacon",
+              "174.8% Elemental Mastery/Beacon",
+              "184.0% Elemental Mastery/Beacon",
+              "195.5% Elemental Mastery/Beacon"
+            ]
+          },
+          {
+            "key": "Durasi Detection Core",
+            "values": [
+              "25.0dtk",
+              "25.0dtk",
+              "25.0dtk",
+              "25.0dtk",
+              "25.0dtk",
+              "25.0dtk",
+              "25.0dtk",
+              "25.0dtk",
+              "25.0dtk",
+              "25.0dtk",
+              "25.0dtk",
+              "25.0dtk",
+              "25.0dtk"
+            ]
+          },
+          {
+            "key": "Cooldown",
+            "values": [
+              "18.0dtk",
+              "18.0dtk",
+              "18.0dtk",
+              "18.0dtk",
+              "18.0dtk",
+              "18.0dtk",
+              "18.0dtk",
+              "18.0dtk",
+              "18.0dtk",
+              "18.0dtk",
+              "18.0dtk",
+              "18.0dtk",
+              "18.0dtk"
+            ]
+          }
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/bb13d8a6369500ed65abfffb0f3f7645_4936153853910417333.gif"
+      },
+      {
+        "title": "Analysis: Gradient Theory",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/283863cc7023f063195522d2e79cfe47_2930513197077300523.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Biarkan elemen meledak-ledak bagaikan inspirasi! Mengakibatkan <color=#ffacff>Electro DMG Area</color> dan menciptakan 3 <color=#ffd780>Gradient Beacon</color> .\n\"Setelah melewati perubahan bertahap yang terus-menerus, bahkan Reaksi Elemental yang paling kecil sekalipun akan meledakkan energi dahsyat yang tak terbayangkan, sama seperti inspirasi seorang peneliti.\""
+          }
+        ],
+        "attributes": [
+          {
+            "key": "Level",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5",
+              "Lv.6",
+              "Lv.7",
+              "Lv.8",
+              "Lv.9",
+              "Lv.10",
+              "Lv.11",
+              "Lv.12",
+              "Lv.13"
+            ]
+          },
+          {
+            "key": "DMG Skill",
+            "values": [
+              "333.6% ATK+667.2% Elemental Mastery",
+              "358.6% ATK+717.2% Elemental Mastery",
+              "383.6% ATK+767.3% Elemental Mastery",
+              "417.0% ATK+834.0% Elemental Mastery",
+              "442.0% ATK+884.0% Elemental Mastery",
+              "467.0% ATK+934.1% Elemental Mastery",
+              "500.4% ATK+1,000.8% Elemental Mastery",
+              "533.8% ATK+1,067.5% Elemental Mastery",
+              "567.1% ATK+1,134.2% Elemental Mastery",
+              "600.5% ATK+1,201.0% Elemental Mastery",
+              "633.8% ATK+1,267.7% Elemental Mastery",
+              "667.2% ATK+1,334.4% Elemental Mastery",
+              "708.9% ATK+1,417.8% Elemental Mastery"
+            ]
+          },
+          {
+            "key": "Gradient Beacon Diciptakan",
+            "values": [
+              "3,0 buah",
+              "3,0 buah",
+              "3,0 buah",
+              "3,0 buah",
+              "3,0 buah",
+              "3,0 buah",
+              "3,0 buah",
+              "3,0 buah",
+              "3,0 buah",
+              "3,0 buah",
+              "3,0 buah",
+              "3,0 buah",
+              "3,0 buah"
+            ]
+          },
+          {
+            "key": "Cooldown",
+            "values": [
+              "15.0dtk",
+              "15.0dtk",
+              "15.0dtk",
+              "15.0dtk",
+              "15.0dtk",
+              "15.0dtk",
+              "15.0dtk",
+              "15.0dtk",
+              "15.0dtk",
+              "15.0dtk",
+              "15.0dtk",
+              "15.0dtk",
+              "15.0dtk"
+            ]
+          },
+          {
+            "key": "Konsumsi Energy",
+            "values": [
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60",
+              "60"
+            ]
+          }
+        ],
+        "talentImg": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/dd66077f33ff5724d9fb4fe96b4cd742_2465809147757283013.gif"
+      },
+      {
+        "title": "Baseline Stress Test",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/785f47325bd0b95a7db0cfd0cdee9ad9_2056927292070423431.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Detection Core</color> yang diciptakan dari Elemental Skill <color=#ffd780>Principle: Variable Detection</color> akan diperkuat. Jika <color=#ffd780>Detection Core</color> yang diciptakan berada dalam kondisi:\n·Steady State: Untuk setiap satu <color=#ffd780>Gradient Beacon</color> yang dibawa, Elemental Mastery seluruh Karakter party terdekat meningkat 30 poin.\n·Overloaded State: Setelah seluruh Karakter party di sekitar memicu reaksi Stellar-Conduct, maka jumlah <color=#ffd780>Gradient Beacon</color> yang diperoleh akan meningkat: mendapatkan satu <color=#ffd780>Gradient Beacon</color> setiap 1,5 detik selama 6 detik."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "title": "Explosive Reagent: Safe Limits Exceeded",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/4a343058ddd669285f99c763527c61b6_8257609074649390295.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Durasi <color=#ffd780>Gradient Beacon</color> bertambah menjadi 10 detik. Selain itu, CRIT Rate Mitya meningkat 5% selama 15 detik setelah menciptakan <color=#ffd780>Gradient Beacon</color> . Efek ini dapat ditumpuk sampai 4 lapis."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "title": "Stellar Jubilee: Top-Secret Protocol",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/6cb936362e80c1995687c79371d8d1ad_3989070940383003182.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Saat Karakter dalam party memicu reaksi Superconduct, reaksi ini akan berubah menjadi reaksi Stellar-Conduct. Saat memicu reaksi Stellar-Conduct, reaksi ini tidak akan menciptakan <color=#ffd780>Starlight Prism</color> , melainkan: Setelah memicu reaksi Stellar-Conduct, akan tercipta satu <color=#ffd780>Gradient Beacon</color> di sekitar setiap 1,5 detik selama 3 detik. Gradient Beacon ini dapat dibawa oleh Mitya dan mengubah area di sekitarnya menjadi <color=#ffd780>Polestar Field</color> yang lebih luas. Memicu reaksi Stellar-Conduct lagi akan memperbarui durasi dari efek-efek di atas.\nSelain itu, DMG dasar reaksi Stellar-Conduct yang diakibatkan seluruh Karakter sekitar dalam party akan meningkat berdasarkan Elemental Mastery Mitya: Setiap poin Elemental Mastery akan meningkatkan DMG dasar reaksi Stellar-Conduct sebesar 0,028%, hingga maksimum 14%. Saat berada di dalam <color=#ffd780>Polestar Field</color> , Mitya juga akan memasuki status <color=#ffd780>Radiance: Stellar-Conduct</color> ."
+          }
+        ],
+        "attributes": null
+      },
+      {
+        "title": "Energy Catalysis",
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/6e7dd6ca9e331d74d355fdef5d05cbd3_2081327442822574826.png",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Saat terdapat batu-batuan yang dapat dihancurkan di sekitar, <color=#ffd780>Detection Core: Steady State</color> dapat membersihkan batu-batuan ini dengan cepat.\nSelain itu, saat Mitya berada dalam party, pembuatan <color=#ffd780>Prime Ice Construct: Sumber Kehangatan Sederhana</color> tidak mengonsumsi Kresnik Energy."
+          }
+        ],
+        "attributes": null
+      }
+    ],
     "baseInfo": [
       {
         "key": "Nama",
@@ -17,6 +778,15 @@
           {
             "type": "RichText",
             "text": "Mitya"
+          }
+        ]
+      },
+      {
+        "key": "Ulang Tahun",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "08 Februari"
           }
         ]
       },
@@ -46,15 +816,821 @@
             "text": "Electro"
           }
         ]
+      },
+      {
+        "key": "Afiliasi",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Royal Energy Commission of Snezhnaya"
+          }
+        ]
+      },
+      {
+        "key": "CV Mandarin",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "苏尚卿"
+          }
+        ]
+      },
+      {
+        "key": "CV Jepang",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "小林裕介"
+          }
+        ]
+      },
+      {
+        "key": "CV Inggris",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Brian Ballance"
+          }
+        ]
+      },
+      {
+        "key": "CV Korea",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "Choi U-seong"
+          }
+        ]
+      },
+      {
+        "key": "Hidangan Spesialisasi",
+        "value": [
+          {
+            "type": "CustomEntry",
+            "epId": 13664,
+            "name": "\"Energy-Replenishing Meal\"",
+            "desc": "Masakan andalan Mitya. Sosis asapnya memiliki cita rasa gurih yang kaya tapi tidak berlebihan. Tekstur lembut kentang tumbuknya menyeimbangkan kekayaan rasa tersebut, sementara sayuran melengkapinya dengan sentuhan rasa manis yang segar. Setiap elemen rasa tampak diracik dengan sempurna, dan dengan keseimbangan nutrisi seperti ini, hidangan ini benar-benar sukses menjadi contoh makan siang yang ideal. Namun, menurut Mitya, dia hanya \"bikin asal saja di jalan\". Sebenarnya, sudah berapa kali dia menyelinap keluar dari pekerjaan demi menyajikan hidangan seenak ini ...? Yah, mungkin memang begitulah sosok Mitya.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/ec08690ac1c857836c8aee01f0a8c463_1953514522176185343.png"
+          }
+        ],
+        "isMaterial": true
+      },
+      {
+        "key": "Dirilis pada Versi",
+        "value": [
+          {
+            "type": "RichText",
+            "text": "7.2"
+          }
+        ]
+      }
+    ],
+    "story": [
+      {
+        "title": "Info Karakter",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Orang Snezhnaya yang sering pergi ke teater pasti tahu:\nSelain beberapa \"pemandangan\" yang sudah sangat dikenal di atas panggung, di kursi penonton juga selalu ada seorang penonton yang mencuri perhatian.\nGaya rambutnya sangat khas, ia memegang buku catatan, dengan syal yang lincah melingkar di bahunya, dan di belakangnya sesekali muncul seorang perwira pria bertubuh tinggi dengan ekspresi serius yang membuatnya terus berlari.\nPerilakunya yang mencolok sekaligus humoris membuatnya sebanding dengan seniman pertunjukan anonim. Kedekatannya yang erat dengan dua pemeran utama kelompok teater itu membuatnya tampak seperti sesama bintang. Tidak hanya itu, sebagian orang bahkan menduga dia seorang penulis atau peneliti, karena orang biasa tidak akan selalu menggenggam buku catatan dan sibuk menulis dengan kepala tertunduk.\nTentu saja, begitu kata-kata itu terlontar, ia langsung menjadi bahan tertawaan orang-orang di sekitarnya. Seorang peneliti yang dibutuhkan oleh Snezhnaya yang agung seharusnya cermat dan berwibawa, tidak seharusnya berperilaku seramai ini.\nNamun, bagaimana mereka bisa tahu bahwa orang di hadapan mereka ini adalah Mitya, pakar energi yang berbakat, disibukkan oleh berbagai urusan penting, tidak serius dalam pekerjaannya, dan sangat mencintai kehidupan?\nNamun, Mitya harus mengakui bahwa bahkan dirinya sering menghadapi kesulitan. Kenapa seorang peneliti yang begitu tekun selalu dikejar-kejar oleh \"Raja Iblis\" yang menakutkan dari belakang?\nMaka, seusai menonton pertunjukan \"The Firebird\", dalam surat pembelaan diri yang sekali lagi ditulis untuk atasannya dan dilampirkan pada halaman terakhir laporan penelitian, Mitya menulis begini:\n\"Snezhnaya begitu luas, bagaimana bisa seseorang dikurung dalam sangkar bernama jadwal?\"\n\"Cahaya ilmu pengetahuan lebih sulit ditebak daripada 'The Firebird', mana mungkin kita bisa menemukan bayangannya hanya dengan duduk termenung di meja?\"\n\"Apel emas adalah mahakarya alam tertinggi, bagaimana bisa jatuh ke tangan orang yang telah kehilangan warna dunia?\"\nSebagai tanggapan, Snegiryov, supervisor yang bertanggung jawab meninjau data dan prosedur eksperimen, memberikan balasan berikut:\n\"Sudah diketahui. Bagian ini tidak termasuk konten yang seharusnya ada dalam laporan penelitian, sudah diteruskan ke Mayor Valeriy. Selain itu: \"The Firebird\" terutama memuji vitalitas dan cinta. Dari dua hal tersebut, yang satu tidak kamu kekurangan, dan yang satu lagi tidak kamu butuhkan saat ini. Tolong baca dan pahami dengan saksama sebelum mengutip. Kalau ada lain kali, aku tidak akan membantumu mengurus tiket. Hormat saya.\""
+          }
+        ]
+      },
+      {
+        "title": "Kisah Karakter 1",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd680>Terbuka saat Persahabatan Lv. 2</color>\nMitya memiliki masa kecil yang bahagia.\nIa beruntung terlahir di Teplo Oasis. Hamparan ladang luas yang jarang ditemukan di bangsa beriklim dingin, pemandangan indah, dan keramahan penduduk setempat dengan leluasa menyuburkan si bit kecil ini.\nDalam kenangannya, hamparan gandum adalah padang rumput keemasan tempatnya berlari. Para pedagang keliling yang ramah membawa makanan baru yang menarik, jus dan camilan buatan Nyonya Sezhna memancarkan aroma semanis madu. Ruang kerja ayah yang dipenuhi blueprint pun berubah menjadi taman bermain karena \"penelitian\" Mitya.\nDunia begitu indah. Bahkan terlalu teratur, hingga terasa sedikit monoton.\n\"Hidup ini sudah baik, kalau ada sedikit hal baru pasti lebih menyenangkan\". Mitya kecil bersandar di ambang jendela bengkel Tuan Urkin, mengucapkan harapannya kepada roda gigi yang sedang berputar ....\nSeakan menjawab keinginannya, muncul riak kecil dalam kehidupannya—\nSuatu pagi, seperti biasa, si kecil Mitya menyelinap melalui pintu rumah tetangga Domovoy, berniat membantu Tuan Urkin memetik buah hari ini, lalu menuangkannya sekaligus ke dalam mesin pemeras jus.\nTapi hari ini, Tuan Urkin menahannya.\nBaru saat itulah Mitya menyadari bahwa suasana di dalam bengkel terasa agak terlalu sunyi.\n\"Jangan buru-buru, hari ini tidak usah memetik. Mesinnya rusak, jadi istirahatlah dulu dua hari.\"\n\"Mitya sayang! Di sini ada biskuit favoritmu, ayo cicipi!\" Suara Nyonya Sezhna juga terdengar dari ruang dalam ....\nSehari, dua hari, tiga hari ....\nTuan Urkin dan Nyonya Sezhna masih tetap ramah, tetapi Mitya bisa merasakan bahwa ada kecemasan dan kesedihan yang diam-diam mulai merayap ke mata pasangan itu.\n\"Kapan akan diperbaiki?\"\n\"Dua hari lagi, begitu tukang reparasinya datang, pasti beres. Nanti aku langsung panggil kamu, kita lanjut metik bareng.\"\nDialog seperti itu terulang berkali-kali, dan Mitya pun berjalan bolak-balik melewati gerbang desa dan depan pintu bengkel.\nSuara gemuruh yang biasa ia dengar tidak lagi terdengar, para pedagang keliling semakin jarang berkunjung. Tukang reparasinya? Mitya sama sekali tidak melihatnya. Dari desas-desus teman-temannya, ia pun mencoba merangkai apa yang sebenarnya terjadi.\nPasangan Domovoy itu menghadapi kesulitan yang sesungguhnya—tanpa aroma buah, kedai minuman keras keluarga kecil ini sulit menarik pelanggan.\nTapi Mitya masih belum paham mengapa para pemimpin geng yang berharap dapat memonopoli bisnis minuman beralkohol itu menghalangi kedatangan tukang reparasinya.\nBaginya, ini hanyalah masalah kecil yang disebabkan oleh keinginan yang kurang tepat. Kalau begitu, dia tinggal membetulkannya saja.\nTapi dengan sepasang tangan anak kecil, bagaimana caranya bisa membereskan mesin-mesin rumit itu?\nMitya terdiam sambil berpikir ... Mungkin, pengetahuan yang dulu diajarkan ayahnya kepada dirinya sendiri bisa berguna?\nKemudian, seakan ada badai yang menyapu ruangan dan mengubah ruang kerja menjadi setumpukan barang. Sementara orang tua Mitya diam-diam mengawasi dari luar pintu \"ruang penyimpanan\" ....\n\"Si bit kecil kami sangat berbakat, dia pasti bisa, kan?\"\n\"Sulit. Mesin itu pernah kulihat diam-diam. Poros putarnya sengaja dililit erat dengan serat bit, sangat sulit dibersihkan.\" Ayah Mitya berhenti sejenak, lalu melanjutkan, \"Lagi pula, kalau mesin itu sudah selesai diperbaiki, bagaimana kalau para pedagang miras gelap itu datang ke rumah untuk cari gara-gara?\"\n\"Masa cuma gara-gara takut burung, bit-nya jadi tidak boleh bertunas? Lagi pula, kalau kamu saja tidak bisa memperbaikinya, siapa yang percaya itu ulah anak kecil?\"\n\"Haha, betul juga. Karena dia punya bakat dan tertarik, lebih baik biarkan dia mencoba saja.\"\nSejak hari itu, Mitya mendapat seorang \"dosen pembimbing\". Dan di bengkel juga ada dua sosok tambahan, satu besar dan satu kecil.\n...\nSetelah upaya yang gagal lagi, sang ayah mulai membereskan peralatan yang berserakan. Tuan Urkin di sebelahnya juga menghela napas pelan, diam-diam mulai bersiap menghadapi kemungkinan terburuk.\nDi dalam gubuk kerja yang remang-remang hanya ada keheningan seperti kematian, sampai sebuah embusan napas serak yang sumbang tiba-tiba memecah kesunyian.\nTepat setelahnya, terdengar bunyi retakan yang amat nyaring, lalu disusul oleh raungan poros mesin jus yang berputar dengan kecepatan tinggi.\nSaat kedua orang dewasa itu bergegas mendekati mesin, bengkel sedang diselimuti lapisan tipis bubuk halus putih es. Mitya berdiri di samping peralatan yang sedang beroperasi, menggosok-gosokkan kedua tangannya yang memerah karena kedinginan. Di hadapannya, mesin yang semula dinyatakan rusak berat telah terbebas dari jeratan serat dan kini dapat beroperasi dengan lancar.\nMelihat kemasan refrigeran yang tergeletak di lantai, sang ayah segera memahami apa yang terjadi.\nYa, serat yang kaya akan air secara alami sangat kuat dan sulit dipotong. Tapi bagaimana kalau mereka kehilangan kandungan airnya, lalu menjadi beku total?\nPada saat itu, tanpa perlu penanganan tambahan apa pun, hanya dengan kekuatan mesin itu sendiri, benda itu bisa langsung dihancurkan hingga hancur berkeping-keping dengan mudah.\nPrinsip ini sebenarnya sangat sederhana, tetapi untuk mengonversinya menjadi rencana yang praktis dan dapat diterapkan, tidak cukup hanya mengandalkan bakat, tapi juga kreativitas dan keberanian.\nLalu, bagaimana dengan sosok mungil itu?\nDia tampaknya tidak merasa sangat gembira seperti Urkin, juga tidak terburu-buru untuk pamer seperti yang diperkirakan ayahnya.\nDia hanya diam mengamati mekanisme yang berputar itu, di dasar matanya yang jernih terpantul kilau redup logam yang berputar cepat.\nNamun sang ayah belum mengetahui, bahwa di dalam dada kecil itu, ada sebuah jantung yang muda dan hidup, bergetar seirama dengan energi kinetik liar dari mesin penggerak."
+          }
+        ]
+      },
+      {
+        "title": "Kisah Karakter 2",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd680>Terbuka saat Persahabatan Lv. 3</color>\nKepintaran bagaikan seikat kayu kering yang terendam minyak, hanya butuh sedikit percikan inspirasi untuk membuatnya terbakar membara.\nDan Armory Palace, tempat berkumpulnya orang-orang terpintar di Snezhnaya, adalah gudang penyimpanan amunisi, yang hanya menunggu pin pemicunya tiba.\nOrang yang meledakkan \"gudang\" ini bukanlah ilmuwan besar yang termasyhur. Dia hanyalah seorang pakar biasa yang buru-buru disingkirkan oleh Energy Commission yang mendambakan ketenangan, tetapi tanpa sengaja membawa fajar dari \"era yang baru\".\nPada bulan-bulan pertama setelah melapor ke Glupov, Mitya belum terlihat menonjol. Kesan rekan-rekannya terhadap dirinya kebanyakan hanya terbatas pada: \"ceria dan ramah\", \"mudah bergaul\", \"sangat terampil\", serta \"memiliki teman syal yang aneh\", dan lain-lain.\nKesan itu memang dangkal, tapi itu wajar. Di penjara tanpa cahaya yang menjadikan tekanan sebagai pagar dan jadwal sebagai belenggu ini, semua orang sudah kewalahan mengurus diri sendiri, apalagi meluangkan tenaga untuk memahami masa lalu seorang pendatang baru secara mendalam.\nDan setelah belasan hari menjalani lembur berintensitas tinggi tanpa henti, sambil menatap kentang dan roti di kantin, akhirnya ada seseorang yang tidak tahan dan menghela napas:\n\"Menunya itu-itu lagi! Ah, aku ingin minum Snowrealm Okroshkas. Sensasi kejutan tekstur yang berbeda di setiap sendoknya benar-benar membuatku rindu, rasanya ingin sekali bisa menyesapnya sekarang ....\"\n\"Aku sebenarnya bisa membuatnya, bahan-bahan di sini juga tidak kurang,\" sahut seorang rekan kerja dengan santai, \"hanya saja prosesnya terlalu rumit, harus cari cara untuk mendapatkan satu set peralatan masak profesional untuk merebus sup bening. Entah apakah koki Fatui punya barang semacam itu.\"\n\"Jangan berharap,\" orang di sebelahnya menimpali dengan dingin, \"kalau Sereda benar-benar punya peralatan masak selengkap itu, kita tidak akan hanya makan roti gandum dan kentang. Bubar, bubar. Nanti masih ada dua laporan eksperimen yang harus dikumpulkan, lho.\"\nSaat semua orang sedang berbincang-bincang santai, aroma harum yang gurih menyelinap masuk ke hidung semua orang.\nSambil mendongak, pendatang baru dari Energy Commission itu sedang menikmati semangkuk sup panas yang tidak diketahui namanya, sementara rekan \"syal\"-nya dengan antusias melambaikan tangan ke semua tatapan yang tertuju padanya.\nItu adalah semangkuk sup bening hangat. Meski bukan Snowrealm Okroshkas yang baru saja diperbincangkan, juga bukan Borscht yang terkenal luas, tetap saja membuat semua orang tergila-gila.\nSetelah didesak berulang kali, orang-orang akhirnya memahami asal-usul sup hangat ini. Mitya terlebih dahulu menggunakan fungsi merebus dan mengaduk dari reaktor panas untuk mengubah bahan masak menjadi cairan, lalu menggunakan mesin sentrifugal untuk memisahkan lemak dan residu tulang di dalamnya. Setelah melalui beberapa tahapan, produk di hadapan semua orang pun tercipta.\nSemua orang tertegun. Ternyata bisa seperti itu?\nDi dalam Armory Palace, gudang amunisi bernama \"kepintaran\" pun akhirnya telah meledak.\nMalam itu, di dalam laboratorium, reaktor panas dan sentrifugal bergemuruh tanpa henti. Yang berhamburan dan memenuhi ruangan bukan hanya aroma sup yang menggugah selera, tetapi juga kreativitas para peneliti—terutama Mitya—yang sudah lama berada di bawah tekanan.\nNamun seusai pesta pora, tuntutan pertanggungjawaban dari Departemen Keamanan datang bertubi-tubi.\nMenghadapi tuntutan ini, Mitya yang sudah merasakan manisnya hasil itu bukan hanya tidak menyesal, tetapi juga makin gencar berupaya melarikan diri dari kehidupan yang terlembaga.\nGetaran kuat ini menjalar jauh dari Armory Palace, bahkan membuat The Jester sang Direktur Fatui, turut merasakan sedikit perubahan.\n...\nLebih dari setengah tahun kemudian, saat Mitya yang telah membuat serangkaian keributan digiring masuk ke kantor, meja The Jester sudah dipenuhi surat-surat pembelaan yang ia ajukan.\n\"Jadi, Tuan Mitya, saya masih belum paham, apa hubungan antara sistem absensi dan sup panas?\"\nSambil menepis \"syal\" yang mencoba menutup mulutnya, Mitya menjawab dengan penuh keyakinan: \"Tuan 'The Jester', jika kita bisa memiliki sistem absensi yang lebih masuk akal, efisiensi semua orang juga akan meningkat. Ini pasti yang Anda harapkan. Lihatlah, berkatku, sekarang semua orang menjadi lebih kreatif, bahkan menemukan cara membuat es krim dengan kompresor. Ini bukti kuat bahwa sistem absensi memengaruhi kinerja!\"\n\"The Jester\" tentu tahu, jika menyangkut Mitya, kelonggaran dalam sistem absensi mungkin memang bisa membuatnya lebih efisien. Ia sudah membaca laporan penelitian Mitya, dan hasilnya sudah cukup membuktikan hal itu.\nNamun bakat dan keanehan sering kali berbanding lurus. Masalah dan kerusakan yang diciptakan Mitya juga berkali-kali lipat dibanding orang lain.\nMempelopori pelanggaran peraturan, mengubah jadwal sesuka hati, absen, melepaskan diri dari Fatui dan bepergian sendiri—semuanya merupakan risiko yang tidak kecil bagi suasana kerja dan keamanan rencana.\n\"Pernyataanmu sudah kuterima. Aku akan mempertimbangkannya dengan saksama.\"\nSetelah Mitya keluar dari kantor, The Jester memanggil sekretarisnya dan menyampaikan keputusannya: \"Mulai sekarang, selama mereka tidak melewati batas, hal sepele seperti ini, kalian abaikan saja.\"\n\"Kalau begitu ... Tuan, apakah kita masih perlu mengirim orang untuk ikut mengawasi Mitya?\"\n\"Tidak perlu.\"\n\"The Jester\" terdiam sejenak, lalu mengangkat cangkir yang masih mengepulkan uap di sudut meja dan meniupnya:\n\"Tapi, seperti yang dia nyatakan dalam laporannya, dia membutuhkan sedikit 'gejolak' untuk bisa menghasilkan hasil yang lebih baik. Kita sebaiknya memberikan sedikit bantuan—biarkan Mayor Valeriy yang menangani hal ini.\""
+          }
+        ]
+      },
+      {
+        "title": "Kisah Karakter 3",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd680>Terbuka saat Persahabatan Lv. 4</color>\n\"Hei, Mitya, hari-hari ketika kamu bisa bersenang-senang seenaknya sudah berakhir! Serahkan rumus pelarianmu!\"\nDalam catatan Mitya, kesan pertamanya terhadap Valeriy tampaknya seperti itu.\nFaktanya, meskipun catatan ini sarat dengan prasangka, keberadaan rumus pelarian itu tidak diragukan lagi memang benar-benar ada. Dan rumus itu memiliki beberapa kriteria berikut—\nPertama, aksi melarikan diri perlu mengandalkan arus kerumunan padat untuk mengalihkan perhatian, Central Station yang ramai akan menjadi pilihan yang tepat.\nKedua, sebelum melarikan diri, kalian harus mengumpulkan banyak informasi. Misalnya, saat bersembunyi di Podvorye Restaurant, kalian harus tahu siklus pergantian jaga dan rute patroli para penjaga.\nTerakhir, dan yang paling penting, tempat pelarian sebaiknya kaya akan \"warna\" dan memiliki ruang pribadi yang cukup, sehingga saat inspirasi tiba-tiba muncul, kamu tidak akan diganggu oleh siapa pun.\nDengan mengandalkan rumus ini, Mitya selalu lebih unggul saat berhadapan dengan Fatui lainnya.\nOleh karena itu, saat berhadapan dengan Valeriy yang baru datang, Mitya mungkin punya kepercayaan diri untuk melontarkan kalimat ini: \"Pertama, kamu harus bisa menangkapku\".\nTentu saja, sang \"Ketua Batalyon Penugasan Khusus\" sama sekali tidak memberi Mitya kesempatan itu. Pada hari yang sama, dia mengubah rute patroli para penjaga dan melancarkan pengejaran terhadap Mitya.\nMenghadapi serangan mendadak yang tak terduga, Mitya pun mengeluarkan jurus pamungkasnya—sebelum para pengejar menyelesaikan pengepungan, ia mengubah arah langkahnya dan langsung menerobos masuk ke tengah acara jalanan yang riuh di sisi jalan.\nMenurut perhitungan Mitya, karena harus menjaga kerahasiaan, maka Fatui yang sedang mengejarnya tidak mungkin menggunakan tindakan keras di hadapan khalayak ramai. Beberapa menit ketika lawan masih ragu untuk bertindak gegabah inilah waktu berharga yang dibutuhkan Mitya untuk menyesuaikan strategi dan meloloskan diri dengan lancar.\nNamun, ada satu variabel penting yang terlewat, bahwa pertemuan-pertemuan jalanan semacam ini biasanya punya tujuan yang jelas.\nDi tengah kerumunan yang saat ini ia jadikan tempat berlindung sementara, terpampang sebuah papan tanda yang tidak mencolok: \"Simposium Pengikut Karya Seni Klasik Rombongan Teater Korolevskiy\".\nSayangnya, situasi tetap berkembang ke bidang yang sama sekali asing bagi Mitya. Lebih dari itu, tindakannya yang sangat aktif terlihat jelas oleh pembawa acara. Pembawa acara menilainya sebagai \"pengikut fanatik\" yang sangat ingin mengekspresikan diri, dan dengan bersemangat mengundangnya naik ke panggung untuk berbincang.\nKalau yang mengalaminya adalah ahli melarikan diri yang lain, kemungkinan besar dia akan langsung kabur begitu saja. Namun hari ini, yang berdiri di alun-alun adalah Mitya, seorang pemuda yang tidak suka menolak ajakan orang dan selalu bersedia ikut dalam berbagai acara. Jika ketahuan berarti dia akan dikejar, tetapi membuat para penonton kecewa justru lebih membuatnya tidak senang. Maka, nyaris pada saat mata mereka bertemu, Mitya pun dengan tenang melangkah naik ke atas panggung.\n...\n\"Levelmu payah sekali, semua hanya klise basi yang dimuat di koran. Jelas sekali kau sama sekali belum pernah menonton teater, kau sia-siakan kesempatan bagus! Nah, ambil tiket ini. Pada pertunjukan kali ini, Nona Odette dan Nona Vodyanitsa akan hadir. Kau harus banyak belajar! Buka matamu lebar-lebar, dan saksikan dengan sungguh-sungguh!\"\nSialnya Mitya, Supervisor Snegiryov kebetulan ada di tempat kejadian juga. Sebagai seorang pecinta seni, dia menonton keseluruhan wawancaranya secara langsung. Dengan setengah pasrah setengah kesal, dia menjejalkan satu set tiket ke tangan Mitya.\nBegitulah, di bawah perintah yang tidak bisa ditolak, Mitya dengan bingung duduk di kursi beludru biru di gedung seni yang berkelas.\n\"Indah dipandang, enak didengar, sangat cocok dengan suasana elegan teater. Tapi aku sama sekali tidak paham.\"\nIni adalah catatan pertama Mitya mengenai eksperimen kesenian kali ini.\nBagian-bagian berikutnya dipenuhi dengan berbagai rumus simulasi perang, grafik, dan perhitungan, namun tidak ada satu kata pun yang berkaitan dengan seni panggung.\nTidak diragukan lagi, jika berangkat dari ekspektasi Snegiryov, eksperimen ini seharusnya digolongkan sebagai kegagalan total yang \"tidak dapat menghasilkan kesimpulan yang valid\".\nNamun dari sudut pandang makro rencana Armory Palace dan sudut pandang pribadi Mitya, hal itu tampak cukup sukses, dapat didefinisikan sebagai \"prinsip dasar telah ditemukan dan dijelaskan\".\nPara peneliti menyadari bahwa teater ini sepenuhnya memenuhi tiga elemen yang diajukan oleh Rumus Pelarian Mitya: arus orang yang padat; hanya mereka yang telah membeli tiket sebelumnya yang dapat masuk, sehingga Fatui tidak dapat mengikuti secara besar-besaran; serta mampu memberikan inspirasi melimpah dan ruang privat pada saat yang sama.\nTentu saja, para peneliti juga mencatat dalam catatan mereka: \"Suatu kesimpulan baru bisa dianggap valid setelah melalui banyak eksperimen dan dikonfirmasi dapat direproduksi ulang\".\nOleh karena itu, setelah sekali lagi berhasil menghindari kejaran para penjaga, Mitya dengan mulus meluncur masuk ke kursi teater, dan babak eksperimen yang baru pun dinyatakan dimulai.\nSejak saat itu, teater itu kedatangan seorang penonton tetap yang setia sekaligus aneh.\nKedua kali, ketiga kali ... bahkan hingga berkali-kali setelahnya, apa pun yang dipentaskan atau dinyanyikan di atas panggung, sang pelanggan setia itu tampaknya tidak pernah benar-benar terkesan.\nNamun, satu hal yang pasti, setiap kali ia duduk di dalam teater, buku catatan yang ia gunakan untuk mencatat inspirasi selalu bertambah banyak coretan baru."
+          }
+        ]
+      },
+      {
+        "title": "Kisah Karakter 4",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd680>Terbuka saat Persahabatan Lv. 5</color>\nMitya, seorang pemuda yang agak istimewa, dia selalu bisa membawa berbagai pengaruh bagi orang-orang di sekitarnya.\nDialah yang membangkitkan hasrat Energy Commission akan kebersihan. Dialah yang membuat Valeriy melihat kesungguhan dan kreativitas para peneliti hebat dalam menghindari pemeriksaan kehadiran.\nDan kali ini, ceramah berjudul \"Mitya\" akan terbuka untuk prima donna Snezhnaya.\nCoba bayangkan: bagi seorang penyanyi terkenal yang telah memikat banyak penonton berkat kemampuannya, apa yang lebih aneh daripada ada seorang penonton di antara hadirin yang hanya asyik melihat buku catatannya tanpa menonton pertunjukan?\nTentu saja ada. Yaitu orang yang meskipun tidak pernah serius mendengarkan lagu, namun selalu membeli tiket dan hadir di setiap pertunjukan tanpa terkecuali. Tidak peduli berapa banyak orang yang secara terang-terangan maupun tidak langsung mengisyaratkan bahwa perilakunya sedikit tidak sopan, dia tetap datang setiap kali, dan tetap tidak mendengarkan setiap kali. Dia bahkan tidak begitu ingat lagu-lagu yang dibawakan, dan selalu membawa serta seorang perwira Fatui.\nEntah siapa dia sebenarnya? Penonton yang setia, tapi si buta musik yang tidak sopan!\nVodyanitsa tentu saja ingin mengatakan sesuatu, tetapi tidak bisa mengatakannya dengan terlalu keras, karena sang penyanyi itu sendiri juga memiliki identitas rahasia yang tidak bisa diungkapkan ke publik.\nPertarungan diam-diam antara penyanyi sopran dan orang yang kurang ajar itu akhirnya diungkap oleh sang penari, Nona Odette. Ia sama sekali tidak merasa heran ataupun tersinggung, ia hanya berkata, \"Buat apa dipedulikan? Setidaknya syalnya tahu sopan santun, jadi penonton kita tidak berkurang.\"\nBagaimana mungkin seorang seniman bermartabat bisa tinggal diam melihat semua ini? Sang detektif hebat, Nona Imp Air, langsung bertindak dengan jelas dan tegas. Ia memberi misi kepada Tuan Alyosha, yang juga anggota Rokot seperti dirinya dan mahir dalam perburuan, untuk menyelidiki.\n\"Pukul sepuluh pagi, 'Nochhornowl' menghindari pandangan 'Beruang' memanjat dinding luar dan diam-diam keluar dari 'sarang' ....\"\nDi belakang panggung teater, di sudut yang tidak diperhatikan siapa pun, Alyosha sedang berbagi laporan pengamatan hari ini tentang Mitya dengan Vodyanitsa.\n\"Berangkat dari Armory Palace, dan tidak berjalan lewat pintu depan? Orang ini memang mencurigakan.\"\n\"Pukul sebelas, 'Nochhornowl' tiba di halaman lama dan makan semeja dengan seseorang. Selama itu, keduanya banyak berinteraksi ....\"\nDengan adanya catatan pengamatan kedua, Vodyanitsa semakin yakin kecurigaannya bukan tanpa dasar: \"Orang normal mana mungkin bisa mengobrol akrab dengan orang asing? Orang ini pasti sedang melakukan kontak rahasia!\"\nBelum selesai Alyosha membacakan, Vodyanitsa langsung menduga langkah Mitya selanjutnya: \"Lalu pertunjukan yang dimulai pukul tiga sore itu? Aku sudah melihat semuanya! Seperti biasa, dia terus menunduk menulis sesuatu. Menurutku, orang ini adalah mata-mata Fatui yang sengaja datang untuk menyelidiki kita.\"\n\"Alyosha memanfaatkan celah untuk menambahkan, \"Sekalian! Setelah pertunjukan selesai, Mitya pergi ke tempat Tuan Kuzmichev, merobek selembar kertas dari buku catatannya dan memberikannya padanya. Aku agak jauh, hanya bisa samar-samar melihat bahwa yang digambar di atasnya adalah simbol-simbol yang tidak bisa kupahami.\"\"\n\"Mitya juga bilang, dia sering memesan barang di tempat Tuan Kuzmichev, jadi sudah akrab. Aku tidak yakin Tuan Pandai Besi itu adalah 'Hunting Hound'.\"\nAlyosha selesai berbicara dengan suara pelan, lalu menutup mulutnya. Dengan pengamatan yang tajam, ia langsung tahu bahwa Vodyanitsa sudah tenggelam dalam semangat memburu lawan dan kepuasan mengungkap kebenaran. Nona Imp Air itu duduk di atas peti kayu sambil mengayunkan kakinya, lalu mengusulkan agar pada pertunjukan berikutnya Alyosha harus mengundang mata-mata Fatui, Mitya, ke belakang panggung dengan dalih memilih penonton beruntung. Apa pun yang ingin dilakukan si orang jahat ini, Rokot pasti akan menghancurkannya.\nBeberapa hari kemudian, Mitya memeluk sebuah kotak kayu berat, wajahnya serius dan langkahnya tertatih-tatih berjalan menuju belakang panggung teater. Sorot mata Vodyanitsa menajam—membawa benda peledak, ha! Cuma trik lama geng peri! Tapi apakah pemuda kurus kering ini benar-benar punya nyali untuk meledakkannya?\nVodyanitsa merapikan ujung gaunnya, lalu berbalik menyambut pengikut setianya. Dalam hati, ia menganggapnya sebagai pengadu yang ringkih, buta musik, dan orang rendahan. Namun tangannya dengan sungguh-sungguh menjabat tangan pria itu. ia mendengar pria itu sangat mahir berperan sebagai pengikut, sampai-sampai pembawa acara di jalanan sebelumnya memintanya naik panggung untuk berbicara.\nMitya menurunkan peti kayu, menepuk-nepuk pakaiannya. Konon yang bicara duluan berarti menyerahkan posisi tinggi dalam percakapan, tapi dia sama sekali tidak memahami logika itu. Dia hanya memandang sekeliling panggung belakang, lalu berkata dengan gembira: \"Wah, aku belum menyebutkannya tapi kalian sudah tahu! Pantas saja jadi seorang, instingmu memang tajam.\"\nSambil berkata, dia membuka tutup kotak: \"Nah, ini 'hadiah' yang aku bawa untuk kalian. Semua kebagian, anjing kecil di sana juga dapat. Tenang saja, ini 'aman' dan 'bersih' kok.\"\nDari celah itu, kilau biru cerah memancar, mata Vodyanitsa membelalak. Mata-mata mungil ini, benarkah ia nekat mengaktifkan bom tanpa peduli nyawanya? Tanpa sadar ia menarik napas dalam-dalam, gelombang suara melengking nyaris keluar dari tenggorokannya—\nSebuah tangan dingin tiba-tiba muncul dan membekap mulut Vodyanitsa dengan kuat. Imp Air itu ketakutan melihat Odette dengan setengah tubuhnya tersembunyi di dalam bayangan.\nFatui mahir mengubah segala sesuatu menjadi senjata, dan Odette terutama mahir mengubah semua senjata replika di belakang panggung menjadi senjata sungguhan.\nSementara itu, keduanya berdiri diam di tempat. Mereka menyerah untuk melarikan diri, bahkan lupa untuk melarikan diri, dan di pupil mata Alyosha yang berada paling dekat terpantul cahaya biru yang hening, lembut, dan tak kunjung memicu ledakan.\nDengan bantuan si \"syal\", Mitya mengeluarkan dua gelas air yang dibuat menggunakan Prime Ice dari dalam peti kayu, lalu dua lagi, dua lagi ....\n\"Barang bagus nih! Satu untuk Alyosha, satu untukku, satu untuk si anjing kecil, satu untuk si Syal, satu untuk Nona Vodyanitsa, satu untuk Nona Odette. Aku juga beli satu lagi, rencananya buat pria yang setiap hari mengikuti di belakang. Kalian pasti pernah melihatnya, kan? Yang badannya tinggi itu ... eh? Kenapa kalian diam saja?\"\nDalam keheningan, Alyosha mengambil sebuah gelas air dan mengamatinya dengan saksama. Motif di atasnya sama persis dengan kertas yang dia lihat hari itu.\n\"Apa arti dari angka-angka dan simbol-simbol ini?\"\n\"Ini kata pengantar dari tesisku. Tenang saja, semua isinya sudah disamarkan.\"\n\"Tesis? Kenapa?\" Kebingungan Alyosha jelas semakin dalam.\n\"Hehe, ini biar 'jumlah minum'-nya nambah.\"\nSetelah keheingan yang singkat lagi, Mitya dan syal itu serentak menggaruk rambut pendeknya yang mengembang dan tergerai seperti daun sayur: \"Masa, sebegitu enggak lucunya? Aku baru dengar dari rekan kerjaku.\""
+          }
+        ]
+      },
+      {
+        "title": "Kisah Karakter 5",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd680>Selesaikan kisah \"Nyanyian Malam Sang Arwah\"</color>\n<color=#ffd680>Terbuka saat Persahabatan Lv. 6</color>\n\"Ayah dan Ibu tersayang ....\"\nDi meja kerja Mitya, selembar kertas surat tergeletak dengan tenang. Itu adalah awal dari surat wasiat pertama dan satu-satunya yang pernah ia tulis.\nSetelah berhadapan langsung dengan \"kematian\", draf yang belum selesai ini dikeluarkannya kembali, diletakkan dengan rapi tepat di tengah meja kerja.\nJelas, penulisnya ingin memanfaatkan momen selagi kesan akan kematian masih membekas untuk menciptakan templat dokumen resmi yang benar-benar teliti dan cukup layak pakai bagi generasi berikutnya.\n\"Aku dan syalku baik-baik saja, mohon jangan khawatir. Aku sudah pergi ke banyak tempat, berkenalan dengan banyak teman baru, rekan kerja dan atasan juga sangat memperhatikanku.\"\nUjung pena Mitya bergerak cepat di atas kertas surat, seperti saat ia menonton pertunjukan di teater.\nSemua ini menegaskan pendirian akademis yang selama ini dipegang Mitya—inspirasi berasal dari akumulasi sampel-sampel pengalaman hidup.\nBanyaknya sampel pengalaman yang terkumpul di masa lalu membuatnya memperoleh nuansa baru bahkan dalam bidang penulisan dokumen resmi, yang sebelumnya lama ia sikapi dengan sikap negatif.\nHal apakah yang dia ingat kembali?\nApakah itu pertanyaan singkat dan padat dari sang Raja Iblis soal pekerjaan?\nApakah bulu halus milik Tuan Pemburu dan anjing-anjing kecilnya yang pintar?\nApakah itu nyanyian indah Nona Imp Air yang sulit dipahami namun memikat?\nApakah tarian terbang Nona Angsa Salju yang indah dan bagaikan mimpi?\nApakah epik petualangan hebat dari Pengembara Berambut Pirang dan sahabat berambut putihnya?\nAtau semuanya?\nTidak ada yang tahu.\nDari Zolnyy ke Zapolyarny, dari Central Station ke Korolevskiy Theater, mulai dari Snezhnograd, jauh hingga ke ujung badai salju di bawah aurora. Jejak Mitya tersebar di atas tanah beku yang luas. Pada saat ini, memori yang dapat ia ingat-ingat kembali lebih panjang daripada banyak gelar Yang Mulia Tsaritsa, dengan lembut menyelimuti seluruh penjuru Snezhnaya.\n...\nSetelah menulis panjang lebar hingga memenuhi seluruh halaman, Mitya meletakkan penanya dan dengan bangga mengagumi mahakarya yang akan segera menjadi templat surat wasiat untuk seluruh Snezhnaya. Karya ini cukup untuk membungkam mulut semua 'orang-orang tua' yang teliti sekaligus menjadi bahan pelajaran dan kekaguman bagi semua generasi berikutnya.\nSyal di sampingnya mendekat, ragu sejenak, mengetuk kertas dua kali—jelas, bagaimana pun dilihatnya, susunan kata dalam \"templat wasiat\" yang penuh harapan ini tampak terlalu riang, lebih seperti surat untuk keluarganya.\nMitya menimbang-nimbang, tangan yang hendak mengubah tulisannya menggantung di udara, lalu ditarik kembali.\nAda sebuah paradoks dalam surat wasiat ini: jika hidup berjalan lancar, surat wasiat ini hanya akan terkunci selamanya di dalam laci. Sebaliknya, begitu hari saat surat ini benar-benar diperlukan tiba, mungkin saksi, notaris, bahkan penerimanya pun sudah tidak ada lagi. Saat itu, Snezhnaya juga tidak lagi membutuhkan templat surat wasiat.\nMenghadap syal yang berkibar-kibar, ia menundukkan kepala dan menuliskan kalimat-kalimat terakhir di bagian bawah surat itu dalam satu tarikan napas:\n\"Aku sayang kalian. Begitu liburan nanti, aku pasti pulang menengok kalian. Sekalian, sampaikan salamku untuk semuanya. Mitya dan Syal.\"\nIa melipat kertas surat itu dan memasukkannya ke dalam sebuah amplop polos, lalu meletakkannya di sudut meja.\nSoal templat, seperti semua laporan kerja yang tidak berarti dan rumit, dengan cepat dibuang jauh-jauh oleh Mitya. Sebagai gantinya, ada sebuah rencana baru.\nSyal itu dengan cekatan dililitkan kembali ke mantel. Seperti biasa, sambil mengamati gerak-gerik orang-orang di sekitarnya, Mitya perlahan berdiri, lalu berjingkat-jingkat menuju pintu kantor—\nDi luar Armory Palace, sinar matahari bersinar terik menyilaukan mata.\nSuara riuh di Central Station tidak pernah berhenti, aroma kaya masakan baru sedang menguar di aula Podvorye Restaurant, dan di bawah kubah Korolevskiy Theater, aria yang mengalun tinggi dan kibasan rok yang anggun masih saling berputar dan berpadu.\nAda begitu banyak warna-warni di dunia, menunggu untuk dinikmati oleh manusia. Inspirasi tanpa batas diam-diam menunggu, siap untuk merangkul kelompok yang tak henti-hentinya hidup ini.\nHari ini bukan milik \"kematian\" dan \"langit\", begitu pula masa depan."
+          }
+        ]
+      },
+      {
+        "title": "Syal",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd680>Terbuka saat Persahabatan Lv. 4</color>\nSehelai kain misterius yang selalu bertengger di mantel Mitya. Sekilas tampak tidak jauh berbeda dari syal biasa, belakangan diketahui syal ini merupakan makhluk hidup.\nDibandingkan dengan pernyataan \"syal Mitya tidak punya nama\", lebih tepat dibilang kalau: syal itu menganggap kata \"syal\" sebagai namanya.\nDengan kata lain, tidak ada gunanya memanggilnya dengan sebutan kerah leher, kain rajutan, selendang sutra, pita, bulu binatang, dan sebagainya. Ia akan melawan tindakan tidak sopan karena salah menyebut namanya ini dengan goyangan yang penuh kebanggaan.\nBentuknya menyerupai tangan yang lembut, pipih, dan panjang, serta dapat membantu Mitya melakukan banyak hal seperti menyisir rambut, mencuci muka, mengambil dokumen, membawa kantong kertas makanan, dan lain sebagainya. Apa pun yang bisa dilakukan tangan manusia, benda ini bisa melakukan lebih banyak lagi. Pada saat yang sama, ia dapat memahami sebagian besar ungkapan manusia, dan kecerdasan yang ditunjukkannya kira-kira berada di tingkat penduduk Teyvat usia remaja hingga dewasa muda.\nBegitu membicarakan asal-usul benda misterius ini, para ilmuwan, arkeolog, dan peneliti secara bersamaan teringat pada nama satu tempat: Tanah Emas Hyperborea. Meski bangsa ini telah lama runtuh, tidak ada yang bisa memastikan dengan pasti bahwa ini adalah karya seorang penemu dari tanah emas, tetapi klaim ini setidaknya lebih masuk akal daripada ayah Mitya membeli syal yang bisa bergerak dengan kecerdasan setara remaja lima belas tahun di kios pinggir jalan. Selain itu, benda itu menunjukkan reaksi terhadap nama Hyperborea, mungkin karena merasa akrab.\nKarena syal itu, Mitya membentuk kebiasaan kecil untuk selalu berkenalan dengan berbagai teman baru bersama \"Syal\", menghormati dan merawatnya seperti sahabat baik, serta terus mencoba untuk menggunakan berbagai jenis pengetahuan untuk membedah teman ajaib ini dan melacak asal-usulnya.\nSi syal itu sendiri justru terlihat cukup santai. Ia menggoyangkan jari, menunjuk kata di kamus, menulis pesan tertulis, inti pesannya hanya satu: \"Coba tebak? Aku tidak begitu peduli dengan keluarga asalku!\"\n\"Kamu kan temanku. Bukankah sering ada situasi seperti itu? Sesuatu yang terjadi pada diri sendiri tidak apa-apa, tapi kalau terjadi pada teman, harus diselesaikan. Begitulah pikirku,\" kata Mitya, \"Hari ini mau jepitan jemuran yang mana? Yang kayu atau yang besi?\"\nSyal itu menunjuk jepitan besi, ia merasa pantulan cahayanya yang indah sangat cocok dengan warnanya sendiri. Mitya membersihkannya dan menggantungnya di tali jemuran. Syal itu menggeliat seperti melakukan peregangan dua kali, lalu memberi sebuah isyarat.\nKarena sudah berteman bertahun-tahun, Mitya sepenuhnya memahami maksud syal itu. Artinya di sini nyaman, aku suka seperti ini. Lagi pula, meskipun aku melihat sesuatu yang berhubungan dengan Hyperborea, memangnya kenapa? Aku pasti tidak akan kembali ke sana.\nYang terpenting dalam hidup adalah kebebasan memilih. Syal pun berpikir begitu.\nMitya mengacungkan jempolnya.\nDi saat begini, jelas tidak bisa bilang kalau barang itu mirip pemiliknya, tapi harus bilang kalau partner yang ditakdirkan bakal saling tertarik satu sama lain."
+          }
+        ]
+      },
+      {
+        "title": "Stellar Linchpin",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd680>Terbuka saat Persahabatan Lv. 6</color>\n\"Tidak dapat dipungkiri bahwa hingga saat ini, bentuk energi yang memiliki sejarah paling panjang, tingkat keamanan paling tinggi, distribusi paling luas, serta nilai penelitian dan aplikasi paling tinggi di antara yang pernah dijamah oleh umat manusia di Teyvat tetaplah energi elemen. Namun, penelitian kalangan akademisi saat ini mengenai Konversi dan penerapan energi elemen yang efisien secara keseluruhan masih berada pada tahap eksplorasi awal ....\"\nMitya menulis kata pengantar untuk penelitian barunya yang akan segera dimulai.\n\"Hingga saat ini, metode penyelarasan kekuatan elemen yang penelitian mediumnya paling mendalam dan luas, interaksinya paling mudah, serta efisiensi konversinya paling tinggi masih bergantung pada Vision dan varian-variannya. Mengingat medium tersebut memiliki banyak efek kotak hitam dalam mekanisme pemicunya (perasaan 'keinginan') dan struktur internal mikroskopisnya, pada kenyataannya ia tidak dapat didefinisikan sebagai sarana yang stabil, aman, dan permanen untuk menggerakkan kekuatan elemen.\"\nPenjelasan akademis ini merangkum banyak pemikiran pribadi Mitya.\nAmbil contoh Stellar Linchpin Electro yang ada di genggamannya ini, menurut jurnal pribadi Mitya, penelitian terhadap benda itu saat ini terhambat oleh dua rintangan yang cukup sulit dilewati.\nYang pertama adalah pekerjaan pemetaan balik terhadap strukturnya.\nDalam arsip eksperimen, data pada kolom ini hingga kini masih kosong. Sebab sampai sekarang, Mitya belum menemukan satu pun cara untuk membuka cangkang Stellar Linchpin tanpa merusaknya.\nKedua, tentang cara mereproduksi ulang proses memperolehnya.\nDi Teyvat selalu ada rumor seperti ini: \"Selama ada keinginan yang cukup kuat, para dewa akan melihatnya\".\nUntuk memverifikasi hipotesis ini, Mitya pernah secara pribadi menjadi subjek eksperimen, melakukan \"Eksperimen Penguatan Keinginan Subjektif\" selama beberapa minggu. Melalui meditasi, sugesti psikologis, dan serangkaian metode lainnya, dia secara ekstrem memperkuat tuntutan subjektif \"aku membutuhkan sebuah Vision untuk melakukan eksperimen variabel kontrol\".\nNamun, catatan eksperimennya dengan tegas menunjukkan bahwa hipotesis tersebut sepenuhnya tidak terbukti. Langit di atas sana sama sekali tidak memberikan respons apa pun terhadap keinginan mulia seorang peneliti yang sangat bersemangat melakukan eksperimen variabel kontrol.\nSeolah mengejek upaya para peneliti, sang dewa memilih untuk melayangkan pandangan mereka pada momen yang sama sekali tidak istimewa.\nCatatan menunjukkan bahwa kondisi sesaat saat Stellar Linchpin diturunkan, sangat tumpang tindih dengan kondisi saat ini. Pada saat itu, pencatat sedang bersembunyi di balik bayang-bayang sudut sepi Central Station. Ia melakukan sebuah pengamatan tanpa tujuan khusus yang \"bertujuan untuk menghindari pekerjaan rutin\", dan berusaha menangkap apa yang disebut ide bagus di tengah angin dingin.\nDengan kata lain, dari sudut pandang replikabilitasnya, mukjizat yang konon berasal dari langit yang tinggi ini tidak diragukan lagi merupakan sampel eksperimen yang paling buruk. Ia memiliki sifat arogan yang sulit direproduksi ulang dan sulit dibongkar, hanya bisa menjadi bukti kekuatan individu, dan tidak dapat dikonversi menjadi alat yang bermakna universal.\nSebagai pakar Energy Commission, masalah yang harus diselesaikan Mitya kebanyakan adalah masalah yang luas dan objektif. Keajaiban seperti Stellar Linchpin jelas bukanlah masalah mendesak yang harus ditaklukkan saat ini. Dia berpikir, untuk saat ini, hanya bisa menganggapnya sebagai alat bantu yang prinsip kerjanya sulit dianalisis.\nSiapa tahu, masalah ini akan bisa diselesaikan di masa depan?\nPara penumpang yang sedang terburu-buru di Central Station kerap berkata begini: Urusan masa depan, tentu saja diserahkan kepada masa depan untuk dikhawatirkan. Jika kita melihat lebih jauh situasi di balik pola pikir semacam ini, semua orang memahami bahwa ancaman \"musim dingin yang ekstrem\" itu nyata, tetapi kebutuhan makan sehari-hari adalah hal yang perlu diprioritaskan.\nKeajaiban hanya berpihak pada segelintir orang terpilih, tetapi angin beku dari musim dingin yang kejam berembus tanpa ampun ke setiap manusia biasa.\nPara dewa mungkin memiliki waktu luang untuk menilai seberapa kuat keinginan seseorang, tetapi bagi para penumpang biasa yang meringkuk di tengah salju tebal sambil mengembuskan napas untuk menghangatkan diri, yang mereka inginkan jauh lebih sederhana, hanyalah sebuah pipa yang mampu menyalurkan energi Kresnik secara stabil.\nKalau soal Stellar Linchpin yang bisa menggerakkan kekuatan elemen, ini alat yang bagus maka layak disimpan.\nIbarat Mora yang tanpa sengaja terselip di sudut saku, suatu hari pasti bakal berguna.\nSaat ini, yang perlu dilakukan sangat sederhana, yaitu menyelesaikan beberapa tenggat waktu yang mendesak.\nMitya menemukan satu halaman kosong, lalu dengan lancar menuliskan judulnya—\n\"Optimalisasi Tata Letak dan Pemasangan Pipa Pasokan Energi Berefisiensi Tinggi\"."
+          }
+        ]
+      }
+    ],
+    "summaryList": [
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/b7d88071579fcd286885a78ac18d235a_8480612360130476745.png",
+        "name": "The Observer Seeking What Is Missing",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Batas <color=#ffd780>Gradient Beacon</color> yang bisa dibawa meningkat menjadi 5. Saat melancarkan Elemental Skill <color=#ffd780>Principle: Variable Detection</color> , akan ada 1 <color=#ffd780>Gradient Beacon</color> tambahan yang tercipta.\nSelama <color=#ffd780>Detection Core</color> ada, CRIT DMG Karakter aktif sendiri dalam party meningkat sebesar 40%.\nSelain itu, saat menciptakan <color=#ffd780>Gradient Beacon</color> , Mitya juga memulihkan 10 poin Energy. Efek ini dapat terpicu sekali setiap 8 detik."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/52d607153628ce3a3407d432ee9c100f_8663316949314976296.png",
+        "name": "The Matter That Slumbers Beyond Inertness",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Selama <color=#ffd780>Detection Core</color> ada, semua musuh yang berada di dalam <color=#ffd780>Polestar Field</color> akan mengalami pengurangan <color=#99ffff>Cryo RES</color> dan <color=#ffacff>Electro RES</color> sebesar 20%.\nSelain itu, jika <color=#ffd780>Detection Core</color> yang diciptakan adalah:\n·Steady State: Elemental Mastery seluruh Karakter di sekitar dalam party meningkat 123 poin.\n·Overloaded State: Elemental Mastery Karakter aktif sendiri dalam party meningkat 234 poin."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/d34adc921cf63459d6402449e60344da_8541924825939653774.png",
+        "name": "The Knotted String of Invariant Topology",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Meningkatkan 3 level Elemental Skill <color=#ffd780>Principle: Variable Detection</color> .\nMaksimum: Lv. 15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/4c36513e814993d1c9902d43341a372a_6983294270405836661.png",
+        "name": "The Isotopes Born of Decay",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Saat <color=#ffd780>Detection Core</color> yang diciptakan oleh Mitya sendiri berada di medan pertempuran, <color=#ffd780>Detection Core</color> akan mengakibatkan <color=#ffacff>Electro DMG Area</color> terhadap musuh di sekitarnya sebesar 300% Elemental Mastery Mitya untuk setiap 5 <color=#ffd780>Gradient Beacon</color> yang dikonsumsi. DMG ini dianggap sebagai DMG reaksi Stellar-Conduct."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/eeb957f7452f06a3c22ecea53e254b4e_7755485346095276918.png",
+        "name": "The Periodic Law That Orders All",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "Meningkatkan 3 level Normal Attack <color=#ffd780>Chain Reaction</color> .\nMaksimum: Lv. 15."
+          }
+        ]
+      },
+      {
+        "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/3ef714ffc185bdba539488846d10e8d4_6494360982863443699.png",
+        "name": "Elemental Transition at the Gate of Reason",
+        "desc": [
+          {
+            "type": "RichText",
+            "text": "<color=#ffd780>Detection Core</color> diperkuat. Jika <color=#ffd780>Detection Core</color> yang diciptakan berada dalam:\n·Steady State: <color=#ffd780>Detection Core</color> mengakibatkan 115% dari DMG aslinya.\n·Overloaded State: Saat mengonsumsi <color=#ffd780>Gradient Beacon</color> , ada 34% kemungkinan untuk menciptakan satu <color=#ffd780>Gradient Beacon</color> yang baru.\nSelain itu, DMG reaksi Stellar-Conduct yang diakibatkan oleh seluruh Karakter di sekitar dalam party <color=#ffd780>bertumbuh</color> 20%."
+          }
+        ]
+      }
+    ],
+    "ascension": [
+      {
+        "key": "Lv. 1",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Sebelum Ascension",
+              "Setelah Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "-",
+              "906"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "-",
+              "20"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "-",
+              "62"
+            ]
+          },
+          {
+            "key": "CRIT DMG",
+            "values": [
+              "-",
+              "0.0%"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "Lv. 20",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Sebelum Ascension",
+              "Setelah Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "2349",
+              "3126"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "53",
+              "71"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "160",
+              "213"
+            ]
+          },
+          {
+            "key": "CRIT DMG",
+            "values": [
+              "0.0%",
+              "0.0%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 905,
+            "name": "Vajrada Amethyst Sliver",
+            "desc": "Material Ascension Karakter.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vajrada Amethyst Sliver_icon.png",
+            "amount": 1
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 13632,
+            "name": "Kristallfold",
+            "desc": "Jamur unik yang tumbuh di dekat urat mineral Kresnik Kristall. Namanya berasal dari bentuk tudung jamurnya yang menyerupai payung kristal berlipat.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/10/30/8a2bce98808500c239498fca9790b5fd_1825622251687502933.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 11370,
+            "name": "Chimeric Core",
+            "desc": "Inti internal yang didapatkan dari monster buatan manusia yang menyimpang.<br>Ini adalah inti paling mendasar yang tumbuh di dalam monster buatan manusia. Namun, sesederhana apa pun bentuknya, inti ini mengandung rancangan primordial untuk pertumbuhan semua ciptaan buatan manusia.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/b94b5fa73fb34960af243acac3ac1c07_3307140821949221996.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Mata uang biasa, semua orang di seluruh penjuru dunia mengakui nilai mata uang ini.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 20000
+          }
+        ]
+      },
+      {
+        "key": "Lv. 40",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Sebelum Ascension",
+              "Setelah Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "4677",
+              "5229"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "106",
+              "118"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "318",
+              "356"
+            ]
+          },
+          {
+            "key": "CRIT DMG",
+            "values": [
+              "0.0%",
+              "9.6%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 904,
+            "name": "Vajrada Amethyst Fragment",
+            "desc": "Material Ascension Karakter.<br/>\"Tubuh ini adalah yang paling mulia dan agung dari semua di dunia ini.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vajrada Amethyst Fragment_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 13651,
+            "name": "Shattered Stability Anchor",
+            "desc": "Sebuah jangkar raksasa yang pernah digunakan sebagai senjata.<br>Sama halnya dengan harapan yang dibawa terlalu jauh hingga perlahan menyimpang dari tujuan awalnya, jangkar besar ini pun pada mulanya dibuat untuk membantu para penjelajah bertahan hidup di tengah lautan lepas. Kini, benda itu tak lebih dari sekadar senjata berat di tangan sesosok peri yang telah lama melupakan misinya.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/10/30/3ede9a23b919c5b0bf928e31be771b8f_2995622452892713593.png",
+            "amount": 2
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 13632,
+            "name": "Kristallfold",
+            "desc": "Jamur unik yang tumbuh di dekat urat mineral Kresnik Kristall. Namanya berasal dari bentuk tudung jamurnya yang menyerupai payung kristal berlipat.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/10/30/8a2bce98808500c239498fca9790b5fd_1825622251687502933.png",
+            "amount": 10
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 11370,
+            "name": "Chimeric Core",
+            "desc": "Inti internal yang didapatkan dari monster buatan manusia yang menyimpang.<br>Ini adalah inti paling mendasar yang tumbuh di dalam monster buatan manusia. Namun, sesederhana apa pun bentuknya, inti ini mengandung rancangan primordial untuk pertumbuhan semua ciptaan buatan manusia.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/b94b5fa73fb34960af243acac3ac1c07_3307140821949221996.png",
+            "amount": 15
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Mata uang biasa, semua orang di seluruh penjuru dunia mengakui nilai mata uang ini.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 40000
+          }
+        ]
+      },
+      {
+        "key": "Lv. 50",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Sebelum Ascension",
+              "Setelah Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "6016",
+              "6752"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "136",
+              "153"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "409",
+              "459"
+            ]
+          },
+          {
+            "key": "CRIT DMG",
+            "values": [
+              "9.6%",
+              "19.2%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 904,
+            "name": "Vajrada Amethyst Fragment",
+            "desc": "Material Ascension Karakter.<br/>\"Tubuh ini adalah yang paling mulia dan agung dari semua di dunia ini.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vajrada Amethyst Fragment_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 13651,
+            "name": "Shattered Stability Anchor",
+            "desc": "Sebuah jangkar raksasa yang pernah digunakan sebagai senjata.<br>Sama halnya dengan harapan yang dibawa terlalu jauh hingga perlahan menyimpang dari tujuan awalnya, jangkar besar ini pun pada mulanya dibuat untuk membantu para penjelajah bertahan hidup di tengah lautan lepas. Kini, benda itu tak lebih dari sekadar senjata berat di tangan sesosok peri yang telah lama melupakan misinya.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/10/30/3ede9a23b919c5b0bf928e31be771b8f_2995622452892713593.png",
+            "amount": 4
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 13632,
+            "name": "Kristallfold",
+            "desc": "Jamur unik yang tumbuh di dekat urat mineral Kresnik Kristall. Namanya berasal dari bentuk tudung jamurnya yang menyerupai payung kristal berlipat.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/10/30/8a2bce98808500c239498fca9790b5fd_1825622251687502933.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 11371,
+            "name": "Symbiotic Chimeric Nucleus",
+            "desc": "Inti internal yang didapatkan dari monster buatan manusia yang menyimpang.<br>Inti yang relatif kompleks yang dipanen dari monster buatan manusia. Inti simbiosis ini direkayasa untuk menopang siklus biologis dua bentuk kehidupan yang berbeda, menyatukannya secara mulus menjadi satu organisme.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/c87fadf67414f0136afeaf4eb426cb3e_7980414230349093139.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Mata uang biasa, semua orang di seluruh penjuru dunia mengakui nilai mata uang ini.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 60000
+          }
+        ]
+      },
+      {
+        "key": "Lv. 60",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Sebelum Ascension",
+              "Setelah Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "7547",
+              "8098"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "171",
+              "183"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "514",
+              "551"
+            ]
+          },
+          {
+            "key": "CRIT DMG",
+            "values": [
+              "19.2%",
+              "19.2%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 903,
+            "name": "Vajrada Amethyst Chunk",
+            "desc": "Material Ascension Karakter.<br/>\"Tubuh ini adalah yang paling mulia dan agung dari semua di dunia ini.\"<br/>\"Ia harus memegang kendali semua di dunia ini.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vajrada Amethyst Chunk_icon.png",
+            "amount": 3
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 13651,
+            "name": "Shattered Stability Anchor",
+            "desc": "Sebuah jangkar raksasa yang pernah digunakan sebagai senjata.<br>Sama halnya dengan harapan yang dibawa terlalu jauh hingga perlahan menyimpang dari tujuan awalnya, jangkar besar ini pun pada mulanya dibuat untuk membantu para penjelajah bertahan hidup di tengah lautan lepas. Kini, benda itu tak lebih dari sekadar senjata berat di tangan sesosok peri yang telah lama melupakan misinya.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/10/30/3ede9a23b919c5b0bf928e31be771b8f_2995622452892713593.png",
+            "amount": 8
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 13632,
+            "name": "Kristallfold",
+            "desc": "Jamur unik yang tumbuh di dekat urat mineral Kresnik Kristall. Namanya berasal dari bentuk tudung jamurnya yang menyerupai payung kristal berlipat.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/10/30/8a2bce98808500c239498fca9790b5fd_1825622251687502933.png",
+            "amount": 30
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 11371,
+            "name": "Symbiotic Chimeric Nucleus",
+            "desc": "Inti internal yang didapatkan dari monster buatan manusia yang menyimpang.<br>Inti yang relatif kompleks yang dipanen dari monster buatan manusia. Inti simbiosis ini direkayasa untuk menopang siklus biologis dua bentuk kehidupan yang berbeda, menyatukannya secara mulus menjadi satu organisme.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/c87fadf67414f0136afeaf4eb426cb3e_7980414230349093139.png",
+            "amount": 18
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Mata uang biasa, semua orang di seluruh penjuru dunia mengakui nilai mata uang ini.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 80000
+          }
+        ]
+      },
+      {
+        "key": "Lv. 70",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Sebelum Ascension",
+              "Setelah Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "8901",
+              "9453"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "202",
+              "214"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "606",
+              "643"
+            ]
+          },
+          {
+            "key": "CRIT DMG",
+            "values": [
+              "19.2%",
+              "28.8%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 903,
+            "name": "Vajrada Amethyst Chunk",
+            "desc": "Material Ascension Karakter.<br/>\"Tubuh ini adalah yang paling mulia dan agung dari semua di dunia ini.\"<br/>\"Ia harus memegang kendali semua di dunia ini.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vajrada Amethyst Chunk_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 13651,
+            "name": "Shattered Stability Anchor",
+            "desc": "Sebuah jangkar raksasa yang pernah digunakan sebagai senjata.<br>Sama halnya dengan harapan yang dibawa terlalu jauh hingga perlahan menyimpang dari tujuan awalnya, jangkar besar ini pun pada mulanya dibuat untuk membantu para penjelajah bertahan hidup di tengah lautan lepas. Kini, benda itu tak lebih dari sekadar senjata berat di tangan sesosok peri yang telah lama melupakan misinya.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/10/30/3ede9a23b919c5b0bf928e31be771b8f_2995622452892713593.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 13632,
+            "name": "Kristallfold",
+            "desc": "Jamur unik yang tumbuh di dekat urat mineral Kresnik Kristall. Namanya berasal dari bentuk tudung jamurnya yang menyerupai payung kristal berlipat.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/10/30/8a2bce98808500c239498fca9790b5fd_1825622251687502933.png",
+            "amount": 45
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 11372,
+            "name": "Prime Chimeric Nexus",
+            "desc": "Inti internal yang didapatkan dari monster buatan manusia yang menyimpang.<br>Inti paling kompleks yang mungkin dapat dipertahankan oleh monster buatan manusia, berfungsi sebagai benih kehidupan yang direkayasa secara artifisial namun sempurna. Siapa pun yang menghidupkan ciptaan ini pasti telah mengungkap rahasia bagaimana kehidupan itu sendiri terbentuk.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/6b950359dfc3dbb85095d4932120e586_1697057902607906986.png",
+            "amount": 12
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Mata uang biasa, semua orang di seluruh penjuru dunia mengakui nilai mata uang ini.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 100000
+          }
+        ]
+      },
+      {
+        "key": "Lv. 80",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Sebelum Ascension",
+              "Setelah Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "10264",
+              "10816"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "232",
+              "245"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "698",
+              "736"
+            ]
+          },
+          {
+            "key": "CRIT DMG",
+            "values": [
+              "28.8%",
+              "28.8%"
+            ]
+          }
+        ],
+        "materials": [
+          {
+            "type": "CustomEntry",
+            "epId": 902,
+            "name": "Vajrada Amethyst Gemstone",
+            "desc": "Material Ascension Karakter.<br/>\"Tubuh ini adalah yang paling mulia dan agung dari semua di dunia ini.\"<br/>\"Ia harus memegang kendali semua di dunia ini.\"<br/>\"Ia dulunya menjanjikan orang-orangnya sebuah mimpi: kekekalan yang tidak pernah berubah.\"",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Vajrada Amethyst Gemstone_icon.png",
+            "amount": 6
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 13651,
+            "name": "Shattered Stability Anchor",
+            "desc": "Sebuah jangkar raksasa yang pernah digunakan sebagai senjata.<br>Sama halnya dengan harapan yang dibawa terlalu jauh hingga perlahan menyimpang dari tujuan awalnya, jangkar besar ini pun pada mulanya dibuat untuk membantu para penjelajah bertahan hidup di tengah lautan lepas. Kini, benda itu tak lebih dari sekadar senjata berat di tangan sesosok peri yang telah lama melupakan misinya.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/10/30/3ede9a23b919c5b0bf928e31be771b8f_2995622452892713593.png",
+            "amount": 20
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 13632,
+            "name": "Kristallfold",
+            "desc": "Jamur unik yang tumbuh di dekat urat mineral Kresnik Kristall. Namanya berasal dari bentuk tudung jamurnya yang menyerupai payung kristal berlipat.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/10/30/8a2bce98808500c239498fca9790b5fd_1825622251687502933.png",
+            "amount": 60
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 11372,
+            "name": "Prime Chimeric Nexus",
+            "desc": "Inti internal yang didapatkan dari monster buatan manusia yang menyimpang.<br>Inti paling kompleks yang mungkin dapat dipertahankan oleh monster buatan manusia, berfungsi sebagai benih kehidupan yang direkayasa secara artifisial namun sempurna. Siapa pun yang menghidupkan ciptaan ini pasti telah mengungkap rahasia bagaimana kehidupan itu sendiri terbentuk.",
+            "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/08/03/6b950359dfc3dbb85095d4932120e586_1697057902607906986.png",
+            "amount": 24
+          },
+          {
+            "type": "CustomEntry",
+            "epId": 757,
+            "name": "Mora",
+            "desc": "Mata uang biasa, semua orang di seluruh penjuru dunia mengakui nilai mata uang ini.",
+            "iconUrl": "https://bbs.hoyolab.com/hoyowiki/picture/object/Mora_icon.png",
+            "amount": 120000
+          }
+        ]
+      },
+      {
+        "key": "Lv. 90",
+        "combatStats": [
+          {
+            "key": "",
+            "values": [
+              "Sebelum Ascension",
+              "Setelah Ascension"
+            ]
+          },
+          {
+            "key": "Base HP",
+            "values": [
+              "11634",
+              "-"
+            ]
+          },
+          {
+            "key": "Base ATK",
+            "values": [
+              "263",
+              "-"
+            ]
+          },
+          {
+            "key": "Base DEF",
+            "values": [
+              "792",
+              "-"
+            ]
+          },
+          {
+            "key": "CRIT DMG",
+            "values": [
+              "38.4%",
+              "-"
+            ]
+          }
+        ]
       }
     ],
     "galleryCharacter": [
       {
         "key": "Kartu Karakter",
-        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/09/29/dc6aa91f72225f746af800230a3c2705_4776347649285981260.jpg"
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/dc6aa91f72225f746af800230a3c2705_7791221729526033128.jpg"
       },
       {
-        "key": "Avatar"
+        "key": "Avatar",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/c7d6cec86b7c276abb19cb73cdac2103_2559379456201779380.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Kostum Asli - Logical Leap\nModel pakaian Mitya. Perlengkapan pelindung eksperimental yang paling minim, dengan jubah luar yang tebal dikenakan di atas seragam peneliti dari Royal Energy Commission of Snezhnaya. Secara teknis, ini bukan pakaian yang semestinya dikenakan di luar laboratorium penelitian, tetapi tampaknya ini bukan aturan yang terlalu dipedulikan oleh Mitya."
+          }
+        ]
+      },
+      {
+        "key": "Animasi Diam 1",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/d39a576ebd0b0d6265e9604ec803ff58_413850701931314966.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Kostum Asli - Logical Leap"
+          }
+        ]
+      },
+      {
+        "key": "Animasi Diam 2",
+        "img": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/11/02/0e1ca220d0cd750cb164d86c373d9076_8762007427686988721.gif",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Kostum Asli - Logical Leap"
+          }
+        ]
+      },
+      {
+        "key": "Konstelasi",
+        "img": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/11/05/8459597/00ebb3846eb6302fa630a8732ba9cb21_9143945741063289370.png",
+        "imgDesc": [
+          {
+            "type": "RichText",
+            "text": "Nodus Gordianus"
+          }
+        ]
       }
     ]
   }
